@@ -198,6 +198,76 @@ Only `name` is required. Omit `definition`, `target`, `unit` (or leave them as e
 
 `from` and `to` are required. `label` is optional.
 
+#### Sub-processes (subprocesses)
+
+**OPTIONAL** top-level `subprocesses` array. Emit it only when one or more activity boxes qualify (see §7 threshold rule). Each item has the following shape:
+
+```json
+{
+  "parent_key": "n4",
+  "process": {
+    "department": "<lowercase department slug>",
+    "process_name": "<Persian process name>",
+    "summary": "<Persian summary>",
+    "idef0": { "inputs": [], "controls": [], "outputs": [], "mechanisms": [] },
+    "kpis": [],
+    "nodes": [],
+    "edges": []
+  }
+}
+```
+
+| Field | Rule |
+|---|---|
+| `parent_key` | The temp activity key in **this** candidate (e.g. `n4`) whose box qualifies. This is the activity whose work will be decomposed. |
+| `process` | A full candidate body with its **own** temp node keys (`n1`, `n2`, … starting fresh). Must NOT itself contain a `subprocesses` field — nesting is single-level only (schema-enforced). |
+
+**Critical:** The parent activity node's own `subprocess` field **stays `null`** in the candidate. The `merge` CLI resolves the real IDs and sets `subprocess` on the parent node after allocation (INV-1). The extract agent **never** mints a process or subprocess ID — temp node keys only.
+
+Minimal example (candidate with one subprocess entry):
+
+```json
+{
+  "department": "cooking",
+  "process_name": "فرایند پخت غذا",
+  "summary": "...",
+  "idef0": { "inputs": [], "controls": [], "outputs": [], "mechanisms": [] },
+  "kpis": [],
+  "nodes": [
+    {
+      "key": "n1", "type": "activity",
+      "label": "آماده‌سازی مواد", "description": "...",
+      "actor": "آشپز", "icom": { "inputs": [], "controls": [], "outputs": [], "mechanisms": [] },
+      "subprocess": null
+    },
+    {
+      "key": "n4", "type": "activity",
+      "label": "پخت اصلی", "description": "...",
+      "actor": "سرآشپز", "icom": { "inputs": [], "controls": [], "outputs": [], "mechanisms": [] },
+      "subprocess": null
+    }
+  ],
+  "edges": [{ "from": "n1", "to": "n4" }],
+  "subprocesses": [
+    {
+      "parent_key": "n4",
+      "process": {
+        "department": "cooking",
+        "process_name": "فرایند پخت اصلی — جزئیات",
+        "summary": "...",
+        "idef0": { "inputs": [], "controls": [], "outputs": [], "mechanisms": [] },
+        "kpis": [],
+        "nodes": [
+          { "key": "n1", "type": "activity", "label": "گرم‌کردن تنور", "description": "...", "actor": "سرآشپز", "icom": { "inputs": [], "controls": [], "outputs": [], "mechanisms": [] }, "subprocess": null },
+          { "key": "n2", "type": "activity", "label": "قرار دادن غذا", "description": "...", "actor": "سرآشپز", "icom": { "inputs": [], "controls": [], "outputs": [], "mechanisms": [] }, "subprocess": null }
+        ],
+        "edges": [{ "from": "n1", "to": "n2" }]
+      }
+    }
+  ]
+}
+```
+
 ---
 
 ## 5. Delta Contract (update to existing process)
@@ -260,6 +330,32 @@ Existing node IDs that the voice implies are no longer part of the process. The 
 { "id": "<real-id-from-process-json>" }
 ```
 
+### `add_subprocesses` (Sub-processes in a delta)
+
+**OPTIONAL** `add_subprocesses` array. Emit it when a box in an **existing** process qualifies (see §7 threshold rule). Each item:
+
+```json
+{
+  "parent": "<real node id OR a temp key from add_nodes>",
+  "process": {
+    "department": "<lowercase department slug>",
+    "process_name": "<Persian process name>",
+    "summary": "<Persian summary>",
+    "idef0": { "inputs": [], "controls": [], "outputs": [], "mechanisms": [] },
+    "kpis": [],
+    "nodes": [],
+    "edges": []
+  }
+}
+```
+
+| Field | Rule |
+|---|---|
+| `parent` | A **real** existing node ID read from `process.json` (e.g. `cooking-001-n010`), OR a temp key from `add_nodes` if the parent is a newly added node in this delta. Never invent a real ID. |
+| `process` | A full candidate body with its own temp node keys. Must NOT contain `subprocesses` — single level only. |
+
+The extract agent **never** mints a process or subprocess ID — temp node keys only (INV-1). The `merge` CLI resolves real IDs and sets `subprocess` on the parent node.
+
 ---
 
 ## 6. No Fabrication (INV-3)
@@ -279,12 +375,36 @@ This rule applies to every string field: `label`, `description`, `summary`, `act
 
 ---
 
-## 7. Sub-processes (Flag-Only This Phase)
+## 7. Sub-processes (auto-create at threshold)
 
-When a single activity box clearly contains several distinct sequential sub-steps that would benefit from their own nested process model, the extract agent should:
+### Threshold
 
-1. Keep `subprocess: null` on that node (do NOT invent a child process ID).
-2. Add a note at the end of the node's `description` (in Persian) indicating that this step may contain sub-steps. Example: «این مرحله شامل چند زیرگام مجزاست و ممکن است به‌عنوان فرایند مستقل مستندسازی شود.»
-3. **Report** to the orchestrator (in the completion message) the node key and a brief explanation of why it appears to be a candidate for subprocess expansion.
+Emit a child process in `subprocesses` (candidate) or `add_subprocesses` (delta) **only** when an activity box is genuinely described in the transcript with **4 or more distinct sequential sub-steps**. If the box is described with fewer than 4 distinct sequential sub-steps, use **flag-only** behaviour instead (see below).
 
-Do NOT emit a subprocess ID. Do NOT recurse into sub-modelling during extraction. The orchestrator will handle subprocess creation in a later phase.
+### At or above threshold (4+ sub-steps) — emit a child
+
+1. In the `subprocesses` / `add_subprocesses` array, add an entry with:
+   - `parent_key` / `parent`: the temp key (or real ID) of the qualifying activity.
+   - `process`: a full candidate body capturing those sub-steps as activity nodes with their own temp keys (`n1`, `n2`, …).
+2. Keep `subprocess: null` on the parent activity node itself — **merge** allocates the child ID and sets this field (INV-1).
+3. **No recursion:** if one of the child process's own activity nodes would itself qualify (4+ sub-steps of its sub-steps), do **not** nest further — apply flag-only on that node instead.
+4. Report the parent node key and child process name in your completion message so the orchestrator knows to capture the printed child ID from merge stdout.
+
+### Below threshold — flag-only
+
+1. Keep `subprocess: null` on the node.
+2. Append a short Persian note to the node's `description`. Example: «این مرحله شامل چند زیرگام مجزاست و ممکن است در آینده به‌عنوان فرایند مستقل مستندسازی شود.»
+3. **Report** the node key and a brief explanation in your completion message to the orchestrator.
+
+### What merge does with a submitted child (informational — for understanding context)
+
+When `merge` processes a candidate or delta that contains a `subprocesses` / `add_subprocesses` entry, it:
+1. Resolves the parent activity's real node ID.
+2. Allocates the child process ID via `allocate-id` CLI.
+3. Writes `departments/{dept}/processes/{child-id}.json` with `parent: {process: "<parent-id>", node: "<parent-node-id>"}` and `source.type: "auto"`.
+4. Sets the parent node's `subprocess` field to the child process ID.
+5. Syncs the parent box's `icom` to equal the child's `idef0` (child wins on conflict).
+6. Lays out the child process (serpentine layout).
+7. Prints `subprocess <child-id> node <parent-node-id>` to stdout — the orchestrator captures these lines.
+
+**The extract agent never mints a process or subprocess ID. Temp node keys only (INV-1).**
