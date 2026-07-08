@@ -1,6 +1,6 @@
 ---
 name: process-voice
-description: Orchestrate the full voice→IDEF pipeline — transcribe, classify, human checkpoint, extract, merge, summarize, commit, and the end-of-run conflict report. Resumes from runs/{voice}/meta.json.
+description: Orchestrate the full voice→IDEF pipeline — transcribe, classify, human checkpoint, extract, merge, summarize, commit, and the end-of-run conflict report. Resumes from {run_dir}/meta.json.
 ---
 
 # process-voice playbook
@@ -15,14 +15,11 @@ Every engine CLI must be called with `DATA_ROOT=<data-repo>` set in the environm
 ## Stage 0 — Resolve state / resume
 
 1. Check whether `runs/{voice}/meta.json` exists.
-2. If it exists AND `finished_at` is `null`, the previous run was interrupted.
-   - Read the file. Inspect `processes[]`.
-   - If `processes[]` is empty AND `runs/{voice}/segments.json` exists → the run paused at or after the human checkpoint (Stage 4). Resume from Stage 4.
-   - If `processes[]` is non-empty but `finished_at` is still `null` → extraction has begun; resume from Stage 6 (merge) for any segment not yet merged, then continue through Stages 7–9.
-   - Do NOT re-run stages that already completed (idempotency).
-3. If `meta.json` does not exist, this is a fresh run — continue to Stage 1.
+2. If it exists AND `finished_at` is `null`, the previous run was interrupted — set `{run_dir}` to `runs/{voice}` and resume it: inspect `processes[]` to determine how far it got (empty + `{run_dir}/segments.json` present → resume at Stage 4; non-empty → resume at Stage 6 for any unmerged segment, then Stages 7–9). Do NOT re-run stages that already completed (idempotency).
+3. If `runs/{voice}/meta.json` does not exist, this is a fresh run — set `{run_dir}` to `runs/{voice}` and continue to Stage 1.
+4. If `runs/{voice}/meta.json` exists with a non-null `finished_at` (or the user explicitly requests re-processing), this is a re-run — set `{run_dir}` to `runs/{voice}/attempt-NN/` where `NN` is zero-padded and is the lowest integer ≥ 2 whose directory does not yet exist. Continue to Stage 1.
 
-> Re-runs after a `finished_at`-complete run go to `runs/{voice}/attempt-NN/` (FR-P9). Increment `attempt` and use that sub-directory for all run artefacts.
+> `{run_dir}` is the single run-scoped directory used for all artefacts in this run (meta.json, segments.json, candidates/, deltas/). The transcript at `meetings/transcripts/{voice}.txt` is shared across attempts and is never run-relative.
 
 ---
 
@@ -43,11 +40,9 @@ Every engine CLI must be called with `DATA_ROOT=<data-repo>` set in the environm
 
 ## Stage 2 — Init run record
 
-1. Determine the run directory:
-   - If `runs/{voice}/meta.json` does not exist → use `runs/{voice}/`.
-   - If it exists with `finished_at` non-null → this is a re-run; use `runs/{voice}/attempt-NN/` where `NN` is zero-padded and one greater than the highest existing attempt sub-directory.
-2. Create the run directory.
-3. Write `runs/{voice}/meta.json` conforming to `schemas/run-meta.schema.json`:
+1. `{run_dir}` was determined in Stage 0; create the directory now if it does not exist.
+2. Write `{run_dir}/meta.json` conforming to `schemas/run-meta.schema.json`
+   (always write `finished_at` explicitly — even as `null` — because Stage 0 resume depends on reading this field):
    ```json
    {
      "voice": "<voice>",
@@ -60,7 +55,7 @@ Every engine CLI must be called with `DATA_ROOT=<data-repo>` set in the environm
    ```
    - `departments`: the upload tag(s) extracted from the voice filename or provided by the user.
    - `started_at` / `finished_at`: ISO-8601 with `Z` suffix (e.g. `2026-05-06T09:14:00Z`).
-   - `attempt`: integer ≥ 1.
+   - `attempt`: integer ≥ 1 (matches the attempt-NN suffix; 1 for the base run).
    - `processes`: start empty; populated after merge in Stage 6.
 
 ---
@@ -76,19 +71,19 @@ Task: classify
   departments: [<tagged departments>]
 ```
 
-Wait for the task to complete. It writes `runs/{voice}/segments.json`.
+Wait for the task to complete. It writes `{run_dir}/segments.json`.
 The segments file categorises every identified process as one of: `new`, `update`, or `unchanged`.
 
 ---
 
 ## Stage 4 — Human checkpoint (FR-P4)
 
-1. Read `runs/{voice}/segments.json`.
+1. Read `{run_dir}/segments.json`.
 2. Group segments into three categories:
    - **الف) جدید** — processes classified as `new` (no existing ID).
    - **ب) به‌روزرسانی** — processes classified as `update`, formatted as `«{process_name}» → {existing_id}`.
    - **د) بدون تغییر** — processes classified as `unchanged`, formatted as `{process_name} → {existing_id}`.
-3. Collect any flagged sub-process candidates from `segments.json`.
+3. Collect any flagged sub-process candidates from `{run_dir}/segments.json`.
 4. Note any departments mentioned in the transcript that differ from the upload tag.
 5. Compose the checkpoint message in Persian and send it to the user in Telegram.
 
@@ -108,8 +103,8 @@ The segments file categorises every identified process as one of: `new`, `update
 ```
 
 6. **End your turn and wait.** Do NOT proceed to Stage 5 in the same turn.
-   The session is paused here. `runs/{voice}/meta.json` has `finished_at: null` and `processes: []`.
-   When the user replies in the next turn, read `runs/{voice}/meta.json` to resume (Stage 0 re-entry will route here).
+   The session is paused here. `{run_dir}/meta.json` has `finished_at: null` and `processes: []`.
+   When the user replies in the next turn, read `{run_dir}/meta.json` to resume (Stage 0 re-entry will route here).
 
 **Handling the user's reply:**
 
@@ -144,9 +139,9 @@ Run ALL dispatches in parallel (do not wait for each before starting the next).
     mode: new
     seq: {seq}           # sequential integer within this run, zero-padded e.g. 001
     department: {dept}
-    run_dir: runs/{voice}
+    run_dir: {run_dir}
   ```
-  The agent writes `runs/{voice}/candidates/{seq}.json`.
+  The agent writes `{run_dir}/candidates/{seq}.json`.
 
 - **update segment:**
   ```
@@ -157,9 +152,9 @@ Run ALL dispatches in parallel (do not wait for each before starting the next).
     existing_id: {existing_id}
     existing_process_path: departments/{dept}/processes/{existing_id}.json
     department: {dept}
-    run_dir: runs/{voice}
+    run_dir: {run_dir}
   ```
-  The agent writes `runs/{voice}/deltas/{existing_id}.json`.
+  The agent writes `{run_dir}/deltas/{existing_id}.json`.
 
 **unchanged segments are NOT extracted.** Their `process.json` files remain untouched.
 They will be recorded in `meta.json.processes` as `{id, status: "unchanged"}` in Stage 8.
@@ -176,9 +171,9 @@ Never write `departments/**/processes/*.json` any other way — this is hook-enf
 **For each `new` candidate:**
 ```
 Bash: DATA_ROOT=<data-repo> merge new \
-  --candidate runs/{voice}/candidates/{seq}.json \
+  --candidate {run_dir}/candidates/{seq}.json \
   --department {dept} \
-  --run runs/{voice}
+  --run {run_dir}
 ```
 Capture the printed `<id>` (e.g. `warehouse-004`). Record `{id, status: "new"}` for meta.json.
 
@@ -186,8 +181,8 @@ Capture the printed `<id>` (e.g. `warehouse-004`). Record `{id, status: "new"}` 
 ```
 Bash: DATA_ROOT=<data-repo> merge update \
   --process {existing_id} \
-  --delta runs/{voice}/deltas/{existing_id}.json \
-  --run runs/{voice}
+  --delta {run_dir}/deltas/{existing_id}.json \
+  --run {run_dir}
 ```
 Record `{existing_id, status: "update"}` for meta.json.
 
@@ -207,7 +202,7 @@ Wait for completion. It writes/updates `departments/{dept}/overview.json`.
 
 ### Stage 8 — Finish run + commit (per department)
 
-1. Update `runs/{voice}/meta.json`:
+1. Update `{run_dir}/meta.json`:
    - Set `finished_at` to the current ISO-8601 Z timestamp.
    - Populate `processes[]` with all entries from Stages 5–6:
      - new merges: `{id: "<dept>-NNN", status: "new"}`
@@ -287,5 +282,5 @@ After all departments have been committed:
 - `merge` is the ONLY writer of `departments/**/processes/*.json` (ARD hook-enforced).
 - `unchanged` processes are never re-extracted or re-merged; only recorded in meta.json.
 - The checkpoint turn ends the session turn — extract never runs in the same turn as classify.
-- `runs/{voice}/meta.json` with `finished_at: null` always signals a resumable in-progress run.
+- `{run_dir}/meta.json` with `finished_at: null` always signals a resumable in-progress run.
 - All timestamps are ISO-8601 with `Z` suffix.
