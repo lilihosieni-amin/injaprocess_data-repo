@@ -256,7 +256,7 @@ After all departments have been committed:
    Children are ordinary processes: UI-editable, classify-matchable on future voices (`update`/`unchanged` with their `existing_id`), and user-removable (orphan, not cascade — INV-4). No approval is required.
 
 2. For each `process.json` written or updated in this run, read its `pending[]` array.
-3. If any process has pending conflicts, present the full list in Telegram. If there are no auto-subprocess entries and no conflicts, report completion directly (see item 4).
+3. If any process has pending conflicts, present the full list in Telegram. If there are no auto-subprocess entries and no conflicts, report completion directly (see item 5).
 
 **Conflict report format (Persian):**
 

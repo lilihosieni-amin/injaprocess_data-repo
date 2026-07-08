@@ -54,7 +54,7 @@ An activity is a named step in the process — a unit of work performed by a rol
 - A longer `description` (Persian, one or two sentences)
 - An `actor` (Persian role name)
 - Its own `icom` object (the ICOM at this step's level)
-- A `subprocess` pointer (always `null` in this phase — see §7)
+- A `subprocess` pointer (`null` in the candidate; merge sets it after allocating the child ID — see §7)
 
 ### Directed Edges
 
@@ -151,7 +151,7 @@ Every activity node in `nodes` **must** have all seven fields (and **only** thes
 | `description` | Persian, describes what happens in this step |
 | `actor` | Persian role/system (never a personal name) |
 | `icom` | Object with four arrays: `inputs`, `controls`, `outputs`, `mechanisms` (each may be empty) |
-| `subprocess` | `null` this phase (see §7) |
+| `subprocess` | `null` in the candidate — merge sets it (see §7) |
 
 ### Junction node (required fields)
 
