@@ -6,3 +6,7 @@
 *.env
 *.key
 *service-account*.json
+
+# Python caches
+__pycache__/
+*.pyc
