@@ -63,5 +63,6 @@ Do not invoke `merge` directly before the checkpoint clears.
 | `merge` | Write validated JSON into `departments/**/processes/` |
 | `layout` | Compute deterministic serpentine flowchart node positions |
 | `transcribe` | Produce text transcript from audio |
+| `validate` | Check a JSON artifact against a named schema (`validate <schema> <file>`, exit 2 on mismatch) |
 
 All CLIs require `DATA_ROOT` set to the root of this repo.

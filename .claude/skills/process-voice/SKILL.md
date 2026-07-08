@@ -57,6 +57,7 @@ Every engine CLI must be called with `DATA_ROOT=<data-repo>` set in the environm
    - `started_at` / `finished_at`: ISO-8601 with `Z` suffix (e.g. `2026-05-06T09:14:00Z`).
    - `attempt`: integer ≥ 1 (matches the attempt-NN suffix; 1 for the base run).
    - `processes`: start empty; populated after merge in Stage 6.
+3. **Validate the record:** `Bash: validate run-meta {run_dir}/meta.json`. If it exits non-zero, fix the meta object you just wrote (the stderr message names the offending field) and re-validate before continuing.
 
 ---
 
@@ -73,6 +74,8 @@ Task: classify
 
 Wait for the task to complete. It writes `{run_dir}/segments.json`.
 The segments file categorises every identified process as one of: `new`, `update`, or `unchanged`.
+
+**Validate it:** `Bash: validate segments {run_dir}/segments.json`. If it exits non-zero, re-dispatch the `classify` agent with the stderr error appended to its prompt so it corrects the output, then re-validate. After 2 failed attempts, stop and report the error to the user instead of looping.
 
 ---
 
@@ -198,6 +201,8 @@ Task: summarize
 ```
 Wait for completion. It writes/updates `departments/{dept}/overview.json`.
 
+**Validate it:** `Bash: validate overview departments/{dept}/overview.json`. On non-zero exit, re-dispatch `summarize` for that department with the stderr error so it corrects the file, then re-validate (max 2 attempts, then report to the user).
+
 ---
 
 ### Stage 8 — Finish run + commit (per department)
@@ -208,6 +213,7 @@ Wait for completion. It writes/updates `departments/{dept}/overview.json`.
      - new merges: `{id: "<dept>-NNN", status: "new"}`
      - update merges: `{id: "<existing_id>", status: "update"}`
      - unchanged segments: `{id: "<existing_id>", status: "unchanged"}`
+   - After updating, re-validate: `Bash: validate run-meta {run_dir}/meta.json` (fix and re-validate on failure) so a malformed record is never committed.
 
 2. Commit the run artefacts:
    ```

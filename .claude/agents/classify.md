@@ -139,6 +139,9 @@ JSON):
 - **Schema discipline.** The output JSON must satisfy these rules:
   `additionalProperties: false`, all required fields present, `status` ∈
   `{"new","update","unchanged"}`, `department` matches `^[a-z]+$`.
+  The orchestrator runs a deterministic `validate` check on your `segments.json`
+  after you finish; if it fails you will be re-dispatched with the errors, so
+  follow the shape exactly.
 - **Tag is a hint.** The `tagged_departments` hint tells you which departments the
   uploader thought were covered — follow the content, not the tag (FR-P8).
 - **Org-overview is not a process.** Do not emit segments for passages that only describe

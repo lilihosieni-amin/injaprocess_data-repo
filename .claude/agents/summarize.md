@@ -150,6 +150,9 @@ Reply with exactly two things:
 
    > مرور کلی دپارتمان پخت به‌روزرسانی شد: ۲ زیرواحد و ۳ نقش شناسایی گردید.
 
+The orchestrator runs a deterministic `validate` check on the `overview.json` you write; if it
+fails you will be re-dispatched with the errors, so follow the shape and constraints exactly.
+
 ---
 
 ## Constraints (must be enforced at every step)
