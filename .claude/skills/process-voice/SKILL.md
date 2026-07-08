@@ -190,6 +190,18 @@ Bash: DATA_ROOT=<data-repo> merge update \
 ```
 Record `{existing_id, status: "update"}` for meta.json.
 
+**What merge does when a candidate/delta contains sub-processes:**
+For each entry in `subprocesses` (candidate) or `add_subprocesses` (delta), `merge` performs these 7 steps automatically:
+1. Resolves the parent activity's real node ID from the newly-merged or existing `process.json`.
+2. Allocates the child process ID via `allocate-id` CLI (INV-1 — never by an LLM).
+3. Writes `departments/{dept}/processes/{child-id}.json` with `parent: {process: "<parent-id>", node: "<parent-node-id>"}` and `source.type: "auto"`.
+4. Sets the parent node's `subprocess` field to the child process ID.
+5. Syncs the parent box's `icom` to equal the child's `idef0` (child wins on conflict).
+6. Lays out the child process (serpentine layout).
+7. Prints `subprocess <child-id> node <parent-node-id>` to stdout.
+
+**Capture the printed child IDs:** parse every `subprocess <child-id> node <parent-node-id>` line from merge stdout. Collect these pairs for use in Stage 8.
+
 **Layout:** `merge` also computes/updates node positions (serpentine layout) for new nodes; manually positioned nodes (`layout: manual`) are never moved. Never set node positions yourself — the layout is deterministic engine work, not LLM work.
 
 ---
@@ -216,6 +228,7 @@ Wait for completion. It writes/updates `departments/{dept}/overview.json`.
      - new merges: `{id: "<dept>-NNN", status: "new"}`
      - update merges: `{id: "<existing_id>", status: "update"}`
      - unchanged segments: `{id: "<existing_id>", status: "unchanged"}`
+     - auto-created sub-processes (captured from merge stdout in Stage 6): `{id: "<child-id>", status: "new", auto_subprocess_of: "<parent-id>"}`
    - After updating, re-validate: `Bash: validate run-meta {run_dir}/meta.json` (fix and re-validate on failure) so a malformed record is never committed.
 
 2. Commit the run artefacts:
@@ -232,12 +245,18 @@ Wait for completion. It writes/updates `departments/{dept}/overview.json`.
 
 ---
 
-### Stage 9 — Conflict report (FR-M4)
+### Stage 9 — Conflict report + auto-subprocess summary (FR-M4)
 
 After all departments have been committed:
 
-1. For each `process.json` written or updated in this run, read its `pending[]` array.
-2. If any process has pending conflicts, present the full list in Telegram.
+1. **Auto-subprocess report (report only — no approval pause):** For every auto-created child collected in Stage 6, output a Persian line in Telegram:
+   ```
+   زیرفرایند {child-id} به‌صورت خودکار زیرِ باکس {parent-node} از فرایند {parent-id} ساخته شد.
+   ```
+   Children are ordinary processes: UI-editable, classify-matchable on future voices (`update`/`unchanged` with their `existing_id`), and user-removable (orphan, not cascade — INV-4). No approval is required.
+
+2. For each `process.json` written or updated in this run, read its `pending[]` array.
+3. If any process has pending conflicts, present the full list in Telegram. If there are no auto-subprocess entries and no conflicts, report completion directly (see item 5).
 
 **Conflict report format (Persian):**
 
@@ -255,7 +274,7 @@ After all departments have been committed:
 یا از طریق پنل UI اقدام کنید. مقدار اصلی تا تأیید شما تغییر نمی‌کند.
 ```
 
-3. If the user resolves inline, run:
+4. If the user resolves inline, run:
    ```
    Bash: DATA_ROOT=<data-repo> merge accept --process {id} --index {n}
    ```
@@ -265,7 +284,7 @@ After all departments have been committed:
    ```
    The original value is **never auto-changed**. If the user defers to the UI inbox, leave the `pending[]` entries in place.
 
-4. If there are no conflicts (`pending[]` is empty for all written processes), report completion:
+5. If there are no conflicts (`pending[]` is empty for all written processes), report completion:
    ```
    پایان موفق اجرا. فرایندهای {voice} پردازش و ثبت شدند.
    ```

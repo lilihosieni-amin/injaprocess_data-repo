@@ -105,9 +105,22 @@ Create any missing parent directories as needed before writing.
 
 ---
 
-## Sub-process flagging
+## Sub-processes (threshold-based auto-creation)
 
-If any activity node clearly contains several distinct sequential sub-steps, keep `subprocess: null` on that node and append a note in Persian to its `description` field indicating it may contain sub-steps. Report the node's temp key and a brief explanation in your completion message to the orchestrator. Do not invent a subprocess ID and do not recurse into sub-modelling.
+See the `idef-extraction` skill §7 for the full contract. Summary of rules:
+
+**At or above threshold (4 or more distinct sequential sub-steps):**
+- Add the child in the top-level `subprocesses` array (Mode A / candidate) or `add_subprocesses` array (Mode B / delta).
+- Keep `subprocess: null` on the parent activity node — **merge** sets it after allocating the child ID.
+- No recursion: if a child process's own box would also qualify, apply flag-only on it instead.
+- Report the parent node key and child process name in your completion message.
+
+**Below threshold — flag-only:**
+- Keep `subprocess: null` on the node.
+- Append a short Persian note to the node's `description`.
+- Report the node key and explanation in your completion message.
+
+**Never mint a process or subprocess ID. Temp node keys only (INV-1).** The `merge` CLI allocates all final IDs.
 
 ---
 

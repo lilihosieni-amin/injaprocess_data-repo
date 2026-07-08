@@ -77,6 +77,8 @@ For each segment:
 | `update` | An existing process covers it and this voice adds or changes something | `"<id>"` (the existing process ID, e.g. `"cooking-001"`) |
 | `unchanged` | An existing process covers it and this voice adds nothing new | `"<id>"` |
 
+Existing processes include **auto-created sub-processes** (those with a non-null `parent` field in their `process.json`). A segment that merely elaborates or adds detail to an already-existing sub-process must be matched to it (`update` or `unchanged` with its `existing_id`) — it must **not** be emitted as `new`.
+
 If the department directory contains no process files (e.g. only a `.gitkeep`), every
 segment for that department is `new` with `existing_id: null`.
 
