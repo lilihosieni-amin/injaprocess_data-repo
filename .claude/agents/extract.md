@@ -36,7 +36,7 @@ Use this mode when `mode` is `new` (no existing `process.json`).
 
 ### What to produce
 
-Emit a single JSON object conforming to `candidate.schema.json`. All top-level fields are required:
+Emit a single JSON object conforming to the candidate contract (see the idef-extraction skill; validated by `merge` on consumption). All top-level fields are required:
 `department`, `process_name`, `summary`, `idef0`, `kpis`, `nodes`, `edges`.
 
 - `department`: the lowercase slug from the dispatch input.
@@ -75,7 +75,7 @@ Read the file at `existing_process_path`. This gives you the real node IDs alrea
 
 ### What to produce
 
-Emit a single JSON object conforming to `delta.schema.json`. All four top-level arrays are required (each may be empty):
+Emit a single JSON object conforming to the delta contract (see the idef-extraction skill; validated by `merge` on consumption). All four top-level arrays are required (each may be empty):
 
 ```json
 {

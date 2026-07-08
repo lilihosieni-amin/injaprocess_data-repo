@@ -83,7 +83,7 @@ segment for that department is `new` with `existing_id: null`.
 ### Step 5 — Write the output file
 
 Create directory `runs/{voice}/` if it does not exist, then write `runs/{voice}/segments.json`
-with the following exact shape (from `segments.schema.json`):
+with exactly the following shape:
 
 ```json
 {
@@ -136,7 +136,7 @@ JSON):
   (NFR-6 context control).
 - **Do not invent process IDs.** When status is `update` or `unchanged`, use the `id`
   field read from the matching existing process JSON file.
-- **Schema discipline.** The output JSON must pass `segments.schema.json` validation:
+- **Schema discipline.** The output JSON must satisfy these rules:
   `additionalProperties: false`, all required fields present, `status` ∈
   `{"new","update","unchanged"}`, `department` matches `^[a-z]+$`.
 - **Tag is a hint.** The `tagged_departments` hint tells you which departments the

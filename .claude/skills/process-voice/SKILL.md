@@ -41,7 +41,7 @@ Every engine CLI must be called with `DATA_ROOT=<data-repo>` set in the environm
 ## Stage 2 — Init run record
 
 1. `{run_dir}` was determined in Stage 0; create the directory now if it does not exist.
-2. Write `{run_dir}/meta.json` conforming to `schemas/run-meta.schema.json`
+2. Write `{run_dir}/meta.json` with exactly the shape below
    (always write `finished_at` explicitly — even as `null` — because Stage 0 resume depends on reading this field):
    ```json
    {

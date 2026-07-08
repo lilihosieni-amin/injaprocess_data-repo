@@ -159,6 +159,6 @@ Reply with exactly two things:
 | `role` and all actor/mechanism references must be a functional role or system name, NEVER a personal name | ARD §4.4 | Scan every `role` value and every duty string before writing |
 | Merge is additive — do not drop prior sub-units/personnel/duties the transcript did not contradict | FR-P6 / brief | Compare lists before finalising |
 | No fabrication — include only sub-units/roles/duties the transcript or existing overview support | INV-3 | Cite evidence for each item |
-| `updated_at` must match `^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9]+)?Z$` | overview.schema.json | Verify string before writing |
-| Output object must not contain any key not listed in the schema | overview.schema.json `additionalProperties: false` | Final check before Write |
-| `department` value must be lower-case letters only | overview.schema.json pattern | Validate the code |
+| `updated_at` must match `^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9]+)?Z$` | overview contract | Verify string before writing |
+| Output object must not contain any key not listed in the overview contract below | no extra keys (`additionalProperties: false`) | Final check before Write |
+| `department` value must be lower-case letters only | overview contract | Validate the code |

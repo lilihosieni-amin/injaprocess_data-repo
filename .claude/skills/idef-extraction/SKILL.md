@@ -98,7 +98,7 @@ In `delta.json`, `add_nodes` entries use the same temp key convention (`n1`, `j1
 
 ## 4. Candidate Contract (new process)
 
-When the transcript describes a **brand-new process** (no existing `process.json`), output a single JSON object conforming to `candidate.schema.json`. All top-level fields are **required**.
+When the transcript describes a **brand-new process** (no existing `process.json`), output a single JSON object conforming to the candidate contract below (the `merge` CLI validates this shape when it consumes the file). All top-level fields are **required**.
 
 ### Top-level structure
 
@@ -199,7 +199,7 @@ Only `name` is required. Omit `definition`, `target`, `unit` (or leave them as e
 
 ## 5. Delta Contract (update to existing process)
 
-When the transcript updates an **existing process** (a `process.json` already exists), output a single JSON object conforming to `delta.schema.json`. All four top-level arrays are **required** (they may be empty).
+When the transcript updates an **existing process** (a `process.json` already exists), output a single JSON object conforming to the delta contract below (validated by `merge` on consumption). All four top-level arrays are **required** (they may be empty).
 
 ```json
 {
