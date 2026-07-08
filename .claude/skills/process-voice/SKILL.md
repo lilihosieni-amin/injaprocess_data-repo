@@ -82,9 +82,9 @@ The segments file categorises every identified process as one of: `new`, `update
 2. Group segments into three categories:
    - **الف) جدید** — processes classified as `new` (no existing ID).
    - **ب) به‌روزرسانی** — processes classified as `update`, formatted as `«{process_name}» → {existing_id}`.
-   - **د) بدون تغییر** — processes classified as `unchanged`, formatted as `{process_name} → {existing_id}`.
-3. Collect any flagged sub-process candidates from `{run_dir}/segments.json`.
-4. Note any departments mentioned in the transcript that differ from the upload tag.
+   - **ج) بدون تغییر** — processes classified as `unchanged`, formatted as `{process_name} → {existing_id}`.
+3. Collect any flagged sub-process candidates and any org-overview note from the `classify` agent's Stage-3 return message (delivered to the orchestrator at the end of Stage 3). These fields are NOT in `segments.json` (which is `additionalProperties: false` and carries no sub-process field) — they are only in the classify agent's completion message. If Stage 4 is re-entered on a later turn (via Stage 0 resume) and the classify return message is no longer in context, re-dispatch the `classify` agent to regenerate its summary before composing the checkpoint (classify is idempotent and cheap; it will re-produce the same segments and notes).
+4. Note any departments mentioned in the transcript that differ from the upload tag (this information comes from `segments.json`).
 5. Compose the checkpoint message in Persian and send it to the user in Telegram.
 
 **Example checkpoint message (reproduce this format exactly):**
@@ -96,7 +96,7 @@ The segments file categorises every identified process as one of: `new`, `update
   ۲. فرایند سفارش‌گیری سالن (dining)
 ب) به‌روزرسانی:
   — «فرایند پخت» → cooking-002
-د) بدون تغییر:
+ج) بدون تغییر:
   — کنترل موجودی → warehouse-003
 ⚠ این صدا با برچسب «dining» بود ولی به warehouse و cooking هم مربوط شد.
 تأیید می‌کنید یا اصلاحی لازم است؟
@@ -137,7 +137,7 @@ Run ALL dispatches in parallel (do not wait for each before starting the next).
     voice: {voice}
     transcript_path: meetings/transcripts/{voice}.txt
     mode: new
-    seq: {seq}           # sequential integer within this run, zero-padded e.g. 001
+    seq: {seq}           # sequential integer within this run, zero-padded e.g. 01
     department: {dept}
     run_dir: {run_dir}
   ```

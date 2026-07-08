@@ -16,7 +16,7 @@ The idef-extraction skill defines every modelling concept, every JSON field, eve
 
 | Parameter | Description |
 |---|---|
-| `department` | Lowercase department slug (e.g. `dining`, `kitchen`) |
+| `department` | Lowercase department slug (e.g. `dining`, `cooking`) |
 | `process_name` | Persian name of the process being extracted |
 | `transcript_excerpt` | The segment of the transcript that describes this process |
 | `transcript_path` | Full path to the source transcript file — read it to obtain surrounding context for THIS process only |
@@ -99,7 +99,7 @@ Enrich only fields the voice actually informs. Incompleteness is fine; fabricati
 runs/{voice}/deltas/{existing_id}.json
 ```
 
-where `{voice}` and `{existing_id}` are the dispatch-provided parameters. Example: if `voice` is `v2026-07-08` and `existing_id` is `kitchen-001`, write to `runs/v2026-07-08/deltas/kitchen-001.json`.
+where `{voice}` and `{existing_id}` are the dispatch-provided parameters. Example: if `voice` is `v2026-07-08` and `existing_id` is `cooking-001`, write to `runs/v2026-07-08/deltas/cooking-001.json`.
 
 Create any missing parent directories as needed before writing.
 
