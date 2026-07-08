@@ -50,6 +50,7 @@ If the file does not exist, treat both lists as empty.
 
 For each ID in `process_ids`, Read
 `{data_root}/departments/{department}/processes/{id}.json`.
+If `process_ids` is not provided, use Glob to enumerate `departments/{department}/processes/*.json` and derive the IDs from the matched file names.
 
 Collect all text content (summaries, step descriptions, actor/mechanism references) into a
 working evidence set. You will use this evidence — and only this evidence — together with the
@@ -122,7 +123,7 @@ Rules:
 - `sub_units` — each item has exactly `name` and `description` (strings); no other keys.
 - `personnel` — each item has exactly `role` (string) and `duties` (array of strings); no
   other keys. `role` is NEVER a personal name.
-- `updated_at` — current UTC time in the format `YYYY-MM-DDTHH:MM:SSZ` (seconds precision,
+- `updated_at` — current UTC time in the format `YYYY-MM-DDTHH:mm:ssZ` (seconds precision,
   `Z` suffix). Example: `2026-07-08T14:05:00Z`.
 
 ---
