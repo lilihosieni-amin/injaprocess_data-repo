@@ -66,3 +66,11 @@ def test_block_bash_redirect_into_processes(tmp_path):
 
 def test_block_bash_sed_claude(tmp_path):
     assert run(bash("sed -i s/a/b/ .claude/agents/classify.md"), tmp_path) == 2
+
+
+def test_block_bash_perl_i_claude(tmp_path):
+    assert run(bash("perl -i -pe s/a/b/ .claude/settings.json"), tmp_path) == 2
+
+
+def test_block_bash_tee_into_processes(tmp_path):
+    assert run(bash("echo '{}' | tee departments/cooking/processes/cooking-001.json"), tmp_path) == 2
