@@ -32,7 +32,7 @@ Every engine CLI must be called with `DATA_ROOT=<data-repo>` set in the environm
    ```
 3. On a **fresh transcription** (the transcript file did not exist before):
    - Read stdout. Strip any Gemini preamble, postamble, or section headings injected by the model.
-   - If the text appears summarized or rewritten (rather than verbatim speech), flag it to the user and STOP. Do not proceed.
+   - If the text appears summarized or rewritten (rather than verbatim speech), flag it to the user and STOP. Do not proceed. When stopping, tell the user (in Persian) their options: «(الف) پردازش را دوباره اجرا کنید تا رونویسی از نو انجام شود؛ یا (ب) یک رونویسِ اصلاح‌شده را به‌صورت دستی در `meetings/transcripts/{voice}.txt` قرار دهید و دوباره اجرا کنید — در این حالت خط لوله به‌دلیل ایدمپوتنسی از Vertex عبور می‌کند و همان فایل شما را استفاده می‌کند.»
    - Write the cleaned text to `meetings/transcripts/{voice}.txt`.
 4. Confirm the transcript exists before continuing.
 
@@ -55,7 +55,7 @@ Every engine CLI must be called with `DATA_ROOT=<data-repo>` set in the environm
    ```
    - `departments`: the upload tag(s) extracted from the voice filename or provided by the user.
    - `started_at` / `finished_at`: ISO-8601 with `Z` suffix (e.g. `2026-05-06T09:14:00Z`).
-   - `attempt`: integer ≥ 1 (matches the attempt-NN suffix; 1 for the base run).
+   - `attempt`: the integer taken from Stage 0's `{run_dir}` — `1` for the base run `runs/{voice}/`, or `NN` when `{run_dir}` is `runs/{voice}/attempt-NN/`. (The example above shows the base-run value `1`.)
    - `processes`: start empty; populated after merge in Stage 6.
 3. **Validate the record:** `Bash: validate run-meta {run_dir}/meta.json`. If it exits non-zero, fix the meta object you just wrote (the stderr message names the offending field) and re-validate before continuing.
 
@@ -69,7 +69,7 @@ Dispatch the `classify` agent via the `Task` tool:
 Task: classify
   transcript_path: meetings/transcripts/{voice}.txt
   voice: {voice}
-  departments: [<tagged departments>]
+  tagged_departments: [<tagged departments>]
 ```
 
 Wait for the task to complete. It writes `{run_dir}/segments.json`.
@@ -116,6 +116,7 @@ The segments file categorises every identified process as one of: `new`, `update
   - Do NOT touch any department process file — nothing has been written yet.
   - For a single-segment override (e.g. user corrects one extract), re-dispatch only that one `extract` task.
   - Re-present the checkpoint message with the updated segments. End your turn and wait again.
+- **Unchanged→update override** (user says an `unchanged` item actually has new detail): reclassify ONLY that segment as `update` (edit `segments.json` accordingly, or re-dispatch `classify` with that instruction), re-present the checkpoint, and on confirmation include that segment in Stage 5 extraction. Do not re-run the whole pipeline.
 - **Confirmation** (user says "تأیید" / "بله" / "ok" / equivalent):
   - Proceed to Stage 5.
 
@@ -188,6 +189,8 @@ Bash: DATA_ROOT=<data-repo> merge update \
   --run {run_dir}
 ```
 Record `{existing_id, status: "update"}` for meta.json.
+
+**Layout:** `merge` also computes/updates node positions (serpentine layout) for new nodes; manually positioned nodes (`layout: manual`) are never moved. Never set node positions yourself — the layout is deterministic engine work, not LLM work.
 
 ---
 

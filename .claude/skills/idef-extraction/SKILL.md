@@ -79,7 +79,10 @@ Junctions model branching and merging of the flow. A junction node has:
 
 ## 3. Temporary Keys (INV-1)
 
-The `extract` agent **must never emit a final process ID** in `candidate.json` or `delta.json`. Final IDs (like those seen in `process.json` after the `merge` CLI runs) follow the pattern `<dept>-<seq>-<n|j><num>` and are **allocated only by the `allocate-id` CLI** after merge, never by an LLM.
+The `extract` agent **must never emit a final ID** in `candidate.json` or `delta.json`. Final IDs (seen in `process.json` after the `merge` CLI runs) are two-level and are **allocated only by the `allocate-id` CLI** after merge, never by an LLM:
+- process ID → `{dept}-{NNN}` (e.g. `cooking-001`)
+- box/activity ID → `{process-id}-n{NNN}` (e.g. `cooking-001-n010`)
+- junction ID → `{process-id}-j{N}` (e.g. `cooking-001-j1`)
 
 **Naming convention for temp keys:**
 
@@ -121,7 +124,7 @@ When the transcript describes a **brand-new process** (no existing `process.json
 
 ### Activity node (required fields)
 
-Every activity node in `nodes` **must** have all seven fields:
+Every activity node in `nodes` **must** have all seven fields (and **only** these — do NOT emit `position` or `layout` fields; those are added by the merge/layout engine, never by the extract agent):
 
 ```json
 {
@@ -212,7 +215,7 @@ When the transcript updates an **existing process** (a `process.json` already ex
 
 ### `add_nodes`
 
-New nodes to insert. Uses the same activity/junction shapes as candidate `nodes` (with temp keys `n1`, `j1`, …). All required fields identical to §4.
+New nodes to insert. Uses the same activity/junction shapes as candidate `nodes` (with temp keys `n1`, `j1`, …). All required fields identical to §4. When `merge` applies the delta, it converts every temp key in `add_nodes` into a real allocated ID by calling the `allocate-id` CLI (INV-1); the extract agent never does this.
 
 ### `add_edges`
 

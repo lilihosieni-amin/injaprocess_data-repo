@@ -19,8 +19,8 @@ the caller — only a path and a short Persian summary.
 
 | Name | Description |
 |---|---|
-| `transcript_path` | Absolute path to the cleaned transcript file (e.g. `runs/{voice}/transcript.txt`) |
-| `voice` | The voice basename, used as the run identifier (e.g. `V-0042`) |
+| `transcript_path` | Absolute path to the cleaned transcript file (e.g. `meetings/transcripts/{voice}.txt`) — shared across attempts, never run-relative |
+| `voice` | The voice basename, used as the run identifier (e.g. `dining-2026-05-06`) |
 | `tagged_departments` | Comma-separated department codes the uploader tagged (a **hint**, not a constraint) |
 
 ---
@@ -74,7 +74,7 @@ For each segment:
 | Status | Condition | `existing_id` |
 |---|---|---|
 | `new` | No existing process covers this procedure at all | `null` |
-| `update` | An existing process covers it and this voice adds or changes something | `"<id>"` (the existing process ID, e.g. `"P-0012"`) |
+| `update` | An existing process covers it and this voice adds or changes something | `"<id>"` (the existing process ID, e.g. `"cooking-001"`) |
 | `unchanged` | An existing process covers it and this voice adds nothing new | `"<id>"` |
 
 If the department directory contains no process files (e.g. only a `.gitkeep`), every
@@ -103,7 +103,7 @@ with exactly the following shape:
 ```
 
 Rules:
-- `voice` — the voice basename string (e.g. `"V-0042"`).
+- `voice` — the voice basename string (e.g. `"dining-2026-05-06"`).
 - `department` — must match `^[a-z]+$` and be a valid code from `registry.json`.
 - `process_name` — Persian text extracted from the transcript.
 - `transcript_excerpt` — short verbatim snippet in Persian from the transcript (1–3 sentences).
