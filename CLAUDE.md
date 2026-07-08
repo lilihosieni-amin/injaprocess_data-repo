@@ -59,9 +59,9 @@ Do not invoke `merge` directly before the checkpoint clears.
 
 | CLI | Purpose |
 |---|---|
-| `allocate-id` | Mint new process/meeting IDs (INV-1) |
+| `allocate-id` | Mint new process / box / junction IDs (INV-1) |
 | `merge` | Write validated JSON into `departments/**/processes/` |
-| `layout` | Generate directory scaffolding |
+| `layout` | Compute deterministic serpentine flowchart node positions |
 | `transcribe` | Produce text transcript from audio |
 
 All CLIs require `DATA_ROOT` set to the root of this repo.
