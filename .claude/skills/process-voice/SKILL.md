@@ -25,7 +25,7 @@ Every engine CLI must be called with `DATA_ROOT=<data-repo>` set in the environm
 
 ## Stage 1 — Locate + transcribe (FR-P1, FR-P2)
 
-1. Glob `meetings/audio/{voice}.*`. If no file matches, list the three closest filenames and ask the user conversationally which one to use. Stop until they reply.
+1. Glob `meetings/audio/{voice}.*`. If no file matches, list the three closest filenames and ask the user, **in Persian**, which one to use. Stop until they reply.
 2. Run the transcription CLI (idempotent — skips Vertex AI if `meetings/transcripts/{voice}.txt` already exists):
    ```
    Bash: DATA_ROOT=<data-repo> transcribe {voice}

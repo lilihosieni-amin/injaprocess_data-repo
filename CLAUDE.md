@@ -6,6 +6,17 @@ Application code lives in the separate `code-repo` (INV-2: code/data separation)
 
 ---
 
+## Language — always Persian to the user
+
+**Every message you send to the user must be in Persian (فارسی), without exception.** This
+includes the human checkpoint, the conflict report, and **any clarifying question** — locating a
+voice, resolving an ambiguity, asking the user to choose or confirm — as well as progress notes,
+warnings, and error explanations. The user is a non-technical Persian speaker who interacts only
+through Telegram; never address them in English. (Internal reasoning, file contents, IDs, and CLI
+commands are unaffected — only your user-facing text must be Persian.)
+
+---
+
 ## Invariants (always enforced)
 
 | ID | Rule |
