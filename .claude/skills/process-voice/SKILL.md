@@ -5,7 +5,7 @@ description: Orchestrate the full voice→IDEF pipeline — transcribe, classify
 
 # process-voice playbook
 
-**Invocation:** `/process-voice <voice>` where `<voice>` is the audio basename (e.g. `dining-2026-05-06`).
+**Invocation:** `/process-voice <voice>` where `<voice>` is the audio basename (e.g. `cooking-1405-04-19`; the date part is Shamsi).
 
 All file paths are relative to `<data-repo>` (the value of `DATA_ROOT`).
 Every engine CLI must be called with `DATA_ROOT=<data-repo>` set in the environment.

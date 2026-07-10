@@ -20,7 +20,7 @@ the caller — only a path and a short Persian summary.
 | Name | Description |
 |---|---|
 | `transcript_path` | Absolute path to the cleaned transcript file (e.g. `meetings/transcripts/{voice}.txt`) — shared across attempts, never run-relative |
-| `voice` | The voice basename, used as the run identifier (e.g. `dining-2026-05-06`) |
+| `voice` | The voice basename, used as the run identifier (e.g. `cooking-1405-04-19`; the date is Shamsi) |
 | `tagged_departments` | Comma-separated department codes the uploader tagged (a **hint**, not a constraint) |
 
 ---
@@ -105,7 +105,7 @@ with exactly the following shape:
 ```
 
 Rules:
-- `voice` — the voice basename string (e.g. `"dining-2026-05-06"`).
+- `voice` — the voice basename string (e.g. `"cooking-1405-04-19"`; the date is Shamsi).
 - `department` — must match `^[a-z]+$` and be a valid code from `registry.json`.
 - `process_name` — Persian text extracted from the transcript.
 - `transcript_excerpt` — short verbatim snippet in Persian from the transcript (1–3 sentences).
