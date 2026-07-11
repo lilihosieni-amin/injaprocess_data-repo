@@ -10,6 +10,26 @@ description: Orchestrate the full voice→IDEF pipeline — transcribe, classify
 All file paths are relative to `<data-repo>` (the value of `DATA_ROOT`).
 Every engine CLI must be called with `DATA_ROOT=<data-repo>` set in the environment.
 
+## Turn discipline (critical — read first)
+
+This playbook runs over a Telegram bot that executes **one model turn per user message**:
+the moment you end your turn, the bot stops and waits for the user to send another message.
+A multi-stage run must therefore **not yield mid-pipeline**, or it will look "stuck" to the
+user even though nothing is wrong.
+
+**The ONLY two legitimate end-of-turn points in a run are:**
+1. the **Stage 4 human checkpoint** — you must pause there for the user's confirmation, and
+2. the **very end of the run**, after the Stage 9 report.
+
+Everywhere else you MUST continue in the **same turn**. A returning `Task`/subagent (classify,
+the parallel extracts, summarize) or a returning engine CLI (transcribe, merge) is **never** a
+stopping point — the instant it returns, proceed directly to the next stage without ending your
+turn. Dispatching a subagent and then stopping is the exact failure this rule prevents.
+
+**Heartbeat (UX complement — NOT the turn rule):** immediately before each long-running stage,
+first send a one-line Persian status message so the wait never looks dead, then proceed in the
+same turn (see Stages 3, 5, 7). This is a model-emitted chat message; it needs no bot changes.
+
 ---
 
 ## Stage 0 — Resolve state / resume
@@ -63,7 +83,8 @@ Every engine CLI must be called with `DATA_ROOT=<data-repo>` set in the environm
 
 ## Stage 3 — classify
 
-Dispatch the `classify` agent via the `Task` tool:
+Send the heartbeat «⏳ در حال دسته‌بندی فرایندها…» to the user, then — in the **same turn** —
+dispatch the `classify` agent via the `Task` tool:
 
 ```
 Task: classify
@@ -76,6 +97,8 @@ Wait for the task to complete. It writes `{run_dir}/segments.json`.
 The segments file categorises every identified process as one of: `new`, `update`, or `unchanged`.
 
 **Validate it:** `Bash: validate segments {run_dir}/segments.json`. If it exits non-zero, re-dispatch the `classify` agent with the stderr error appended to its prompt so it corrects the output, then re-validate. After 2 failed attempts, stop and report the error to the user instead of looping.
+
+**Do NOT end your turn here.** The classify Task returning is not a stopping point — continue immediately, in the **same turn**, into Stage 4 (read `segments.json` and send the checkpoint). Ending your turn right after classify is the "stuck mid-pipeline" bug this playbook forbids.
 
 ---
 
@@ -132,8 +155,10 @@ Stage 9 (conflict report) runs once after all departments complete.
 
 ### Stage 5 — extract (parallel)
 
-For each segment classified as `new` or `update`, dispatch an `extract` task via the `Task` tool.
-Run ALL dispatches in parallel (do not wait for each before starting the next).
+Send the heartbeat «⏳ در حال استخراج {N} فرایند…» to the user (`{N}` = count of `new`+`update`
+segments), then — in the **same turn** — for each segment classified as `new` or `update`,
+dispatch an `extract` task via the `Task` tool. Run ALL dispatches in parallel (do not wait for
+each before starting the next).
 
 - **new segment:**
   ```
@@ -208,7 +233,8 @@ For each entry in `subprocesses` (candidate) or `add_subprocesses` (delta), `mer
 
 ### Stage 7 — summarize (per department)
 
-For each department touched in Stage 6, dispatch a `summarize` task:
+Send the heartbeat «⏳ در حال به‌روزرسانی مرور کلی دپارتمان {dept}…» to the user, then — in the
+**same turn** — for each department touched in Stage 6, dispatch a `summarize` task:
 ```
 Task: summarize
   department: {dept}
@@ -310,5 +336,6 @@ After all departments have been committed:
 - `merge` is the ONLY writer of `departments/**/processes/*.json` (ARD hook-enforced).
 - `unchanged` processes are never re-extracted or re-merged; only recorded in meta.json.
 - The checkpoint turn ends the session turn — extract never runs in the same turn as classify.
+- Turn discipline: the ONLY legitimate end-of-turn points are the Stage 4 checkpoint and the end of the run (see "Turn discipline" near the top) — never yield right after a subagent/CLI returns.
 - `{run_dir}/meta.json` with `finished_at: null` always signals a resumable in-progress run.
 - All timestamps are ISO-8601 with `Z` suffix.
