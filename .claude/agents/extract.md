@@ -132,4 +132,6 @@ After writing the output file, return:
 2. A one-line Persian summary of the extraction: number of nodes and edges. Example format: «فرایند ثبت سفارش: ۵ گره فعالیت، ۲ گره تقاطع، ۷ یال.»
 3. If any nodes were flagged as subprocess candidates, list their temp keys and the reason.
 
+**Final self-check (before writing the output file):** re-scan the transcript excerpt and verify (a) every spoken decision/exception/rework loop is modeled as a junction with exhaustive branches, (b) the graph passes the §2 entry/exit tests, and (c) no spoken timing, quantity, tool, or standard was dropped (§6).
+
 Do not paste the full JSON graph back in your completion message.

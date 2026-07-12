@@ -111,7 +111,8 @@ The segments file categorises every identified process as one of: `new`, `update
    - **ج) بدون تغییر** — processes classified as `unchanged`, formatted as `{process_name} → {existing_id}`.
 3. Collect any flagged sub-process candidates and any org-overview note from the `classify` agent's Stage-3 return message (delivered to the orchestrator at the end of Stage 3). These fields are NOT in `segments.json` (which is `additionalProperties: false` and carries no sub-process field) — they are only in the classify agent's completion message. If Stage 4 is re-entered on a later turn (via Stage 0 resume) and the classify return message is no longer in context, re-dispatch the `classify` agent to regenerate its summary before composing the checkpoint (classify is idempotent and cheap; it will re-produce the same segments and notes).
 4. Note any departments mentioned in the transcript that differ from the upload tag (this information comes from `segments.json`).
-5. Compose the checkpoint message in Persian and send it to the user in Telegram.
+5. For every item in الف and ب, append an indented evidence line quoting (or tightly abridging, ≤ 25 words) that segment's `transcript_excerpt` from `segments.json`: `     مستند به: «…»` — so the user can tie each proposed process to the exact words spoken before approving.
+6. Compose the checkpoint message in Persian and send it to the user in Telegram.
 
 **Example checkpoint message (reproduce this format exactly):**
 
@@ -119,9 +120,12 @@ The segments file categorises every identified process as one of: `new`, `update
 فرایندهای شناسایی‌شده از صدای dining-2026-05-06:
 الف) جدید:
   ۱. فرایند انبارداری (warehouse)
+     مستند به: «از فردا هر جنسی که می‌آید اول باید توی سیستم انبار ثبت بشود…»
   ۲. فرایند سفارش‌گیری سالن (dining)
+     مستند به: «مشتری که می‌آید سر کیوسک سفارشش را می‌زند و استند می‌گیرد…»
 ب) به‌روزرسانی:
   — «فرایند پخت» → cooking-002
+     مستند به: «گفتیم زمان سرخ‌کردن را از هفت دقیقه ببریم روی پنج دقیقه…»
 ج) بدون تغییر:
   — کنترل موجودی → warehouse-003
 ⚠ این صدا با برچسب «dining» بود ولی به warehouse و cooking هم مربوط شد.
@@ -165,6 +169,8 @@ each before starting the next).
   Task: extract
     voice: {voice}
     transcript_path: meetings/transcripts/{voice}.txt
+    process_name: {process_name}              # from this segment in segments.json
+    transcript_excerpt: {transcript_excerpt}  # verbatim excerpt from segments.json
     mode: new
     seq: {seq}           # sequential integer within this run, zero-padded e.g. 01
     department: {dept}
@@ -177,6 +183,8 @@ each before starting the next).
   Task: extract
     voice: {voice}
     transcript_path: meetings/transcripts/{voice}.txt
+    process_name: {process_name}              # from this segment in segments.json
+    transcript_excerpt: {transcript_excerpt}  # verbatim excerpt from segments.json
     mode: update
     existing_id: {existing_id}
     existing_process_path: departments/{dept}/processes/{existing_id}.json

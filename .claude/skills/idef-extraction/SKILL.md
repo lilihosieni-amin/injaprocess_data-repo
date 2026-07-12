@@ -56,12 +56,25 @@ An activity is a named step in the process — a unit of work performed by a rol
 - Its own `icom` object (the ICOM at this step's level)
 - A `subprocess` pointer (`null` in the candidate; merge sets it after allocating the child ID — see §7)
 
+### Entry and exit (start/end discipline)
+
+Every graph must have exactly **one entry activity** and every path must reach a **meaningful end**.
+
+- **Entry test:** the entry node is the activity that runs FIRST in a normal execution of this process (its trigger). A contingency (overflow, error handling), an upstream step performed by another department, or a one-time setup step can NEVER be the entry. If more than one activity ends up with no incoming edge, you have missed a preceding step or included out-of-scope material — fix the graph; do not leave multiple implicit starts.
+- **Exit test:** every path from the entry must terminate at a node with no outgoing edge that represents a real outcome of the process (e.g. «مشتری نشانده‌شده سر میز», not merely the act of making a phone call). No activity may dangle mid-flow without a successor unless it is a genuine end.
+
 ### Directed Edges
 
 Edges express temporal precedence: activity A must finish (or begin) before activity B. Each edge has:
 - `from` — key or ID of the source node
 - `to` — key or ID of the destination node
-- `label` (optional) — a short Persian description of what flows along this edge
+- `label` (optional) — governed by the edge-label contract below
+
+**Edge-label contract (mandatory):** a label may contain ONLY one of:
+1. **A branch condition** — the Persian condition under which this path is taken (e.g. «در صورت وجود کمبود», «پیش از ساعت ۶»). Required on EVERY edge leaving an XOR/OR split.
+2. **A concrete artifact** — the object/document that passes along this edge (e.g. «فرم اصلاحیه», «استند شماره‌دار»), only when naming it adds information.
+
+A label must NEVER restate or paraphrase the source or target node's own label or action — «پس از انتخاب تاریخ» on the edge leaving «باز کردن فرم و انتخاب تاریخ» is wrong. If B simply follows A with no condition and no meaningful artifact, omit `label` entirely: **an unlabeled edge is the correct default for plain sequence.**
 
 ### Junctions
 
@@ -74,6 +87,14 @@ Junctions model branching and merging of the flow. A junction node has:
 | `AND` | All outgoing paths are activated simultaneously (parallel execution). | All incoming paths must complete before proceeding. |
 | `OR` | One or more outgoing paths are activated (inclusive or). | Waits for whichever paths were activated. |
 | `XOR` | Exactly one outgoing path is activated (exclusive choice). | The first (and only) arriving path triggers continuation. |
+
+**Control-flow completeness (mandatory):** whenever the transcript expresses a decision, condition, exception, error, rejection, or rework — cues like «اگر…», «در صورتی که…», «اگر نشد/نبود», «تأیید یا رد», «خطا», «شکایت», «اصلاح/تغییر سفارش» — you MUST model it as an explicit junction with one labeled outgoing edge per spoken outcome. Never as prose inside a `description`, and never as a plain activity with a single conditional edge.
+
+- Exclusive choice → `XOR` split; put the decision question/criterion in the preceding activity's `description`.
+- Branches must cover every spoken outcome. An inspection/verification/approval step MUST have both its pass branch and its spoken fail branch; route the fail branch to its correction activity, and if the voice says the work is re-checked, add the loop-back edge to the re-check step.
+- Junction topology must be well-formed: a `split` has exactly 1 incoming and 2+ outgoing edges; a `join` has 2+ incoming and exactly 1 outgoing. An AND split whose paths continue must rejoin at an AND join.
+
+Dropping a spoken branch is an omission defect under §6 — exactly as forbidden as fabrication.
 
 ---
 
@@ -196,7 +217,7 @@ Only `name` is required. Omit `definition`, `target`, `unit` (or leave them as e
 }
 ```
 
-`from` and `to` are required. `label` is optional.
+`from` and `to` are required. `label` is optional and governed by the §2 edge-label contract — omit it for plain sequence.
 
 #### Sub-processes (subprocesses)
 
@@ -365,11 +386,13 @@ Fill every field **only from actual content present in the transcript or documen
 - If the transcript does not mention inputs for an activity, emit `"inputs": []`.
 - If no KPIs are mentioned, emit `"kpis": []`.
 - If the actor's role is unclear, emit `"actor": ""`.
-- Short, incomplete outputs are always acceptable. Do not pad to look complete.
+- Short outputs are acceptable **only when the source itself is silent**. Do not pad to look complete.
 
 **ناقص‌بودن اشکالی ندارد؛ جعل اطلاعات ممنوع است.**
 
 (Incompleteness is fine; fabrication of information is forbidden.)
+
+**The rule cuts both ways.** Omitting content that WAS spoken is equally a defect: every step, decision, exception branch, timing («تا قبل از ۵:۵۴»), quantity («۵ تا ۶ سینی»), named tool/form/system (گوگل فرمز، بی‌سیم، فرم اصلاحیه), and service standard («کمتر از دو دقیقه») present in the transcript excerpt must appear in the graph or its fields. Before finishing, re-scan the excerpt once and confirm nothing spoken was dropped. Leave a field empty only when the source genuinely does not supply it.
 
 This rule applies to every string field: `label`, `description`, `summary`, `actor`, all ICOM array items, KPI fields. If it was not explicitly said or clearly implied in the transcript, do not write it.
 
