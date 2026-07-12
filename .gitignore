@@ -2,7 +2,8 @@
 .staging/
 
 # Meeting audio — large binaries kept off the remote; transcripts are the source of record
-meetings/audio/
+meetings/audio/*
+!meetings/audio/.gitkeep
 
 # Secrets never live in data-repo (ARD §14)
 .env
