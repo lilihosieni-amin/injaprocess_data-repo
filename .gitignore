@@ -1,6 +1,9 @@
 # Upload staging buffer — finalized files move out of here (ARD §2.2, FR-U7)
 .staging/
 
+# Meeting audio — large binaries kept off the remote; transcripts are the source of record
+meetings/audio/
+
 # Secrets never live in data-repo (ARD §14)
 .env
 *.env
