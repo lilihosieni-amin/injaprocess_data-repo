@@ -22,9 +22,9 @@ user even though nothing is wrong.
 2. the **very end of the run**, after the Stage 9 report.
 
 Everywhere else you MUST continue in the **same turn**. A returning `Task`/subagent (classify,
-the parallel extracts, summarize) or a returning engine CLI (transcribe, merge) is **never** a
-stopping point — the instant it returns, proceed directly to the next stage without ending your
-turn. Dispatching a subagent and then stopping is one failure this rule prevents. Just as bad —
+each serial extract, summarize) or a returning engine CLI (transcribe, merge) is **never** a
+stopping point — the instant it returns, proceed directly to the next stage (or the next extract)
+without ending your turn. Dispatching a subagent and then stopping is one failure this rule prevents. Just as bad —
 and **the most common failure in practice** — is *announcing* a stage in prose and then stopping
 **before** you dispatch (e.g. sending «…در حال استخراج…» and ending the turn). **A message that
 contains no tool call ends the turn.** So between stages, either your message carries the next
@@ -166,14 +166,21 @@ Stage 9 (conflict report) runs once after all departments complete.
 
 ---
 
-### Stage 5 — extract (parallel)
+### Stage 5 — extract (strictly serial — one agent at a time)
 
-For each segment classified as `new` or `update`, dispatch an `extract` task via the `Task` tool —
-**all in parallel, in one single message, as the first thing you do this turn** (do not wait for
-each before starting the next). Do **not** send a «⏳ در حال استخراج…» message first: a prose-only
-status message ends the turn and stalls the run — this is the #1 place runs get stuck. If you want
-a status line, it must be in the **same message** as the `extract` `Task` calls (a short text
-block, then all the Task calls together).
+Extract the segments classified as `new` or `update` **strictly one at a time**. Dispatch a
+**single** `extract` `Task`, **wait for it to return**, then dispatch the next — repeat until every
+`new`/`update` segment has been extracted. **Never dispatch two `extract` tasks in the same
+message** (no parallel or batched `Task` fan-out): the Telegram bot runs on the Claude SDK bridge,
+which silently drops all but one of a parallel `Task` batch mid-run, so serial dispatch is
+**mandatory** for reliability. This deliberately trades the parallel perf/context benefit for
+correctness — the right call for this single-user system.
+
+Do the whole serial sweep **within one turn**: dispatching an agent and awaiting its result is a
+tool call, not a turn end, so proceed from one extract to the next (and then on to Stage 6) without
+ending your turn. Do **not** send a «⏳ در حال استخراج…» prose-only message (a message with no tool
+call ends the turn and stalls the run); if you want a status line, it must ride in the **same
+message** as an `extract` `Task` call.
 
 - **new segment:**
   ```
@@ -207,7 +214,7 @@ block, then all the Task calls together).
 **unchanged segments are NOT extracted.** Their `process.json` files remain untouched.
 They will be recorded in `meta.json.processes` as `{id, status: "unchanged"}` in Stage 8.
 
-Wait for all parallel extract tasks to finish before proceeding to Stage 6.
+After the **last** serial extract task returns, proceed to Stage 6 in the **same turn**.
 
 ---
 
@@ -346,7 +353,7 @@ After all departments have been committed:
 | 2 | Init run record | Write meta.json | — |
 | 3 | classify | `Task: classify` | — |
 | 4 | Human checkpoint | Telegram message | — |
-| 5 | extract (parallel) | `Task: extract` × N | yes |
+| 5 | extract (**serial**, 1-at-a-time) | `Task: extract` × N (sequential) | yes |
 | 6 | merge | `Bash: merge new/update` | yes |
 | 7 | summarize | `Task: summarize` | yes |
 | 8 | Finish + commit | Write meta.json, `git -C` | yes |
@@ -356,6 +363,7 @@ After all departments have been committed:
 - `merge` is the ONLY writer of `departments/**/processes/*.json` (ARD hook-enforced).
 - `unchanged` processes are never re-extracted or re-merged; only recorded in meta.json.
 - The checkpoint turn ends the session turn — extract never runs in the same turn as classify.
+- **Extract is strictly serial** — dispatch one `extract` `Task`, await it, then dispatch the next; **never two `extract` tasks in one message**. Parallel `Task` fan-out is silently dropped by the Claude SDK bridge that runs the Telegram bot, so serial dispatch is mandatory (parallel perf/context deliberately traded for reliability on this single-user system).
 - Turn discipline: the ONLY legitimate end-of-turn points are the Stage 4 checkpoint and the end of the run (see "Turn discipline" near the top) — never yield right after a subagent/CLI returns.
 - **Never send a prose-only message between stages:** a message with no tool call in it ends the turn (this is the #1 stall). Status text rides in the same message as the next `Task`/CLI call, or is skipped entirely.
 - `{run_dir}/meta.json` with `finished_at: null` always signals a resumable in-progress run.
