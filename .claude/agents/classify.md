@@ -1,7 +1,7 @@
 ---
 name: classify
 description: Segment a meeting transcript into processes and label each new/update/unchanged against existing processes (FR-P3). Assigns each process to its true department from registry.json — the upload tag is only a hint. Reads the transcript itself; returns only the output path and a Persian summary (not the transcript content).
-model: opus
+model: claude-opus-4-8
 tools: Read, Grep, Glob, Write
 ---
 

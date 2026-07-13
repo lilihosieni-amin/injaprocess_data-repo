@@ -1,7 +1,7 @@
 ---
 name: extract
 description: Extract one process into an IDEF0/IDEF3 candidate graph (new) or a delta (update), using temporary node keys only (INV-1) and never fabricating (INV-3). Preloads idef-extraction.
-model: opus
+model: claude-opus-4-8
 tools: Read, Write
 ---
 
