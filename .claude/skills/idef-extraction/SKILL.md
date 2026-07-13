@@ -402,15 +402,15 @@ This rule applies to every string field: `label`, `description`, `summary`, `act
 
 ### Threshold
 
-Emit a child process in `subprocesses` (candidate) or `add_subprocesses` (delta) **only** when an activity box is genuinely described in the transcript with **4 or more distinct sequential sub-steps**. If the box is described with fewer than 4 distinct sequential sub-steps, use **flag-only** behaviour instead (see below).
+Emit a child process in `subprocesses` (candidate) or `add_subprocesses` (delta) **only** when an activity box is genuinely described in the transcript with **3 or more distinct sequential sub-steps**. If the box is described with fewer than 3 distinct sequential sub-steps, use **flag-only** behaviour instead (see below).
 
-### At or above threshold (4+ sub-steps) — emit a child
+### At or above threshold (3+ sub-steps) — emit a child
 
 1. In the `subprocesses` / `add_subprocesses` array, add an entry with:
    - `parent_key` / `parent`: the temp key (or real ID) of the qualifying activity.
    - `process`: a full candidate body capturing those sub-steps as activity nodes with their own temp keys (`n1`, `n2`, …).
 2. Keep `subprocess: null` on the parent activity node itself — **merge** allocates the child ID and sets this field (INV-1).
-3. **No recursion:** if one of the child process's own activity nodes would itself qualify (4+ sub-steps of its sub-steps), do **not** nest further — apply flag-only on that node instead.
+3. **No recursion:** if one of the child process's own activity nodes would itself qualify (3+ sub-steps of its sub-steps), do **not** nest further — apply flag-only on that node instead.
 4. Report the parent node key and child process name in your completion message so the orchestrator knows to capture the printed child ID from merge stdout.
 
 ### Below threshold — flag-only
