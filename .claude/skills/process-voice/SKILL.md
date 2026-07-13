@@ -24,11 +24,19 @@ user even though nothing is wrong.
 Everywhere else you MUST continue in the **same turn**. A returning `Task`/subagent (classify,
 the parallel extracts, summarize) or a returning engine CLI (transcribe, merge) is **never** a
 stopping point — the instant it returns, proceed directly to the next stage without ending your
-turn. Dispatching a subagent and then stopping is the exact failure this rule prevents.
+turn. Dispatching a subagent and then stopping is one failure this rule prevents. Just as bad —
+and **the most common failure in practice** — is *announcing* a stage in prose and then stopping
+**before** you dispatch (e.g. sending «…در حال استخراج…» and ending the turn). **A message that
+contains no tool call ends the turn.** So between stages, either your message carries the next
+`Task`/CLI call, or you have already made the mistake.
 
-**Heartbeat (UX complement — NOT the turn rule):** immediately before each long-running stage,
-first send a one-line Persian status message so the wait never looks dead, then proceed in the
-same turn (see Stages 3, 5, 7). This is a model-emitted chat message; it needs no bot changes.
+**Status lines — never send one on its own.** Because a prose-only message *is* the end of your
+turn, do **not** send a "⏳ … در حال …" status as its own message before a stage — that standalone
+message is the single most common reason a run stalls mid-pipeline. If you want to reassure the
+user, the status line must ride **inside the same message that carries that stage's `Task`/CLI
+call** (a short text block, then the tool calls, in one message). When unsure, send **no** status
+and just dispatch — the bot already shows a live progress indicator, so silence is safe while a
+lone status message is not.
 
 ---
 
@@ -83,8 +91,9 @@ same turn (see Stages 3, 5, 7). This is a model-emitted chat message; it needs n
 
 ## Stage 3 — classify
 
-Send the heartbeat «⏳ در حال دسته‌بندی فرایندها…» to the user, then — in the **same turn** —
-dispatch the `classify` agent via the `Task` tool:
+Dispatch the `classify` agent via the `Task` tool as the **first thing you do this turn**. Do
+**not** send a status message before it (a prose-only message ends the turn). If you want a status
+line, put it in the **same message** as the `Task` call:
 
 ```
 Task: classify
@@ -159,10 +168,12 @@ Stage 9 (conflict report) runs once after all departments complete.
 
 ### Stage 5 — extract (parallel)
 
-Send the heartbeat «⏳ در حال استخراج {N} فرایند…» to the user (`{N}` = count of `new`+`update`
-segments), then — in the **same turn** — for each segment classified as `new` or `update`,
-dispatch an `extract` task via the `Task` tool. Run ALL dispatches in parallel (do not wait for
-each before starting the next).
+For each segment classified as `new` or `update`, dispatch an `extract` task via the `Task` tool —
+**all in parallel, in one single message, as the first thing you do this turn** (do not wait for
+each before starting the next). Do **not** send a «⏳ در حال استخراج…» message first: a prose-only
+status message ends the turn and stalls the run — this is the #1 place runs get stuck. If you want
+a status line, it must be in the **same message** as the `extract` `Task` calls (a short text
+block, then all the Task calls together).
 
 - **new segment:**
   ```
@@ -241,8 +252,9 @@ For each entry in `subprocesses` (candidate) or `add_subprocesses` (delta), `mer
 
 ### Stage 7 — summarize (per department)
 
-Send the heartbeat «⏳ در حال به‌روزرسانی مرور کلی دپارتمان {dept}…» to the user, then — in the
-**same turn** — for each department touched in Stage 6, dispatch a `summarize` task:
+For each department touched in Stage 6, dispatch a `summarize` task — as the **first action of the
+turn**, with no standalone status message before it (that would end the turn). Any status line
+rides in the **same message** as the `Task` call:
 ```
 Task: summarize
   department: {dept}
@@ -345,5 +357,6 @@ After all departments have been committed:
 - `unchanged` processes are never re-extracted or re-merged; only recorded in meta.json.
 - The checkpoint turn ends the session turn — extract never runs in the same turn as classify.
 - Turn discipline: the ONLY legitimate end-of-turn points are the Stage 4 checkpoint and the end of the run (see "Turn discipline" near the top) — never yield right after a subagent/CLI returns.
+- **Never send a prose-only message between stages:** a message with no tool call in it ends the turn (this is the #1 stall). Status text rides in the same message as the next `Task`/CLI call, or is skipped entirely.
 - `{run_dir}/meta.json` with `finished_at: null` always signals a resumable in-progress run.
 - All timestamps are ISO-8601 with `Z` suffix.
