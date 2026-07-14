@@ -166,6 +166,30 @@ Stage 9 (conflict report) runs once after all departments complete.
 
 ---
 
+### Stage 5a — prepare attachments (per department)
+
+Before extracting, convert each touched department's attachment documents to cached text so the
+`extract` and `summarize` agents can read them. This runs **in the same turn** as the extract
+sweep (it carries a `Bash` call, so it does not end the turn — see Turn discipline).
+
+For each department touched by the confirmed `new`/`update` segments:
+
+```
+Bash: DATA_ROOT=<data-repo> extract-attachment {dept}
+```
+
+- Capture stdout: each line is a cached `.txt` path relative to `<data-repo>`. Collect them into
+  a per-department list `attachment_texts` (an empty list if the command printed nothing).
+- If the command exits non-zero, it still printed the paths it *could* convert on stdout — use
+  those. Note any `skipped …` lines from stderr and, at the end of the run, mention them to the
+  user in Persian (e.g. «پیوستِ {نام فایل} خوانده نشد و نادیده گرفته شد.»). A failed attachment
+  must **never** block extraction — attachments are a supplement.
+
+`attachment_texts` is passed into every `extract` task (Stage 5) and the `summarize` task
+(Stage 7) for that department.
+
+---
+
 ### Stage 5 — extract (strictly serial — one agent at a time)
 
 Extract the segments classified as `new` or `update` **strictly one at a time**. Dispatch a
@@ -193,6 +217,7 @@ message** as an `extract` `Task` call.
     seq: {seq}           # sequential integer within this run, zero-padded e.g. 01
     department: {dept}
     run_dir: {run_dir}
+    attachment_texts: {attachment_texts}   # cached .txt paths for {dept} from Stage 5a (may be empty)
   ```
   The agent writes `{run_dir}/candidates/{seq}.json`.
 
@@ -208,6 +233,7 @@ message** as an `extract` `Task` call.
     existing_process_path: departments/{dept}/processes/{existing_id}.json
     department: {dept}
     run_dir: {run_dir}
+    attachment_texts: {attachment_texts}   # cached .txt paths for {dept} from Stage 5a (may be empty)
   ```
   The agent writes `{run_dir}/deltas/{existing_id}.json`.
 
@@ -266,6 +292,7 @@ rides in the **same message** as the `Task` call:
 Task: summarize
   department: {dept}
   data_root: <data-repo>
+  attachment_texts: {attachment_texts}   # cached .txt paths for {dept} from Stage 5a (may be empty)
 ```
 Wait for completion. It writes/updates `departments/{dept}/overview.json`.
 
@@ -353,6 +380,7 @@ After all departments have been committed:
 | 2 | Init run record | Write meta.json | — |
 | 3 | classify | `Task: classify` | — |
 | 4 | Human checkpoint | Telegram message | — |
+| 5a | prepare attachments | `Bash: extract-attachment` | yes |
 | 5 | extract (**serial**, 1-at-a-time) | `Task: extract` × N (sequential) | yes |
 | 6 | merge | `Bash: merge new/update` | yes |
 | 7 | summarize | `Task: summarize` | yes |

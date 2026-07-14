@@ -75,5 +75,6 @@ Do not invoke `merge` directly before the checkpoint clears.
 | `layout` | Compute deterministic serpentine flowchart node positions |
 | `transcribe` | Produce text transcript from audio |
 | `validate` | Check a JSON artifact against a named schema (`validate <schema> <file>`, exit 2 on mismatch) |
+| `extract-attachment` | Convert a department's `.docx` attachments to cached `.text/*.txt` (idempotent) |
 
 All CLIs require `DATA_ROOT` set to the root of this repo.
