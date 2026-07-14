@@ -23,10 +23,29 @@ The idef-extraction skill defines every modelling concept, every JSON field, eve
 | `voice` | Identifier of the recording/document session (used in output paths) |
 | `seq` | Zero-padded ordinal string provided by the dispatch (e.g. `01`, `02`) — NEW process only |
 | `mode` | Either `new` or `update` |
+| `attachment_texts` | List of cached attachment `.txt` paths for this department (may be empty). Reference documents such as job descriptions. |
 | `existing_process_path` | Path to the existing `process.json` — UPDATE mode only |
 | `existing_id` | The process ID of the existing process — UPDATE mode only |
 
 Read `transcript_path` to get broader context, but limit your modelling to content that belongs to THIS process's segment (`transcript_excerpt`). Do not model steps from other processes visible in the surrounding transcript.
+
+---
+
+## Attachment sources (fill-empty is merge's job — not yours)
+
+`attachment_texts` lists this department's reference documents (e.g. job descriptions;
+filenames are descriptive — `شرح_شغل_مهماندار` = host, `شرح_شغل_سرپرست_سالن` = floor supervisor).
+
+**Before producing your output, Read the attachment(s) relevant to THIS process's actor/role.**
+Reading is required, not optional. Treat them as an additional source alongside the transcript,
+under the same rules: no fabrication (INV-3), roles not names (ARD §4.4), Persian values.
+
+- Model only content that belongs to THIS process's segment. Do **not** introduce activities from
+  an attachment that this process's transcript segment does not cover.
+- You never decide field overwrites. Put what the sources inform into the candidate/delta as usual;
+  the `merge` CLI applies it (empty field → filled; already-filled field with a different value →
+  `pending[]` conflict for the human). Do not try to pre-empt or skip that.
+- If `attachment_texts` is empty, proceed exactly as before.
 
 ---
 

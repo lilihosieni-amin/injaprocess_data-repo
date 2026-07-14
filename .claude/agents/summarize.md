@@ -21,6 +21,7 @@ You will receive the following when invoked:
 | `department` | Department code (lower-case letters, e.g. `cooking`) |
 | `process_ids` | List of process IDs produced during this run for the department |
 | `transcript_path` | Absolute path to the session transcript file |
+| `attachment_texts` | List of cached attachment `.txt` paths for this department (may be empty). |
 | `data_root` | Absolute path to the `data-repo` root |
 
 ---
@@ -43,6 +44,15 @@ If the file exists, parse it and store:
 - `existing_personnel` — the `personnel` array (may be empty)
 
 If the file does not exist, treat both lists as empty.
+
+---
+
+## Step 2a — Read department attachments (if any)
+
+If `attachment_texts` is non-empty, Read those files. They are reference documents (e.g. job
+descriptions) for this department. Use them as additional evidence for sub-units, personnel roles,
+and duties — under the same rules: no fabrication (INV-3), roles never personal names (ARD §4.4),
+Persian values. If the list is empty, skip this step.
 
 ---
 
