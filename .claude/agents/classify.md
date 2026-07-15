@@ -52,6 +52,58 @@ repeatable work procedure or sequence of steps that staff perform.
 For each process, capture a short verbatim `transcript_excerpt` (1–3 sentences) that pins
 the passage in the text.
 
+### Step 2a — Where one process ends and the next begins (boundary method)
+
+"What counts as a process" tells you what to look for; this tells you where to draw the
+lines. **Over-fragmentation** — chopping activities that belong to one process into
+several separate processes — is the failure this method exists to prevent. Apply three
+parameters, in order.
+
+**Parameter 1 — chronological order (the ordering axis).** Model the department as one
+work shift, from the moment it begins to the moment it ends, and walk that timeline
+forward: what happens first? after that? … what is last? Emit segments in this
+shift-chronological order; place any off-timeline process (Parameter 3) after the
+timeline. Chronological emission makes the Stage-4 checkpoint read as a walk through the
+shift and makes the downstream IDs track shift order.
+
+  The shift-walk is a reasoning aid for **ordering what you actually found**, never a
+  template to fill in. A single recording is often partial — it may cover only part of
+  the shift, jump around, or describe work out of sequence. You segment and order **only
+  work the transcript actually describes**:
+  - Never infer or reconstruct a process the transcript does not describe, however
+    obviously it must happen in reality.
+  - Gaps in the timeline are legitimate output. Do NOT bridge them with invented steps —
+    a partly-covered shift yields a partial, gapped set of processes, and that is correct.
+  - Reordering what the speaker said out of sequence is allowed; adding what they did not
+    say is not.
+  - Order comes from what the speaker says about *when* work happens — not from the
+    position of the material in the recording, and not from how the department normally
+    operates.
+  This is INV-3 (no fabrication) applied to segmentation.
+
+**Parameter 2 — change in the nature of the work (the cut rule).** A process ends where
+the *nature of the work* changes — a materially different skill, objective, set of actors,
+or mode of working — even when two activities are adjacent in time. A single process
+normally contains MANY tasks: "cleaning and setting up the floor" is one process that
+includes sweeping, wiping tables, arranging chairs and preparing the station — those are
+steps inside it, not processes beside it. When in doubt, keep activities of the same kind
+together in one process. Do NOT cut merely because time passes, the speaker moved to a new
+sentence, or the transcript changed subject. Do NOT merge two different kinds of work just
+because they occur close together. (Worked contrast: "cleaning and setting up the floor"
+vs. "taking a customer's order" are different kinds of work → two processes; "end-of-night
+cleaning" vs. "order registration" differ in both time and kind → clearly separate.)
+
+**Parameter 3 — off-timeline processes (the orphan rule).** A repeatable procedure that
+does not sit on the shift timeline and cannot be meaningfully attached to any neighbour
+becomes its own standalone segment. Worked example: "holding the weekly meetings" happens
+at weekends, has no position in the shift sequence, and is unrelated to cleaning or
+order-taking → emit it separately rather than forcing it into an adjacent process.
+
+  Distinguish this from org-overview material (Step 2, "What does NOT count"): an
+  off-timeline **procedure** (a repeatable action staff perform) is a segment; a passage
+  that only describes structure, roles, reporting lines, or personnel is org-overview and
+  goes to the `summarize` agent, not a segment.
+
 ### Step 3 — Assign the true department
 
 For each process, decide which registry department the process **actually belongs to**,
@@ -82,6 +134,12 @@ Existing processes include **auto-created sub-processes** (those with a non-null
 If the department directory contains no process files (e.g. only a `.gitkeep`), every
 segment for that department is `new` with `existing_id: null`.
 
+**Align to existing boundaries.** When an existing process already defines a boundary for
+related content (you read it while deciding `update`/`unchanged`), align your segmentation
+to that boundary rather than introducing a new split of the same work. This keeps process
+boundaries consistent across the several recordings of one department, even though each run
+sees only one transcript.
+
 ### Step 5 — Write the output file
 
 Create directory `runs/{voice}/` if it does not exist, then write `runs/{voice}/segments.json`
@@ -106,6 +164,8 @@ with exactly the following shape:
 
 Rules:
 - `voice` — the voice basename string (e.g. `"cooking-1405-04-19"`; the date is Shamsi).
+- Emit `segments` in shift-chronological order (Step 2a, Parameter 1); off-timeline
+  processes last.
 - `department` — must match `^[a-z]+$` and be a valid code from `registry.json`.
 - `process_name` — Persian text extracted from the transcript.
 - `transcript_excerpt` — short verbatim snippet in Persian from the transcript (1–3 sentences).
