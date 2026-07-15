@@ -5,7 +5,7 @@ description: Orchestrate the full voice→IDEF pipeline — transcribe, classify
 
 # process-voice playbook
 
-**Invocation:** `/process-voice <voice>` where `<voice>` is the audio basename (e.g. `cooking-1405-04-19`; the date part is Shamsi).
+**Invocation:** `/process-voice <department>` (default: the whole department set) **or** `/process-voice <t1> <t2> …` (an explicit list of transcript/audio basenames; the department is inferred from filenames). One path — a set of one is the smallest case; there is **no** per-voice or batch mode. The date part of a basename is Shamsi.
 
 All file paths are relative to `<data-repo>` (the value of `DATA_ROOT`).
 Every engine CLI must be called with `DATA_ROOT=<data-repo>` set in the environment.
@@ -17,9 +17,13 @@ the moment you end your turn, the bot stops and waits for the user to send anoth
 A multi-stage run must therefore **not yield mid-pipeline**, or it will look "stuck" to the
 user even though nothing is wrong.
 
-**The ONLY two legitimate end-of-turn points in a run are:**
-1. the **Stage 4 human checkpoint** — you must pause there for the user's confirmation, and
-2. the **very end of the run**, after the Stage 9 report.
+**The ONLY legitimate end-of-turn points in a run are:**
+1. **Gate A** (set-confirmation checkpoint, before Stage 1) — pause for the user to confirm the set,
+2. **Gate B** (segmentation/restructure checkpoint, after Stage 3) — pause for the user to approve
+   the proposed process set + restructure ops, and
+3. the **very end of the run**, after the Stage 9 report.
+
+Gate A and Gate B are the two mid-run pauses; everywhere else you continue in the **same turn**.
 
 Everywhere else you MUST continue in the **same turn**. A returning `Task`/subagent (classify,
 each serial extract, summarize) or a returning engine CLI (transcribe, merge) is **never** a
@@ -42,140 +46,224 @@ lone status message is not.
 
 ## Stage 0 — Resolve state / resume
 
-1. Check whether `runs/{voice}/meta.json` exists.
-2. If it exists AND `finished_at` is `null`, the previous run was interrupted — set `{run_dir}` to `runs/{voice}` and resume it: inspect `processes[]` to determine how far it got (empty + `{run_dir}/segments.json` present → resume at Stage 4; non-empty → resume at Stage 6 for any unmerged segment, then Stages 7–9). Do NOT re-run stages that already completed (idempotency).
-3. If `runs/{voice}/meta.json` does not exist, this is a fresh run — set `{run_dir}` to `runs/{voice}` and continue to Stage 1.
-4. If `runs/{voice}/meta.json` exists with a non-null `finished_at` (or the user explicitly requests re-processing), this is a re-run — set `{run_dir}` to `runs/{voice}/attempt-NN/` where `NN` is zero-padded and is the lowest integer ≥ 2 whose directory does not yet exist. Continue to Stage 1.
+`{run_dir}` is `runs/{department}/{stamp}/`, where `{stamp}` is a UTC `YYYYMMDD-HHMMSS`. A run is
+scoped to **one department**.
 
-> `{run_dir}` is the single run-scoped directory used for all artefacts in this run (meta.json, segments.json, candidates/, deltas/). The transcript at `meetings/transcripts/{voice}.txt` is shared across attempts and is never run-relative.
+1. Resolve the department: for the department form it is the argument; for the explicit-list form,
+   infer it from the transcript basenames (`{dept}-…`). Then look for the most recent
+   `runs/{department}/*/meta.json`.
+2. **Resume an interrupted run** — `meta.json` exists with `finished_at: null`:
+   - `segments.json` **absent** → the set was resolved but not yet confirmed: **re-enter at Gate A**
+     (re-resolve the set and re-present it).
+   - `segments.json` **present**, `processes[]` empty → classified but not yet approved:
+     **re-enter at Gate B** (re-read `segments.json` and re-present it).
+   - `processes[]` non-empty → merges started: resume at Stage 6 for any un-merged artifact, then
+     Stages 7–9. Do NOT re-run completed stages (idempotency).
+3. **Fresh run** — no in-progress `meta.json`: create a new `{run_dir} = runs/{department}/{stamp}/`
+   and continue to "Resolve the set".
+4. **Re-run** — the user explicitly asks to re-process a finished set: create a new
+   `runs/{department}/{stamp}/` with the current timestamp (the timestamp *is* the attempt key —
+   there is no `attempt-NN`; each run gets its own stamped dir). Continue to "Resolve the set".
+
+> `{run_dir}` holds all run artefacts (meta.json, segments.json, candidates/, deltas/,
+> restructure/). Transcripts at `meetings/transcripts/{basename}.txt` are shared across runs and are
+> never run-relative.
 
 ---
 
-## Stage 1 — Locate + transcribe (FR-P1, FR-P2)
+## Resolve the set
 
-1. Glob `meetings/audio/{voice}.*`. If no file matches, list the three closest filenames and ask the user, **in Persian**, which one to use. Stop until they reply.
-2. Run the transcription CLI (idempotent — skips Vertex AI if `meetings/transcripts/{voice}.txt` already exists):
+- **Department form:** the set = every recording the department has —
+  `meetings/transcripts/{department}-*.txt` **∪** any `meetings/audio/{department}-*` without a
+  matching transcript. Glob both.
+- **Explicit-list form:** the set = exactly the named basenames. The user's selection is
+  **authoritative** — never silently widen it, never refuse it for being incomplete. Note which
+  department recordings are being **left out** (glob the department, subtract the named set) to
+  disclose at Gate A.
+
+Order the set by Shamsi date in the filename (later sessions supersede earlier ones downstream).
+
+**Context budget.** If the resolved set is so large it would exceed the largest-context Opus budget,
+**stop and name the set, its size, and the limit**, asking the user to narrow it or raise the
+context. Never compress, distil, or fall back to one-transcript-at-a-time (spec §4.1).
+
+---
+
+## Gate A — set-confirmation checkpoint (STOP)
+
+Before transcribing anything, disclose the resolved set and pause.
+
+1. Init `{run_dir}` (create the directory) and write an initial `{run_dir}/meta.json` with
+   `finished_at: null` and `processes: []` (Stage 2 shape) so Stage-0 resume can re-enter here.
+2. Send a Persian checkpoint listing **the set** (every basename, transcript or audio) and, for the
+   explicit-list form, **which department recordings are left out**. Example:
+
    ```
-   Bash: DATA_ROOT=<data-repo> transcribe {voice}
+   مجموعهٔ ضبط‌های دپارتمان dining برای این اجرا:
+     ۱. dining-1405-04-11
+     ۲. dining-1405-04-14
+     ۳. dining-1405-04-15 (فاقد رونویس — رونویسی می‌شود)
+   (فرم فهرست صریح) موارد کنار گذاشته‌شده: dining-1405-04-20
+   تأیید می‌کنید یا مجموعه اصلاح شود؟
    ```
-3. On a **fresh transcription** (the transcript file did not exist before):
+
+3. **End your turn and wait.** This is Gate A. On the user's reply:
+   - **Edit** (add/drop a recording, switch department↔list): **re-resolve the set** ("Resolve the
+     set"), re-present Gate A, wait again.
+   - **Confirmation** («تأیید» / «بله» / «ok»): proceed to Stage 1 in the next turn.
+
+---
+
+## Stage 1 — Transcribe-missing reconcile (FR-P1, FR-P2)
+
+Runs **after** Gate A, only for the confirmed set. Idempotent. For **each** confirmed recording
+that lacks a transcript at `meetings/transcripts/{basename}.txt`:
+
+1. Run the transcription CLI (idempotent — skips Vertex AI if the transcript already exists):
+   ```
+   Bash: DATA_ROOT=<data-repo> transcribe {basename}
+   ```
+2. On a **fresh transcription** (the transcript file did not exist before):
    - Read stdout. Strip any Gemini preamble, postamble, or section headings injected by the model.
-   - If the text appears summarized or rewritten (rather than verbatim speech), flag it to the user and STOP. Do not proceed. When stopping, tell the user (in Persian) their options: «(الف) پردازش را دوباره اجرا کنید تا رونویسی از نو انجام شود؛ یا (ب) یک رونویسِ اصلاح‌شده را به‌صورت دستی در `meetings/transcripts/{voice}.txt` قرار دهید و دوباره اجرا کنید — در این حالت خط لوله به‌دلیل ایدمپوتنسی از Vertex عبور می‌کند و همان فایل شما را استفاده می‌کند.»
-   - Write the cleaned text to `meetings/transcripts/{voice}.txt`.
-4. Confirm the transcript exists before continuing.
+   - **Per-file verbatim sanity gate:** if the text appears summarized or rewritten (rather than
+     verbatim speech), flag it to the user and STOP. When stopping, tell the user (in Persian) their
+     options: «(الف) پردازش را دوباره اجرا کنید تا رونویسی از نو انجام شود؛ یا (ب) یک رونویسِ
+     اصلاح‌شده را به‌صورت دستی در `meetings/transcripts/{basename}.txt` قرار دهید و دوباره اجرا کنید
+     — در این حالت خط لوله به‌دلیل ایدمپوتنسی از Vertex عبور می‌کند و همان فایل شما را استفاده
+     می‌کند.»
+   - Write the cleaned text to `meetings/transcripts/{basename}.txt`.
+3. Confirm every recording in the set now has a transcript before continuing. (Recordings that
+   already had a transcript are untouched.) This whole reconcile runs **in one turn** (each
+   `transcribe` is a CLI call, not a turn end) — proceed to Stage 2 in the same turn.
 
 ---
 
-## Stage 2 — Init run record
+## Stage 2 — Init / finalise run record
 
-1. `{run_dir}` was determined in Stage 0; create the directory now if it does not exist.
-2. Write `{run_dir}/meta.json` with exactly the shape below
-   (always write `finished_at` explicitly — even as `null` — because Stage 0 resume depends on reading this field):
-   ```json
-   {
-     "voice": "<voice>",
-     "departments": ["<tag>"],
-     "started_at": "<ISO-8601 Z timestamp>",
-     "finished_at": null,
-     "attempt": 1,
-     "processes": []
-   }
-   ```
-   - `departments`: the upload tag(s) extracted from the voice filename or provided by the user.
-   - `started_at` / `finished_at`: ISO-8601 with `Z` suffix (e.g. `2026-05-06T09:14:00Z`).
-   - `attempt`: the integer taken from Stage 0's `{run_dir}` — `1` for the base run `runs/{voice}/`, or `NN` when `{run_dir}` is `runs/{voice}/attempt-NN/`. (The example above shows the base-run value `1`.)
-   - `processes`: start empty; populated after merge in Stage 6.
-3. **Validate the record:** `Bash: validate run-meta {run_dir}/meta.json`. If it exits non-zero, fix the meta object you just wrote (the stderr message names the offending field) and re-validate before continuing.
+Gate A already wrote an initial `{run_dir}/meta.json`. Now record the confirmed set (write
+`finished_at` explicitly as `null` — Stage-0 resume depends on it):
+
+```json
+{
+  "department": "<department>",
+  "transcripts": ["<basename>", "..."],
+  "started_at": "<ISO-8601 Z timestamp>",
+  "finished_at": null,
+  "attempt": 1,
+  "processes": []
+}
+```
+
+- `department`: the run's department code (`^[a-z]+$`).
+- `transcripts`: every confirmed transcript basename in the set.
+- `started_at` / `finished_at`: ISO-8601 with `Z` suffix (e.g. `2026-07-15T09:14:00Z`).
+- `attempt`: `1` (each run gets its own stamped `{run_dir}`; the timestamp is the attempt key).
+- `processes`: empty; populated after merge in Stage 6.
+
+**Validate:** `Bash: validate run-meta {run_dir}/meta.json`. On non-zero exit, fix the offending
+field (named in stderr) and re-validate before continuing.
 
 ---
 
-## Stage 3 — classify
+## Stage 3 — classify over the set
 
-Dispatch the `classify` agent via the `Task` tool as the **first thing you do this turn**. Do
-**not** send a status message before it (a prose-only message ends the turn). If you want a status
-line, put it in the **same message** as the `Task` call:
+Dispatch `classify` as the **first thing you do this turn** (no prose-only message first — that
+ends the turn; any status line rides in the **same** message as the `Task` call):
 
 ```
 Task: classify
-  transcript_path: meetings/transcripts/{voice}.txt
-  voice: {voice}
-  tagged_departments: [<tagged departments>]
+  transcript_paths: [<every confirmed transcript path in the set>]
+  department: {department}
+  run_dir: {run_dir}
 ```
 
-Wait for the task to complete. It writes `{run_dir}/segments.json`.
-The segments file categorises every identified process as one of: `new`, `update`, or `unchanged`.
+Wait for it to complete. It reads **all** transcripts and writes `{run_dir}/segments.json`, labelling
+each desired process `new`/`update`/`unchanged`/`merge`/`split`/`attach`/`tombstone` with
+attributed `evidence[]` + `supersedes[]`, plus the top-level `tombstone`/`attach_subprocess`/
+`contradictions` op arrays. **Keep its completion message** — the contradictions/lineage summary it
+returns feeds Gate B.
 
-**Validate it:** `Bash: validate segments {run_dir}/segments.json`. If it exits non-zero, re-dispatch the `classify` agent with the stderr error appended to its prompt so it corrects the output, then re-validate. After 2 failed attempts, stop and report the error to the user instead of looping.
+**Validate it:** `Bash: validate segments {run_dir}/segments.json`. On non-zero exit, re-dispatch
+`classify` with the stderr error appended, then re-validate. After 2 failed attempts, stop and
+report to the user instead of looping.
 
-**Do NOT end your turn here.** The classify Task returning is not a stopping point — continue immediately, in the **same turn**, into Stage 4 (read `segments.json` and send the checkpoint). Ending your turn right after classify is the "stuck mid-pipeline" bug this playbook forbids.
+**Do NOT end your turn here.** classify returning is not a stopping point — continue immediately, in
+the **same turn**, into Gate B (read `segments.json`, send the checkpoint).
 
 ---
 
-## Stage 4 — Human checkpoint (FR-P4)
+## Gate B — segmentation / restructure checkpoint (STOP) (FR-P4)
 
 1. Read `{run_dir}/segments.json`.
-2. Group segments into three categories:
-   - **الف) جدید** — processes classified as `new` (no existing ID).
-   - **ب) به‌روزرسانی** — processes classified as `update`, formatted as `«{process_name}» → {existing_id}`.
-   - **ج) بدون تغییر** — processes classified as `unchanged`, formatted as `{process_name} → {existing_id}`.
-3. Collect any flagged sub-process candidates and any org-overview note from the `classify` agent's Stage-3 return message (delivered to the orchestrator at the end of Stage 3). These fields are NOT in `segments.json` (which is `additionalProperties: false` and carries no sub-process field) — they are only in the classify agent's completion message. If Stage 4 is re-entered on a later turn (via Stage 0 resume) and the classify return message is no longer in context, re-dispatch the `classify` agent to regenerate its summary before composing the checkpoint (classify is idempotent and cheap; it will re-produce the same segments and notes).
-4. Note any departments mentioned in the transcript that differ from the upload tag (this information comes from `segments.json`).
-5. For every item in الف and ب, append an indented evidence line quoting (or tightly abridging, ≤ 25 words) that segment's `transcript_excerpt` from `segments.json`: `     مستند به: «…»` — so the user can tie each proposed process to the exact words spoken before approving.
-6. Compose the checkpoint message in Persian and send it to the user in Telegram.
+2. Present **the department's proposed process set in shift order**, each item labelled by its op
+   (`new`/`update`/`unchanged`/`merge`/`split`/`attach`/`tombstone`), with, per spec §4.10:
+   - the committed id(s) it **supersedes** (from `supersedes`);
+   - **attributed evidence** spanning sessions — for each item, one indented line per session
+     mention: `     مستند به: «…» ({transcript})` drawn from that segment's `evidence[]`;
+   - a **lineage line** for `merge`/`split`/`attach`/`tombstone` (which committed ids are
+     merged/split/re-parented/retired), from the classify return summary + the `tombstone` /
+     `attach_subprocess` arrays;
+   - **contradictions** the agent flagged — both accounts, each attributed (from the
+     `contradictions` array);
+   - carried from Gate A (explicit-list form): which recordings were **left out**.
+3. Compose the checkpoint in Persian and send it.
 
-**Example checkpoint message (reproduce this format exactly):**
+**Example (reproduce this structure):**
 
 ```
-فرایندهای شناسایی‌شده از صدای dining-2026-05-06:
+فرایندهای پیشنهادی برای دپارتمان dining (به ترتیب شیفت):
 الف) جدید:
-  ۱. فرایند انبارداری (warehouse)
-     مستند به: «از فردا هر جنسی که می‌آید اول باید توی سیستم انبار ثبت بشود…»
-  ۲. فرایند سفارش‌گیری سالن (dining)
-     مستند به: «مشتری که می‌آید سر کیوسک سفارشش را می‌زند و استند می‌گیرد…»
+  ۱. فرایند سفارش‌گیری سالن
+     مستند به: «مشتری سر کیوسک سفارشش را می‌زند…» (dining-1405-04-11)
 ب) به‌روزرسانی:
-  — «فرایند پخت» → cooking-002
-     مستند به: «گفتیم زمان سرخ‌کردن را از هفت دقیقه ببریم روی پنج دقیقه…»
-ج) بدون تغییر:
-  — کنترل موجودی → warehouse-003
-⚠ این صدا با برچسب «dining» بود ولی به warehouse و cooking هم مربوط شد.
+  — «فرایند پخت» ← cooking-002 (بازبینی برچسب یک گره)
+     مستند به: «زمان سرخ‌کردن را از هفت به پنج دقیقه بردیم» (dining-1405-04-15)
+ج) ادغام:
+  — «فرایند تسویه» ← dining-003 + dining-007 (این دو در واقع یک فرایندند)
+د) تفکیک:
+  — dining-005 ← «آماده‌سازی سالن» + «تمیزکاری پایان‌شب» (یک فرایند در واقع دو تاست)
+هـ) الحاق زیرفرایند: dining-009 زیر باکس n4 از فرایند dining-002
+و) حذف (سنگ‌قبر): dining-011 (این کار دیگر انجام نمی‌شود)
+⚠ تعارض: «فرایند انبار» — دو روایت متفاوت ثبت شد (dining-04-11 و dining-04-14).
+موارد کنار گذاشته‌شده: dining-1405-04-20
 تأیید می‌کنید یا اصلاحی لازم است؟
 ```
 
-6. **End your turn and wait.** Do NOT proceed to Stage 5 in the same turn.
-   The session is paused here. `{run_dir}/meta.json` has `finished_at: null` and `processes: []`.
-   When the user replies in the next turn, read `{run_dir}/meta.json` to resume (Stage 0 re-entry will route here).
+4. **End your turn and wait.** This is Gate B — the second and last mid-run pause. `{run_dir}/meta.json`
+   has `finished_at: null` and `processes: []`; nothing has been written to `departments/**`. On the
+   next turn read `{run_dir}/meta.json` to resume (Stage-0 routes here when `segments.json` exists and
+   `processes[]` is empty). If the classify return message is no longer in context, re-dispatch
+   `classify` (idempotent) to regenerate the summary before composing this checkpoint.
 
 **Handling the user's reply:**
 
-- **Correction** (missed process, wrong split/merge, move `unchanged`→`update`, incorrect ID):
-  - Re-dispatch only the `classify` agent with the corrected instructions.
-  - Do NOT touch any department process file — nothing has been written yet.
-  - For a single-segment override (e.g. user corrects one extract), re-dispatch only that one `extract` task.
-  - Re-present the checkpoint message with the updated segments. End your turn and wait again.
-- **Unchanged→update override** (user says an `unchanged` item actually has new detail): reclassify ONLY that segment as `update` (edit `segments.json` accordingly, or re-dispatch `classify` with that instruction), re-present the checkpoint, and on confirmation include that segment in Stage 5 extraction. Do not re-run the whole pipeline.
-- **Confirmation** (user says "تأیید" / "بله" / "ok" / equivalent):
-  - Proceed to Stage 5.
+- **Correction** (missed/extra process, wrong op, wrong `supersedes`, contradiction resolved a
+  particular way, an item should be merge not update, etc.): re-dispatch **only** `classify` with the
+  corrected instructions (nothing in `departments/**` has been written yet), re-validate
+  `segments.json`, re-present Gate B, wait again.
+- **Confirmation** («تأیید» / «بله» / «ok»): proceed to Stage 5a.
 
 ---
 
-## Stages 5–9 — Per-department fan-out (FR-P8)
+## Stages 5–9 — Build the confirmed set (FR-P8)
 
-Collect the full set of departments touched by the confirmed segments.
-For each department, run the following sub-pipeline independently (Stages 5–8).
-Stage 9 (conflict report) runs once after all departments complete.
+A run is scoped to **one department**, so there is no per-department fan-out: run Stages 5a–8 once
+for `{department}`, then Stage 9. (Segments the set surfaced in a **neighbour** department are rare;
+if any exist, handle them by running their own department pipeline separately — do not silently
+widen this run.)
 
 ---
 
-### Stage 5a — prepare attachments (per department)
+### Stage 5a — prepare attachments
 
 Before extracting, convert each touched department's attachment documents to cached text so the
 `extract` and `summarize` agents can read them. This runs **in the same turn** as the extract
 sweep (it carries a `Bash` call, so it does not end the turn — see Turn discipline).
 
-For each department touched by the confirmed `new`/`update` segments:
+For this run's department:
 
 ```
-Bash: DATA_ROOT=<data-repo> extract-attachment {dept}
+Bash: DATA_ROOT=<data-repo> extract-attachment {department}
 ```
 
 - Capture stdout: each line is a cached `.txt` path relative to `<data-repo>`. Collect them into
@@ -206,57 +294,79 @@ ending your turn. Do **not** send a «⏳ در حال استخراج…» prose-
 call ends the turn and stalls the run); if you want a status line, it must ride in the **same
 message** as an `extract` `Task` call.
 
-- **new segment:**
+Dispatch one `extract` `Task` per **desired process** that needs an artifact — i.e. every segment
+whose `status` is `new`, `update`, `merge`, or `split` (each heir of a merge/split is its own
+`restructure` dispatch). Pass the segment's attributed `evidence` and the full set:
+
+- **new segment** (`supersedes: []`):
   ```
   Task: extract
-    voice: {voice}
-    transcript_path: meetings/transcripts/{voice}.txt
-    process_name: {process_name}              # from this segment in segments.json
-    transcript_excerpt: {transcript_excerpt}  # verbatim excerpt from segments.json
+    department: {department}
+    process_name: {process_name}           # from this segment
+    evidence: {evidence}                   # this segment's evidence[] from segments.json
+    transcript_paths: [<every transcript in the set>]
     mode: new
-    seq: {seq}           # sequential integer within this run, zero-padded e.g. 01
-    department: {dept}
+    seq: {seq}                             # zero-padded run ordinal, e.g. 01
     run_dir: {run_dir}
-    attachment_texts: {attachment_texts}   # cached .txt paths for {dept} from Stage 5a (may be empty)
+    attachment_texts: {attachment_texts}   # from Stage 5a (may be empty)
   ```
   The agent writes `{run_dir}/candidates/{seq}.json`.
 
-- **update segment:**
+- **update segment** (`supersedes: [X]`, one-to-one):
   ```
   Task: extract
-    voice: {voice}
-    transcript_path: meetings/transcripts/{voice}.txt
-    process_name: {process_name}              # from this segment in segments.json
-    transcript_excerpt: {transcript_excerpt}  # verbatim excerpt from segments.json
+    department: {department}
+    process_name: {process_name}
+    evidence: {evidence}
+    transcript_paths: [<every transcript in the set>]
     mode: update
-    existing_id: {existing_id}
-    existing_process_path: departments/{dept}/processes/{existing_id}.json
-    department: {dept}
+    existing_id: {X}
+    existing_process_paths: [departments/{department}/processes/{X}.json]
     run_dir: {run_dir}
-    attachment_texts: {attachment_texts}   # cached .txt paths for {dept} from Stage 5a (may be empty)
+    attachment_texts: {attachment_texts}
   ```
-  The agent writes `{run_dir}/deltas/{existing_id}.json`.
+  The agent writes `{run_dir}/deltas/{X}.json`.
 
-**unchanged segments are NOT extracted.** Their `process.json` files remain untouched.
-They will be recorded in `meta.json.processes` as `{id, status: "unchanged"}` in Stage 8.
+- **merge / split heir** (`restructure`): dispatch one `extract` per **heir** (a merge yields one
+  heir; a split yields 2+). Pass every superseded `process.json` so the agent has the originals'
+  ids:
+  ```
+  Task: extract
+    department: {department}
+    process_name: {heir process_name}
+    evidence: {evidence}
+    transcript_paths: [<every transcript in the set>]
+    mode: restructure
+    existing_process_paths: [departments/{department}/processes/{S}.json, ...]   # all superseded ids
+    seq: {seq}
+    run_dir: {run_dir}
+    attachment_texts: {attachment_texts}
+  ```
+  The agent writes each heir to `{run_dir}/candidates/{seq}.json` (a full candidate + its
+  `subprocess_links`). Collect, per restructure, the heir candidate paths and each heir's
+  `supersedes` (from `segments.json`) — Stage 6 assembles them into a restructure **plan**.
+
+**`unchanged` (`supersedes: [X]`, identical), `tombstone`, and `attach_subprocess` segments are NOT
+extracted** — they carry no graph artifact. `unchanged` is recorded in `meta.json` in Stage 8;
+`tombstone`/`attach` are executed directly by their own `merge` verbs in Stage 6.
 
 After the **last** serial extract task returns, proceed to Stage 6 in the **same turn**.
 
 ---
 
-### Stage 6 — merge (deterministic, per department)
+### Stage 6 — merge (deterministic)
 
-Process each candidate/delta using the `merge` engine CLI.
-Never write `departments/**/processes/*.json` any other way — this is hook-enforced.
+Process every artifact using the `merge` engine CLI — the **sole writer** of
+`departments/**/processes/*.json` (hook-enforced). Run the verb matching each segment's op.
 
 **For each `new` candidate:**
 ```
 Bash: DATA_ROOT=<data-repo> merge new \
   --candidate {run_dir}/candidates/{seq}.json \
-  --department {dept} \
+  --department {department} \
   --run {run_dir}
 ```
-Capture the printed `<id>` (e.g. `warehouse-004`). Record `{id, status: "new"}` for meta.json.
+Capture the printed `<id>`. Record `{id, status: "new"}` for meta.json.
 
 **For each `update` delta:**
 ```
@@ -265,7 +375,35 @@ Bash: DATA_ROOT=<data-repo> merge update \
   --delta {run_dir}/deltas/{existing_id}.json \
   --run {run_dir}
 ```
-Record `{existing_id, status: "update"}` for meta.json.
+Record `{existing_id, status: "update"}` for meta.json. (`merge update` now also applies the delta's
+`revise_nodes` and `remove_edges`, and re-layouts after edge removal — no extra flags needed.)
+
+**For each `merge`/`split` restructure:** assemble the plan file `{run_dir}/restructure/{seq}.json`
+in the shape `{department, heirs: [{candidate, supersedes:[pid], subprocess_links:[…]}]}` — one
+`heirs[]` entry per heir extracted in Stage 5, `candidate` being that heir's candidate path,
+`supersedes` copied from `segments.json`, `subprocess_links` from the heir's artifact. Then:
+```
+Bash: DATA_ROOT=<data-repo> merge restructure \
+  --plan {run_dir}/restructure/{seq}.json \
+  --run {run_dir}
+```
+Capture the printed heir ids and superseded (tombstoned) ids. Record each heir as
+`{id, status: "merge"|"split", superseded:[…], heir_of:[…]}` for meta.json.
+
+**For each `attach_subprocess` entry** (from `segments.json`):
+```
+Bash: DATA_ROOT=<data-repo> merge attach-subprocess \
+  --parent-process {parent_process} --node {parent_node} --child {child} \
+  --run {run_dir}
+```
+Record `{id: {child}, status: "attach"}` for meta.json.
+
+**For each `tombstone` id** (from `segments.json`):
+```
+Bash: DATA_ROOT=<data-repo> merge remove \
+  --process {id} --run {run_dir}
+```
+Record `{id, status: "tombstone"}` for meta.json.
 
 **What merge does when a candidate/delta contains sub-processes:**
 For each entry in `subprocesses` (candidate) or `add_subprocesses` (delta), `merge` performs these 7 steps automatically:
@@ -283,45 +421,46 @@ For each entry in `subprocesses` (candidate) or `add_subprocesses` (delta), `mer
 
 ---
 
-### Stage 7 — summarize (per department)
+### Stage 7 — summarize over the set
 
-For each department touched in Stage 6, dispatch a `summarize` task — as the **first action of the
-turn**, with no standalone status message before it (that would end the turn). Any status line
-rides in the **same message** as the `Task` call:
+Dispatch a `summarize` task for `{department}` — as the **first action of the turn**, no standalone
+status message before it (that ends the turn); any status line rides in the **same message** as the
+`Task` call:
 ```
 Task: summarize
-  department: {dept}
+  department: {department}
+  transcript_paths: [<every transcript in the set>]
   data_root: <data-repo>
-  attachment_texts: {attachment_texts}   # cached .txt paths for {dept} from Stage 5a (may be empty)
+  attachment_texts: {attachment_texts}   # from Stage 5a (may be empty)
 ```
-Wait for completion. It writes/updates `departments/{dept}/overview.json`.
+Wait for completion. It reads the whole set and writes/updates `departments/{department}/overview.json`.
 
 **Validate it:** `Bash: validate overview departments/{dept}/overview.json`. On non-zero exit, re-dispatch `summarize` for that department with the stderr error so it corrects the file, then re-validate (max 2 attempts, then report to the user).
 
 ---
 
-### Stage 8 — Finish run + commit (per department)
+### Stage 8 — Finish run + commit
 
 1. Update `{run_dir}/meta.json`:
    - Set `finished_at` to the current ISO-8601 Z timestamp.
-   - Populate `processes[]` with all entries from Stages 5–6:
-     - new merges: `{id: "<dept>-NNN", status: "new"}`
-     - update merges: `{id: "<existing_id>", status: "update"}`
-     - unchanged segments: `{id: "<existing_id>", status: "unchanged"}`
-     - auto-created sub-processes (captured from merge stdout in Stage 6): `{id: "<child-id>", status: "new", auto_subprocess_of: "<parent-id>"}`
-   - After updating, re-validate: `Bash: validate run-meta {run_dir}/meta.json` (fix and re-validate on failure) so a malformed record is never committed.
+   - Populate `processes[]` with every entry from Stages 5–6:
+     - new: `{id: "<dept>-NNN", status: "new"}`
+     - update: `{id: "<existing_id>", status: "update"}`
+     - unchanged: `{id: "<existing_id>", status: "unchanged"}`
+     - merge/split heirs: `{id: "<heir-id>", status: "merge"|"split", superseded: […], heir_of: […]}`
+     - attach: `{id: "<child-id>", status: "attach"}`
+     - tombstone: `{id: "<id>", status: "tombstone"}`
+     - auto-created sub-processes (from merge stdout): `{id: "<child-id>", status: "new", auto_subprocess_of: "<parent-id>"}`
+   - Re-validate: `Bash: validate run-meta {run_dir}/meta.json` (fix and re-validate on failure) so a
+     malformed record is never committed.
 
 2. Commit the run artefacts:
    ```
    Bash: git -C <data-repo> add -A && \
-         git -C <data-repo> commit -m "pipeline({dept}): {N} processes from {voice}"
+         git -C <data-repo> commit -m "pipeline({department}): {N} processes from {K} transcripts"
    ```
-   Where `{N}` is the count of new + updated processes (not unchanged) for that department.
-
-   For multiple departments, either commit once per department or include all in one commit message listing each department:
-   ```
-   pipeline(warehouse+cooking): 3 processes from dining-2026-05-06
-   ```
+   `{N}` = count of new + updated + restructured (merge/split/attach/tombstone) processes (not
+   unchanged); `{K}` = size of the set.
 
 ---
 
@@ -364,35 +503,50 @@ After all departments have been committed:
    ```
    The original value is **never auto-changed**. If the user defers to the UI inbox, leave the `pending[]` entries in place.
 
-5. If there are no conflicts (`pending[]` is empty for all written processes), report completion:
+5. **Restructure lineage report (report only — no pause).** For every `merge`/`split`/`attach`/
+   `tombstone` recorded in Stage 8, output a Persian line naming the heir(s) and the superseded/
+   retired/re-parented committed ids, e.g. «فرایندهای dining-003 و dining-007 در dining-014 ادغام
+   شدند (نسخه‌های قبلی سنگ‌قبر شدند).» Tombstones stay on disk, are excluded from future matching,
+   and are shown labelled in the UI.
+
+6. If there are no conflicts (`pending[]` is empty for all written processes), report completion:
    ```
-   پایان موفق اجرا. فرایندهای {voice} پردازش و ثبت شدند.
+   پایان موفق اجرا. مجموعهٔ {K} رونویسِ دپارتمان {department} پردازش و ثبت شد.
    ```
 
 ---
 
 ## Summary of stage ordering
 
-| Stage | Name | Tool/CLI | Per-dept? |
-|-------|------|----------|-----------|
+| Stage | Name | Tool/CLI | Pauses? |
+|-------|------|----------|---------|
 | 0 | Resolve state / resume | Read meta.json | — |
-| 1 | Locate + transcribe | `Bash: transcribe` | — |
-| 2 | Init run record | Write meta.json | — |
-| 3 | classify | `Task: classify` | — |
-| 4 | Human checkpoint | Telegram message | — |
-| 5a | prepare attachments | `Bash: extract-attachment` | yes |
-| 5 | extract (**serial**, 1-at-a-time) | `Task: extract` × N (sequential) | yes |
-| 6 | merge | `Bash: merge new/update` | yes |
-| 7 | summarize | `Task: summarize` | yes |
-| 8 | Finish + commit | Write meta.json, `git -C` | yes |
-| 9 | Conflict report | `Bash: merge accept/reject` | — (once) |
+| — | Resolve the set (dept glob or explicit list) | Glob | — |
+| **A** | **Set-confirmation checkpoint** | Telegram message | **STOP** |
+| 1 | Transcribe-missing reconcile (idempotent; per-file verbatim gate) | `Bash: transcribe` × missing | — |
+| 2 | Init / finalise run record | Write meta.json | — |
+| 3 | classify over the set | `Task: classify` | — |
+| **B** | **Segmentation / restructure checkpoint** | Telegram message | **STOP** |
+| 5a | prepare attachments | `Bash: extract-attachment` | — |
+| 5 | extract per desired process (**serial**) | `Task: extract` × N | — |
+| 6 | merge (`new`/`update`/`restructure`/`attach-subprocess`/`remove`) | `Bash: merge …` | — |
+| 7 | summarize over the set | `Task: summarize` | — |
+| 8 | Finish + commit | Write meta.json, `git -C` | — |
+| 9 | Conflict + restructure-lineage report | `Bash: merge accept/reject` | end |
 
 **Key invariants:**
-- `merge` is the ONLY writer of `departments/**/processes/*.json` (ARD hook-enforced).
-- `unchanged` processes are never re-extracted or re-merged; only recorded in meta.json.
-- The checkpoint turn ends the session turn — extract never runs in the same turn as classify.
-- **Extract is strictly serial** — dispatch one `extract` `Task`, await it, then dispatch the next; **never two `extract` tasks in one message**. Parallel `Task` fan-out is silently dropped by the Claude SDK bridge that runs the Telegram bot, so serial dispatch is mandatory (parallel perf/context deliberately traded for reliability on this single-user system).
-- Turn discipline: the ONLY legitimate end-of-turn points are the Stage 4 checkpoint and the end of the run (see "Turn discipline" near the top) — never yield right after a subagent/CLI returns.
-- **Never send a prose-only message between stages:** a message with no tool call in it ends the turn (this is the #1 stall). Status text rides in the same message as the next `Task`/CLI call, or is skipped entirely.
-- `{run_dir}/meta.json` with `finished_at: null` always signals a resumable in-progress run.
-- All timestamps are ISO-8601 with `Z` suffix.
+- `merge` is the ONLY writer of `departments/**/processes/*.json` (hook-enforced); `restructure`,
+  `attach-subprocess`, `remove` are engine verbs — never hand-edit process files.
+- The run reads **all** transcripts in full (spec §4.1); no distillation, no per-voice/batch mode,
+  no conservative-subset mode. A set of one is the smallest case.
+- **Gate A and Gate B are the only mid-run pauses.** Everywhere else, continue in the same turn — a
+  returning `Task`/CLI is never a stopping point. Never send a prose-only message between stages (a
+  message with no tool call ends the turn — the #1 stall); status text rides with the next call.
+- Stage-0 resume re-enters at **Gate A** (`segments.json` absent) or **Gate B** (`segments.json`
+  present, `processes[]` empty).
+- **Extract is strictly serial** — dispatch one `extract` `Task`, await it, then the next; never two
+  in one message (the Claude SDK bridge silently drops parallel `Task` batches).
+- Tombstoned processes stay on disk, are excluded from classify matching, and are shown labelled in
+  the UI (INV-4 — never deleted here; only user-initiated UI delete removes one).
+- `{run_dir}/meta.json` with `finished_at: null` always signals a resumable in-progress run. All
+  timestamps are ISO-8601 with `Z` suffix.
