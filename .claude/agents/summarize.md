@@ -20,7 +20,7 @@ You will receive the following when invoked:
 |---|---|
 | `department` | Department code (lower-case letters, e.g. `cooking`) |
 | `process_ids` | List of process IDs produced during this run for the department |
-| `transcript_path` | Absolute path to the session transcript file |
+| `transcript_paths` | The **full set** of transcript file paths for this department's run |
 | `attachment_texts` | List of cached attachment `.txt` paths for this department (may be empty). |
 | `data_root` | Absolute path to the `data-repo` root |
 
@@ -68,12 +68,14 @@ transcript, to identify sub-units and personnel roles.
 
 ---
 
-## Step 4 — Read the transcript
+## Step 4 — Read the whole transcript set
 
-Read the file at `transcript_path` in full.
+Read **every** file in `transcript_paths`, in full. Do not sample or skim — the overview is
+synthesised from all the department's sessions together.
 
 Extract any additional evidence about sub-units (named sections or stations of the department)
-and personnel roles (job titles or functional roles, NOT personal names) that were discussed.
+and personnel roles (job titles or functional roles, NOT personal names) discussed anywhere in
+the set. Later sessions may add or refine sub-units/roles; merge additively (Steps 5–6).
 
 ---
 
