@@ -344,13 +344,15 @@ Minimal example (candidate with one subprocess entry):
 
 ## 5. Delta Contract (update to existing process)
 
-When the transcript updates an **existing process** (a `process.json` already exists), output a single JSON object conforming to the delta contract below (validated by `merge` on consumption). All four top-level arrays are **required** (they may be empty).
+When the transcript set updates an **existing process** (a `process.json` already exists), output a single JSON object conforming to the delta contract below (validated by `merge` on consumption). All six top-level arrays are **required** (they may be empty).
 
 ```json
 {
   "add_nodes": [],
   "add_edges": [],
   "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [],
   "flag_removed": []
 }
 ```
@@ -394,9 +396,36 @@ Updates to **existing** nodes. Each entry has:
 
 The `set` object may contain any subset of node fields. Do not repeat fields that are unchanged.
 
+### `revise_nodes` (overwrite committed fields — supersession)
+
+`enrich_nodes` fills **empty** fields (or raises a `pending` conflict); it cannot overwrite a value the process already has. When a **later session supersedes** an earlier account (spec §4.3), use `revise_nodes` to overwrite specific committed fields. Each entry:
+
+```json
+{
+  "id": "<real-id-from-process-json>",
+  "set": { "label": "<new Persian label>", "description": "<new Persian description>" }
+}
+```
+
+- `id` — a real existing node id read verbatim from `process.json` (never invented).
+- `set` — only the fields being overwritten (any subset of the node's fields; the §2 node/title rules still govern `label`/`description`).
+
+Every revision is shown at Gate B **before** it is written, so overwrite is safe. Use `enrich_nodes` for fill-empty; use `revise_nodes` only to change an already-filled value.
+
+### `remove_edges` (edge hygiene)
+
+A delta can add edges but cannot otherwise remove one, so inserting a node between `1` and `2` leaves a stale `1→2` edge beside `1→new→2`. Emit the now-redundant edge here:
+
+```json
+{ "from": "<real-id>", "to": "<real-id>" }
+```
+
+- Both endpoints are **real existing node ids** read from `process.json`.
+- **Edge-hygiene rule:** whenever you attach a node onto an existing path, or re-route flow, emit the edge it makes redundant in `remove_edges` — the engine never guesses which edge to drop. `merge update` hard-deletes these edges (edges are structure, not the content INV-4 protects) and re-layouts afterward.
+
 ### `flag_removed`
 
-Existing node IDs that the voice implies are no longer part of the process. The `merge` CLI will set `removed: true` on these nodes — it **never deletes** them (INV-4). The extract agent must not delete nodes; it only flags.
+Existing node IDs that the transcript set implies are no longer part of the process. The `merge` CLI will set `removed: true` on these nodes — it **never deletes** them (INV-4). The extract agent must not delete nodes; it only flags.
 
 ```json
 { "id": "<real-id-from-process-json>" }
@@ -489,3 +518,36 @@ When `merge` processes a candidate or delta that contains a `subprocesses` / `ad
 7. Prints `subprocess <child-id> node <parent-node-id>` to stdout — the orchestrator captures these lines.
 
 **The extract agent never mints a process or subprocess ID. Temp node keys only (INV-1).**
+
+---
+
+## 8. Restructure — heir candidates & `subprocess_links` (merge / split)
+
+When the mapping between committed and desired processes is **not one-to-one** (2+ committed → 1
+desired = merge; 1 committed → 2+ desired = split), the change is a **restructure**, not an update
+(spec §4.5). The `extract` agent emits each **heir** as a **full candidate body** (§4 shape — fresh
+temp keys `n1`, `j1`, …), plus, when the heir owns hierarchy links, a `subprocess_links` array:
+
+```json
+{
+  "subprocess_links": [
+    { "parent_key": "n3", "child": "<committed child process id>" }
+  ]
+}
+```
+
+| Field | Rule |
+|---|---|
+| `parent_key` | The heir's own temp activity key whose box owns the sub-process link. |
+| `child` | The **committed** child process id (read verbatim from disk) that must re-parent under this heir. |
+
+The orchestrator assembles the run's restructure **plan** — `{department, heirs:[{candidate,
+supersedes:[pid], subprocess_links:[…]}]}` — and runs `merge restructure`. The agent supplies only
+each heir's `candidate` + `subprocess_links`; the **engine** mints every real id, tombstones each
+superseded original (`superseded_by` + tombstoned flag), and redirects hierarchy pointers
+deterministically. **Hierarchy-closed set:** every process whose links are affected must be in the
+plan, or the engine refuses and names the missing one — so declare every affected link here.
+`attach-subprocess` (re-parent an existing process, unchanged, under a node) and `remove`
+(tombstone with no heir) are separate `merge` verbs the orchestrator runs directly from
+`segments.json`'s op arrays; the extract agent does not build artifacts for them. **The agent never
+mints an id (INV-1); it copies committed ids verbatim and uses temp keys for new nodes.**
