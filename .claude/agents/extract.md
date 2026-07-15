@@ -18,16 +18,18 @@ The idef-extraction skill defines every modelling concept, every JSON field, eve
 |---|---|
 | `department` | Lowercase department slug (e.g. `dining`, `cooking`) |
 | `process_name` | Persian name of the process being extracted |
-| `transcript_excerpt` | The segment of the transcript that describes this process |
-| `transcript_path` | Full path to the source transcript file — read it to obtain surrounding context for THIS process only |
-| `voice` | Identifier of the recording/document session (used in output paths) |
-| `seq` | Zero-padded ordinal string provided by the dispatch (e.g. `01`, `02`) — NEW process only |
-| `mode` | Either `new` or `update` |
+| `evidence` | This process's attributed evidence from `segments.json`: an array of `{transcript, text}` — every mention feeding this process, tagged with its source transcript |
+| `transcript_paths` | The **full set** of transcript file paths for the run — read the spans this process's `evidence` points into, across whichever files they live in |
+| `run_dir` | The run-scoped directory to write into (e.g. `runs/dining/{stamp}/`) |
+| `seq` | Zero-padded ordinal string (e.g. `01`, `02`) — NEW / heir output only |
+| `mode` | One of `new`, `update`, `restructure` |
 | `attachment_texts` | List of cached attachment `.txt` paths for this department (may be empty). Reference documents such as job descriptions. |
-| `existing_process_path` | Path to the existing `process.json` — UPDATE mode only |
-| `existing_id` | The process ID of the existing process — UPDATE mode only |
+| `existing_process_paths` | Paths to the committed `process.json`(s) this process supersedes — UPDATE (one) and RESTRUCTURE (one or more) modes |
+| `existing_id` | The committed process ID being revised in place — UPDATE mode only |
 
-Read `transcript_path` to get broader context, but limit your modelling to content that belongs to THIS process's segment (`transcript_excerpt`). Do not model steps from other processes visible in the surrounding transcript.
+**Read only the spans this process's `evidence` points into**, across whichever transcripts in
+`transcript_paths` those mentions live in. Assemble the process from **all** its mentions across
+the set (spec §4.2), but do not model steps from other processes visible in the surrounding text.
 
 ---
 
@@ -48,6 +50,24 @@ under the same rules: no fabrication (INV-3), roles not names (ARD §4.4), Persi
 - If `attachment_texts` is empty, proceed exactly as before.
 
 ---
+
+## Update-in-place vs. restructure — the one-to-one test (read first)
+
+Your `mode` follows the mapping between committed and desired processes (spec §4.5):
+
+- **one committed ↔ one desired (or zero committed ↔ one desired):** `update` (or `new`). A
+  process is revised **in place** — however large the change — so it **keeps its id, its node
+  ids stay stable, and manual UI edits and layout positions survive**. Renaming nodes, adding or
+  dropping steps, revising labels/actors/icom (`revise_nodes`), re-routing flow and deleting the
+  stale edge (`remove_edges`), flagging a node removed: all are **deltas on the same file**.
+- **not one-to-one (2+ committed → 1 desired = merge; 1 committed → 2+ desired = split;
+  removal):** `restructure`. Identity changes, so each heir is built as a fresh full candidate
+  with **new ids** and the originals are tombstoned by the engine.
+
+Do **not** tear a process down and rebuild it just because its contents changed a lot — tombstone
++ mint-new is disruptive (id churn, lost node ids/manual edits) and is reserved for genuine
+identity change. Count the committed processes on each side of the mapping: exactly one↔one ⇒
+`update`; anything else ⇒ `restructure`.
 
 ## Mode A — NEW process → candidate graph
 
@@ -75,10 +95,10 @@ Emit a single JSON object conforming to the candidate contract (see the idef-ext
 ### Where to write
 
 ```
-runs/{voice}/candidates/{seq}.json
+{run_dir}/candidates/{seq}.json
 ```
 
-where `{voice}` and `{seq}` are the dispatch-provided parameters. Example: if `voice` is `v2026-07-08` and `seq` is `01`, write to `runs/v2026-07-08/candidates/01.json`.
+where `{run_dir}` and `{seq}` are the dispatch-provided parameters. Example: if `run_dir` is `runs/dining/{stamp}/` and `seq` is `01`, write to `runs/dining/{stamp}/candidates/01.json`.
 
 Create any missing parent directories as needed before writing.
 
@@ -90,37 +110,90 @@ Use this mode when `mode` is `update` (an existing `process.json` is provided).
 
 ### Step 1 — Read the existing process
 
-Read the file at `existing_process_path`. This gives you the real node IDs already allocated. You will reference those real IDs in `add_edges`, `enrich_nodes`, and `flag_removed`. You must never invent a real ID — only copy IDs verbatim from the file you just read.
+Read the file at `existing_process_paths` (a single committed `process.json` in UPDATE mode).
+This gives you the real node IDs already allocated. You will reference those real IDs in
+`add_edges`, `enrich_nodes`, `revise_nodes`, `remove_edges`, and `flag_removed`. You must never
+invent a real ID — only copy IDs verbatim from the file you just read.
 
 ### What to produce
 
-Emit a single JSON object conforming to the delta contract (see the idef-extraction skill; validated by `merge` on consumption). All four top-level arrays are required (each may be empty):
+Emit a single JSON object conforming to the delta contract (see the idef-extraction skill; validated by `merge` on consumption). All top-level arrays are required (each may be empty):
 
 ```json
 {
   "add_nodes": [],
   "add_edges": [],
   "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [],
   "flag_removed": []
 }
 ```
 
 - **`add_nodes`**: new nodes not present in the existing process. Use temp keys (`n1`, `j1`, …). Same activity/junction shapes as in Mode A.
 - **`add_edges`**: new edges. `from`/`to` may be a temp key (new node from `add_nodes`) or an existing real ID read from `process.json`. Never invent a real ID.
-- **`enrich_nodes`**: updates to existing nodes. Each entry has `id` (real ID from `process.json`) and `set` (partial update object containing only the fields the transcript actually informs — do not repeat unchanged fields).
-- **`flag_removed`**: existing node IDs that the voice implies are no longer part of the process. Each entry is `{"id": "<real-id-from-process-json>"}`. The merge CLI sets `removed: true`; the extract agent never deletes nodes.
+- **`enrich_nodes`**: **fill-empty only** — fills empty fields or raises a `pending` conflict; it cannot overwrite a committed value (existing behaviour). Each entry has `id` (real ID) and `set` (only the fields the set actually informs).
+- **`revise_nodes`**: **overwrite** specific committed node fields when the set supersedes the prior account (spec §4.3). Each entry is `{"id": "<real-id>", "set": {…}}` with only the fields being overwritten. Use this — not `enrich_nodes` — when a later session **changes** an already-filled value; every revision is shown at Gate B before it is written, so overwrite is safe. Never invent an id.
+- **`remove_edges`**: edges to hard-delete for **edge hygiene** (spec §4.6). Each entry is `{"from": "<id>", "to": "<id>"}` referencing real existing node ids. **When you insert a node onto an existing path or re-route flow, emit the now-redundant edge here** — the engine never guesses which edge to drop, and it re-layouts afterward. Edges are structure, not INV-4 content, so this is a real delete.
+- **`flag_removed`**: existing node IDs the set implies are no longer part of the process. Each entry is `{"id": "<real-id>"}`. The merge CLI sets `removed: true`; the extract agent never deletes nodes.
 
-Enrich only fields the voice actually informs. Incompleteness is fine; fabrication is forbidden.
+Enrich/revise only fields the set actually informs. Incompleteness is fine; fabrication is forbidden.
 
 ### Where to write
 
 ```
-runs/{voice}/deltas/{existing_id}.json
+{run_dir}/deltas/{existing_id}.json
 ```
 
-where `{voice}` and `{existing_id}` are the dispatch-provided parameters. Example: if `voice` is `v2026-07-08` and `existing_id` is `cooking-001`, write to `runs/v2026-07-08/deltas/cooking-001.json`.
+where `{run_dir}` and `{existing_id}` are the dispatch-provided parameters. Example: if `run_dir` is `runs/dining/{stamp}/` and `existing_id` is `cooking-001`, write to `runs/dining/{stamp}/deltas/cooking-001.json`.
 
 Create any missing parent directories as needed before writing.
+
+---
+
+## Mode C — RESTRUCTURE (merge / split) → heir candidate + subprocess_links
+
+Use this mode when `mode` is `restructure` (the mapping between committed and desired processes is
+**not** one-to-one). Each heir process is emitted separately with its own `seq`.
+
+### Step 1 — Read every superseded process
+
+Read all committed `process.json` files in `existing_process_paths`. They give you the real node
+ids of the originals and their hierarchy pointers (`parent`, and each node's `subprocess`). Copy
+ids verbatim; never invent one (INV-1).
+
+### What to produce
+
+Emit a **full candidate body** for this heir (same shape as Mode A: `department`, `process_name`,
+`summary`, `idef0`, `kpis`, `nodes`, `edges`, using fresh temp keys `n1`, `j1`, …), plus, when the
+heir has hierarchy links, a **`subprocess_links`** array declaring them:
+
+```json
+{
+  "subprocess_links": [
+    { "parent_key": "n3", "child": "<committed child process id>" }
+  ]
+}
+```
+
+- `parent_key` — the heir's temp activity key whose box owns the sub-process link.
+- `child` — the **committed** child process id that must re-parent under this heir (read verbatim).
+
+The heir is one entry in the run's restructure **plan** the orchestrator assembles (shape
+`{department, heirs:[{candidate, supersedes:[pid], subprocess_links:[…]}]}`) and passes to
+`merge restructure`. You emit **only** the heir's `candidate` + its `subprocess_links`; the
+orchestrator fills `supersedes` from `segments.json` and the engine mints all real ids, tombstones
+the originals, and redirects hierarchy pointers deterministically (INV-1).
+
+**Hierarchy-closed set.** If a superseded process's parent box or child sub-process is affected, it
+travels with the restructure — the engine refuses a plan that would leave a pointer dangling and
+names the missing process. Declare every affected link in `subprocess_links`.
+
+### Where to write
+
+```
+{run_dir}/candidates/{seq}.json
+```
 
 ---
 
@@ -155,6 +228,6 @@ After writing the output file, return:
 2. A one-line Persian summary of the extraction: number of nodes and edges. Example format: «فرایند ثبت سفارش: ۵ گره فعالیت، ۲ گره تقاطع، ۷ یال.»
 3. If you created any child sub-processes, list each parent node key and child process name.
 
-**Final self-check (before writing the output file):** re-scan the transcript excerpt and verify (a) every spoken decision/exception/rework loop is modeled as a junction with exhaustive branches, (b) the graph passes the §2 entry/exit tests, (c) no spoken timing, quantity, tool, or standard was dropped (§6), and (d) the §2 "What goes in the flow" rules hold — no action was demoted into a `description`, every title is readable in isolation, and any node whose title needed «و» to join two actions was split into sequential nodes.
+**Final self-check (before writing the output file):** re-scan this process's evidence spans (across the set) and verify (a) every spoken decision/exception/rework loop is modeled as a junction with exhaustive branches, (b) the graph passes the §2 entry/exit tests, (c) no spoken timing, quantity, tool, or standard was dropped (§6), (d) the §2 "What goes in the flow" rules hold — no action demoted into a `description`, every title readable in isolation, any «و»-joined title split into sequential nodes, and (e) **edge hygiene**: for every node you inserted onto an existing path or every re-routed flow, the now-redundant edge is listed in `remove_edges`, and any committed value a later session changed is in `revise_nodes` (not `enrich_nodes`).
 
 Do not paste the full JSON graph back in your completion message.
