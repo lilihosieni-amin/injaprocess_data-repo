@@ -380,8 +380,10 @@ Record `{existing_id, status: "update"}` for meta.json. (`merge update` now also
 
 **For each `merge`/`split` restructure:** assemble the plan file `{run_dir}/restructure/{seq}.json`
 in the shape `{department, heirs: [{candidate, supersedes:[pid], subprocess_links:[…]}]}` — one
-`heirs[]` entry per heir extracted in Stage 5, `candidate` being that heir's candidate path,
-`supersedes` copied from `segments.json`, `subprocess_links` from the heir's artifact. Then:
+`heirs[]` entry per heir extracted in Stage 5, `candidate` being the **inline candidate object**
+(the JSON contents of that heir's `{run_dir}/candidates/{seq}.json` file, not its path — the
+`restructure.schema` requires the object), `supersedes` copied from `segments.json`,
+`subprocess_links` from the heir's artifact. Then:
 ```
 Bash: DATA_ROOT=<data-repo> merge restructure \
   --plan {run_dir}/restructure/{seq}.json \
