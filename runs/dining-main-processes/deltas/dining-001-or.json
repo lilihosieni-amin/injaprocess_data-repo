@@ -1,0 +1,19 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [
+    {
+      "id": "dining-001-j1",
+      "set": {
+        "junctionType": "OR"
+      }
+    },
+    {
+      "id": "dining-001-j2",
+      "set": {
+        "junctionType": "OR"
+      }
+    }
+  ],
+  "flag_removed": []
+}
