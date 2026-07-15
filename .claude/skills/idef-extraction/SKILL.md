@@ -50,11 +50,62 @@ IDEF3 describes the **sequence** (flow) of activities, including branching and m
 ### Activities (boxes)
 
 An activity is a named step in the process — a unit of work performed by a role. Each activity has:
-- A short `label` (Persian, 2–6 words)
-- A longer `description` (Persian, one or two sentences)
+- A `label` — a self-sufficient Persian title (see "What goes in the flow" below; length is not a constraint)
+- A `description` (Persian) carrying only supporting detail ABOUT the step — never an action
 - An `actor` (Persian role name)
 - Its own `icom` object (the ICOM at this step's level)
 - A `subprocess` pointer (`null` in the candidate; merge sets it after allocating the child ID — see §7)
+
+### What goes in the flow — nodes, titles, and descriptions
+
+The flowchart must be fully readable from node titles alone. A reader must never need to
+open a node's detail view to understand a step, and must never need to read a description
+to discover that an action exists. Content is lost two ways, both forbidden: **compression**
+(shrinking a real action into a short, vague label) and **demotion** (writing a real action
+into the description instead of the flow).
+
+**The node test — "does someone DO this?"** For every piece of extracted content, ask: is
+there an actor (a person, role, or unit) performing an action, and does something change
+state / move the process forward?
+- YES → it is a STEP: emit it as its own activity node in the flow.
+- NO → it is supporting DESCRIPTION on an existing node.
+
+MUST be a node: any action performed by a person or role; any decision or check that
+branches the flow (model it as a junction — see "Control-flow completeness" below); any
+handoff between people, roles, or units; any action whose omission would leave a gap in the
+sequence.
+
+MUST NOT be a node (it is description): HOW an action is carried out (technique/tools/
+systems); constraints, timings, thresholds, quality standards; exceptions and edge cases
+attached to an existing step; background and rationale. The `description` field is for
+detail ABOUT the steps — it is NOT a container for content that did not fit the flow. If
+you are about to write an actor plus a verb-of-doing into a description, stop: that is a
+node you failed to create.
+
+**Titles are self-sufficient; length is not a constraint.** The `label` must state the
+essential substance of the step. Never compress a step into a vague category label. A
+longer label, up to a full Persian sentence, is acceptable; never drop substantive content
+to make a title shorter. Completeness beats brevity.
+
+**One action per node (the splitting rule).** If a faithful account of a step contains two
+different actions a person performs, split them into two sequential nodes — do not put them
+in one box. The test: if the title needs «و» ("and") to join two things a person actually
+DOES, it is two nodes. Splitting is the preferred outcome because it guarantees nothing is
+dropped.
+  - WRONG (compressed, drops half): «ثبت سفارش دستی توسط سرپرست»
+  - WRONG (complete but two actions in one box): «ثبت سفارش دستی توسط سرپرست و هماهنگی با صندوق جهت ثبت سفارش»
+  - CORRECT (two nodes, complete): «ثبت سفارش دستی توسط سرپرست» → «هماهنگی با صندوق جهت ثبت سفارش»
+
+**Default to a node when unsure; never silently drop.** If you cannot tell whether
+something is a step or a description, make it a step — an over-detailed flow is fixed by
+the reviewer in seconds, but an action buried in prose or behind a vague label is invisible
+and will be missed. If material does not fit the current node, that is a signal to create
+another node, never to shorten, generalize, or demote it.
+
+**Self-check before emitting.** Re-read every title and description: every description
+sentence that passes the node test ("someone does this") must be promoted into the flow as
+its own node in its correct chronological position, and every title must be readable in
+isolation with no detail view open.
 
 ### Entry and exit (start/end discipline)
 
@@ -168,8 +219,8 @@ Every activity node in `nodes` **must** have all seven fields (and **only** thes
 |---|---|
 | `key` | Temp key: `n1`, `n2`, … (unique within this candidate) |
 | `type` | Must be the string `"activity"` |
-| `label` | Persian, 2–6 words |
-| `description` | Persian, describes what happens in this step |
+| `label` | Persian, self-sufficient title; length is not a constraint (§2 "What goes in the flow") |
+| `description` | Persian, supporting detail ABOUT the step — never an action (§2 "What goes in the flow") |
 | `actor` | Persian role/system (never a personal name) |
 | `icom` | Object with four arrays: `inputs`, `controls`, `outputs`, `mechanisms` (each may be empty) |
 | `subprocess` | `null` in the candidate — merge sets it (see §7) |
