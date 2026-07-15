@@ -124,22 +124,26 @@ Create any missing parent directories as needed before writing.
 
 ---
 
-## Sub-processes (threshold-based auto-creation)
+## Sub-processes (self-contained, nameable procedures)
 
 See the `idef-extraction` skill §7 for the full contract. Summary of rules:
 
-**At or above threshold (4 or more distinct sequential sub-steps):**
-- Add the child in the top-level `subprocesses` array (Mode A / candidate) or `add_subprocesses` array (Mode B / delta).
-- Keep `subprocess: null` on the parent activity node — **merge** sets it after allocating the child ID.
-- No recursion: if a child process's own box would also qualify, apply flag-only on it instead.
+**Create a child process only when a group of steps is a self-contained,
+separately-nameable procedure** — one the domain expert would call a distinct thing in its
+own right. **Step count is never the reason to nest.**
+- Add the child in the top-level `subprocesses` array (Mode A / candidate) or
+  `add_subprocesses` array (Mode B / delta).
+- Keep `subprocess: null` on the parent activity node — **merge** sets it after allocating
+  the child ID.
+- No recursion: if a child process's own box is itself a nameable procedure, leave it as a
+  flat node in the child flow — do not nest further.
 - Report the parent node key and child process name in your completion message.
 
-**Below threshold — flag-only:**
-- Keep `subprocess: null` on the node.
-- Append a short Persian note to the node's `description`.
-- Report the node key and explanation in your completion message.
+**Otherwise, do NOT nest and do NOT demote into prose:** emit each step as a flat sibling
+activity node in the main flow (idef-extraction §2 "What goes in the flow").
 
-**Never mint a process or subprocess ID. Temp node keys only (INV-1).** The `merge` CLI allocates all final IDs.
+**Never mint a process or subprocess ID. Temp node keys only (INV-1).** The `merge` CLI
+allocates all final IDs.
 
 ---
 
@@ -149,8 +153,8 @@ After writing the output file, return:
 
 1. The exact output path written.
 2. A one-line Persian summary of the extraction: number of nodes and edges. Example format: «فرایند ثبت سفارش: ۵ گره فعالیت، ۲ گره تقاطع، ۷ یال.»
-3. If any nodes were flagged as subprocess candidates, list their temp keys and the reason.
+3. If you created any child sub-processes, list each parent node key and child process name.
 
-**Final self-check (before writing the output file):** re-scan the transcript excerpt and verify (a) every spoken decision/exception/rework loop is modeled as a junction with exhaustive branches, (b) the graph passes the §2 entry/exit tests, and (c) no spoken timing, quantity, tool, or standard was dropped (§6).
+**Final self-check (before writing the output file):** re-scan the transcript excerpt and verify (a) every spoken decision/exception/rework loop is modeled as a junction with exhaustive branches, (b) the graph passes the §2 entry/exit tests, (c) no spoken timing, quantity, tool, or standard was dropped (§6), and (d) the §2 "What goes in the flow" rules hold — no action was demoted into a `description`, every title is readable in isolation, and any node whose title needed «و» to join two actions was split into sequential nodes.
 
 Do not paste the full JSON graph back in your completion message.

@@ -272,7 +272,7 @@ Only `name` is required. Omit `definition`, `target`, `unit` (or leave them as e
 
 #### Sub-processes (subprocesses)
 
-**OPTIONAL** top-level `subprocesses` array. Emit it only when one or more activity boxes qualify (see §7 threshold rule). Each item has the following shape:
+**OPTIONAL** top-level `subprocesses` array. Emit it only when one or more activity boxes qualify as a self-contained, separately-nameable procedure (see §7). Each item has the following shape:
 
 ```json
 {
@@ -404,7 +404,7 @@ Existing node IDs that the voice implies are no longer part of the process. The 
 
 ### `add_subprocesses` (Sub-processes in a delta)
 
-**OPTIONAL** `add_subprocesses` array. Emit it when a box in an **existing** process qualifies (see §7 threshold rule). Each item:
+**OPTIONAL** `add_subprocesses` array. Emit it when a box in an **existing** process qualifies as a self-contained, separately-nameable procedure (see §7). Each item:
 
 ```json
 {
@@ -449,26 +449,33 @@ This rule applies to every string field: `label`, `description`, `summary`, `act
 
 ---
 
-## 7. Sub-processes (auto-create at threshold)
+## 7. Sub-processes (self-contained, separately-nameable procedures)
 
-### Threshold
+### When to create a child process
 
-Emit a child process in `subprocesses` (candidate) or `add_subprocesses` (delta) **only** when an activity box is genuinely described in the transcript with **3 or more distinct sequential sub-steps**. If the box is described with fewer than 3 distinct sequential sub-steps, use **flag-only** behaviour instead (see below).
+Emit a child process in `subprocesses` (candidate) or `add_subprocesses` (delta) **only
+when a group of steps is a self-contained, separately-nameable procedure — one the domain
+expert would refer to as a distinct thing in its own right** (e.g. «فرایند تسویه پایان
+شیفت»). **Step count is never the reason to nest.** A box is not promoted to a sub-process
+because it "has many sub-steps".
 
-### At or above threshold (3+ sub-steps) — emit a child
+If a group of steps is NOT such a nameable procedure, do NOT nest it and do NOT summarise
+it in prose: emit each step as a flat sibling activity node in the main flow, under the
+"What goes in the flow" rules in §2. Producing a longer, flatter top-level flow is the
+intended outcome — visible flow beats hidden hierarchy.
+
+### How to create a child process
 
 1. In the `subprocesses` / `add_subprocesses` array, add an entry with:
    - `parent_key` / `parent`: the temp key (or real ID) of the qualifying activity.
-   - `process`: a full candidate body capturing those sub-steps as activity nodes with their own temp keys (`n1`, `n2`, …).
-2. Keep `subprocess: null` on the parent activity node itself — **merge** allocates the child ID and sets this field (INV-1).
-3. **No recursion:** if one of the child process's own activity nodes would itself qualify (3+ sub-steps of its sub-steps), do **not** nest further — apply flag-only on that node instead.
-4. Report the parent node key and child process name in your completion message so the orchestrator knows to capture the printed child ID from merge stdout.
-
-### Below threshold — flag-only
-
-1. Keep `subprocess: null` on the node.
-2. Append a short Persian note to the node's `description`. Example: «این مرحله شامل چند زیرگام مجزاست و ممکن است در آینده به‌عنوان فرایند مستقل مستندسازی شود.»
-3. **Report** the node key and a brief explanation in your completion message to the orchestrator.
+   - `process`: a full candidate body capturing those steps as activity nodes with their
+     own temp keys (`n1`, `n2`, …), each obeying the §2 node/title rules.
+2. Keep `subprocess: null` on the parent activity node itself — **merge** allocates the
+   child ID and sets this field (INV-1).
+3. **No recursion:** if one of the child process's own nodes is itself a self-contained
+   nameable procedure, do **not** nest further — leave it as a flat node in the child flow.
+4. Report the parent node key and child process name in your completion message so the
+   orchestrator knows to capture the printed child ID from merge stdout.
 
 ### What merge does with a submitted child (informational — for understanding context)
 
