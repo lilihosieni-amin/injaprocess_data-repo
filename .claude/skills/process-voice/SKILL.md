@@ -50,7 +50,7 @@ lone status message is not.
 scoped to **one department**.
 
 1. Resolve the department: for the department form it is the argument; for the explicit-list form,
-   infer it from the transcript basenames (`{dept}-…`). Then look for the most recent
+   infer it from the transcript basenames (`{department}-…`). Then look for the most recent
    `runs/{department}/*/meta.json`.
 2. **Resume an interrupted run** — `meta.json` exists with `finished_at: null`:
    - `segments.json` **absent** → the set was resolved but not yet confirmed: **re-enter at Gate A**
@@ -280,7 +280,7 @@ Bash: DATA_ROOT=<data-repo> extract-attachment {department}
 
 ### Stage 5 — extract (strictly serial — one agent at a time)
 
-Extract the segments classified as `new` or `update` **strictly one at a time**. Dispatch a
+Extract the segments classified as `new`, `update`, `merge`, or `split` **strictly one at a time**. Dispatch a
 **single** `extract` `Task`, **wait for it to return**, then dispatch the next — repeat until every
 `new`/`update` segment has been extracted. **Never dispatch two `extract` tasks in the same
 message** (no parallel or batched `Task` fan-out): the Telegram bot runs on the Claude SDK bridge,
@@ -411,7 +411,7 @@ Record `{id, status: "tombstone"}` for meta.json.
 For each entry in `subprocesses` (candidate) or `add_subprocesses` (delta), `merge` performs these 7 steps automatically:
 1. Resolves the parent activity's real node ID from the newly-merged or existing `process.json`.
 2. Allocates the child process ID via `allocate-id` CLI (INV-1 — never by an LLM).
-3. Writes `departments/{dept}/processes/{child-id}.json` with `parent: {process: "<parent-id>", node: "<parent-node-id>"}` and `source.type: "auto"`.
+3. Writes `departments/{department}/processes/{child-id}.json` with `parent: {process: "<parent-id>", node: "<parent-node-id>"}` and `source.type: "auto"`.
 4. Sets the parent node's `subprocess` field to the child process ID.
 5. Syncs the parent box's `icom` to equal the child's `idef0` (child wins on conflict).
 6. Lays out the child process (serpentine layout).
@@ -437,7 +437,7 @@ Task: summarize
 ```
 Wait for completion. It reads the whole set and writes/updates `departments/{department}/overview.json`.
 
-**Validate it:** `Bash: validate overview departments/{dept}/overview.json`. On non-zero exit, re-dispatch `summarize` for that department with the stderr error so it corrects the file, then re-validate (max 2 attempts, then report to the user).
+**Validate it:** `Bash: validate overview departments/{department}/overview.json`. On non-zero exit, re-dispatch `summarize` with the stderr error so it corrects the file, then re-validate (max 2 attempts, then report to the user).
 
 ---
 
@@ -468,7 +468,7 @@ Wait for completion. It reads the whole set and writes/updates `departments/{dep
 
 ### Stage 9 — Conflict report + auto-subprocess summary (FR-M4)
 
-After all departments have been committed:
+After the run is committed:
 
 1. **Auto-subprocess report (report only — no approval pause):** For every auto-created child collected in Stage 6, output a Persian line in Telegram:
    ```
@@ -488,7 +488,7 @@ After all departments have been committed:
   فیلد: {field_name}
   مقدار فعلی: {current_value}
   مقدار پیشنهادی: {proposed_value}
-  منبع: {voice}
+  منبع: {transcript}
 
 برای قبول: merge accept --process {id} --index {n}
 برای رد: merge reject --process {id} --index {n}
