@@ -96,8 +96,10 @@ shift and makes the downstream IDs track shift order.
   This is INV-3 (no fabrication) applied to segmentation.
 
 **Parameter 2 — change in the nature of the work (the cut rule).** A process ends where
-the *nature of the work* changes — a materially different skill, objective, set of actors,
-or mode of working — even when two activities are adjacent in time. A single process
+the *nature of the work* changes — a materially different skill, objective, or mode of
+working — even when two activities are adjacent in time. **A change of *actor* alone is
+never a cut:** a hand-off between roles inside one continuous flow is a *step* (an
+edge/junction), not a process boundary. A single process
 normally contains MANY tasks: "cleaning and setting up the floor" is one process that
 includes sweeping, wiping tables, arranging chairs and preparing the station — those are
 steps inside it, not processes beside it. When in doubt, keep activities of the same kind
@@ -105,7 +107,10 @@ together in one process. Do NOT cut merely because time passes, the speaker move
 sentence, or the transcript changed subject. Do NOT merge two different kinds of work just
 because they occur close together. (Worked contrast: "cleaning and setting up the floor"
 vs. "taking a customer's order" are different kinds of work → two processes; "end-of-night
-cleaning" vs. "order registration" differ in both time and kind → clearly separate.)
+cleaning" vs. "order registration" differ in both time and kind → clearly separate.
+Worked example — ONE process despite several actors and sub-tasks: «خوشامدگویی + ثبت سفارش
+در کیوسک + مدیریت نوبت و نشاندن مشتری» is one continuous reception flow performed by
+different roles handing off to each other → **one** process, not three.)
 
 **Parameter 3 — off-timeline processes (the orphan rule).** A repeatable procedure that
 does not sit on the shift timeline and cannot be meaningfully attached to any neighbour
