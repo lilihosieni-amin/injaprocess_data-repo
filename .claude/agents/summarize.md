@@ -115,6 +115,27 @@ Produce the merged `personnel` list:
 
 ---
 
+## Step 6a — Synthesise the department description
+
+Write a **one-to-two paragraph Persian description** of the department as a whole — its
+purpose, scope, and how its sub-units and roles fit together — derived strictly from the
+evidence (process records, transcripts, attachments). Same rules apply:
+
+1. No fabrication (INV-3): include only what the evidence supports.
+2. Roles, not personal names (ARD §4.4): never name an individual.
+3. Persian prose, plain paragraphs (no markdown, no lists).
+
+Merge behavior (mirrors sub-unit descriptions):
+
+- If an existing `description` is present in the loaded overview (Step 2), **preserve it**
+  unless the new evidence makes a more complete or more precise description possible — in
+  which case refine or rewrite it.
+- Never blank a filled `description` merely because this run added no new evidence.
+- If there is genuinely not enough evidence to describe the department, emit an empty
+  string `""`.
+
+---
+
 ## Step 7 — Build the output object
 
 Construct a JSON object with **exactly** these top-level fields (no extras — `additionalProperties` is `false`):
@@ -123,6 +144,7 @@ Construct a JSON object with **exactly** these top-level fields (no extras — `
 {
   "department": "<code>",
   "name": "<Persian display name from Step 1>",
+  "description": "<one-to-two Persian paragraphs from Step 6a, or \"\">",
   "sub_units": [ { "name": "...", "description": "..." } ],
   "personnel": [ { "role": "...", "duties": ["...", "..."] } ],
   "updated_at": "<ISO-8601 UTC timestamp ending in Z>"
@@ -132,6 +154,8 @@ Construct a JSON object with **exactly** these top-level fields (no extras — `
 Rules:
 - `department` — the exact code string passed in (lower-case letters only).
 - `name` — Persian display name from Step 1.
+- `description` — one-to-two Persian paragraphs describing the whole department, or the
+  empty string `""` when evidence is insufficient. Plain prose; no personal names.
 - `sub_units` — each item has exactly `name` and `description` (strings); no other keys.
 - `personnel` — each item has exactly `role` (string) and `duties` (array of strings); no
   other keys. `role` is NEVER a personal name.
@@ -174,6 +198,7 @@ fails you will be re-dispatched with the errors, so follow the shape and constra
 | `role` and all actor/mechanism references must be a functional role or system name, NEVER a personal name | ARD §4.4 | Scan every `role` value and every duty string before writing |
 | Merge is additive — do not drop prior sub-units/personnel/duties the transcript did not contradict | FR-P6 / brief | Compare lists before finalising |
 | No fabrication — include only sub-units/roles/duties the transcript or existing overview support | INV-3 | Cite evidence for each item |
+| `description` is present (string; may be `""`), Persian prose, no personal names, no fabrication | this contract / INV-3 / ARD §4.4 | Verify the field exists and scan its text before writing |
 | `updated_at` must match `^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9]+)?Z$` | overview contract | Verify string before writing |
 | Output object must not contain any key not listed in the overview contract below | no extra keys (`additionalProperties: false`) | Final check before Write |
 | `department` value must be lower-case letters only | overview contract | Validate the code |
