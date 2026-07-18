@@ -1,0 +1,234 @@
+{
+  "id": "dining-004",
+  "department": "dining",
+  "name": "چک نهایی نظافت توسط سرپرست پیش از شروع سرویس‌دهی",
+  "summary": "پیش از شروع سرویس‌دهی و در حدود ساعت ۶، سرپرست سالن یک دور بازبینی روی کارهای نظافت انجام می‌دهد. سرپرست شخصاً یک دور می‌رود و همچنین هر یک از نیروها شخصاً کار خودش را طبق چک‌لیست خودش بررسی می‌کند. چک‌لیست‌ها به‌صورت آنلاین در دسترس‌اند و علاوه بر آن نسخهٔ چاپی (پرینتی) نیز تهیه شده تا اگر لینک‌های آنلاین کار نکردند، بازبینی همچنان قابل انجام باشد.",
+  "source": {
+    "type": "voice",
+    "ref": "20260718-084824",
+    "run": "runs/dining/20260718-084824"
+  },
+  "parent": null,
+  "created_at": "2026-07-18T09:44:13Z",
+  "updated_at": "2026-07-18T09:44:13Z",
+  "idef0": {
+    "inputs": [],
+    "controls": [
+      "چک‌لیست نظافت هر نیرو"
+    ],
+    "outputs": [
+      "نظافت تأییدشده پیش از شروع سرویس‌دهی"
+    ],
+    "mechanisms": [
+      "سرپرست سالن",
+      "نیروهای سالن",
+      "نسخهٔ چاپی چک‌لیست"
+    ]
+  },
+  "kpis": [],
+  "nodes": [
+    {
+      "id": "dining-004-n001",
+      "type": "activity",
+      "label": "آغاز بازبینی نظافت در ساعت ۶ توسط سرپرست",
+      "description": "در حدود ساعت ۶ و پیش از شروع سرویس‌دهی، سرپرست سالن مرحلهٔ بازبینی و چک نهایی کارهای نظافت را آغاز می‌کند.",
+      "actor": "سرپرست سالن",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": [
+          "سرپرست سالن"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 40,
+        "y": 90
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/dining/20260718-084824",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "dining-004-j1",
+      "type": "junction",
+      "junctionType": "AND",
+      "direction": "split",
+      "position": {
+        "x": 363,
+        "y": 106
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "dining-004-n002",
+      "type": "activity",
+      "label": "بازدید یک‌دورِ کارها توسط سرپرست",
+      "description": "سرپرست سالن شخصاً یک دور می‌رود و کارهای انجام‌شدهٔ نظافت را بررسی می‌کند.",
+      "actor": "سرپرست سالن",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": [
+          "سرپرست سالن"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 265
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/dining/20260718-084824",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "dining-004-n003",
+      "type": "activity",
+      "label": "بررسی شخصی کار هر نیرو طبق چک‌لیست آنلاین خودش",
+      "description": "هر یک از نیروهای سالن شخصاً کار خودش را طبق چک‌لیست مربوط به خودش بررسی می‌کند. چک‌لیست‌ها به‌صورت آنلاین در دسترس‌اند.",
+      "actor": "نیروهای سالن",
+      "icom": {
+        "inputs": [],
+        "controls": [
+          "چک‌لیست نظافت هر نیرو"
+        ],
+        "outputs": [],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 90
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/dining/20260718-084824",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "dining-004-n004",
+      "type": "activity",
+      "label": "استفاده از نسخهٔ چاپی چک‌لیست در صورت کارنکردن لینک‌های آنلاین",
+      "description": "برای مواقعی که یک درصد لینک‌های آنلاین کار نکنند، چک‌لیست‌ها به‌صورت پرینتی نیز چاپ و در دسترس قرار داده شده‌اند تا بازبینی همچنان انجام شود.",
+      "actor": "نیروهای سالن",
+      "icom": {
+        "inputs": [],
+        "controls": [
+          "چک‌لیست نظافت هر نیرو"
+        ],
+        "outputs": [],
+        "mechanisms": [
+          "نسخهٔ چاپی چک‌لیست"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 265
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/dining/20260718-084824",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "dining-004-j2",
+      "type": "junction",
+      "junctionType": "AND",
+      "direction": "join",
+      "position": {
+        "x": 1143,
+        "y": 281
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "dining-004-n005",
+      "type": "activity",
+      "label": "تأیید نهایی نظافت پیش از شروع سرویس‌دهی",
+      "description": "پس از اتمام بازبینی سرپرست و بررسی چک‌لیست‌ها توسط نیروها، نظافت پیش از شروع سرویس‌دهی تأیید می‌شود.",
+      "actor": "سرپرست سالن",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [
+          "نظافت تأییدشده پیش از شروع سرویس‌دهی"
+        ],
+        "mechanisms": [
+          "سرپرست سالن"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 615
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/dining/20260718-084824",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "dining-004-j3",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "split",
+      "position": {
+        "x": 623,
+        "y": 106
+      },
+      "layout": "auto"
+    }
+  ],
+  "edges": [
+    {
+      "from": "dining-004-n001",
+      "to": "dining-004-j1"
+    },
+    {
+      "from": "dining-004-j1",
+      "to": "dining-004-n002"
+    },
+    {
+      "from": "dining-004-j1",
+      "to": "dining-004-j3"
+    },
+    {
+      "from": "dining-004-j3",
+      "to": "dining-004-n003",
+      "label": "در صورت کارکردن لینک‌های آنلاین"
+    },
+    {
+      "from": "dining-004-j3",
+      "to": "dining-004-n004",
+      "label": "در صورت کارنکردن لینک‌های آنلاین"
+    },
+    {
+      "from": "dining-004-n002",
+      "to": "dining-004-j2"
+    },
+    {
+      "from": "dining-004-n003",
+      "to": "dining-004-j2"
+    },
+    {
+      "from": "dining-004-n004",
+      "to": "dining-004-j2"
+    },
+    {
+      "from": "dining-004-j2",
+      "to": "dining-004-n005"
+    }
+  ],
+  "pending": []
+}

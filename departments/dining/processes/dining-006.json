@@ -1,0 +1,461 @@
+{
+  "id": "dining-006",
+  "department": "dining",
+  "name": "ثبت سفارش مشتری در کیوسک و اختصاص شماره استند",
+  "summary": "در این فرایند مشتری پس از ورود به مجموعه، سفارش خود را به‌صورت خوداظهار از طریق کیوسک ثبت می‌کند و یکی از همکاران به‌عنوان راهنمای کیوسک (کیوسک‌من) در کنار او می‌ایستد تا او را در استفاده از کیوسک راهنمایی کند و مانع ثبت اشتباه شود. با باز شدن صفحه کیوسک، همان ابتدا از مشتری پرسیده می‌شود که سفارش سالن می‌خواهد یا بیرون‌بر (سمت راست سالن، سمت چپ بیرون‌بر). اگر سفارش برای سالن باشد، در مرحله آخر مشتری باید شماره استند و تعداد نفرات را وارد کند. پس از ثبت سفارش، فیشی صادر می‌شود که هم به دست مشتری داده می‌شود و هم به آشپزخانه می‌رود؛ همچنین شماره استند روی میز گذاشته می‌شود و یک استند آبی‌رنگ عددی به مشتری داده می‌شود تا هر جا که دوست داشت بنشیند. مشتری پس از ثبت نمی‌تواند سفارش خود را عوض کند و این نکته توسط راهنمای کیوسک به او یادآوری می‌شود.",
+  "source": {
+    "type": "voice",
+    "ref": "20260718-084824",
+    "run": "runs/dining/20260718-084824"
+  },
+  "parent": null,
+  "created_at": "2026-07-18T09:44:14Z",
+  "updated_at": "2026-07-18T09:44:14Z",
+  "idef0": {
+    "inputs": [
+      "درخواست سفارش مشتری"
+    ],
+    "controls": [
+      "ممنوعیت تغییر سفارش پس از ثبت",
+      "الزام ثبت شماره استند برای سفارش سالن"
+    ],
+    "outputs": [
+      "فیش سفارش (نسخه مشتری و نسخه آشپزخانه)",
+      "استند آبی‌رنگ عددی اختصاص‌یافته به مشتری"
+    ],
+    "mechanisms": [
+      "کیوسک سفارش‌گیری",
+      "راهنمای کیوسک (کیوسک‌من)"
+    ]
+  },
+  "kpis": [],
+  "nodes": [
+    {
+      "id": "dining-006-n001",
+      "type": "activity",
+      "label": "باز کردن صفحه کیوسک توسط مشتری",
+      "description": "مشتری خودش سفارش را از طریق کیوسک ثبت می‌کند؛ سفارشات دستی ثبت نمی‌شوند. یکی از همکاران به‌عنوان راهنمای کیوسک (کیوسک‌من) کنار کیوسک می‌ایستد و مشتری را در استفاده از آن راهنمایی می‌کند و حواسش هست که مشتری اشتباه ثبت نکند.",
+      "actor": "مشتری",
+      "icom": {
+        "inputs": [
+          "درخواست سفارش مشتری"
+        ],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": [
+          "کیوسک سفارش‌گیری",
+          "راهنمای کیوسک (کیوسک‌من)"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 40,
+        "y": 90
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/dining/20260718-084824",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "dining-006-n002",
+      "type": "activity",
+      "label": "انتخاب نوع سفارش سالن یا بیرون‌بر در همان ابتدای صفحه کیوسک",
+      "description": "همان ابتدای باز شدن صفحه کیوسک از مشتری پرسیده می‌شود که سالن می‌خواهد یا بیرون‌بر؛ گزینه سمت راست سالن و گزینه سمت چپ بیرون‌بر است.",
+      "actor": "مشتری",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": [
+          "کیوسک سفارش‌گیری"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
+        "y": 90
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/dining/20260718-084824",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "dining-006-j1",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "split",
+      "position": {
+        "x": 623,
+        "y": 106
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "dining-006-n003",
+      "type": "activity",
+      "label": "ثبت اقلام سفارش در کیوسک",
+      "description": "مشتری اقلام سفارش خود را در کیوسک انتخاب و ثبت می‌کند.",
+      "actor": "مشتری",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": [
+          "کیوسک سفارش‌گیری"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 90
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/dining/20260718-084824",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "dining-006-n004",
+      "type": "activity",
+      "label": "وارد کردن شماره استند در مرحله آخر سفارش",
+      "description": "برای سفارش سالن، مرحله آخر کیوسک از مشتری شماره استند می‌خواهد و مشتری باید شماره استند را وارد کند.",
+      "actor": "مشتری",
+      "icom": {
+        "inputs": [],
+        "controls": [
+          "الزام ثبت شماره استند برای سفارش سالن"
+        ],
+        "outputs": [],
+        "mechanisms": [
+          "کیوسک سفارش‌گیری"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 90
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/dining/20260718-084824",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "dining-006-n005",
+      "type": "activity",
+      "label": "وارد کردن تعداد نفرات جلوی شماره استند",
+      "description": "جلوی شماره استند، تعداد نفرات هم وارد می‌شود.",
+      "actor": "مشتری",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": [
+          "کیوسک سفارش‌گیری"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 440
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/dining/20260718-084824",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "dining-006-n006",
+      "type": "activity",
+      "label": "ثبت اقلام سفارش بیرون‌بر در کیوسک",
+      "description": "مشتری اقلام سفارش بیرون‌بر خود را در کیوسک ثبت می‌کند؛ در سفارش بیرون‌بر شماره استند و تعداد نفرات وارد نمی‌شود.",
+      "actor": "مشتری",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": [
+          "کیوسک سفارش‌گیری"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 265
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/dining/20260718-084824",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "dining-006-j2",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "join",
+      "position": {
+        "x": 883,
+        "y": 456
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "dining-006-n007",
+      "type": "activity",
+      "label": "صدور فیش سفارش پس از نهایی شدن ثبت",
+      "description": "پس از ثبت نهایی سفارش، فیش سفارش صادر می‌شود.",
+      "actor": "کیوسک سفارش‌گیری",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [
+          "فیش سفارش"
+        ],
+        "mechanisms": [
+          "کیوسک سفارش‌گیری"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 440
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/dining/20260718-084824",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "dining-006-j3",
+      "type": "junction",
+      "junctionType": "AND",
+      "direction": "split",
+      "position": {
+        "x": 363,
+        "y": 456
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "dining-006-n008",
+      "type": "activity",
+      "label": "تحویل نسخه فیش سفارش به مشتری",
+      "description": "فیش سفارش به دست مشتری داده می‌شود.",
+      "actor": "کیوسک سفارش‌گیری",
+      "icom": {
+        "inputs": [
+          "فیش سفارش"
+        ],
+        "controls": [],
+        "outputs": [
+          "نسخه فیش مشتری"
+        ],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 40,
+        "y": 440
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/dining/20260718-084824",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "dining-006-n009",
+      "type": "activity",
+      "label": "ارسال فیش سفارش به آشپزخانه",
+      "description": "همان فیش سفارش به آشپزخانه هم می‌رود.",
+      "actor": "کیوسک سفارش‌گیری",
+      "icom": {
+        "inputs": [
+          "فیش سفارش"
+        ],
+        "controls": [],
+        "outputs": [
+          "نسخه فیش آشپزخانه"
+        ],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 40,
+        "y": 615
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/dining/20260718-084824",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "dining-006-j4",
+      "type": "junction",
+      "junctionType": "AND",
+      "direction": "join",
+      "position": {
+        "x": 103,
+        "y": 806
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "dining-006-n010",
+      "type": "activity",
+      "label": "قرار دادن شماره استند روی میز مشتری",
+      "description": "شماره استند مربوط به سفارش سالن روی میز گذاشته می‌شود.",
+      "actor": "راهنمای کیوسک (کیوسک‌من)",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
+        "y": 790
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/dining/20260718-084824",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "dining-006-n011",
+      "type": "activity",
+      "label": "تحویل استند آبی‌رنگ عددی به مشتری",
+      "description": "به مشتری یک استند آبی‌رنگ که روی آن عدد دارد داده می‌شود.",
+      "actor": "راهنمای کیوسک (کیوسک‌من)",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [
+          "استند آبی‌رنگ عددی اختصاص‌یافته به مشتری"
+        ],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 790
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/dining/20260718-084824",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "dining-006-n012",
+      "type": "activity",
+      "label": "نشستن مشتری در محل دلخواه با استند",
+      "description": "مشتری با استند خود هر جا که دوست داشت می‌تواند بنشیند؛ می‌تواند داخل یا بیرون بنشیند.",
+      "actor": "مشتری",
+      "icom": {
+        "inputs": [
+          "استند آبی‌رنگ عددی اختصاص‌یافته به مشتری"
+        ],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 790
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/dining/20260718-084824",
+        "touched_by": []
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "dining-006-n001",
+      "to": "dining-006-n002"
+    },
+    {
+      "from": "dining-006-n002",
+      "to": "dining-006-j1"
+    },
+    {
+      "from": "dining-006-j1",
+      "to": "dining-006-n003",
+      "label": "سفارش سالن"
+    },
+    {
+      "from": "dining-006-j1",
+      "to": "dining-006-n006",
+      "label": "سفارش بیرون‌بر"
+    },
+    {
+      "from": "dining-006-n003",
+      "to": "dining-006-n004"
+    },
+    {
+      "from": "dining-006-n004",
+      "to": "dining-006-n005"
+    },
+    {
+      "from": "dining-006-n005",
+      "to": "dining-006-j2"
+    },
+    {
+      "from": "dining-006-n006",
+      "to": "dining-006-j2"
+    },
+    {
+      "from": "dining-006-j2",
+      "to": "dining-006-n007"
+    },
+    {
+      "from": "dining-006-n007",
+      "to": "dining-006-j3"
+    },
+    {
+      "from": "dining-006-j3",
+      "to": "dining-006-n008"
+    },
+    {
+      "from": "dining-006-j3",
+      "to": "dining-006-n009"
+    },
+    {
+      "from": "dining-006-n008",
+      "to": "dining-006-j4"
+    },
+    {
+      "from": "dining-006-n009",
+      "to": "dining-006-j4"
+    },
+    {
+      "from": "dining-006-j4",
+      "to": "dining-006-n010",
+      "label": "سفارش سالن"
+    },
+    {
+      "from": "dining-006-n010",
+      "to": "dining-006-n011"
+    },
+    {
+      "from": "dining-006-n011",
+      "to": "dining-006-n012"
+    }
+  ],
+  "pending": []
+}
