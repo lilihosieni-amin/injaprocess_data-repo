@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-18T09:44:12Z",
-  "updated_at": "2026-07-18T09:44:12Z",
+  "updated_at": "2026-07-18T09:53:17Z",
   "idef0": {
     "inputs": [],
     "controls": [
@@ -146,13 +146,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 90
+        "x": 1040.8273381294964,
+        "y": -170.43297941907707
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/dining/20260718-084824",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
