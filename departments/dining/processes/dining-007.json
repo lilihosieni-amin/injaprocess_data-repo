@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-18T09:44:14Z",
-  "updated_at": "2026-07-18T09:44:14Z",
+  "updated_at": "2026-07-18T11:08:53Z",
   "idef0": {
     "inputs": [
       "درخواست سفارش مهمان وی‌آی‌پی"
@@ -221,5 +221,9 @@
       "to": "dining-007-n005"
     }
   ],
-  "pending": []
+  "pending": [],
+  "tombstoned": true,
+  "superseded_by": [
+    "dining-028"
+  ]
 }

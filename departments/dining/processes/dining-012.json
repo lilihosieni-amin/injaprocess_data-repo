@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-18T09:44:15Z",
-  "updated_at": "2026-07-18T09:44:15Z",
+  "updated_at": "2026-07-18T11:08:53Z",
   "idef0": {
     "inputs": [
       "درخواست غذا یا نوشیدنی اضافه از سوی مشتری نشسته سر میز"
@@ -201,5 +201,9 @@
       "to": "dining-012-n005"
     }
   ],
-  "pending": []
+  "pending": [],
+  "tombstoned": true,
+  "superseded_by": [
+    "dining-028"
+  ]
 }
