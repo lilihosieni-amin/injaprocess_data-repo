@@ -147,11 +147,23 @@ Re-read the affected processes and check the **seams**:
 - **mother+subprocess:** apply the entry/exit check to **every** mother node that links to
   a child.
 
-Emit **one `delta.schema.json` object per affected process** with the needed
-`add_edges` / `remove_edges` / `add_nodes` / `revise_nodes` / `enrich_nodes`. New nodes use
-temp keys (`n1`, `j1`…, INV-1); every real id in `add_edges`, `revise_nodes`,
-`enrich_nodes`, `remove_edges`, `flag_removed` is copied verbatim from the process file you
-just read — never invented (INV-1).
+Emit **one `delta.schema.json` object per affected process** carrying the needed
+`add_edges` / `remove_edges` / `add_nodes` / `revise_nodes` / `enrich_nodes`.
+
+**Every `delta` object MUST include all four arrays** `add_nodes`, `add_edges`,
+`enrich_nodes`, `flag_removed` — use `[]` for any you don't need (they are `required` by the
+schema). `revise_nodes`, `remove_edges`, and `add_subprocesses` are optional and added only
+when you actually use them.
+
+**id vs. key (INV-1).** `revise_nodes`, `enrich_nodes`, and `flag_removed` each target an
+**existing** node by its **real committed node `id`** (copied verbatim from the process file
+you just read — **never** a temp key). `add_edges` and `remove_edges` reference existing
+nodes by real `id` in their `from` / `to`. **Only `add_nodes` items** carry a temp `key`
+(`n1`, `j1`…) — for a brand-new node whose final id the engine will mint. Never put a temp
+`key` where a real `id` is required, and never add a stray `key` field to a
+`revise_nodes` / `enrich_nodes` / `flag_removed` item (every level is
+`additionalProperties: false`). Every real id you reference is read from the file — never
+invented (INV-1).
 
 **INV-5 per-item overwrite authorization:** the approved item authorizes overwriting
 **already-filled** values via `revise_nodes` **when the seam requires it** — the item is
