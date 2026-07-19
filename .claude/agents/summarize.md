@@ -106,12 +106,37 @@ Produce the merged `personnel` list:
    that is **not already present** (match by `role`), append a new entry with:
    - `role` — Persian job title or functional role (e.g. `سرآشپز`, `مسئول انبار`)
    - `duties` — array of Persian duty strings, each derived strictly from the evidence
+   - `kpi` — array of Persian KPI strings (see Step 6b); `[]` when no measurable target exists
 3. For an existing role, additively merge new duties into its `duties` array — do not remove
    previously recorded duties unless the new evidence explicitly supersedes them.
 4. **Do not remove** any existing role whose existence was not explicitly contradicted.
 5. If a speaker mentions a personal name, extract the **role** that name was associated with;
    record only the role, never the name.
 6. If no evidence supports a role entry, do not invent one.
+
+---
+
+## Step 6b — Synthesise KPIs
+
+Produce, for each role in the merged `personnel` list, a `kpi` array of Persian strings —
+performance targets by which that role's work is measured.
+
+1. Draw from the **same evidence set** as duties: department attachments (the **primary**
+   source — job-description documents), the full transcript set, and the run's process
+   records.
+2. A KPI is any statement carrying a **measurable or verifiable target** — a number, a
+   percentage, a deadline, or a frequency (e.g. «برگزاری حداقل ۴ جلسه آموزشی در ماه»,
+   «تحویل ۹۸٪ سفارش‌ها در کمتر از ۱ دقیقه»). A plain responsibility with no target is a
+   *duty*, not a KPI.
+3. In the source documents the target is often woven into a duty sentence. Lift it out and
+   write it as a clean standalone KPI string. The same source sentence may yield both a
+   duty (the responsibility) and a KPI (the quantified target).
+4. **Rephrasing to a crisp target is allowed; inventing or altering any number, percentage,
+   deadline, or frequency is forbidden (INV-3).** If a role has no measurable target in the
+   evidence, its `kpi` is an empty array `[]` — never invent one.
+5. **Merge additively**, exactly like duties: match by `role`; append new KPIs; never drop a
+   previously recorded KPI unless the new evidence explicitly supersedes it.
+6. Never write a personal name in a KPI string (ARD §4.4).
 
 ---
 
@@ -146,7 +171,7 @@ Construct a JSON object with **exactly** these top-level fields (no extras — `
   "name": "<Persian display name from Step 1>",
   "description": "<one-to-two Persian paragraphs from Step 6a, or \"\">",
   "sub_units": [ { "name": "...", "description": "..." } ],
-  "personnel": [ { "role": "...", "duties": ["...", "..."] } ],
+  "personnel": [ { "role": "...", "duties": ["...", "..."], "kpi": ["...", "..."] } ],
   "updated_at": "<ISO-8601 UTC timestamp ending in Z>"
 }
 ```
@@ -157,8 +182,9 @@ Rules:
 - `description` — one-to-two Persian paragraphs describing the whole department, or the
   empty string `""` when evidence is insufficient. Plain prose; no personal names.
 - `sub_units` — each item has exactly `name` and `description` (strings); no other keys.
-- `personnel` — each item has exactly `role` (string) and `duties` (array of strings); no
-  other keys. `role` is NEVER a personal name.
+- `personnel` — each item has exactly `role` (string), `duties` (array of strings), and
+  `kpi` (array of strings); no other keys. `role` is NEVER a personal name; `kpi` may be
+  `[]`.
 - `updated_at` — current UTC time in the format `YYYY-MM-DDTHH:mm:ssZ` (seconds precision,
   `Z` suffix). Example: `2026-07-08T14:05:00Z`.
 
@@ -199,6 +225,7 @@ fails you will be re-dispatched with the errors, so follow the shape and constra
 | Merge is additive — do not drop prior sub-units/personnel/duties the transcript did not contradict | FR-P6 / brief | Compare lists before finalising |
 | No fabrication — include only sub-units/roles/duties the transcript or existing overview support | INV-3 | Cite evidence for each item |
 | `description` is present (string; may be `""`), Persian prose, no personal names, no fabrication | this contract / INV-3 / ARD §4.4 | Verify the field exists and scan its text before writing |
+| `kpi` is present on every role (array; may be `[]`), Persian, no personal names, no fabricated numbers/targets | this contract / INV-3 / ARD §4.4 | Scan every `kpi` string before writing |
 | `updated_at` must match `^[0-9]{4}-[0-9]{2}-[0-9]{2}T[0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9]+)?Z$` | overview contract | Verify string before writing |
 | Output object must not contain any key not listed in the overview contract below | no extra keys (`additionalProperties: false`) | Final check before Write |
 | `department` value must be lower-case letters only | overview contract | Validate the code |
