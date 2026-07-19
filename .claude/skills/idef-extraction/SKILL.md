@@ -102,6 +102,12 @@ the reviewer in seconds, but an action buried in prose or behind a vague label i
 and will be missed. If material does not fit the current node, that is a signal to create
 another node, never to shorten, generalize, or demote it.
 
+**One node per task.** Represent each distinct task with **exactly one** activity node in a
+flow. If the process **revisits** a step later (a re-check, a return, a second pass), model
+it as a **loop-back edge to the existing node** (see the junction/loop-back rule below) —
+never a second copy of the node. A recurring step is an *edge*, not a duplicated node. (Do
+not collapse genuinely distinct steps that merely sound alike — §6.)
+
 **Self-check before emitting.** Re-read every title and description: every description
 sentence that passes the node test ("someone does this") must be promoted into the flow as
 its own node in its correct chronological position, and every title must be readable in
@@ -505,6 +511,27 @@ intended outcome — visible flow beats hidden hierarchy.
    nameable procedure, do **not** nest further — leave it as a flat node in the child flow.
 4. Report the parent node key and child process name in your completion message so the
    orchestrator knows to capture the printed child ID from merge stdout.
+
+### No duplication across a process and its subprocess
+
+A real task appears **exactly once** across a process and its subprocess(es). When you
+promote a box to a subprocess, its constituent steps belong to the **child only** — the
+parent keeps **just the container box** (the higher-level activity whose `subprocess`
+points at the child). Do **not** also emit those same steps as flat activity nodes in the
+parent flow. If you find the decomposed steps sitting in both the parent flow and the
+child, remove them from the parent — the box is their single parent-level representative.
+
+**Allowed (do not treat as duplication):** the container box and the child's first node sit
+at **different levels of abstraction** and are *expected to differ* — the box names the area
+of work, the child's first node is a concrete first step. Example: a parent box
+«مدیریت نوبت در زمان شلوغی» whose child subprocess begins «هدایت مشتری به اتاق انتظار».
+These are **not** duplicates; never force them to match, and never collapse the box into
+the child.
+
+**Guardrail (§6, INV-3):** collapse only *accidental* duplicate copies of the same single
+occurrence. A step the process genuinely performs at two **distinct** points, or a
+loop-back re-check, is **kept** — as one node plus the appropriate edges. Never drop
+distinct spoken work merely because two labels sound alike.
 
 ### What merge does with a submitted child (informational — for understanding context)
 
