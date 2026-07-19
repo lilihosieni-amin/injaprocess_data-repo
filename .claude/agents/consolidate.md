@@ -62,29 +62,58 @@ Follow these as rules, in order:
    transcripts + attachments as ground truth for what is really one procedure vs. two. A
    near-identical label is a hint, never proof; genuinely-shared work is proof.
 
-3. **The over-cut signal (spec §1, §5).** A node recurring across **closely related**
-   processes is a signal they were over-cut → propose a consolidation. A node recurring
-   across **unrelated** processes is legitimate (the same generic step really does happen
-   in two different procedures) → **do not** suggest anything.
+3. **Find the combination point (spec §3.1).** For each pair of **genuinely-related**
+   processes, look for the *connection point* that would make them one, then propose the
+   logically-correct shape:
+   - **Flat merge — same or continuous work.** Signals: the two share a **start event** (a
+     near-identical first node), or one process is a short **prefix** whose steps reappear
+     at the head of the other, or they share several nodes end-to-end. Example: a 3-node
+     «ورود پرسنل / ثبت اثر انگشت» stub whose steps are the opening of the next process →
+     merge them flat.
+   - **Attach — decomposition.** A **whole** process X is the detailed decomposition of a
+     **single activity node N** in another process Y — N's label *names or abstracts* X's
+     procedure and X reads as N's steps. This needs **no** node duplication. → propose
+     `attach` X under Y's node N. Example: a node «سپردن مدیریت نوبت به هدویتر» in one
+     process whose full procedure is a separate «مدیریت نوبت» process → attach the latter
+     under that node.
+   **Relatedness + logic gate.** Combine ONLY when the two are genuinely related AND the
+   combination is logically sound — a real shared boundary or a real decomposition. A node
+   recurring across **unrelated** processes is legitimate (the same generic step in two
+   different procedures) → **do not** suggest anything. Superficial similarity is never a
+   combination. This does not relax the silence rule below.
 
-4. **THE SILENCE RULE (spec §5) — most important.** Default to proposing **nothing**. Emit
-   a suggestion ONLY when you can name all three of:
-   (a) the specific process ids involved,
-   (b) the specific recurring/overlapping node(s) by **id + label**, and
-   (c) the transcript span(s) proving it is the same work.
-   If you cannot cite that evidence, **there is no suggestion**. Uncertain → do not suggest.
-   Every suggestion's `evidence` array must be non-empty and must carry the citations above.
-   An empty `suggestions: []` is a correct, expected, **successful** outcome — never invent
-   suggestions to look useful.
+4. **Completeness + the three silence tiers (spec §5) — most important.** Review **all**
+   active processes together and find every combination — **a single combination may join
+   two or MORE processes**, not just a pair. Compare them against one another and **group
+   transitively**: if A belongs with B and B with C as one continuous procedure, that is
+   **one** combination of `[A, B, C]` (a single `merge` listing all of them), **not** three
+   separate pairwise merges. Then sort each candidate combination into one of three tiers.
+   **Do NOT stop at the first one or two** — scan the whole department:
+   - **Confident → a full suggestion.** You can name all three of (a) the specific process
+     ids, (b) the specific overlapping/connection node(s) by **id + label**, and (c) the
+     transcript span(s) proving it. Emit it in `suggestions[]` (its `evidence` array must
+     carry these citations). **Report EVERY confident case you find — the main list must be
+     complete**, not a sample.
+   - **Plausible but uncertain → a brief «کم‌اهمیت‌تر» note (do NOT drop it).** A real-looking
+     overlap you cannot fully cite, or whose combination boundary is unclear. Do **not** put
+     it in `suggestions[]`; instead list it (ids + a one-line Persian reason) in the
+     `less_important` part of your **return summary** (step 7), so the user stays aware and
+     can ask you to pursue it. Never inflate it into a confident suggestion.
+   - **Baseless → nothing.** No citable connection at all → say nothing. Never invent a
+     suggestion to look useful.
+   An empty `suggestions: []` (with or without a few «کم‌اهمیت‌تر» notes) is a correct,
+   expected, **successful** outcome.
 
 5. **Two suggestion kinds only:**
    - **`merge`** — N close peers are really one process. The user later picks flat vs.
      mother+subprocess, so set `recommended_shape` by "size decides": a small cohesive
      cluster → `flat`; large, separately-nameable parts → `mother_subprocess`. Leave
      `chosen_shape: null`. Fill `processes` with the ≥2 member ids.
-   - **`attach`** — one process is really a subprocess of a node in another. Set `child`
-     (the process to nest), `parent_process`, and `parent_node` (the real node id it hangs
-     under). Cite the evidence the same way.
+   - **`attach`** — one process is really the decomposition of a single node in another
+     (the "attach — decomposition" signal in step 3). Set `child` (the process to nest),
+     `parent_process`, and `parent_node` — the real node id whose label names/abstracts the
+     child's procedure. Cite the evidence: the elaborated node's id + label, and the child
+     process id whose steps decompose it.
 
 6. **Write `{run_dir}/consolidation.json`** conforming to `consolidation.schema.json`
    (Task 1). Top-level shape: `{department, generated_from, suggestions[]}` where
@@ -93,9 +122,12 @@ Follow these as rules, in order:
    and `action` are Persian strings. Do not add fields — `additionalProperties: false` at
    every level. Use the **Write** tool.
 
-7. **Return to caller:** the path `{run_dir}/consolidation.json` and a Persian
-   one-paragraph summary (count of suggestions by kind, or «هیچ ادغام/زیرفرایندی لازم نیست»
-   when the list is empty). Do NOT paste transcripts or the full JSON back.
+7. **Return to caller:** the path `{run_dir}/consolidation.json`, a Persian one-paragraph
+   summary (count of confident suggestions by kind, or «هیچ ادغام/زیرفرایندی لازم نیست» when
+   the confident list is empty), **and — only if any — a short «موارد کم‌اهمیت‌تر» list**:
+   one line per plausible-but-uncertain case (process ids + a one-line reason), so the
+   orchestrator can show it to the user. Omit the «کم‌اهمیت‌تر» list entirely when there are
+   none. Do NOT paste transcripts or the full JSON back.
 
 ---
 
@@ -134,6 +166,15 @@ Assemble a `restructure.schema.json` plan with **exactly one heir**. Steps:
      engine, and is **kept out of `supersedes`**. Only members whose steps you genuinely
      inline into a mother node go in `supersedes`; if every member becomes a subprocess
      child, `supersedes` is empty (`[]`).
+     **Cross-member dedup (spec §3.2) — the mother must not repeat a child's steps.** When
+     one member is inlined as the mother-frame and another becomes a child, any step of the
+     inlined member that **also lives in the child** belongs to the child **only** — do NOT
+     put it in the mother. The mother's link to a child is a **single container node**, not
+     a re-modelling of the child's internal steps or decision. (Two members are flagged for
+     merge precisely because they share steps; those shared steps live once, in the child.)
+     Result: each real task appears in exactly one place across mother + child — the only
+     allowed level-crossing pair is the container node vs. the child's first node, which are
+     at different abstraction levels and expected to differ.
 6. Return **only** the plan JSON:
    `{department, heirs: [{candidate, supersedes, subprocess_links}]}`.
 
@@ -155,6 +196,25 @@ Re-read the affected processes and check the **seams**:
   parallel paths, valid junctions.
 - **mother+subprocess:** apply the entry/exit check to **every** mother node that links to
   a child.
+
+**Post-combination dedup (spec §3.2) — REQUIRED, run with the seam checks.** Re-read the
+result and enforce the same no-duplicate doctrine as `idef-extraction/SKILL.md` (§7 "No
+duplication across a process and its subprocess" + §2 "One node per task"):
+
+- **mother + subprocess:** no mother node may duplicate a node inside its child. A mother
+  built per the apply-mode rule already avoids this; if you still find a mother node
+  repeating a child step, remove it from the **mother** (`flag_removed` + `remove_edges`,
+  then `add_edges` to rewire the flow past it), so the step lives only in the child. Confirm
+  the child is entered from the mother's single container node and is not re-doing the
+  mother's high-level steps. The container-node-vs-child-first-node pair is the one allowed
+  exception.
+- **flat:** confirm no two heir nodes describe the same task; if a duplicate slipped
+  through, collapse it (`flag_removed` + rewire) — a revisit must be a loop-back edge, not a
+  second node.
+- **Guardrail (INV-3):** collapse only accidental duplicate copies; a step genuinely
+  performed at two distinct points, or a loop-back re-check, is **kept**.
+
+Fold these dedup edits into the same per-process `delta` objects described next.
 
 Emit **one `delta.schema.json` object per affected process** carrying the needed
 `add_edges` / `remove_edges` / `add_nodes` / `revise_nodes` / `enrich_nodes`.

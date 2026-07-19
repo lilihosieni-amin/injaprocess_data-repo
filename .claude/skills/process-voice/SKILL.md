@@ -463,7 +463,7 @@ Wait for completion. It reads the whole set and writes/updates `departments/{dep
 
 2. Commit the run artefacts:
    ```
-   Bash: git -C <data-repo> add -A && \
+   Bash: git -C <data-repo> add departments runs && \
          git -C <data-repo> commit -m "pipeline({department}): {N} processes from {K} transcripts"
    ```
    `{N}` = count of new + updated + restructured (merge/split/attach/tombstone) processes (not
@@ -542,15 +542,32 @@ Task: consolidate
 Wait. Then **validate:** `Bash: validate consolidation {run_dir}/consolidation.json`
 (on non-zero exit, re-dispatch `consolidate` with the stderr error, max 2 attempts).
 
-**10b — If `suggestions` is empty:** tell the user in Persian that no consolidation is
-needed («بازبینی انجام شد؛ هیچ ادغام یا زیرفرایندی لازم نیست.») and the run is done.
-STOP. Do not invent work.
+**10b — If `suggestions` is empty:** if the `consolidate` return **also** has no «کم‌اهمیت‌تر»
+notes, tell the user no consolidation is needed («بازبینی انجام شد؛ هیچ ادغام یا زیرفرایندی
+لازم نیست.») and the run is done — STOP, do not invent work. If the return **does** carry
+«کم‌اهمیت‌تر» notes, present them (the heading in 10c) and ask whether to pursue any; then STOP.
 
-**10c — Present the numbered report (STOP).** In one Persian message, list every
-`pending` suggestion as `۱، ۲، ۳…`, each with: **(الف)** `problem`, **(ب)** `action`,
-**(ج)** the ids involved (`processes` / `child`+`parent_process`+`parent_node`), and for
-a `merge` the `recommended_shape` as a suggestion. Ask the user which item to do (and,
-for a merge, whether **flat** or **mother+subprocess**). Wait.
+**10c — Present the numbered report (STOP).** Build the message **from
+`{run_dir}/consolidation.json`** (the detailed source), **not** from the agent's short
+return summary. Produce one Persian message with this structure — keep the confident items
+**fully detailed**, do not summarise them away:
+
+- a one-line intro (all active processes reviewed together; tombstoned/superseded ones
+  ignored);
+- «N پیشنهاد مطمئن:» then **every** `pending` suggestion as `۱، ۲، ۳…`, each rendering its
+  **full `problem` text and full `action` text verbatim** (never shorten or paraphrase them)
+  plus the ids involved (`processes` / `child`+`parent_process`+`parent_node`), and for a
+  `merge` the `recommended_shape` as your suggested shape;
+- if the `consolidate` return carried «موارد کم‌اهمیت‌تر» notes, a «— موارد کم‌اهمیت‌تر —»
+  heading with **one brief line per case** (these stay short);
+- the output path `{run_dir}/consolidation.json` and a note that **no process file has
+  changed yet**;
+- the closing question: which item to apply (and, for a merge, **flat** or
+  **mother+subprocess** — state your recommendation).
+
+Then Wait. If the user asks to pursue a «کم‌اهمیت‌تر» item, re-dispatch `consolidate`
+(`mode: review`); it re-evaluates and either emits that case as a full suggestion to apply
+via 10d, or explains why it still cannot be cited.
 
 **10d — Apply one approved item (repeat until the user is done).** For the chosen item:
 
@@ -566,7 +583,7 @@ for a merge, whether **flat** or **mother+subprocess**). Wait.
    - **attach:** `Bash: DATA_ROOT=<data-repo> merge attach-subprocess --parent-process {parent_process} --node {parent_node} --child {child} --run {run_dir}`.
 4. **Soundness pass (§4.7).** Dispatch `Task: consolidate  mode: apply  item: <item with new ids>  …` for the seam check; for each returned delta, Write it, `Bash: validate delta <path>`, then `Bash: DATA_ROOT=<data-repo> merge update --process <pid> --delta <path> --run {run_dir}`. Append the returned repair records to the item's `repairs[]` in `consolidation.json`.
 5. **Mark applied + commit.** Set the item's `status: "applied"` in `consolidation.json`.
-   `Bash: git -C <data-repo> add -A && git -C <data-repo> commit -m "consolidate({department}): item {n} — {merge|attach}"`.
+   `Bash: git -C <data-repo> add departments runs && git -C <data-repo> commit -m "consolidate({department}): item {n} — {merge|attach}"`. (Stage only `departments`/`runs` — never `git add -A`, which would sweep in unrelated `.claude`/config edits.)
 6. **Show the result.** Present the finished process(es) to the user in Persian — the
    heir/parent id and its node flow (labels in order) — so they see the completed
    outcome. Then return to 10c for the next item, or finish if the user is done.
