@@ -110,21 +110,30 @@ Assemble a `restructure.schema.json` plan with **exactly one heir**. Steps:
 1. **Read the members' existing `process.json` files** (their ids are in `item.processes`) to
    get their real nodes, edges, junctions, and hierarchy pointers.
 2. Build the heir `candidate` from the **members' existing nodes**: union the activity
-   nodes, **drop the recurring duplicate node** (keep exactly one copy), and carry the
+   nodes, **collapse each** recurring duplicate node to a single copy, and carry the
    edges/junctions so the result is **one coherent flow** (no dangling edges, no duplicate
    parallel paths).
 3. **Use fresh temp node keys** (`n1`, `n2`, `j1`…) for every node in the heir candidate —
    **never mint or copy a real allocated id into a `key`** (INV-1). The engine mints all
    final ids and tombstones the originals.
-4. Set the heir's `supersedes` = the member ids (`item.processes`), read verbatim.
+4. Set the heir's `supersedes` to **only the members whose steps you actually inline** into
+   the heir (see the shape below), each id read verbatim from `item.processes`. A member that
+   becomes a live subprocess child does **not** go in `supersedes`.
+   **Invariant: a member id appears in `supersedes` OR `subprocess_links.child`, never both.**
+   (The engine tombstones + supersedes every id in `supersedes`; it re-parents — keeps live —
+   every id in `subprocess_links.child`. Listing a member in both would tombstone it while
+   also making it the heir's live child — a tombstoned-yet-live child, which is invalid.)
 5. **Shape:**
    - **`chosen_shape == "flat"`** → `subprocess_links: []`, and **inline every member's
-     steps** as heir activity nodes in one flat flow.
+     steps** as heir activity nodes in one flat flow. Since every member is inlined,
+     `supersedes` = all member ids (`item.processes`), read verbatim.
    - **`chosen_shape == "mother_subprocess"`** → the heir is the **mother**. Its activity
      nodes are the high-level steps. For **each member that becomes a child**, add a
      `subprocess_links` entry `{parent_key: "<heir temp key>", child: "<member id>"}` and
      **DO NOT inline that member's detail** — it stays the child process, re-parented by the
-     engine.
+     engine, and is **kept out of `supersedes`**. Only members whose steps you genuinely
+     inline into a mother node go in `supersedes`; if every member becomes a subprocess
+     child, `supersedes` is empty (`[]`).
 6. Return **only** the plan JSON:
    `{department, heirs: [{candidate, supersedes, subprocess_links}]}`.
 
