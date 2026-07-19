@@ -20,15 +20,20 @@ user even though nothing is wrong.
 **The ONLY legitimate end-of-turn points in a run are:**
 1. **Gate A** (set-confirmation checkpoint, before Stage 1) — pause for the user to confirm the set,
 2. **Gate B** (segmentation/restructure checkpoint, after Stage 3) — pause for the user to approve
-   the proposed process set + restructure ops, and
-3. the **very end of the run**, after the Stage 9 report.
+   the proposed process set + restructure ops,
+3. the **Stage 9 report → Stage 10** hand-off and, within **Stage 10** (consolidation review), the
+   numbered report (**10c**) and each applied item's show-result (**10d step 6**) — human-gated
+   STOP points like Gate B, one item at a time, and
+4. the **very end of the run**, after the last Stage 10 item (or Stage 10b's empty-list silence).
 
-Gate A and Gate B are the two mid-run pauses; everywhere else you continue in the **same turn**.
+Gate A and Gate B are the two mid-run pauses; Stage 10's per-item gates are the post-run pauses;
+everywhere else you continue in the **same turn**.
 
 Everywhere else you MUST continue in the **same turn**. A returning `Task`/subagent (classify,
-each serial extract, summarize) or a returning engine CLI (transcribe, merge) is **never** a
-stopping point — the instant it returns, proceed directly to the next stage (or the next extract)
-without ending your turn. Dispatching a subagent and then stopping is one failure this rule prevents. Just as bad —
+each serial extract, summarize, each `consolidate` review/apply dispatch) or a returning engine CLI
+(transcribe, merge) is **never** a stopping point — the instant it returns, proceed directly to the
+next stage (or the next extract) without ending your turn. In Stage 10 the STOP points are the user
+gates (10c, 10d step 6), **not** the `consolidate` dispatch returning. Dispatching a subagent and then stopping is one failure this rule prevents. Just as bad —
 and **the most common failure in practice** — is *announcing* a stage in prose and then stopping
 **before** you dispatch (e.g. sending «…در حال استخراج…» and ending the turn). **A message that
 contains no tool call ends the turn.** So between stages, either your message carries the next
@@ -518,6 +523,56 @@ After the run is committed:
 
 ---
 
+### Stage 10 — consolidation review (STOP, human-gated) (design 2026-07-19)
+
+Runs after the run is committed (Stage 8) and the conflict report (Stage 9). It is a
+**STOP gate** like Gate B: you present suggestions and wait for the user, one item at a
+time.
+
+**10a — Review.** Dispatch — as the first action of the turn:
+```
+Task: consolidate
+  mode: review
+  department: {department}
+  transcript_paths: [<every transcript in the set>]
+  attachment_texts: {attachment_texts}   # from Stage 5a (may be empty)
+  run_dir: {run_dir}
+  data_root: <data-repo>
+```
+Wait. Then **validate:** `Bash: validate consolidation {run_dir}/consolidation.json`
+(on non-zero exit, re-dispatch `consolidate` with the stderr error, max 2 attempts).
+
+**10b — If `suggestions` is empty:** tell the user in Persian that no consolidation is
+needed («بازبینی انجام شد؛ هیچ ادغام یا زیرفرایندی لازم نیست.») and the run is done.
+STOP. Do not invent work.
+
+**10c — Present the numbered report (STOP).** In one Persian message, list every
+`pending` suggestion as `۱، ۲، ۳…`, each with: **(الف)** `problem`, **(ب)** `action`,
+**(ج)** the ids involved (`processes` / `child`+`parent_process`+`parent_node`), and for
+a `merge` the `recommended_shape` as a suggestion. Ask the user which item to do (and,
+for a merge, whether **flat** or **mother+subprocess**). Wait.
+
+**10d — Apply one approved item (repeat until the user is done).** For the chosen item:
+
+1. **Staleness guard.** Re-read every process id the item references. If any is now
+   tombstoned/missing (an earlier applied item changed it), re-dispatch `consolidate`
+   (`mode: review`) to regenerate `consolidation.json`, re-present, and restart 10d.
+2. **Record the choice.** For a merge, set the item's `chosen_shape` in
+   `consolidation.json` (Write). Set `status: "approved"`.
+3. **Run the structural verb:**
+   - **merge:** dispatch `Task: consolidate  mode: apply  item: <item>  chosen_shape: <flat|mother_subprocess>  …`; it returns a restructure plan. Write it to `{run_dir}/restructure.consolidation.json`, `Bash: validate restructure {run_dir}/restructure.consolidation.json`, then
+     `Bash: DATA_ROOT=<data-repo> merge restructure --plan {run_dir}/restructure.consolidation.json --run {run_dir}`.
+     Capture the printed `heir <id>` and `tombstoned <id>` lines.
+   - **attach:** `Bash: DATA_ROOT=<data-repo> merge attach-subprocess --parent-process {parent_process} --node {parent_node} --child {child} --run {run_dir}`.
+4. **Soundness pass (§4.7).** Dispatch `Task: consolidate  mode: apply  item: <item with new ids>  …` for the seam check; for each returned delta, Write it, `Bash: validate delta <path>`, then `Bash: DATA_ROOT=<data-repo> merge update --process <pid> --delta <path> --run {run_dir}`. Append the returned repair records to the item's `repairs[]` in `consolidation.json`.
+5. **Mark applied + commit.** Set the item's `status: "applied"` in `consolidation.json`.
+   `Bash: git -C <data-repo> add -A && git -C <data-repo> commit -m "consolidate({department}): item {n} — {merge|attach}"`.
+6. **Show the result.** Present the finished process(es) to the user in Persian — the
+   heir/parent id and its node flow (labels in order) — so they see the completed
+   outcome. Then return to 10c for the next item, or finish if the user is done.
+
+---
+
 ## Summary of stage ordering
 
 | Stage | Name | Tool/CLI | Pauses? |
@@ -534,16 +589,19 @@ After the run is committed:
 | 6 | merge (`new`/`update`/`restructure`/`attach-subprocess`/`remove`) | `Bash: merge …` | — |
 | 7 | summarize over the set | `Task: summarize` | — |
 | 8 | Finish + commit | Write meta.json, `git -C` | — |
-| 9 | Conflict + restructure-lineage report | `Bash: merge accept/reject` | end |
+| 9 | Conflict + restructure-lineage report | `Bash: merge accept/reject` | — |
+| 10 | consolidation review (STOP) | `Task: consolidate` + `merge restructure`/`attach-subprocess`/`update` | user approves each item |
 
 **Key invariants:**
 - `merge` is the ONLY writer of `departments/**/processes/*.json` (hook-enforced); `restructure`,
   `attach-subprocess`, `remove` are engine verbs — never hand-edit process files.
 - The run reads **all** transcripts in full (spec §4.1); no distillation, no per-voice/batch mode,
   no conservative-subset mode. A set of one is the smallest case.
-- **Gate A and Gate B are the only mid-run pauses.** Everywhere else, continue in the same turn — a
-  returning `Task`/CLI is never a stopping point. Never send a prose-only message between stages (a
-  message with no tool call ends the turn — the #1 stall); status text rides with the next call.
+- **Gate A and Gate B are the only mid-run pauses**, and **Stage 10's per-item gates** (10c report,
+  10d step 6 show-result) are the post-run pauses. Everywhere else, continue in the same turn — a
+  returning `Task`/CLI (including each `consolidate` dispatch) is never a stopping point. Never send a
+  prose-only message between stages (a message with no tool call ends the turn — the #1 stall);
+  status text rides with the next call.
 - Stage-0 resume re-enters at **Gate A** (`segments.json` absent) or **Gate B** (`segments.json`
   present, `processes[]` empty).
 - **Extract is strictly serial** — dispatch one `extract` `Task`, await it, then the next; never two

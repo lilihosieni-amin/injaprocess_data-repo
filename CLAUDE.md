@@ -63,6 +63,7 @@ Do not invoke `merge` directly before the checkpoint clears.
 | `.claude/agents/classify.md` | Meeting classifier agent |
 | `.claude/agents/extract.md` | IDEF candidate + delta agent |
 | `.claude/agents/summarize.md` | Department overview agent |
+| `.claude/agents/consolidate.md` | Whole-department consolidation reviewer (post-run) |
 
 ---
 
