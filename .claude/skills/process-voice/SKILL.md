@@ -560,7 +560,9 @@ return summary. Produce one Persian message with this structure — keep the con
   plus the ids involved (`processes` / `child`+`parent_process`+`parent_node`), and for a
   `merge` the `recommended_shape` as your suggested shape;
 - if the `consolidate` return carried «موارد کم‌اهمیت‌تر» notes, a «— موارد کم‌اهمیت‌تر —»
-  heading with **one brief line per case** (these stay short);
+  heading with **one brief line per case** (these stay short), labelled with Persian letters
+  **الف، ب، پ، ت…** (never digits) — so the less-important list is visually distinct from the
+  numbered (۱، ۲، ۳…) main list;
 - the output path `{run_dir}/consolidation.json` and a note that **no process file has
   changed yet**;
 - the closing question: which item to apply (and, for a merge, **flat** or

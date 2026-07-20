@@ -125,9 +125,10 @@ Follow these as rules, in order:
 7. **Return to caller:** the path `{run_dir}/consolidation.json`, a Persian one-paragraph
    summary (count of confident suggestions by kind, or «هیچ ادغام/زیرفرایندی لازم نیست» when
    the confident list is empty), **and — only if any — a short «موارد کم‌اهمیت‌تر» list**:
-   one line per plausible-but-uncertain case (process ids + a one-line reason), so the
-   orchestrator can show it to the user. Omit the «کم‌اهمیت‌تر» list entirely when there are
-   none. Do NOT paste transcripts or the full JSON back.
+   one line per plausible-but-uncertain case, labelled with Persian letters **الف، ب، پ، ت…**
+   (not digits, so it is distinct from the numbered main list), each with the process ids +
+   a one-line reason, so the orchestrator can show it to the user. Omit the «کم‌اهمیت‌تر» list
+   entirely when there are none. Do NOT paste transcripts or the full JSON back.
 
 ---
 
