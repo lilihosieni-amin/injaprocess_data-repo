@@ -30,7 +30,7 @@ Gate A and Gate B are the two mid-run pauses; Stage 10's per-item gates are the 
 everywhere else you continue in the **same turn**.
 
 Everywhere else you MUST continue in the **same turn**. A returning `Task`/subagent (classify,
-each serial extract, summarize, each `consolidate` review/apply dispatch) or a returning engine CLI
+each extract batch, summarize, each `consolidate` review/apply dispatch) or a returning engine CLI
 (transcribe, merge) is **never** a stopping point — the instant it returns, proceed directly to the
 next stage (or the next extract) without ending your turn. In Stage 10 the STOP points are the user
 gates (10c, 10d step 6), **not** the `consolidate` dispatch returning. Dispatching a subagent and then stopping is one failure this rule prevents. Just as bad —
@@ -283,21 +283,22 @@ Bash: DATA_ROOT=<data-repo> extract-attachment {department}
 
 ---
 
-### Stage 5 — extract (strictly serial — one agent at a time)
+### Stage 5 — extract (bounded parallel — batches of at most 4)
 
-Extract the segments classified as `new`, `update`, `merge`, or `split` **strictly one at a time**. Dispatch a
-**single** `extract` `Task`, **wait for it to return**, then dispatch the next — repeat until every
-`new`/`update` segment has been extracted. **Never dispatch two `extract` tasks in the same
-message** (no parallel or batched `Task` fan-out): the Telegram bot runs on the Claude SDK bridge,
-which silently drops all but one of a parallel `Task` batch mid-run, so serial dispatch is
-**mandatory** for reliability. This deliberately trades the parallel perf/context benefit for
-correctness — the right call for this single-user system.
+Extract the segments classified as `new`, `update`, `merge`, or `split` in **bounded parallel
+batches of at most 4**. Dispatch **up to 4** `extract` `Task`s **in one message**, **wait for the
+whole batch to return**, then dispatch the next batch of up to 4 — repeat until every
+`new`/`update`/`merge`/`split` segment has been extracted. **Never dispatch more than 4 `extract`
+tasks in the same message.** Bounded batching (not full N-way fan-out) keeps the run within the SDK
+bridge's proven-safe envelope (control-bot patches 0004/env; ADR 0011) while recovering most of the
+wall-clock lost to serial extract — most of each agent's runtime is model/network wait, so 4-way
+concurrency shortens the sweep substantially on the 2-CPU host.
 
-Do the whole serial sweep **within one turn**: dispatching an agent and awaiting its result is a
-tool call, not a turn end, so proceed from one extract to the next (and then on to Stage 6) without
+Do the whole batched sweep **within one turn**: dispatching a batch and awaiting its results is a
+tool call, not a turn end, so proceed from one batch to the next (and then on to Stage 6) without
 ending your turn. Do **not** send a «⏳ در حال استخراج…» prose-only message (a message with no tool
 call ends the turn and stalls the run); if you want a status line, it must ride in the **same
-message** as an `extract` `Task` call.
+message** as an `extract` `Task` batch.
 
 Dispatch one `extract` `Task` per **desired process** that needs an artifact — i.e. every segment
 whose `status` is `new`, `update`, `merge`, or `split` (each heir of a merge/split is its own
@@ -355,7 +356,7 @@ whose `status` is `new`, `update`, `merge`, or `split` (each heir of a merge/spl
 extracted** — they carry no graph artifact. `unchanged` is recorded in `meta.json` in Stage 8;
 `tombstone`/`attach` are executed directly by their own `merge` verbs in Stage 6.
 
-After the **last** serial extract task returns, proceed to Stage 6 in the **same turn**.
+After the **last** extract batch returns, proceed to Stage 6 in the **same turn**.
 
 ---
 
@@ -602,7 +603,7 @@ via 10d, or explains why it still cannot be cited.
 | 3 | classify over the set | `Task: classify` | — |
 | **B** | **Segmentation / restructure checkpoint** | Telegram message | **STOP** |
 | 5a | prepare attachments | `Bash: extract-attachment` | — |
-| 5 | extract per desired process (**serial**) | `Task: extract` × N | — |
+| 5 | extract per desired process (**batches of ≤4**) | `Task: extract` × N (≤4/msg) | — |
 | 6 | merge (`new`/`update`/`restructure`/`attach-subprocess`/`remove`) | `Bash: merge …` | — |
 | 7 | summarize over the set | `Task: summarize` | — |
 | 8 | Finish + commit | Write meta.json, `git -C` | — |
@@ -621,8 +622,9 @@ via 10d, or explains why it still cannot be cited.
   status text rides with the next call.
 - Stage-0 resume re-enters at **Gate A** (`segments.json` absent) or **Gate B** (`segments.json`
   present, `processes[]` empty).
-- **Extract is strictly serial** — dispatch one `extract` `Task`, await it, then the next; never two
-  in one message (the Claude SDK bridge silently drops parallel `Task` batches).
+- **Extract runs in bounded parallel** — dispatch at most 4 `extract` `Task`s per message, await the
+  batch, then the next; never more than 4 in one message (ADR 0011 — full N-way fan-out is dropped by
+  the SDK bridge; batches of 4 are proven safe under patches 0004/env).
 - Tombstoned processes stay on disk, are excluded from classify matching, and are shown labelled in
   the UI (INV-4 — never deleted here; only user-initiated UI delete removes one).
 - `{run_dir}/meta.json` with `finished_at: null` always signals a resumable in-progress run. All
