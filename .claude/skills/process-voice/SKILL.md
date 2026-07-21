@@ -388,8 +388,10 @@ Record `{existing_id, status: "update"}` for meta.json. (`merge update` now also
 in the shape `{department, heirs: [{candidate, supersedes:[pid], subprocess_links:[…]}]}` — one
 `heirs[]` entry per heir extracted in Stage 5, `candidate` being the **inline candidate object**
 (the JSON contents of that heir's `{run_dir}/candidates/{seq}.json` file, not its path — the
-`restructure.schema` requires the object), `supersedes` copied from `segments.json`,
-`subprocess_links` from the heir's artifact. Then:
+`restructure.schema` requires the object), `subprocess_links` from the heir's artifact, and
+`supersedes` = this heir's members from `segments.json` **minus** any id that appears in the
+heir's `subprocess_links.child` (a member id is in `supersedes` **or** `subprocess_links.child`,
+never both — else the engine would tombstone a still-live child). Then:
 ```
 Bash: DATA_ROOT=<data-repo> merge restructure \
   --plan {run_dir}/restructure/{seq}.json \
@@ -580,11 +582,19 @@ via 10d, or explains why it still cannot be cited.
 2. **Record the choice.** For a merge, set the item's `chosen_shape` in
    `consolidation.json` (Write). Set `status: "approved"`.
 3. **Run the structural verb:**
-   - **merge:** dispatch `Task: consolidate  mode: apply  item: <item>  chosen_shape: <flat|mother_subprocess>  …`; it returns a restructure plan. Write it to `{run_dir}/restructure.consolidation.json`, `Bash: validate restructure {run_dir}/restructure.consolidation.json`, then
+   - **merge:** build the heir with the **hardened `extract` path** — never an ad-hoc `Agent`
+     dispatch (that stalls the SDK bridge, ADRs 0002–0007). Dispatch **one**
+     `Task: extract  mode: restructure  existing_process_paths: [<each member's process.json>]  evidence: [<union of the members' evidence from consolidation.json>]  transcript_paths: [<every transcript in the set>]  attachment_texts: {attachment_texts}  chosen_shape: <flat|mother_subprocess>  seq: 01  run_dir: {run_dir}  data_root: <data-repo>`.
+     It writes a heir candidate to `{run_dir}/candidates/01.json`. **Assemble** the restructure
+     plan `{department, heirs: [{candidate: <that candidate>, supersedes: <members>, subprocess_links: <from the candidate>}]}` —
+     `supersedes` = **all** members for `flat`, or the **non-child** members for
+     `mother_subprocess` (a member id is in `supersedes` **or** `subprocess_links.child`, never
+     both). Write it to `{run_dir}/restructure.consolidation.json`,
+     `Bash: validate restructure {run_dir}/restructure.consolidation.json`, then
      `Bash: DATA_ROOT=<data-repo> merge restructure --plan {run_dir}/restructure.consolidation.json --run {run_dir}`.
      Capture the printed `heir <id>` and `tombstoned <id>` lines.
    - **attach:** `Bash: DATA_ROOT=<data-repo> merge attach-subprocess --parent-process {parent_process} --node {parent_node} --child {child} --run {run_dir}`.
-4. **Soundness pass (§4.7).** Dispatch `Task: consolidate  mode: apply  item: <item with new ids>  …` for the seam check; for each returned delta, Write it, `Bash: validate delta <path>`, then `Bash: DATA_ROOT=<data-repo> merge update --process <pid> --delta <path> --run {run_dir}`. Append the returned repair records to the item's `repairs[]` in `consolidation.json`.
+4. **Soundness pass (§4.7).** Dispatch `Task: consolidate  mode: apply  item: <the item, plus the new `heir <id>` captured in step 3 for a merge (or the `parent_process`+`child` for an attach)>  …` — so it verifies the **heir**, not the now-tombstoned member ids in `item.processes`. For the seam check: for each returned delta, Write it, `Bash: validate delta <path>`, then `Bash: DATA_ROOT=<data-repo> merge update --process <pid> --delta <path> --run {run_dir}`. Append the returned repair records to the item's `repairs[]` in `consolidation.json`.
 5. **Mark applied + commit.** Set the item's `status: "applied"` in `consolidation.json`.
    `Bash: git -C <data-repo> add departments runs && git -C <data-repo> commit -m "consolidate({department}): item {n} — {merge|attach}"`. (Stage only `departments`/`runs` — never `git add -A`, which would sweep in unrelated `.claude`/config edits.)
 6. **Show the result.** Present the finished process(es) to the user in Persian — the

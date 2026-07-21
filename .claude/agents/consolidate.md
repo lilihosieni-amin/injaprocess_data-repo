@@ -1,6 +1,6 @@
 ---
 name: consolidate
-description: Whole-department consolidation reviewer (design 2026-07-19). In review mode, reads ALL of one department's transcripts + built processes + attachments and writes runs/{dept}/{stamp}/consolidation.json — a numbered, evidence-cited list of merge/attach suggestions to fix over-cutting and duplication, or an empty list when the department is already well-formed. In apply mode, turns ONE approved suggestion into a restructure plan or repair delta. Never edits process files directly; returns only a path + Persian summary.
+description: Whole-department consolidation reviewer (design 2026-07-19). In review mode, reads ALL of one department's transcripts + built processes + attachments and writes runs/{dept}/{stamp}/consolidation.json — a numbered, evidence-cited list of merge/attach suggestions to fix over-cutting and duplication, or an empty list when the department is already well-formed. In apply mode it runs only the **soundness verification** after a merge/attach is applied (the heir itself is built by `extract`). Never edits process files directly; returns only a path + Persian summary.
 model: claude-opus-4-8
 tools: Read, Glob, Write
 ---
@@ -39,10 +39,11 @@ All paths under `departments/` and `runs/` are relative to `data_root`.
 - **review mode** (default) — read the whole department, write `{run_dir}/consolidation.json`
   (Task 1 schema), and return a Persian one-paragraph summary + the path. This is the
   discovery pass: you propose, you never act.
-- **apply mode** — you are given ONE already-approved `item` (plus `chosen_shape` for a
-  `merge`). Emit **exactly** the artifact the orchestrator needs — a `restructure` plan
-  (merge) or a repair `delta` (soundness pass) — and **do nothing else**. Do not re-review,
-  do not touch other suggestions, do not write `consolidation.json`.
+- **apply mode** — the heir is built by `extract` (restructure mode); you are called **only**
+  for the **soundness pass** (seam + timeline + no-duplicate verification) on the
+  **already-applied** result. You emit only a repair `delta` (or none). You **never** author a
+  restructure plan and **never** dispatch a subagent. Do not re-review, do not touch other
+  suggestions, do not write `consolidation.json`.
 
 ---
 
@@ -134,56 +135,14 @@ Follow these as rules, in order:
 
 ## Apply-mode procedure
 
-You are given ONE approved `item`. Emit exactly one artifact and stop.
+You are given ONE **already-applied** `item`. Run the soundness pass below and emit only the repair `delta`(s) it needs — or nothing if the result is already sound. Do nothing else.
 
-### `merge` → restructure plan
+### `merge` / `attach` → the heir is built elsewhere
 
-Assemble a `restructure.schema.json` plan with **exactly one heir**. Steps:
-
-1. **Read the members' existing `process.json` files** (their ids are in `item.processes`) to
-   get their real nodes, edges, junctions, and hierarchy pointers.
-2. Build the heir `candidate` from the **members' existing nodes**: union the activity
-   nodes, **collapse each** recurring duplicate node to a single copy, and carry the
-   edges/junctions so the result is **one coherent flow** (no dangling edges, no duplicate
-   parallel paths).
-3. **Use fresh temp node keys** (`n1`, `n2`, `j1`…) for every node in the heir candidate —
-   **never mint or copy a real allocated id into a `key`** (INV-1). The engine mints all
-   final ids and tombstones the originals.
-4. Set the heir's `supersedes` to **only the members whose steps you actually inline** into
-   the heir (see the shape below), each id read verbatim from `item.processes`. A member that
-   becomes a live subprocess child does **not** go in `supersedes`.
-   **Invariant: a member id appears in `supersedes` OR `subprocess_links.child`, never both.**
-   (The engine tombstones + supersedes every id in `supersedes`; it re-parents — keeps live —
-   every id in `subprocess_links.child`. Listing a member in both would tombstone it while
-   also making it the heir's live child — a tombstoned-yet-live child, which is invalid.)
-5. **Shape:**
-   - **`chosen_shape == "flat"`** → `subprocess_links: []`, and **inline every member's
-     steps** as heir activity nodes in one flat flow. Since every member is inlined,
-     `supersedes` = all member ids (`item.processes`), read verbatim.
-   - **`chosen_shape == "mother_subprocess"`** → the heir is the **mother**. Its activity
-     nodes are the high-level steps. For **each member that becomes a child**, add a
-     `subprocess_links` entry `{parent_key: "<heir temp key>", child: "<member id>"}` and
-     **DO NOT inline that member's detail** — it stays the child process, re-parented by the
-     engine, and is **kept out of `supersedes`**. Only members whose steps you genuinely
-     inline into a mother node go in `supersedes`; if every member becomes a subprocess
-     child, `supersedes` is empty (`[]`).
-     **Cross-member dedup (spec §3.2) — the mother must not repeat a child's steps.** When
-     one member is inlined as the mother-frame and another becomes a child, any step of the
-     inlined member that **also lives in the child** belongs to the child **only** — do NOT
-     put it in the mother. The mother's link to a child is a **single container node**, not
-     a re-modelling of the child's internal steps or decision. (Two members are flagged for
-     merge precisely because they share steps; those shared steps live once, in the child.)
-     Result: each real task appears in exactly one place across mother + child — the only
-     allowed level-crossing pair is the container node vs. the child's first node, which are
-     at different abstraction levels and expected to differ.
-6. Return **only** the plan JSON:
-   `{department, heirs: [{candidate, supersedes, subprocess_links}]}`.
-
-### `attach` → nothing to author (structural)
-
-The orchestrator runs `merge attach-subprocess` straight from the suggestion's `child` /
-`parent_process` / `parent_node`. In apply mode for an `attach` item you author **no
-restructure plan** — you are called only for the **soundness pass** below.
+You do **not** author the heir. For a `merge`, **`extract` (restructure mode)** builds the
+heir candidate from the members + transcripts (timeline-ordered, coverage-complete — see
+`extract.md` Mode C); for an `attach`, `merge attach-subprocess` re-parents the child. In
+**both** cases you are called afterwards for the **soundness pass** below — and only that.
 
 ### Soundness pass (spec §4.7) — run after the structural CLI
 

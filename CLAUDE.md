@@ -60,10 +60,11 @@ Do not invoke `merge` directly before the checkpoint clears.
 |---|---|
 | `.claude/skills/process-voice/` | Pipeline orchestration playbook |
 | `.claude/skills/idef-extraction/` | IDEF0/IDEF3 field extraction rules |
+| `.claude/skills/edit-process/` | Chat-driven direct edits (no voice) → the `merge` verbs; merge/split heirs are built by `extract` (Mode C) |
 | `.claude/agents/classify.md` | Meeting classifier agent |
-| `.claude/agents/extract.md` | IDEF candidate + delta agent |
+| `.claude/agents/extract.md` | IDEF candidate + delta agent — **and the sole builder of restructure/merge heirs** (Mode C), for the pipeline, `consolidate`, and `edit-process` |
 | `.claude/agents/summarize.md` | Department overview agent |
-| `.claude/agents/consolidate.md` | Whole-department consolidation reviewer (post-run) |
+| `.claude/agents/consolidate.md` | Whole-department consolidation **reviewer + soundness** (post-run) — proposes merges/attaches and verifies the applied result; the heir itself is built by `extract` |
 
 ---
 

@@ -36,8 +36,16 @@ Choose the artifact by the kind of edit (see the `idef-extraction` skill §5/§8
 - **Remove an edge** → a `delta` with `remove_edges: [{from, to}]` (real ids).
 - **Drop a node** → a `delta` with `flag_removed: [{id}]` (the engine sets `removed:true`; never
   deletes — INV-4).
-- **Merge / split** → a `merge restructure` plan (`{department, heirs:[{candidate, supersedes:[pid],
-  subprocess_links:[…]}]}`).
+- **Merge / split** → a `merge restructure` plan — but **do not build the heir candidate
+  inline**. Dispatch **`Task: extract  mode: restructure`** with the members'
+  `existing_process_paths`, the department's `transcript_paths`, `attachment_texts`, and (for a
+  merge) the user's `chosen_shape` (`flat`|`mother_subprocess`); it builds a fresh,
+  **timeline-ordered, coverage-complete** heir candidate (`extract.md` Mode C — the same hardened
+  builder the pipeline uses, so a chat merge is ordered and duplicate-free too, and it never
+  improvises an `Agent` dispatch that stalls the SDK bridge). Then assemble the plan
+  `{department, heirs:[{candidate:<from extract>, supersedes:[…], subprocess_links:[…]}]}` (a
+  member id is in `supersedes` **or** `subprocess_links.child`, never both) and run
+  `merge restructure`.
 - **Re-parent an existing process under a node** → `merge attach-subprocess`.
 - **Delete / retire a process** → `merge remove` (tombstone, never a hard delete).
 
@@ -72,7 +80,7 @@ Every mutation to committed data ends in a commit — nothing is left uncommitte
 message keyed to the edit:
 
 ```
-Bash: git -C <data-repo> add -A && \
+Bash: git -C <data-repo> add departments runs && \
       git -C <data-repo> commit -m "chat-edit({id}): <one-line Persian/English summary of the change>"
 ```
 

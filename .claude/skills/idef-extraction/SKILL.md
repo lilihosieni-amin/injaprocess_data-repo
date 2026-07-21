@@ -108,6 +108,14 @@ it as a **loop-back edge to the existing node** (see the junction/loop-back rule
 never a second copy of the node. A recurring step is an *edge*, not a duplicated node. (Do
 not collapse genuinely distinct steps that merely sound alike — §6.)
 
+**Order the whole flow by real timing.** A flow is placed in **chronological (timeline)
+order** — the sequence in which the work actually happens, from the start of the procedure to
+its end — not in the order the transcript happens to mention things. When a process is
+assembled from several mentions or several source processes, **interleave** the steps at their
+true time; never place a block of later-time steps before an earlier-time step. (This is the
+`classify` shift-walk applied inside a single process; it is what a merge relies on — see
+`extract.md` Mode C.)
+
 **Self-check before emitting.** Re-read every title and description: every description
 sentence that passes the node test ("someone does this") must be promoted into the flow as
 its own node in its correct chronological position, and every title must be readable in

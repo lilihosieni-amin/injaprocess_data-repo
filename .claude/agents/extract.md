@@ -26,6 +26,8 @@ The idef-extraction skill defines every modelling concept, every JSON field, eve
 | `attachment_texts` | List of cached attachment `.txt` paths for this department (may be empty). Reference documents such as job descriptions. |
 | `existing_process_paths` | Paths to the committed `process.json`(s) this process supersedes — UPDATE (one) and RESTRUCTURE (one or more) modes |
 | `existing_id` | The committed process ID being revised in place — UPDATE mode only |
+| `chosen_shape` | **RESTRUCTURE merge only (consolidation-driven)** — `flat` or `mother_subprocess`; picks the heir shape (see Mode C). Absent for classify-driven restructures (infer the shape from the segments). |
+| `data_root` | Absolute path to the `data-repo` root (passed by the consolidation apply path; classify-driven dispatches may omit it). |
 
 **Read only the spans this process's `evidence` points into**, across whichever transcripts in
 `transcript_paths` those mentions live in. Assemble the process from **all** its mentions across
@@ -156,11 +158,25 @@ Create any missing parent directories as needed before writing.
 Use this mode when `mode` is `restructure` (the mapping between committed and desired processes is
 **not** one-to-one). Each heir process is emitted separately with its own `seq`.
 
-### Step 1 — Read every superseded process
+### Step 1 — Read every member in full, and its evidence
 
-Read all committed `process.json` files in `existing_process_paths`. They give you the real node
-ids of the originals and their hierarchy pointers (`parent`, and each node's `subprocess`). Copy
-ids verbatim; never invent one (INV-1).
+Read **all** committed `process.json` files in `existing_process_paths` **in full** — they are
+your **content checklist**: every distinct step, actor, ICOM, timing/quantity/tool they hold
+(including a human's manual UI/chat edits) must survive into the heir. Copy their real node
+ids/hierarchy pointers (`parent`, each node's `subprocess`) verbatim (INV-1); never invent one.
+Also read **every member's evidence spans** across `transcript_paths` — the transcripts are the
+ground truth for **when** each step happens. (For a **consolidation-driven** merge the
+`evidence` you receive may be **citation-shaped** — process ids + node id/label + a short span —
+rather than full `{transcript, text}` arrays; when it is, lean on the member `process.json`
+files plus `transcript_paths` for the actual spans.)
+
+**Build the heir as ONE freshly-modelled flow (a real re-extraction), not a stitch:**
+- **Timeline order (idef-extraction §2).** Place every step at its **true shift-chronological
+  position**, interleaving the members' work; **never** concatenate one member's whole flow
+  after another's.
+- **Coverage (INV-3, both ways).** Cover every distinct step/field of every member — nothing
+  lost; the transcripts fix order and fill gaps; only genuine **duplicates** collapse to one
+  node. Split genuinely divergent paths with junctions rather than leaving shared duplicates.
 
 ### What to produce
 
@@ -178,6 +194,16 @@ heir has hierarchy links, a **`subprocess_links`** array declaring them:
 
 - `parent_key` — the heir's temp activity key whose box owns the sub-process link.
 - `child` — the **committed** child process id that must re-parent under this heir (read verbatim).
+
+**Heir shape (RESTRUCTURE merge).** If `chosen_shape == "flat"` (or the segments imply one flat
+process): inline every member's steps into one flat, timeline-ordered flow; `subprocess_links: []`.
+If `chosen_shape == "mother_subprocess"`: the heir is the **mother** — its nodes are the
+high-level steps in timeline order, and each member that becomes a child gets a `subprocess_links`
+entry `{parent_key, child}` with its detail left in the child (not inlined). A member appears
+**either** inlined in the heir **or** as a `subprocess_links.child`, never both. (The orchestrator
+fills `supersedes` accordingly — Stage 10.) For a classify-driven **split** (2+ heirs, no
+`chosen_shape`), each heir is its **own** independent candidate — flat, or with its own
+`subprocess_links` — inferred from that heir's segment.
 
 The heir is one entry in the run's restructure **plan** the orchestrator assembles (shape
 `{department, heirs:[{candidate, supersedes:[pid], subprocess_links:[…]}]}`) and passes to
@@ -228,6 +254,6 @@ After writing the output file, return:
 2. A one-line Persian summary of the extraction: number of nodes and edges. Example format: «فرایند ثبت سفارش: ۵ گره فعالیت، ۲ گره تقاطع، ۷ یال.»
 3. If you created any child sub-processes, list each parent node key and child process name.
 
-**Final self-check (before writing the output file):** re-scan this process's evidence spans (across the set) and verify (a) every spoken decision/exception/rework loop is modeled as a junction with exhaustive branches, (b) the graph passes the §2 entry/exit tests, (c) no spoken timing, quantity, tool, or standard was dropped (§6), (d) the §2 "What goes in the flow" rules hold — no action demoted into a `description`, every title readable in isolation, any «و»-joined title split into sequential nodes, and (e) **edge hygiene**: for every node you inserted onto an existing path or every re-routed flow, the now-redundant edge is listed in `remove_edges`, and any committed value a later session changed is in `revise_nodes` (not `enrich_nodes`), and (f) **no duplicated task** — a step decomposed into a subprocess appears **only** in the child (never also as a flat node in the parent flow), and no task is emitted twice within one flow (a revisit is a loop-back edge, not a copy); the parent container box vs. its child subprocess is the one allowed level-crossing exception (§7 "No duplication across a process and its subprocess").
+**Final self-check (before writing the output file):** re-scan this process's evidence spans (across the set) and verify (a) every spoken decision/exception/rework loop is modeled as a junction with exhaustive branches, (b) the graph passes the §2 entry/exit tests, (c) no spoken timing, quantity, tool, or standard was dropped (§6), (d) the §2 "What goes in the flow" rules hold — no action demoted into a `description`, every title readable in isolation, any «و»-joined title split into sequential nodes, and (e) **edge hygiene**: for every node you inserted onto an existing path or every re-routed flow, the now-redundant edge is listed in `remove_edges`, and any committed value a later session changed is in `revise_nodes` (not `enrich_nodes`), and (f) **no duplicated task** — a step decomposed into a subprocess appears **only** in the child (never also as a flat node in the parent flow), and no task is emitted twice within one flow (a revisit is a loop-back edge, not a copy); the parent container box vs. its child subprocess is the one allowed level-crossing exception (§7 "No duplication across a process and its subprocess"), and (g) **timeline order** — walk the result as a shift and confirm every node sits in its true chronological position (an order-time step never after a serve-time step), and (h) **cross-member coverage (RESTRUCTURE merge only)** — every distinct step/field of every merged member is present exactly once (nothing lost, nothing duplicated across members).
 
 Do not paste the full JSON graph back in your completion message.
