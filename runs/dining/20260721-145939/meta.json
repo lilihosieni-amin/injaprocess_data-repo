@@ -1,0 +1,8 @@
+{
+  "department": "dining",
+  "transcripts": ["dining-1405-04-11", "dining-1405-04-14", "dining-1405-04-15"],
+  "started_at": "2026-07-21T14:59:39Z",
+  "finished_at": null,
+  "attempt": 1,
+  "processes": []
+}
