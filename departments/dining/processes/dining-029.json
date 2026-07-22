@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-22T06:07:22Z",
-  "updated_at": "2026-07-22T06:07:22Z",
+  "updated_at": "2026-07-22T18:55:55Z",
   "idef0": {
     "inputs": [
       "موجودی ملزومات و محصولات پذیرایی سالن",
@@ -133,7 +133,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -158,7 +158,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -183,7 +183,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 615.0
+        "y": 615
       },
       "layout": "auto",
       "source": {
@@ -206,7 +206,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -229,7 +229,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -243,10 +243,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 883,
-        "y": 543.5
+        "x": 835.3879641485275,
+        "y": 614.2746478873239
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "dining-029-n008",
@@ -389,7 +389,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 790.0
+        "y": 790
       },
       "layout": "auto",
       "source": {
@@ -416,7 +416,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 790.0
+        "y": 790
       },
       "layout": "auto",
       "source": {
@@ -443,7 +443,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 965.0
+        "y": 965
       },
       "layout": "auto",
       "source": {
