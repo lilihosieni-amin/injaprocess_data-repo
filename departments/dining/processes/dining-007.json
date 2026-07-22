@@ -13,7 +13,7 @@
     "node": "dining-027-n008"
   },
   "created_at": "2026-07-21T23:37:52Z",
-  "updated_at": "2026-07-22T05:03:46Z",
+  "updated_at": "2026-07-22T11:32:07Z",
   "idef0": {
     "inputs": [
       "مشتری با سفارش ثبت‌شده و استند آبی‌رنگ شماره‌دار"
@@ -130,8 +130,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 90
+        "x": 300,
+        "y": 702.5
       },
       "layout": "auto",
       "source": {
@@ -145,8 +145,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1143,
-        "y": 106
+        "x": 103,
+        "y": 718.5
       },
       "layout": "auto"
     },
@@ -189,8 +189,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 440
+        "x": 40,
+        "y": 1227.5
       },
       "layout": "auto",
       "source": {
@@ -204,8 +204,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 883,
-        "y": 368.5
+        "x": 363,
+        "y": 1156.0
       },
       "layout": "auto"
     },
@@ -228,7 +228,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 352.5
+        "y": 1140.0
       },
       "layout": "auto",
       "source": {
@@ -254,14 +254,103 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 352.5
+        "x": 820,
+        "y": 1140.0
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/dining/20260721-145939",
         "touched_by": []
       }
+    },
+    {
+      "id": "dining-007-j3",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "split",
+      "position": {
+        "x": 883,
+        "y": 237.25
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "dining-007-n009",
+      "type": "activity",
+      "label": "افزودن ۵ دقیقه به زمان انتظار به ازای هر ویتینگ اضافه از ویتینگ پنجم به بعد",
+      "description": "تا سه-چهار ویتینگ اول قانون خاصی اعمال نمی‌شود؛ اما از ویتینگ پنجم به بعد وقتی خیلی شلوغ می‌شود، به ازای هر ویتینگ اضافه ۵ دقیقه به زمان انتظار اعلام‌شده به مشتری بعدی افزوده می‌شود (مثلاً نفر ششم ۱۵ تا ۲۰ دقیقه، نفر هفتم ۲۰ تا ۲۵ دقیقه) و همان زمان برای مشتری نوشته می‌شود.",
+      "actor": "هدویتر (سرسالن‌دار/سرپرست سالن)",
+      "icom": {
+        "inputs": [],
+        "controls": [
+          "افزودن ۵ دقیقه زمان انتظار به ازای هر ویتینگ اضافه از ویتینگ پنجم به بعد"
+        ],
+        "outputs": [
+          "زمان تخمینی انتظار افزایش‌یافته نوشته‌شده برای مشتری"
+        ],
+        "mechanisms": [
+          "هدویتر (سرسالن‌دار/سرپرست سالن)"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 352.5
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260722-113033",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "dining-007-j4",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "split",
+      "position": {
+        "x": 1143,
+        "y": 806.0
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "dining-007-n010",
+      "type": "activity",
+      "label": "دادن زمان کوتاه‌تر (حدود یک ربع) به مشتری هنگام خالی شدن هم‌زمان چند میز",
+      "description": "این قاعده تجربی است: گاهی با وجود ویتینگ زیاد، چند میز هم‌زمان زود خالی می‌شوند و در آن صورت زمان کوتاه‌تری (حدود یک ربع) به مشتری داده می‌شود.",
+      "actor": "هدویتر (سرسالن‌دار/سرپرست سالن)",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [
+          "زمان انتظار کوتاه‌تر (حدود یک ربع) نوشته‌شده برای مشتری"
+        ],
+        "mechanisms": [
+          "هدویتر (سرسالن‌دار/سرپرست سالن)"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 877.5
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260722-113033",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "dining-007-j5",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "join",
+      "position": {
+        "x": 623,
+        "y": 718.5
+      },
+      "layout": "auto"
     }
   ],
   "edges": [
@@ -272,10 +361,6 @@
     {
       "from": "dining-007-n002",
       "to": "dining-007-n003"
-    },
-    {
-      "from": "dining-007-n003",
-      "to": "dining-007-n004"
     },
     {
       "from": "dining-007-n004",
@@ -306,6 +391,42 @@
     {
       "from": "dining-007-n007",
       "to": "dining-007-n008"
+    },
+    {
+      "from": "dining-007-n003",
+      "to": "dining-007-j3"
+    },
+    {
+      "from": "dining-007-j3",
+      "to": "dining-007-j5",
+      "label": "تا چهار ویتینگ اول"
+    },
+    {
+      "from": "dining-007-j3",
+      "to": "dining-007-n009",
+      "label": "از ویتینگ پنجم به بعد و شلوغی زیاد"
+    },
+    {
+      "from": "dining-007-n009",
+      "to": "dining-007-j4"
+    },
+    {
+      "from": "dining-007-j4",
+      "to": "dining-007-j5",
+      "label": "در حالت معمول شلوغی"
+    },
+    {
+      "from": "dining-007-j4",
+      "to": "dining-007-n010",
+      "label": "در صورت خالی شدن هم‌زمان چند میز"
+    },
+    {
+      "from": "dining-007-n010",
+      "to": "dining-007-j5"
+    },
+    {
+      "from": "dining-007-j5",
+      "to": "dining-007-n004"
     }
   ],
   "pending": []
