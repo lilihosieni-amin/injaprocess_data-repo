@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-21T23:37:53Z",
-  "updated_at": "2026-07-21T23:37:53Z",
+  "updated_at": "2026-07-22T06:07:21Z",
   "idef0": {
     "inputs": [
       "درخواست آیتم اضافه از سوی مشتری",
@@ -193,5 +193,9 @@
       "label": "استند مشترک"
     }
   ],
-  "pending": []
+  "pending": [],
+  "tombstoned": true,
+  "superseded_by": [
+    "dining-027"
+  ]
 }

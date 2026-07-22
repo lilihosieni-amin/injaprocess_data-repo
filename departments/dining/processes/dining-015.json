@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-21T23:37:54Z",
-  "updated_at": "2026-07-21T23:37:54Z",
+  "updated_at": "2026-07-22T06:07:21Z",
   "idef0": {
     "inputs": [],
     "controls": [
@@ -117,5 +117,9 @@
       "to": "dining-015-n003"
     }
   ],
-  "pending": []
+  "pending": [],
+  "tombstoned": true,
+  "superseded_by": [
+    "dining-028"
+  ]
 }

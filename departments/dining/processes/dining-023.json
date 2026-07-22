@@ -8,7 +8,10 @@
     "ref": "20260721-145939",
     "run": "runs/dining/20260721-145939"
   },
-  "parent": null,
+  "parent": {
+    "process": "dining-029",
+    "node": "dining-029-n008"
+  },
   "created_at": "2026-07-21T23:37:57Z",
   "updated_at": "2026-07-21T23:37:57Z",
   "idef0": {

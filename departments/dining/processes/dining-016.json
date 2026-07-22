@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-21T23:37:55Z",
-  "updated_at": "2026-07-21T23:37:55Z",
+  "updated_at": "2026-07-22T06:07:21Z",
   "idef0": {
     "inputs": [
       "میز استفاده‌شده مشتری با ظروف، لیوان، دستمال و زباله"
@@ -274,5 +274,9 @@
       "to": "dining-016-n006"
     }
   ],
-  "pending": []
+  "pending": [],
+  "tombstoned": true,
+  "superseded_by": [
+    "dining-028"
+  ]
 }
