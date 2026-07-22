@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-22T06:07:21Z",
-  "updated_at": "2026-07-22T11:32:08Z",
+  "updated_at": "2026-07-22T18:54:44Z",
   "idef0": {
     "inputs": [
       "میز استفاده‌شده مشتری با ظروف، لیوان، دستمال و زباله",
@@ -74,7 +74,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -102,7 +102,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -129,7 +129,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -156,7 +156,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -220,13 +220,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 352.5
+        "x": 532.5633802816902,
+        "y": 351.25288092189504
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260722-060328",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -264,10 +266,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 368.5
+        "x": 94.27016645326505,
+        "y": 326.0979513444302
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "dining-028-n008",
@@ -294,7 +296,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 615.0
+        "y": 615
       },
       "layout": "auto",
       "source": {
@@ -323,7 +325,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 615.0
+        "y": 615
       },
       "layout": "auto",
       "source": {
@@ -352,7 +354,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 615.0
+        "y": 615
       },
       "layout": "auto",
       "source": {
@@ -381,7 +383,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 615.0
+        "y": 615
       },
       "layout": "auto",
       "source": {
@@ -410,7 +412,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 615.0
+        "y": 615
       },
       "layout": "auto",
       "source": {
@@ -538,7 +540,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 790.0
+        "y": 790
       },
       "layout": "auto",
       "source": {
@@ -565,7 +567,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 965.0
+        "y": 965
       },
       "layout": "auto",
       "source": {
@@ -580,7 +582,7 @@
       "direction": "split",
       "position": {
         "x": 1143,
-        "y": 106.0
+        "y": 106
       },
       "layout": "auto"
     },
@@ -605,7 +607,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
