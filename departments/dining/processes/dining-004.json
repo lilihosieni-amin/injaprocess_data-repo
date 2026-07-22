@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-21T23:37:51Z",
-  "updated_at": "2026-07-21T23:37:51Z",
+  "updated_at": "2026-07-22T05:13:00Z",
   "idef0": {
     "inputs": [],
     "controls": [
@@ -196,5 +196,9 @@
       "label": "در صورت آف بودن یکی از پرسنل"
     }
   ],
-  "pending": []
+  "pending": [],
+  "tombstoned": true,
+  "superseded_by": [
+    "dining-026"
+  ]
 }

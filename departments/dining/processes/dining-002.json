@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-21T23:37:50Z",
-  "updated_at": "2026-07-21T23:37:50Z",
+  "updated_at": "2026-07-22T05:13:00Z",
   "idef0": {
     "inputs": [
       "سالن نظافت‌نشده",
@@ -445,5 +445,9 @@
       "to": "dining-002-n008"
     }
   ],
-  "pending": []
+  "pending": [],
+  "tombstoned": true,
+  "superseded_by": [
+    "dining-026"
+  ]
 }
