@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-22T19:04:27Z",
-  "updated_at": "2026-07-22T19:07:25Z",
+  "updated_at": "2026-07-22T23:11:26Z",
   "idef0": {
     "inputs": [
       "درخواست کنسلی یا اصلاح سفارش مشتری",
@@ -288,13 +288,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 615
+        "x": 390.5813060179257,
+        "y": 596.1933418693982
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260722-190020",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -434,13 +436,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 790
+        "x": 741.6389244558259,
+        "y": 794.7016645326505
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260722-190020",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -463,13 +467,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 790
+        "x": 219.9129321382842,
+        "y": 796.2688860435338
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260722-190020",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -508,6 +514,31 @@
       "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260722-190020",
+        "touched_by": [
+          "ui-edit"
+        ]
+      }
+    },
+    {
+      "id": "dining-031-n015",
+      "type": "activity",
+      "label": "پرسیدن از  مشتری در رابطه با اینکه غذای جدید در سالن سرو شود یا بیرون بر",
+      "description": "",
+      "actor": "سرپرست",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 506.9498270696621,
+        "y": 784.843330021857
+      },
+      "layout": "manual",
+      "source": {
+        "created_by": "ui-edit",
         "touched_by": [
           "ui-edit"
         ]
@@ -575,10 +606,6 @@
       "to": "dining-031-n011"
     },
     {
-      "from": "dining-031-n012",
-      "to": "dining-031-n013"
-    },
-    {
       "from": "dining-031-n007",
       "to": "dining-031-j3"
     },
@@ -587,12 +614,23 @@
       "to": "dining-031-j3"
     },
     {
-      "from": "dining-031-n013",
-      "to": "dining-031-j3"
-    },
-    {
       "from": "dining-031-j3",
       "to": "dining-031-n014"
+    },
+    {
+      "from": "dining-031-n012",
+      "to": "dining-031-n015",
+      "label": ""
+    },
+    {
+      "from": "dining-031-n015",
+      "to": "dining-031-n013",
+      "label": ""
+    },
+    {
+      "from": "dining-031-n013",
+      "to": "dining-031-j3",
+      "label": ""
     }
   ],
   "pending": []
