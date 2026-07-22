@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-22T06:07:22Z",
-  "updated_at": "2026-07-22T22:47:58Z",
+  "updated_at": "2026-07-22T22:59:26Z",
   "idef0": {
     "inputs": [
       "موجودی ملزومات و محصولات پذیرایی سالن",
@@ -124,35 +124,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 822.5736235595391,
-        "y": 262.42637644046096
-      },
-      "layout": "manual",
-      "source": {
-        "created_by": "runs/chat/20260722-060328",
-        "touched_by": [
-          "ui-edit"
-        ]
-      }
-    },
-    {
-      "id": "dining-029-n005",
-      "type": "activity",
-      "label": "تیک‌زدن بخش‌های انجام‌شدهٔ نظافت آخر شب در چک‌لیست",
-      "description": "هر بخش از نظافت آخر شب که انجام می‌شود، در چک‌لیست نظافت تیک زده می‌شود تا مشخص باشد دانه‌دانه انجام شده یا نه.",
-      "actor": "بچه‌های سالن",
-      "icom": {
-        "inputs": [],
-        "controls": [
-          "چک‌لیست نظافت آخر شب"
-        ],
-        "outputs": [],
-        "mechanisms": []
-      },
-      "subprocess": null,
-      "position": {
-        "x": 895.9859154929578,
-        "y": 478.5979513444302
+        "x": 701.4019994720975,
+        "y": 150.7584091441912
       },
       "layout": "manual",
       "source": {
@@ -215,13 +188,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 615.0
+        "x": 64.62188976016493,
+        "y": 548.4744024617969
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260722-060328",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -243,10 +218,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 615.0
+        "x": 155.9319817168639,
+        "y": 744.487323779717
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260722-060328",
         "touched_by": [
@@ -271,10 +246,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 615.0
+        "x": 616.6967314303702,
+        "y": 822.8924923068851
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260722-060328",
         "touched_by": [
@@ -288,10 +263,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1143,
-        "y": 893.5
+        "x": 873.3337385504975,
+        "y": 868.5529009231738
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "dining-029-n013",
@@ -311,8 +286,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 527.8937259923176,
-        "y": 744.9615877080666
+        "x": 1089.797433770356,
+        "y": 727.1422312246193
       },
       "layout": "manual",
       "source": {
@@ -340,10 +315,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 965.0
+        "x": 1107.4856179329497,
+        "y": 963.8120429011035
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260722-060328",
         "touched_by": [
@@ -396,13 +371,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 352.5
+        "x": 962.3922472092477,
+        "y": 327.5529009231738
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260722-224555",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -425,13 +402,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 352.5
+        "x": 681.009019429111,
+        "y": 421.4015117359962
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260722-224555",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -463,13 +442,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 265.0
+        "x": 316.6313993845508,
+        "y": 457.44905002123085
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260722-224555",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -488,13 +469,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 440.0
+        "x": -207.25768122879987,
+        "y": 668.0877629881256
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260722-224555",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -513,13 +496,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 440.0
+        "x": 582.8963941956945,
+        "y": 1099.31618988755
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260722-224555",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -538,13 +523,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 615.0
+        "x": 801.4805003926481,
+        "y": 1109.486818399349
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260722-224555",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -565,14 +552,49 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 615.0
+        "x": 1068.608242986027,
+        "y": 1149.728334915954
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260722-224555",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
+    },
+    {
+      "id": "dining-029-j5",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "split",
+      "position": {
+        "x": 257.2039267844599,
+        "y": 336.2122337846142
+      },
+      "layout": "manual"
+    },
+    {
+      "id": "dining-029-j6",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "split",
+      "position": {
+        "x": 157.415530477155,
+        "y": 964.6415391008558
+      },
+      "layout": "manual"
+    },
+    {
+      "id": "dining-029-j7",
+      "type": "junction",
+      "junctionType": "AND",
+      "direction": "split",
+      "position": {
+        "x": 456.7807193990697,
+        "y": 934.1989602004923
+      },
+      "layout": "manual"
     }
   ],
   "edges": [
@@ -583,10 +605,6 @@
     {
       "from": "dining-029-n009",
       "to": "dining-029-n010"
-    },
-    {
-      "from": "dining-029-n010",
-      "to": "dining-029-n011"
     },
     {
       "from": "dining-029-n011",
@@ -608,18 +626,9 @@
       "label": ""
     },
     {
-      "from": "dining-029-n003",
-      "to": "dining-029-n005",
-      "label": ""
-    },
-    {
       "from": "dining-029-j3",
       "to": "dining-029-n013",
       "label": ""
-    },
-    {
-      "from": "dining-029-n005",
-      "to": "dining-029-n016"
     },
     {
       "from": "dining-029-n016",
@@ -635,18 +644,9 @@
       "label": "در صورت انجام‌نشدن درست کارها"
     },
     {
-      "from": "dining-029-j4",
-      "to": "dining-029-n019",
-      "label": "در صورت درست بودن کارها"
-    },
-    {
       "from": "dining-029-n018",
       "to": "dining-029-n017",
       "label": "کنترل مجدد"
-    },
-    {
-      "from": "dining-029-n019",
-      "to": "dining-029-n020"
     },
     {
       "from": "dining-029-n020",
@@ -657,8 +657,49 @@
       "to": "dining-029-n022"
     },
     {
-      "from": "dining-029-n022",
-      "to": "dining-029-n009"
+      "from": "dining-029-n003",
+      "to": "dining-029-n016",
+      "label": ""
+    },
+    {
+      "from": "dining-029-j5",
+      "to": "dining-029-n019",
+      "label": "مشتری در مجموعه نباشد"
+    },
+    {
+      "from": "dining-029-j4",
+      "to": "dining-029-j5",
+      "label": ""
+    },
+    {
+      "from": "dining-029-j5",
+      "to": "dining-029-n009",
+      "label": "مشتری در مجموعه حضور داشته باشد"
+    },
+    {
+      "from": "dining-029-n010",
+      "to": "dining-029-j6",
+      "label": ""
+    },
+    {
+      "from": "dining-029-n019",
+      "to": "dining-029-j6",
+      "label": ""
+    },
+    {
+      "from": "dining-029-j6",
+      "to": "dining-029-j7",
+      "label": ""
+    },
+    {
+      "from": "dining-029-j7",
+      "to": "dining-029-n011",
+      "label": ""
+    },
+    {
+      "from": "dining-029-j7",
+      "to": "dining-029-n020",
+      "label": ""
     }
   ],
   "pending": []
