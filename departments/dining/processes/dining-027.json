@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-22T06:07:21Z",
-  "updated_at": "2026-07-22T18:47:18Z",
+  "updated_at": "2026-07-22T18:54:08Z",
   "idef0": {
     "inputs": [
       "مشتری تازه‌وارد",
@@ -276,8 +276,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 893.5
+        "x": 363,
+        "y": 543.5
       },
       "layout": "auto"
     },
@@ -304,8 +304,8 @@
       },
       "subprocess": "dining-007",
       "position": {
-        "x": 1080,
-        "y": 965
+        "x": 40,
+        "y": 615.0
       },
       "layout": "auto",
       "source": {
@@ -321,8 +321,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1143,
-        "y": 1156
+        "x": 103,
+        "y": 806.0
       },
       "layout": "auto"
     },
@@ -358,8 +358,8 @@
       },
       "subprocess": "dining-008",
       "position": {
-        "x": 820,
-        "y": 1140
+        "x": 300,
+        "y": 790.0
       },
       "layout": "auto",
       "source": {
@@ -388,7 +388,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1140
+        "y": 790.0
       },
       "layout": "auto",
       "source": {
@@ -417,8 +417,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1140
+        "x": 820,
+        "y": 790.0
       },
       "layout": "auto",
       "source": {
@@ -432,8 +432,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 1156
+        "x": 1143,
+        "y": 806.0
       },
       "layout": "auto"
     },
@@ -457,8 +457,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1315
+        "x": 1080,
+        "y": 965.0
       },
       "layout": "auto",
       "source": {
@@ -486,8 +486,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1490
+        "x": 1080,
+        "y": 1140.0
       },
       "layout": "auto",
       "source": {
@@ -535,8 +535,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1402.5
+        "x": 300,
+        "y": 1052.5
       },
       "layout": "auto",
       "source": {
@@ -562,8 +562,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1402.5
+        "x": 40,
+        "y": 1052.5
       },
       "layout": "auto",
       "source": {
@@ -591,8 +591,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1665
+        "x": 40,
+        "y": 1315.0
       },
       "layout": "auto",
       "source": {
@@ -621,8 +621,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1665
+        "x": 300,
+        "y": 1315.0
       },
       "layout": "auto",
       "source": {
@@ -649,7 +649,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1665
+        "y": 1315.0
       },
       "layout": "auto",
       "source": {
@@ -666,7 +666,8 @@
         "x": 623,
         "y": 543.5
       },
-      "layout": "auto"
+      "layout": "auto",
+      "removed": true
     },
     {
       "id": "dining-027-n019",
@@ -695,8 +696,11 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260722-113033",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260722-185027"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "dining-027-n020",
@@ -724,8 +728,11 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260722-113033",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260722-185027"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "dining-027-n021",
@@ -753,8 +760,11 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260722-113033",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260722-185027"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "dining-027-n022",
@@ -782,8 +792,11 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260722-113033",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260722-185027"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "dining-027-j9",
@@ -794,7 +807,49 @@
         "x": 623,
         "y": 893.5
       },
-      "layout": "auto"
+      "layout": "auto",
+      "removed": true
+    },
+    {
+      "id": "dining-027-n023",
+      "type": "activity",
+      "label": "مدیریت روش‌های پرداخت مشتری (الکترونیکی پای کیوسک، نقدی از صندوق، کارت‌به‌کارت به حساب مجموعه)",
+      "description": "پس از ثبت سفارش در کیوسک، پرداخت مشتری بر حسب روش انتخابی مدیریت می‌شود: به‌صورت پیش‌فرض همه پرداخت‌ها الکترونیکی و پای کیوسک است؛ اگر مشتری نقدی بخواهد به سمت صندوق راهنمایی می‌شود؛ و اگر بخواهد کارت‌به‌کارت یا آنلاین پرداخت کند، به حساب مجموعه واریز می‌کند. جزئیات این مرحله در زیرفرایند مربوطه است.",
+      "actor": "پرسنل سالن",
+      "icom": {
+        "inputs": [
+          "سفارش ثبت‌شده در سیستم",
+          "درخواست پرداخت مشتری"
+        ],
+        "controls": [
+          "رویه پیش‌فرض پرداخت الکترونیکی پای کیوسک",
+          "اصل شفافیت شدید مسائل مالی",
+          "رویه تأیید واریز کارت‌به‌کارت زیر ۲۴ ساعت"
+        ],
+        "outputs": [
+          "پرداخت انجام‌شده و تأییدشده مشتری"
+        ],
+        "mechanisms": [
+          "پرسنل سالن",
+          "سرپرست سالن",
+          "صندوق",
+          "کیوسک سفارش‌گیری",
+          "گوشی متعلق به سیستم داخل صندوق",
+          "حسابداری"
+        ]
+      },
+      "subprocess": "dining-030",
+      "position": {
+        "x": 560,
+        "y": 527.5
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260722-185027",
+        "touched_by": [
+          "runs/chat/20260722-185027"
+        ]
+      }
     }
   ],
   "edges": [
@@ -918,36 +973,10 @@
     },
     {
       "from": "dining-027-n007",
-      "to": "dining-027-j8"
+      "to": "dining-027-n023"
     },
     {
-      "from": "dining-027-j8",
-      "to": "dining-027-j9",
-      "label": "الکترونیکی/کارت (پیش‌فرض، پای کیوسک)"
-    },
-    {
-      "from": "dining-027-j8",
-      "to": "dining-027-n019",
-      "label": "نقدی"
-    },
-    {
-      "from": "dining-027-n019",
-      "to": "dining-027-n020"
-    },
-    {
-      "from": "dining-027-n020",
-      "to": "dining-027-n021"
-    },
-    {
-      "from": "dining-027-n021",
-      "to": "dining-027-n022"
-    },
-    {
-      "from": "dining-027-n022",
-      "to": "dining-027-j9"
-    },
-    {
-      "from": "dining-027-j9",
+      "from": "dining-027-n023",
       "to": "dining-027-j3"
     }
   ],
