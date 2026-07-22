@@ -13,7 +13,7 @@
     "node": "dining-029-n008"
   },
   "created_at": "2026-07-21T23:37:57Z",
-  "updated_at": "2026-07-21T23:37:57Z",
+  "updated_at": "2026-07-22T22:41:15Z",
   "idef0": {
     "inputs": [],
     "controls": [
@@ -118,13 +118,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 90.0
+        "x": 660.5,
+        "y": -7
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/dining/20260721-145939",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -144,7 +146,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -169,7 +171,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -194,7 +196,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -221,7 +223,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
