@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-22T05:13:00Z",
-  "updated_at": "2026-07-22T11:17:46Z",
+  "updated_at": "2026-07-22T19:26:12Z",
   "idef0": {
     "inputs": [
       "سالن نظافت‌نشده",
@@ -84,7 +84,7 @@
     {
       "id": "dining-026-n002",
       "type": "activity",
-      "label": "ورود پرسنل نیم ساعت زودتر به مجموعه در روزهای جمعه",
+      "label": "ورود پرسنل نیم ساعت زودتر به مجموعه در روزهای جمعه جهت برگزاری جلسه",
       "description": "روزهای جمعه پرسنل نیم ساعت زودتر از ساعت عادی وارد مجموعه می‌شوند تا پیش از شروع کار در جلسه و آموزش هفتگی شرکت کنند. اصولاً یک ساعت زودتر مدنظر بوده اما با توافق، نیم ساعت زودتر تعیین شده است.",
       "actor": "پرسنل سالن",
       "icom": {
@@ -103,7 +103,9 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260722-050015",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -147,7 +149,7 @@
     {
       "id": "dining-026-n004",
       "type": "activity",
-      "label": "آماده‌شدن پرسنل برای انجام نظافت اولیه سالن",
+      "label": "تعویض لباس و آماده‌شدن پرسنل برای انجام نظافت اولیه سالن",
       "description": "پس از ثبت ورود، پرسنل آماده شروع تایم نظافت مجموعه می‌شوند. تایم نظافت از ساعت ۴:۳۰ آغاز می‌شود و باید پیش از ساعت ۶ که شروع سرویس‌دهی است به پایان برسد.",
       "actor": "پرسنل سالن",
       "icom": {
@@ -168,7 +170,9 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260722-050015",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -232,7 +236,7 @@
     {
       "id": "dining-026-n007",
       "type": "activity",
-      "label": "مراجعه روزانه پرسنل به فرم و رفتن به باکس/پست تعیین‌شده",
+      "label": "مراجعه روزانه پرسنل به بخش تعیین‌شده جهت نظافت و انجام نظافت مطابق با چک لیست",
       "description": "پرسنل هر روز فرم/برنامه چسبیده را باز می‌کنند و طبق پست و باکسی که برایشان مشخص شده جلو می‌روند. برنامه هر کس مشخص و در محل نصب شده است.",
       "actor": "پرسنل سالن",
       "icom": {
@@ -253,147 +257,9 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260722-050015",
-        "touched_by": []
-      }
-    },
-    {
-      "id": "dining-026-j3",
-      "type": "junction",
-      "junctionType": "AND",
-      "direction": "split",
-      "position": {
-        "x": 363,
-        "y": 543.5
-      },
-      "layout": "auto"
-    },
-    {
-      "id": "dining-026-n008",
-      "type": "activity",
-      "label": "نظافت میزهای باکس",
-      "description": "طبق اولویت تعیین‌شده در هر باکس ابتدا میزها تمیز می‌شوند (رو و زیر میز، سرویس نمک و فلفل و جعبه‌ی دستمال). ترتیب برای بهره‌وری بیشتر رعایت می‌شود و پرسنل شستشو و طی به‌صورت تیمی همکاری می‌کنند.",
-      "actor": "پرسنل سالن",
-      "icom": {
-        "inputs": [
-          "میز نظافت‌نشده"
-        ],
-        "controls": [
-          "اولویت نظافت هر باکس",
-          "استاندارد کیفیت و بهداشت نظافت"
-        ],
-        "outputs": [
-          "میز تمیز"
-        ],
-        "mechanisms": [
-          "پرسنل سالن"
+        "touched_by": [
+          "ui-edit"
         ]
-      },
-      "subprocess": null,
-      "position": {
-        "x": 40,
-        "y": 615
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/chat/20260722-050015",
-        "touched_by": []
-      }
-    },
-    {
-      "id": "dining-026-n009",
-      "type": "activity",
-      "label": "طی و شستشوی کف سالن",
-      "description": "پس از میزها، کف باکس طی و شسته می‌شود. بخش شستشو و بخش طی زیرمجموعه‌ی سالن‌اند و کارشان در یک محیط مشترک است و باید همکاری کنند.",
-      "actor": "پرسنل سالن",
-      "icom": {
-        "inputs": [
-          "کف نظافت‌نشده"
-        ],
-        "controls": [
-          "اولویت نظافت هر باکس",
-          "استاندارد کیفیت و بهداشت نظافت"
-        ],
-        "outputs": [
-          "کف تمیز"
-        ],
-        "mechanisms": [
-          "پرسنل سالن"
-        ]
-      },
-      "subprocess": null,
-      "position": {
-        "x": 40,
-        "y": 965
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/chat/20260722-050015",
-        "touched_by": []
-      }
-    },
-    {
-      "id": "dining-026-n010",
-      "type": "activity",
-      "label": "آب دادن گلدان‌ها و تمیز کردن شیشه‌های تراس",
-      "description": "در باکس حیاط/تراس گلدان‌ها آب داده می‌شوند و شیشه‌های تراس (شیشه‌های کرکره‌ای و شیشه‌ی محافظ پرتگاه) با راپل از سمت بیرون تمیز می‌شوند.",
-      "actor": "پرسنل سالن",
-      "icom": {
-        "inputs": [
-          "گلدان‌ها",
-          "شیشه‌های تراس"
-        ],
-        "controls": [
-          "استاندارد کیفیت و بهداشت نظافت"
-        ],
-        "outputs": [
-          "تراس تمیز و گلدان‌های آب‌داده‌شده"
-        ],
-        "mechanisms": [
-          "پرسنل سالن",
-          "راپل"
-        ]
-      },
-      "subprocess": null,
-      "position": {
-        "x": 300,
-        "y": 965
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/chat/20260722-050015",
-        "touched_by": []
-      }
-    },
-    {
-      "id": "dining-026-n011",
-      "type": "activity",
-      "label": "نظافت سرویس بهداشتی و آینه",
-      "description": "سرویس بهداشتی و آینه‌ی داخل آن در انتهای نظافت باکس تمیز می‌شود، چون آخرین جایی است که مشتری به سمتش می‌رود و به‌این‌ترتیب بهره‌وری بیشتر است.",
-      "actor": "پرسنل سالن",
-      "icom": {
-        "inputs": [
-          "سرویس بهداشتی نظافت‌نشده"
-        ],
-        "controls": [
-          "اولویت نظافت هر باکس",
-          "استاندارد کیفیت و بهداشت نظافت"
-        ],
-        "outputs": [
-          "سرویس بهداشتی تمیز"
-        ],
-        "mechanisms": [
-          "پرسنل سالن"
-        ]
-      },
-      "subprocess": null,
-      "position": {
-        "x": 560,
-        "y": 965
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/chat/20260722-050015",
-        "touched_by": []
       }
     },
     {
@@ -419,13 +285,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 440
+        "x": 269,
+        "y": 535
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260722-050015",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -451,25 +319,16 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 790
+        "x": 314,
+        "y": 772
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260722-050015",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
-    },
-    {
-      "id": "dining-026-j4",
-      "type": "junction",
-      "junctionType": "AND",
-      "direction": "join",
-      "position": {
-        "x": 883,
-        "y": 893.5
-      },
-      "layout": "auto"
     },
     {
       "id": "dining-026-n014",
@@ -490,13 +349,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 877.5
+        "x": 724,
+        "y": 779.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260722-050015",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -688,7 +549,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 904,
+        "x": 899,
         "y": 1713
       },
       "layout": "manual",
@@ -736,10 +597,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1143,
-        "y": 1593.5
+        "x": 1155,
+        "y": 1579.5
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "dining-026-n022",
@@ -757,13 +618,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 2015
+        "x": 1770,
+        "y": 1513.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260722-050015",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -782,44 +645,52 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 2190
+        "x": 1625.5,
+        "y": 1804.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260722-050015",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
       "id": "dining-026-n024",
       "type": "activity",
-      "label": "تعویض لباس پرسنل و حضور بر سر پست",
-      "description": "پس از اتمام نظافت حدود ۲۰ دقیقه برای تعویض لباس باقی می‌ماند؛ پرسنل لباس عوض می‌کنند و بر سر پست‌های از قبل مشخص‌شده حاضر می‌شوند تا سالن راس ساعت ۶ آماده‌ی پذیرش باشد.",
-      "actor": "پرسنل سالن",
+      "label": "تعویض لباس پرسنل و حضور بر سر پست از پیش تعیین شده",
+      "description": "",
+      "actor": "",
       "icom": {
         "inputs": [],
-        "controls": [
-          "آماده‌شدن سالن راس ساعت ۶ بدون قید و شرط"
-        ],
-        "outputs": [
-          "پرسنل آماده بر سر پست",
-          "سالن آماده‌ی پذیرش مشتری"
-        ],
-        "mechanisms": [
-          "پرسنل سالن"
-        ]
+        "controls": [],
+        "outputs": [],
+        "mechanisms": []
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 2102.5
+        "x": 1238,
+        "y": 1555.9902381896973
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
-        "created_by": "runs/chat/20260722-050015",
-        "touched_by": []
+        "created_by": "ui-edit",
+        "touched_by": [
+          "ui-edit"
+        ]
       }
+    },
+    {
+      "id": "dining-026-j9",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "split",
+      "position": {
+        "x": 1458.4999389648438,
+        "y": 1586.657413482666
+      },
+      "layout": "manual"
     }
   ],
   "edges": [
@@ -862,44 +733,8 @@
       "to": "dining-026-n007"
     },
     {
-      "from": "dining-026-n007",
-      "to": "dining-026-j3"
-    },
-    {
-      "from": "dining-026-j3",
-      "to": "dining-026-n008"
-    },
-    {
-      "from": "dining-026-n008",
-      "to": "dining-026-n009"
-    },
-    {
-      "from": "dining-026-n009",
-      "to": "dining-026-n010"
-    },
-    {
-      "from": "dining-026-n010",
-      "to": "dining-026-n011"
-    },
-    {
-      "from": "dining-026-n011",
-      "to": "dining-026-j4"
-    },
-    {
-      "from": "dining-026-j3",
-      "to": "dining-026-n012"
-    },
-    {
       "from": "dining-026-n012",
       "to": "dining-026-n013"
-    },
-    {
-      "from": "dining-026-n013",
-      "to": "dining-026-j4"
-    },
-    {
-      "from": "dining-026-j4",
-      "to": "dining-026-n014"
     },
     {
       "from": "dining-026-n014",
@@ -963,22 +798,34 @@
       "to": "dining-026-j8"
     },
     {
-      "from": "dining-026-j8",
-      "to": "dining-026-n022",
-      "label": "در صورت کامل بودن تیم"
+      "from": "dining-026-n007",
+      "to": "dining-026-n012",
+      "label": ""
+    },
+    {
+      "from": "dining-026-n013",
+      "to": "dining-026-n014",
+      "label": ""
     },
     {
       "from": "dining-026-j8",
+      "to": "dining-026-n024",
+      "label": ""
+    },
+    {
+      "from": "dining-026-n024",
+      "to": "dining-026-j9",
+      "label": ""
+    },
+    {
+      "from": "dining-026-j9",
+      "to": "dining-026-n022",
+      "label": ""
+    },
+    {
+      "from": "dining-026-j9",
       "to": "dining-026-n023",
       "label": "در صورت آف بودن یکی از پرسنل"
-    },
-    {
-      "from": "dining-026-n022",
-      "to": "dining-026-n024"
-    },
-    {
-      "from": "dining-026-n023",
-      "to": "dining-026-n024"
     }
   ],
   "pending": []
