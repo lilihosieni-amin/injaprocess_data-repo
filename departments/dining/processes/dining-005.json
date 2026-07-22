@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-21T23:37:51Z",
-  "updated_at": "2026-07-21T23:37:51Z",
+  "updated_at": "2026-07-22T05:00:05Z",
   "idef0": {
     "inputs": [
       "مشتری تازه‌وارد"
@@ -92,7 +92,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -121,7 +121,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -150,7 +150,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -190,7 +190,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 615.0
+        "y": 615
       },
       "layout": "auto",
       "source": {
@@ -247,13 +247,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 527.5
+        "x": 478.87323943661977,
+        "y": 669.2669654289373
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/dining/20260721-145939",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
