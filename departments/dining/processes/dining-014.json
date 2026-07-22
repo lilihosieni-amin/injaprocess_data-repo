@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-21T23:37:54Z",
-  "updated_at": "2026-07-21T23:37:54Z",
+  "updated_at": "2026-07-22T19:04:27Z",
   "idef0": {
     "inputs": [
       "غذای معیوب برگشتی از مشتری",
@@ -472,5 +472,9 @@
       "to": "dining-014-n011"
     }
   ],
-  "pending": []
+  "pending": [],
+  "tombstoned": true,
+  "superseded_by": [
+    "dining-031"
+  ]
 }
