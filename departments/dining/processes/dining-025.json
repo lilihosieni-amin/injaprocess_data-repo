@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-21T23:37:58Z",
-  "updated_at": "2026-07-21T23:37:58Z",
+  "updated_at": "2026-07-23T19:33:14Z",
   "idef0": {
     "inputs": [],
     "controls": [
@@ -120,7 +120,7 @@
     {
       "id": "dining-025-j1",
       "type": "junction",
-      "junctionType": "XOR",
+      "junctionType": "OR",
       "direction": "split",
       "position": {
         "x": 883,
@@ -150,19 +150,21 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 265.0
+        "x": 889.937900128041,
+        "y": 445.0428937259923
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/dining/20260721-145939",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
       "id": "dining-025-n005",
       "type": "activity",
-      "label": "برگزاری جلسه نظافت برای رفع سریع یک اتفاق یا نقص خاص",
+      "label": "همفکری برای رفع سریع یک اتفاق یا نقص خاص",
       "description": "به‌جای آموزش، جلسه می‌تواند برای رسیدگی به یک اتفاق خاص باشد؛ مثلاً بخشی از دیوار زنگ زده و باید سریعاً درست شود.",
       "actor": "سرپرست سالن",
       "icom": {
@@ -176,13 +178,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 90.0
+        "x": 1098,
+        "y": 68
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/dining/20260721-145939",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -202,25 +206,16 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 615.0
+        "x": 1017.8572343149807,
+        "y": 304.9295774647888
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/dining/20260721-145939",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
-    },
-    {
-      "id": "dining-025-j2",
-      "type": "junction",
-      "junctionType": "XOR",
-      "direction": "join",
-      "position": {
-        "x": 883,
-        "y": 543.5
-      },
-      "layout": "auto"
     }
   ],
   "edges": [
@@ -247,16 +242,9 @@
       "label": "در صورت وقوع اتفاق یا نقص خاص"
     },
     {
-      "from": "dining-025-n004",
-      "to": "dining-025-n006"
-    },
-    {
-      "from": "dining-025-n005",
-      "to": "dining-025-j2"
-    },
-    {
-      "from": "dining-025-n006",
-      "to": "dining-025-j2"
+      "from": "dining-025-j1",
+      "to": "dining-025-n006",
+      "label": "در صورت وقوع مشکل در طول هفته"
     }
   ],
   "pending": []
