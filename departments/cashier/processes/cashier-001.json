@@ -1,0 +1,425 @@
+{
+  "id": "cashier-001",
+  "department": "cashier",
+  "name": "کارهای ابتدای شیفت صندوق (نظافت، روشن‌کردن سیستم‌ها و کیوسک، چک صفر بودن صندوق و چک‌لیست شروع)",
+  "summary": "این فرایند مجموعه کارهایی است که صندوق‌دار در ابتدای هر شیفت از ساعت پنج و نیم انجام می‌دهد تا صندوق برای شروع پذیرش سفارش آماده شود. صندوق‌دار پس از ورود و ثبت ورود در سیستم، نظافت روزانه را انجام می‌دهد، ابتدا سیستم سرور را روشن می‌کند تا بقیه سیستم‌ها بتوانند وارد اکانت شوند، سپس سایر سیستم‌ها و کیوسک‌ها را (با زدن رمز کیوسک) روشن می‌کند، بالا بودن سه کرکره و روشن بودن تابلو دلیوری را کنترل می‌کند، خطای خط تلفن را چک می‌کند، شارژ و رول دستگاه‌های پوز مخصوص پیک‌ها را بررسی می‌کند، بی‌سیم را روشن می‌کند، با اکانت و پسورد شخصی خود وارد نرم‌افزار سپیدز می‌شود، صفر بودن صندوق را کنترل می‌کند و در پایان تقسیم کار میان همکاران انجام می‌شود. پس از این مراحل صندوق آماده شروع به کار و پذیرش سفارش است.",
+  "source": {
+    "type": "voice",
+    "ref": "20260724-015434",
+    "run": "runs/cashier/20260724-015434"
+  },
+  "parent": null,
+  "created_at": "2026-07-24T02:30:36Z",
+  "updated_at": "2026-07-24T02:30:36Z",
+  "idef0": {
+    "inputs": [],
+    "controls": [
+      "شروع شیفت از ساعت پنج و نیم",
+      "دستورالعمل‌های شروع کار مجموعه"
+    ],
+    "outputs": [
+      "صندوق آماده شروع به کار و پذیرش سفارش"
+    ],
+    "mechanisms": [
+      "صندوق‌دار",
+      "سیستم سرور",
+      "نرم‌افزار سپیدز",
+      "کیوسک",
+      "دستگاه پوز",
+      "بی‌سیم"
+    ]
+  },
+  "kpis": [],
+  "nodes": [
+    {
+      "id": "cashier-001-n001",
+      "type": "activity",
+      "label": "ورود به مجموعه و ثبت ورود در سیستم",
+      "description": "صندوق‌دار از ساعت پنج و نیم وارد مجموعه می‌شود و از سمت راست وارد صندوق می‌شود و ورودش را در سیستم ثبت می‌کند تا ساعت کاری شروع شود.",
+      "actor": "صندوق‌دار",
+      "icom": {
+        "inputs": [],
+        "controls": [
+          "شروع شیفت از ساعت پنج و نیم"
+        ],
+        "outputs": [
+          "ثبت ورود در سیستم"
+        ],
+        "mechanisms": [
+          "صندوق‌دار"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 40,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/cashier/20260724-015434",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cashier-001-n002",
+      "type": "activity",
+      "label": "انجام نظافت روزانه صندوق",
+      "description": "اولین کاری که پس از ورود انجام می‌شود نظافت روزانه فضای صندوق است. برخی از صندوق‌داران بخش عمده نظافت را در آخر تایم شیفت شب قبل انجام می‌دهند و ابتدای شیفت نظافت سبک‌تری دارند.",
+      "actor": "صندوق‌دار",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [
+          "فضای صندوق تمیز و آماده"
+        ],
+        "mechanisms": [
+          "صندوق‌دار"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/cashier/20260724-015434",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cashier-001-n003",
+      "type": "activity",
+      "label": "روشن‌کردن سیستم سرور",
+      "description": "ابتدا سیستم سرور روشن می‌شود چون تا این سیستم روشن نشود بقیه سیستم‌ها نمی‌توانند وارد اکانت شوند.",
+      "actor": "صندوق‌دار",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [
+          "سیستم سرور روشن"
+        ],
+        "mechanisms": [
+          "سیستم سرور"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/cashier/20260724-015434",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cashier-001-n004",
+      "type": "activity",
+      "label": "روشن‌کردن سیستم‌های صندوق",
+      "description": "پس از سرور، سیستم‌های صندوق روشن می‌شوند؛ یک سیستم حضوری در صندوق برای ثبت سفارشات حضوری و سه سیستم دیگر برای سفارشات آنلاین و کال‌سنتر.",
+      "actor": "صندوق‌دار",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [
+          "سیستم‌های صندوق روشن"
+        ],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/cashier/20260724-015434",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cashier-001-n005",
+      "type": "activity",
+      "label": "روشن‌کردن کیوسک‌ها با زدن رمز",
+      "description": "کیوسک‌های بیرون صندوق برای ثبت سفارشات بیرون‌بر روشن می‌شوند؛ چون کیوسک رمز دارد باید رمز آن زده شود و وارد برنامه سپید شد.",
+      "actor": "صندوق‌دار",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [
+          "کیوسک‌ها روشن"
+        ],
+        "mechanisms": [
+          "کیوسک"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/cashier/20260724-015434",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cashier-001-n006",
+      "type": "activity",
+      "label": "کنترل بالا بودن سه کرکره",
+      "description": "ابتدای کار باید هر سه کرکره بالا باشد.",
+      "actor": "صندوق‌دار",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 265.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/cashier/20260724-015434",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cashier-001-n007",
+      "type": "activity",
+      "label": "روشن‌کردن تابلو دلیوری",
+      "description": "تابلو دلیوری در ابتدای کار روشن می‌شود.",
+      "actor": "صندوق‌دار",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [
+          "تابلو دلیوری روشن"
+        ],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 265.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/cashier/20260724-015434",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cashier-001-n008",
+      "type": "activity",
+      "label": "چک‌کردن خطای خط تلفن",
+      "description": "خطای خطوط تلفن در ابتدای کار چک می‌شود.",
+      "actor": "صندوق‌دار",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": [
+          "خط تلفن"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 265.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/cashier/20260724-015434",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cashier-001-n009",
+      "type": "activity",
+      "label": "چک‌کردن شارژ و رول دستگاه‌های پوز پیک‌ها",
+      "description": "دستگاه‌های پوزی که به پیک‌ها تحویل داده می‌شود در ابتدای تایم چک می‌شود که شارژ داشته باشد و رول داشته باشد. دستگاه‌های پوز در کمد صندوق نگهداری می‌شوند و این کار بر عهده صندوق است.",
+      "actor": "صندوق‌دار",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [
+          "دستگاه پوز آماده تحویل به پیک"
+        ],
+        "mechanisms": [
+          "دستگاه پوز"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
+        "y": 265.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/cashier/20260724-015434",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cashier-001-n010",
+      "type": "activity",
+      "label": "روشن‌کردن بی‌سیم",
+      "description": "بی‌سیم در ابتدای کار روشن می‌شود.",
+      "actor": "صندوق‌دار",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [
+          "بی‌سیم روشن"
+        ],
+        "mechanisms": [
+          "بی‌سیم"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 40,
+        "y": 265.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/cashier/20260724-015434",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cashier-001-n011",
+      "type": "activity",
+      "label": "ورود به نرم‌افزار سپیدز با اکانت و پسورد شخصی",
+      "description": "هر کس با اکانت خودش و پسورد شخصی خود وارد نرم‌افزار سپیدز می‌شود.",
+      "actor": "صندوق‌دار",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [
+          "ورود به نرم‌افزار سپیدز"
+        ],
+        "mechanisms": [
+          "نرم‌افزار سپیدز"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 40,
+        "y": 440.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/cashier/20260724-015434",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cashier-001-n012",
+      "type": "activity",
+      "label": "چک‌کردن صفر بودن صندوق",
+      "description": "اول از همه چک می‌شود که صندوق حتماً صفر شده باشد. صندوق در انتهای هر شب صفر می‌شود و این کنترل تضمین می‌کند که مانده‌ای از شیفت قبل باقی نمانده باشد.",
+      "actor": "صندوق‌دار",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [
+          "تأیید صفر بودن صندوق"
+        ],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
+        "y": 440.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/cashier/20260724-015434",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cashier-001-n013",
+      "type": "activity",
+      "label": "تقسیم کار میان همکاران صندوق",
+      "description": "پس از آماده‌سازی صندوق، تقسیم کار میان همکاران انجام می‌شود.",
+      "actor": "سرپرست صندوق",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [
+          "تقسیم وظایف روزانه"
+        ],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 440.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/cashier/20260724-015434",
+        "touched_by": []
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "cashier-001-n001",
+      "to": "cashier-001-n002"
+    },
+    {
+      "from": "cashier-001-n002",
+      "to": "cashier-001-n003"
+    },
+    {
+      "from": "cashier-001-n003",
+      "to": "cashier-001-n004"
+    },
+    {
+      "from": "cashier-001-n004",
+      "to": "cashier-001-n005"
+    },
+    {
+      "from": "cashier-001-n005",
+      "to": "cashier-001-n006"
+    },
+    {
+      "from": "cashier-001-n006",
+      "to": "cashier-001-n007"
+    },
+    {
+      "from": "cashier-001-n007",
+      "to": "cashier-001-n008"
+    },
+    {
+      "from": "cashier-001-n008",
+      "to": "cashier-001-n009"
+    },
+    {
+      "from": "cashier-001-n009",
+      "to": "cashier-001-n010"
+    },
+    {
+      "from": "cashier-001-n010",
+      "to": "cashier-001-n011"
+    },
+    {
+      "from": "cashier-001-n011",
+      "to": "cashier-001-n012"
+    },
+    {
+      "from": "cashier-001-n012",
+      "to": "cashier-001-n013"
+    }
+  ],
+  "pending": []
+}

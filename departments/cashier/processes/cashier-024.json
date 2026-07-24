@@ -1,0 +1,315 @@
+{
+  "id": "cashier-024",
+  "department": "cashier",
+  "name": "کارهای انتهای شیفت و بستن سیستم (خاموش کردن کیوسک‌ها و تابلو دلیوری، پرینت دستگاه‌های پوز بر اساس ساعت، مرتب کردن و شارژ تجهیزات، پایین دادن کرکره‌ها)",
+  "summary": "در انتهای شیفت شب، صندوق‌دار کارهای بستن فیزیکی مجموعه و خاموش کردن تجهیزات را انجام می‌دهد. تابلو دلیوری بالای صندوق خاموش می‌شود، دو کیوسک از سه کیوسک خاموش می‌شوند و یک کیوسک تا آخر باز نگه داشته می‌شود تا مشتری‌ها بتوانند ثبت سفارش داشته باشند. ساعت دستگاه پوز کیوسک تنظیم و پرینت آن بر اساس ساعت گرفته می‌شود، فیش‌های کیوسک به ترتیب چیده می‌شوند، دستگاه‌های پوز مرتب و به شارژ زده می‌شوند، موبایل رستوران نیز شارژ می‌شود و در پایان کرکره‌ها پایین داده می‌شوند.",
+  "source": {
+    "type": "voice",
+    "ref": "20260724-015434",
+    "run": "runs/cashier/20260724-015434"
+  },
+  "parent": null,
+  "created_at": "2026-07-24T02:30:43Z",
+  "updated_at": "2026-07-24T02:30:43Z",
+  "idef0": {
+    "inputs": [],
+    "controls": [],
+    "outputs": [],
+    "mechanisms": [
+      "صندوق‌دار"
+    ]
+  },
+  "kpis": [],
+  "nodes": [
+    {
+      "id": "cashier-024-n001",
+      "type": "activity",
+      "label": "خاموش کردن تابلو دلیوری بالای صندوق",
+      "description": "تابلو دلیوری که بالای صندوق قرار دارد در انتهای شیفت خاموش می‌شود.",
+      "actor": "صندوق‌دار",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": [
+          "صندوق‌دار"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 40,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/cashier/20260724-015434",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cashier-024-n002",
+      "type": "activity",
+      "label": "خاموش کردن دو کیوسک از سه کیوسک",
+      "description": "از میان کیوسک‌ها دو کیوسک خاموش می‌شود.",
+      "actor": "صندوق‌دار",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": [
+          "صندوق‌دار"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/cashier/20260724-015434",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cashier-024-n003",
+      "type": "activity",
+      "label": "باز نگه داشتن یک کیوسک تا آخر شیفت برای ثبت سفارش مشتری",
+      "description": "یک کیوسک تا آخر باز نگه داشته می‌شود تا مشتری‌ها بتوانند تا انتهای شیفت ثبت سفارش داشته باشند.",
+      "actor": "صندوق‌دار",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": [
+          "صندوق‌دار"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/cashier/20260724-015434",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cashier-024-n004",
+      "type": "activity",
+      "label": "تنظیم ساعت دستگاه پوز کیوسک",
+      "description": "پیش از گرفتن پرینت، ساعت دستگاه پوز کیوسک تنظیم می‌شود، چون پرینت باید بر اساس ساعت گرفته شود.",
+      "actor": "صندوق‌دار",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": [
+          "صندوق‌دار"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/cashier/20260724-015434",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cashier-024-n005",
+      "type": "activity",
+      "label": "گرفتن پرینت دستگاه پوز کیوسک بر اساس ساعت",
+      "description": "پرینت دستگاه پوز کیوسک بر اساس ساعت تنظیم‌شده گرفته می‌شود.",
+      "actor": "صندوق‌دار",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": [
+          "صندوق‌دار",
+          "دستگاه پوز"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/cashier/20260724-015434",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cashier-024-n006",
+      "type": "activity",
+      "label": "چیدن فیش‌های کیوسک به ترتیب",
+      "description": "فیش‌های کیوسک به ترتیب چیده می‌شوند.",
+      "actor": "صندوق‌دار",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": [
+          "صندوق‌دار"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 265.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/cashier/20260724-015434",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cashier-024-n007",
+      "type": "activity",
+      "label": "مرتب کردن دستگاه‌های پوز",
+      "description": "دستگاه‌های پوز مرتب می‌شوند.",
+      "actor": "صندوق‌دار",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": [
+          "صندوق‌دار"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 265.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/cashier/20260724-015434",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cashier-024-n008",
+      "type": "activity",
+      "label": "زدن دستگاه‌های پوز به شارژ",
+      "description": "دستگاه‌های پوز به شارژ زده می‌شوند.",
+      "actor": "صندوق‌دار",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": [
+          "صندوق‌دار"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 265.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/cashier/20260724-015434",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cashier-024-n009",
+      "type": "activity",
+      "label": "شارژ موبایل رستوران",
+      "description": "موبایل رستوران در انتهای شیفت به شارژ زده می‌شود.",
+      "actor": "صندوق‌دار",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": [
+          "صندوق‌دار"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
+        "y": 265.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/cashier/20260724-015434",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cashier-024-n010",
+      "type": "activity",
+      "label": "پایین دادن کرکره‌ها",
+      "description": "در پایان کار، کرکره‌ها پایین داده می‌شوند.",
+      "actor": "صندوق‌دار",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": [
+          "صندوق‌دار"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 40,
+        "y": 265.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/cashier/20260724-015434",
+        "touched_by": []
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "cashier-024-n001",
+      "to": "cashier-024-n002"
+    },
+    {
+      "from": "cashier-024-n002",
+      "to": "cashier-024-n003"
+    },
+    {
+      "from": "cashier-024-n003",
+      "to": "cashier-024-n004"
+    },
+    {
+      "from": "cashier-024-n004",
+      "to": "cashier-024-n005"
+    },
+    {
+      "from": "cashier-024-n005",
+      "to": "cashier-024-n006"
+    },
+    {
+      "from": "cashier-024-n006",
+      "to": "cashier-024-n007"
+    },
+    {
+      "from": "cashier-024-n007",
+      "to": "cashier-024-n008"
+    },
+    {
+      "from": "cashier-024-n008",
+      "to": "cashier-024-n009"
+    },
+    {
+      "from": "cashier-024-n009",
+      "to": "cashier-024-n010"
+    }
+  ],
+  "pending": []
+}
