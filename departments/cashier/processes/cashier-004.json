@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-24T02:30:37Z",
-  "updated_at": "2026-07-24T02:30:37Z",
+  "updated_at": "2026-07-24T22:06:10Z",
   "idef0": {
     "inputs": [
       "سفارش اینترنتی ثبت‌شده روی پنل (سایت اختصاصی یا دلینو)",
@@ -168,13 +168,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 265.0
+        "x": 1096,
+        "y": 603.3746566772461
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -200,13 +202,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 440.0
+        "x": 1242,
+        "y": 462.6550521850586
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -335,13 +339,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 629.5833333333333
+        "x": 868,
+        "y": 677.5833333333333
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
