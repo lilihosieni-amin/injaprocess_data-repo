@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-24T02:30:36Z",
-  "updated_at": "2026-07-24T22:05:57Z",
+  "updated_at": "2026-07-24T22:14:10Z",
   "idef0": {
     "inputs": [
       "تماس تلفنی مشتری",
@@ -133,7 +133,8 @@
         "x": 883,
         "y": 193.5
       },
-      "layout": "auto"
+      "layout": "auto",
+      "removed": true
     },
     {
       "id": "cashier-002-n004",
@@ -165,8 +166,11 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260724-221343"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cashier-002-n005",
@@ -196,9 +200,11 @@
       "source": {
         "created_by": "runs/cashier/20260724-015434",
         "touched_by": [
-          "runs/chat/20260724-220545"
+          "runs/chat/20260724-220545",
+          "runs/chat/20260724-221343"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cashier-002-j2",
@@ -209,7 +215,8 @@
         "x": 1453.2330345710627,
         "y": 282.42957746478874
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cashier-002-n006",
@@ -229,8 +236,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 527.5
+        "x": 1080,
+        "y": 90.0
       },
       "layout": "auto",
       "source": {
@@ -244,8 +251,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 623,
-        "y": 543.5
+        "x": 1143,
+        "y": 368.5
       },
       "layout": "auto"
     },
@@ -267,8 +274,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 440
+        "x": 820,
+        "y": 265.0
       },
       "layout": "auto",
       "source": {
@@ -294,8 +301,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 615
+        "x": 820,
+        "y": 440.0
       },
       "layout": "auto",
       "source": {
@@ -324,8 +331,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 615
+        "x": 560,
+        "y": 440.0
       },
       "layout": "auto",
       "source": {
@@ -357,8 +364,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 877.5
+        "x": 300,
+        "y": 440.0
       },
       "layout": "auto",
       "source": {
@@ -385,8 +392,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 877.5
+        "x": 40,
+        "y": 440.0
       },
       "layout": "auto",
       "source": {
@@ -413,8 +420,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 877.5
+        "x": 40,
+        "y": 702.5
       },
       "layout": "auto",
       "source": {
@@ -428,8 +435,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 893.5
+        "x": 363,
+        "y": 718.5
       },
       "layout": "auto"
     },
@@ -485,8 +492,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 965
+        "x": 560,
+        "y": 790.0
       },
       "layout": "auto",
       "source": {
@@ -500,8 +507,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1143,
-        "y": 1243.5
+        "x": 883,
+        "y": 806.0
       },
       "layout": "auto"
     },
@@ -526,8 +533,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1315
+        "x": 1080,
+        "y": 877.5
       },
       "layout": "auto",
       "source": {
@@ -541,8 +548,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 623,
-        "y": 1243.5
+        "x": 1143,
+        "y": 1068.5
       },
       "layout": "auto"
     },
@@ -568,13 +575,49 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1227.5
+        "x": 820,
+        "y": 1052.5
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
         "touched_by": []
+      }
+    },
+    {
+      "id": "cashier-002-n017",
+      "type": "activity",
+      "label": "ایجاد یا ویرایش اشتراک مشتری در سپیدز",
+      "description": "همکار صندوق بسته به جدید یا قدیمی بودن مشتری، اشتراک او را در نرم‌افزار سپیدز ایجاد یا ویرایش می‌کند. جزئیات کامل این کار (زدن گزینهٔ ایجاد یا ویرایش، اختصاص کد اشتراک، وارد کردن عنوان و نام خانوادگی و شمارهٔ تماس و محله و آدرس دقیق، و مدیریت تغییر موقتی یا دائمی آدرس مشتری قدیمی) در زیرفرایند «ایجاد و ویرایش مشترک در سپیدز» آمده است.",
+      "actor": "همکار صندوق (کال‌سنتر)",
+      "icom": {
+        "inputs": [
+          "اطلاعات هویتی و تماس مشتری (نام خانوادگی، شمارهٔ تماس، آدرس)"
+        ],
+        "controls": [
+          "استاندارد نگارش آدرس دقیق و کامل",
+          "الزامی بودن فیلدهای دارای ستارهٔ قرمز",
+          "قاعدهٔ ورود شمارهٔ همراه در فیلد موبایل جهت چاپ روی فاکتور"
+        ],
+        "outputs": [
+          "مشترک ثبت‌شده یا ویرایش‌شده در سپیدز با کد اشتراک"
+        ],
+        "mechanisms": [
+          "صندوق‌دار",
+          "نرم‌افزار سپیدز (صفحهٔ مشترکین)"
+        ]
+      },
+      "subprocess": "cashier-003",
+      "position": {
+        "x": 820,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260724-221343",
+        "touched_by": [
+          "runs/chat/20260724-221343"
+        ]
       }
     }
   ],
@@ -586,32 +629,6 @@
     {
       "from": "cashier-002-n002",
       "to": "cashier-002-n003"
-    },
-    {
-      "from": "cashier-002-n003",
-      "to": "cashier-002-j1"
-    },
-    {
-      "from": "cashier-002-j1",
-      "to": "cashier-002-n004",
-      "label": "مشتری جدید"
-    },
-    {
-      "from": "cashier-002-j1",
-      "to": "cashier-002-n005",
-      "label": "مشتری قدیمی"
-    },
-    {
-      "from": "cashier-002-n004",
-      "to": "cashier-002-j2"
-    },
-    {
-      "from": "cashier-002-n005",
-      "to": "cashier-002-j2"
-    },
-    {
-      "from": "cashier-002-j2",
-      "to": "cashier-002-n006"
     },
     {
       "from": "cashier-002-n006",
@@ -683,6 +700,14 @@
     {
       "from": "cashier-002-j6",
       "to": "cashier-002-n016"
+    },
+    {
+      "from": "cashier-002-n003",
+      "to": "cashier-002-n017"
+    },
+    {
+      "from": "cashier-002-n017",
+      "to": "cashier-002-n006"
     }
   ],
   "pending": []
