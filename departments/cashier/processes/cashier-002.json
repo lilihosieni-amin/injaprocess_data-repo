@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-24T02:30:36Z",
-  "updated_at": "2026-07-24T22:14:10Z",
+  "updated_at": "2026-07-24T22:25:55Z",
   "idef0": {
     "inputs": [
       "تماس تلفنی مشتری",
@@ -160,8 +160,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 90
+        "x": 40,
+        "y": 1840.0
       },
       "layout": "auto",
       "source": {
@@ -193,8 +193,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 265
+        "x": 40,
+        "y": 2015.0
       },
       "layout": "auto",
       "source": {
@@ -236,8 +236,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 90.0
+        "x": 820,
+        "y": 527.5
       },
       "layout": "auto",
       "source": {
@@ -251,8 +251,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1143,
-        "y": 368.5
+        "x": 623,
+        "y": 543.5
       },
       "layout": "auto"
     },
@@ -274,8 +274,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 265.0
+        "x": 300,
+        "y": 440.0
       },
       "layout": "auto",
       "source": {
@@ -301,8 +301,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 440.0
+        "x": 300,
+        "y": 615.0
       },
       "layout": "auto",
       "source": {
@@ -331,8 +331,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 440.0
+        "x": 40,
+        "y": 615.0
       },
       "layout": "auto",
       "source": {
@@ -364,8 +364,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 440.0
+        "x": 40,
+        "y": 877.5
       },
       "layout": "auto",
       "source": {
@@ -392,8 +392,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 440.0
+        "x": 300,
+        "y": 877.5
       },
       "layout": "auto",
       "source": {
@@ -420,8 +420,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 702.5
+        "x": 560,
+        "y": 877.5
       },
       "layout": "auto",
       "source": {
@@ -435,8 +435,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
-        "y": 718.5
+        "x": 883,
+        "y": 893.5
       },
       "layout": "auto"
     },
@@ -492,8 +492,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 790.0
+        "x": 1080,
+        "y": 965.0
       },
       "layout": "auto",
       "source": {
@@ -507,8 +507,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 806.0
+        "x": 1143,
+        "y": 1243.5
       },
       "layout": "auto"
     },
@@ -533,8 +533,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 877.5
+        "x": 820,
+        "y": 1315.0
       },
       "layout": "auto",
       "source": {
@@ -548,8 +548,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1143,
-        "y": 1068.5
+        "x": 623,
+        "y": 1243.5
       },
       "layout": "auto"
     },
@@ -575,8 +575,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1052.5
+        "x": 300,
+        "y": 1227.5
       },
       "layout": "auto",
       "source": {
@@ -587,8 +587,8 @@
     {
       "id": "cashier-002-n017",
       "type": "activity",
-      "label": "ایجاد یا ویرایش اشتراک مشتری در سپیدز",
-      "description": "همکار صندوق بسته به جدید یا قدیمی بودن مشتری، اشتراک او را در نرم‌افزار سپیدز ایجاد یا ویرایش می‌کند. جزئیات کامل این کار (زدن گزینهٔ ایجاد یا ویرایش، اختصاص کد اشتراک، وارد کردن عنوان و نام خانوادگی و شمارهٔ تماس و محله و آدرس دقیق، و مدیریت تغییر موقتی یا دائمی آدرس مشتری قدیمی) در زیرفرایند «ایجاد و ویرایش مشترک در سپیدز» آمده است.",
+      "label": "ایجاد اشتراک جدید و ثبت آدرس برای مشتری جدید",
+      "description": "اگر مشتری جدید باشد (اشتراک نداشته باشد)، همکار در همین مراحل ابتدایی برای او اشتراک جدید ایجاد کرده و آدرسش را ثبت می‌کند. چون این کار طولانی است، جزئیات کامل آن (زدن گزینهٔ ایجاد مشترک، اختصاص کد اشتراک، وارد کردن عنوان و نام خانوادگی و شمارهٔ تماس و محله و آدرس دقیق) در زیرفرایند مربوطه آمده است.",
       "actor": "همکار صندوق (کال‌سنتر)",
       "icom": {
         "inputs": [
@@ -609,15 +609,68 @@
       },
       "subprocess": "cashier-003",
       "position": {
-        "x": 820,
+        "x": 1080,
         "y": 90.0
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260724-221343",
         "touched_by": [
-          "runs/chat/20260724-221343"
+          "runs/chat/20260724-221343",
+          "runs/chat/20260724-222532"
         ]
+      }
+    },
+    {
+      "id": "cashier-002-j7",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "split",
+      "position": {
+        "x": 883,
+        "y": 193.5
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "cashier-002-j8",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "join",
+      "position": {
+        "x": 1143,
+        "y": 543.5
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "cashier-002-n018",
+      "type": "activity",
+      "label": "مشتری سابق (مشترک مجموعه): بدون نیاز به ایجاد اشتراک",
+      "description": "اگر مشتری از قبل مشترک مجموعه باشد، در این مرحلهٔ ابتدایی اشتراک جدیدی ایجاد نمی‌شود و اطلاعاتش از قبل در سپیدز موجود است. تنها تغییر احتمالی برای مشتری سابق، اصلاح آدرس است که در مراحل پایانی فرایند (هنگام چک آدرس با دو کلیدواژه) و بر اساس موقتی یا دائمی بودن تغییر انجام می‌شود.",
+      "actor": "همکار صندوق (کال‌سنتر)",
+      "icom": {
+        "inputs": [
+          "اطلاعات اشتراک موجود مشتری"
+        ],
+        "controls": [],
+        "outputs": [
+          "مشتری سابق تأییدشده"
+        ],
+        "mechanisms": [
+          "همکار صندوق (کال‌سنتر)",
+          "سیستم سپیدز"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 265.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260724-222532",
+        "touched_by": []
       }
     }
   ],
@@ -703,10 +756,28 @@
     },
     {
       "from": "cashier-002-n003",
-      "to": "cashier-002-n017"
+      "to": "cashier-002-j7"
+    },
+    {
+      "from": "cashier-002-j7",
+      "to": "cashier-002-n017",
+      "label": "مشتری جدید"
+    },
+    {
+      "from": "cashier-002-j7",
+      "to": "cashier-002-n018",
+      "label": "مشتری سابق (مشترک مجموعه)"
     },
     {
       "from": "cashier-002-n017",
+      "to": "cashier-002-j8"
+    },
+    {
+      "from": "cashier-002-n018",
+      "to": "cashier-002-j8"
+    },
+    {
+      "from": "cashier-002-j8",
       "to": "cashier-002-n006"
     }
   ],

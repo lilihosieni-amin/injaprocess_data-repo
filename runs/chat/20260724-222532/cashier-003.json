@@ -1,0 +1,16 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [
+    { "from": "cashier-003-n001", "to": "cashier-003-j1" },
+    { "from": "cashier-003-j1", "to": "cashier-003-n002" },
+    { "from": "cashier-003-j1", "to": "cashier-003-n012" }
+  ],
+  "flag_removed": [
+    { "id": "cashier-003-n001" },
+    { "id": "cashier-003-j1" },
+    { "id": "cashier-003-n012" }
+  ]
+}
