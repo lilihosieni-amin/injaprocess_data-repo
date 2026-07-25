@@ -74,3 +74,27 @@ def test_block_bash_perl_i_claude(tmp_path):
 
 def test_block_bash_tee_into_processes(tmp_path):
     assert run(bash("echo '{}' | tee departments/cooking/processes/cooking-001.json"), tmp_path) == 2
+
+
+def test_block_order_write(tmp_path):
+    assert run(w("departments/cooking/order.json"), tmp_path) == 2
+
+
+def test_block_order_write_absolute(tmp_path):
+    assert run(w(str(tmp_path / "departments/cooking/order.json")), tmp_path) == 2
+
+
+def test_block_order_bash_redirect(tmp_path):
+    assert run(bash("echo '{}' > departments/cooking/order.json"), tmp_path) == 2
+
+
+def test_block_order_bash_sed_in_place(tmp_path):
+    assert run(bash("sed -i s/a/b/ departments/dining/order.json"), tmp_path) == 2
+
+
+def test_allow_order_read_bash(tmp_path):
+    assert run(bash("cat departments/cooking/order.json"), tmp_path) == 0
+
+
+def test_allow_order_cli_bash(tmp_path):
+    assert run(bash("DATA_ROOT=. order sync cooking"), tmp_path) == 0

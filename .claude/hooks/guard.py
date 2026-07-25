@@ -4,7 +4,8 @@
 Reads a Claude Code PreToolUse payload on stdin. Exit 0 = allow, exit 2 = block
 (the stderr reason is shown to the model). Enforces:
   1. No Write/Edit — or Bash redirect — to departments/**/processes/*.json
-     (the merge CLI is the only sanctioned writer; its argv never spells the path).
+     (the merge CLI is the only sanctioned writer; its argv never spells the path)
+     nor to departments/**/order.json (the order CLI is its only writer).
   2. No write/edit to .claude/** or CLAUDE.md at runtime (INV-2).
   3. No Write/Edit outside the data-repo root.
 The Bash guard is intentionally conservative: it blocks commands that BOTH mutate
@@ -21,6 +22,8 @@ PROCESSES_CMD_RE = re.compile(r"departments/[^/\s'\"]+/processes/[^/\s'\"]+\.jso
 CLAUDE_CMD_RE = re.compile(r"(^|[\s'\"/=])\.claude(/|[\s'\"]|$)|CLAUDE\.md")
 MUTATION_RE = re.compile(r"(>>?|\btee\b|\bsed\b[^|]*\s-i|\bperl\b[^|]*\s-i|\bcp\b|\bmv\b|\brm\b|\btruncate\b|\bdd\b)")
 PROCESSES_REL_RE = re.compile(r"departments/[^/]+/processes/[^/]+\.json")
+ORDER_CMD_RE = re.compile(r"departments/[^/\s'\"]+/order\.json")
+ORDER_REL_RE = re.compile(r"departments/[^/]+/order\.json")
 
 
 def _deny(msg):
@@ -46,6 +49,8 @@ def _check_write_path(target, root):
         _deny(f"runtime cannot edit brain config: {rel} (INV-2)")
     if PROCESSES_REL_RE.fullmatch(rel):
         _deny(f"processes/*.json is written only by the merge CLI: {rel} (INV-1)")
+    if ORDER_REL_RE.fullmatch(rel):
+        _deny(f"order.json is written only by the `order` CLI: {rel} (INV-1)")
 
 
 def main():
@@ -68,6 +73,8 @@ def main():
         if MUTATION_RE.search(cmd):
             if PROCESSES_CMD_RE.search(cmd):
                 _deny("direct write to processes/*.json is forbidden; use the merge CLI (INV-1)")
+            if ORDER_CMD_RE.search(cmd):
+                _deny("direct write to order.json is forbidden; use the `order` CLI (INV-1)")
             if CLAUDE_CMD_RE.search(cmd):
                 _deny("runtime cannot edit .claude/** or CLAUDE.md (INV-2)")
         return 0

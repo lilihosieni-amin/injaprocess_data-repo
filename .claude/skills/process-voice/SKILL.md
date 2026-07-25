@@ -429,6 +429,12 @@ For each entry in `subprocesses` (candidate) or `add_subprocesses` (delta), `mer
 
 **Layout:** `merge` also computes/updates node positions (serpentine layout) for new nodes; manually positioned nodes (`layout: manual`) are never moved. Never set node positions yourself — the layout is deterministic engine work, not LLM work.
 
+**Process order:** `merge` also maintains `departments/{department}/order.json` — the department's
+curated process order (ARD §4.6) — appending new processes, dropping tombstoned ones, and giving a
+restructure heir its predecessor's position. This is automatic and in-process: **do not** call the
+`order` CLI, and never write that file yourself (hook-enforced). Stage 8's `git add departments`
+commits it along with everything else.
+
 ---
 
 ### Stage 7 — summarize over the set

@@ -96,6 +96,8 @@ destructive op — that the original was tombstoned/flagged, not deleted). Do no
 ## Invariants
 
 - **`merge` is the sole writer** — never edit `process.json` directly (hook-enforced).
+- **Never write `departments/**/order.json`** — the department's process order is maintained by the
+  `order` CLI, and `merge` keeps it in sync automatically after every edit you make through it.
 - **INV-1** — ids are engine-minted; copy committed ids verbatim, use temp keys for new nodes, never
   set `source`/`superseded_by`/`position`/`layout`.
 - **INV-3** — no fabrication: model only what the user actually instructed.

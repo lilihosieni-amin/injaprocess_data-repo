@@ -32,6 +32,9 @@ commands are unaffected — only your user-facing text must be Persian.)
 ## Hard rules (also hook-enforced)
 
 - `departments/**/processes/*.json` is written **only** by the `merge` CLI — never hand-edit these files.
+- `departments/**/order.json` is written **only** by the `order` CLI — never hand-edit it. It holds
+  the department's human-curated process order; read it when you need to know the sequence, but the
+  `merge` CLI keeps it in sync by itself, so there is nothing for you to do.
 - Never edit `.claude/**` or this `CLAUDE.md` at runtime.
 - Never write files outside this repo.
 
