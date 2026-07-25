@@ -98,3 +98,37 @@ def test_allow_order_read_bash(tmp_path):
 
 def test_allow_order_cli_bash(tmp_path):
     assert run(bash("DATA_ROOT=. order sync cooking"), tmp_path) == 0
+
+
+# --- the order CLI's own curation verbs (INV-1, ARD §4.6) --------------------
+# Blocking writes to the *file* is not enough: `order set` / `order move` reach
+# the same state through the sanctioned writer, and nothing downstream notices
+# (`order check` compares sets, and `reconcile` is a fixed point for any
+# permutation of the right set).
+
+def test_block_order_set(tmp_path):
+    assert run(bash("order set cooking --sequence cooking-002,cooking-001"), tmp_path) == 2
+
+
+def test_block_order_move(tmp_path):
+    assert run(bash("order move cooking --process cooking-002 --to 1"), tmp_path) == 2
+
+
+def test_block_order_set_with_env_prefix(tmp_path):
+    assert run(bash("DATA_ROOT=. order set dining --sequence dining-001"), tmp_path) == 2
+
+
+def test_block_order_move_after_a_separator(tmp_path):
+    assert run(bash("cd . && order move dining --process dining-001 --to 2"), tmp_path) == 2
+
+
+def test_allow_order_sync(tmp_path):
+    assert run(bash("DATA_ROOT=. order sync cooking"), tmp_path) == 0
+
+
+def test_allow_order_show(tmp_path):
+    assert run(bash("order show cooking"), tmp_path) == 0
+
+
+def test_allow_order_check(tmp_path):
+    assert run(bash("order check --all"), tmp_path) == 0

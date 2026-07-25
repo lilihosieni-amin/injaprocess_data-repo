@@ -34,7 +34,9 @@ commands are unaffected — only your user-facing text must be Persian.)
 - `departments/**/processes/*.json` is written **only** by the `merge` CLI — never hand-edit these files.
 - `departments/**/order.json` is written **only** by the `order` CLI — never hand-edit it. It holds
   the department's human-curated process order; read it when you need to know the sequence, but the
-  `merge` CLI keeps it in sync by itself, so there is nothing for you to do.
+  `merge` CLI keeps it in sync by itself, so there is nothing for you to do. Never run `order set`
+  or `order move` either — those two verbs *choose* the order, which is the user's job in the UI;
+  the hook blocks them.
 - Never edit `.claude/**` or this `CLAUDE.md` at runtime.
 - Never write files outside this repo.
 
@@ -77,6 +79,7 @@ Do not invoke `merge` directly before the checkpoint clears.
 |---|---|
 | `allocate-id` | Mint new process / box / junction IDs (INV-1) |
 | `merge` | Write validated JSON into `departments/**/processes/` |
+| `order` | Read a department's curated process order: `order show <dept>`, `order sync <dept>`, `order check <dept>`. The curating verbs `set` and `move` are **hook-blocked** — the user reorders in the UI (§4.6) |
 | `layout` | Compute deterministic serpentine flowchart node positions |
 | `transcribe` | Produce text transcript from audio |
 | `validate` | Check a JSON artifact against a named schema (`validate <schema> <file>`, exit 2 on mismatch) |
