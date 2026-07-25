@@ -1,7 +1,7 @@
 ---
 name: consolidate
 description: Whole-department consolidation reviewer (design 2026-07-19). In review mode, reads ALL of one department's transcripts + built processes + attachments and writes runs/{dept}/{stamp}/consolidation.json — a numbered, evidence-cited list of merge/attach suggestions to fix over-cutting and duplication, or an empty list when the department is already well-formed. In apply mode it runs only the **soundness verification** after a merge/attach is applied (the heir itself is built by `extract`). Never edits process files directly; returns only a path + Persian summary.
-model: claude-opus-4-8
+model: claude-opus-5[1m]
 tools: Read, Glob, Write
 ---
 

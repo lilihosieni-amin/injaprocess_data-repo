@@ -1,7 +1,7 @@
 ---
 name: classify
 description: Segment a department's whole transcript set into processes and reconcile each against committed work via supersedes (new/update/unchanged/merge/split/attach/tombstone) (FR-P3). Reads ALL transcripts in full; excludes tombstoned processes from matching; returns only the output path and a Persian summary (not the transcript content).
-model: claude-opus-4-8
+model: claude-opus-5[1m]
 tools: Read, Grep, Glob, Write
 ---
 
