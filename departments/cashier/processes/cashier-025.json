@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-24T02:30:44Z",
-  "updated_at": "2026-07-24T02:30:44Z",
+  "updated_at": "2026-07-26T22:29:23Z",
   "idef0": {
     "inputs": [
       "درخواست سفارش مشتری در بازه ساعت ۱ تا ۲ بامداد"
@@ -98,7 +98,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -126,7 +126,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -158,7 +158,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -189,13 +189,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 265.0
+        "x": 741.1523687580025,
+        "y": 267.5160051216389
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -219,42 +221,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 440.0
+        "x": 749.5390524967991,
+        "y": 396.38924455825867
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
-        "touched_by": []
-      }
-    },
-    {
-      "id": "cashier-025-n007",
-      "type": "activity",
-      "label": "خودداری از ثبت سفارش برای بچه‌های آشپزخانه و سالن و آماده‌شدن برای جمع‌کردن صندوق",
-      "description": "طبق قانونی که خود صندوق‌دار گذاشته، از ساعت ۱ به بعد معمولاً برای بچه‌های آشپزخانه و سالن هیچ ثبت سفارشی انجام نمی‌شود مگر موارد خاص، چون از ساعت ۱ به بعد قصد جمع‌کردن صندوق را دارد.",
-      "actor": "صندوق‌دار",
-      "icom": {
-        "inputs": [],
-        "controls": [
-          "قانون فقط آنلاین بودن سفارش‌ها از ساعت ۱ به بعد"
-        ],
-        "outputs": [
-          "صندوق آماده جمع‌شدن"
-        ],
-        "mechanisms": [
-          "صندوق‌دار"
+        "touched_by": [
+          "ui-edit"
         ]
-      },
-      "subprocess": null,
-      "position": {
-        "x": 560,
-        "y": 615.0
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/cashier/20260724-015434",
-        "touched_by": []
       }
     }
   ],
@@ -277,11 +252,6 @@
       "from": "cashier-025-j1",
       "to": "cashier-025-n006",
       "label": "مشتری حضوری تشریف آورده"
-    },
-    {
-      "from": "cashier-025-j1",
-      "to": "cashier-025-n007",
-      "label": "درخواست از بچه‌های آشپزخانه و سالن"
     },
     {
       "from": "cashier-025-n002",
