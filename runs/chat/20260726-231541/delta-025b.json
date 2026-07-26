@@ -1,0 +1,11 @@
+{
+ "add_nodes": [],
+ "add_edges": [
+  { "from": "cashier-025-j1", "to": "cashier-025-n005", "label": "مشتری خودش آنلاین ثبت می‌کند" },
+  { "from": "cashier-025-j1", "to": "cashier-025-n003", "label": "مشتری نتواند یا نخواهد آنلاین ثبت کند و بخواهد تلفنی سفارش دهد" }
+ ],
+ "enrich_nodes": [],
+ "revise_nodes": [],
+ "remove_edges": [],
+ "flag_removed": []
+}
