@@ -1,0 +1,39 @@
+{
+ "add_nodes": [],
+ "add_edges": [],
+ "enrich_nodes": [],
+ "revise_nodes": [],
+ "remove_edges": [
+  { "from": "cashier-031-n001", "to": "cashier-031-j1" },
+  { "from": "cashier-031-j1", "to": "cashier-031-n002" },
+  { "from": "cashier-031-j1", "to": "cashier-031-n003" },
+  { "from": "cashier-031-j1", "to": "cashier-031-n004" },
+  { "from": "cashier-031-n002", "to": "cashier-031-j2" },
+  { "from": "cashier-031-n003", "to": "cashier-031-j2" },
+  { "from": "cashier-031-n004", "to": "cashier-031-j2" },
+  { "from": "cashier-031-j2", "to": "cashier-031-n005" },
+  { "from": "cashier-031-n005", "to": "cashier-031-n006" },
+  { "from": "cashier-031-j3", "to": "cashier-031-n007" },
+  { "from": "cashier-031-n007", "to": "cashier-031-j4" },
+  { "from": "cashier-031-j4", "to": "cashier-031-n008" },
+  { "from": "cashier-031-j4", "to": "cashier-031-n009" },
+  { "from": "cashier-031-n008", "to": "cashier-031-j5" },
+  { "from": "cashier-031-n009", "to": "cashier-031-j5" },
+  { "from": "cashier-031-j5", "to": "cashier-031-n010" }
+ ],
+ "flag_removed": [
+  { "id": "cashier-031-n001" },
+  { "id": "cashier-031-j1" },
+  { "id": "cashier-031-n002" },
+  { "id": "cashier-031-n003" },
+  { "id": "cashier-031-n004" },
+  { "id": "cashier-031-j2" },
+  { "id": "cashier-031-n005" },
+  { "id": "cashier-031-n007" },
+  { "id": "cashier-031-j4" },
+  { "id": "cashier-031-n008" },
+  { "id": "cashier-031-n009" },
+  { "id": "cashier-031-j5" },
+  { "id": "cashier-031-n010" }
+ ]
+}
