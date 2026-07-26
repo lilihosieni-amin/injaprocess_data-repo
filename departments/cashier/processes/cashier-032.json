@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-26T19:27:22Z",
-  "updated_at": "2026-07-26T19:33:58Z",
+  "updated_at": "2026-07-26T21:40:55Z",
   "idef0": {
     "inputs": [
       "گزارش پیک موتوری در سپیدز",
@@ -361,13 +361,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 965
+        "x": 26.5,
+        "y": 493.14981842041016
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260726-191755-night",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -384,8 +386,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 372,
-        "y": 1021
+        "x": 103,
+        "y": 758
       },
       "layout": "manual",
       "source": {
@@ -409,8 +411,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 406,
-        "y": 1249
+        "x": 159.5,
+        "y": 912
       },
       "layout": "manual",
       "source": {
@@ -443,8 +445,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": -462,
-        "y": 484
+        "x": -402,
+        "y": 534
       },
       "layout": "manual",
       "source": {
@@ -476,8 +478,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": -486,
-        "y": 828
+        "x": -466,
+        "y": 760
       },
       "layout": "manual",
       "source": {
@@ -516,8 +518,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": -632,
-        "y": 1260
+        "x": -130,
+        "y": 1225
       },
       "layout": "manual",
       "source": {
@@ -545,8 +547,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": -680,
-        "y": 1594
+        "x": 95,
+        "y": 1245
       },
       "layout": "manual",
       "source": {
@@ -562,8 +564,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": -653,
-        "y": 1829
+        "x": 400,
+        "y": 1243
       },
       "layout": "manual"
     },
@@ -585,8 +587,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": -736,
-        "y": 2224.5
+        "x": 496,
+        "y": 1274.5
       },
       "layout": "manual",
       "source": {
@@ -616,8 +618,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": -680,
-        "y": 2452.5
+        "x": 712,
+        "y": 1233.5
       },
       "layout": "manual",
       "source": {
@@ -633,8 +635,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 415,
-        "y": 2081.5
+        "x": 1269,
+        "y": 1095.5
       },
       "layout": "manual"
     },
@@ -644,8 +646,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1683,
-        "y": 1573.5
+        "x": 1769,
+        "y": 1042.5
       },
       "layout": "manual"
     },
@@ -669,13 +671,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 2540
+        "x": 379.5,
+        "y": 2287
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260726-191755-night",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -696,13 +700,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 2540
+        "x": 589.5,
+        "y": 2423
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260726-191755-night",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -723,13 +729,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 2540
+        "x": 800,
+        "y": 2386.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260726-191755-night",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -750,13 +758,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 2540
+        "x": 1036,
+        "y": 2349.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260726-191755-night",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -775,13 +785,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 2540
+        "x": 1262.5,
+        "y": 2384.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260726-191755-night",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -800,13 +812,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 2977.5
+        "x": 1410,
+        "y": 2704
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260726-191755-night",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -815,10 +829,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 2993.5
+        "x": 1209,
+        "y": 2713.5
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cashier-032-n025",
@@ -838,13 +852,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 3065
+        "x": 912,
+        "y": 2898.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260726-191755-night",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -853,10 +869,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 363,
-        "y": 2964.3333333333335
+        "x": 948.5,
+        "y": 2700.3333333333335
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cashier-032-n026",
@@ -878,13 +894,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 2948.3333333333335
+        "x": 675.5,
+        "y": 2645.8333333333335
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260726-191755-night",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -903,13 +921,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 3415
+        "x": 637,
+        "y": 3256.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260726-191755-night",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -932,13 +952,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 3415
+        "x": 889,
+        "y": 3272
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260726-191755-night",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -960,13 +982,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 3415
+        "x": 1126.5,
+        "y": 3256.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260726-191755-night",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -989,13 +1013,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 3415
+        "x": 1328.5625,
+        "y": 3248
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260726-191755-night",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1020,13 +1046,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 3415
+        "x": 1546.6875,
+        "y": 3259.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260726-191755-night",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1051,13 +1079,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 3765
+        "x": 1379,
+        "y": 3629
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260726-191755-night",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1066,8 +1096,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 881,
-        "y": 3709.5
+        "x": 470,
+        "y": 3415.5
       },
       "layout": "manual"
     },
