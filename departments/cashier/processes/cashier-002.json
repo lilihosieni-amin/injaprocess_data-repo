@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-24T02:30:36Z",
-  "updated_at": "2026-07-26T09:26:42Z",
+  "updated_at": "2026-07-26T10:08:34Z",
   "idef0": {
     "inputs": [
       "تماس تلفنی مشتری",
@@ -860,15 +860,16 @@
       },
       "subprocess": "cashier-030",
       "position": {
-        "x": 560,
-        "y": 1606.6666666666665
+        "x": 366,
+        "y": 1622.6666666666665
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260726-091932",
         "touched_by": [
           "runs/chat/20260726-091932",
-          "runs/chat/20260726-092938"
+          "runs/chat/20260726-092938",
+          "ui-edit"
         ]
       }
     }
@@ -1003,11 +1004,17 @@
     },
     {
       "from": "cashier-002-j6",
-      "to": "cashier-002-n022"
+      "to": "cashier-002-n022",
+      "label": "سفارش زماندار یا سفارش نیازمند به پرداخت قبل از اماده سازی"
     },
     {
       "from": "cashier-002-n022",
       "to": "cashier-002-n016"
+    },
+    {
+      "from": "cashier-002-j6",
+      "to": "cashier-002-n016",
+      "label": "عدم نیاز به پرداخت مبلغ  قبل از ثبت نهایی سفارش"
     }
   ],
   "pending": []
