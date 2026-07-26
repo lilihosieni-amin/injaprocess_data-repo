@@ -1,9 +1,9 @@
 {
   "department": "dining",
   "order": [
-    "dining-026",
     "dining-019",
     "dining-027",
+    "dining-026",
     "dining-006",
     "dining-030",
     "dining-007",
@@ -17,5 +17,5 @@
     "dining-021",
     "dining-025"
   ],
-  "updated_at": "2026-07-26T05:48:05Z"
+  "updated_at": "2026-07-26T06:08:40Z"
 }
