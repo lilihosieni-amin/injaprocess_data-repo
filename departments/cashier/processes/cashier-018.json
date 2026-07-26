@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-24T02:30:41Z",
-  "updated_at": "2026-07-26T22:40:33Z",
+  "updated_at": "2026-07-26T22:49:21Z",
   "idef0": {
     "inputs": [
       "سفارش پرسنل یا مهمان مدیریت",
@@ -209,8 +209,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 142,
-        "y": -201.5
+        "x": 212,
+        "y": 30.5
       },
       "layout": "manual",
       "source": {
@@ -255,8 +255,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 208,
-        "y": 889
+        "x": 348,
+        "y": 699
       },
       "layout": "manual",
       "source": {
@@ -287,8 +287,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 294,
-        "y": 644
+        "x": -52,
+        "y": 768
       },
       "layout": "manual",
       "source": {
@@ -320,8 +320,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 520,
-        "y": 793.18115234375
+        "x": 220,
+        "y": 974.4762573242188
       },
       "layout": "manual",
       "source": {
@@ -421,8 +421,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 830,
-        "y": -156
+        "x": -104,
+        "y": 276.40887451171875
       },
       "layout": "manual",
       "source": {
@@ -565,13 +565,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 789.9999999999999
+        "x": -74,
+        "y": 4.476989746093636
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260726-223948",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -597,13 +599,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 789.9999999999999
+        "x": -184,
+        "y": 529.9999999999999
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260726-223948",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
