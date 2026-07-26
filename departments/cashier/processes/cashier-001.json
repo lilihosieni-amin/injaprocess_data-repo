@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-24T02:30:36Z",
-  "updated_at": "2026-07-26T10:39:51Z",
+  "updated_at": "2026-07-26T22:40:33Z",
   "idef0": {
     "inputs": [],
     "controls": [
@@ -361,8 +361,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 440.0
+        "x": 820,
+        "y": 615.0
       },
       "layout": "auto",
       "source": {
@@ -428,6 +428,63 @@
         "created_by": "runs/chat/20260726-102841-shift",
         "touched_by": []
       }
+    },
+    {
+      "id": "cashier-001-n016",
+      "type": "activity",
+      "label": "پر کردن چک‌لیست ابتدای کار توسط صندوق‌دار",
+      "description": "در ابتدای تایم، صندوق‌دار قسمت مربوط به خود در چک‌لیست ابتدا و انتهای کار را پر می‌کند. این چک‌لیست هم ابتدای کار و هم انتهای کار را در بر می‌گیرد.",
+      "actor": "صندوق‌دار",
+      "icom": {
+        "inputs": [
+          "فرم چک‌لیست ابتدا و انتهای کار"
+        ],
+        "controls": [],
+        "outputs": [
+          "بخش ابتدای کارِ چک‌لیست تکمیل‌شده"
+        ],
+        "mechanisms": [
+          "صندوق‌دار"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 440.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260726-223948",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cashier-001-n017",
+      "type": "activity",
+      "label": "باز کردن یک صفحه جدید در فایل اکسل",
+      "description": "در ابتدای تایم صندوق‌دار یک صفحه جدید داخل اکسل باز می‌کند تا اطلاعات آن روز در آن ثبت شود.",
+      "actor": "صندوق‌دار",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [
+          "صفحه جدید اکسل"
+        ],
+        "mechanisms": [
+          "صندوق‌دار",
+          "نرم‌افزار اکسل"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 615.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260726-223948",
+        "touched_by": []
+      }
     }
   ],
   "edges": [
@@ -472,10 +529,6 @@
       "to": "cashier-001-n012"
     },
     {
-      "from": "cashier-001-n012",
-      "to": "cashier-001-n013"
-    },
-    {
       "from": "cashier-001-n008",
       "to": "cashier-001-n014"
     },
@@ -486,6 +539,18 @@
     {
       "from": "cashier-001-n015",
       "to": "cashier-001-n009"
+    },
+    {
+      "from": "cashier-001-n012",
+      "to": "cashier-001-n016"
+    },
+    {
+      "from": "cashier-001-n016",
+      "to": "cashier-001-n017"
+    },
+    {
+      "from": "cashier-001-n017",
+      "to": "cashier-001-n013"
     }
   ],
   "pending": []
