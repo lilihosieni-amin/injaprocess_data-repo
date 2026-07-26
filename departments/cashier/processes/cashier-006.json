@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-24T02:30:38Z",
-  "updated_at": "2026-07-26T08:45:57Z",
+  "updated_at": "2026-07-26T08:47:30Z",
   "idef0": {
     "inputs": [
       "کد باشگاه مشتریان اعلام‌شده توسط مشتری",
@@ -134,7 +134,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -164,74 +164,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 265.0
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/cashier/20260724-015434",
-        "touched_by": []
-      }
-    },
-    {
-      "id": "cashier-006-n005",
-      "type": "activity",
-      "label": "اعمال کرایه بر اساس مسافت مشتری تا رستوران در قسمت کرایه",
-      "description": "برای برخی مسیرها که جدیداً کرایه زده می‌شود، صندوق‌دار با توجه به مسافتی که مشتری نسبت به رستوران دارد، در قسمت کرایه هزینه‌ی کرایه را اعمال می‌کند.",
-      "actor": "صندوق‌دار",
-      "icom": {
-        "inputs": [
-          "مسیر و مسافت مشتری تا رستوران"
-        ],
-        "controls": [
-          "محاسبه‌ی کرایه بر اساس مسافت مشتری تا رستوران"
-        ],
-        "outputs": [
-          "هزینه‌ی کرایه‌ی اعمال‌شده بر فاکتور"
-        ],
-        "mechanisms": [
-          "صندوق‌دار",
-          "سیستم سپیدز"
-        ]
-      },
-      "subprocess": null,
-      "position": {
-        "x": 1168.9406175771971,
-        "y": -26.386501973711685
-      },
-      "layout": "manual",
-      "source": {
-        "created_by": "runs/cashier/20260724-015434",
-        "touched_by": [
-          "ui-edit"
-        ]
-      }
-    },
-    {
-      "id": "cashier-006-n006",
-      "type": "activity",
-      "label": "دریافت تأیید مدیریت برای اعمال تخفیف درصدی یا ریالی",
-      "description": "تخفیف‌ها دو نوع درصدی و ریالی هستند. پرسنل دسترسی به اعمال تخفیف دستی یا درصدی برای هر مشتری ندارند؛ تخفیف تنها برای کسانی که مدیریت اعلام می‌کند اعمال می‌شود، مانند پرسنل قراردادی (معمولاً ۲۰ درصد) یا مهمانان مدیریت که از طرف مدیریت تأیید می‌شوند.",
-      "actor": "صندوق‌دار",
-      "icom": {
-        "inputs": [
-          "درخواست تخفیف درصدی یا ریالی"
-        ],
-        "controls": [
-          "تأیید مدیریت برای اعمال تخفیف",
-          "عدم دسترسی پرسنل به اعمال تخفیف دستی برای هر مشتری"
-        ],
-        "outputs": [
-          "تأییدیه‌ی مدیریت برای اعمال تخفیف"
-        ],
-        "mechanisms": [
-          "صندوق‌دار",
-          "مدیریت"
-        ]
-      },
-      "subprocess": null,
-      "position": {
-        "x": 1080,
-        "y": 440.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -263,7 +196,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -278,7 +211,7 @@
       "direction": "split",
       "position": {
         "x": 103,
-        "y": 631.0
+        "y": 631
       },
       "layout": "auto",
       "removed": true
@@ -305,7 +238,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -336,7 +269,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 790.0
+        "y": 790
       },
       "layout": "auto",
       "source": {
@@ -371,7 +304,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 965.0
+        "y": 965
       },
       "layout": "auto",
       "source": {
@@ -404,7 +337,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -438,25 +371,17 @@
       "label": "پس از ارسال مجدد کد"
     },
     {
-      "from": "cashier-006-n003",
-      "to": "cashier-006-n005"
-    },
-    {
-      "from": "cashier-006-n005",
-      "to": "cashier-006-n006"
-    },
-    {
-      "from": "cashier-006-n006",
-      "to": "cashier-006-n007",
-      "label": "در صورت تأیید مدیریت"
-    },
-    {
       "from": "cashier-006-n008",
       "to": "cashier-006-n011"
     },
     {
       "from": "cashier-006-n007",
       "to": "cashier-006-n008"
+    },
+    {
+      "from": "cashier-006-n003",
+      "to": "cashier-006-n007",
+      "label": ""
     }
   ],
   "pending": []
