@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-24T02:30:39Z",
-  "updated_at": "2026-07-24T02:30:39Z",
+  "updated_at": "2026-07-26T09:38:08Z",
   "idef0": {
     "inputs": [
       "سفارش مشتری",
@@ -364,5 +364,9 @@
       "label": "مشتری واریز نکرد یا منصرف شد"
     }
   ],
-  "pending": []
+  "pending": [],
+  "tombstoned": true,
+  "superseded_by": [
+    "cashier-030"
+  ]
 }
