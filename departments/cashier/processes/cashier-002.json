@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-24T02:30:36Z",
-  "updated_at": "2026-07-24T22:44:02Z",
+  "updated_at": "2026-07-26T08:37:53Z",
   "idef0": {
     "inputs": [
       "تماس تلفنی مشتری",
@@ -551,10 +551,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 363,
-        "y": 1622.6666666666665
+        "x": 355,
+        "y": 1450.6666666666665
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cashier-002-n016",
@@ -578,13 +578,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1606.6666666666665
+        "x": 70,
+        "y": 1644.6666666666665
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -612,15 +614,16 @@
       },
       "subprocess": "cashier-003",
       "position": {
-        "x": 1080,
-        "y": 90
+        "x": 1324,
+        "y": 94
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260724-221343",
         "touched_by": [
           "runs/chat/20260724-221343",
-          "runs/chat/20260724-222532"
+          "runs/chat/20260724-222532",
+          "ui-edit"
         ]
       }
     },
@@ -751,8 +754,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 614,
-        "y": 1628
+        "x": 706,
+        "y": 1580.9990844726562
       },
       "layout": "manual",
       "source": {
