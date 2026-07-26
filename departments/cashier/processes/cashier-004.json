@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-24T02:30:37Z",
-  "updated_at": "2026-07-26T10:13:47Z",
+  "updated_at": "2026-07-26T10:18:20Z",
   "idef0": {
     "inputs": [
       "سفارش اینترنتی ثبت‌شده روی پنل (سایت اختصاصی یا دلینو)",
@@ -168,8 +168,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1096,
-        "y": 603.3746566772461
+        "x": 870,
+        "y": 691.3746566772461
       },
       "layout": "manual",
       "source": {
@@ -202,8 +202,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1242,
-        "y": 462.6550521850586
+        "x": 1130,
+        "y": 696.6550521850586
       },
       "layout": "manual",
       "source": {
@@ -233,13 +233,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1154.5833333333333
+        "x": 1312,
+        "y": 1094.5833333333333
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -276,13 +278,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 950.4166666666665
+        "x": 464,
+        "y": 810.4166666666665
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -339,8 +343,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 868,
-        "y": 677.5833333333333
+        "x": 1858,
+        "y": 162.83333333333326
       },
       "layout": "manual",
       "source": {
@@ -406,13 +410,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 615.0
+        "x": 1066,
+        "y": 133.3700714111328
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260726-101321",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -437,13 +443,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1315.0
+        "x": 1292,
+        "y": 146.8550796508789
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260726-101321",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -466,13 +474,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1260.3125
+        "x": 1598,
+        "y": 163.20755767822266
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260726-101321",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -496,13 +506,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1318.6458333333335
+        "x": 2121.8499450683594,
+        "y": 180.64583333333348
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260726-101321",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
