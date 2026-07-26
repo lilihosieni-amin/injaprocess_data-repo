@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-24T02:30:41Z",
-  "updated_at": "2026-07-24T02:30:41Z",
+  "updated_at": "2026-07-26T19:11:42Z",
   "idef0": {
     "inputs": [
       "سفارش پرسنل یا مهمان مدیریت",
@@ -66,13 +66,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 374.375
+        "x": 416,
+        "y": -539.5461120605469
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -81,10 +83,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
-        "y": 390.375
+        "x": 469,
+        "y": -241.625
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cashier-018-n002",
@@ -105,13 +107,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 440.0
+        "x": 362,
+        "y": 154
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -136,13 +140,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 440.0
+        "x": 436,
+        "y": 356
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -168,13 +174,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 440.0
+        "x": 480,
+        "y": 550
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -201,13 +209,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 702.5
+        "x": 142,
+        "y": -201.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -216,10 +226,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 718.5
+        "x": 139,
+        "y": 469.18133544921875
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cashier-018-n006",
@@ -245,13 +255,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 615.0
+        "x": 208,
+        "y": 889
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -275,13 +287,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 790.0
+        "x": 294,
+        "y": 644
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -306,13 +320,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1665.0
+        "x": 520,
+        "y": 793.18115234375
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -337,13 +353,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 265.0
+        "x": 590,
+        "y": -87
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -369,13 +387,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 265.0
+        "x": 634,
+        "y": 89
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -401,13 +421,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 90.0
+        "x": 830,
+        "y": -156
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -416,10 +438,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 883,
-        "y": 1331.0
+        "x": 791,
+        "y": 899
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cashier-018-n012",
@@ -444,13 +466,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1315.0
+        "x": 704,
+        "y": 1031
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -475,13 +499,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1227.5
+        "x": 464,
+        "y": 1255.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -504,13 +530,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1402.5
+        "x": 894,
+        "y": 1244.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
