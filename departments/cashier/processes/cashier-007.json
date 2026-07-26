@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-24T02:30:38Z",
-  "updated_at": "2026-07-26T08:52:43Z",
+  "updated_at": "2026-07-26T09:26:08Z",
   "idef0": {
     "inputs": [
       "فاکتور صادرشده سفارش تلفنی/آنلاین",
@@ -310,5 +310,9 @@
       "to": "cashier-007-n006"
     }
   ],
-  "pending": []
+  "pending": [],
+  "tombstoned": true,
+  "superseded_by": [
+    "cashier-029"
+  ]
 }
