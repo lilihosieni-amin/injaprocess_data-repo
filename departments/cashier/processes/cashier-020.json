@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-24T02:30:42Z",
-  "updated_at": "2026-07-24T02:30:42Z",
+  "updated_at": "2026-07-26T10:39:13Z",
   "idef0": {
     "inputs": [
       "سفارش بیرون‌بر آماده و پک‌شده",
@@ -453,5 +453,9 @@
       "to": "cashier-020-n010"
     }
   ],
-  "pending": []
+  "pending": [],
+  "tombstoned": true,
+  "superseded_by": [
+    "cashier-031"
+  ]
 }
