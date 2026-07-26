@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-24T02:30:43Z",
-  "updated_at": "2026-07-24T02:30:43Z",
+  "updated_at": "2026-07-26T19:27:22Z",
   "idef0": {
     "inputs": [
       "گزارش پیک موتوری در سپیدز",
@@ -353,5 +353,9 @@
       "to": "cashier-022-n007"
     }
   ],
-  "pending": []
+  "pending": [],
+  "tombstoned": true,
+  "superseded_by": [
+    "cashier-032"
+  ]
 }

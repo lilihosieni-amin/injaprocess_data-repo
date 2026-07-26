@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-24T02:30:43Z",
-  "updated_at": "2026-07-24T02:30:43Z",
+  "updated_at": "2026-07-26T19:27:22Z",
   "idef0": {
     "inputs": [
       "تمام فاکتورهای شب",
@@ -774,5 +774,9 @@
       "label": "در صورت نبود مغایرت"
     }
   ],
-  "pending": []
+  "pending": [],
+  "tombstoned": true,
+  "superseded_by": [
+    "cashier-032"
+  ]
 }
