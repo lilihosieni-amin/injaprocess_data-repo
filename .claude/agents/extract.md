@@ -139,6 +139,13 @@ Emit a single JSON object conforming to the delta contract (see the idef-extract
 - **`remove_edges`**: edges to hard-delete for **edge hygiene** (spec §4.6). Each entry is `{"from": "<id>", "to": "<id>"}` referencing real existing node ids. **When you insert a node onto an existing path or re-route flow, emit the now-redundant edge here** — the engine never guesses which edge to drop, and it re-layouts afterward. Edges are structure, not INV-4 content, so this is a real delete.
 - **`flag_removed`**: existing node IDs the set implies are no longer part of the process. Each entry is `{"id": "<real-id>"}`. The merge CLI sets `removed: true`; the extract agent never deletes nodes.
 
+**Never emit `set_process`.** The delta contract also accepts a `set_process` block that overwrites
+the process's own `name`, `summary`, `idef0` and `kpis` — it exists for **chat-driven edits only**
+(`edit-process`), where the user approves each field. A voice run describes **steps** (nodes and
+edges); the process's title, summary, ICOM and KPIs are human-curated, and a routine re-run must
+never silently rename or rewrite them. If a recording suggests the title or summary is wrong, say
+so in your Persian summary and let the human decide — do not encode it in the delta.
+
 Enrich/revise only fields the set actually informs. Incompleteness is fine; fabrication is forbidden.
 
 ### Where to write

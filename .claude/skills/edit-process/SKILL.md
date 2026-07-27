@@ -31,6 +31,10 @@ Choose the artifact by the kind of edit (see the `idef-extraction` skill §5/§8
 
 - **Field / label change** → a `delta` with `revise_nodes: [{id, set:{…}}]` (overwrite) — or
   `enrich_nodes` if the field is empty.
+- **The process's own title / summary / ICOM / KPIs** → a `delta` with
+  `set_process: {name?, summary?, idef0?, kpis?}` (at least one key; `idef0` needs all four ICOM
+  lists). It edits **in place** — no new id, no tombstone. It **overwrites**, and the engine never
+  records a `pending` row for it, so it is **hard-gated** in Step 3.
 - **Insert a step** → a `delta` with `add_nodes` (temp keys `n1`, …) + `add_edges`, and — for **edge
   hygiene** — `remove_edges` for the edge the new node makes redundant.
 - **Remove an edge** → a `delta` with `remove_edges: [{from, to}]` (real ids).
@@ -53,11 +57,31 @@ Write any `delta`/`candidate`/`plan` artifact to a scratch path under `runs/chat
 
 ## Step 3 — Confirm proportionally (the analogue of Gate B)
 
-- A **simple, non-destructive** edit (a field change, adding a node/edge) executes **directly** — no
-  confirmation pause.
+- A **simple, non-destructive** edit (a node field change, adding a node/edge) executes **directly**
+  — no confirmation pause.
 - A **destructive/structural** edit (delete/tombstone, merge, split, attach) shows a **one-line
   Persian confirmation first** and waits for the user's «تأیید». This is the proportional analogue
   of Gate B — destructive-op confirmation, scaled to a single edit.
+- **A `set_process` edit — ALWAYS STOP AND ASK. No exceptions, however small it looks.** It is
+  *not* covered by the "simple field change" rule above. `name`, `summary`, `idef0` and `kpis` are
+  **human-curated identity**: the engine **overwrites them silently** (it never queues a `pending`
+  row, so INV-5 cannot be enforced downstream) and the old value then survives **only in git**.
+  Before writing the delta, show the user each field in Persian — current value first, proposed
+  second:
+
+  ```
+  فیلد: «نام فرایند»
+  فعلی:    <current value, verbatim>
+  پیشنهاد: <proposed value>
+  ```
+
+  Then wait for an explicit «تأیید». Rules:
+  - **Field by field.** Never bundle several fields into one question. If the user approves only
+    some, put only those in `set_process`.
+  - **Never infer approval from the original instruction alone** — the user must *see* the exact
+    current value before it is replaced, so they can catch a wrong target process or a wrong field.
+  - **Ask even when the field is currently empty.** These four fields are always gated.
+  - If the user has not approved, **do not write the delta at all** — do not "prepare it anyway".
 
 ## Step 4 — Run the matching `merge` verb (the sole writer)
 
@@ -101,6 +125,9 @@ destructive op — that the original was tombstoned/flagged, not deleted). Do no
 - **INV-1** — ids are engine-minted; copy committed ids verbatim, use temp keys for new nodes, never
   set `source`/`superseded_by`/`position`/`layout`.
 - **INV-3** — no fabrication: model only what the user actually instructed.
+- **INV-5** — the four `set_process` fields (`name`, `summary`, `idef0`, `kpis`) are **never**
+  changed without the user seeing the current value and approving that field explicitly (Step 3).
+  The engine cannot enforce this; you are the gate.
 - **INV-4** — never delete/lose: node drops are `flag_removed`; process removals are `merge remove`
   (tombstone). The only hard delete is user-initiated in the UI.
 - **Provenance** — the resulting change is `source.type: "chat"`; Claude commits it.

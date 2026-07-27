@@ -177,12 +177,34 @@ duplication across a process and its subprocess" + §2 "One node per task"):
 Fold these dedup edits into the same per-process `delta` objects described next.
 
 Emit **one `delta.schema.json` object per affected process** carrying the needed
-`add_edges` / `remove_edges` / `add_nodes` / `revise_nodes` / `enrich_nodes`.
+`add_edges` / `remove_edges` / `add_nodes` / `revise_nodes` / `enrich_nodes` — plus
+`set_process` when the heir's own identity needs to catch up with the merge (see below).
 
 **Every `delta` object MUST include all four arrays** `add_nodes`, `add_edges`,
 `enrich_nodes`, `flag_removed` — use `[]` for any you don't need (they are `required` by the
 schema). `revise_nodes`, `remove_edges`, and `add_subprocesses` are optional and added only
 when you actually use them.
+
+**`set_process` — allowed, but only to make the heir's identity match the merge you just
+applied.** The schema accepts a `set_process` block (`name`, `summary`, `idef0`, `kpis`) that
+**overwrites in place** — no new id, no tombstone:
+
+```json
+"set_process": { "name": "…", "summary": "…", "idef0": {…}, "kpis": […] }
+```
+
+Use it only when applying an approved item leaves the heir's own identity stale — e.g. after
+`[001,002,004]` are folded into one heir, its `name`/`summary` still describe only the first
+member, or its `idef0` ICOM omits inputs/outputs the other members contributed. Rules:
+
+- **Apply mode only.** Never in review mode — a review proposes, it never writes.
+- **Only the heir you are repairing.** Never a bystander process.
+- **Scope: coverage, not taste.** Rewrite identity because it no longer describes the merged
+  whole, never because you would have phrased it differently.
+- **Report every field you change**, current value → new value, in your Persian summary. The user
+  approved *this item*; they must still be able to see that its title or summary moved, because the
+  engine overwrites silently and the old value survives only in git.
+- **Never touch `name`/`summary`/`idef0`/`kpis` of an already-sound heir** just to normalise it.
 
 **id vs. key (INV-1).** `revise_nodes`, `enrich_nodes`, and `flag_removed` each target an
 **existing** node by its **real committed node `id`** (copied verbatim from the process file
