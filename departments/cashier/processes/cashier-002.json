@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-24T02:30:36Z",
-  "updated_at": "2026-07-27T21:56:59Z",
+  "updated_at": "2026-07-27T21:59:50Z",
   "idef0": {
     "inputs": [
       "تماس تلفنی مشتری",
@@ -480,8 +480,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1151.951235815491,
-        "y": 640.0100557140915
+        "x": 943.6412582370156,
+        "y": 1137.1765355347193
       },
       "layout": "manual",
       "source": {
@@ -511,13 +511,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1358.75
+        "x": 566.480754857997,
+        "y": 1243.0222346786247
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -631,8 +633,8 @@
       },
       "subprocess": "cashier-003",
       "position": {
-        "x": 1324,
-        "y": 94
+        "x": 1298.076980568012,
+        "y": 405.0762331838565
       },
       "layout": "manual",
       "source": {
@@ -687,13 +689,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 615.0
+        "x": 834.8131539611361,
+        "y": 372.3188761210763
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260724-222532",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -702,8 +706,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 903,
-        "y": 1494.5
+        "x": 920.590620328849,
+        "y": 1541.716928251121
       },
       "layout": "manual"
     },
@@ -739,8 +743,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 672,
-        "y": 1379.878574371338
+        "x": 673.851644245142,
+        "y": 1496.5321618152843
       },
       "layout": "manual",
       "source": {
@@ -771,8 +775,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 706,
-        "y": 1580.9990844726562
+        "x": 672.6704035874438,
+        "y": 1657.8423206460493
       },
       "layout": "manual",
       "source": {
@@ -862,8 +866,8 @@
       },
       "subprocess": "cashier-030",
       "position": {
-        "x": 366,
-        "y": 1622.6666666666665
+        "x": 326.1896487294469,
+        "y": 1631.9248878923765
       },
       "layout": "manual",
       "source": {
@@ -895,13 +899,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 90.0
+        "x": 1089.25822122571,
+        "y": 16.860052316890872
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260727-215643",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -910,10 +916,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1143,
-        "y": 499.75
+        "x": 1255.950298953662,
+        "y": 254.4071375186846
       },
-      "layout": "auto"
+      "layout": "manual"
     }
   ],
   "edges": [
