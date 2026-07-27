@@ -13,7 +13,7 @@
     "node": "cashier-002-n011"
   },
   "created_at": "2026-07-26T09:09:45Z",
-  "updated_at": "2026-07-26T09:09:45Z",
+  "updated_at": "2026-07-27T21:57:10Z",
   "idef0": {
     "inputs": [
       "کد باشگاه مشتریان اعلام‌شده توسط مشتری",
@@ -133,7 +133,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -163,39 +163,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 265.0
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/chat/20260726-090745",
-        "touched_by": []
-      }
-    },
-    {
-      "id": "cashier-028-n005",
-      "type": "activity",
-      "label": "وارد کردن تخفیف درصدی یا ریالی تأییدشده در سیستم",
-      "description": "صندوق‌دار تخفیف درصدی را خودش در سیستم وارد می‌کند؛ پرسنل قراردادی معمولاً ۲۰ درصد تخفیف دارند و برای مهمانان مدیریت می‌توان تخفیف درصدی یا ریالی زد.",
-      "actor": "صندوق‌دار",
-      "icom": {
-        "inputs": [
-          "تأییدیه‌ی مدیریت برای اعمال تخفیف"
-        ],
-        "controls": [
-          "پرسنل قراردادی معمولاً ۲۰ درصد تخفیف"
-        ],
-        "outputs": [
-          "تخفیف درصدی یا ریالی واردشده در فاکتور"
-        ],
-        "mechanisms": [
-          "صندوق‌دار",
-          "سیستم سپیدز"
-        ]
-      },
-      "subprocess": null,
-      "position": {
-        "x": 1080,
-        "y": 90.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -224,43 +192,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 440.0
+        "x": 1110.5521300448434,
+        "y": 102.0749252615845
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260726-090745",
-        "touched_by": []
-      }
-    },
-    {
-      "id": "cashier-028-n007",
-      "type": "activity",
-      "label": "دریافت و کسر کد تخفیف صددرصد از فاکتور در سفارش حضوری",
-      "description": "در سفارشات حضوری/سالن، صندوق‌دار از مشتری کد تخفیف صددرصد را می‌پرسد که در صورت داشتن، آن را از فاکتور مشتری کسر کند.",
-      "actor": "صندوق‌دار",
-      "icom": {
-        "inputs": [
-          "کد تخفیف صددرصد مشتری"
-        ],
-        "controls": [],
-        "outputs": [
-          "مبلغ صددرصد کسرشده از فاکتور"
-        ],
-        "mechanisms": [
-          "صندوق‌دار",
-          "سیستم سپیدز"
+        "touched_by": [
+          "ui-edit"
         ]
-      },
-      "subprocess": null,
-      "position": {
-        "x": 820,
-        "y": 440.0
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/chat/20260726-090745",
-        "touched_by": []
       }
     }
   ],
@@ -290,15 +230,8 @@
     },
     {
       "from": "cashier-028-n003",
-      "to": "cashier-028-n005"
-    },
-    {
-      "from": "cashier-028-n005",
-      "to": "cashier-028-n006"
-    },
-    {
-      "from": "cashier-028-n006",
-      "to": "cashier-028-n007"
+      "to": "cashier-028-n006",
+      "label": ""
     }
   ],
   "pending": []
