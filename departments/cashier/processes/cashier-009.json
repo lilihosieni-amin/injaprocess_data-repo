@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-24T02:30:39Z",
-  "updated_at": "2026-07-27T22:48:26Z",
+  "updated_at": "2026-07-28T09:45:08Z",
   "idef0": {
     "inputs": [
       "درخواست سفارش مشتری حضوری",
@@ -89,7 +89,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -118,7 +118,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -135,7 +135,7 @@
       "direction": "split",
       "position": {
         "x": 1143,
-        "y": 106.0
+        "y": 106
       },
       "layout": "auto"
     },
@@ -157,14 +157,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 527.5
+        "x": 1658,
+        "y": 571.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
         "touched_by": [
-          "runs/chat/20260727-role-009"
+          "runs/chat/20260727-role-009",
+          "ui-edit"
         ]
       }
     },
@@ -184,21 +185,22 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 702.5
+        "x": 1138,
+        "y": 542.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
         "touched_by": [
-          "runs/chat/20260727-role-009"
+          "runs/chat/20260727-role-009",
+          "ui-edit"
         ]
       }
     },
     {
       "id": "cashier-009-n006",
       "type": "activity",
-      "label": "ثبت سفارش سالن با سیستم حضوری از قسمت سفارشات سالن",
+      "label": "مراجعه مشتری به صندوق برای ثبت سفارش سالن با سیستم حضوری ",
       "description": "مشتری سالنی که بخواهد کارت‌به‌کارت یا نقدی پرداخت کند نمی‌تواند از کیوسک استفاده کند و باید به صندوق مراجعه کند؛ صندوق‌دار حضوری با سیستم حضوری سپیدز از قسمت سفارشات سالن سفارش او را ثبت می‌کند (سفارشات مشترکین جدا از سفارشات سالن است). سفارش‌هایی که مشتری می‌خواهد حضوری تحویل بگیرد نیز از همین مسیر ثبت می‌شود.",
       "actor": "صندوق‌دار حضوری",
       "icom": {
@@ -215,14 +217,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 440.0
+        "x": 364,
+        "y": 472
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
         "touched_by": [
-          "runs/chat/20260727-role-009"
+          "runs/chat/20260727-role-009",
+          "ui-edit"
         ]
       }
     },
@@ -244,14 +247,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 440.0
+        "x": 646,
+        "y": 458
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
         "touched_by": [
-          "runs/chat/20260727-role-009"
+          "runs/chat/20260727-role-009",
+          "ui-edit"
         ]
       }
     },
@@ -273,14 +277,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 440.0
+        "x": 884,
+        "y": 484
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
         "touched_by": [
-          "runs/chat/20260727-role-009"
+          "runs/chat/20260727-role-009",
+          "ui-edit"
         ]
       }
     },
@@ -302,14 +307,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1140.0
+        "x": 958,
+        "y": 752
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
         "touched_by": [
-          "runs/chat/20260727-role-009"
+          "runs/chat/20260727-role-009",
+          "ui-edit"
         ]
       }
     },
@@ -319,10 +325,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 1156.0
+        "x": 837,
+        "y": 780
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cashier-009-n010",
@@ -338,14 +344,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1052.5
+        "x": 544,
+        "y": 678.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
         "touched_by": [
-          "runs/chat/20260727-role-009"
+          "runs/chat/20260727-role-009",
+          "ui-edit"
         ]
       }
     },
@@ -365,14 +372,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1227.5
+        "x": 584,
+        "y": 955.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
         "touched_by": [
-          "runs/chat/20260727-role-009"
+          "runs/chat/20260727-role-009",
+          "ui-edit"
         ]
       }
     },
@@ -382,10 +390,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 363,
-        "y": 1126.8333333333333
+        "x": 287,
+        "y": 824.8333333333333
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cashier-009-n012",
@@ -403,14 +411,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1110.8333333333333
+        "x": 100,
+        "y": 1108.8333333333333
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
         "touched_by": [
-          "runs/chat/20260727-role-009"
+          "runs/chat/20260727-role-009",
+          "ui-edit"
         ]
       }
     },
@@ -433,14 +442,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1752.5
+        "x": 6,
+        "y": 1428.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
         "touched_by": [
-          "runs/chat/20260727-role-009"
+          "runs/chat/20260727-role-009",
+          "ui-edit"
         ]
       }
     },
@@ -462,13 +472,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1752.5
+        "x": 156,
+        "y": 1646.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -487,14 +499,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1752.5
+        "x": 402,
+        "y": 1766.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
         "touched_by": [
-          "runs/chat/20260727-role-009"
+          "runs/chat/20260727-role-009",
+          "ui-edit"
         ]
       }
     },
@@ -519,13 +532,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 790.0
+        "x": 1596,
+        "y": 1286
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260726-104816",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -534,10 +549,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
-        "y": 864.3333333333333
+        "x": 1563,
+        "y": 1487.9694722493489
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cashier-009-n017",
@@ -563,14 +578,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 760.8333333333333
+        "x": 1140,
+        "y": 1517.3556111653645
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260726-104816",
         "touched_by": [
-          "runs/chat/20260727-role-009"
+          "runs/chat/20260727-role-009",
+          "ui-edit"
         ]
       }
     },
@@ -598,14 +614,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 935.8333333333333
+        "x": 868,
+        "y": 1333.8333333333333
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260726-104816",
         "touched_by": [
-          "runs/chat/20260727-role-009"
+          "runs/chat/20260727-role-009",
+          "ui-edit"
         ]
       }
     },
@@ -615,10 +632,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 103,
-        "y": 1418.5
+        "x": 601,
+        "y": 1450.5
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cashier-009-n019",
@@ -656,10 +673,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 883,
-        "y": 806.0
+        "x": 1703,
+        "y": 1122
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cashier-009-n020",
@@ -682,13 +699,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1752.5
+        "x": 740,
+        "y": 1758.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260727-role-009",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -713,13 +732,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1752.5
+        "x": 996,
+        "y": 1754.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260727-role-009",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
