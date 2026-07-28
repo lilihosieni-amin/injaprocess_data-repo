@@ -1,0 +1,41 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "revise_nodes": [
+    {
+      "id": "cashier-017-n003",
+      "set": {
+        "icom": {
+          "inputs": [
+            "فاکتور پرداخت‌شده کیوسک"
+          ],
+          "controls": [],
+          "outputs": [],
+          "mechanisms": [
+            "صندوق‌دار",
+            "سیستم صندوق حضوری"
+          ]
+        }
+      }
+    },
+    {
+      "id": "cashier-017-n004",
+      "set": {
+        "icom": {
+          "inputs": [],
+          "controls": [],
+          "outputs": [
+            "فاکتور جدید"
+          ],
+          "mechanisms": [
+            "صندوق‌دار",
+            "سیستم صندوق حضوری"
+          ]
+        }
+      }
+    }
+  ],
+  "remove_edges": [],
+  "flag_removed": []
+}

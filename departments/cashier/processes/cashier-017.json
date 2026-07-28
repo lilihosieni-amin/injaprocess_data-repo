@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-24T02:30:41Z",
-  "updated_at": "2026-07-24T02:30:41Z",
+  "updated_at": "2026-07-28T09:51:24Z",
   "idef0": {
     "inputs": [
       "مبلغ اضافه واریزشده یا اضافه صندوق",
@@ -116,7 +116,7 @@
         "outputs": [],
         "mechanisms": [
           "صندوق‌دار",
-          "سیستم حضوری سپیدز"
+          "سیستم صندوق حضوری"
         ]
       },
       "subprocess": null,
@@ -127,7 +127,9 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
-        "touched_by": []
+        "touched_by": [
+          "runs/chat/20260727-sys-017"
+        ]
       }
     },
     {
@@ -144,7 +146,7 @@
         ],
         "mechanisms": [
           "صندوق‌دار",
-          "سیستم حضوری سپیدز"
+          "سیستم صندوق حضوری"
         ]
       },
       "subprocess": null,
@@ -155,7 +157,9 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/cashier/20260724-015434",
-        "touched_by": []
+        "touched_by": [
+          "runs/chat/20260727-sys-017"
+        ]
       }
     },
     {

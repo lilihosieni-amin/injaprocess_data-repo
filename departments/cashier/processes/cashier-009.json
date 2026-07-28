@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-24T02:30:39Z",
-  "updated_at": "2026-07-28T09:45:08Z",
+  "updated_at": "2026-07-28T09:51:24Z",
   "idef0": {
     "inputs": [
       "درخواست سفارش مشتری حضوری",
@@ -212,7 +212,7 @@
         ],
         "outputs": [],
         "mechanisms": [
-          "سیستم حضوری سپیدز"
+          "سیستم صندوق حضوری"
         ]
       },
       "subprocess": null,
@@ -225,7 +225,8 @@
         "created_by": "runs/cashier/20260724-015434",
         "touched_by": [
           "runs/chat/20260727-role-009",
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260727-sys-009"
         ]
       }
     },
@@ -242,7 +243,7 @@
         "controls": [],
         "outputs": [],
         "mechanisms": [
-          "سیستم حضوری سپیدز"
+          "سیستم صندوق حضوری"
         ]
       },
       "subprocess": null,
@@ -255,7 +256,8 @@
         "created_by": "runs/cashier/20260724-015434",
         "touched_by": [
           "runs/chat/20260727-role-009",
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260727-sys-009"
         ]
       }
     },
@@ -272,7 +274,7 @@
         ],
         "outputs": [],
         "mechanisms": [
-          "سیستم حضوری سپیدز"
+          "سیستم صندوق حضوری"
         ]
       },
       "subprocess": null,
@@ -285,7 +287,8 @@
         "created_by": "runs/cashier/20260724-015434",
         "touched_by": [
           "runs/chat/20260727-role-009",
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260727-sys-009"
         ]
       }
     },
@@ -302,7 +305,7 @@
         "controls": [],
         "outputs": [],
         "mechanisms": [
-          "سیستم حضوری سپیدز"
+          "سیستم صندوق حضوری"
         ]
       },
       "subprocess": null,
@@ -315,7 +318,8 @@
         "created_by": "runs/cashier/20260724-015434",
         "touched_by": [
           "runs/chat/20260727-role-009",
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260727-sys-009"
         ]
       }
     },
@@ -406,7 +410,7 @@
         "controls": [],
         "outputs": [],
         "mechanisms": [
-          "سیستم حضوری سپیدز"
+          "سیستم صندوق حضوری"
         ]
       },
       "subprocess": null,
@@ -419,7 +423,8 @@
         "created_by": "runs/cashier/20260724-015434",
         "touched_by": [
           "runs/chat/20260727-role-009",
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260727-sys-009"
         ]
       }
     },
@@ -436,7 +441,7 @@
           "فیش سفارش حضوری صادرشده"
         ],
         "mechanisms": [
-          "سیستم حضوری سپیدز",
+          "سیستم صندوق حضوری",
           "پرینتر فیش"
         ]
       },
@@ -450,7 +455,8 @@
         "created_by": "runs/cashier/20260724-015434",
         "touched_by": [
           "runs/chat/20260727-role-009",
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260727-sys-009"
         ]
       }
     },
@@ -459,7 +465,7 @@
       "type": "activity",
       "label": "چاپ خودکار فیش برای آشپزخانه و کانتر",
       "description": "همزمان با صدور فیش حضوری، فیش برای بخش مربوط آشپزخانه چاپ می‌رود (پیتزا به بخش پیتزا، برگر به بخش ساندویچ، سوخاری به بخش سوخاری) و یک فیش هم برای قسمت کانتر و بخش بسته‌بندی/لجستیک چاپ می‌شود؛ صندوق‌دار فیش را دستی تحویل آشپزخانه نمی‌دهد.",
-      "actor": "سیستم حضوری سپیدز",
+      "actor": "سیستم صندوق حضوری",
       "icom": {
         "inputs": [],
         "controls": [],
@@ -479,7 +485,8 @@
       "source": {
         "created_by": "runs/cashier/20260724-015434",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260727-sys-009"
         ]
       }
     },

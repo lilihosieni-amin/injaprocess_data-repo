@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-24T02:30:37Z",
-  "updated_at": "2026-07-27T22:44:29Z",
+  "updated_at": "2026-07-28T09:51:25Z",
   "idef0": {
     "inputs": [
       "سفارش اینترنتی ثبت‌شده روی پنل (سایت اختصاصی یا دلینو)",
@@ -57,7 +57,7 @@
         ],
         "mechanisms": [
           "پنل سپیدز",
-          "سیستم کال‌سنتر"
+          "سیستم صندوق کال‌سنتر"
         ]
       },
       "subprocess": null,
@@ -69,7 +69,8 @@
       "source": {
         "created_by": "runs/cashier/20260724-015434",
         "touched_by": [
-          "runs/chat/20260727-role-004"
+          "runs/chat/20260727-role-004",
+          "runs/chat/20260727-sys-004"
         ]
       }
     },
@@ -89,7 +90,7 @@
         ],
         "mechanisms": [
           "پنل سپیدز",
-          "سیستم کال‌سنتر"
+          "سیستم صندوق کال‌سنتر"
         ]
       },
       "subprocess": null,
@@ -101,7 +102,8 @@
       "source": {
         "created_by": "runs/cashier/20260724-015434",
         "touched_by": [
-          "runs/chat/20260727-role-004"
+          "runs/chat/20260727-role-004",
+          "runs/chat/20260727-sys-004"
         ]
       }
     },
@@ -315,7 +317,7 @@
         ],
         "mechanisms": [
           "پرینتر",
-          "سیستم کال‌سنتر"
+          "سیستم صندوق کال‌سنتر"
         ]
       },
       "subprocess": null,
@@ -328,7 +330,8 @@
         "created_by": "runs/cashier/20260724-015434",
         "touched_by": [
           "ui-edit",
-          "runs/chat/20260727-role-004"
+          "runs/chat/20260727-role-004",
+          "runs/chat/20260727-sys-004"
         ]
       }
     },
@@ -421,7 +424,7 @@
         ],
         "mechanisms": [
           "پنل سپیدز",
-          "سیستم کال‌سنتر"
+          "سیستم صندوق کال‌سنتر"
         ]
       },
       "subprocess": null,
@@ -434,7 +437,8 @@
         "created_by": "runs/chat/20260726-101321",
         "touched_by": [
           "ui-edit",
-          "runs/chat/20260727-role-004"
+          "runs/chat/20260727-role-004",
+          "runs/chat/20260727-sys-004"
         ]
       }
     },

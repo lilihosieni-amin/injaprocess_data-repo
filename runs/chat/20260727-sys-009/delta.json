@@ -1,0 +1,106 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "revise_nodes": [
+    {
+      "id": "cashier-009-n006",
+      "set": {
+        "icom": {
+          "inputs": [
+            "درخواست سفارش مشتری"
+          ],
+          "controls": [
+            "ثبت سفارش حضوری فقط با سیستم حضوری"
+          ],
+          "outputs": [],
+          "mechanisms": [
+            "سیستم صندوق حضوری"
+          ]
+        }
+      }
+    },
+    {
+      "id": "cashier-009-n007",
+      "set": {
+        "icom": {
+          "inputs": [
+            "درخواست سفارش مشتری"
+          ],
+          "controls": [],
+          "outputs": [],
+          "mechanisms": [
+            "سیستم صندوق حضوری"
+          ]
+        }
+      }
+    },
+    {
+      "id": "cashier-009-n008",
+      "set": {
+        "icom": {
+          "inputs": [],
+          "controls": [
+            "محدودیت فضای چاپ فیش نزدیک ۸ سانتی‌متر"
+          ],
+          "outputs": [],
+          "mechanisms": [
+            "سیستم صندوق حضوری"
+          ]
+        }
+      }
+    },
+    {
+      "id": "cashier-009-n009",
+      "set": {
+        "icom": {
+          "inputs": [
+            "کد تخفیف باشگاه مشتریان"
+          ],
+          "controls": [],
+          "outputs": [],
+          "mechanisms": [
+            "سیستم صندوق حضوری"
+          ]
+        }
+      }
+    },
+    {
+      "id": "cashier-009-n012",
+      "set": {
+        "icom": {
+          "inputs": [],
+          "controls": [],
+          "outputs": [],
+          "mechanisms": [
+            "سیستم صندوق حضوری"
+          ]
+        }
+      }
+    },
+    {
+      "id": "cashier-009-n013",
+      "set": {
+        "icom": {
+          "inputs": [],
+          "controls": [],
+          "outputs": [
+            "فیش سفارش حضوری صادرشده"
+          ],
+          "mechanisms": [
+            "سیستم صندوق حضوری",
+            "پرینتر فیش"
+          ]
+        }
+      }
+    },
+    {
+      "id": "cashier-009-n014",
+      "set": {
+        "actor": "سیستم صندوق حضوری"
+      }
+    }
+  ],
+  "remove_edges": [],
+  "flag_removed": []
+}
