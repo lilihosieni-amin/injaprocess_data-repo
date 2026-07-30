@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-24T02:30:41Z",
-  "updated_at": "2026-07-24T02:30:41Z",
+  "updated_at": "2026-07-30T22:52:08Z",
   "idef0": {
     "inputs": [
       "درخواست کنسلی مشتری از طریق تماس تلفنی",
@@ -361,5 +361,9 @@
       "to": "cashier-016-n009"
     }
   ],
-  "pending": []
+  "pending": [],
+  "tombstoned": true,
+  "superseded_by": [
+    "cashier-034"
+  ]
 }
