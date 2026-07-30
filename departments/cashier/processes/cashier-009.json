@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-24T02:30:39Z",
-  "updated_at": "2026-07-28T11:36:18Z",
+  "updated_at": "2026-07-30T22:08:11Z",
   "idef0": {
     "inputs": [
       "درخواست سفارش مشتری حضوری",
@@ -89,7 +89,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 90
+        "y": 90.0
       },
       "layout": "auto",
       "source": {
@@ -120,7 +120,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 90
+        "y": 90.0
       },
       "layout": "auto",
       "source": {
@@ -137,7 +137,7 @@
       "direction": "split",
       "position": {
         "x": 1143,
-        "y": 106
+        "y": 106.0
       },
       "layout": "auto"
     },
@@ -168,9 +168,11 @@
         "touched_by": [
           "runs/chat/20260727-role-009",
           "ui-edit",
-          "runs/chat/20260727-fix-009"
+          "runs/chat/20260727-fix-009",
+          "runs/chat/20260730-220801"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cashier-009-n005",
@@ -670,7 +672,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 1402.5
+        "y": 1198.3333333333335
       },
       "layout": "auto",
       "source": {
@@ -719,9 +721,11 @@
       "source": {
         "created_by": "runs/chat/20260727-role-009",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260730-220801"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cashier-009-n021",
@@ -752,9 +756,11 @@
       "source": {
         "created_by": "runs/chat/20260727-role-009",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260730-220801"
         ]
-      }
+      },
+      "removed": true
     }
   ],
   "edges": [
@@ -779,11 +785,6 @@
     {
       "from": "cashier-009-n003",
       "to": "cashier-009-j2"
-    },
-    {
-      "from": "cashier-009-j2",
-      "to": "cashier-009-n004",
-      "label": "استند شماره‌دار وارد نشده"
     },
     {
       "from": "cashier-009-j2",
@@ -872,24 +873,12 @@
       "label": "ثبت درست و بدون مشکل"
     },
     {
-      "from": "cashier-009-n004",
-      "to": "cashier-009-j7"
-    },
-    {
       "from": "cashier-009-n005",
       "to": "cashier-009-j7"
     },
     {
       "from": "cashier-009-j7",
       "to": "cashier-009-n016"
-    },
-    {
-      "from": "cashier-009-n015",
-      "to": "cashier-009-n020"
-    },
-    {
-      "from": "cashier-009-n020",
-      "to": "cashier-009-n021"
     }
   ],
   "pending": []
