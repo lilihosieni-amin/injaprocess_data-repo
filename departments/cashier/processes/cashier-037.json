@@ -13,7 +13,7 @@
     "node": "cashier-031-n016"
   },
   "created_at": "2026-07-31T00:45:16Z",
-  "updated_at": "2026-07-31T00:56:02Z",
+  "updated_at": "2026-07-31T07:52:38Z",
   "idef0": {
     "inputs": [
       "سفارش تحویل‌شده به پیک برای ارسال",
@@ -62,13 +62,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 374.37500000000006
+        "x": 957,
+        "y": 204.37500000000006
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260731-001500",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -77,10 +79,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
-        "y": 390.37500000000006
+        "x": 1016,
+        "y": 407.87500000000006
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cashier-037-n002",
@@ -102,13 +104,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 658.7500000000001
+        "x": 464,
+        "y": 564.7500000000001
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260731-001500",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -127,13 +131,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 790.0000000000001
+        "x": 598.5,
+        "y": 924.5000000000001
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260731-001500",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -154,8 +160,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1081.9031400224376,
-        "y": 1103.5736933809405
+        "x": 641.9031400224376,
+        "y": 1126.0736933809405
       },
       "layout": "manual",
       "source": {
@@ -184,8 +190,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1153.0495039265609,
-        "y": 1474.685997756251
+        "x": 668.5495039265609,
+        "y": 1311.185997756251
       },
       "layout": "manual",
       "source": {
@@ -214,8 +220,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1105.0282294910585,
-        "y": 1912.9833282148538
+        "x": 1149.5282294910585,
+        "y": 1637.9833282148538
       },
       "layout": "manual",
       "source": {
@@ -244,8 +250,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1100.0489924976823,
-        "y": 2166.10095119904
+        "x": 879.0489924976823,
+        "y": 1734.10095119904
       },
       "layout": "manual",
       "source": {
@@ -276,8 +282,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1098.1458524752447,
-        "y": 2394.0333435702933
+        "x": 573.1458524752447,
+        "y": 1705.0333435702933
       },
       "layout": "manual",
       "source": {
@@ -310,8 +316,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1256.5492482121215,
-        "y": 2694.685026083292
+        "x": 646.0492482121215,
+        "y": 1923.685026083292
       },
       "layout": "manual",
       "source": {
@@ -342,8 +348,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1036.2277794839376,
-        "y": 3036.1794517599774
+        "x": 1114.7277794839376,
+        "y": 2021.1794517599774
       },
       "layout": "manual",
       "source": {
@@ -373,8 +379,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": -578.8079164915556,
-        "y": 3217.6041219323565
+        "x": 1536.1920835084443,
+        "y": 1910.4166905969073
       },
       "layout": "manual",
       "source": {
@@ -406,8 +412,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 745.0473560510017,
-        "y": 885.2903242182485
+        "x": 942.0473560510018,
+        "y": 832.2903242182485
       },
       "layout": "manual",
       "source": {
@@ -436,13 +442,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1490.0000000000002
+        "x": 1096,
+        "y": 1184.0000000000002
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260731-001500",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -465,8 +473,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": -653.4731512411828,
-        "y": 1810.2461900853611
+        "x": 1795.5268487588173,
+        "y": 1496.7462330007056
       },
       "layout": "manual",
       "source": {
@@ -493,8 +501,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1152.0729262376224,
-        "y": 1673.4318809423748
+        "x": 1083.5729262376224,
+        "y": 1511.9318809423748
       },
       "layout": "manual"
     },
@@ -504,8 +512,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1168.0282294910585,
-        "y": 2526.12488493898
+        "x": 409.5282294910585,
+        "y": 2067.12488493898
       },
       "layout": "manual"
     },
@@ -515,8 +523,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1153.2458831861236,
-        "y": 2896.1219699201033
+        "x": 966.7458831861236,
+        "y": 2075.1219699201033
       },
       "layout": "manual"
     },
@@ -526,8 +534,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 374.1314309352538,
-        "y": 3090.9130612816693
+        "x": 1398.6314309352538,
+        "y": 2040.9130612816693
       },
       "layout": "manual"
     },
@@ -537,8 +545,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": -579.7844941804941,
-        "y": 2888.0649995091076
+        "x": 1825.2155058195058,
+        "y": 2018.6275424244518
       },
       "layout": "manual"
     },
@@ -548,8 +556,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 817.563056163189,
-        "y": 1087.353636095877
+        "x": 1206.063056163189,
+        "y": 930.8536360958769
       },
       "layout": "manual"
     },
@@ -559,10 +567,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 623,
-        "y": 1418.5000000000002
+        "x": 1554,
+        "y": 1356.5000000000002
       },
-      "layout": "auto"
+      "layout": "manual"
     }
   ],
   "edges": [
