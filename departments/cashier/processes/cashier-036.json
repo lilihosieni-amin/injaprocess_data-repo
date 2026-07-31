@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-31T00:12:14Z",
-  "updated_at": "2026-07-31T00:45:00Z",
+  "updated_at": "2026-07-31T00:51:33Z",
   "idef0": {
     "inputs": [
       "شکایت یا نارضایتی مشتری از غذا",
@@ -94,13 +94,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 308.75
+        "x": 32.61325130818389,
+        "y": 290.28312827045977
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -135,13 +137,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 177.5
+        "x": 372.5612519451663,
+        "y": 505.2869731993396
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -150,10 +154,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 193.5
+        "x": 578.2966164625857,
+        "y": 644.0916702007825
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cashier-036-n003",
@@ -179,8 +183,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1128.0138664968047,
-        "y": 277.9268102106782
+        "x": 717.1259705145337,
+        "y": 501.3759581381154
       },
       "layout": "manual",
       "source": {
@@ -196,8 +200,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1295,
-        "y": 782.25
+        "x": 1012.4568625380338,
+        "y": 669.6020824498045
       },
       "layout": "manual"
     },
@@ -220,13 +224,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 746.25
+        "x": 876.3239587750977,
+        "y": 789.6471485644196
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -248,13 +254,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 746.25
+        "x": 563.6933743459081,
+        "y": 785.0304306320345
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -561,13 +569,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1665
+        "x": 811.6899077217068,
+        "y": 1651.1498462028449
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -710,8 +720,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 470,
-        "y": 478
+        "x": 501.39368194021847,
+        "y": 244.6263596957518
       },
       "layout": "manual",
       "source": {
@@ -742,8 +752,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 692,
-        "y": 512
+        "x": 738.1671793238506,
+        "y": 228.53351895155697
       },
       "layout": "manual",
       "source": {
@@ -773,8 +783,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 923.3936819402185,
-        "y": 543.2403691131725
+        "x": 968.637517677592,
+        "y": 247.77042144052825
       },
       "layout": "manual",
       "source": {
