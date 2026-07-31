@@ -1,0 +1,18 @@
+{
+ "add_nodes": [],
+ "add_edges": [
+  {
+   "from": "cashier-035-j1",
+   "to": "cashier-035-n017",
+   "label": "در صورت درخواست کنسلی یا تغییر سفارش دلینو"
+  }
+ ],
+ "enrich_nodes": [],
+ "flag_removed": [],
+ "remove_edges": [
+  {
+   "from": "cashier-035-j1",
+   "to": "cashier-035-n017"
+  }
+ ]
+}
