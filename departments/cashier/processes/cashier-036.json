@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-31T00:12:14Z",
-  "updated_at": "2026-07-31T00:12:14Z",
+  "updated_at": "2026-07-31T00:45:00Z",
   "idef0": {
     "inputs": [
       "شکایت یا نارضایتی مشتری از غذا",
@@ -179,13 +179,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 265.0
+        "x": 1128.0138664968047,
+        "y": 277.9268102106782
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -194,10 +196,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1143,
-        "y": 762.25
+        "x": 1295,
+        "y": 782.25
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cashier-036-n004",
@@ -288,13 +290,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 615.0
+        "x": 483.2049215089664,
+        "y": 919.7033835374143
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -317,13 +321,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1052.5
+        "x": 741.7411257225301,
+        "y": 1026.6463795786435
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -350,13 +356,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 877.5
+        "x": 78.78043063203452,
+        "y": 916.2804306320346
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -366,7 +374,7 @@
       "direction": "split",
       "position": {
         "x": 103,
-        "y": 1331.0
+        "y": 1331
       },
       "layout": "auto"
     },
@@ -522,7 +530,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 1665.0
+        "y": 1665
       },
       "layout": "auto",
       "source": {
@@ -554,7 +562,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 1665.0
+        "y": 1665
       },
       "layout": "auto",
       "source": {
@@ -585,7 +593,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1665.0
+        "y": 1665
       },
       "layout": "auto",
       "source": {
@@ -600,7 +608,7 @@
       "direction": "split",
       "position": {
         "x": 363,
-        "y": 1681.0
+        "y": 1681
       },
       "layout": "auto"
     },
@@ -702,13 +710,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 440.0
+        "x": 470,
+        "y": 478
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -732,13 +742,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 440.0
+        "x": 692,
+        "y": 512
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -761,13 +773,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 440.0
+        "x": 923.3936819402185,
+        "y": 543.2403691131725
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
