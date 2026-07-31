@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-26T10:39:13Z",
-  "updated_at": "2026-07-26T19:05:03Z",
+  "updated_at": "2026-07-31T00:45:16Z",
   "idef0": {
     "inputs": [
       "سفارش حضوری ثبت‌شده در سیستم سپیدز",
@@ -659,19 +659,31 @@
       "actor": "مسئول لجستیک",
       "icom": {
         "inputs": [
-          "فاکتور اختصاص‌داده‌شده به نام پیک",
-          "غذای بسته‌بندی‌شده"
+          "سفارش تحویل‌شده به پیک برای ارسال",
+          "گزارش وضعیت تحویل از پیک"
         ],
-        "controls": [],
+        "controls": [
+          "لزوم اعلام پاسخگو نبودن مشتری یا تغییر مسیر به صندوق توسط پیک",
+          "ایست چند لحظه‌ای پیک تا پیگیری مشتری توسط صندوق",
+          "برگشت غذا پس از سه چهار دقیقه بی‌پاسخ ماندن مشتری",
+          "نگهداری غذای برگشتی در گرمکن تا ثبت مجدد سفارش توسط مشتری",
+          "عدم دریافت هزینه تغییر مسیر از مشتری قدیمی با تعداد خرید بالا"
+        ],
         "outputs": [
-          "سفارش تحویل‌شده به پیک برای ارسال"
+          "غذای تحویل‌شده به مشتری توسط پیک",
+          "غذای برگشتی نگهداری‌شده در گرمکن",
+          "هزینه ارسال دوم یا تغییر مسیر دریافت‌شده"
         ],
         "mechanisms": [
-          "مسئول لجستیک",
-          "پیک"
+          "پیک",
+          "صندوق‌دار",
+          "آشپزخانه",
+          "گرمکن",
+          "تلفن رستوران",
+          "نرم‌افزار سپیدز"
         ]
       },
-      "subprocess": null,
+      "subprocess": "cashier-037",
       "position": {
         "x": -166,
         "y": 1151.7088597615561
@@ -680,7 +692,8 @@
       "source": {
         "created_by": "runs/chat/20260726-102841-deliver",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260731-001500"
         ]
       }
     },
@@ -693,7 +706,8 @@
         "x": -75,
         "y": 1398.1250000000005
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cashier-031-n017",
@@ -722,9 +736,11 @@
       "source": {
         "created_by": "runs/chat/20260726-102841-deliver",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260731-001500"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cashier-031-j9",
@@ -735,7 +751,8 @@
         "x": 275,
         "y": 1830.5000000000005
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cashier-031-n018",
@@ -760,9 +777,11 @@
       "source": {
         "created_by": "runs/chat/20260726-102841-deliver",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260731-001500"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cashier-031-n019",
@@ -789,9 +808,11 @@
       "source": {
         "created_by": "runs/chat/20260726-102841-deliver",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260731-001500"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cashier-031-n020",
@@ -819,9 +840,11 @@
       "source": {
         "created_by": "runs/chat/20260726-102841-deliver",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260731-001500"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cashier-031-j10",
@@ -832,7 +855,8 @@
         "x": 953,
         "y": 2617.2500000000005
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cashier-031-n021",
@@ -860,9 +884,11 @@
       "source": {
         "created_by": "runs/chat/20260726-102841-deliver",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260731-001500"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cashier-031-n022",
@@ -890,9 +916,11 @@
       "source": {
         "created_by": "runs/chat/20260726-102841-deliver",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260731-001500"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cashier-031-n023",
@@ -922,9 +950,11 @@
       "source": {
         "created_by": "runs/chat/20260726-102841-deliver",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260731-001500"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cashier-031-j11",
@@ -935,7 +965,8 @@
         "x": 467,
         "y": 3010.416666666667
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cashier-031-n024",
@@ -967,9 +998,11 @@
       "source": {
         "created_by": "runs/chat/20260726-102841-deliver",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260731-001500"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cashier-031-j12",
@@ -980,7 +1013,8 @@
         "x": 441,
         "y": 3343.916666666667
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cashier-031-n025",
@@ -1010,9 +1044,11 @@
       "source": {
         "created_by": "runs/chat/20260726-102841-deliver",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260731-001500"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cashier-031-j13",
@@ -1023,7 +1059,8 @@
         "x": 733,
         "y": 3553.916666666667
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cashier-031-n026",
@@ -1052,9 +1089,11 @@
       "source": {
         "created_by": "runs/chat/20260726-102841-deliver",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260731-001500"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cashier-031-j14",
@@ -1065,7 +1104,8 @@
         "x": 669,
         "y": 3918.916666666667
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cashier-031-n027",
@@ -1096,9 +1136,11 @@
       "source": {
         "created_by": "runs/chat/20260726-102841-deliver",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260731-001500"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cashier-031-j15",
@@ -1109,7 +1151,8 @@
         "x": 961,
         "y": 1887.2500000000005
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cashier-031-n028",
@@ -1137,9 +1180,11 @@
       "source": {
         "created_by": "runs/chat/20260726-102841-deliver",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260731-001500"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cashier-031-j16",
@@ -1150,7 +1195,8 @@
         "x": 1161,
         "y": 2226.2500000000005
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cashier-031-n029",
@@ -1179,9 +1225,11 @@
       "source": {
         "created_by": "runs/chat/20260726-102841-deliver",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260731-001500"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cashier-031-n030",
@@ -1353,6 +1401,89 @@
           "ui-edit"
         ]
       }
+    },
+    {
+      "id": "cashier-031-j19",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "split",
+      "position": {
+        "x": 883,
+        "y": 193.5
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "cashier-031-n035",
+      "type": "activity",
+      "label": "درخواست از آشپزخانه برای آماده‌سازی و بسته‌بندی سریع‌تر سفارش هم‌مسیر",
+      "description": "مسئول لجستیک به آشپزخانه اعلام می‌کند که فیش هم‌مسیر را هم زودتر آماده و بسته‌بندی کند تا هر دو سفارش با یک پیک ارسال شود.",
+      "actor": "مسئول لجستیک",
+      "icom": {
+        "inputs": [
+          "فیش سفارش هم‌مسیر"
+        ],
+        "controls": [],
+        "outputs": [
+          "سفارش هم‌مسیر آماده‌شده برای ارسال با همان پیک"
+        ],
+        "mechanisms": [
+          "مسئول لجستیک",
+          "آشپزخانه"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260731-001500",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cashier-031-n036",
+      "type": "activity",
+      "label": "اولویت دادن به فیش زودتر صادرشده و ارسال آن بدون معطلی",
+      "description": "فیش اول در اولویت ارسال است چون زودتر هم آماده می‌شود. معطل نگه داشتن یک غذای آماده برای هم‌مسیر شدن با سفارشی که مثلاً بیست دقیقه بعد آماده می‌شود به هیچ وجه انجام نمی‌شود، چون تا آماده شدن سفارش بعدی غذای اول سرد می‌شود.",
+      "actor": "مسئول لجستیک",
+      "icom": {
+        "inputs": [
+          "فیش سفارش آماده"
+        ],
+        "controls": [
+          "ممنوعیت معطل کردن غذای آماده برای هم‌مسیر شدن با سفارش دیرتر"
+        ],
+        "outputs": [
+          "فیش انتخاب‌شده برای ارسال"
+        ],
+        "mechanisms": [
+          "مسئول لجستیک"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 265.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260731-001500",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cashier-031-j20",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "join",
+      "position": {
+        "x": 1143,
+        "y": 660.1666666666666
+      },
+      "layout": "auto"
     }
   ],
   "edges": [
@@ -1369,10 +1500,6 @@
       "from": "cashier-031-j3",
       "to": "cashier-031-n030",
       "label": "ارسال به مناطق بدون آدرس دقیق مثل زیارت"
-    },
-    {
-      "from": "cashier-031-n011",
-      "to": "cashier-031-j6"
     },
     {
       "from": "cashier-031-j6",
@@ -1405,131 +1532,6 @@
       "to": "cashier-031-n016"
     },
     {
-      "from": "cashier-031-n016",
-      "to": "cashier-031-j8"
-    },
-    {
-      "from": "cashier-031-j8",
-      "to": "cashier-031-n029",
-      "label": "تحویل بدون مشکل"
-    },
-    {
-      "from": "cashier-031-j8",
-      "to": "cashier-031-n017",
-      "label": "بروز مشکل در محل تحویل"
-    },
-    {
-      "from": "cashier-031-n017",
-      "to": "cashier-031-j9"
-    },
-    {
-      "from": "cashier-031-j9",
-      "to": "cashier-031-n018",
-      "label": "پاسخگو نبودن مشتری"
-    },
-    {
-      "from": "cashier-031-j9",
-      "to": "cashier-031-n027",
-      "label": "تغییر مسیر"
-    },
-    {
-      "from": "cashier-031-n018",
-      "to": "cashier-031-n019"
-    },
-    {
-      "from": "cashier-031-n019",
-      "to": "cashier-031-n020"
-    },
-    {
-      "from": "cashier-031-n020",
-      "to": "cashier-031-j10"
-    },
-    {
-      "from": "cashier-031-j10",
-      "to": "cashier-031-n029",
-      "label": "مشتری پاسخ داد و پیک هنوز در محل است"
-    },
-    {
-      "from": "cashier-031-j10",
-      "to": "cashier-031-n021",
-      "label": "پس از سه چهار دقیقه بی‌پاسخ"
-    },
-    {
-      "from": "cashier-031-n021",
-      "to": "cashier-031-n022"
-    },
-    {
-      "from": "cashier-031-n022",
-      "to": "cashier-031-n023"
-    },
-    {
-      "from": "cashier-031-n023",
-      "to": "cashier-031-j11",
-      "label": "ثبت مجدد سفارش توسط مشتری"
-    },
-    {
-      "from": "cashier-031-j11",
-      "to": "cashier-031-n024",
-      "label": "مشتری ثابت یا درخواست مشتری"
-    },
-    {
-      "from": "cashier-031-j11",
-      "to": "cashier-031-j12",
-      "label": "پیش‌فرض"
-    },
-    {
-      "from": "cashier-031-n024",
-      "to": "cashier-031-j12"
-    },
-    {
-      "from": "cashier-031-j12",
-      "to": "cashier-031-n025"
-    },
-    {
-      "from": "cashier-031-n025",
-      "to": "cashier-031-j13"
-    },
-    {
-      "from": "cashier-031-j13",
-      "to": "cashier-031-n026",
-      "label": "مشتری مورددار"
-    },
-    {
-      "from": "cashier-031-j13",
-      "to": "cashier-031-j14",
-      "label": "پیش‌فرض بدون هزینه ارسال دوم"
-    },
-    {
-      "from": "cashier-031-n026",
-      "to": "cashier-031-j14"
-    },
-    {
-      "from": "cashier-031-j14",
-      "to": "cashier-031-n029"
-    },
-    {
-      "from": "cashier-031-n027",
-      "to": "cashier-031-j15"
-    },
-    {
-      "from": "cashier-031-j15",
-      "to": "cashier-031-n028",
-      "label": "در صورت تصمیم به دریافت هزینه"
-    },
-    {
-      "from": "cashier-031-j15",
-      "to": "cashier-031-j16",
-      "label": "مشتری قدیمی با تعداد خرید بالا و بدون دریافت هزینه"
-    },
-    {
-      "from": "cashier-031-n028",
-      "to": "cashier-031-j16"
-    },
-    {
-      "from": "cashier-031-j16",
-      "to": "cashier-031-n029"
-    },
-    {
       "from": "cashier-031-n030",
       "to": "cashier-031-n031"
     },
@@ -1558,6 +1560,32 @@
     {
       "from": "cashier-031-n033",
       "to": "cashier-031-n034"
+    },
+    {
+      "from": "cashier-031-n011",
+      "to": "cashier-031-j19"
+    },
+    {
+      "from": "cashier-031-j19",
+      "to": "cashier-031-n035",
+      "label": "در صورت وجود سفارش هم‌مسیری که تا دو الی سه دقیقه دیگر آماده می‌شود"
+    },
+    {
+      "from": "cashier-031-j19",
+      "to": "cashier-031-n036",
+      "label": "در صورت نبود سفارش هم‌مسیر آماده"
+    },
+    {
+      "from": "cashier-031-n035",
+      "to": "cashier-031-j20"
+    },
+    {
+      "from": "cashier-031-n036",
+      "to": "cashier-031-j20"
+    },
+    {
+      "from": "cashier-031-j20",
+      "to": "cashier-031-j6"
     }
   ],
   "pending": []

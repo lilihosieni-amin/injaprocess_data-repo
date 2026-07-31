@@ -1,0 +1,140 @@
+{
+  "drop_edges": [
+    {
+      "from": "cashier-031-n016",
+      "to": "cashier-031-j8"
+    },
+    {
+      "from": "cashier-031-j8",
+      "to": "cashier-031-n029"
+    },
+    {
+      "from": "cashier-031-j8",
+      "to": "cashier-031-n017"
+    },
+    {
+      "from": "cashier-031-n017",
+      "to": "cashier-031-j9"
+    },
+    {
+      "from": "cashier-031-j9",
+      "to": "cashier-031-n018"
+    },
+    {
+      "from": "cashier-031-j9",
+      "to": "cashier-031-n027"
+    },
+    {
+      "from": "cashier-031-n018",
+      "to": "cashier-031-n019"
+    },
+    {
+      "from": "cashier-031-n019",
+      "to": "cashier-031-n020"
+    },
+    {
+      "from": "cashier-031-n020",
+      "to": "cashier-031-j10"
+    },
+    {
+      "from": "cashier-031-j10",
+      "to": "cashier-031-n029"
+    },
+    {
+      "from": "cashier-031-j10",
+      "to": "cashier-031-n021"
+    },
+    {
+      "from": "cashier-031-n021",
+      "to": "cashier-031-n022"
+    },
+    {
+      "from": "cashier-031-n022",
+      "to": "cashier-031-n023"
+    },
+    {
+      "from": "cashier-031-n023",
+      "to": "cashier-031-j11"
+    },
+    {
+      "from": "cashier-031-j11",
+      "to": "cashier-031-n024"
+    },
+    {
+      "from": "cashier-031-j11",
+      "to": "cashier-031-j12"
+    },
+    {
+      "from": "cashier-031-n024",
+      "to": "cashier-031-j12"
+    },
+    {
+      "from": "cashier-031-j12",
+      "to": "cashier-031-n025"
+    },
+    {
+      "from": "cashier-031-n025",
+      "to": "cashier-031-j13"
+    },
+    {
+      "from": "cashier-031-j13",
+      "to": "cashier-031-n026"
+    },
+    {
+      "from": "cashier-031-j13",
+      "to": "cashier-031-j14"
+    },
+    {
+      "from": "cashier-031-n026",
+      "to": "cashier-031-j14"
+    },
+    {
+      "from": "cashier-031-j14",
+      "to": "cashier-031-n029"
+    },
+    {
+      "from": "cashier-031-n027",
+      "to": "cashier-031-j15"
+    },
+    {
+      "from": "cashier-031-j15",
+      "to": "cashier-031-n028"
+    },
+    {
+      "from": "cashier-031-j15",
+      "to": "cashier-031-j16"
+    },
+    {
+      "from": "cashier-031-n028",
+      "to": "cashier-031-j16"
+    },
+    {
+      "from": "cashier-031-j16",
+      "to": "cashier-031-n029"
+    }
+  ],
+  "move": [
+    "cashier-031-j8",
+    "cashier-031-n017",
+    "cashier-031-n018",
+    "cashier-031-n019",
+    "cashier-031-n020",
+    "cashier-031-n021",
+    "cashier-031-n022",
+    "cashier-031-n023",
+    "cashier-031-n024",
+    "cashier-031-n025",
+    "cashier-031-n026",
+    "cashier-031-n027",
+    "cashier-031-n028",
+    "cashier-031-n029",
+    "cashier-031-j9",
+    "cashier-031-j10",
+    "cashier-031-j11",
+    "cashier-031-j12",
+    "cashier-031-j13",
+    "cashier-031-j14",
+    "cashier-031-j15",
+    "cashier-031-j16"
+  ]
+}
