@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-31T00:12:14Z",
-  "updated_at": "2026-07-31T00:12:14Z",
+  "updated_at": "2026-07-31T00:33:12Z",
   "idef0": {
     "inputs": [
       "درخواست کنسلی مشتری از طریق تماس تلفنی",
@@ -123,13 +123,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 477.7708333333334
+        "x": 207,
+        "y": 924.7708333333335
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -138,10 +140,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 493.7708333333334
+        "x": 136,
+        "y": 1098.7708333333335
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cashier-035-n003",
@@ -162,13 +164,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 90.0
+        "x": -39,
+        "y": 1259.499900817871
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -194,13 +198,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 738.9583333333335
+        "x": 366,
+        "y": 1114.9583333333335
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -227,13 +233,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1518.0486111111113
+        "x": 812,
+        "y": 1398.0486111111113
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -319,13 +327,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1440.2708333333335
+        "x": 426,
+        "y": 1756.2708333333335
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -417,43 +427,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1177.7708333333335
+        "x": 1366,
+        "y": 257.7706425984702
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
-      }
-    },
-    {
-      "id": "cashier-035-n012",
-      "type": "activity",
-      "label": "وارد کردن مبلغ اضافه در بخش اضافه صندوق سپیدز",
-      "description": "صندوق‌دار مبلغ اضافه را در بخش اضافه صندوق نرم‌افزار سپیدز وارد می‌کند؛ هر مبلغی که در این بخش وارد شود از جمع صندوق کسر می‌شود.",
-      "actor": "صندوق‌دار",
-      "icom": {
-        "inputs": [
-          "مبلغ اضافه صندوق"
-        ],
-        "controls": [],
-        "outputs": [
-          "مبلغ اضافه ثبت‌شده در صندوق"
-        ],
-        "mechanisms": [
-          "صندوق‌دار",
-          "نرم‌افزار سپیدز"
+        "touched_by": [
+          "ui-edit"
         ]
-      },
-      "subprocess": null,
-      "position": {
-        "x": 560,
-        "y": 652.7708333333334
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
       }
     },
     {
@@ -478,13 +460,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 827.7708333333335
+        "x": 576,
+        "y": 711.7708333333335
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -548,10 +532,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1143,
-        "y": 1718.7708333333335
+        "x": 1193,
+        "y": 1592.7708333333335
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cashier-035-n016",
@@ -571,13 +555,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1693.0486111111113
+        "x": 855,
+        "y": 1611.0486111111113
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -601,13 +587,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1002.7708333333335
+        "x": 476,
+        "y": 897.7708333333335
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -632,13 +620,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1002.7708333333335
+        "x": 638,
+        "y": 1041.7708333333335
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -647,10 +637,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1143,
-        "y": 1368.7708333333335
+        "x": 1429,
+        "y": 1206.7708333333335
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cashier-035-n019",
@@ -670,13 +660,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1343.0486111111113
+        "x": 1398,
+        "y": 1417.0486111111113
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -701,114 +693,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1352.7708333333335
+        "x": 1483,
+        "y": 1729.7708333333335
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
-      }
-    },
-    {
-      "id": "cashier-035-j6",
-      "type": "junction",
-      "junctionType": "XOR",
-      "direction": "split",
-      "position": {
-        "x": 363,
-        "y": 1368.7708333333335
-      },
-      "layout": "auto"
-    },
-    {
-      "id": "cashier-035-n021",
-      "type": "activity",
-      "label": "پرینت گرفتن تراکنش مبلغ اضافه از دستگاه پوز بر اساس شماره پیگیری",
-      "description": "کنار هر مبلغ یک شماره پیگیری وجود دارد؛ صندوق‌دار آن شماره پیگیری را وارد دستگاه پوز می‌کند و دستگاه فقط پرینت همان تراکنشی که مشتری بیشتر کشیده را می‌دهد.",
-      "actor": "صندوق‌دار",
-      "icom": {
-        "inputs": [
-          "شماره پیگیری تراکنش"
-        ],
-        "controls": [],
-        "outputs": [
-          "پرینت تراکنش مبلغ اضافه"
-        ],
-        "mechanisms": [
-          "صندوق‌دار",
-          "دستگاه پوز"
+        "touched_by": [
+          "ui-edit"
         ]
-      },
-      "subprocess": null,
-      "position": {
-        "x": 40,
-        "y": 1615.2708333333335
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
-      }
-    },
-    {
-      "id": "cashier-035-n022",
-      "type": "activity",
-      "label": "پرینت گرفتن فیش فاکتوری که مبلغ آن اضافه کارت کشیده شده",
-      "description": "علاوه بر پرینت تراکنش، فیش خود آن فاکتوری که مبلغش بیشتر کشیده شده هم پرینت گرفته می‌شود.",
-      "actor": "صندوق‌دار",
-      "icom": {
-        "inputs": [],
-        "controls": [],
-        "outputs": [
-          "فیش فاکتور مبلغ اضافه"
-        ],
-        "mechanisms": [
-          "صندوق‌دار",
-          "نرم‌افزار سپیدز",
-          "پرینتر"
-        ]
-      },
-      "subprocess": null,
-      "position": {
-        "x": 40,
-        "y": 2227.7708333333335
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
-      }
-    },
-    {
-      "id": "cashier-035-n023",
-      "type": "activity",
-      "label": "منگنه کردن پرینت تراکنش و فیش فاکتور به برگ عودت وجه",
-      "description": "پرینت تراکنش و فیش فاکتور با برگ عودت وجه منگنه می‌شود تا حسابداری بداند ماجرا به چه صورت بوده است.",
-      "actor": "صندوق‌دار",
-      "icom": {
-        "inputs": [
-          "پرینت تراکنش مبلغ اضافه",
-          "فیش فاکتور مبلغ اضافه",
-          "برگ عودت وجه پرشده"
-        ],
-        "controls": [],
-        "outputs": [
-          "برگ عودت وجه همراه مستندات تراکنش"
-        ],
-        "mechanisms": [
-          "صندوق‌دار"
-        ]
-      },
-      "subprocess": null,
-      "position": {
-        "x": 300,
-        "y": 2227.7708333333335
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
       }
     },
     {
@@ -817,10 +710,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 623,
-        "y": 2068.7708333333335
+        "x": 562,
+        "y": 2015.7708333333335
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cashier-035-n024",
@@ -846,13 +739,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 2052.7708333333335
+        "x": 651,
+        "y": 2152.7708333333335
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -877,13 +772,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 2052.7708333333335
+        "x": 1009,
+        "y": 2121.7708333333335
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -892,10 +789,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1143,
-        "y": 2506.2708333333335
+        "x": 1255,
+        "y": 2169.2708333333335
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cashier-035-n026",
@@ -920,13 +817,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 2402.7708333333335
+        "x": 1378,
+        "y": 2037.7708333333335
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -949,13 +848,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 2577.7708333333335
+        "x": 1408,
+        "y": 2235.7708333333335
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260730-235306",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
@@ -973,11 +874,6 @@
       "from": "cashier-035-j1",
       "to": "cashier-035-n009",
       "label": "در صورت منصرف‌شدن یا تغییر سفارش مشتری کیوسک پس از پرداخت"
-    },
-    {
-      "from": "cashier-035-j1",
-      "to": "cashier-035-n012",
-      "label": "در صورت اضافه آمدن صندوق"
     },
     {
       "from": "cashier-035-j1",
@@ -1042,42 +938,12 @@
       "label": "در صورت بستانکار بودن مشتری"
     },
     {
-      "from": "cashier-035-n012",
-      "to": "cashier-035-j5"
-    },
-    {
       "from": "cashier-035-j5",
       "to": "cashier-035-n019"
     },
     {
       "from": "cashier-035-n019",
       "to": "cashier-035-n020"
-    },
-    {
-      "from": "cashier-035-n020",
-      "to": "cashier-035-j6"
-    },
-    {
-      "from": "cashier-035-j6",
-      "to": "cashier-035-n021",
-      "label": "در صورت اضافه کارت کشیدن روی دستگاه پوز"
-    },
-    {
-      "from": "cashier-035-j6",
-      "to": "cashier-035-j7",
-      "label": "در سایر موارد عودت وجه"
-    },
-    {
-      "from": "cashier-035-n021",
-      "to": "cashier-035-n022"
-    },
-    {
-      "from": "cashier-035-n022",
-      "to": "cashier-035-n023"
-    },
-    {
-      "from": "cashier-035-n023",
-      "to": "cashier-035-j7"
     },
     {
       "from": "cashier-035-j7",
@@ -1126,6 +992,11 @@
     {
       "from": "cashier-035-n017",
       "to": "cashier-035-n018"
+    },
+    {
+      "from": "cashier-035-n020",
+      "to": "cashier-035-j7",
+      "label": ""
     }
   ],
   "pending": []
