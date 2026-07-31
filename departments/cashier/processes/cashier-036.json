@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-31T00:12:14Z",
-  "updated_at": "2026-07-31T00:51:33Z",
+  "updated_at": "2026-07-31T14:46:02Z",
   "idef0": {
     "inputs": [
       "شکایت یا نارضایتی مشتری از غذا",
@@ -271,8 +271,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
-        "y": 762.25
+        "x": 883,
+        "y": 1010.1666666666665
       },
       "layout": "auto"
     },
@@ -381,8 +381,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 1331
+        "x": 1143,
+        "y": 1447.6666666666665
       },
       "layout": "auto"
     },
@@ -406,8 +406,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1227.5
+        "x": 820,
+        "y": 1344.1666666666665
       },
       "layout": "auto",
       "source": {
@@ -433,8 +433,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1402.5
+        "x": 820,
+        "y": 1694.1666666666665
       },
       "layout": "auto",
       "source": {
@@ -465,7 +465,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1402.5
+        "y": 1694.1666666666665
       },
       "layout": "auto",
       "source": {
@@ -495,8 +495,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1402.5
+        "x": 300,
+        "y": 1694.1666666666665
       },
       "layout": "auto",
       "source": {
@@ -510,8 +510,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1143,
-        "y": 1243.5
+        "x": 103,
+        "y": 1535.1666666666665
       },
       "layout": "auto"
     },
@@ -537,8 +537,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1665
+        "x": 40,
+        "y": 1956.6666666666665
       },
       "layout": "auto",
       "source": {
@@ -603,7 +603,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1665
+        "y": 1956.6666666666665
       },
       "layout": "auto",
       "source": {
@@ -617,8 +617,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
-        "y": 1681
+        "x": 883,
+        "y": 1972.6666666666665
       },
       "layout": "auto"
     },
@@ -645,8 +645,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1752.5
+        "x": 1080,
+        "y": 2044.1666666666665
       },
       "layout": "auto",
       "source": {
@@ -660,8 +660,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 103,
-        "y": 1943.5
+        "x": 1143,
+        "y": 2235.1666666666665
       },
       "layout": "auto"
     },
@@ -685,8 +685,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1927.5
+        "x": 820,
+        "y": 2219.1666666666665
       },
       "layout": "auto",
       "source": {
@@ -793,17 +793,202 @@
           "ui-edit"
         ]
       }
+    },
+    {
+      "id": "cashier-036-n021",
+      "type": "activity",
+      "label": "بررسی سوابق و تعداد خرید مشتری",
+      "description": "صندوق‌دار همان لحظه سوابق مشتری، تعداد خریدها، ثابت بودن یا نبودن مشتری و سفارش‌های راه دور را بررسی می‌کند تا مبنای تصمیم درباره تعویض فراهم شود. اگر مشتری ثابت باشد سعی می‌شود تعویض انجام گیرد.",
+      "actor": "صندوق‌دار",
+      "icom": {
+        "inputs": [
+          "سوابق مشتری در سیستم"
+        ],
+        "controls": [],
+        "outputs": [
+          "مبنای تصمیم درباره تعویض"
+        ],
+        "mechanisms": [
+          "صندوق‌دار",
+          "نرم‌افزار سپیدز"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 294.16666666666663
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260731-merge1536",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cashier-036-n022",
+      "type": "activity",
+      "label": "ارجاع تصمیم تعویض یا عودت به مرجع تاییدکننده",
+      "description": "تعویض یا عودت حتماً باید تایید شود و مرجع تایید بر اساس حضور سوپروایزر و نوع غذا تعیین می‌گردد: در صورت حضور سوپروایزر تصمیم نهایی مستقیماً از او گرفته می‌شود و در نبود او، غذای بیرون‌بر به سرپرست آشپزخانه و غذای سالن به سرپرست سالن ارجاع می‌شود. در هر شعبه دو نفر برای این کار آموزش دیده‌اند.",
+      "actor": "صندوق‌دار",
+      "icom": {
+        "inputs": [
+          "نتیجه بررسی کیفی غذا در آشپزخانه"
+        ],
+        "controls": [
+          "لزوم تایید مرجع تاییدکننده برای هرگونه تعویض یا عودت"
+        ],
+        "outputs": [],
+        "mechanisms": [
+          "صندوق‌دار"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 40,
+        "y": 556.6666666666666
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260731-merge1536",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cashier-036-j9",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "split",
+      "position": {
+        "x": 103,
+        "y": 1010.1666666666665
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "cashier-036-n023",
+      "type": "activity",
+      "label": "تصمیم نهایی درباره تعویض یا عودت توسط سوپروایزر",
+      "description": "در صورت حضور سوپروایزر، تصمیم نهایی درباره تعویض یا عودت مستقیماً از او گرفته می‌شود.",
+      "actor": "سوپروایزر",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [
+          "تصمیم تعویض یا عدم تعویض"
+        ],
+        "mechanisms": [
+          "سوپروایزر"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
+        "y": 819.1666666666665
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260731-merge1536",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cashier-036-n024",
+      "type": "activity",
+      "label": "تایید کیفیت غذای بیرون‌بر توسط سرپرست آشپزخانه",
+      "description": "در نبود سوپروایزر، کیفیت غذای بیرون‌بر را سرپرست آشپزخانه بر اساس آموزش‌هایی که دیده بررسی و تایید می‌کند؛ کیفیت غذای بیرون‌بر بر عهده آشپزخانه است.",
+      "actor": "سرپرست آشپزخانه",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [
+          "تصمیم تعویض یا عدم تعویض"
+        ],
+        "mechanisms": [
+          "سرپرست آشپزخانه"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
+        "y": 994.1666666666665
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260731-merge1536",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cashier-036-n025",
+      "type": "activity",
+      "label": "تایید ظاهری غذای سالن توسط سرپرست سالن",
+      "description": "در نبود سوپروایزر، غذای سالن را از لحاظ ظاهری سرپرست سالن بر اساس آموزشی که دیده تایید می‌کند و اگر از نظر او غذا مشکل داشته باشد آن را با آشپزخانه تعویض می‌کند.",
+      "actor": "سرپرست سالن",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [
+          "تصمیم تعویض یا عدم تعویض"
+        ],
+        "mechanisms": [
+          "سرپرست سالن"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
+        "y": 1169.1666666666665
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260731-merge1536",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cashier-036-j10",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "join",
+      "position": {
+        "x": 623,
+        "y": 1010.1666666666665
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "cashier-036-n026",
+      "type": "activity",
+      "label": "اعلام تایید نهایی تعویض در گروه توسط مدیریت",
+      "description": "پس از انجام تعویض، مدیریت تایید آن را در گروه اعلام می‌کند. تصمیم‌گیری بر عهده خود همکاران صندوق است و مدیریت در حدود ۹۹ درصد مواقع تصمیم آن‌ها را تایید می‌کند.",
+      "actor": "مدیریت",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [
+          "تایید نهایی تعویض"
+        ],
+        "mechanisms": [
+          "مدیریت",
+          "گروه تلگرام"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 1519.1666666666665
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260731-merge1536",
+        "touched_by": []
+      }
     }
   ],
   "edges": [
     {
       "from": "cashier-036-n001",
       "to": "cashier-036-j1"
-    },
-    {
-      "from": "cashier-036-j1",
-      "to": "cashier-036-n002",
-      "label": "در صورت شکایت یا نارضایتی مشتری از کیفیت غذا"
     },
     {
       "from": "cashier-036-j1",
@@ -837,10 +1022,6 @@
       "to": "cashier-036-n005"
     },
     {
-      "from": "cashier-036-n005",
-      "to": "cashier-036-j4"
-    },
-    {
       "from": "cashier-036-j4",
       "to": "cashier-036-n006",
       "label": "در صورت نیاز به تعویض غذا"
@@ -853,10 +1034,6 @@
     {
       "from": "cashier-036-n006",
       "to": "cashier-036-n007"
-    },
-    {
-      "from": "cashier-036-n007",
-      "to": "cashier-036-j6"
     },
     {
       "from": "cashier-036-n008",
@@ -929,6 +1106,62 @@
     {
       "from": "cashier-036-n019",
       "to": "cashier-036-n020"
+    },
+    {
+      "from": "cashier-036-j1",
+      "to": "cashier-036-n021",
+      "label": "در صورت شکایت یا نارضایتی مشتری از کیفیت غذا"
+    },
+    {
+      "from": "cashier-036-n021",
+      "to": "cashier-036-n002"
+    },
+    {
+      "from": "cashier-036-n005",
+      "to": "cashier-036-n022"
+    },
+    {
+      "from": "cashier-036-n022",
+      "to": "cashier-036-j9"
+    },
+    {
+      "from": "cashier-036-j9",
+      "to": "cashier-036-n023",
+      "label": "در صورت حضور سوپروایزر"
+    },
+    {
+      "from": "cashier-036-j9",
+      "to": "cashier-036-n024",
+      "label": "در نبود سوپروایزر، برای غذای بیرون‌بر"
+    },
+    {
+      "from": "cashier-036-j9",
+      "to": "cashier-036-n025",
+      "label": "در نبود سوپروایزر، برای غذای سالن"
+    },
+    {
+      "from": "cashier-036-n023",
+      "to": "cashier-036-j10"
+    },
+    {
+      "from": "cashier-036-n024",
+      "to": "cashier-036-j10"
+    },
+    {
+      "from": "cashier-036-n025",
+      "to": "cashier-036-j10"
+    },
+    {
+      "from": "cashier-036-j10",
+      "to": "cashier-036-j4"
+    },
+    {
+      "from": "cashier-036-n007",
+      "to": "cashier-036-n026"
+    },
+    {
+      "from": "cashier-036-n026",
+      "to": "cashier-036-j6"
     }
   ],
   "pending": []

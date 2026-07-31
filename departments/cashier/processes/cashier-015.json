@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-24T02:30:41Z",
-  "updated_at": "2026-07-29T21:34:12Z",
+  "updated_at": "2026-07-31T14:46:28Z",
   "idef0": {
     "inputs": [
       "شکایت یا اعتراض مشتری درباره کیفیت غذا (مو، سردی، چسبیدن باکس پیتزا، عدم رضایت از آیتم)",
@@ -455,5 +455,7 @@
       "to": "cashier-015-n011"
     }
   ],
-  "pending": []
+  "pending": [],
+  "tombstoned": true,
+  "superseded_by": []
 }
