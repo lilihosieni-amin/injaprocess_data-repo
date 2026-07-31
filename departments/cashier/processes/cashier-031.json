@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-26T10:39:13Z",
-  "updated_at": "2026-07-31T00:45:16Z",
+  "updated_at": "2026-07-31T00:54:01Z",
   "idef0": {
     "inputs": [
       "سفارش حضوری ثبت‌شده در سیستم سپیدز",
@@ -484,8 +484,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 0,
-        "y": 37.750205993652344
+        "x": 702.2586682794341,
+        "y": -143.04809613790925
       },
       "layout": "manual",
       "source": {
@@ -501,8 +501,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 33,
-        "y": 305.5
+        "x": 1134.918072991307,
+        "y": 916.23482755455
       },
       "layout": "manual"
     },
@@ -529,8 +529,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": -307.75,
-        "y": 301.9501647949219
+        "x": 931.1941546068065,
+        "y": 1183.1579834524346
       },
       "layout": "manual",
       "source": {
@@ -546,8 +546,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": -61,
-        "y": 527.1250228881838
+        "x": 679.321468728184,
+        "y": 1232.4977866470276
       },
       "layout": "manual"
     },
@@ -574,8 +574,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": -174,
-        "y": 637.4583333333336
+        "x": 336.0415260132475,
+        "y": 1111.3401989202687
       },
       "layout": "manual",
       "source": {
@@ -606,8 +606,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": -156,
-        "y": 811.4583333333336
+        "x": 291.2379052728103,
+        "y": 1353.8532397280183
       },
       "layout": "manual",
       "source": {
@@ -640,8 +640,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": -174,
-        "y": 977.4583333333336
+        "x": 277.04418531768533,
+        "y": 1510.7694566573227
       },
       "layout": "manual",
       "source": {
@@ -685,8 +685,8 @@
       },
       "subprocess": "cashier-037",
       "position": {
-        "x": -166,
-        "y": 1151.7088597615561
+        "x": 321.20384574399765,
+        "y": 1696.0069061786783
       },
       "layout": "manual",
       "source": {
@@ -1434,13 +1434,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 90.0
+        "x": 1152.3193208526247,
+        "y": 251.76690190718674
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260731-001500",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1465,13 +1467,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 265.0
+        "x": 883.9765776889384,
+        "y": 325.9004807179997
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260731-001500",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
