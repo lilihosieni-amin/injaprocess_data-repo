@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-01T17:52:18Z",
-  "updated_at": "2026-08-01T22:15:46Z",
+  "updated_at": "2026-08-01T22:23:29Z",
   "idef0": {
     "inputs": [
       "تعداد فاکتورها و سفارش‌های ورودی در طول شیفت",
@@ -98,13 +98,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 265
+        "x": 350.08788598574824,
+        "y": 251.3396674584323
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
