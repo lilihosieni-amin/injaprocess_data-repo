@@ -1,0 +1,29 @@
+{
+  "department": "logistics",
+  "transcripts": ["logistics-1405-05-05", "logistics-1405-05-07"],
+  "started_at": "2026-08-01T09:51:30Z",
+  "finished_at": "2026-08-01T17:56:47Z",
+  "attempt": 1,
+  "processes": [
+    {"id": "logistics-001", "status": "new"},
+    {"id": "logistics-002", "status": "new"},
+    {"id": "logistics-003", "status": "new"},
+    {"id": "logistics-004", "status": "new"},
+    {"id": "logistics-005", "status": "new"},
+    {"id": "logistics-006", "status": "new"},
+    {"id": "logistics-007", "status": "new"},
+    {"id": "logistics-008", "status": "new"},
+    {"id": "logistics-009", "status": "new"},
+    {"id": "logistics-010", "status": "new"},
+    {"id": "logistics-011", "status": "new"},
+    {"id": "logistics-012", "status": "new"},
+    {"id": "logistics-013", "status": "new"},
+    {"id": "logistics-014", "status": "new"},
+    {"id": "logistics-015", "status": "new"},
+    {"id": "logistics-016", "status": "new"},
+    {"id": "logistics-017", "status": "new"},
+    {"id": "logistics-018", "status": "new"},
+    {"id": "logistics-019", "status": "new"},
+    {"id": "logistics-020", "status": "new"}
+  ]
+}

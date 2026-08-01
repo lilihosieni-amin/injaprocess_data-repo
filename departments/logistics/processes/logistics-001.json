@@ -1,0 +1,738 @@
+{
+  "id": "logistics-001",
+  "department": "logistics",
+  "name": "آماده‌سازی و راه‌اندازی بخش ارسال در ابتدای شیفت (چک‌لیست ابتدای کار)",
+  "summary": "در ابتدای هر شیفت، سرپرست بخش ارسال بر اساس «چک‌لیست ابتدای کار» بخش لوجستیک را آماده راه‌اندازی می‌کند. این چک‌لیست شامل تمیز کردن و نظافت قفسه جایگاه باکس به همراه پک غذا، خالی کردن سطل زباله، تمیز کردن سیستم دستگاه بارکدخوان، چک کردن تمیزی درب ورودی، نظافت محوطه دلیوری، روشن کردن سیستم و خالی بودن راهروی پیک از فضای اضافی است. سرپرست بخش ارسال همچنین موظف است تمیزی تجهیزات و فضای بخش لوجستیک (سیستم، میز، کمد، باکس غذاها، شیشه ورودی و کف) را چک کند و در صورت وجود نقص، یا تذکر بدهد یا خودش آن را تمیز کند؛ هرچند نظافت در شعبه مرکزی توسط نظافتچی انجام می‌شود. سپس روشن‌کردن‌های ابتدای کار (روشن کردن سیستم‌ها، روشن کردن بخش دلیوری و روشن کردن چراغ‌های روشنایی) انجام می‌شود که همین موارد باید در انتهای کار چک و خاموش شود. در ادامه سرپرست بخش ارسال یک سری تجهیزات را آماده‌سازی می‌کند، از جمله کیف‌ها و قرار دادن نیمکت مخصوص نشستن پیک‌های موتوری در محوطه بیرون نزدیک مجموعه، و اگر فصل زمستان باشد تجهیزات گرمایشی مانند بخاری را در جایگاه پیک‌ها نصب می‌کند. چک کردن اینکه آبسردکن آب کافی دارد یا نه بر عهده سرپرست بخش ارسال است و شارژ آن توسط خود پیک‌های موتوری با تصفیه‌آب داخل سالن انجام می‌شود. پس از اطمینان از اینکه تمامی بخش‌ها روال است، کار بخش ارسال استارت می‌خورد. چک‌لیست اصولاً در اختیار سرپرست بخش ارسال است و در نبود او جانشین سرپرست به آن دسترسی کامل دارد.",
+  "source": {
+    "type": "voice",
+    "ref": "20260801-095130",
+    "run": "runs/logistics/20260801-095130"
+  },
+  "parent": null,
+  "created_at": "2026-08-01T17:52:15Z",
+  "updated_at": "2026-08-01T17:52:15Z",
+  "idef0": {
+    "inputs": [
+      "آب تصفیه‌آب داخل سالن جهت شارژ آبسردکن"
+    ],
+    "controls": [
+      "چک‌لیست ابتدای کار بخش ارسال",
+      "قرار داشتن چک‌لیست در اختیار سرپرست بخش ارسال و در نبود او جانشین سرپرست",
+      "شرایط فصلی (نصب تجهیزات گرمایشی در زمستان)"
+    ],
+    "outputs": [
+      "بخش لوجستیک تمیز و مرتب",
+      "سیستم‌ها، بخش دلیوری و چراغ‌های روشنایی روشن",
+      "جایگاه پیک‌های موتوری آماده (نیمکت و در زمستان بخاری)",
+      "آبسردکن با آب کافی",
+      "بخش ارسال آماده شروع کار و استارت خوردن شیفت"
+    ],
+    "mechanisms": [
+      "سرپرست بخش ارسال",
+      "جانشین سرپرست بخش ارسال",
+      "نظافتچی",
+      "پیک موتوری",
+      "دستگاه تصفیه آب داخل سالن"
+    ]
+  },
+  "kpis": [],
+  "nodes": [
+    {
+      "id": "logistics-001-n001",
+      "type": "activity",
+      "label": "تمیز کردن و نظافت قفسه جایگاه باکس به همراه پک غذا",
+      "description": "اولین قلم چک‌لیست ابتدای کار بخش ارسال.",
+      "actor": "سرپرست بخش ارسال",
+      "icom": {
+        "inputs": [],
+        "controls": [
+          "چک‌لیست ابتدای کار"
+        ],
+        "outputs": [
+          "قفسه جایگاه باکس و پک غذا تمیز"
+        ],
+        "mechanisms": [
+          "سرپرست بخش ارسال"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 40,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/logistics/20260801-095130",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "logistics-001-n002",
+      "type": "activity",
+      "label": "خالی کردن سطل زباله",
+      "description": "قلم چک‌لیست ابتدای کار بخش ارسال.",
+      "actor": "سرپرست بخش ارسال",
+      "icom": {
+        "inputs": [],
+        "controls": [
+          "چک‌لیست ابتدای کار"
+        ],
+        "outputs": [
+          "سطل زباله خالی"
+        ],
+        "mechanisms": [
+          "سرپرست بخش ارسال"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/logistics/20260801-095130",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "logistics-001-n003",
+      "type": "activity",
+      "label": "تمیز کردن سیستم دستگاه بارکدخوان",
+      "description": "قلم چک‌لیست ابتدای کار بخش ارسال.",
+      "actor": "سرپرست بخش ارسال",
+      "icom": {
+        "inputs": [],
+        "controls": [
+          "چک‌لیست ابتدای کار"
+        ],
+        "outputs": [
+          "دستگاه بارکدخوان تمیز"
+        ],
+        "mechanisms": [
+          "سرپرست بخش ارسال"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/logistics/20260801-095130",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "logistics-001-n004",
+      "type": "activity",
+      "label": "چک کردن تمیزی درب ورودی",
+      "description": "قلم چک‌لیست ابتدای کار بخش ارسال.",
+      "actor": "سرپرست بخش ارسال",
+      "icom": {
+        "inputs": [],
+        "controls": [
+          "چک‌لیست ابتدای کار"
+        ],
+        "outputs": [
+          "تأیید تمیزی درب ورودی"
+        ],
+        "mechanisms": [
+          "سرپرست بخش ارسال"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/logistics/20260801-095130",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "logistics-001-n005",
+      "type": "activity",
+      "label": "نظافت محوطه دلیوری",
+      "description": "قلم چک‌لیست ابتدای کار بخش ارسال.",
+      "actor": "سرپرست بخش ارسال",
+      "icom": {
+        "inputs": [],
+        "controls": [
+          "چک‌لیست ابتدای کار"
+        ],
+        "outputs": [
+          "محوطه دلیوری تمیز"
+        ],
+        "mechanisms": [
+          "سرپرست بخش ارسال"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/logistics/20260801-095130",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "logistics-001-n006",
+      "type": "activity",
+      "label": "خالی کردن راهروی پیک از فضای اضافی",
+      "description": "قلم چک‌لیست ابتدای کار بخش ارسال؛ عنوان «راهرو» ممکن است مربوط به شعبه بالا باشد ولی منظور این است که آن قسمت‌ها باید مرتب باشد.",
+      "actor": "سرپرست بخش ارسال",
+      "icom": {
+        "inputs": [],
+        "controls": [
+          "چک‌لیست ابتدای کار"
+        ],
+        "outputs": [
+          "راهروی پیک خالی از فضای اضافی"
+        ],
+        "mechanisms": [
+          "سرپرست بخش ارسال"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 440.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/logistics/20260801-095130",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "logistics-001-n007",
+      "type": "activity",
+      "label": "چک کردن تمیزی تجهیزات و فضای بخش لوجستیک (سیستم، میز، کمد، باکس غذاها، شیشه ورودی و کف)",
+      "description": "نظافت این بخش‌ها در شعبه مرکزی توسط نظافتچی انجام می‌شود، ولی سرپرست بخش ارسال موظف به چک کردن تمامی موارد است. معیار تصمیم: آیا نقصی در نظافت وجود دارد یا خیر.",
+      "actor": "سرپرست بخش ارسال",
+      "icom": {
+        "inputs": [],
+        "controls": [
+          "چک‌لیست ابتدای کار"
+        ],
+        "outputs": [
+          "نتیجه چک تمیزی بخش لوجستیک"
+        ],
+        "mechanisms": [
+          "سرپرست بخش ارسال"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 440.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/logistics/20260801-095130",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "logistics-001-j1",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "split",
+      "position": {
+        "x": 623,
+        "y": 456.0
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "logistics-001-n008",
+      "type": "activity",
+      "label": "تذکر دادن جهت رفع نقص نظافت",
+      "description": "در صورتی که سرپرست بخش ارسال نقصی در نظافت ببیند و رفع آن را به نظافتچی واگذار کند تا روال شود.",
+      "actor": "سرپرست بخش ارسال",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [
+          "تذکر نظافت"
+        ],
+        "mechanisms": [
+          "سرپرست بخش ارسال",
+          "نظافتچی"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
+        "y": 440.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/logistics/20260801-095130",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "logistics-001-n009",
+      "type": "activity",
+      "label": "تمیز کردن مورد ناقص توسط خود سرپرست بخش ارسال",
+      "description": "حالت دوم رفع نقص نظافت؛ سرپرست بخش ارسال خودش مورد را تمیز می‌کند تا روال شود.",
+      "actor": "سرپرست بخش ارسال",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [
+          "رفع نقص نظافت"
+        ],
+        "mechanisms": [
+          "سرپرست بخش ارسال"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
+        "y": 615.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/logistics/20260801-095130",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "logistics-001-j2",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "join",
+      "position": {
+        "x": 103,
+        "y": 456.0
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "logistics-001-n010",
+      "type": "activity",
+      "label": "روشن کردن سیستم",
+      "description": "از روشن/خاموش‌های («آن/آف») ابتدای کار که در چک‌لیست ابتدای کار هم آمده است؛ تمامی این موارد باید در انتهای کار چک و خاموش شود.",
+      "actor": "سرپرست بخش ارسال",
+      "icom": {
+        "inputs": [],
+        "controls": [
+          "چک‌لیست ابتدای کار"
+        ],
+        "outputs": [
+          "سیستم روشن"
+        ],
+        "mechanisms": [
+          "سرپرست بخش ارسال"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 40,
+        "y": 790.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/logistics/20260801-095130",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "logistics-001-n011",
+      "type": "activity",
+      "label": "روشن کردن بخش دلیوری",
+      "description": "از روشن/خاموش‌های ابتدای کار بخش ارسال.",
+      "actor": "سرپرست بخش ارسال",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [
+          "بخش دلیوری روشن"
+        ],
+        "mechanisms": [
+          "سرپرست بخش ارسال"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
+        "y": 790.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/logistics/20260801-095130",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "logistics-001-n012",
+      "type": "activity",
+      "label": "روشن کردن چراغ‌های روشنایی",
+      "description": "از روشن/خاموش‌های ابتدای کار بخش ارسال.",
+      "actor": "سرپرست بخش ارسال",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [
+          "چراغ‌های روشنایی روشن"
+        ],
+        "mechanisms": [
+          "سرپرست بخش ارسال"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 790.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/logistics/20260801-095130",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "logistics-001-n013",
+      "type": "activity",
+      "label": "آماده‌سازی تجهیزات بخش ارسال از جمله کیف‌ها",
+      "description": "سرپرست بخش ارسال پس از چک‌های نظافت باید یک سری تجهیزات را آماده‌سازی کند.",
+      "actor": "سرپرست بخش ارسال",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [
+          "تجهیزات آماده بخش ارسال"
+        ],
+        "mechanisms": [
+          "سرپرست بخش ارسال"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 790.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/logistics/20260801-095130",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "logistics-001-n014",
+      "type": "activity",
+      "label": "قرار دادن نیمکت مخصوص نشستن پیک‌های موتوری در محوطه بیرون",
+      "description": "نیمکت‌ها در بیرون از مجموعه، در قسمت نزدیک مجموعه، گذاشته می‌شود؛ این کار با همکاری خود همکاران پیک موتوری یا نظافتچی بخش ارسال انجام می‌شود.",
+      "actor": "سرپرست بخش ارسال",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [
+          "نیمکت مستقر در جایگاه پیک‌های موتوری"
+        ],
+        "mechanisms": [
+          "سرپرست بخش ارسال",
+          "پیک موتوری",
+          "نظافتچی"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 790.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/logistics/20260801-095130",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "logistics-001-j3",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "split",
+      "position": {
+        "x": 1143,
+        "y": 1068.5
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "logistics-001-n015",
+      "type": "activity",
+      "label": "نصب تجهیزات گرمایشی (بخاری) در جایگاه پیک‌های موتوری",
+      "description": "فقط در زمستان انجام می‌شود. بخاری هنگام تمام شدن شیفت کاری از شلنگ گازش باز و به داخل بخش لوجستیک منتقل می‌شود و در زمستان دوباره از داخل بخش لوجستیک بیرون آورده و در قسمت پیک‌های موتوری نصب می‌شود تا سیستم گرمایشی آن‌ها کار کند.",
+      "actor": "سرپرست بخش ارسال",
+      "icom": {
+        "inputs": [],
+        "controls": [
+          "شرایط فصلی (زمستان)"
+        ],
+        "outputs": [
+          "سیستم گرمایشی فعال در جایگاه پیک‌های موتوری"
+        ],
+        "mechanisms": [
+          "سرپرست بخش ارسال"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 1140.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/logistics/20260801-095130",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "logistics-001-j4",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "join",
+      "position": {
+        "x": 623,
+        "y": 1068.5
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "logistics-001-n016",
+      "type": "activity",
+      "label": "چک کردن آبسردکن از نظر کافی بودن آب",
+      "description": "آبسردکن در قسمت لوجستیک قرار دارد و پیک‌های موتوری هم از آن استفاده می‌کنند؛ وظیفه چک کردن اینکه آب کافی دارد یا نه بر عهده سرپرست بخش ارسال است.",
+      "actor": "سرپرست بخش ارسال",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [
+          "نتیجه چک میزان آب آبسردکن"
+        ],
+        "mechanisms": [
+          "سرپرست بخش ارسال"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
+        "y": 1052.5
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/logistics/20260801-095130",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "logistics-001-j5",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "split",
+      "position": {
+        "x": 103,
+        "y": 1068.5
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "logistics-001-n017",
+      "type": "activity",
+      "label": "شارژ آبسردکن با تصفیه‌آب داخل سالن",
+      "description": "شارژ آبسردکن توسط خود پیک‌های موتوری و از طریق تصفیه‌آبی که در داخل سالن قرار دارد انجام می‌شود.",
+      "actor": "پیک موتوری",
+      "icom": {
+        "inputs": [
+          "آب تصفیه‌آب داخل سالن"
+        ],
+        "controls": [],
+        "outputs": [
+          "آبسردکن دارای آب کافی"
+        ],
+        "mechanisms": [
+          "پیک موتوری",
+          "دستگاه تصفیه آب داخل سالن"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 40,
+        "y": 1490.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/logistics/20260801-095130",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "logistics-001-j6",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "join",
+      "position": {
+        "x": 363,
+        "y": 1418.5
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "logistics-001-n018",
+      "type": "activity",
+      "label": "اطمینان از روال بودن تمامی بخش‌ها و آماده شدن بخش ارسال برای استارت کار",
+      "description": "پس از این اطمینان، کار بخش ارسال استارت می‌خورد. چک‌لیست ابتدای کار اصولاً در اختیار سرپرست بخش ارسال است و در نبود او جانشین سرپرست (نفر دوم) به چک‌لیست دسترسی کامل دارد.",
+      "actor": "سرپرست بخش ارسال",
+      "icom": {
+        "inputs": [],
+        "controls": [
+          "چک‌لیست ابتدای کار"
+        ],
+        "outputs": [
+          "بخش ارسال آماده شروع کار"
+        ],
+        "mechanisms": [
+          "سرپرست بخش ارسال",
+          "جانشین سرپرست بخش ارسال"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 1402.5
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/logistics/20260801-095130",
+        "touched_by": []
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "logistics-001-n001",
+      "to": "logistics-001-n002"
+    },
+    {
+      "from": "logistics-001-n002",
+      "to": "logistics-001-n003"
+    },
+    {
+      "from": "logistics-001-n003",
+      "to": "logistics-001-n004"
+    },
+    {
+      "from": "logistics-001-n004",
+      "to": "logistics-001-n005"
+    },
+    {
+      "from": "logistics-001-n005",
+      "to": "logistics-001-n006"
+    },
+    {
+      "from": "logistics-001-n006",
+      "to": "logistics-001-n007"
+    },
+    {
+      "from": "logistics-001-n007",
+      "to": "logistics-001-j1"
+    },
+    {
+      "from": "logistics-001-j1",
+      "to": "logistics-001-j2",
+      "label": "در صورت نبود نقص در نظافت"
+    },
+    {
+      "from": "logistics-001-j1",
+      "to": "logistics-001-n008",
+      "label": "در صورت وجود نقص و واگذاری رفع آن با تذکر"
+    },
+    {
+      "from": "logistics-001-j1",
+      "to": "logistics-001-n009",
+      "label": "در صورت وجود نقص و رفع مستقیم آن توسط سرپرست"
+    },
+    {
+      "from": "logistics-001-n008",
+      "to": "logistics-001-j2"
+    },
+    {
+      "from": "logistics-001-n009",
+      "to": "logistics-001-j2"
+    },
+    {
+      "from": "logistics-001-j2",
+      "to": "logistics-001-n010"
+    },
+    {
+      "from": "logistics-001-n010",
+      "to": "logistics-001-n011"
+    },
+    {
+      "from": "logistics-001-n011",
+      "to": "logistics-001-n012"
+    },
+    {
+      "from": "logistics-001-n012",
+      "to": "logistics-001-n013"
+    },
+    {
+      "from": "logistics-001-n013",
+      "to": "logistics-001-n014"
+    },
+    {
+      "from": "logistics-001-n014",
+      "to": "logistics-001-j3"
+    },
+    {
+      "from": "logistics-001-j3",
+      "to": "logistics-001-n015",
+      "label": "در صورت فصل زمستان"
+    },
+    {
+      "from": "logistics-001-j3",
+      "to": "logistics-001-j4",
+      "label": "در سایر فصل‌ها"
+    },
+    {
+      "from": "logistics-001-n015",
+      "to": "logistics-001-j4"
+    },
+    {
+      "from": "logistics-001-j4",
+      "to": "logistics-001-n016"
+    },
+    {
+      "from": "logistics-001-n016",
+      "to": "logistics-001-j5"
+    },
+    {
+      "from": "logistics-001-j5",
+      "to": "logistics-001-n017",
+      "label": "در صورت کافی نبودن آب آبسردکن"
+    },
+    {
+      "from": "logistics-001-j5",
+      "to": "logistics-001-j6",
+      "label": "در صورت کافی بودن آب آبسردکن"
+    },
+    {
+      "from": "logistics-001-n017",
+      "to": "logistics-001-j6"
+    },
+    {
+      "from": "logistics-001-j6",
+      "to": "logistics-001-n018"
+    }
+  ],
+  "pending": []
+}
