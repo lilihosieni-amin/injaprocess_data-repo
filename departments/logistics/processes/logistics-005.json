@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-01T17:52:17Z",
-  "updated_at": "2026-08-01T21:36:05Z",
+  "updated_at": "2026-08-01T21:37:05Z",
   "idef0": {
     "inputs": [
       "پک غذای آماده",
@@ -437,13 +437,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1577.5
+        "x": 1276,
+        "y": 1441.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -584,13 +586,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1701.4583333333333
+        "x": 1064,
+        "y": 1429.4583333333333
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260801-pos",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
