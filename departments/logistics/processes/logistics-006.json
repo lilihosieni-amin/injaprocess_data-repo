@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-01T17:52:17Z",
-  "updated_at": "2026-08-01T22:05:36Z",
+  "updated_at": "2026-08-01T22:08:21Z",
   "idef0": {
     "inputs": [
       "سفارش بیرون‌بر ثبت‌شده مشتری با اعلام تحویل حضوری",
@@ -116,13 +116,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 580.0
+        "x": 234,
+        "y": 702
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -143,13 +145,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 615.0
+        "x": 742,
+        "y": 747
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -168,13 +172,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 440.0
+        "x": 964,
+        "y": 496
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -195,13 +201,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 352.5
+        "x": 1254,
+        "y": 348.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -234,7 +242,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 1315.0
+        "y": 1315
       },
       "layout": "auto",
       "source": {
@@ -261,7 +269,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1315.0
+        "y": 1315
       },
       "layout": "auto",
       "source": {
@@ -286,7 +294,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 1315.0
+        "y": 1315
       },
       "layout": "auto",
       "source": {
@@ -314,13 +322,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 790.0
+        "x": 1262,
+        "y": 1264
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -350,13 +360,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1840.0
+        "x": 140,
+        "y": 1626
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -365,10 +377,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 363,
-        "y": 1768.5
+        "x": 901,
+        "y": 1706.5
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "logistics-006-n012",
@@ -389,13 +401,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1752.5
+        "x": 842,
+        "y": 1836.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -416,13 +430,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1752.5
+        "x": 1098,
+        "y": 1866.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -447,13 +463,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 789.9999999999999
+        "x": 504,
+        "y": 603.9999999999999
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260801-phone",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
