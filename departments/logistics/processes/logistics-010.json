@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-01T17:52:18Z",
-  "updated_at": "2026-08-01T21:42:07Z",
+  "updated_at": "2026-08-01T21:42:39Z",
   "idef0": {
     "inputs": [
       "سفارش تحویل‌نشده در محل مشتری",
@@ -72,7 +72,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 300.64814814814815
+        "y": 291.12847222222223
       },
       "layout": "auto",
       "source": {
@@ -87,7 +87,7 @@
       "direction": "split",
       "position": {
         "x": 363,
-        "y": 316.64814814814815
+        "y": 307.12847222222223
       },
       "layout": "auto"
     },
@@ -114,7 +114,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 90
+        "y": 90.0
       },
       "layout": "auto",
       "source": {
@@ -144,7 +144,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 90
+        "y": 90.0
       },
       "layout": "auto",
       "source": {
@@ -173,7 +173,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 90
+        "y": 90.0
       },
       "layout": "auto",
       "source": {
@@ -204,7 +204,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 265
+        "y": 265.0
       },
       "layout": "auto",
       "source": {
@@ -234,7 +234,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 265
+        "y": 265.0
       },
       "layout": "auto",
       "source": {
@@ -264,7 +264,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 265
+        "y": 265.0
       },
       "layout": "auto",
       "source": {
@@ -304,7 +304,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 721.9444444444446
+        "y": 693.3854166666667
       },
       "layout": "auto",
       "source": {
@@ -331,7 +331,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 896.9444444444446
+        "y": 868.3854166666667
       },
       "layout": "auto",
       "source": {
@@ -360,7 +360,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 877.5000000000001
+        "y": 819.1666666666667
       },
       "layout": "auto",
       "source": {
@@ -390,7 +390,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 877.5000000000001
+        "y": 819.1666666666667
       },
       "layout": "auto",
       "source": {
@@ -405,7 +405,7 @@
       "direction": "split",
       "position": {
         "x": 103,
-        "y": 893.5000000000001
+        "y": 835.1666666666667
       },
       "layout": "auto"
     },
@@ -465,7 +465,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 1490
+        "y": 1606.6666666666667
       },
       "layout": "auto",
       "source": {
@@ -495,7 +495,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 1490
+        "y": 1599.375
       },
       "layout": "auto",
       "source": {
@@ -510,7 +510,7 @@
       "direction": "split",
       "position": {
         "x": 623,
-        "y": 1506
+        "y": 1615.375
       },
       "layout": "auto"
     },
@@ -567,7 +567,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 546.9444444444446
+        "y": 518.3854166666667
       },
       "layout": "auto",
       "source": {
@@ -599,7 +599,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 546.9444444444446
+        "y": 518.3854166666667
       },
       "layout": "auto",
       "source": {
@@ -610,15 +610,15 @@
     {
       "id": "logistics-010-n018",
       "type": "activity",
-      "label": "ثبت هزینه غذای آسیب‌دیده به حساب پیک",
-      "description": "اگر مشتری ناراضی باشد و پیک نتوانسته باشد غذا را سالم به دست مشتری برساند یا در حمل بی‌احتیاطی کرده باشد، مبلغ غذا به حساب پیک خرد می‌شود. در مواردی که تقصیر متوجه پیک نیست، هزینه‌ای از او گرفته نمی‌شود.",
+      "label": "ثبت هزینه غذای آسیب‌دیده به حساب پیک در صورت قصور او",
+      "description": "مبلغ غذا تنها زمانی به حساب پیک خرد می‌شود که آسیب دیدن غذا از جانب پیک و به‌خاطر قصور یا بی‌احتیاطی او در حمل باشد. در مواردی که قصور پیک محرز نباشد، هیچ هزینه‌ای از او گرفته نمی‌شود.",
       "actor": "سرپرست بخش ارسال",
       "icom": {
         "inputs": [
           "تصمیم هماهنگ‌شده درباره غذای آسیب‌دیده"
         ],
         "controls": [
-          "مسئولیت پیک در رساندن سالم غذا به دست مشتری"
+          "اعمال هزینه به حساب پیک تنها در صورت احراز قصور پیک در حمل غذا"
         ],
         "outputs": [
           "هزینه ثبت‌شده به حساب پیک"
@@ -636,7 +636,8 @@
       "source": {
         "created_by": "runs/logistics/20260801-095130",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260801-fault"
         ]
       }
     },
@@ -647,7 +648,7 @@
       "direction": "join",
       "position": {
         "x": 883,
-        "y": 1637.25
+        "y": 1819.5416666666667
       },
       "layout": "auto"
     },
@@ -673,7 +674,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 1621.25
+        "y": 1803.5416666666667
       },
       "layout": "auto",
       "source": {
@@ -704,7 +705,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 1927.5
+        "y": 2219.166666666667
       },
       "layout": "auto",
       "source": {
@@ -719,7 +720,7 @@
       "direction": "split",
       "position": {
         "x": 883,
-        "y": 1943.5
+        "y": 2235.166666666667
       },
       "layout": "auto"
     },
@@ -745,7 +746,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1840
+        "y": 2131.666666666667
       },
       "layout": "auto",
       "source": {
@@ -775,13 +776,24 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 2015
+        "y": 2306.666666666667
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
         "touched_by": []
       }
+    },
+    {
+      "id": "logistics-010-j7",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "split",
+      "position": {
+        "x": 1143,
+        "y": 534.3854166666667
+      },
+      "layout": "auto"
     }
   ],
   "edges": [
@@ -879,10 +891,6 @@
       "to": "logistics-010-n017"
     },
     {
-      "from": "logistics-010-n017",
-      "to": "logistics-010-n018"
-    },
-    {
       "from": "logistics-010-n018",
       "to": "logistics-010-j5"
     },
@@ -907,6 +915,20 @@
       "from": "logistics-010-j6",
       "to": "logistics-010-n022",
       "label": "در صورت غیرقابل استفاده بودن غذا"
+    },
+    {
+      "from": "logistics-010-n017",
+      "to": "logistics-010-j7"
+    },
+    {
+      "from": "logistics-010-j7",
+      "to": "logistics-010-n018",
+      "label": "در صورتی که آسیب دیدن غذا از جانب پیک و به‌خاطر قصور او باشد"
+    },
+    {
+      "from": "logistics-010-j7",
+      "to": "logistics-010-j5",
+      "label": "در صورتی که قصور پیک محرز نباشد (بدون اعمال هزینه)"
     }
   ],
   "pending": []
