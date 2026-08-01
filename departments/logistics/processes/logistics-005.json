@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-01T17:52:17Z",
-  "updated_at": "2026-08-01T21:37:05Z",
+  "updated_at": "2026-08-01T21:44:38Z",
   "idef0": {
     "inputs": [
       "پک غذای آماده",
@@ -180,7 +180,7 @@
       "direction": "split",
       "position": {
         "x": 1143,
-        "y": 806
+        "y": 806.0
       },
       "layout": "auto"
     },
@@ -267,7 +267,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
+        "x": 40,
         "y": 702.5
       },
       "layout": "auto",
@@ -295,7 +295,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 702.5
+        "y": 1052.5
       },
       "layout": "auto",
       "source": {
@@ -322,8 +322,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1140
+        "x": 300,
+        "y": 1052.5
       },
       "layout": "auto",
       "source": {
@@ -349,8 +349,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1140
+        "x": 560,
+        "y": 1052.5
       },
       "layout": "auto",
       "source": {
@@ -374,8 +374,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1140
+        "x": 820,
+        "y": 1052.5
       },
       "layout": "auto",
       "source": {
@@ -389,8 +389,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 1156
+        "x": 1143,
+        "y": 1068.5
       },
       "layout": "auto"
     },
@@ -411,7 +411,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 1227.5
+        "y": 1577.5
       },
       "layout": "auto",
       "source": {
@@ -454,8 +454,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1143,
-        "y": 1892.4583333333333
+        "x": 623,
+        "y": 1418.5
       },
       "layout": "auto"
     },
@@ -477,8 +477,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1876.4583333333333
+        "x": 300,
+        "y": 1402.5
       },
       "layout": "auto",
       "source": {
@@ -492,8 +492,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 623,
-        "y": 1892.4583333333333
+        "x": 103,
+        "y": 1418.5
       },
       "layout": "auto"
     },
@@ -534,8 +534,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 103,
-        "y": 1768.5
+        "x": 363,
+        "y": 1856.0
       },
       "layout": "auto"
     },
@@ -596,6 +596,37 @@
           "ui-edit"
         ]
       }
+    },
+    {
+      "id": "logistics-005-n018",
+      "type": "activity",
+      "label": "نظارت سرپرست بخش ارسال بر برداشتن نوشابه خانواده توسط پیک",
+      "description": "چون پیک‌ها عجله دارند زودتر غذا را ببرند، ممکن است نوشابه خانواده‌ای را که در فیششان نوشته شده فراموش کنند؛ به همین دلیل نظارت بر گرفتن نوشابه خانواده توسط پیک‌ها بر عهده سرپرست بخش ارسال است و پیش از حرکت پیک انجام می‌شود.",
+      "actor": "سرپرست بخش ارسال",
+      "icom": {
+        "inputs": [
+          "فیش سفارش"
+        ],
+        "controls": [
+          "درج نوشابه خانواده در فیش سفارش"
+        ],
+        "outputs": [
+          "سفارش کنترل‌شده از نظر همراه داشتن نوشابه خانواده"
+        ],
+        "mechanisms": [
+          "سرپرست بخش ارسال"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
+        "y": 702.5
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260801-soda",
+        "touched_by": []
+      }
     }
   ],
   "edges": [
@@ -642,10 +673,6 @@
     {
       "from": "logistics-005-n006",
       "to": "logistics-005-j3"
-    },
-    {
-      "from": "logistics-005-j3",
-      "to": "logistics-005-n007"
     },
     {
       "from": "logistics-005-n007",
@@ -719,6 +746,14 @@
       "from": "logistics-005-j6",
       "to": "logistics-005-j7",
       "label": "در صورت پرداخت با دستگاه پوز یا تسویه‌شده بودن سفارش"
+    },
+    {
+      "from": "logistics-005-j3",
+      "to": "logistics-005-n018"
+    },
+    {
+      "from": "logistics-005-n018",
+      "to": "logistics-005-n007"
     }
   ],
   "pending": []

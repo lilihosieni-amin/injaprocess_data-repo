@@ -1,0 +1,12 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "flag_removed": [],
+  "remove_edges": [
+    {
+      "from": "logistics-005-j3",
+      "to": "logistics-005-n007"
+    }
+  ]
+}
