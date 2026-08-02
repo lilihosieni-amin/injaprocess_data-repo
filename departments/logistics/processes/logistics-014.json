@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-01T17:52:22Z",
-  "updated_at": "2026-08-02T12:06:05Z",
+  "updated_at": "2026-08-02T12:06:20Z",
   "idef0": {
     "inputs": [
       "باکس اختصاصی کددار پیک موتوری",
@@ -68,7 +68,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 177.5
+        "y": 965.0
       },
       "layout": "auto",
       "source": {
@@ -99,7 +99,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 177.5
+        "y": 965.0
       },
       "layout": "auto",
       "source": {
@@ -128,7 +128,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 177.5
+        "y": 965.0
       },
       "layout": "auto",
       "source": {
@@ -143,7 +143,7 @@
       "direction": "split",
       "position": {
         "x": 883,
-        "y": 193.5
+        "y": 864.3333333333333
       },
       "layout": "auto"
     },
@@ -185,7 +185,7 @@
       "direction": "join",
       "position": {
         "x": 1143,
-        "y": 674.75
+        "y": 1564.3333333333333
       },
       "layout": "auto"
     },
@@ -211,7 +211,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 658.75
+        "y": 1548.3333333333333
       },
       "layout": "auto",
       "source": {
@@ -226,7 +226,7 @@
       "direction": "split",
       "position": {
         "x": 623,
-        "y": 674.75
+        "y": 1564.3333333333333
       },
       "layout": "auto"
     },
@@ -302,7 +302,8 @@
         "x": 98,
         "y": 1083.5833333333335
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "logistics-014-n008",
@@ -358,8 +359,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1679.5833333333335
+        "x": 40,
+        "y": 2758.75
       },
       "layout": "auto",
       "source": {
@@ -390,8 +391,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1679.5833333333335
+        "x": 300,
+        "y": 2758.75
       },
       "layout": "auto",
       "source": {
@@ -405,8 +406,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 1724.7500000000002
+        "x": 623,
+        "y": 2774.75
       },
       "layout": "auto"
     },
@@ -431,8 +432,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1656.2500000000002
+        "x": 820,
+        "y": 2671.25
       },
       "layout": "auto",
       "source": {
@@ -462,8 +463,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1831.25
+        "x": 820,
+        "y": 2846.25
       },
       "layout": "auto",
       "source": {
@@ -495,7 +496,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 1942.0833333333335
+        "y": 702.5
       },
       "layout": "auto",
       "source": {
@@ -510,7 +511,7 @@
       "direction": "split",
       "position": {
         "x": 363,
-        "y": 1958.0833333333335
+        "y": 718.5
       },
       "layout": "auto"
     },
@@ -535,7 +536,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1854.5833333333335
+        "y": 615.0
       },
       "layout": "auto",
       "source": {
@@ -564,7 +565,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 2029.5833333333335
+        "y": 790.0
       },
       "layout": "auto",
       "source": {
@@ -579,7 +580,7 @@
       "direction": "join",
       "position": {
         "x": 883,
-        "y": 1899.7500000000002
+        "y": 689.3333333333333
       },
       "layout": "auto"
     },
@@ -664,7 +665,7 @@
       "direction": "split",
       "position": {
         "x": 363,
-        "y": 1345.5833333333335
+        "y": 281.0
       },
       "layout": "auto"
     },
@@ -722,7 +723,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1504.5833333333335
+        "y": 440.0
       },
       "layout": "auto",
       "source": {
@@ -768,7 +769,7 @@
       "direction": "join",
       "position": {
         "x": 1143,
-        "y": 1322.2500000000002
+        "y": 368.5
       },
       "layout": "auto"
     },
@@ -860,20 +861,6 @@
       "to": "logistics-014-j8"
     },
     {
-      "from": "logistics-014-n007",
-      "to": "logistics-014-j4"
-    },
-    {
-      "from": "logistics-014-j4",
-      "to": "logistics-014-n008",
-      "label": "در صورت نیاز به تعمیر اساسی باکس"
-    },
-    {
-      "from": "logistics-014-j4",
-      "to": "logistics-014-n013",
-      "label": "در صورت نیاز به تأمین لباس فرم"
-    },
-    {
       "from": "logistics-014-n008",
       "to": "logistics-014-n009"
     },
@@ -920,10 +907,6 @@
       "to": "logistics-014-n016"
     },
     {
-      "from": "logistics-014-j8",
-      "to": "logistics-014-n017"
-    },
-    {
       "from": "logistics-014-n017",
       "to": "logistics-014-j9"
     },
@@ -956,6 +939,14 @@
     },
     {
       "from": "logistics-014-j10",
+      "to": "logistics-014-n021"
+    },
+    {
+      "from": "logistics-014-n007",
+      "to": "logistics-014-n008"
+    },
+    {
+      "from": "logistics-014-j8",
       "to": "logistics-014-n021"
     }
   ],
