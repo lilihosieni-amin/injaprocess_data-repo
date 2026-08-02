@@ -1,0 +1,22 @@
+{
+  "add_nodes": [],
+  "add_edges": [
+    { "from": "logistics-022-n015", "to": "logistics-022-j11" }
+  ],
+  "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [
+    { "from": "logistics-022-n015", "to": "logistics-022-j10" },
+    { "from": "logistics-022-j10", "to": "logistics-022-n016" },
+    { "from": "logistics-022-j10", "to": "logistics-022-j11" },
+    { "from": "logistics-022-n016", "to": "logistics-022-n017" },
+    { "from": "logistics-022-n017", "to": "logistics-022-n018" },
+    { "from": "logistics-022-n018", "to": "logistics-022-j11" }
+  ],
+  "flag_removed": [
+    { "id": "logistics-022-n016" },
+    { "id": "logistics-022-n017" },
+    { "id": "logistics-022-n018" },
+    { "id": "logistics-022-j10" }
+  ]
+}
