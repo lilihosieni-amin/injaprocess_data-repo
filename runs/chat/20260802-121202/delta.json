@@ -1,0 +1,13 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "revise_nodes": [
+    {
+      "id": "logistics-014-j11",
+      "set": { "junctionType": "OR" }
+    }
+  ],
+  "remove_edges": [],
+  "flag_removed": []
+}
