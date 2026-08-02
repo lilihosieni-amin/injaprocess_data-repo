@@ -1,0 +1,34 @@
+{
+  "add_nodes": [
+    {
+      "key": "n1",
+      "type": "activity",
+      "label": "بررسی لوازم پیک",
+      "description": "نقطه شروع مشترک سه شاخه مستقل تأمین و نگهداری تجهیزات پیک: باکس و کیف ارسال، لباس فرم، و وضعیت فنی موتور.",
+      "actor": "سرپرست بخش ارسال",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": []
+      },
+      "subprocess": null
+    },
+    {
+      "key": "j1",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "split"
+    }
+  ],
+  "add_edges": [
+    { "from": "n1", "to": "j1" },
+    { "from": "j1", "to": "logistics-014-n001", "label": "در صورت بررسی باکس و کیف ارسال" },
+    { "from": "j1", "to": "logistics-014-n013", "label": "در صورت نیاز به تأمین لباس فرم" },
+    { "from": "j1", "to": "logistics-014-n017", "label": "در صورت بروز ایراد فنی در موتور" }
+  ],
+  "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [],
+  "flag_removed": []
+}
