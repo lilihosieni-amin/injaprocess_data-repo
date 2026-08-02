@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-01T17:52:22Z",
-  "updated_at": "2026-08-02T12:12:12Z",
+  "updated_at": "2026-08-02T14:28:05Z",
   "idef0": {
     "inputs": [
       "باکس اختصاصی کددار پیک موتوری",
@@ -67,13 +67,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 965.0
+        "x": 534,
+        "y": 165.47727584838867
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -98,13 +100,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 965.0
+        "x": 726,
+        "y": 327
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -127,13 +131,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 965.0
+        "x": 836,
+        "y": 513
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -142,10 +148,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1143,
-        "y": 1856.0
+        "x": 951,
+        "y": 701.25
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "logistics-014-n004",
@@ -167,8 +173,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1128,
-        "y": 225
+        "x": 1114,
+        "y": 797.5
       },
       "layout": "manual",
       "source": {
@@ -184,10 +190,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 623,
-        "y": 1793.2916666666665
+        "x": 991,
+        "y": 950.2916666666665
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "logistics-014-n005",
@@ -210,13 +216,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1777.2916666666665
+        "x": 922,
+        "y": 1063.2916666666665
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -225,10 +233,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 1793.2916666666665
+        "x": 979,
+        "y": 1271.2916666666665
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "logistics-014-n006",
@@ -250,8 +258,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 399,
-        "y": 833
+        "x": 1149.6957001744036,
+        "y": 1341.1301675891832
       },
       "layout": "manual",
       "source": {
@@ -282,8 +290,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 48,
-        "y": 551.25
+        "x": 862,
+        "y": 1490.5
       },
       "layout": "manual",
       "source": {
@@ -325,8 +333,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 244,
-        "y": 1528.5833333333335
+        "x": 860,
+        "y": 1679.7533543904624
       },
       "layout": "manual",
       "source": {
@@ -359,13 +367,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 2542.9166666666665
+        "x": 848,
+        "y": 1865.5266977945962
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -391,13 +401,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 2542.9166666666665
+        "x": 832,
+        "y": 2066.9166666666665
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -495,13 +507,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 702.5
+        "x": 590,
+        "y": -47.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -510,10 +524,10 @@
       "junctionType": "AND",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 718.5
+        "x": 879,
+        "y": 24.5
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "logistics-014-n014",
@@ -535,13 +549,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 615.0
+        "x": 1070,
+        "y": -25
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -564,13 +580,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 790.0
+        "x": 906,
+        "y": 154
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -579,10 +597,10 @@
       "junctionType": "AND",
       "direction": "join",
       "position": {
-        "x": 1143,
-        "y": 1681.0
+        "x": 1111,
+        "y": 425
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "logistics-014-n016",
@@ -605,8 +623,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 934,
-        "y": 2026.2500000000002
+        "x": 1058,
+        "y": 530.2500000000002
       },
       "layout": "manual",
       "source": {
@@ -615,17 +633,6 @@
           "ui-edit"
         ]
       }
-    },
-    {
-      "id": "logistics-014-j8",
-      "type": "junction",
-      "junctionType": "XOR",
-      "direction": "join",
-      "position": {
-        "x": 283,
-        "y": 745.3333333333334
-      },
-      "layout": "manual"
     },
     {
       "id": "logistics-014-n017",
@@ -647,8 +654,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 243,
-        "y": 1114.3833134969077
+        "x": 319,
+        "y": 446.3833134969077
       },
       "layout": "manual",
       "source": {
@@ -664,10 +671,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 281.0
+        "x": 419,
+        "y": 645
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "logistics-014-n018",
@@ -690,8 +697,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 637,
-        "y": 1163.5833333333335
+        "x": 125,
+        "y": 787.5833333333335
       },
       "layout": "manual",
       "source": {
@@ -722,13 +729,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 439.99999999999994
+        "x": 648,
+        "y": 818
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -751,8 +760,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 774,
-        "y": 1492.7500000000002
+        "x": 654,
+        "y": 938.7500000000002
       },
       "layout": "manual",
       "source": {
@@ -768,10 +777,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 883,
-        "y": 1319.3333333333333
+        "x": 447,
+        "y": 983.3333333333333
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "logistics-014-n021",
@@ -794,8 +803,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1265,
-        "y": 1288.5833333333335
+        "x": 379,
+        "y": 1132.5833333333335
       },
       "layout": "manual",
       "source": {
@@ -819,13 +828,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 644.1666666666667
+        "x": 46,
+        "y": 2.1666666666667425
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260802-121015",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -834,10 +845,10 @@
       "junctionType": "OR",
       "direction": "split",
       "position": {
-        "x": 363,
-        "y": 660.1666666666667
+        "x": 399,
+        "y": 47.50760904947924
       },
-      "layout": "auto"
+      "layout": "manual"
     }
   ],
   "edges": [
@@ -877,11 +888,6 @@
     },
     {
       "from": "logistics-014-j3",
-      "to": "logistics-014-j8",
-      "label": "در صورت سالم بودن تجهیزات"
-    },
-    {
-      "from": "logistics-014-j3",
       "to": "logistics-014-n006",
       "label": "در صورت وجود ایراد جزئی قابل رفع توسط پیک"
     },
@@ -889,10 +895,6 @@
       "from": "logistics-014-j3",
       "to": "logistics-014-n007",
       "label": "در صورت نیاز به تعمیر اساسی یا تأمین قلم جدید"
-    },
-    {
-      "from": "logistics-014-n006",
-      "to": "logistics-014-j8"
     },
     {
       "from": "logistics-014-n008",
@@ -978,10 +980,6 @@
     {
       "from": "logistics-014-n007",
       "to": "logistics-014-n008"
-    },
-    {
-      "from": "logistics-014-j8",
-      "to": "logistics-014-n021"
     },
     {
       "from": "logistics-014-n022",
