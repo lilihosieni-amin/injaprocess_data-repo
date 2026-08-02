@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-01T17:52:22Z",
-  "updated_at": "2026-08-02T14:28:05Z",
+  "updated_at": "2026-08-02T14:29:05Z",
   "idef0": {
     "inputs": [
       "باکس اختصاصی کددار پیک موتوری",
@@ -418,10 +418,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1143,
-        "y": 2558.9166666666665
+        "x": 904,
+        "y": 2269.9166666666665
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "logistics-014-n011",
@@ -444,13 +444,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 2863.75
+        "x": 674,
+        "y": 2396.75
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -475,13 +477,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 3038.75
+        "x": 961.5,
+        "y": 2416.25
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -623,8 +627,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1058,
-        "y": 530.2500000000002
+        "x": 1271.4081313102895,
+        "y": 306.39531680738907
       },
       "layout": "manual",
       "source": {
@@ -697,8 +701,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 125,
-        "y": 787.5833333333335
+        "x": 131,
+        "y": 726.5833333333335
       },
       "layout": "manual",
       "source": {
@@ -729,8 +733,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 648,
-        "y": 818
+        "x": 646,
+        "y": 703
       },
       "layout": "manual",
       "source": {
@@ -760,8 +764,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 654,
-        "y": 938.7500000000002
+        "x": 622.5,
+        "y": 859.2500000000001
       },
       "layout": "manual",
       "source": {
