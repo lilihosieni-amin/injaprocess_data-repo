@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-01T19:38:26Z",
-  "updated_at": "2026-08-02T15:20:18Z",
+  "updated_at": "2026-08-02T21:37:56Z",
   "idef0": {
     "inputs": [
       "درخواست مرخصی پیک موتوری",
@@ -863,8 +863,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 765.1205035971224,
-        "y": 713.1960431654677
+        "x": 647.3391348064641,
+        "y": 778.2394856319506
       },
       "layout": "manual",
       "source": {
@@ -954,10 +954,6 @@
       "label": "تأخیر غیرموجه"
     },
     {
-      "from": "logistics-022-n020",
-      "to": "logistics-022-j9"
-    },
-    {
       "from": "logistics-022-n015",
       "to": "logistics-022-j11"
     },
@@ -969,6 +965,11 @@
     {
       "from": "logistics-022-n021",
       "to": "logistics-022-n002",
+      "label": ""
+    },
+    {
+      "from": "logistics-022-n020",
+      "to": "logistics-022-j11",
       "label": ""
     }
   ],
