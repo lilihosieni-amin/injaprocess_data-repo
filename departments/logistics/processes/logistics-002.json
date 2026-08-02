@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-01T17:52:16Z",
-  "updated_at": "2026-08-01T21:22:11Z",
+  "updated_at": "2026-08-02T15:06:37Z",
   "idef0": {
     "inputs": [
       "پیک موتوری وارد شده به شیفت",
@@ -292,8 +292,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 527.5
+        "x": 300,
+        "y": 440.0
       },
       "layout": "auto",
       "source": {
@@ -324,8 +324,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 527.5
+        "x": 820,
+        "y": 1621.25
       },
       "layout": "auto",
       "source": {
@@ -351,8 +351,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 527.5
+        "x": 560,
+        "y": 1621.25
       },
       "layout": "auto",
       "source": {
@@ -383,8 +383,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 790
+        "x": 300,
+        "y": 1621.25
       },
       "layout": "auto",
       "source": {
@@ -416,8 +416,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 790
+        "x": 40,
+        "y": 1621.25
       },
       "layout": "auto",
       "source": {
@@ -445,14 +445,186 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 790
+        "x": 40,
+        "y": 1796.25
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
         "touched_by": []
       }
+    },
+    {
+      "id": "logistics-002-j3",
+      "type": "junction",
+      "junctionType": "AND",
+      "direction": "split",
+      "position": {
+        "x": 623,
+        "y": 609.125
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "logistics-002-n013",
+      "type": "activity",
+      "label": "کنترل پوشیدن لباس فرم پیک در ابتدای شیفت توسط سرپرست بخش ارسال",
+      "description": "قانون مجموعه این است که پیک‌ها هر موقع سر کار می‌آیند باید لباس فرم خودشان را داشته باشند. چون ممکن است همکاران پیک موتوری در نوبت ظهر در رستوران دیگری کار کنند و لباس رستوران دیگری داشته باشند، می‌توانند لباس را همین‌جا تعویض کنند ولی حتماً باید پیش از شروع ساعت کاری این کار انجام شده باشد.",
+      "actor": "سرپرست بخش ارسال",
+      "icom": {
+        "inputs": [],
+        "controls": [
+          "الزام پوشیدن لباس فرم مجموعه پیش از شروع ساعت کاری"
+        ],
+        "outputs": [
+          "وضعیت پوشش لباس فرم پیک"
+        ],
+        "mechanisms": [
+          "سرپرست بخش ارسال"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
+        "y": 746.25
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260802-150557",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "logistics-002-j4",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "split",
+      "position": {
+        "x": 103,
+        "y": 762.25
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "logistics-002-n014",
+      "type": "activity",
+      "label": "دادن اخطار و بازخورد به پیک در روز اول نپوشیدن لباس فرم",
+      "description": "روز اولی که پیک لباس فرم نپوشیده باشد، سرپرست بخش ارسال به او اخطار و بازخورد می‌دهد و در این مرحله جریمه‌ای اعمال نمی‌شود.",
+      "actor": "سرپرست بخش ارسال",
+      "icom": {
+        "inputs": [],
+        "controls": [
+          "اخطار در روز اول عدم پوشش لباس فرم"
+        ],
+        "outputs": [
+          "اخطار و بازخورد داده‌شده به پیک"
+        ],
+        "mechanisms": [
+          "سرپرست بخش ارسال"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 40,
+        "y": 1358.75
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260802-150557",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "logistics-002-j5",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "split",
+      "position": {
+        "x": 363,
+        "y": 1374.75
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "logistics-002-n015",
+      "type": "activity",
+      "label": "اعمال جریمه ۳۰۰ تومن برای پیک در صورت تکرار نپوشیدن لباس فرم در روز دوم",
+      "description": "این جریمه جزو قوانینی است که برای بخش ارسال گذاشته شده و در صورت تکرار در روز دوم اعمال می‌شود.",
+      "actor": "سرپرست بخش ارسال",
+      "icom": {
+        "inputs": [],
+        "controls": [
+          "جریمه ۳۰۰ تومن برای تکرار نپوشیدن لباس فرم در روز دوم"
+        ],
+        "outputs": [
+          "جریمه اعمال‌شده برای پیک"
+        ],
+        "mechanisms": [
+          "سرپرست بخش ارسال"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 1446.25
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260802-150557",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "logistics-002-n016",
+      "type": "activity",
+      "label": "اعلام عدم پوشش مناسب پیک به حسابداری طی نامه در پلتفرم میزیتو",
+      "description": "سرپرست بخش ارسال عدم پوشش مناسب را در طی نامه‌ای در همان پلتفرم ارتباطی مجموعه، میزیتو، به حسابداری اعلام می‌کند.",
+      "actor": "سرپرست بخش ارسال",
+      "icom": {
+        "inputs": [
+          "جریمه اعمال‌شده بابت عدم پوشش لباس فرم"
+        ],
+        "controls": [],
+        "outputs": [
+          "نامه اعلام عدم پوشش لباس فرم در پلتفرم میزیتو"
+        ],
+        "mechanisms": [
+          "سرپرست بخش ارسال",
+          "پلتفرم ارتباطی میزیتو"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 1446.25
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260802-150557",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "logistics-002-j6",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "join",
+      "position": {
+        "x": 1143,
+        "y": 1243.5
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "logistics-002-j7",
+      "type": "junction",
+      "junctionType": "AND",
+      "direction": "join",
+      "position": {
+        "x": 1143,
+        "y": 1637.25
+      },
+      "layout": "auto"
     }
   ],
   "edges": [
@@ -491,14 +663,6 @@
       "to": "logistics-002-j2"
     },
     {
-      "from": "logistics-002-j2",
-      "to": "logistics-002-n007"
-    },
-    {
-      "from": "logistics-002-n007",
-      "to": "logistics-002-n008"
-    },
-    {
       "from": "logistics-002-n008",
       "to": "logistics-002-n009"
     },
@@ -513,6 +677,66 @@
     {
       "from": "logistics-002-n011",
       "to": "logistics-002-n012"
+    },
+    {
+      "from": "logistics-002-j2",
+      "to": "logistics-002-j3"
+    },
+    {
+      "from": "logistics-002-j3",
+      "to": "logistics-002-n007"
+    },
+    {
+      "from": "logistics-002-j3",
+      "to": "logistics-002-n013"
+    },
+    {
+      "from": "logistics-002-n007",
+      "to": "logistics-002-j7"
+    },
+    {
+      "from": "logistics-002-n013",
+      "to": "logistics-002-j4"
+    },
+    {
+      "from": "logistics-002-j4",
+      "to": "logistics-002-j6",
+      "label": "پوشیدن لباس فرم"
+    },
+    {
+      "from": "logistics-002-j4",
+      "to": "logistics-002-n014",
+      "label": "نپوشیدن لباس فرم در روز اول"
+    },
+    {
+      "from": "logistics-002-n014",
+      "to": "logistics-002-j5"
+    },
+    {
+      "from": "logistics-002-j5",
+      "to": "logistics-002-n015",
+      "label": "تکرار نپوشیدن لباس فرم در روز دوم"
+    },
+    {
+      "from": "logistics-002-j5",
+      "to": "logistics-002-j6",
+      "label": "پوشیدن لباس فرم در روزهای بعد"
+    },
+    {
+      "from": "logistics-002-n015",
+      "to": "logistics-002-n016"
+    },
+    {
+      "from": "logistics-002-n016",
+      "to": "logistics-002-j6"
+    },
+    {
+      "from": "logistics-002-j6",
+      "to": "logistics-002-j7"
+    },
+    {
+      "from": "logistics-002-j7",
+      "to": "logistics-002-n008"
     }
   ],
   "pending": []
