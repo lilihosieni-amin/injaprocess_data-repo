@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-01T17:52:24Z",
-  "updated_at": "2026-08-01T17:52:24Z",
+  "updated_at": "2026-08-02T22:08:40Z",
   "idef0": {
     "inputs": [
       "کیوسک بیرون‌بر شعبه مرکزی",
@@ -140,5 +140,9 @@
       "to": "logistics-020-n003"
     }
   ],
-  "pending": []
+  "pending": [],
+  "tombstoned": true,
+  "superseded_by": [
+    "logistics-025"
+  ]
 }
