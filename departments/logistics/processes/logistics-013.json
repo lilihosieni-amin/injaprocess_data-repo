@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-01T17:52:22Z",
-  "updated_at": "2026-08-02T11:57:29Z",
+  "updated_at": "2026-08-02T11:58:23Z",
   "idef0": {
     "inputs": [
       "درخواست فوری مجموعه برای تهیه مواد یا ملزومات",
@@ -56,7 +56,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -89,7 +89,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -120,7 +120,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -151,8 +151,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 994,
-        "y": 179
+        "x": 818,
+        "y": 93
       },
       "layout": "manual",
       "source": {
@@ -169,7 +169,7 @@
       "direction": "split",
       "position": {
         "x": 103,
-        "y": 281.0
+        "y": 281
       },
       "layout": "auto",
       "removed": true
@@ -261,7 +261,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 965.0
+        "y": 965
       },
       "layout": "auto",
       "source": {
@@ -295,7 +295,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 1140.0
+        "y": 1140
       },
       "layout": "auto",
       "source": {
@@ -329,7 +329,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 1315.0
+        "y": 1315
       },
       "layout": "auto",
       "source": {
@@ -347,7 +347,7 @@
       "direction": "join",
       "position": {
         "x": 103,
-        "y": 456.0
+        "y": 456
       },
       "layout": "auto",
       "removed": true
@@ -375,7 +375,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
