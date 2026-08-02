@@ -10,10 +10,10 @@
   },
   "parent": {
     "process": "logistics-022",
-    "node": "logistics-022-n004"
+    "node": "logistics-022-n007"
   },
   "created_at": "2026-08-01T17:52:18Z",
-  "updated_at": "2026-08-01T22:24:26Z",
+  "updated_at": "2026-08-02T14:47:51Z",
   "idef0": {
     "inputs": [
       "ساعت خروج ثبت‌شده پیک هنگام تحویل پک غذا",
