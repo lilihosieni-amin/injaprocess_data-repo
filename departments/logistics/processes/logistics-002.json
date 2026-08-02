@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-01T17:52:16Z",
-  "updated_at": "2026-08-02T15:16:23Z",
+  "updated_at": "2026-08-02T15:25:41Z",
   "idef0": {
     "inputs": [
       "پیک موتوری وارد شده به شیفت",
@@ -218,8 +218,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1066,
-        "y": 515
+        "x": 1036.7296251018745,
+        "y": 303.94519152404234
       },
       "layout": "manual",
       "source": {
@@ -251,8 +251,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 526,
-        "y": 333.5249786376953
+        "x": 683.1356968215159,
+        "y": 262.6598604632862
       },
       "layout": "manual",
       "source": {
@@ -296,13 +296,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 440.0
+        "x": 976.2997147514259,
+        "y": 795.8661369193153
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -328,13 +330,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1621.25
+        "x": 1217.460880195599,
+        "y": 872.5446210268949
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -355,13 +359,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1621.25
+        "x": 1213.1915240423796,
+        "y": 1028.139771801141
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -387,13 +393,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1621.25
+        "x": 1204.300529747351,
+        "y": 1219.1674816625916
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -420,13 +428,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1621.25
+        "x": 1209.2744498777504,
+        "y": 1380.9248166259167
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -449,13 +459,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1796.25
+        "x": 1212.35554197229,
+        "y": 1556.502521393643
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -464,10 +476,10 @@
       "junctionType": "AND",
       "direction": "split",
       "position": {
-        "x": 623,
-        "y": 609.125
+        "x": 875.6495517522412,
+        "y": 700.017216788916
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "logistics-002-n013",
@@ -489,25 +501,16 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 746.25
+        "x": 535.7035452322739,
+        "y": 804.7907497962511
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260802-150557",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
-    },
-    {
-      "id": "logistics-002-j4",
-      "type": "junction",
-      "junctionType": "XOR",
-      "direction": "split",
-      "position": {
-        "x": 103,
-        "y": 762.25
-      },
-      "layout": "auto"
     },
     {
       "id": "logistics-002-n014",
@@ -529,25 +532,16 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1358.75
+        "x": 320.37938060309693,
+        "y": 818.0183374083131
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260802-150557",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
-    },
-    {
-      "id": "logistics-002-j5",
-      "type": "junction",
-      "junctionType": "XOR",
-      "direction": "split",
-      "position": {
-        "x": 363,
-        "y": 1374.75
-      },
-      "layout": "auto"
     },
     {
       "id": "logistics-002-n015",
@@ -569,13 +563,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1446.25
+        "x": 230.3231458842704,
+        "y": 1082.681132844336
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260802-150557",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -599,36 +595,16 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1446.25
+        "x": 219.1870415647923,
+        "y": 1343.033414832926
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260802-150557",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
-    },
-    {
-      "id": "logistics-002-j6",
-      "type": "junction",
-      "junctionType": "XOR",
-      "direction": "join",
-      "position": {
-        "x": 1143,
-        "y": 1243.5
-      },
-      "layout": "auto"
-    },
-    {
-      "id": "logistics-002-j7",
-      "type": "junction",
-      "junctionType": "AND",
-      "direction": "join",
-      "position": {
-        "x": 1143,
-        "y": 1637.25
-      },
-      "layout": "auto"
     }
   ],
   "edges": [
@@ -695,52 +671,23 @@
       "to": "logistics-002-n013"
     },
     {
-      "from": "logistics-002-n007",
-      "to": "logistics-002-j7"
-    },
-    {
-      "from": "logistics-002-n013",
-      "to": "logistics-002-j4"
-    },
-    {
-      "from": "logistics-002-j4",
-      "to": "logistics-002-j6",
-      "label": "پوشیدن لباس فرم"
-    },
-    {
-      "from": "logistics-002-j4",
-      "to": "logistics-002-n014",
-      "label": "نپوشیدن لباس فرم در روز اول"
-    },
-    {
-      "from": "logistics-002-n014",
-      "to": "logistics-002-j5"
-    },
-    {
-      "from": "logistics-002-j5",
-      "to": "logistics-002-n015",
-      "label": "تکرار نپوشیدن لباس فرم در روز دوم"
-    },
-    {
-      "from": "logistics-002-j5",
-      "to": "logistics-002-j6",
-      "label": "پوشیدن لباس فرم در روزهای بعد"
-    },
-    {
       "from": "logistics-002-n015",
       "to": "logistics-002-n016"
     },
     {
-      "from": "logistics-002-n016",
-      "to": "logistics-002-j6"
+      "from": "logistics-002-n014",
+      "to": "logistics-002-n015",
+      "label": ""
     },
     {
-      "from": "logistics-002-j6",
-      "to": "logistics-002-j7"
+      "from": "logistics-002-n013",
+      "to": "logistics-002-n014",
+      "label": ""
     },
     {
-      "from": "logistics-002-j7",
-      "to": "logistics-002-n008"
+      "from": "logistics-002-n007",
+      "to": "logistics-002-n008",
+      "label": ""
     }
   ],
   "pending": []
