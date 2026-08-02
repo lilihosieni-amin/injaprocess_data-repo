@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-01T17:52:22Z",
-  "updated_at": "2026-08-02T14:29:05Z",
+  "updated_at": "2026-08-02T14:30:42Z",
   "idef0": {
     "inputs": [
       "باکس اختصاصی کددار پیک موتوری",
@@ -67,8 +67,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 534,
-        "y": 165.47727584838867
+        "x": 507,
+        "y": 304.4772758483887
       },
       "layout": "manual",
       "source": {
@@ -131,8 +131,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 836,
-        "y": 513
+        "x": 938,
+        "y": 322.5
       },
       "layout": "manual",
       "source": {
@@ -148,8 +148,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 951,
-        "y": 701.25
+        "x": 1171.5,
+        "y": 376.75
       },
       "layout": "manual"
     },
@@ -173,8 +173,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1114,
-        "y": 797.5
+        "x": 1366.5,
+        "y": 395.5
       },
       "layout": "manual",
       "source": {
@@ -190,8 +190,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 991,
-        "y": 950.2916666666665
+        "x": 1260,
+        "y": 616.2916666666665
       },
       "layout": "manual"
     },
@@ -216,8 +216,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 922,
-        "y": 1063.2916666666665
+        "x": 1184,
+        "y": 740.2916666666665
       },
       "layout": "manual",
       "source": {
@@ -233,8 +233,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 979,
-        "y": 1271.2916666666665
+        "x": 1241,
+        "y": 912.7916666666665
       },
       "layout": "manual"
     },
@@ -258,8 +258,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1149.6957001744036,
-        "y": 1341.1301675891832
+        "x": 1348.1957001744036,
+        "y": 1021.1301675891832
       },
       "layout": "manual",
       "source": {
@@ -290,8 +290,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 862,
-        "y": 1490.5
+        "x": 959.5,
+        "y": 996.5
       },
       "layout": "manual",
       "source": {
@@ -333,8 +333,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 860,
-        "y": 1679.7533543904624
+        "x": 967,
+        "y": 1183.7533543904624
       },
       "layout": "manual",
       "source": {
@@ -367,8 +367,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 848,
-        "y": 1865.5266977945962
+        "x": 966.5,
+        "y": 1347.0266977945962
       },
       "layout": "manual",
       "source": {
@@ -401,8 +401,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 832,
-        "y": 2066.9166666666665
+        "x": 968,
+        "y": 1495.9166666666665
       },
       "layout": "manual",
       "source": {
@@ -418,8 +418,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 904,
-        "y": 2269.9166666666665
+        "x": 1033.5,
+        "y": 1663.4166666666665
       },
       "layout": "manual"
     },
@@ -444,8 +444,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 674,
-        "y": 2396.75
+        "x": 624.5,
+        "y": 1757.75
       },
       "layout": "manual",
       "source": {
@@ -477,8 +477,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 961.5,
-        "y": 2416.25
+        "x": 1260.5,
+        "y": 1749.25
       },
       "layout": "manual",
       "source": {
@@ -528,8 +528,8 @@
       "junctionType": "AND",
       "direction": "split",
       "position": {
-        "x": 879,
-        "y": 24.5
+        "x": 805.5,
+        "y": -4
       },
       "layout": "manual"
     },
@@ -553,8 +553,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1070,
-        "y": -25
+        "x": 969,
+        "y": -146.5
       },
       "layout": "manual",
       "source": {
@@ -584,8 +584,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 906,
-        "y": 154
+        "x": 963.5,
+        "y": 50
       },
       "layout": "manual",
       "source": {
@@ -601,8 +601,8 @@
       "junctionType": "AND",
       "direction": "join",
       "position": {
-        "x": 1111,
-        "y": 425
+        "x": 1231,
+        "y": -2.5
       },
       "layout": "manual"
     },
@@ -627,8 +627,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1271.4081313102895,
-        "y": 306.39531680738907
+        "x": 1330.9081313102895,
+        "y": -31.104683192610935
       },
       "layout": "manual",
       "source": {
