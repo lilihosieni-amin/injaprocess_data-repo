@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-03T09:37:44Z",
-  "updated_at": "2026-08-03T09:37:44Z",
+  "updated_at": "2026-08-03T09:51:03Z",
   "idef0": {
     "inputs": [
       "فیش سفارش چاپ‌شده در پرینتر آشپزخانه",
@@ -114,7 +114,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -147,7 +147,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -177,7 +177,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -208,7 +208,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -237,7 +237,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -278,7 +278,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -375,7 +375,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 615.0
+        "y": 615
       },
       "layout": "auto",
       "source": {
@@ -402,7 +402,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 615.0
+        "y": 615
       },
       "layout": "auto",
       "source": {
@@ -432,7 +432,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 615.0
+        "y": 615
       },
       "layout": "auto",
       "source": {
@@ -459,7 +459,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 615.0
+        "y": 615
       },
       "layout": "auto",
       "source": {
@@ -474,7 +474,7 @@
       "direction": "split",
       "position": {
         "x": 1143,
-        "y": 631.0
+        "y": 631
       },
       "layout": "auto"
     },
@@ -567,13 +567,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1490.0
+        "x": 366,
+        "y": 1502
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260802-merge-21-31",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -582,10 +584,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 103,
-        "y": 1374.75
+        "x": 243,
+        "y": 1382.75
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "logistics-026-n016",
@@ -607,13 +609,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 2190.0
+        "x": 76,
+        "y": 1510
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260802-merge-21-31",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -634,13 +638,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 2190.0
+        "x": 316,
+        "y": 1654
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260802-merge-21-31",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -679,13 +685,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 790.0
+        "x": 1332,
+        "y": 986
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260802-merge-21-31",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -806,13 +814,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1096.25
+        "x": -74,
+        "y": 1120.25
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260802-merge-21-31",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -821,10 +831,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 1943.5
+        "x": 15,
+        "y": 1927.5
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "logistics-026-n023",
@@ -849,13 +859,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1840.0
+        "x": 208,
+        "y": 2124
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260802-merge-21-31",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -879,13 +891,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 2015.0
+        "x": 288,
+        "y": 1861
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260802-merge-21-31",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -910,13 +924,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 2015.0
+        "x": 530,
+        "y": 1871
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260802-merge-21-31",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -941,13 +957,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 2015.0
+        "x": 800,
+        "y": 1865
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260802-merge-21-31",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -973,13 +991,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 2015.0
+        "x": 1014,
+        "y": 1875
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260802-merge-21-31",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1028,7 +1048,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 2540.0
+        "y": 2540
       },
       "layout": "auto",
       "source": {
@@ -1105,7 +1125,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 2715.0
+        "y": 2715
       },
       "layout": "auto",
       "source": {
@@ -1139,7 +1159,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 2715.0
+        "y": 2715
       },
       "layout": "auto",
       "source": {
@@ -1171,7 +1191,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 2715.0
+        "y": 2715
       },
       "layout": "auto",
       "source": {
