@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-03T10:21:33Z",
-  "updated_at": "2026-08-03T10:31:07Z",
+  "updated_at": "2026-08-03T10:31:47Z",
   "idef0": {
     "inputs": [
       "فیش سفارش چاپ‌شده در پرینتر آشپزخانه",
@@ -498,8 +498,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1106,
-        "y": 1212.5
+        "x": 852,
+        "y": 814.5
       },
       "layout": "manual",
       "source": {
@@ -529,8 +529,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 824,
-        "y": 1230
+        "x": 622,
+        "y": 826
       },
       "layout": "manual",
       "source": {
@@ -558,8 +558,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 584,
-        "y": 1250
+        "x": 386,
+        "y": 832
       },
       "layout": "manual",
       "source": {
