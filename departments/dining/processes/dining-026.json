@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-22T05:13:00Z",
-  "updated_at": "2026-07-26T08:06:09Z",
+  "updated_at": "2026-08-03T07:10:59Z",
   "idef0": {
     "inputs": [
       "سالن نظافت‌نشده",
@@ -380,13 +380,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1227.5
+        "x": 1030,
+        "y": 789.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260722-050015",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -405,13 +407,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1227.5
+        "x": 1014,
+        "y": 971.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260722-050015",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -420,10 +424,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 623,
-        "y": 1243.5
+        "x": 741,
+        "y": 1029.5
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "dining-026-n017",
@@ -441,13 +445,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1315
+        "x": 366,
+        "y": 1149
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260722-050015",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -456,10 +462,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 103,
-        "y": 1243.5
+        "x": 303,
+        "y": 989.5
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "dining-026-n018",
@@ -482,13 +488,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1665
+        "x": 204,
+        "y": 1303
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260722-050015",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -515,13 +523,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1665
+        "x": 208,
+        "y": 1493
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260722-050015",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -530,10 +540,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 623,
-        "y": 1681
+        "x": 601,
+        "y": 1491
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "dining-026-n020",
@@ -551,8 +561,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 899,
-        "y": 1713
+        "x": 851,
+        "y": 1517
       },
       "layout": "manual",
       "source": {
@@ -584,13 +594,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1840
+        "x": 626,
+        "y": 1718
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260722-050015",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -599,8 +611,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1155,
-        "y": 1579.5
+        "x": 1047,
+        "y": 1383.5
       },
       "layout": "manual"
     },
@@ -620,8 +632,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1770,
-        "y": 1513.5
+        "x": 1292,
+        "y": 1795.5
       },
       "layout": "manual",
       "source": {
@@ -647,8 +659,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1625.5,
-        "y": 1804.5
+        "x": 1005.5,
+        "y": 1793.5451736450195
       },
       "layout": "manual",
       "source": {
@@ -672,8 +684,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1238,
-        "y": 1555.9902381896973
+        "x": 1150,
+        "y": 1511.9902381896973
       },
       "layout": "manual",
       "source": {
@@ -689,8 +701,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1458.4999389648438,
-        "y": 1586.657413482666
+        "x": 1206.4999389648438,
+        "y": 1684.657413482666
       },
       "layout": "manual"
     }
