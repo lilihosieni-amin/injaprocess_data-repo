@@ -9,11 +9,11 @@
     "run": "runs/chat/20260731-001500"
   },
   "parent": {
-    "process": "cashier-031",
-    "node": "cashier-031-n016"
+    "process": "logistics-026",
+    "node": "logistics-026-n032"
   },
   "created_at": "2026-07-31T00:45:16Z",
-  "updated_at": "2026-07-31T08:06:00Z",
+  "updated_at": "2026-08-03T10:07:37Z",
   "idef0": {
     "inputs": [
       "سفارش تحویل‌شده به پیک برای ارسال",

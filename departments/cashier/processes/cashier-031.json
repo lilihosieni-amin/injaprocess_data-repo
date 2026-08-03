@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-26T10:39:13Z",
-  "updated_at": "2026-08-03T09:43:57Z",
+  "updated_at": "2026-08-03T10:07:38Z",
   "idef0": {
     "inputs": [
       "سفارش حضوری ثبت‌شده در سیستم سپیدز",
@@ -1789,5 +1789,7 @@
       "to": "cashier-031-j6"
     }
   ],
-  "pending": []
+  "pending": [],
+  "tombstoned": true,
+  "superseded_by": []
 }
