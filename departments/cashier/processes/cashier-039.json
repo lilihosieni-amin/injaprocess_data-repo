@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-03T10:21:33Z",
-  "updated_at": "2026-08-03T10:21:36Z",
+  "updated_at": "2026-08-03T10:31:07Z",
   "idef0": {
     "inputs": [
       "فیش سفارش چاپ‌شده در پرینتر آشپزخانه",
@@ -114,7 +114,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -147,7 +147,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -177,7 +177,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -208,7 +208,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -237,7 +237,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -278,7 +278,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -375,7 +375,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 615.0
+        "y": 615
       },
       "layout": "auto",
       "source": {
@@ -402,7 +402,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 615.0
+        "y": 615
       },
       "layout": "auto",
       "source": {
@@ -432,7 +432,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 615.0
+        "y": 615
       },
       "layout": "auto",
       "source": {
@@ -459,7 +459,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 615.0
+        "y": 615
       },
       "layout": "auto",
       "source": {
@@ -474,7 +474,7 @@
       "direction": "split",
       "position": {
         "x": 1143,
-        "y": 631.0
+        "y": 631
       },
       "layout": "auto"
     },
@@ -498,94 +498,16 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1402.5
+        "x": 1106,
+        "y": 1212.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260803-cashier-copy",
-        "touched_by": []
-      }
-    },
-    {
-      "id": "cashier-039-n014",
-      "type": "activity",
-      "label": "پیگیری با مشتری برای اطمینان از گرفتن اسنپ",
-      "description": "صندوق‌دار دوباره پیگیری می‌کند که مشتری اسنپ گرفته یا نه.",
-      "actor": "صندوق‌دار",
-      "icom": {
-        "inputs": [],
-        "controls": [
-          "پیگیری سفارش‌های معطل و اطلاع‌رسانی به مشتری (شرح شغل صندوق‌دار)"
-        ],
-        "outputs": [
-          "وضعیت گرفتن اسنپ توسط مشتری"
-        ],
-        "mechanisms": [
-          "صندوق‌دار"
+        "touched_by": [
+          "ui-edit"
         ]
-      },
-      "subprocess": null,
-      "position": {
-        "x": 820,
-        "y": 1402.5
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/chat/20260803-cashier-copy",
-        "touched_by": []
       }
-    },
-    {
-      "id": "cashier-039-j4",
-      "type": "junction",
-      "junctionType": "XOR",
-      "direction": "split",
-      "position": {
-        "x": 623,
-        "y": 1418.5
-      },
-      "layout": "auto"
-    },
-    {
-      "id": "cashier-039-n015",
-      "type": "activity",
-      "label": "گرفتن آژانس برای مشتری توسط صندوق‌دار",
-      "description": "قاعدهٔ اصلی این است که تا حد امکان خود مشتری اسنپ/آژانس را بگیرد؛ گرفتن آژانس توسط صندوق‌دار حالت استثناست و تنها وقتی انجام می‌شود که مشتری نتواند خودش بگیرد (مثلاً اسنپ ندارد). در این حالت صندوق‌دار برای مشتری آژانس می‌گیرد تا غذا ارسال شود؛ اینجا دیگر اسنپ باکس نداریم. تلاش بر این است که هماهنگی آژانس با خود مشتری باشد، چون در شرایط شلوغی صندوق فرصت پیگیری آژانس را ندارد و ممکن است مشتری وجه آژانس را پرداخت نکند.",
-      "actor": "صندوق‌دار",
-      "icom": {
-        "inputs": [],
-        "controls": [
-          "اولویت گرفتن اسنپ توسط خود مشتری و استثنا بودن گرفتن آژانس توسط صندوق‌دار"
-        ],
-        "outputs": [
-          "آژانس گرفته‌شده برای ارسال سفارش"
-        ],
-        "mechanisms": [
-          "صندوق‌دار"
-        ]
-      },
-      "subprocess": null,
-      "position": {
-        "x": 300,
-        "y": 1490.0
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/chat/20260803-cashier-copy",
-        "touched_by": []
-      }
-    },
-    {
-      "id": "cashier-039-j5",
-      "type": "junction",
-      "junctionType": "XOR",
-      "direction": "join",
-      "position": {
-        "x": 103,
-        "y": 1374.75
-      },
-      "layout": "auto"
     },
     {
       "id": "cashier-039-n016",
@@ -607,13 +529,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 2190.0
+        "x": 824,
+        "y": 1230
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260803-cashier-copy",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -634,13 +558,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 2190.0
+        "x": 584,
+        "y": 1250
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260803-cashier-copy",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -679,13 +605,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 790.0
+        "x": 1326,
+        "y": 992
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260803-cashier-copy",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -821,10 +749,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 1943.5
+        "x": 43,
+        "y": 1443.5
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cashier-039-n023",
@@ -849,13 +777,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1840.0
+        "x": 358,
+        "y": 1404
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260803-cashier-copy",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -879,13 +809,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 2015.0
+        "x": 306,
+        "y": 1599
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260803-cashier-copy",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -910,13 +842,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 2015.0
+        "x": 566,
+        "y": 1607
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260803-cashier-copy",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -941,13 +875,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 2015.0
+        "x": 802,
+        "y": 1613
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260803-cashier-copy",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -973,13 +909,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 2015.0
+        "x": 1070,
+        "y": 1627
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260803-cashier-copy",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -988,10 +926,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1143,
-        "y": 2468.5
+        "x": 1507,
+        "y": 1512.5
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cashier-039-j9",
@@ -999,10 +937,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 2468.5
+        "x": 1395,
+        "y": 1938.5
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cashier-039-n028",
@@ -1027,13 +965,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 2540.0
+        "x": 1052,
+        "y": 2018
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260803-cashier-copy",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1042,10 +982,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 363,
-        "y": 2468.5
+        "x": 927,
+        "y": 1894.5
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cashier-039-n029",
@@ -1072,13 +1012,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 2452.5
+        "x": 678,
+        "y": 1860.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260803-cashier-copy",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1104,13 +1046,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 2715.0
+        "x": 372,
+        "y": 1867
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260803-cashier-copy",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1138,13 +1082,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 2715.0
+        "x": 118,
+        "y": 1845
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260803-cashier-copy",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1181,14 +1127,15 @@
       },
       "subprocess": "cashier-037",
       "position": {
-        "x": 560,
-        "y": 2715.0
+        "x": 166,
+        "y": 2079
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260803-cashier-copy",
         "touched_by": [
-          "runs/chat/20260803-cashier-copy"
+          "runs/chat/20260803-cashier-copy",
+          "ui-edit"
         ]
       }
     }
@@ -1259,38 +1206,12 @@
     {
       "from": "cashier-039-j3",
       "to": "cashier-039-n013",
-      "label": "سفارش مناطق بدون آدرس دقیق مانند زیارت"
+      "label": "سفارش مناطق بدون آدرس یا خارج از محدوده با آژانس یا اسنپ"
     },
     {
       "from": "cashier-039-j3",
       "to": "cashier-039-j6",
       "label": "ارسال با پیک مجموعه"
-    },
-    {
-      "from": "cashier-039-n013",
-      "to": "cashier-039-n014"
-    },
-    {
-      "from": "cashier-039-n014",
-      "to": "cashier-039-j4"
-    },
-    {
-      "from": "cashier-039-j4",
-      "to": "cashier-039-j5",
-      "label": "مشتری خودش اسنپ گرفته"
-    },
-    {
-      "from": "cashier-039-j4",
-      "to": "cashier-039-n015",
-      "label": "مشتری نتوانسته اسنپ بگیرد"
-    },
-    {
-      "from": "cashier-039-n015",
-      "to": "cashier-039-j5"
-    },
-    {
-      "from": "cashier-039-j5",
-      "to": "cashier-039-n016"
     },
     {
       "from": "cashier-039-n016",
@@ -1389,6 +1310,11 @@
     {
       "from": "cashier-039-n031",
       "to": "cashier-039-n032"
+    },
+    {
+      "from": "cashier-039-n013",
+      "to": "cashier-039-n016",
+      "label": ""
     }
   ],
   "pending": []
