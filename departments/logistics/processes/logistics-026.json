@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-03T09:37:44Z",
-  "updated_at": "2026-08-03T09:51:03Z",
+  "updated_at": "2026-08-03T10:02:10Z",
   "idef0": {
     "inputs": [
       "فیش سفارش چاپ‌شده در پرینتر آشپزخانه",
@@ -504,8 +504,11 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260802-merge-21-31",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260803-026-edit"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "logistics-026-n014",
@@ -533,8 +536,11 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260802-merge-21-31",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260803-026-edit"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "logistics-026-j4",
@@ -545,7 +551,8 @@
         "x": 623,
         "y": 1418.5
       },
-      "layout": "auto"
+      "layout": "auto",
+      "removed": true
     },
     {
       "id": "logistics-026-n015",
@@ -574,9 +581,11 @@
       "source": {
         "created_by": "runs/chat/20260802-merge-21-31",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260803-026-edit"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "logistics-026-j5",
@@ -587,7 +596,8 @@
         "x": 243,
         "y": 1382.75
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "logistics-026-n016",
@@ -616,9 +626,11 @@
       "source": {
         "created_by": "runs/chat/20260802-merge-21-31",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260803-026-edit"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "logistics-026-n017",
@@ -781,7 +793,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 1052.5
+        "y": 1752.5
       },
       "layout": "auto",
       "source": {
@@ -1008,8 +1020,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1143,
-        "y": 2468.5
+        "x": 363,
+        "y": 2206.0
       },
       "layout": "auto"
     },
@@ -1019,8 +1031,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 2468.5
+        "x": 103,
+        "y": 2206.0
       },
       "layout": "auto"
     },
@@ -1047,8 +1059,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 2540
+        "x": 40,
+        "y": 2715.0
       },
       "layout": "auto",
       "source": {
@@ -1063,7 +1075,7 @@
       "direction": "join",
       "position": {
         "x": 363,
-        "y": 2468.5
+        "y": 2643.5
       },
       "layout": "auto"
     },
@@ -1092,8 +1104,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 2452.5
+        "x": 560,
+        "y": 2627.5
       },
       "layout": "auto",
       "source": {
@@ -1124,8 +1136,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 2715
+        "x": 820,
+        "y": 2627.5
       },
       "layout": "auto",
       "source": {
@@ -1158,8 +1170,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 2715
+        "x": 1080,
+        "y": 2627.5
       },
       "layout": "auto",
       "source": {
@@ -1190,14 +1202,121 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 2715
+        "x": 1080,
+        "y": 2890.0
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260802-merge-21-31",
         "touched_by": []
       }
+    },
+    {
+      "id": "logistics-026-n033",
+      "type": "activity",
+      "label": "ارسال سفارش خارج از محدوده با آژانس یا اسنپ شخصی مشتری",
+      "description": "سفارش‌هایی که آدرسشان خارج از محدوده ارسال مجموعه است با آژانس ارسال می‌شود یا مشتری خودش با اسنپ شخصی برای دریافت مراجعه می‌کند. جزئیات این مسیر در زیرفرایند همین گره آمده است.",
+      "actor": "سرپرست بخش لجستیک",
+      "icom": {
+        "inputs": [
+          "سفارش مشتری با آدرس خارج از محدوده ارسال",
+          "فیش آژانسی",
+          "بسته غذای آماده"
+        ],
+        "controls": [
+          "محدوده (زون) تعیین‌شده ارسال مجموعه که داخل سایت و دلینو بسته شده است",
+          "بر عهده مشتری بودن هزینه ارسال آژانس",
+          "الزام واریز و تصفیه مبلغ غذا پیش از ارسال سفارش آژانسی",
+          "عدم امکان تحویل غذا به اسنپ توسط رستوران"
+        ],
+        "outputs": [
+          "سفارش خارج از محدوده تحویل‌شده به مشتری",
+          "هزینه ارسال پرداخت‌شده توسط مشتری به آژانس"
+        ],
+        "mechanisms": [
+          "سرپرست بخش لجستیک",
+          "صندوق",
+          "آژانس میهن",
+          "سامانه ثبت سفارش آنلاین (سایت و دلینو)",
+          "مشتری"
+        ]
+      },
+      "subprocess": "logistics-007",
+      "position": {
+        "x": 1080,
+        "y": 1315.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260803-026-edit",
+        "touched_by": [
+          "runs/chat/20260803-026-edit"
+        ]
+      }
+    },
+    {
+      "id": "logistics-026-j11",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "split",
+      "position": {
+        "x": 363,
+        "y": 1175.4444444444443
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "logistics-026-n034",
+      "type": "activity",
+      "label": "تأمین ظرفیت ارسال در اوج شلوغی با پیک آزاد و آژانس ساعتی",
+      "description": "وقتی ناوگان پیک‌های حاضر کفاف حجم سفارش‌ها را ندهد، ظرفیت ارسال با دعوت از همکاران پیک موتوری آزاد یا گرفتن راننده کمکی به‌صورت آژانس ساعتی تأمین می‌شود. جزئیات این مسیر در زیرفرایند همین گره آمده است.",
+      "actor": "سرپرست بخش لجستیک",
+      "icom": {
+        "inputs": [
+          "تعداد فاکتورها و سفارش‌های ورودی در طول شیفت",
+          "فیش‌های آماده ارسال در اوج شلوغی"
+        ],
+        "controls": [
+          "تشخیص سرپرست بخش لجستیک درباره تعداد فاکتوری که از آن به بعد ممکن است مشکل‌ساز شود",
+          "الزام به مختل نشدن سرویس‌دهی در اوج شلوغی",
+          "مبلغ توافقی به ازای هر مسیر که سرپرست بخش لجستیک تعیین می‌کند"
+        ],
+        "outputs": [
+          "ظرفیت ارسال تأمین‌شده در اوج شلوغی",
+          "دستمزد پرداخت‌شده به پیک آزاد یا راننده آژانس"
+        ],
+        "mechanisms": [
+          "سرپرست بخش لجستیک",
+          "همکاران پیک موتوری آزاد",
+          "آژانس و راننده‌های آن",
+          "صندوق",
+          "حسابداری",
+          "پلتفرم میزیتو"
+        ]
+      },
+      "subprocess": "logistics-008",
+      "position": {
+        "x": 40,
+        "y": 1246.9444444444443
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260803-026-edit",
+        "touched_by": [
+          "runs/chat/20260803-026-edit"
+        ]
+      }
+    },
+    {
+      "id": "logistics-026-j12",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "join",
+      "position": {
+        "x": 103,
+        "y": 1768.5
+      },
+      "layout": "auto"
     }
   ],
   "edges": [
@@ -1265,43 +1384,8 @@
     },
     {
       "from": "logistics-026-j3",
-      "to": "logistics-026-n013",
-      "label": "سفارش مناطق بدون آدرس دقیق مانند زیارت"
-    },
-    {
-      "from": "logistics-026-j3",
       "to": "logistics-026-j6",
       "label": "ارسال با پیک مجموعه"
-    },
-    {
-      "from": "logistics-026-n013",
-      "to": "logistics-026-n014"
-    },
-    {
-      "from": "logistics-026-n014",
-      "to": "logistics-026-j4"
-    },
-    {
-      "from": "logistics-026-j4",
-      "to": "logistics-026-j5",
-      "label": "مشتری خودش اسنپ گرفته"
-    },
-    {
-      "from": "logistics-026-j4",
-      "to": "logistics-026-n015",
-      "label": "مشتری نتوانسته اسنپ بگیرد"
-    },
-    {
-      "from": "logistics-026-n015",
-      "to": "logistics-026-j5"
-    },
-    {
-      "from": "logistics-026-j5",
-      "to": "logistics-026-n016"
-    },
-    {
-      "from": "logistics-026-n016",
-      "to": "logistics-026-n017"
     },
     {
       "from": "logistics-026-j6",
@@ -1316,10 +1400,6 @@
     {
       "from": "logistics-026-n019",
       "to": "logistics-026-n020"
-    },
-    {
-      "from": "logistics-026-n020",
-      "to": "logistics-026-n021"
     },
     {
       "from": "logistics-026-n021",
@@ -1396,6 +1476,37 @@
     {
       "from": "logistics-026-n031",
       "to": "logistics-026-n032"
+    },
+    {
+      "from": "logistics-026-j3",
+      "to": "logistics-026-n033",
+      "label": "سفارش خارج از محدوده ارسال یا مناطق بدون آدرس دقیق مانند زیارت"
+    },
+    {
+      "from": "logistics-026-n033",
+      "to": "logistics-026-n017"
+    },
+    {
+      "from": "logistics-026-n020",
+      "to": "logistics-026-j11"
+    },
+    {
+      "from": "logistics-026-j11",
+      "to": "logistics-026-j12",
+      "label": "در صورت کفایت ناوگان پیک حاضر"
+    },
+    {
+      "from": "logistics-026-j11",
+      "to": "logistics-026-n034",
+      "label": "در اوج شلوغی و ناکافی بودن ناوگان پیک حاضر"
+    },
+    {
+      "from": "logistics-026-n034",
+      "to": "logistics-026-j12"
+    },
+    {
+      "from": "logistics-026-j12",
+      "to": "logistics-026-n021"
     }
   ],
   "pending": []

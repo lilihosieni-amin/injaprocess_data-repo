@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-01T19:21:57Z",
-  "updated_at": "2026-08-03T09:44:02Z",
+  "updated_at": "2026-08-03T10:02:11Z",
   "idef0": {
     "inputs": [
       "فیش سفارش چاپ‌شده در پرینتر آشپزخانه",
@@ -1033,5 +1033,7 @@
       "to": "logistics-021-n024"
     }
   ],
-  "pending": []
+  "pending": [],
+  "tombstoned": true,
+  "superseded_by": []
 }

@@ -8,9 +8,12 @@
     "ref": "20260801-095130",
     "run": "runs/logistics/20260801-095130"
   },
-  "parent": null,
+  "parent": {
+    "process": "logistics-026",
+    "node": "logistics-026-n033"
+  },
   "created_at": "2026-08-01T17:52:17Z",
-  "updated_at": "2026-08-03T09:43:59Z",
+  "updated_at": "2026-08-03T10:02:10Z",
   "idef0": {
     "inputs": [
       "سفارش مشتری با آدرس خارج از محدوده ارسال",
