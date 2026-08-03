@@ -3,11 +3,11 @@
   "order": [
     "logistics-001",
     "logistics-002",
+    "logistics-026",
+    "logistics-008",
+    "logistics-007",
     "logistics-005",
     "logistics-006",
-    "logistics-026",
-    "logistics-007",
-    "logistics-008",
     "logistics-009",
     "logistics-010",
     "logistics-011",
@@ -19,5 +19,5 @@
     "logistics-025",
     "logistics-024"
   ],
-  "updated_at": "2026-08-03T21:38:31Z"
+  "updated_at": "2026-08-03T21:51:07Z"
 }
