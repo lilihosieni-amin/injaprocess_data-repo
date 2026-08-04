@@ -13,7 +13,7 @@
     "node": "logistics-026-n033"
   },
   "created_at": "2026-08-01T17:52:17Z",
-  "updated_at": "2026-08-03T10:02:10Z",
+  "updated_at": "2026-08-04T22:17:07Z",
   "idef0": {
     "inputs": [
       "سفارش مشتری با آدرس خارج از محدوده ارسال",
@@ -119,7 +119,7 @@
       "type": "activity",
       "label": "اعلام تلفنی به مشتری که آدرس در محدوده ارسال نیست و هزینه آژانس بر عهده خود اوست",
       "description": "در سفارش‌های تلفنی که صندوق ثبت می‌کند، صندوق به مشتری اعلام می‌کند که آدرس او در محدوده ارسال مجموعه نیست و هزینه ارسال را باید خودش پرداخت کند. مشتریان ثابت خارج از شهر معمولاً از مبلغ هزینه آژانس آگاه‌اند و از این بابت مشکلی ندارند.",
-      "actor": "صندوق",
+      "actor": "صندوق‌دار",
       "icom": {
         "inputs": [
           "تماس تلفنی مشتری"
@@ -131,7 +131,7 @@
           "اطلاع‌رسانی آژانسی بودن ارسال به مشتری"
         ],
         "mechanisms": [
-          "صندوق"
+          "صندوق‌دار"
         ]
       },
       "subprocess": null,
@@ -143,7 +143,8 @@
       "source": {
         "created_by": "runs/logistics/20260801-095130",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260804-role-rename"
         ]
       }
     },
@@ -240,7 +241,7 @@
         ],
         "mechanisms": [
           "سرپرست بخش لجستیک",
-          "صندوق"
+          "صندوق‌دار"
         ]
       },
       "subprocess": null,
@@ -253,7 +254,8 @@
         "created_by": "runs/logistics/20260801-095130",
         "touched_by": [
           "ui-edit",
-          "runs/chat/20260803-rename-role"
+          "runs/chat/20260803-rename-role",
+          "runs/chat/20260804-role-rename"
         ]
       }
     },
@@ -319,7 +321,7 @@
         ],
         "mechanisms": [
           "سرپرست بخش لجستیک",
-          "صندوق"
+          "صندوق‌دار"
         ]
       },
       "subprocess": null,
@@ -332,7 +334,8 @@
         "created_by": "runs/logistics/20260801-095130",
         "touched_by": [
           "ui-edit",
-          "runs/chat/20260803-rename-role"
+          "runs/chat/20260803-rename-role",
+          "runs/chat/20260804-role-rename"
         ]
       }
     },

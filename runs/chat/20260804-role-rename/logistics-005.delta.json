@@ -1,0 +1,149 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "revise_nodes": [
+    {
+      "id": "logistics-005-n001",
+      "set": {
+        "actor": "پیک"
+      }
+    },
+    {
+      "id": "logistics-005-n002",
+      "set": {
+        "actor": "پیک"
+      }
+    },
+    {
+      "id": "logistics-005-n003",
+      "set": {
+        "actor": "پیک"
+      }
+    },
+    {
+      "id": "logistics-005-n004",
+      "set": {
+        "actor": "پیک"
+      }
+    },
+    {
+      "id": "logistics-005-n005",
+      "set": {
+        "actor": "پیک"
+      }
+    },
+    {
+      "id": "logistics-005-n006",
+      "set": {
+        "actor": "پیک"
+      }
+    },
+    {
+      "id": "logistics-005-n009",
+      "set": {
+        "actor": "پیک"
+      }
+    },
+    {
+      "id": "logistics-005-n010",
+      "set": {
+        "actor": "پیک"
+      }
+    },
+    {
+      "id": "logistics-005-n011",
+      "set": {
+        "actor": "پیک"
+      }
+    },
+    {
+      "id": "logistics-005-n012",
+      "set": {
+        "actor": "پیک"
+      }
+    },
+    {
+      "id": "logistics-005-n013",
+      "set": {
+        "actor": "پیک"
+      }
+    },
+    {
+      "id": "logistics-005-n014",
+      "set": {
+        "actor": "پیک"
+      }
+    },
+    {
+      "id": "logistics-005-n015",
+      "set": {
+        "actor": "پیک"
+      }
+    },
+    {
+      "id": "logistics-005-n016",
+      "set": {
+        "actor": "پیک"
+      }
+    },
+    {
+      "id": "logistics-005-n019",
+      "set": {
+        "actor": "پیک",
+        "icom": {
+          "inputs": [],
+          "controls": [
+            "الزام هماهنگی مستقیم با سرپرست بخش لجستیک"
+          ],
+          "outputs": [
+            "اطلاع جا ماندن نوشابه خانواده"
+          ],
+          "mechanisms": [
+            "پیک",
+            "تماس تلفنی"
+          ]
+        }
+      }
+    },
+    {
+      "id": "logistics-005-n021",
+      "set": {
+        "actor": "پیک",
+        "icom": {
+          "inputs": [
+            "دستور فوری سرپرست بخش لجستیک"
+          ],
+          "controls": [],
+          "outputs": [
+            "نوشابه خانواده خریداری‌شده"
+          ],
+          "mechanisms": [
+            "پیک",
+            "سوپرمارکت نزدیک محل مشتری"
+          ]
+        }
+      }
+    },
+    {
+      "id": "logistics-005-n022",
+      "set": {
+        "actor": "پیک",
+        "icom": {
+          "inputs": [
+            "نوشابه خانواده خریداری‌شده"
+          ],
+          "controls": [],
+          "outputs": [
+            "سفارش تکمیل‌شده و تحویل‌شده به مشتری"
+          ],
+          "mechanisms": [
+            "پیک"
+          ]
+        }
+      }
+    }
+  ],
+  "remove_edges": [],
+  "flag_removed": []
+}

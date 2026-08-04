@@ -1,0 +1,28 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "revise_nodes": [
+    {
+      "id": "logistics-009-n005",
+      "set": {
+        "actor": "پیک",
+        "icom": {
+          "inputs": [],
+          "controls": [
+            "الزام اطلاع لحظه‌ای مشکل مسیر به سرپرست بخش لجستیک"
+          ],
+          "outputs": [
+            "اطلاع مشکل و علت توقف پیک"
+          ],
+          "mechanisms": [
+            "پیک",
+            "تلفن"
+          ]
+        }
+      }
+    }
+  ],
+  "remove_edges": [],
+  "flag_removed": []
+}

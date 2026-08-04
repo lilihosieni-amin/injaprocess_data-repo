@@ -1,0 +1,15 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "revise_nodes": [
+    {
+      "id": "cashier-030-n016",
+      "set": {
+        "actor": "صندوق‌دار"
+      }
+    }
+  ],
+  "remove_edges": [],
+  "flag_removed": []
+}

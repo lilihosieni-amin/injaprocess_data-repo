@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-01T19:38:26Z",
-  "updated_at": "2026-08-03T09:44:02Z",
+  "updated_at": "2026-08-04T22:17:09Z",
   "idef0": {
     "inputs": [
       "درخواست مرخصی پیک موتوری",
@@ -205,7 +205,7 @@
         ],
         "mechanisms": [
           "سرپرست بخش لجستیک",
-          "پیک موتوری",
+          "پیک",
           "مدیریت",
           "سیستم بخش ارسال",
           "تلفن"
@@ -222,7 +222,8 @@
         "touched_by": [
           "runs/logistics/20260801-095130",
           "runs/chat/20260802-144740",
-          "runs/chat/20260803-rename-role"
+          "runs/chat/20260803-rename-role",
+          "runs/chat/20260804-role-rename"
         ]
       },
       "removed": true
@@ -349,7 +350,7 @@
         ],
         "mechanisms": [
           "سرپرست بخش لجستیک",
-          "پیک موتوری",
+          "پیک",
           "مدیریت",
           "سیستم بخش ارسال",
           "تلفن"
@@ -366,7 +367,8 @@
         "touched_by": [
           "runs/chat/20260802-144740",
           "ui-edit",
-          "runs/chat/20260803-rename-role"
+          "runs/chat/20260803-rename-role",
+          "runs/chat/20260804-role-rename"
         ]
       }
     },

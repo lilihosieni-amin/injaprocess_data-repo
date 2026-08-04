@@ -1,0 +1,45 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "revise_nodes": [
+    {
+      "id": "logistics-001-n014",
+      "set": {
+        "icom": {
+          "inputs": [],
+          "controls": [],
+          "outputs": [
+            "نیمکت مستقر در جایگاه پیک‌های موتوری"
+          ],
+          "mechanisms": [
+            "سرپرست بخش لجستیک",
+            "پیک",
+            "نظافتچی"
+          ]
+        }
+      }
+    },
+    {
+      "id": "logistics-001-n017",
+      "set": {
+        "actor": "پیک",
+        "icom": {
+          "inputs": [
+            "آب تصفیه‌آب داخل سالن"
+          ],
+          "controls": [],
+          "outputs": [
+            "آبسردکن دارای آب کافی"
+          ],
+          "mechanisms": [
+            "پیک",
+            "دستگاه تصفیه آب داخل سالن"
+          ]
+        }
+      }
+    }
+  ],
+  "remove_edges": [],
+  "flag_removed": []
+}

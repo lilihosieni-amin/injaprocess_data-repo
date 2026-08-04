@@ -1,0 +1,27 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "revise_nodes": [
+    {
+      "id": "logistics-008-n011",
+      "set": {
+        "actor": "صندوق‌دار",
+        "icom": {
+          "inputs": [
+            "تعداد سرویس‌های انجام‌شده توسط راننده آژانس"
+          ],
+          "controls": [],
+          "outputs": [
+            "هزینه تسویه‌شده راننده آژانس"
+          ],
+          "mechanisms": [
+            "صندوق‌دار"
+          ]
+        }
+      }
+    }
+  ],
+  "remove_edges": [],
+  "flag_removed": []
+}

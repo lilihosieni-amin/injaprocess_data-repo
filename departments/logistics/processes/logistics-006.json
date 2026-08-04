@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-01T17:52:17Z",
-  "updated_at": "2026-08-03T09:43:59Z",
+  "updated_at": "2026-08-04T22:17:06Z",
   "idef0": {
     "inputs": [
       "سفارش بیرون‌بر ثبت‌شده مشتری با اعلام تحویل حضوری",
@@ -48,7 +48,7 @@
           "سفارش بیرون‌بر ثبت‌شده با تحویل حضوری"
         ],
         "mechanisms": [
-          "صندوق",
+          "صندوق‌دار",
           "کیوسک بیرون‌بر",
           "سایت رستوران یا دلینو"
         ]
@@ -61,7 +61,9 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "runs/chat/20260804-role-rename"
+        ]
       }
     },
     {
@@ -103,7 +105,7 @@
       "type": "activity",
       "label": "تحویل فیش شماره‌دار سفارش به مشتری در صندوق",
       "description": "برای سفارش‌هایی که مشتری حضوری نزد صندوقدار ثبت کرده است، فیش شماره‌دار سفارش در صندوق به مشتری داده می‌شود.",
-      "actor": "همکار صندوق",
+      "actor": "صندوق‌دار",
       "icom": {
         "inputs": [],
         "controls": [],
@@ -111,7 +113,7 @@
           "فیش شماره‌دار سفارش در دست مشتری"
         ],
         "mechanisms": [
-          "صندوق"
+          "صندوق‌دار"
         ]
       },
       "subprocess": null,
@@ -123,7 +125,8 @@
       "source": {
         "created_by": "runs/logistics/20260801-095130",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260804-role-rename"
         ]
       }
     },
@@ -197,7 +200,7 @@
         "controls": [],
         "outputs": [],
         "mechanisms": [
-          "صندوق"
+          "صندوق‌دار"
         ]
       },
       "subprocess": null,
@@ -209,7 +212,8 @@
       "source": {
         "created_by": "runs/logistics/20260801-095130",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260804-role-rename"
         ]
       }
     },
@@ -229,7 +233,7 @@
       "type": "activity",
       "label": "بررسی و تطبیق مشخصات سفارش اینترنتی مشتری در صندوق",
       "description": "همکاران صندوق مشخصات اعلام‌شده مشتری را با سفارش‌های اینترنتی ثبت‌شده چک می‌کنند تا فیش درست او مشخص شود.",
-      "actor": "همکار صندوق",
+      "actor": "صندوق‌دار",
       "icom": {
         "inputs": [
           "مشخصات سفارش اینترنتی"
@@ -248,7 +252,9 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "runs/chat/20260804-role-rename"
+        ]
       }
     },
     {
@@ -256,7 +262,7 @@
       "type": "activity",
       "label": "پرینت گرفتن فیش سفارش اینترنتی توسط همکار صندوق",
       "description": "برای سفارش‌های اینترنتی (دلینو یا سایت رستوران) فیش باید در صندوق پرینت شود تا مبنای تحویل، شماره فیش باشد نه نام مشتری.",
-      "actor": "همکار صندوق",
+      "actor": "صندوق‌دار",
       "icom": {
         "inputs": [],
         "controls": [],
@@ -264,7 +270,7 @@
           "فیش پرینت‌شده سفارش اینترنتی"
         ],
         "mechanisms": [
-          "صندوق"
+          "صندوق‌دار"
         ]
       },
       "subprocess": null,
@@ -275,7 +281,9 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
-        "touched_by": []
+        "touched_by": [
+          "runs/chat/20260804-role-rename"
+        ]
       }
     },
     {
@@ -283,7 +291,7 @@
       "type": "activity",
       "label": "تحویل فیش پرینت‌شده به مشتری در صندوق",
       "description": "فیش پرینت‌شده از صندوق به مشتری داده می‌شود تا آن را به سرپرست بخش لجستیک بدهد.",
-      "actor": "همکار صندوق",
+      "actor": "صندوق‌دار",
       "icom": {
         "inputs": [],
         "controls": [],
@@ -301,7 +309,8 @@
       "source": {
         "created_by": "runs/logistics/20260801-095130",
         "touched_by": [
-          "runs/chat/20260803-rename-role"
+          "runs/chat/20260803-rename-role",
+          "runs/chat/20260804-role-rename"
         ]
       }
     },
@@ -465,7 +474,7 @@
           "سفارش تلفنی تسویه‌شده"
         ],
         "mechanisms": [
-          "صندوق"
+          "صندوق‌دار"
         ]
       },
       "subprocess": null,
@@ -477,7 +486,8 @@
       "source": {
         "created_by": "runs/chat/20260801-phone",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260804-role-rename"
         ]
       }
     }

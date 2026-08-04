@@ -1,0 +1,104 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "revise_nodes": [
+    {
+      "id": "logistics-006-n001",
+      "set": {
+        "icom": {
+          "inputs": [],
+          "controls": [],
+          "outputs": [
+            "سفارش بیرون‌بر ثبت‌شده با تحویل حضوری"
+          ],
+          "mechanisms": [
+            "صندوق‌دار",
+            "کیوسک بیرون‌بر",
+            "سایت رستوران یا دلینو"
+          ]
+        }
+      }
+    },
+    {
+      "id": "logistics-006-n003",
+      "set": {
+        "actor": "صندوق‌دار",
+        "icom": {
+          "inputs": [],
+          "controls": [],
+          "outputs": [
+            "فیش شماره‌دار سفارش در دست مشتری"
+          ],
+          "mechanisms": [
+            "صندوق‌دار"
+          ]
+        }
+      }
+    },
+    {
+      "id": "logistics-006-n006",
+      "set": {
+        "icom": {
+          "inputs": [
+            "مشخصات سفارش اینترنتی (نام و چهار رقم آخر شماره تماس)"
+          ],
+          "controls": [],
+          "outputs": [],
+          "mechanisms": [
+            "صندوق‌دار"
+          ]
+        }
+      }
+    },
+    {
+      "id": "logistics-006-n007",
+      "set": {
+        "actor": "صندوق‌دار"
+      }
+    },
+    {
+      "id": "logistics-006-n008",
+      "set": {
+        "actor": "صندوق‌دار",
+        "icom": {
+          "inputs": [],
+          "controls": [],
+          "outputs": [
+            "فیش پرینت‌شده سفارش اینترنتی"
+          ],
+          "mechanisms": [
+            "صندوق‌دار"
+          ]
+        }
+      }
+    },
+    {
+      "id": "logistics-006-n009",
+      "set": {
+        "actor": "صندوق‌دار"
+      }
+    },
+    {
+      "id": "logistics-006-n014",
+      "set": {
+        "icom": {
+          "inputs": [
+            "سفارش تلفنی ثبت‌شده"
+          ],
+          "controls": [
+            "الزام تسویه مبلغ سفارش تلفنی پیش از تحویل غذا"
+          ],
+          "outputs": [
+            "سفارش تلفنی تسویه‌شده"
+          ],
+          "mechanisms": [
+            "صندوق‌دار"
+          ]
+        }
+      }
+    }
+  ],
+  "remove_edges": [],
+  "flag_removed": []
+}

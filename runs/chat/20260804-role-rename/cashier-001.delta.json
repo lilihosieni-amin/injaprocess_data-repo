@@ -1,0 +1,44 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "revise_nodes": [
+    {
+      "id": "cashier-001-n014",
+      "set": {
+        "icom": {
+          "inputs": [],
+          "controls": [
+            "بر عهده‌ی بخش صندوق بودن تحویل و چک دستگاه پوز"
+          ],
+          "outputs": [
+            "دستگاه‌های پوز آماده تحویل"
+          ],
+          "mechanisms": [
+            "صندوق‌دار",
+            "کمد دستگاه‌های پوز"
+          ]
+        }
+      }
+    },
+    {
+      "id": "cashier-001-n015",
+      "set": {
+        "icom": {
+          "inputs": [
+            "دستگاه‌های پوز آماده تحویل"
+          ],
+          "controls": [],
+          "outputs": [
+            "دستگاه پوز تحویل‌شده به پیک"
+          ],
+          "mechanisms": [
+            "صندوق‌دار"
+          ]
+        }
+      }
+    }
+  ],
+  "remove_edges": [],
+  "flag_removed": []
+}
