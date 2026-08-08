@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-01T17:52:18Z",
-  "updated_at": "2026-08-04T22:37:06Z",
+  "updated_at": "2026-08-08T22:08:32Z",
   "idef0": {
     "inputs": [
       "سفارش تحویل‌نشده در محل مشتری",
@@ -74,10 +74,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 291.12847222222223
+        "x": 98,
+        "y": 267.12847222222223
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/logistics/20260801-095130",
         "touched_by": [
@@ -206,8 +206,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1237,
-        "y": 827.4444444444446
+        "x": 1109,
+        "y": 463.44444444444457
       },
       "layout": "manual"
     },
@@ -231,8 +231,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1448,
-        "y": 675.3854166666667
+        "x": 994,
+        "y": 586.8854624430339
       },
       "layout": "manual",
       "source": {
@@ -261,8 +261,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1504,
-        "y": 907.3854166666667
+        "x": 1204,
+        "y": 633.3854166666667
       },
       "layout": "manual",
       "source": {
@@ -293,8 +293,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1242,
-        "y": 954.1666666666667
+        "x": 1202,
+        "y": 794.1666666666667
       },
       "layout": "manual",
       "source": {
@@ -326,8 +326,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1027,
-        "y": 959.4166666666667
+        "x": 1209,
+        "y": 943.4166666666667
       },
       "layout": "manual",
       "source": {
@@ -345,8 +345,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1027,
-        "y": 1243.9166666666667
+        "x": 1075,
+        "y": 1245.9166666666667
       },
       "layout": "manual"
     },
@@ -374,7 +374,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1191,
+        "x": 1229,
         "y": 1347
       },
       "layout": "manual",
@@ -407,8 +407,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 796,
-        "y": 1359.6666666666667
+        "x": 880,
+        "y": 1358.738348642985
       },
       "layout": "manual",
       "source": {
@@ -440,8 +440,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 795,
-        "y": 1553.375
+        "x": 887,
+        "y": 1507.375
       },
       "layout": "manual",
       "source": {
@@ -458,8 +458,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1020,
-        "y": 1735.625
+        "x": 976,
+        "y": 1667.625
       },
       "layout": "manual"
     },
@@ -484,8 +484,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1269,
-        "y": 1990.25
+        "x": 1225,
+        "y": 1700.25
       },
       "layout": "manual",
       "source": {
@@ -605,8 +605,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 688,
-        "y": 1898.5416666666667
+        "x": 718,
+        "y": 1664.5416666666667
       },
       "layout": "manual"
     },
@@ -631,8 +631,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 514,
-        "y": 2029.5416666666667
+        "x": 654,
+        "y": 1783.5416666666667
       },
       "layout": "manual",
       "source": {
@@ -666,8 +666,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 495,
-        "y": 2209.166666666667
+        "x": 659,
+        "y": 1939.166666666667
       },
       "layout": "manual",
       "source": {
@@ -683,8 +683,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 914,
-        "y": 2430.166666666667
+        "x": 732,
+        "y": 2088.166666666667
       },
       "layout": "manual"
     },
@@ -709,8 +709,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1300,
-        "y": 2366.666666666667
+        "x": 980,
+        "y": 2126.666666666667
       },
       "layout": "manual",
       "source": {
@@ -741,8 +741,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 522,
-        "y": 2424.666666666667
+        "x": 450,
+        "y": 2180.666666666667
       },
       "layout": "manual",
       "source": {
@@ -758,8 +758,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 863,
-        "y": 438.38541666666674
+        "x": 893,
+        "y": 602.3854166666667
       },
       "layout": "manual"
     },
@@ -786,8 +786,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1102,
-        "y": 1110.65625
+        "x": 1216,
+        "y": 1100.65625
       },
       "layout": "manual",
       "source": {
@@ -922,6 +922,11 @@
     {
       "from": "logistics-010-n023",
       "to": "logistics-010-j3"
+    },
+    {
+      "from": "logistics-010-n012",
+      "to": "logistics-010-n015",
+      "label": ""
     }
   ],
   "pending": []
