@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T12:05:51Z",
-  "updated_at": "2026-08-17T22:30:03Z",
+  "updated_at": "2026-08-17T22:33:40Z",
   "idef0": {
     "inputs": [
       "مواد اولیه تحویل‌گرفته از انبار (فیله استریپس، فیله اسپایس، لقمه، پنیر، پودر پانکو، قارچ سوخاری سایز گردویی)",
@@ -563,8 +563,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1206,
-        "y": 881.5
+        "x": 972,
+        "y": 801.5
       },
       "layout": "manual",
       "source": {
@@ -784,8 +784,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1026,
-        "y": 2773.5833333333335
+        "x": 965,
+        "y": 2801.0833333333335
       },
       "layout": "manual",
       "source": {
@@ -796,21 +796,10 @@
       }
     },
     {
-      "id": "cooking-024-j3",
-      "type": "junction",
-      "junctionType": "XOR",
-      "direction": "split",
-      "position": {
-        "x": 1075,
-        "y": 2956.0833333333335
-      },
-      "layout": "manual"
-    },
-    {
       "id": "cooking-024-n022",
       "type": "activity",
-      "label": "سوراخ کردن پک اینجاباکس با انگشت برای علامت‌گذاری آن",
-      "description": "چون روی همه آیتم‌های سوخاری سیب قرار می‌گیرد، بدون این علامت نمی‌توان اینجاباکس را از سه تیکه و چهار تیکه تشخیص داد. این علامت مبنای دبل‌چک در کانتر است.",
+      "label": "مشخص کردن نام سوخاری روی جعبه آن",
+      "description": "چون روی همه آیتم‌های سوخاری سیب قرار می‌گیرد، بدون این علامت نمی‌توان اینجاباکس یا سایر سوخاری ها را را از سه تیکه و چهار تیکه تشخیص داد. این علامت مبنای دبل‌چک در کانتر است.",
       "actor": "پرسنل لاین سوخاری",
       "icom": {
         "inputs": [
@@ -828,8 +817,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1208,
-        "y": 3077.5833333333335
+        "x": 951,
+        "y": 3053.5833333333335
       },
       "layout": "manual",
       "source": {
@@ -838,17 +827,6 @@
           "ui-edit"
         ]
       }
-    },
-    {
-      "id": "cooking-024-j4",
-      "type": "junction",
-      "junctionType": "XOR",
-      "direction": "join",
-      "position": {
-        "x": 1039,
-        "y": 3256.0833333333335
-      },
-      "layout": "manual"
     },
     {
       "id": "cooking-024-n023",
@@ -1099,8 +1077,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1100,
-        "y": 1029.5
+        "x": 1108,
+        "y": 1085.5
       },
       "layout": "manual",
       "source": {
@@ -1350,10 +1328,10 @@
       "junctionType": "OR",
       "direction": "join",
       "position": {
-        "x": 883,
-        "y": 2461.2083333333335
+        "x": 1495,
+        "y": 636.8901723225913
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-024-j9",
@@ -1361,10 +1339,10 @@
       "junctionType": "AND",
       "direction": "split",
       "position": {
-        "x": 363,
-        "y": 3226.8333333333335
+        "x": 1609,
+        "y": 2304.8333333333335
       },
-      "layout": "auto"
+      "layout": "manual"
     }
   ],
   "edges": [
@@ -1404,28 +1382,6 @@
     {
       "from": "cooking-024-n020",
       "to": "cooking-024-n021"
-    },
-    {
-      "from": "cooking-024-n021",
-      "to": "cooking-024-j3"
-    },
-    {
-      "from": "cooking-024-j3",
-      "to": "cooking-024-n022",
-      "label": "در صورتی که آیتم اینجاباکس باشد"
-    },
-    {
-      "from": "cooking-024-j3",
-      "to": "cooking-024-j4",
-      "label": "در سایر آیتم‌های سوخاری"
-    },
-    {
-      "from": "cooking-024-n022",
-      "to": "cooking-024-j4"
-    },
-    {
-      "from": "cooking-024-j4",
-      "to": "cooking-024-n023"
     },
     {
       "from": "cooking-024-n024",
@@ -1575,6 +1531,16 @@
       "from": "cooking-024-j9",
       "to": "cooking-024-n034",
       "label": "به‌صورت دوره‌ای در طول شب"
+    },
+    {
+      "from": "cooking-024-n021",
+      "to": "cooking-024-n022",
+      "label": ""
+    },
+    {
+      "from": "cooking-024-n022",
+      "to": "cooking-024-n023",
+      "label": ""
     }
   ],
   "pending": []
