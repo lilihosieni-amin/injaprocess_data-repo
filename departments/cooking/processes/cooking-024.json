@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T12:05:51Z",
-  "updated_at": "2026-08-17T22:07:22Z",
+  "updated_at": "2026-08-17T22:14:58Z",
   "idef0": {
     "inputs": [
       "مواد اولیه تحویل‌گرفته از انبار (فیله استریپس، فیله اسپایس، لقمه، پنیر، پودر پانکو، قارچ سوخاری سایز گردویی)",
@@ -637,7 +637,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 2117.0833333333335
+        "y": 1978.2378472222224
       },
       "layout": "auto",
       "source": {
@@ -652,7 +652,7 @@
       "direction": "split",
       "position": {
         "x": 103,
-        "y": 2133.0833333333335
+        "y": 1994.2378472222224
       },
       "layout": "auto"
     },
@@ -684,7 +684,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 2904.5833333333335
+        "y": 3042.8211805555557
       },
       "layout": "auto",
       "source": {
@@ -719,7 +719,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 2729.5833333333335
+        "y": 2867.8211805555557
       },
       "layout": "auto",
       "source": {
@@ -818,7 +818,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 2729.5833333333335
+        "y": 2867.8211805555557
       },
       "layout": "auto",
       "source": {
@@ -833,7 +833,7 @@
       "direction": "split",
       "position": {
         "x": 1143,
-        "y": 3358.0833333333335
+        "y": 3496.3211805555557
       },
       "layout": "auto"
     },
@@ -860,7 +860,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 3429.5833333333335
+        "y": 3567.8211805555557
       },
       "layout": "auto",
       "source": {
@@ -875,7 +875,7 @@
       "direction": "join",
       "position": {
         "x": 623,
-        "y": 3358.0833333333335
+        "y": 3496.3211805555557
       },
       "layout": "auto"
     },
@@ -901,7 +901,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 3342.0833333333335
+        "y": 3480.3211805555557
       },
       "layout": "auto",
       "source": {
@@ -934,7 +934,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 1490.0
+        "y": 1140.0
       },
       "layout": "auto",
       "source": {
@@ -996,7 +996,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1490.0
+        "y": 1140.0
       },
       "layout": "auto",
       "source": {
@@ -1061,7 +1061,7 @@
       "direction": "join",
       "position": {
         "x": 623,
-        "y": 2133.0833333333335
+        "y": 1994.2378472222224
       },
       "layout": "auto"
     },
@@ -1274,7 +1274,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 3079.5833333333335
+        "y": 3217.8211805555557
       },
       "layout": "auto",
       "source": {
@@ -1309,7 +1309,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 3079.5833333333335
+        "y": 3217.8211805555557
       },
       "layout": "auto",
       "source": {
@@ -1344,13 +1344,24 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 2904.5833333333335
+        "y": 3042.8211805555557
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260817-cooking024d",
         "touched_by": []
       }
+    },
+    {
+      "id": "cooking-024-j7",
+      "type": "junction",
+      "junctionType": "OR",
+      "direction": "split",
+      "position": {
+        "x": 883,
+        "y": 806.0
+      },
+      "layout": "auto"
     }
   ],
   "edges": [
@@ -1387,11 +1398,6 @@
     {
       "from": "cooking-024-n011",
       "to": "cooking-024-n012"
-    },
-    {
-      "from": "cooking-024-n013",
-      "to": "cooking-024-n014",
-      "label": "قارچ درشت"
     },
     {
       "from": "cooking-024-n016",
@@ -1488,16 +1494,6 @@
       "to": "cooking-024-j6"
     },
     {
-      "from": "cooking-024-n013",
-      "to": "cooking-024-n015",
-      "label": "قارچ متوسط"
-    },
-    {
-      "from": "cooking-024-n013",
-      "to": "cooking-024-n028",
-      "label": "قارچ مازاد بر نیاز شب"
-    },
-    {
       "from": "cooking-024-n028",
       "to": "cooking-024-n029"
     },
@@ -1553,6 +1549,25 @@
     {
       "from": "cooking-024-j6",
       "to": "cooking-024-n016"
+    },
+    {
+      "from": "cooking-024-n013",
+      "to": "cooking-024-j7"
+    },
+    {
+      "from": "cooking-024-j7",
+      "to": "cooking-024-n014",
+      "label": "قارچ درشت"
+    },
+    {
+      "from": "cooking-024-j7",
+      "to": "cooking-024-n015",
+      "label": "قارچ متوسط"
+    },
+    {
+      "from": "cooking-024-j7",
+      "to": "cooking-024-n028",
+      "label": "قارچ مازاد بر نیاز شب"
     }
   ],
   "pending": []

@@ -1,0 +1,23 @@
+{
+  "add_nodes": [
+    {
+      "key": "jOR",
+      "type": "junction",
+      "junctionType": "OR",
+      "direction": "split"
+    }
+  ],
+  "add_edges": [
+    { "from": "cooking-024-n013", "to": "jOR" },
+    { "from": "jOR", "to": "cooking-024-n014", "label": "قارچ درشت" },
+    { "from": "jOR", "to": "cooking-024-n015", "label": "قارچ متوسط" },
+    { "from": "jOR", "to": "cooking-024-n028", "label": "قارچ مازاد بر نیاز شب" }
+  ],
+  "enrich_nodes": [],
+  "flag_removed": [],
+  "remove_edges": [
+    { "from": "cooking-024-n013", "to": "cooking-024-n014" },
+    { "from": "cooking-024-n013", "to": "cooking-024-n015" },
+    { "from": "cooking-024-n013", "to": "cooking-024-n028" }
+  ]
+}
