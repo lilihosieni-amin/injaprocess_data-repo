@@ -8,9 +8,12 @@
     "ref": "20260816-212142",
     "run": "runs/cooking/20260816-212142"
   },
-  "parent": null,
+  "parent": {
+    "process": "cooking-024",
+    "node": "cooking-024-n010"
+  },
   "created_at": "2026-08-17T09:05:29Z",
-  "updated_at": "2026-08-17T09:05:29Z",
+  "updated_at": "2026-08-17T21:35:33Z",
   "idef0": {
     "inputs": [
       "روغن مصرف‌شده سرخ‌کن‌های بخش سوخاری",
