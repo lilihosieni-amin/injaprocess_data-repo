@@ -1,0 +1,22 @@
+{
+  "add_nodes": [
+    {
+      "key": "jORjoin",
+      "type": "junction",
+      "junctionType": "OR",
+      "direction": "join"
+    }
+  ],
+  "add_edges": [
+    { "from": "cooking-024-n014", "to": "jORjoin" },
+    { "from": "cooking-024-n015", "to": "jORjoin" },
+    { "from": "cooking-024-n029", "to": "jORjoin" },
+    { "from": "jORjoin", "to": "cooking-024-j6" }
+  ],
+  "enrich_nodes": [],
+  "flag_removed": [],
+  "remove_edges": [
+    { "from": "cooking-024-n014", "to": "cooking-024-j6" },
+    { "from": "cooking-024-n015", "to": "cooking-024-j6" }
+  ]
+}
