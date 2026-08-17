@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T09:05:28Z",
-  "updated_at": "2026-08-17T09:05:28Z",
+  "updated_at": "2026-08-17T09:55:50Z",
   "idef0": {
     "inputs": [
       "جعبه قارچ دریافتی از انبار",
@@ -1289,5 +1289,9 @@
       "to": "cooking-012-n027"
     }
   ],
-  "pending": []
+  "pending": [],
+  "tombstoned": true,
+  "superseded_by": [
+    "cooking-023"
+  ]
 }

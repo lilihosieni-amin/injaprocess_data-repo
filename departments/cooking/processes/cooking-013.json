@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T09:05:29Z",
-  "updated_at": "2026-08-17T09:05:29Z",
+  "updated_at": "2026-08-17T09:55:50Z",
   "idef0": {
     "inputs": [
       "اعلام کمبود ماده اولیه از سوی نیروی لاین",
@@ -850,5 +850,9 @@
       "to": "cooking-013-n019"
     }
   ],
-  "pending": []
+  "pending": [],
+  "tombstoned": true,
+  "superseded_by": [
+    "cooking-023"
+  ]
 }
