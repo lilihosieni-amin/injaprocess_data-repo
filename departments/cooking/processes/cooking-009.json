@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T09:05:24Z",
-  "updated_at": "2026-08-17T09:05:24Z",
+  "updated_at": "2026-08-17T12:05:52Z",
   "idef0": {
     "inputs": [
       "فیش سفارش چاپ‌شده مشتری",
@@ -1756,5 +1756,9 @@
       "to": "cooking-009-n041"
     }
   ],
-  "pending": []
+  "pending": [],
+  "tombstoned": true,
+  "superseded_by": [
+    "cooking-026"
+  ]
 }

@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T09:05:24Z",
-  "updated_at": "2026-08-17T09:05:24Z",
+  "updated_at": "2026-08-17T12:05:51Z",
   "idef0": {
     "inputs": [
       "فیش سفارش چاپ‌شده لاین سوخاری",
@@ -522,5 +522,9 @@
       "to": "cooking-008-n012"
     }
   ],
-  "pending": []
+  "pending": [],
+  "tombstoned": true,
+  "superseded_by": [
+    "cooking-024"
+  ]
 }

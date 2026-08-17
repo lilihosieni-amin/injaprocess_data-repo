@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T09:05:22Z",
-  "updated_at": "2026-08-17T09:05:22Z",
+  "updated_at": "2026-08-17T12:05:52Z",
   "idef0": {
     "inputs": [
       "قارچ اسلایس",
@@ -669,5 +669,9 @@
       "to": "cooking-004-n016"
     }
   ],
-  "pending": []
+  "pending": [],
+  "tombstoned": true,
+  "superseded_by": [
+    "cooking-025"
+  ]
 }
