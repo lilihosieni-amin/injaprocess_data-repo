@@ -1,0 +1,18 @@
+{
+  "add_nodes": [],
+  "add_edges": [
+    { "from": "cooking-024-j5", "to": "cooking-024-n010", "label": "چک روغن و راه‌اندازی سرخ‌کن‌ها" },
+    { "from": "cooking-024-j5", "to": "cooking-024-n013", "label": "سورت و آماده‌سازی قارچ" },
+    { "from": "cooking-024-n012", "to": "cooking-024-j6" },
+    { "from": "cooking-024-n014", "to": "cooking-024-j6" },
+    { "from": "cooking-024-n015", "to": "cooking-024-j6" },
+    { "from": "cooking-024-j6", "to": "cooking-024-n016" }
+  ],
+  "enrich_nodes": [],
+  "flag_removed": [],
+  "remove_edges": [
+    { "from": "cooking-024-j6", "to": "cooking-024-n010" },
+    { "from": "cooking-024-n012", "to": "cooking-024-n013" },
+    { "from": "cooking-024-n015", "to": "cooking-024-n016" }
+  ]
+}
