@@ -1,0 +1,23 @@
+{
+  "add_nodes": [
+    {
+      "key": "jAND",
+      "type": "junction",
+      "junctionType": "AND",
+      "direction": "split"
+    }
+  ],
+  "add_edges": [
+    { "from": "cooking-024-n017", "to": "jAND" },
+    { "from": "jAND", "to": "cooking-024-n018", "label": "تولید اقلام فیش" },
+    { "from": "jAND", "to": "cooking-024-n030", "label": "در صورت وجود آیتم مشترک با سایر لاین‌ها در فیش" },
+    { "from": "jAND", "to": "cooking-024-n034", "label": "به‌صورت دوره‌ای در طول شب" }
+  ],
+  "enrich_nodes": [],
+  "flag_removed": [],
+  "remove_edges": [
+    { "from": "cooking-024-n017", "to": "cooking-024-n018" },
+    { "from": "cooking-024-n017", "to": "cooking-024-n030" },
+    { "from": "cooking-024-n017", "to": "cooking-024-n034" }
+  ]
+}

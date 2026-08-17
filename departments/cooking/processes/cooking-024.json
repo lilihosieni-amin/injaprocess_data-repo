@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T12:05:51Z",
-  "updated_at": "2026-08-17T22:22:52Z",
+  "updated_at": "2026-08-17T22:28:49Z",
   "idef0": {
     "inputs": [
       "مواد اولیه تحویل‌گرفته از انبار (فیله استریپس، فیله اسپایس، لقمه، پنیر، پودر پانکو، قارچ سوخاری سایز گردویی)",
@@ -1354,6 +1354,17 @@
         "y": 2461.2083333333335
       },
       "layout": "auto"
+    },
+    {
+      "id": "cooking-024-j9",
+      "type": "junction",
+      "junctionType": "AND",
+      "direction": "split",
+      "position": {
+        "x": 363,
+        "y": 3226.8333333333335
+      },
+      "layout": "auto"
     }
   ],
   "edges": [
@@ -1381,10 +1392,6 @@
       "from": "cooking-024-j2",
       "to": "cooking-024-n017",
       "label": "در صورت وجود فیش سفارش"
-    },
-    {
-      "from": "cooking-024-n017",
-      "to": "cooking-024-n018"
     },
     {
       "from": "cooking-024-n018",
@@ -1481,16 +1488,6 @@
       "label": "در صورت نبود فیش سفارش"
     },
     {
-      "from": "cooking-024-n017",
-      "to": "cooking-024-n030",
-      "label": "در صورت وجود آیتم مشترک با سایر لاین‌ها در فیش"
-    },
-    {
-      "from": "cooking-024-n017",
-      "to": "cooking-024-n034",
-      "label": "به‌صورت دوره‌ای در طول شب"
-    },
-    {
       "from": "cooking-024-n031",
       "to": "cooking-024-n035"
     },
@@ -1559,6 +1556,25 @@
     {
       "from": "cooking-024-j8",
       "to": "cooking-024-j6"
+    },
+    {
+      "from": "cooking-024-n017",
+      "to": "cooking-024-j9"
+    },
+    {
+      "from": "cooking-024-j9",
+      "to": "cooking-024-n018",
+      "label": "تولید اقلام فیش"
+    },
+    {
+      "from": "cooking-024-j9",
+      "to": "cooking-024-n030",
+      "label": "در صورت وجود آیتم مشترک با سایر لاین‌ها در فیش"
+    },
+    {
+      "from": "cooking-024-j9",
+      "to": "cooking-024-n034",
+      "label": "به‌صورت دوره‌ای در طول شب"
     }
   ],
   "pending": []
