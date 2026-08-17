@@ -1,0 +1,13 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "flag_removed": [],
+  "remove_edges": [
+    { "from": "cooking-002-n005", "to": "cooking-002-n009" },
+    { "from": "cooking-002-n008", "to": "cooking-002-n009" },
+    { "from": "cooking-002-n009", "to": "cooking-002-n010" },
+    { "from": "cooking-002-n010", "to": "cooking-002-n011" },
+    { "from": "cooking-002-n011", "to": "cooking-002-n012" }
+  ]
+}
