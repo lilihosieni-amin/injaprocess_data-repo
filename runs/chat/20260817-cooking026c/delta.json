@@ -1,0 +1,28 @@
+{
+  "add_nodes": [
+    { "key": "jP", "type": "junction", "junctionType": "AND", "direction": "split" },
+    { "key": "jQ", "type": "junction", "junctionType": "AND", "direction": "join" },
+    { "key": "jR", "type": "junction", "junctionType": "AND", "direction": "join" }
+  ],
+  "add_edges": [
+    { "from": "cooking-026-j10", "to": "jP" },
+    { "from": "jP", "to": "cooking-026-n045", "label": "راه‌اندازی وارمر" },
+    { "from": "jP", "to": "cooking-026-n048", "label": "پر کردن تاپینگ‌ها" },
+    { "from": "jP", "to": "cooking-026-n050", "label": "آماده‌سازی گریل و پیش‌پخت مرغ" },
+    { "from": "cooking-026-n047", "to": "jQ" },
+    { "from": "cooking-026-n048", "to": "jQ" },
+    { "from": "jQ", "to": "cooking-026-n049" },
+    { "from": "cooking-026-n049", "to": "jR" },
+    { "from": "cooking-026-n055", "to": "jR" },
+    { "from": "jR", "to": "cooking-026-n056" }
+  ],
+  "enrich_nodes": [],
+  "flag_removed": [],
+  "remove_edges": [
+    { "from": "cooking-026-j10", "to": "cooking-026-n045" },
+    { "from": "cooking-026-n047", "to": "cooking-026-n048" },
+    { "from": "cooking-026-n048", "to": "cooking-026-n049" },
+    { "from": "cooking-026-n049", "to": "cooking-026-n050" },
+    { "from": "cooking-026-n055", "to": "cooking-026-n056" }
+  ]
+}
