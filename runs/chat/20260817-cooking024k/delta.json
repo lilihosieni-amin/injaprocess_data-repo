@@ -1,0 +1,11 @@
+{
+  "add_nodes": [],
+  "add_edges": [
+    { "from": "cooking-024-j9", "to": "cooking-024-n030", "label": "دریافت سینه مرغ از لاین فرنگی" }
+  ],
+  "enrich_nodes": [],
+  "flag_removed": [],
+  "remove_edges": [
+    { "from": "cooking-024-j9", "to": "cooking-024-n030" }
+  ]
+}
