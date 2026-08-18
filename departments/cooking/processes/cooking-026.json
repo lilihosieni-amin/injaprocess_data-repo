@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T12:05:52Z",
-  "updated_at": "2026-08-18T23:37:27Z",
+  "updated_at": "2026-08-18T23:43:00Z",
   "idef0": {
     "inputs": [
       "مواد اولیه تحویل‌گرفته و شمارش‌شده لاین فرنگی، سالاد و گریل",
@@ -1913,7 +1913,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 2715.0
+        "y": 2715
       },
       "layout": "auto",
       "source": {
@@ -2223,8 +2223,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 483,
-        "y": 9327.813368055555
+        "x": 1321,
+        "y": 7909.813368055555
       },
       "layout": "manual"
     },
@@ -2250,8 +2250,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 534,
-        "y": 9445.313368055555
+        "x": 1376,
+        "y": 8139.313368055555
       },
       "layout": "manual",
       "source": {
@@ -2267,8 +2267,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 447,
-        "y": 9776.875868055555
+        "x": 1127,
+        "y": 8214.875868055555
       },
       "layout": "manual"
     },
@@ -2535,10 +2535,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 9165.086805555555
+        "x": 1076,
+        "y": 8379.086805555555
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
@@ -2552,10 +2552,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1143,
-        "y": 10518.586805555555
+        "x": 1277,
+        "y": 8732.586805555555
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-026-n071",
@@ -2577,10 +2577,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 10615.086805555555
+        "x": 1374,
+        "y": 8861.086805555555
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
@@ -2594,10 +2594,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 623,
-        "y": 10481.086805555555
+        "x": 1119,
+        "y": 8833.086805555555
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-026-n072",
@@ -2619,10 +2619,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 10465.086805555555
+        "x": 1134,
+        "y": 8985.086805555555
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
@@ -2636,10 +2636,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 10481.086805555555
+        "x": 1195,
+        "y": 9199.086805555555
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-026-n073",
@@ -2661,10 +2661,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 11840.086805555555
+        "x": 896,
+        "y": 9354.086805555555
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
@@ -2678,10 +2678,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 363,
-        "y": 11706.086805555555
+        "x": 1059,
+        "y": 9604.086805555555
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-026-n074",
@@ -2705,10 +2705,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 11690.086805555555
+        "x": 924,
+        "y": 9882.086805555555
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
@@ -2736,8 +2736,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 8622.063368055555
+        "x": 676,
+        "y": 7902.063368055555
       },
       "layout": "manual",
       "source": {
@@ -2766,8 +2766,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 546,
-        "y": 8736.063368055555
+        "x": 670,
+        "y": 8116.063368055555
       },
       "layout": "manual",
       "source": {
@@ -2783,8 +2783,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 781,
-        "y": 8822.063368055555
+        "x": 727,
+        "y": 8292.063368055555
       },
       "layout": "manual"
     },
@@ -2841,8 +2841,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 590,
-        "y": 8976.625868055555
+        "x": 516,
+        "y": 8416.625868055555
       },
       "layout": "manual",
       "source": {
@@ -2872,10 +2872,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 10327.586805555555
+        "x": 484,
+        "y": 8649.503332349988
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
@@ -2920,10 +2920,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 883,
-        "y": 10193.586805555555
+        "x": 689,
+        "y": 8896.920122358533
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-026-n081",
@@ -3007,8 +3007,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1328,
-        "y": 7899.063368055555
+        "x": 1536,
+        "y": 6779.063368055555
       },
       "layout": "manual",
       "source": {
@@ -3105,8 +3105,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1366,
-        "y": 8478.625868055555
+        "x": 1892,
+        "y": 7329.125868055555
       },
       "layout": "manual",
       "source": {
@@ -3200,10 +3200,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 8427.586805555555
+        "x": 1894,
+        "y": 7571.586805555555
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
