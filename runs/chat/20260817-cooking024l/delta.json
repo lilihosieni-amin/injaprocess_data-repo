@@ -1,0 +1,25 @@
+{
+  "add_nodes": [
+    {
+      "key": "jXSplit",
+      "type": "junction",
+      "junctionType": "OR",
+      "direction": "split"
+    }
+  ],
+  "add_edges": [
+    { "from": "cooking-024-j9", "to": "jXSplit", "label": "تبادل مواد با سایر لاین‌ها" },
+    { "from": "jXSplit", "to": "cooking-024-n030", "label": "دریافت سینه مرغ از لاین فرنگی" },
+    { "from": "jXSplit", "to": "cooking-024-n031", "label": "تأمین فیله سوخاری برای ساندویچ‌های لاین گریل" },
+    { "from": "jXSplit", "to": "cooking-024-n035", "label": "تأمین پروتئین سالاد چیزا برای لاین فرنگی" },
+    { "from": "jXSplit", "to": "cooking-024-n036", "label": "تأمین سیب سرخ‌شده برای سیب‌ویژه لاین فرنگی" }
+  ],
+  "enrich_nodes": [],
+  "flag_removed": [],
+  "remove_edges": [
+    { "from": "cooking-024-j9", "to": "cooking-024-n030" },
+    { "from": "cooking-024-j9", "to": "cooking-024-n031" },
+    { "from": "cooking-024-j9", "to": "cooking-024-n035" },
+    { "from": "cooking-024-j9", "to": "cooking-024-n036" }
+  ]
+}
