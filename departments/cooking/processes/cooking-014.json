@@ -13,7 +13,7 @@
     "node": "cooking-024-n010"
   },
   "created_at": "2026-08-17T09:05:29Z",
-  "updated_at": "2026-08-18T07:21:53Z",
+  "updated_at": "2026-08-18T07:41:29Z",
   "idef0": {
     "inputs": [
       "روغن مصرف‌شده سرخ‌کن‌های بخش سوخاری",
@@ -68,8 +68,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 177.5
+        "x": 560,
+        "y": 90.0
       },
       "layout": "auto",
       "source": {
@@ -98,8 +98,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 177.5
+        "x": 820,
+        "y": 90.0
       },
       "layout": "auto",
       "source": {
@@ -125,8 +125,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 177.5
+        "x": 1080,
+        "y": 90.0
       },
       "layout": "auto",
       "source": {
@@ -140,8 +140,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 193.5
+        "x": 1143,
+        "y": 893.5
       },
       "layout": "auto"
     },
@@ -161,8 +161,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 90.0
+        "x": 820,
+        "y": 790.0
       },
       "layout": "auto",
       "source": {
@@ -188,8 +188,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 265.0
+        "x": 820,
+        "y": 965.0
       },
       "layout": "auto",
       "source": {
@@ -203,8 +203,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1143,
-        "y": 456.0
+        "x": 623,
+        "y": 893.5
       },
       "layout": "auto"
     },
@@ -228,8 +228,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 440.0
+        "x": 300,
+        "y": 877.5
       },
       "layout": "auto",
       "source": {
@@ -254,8 +254,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 440.0
+        "x": 40,
+        "y": 877.5
       },
       "layout": "auto",
       "source": {
@@ -285,7 +285,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 440.0
+        "y": 1752.5
       },
       "layout": "auto",
       "source": {
@@ -299,8 +299,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 1331.0
+        "x": 363,
+        "y": 1768.5
       },
       "layout": "auto"
     },
@@ -323,8 +323,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1227.5
+        "x": 560,
+        "y": 1665.0
       },
       "layout": "auto",
       "source": {
@@ -351,8 +351,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1262.5
+        "x": 820,
+        "y": 1665.0
       },
       "layout": "auto",
       "source": {
@@ -379,8 +379,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1262.5
+        "x": 1080,
+        "y": 1665.0
       },
       "layout": "auto",
       "source": {
@@ -405,8 +405,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1402.5
+        "x": 560,
+        "y": 1840.0
       },
       "layout": "auto",
       "source": {
@@ -437,8 +437,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1437.5
+        "x": 820,
+        "y": 1840.0
       },
       "layout": "auto",
       "source": {
@@ -463,8 +463,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1437.5
+        "x": 1080,
+        "y": 1840.0
       },
       "layout": "auto",
       "source": {
@@ -490,7 +490,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 1437.5
+        "y": 2190.0
       },
       "layout": "auto",
       "source": {
@@ -517,8 +517,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 2365.0
+        "x": 820,
+        "y": 2190.0
       },
       "layout": "auto",
       "source": {
@@ -532,8 +532,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 883,
-        "y": 2293.5
+        "x": 623,
+        "y": 2118.5
       },
       "layout": "auto"
     },
@@ -556,8 +556,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 2277.5
+        "x": 300,
+        "y": 2102.5
       },
       "layout": "auto",
       "source": {
@@ -585,7 +585,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 877.5
+        "y": 483.75
       },
       "layout": "auto",
       "source": {
@@ -599,8 +599,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
-        "y": 893.5
+        "x": 883,
+        "y": 499.75
       },
       "layout": "auto"
     },
@@ -626,8 +626,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 702.5
+        "x": 1080,
+        "y": 352.5
       },
       "layout": "auto",
       "source": {
@@ -655,8 +655,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1577.5
+        "x": 820,
+        "y": 1140.0
       },
       "layout": "auto",
       "source": {
@@ -682,8 +682,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1052.5
+        "x": 1080,
+        "y": 615.0
       },
       "layout": "auto",
       "source": {
@@ -697,8 +697,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 1943.5
+        "x": 1143,
+        "y": 1418.5
       },
       "layout": "auto"
     },
@@ -723,7 +723,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1875.0
+        "y": 1402.5
       },
       "layout": "auto",
       "source": {
@@ -749,8 +749,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 2015.0
+        "x": 820,
+        "y": 1490.0
       },
       "layout": "auto",
       "source": {
@@ -779,8 +779,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1875.0
+        "x": 300,
+        "y": 1402.5
       },
       "layout": "auto",
       "source": {
@@ -813,8 +813,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1577.5
+        "x": 1080,
+        "y": 1140.0
       },
       "layout": "auto",
       "source": {
@@ -830,6 +830,52 @@
       "position": {
         "x": 883,
         "y": 674.75
+      },
+      "layout": "auto",
+      "removed": true
+    },
+    {
+      "id": "cooking-014-n026",
+      "type": "activity",
+      "label": "بررسی کیفیت و وضعیت روغن سرخ‌کن‌ها",
+      "description": "پیش از هر کاری روی روغن‌ها، وضعیت روغن هر سرخ‌کن بررسی می‌شود تا مشخص شود امشب چه کاری لازم است. مبنای بررسی دو چیز است: میزان آلودگی و ضایعات ته روغن، و نوبت روغن در چرخه چهار سرخ‌کن. آلودگی در همه سرخ‌کن‌ها یکسان نیست — سرخ‌کن قارچ و پانکو کثیف‌ترین روغن را دارد چون آرد پانکو ریز است و زودتر روغن را می‌سوزاند، در سرخ‌کن اول سوخاری آرد اضافه ته‌نشین می‌شود و سرخ‌کن دوم تمیزتر است، و تمیزترین روغن همیشه در سرخ‌کن سیب است. نتیجه این بررسی تعیین می‌کند که روغن فقط نیاز به تمیزکاری و تصفیه دارد یا دوره پنج تا شش روزه‌اش تمام شده و باید جابه‌جا و تعویض شود؛ این دو کار مستقل از هم و هم‌زمان در پایان شب انجام می‌شوند.",
+      "actor": "پرسنل لاین سوخاری",
+      "icom": {
+        "inputs": [
+          "روغن داخل چهار سرخ‌کن لاین سوخاری"
+        ],
+        "controls": [
+          "چرخه روغن: سرخ‌کن سیب دو روز، سپس هر سرخ‌کن یک روز تا مجموع پنج تا شش روز",
+          "ترتیب سرخ‌کن‌ها از تمیزترین روغن: سیب‌زمینی، سوخاری اول، سوخاری دوم، قارچ و پانکو",
+          "سریع‌تر سوختن روغن سرخ‌کن قارچ به دلیل ریز بودن آرد پانکو"
+        ],
+        "outputs": [
+          "تعیین وضعیت روغن هر سرخ‌کن و کار لازم برای امشب"
+        ],
+        "mechanisms": [
+          "پرسنل لاین سوخاری",
+          "سرخ‌کن‌ها"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 40,
+        "y": 286.875
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260817-cooking014c",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cooking-014-j8",
+      "type": "junction",
+      "junctionType": "AND",
+      "direction": "split",
+      "position": {
+        "x": 363,
+        "y": 302.875
       },
       "layout": "auto"
     }
@@ -969,18 +1015,22 @@
       "to": "cooking-014-n020"
     },
     {
-      "from": "cooking-014-j2",
-      "to": "cooking-014-j7"
+      "from": "cooking-014-n026",
+      "to": "cooking-014-j8"
     },
     {
-      "from": "cooking-014-j7",
-      "to": "cooking-014-n006",
-      "label": "تمیزکاری و تصفیه روغن‌ها و گرفتن آشغال"
+      "from": "cooking-014-j8",
+      "to": "cooking-014-n001",
+      "label": "تمیزکاری، گرفتن آشغال و تصفیه روغن‌ها"
     },
     {
-      "from": "cooking-014-j7",
+      "from": "cooking-014-j8",
       "to": "cooking-014-n018",
       "label": "تعویض روغن سیب و جابه‌جایی روغن‌ها بین سرخ‌کن‌ها"
+    },
+    {
+      "from": "cooking-014-j2",
+      "to": "cooking-014-n006"
     }
   ],
   "pending": []
