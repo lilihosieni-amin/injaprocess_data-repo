@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T12:05:52Z",
-  "updated_at": "2026-08-18T23:35:18Z",
+  "updated_at": "2026-08-18T23:37:27Z",
   "idef0": {
     "inputs": [
       "مواد اولیه تحویل‌گرفته و شمارش‌شده لاین فرنگی، سالاد و گریل",
@@ -1610,8 +1610,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 6215
+        "x": 820,
+        "y": 6481.753472222222
       },
       "layout": "auto",
       "source": {
@@ -1643,8 +1643,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 6215
+        "x": 560,
+        "y": 6481.753472222222
       },
       "layout": "auto",
       "source": {
@@ -1676,8 +1676,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 6215
+        "x": 300,
+        "y": 6481.753472222222
       },
       "layout": "auto",
       "source": {
@@ -1711,8 +1711,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 6040
+        "x": 820,
+        "y": 6306.753472222222
       },
       "layout": "auto",
       "source": {
@@ -1747,8 +1747,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 6390
+        "x": 40,
+        "y": 7617.170138888889
       },
       "layout": "auto",
       "source": {
@@ -1778,8 +1778,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1840
+        "x": 300,
+        "y": 440.00000000000017
       },
       "layout": "auto",
       "source": {
@@ -1811,8 +1811,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1840
+        "x": 560,
+        "y": 440.00000000000017
       },
       "layout": "auto",
       "source": {
@@ -1842,8 +1842,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1840
+        "x": 820,
+        "y": 440.00000000000017
       },
       "layout": "auto",
       "source": {
@@ -1878,7 +1878,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 3415
+        "y": 440.00000000000017
       },
       "layout": "auto",
       "source": {
@@ -1912,8 +1912,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 3415
+        "x": 1080,
+        "y": 2715.0
       },
       "layout": "auto",
       "source": {
@@ -1948,8 +1948,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 3473.333333333333
+        "x": 820,
+        "y": 2809.2307692307695
       },
       "layout": "auto",
       "source": {
@@ -2204,16 +2204,18 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 9259.813368055555
+        "x": 40,
+        "y": 12890.086805555555
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026e"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-j14",
@@ -2297,9 +2299,11 @@
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026e"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-j16",
@@ -2310,7 +2314,8 @@
         "x": 1183,
         "y": 10693.563368055555
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cooking-026-n065",
@@ -2338,9 +2343,11 @@
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026e"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-n066",
@@ -2371,9 +2378,11 @@
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026e"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-j17",
@@ -2384,7 +2393,8 @@
         "x": 897,
         "y": 11049.813368055555
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cooking-026-n067",
@@ -2413,9 +2423,11 @@
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026e"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-j18",
@@ -2424,9 +2436,10 @@
       "direction": "join",
       "position": {
         "x": 103,
-        "y": 12363.313368055555
+        "y": 12381.086805555555
       },
-      "layout": "auto"
+      "layout": "auto",
+      "removed": true
     },
     {
       "id": "cooking-026-j19",
@@ -2434,10 +2447,11 @@
       "junctionType": "AND",
       "direction": "join",
       "position": {
-        "x": 363,
-        "y": 12213.313368055555
+        "x": 103,
+        "y": 12556.086805555555
       },
-      "layout": "auto"
+      "layout": "auto",
+      "removed": true
     },
     {
       "id": "cooking-026-n068",
@@ -2458,16 +2472,18 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 12197.313368055555
+        "x": 40,
+        "y": 13765.086805555555
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026e"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-n069",
@@ -2487,16 +2503,18 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 12197.313368055555
+        "x": 40,
+        "y": 13940.086805555555
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026e"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-n070",
@@ -2518,7 +2536,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 12197.313368055555
+        "y": 9165.086805555555
       },
       "layout": "auto",
       "source": {
@@ -2535,7 +2553,7 @@
       "direction": "split",
       "position": {
         "x": 1143,
-        "y": 13588.313368055555
+        "y": 10518.586805555555
       },
       "layout": "auto"
     },
@@ -2560,7 +2578,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 13659.813368055555
+        "y": 10615.086805555555
       },
       "layout": "auto",
       "source": {
@@ -2577,7 +2595,7 @@
       "direction": "join",
       "position": {
         "x": 623,
-        "y": 13525.813368055555
+        "y": 10481.086805555555
       },
       "layout": "auto"
     },
@@ -2602,7 +2620,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 13509.813368055555
+        "y": 10465.086805555555
       },
       "layout": "auto",
       "source": {
@@ -2619,7 +2637,7 @@
       "direction": "split",
       "position": {
         "x": 103,
-        "y": 13525.813368055555
+        "y": 10481.086805555555
       },
       "layout": "auto"
     },
@@ -2644,7 +2662,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 14884.813368055555
+        "y": 11840.086805555555
       },
       "layout": "auto",
       "source": {
@@ -2661,7 +2679,7 @@
       "direction": "join",
       "position": {
         "x": 363,
-        "y": 14750.813368055555
+        "y": 11706.086805555555
       },
       "layout": "auto"
     },
@@ -2688,7 +2706,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 14734.813368055555
+        "y": 11690.086805555555
       },
       "layout": "auto",
       "source": {
@@ -2797,9 +2815,11 @@
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026e"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-n078",
@@ -2853,7 +2873,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 10397.313368055555
+        "y": 10327.586805555555
       },
       "layout": "auto",
       "source": {
@@ -2881,16 +2901,18 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 10397.313368055555
+        "x": 40,
+        "y": 14290.086805555555
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026e"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-j25",
@@ -2898,8 +2920,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 623,
-        "y": 10263.313368055555
+        "x": 883,
+        "y": 10193.586805555555
       },
       "layout": "auto"
     },
@@ -2921,16 +2943,18 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 10247.313368055555
+        "x": 40,
+        "y": 14465.086805555555
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026e"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-n082",
@@ -2951,15 +2975,17 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 10247.313368055555
+        "y": 14640.086805555555
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026e"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-n083",
@@ -3018,9 +3044,11 @@
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026e"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-n085",
@@ -3049,9 +3077,11 @@
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026e"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-n086",
@@ -3106,16 +3136,18 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 10047.313368055555
+        "x": 40,
+        "y": 15165.086805555555
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026e"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-n088",
@@ -3135,16 +3167,18 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 10047.313368055555
+        "x": 40,
+        "y": 15340.086805555555
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026e"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-n089",
@@ -3166,8 +3200,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 10072.313368055555
+        "x": 820,
+        "y": 8427.586805555555
       },
       "layout": "auto",
       "source": {
@@ -3195,16 +3229,18 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 10072.313368055555
+        "x": 40,
+        "y": 15515.086805555555
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026e"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-n091",
@@ -3400,7 +3436,7 @@
       "direction": "join",
       "position": {
         "x": 883,
-        "y": 14313.313368055555
+        "y": 11268.586805555555
       },
       "layout": "auto"
     },
@@ -3425,7 +3461,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 14297.313368055555
+        "y": 11252.586805555555
       },
       "layout": "auto",
       "source": {
@@ -3566,8 +3602,8 @@
       "junctionType": "AND",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 6143.5
+        "x": 1143,
+        "y": 6410.253472222222
       },
       "layout": "auto",
       "removed": true
@@ -3579,7 +3615,7 @@
       "direction": "join",
       "position": {
         "x": 103,
-        "y": 6406
+        "y": 6410.253472222222
       },
       "layout": "auto",
       "removed": true
@@ -3591,7 +3627,7 @@
       "direction": "join",
       "position": {
         "x": 103,
-        "y": 13999.75
+        "y": 12731.086805555555
       },
       "layout": "auto",
       "removed": true
@@ -3963,11 +3999,6 @@
     },
     {
       "from": "cooking-026-j13",
-      "to": "cooking-026-n062",
-      "label": "آیتم برگر یا ساندویچ گریلی"
-    },
-    {
-      "from": "cooking-026-j13",
       "to": "cooking-026-n075",
       "label": "آیتم سالاد"
     },
@@ -3992,10 +4023,6 @@
       "label": "آیتم سس قارچ یا سس دیپ گودا"
     },
     {
-      "from": "cooking-026-n062",
-      "to": "cooking-026-j14"
-    },
-    {
       "from": "cooking-026-j14",
       "to": "cooking-026-n063",
       "label": "ساندویچ نیازمند فیله بخش سوخاری مانند اینجابرگر و دبل‌کینگ"
@@ -4008,60 +4035,6 @@
     {
       "from": "cooking-026-n063",
       "to": "cooking-026-j15"
-    },
-    {
-      "from": "cooking-026-j15",
-      "to": "cooking-026-n064"
-    },
-    {
-      "from": "cooking-026-n064",
-      "to": "cooking-026-j16"
-    },
-    {
-      "from": "cooking-026-j16",
-      "to": "cooking-026-n065"
-    },
-    {
-      "from": "cooking-026-j16",
-      "to": "cooking-026-n066"
-    },
-    {
-      "from": "cooking-026-n066",
-      "to": "cooking-026-j17"
-    },
-    {
-      "from": "cooking-026-j17",
-      "to": "cooking-026-n067",
-      "label": "چیزبرگر"
-    },
-    {
-      "from": "cooking-026-j17",
-      "to": "cooking-026-j18",
-      "label": "سایر ساندویچ‌ها"
-    },
-    {
-      "from": "cooking-026-n067",
-      "to": "cooking-026-j18"
-    },
-    {
-      "from": "cooking-026-j18",
-      "to": "cooking-026-j19"
-    },
-    {
-      "from": "cooking-026-n065",
-      "to": "cooking-026-j19"
-    },
-    {
-      "from": "cooking-026-j19",
-      "to": "cooking-026-n068"
-    },
-    {
-      "from": "cooking-026-n068",
-      "to": "cooking-026-n069"
-    },
-    {
-      "from": "cooking-026-n069",
-      "to": "cooking-026-n070"
     },
     {
       "from": "cooking-026-n070",
@@ -4121,73 +4094,12 @@
     },
     {
       "from": "cooking-026-j24",
-      "to": "cooking-026-n077",
-      "label": "سالاد سزار"
-    },
-    {
-      "from": "cooking-026-j24",
       "to": "cooking-026-n078",
       "label": "سالاد چیزا"
     },
     {
-      "from": "cooking-026-n077",
-      "to": "cooking-026-j25"
-    },
-    {
       "from": "cooking-026-n078",
       "to": "cooking-026-n079"
-    },
-    {
-      "from": "cooking-026-n079",
-      "to": "cooking-026-n080"
-    },
-    {
-      "from": "cooking-026-n080",
-      "to": "cooking-026-j25"
-    },
-    {
-      "from": "cooking-026-j25",
-      "to": "cooking-026-n081"
-    },
-    {
-      "from": "cooking-026-n081",
-      "to": "cooking-026-n082"
-    },
-    {
-      "from": "cooking-026-n082",
-      "to": "cooking-026-j28"
-    },
-    {
-      "from": "cooking-026-n083",
-      "to": "cooking-026-n084"
-    },
-    {
-      "from": "cooking-026-n084",
-      "to": "cooking-026-n085"
-    },
-    {
-      "from": "cooking-026-n085",
-      "to": "cooking-026-n086"
-    },
-    {
-      "from": "cooking-026-n086",
-      "to": "cooking-026-n087"
-    },
-    {
-      "from": "cooking-026-n087",
-      "to": "cooking-026-n088"
-    },
-    {
-      "from": "cooking-026-n088",
-      "to": "cooking-026-n089"
-    },
-    {
-      "from": "cooking-026-n089",
-      "to": "cooking-026-n090"
-    },
-    {
-      "from": "cooking-026-n090",
-      "to": "cooking-026-j28"
     },
     {
       "from": "cooking-026-n091",
@@ -4349,6 +4261,40 @@
     {
       "from": "cooking-026-n100",
       "to": "cooking-026-n056"
+    },
+    {
+      "from": "cooking-026-j13",
+      "to": "cooking-026-j14",
+      "label": "آیتم برگر یا ساندویچ گریلی"
+    },
+    {
+      "from": "cooking-026-j15",
+      "to": "cooking-026-n070"
+    },
+    {
+      "from": "cooking-026-j24",
+      "to": "cooking-026-j25",
+      "label": "سالاد سزار"
+    },
+    {
+      "from": "cooking-026-n079",
+      "to": "cooking-026-j25"
+    },
+    {
+      "from": "cooking-026-j25",
+      "to": "cooking-026-j28"
+    },
+    {
+      "from": "cooking-026-n083",
+      "to": "cooking-026-n086"
+    },
+    {
+      "from": "cooking-026-n086",
+      "to": "cooking-026-n089"
+    },
+    {
+      "from": "cooking-026-n089",
+      "to": "cooking-026-j28"
     }
   ],
   "pending": []
