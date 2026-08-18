@@ -1,0 +1,15 @@
+{
+  "add_nodes": [],
+  "add_edges": [
+    { "from": "cooking-026-j3", "to": "cooking-026-n027", "label": "تهیه کروتون نان تست" },
+    { "from": "cooking-026-j3", "to": "cooking-026-n032", "label": "آماده‌سازی گوجه‌گیلاسی" },
+    { "from": "cooking-026-n026", "to": "cooking-026-j10" },
+    { "from": "cooking-026-j7", "to": "cooking-026-j10" }
+  ],
+  "enrich_nodes": [],
+  "flag_removed": [],
+  "remove_edges": [
+    { "from": "cooking-026-n026", "to": "cooking-026-n027" },
+    { "from": "cooking-026-j7", "to": "cooking-026-n032" }
+  ]
+}
