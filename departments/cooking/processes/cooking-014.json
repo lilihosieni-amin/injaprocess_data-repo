@@ -13,7 +13,7 @@
     "node": "cooking-024-n010"
   },
   "created_at": "2026-08-17T09:05:29Z",
-  "updated_at": "2026-08-18T07:59:28Z",
+  "updated_at": "2026-08-18T08:01:26Z",
   "idef0": {
     "inputs": [
       "روغن مصرف‌شده سرخ‌کن‌های بخش سوخاری",
@@ -147,7 +147,7 @@
       "direction": "split",
       "position": {
         "x": 1143,
-        "y": 976.138888888889
+        "y": 718.5
       },
       "layout": "auto"
     },
@@ -168,7 +168,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 892.0833333333335
+        "y": 615.0
       },
       "layout": "auto",
       "source": {
@@ -195,7 +195,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 1067.0833333333335
+        "y": 790.0
       },
       "layout": "auto",
       "source": {
@@ -210,7 +210,7 @@
       "direction": "join",
       "position": {
         "x": 623,
-        "y": 995.5833333333335
+        "y": 718.5
       },
       "layout": "auto"
     },
@@ -235,7 +235,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 979.5833333333335
+        "y": 702.5
       },
       "layout": "auto",
       "source": {
@@ -261,7 +261,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 979.5833333333335
+        "y": 702.5
       },
       "layout": "auto",
       "source": {
@@ -291,7 +291,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 1660.1388888888891
+        "y": 1402.5
       },
       "layout": "auto",
       "source": {
@@ -306,7 +306,7 @@
       "direction": "split",
       "position": {
         "x": 363,
-        "y": 1676.1388888888891
+        "y": 1418.5
       },
       "layout": "auto"
     },
@@ -330,7 +330,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1572.6388888888891
+        "y": 1315.0
       },
       "layout": "auto",
       "source": {
@@ -358,7 +358,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 1572.6388888888891
+        "y": 1315.0
       },
       "layout": "auto",
       "source": {
@@ -386,7 +386,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 1572.6388888888891
+        "y": 1315.0
       },
       "layout": "auto",
       "source": {
@@ -412,7 +412,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1747.6388888888891
+        "y": 1490.0
       },
       "layout": "auto",
       "source": {
@@ -444,7 +444,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 1747.6388888888891
+        "y": 1490.0
       },
       "layout": "auto",
       "source": {
@@ -470,7 +470,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 1747.6388888888891
+        "y": 1490.0
       },
       "layout": "auto",
       "source": {
@@ -655,7 +655,7 @@
       "id": "cooking-014-n020",
       "type": "activity",
       "label": "باقی گذاشتن روغن تصفیه‌شده در سرخ‌کن برای استارت شیفت بعد",
-      "description": "این قضیه هر شب باید تکرار شود تا روغن‌ها تمیز بمانند و ضایعات پودری در آن‌ها نماند؛ فقط روغن تصفیه‌شده در دستگاه می‌نشیند تا فردا صبح فقط استارت زده شود.",
+      "description": "این پایان کار تصفیه شبانه است: هر شب باید تکرار شود تا روغن‌ها تمیز بمانند و ضایعات پودری در آن‌ها نماند. روغنِ تصفیه‌شده و عاری از ضایعات در همان سرخ‌کن می‌ماند تا فردا صبح فقط استارت زده شود و نیازی به کار دیگری روی آن نباشد.",
       "actor": "پرسنل بخش سوخاری",
       "icom": {
         "inputs": [],
@@ -678,7 +678,8 @@
       "source": {
         "created_by": "runs/cooking/20260816-212142",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking014f"
         ]
       }
     },
@@ -860,7 +861,7 @@
       "direction": "split",
       "position": {
         "x": 103,
-        "y": 2288.638888888889
+        "y": 2031.0
       },
       "layout": "auto",
       "removed": true
@@ -1034,10 +1035,6 @@
       "to": "cooking-014-n025"
     },
     {
-      "from": "cooking-014-n025",
-      "to": "cooking-014-n020"
-    },
-    {
       "from": "cooking-014-n026",
       "to": "cooking-014-j8"
     },
@@ -1064,6 +1061,10 @@
       "from": "cooking-014-j6",
       "to": "cooking-014-n022",
       "label": "استثنا — فقط در صورت امکان حمل در همان آخر شب"
+    },
+    {
+      "from": "cooking-014-n017",
+      "to": "cooking-014-n020"
     }
   ],
   "pending": []
