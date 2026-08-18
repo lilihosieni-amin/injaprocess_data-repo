@@ -1,0 +1,27 @@
+{
+  "add_nodes": [
+    { "key": "jA", "type": "junction", "junctionType": "AND", "direction": "split" },
+    { "key": "jB", "type": "junction", "junctionType": "AND", "direction": "join" }
+  ],
+  "add_edges": [
+    { "from": "cooking-026-n099", "to": "jA" },
+    { "from": "jA", "to": "cooking-026-n001", "label": "چک کردن لاین در بدو ورود" },
+    { "from": "jA", "to": "cooking-026-n002", "label": "چیدن تاپینگ‌های کار" },
+    { "from": "jA", "to": "cooking-026-n003", "label": "قرار دادن ابزار کار" },
+    { "from": "jA", "to": "cooking-026-n004", "label": "راه‌اندازی و تمیز کردن گریل" },
+    { "from": "cooking-026-n001", "to": "jB" },
+    { "from": "cooking-026-n002", "to": "jB" },
+    { "from": "cooking-026-n003", "to": "jB" },
+    { "from": "cooking-026-n009", "to": "jB" },
+    { "from": "jB", "to": "cooking-026-n010" }
+  ],
+  "enrich_nodes": [],
+  "flag_removed": [],
+  "remove_edges": [
+    { "from": "cooking-026-n099", "to": "cooking-026-n001" },
+    { "from": "cooking-026-n001", "to": "cooking-026-n002" },
+    { "from": "cooking-026-n002", "to": "cooking-026-n003" },
+    { "from": "cooking-026-n003", "to": "cooking-026-n004" },
+    { "from": "cooking-026-n009", "to": "cooking-026-n010" }
+  ]
+}
