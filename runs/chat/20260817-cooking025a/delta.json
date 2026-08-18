@@ -1,0 +1,33 @@
+{
+  "add_nodes": [
+    { "key": "jS", "type": "junction", "junctionType": "AND", "direction": "split" },
+    { "key": "jJ", "type": "junction", "junctionType": "AND", "direction": "join" }
+  ],
+  "add_edges": [
+    { "from": "cooking-025-n036", "to": "jS" },
+    { "from": "jS", "to": "cooking-025-n001", "label": "آماده‌سازی و پر کردن ظروف تاپینگ" },
+    { "from": "jS", "to": "cooking-025-n002", "label": "بلانچ کردن قارچ" },
+    { "from": "jS", "to": "cooking-025-n004", "label": "ریز کردن فلفل دلمه و کراکف" },
+    { "from": "jS", "to": "cooking-025-n012", "label": "راه‌اندازی فر، حدود ساعت شش" },
+    { "from": "cooking-025-n001", "to": "cooking-025-n003" },
+    { "from": "cooking-025-n003", "to": "cooking-025-n010" },
+    { "from": "cooking-025-n002", "to": "cooking-025-n006", "label": "پس از جوش آمدن آب" },
+    { "from": "cooking-025-n011", "to": "jJ" },
+    { "from": "cooking-025-n009", "to": "jJ" },
+    { "from": "cooking-025-n005", "to": "jJ" },
+    { "from": "cooking-025-j1", "to": "jJ", "label": "در صورت سالم بودن فر" },
+    { "from": "jJ", "to": "cooking-025-n017" }
+  ],
+  "enrich_nodes": [],
+  "flag_removed": [],
+  "remove_edges": [
+    { "from": "cooking-025-n036", "to": "cooking-025-n001" },
+    { "from": "cooking-025-n001", "to": "cooking-025-n002" },
+    { "from": "cooking-025-n002", "to": "cooking-025-n003" },
+    { "from": "cooking-025-n003", "to": "cooking-025-n004" },
+    { "from": "cooking-025-n005", "to": "cooking-025-n006" },
+    { "from": "cooking-025-n009", "to": "cooking-025-n010" },
+    { "from": "cooking-025-n011", "to": "cooking-025-n012" },
+    { "from": "cooking-025-j1", "to": "cooking-025-n017" }
+  ]
+}
