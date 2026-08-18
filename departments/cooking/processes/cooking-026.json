@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T12:05:52Z",
-  "updated_at": "2026-08-18T23:23:55Z",
+  "updated_at": "2026-08-18T23:35:18Z",
   "idef0": {
     "inputs": [
       "مواد اولیه تحویل‌گرفته و شمارش‌شده لاین فرنگی، سالاد و گریل",
@@ -1611,7 +1611,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 6215.0
+        "y": 6215
       },
       "layout": "auto",
       "source": {
@@ -1644,7 +1644,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 6215.0
+        "y": 6215
       },
       "layout": "auto",
       "source": {
@@ -1677,7 +1677,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 6215.0
+        "y": 6215
       },
       "layout": "auto",
       "source": {
@@ -1712,7 +1712,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 6040.0
+        "y": 6040
       },
       "layout": "auto",
       "source": {
@@ -1748,7 +1748,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 6390.0
+        "y": 6390
       },
       "layout": "auto",
       "source": {
@@ -1779,7 +1779,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1840.0
+        "y": 1840
       },
       "layout": "auto",
       "source": {
@@ -1812,7 +1812,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 1840.0
+        "y": 1840
       },
       "layout": "auto",
       "source": {
@@ -1843,7 +1843,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 1840.0
+        "y": 1840
       },
       "layout": "auto",
       "source": {
@@ -1878,7 +1878,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 3415.0
+        "y": 3415
       },
       "layout": "auto",
       "source": {
@@ -1913,7 +1913,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 3415.0
+        "y": 3415
       },
       "layout": "auto",
       "source": {
@@ -1982,10 +1982,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 5903.888888888889
+        "x": 2154,
+        "y": 1025.8888888888887
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
@@ -2011,10 +2011,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 5903.888888888889
+        "x": 1582,
+        "y": 1163.8888888888887
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
@@ -2042,10 +2042,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 6128.563368055556
+        "x": 498,
+        "y": 4906.563368055556
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
@@ -2073,10 +2073,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 7347.834201388889
+        "x": -40,
+        "y": 5317.834201388889
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
@@ -2090,10 +2090,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 7363.834201388889
+        "x": -377,
+        "y": 5379.834201388889
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-026-n060",
@@ -2117,10 +2117,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 7435.334201388889
+        "x": 54,
+        "y": 5591.334201388889
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
@@ -2151,10 +2151,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 7435.334201388889
+        "x": -142,
+        "y": 5841.334201388889
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
@@ -2168,10 +2168,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 103,
-        "y": 7363.834201388889
+        "x": -653,
+        "y": 6249.834201388889
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-026-j13",
@@ -2221,10 +2221,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 623,
-        "y": 9275.813368055555
+        "x": 483,
+        "y": 9327.813368055555
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-026-n063",
@@ -2248,10 +2248,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 9347.313368055555
+        "x": 534,
+        "y": 9445.313368055555
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
@@ -2265,10 +2265,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1143,
-        "y": 9264.875868055555
+        "x": 447,
+        "y": 9776.875868055555
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-026-n064",
@@ -2290,10 +2290,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 10703.563368055555
+        "x": 408,
+        "y": 9907.563368055555
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
@@ -2307,10 +2307,10 @@
       "junctionType": "AND",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 10719.563368055555
+        "x": 1183,
+        "y": 10693.563368055555
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-026-n065",
@@ -2331,10 +2331,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 10597.313368055555
+        "x": 706,
+        "y": 10775.313368055555
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
@@ -2364,10 +2364,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 10859.813368055555
+        "x": 954,
+        "y": 10849.813368055555
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
@@ -2381,10 +2381,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
-        "y": 10875.813368055555
+        "x": 897,
+        "y": 11049.813368055555
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-026-n067",
@@ -2406,10 +2406,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 10947.313368055555
+        "x": 1146,
+        "y": 11113.313368055555
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
@@ -2719,9 +2719,9 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 8866.063368055555
+        "y": 8622.063368055555
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
@@ -2748,10 +2748,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 8866.063368055555
+        "x": 546,
+        "y": 8736.063368055555
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
@@ -2765,10 +2765,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 8882.063368055555
+        "x": 781,
+        "y": 8822.063368055555
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-026-n077",
@@ -2790,10 +2790,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 8767.625868055555
+        "x": 808,
+        "y": 8591.625868055555
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
@@ -2821,10 +2821,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 8942.625868055555
+        "x": 590,
+        "y": 8976.625868055555
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
@@ -2981,10 +2981,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 8691.063368055555
+        "x": 1328,
+        "y": 7899.063368055555
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
@@ -3011,10 +3011,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 8691.063368055555
+        "x": 1414,
+        "y": 8065.063368055555
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
@@ -3042,10 +3042,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 8691.063368055555
+        "x": 1402,
+        "y": 8259.063368055555
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
@@ -3075,10 +3075,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 8592.625868055555
+        "x": 1366,
+        "y": 8478.625868055555
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
@@ -3231,10 +3231,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 8428.563368055555
+        "x": 372,
+        "y": 7634.563368055555
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
@@ -3248,10 +3248,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 623,
-        "y": 8444.563368055555
+        "x": 433,
+        "y": 7854.563368055555
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-026-n092",
@@ -3273,10 +3273,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 8516.063368055555
+        "x": 154,
+        "y": 8107.517885420057
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
@@ -3290,10 +3290,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1143,
-        "y": 8433.625868055555
+        "x": 297,
+        "y": 8349.625868055555
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-026-n093",
@@ -3315,10 +3315,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 8166.063368055556
+        "x": 154,
+        "y": 7768.063368055556
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
@@ -3348,10 +3348,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 8166.063368055556
+        "x": 88,
+        "y": 7974.063368055556
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
@@ -3382,10 +3382,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 7991.063368055556
+        "x": -148,
+        "y": 7691.063368055556
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
@@ -3579,7 +3579,7 @@
       "direction": "join",
       "position": {
         "x": 103,
-        "y": 6406.0
+        "y": 6406
       },
       "layout": "auto",
       "removed": true
@@ -3687,14 +3687,15 @@
       },
       "subprocess": "cooking-028",
       "position": {
-        "x": 300,
-        "y": 5903.888888888889
+        "x": 2112,
+        "y": 101.96384769015822
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking026sub",
         "touched_by": [
-          "runs/chat/20260817-cooking026sub"
+          "runs/chat/20260817-cooking026sub",
+          "ui-edit"
         ]
       }
     }
