@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T12:05:52Z",
-  "updated_at": "2026-08-18T22:32:48Z",
+  "updated_at": "2026-08-18T22:33:34Z",
   "idef0": {
     "inputs": [
       "مواد اولیه تحویل‌گرفته و شمارش‌شده لاین پیتزا",
@@ -1074,16 +1074,17 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 3305.625
+        "x": 450,
+        "y": 3085.625
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
           "runs/chat/20260817-cooking025d",
           "runs/chat/20260817-cooking025e",
-          "runs/chat/20260817-cooking025g"
+          "runs/chat/20260817-cooking025g",
+          "ui-edit"
         ]
       },
       "removed": false
@@ -1488,8 +1489,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 808,
-        "y": 2479.625
+        "x": 732,
+        "y": 2367.625
       },
       "layout": "manual",
       "source": {
@@ -1561,13 +1562,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 2780.625
+        "x": 752,
+        "y": 2646.625
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking025f",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1577,17 +1580,6 @@
       "direction": "split",
       "position": {
         "x": 883,
-        "y": 3234.125
-      },
-      "layout": "auto"
-    },
-    {
-      "id": "cooking-025-j14",
-      "type": "junction",
-      "junctionType": "XOR",
-      "direction": "join",
-      "position": {
-        "x": 363,
         "y": 3234.125
       },
       "layout": "auto"
@@ -1866,22 +1858,14 @@
       "label": "در صورت سالن بودن سفارش"
     },
     {
-      "from": "cooking-025-j13",
-      "to": "cooking-025-j14",
-      "label": "در صورت بیرون‌بر یا حضوری بودن سفارش"
-    },
-    {
-      "from": "cooking-025-n030",
-      "to": "cooking-025-j14"
-    },
-    {
-      "from": "cooking-025-j14",
-      "to": "cooking-025-j2"
-    },
-    {
       "from": "cooking-025-j6",
       "to": "cooking-025-n043",
       "label": "در صورت سالن بودن سفارش، تشخیص‌داده‌شده از روی قارچ وسط پیتزا"
+    },
+    {
+      "from": "cooking-025-n030",
+      "to": "cooking-025-j2",
+      "label": ""
     }
   ],
   "pending": []
