@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T12:05:52Z",
-  "updated_at": "2026-08-18T20:55:43Z",
+  "updated_at": "2026-08-18T22:27:05Z",
   "idef0": {
     "inputs": [
       "مواد اولیه تحویل‌گرفته و شمارش‌شده لاین پیتزا",
@@ -99,8 +99,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 492,
-        "y": 664
+        "x": 548,
+        "y": 660
       },
       "layout": "manual",
       "source": {
@@ -164,8 +164,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 462,
-        "y": 897
+        "x": 380,
+        "y": 821
       },
       "layout": "manual",
       "source": {
@@ -268,8 +268,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1316,
-        "y": 1581
+        "x": 1184,
+        "y": 1207
       },
       "layout": "manual",
       "source": {
@@ -300,8 +300,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 880,
-        "y": 1693
+        "x": 886,
+        "y": 1485
       },
       "layout": "manual",
       "source": {
@@ -333,8 +333,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 616,
-        "y": 1747
+        "x": 578,
+        "y": 1577
       },
       "layout": "manual",
       "source": {
@@ -395,8 +395,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 160,
-        "y": 973
+        "x": 198,
+        "y": 961
       },
       "layout": "manual",
       "source": {
@@ -456,8 +456,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 940,
-        "y": 801
+        "x": 1048,
+        "y": 727
       },
       "layout": "manual",
       "source": {
@@ -488,8 +488,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1072,
-        "y": 1078
+        "x": 1088,
+        "y": 944
       },
       "layout": "manual",
       "source": {
@@ -521,8 +521,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 924,
-        "y": 1252
+        "x": 950,
+        "y": 1118
       },
       "layout": "manual",
       "source": {
@@ -631,13 +631,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 2518.125
+        "x": 50,
+        "y": 1811.625
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1214,13 +1216,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 483.75
+        "x": 36,
+        "y": 475.75
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1247,42 +1251,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 483.75
+        "x": 360,
+        "y": 479.75
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-lines",
-        "touched_by": []
-      }
-    },
-    {
-      "id": "cooking-025-n036",
-      "type": "activity",
-      "label": "لیبل‌گذاری مواد چیده‌شده لاین پیتزا برای مشخص شدن بخش مالک",
-      "description": "چون ممکن است یخچالی به‌صورت مشترک میان چند بخش استفاده شود، سعی می‌شود لیبل‌گذاری انجام شود تا معلوم باشد هر ماده متعلق به کدام سکشن است.",
-      "actor": "نیروی لاین پیتزا",
-      "icom": {
-        "inputs": [
-          "مواد اولیه چیده‌شده در یخچال و فریزر لاین پیتزا"
-        ],
-        "controls": [],
-        "outputs": [
-          "مواد اولیه لیبل‌خورده لاین پیتزا"
-        ],
-        "mechanisms": [
-          "نیروی لاین پیتزا"
+        "touched_by": [
+          "ui-edit"
         ]
-      },
-      "subprocess": null,
-      "position": {
-        "x": 560,
-        "y": 483.75
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/chat/20260817-lines",
-        "touched_by": []
       }
     },
     {
@@ -1324,10 +1301,10 @@
       "junctionType": "OR",
       "direction": "split",
       "position": {
-        "x": 623,
-        "y": 2271.625
+        "x": 469,
+        "y": 2117.625
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-025-j12",
@@ -1335,15 +1312,15 @@
       "junctionType": "OR",
       "direction": "join",
       "position": {
-        "x": 1143,
-        "y": 2271.625
+        "x": 1197,
+        "y": 2157.625
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-025-n037",
       "type": "activity",
-      "label": "تأمین گوشت چرخ‌کرده برای سیب‌ویژه لاین فرنگی",
+      "label": "تحویل گوشت چرخ‌کرده به لاین فرنگی  برای سیب‌ویژه ",
       "description": "سیب‌ویژه در لاین فرنگی تولید می‌شود ولی گوشت چرخ‌کرده آن از لاین پیتزا گرفته می‌شود؛ مقدار آن برای هر پرس بین پنج تا هشت گرم است. برای این تبادل هیچ فیشی به لاین پیتزا نمی‌آید و لاین فرنگی هر وقت نیاز داشت مقدار لازم را از تاپینگ گوشت چرخ‌کرده لاین پیتزا برمی‌دارد. حجم مصرف در دو شعبه متفاوت است: در شعبه ناهارخوران اول تایم مقدار کمی گوشت چرخ‌کرده گذاشته می‌شود، ولی در شعبه مرکزی تاپینگ‌ها کامل پر می‌شوند.",
       "actor": "پرسنل لاین پیتزا",
       "icom": {
@@ -1364,13 +1341,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1905.625
+        "x": 812,
+        "y": 1813.625
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking025b",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1396,13 +1375,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 2080.625
+        "x": 816,
+        "y": 2048.625
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking025b",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1430,43 +1411,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 2255.625
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/chat/20260817-cooking025b",
-        "touched_by": []
-      }
-    },
-    {
-      "id": "cooking-025-n040",
-      "type": "activity",
-      "label": "دریافت قارچ اسلایس‌شده و مرغ تبدیل‌شده از انبار و لاین سوخاری",
-      "description": "لاین پیتزا در جهت ورودی هم تبادل دارد. قارچ مازاد لاین سوخاری که شب قبل به انبار برگردانده شده، روز بعد در واحد آماده‌سازی اسلایس می‌شود و به‌عنوان قارچ پیتزا در اختیار این لاین قرار می‌گیرد. همچنین مرغی که در لاین سوخاری به عمر مفید خود نزدیک شده، پیش از خراب شدن به مرغ پیتزا تبدیل و به این لاین داده می‌شود تا به‌جای ضایعات شدن مصرف گردد.",
-      "actor": "پرسنل لاین پیتزا",
-      "icom": {
-        "inputs": [
-          "قارچ مازاد اسلایس‌شده در واحد آماده‌سازی",
-          "مرغ نزدیک به پایان عمر مفید لاین سوخاری"
-        ],
-        "controls": [
-          "اولویت تبدیل ماده اولیه پیش از خراب شدن به‌جای ضایعات کردن آن"
-        ],
-        "outputs": [
-          "قارچ و مرغ دریافت‌شده و واردشده به تاپینگ لاین پیتزا"
-        ],
-        "mechanisms": [
-          "پرسنل لاین پیتزا",
-          "واحد آماده‌سازی",
-          "لاین سوخاری",
-          "واحد انبار"
-        ]
-      },
-      "subprocess": null,
-      "position": {
-        "x": 820,
-        "y": 2356.625
+        "x": 818,
+        "y": 2181.625
       },
       "layout": "manual",
       "source": {
@@ -1724,14 +1670,6 @@
       "to": "cooking-025-n035"
     },
     {
-      "from": "cooking-025-n035",
-      "to": "cooking-025-n036"
-    },
-    {
-      "from": "cooking-025-n036",
-      "to": "cooking-025-j8"
-    },
-    {
       "from": "cooking-025-j8",
       "to": "cooking-025-n001",
       "label": "آماده‌سازی و پر کردن ظروف تاپینگ"
@@ -1815,11 +1753,6 @@
       "label": "تست نان پروتان فرنگی در فر پیتزا"
     },
     {
-      "from": "cooking-025-j11",
-      "to": "cooking-025-n040",
-      "label": "دریافت قارچ و مرغ از انبار و سوخاری"
-    },
-    {
       "from": "cooking-025-n037",
       "to": "cooking-025-j12"
     },
@@ -1829,10 +1762,6 @@
     },
     {
       "from": "cooking-025-n039",
-      "to": "cooking-025-j12"
-    },
-    {
-      "from": "cooking-025-n040",
       "to": "cooking-025-j12"
     },
     {
@@ -1861,6 +1790,16 @@
     {
       "from": "cooking-025-n030",
       "to": "cooking-025-n043"
+    },
+    {
+      "from": "cooking-025-n035",
+      "to": "cooking-025-j8",
+      "label": ""
+    },
+    {
+      "from": "cooking-025-j11",
+      "to": "cooking-025-j12",
+      "label": ""
     }
   ],
   "pending": []
