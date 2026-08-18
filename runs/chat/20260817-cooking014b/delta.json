@@ -1,0 +1,21 @@
+{
+  "add_nodes": [
+    {
+      "key": "jSplit",
+      "type": "junction",
+      "junctionType": "AND",
+      "direction": "split"
+    }
+  ],
+  "add_edges": [
+    { "from": "cooking-014-j2", "to": "jSplit" },
+    { "from": "jSplit", "to": "cooking-014-n006", "label": "تمیزکاری و تصفیه روغن‌ها و گرفتن آشغال" },
+    { "from": "jSplit", "to": "cooking-014-n018", "label": "تعویض روغن سیب و جابه‌جایی روغن‌ها بین سرخ‌کن‌ها" }
+  ],
+  "enrich_nodes": [],
+  "flag_removed": [],
+  "remove_edges": [
+    { "from": "cooking-014-j2", "to": "cooking-014-n006" },
+    { "from": "cooking-014-n017", "to": "cooking-014-n018" }
+  ]
+}
