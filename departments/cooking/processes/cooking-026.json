@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T12:05:52Z",
-  "updated_at": "2026-08-18T23:06:09Z",
+  "updated_at": "2026-08-18T23:11:25Z",
   "idef0": {
     "inputs": [
       "مواد اولیه تحویل‌گرفته و شمارش‌شده لاین فرنگی، سالاد و گریل",
@@ -1535,7 +1535,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 5690.0
+        "y": 6215.0
       },
       "layout": "auto",
       "source": {
@@ -1566,7 +1566,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 5690.0
+        "y": 6215.0
       },
       "layout": "auto",
       "source": {
@@ -1597,7 +1597,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 5690.0
+        "y": 6215.0
       },
       "layout": "auto",
       "source": {
@@ -1630,7 +1630,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 5515.0
+        "y": 6040.0
       },
       "layout": "auto",
       "source": {
@@ -1664,7 +1664,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 6040.0
+        "y": 6390.0
       },
       "layout": "auto",
       "source": {
@@ -1693,7 +1693,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 5865.0
+        "y": 1840.0
       },
       "layout": "auto",
       "source": {
@@ -1723,8 +1723,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 5865.0
+        "x": 820,
+        "y": 1840.0
       },
       "layout": "auto",
       "source": {
@@ -1752,8 +1752,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 5865.0
+        "x": 1080,
+        "y": 1840.0
       },
       "layout": "auto",
       "source": {
@@ -1785,8 +1785,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 6215.0
+        "x": 1080,
+        "y": 3415.0
       },
       "layout": "auto",
       "source": {
@@ -1818,8 +1818,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 6215.0
+        "x": 820,
+        "y": 3415.0
       },
       "layout": "auto",
       "source": {
@@ -1853,7 +1853,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 6215.0
+        "y": 3473.333333333333
       },
       "layout": "auto",
       "source": {
@@ -1884,8 +1884,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 6127.5
+        "x": 560,
+        "y": 6390.0
       },
       "layout": "auto",
       "source": {
@@ -1913,8 +1913,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 6477.5
+        "x": 820,
+        "y": 6390.0
       },
       "layout": "auto",
       "source": {
@@ -1944,8 +1944,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 6477.5
+        "x": 1080,
+        "y": 6390.0
       },
       "layout": "auto",
       "source": {
@@ -1975,8 +1975,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 6477.5
+        "x": 1080,
+        "y": 6652.5
       },
       "layout": "auto",
       "source": {
@@ -1992,8 +1992,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
-        "y": 6493.5
+        "x": 883,
+        "y": 6668.5
       },
       "layout": "auto"
     },
@@ -2019,8 +2019,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 6565.0
+        "x": 560,
+        "y": 6740.0
       },
       "layout": "auto",
       "source": {
@@ -2053,8 +2053,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 7403.541666666667
+        "x": 300,
+        "y": 6740.0
       },
       "layout": "auto",
       "source": {
@@ -2070,8 +2070,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 363,
-        "y": 7332.041666666667
+        "x": 103,
+        "y": 6668.5
       },
       "layout": "auto"
     },
@@ -2106,8 +2106,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 8008.75
+        "x": 300,
+        "y": 8183.75
       },
       "layout": "auto",
       "source": {
@@ -2123,8 +2123,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1143,
-        "y": 8024.75
+        "x": 623,
+        "y": 8199.75
       },
       "layout": "auto"
     },
@@ -2150,8 +2150,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 9540.0
+        "x": 820,
+        "y": 8271.25
       },
       "layout": "auto",
       "source": {
@@ -2167,8 +2167,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 883,
-        "y": 9457.5625
+        "x": 1143,
+        "y": 8188.8125
       },
       "layout": "auto"
     },
@@ -2192,8 +2192,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 9441.5625
+        "x": 1080,
+        "y": 9627.5
       },
       "layout": "auto",
       "source": {
@@ -2209,8 +2209,8 @@
       "junctionType": "AND",
       "direction": "split",
       "position": {
-        "x": 363,
-        "y": 9457.5625
+        "x": 883,
+        "y": 9643.5
       },
       "layout": "auto"
     },
@@ -2233,8 +2233,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 9335.3125
+        "x": 560,
+        "y": 9521.25
       },
       "layout": "auto",
       "source": {
@@ -2266,8 +2266,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 9597.8125
+        "x": 560,
+        "y": 9783.75
       },
       "layout": "auto",
       "source": {
@@ -2283,8 +2283,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 11101.3125
+        "x": 363,
+        "y": 9799.75
       },
       "layout": "auto"
     },
@@ -2308,8 +2308,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 11172.8125
+        "x": 40,
+        "y": 9871.25
       },
       "layout": "auto",
       "source": {
@@ -2325,8 +2325,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 623,
-        "y": 11035.6875
+        "x": 103,
+        "y": 11287.25
       },
       "layout": "auto"
     },
@@ -2336,8 +2336,8 @@
       "junctionType": "AND",
       "direction": "join",
       "position": {
-        "x": 883,
-        "y": 10885.6875
+        "x": 363,
+        "y": 11137.25
       },
       "layout": "auto"
     },
@@ -2360,8 +2360,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 10869.6875
+        "x": 560,
+        "y": 11121.25
       },
       "layout": "auto",
       "source": {
@@ -2389,8 +2389,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 12397.8125
+        "x": 820,
+        "y": 11121.25
       },
       "layout": "auto",
       "source": {
@@ -2419,8 +2419,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 12397.8125
+        "x": 1080,
+        "y": 11121.25
       },
       "layout": "auto",
       "source": {
@@ -2436,8 +2436,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 623,
-        "y": 12413.8125
+        "x": 1143,
+        "y": 12512.25
       },
       "layout": "auto"
     },
@@ -2461,8 +2461,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 12485.3125
+        "x": 820,
+        "y": 12583.75
       },
       "layout": "auto",
       "source": {
@@ -2478,8 +2478,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 103,
-        "y": 12351.3125
+        "x": 623,
+        "y": 12449.75
       },
       "layout": "auto"
     },
@@ -2503,8 +2503,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 13622.8125
+        "x": 300,
+        "y": 12433.75
       },
       "layout": "auto",
       "source": {
@@ -2520,8 +2520,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
-        "y": 13638.8125
+        "x": 103,
+        "y": 12449.75
       },
       "layout": "auto"
     },
@@ -2545,8 +2545,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 13710.3125
+        "x": 40,
+        "y": 13808.75
       },
       "layout": "auto",
       "source": {
@@ -2562,8 +2562,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 883,
-        "y": 13576.3125
+        "x": 363,
+        "y": 13674.75
       },
       "layout": "auto"
     },
@@ -2589,8 +2589,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 13560.3125
+        "x": 560,
+        "y": 13658.75
       },
       "layout": "auto",
       "source": {
@@ -2620,8 +2620,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 7615.0
+        "x": 300,
+        "y": 7790.0
       },
       "layout": "auto",
       "source": {
@@ -2650,8 +2650,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 7615.0
+        "x": 560,
+        "y": 7790.0
       },
       "layout": "auto",
       "source": {
@@ -2667,8 +2667,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1143,
-        "y": 9074.75
+        "x": 883,
+        "y": 7806.0
       },
       "layout": "auto"
     },
@@ -2692,8 +2692,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 8960.3125
+        "x": 1080,
+        "y": 7691.5625
       },
       "layout": "auto",
       "source": {
@@ -2723,8 +2723,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 9135.3125
+        "x": 1080,
+        "y": 7866.5625
       },
       "layout": "auto",
       "source": {
@@ -2754,8 +2754,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 9135.3125
+        "x": 1080,
+        "y": 9321.25
       },
       "layout": "auto",
       "source": {
@@ -2783,8 +2783,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 9135.3125
+        "x": 820,
+        "y": 9321.25
       },
       "layout": "auto",
       "source": {
@@ -2800,8 +2800,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 103,
-        "y": 9001.3125
+        "x": 623,
+        "y": 9187.25
       },
       "layout": "auto"
     },
@@ -2823,8 +2823,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 10472.8125
+        "x": 300,
+        "y": 9171.25
       },
       "layout": "auto",
       "source": {
@@ -2852,8 +2852,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 10472.8125
+        "x": 40,
+        "y": 9171.25
       },
       "layout": "auto",
       "source": {
@@ -2883,8 +2883,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 7440.0
+        "x": 300,
+        "y": 7615.0
       },
       "layout": "auto",
       "source": {
@@ -2913,8 +2913,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 7440.0
+        "x": 560,
+        "y": 7615.0
       },
       "layout": "auto",
       "source": {
@@ -2944,8 +2944,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 8883.75
+        "x": 820,
+        "y": 7615.0
       },
       "layout": "auto",
       "source": {
@@ -2977,8 +2977,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 8785.3125
+        "x": 1080,
+        "y": 7516.5625
       },
       "layout": "auto",
       "source": {
@@ -3008,8 +3008,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 8785.3125
+        "x": 1080,
+        "y": 8971.25
       },
       "layout": "auto",
       "source": {
@@ -3037,8 +3037,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 8785.3125
+        "x": 820,
+        "y": 8971.25
       },
       "layout": "auto",
       "source": {
@@ -3068,8 +3068,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 8810.3125
+        "x": 560,
+        "y": 8996.25
       },
       "layout": "auto",
       "source": {
@@ -3097,8 +3097,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 10297.8125
+        "x": 300,
+        "y": 8996.25
       },
       "layout": "auto",
       "source": {
@@ -3133,8 +3133,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 7177.5
+        "x": 300,
+        "y": 7352.5
       },
       "layout": "auto",
       "source": {
@@ -3150,8 +3150,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1143,
-        "y": 7193.5
+        "x": 623,
+        "y": 7368.5
       },
       "layout": "auto"
     },
@@ -3175,8 +3175,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 8708.75
+        "x": 820,
+        "y": 7440.0
       },
       "layout": "auto",
       "source": {
@@ -3192,8 +3192,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 883,
-        "y": 8626.3125
+        "x": 1143,
+        "y": 7357.5625
       },
       "layout": "auto"
     },
@@ -3217,8 +3217,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 6915.0
+        "x": 300,
+        "y": 7090.0
       },
       "layout": "auto",
       "source": {
@@ -3250,8 +3250,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 6915.0
+        "x": 560,
+        "y": 7090.0
       },
       "layout": "auto",
       "source": {
@@ -3284,8 +3284,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 6740.0
+        "x": 300,
+        "y": 6915.0
       },
       "layout": "auto",
       "source": {
@@ -3301,8 +3301,8 @@
       "junctionType": "OR",
       "direction": "join",
       "position": {
-        "x": 1143,
-        "y": 13901.3125
+        "x": 883,
+        "y": 13237.25
       },
       "layout": "auto"
     },
@@ -3326,8 +3326,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 13885.3125
+        "x": 1080,
+        "y": 13221.25
       },
       "layout": "auto",
       "source": {
@@ -3469,7 +3469,7 @@
       "direction": "split",
       "position": {
         "x": 883,
-        "y": 5706.0
+        "y": 6143.5
       },
       "layout": "auto"
     },
@@ -3480,7 +3480,7 @@
       "direction": "join",
       "position": {
         "x": 103,
-        "y": 6056.0
+        "y": 6406.0
       },
       "layout": "auto"
     },
@@ -3490,10 +3490,11 @@
       "junctionType": "AND",
       "direction": "join",
       "position": {
-        "x": 883,
-        "y": 6143.5
+        "x": 103,
+        "y": 13999.75
       },
-      "layout": "auto"
+      "layout": "auto",
+      "removed": true
     }
   ],
   "edges": [
@@ -4122,11 +4123,6 @@
       "label": "پر کردن تاپینگ‌ها"
     },
     {
-      "from": "cooking-026-j31",
-      "to": "cooking-026-n050",
-      "label": "آماده‌سازی گریل و پیش‌پخت مرغ"
-    },
-    {
       "from": "cooking-026-n047",
       "to": "cooking-026-j32"
     },
@@ -4139,15 +4135,16 @@
       "to": "cooking-026-n049"
     },
     {
-      "from": "cooking-026-n049",
-      "to": "cooking-026-j33"
+      "from": "cooking-026-j3",
+      "to": "cooking-026-n050",
+      "label": "آماده‌سازی گریل و پیش‌پخت مرغ"
     },
     {
       "from": "cooking-026-n055",
-      "to": "cooking-026-j33"
+      "to": "cooking-026-j10"
     },
     {
-      "from": "cooking-026-j33",
+      "from": "cooking-026-n049",
       "to": "cooking-026-n056"
     }
   ],

@@ -1,0 +1,18 @@
+{
+  "add_nodes": [],
+  "add_edges": [
+    { "from": "cooking-026-j3", "to": "cooking-026-n050", "label": "آماده‌سازی گریل و پیش‌پخت مرغ" },
+    { "from": "cooking-026-n055", "to": "cooking-026-j10" },
+    { "from": "cooking-026-n049", "to": "cooking-026-n056" }
+  ],
+  "enrich_nodes": [],
+  "flag_removed": [
+    { "id": "cooking-026-j33" }
+  ],
+  "remove_edges": [
+    { "from": "cooking-026-j31", "to": "cooking-026-n050" },
+    { "from": "cooking-026-n055", "to": "cooking-026-j33" },
+    { "from": "cooking-026-n049", "to": "cooking-026-j33" },
+    { "from": "cooking-026-j33", "to": "cooking-026-n056" }
+  ]
+}
