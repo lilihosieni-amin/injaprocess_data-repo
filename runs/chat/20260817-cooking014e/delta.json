@@ -1,0 +1,9 @@
+{
+  "add_nodes": [],
+  "add_edges": [
+    { "from": "cooking-014-j6", "to": "cooking-014-n023", "label": "قاعده معمول — روغن داغ است و حملش خطرناک" },
+    { "from": "cooking-014-j6", "to": "cooking-014-n022", "label": "استثنا — فقط در صورت امکان حمل در همان آخر شب" }
+  ],
+  "enrich_nodes": [],
+  "flag_removed": []
+}
