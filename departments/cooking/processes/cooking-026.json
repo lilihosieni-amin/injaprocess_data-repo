@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T12:05:52Z",
-  "updated_at": "2026-08-19T01:01:48Z",
+  "updated_at": "2026-08-19T01:04:37Z",
   "idef0": {
     "inputs": [
       "مواد اولیه تحویل‌گرفته و شمارش‌شده لاین فرنگی، سالاد و گریل",
@@ -1611,7 +1611,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 6481.753472222222
+        "y": 16788.492424242428
       },
       "layout": "auto",
       "source": {
@@ -1644,7 +1644,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 6481.753472222222
+        "y": 16788.492424242428
       },
       "layout": "auto",
       "source": {
@@ -1677,7 +1677,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 6481.753472222222
+        "y": 16788.492424242428
       },
       "layout": "auto",
       "source": {
@@ -1712,7 +1712,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 6306.753472222222
+        "y": 16613.492424242428
       },
       "layout": "auto",
       "source": {
@@ -1748,7 +1748,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 7617.170138888889
+        "y": 21163.681818181823
       },
       "layout": "auto",
       "source": {
@@ -1779,7 +1779,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 440.00000000000017
+        "y": 440.0
       },
       "layout": "auto",
       "source": {
@@ -1812,7 +1812,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 440.00000000000017
+        "y": 440.0
       },
       "layout": "auto",
       "source": {
@@ -1843,7 +1843,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 440.00000000000017
+        "y": 448.7500000000001
       },
       "layout": "auto",
       "source": {
@@ -1878,7 +1878,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 440.00000000000017
+        "y": 448.7500000000001
       },
       "layout": "auto",
       "source": {
@@ -1913,7 +1913,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 2715
+        "y": 6145.719696969698
       },
       "layout": "auto",
       "source": {
@@ -1949,7 +1949,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 2809.2307692307695
+        "y": 6173.719696969698
       },
       "layout": "auto",
       "source": {
@@ -2208,7 +2208,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 12890.086805555555
+        "y": 26370.12121212122
       },
       "layout": "auto",
       "source": {
@@ -2444,7 +2444,7 @@
       "direction": "join",
       "position": {
         "x": 103,
-        "y": 12381.086805555555
+        "y": 25861.12121212122
       },
       "layout": "auto",
       "removed": true
@@ -2456,7 +2456,7 @@
       "direction": "join",
       "position": {
         "x": 103,
-        "y": 12556.086805555555
+        "y": 26036.12121212122
       },
       "layout": "auto",
       "removed": true
@@ -2481,7 +2481,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 13765.086805555555
+        "y": 27245.12121212122
       },
       "layout": "auto",
       "source": {
@@ -2512,7 +2512,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 13940.086805555555
+        "y": 27420.12121212122
       },
       "layout": "auto",
       "source": {
@@ -2937,7 +2937,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 14290.086805555555
+        "y": 27770.12121212122
       },
       "layout": "auto",
       "source": {
@@ -2980,7 +2980,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 14465.086805555555
+        "y": 27945.12121212122
       },
       "layout": "auto",
       "source": {
@@ -3011,7 +3011,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 14640.086805555555
+        "y": 28120.12121212122
       },
       "layout": "auto",
       "source": {
@@ -3177,7 +3177,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 15165.086805555555
+        "y": 28645.12121212122
       },
       "layout": "auto",
       "source": {
@@ -3208,7 +3208,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 15340.086805555555
+        "y": 28820.12121212122
       },
       "layout": "auto",
       "source": {
@@ -3272,7 +3272,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 15515.086805555555
+        "y": 28995.12121212122
       },
       "layout": "auto",
       "source": {
@@ -3658,7 +3658,7 @@
       "direction": "split",
       "position": {
         "x": 1143,
-        "y": 6410.253472222222
+        "y": 16716.992424242428
       },
       "layout": "auto",
       "removed": true
@@ -3670,7 +3670,7 @@
       "direction": "join",
       "position": {
         "x": 103,
-        "y": 6410.253472222222
+        "y": 16673.242424242428
       },
       "layout": "auto",
       "removed": true
@@ -3682,7 +3682,7 @@
       "direction": "join",
       "position": {
         "x": 103,
-        "y": 12731.086805555555
+        "y": 26211.12121212122
       },
       "layout": "auto",
       "removed": true
@@ -4278,9 +4278,11 @@
       "source": {
         "created_by": "runs/chat/20260817-cooking026prod",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-tomato"
         ]
-      }
+      },
+      "removed": true
     }
   ],
   "edges": [
@@ -4903,10 +4905,6 @@
     {
       "from": "cooking-026-n111",
       "to": "cooking-026-n096"
-    },
-    {
-      "from": "cooking-026-n111",
-      "to": "cooking-026-n112"
     }
   ],
   "pending": []
