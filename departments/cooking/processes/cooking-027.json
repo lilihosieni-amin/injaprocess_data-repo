@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T12:36:03Z",
-  "updated_at": "2026-08-19T09:12:53Z",
+  "updated_at": "2026-08-19T09:18:50Z",
   "idef0": {
     "inputs": [
       "بسته‌های بار ملزومات از انبار و مرکز",
@@ -725,9 +725,11 @@
       "source": {
         "created_by": "runs/chat/20260817-counter",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking027sub"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-027-n020",
@@ -758,9 +760,11 @@
       "source": {
         "created_by": "runs/chat/20260817-counter",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking027sub"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-027-j2",
@@ -771,7 +775,8 @@
         "x": 1045,
         "y": 1746.78125
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cooking-027-n021",
@@ -802,9 +807,11 @@
       "source": {
         "created_by": "runs/chat/20260817-counter",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking027sub"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-027-n022",
@@ -835,9 +842,11 @@
       "source": {
         "created_by": "runs/chat/20260817-counter",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking027sub"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-027-n023",
@@ -868,8 +877,11 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260817-counter",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260817-cooking027sub"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-027-j3",
@@ -880,7 +892,8 @@
         "x": 883,
         "y": 3294.28125
       },
-      "layout": "auto"
+      "layout": "auto",
+      "removed": true
     },
     {
       "id": "cooking-027-n024",
@@ -909,8 +922,11 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260817-counter",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260817-cooking027sub"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-027-j4",
@@ -921,7 +937,8 @@
         "x": 363,
         "y": 3469.28125
       },
-      "layout": "auto"
+      "layout": "auto",
+      "removed": true
     },
     {
       "id": "cooking-027-n025",
@@ -953,8 +970,11 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260817-counter",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260817-cooking027sub"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-027-n026",
@@ -986,8 +1006,11 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260817-counter",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260817-cooking027sub"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-027-n027",
@@ -1017,8 +1040,11 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260817-counter",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260817-cooking027sub"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-027-n028",
@@ -1050,8 +1076,11 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260817-counter",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260817-cooking027sub"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-027-j5",
@@ -1062,7 +1091,8 @@
         "x": 363,
         "y": 3994.28125
       },
-      "layout": "auto"
+      "layout": "auto",
+      "removed": true
     },
     {
       "id": "cooking-027-n029",
@@ -1093,8 +1123,11 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260817-counter",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260817-cooking027sub"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-027-n030",
@@ -1126,8 +1159,11 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260817-counter",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260817-cooking027sub"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-027-j6",
@@ -1138,7 +1174,8 @@
         "x": 1143,
         "y": 3994.28125
       },
-      "layout": "auto"
+      "layout": "auto",
+      "removed": true
     },
     {
       "id": "cooking-027-n031",
@@ -1170,8 +1207,11 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260817-counter",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260817-cooking027sub"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-027-n032",
@@ -1200,8 +1240,11 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260817-counter",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260817-cooking027sub"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-027-j7",
@@ -1212,7 +1255,8 @@
         "x": 623,
         "y": 4431.78125
       },
-      "layout": "auto"
+      "layout": "auto",
+      "removed": true
     },
     {
       "id": "cooking-027-n033",
@@ -1239,7 +1283,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 4415.78125
+        "y": 3932.9292929292924
       },
       "layout": "auto",
       "source": {
@@ -1253,8 +1297,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 4431.78125
+        "x": 883,
+        "y": 3948.9292929292924
       },
       "layout": "auto"
     },
@@ -1283,8 +1327,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 4853.28125
+        "x": 1080,
+        "y": 4020.4292929292924
       },
       "layout": "auto",
       "source": {
@@ -1298,8 +1342,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 363,
-        "y": 4781.78125
+        "x": 1143,
+        "y": 5378.095959595959
       },
       "layout": "auto"
     },
@@ -1326,8 +1370,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 4765.78125
+        "x": 820,
+        "y": 5420.429292929292
       },
       "layout": "auto",
       "source": {
@@ -1356,8 +1400,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 4765.78125
+        "x": 560,
+        "y": 5420.429292929292
       },
       "layout": "auto",
       "source": {
@@ -1389,8 +1433,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 4765.78125
+        "x": 300,
+        "y": 5420.429292929292
       },
       "layout": "auto",
       "source": {
@@ -1404,8 +1448,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1143,
-        "y": 5131.78125
+        "x": 103,
+        "y": 5436.429292929292
       },
       "layout": "auto"
     },
@@ -1431,8 +1475,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 5028.28125
+        "x": 40,
+        "y": 6878.762626262626
       },
       "layout": "auto",
       "source": {
@@ -1462,8 +1506,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 5028.28125
+        "x": 300,
+        "y": 6878.762626262626
       },
       "layout": "auto",
       "source": {
@@ -1491,8 +1535,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 5028.28125
+        "x": 560,
+        "y": 6878.762626262626
       },
       "layout": "auto",
       "source": {
@@ -1520,8 +1564,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 5028.28125
+        "x": 820,
+        "y": 6878.762626262626
       },
       "layout": "auto",
       "source": {
@@ -1552,8 +1596,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 5203.28125
+        "x": 40,
+        "y": 7053.762626262626
       },
       "layout": "auto",
       "source": {
@@ -1586,8 +1630,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 5203.28125
+        "x": 300,
+        "y": 7053.762626262626
       },
       "layout": "auto",
       "source": {
@@ -1615,8 +1659,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 5203.28125
+        "x": 560,
+        "y": 7053.762626262626
       },
       "layout": "auto",
       "source": {
@@ -1645,8 +1689,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 5203.28125
+        "x": 820,
+        "y": 7053.762626262626
       },
       "layout": "auto",
       "source": {
@@ -1660,8 +1704,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 5481.78125
+        "x": 1143,
+        "y": 7069.762626262626
       },
       "layout": "auto"
     },
@@ -1686,8 +1730,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 5378.28125
+        "x": 1080,
+        "y": 7228.762626262626
       },
       "layout": "auto",
       "source": {
@@ -1716,8 +1760,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 5553.28125
+        "x": 1080,
+        "y": 7403.762626262626
       },
       "layout": "auto",
       "source": {
@@ -1772,13 +1816,91 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 4415.78125
+        "x": 560,
+        "y": 3932.9292929292924
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260817-cooking027b",
         "touched_by": []
+      }
+    },
+    {
+      "id": "cooking-027-n049",
+      "type": "activity",
+      "label": "کنترل فیش و فیش‌خوانی و هماهنگی با لاین‌ها",
+      "description": "با رسیدن فیش سفارش از پرینتر کانتر، کانترکار فیش را می‌خواند و آیتم‌های غذا و نوشیدنی و سس و شماره فیش و توضیحات مشتری را کنترل می‌کند، فیش چاپ مجدد را کنار می‌گذارد، فیش را روی فیش‌گیر سالن یا بیرون‌بر قرار می‌دهد و ترتیب رسیدگی را تعیین می‌کند. در همین بلوک اعلام‌های صندوق و سالن (کنسلی، اصلاحیه، فیش‌های مرتبط یک مشتری یا یک میز) رسیدگی می‌شود، سرپرست آشپزخانه زمان‌بندی انداختن غذا را به لاین‌ها اعلام می‌کند، کانتر یک تا دو دقیقه پیش از آماده شدن پیتزا آیتم‌های سالن را از لاین فرنگی می‌خواهد، و ظرف سوپ شیر برای گرم شدن به فرنگی داده و پس گرفته می‌شود. جزئیات همه این مراحل در زیرفرایند همین گره آمده است.",
+      "actor": "کانترکار",
+      "icom": {
+        "inputs": [
+          "فیش چاپ‌شده سفارش",
+          "فیش سفارش",
+          "فیش چاپ مجدد",
+          "فیش‌های روی فیش‌گیر کانتر",
+          "اعلام تلفنی یا بی‌سیم صندوق و سالن",
+          "اعلام کنسلی فیش از صندوق",
+          "اعلام اصلاحیه یا تغییر آیتم از صندوق",
+          "اعلام مرتبط بودن فیش‌ها از صندوق یا سالن",
+          "اعلام سالن درباره فیش‌های یک پیجر",
+          "فیش سالن دارای آیتم فرنگی",
+          "فیش دارای سوپ شیر",
+          "ظرف سوپ شیر سرد از یخچال",
+          "سوپ شیر گرم‌شده"
+        ],
+        "controls": [
+          "ترتیب کنترل: غذا، نوشیدنی، سس",
+          "درج عبارت چاپ مجدد در بالای فیش و عدد ۱ مشکی جلوی آیتم رد‌شده",
+          "تفکیک سفارش سالن از بیرون‌بر و حضوری",
+          "نوبت ثبت سفارش",
+          "زمان آماده شدن آیتم‌های هر فیش",
+          "جلوگیری از تولید غذای اضافه",
+          "امکان تغییر آیتم اصلی فقط پیش از آماده‌سازی سفارش",
+          "یکسان بودن شماره پیجر یا استند",
+          "هم‌زمان رفتن غذای میزهای مرتبط",
+          "زمان پخت هر آیتم در هر لاین",
+          "نگه‌داشتن آیتم‌های سریع‌سردشونده تا اعلام کانتر",
+          "فاصله یک تا دو دقیقه پیش از آماده شدن پیتزا",
+          "هم‌زمانی تحویل سوپ با آماده شدن سایر آیتم‌های فیش"
+        ],
+        "outputs": [
+          "فیش در دست کانتر",
+          "فهرست آیتم‌های سفارش",
+          "فیش چاپ مجدد کنار گذاشته‌شده",
+          "فیش قرارگرفته روی فیش‌گیر به ترتیب نوبت",
+          "ترتیب رسیدگی به فیش‌ها",
+          "اطلاع از تغییر یا مشکل فیش",
+          "توقف تولید سفارش کنسل‌شده در لاین‌ها",
+          "فیش اصلاح‌شده اعلام‌شده به لاین مربوطه",
+          "فیش‌های مرتبط چسبانده‌شده",
+          "زمان‌بندی انداختن غذا در لاین‌ها",
+          "دستور زمان‌بندی انداختن غذا به لاین‌ها",
+          "درخواست اعلام‌شده آیتم فرنگی سالن",
+          "سوپ شیر تحویل‌شده به لاین فرنگی جهت گرم کردن",
+          "سوپ شیر دربسته و لیبل‌خورده آماده قرار گرفتن در سینی یا پک"
+        ],
+        "mechanisms": [
+          "کانترکار",
+          "پرینتر فیش کانتر",
+          "فیش‌گیر سالن و فیش‌گیر بیرون‌بر",
+          "تلفن",
+          "بی‌سیم",
+          "سرپرست آشپزخانه",
+          "جانشین سرپرست آشپزخانه",
+          "لاین فرنگی",
+          "لیبل"
+        ]
+      },
+      "subprocess": "cooking-031",
+      "position": {
+        "x": 40,
+        "y": 3932.9292929292924
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260817-cooking027sub",
+        "touched_by": [
+          "runs/chat/20260817-cooking027sub"
+        ]
       }
     }
   ],
@@ -1920,10 +2042,6 @@
     {
       "from": "cooking-027-n032",
       "to": "cooking-027-j7"
-    },
-    {
-      "from": "cooking-027-j7",
-      "to": "cooking-027-n033"
     },
     {
       "from": "cooking-027-j8",
@@ -2080,8 +2198,11 @@
     },
     {
       "from": "cooking-027-j13",
-      "to": "cooking-027-n019",
-      "label": ""
+      "to": "cooking-027-n049"
+    },
+    {
+      "from": "cooking-027-n049",
+      "to": "cooking-027-n033"
     }
   ],
   "pending": []
