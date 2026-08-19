@@ -2,7 +2,7 @@
   "department": "cooking",
   "order": [
     "cooking-001",
-    "cooking-002",
+    "cooking-030",
     "cooking-024",
     "cooking-025",
     "cooking-026",
@@ -13,7 +13,6 @@
     "cooking-023",
     "cooking-014",
     "cooking-015",
-    "cooking-016",
     "cooking-017",
     "cooking-018",
     "cooking-019",
@@ -21,5 +20,5 @@
     "cooking-021",
     "cooking-022"
   ],
-  "updated_at": "2026-08-19T00:57:34Z"
+  "updated_at": "2026-08-19T01:18:31Z"
 }

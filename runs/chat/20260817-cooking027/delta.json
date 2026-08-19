@@ -1,0 +1,36 @@
+{
+  "add_nodes": [
+    { "key": "jA", "type": "junction", "junctionType": "AND", "direction": "split" },
+    { "key": "jB", "type": "junction", "junctionType": "AND", "direction": "join" }
+  ],
+  "add_edges": [
+    { "from": "cooking-027-n002", "to": "jA" },
+    { "from": "jA", "to": "cooking-027-n003", "label": "راه‌اندازی دیسپلی و شوتینگ" },
+    { "from": "jA", "to": "cooking-027-n004", "label": "دپو و جعبه‌ها و پاکت‌ها" },
+    { "from": "jA", "to": "cooking-027-n007", "label": "آماده‌سازی سس‌ها" },
+    { "from": "jA", "to": "cooking-027-n013", "label": "بسته‌بندی نان مینی‌مک" },
+    { "from": "jA", "to": "cooking-027-n014", "label": "پک چنگال یک‌بارمصرف" },
+    { "from": "jA", "to": "cooking-027-n015", "label": "کاغذ کف پیتزا" },
+    { "from": "jA", "to": "cooking-027-n017", "label": "شارژ یخچال نوشیدنی‌ها" },
+    { "from": "cooking-027-n003", "to": "jB" },
+    { "from": "cooking-027-n006", "to": "jB" },
+    { "from": "cooking-027-n012", "to": "jB" },
+    { "from": "cooking-027-n013", "to": "jB" },
+    { "from": "cooking-027-n014", "to": "jB" },
+    { "from": "cooking-027-n016", "to": "jB" },
+    { "from": "cooking-027-n018", "to": "jB" },
+    { "from": "jB", "to": "cooking-027-j1" }
+  ],
+  "enrich_nodes": [],
+  "flag_removed": [],
+  "remove_edges": [
+    { "from": "cooking-027-n002", "to": "cooking-027-n003" },
+    { "from": "cooking-027-n003", "to": "cooking-027-n004" },
+    { "from": "cooking-027-n006", "to": "cooking-027-n007" },
+    { "from": "cooking-027-n012", "to": "cooking-027-n013" },
+    { "from": "cooking-027-n013", "to": "cooking-027-n014" },
+    { "from": "cooking-027-n014", "to": "cooking-027-n015" },
+    { "from": "cooking-027-n016", "to": "cooking-027-n017" },
+    { "from": "cooking-027-n018", "to": "cooking-027-j1" }
+  ]
+}
