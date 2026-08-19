@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T12:05:52Z",
-  "updated_at": "2026-08-18T23:46:33Z",
+  "updated_at": "2026-08-19T00:08:45Z",
   "idef0": {
     "inputs": [
       "مواد اولیه تحویل‌گرفته و شمارش‌شده لاین فرنگی، سالاد و گریل",
@@ -2737,8 +2737,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 676,
-        "y": 7902.063368055555
+        "x": 944,
+        "y": 8008.063368055555
       },
       "layout": "manual",
       "source": {
@@ -2767,8 +2767,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 670,
-        "y": 8116.063368055555
+        "x": 686,
+        "y": 8542.063368055555
       },
       "layout": "manual",
       "source": {
@@ -3310,8 +3310,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 154,
-        "y": 8107.517885420057
+        "x": 192,
+        "y": 8079.517885420057
       },
       "layout": "manual",
       "source": {
@@ -3761,13 +3761,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 8039.212436868689
+        "x": 1628,
+        "y": 8221.21243686869
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking026f",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -3795,13 +3797,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 8214.21243686869
+        "x": 1740,
+        "y": 7888.212436868689
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking026f",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -3831,13 +3835,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 8389.21243686869
+        "x": 360,
+        "y": 8249.21243686869
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking026f",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
