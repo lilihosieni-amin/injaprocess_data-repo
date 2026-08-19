@@ -13,7 +13,7 @@
     "node": "cooking-026-n100"
   },
   "created_at": "2026-08-18T23:23:55Z",
-  "updated_at": "2026-08-19T08:53:37Z",
+  "updated_at": "2026-08-19T08:54:20Z",
   "idef0": {
     "inputs": [
       "قارچ فرنگی تحویل‌گرفته از لاین سوخاری",
@@ -521,13 +521,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 319.6875
+        "x": 348,
+        "y": 67.18729019165039
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking026sub",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1242,13 +1244,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 440.00000000000006
+        "x": 354,
+        "y": 478.00000000000006
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking026sub",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1623,13 +1627,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 440
+        "x": 38,
+        "y": 162
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-audit028",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
