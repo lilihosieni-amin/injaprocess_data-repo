@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T12:05:52Z",
-  "updated_at": "2026-08-19T00:47:03Z",
+  "updated_at": "2026-08-19T00:57:34Z",
   "idef0": {
     "inputs": [
       "مواد اولیه تحویل‌گرفته و شمارش‌شده لاین فرنگی، سالاد و گریل",
@@ -2184,7 +2184,8 @@
         "x": 1445,
         "y": 6622.041666666667
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cooking-026-n062",
@@ -2228,7 +2229,8 @@
         "x": 2015,
         "y": 6631.017919752332
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cooking-026-n063",
@@ -2260,9 +2262,11 @@
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
           "ui-edit",
-          "runs/chat/20260817-audit026"
+          "runs/chat/20260817-audit026",
+          "runs/chat/20260817-cooking026prod"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-j15",
@@ -2273,7 +2277,8 @@
         "x": 2199,
         "y": 7018.580385420057
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cooking-026-n064",
@@ -2546,9 +2551,11 @@
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
           "ui-edit",
-          "runs/chat/20260817-cooking026h"
+          "runs/chat/20260817-cooking026h",
+          "runs/chat/20260817-cooking026prod"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-j20",
@@ -2559,7 +2566,8 @@
         "x": 2167,
         "y": 7404.973173353406
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cooking-026-n071",
@@ -2589,9 +2597,11 @@
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
           "ui-edit",
-          "runs/chat/20260817-cooking026h"
+          "runs/chat/20260817-cooking026h",
+          "runs/chat/20260817-cooking026prod"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-j21",
@@ -2602,7 +2612,8 @@
         "x": 2159,
         "y": 7751.086805555555
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cooking-026-n072",
@@ -2631,9 +2642,11 @@
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026prod"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-j22",
@@ -2644,7 +2657,8 @@
         "x": 1883,
         "y": 8080.518633100721
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cooking-026-n073",
@@ -2673,9 +2687,11 @@
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026prod"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-j23",
@@ -2686,7 +2702,8 @@
         "x": 1859,
         "y": 8492.086805555555
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cooking-026-n074",
@@ -2719,9 +2736,11 @@
         "touched_by": [
           "ui-edit",
           "runs/chat/20260817-cooking026g",
-          "runs/chat/20260817-audit026"
+          "runs/chat/20260817-audit026",
+          "runs/chat/20260817-cooking026prod"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-n075",
@@ -2750,9 +2769,11 @@
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026prod"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-n076",
@@ -2780,9 +2801,11 @@
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026prod"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-j24",
@@ -2793,7 +2816,8 @@
         "x": 1109,
         "y": 7067.313356611463
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cooking-026-n077",
@@ -2855,9 +2879,11 @@
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026prod"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-n079",
@@ -2886,9 +2912,11 @@
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026prod"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-n080",
@@ -2930,7 +2958,8 @@
         "x": 1003,
         "y": 7530.897398206922
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cooking-026-n081",
@@ -3021,9 +3050,11 @@
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026prod"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-n084",
@@ -3119,9 +3150,11 @@
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026prod"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-n087",
@@ -3214,9 +3247,11 @@
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026prod"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-n090",
@@ -3281,9 +3316,11 @@
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026prod"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-j26",
@@ -3294,7 +3331,8 @@
         "x": 673,
         "y": 7333.903269026014
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cooking-026-n092",
@@ -3323,9 +3361,11 @@
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026prod"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-j27",
@@ -3336,7 +3376,8 @@
         "x": 809,
         "y": 7550.55603620741
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cooking-026-n093",
@@ -3365,9 +3406,11 @@
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026prod"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-n094",
@@ -3398,9 +3441,11 @@
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026prod"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-n095",
@@ -3432,9 +3477,11 @@
       "source": {
         "created_by": "runs/chat/20260817-lines",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026prod"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-j28",
@@ -3445,7 +3492,8 @@
         "x": 1049,
         "y": 8697.055318261822
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cooking-026-n096",
@@ -3774,9 +3822,11 @@
       "source": {
         "created_by": "runs/chat/20260817-cooking026f",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026prod"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-n102",
@@ -3810,9 +3860,11 @@
       "source": {
         "created_by": "runs/chat/20260817-cooking026f",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026prod"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-n103",
@@ -3849,9 +3901,11 @@
         "created_by": "runs/chat/20260817-cooking026f",
         "touched_by": [
           "ui-edit",
-          "runs/chat/20260817-audit026"
+          "runs/chat/20260817-audit026",
+          "runs/chat/20260817-cooking026prod"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-n104",
@@ -3923,9 +3977,11 @@
       "source": {
         "created_by": "runs/chat/20260817-cooking026h",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026prod"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-n107",
@@ -3959,9 +4015,11 @@
       "source": {
         "created_by": "runs/chat/20260817-audit026",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026prod"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-n108",
@@ -3993,9 +4051,11 @@
       "source": {
         "created_by": "runs/chat/20260817-audit026",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026prod"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-n109",
@@ -4028,9 +4088,11 @@
       "source": {
         "created_by": "runs/chat/20260817-audit026",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026prod"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-026-n110",
@@ -4063,8 +4125,158 @@
       "source": {
         "created_by": "runs/chat/20260817-audit026",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260817-cooking026prod"
         ]
+      },
+      "removed": true
+    },
+    {
+      "id": "cooking-026-n111",
+      "type": "activity",
+      "label": "آماده‌سازی سفارش‌های مختلف لاین گریل، سالاد و فرنگی",
+      "description": "پس از خواندن فیش و مشخص شدن اینکه سفارش سالن است یا بیرون‌بر، تولید آیتم‌های همان فیش آغاز می‌شود. این بلوک برای هر نوع آیتم شاخه جداگانه دارد — برگر و ساندویچ گریلی، سالاد سزار و چیزا، سیب‌ویژه، پنه و پاستا و چیکن‌استیک، سوپ شیر، و سس قارچ و دیپ گودا — و در کنار آن‌ها همکاری‌های این لاین با لاین‌های پیتزا و سوخاری و شارژ مجدد تاپینگ‌ها در میانه شیفت هم جریان دارد. همه شاخه‌ها وقتی آیتم‌های آن فیش آماده شد به هم می‌رسند. جزئیات هر شاخه در زیرفرایند همین گره آمده است.",
+      "actor": "کارکنان لاین فرنگی، سالاد و گریل",
+      "icom": {
+        "inputs": [
+          "فیش ساندویچ رست‌بیف",
+          "فیش دبل‌دان، دبل‌کینگ یا سینه کریسپی دو تیکه",
+          "برگر منجمد",
+          "ساندویچ بسته‌شده",
+          "کاغذ بسته‌بندی ساندویچ",
+          "سس آیولی",
+          "ظرف سالاد آماده",
+          "نان تست آماده",
+          "گوجه‌گیلاسی",
+          "چیزای آماده",
+          "سیب آماده",
+          "گوشت چرخ‌کرده پخته",
+          "جعفری خردشده",
+          "پنه یا پاستای آماده",
+          "مرغ گریل خردشده",
+          "قارچ اسلایس‌شده",
+          "سس آلفردو",
+          "ظرف سوپ شیر سرد",
+          "سس قارچ",
+          "سس دیپ گودا",
+          "نان پروتان لاین فرنگی",
+          "رست‌بیف موجود در تاپینگ لاین پیتزا",
+          "سینه مرغ موجود در لاین فرنگی",
+          "پوره سیر و سیر روغن تحویلی از واحد آماده‌سازی",
+          "مواد اولیه ذخیره در یخچال بخش"
+        ],
+        "controls": [
+          "هم‌زمانی با آماده شدن فیله بخش سوخاری",
+          "قاعده نوشتن نام روی تمام ساندویچ‌ها به جز هات‌داگ",
+          "توضیحات و درخواست‌های خاص مشتری روی فیش",
+          "ممنوعیت کات کردن ساندویچ توسط لاین پخت",
+          "الزام همراه کردن سس آیولی با برگر سفارش سالن",
+          "الزام قرار دادن تمام ساندویچ‌های تولیدشده در شوت یا دیسپلی",
+          "الزام خام نبودن داخل چیزا",
+          "مقدار ۵ تا ۱۰ گرم گوشت چرخ‌کرده برای هر سیب‌ویژه",
+          "نوع آیتم ثبت‌شده روی فیش",
+          "مهلت دو تا سه دقیقه مانده به آماده شدن سایر آیتم‌های فیش",
+          "اعلام کانتر به‌عنوان شروع تکمیل نهایی",
+          "اختصاص این تأخیر به سفارش سالن و نه بیرون‌بر",
+          "الزام تست یک نمونه در هر پرس",
+          "تست پاستا پستو با یک چنگال",
+          "اعلام کانتر درباره گذاشتن یا نگذاشتن در ظرف",
+          "زمان‌بندی اعلام‌شده توسط کانتر بر اساس سایر آیتم‌های فیش",
+          "اعلام کانتر هنگام آماده کردن پک",
+          "بی‌ارتباط بودن تست نان پروتان با فیش سفارش",
+          "پیگیری زمان و مقدار بر عهده لاین فرنگی",
+          "اختصاص رویه رست‌بیف به شعبه ناهارخوران به دلیل کم بودن فیش ساندویچ رست‌بیف",
+          "سفارش مستقل رست‌بیف توسط لاین فرنگی در شعبه مرکزی",
+          "الزام اجازه سرآشپز برای جابه‌جایی مواد میان لاین‌ها",
+          "کسر خودکار ۲۸۵ گرم به ازای هر پرس در حسابداری",
+          "ثبت سفارش پوره سیر به نام لاین فرنگی به دلیل مصرف بیشتر در پاستا",
+          "مقدار دو تا چهار قاشق پوره سیر برای نان سیر",
+          "انجام شارژ تاپینگ‌ها حین کار بدون توقف جریان سفارش"
+        ],
+        "outputs": [
+          "ساندویچ نام‌گذاری‌شده",
+          "ساندویچ با مشخصات نوشته‌شده",
+          "ساندویچ ستاره‌خورده سالن",
+          "برگر همراه سس آیولی آماده تحویل به کانتر",
+          "ساندویچ گرم‌نگه‌داشته‌شده",
+          "ظرف سالاد با نان تست و گوجه‌گیلاسی",
+          "چیزای برش‌خورده و بررسی‌شده",
+          "سیب‌ویژه تکمیل‌شده",
+          "پنه، پاستا یا چیکن‌استیک آماده",
+          "پنه یا چیکن‌استیک تکمیل‌شده و گرم آماده تحویل",
+          "پنه یا پاستای تأییدشده آماده تحویل",
+          "ظرف فرنگی دربسته",
+          "سوپ شیر داغ‌شده",
+          "ظرف سس آماده تحویل",
+          "نان پروتان تست‌شده تحویل‌گرفته از لاین پیتزا",
+          "رست‌بیف تحویل‌گرفته از لاین پیتزا",
+          "سینه مرغ تحویل‌شده به لاین سوخاری",
+          "پوره سیر تحویل‌شده به لاین پیتزا",
+          "تاپینگ‌های شارژشده برای ادامه شیفت"
+        ],
+        "mechanisms": [
+          "کارکن لاین گریل و ساندویچ",
+          "کارکن لاین فرنگی و سالاد",
+          "کارکن لاین فرنگی",
+          "کارکن لاین فرنگی، سالاد و گریل",
+          "بخش سوخاری",
+          "بخش کانتر",
+          "لاین پیتزا",
+          "لاین سوخاری",
+          "سرآشپز",
+          "واحد حسابداری",
+          "واحد آماده‌سازی",
+          "ماهیتابه و گاز",
+          "شوت و دیسپلی گرم",
+          "یخچال سالاد",
+          "یخچال تاپینگی",
+          "فر پیتزا"
+        ]
+      },
+      "subprocess": "cooking-029",
+      "position": {
+        "x": 300,
+        "y": 25320.12121212122
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260817-cooking026prod",
+        "touched_by": [
+          "runs/chat/20260817-cooking026prod"
+        ]
+      }
+    },
+    {
+      "id": "cooking-026-n112",
+      "type": "activity",
+      "label": "تفکیک و نگهداری ته گوجه سالم برای تحویل به انبار",
+      "description": "گوجه‌ای که در لاین فرنگی اسلایس می‌شود ته‌مانده دارد و این ته گوجه نباید دور ریخته شود مگر آنکه خراب باشد. بخش سالم آن جمع‌آوری و نگهداری می‌شود و روز بعد تحویل انبار می‌گردد تا در تولید سس استفاده شود؛ حتی مقدارهای کم مانند پنجاه، صد یا دویست گرم هم تحویل داده می‌شود. تنها بخش خراب دور ریخته می‌شود. شرح کامل این مسیر و ثبت آن در فرایند مدیریت ضایعات آمده است.",
+      "actor": "کارکن لاین فرنگی",
+      "icom": {
+        "inputs": [
+          "ته گوجه باقی‌مانده از اسلایس در لاین فرنگی"
+        ],
+        "controls": [
+          "ممنوعیت دورریختن ته گوجه سالم",
+          "دورریختن فقط بخش خراب"
+        ],
+        "outputs": [
+          "ته گوجه سالم جمع‌آوری‌شده برای تحویل به انبار جهت تولید سس"
+        ],
+        "mechanisms": [
+          "کارکن لاین فرنگی",
+          "واحد انبار"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 25407.62121212122
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260817-cooking026prod",
+        "touched_by": []
       }
     }
   ],
@@ -4322,10 +4534,6 @@
       "to": "cooking-026-j12"
     },
     {
-      "from": "cooking-026-j12",
-      "to": "cooking-026-j13"
-    },
-    {
       "from": "cooking-026-j13",
       "to": "cooking-026-n075",
       "label": "آیتم سالاد"
@@ -4446,10 +4654,6 @@
     {
       "from": "cooking-026-n095",
       "to": "cooking-026-j28"
-    },
-    {
-      "from": "cooking-026-j28",
-      "to": "cooking-026-n096"
     },
     {
       "from": "cooking-026-n097",
@@ -4688,6 +4892,18 @@
     {
       "from": "cooking-026-n110",
       "to": "cooking-026-j26"
+    },
+    {
+      "from": "cooking-026-j12",
+      "to": "cooking-026-n111"
+    },
+    {
+      "from": "cooking-026-n111",
+      "to": "cooking-026-n096"
+    },
+    {
+      "from": "cooking-026-n111",
+      "to": "cooking-026-n112"
     }
   ],
   "pending": []
