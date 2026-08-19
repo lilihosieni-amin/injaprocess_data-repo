@@ -13,7 +13,7 @@
     "node": "cooking-026-n111"
   },
   "created_at": "2026-08-19T00:57:34Z",
-  "updated_at": "2026-08-19T00:57:34Z",
+  "updated_at": "2026-08-19T08:45:46Z",
   "idef0": {
     "inputs": [
       "فیش ساندویچ رست‌بیف",
@@ -118,10 +118,10 @@
       "junctionType": "OR",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 1028.7272727272725
+        "x": -703,
+        "y": 1082.7272727272725
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-029-j2",
@@ -129,10 +129,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
-        "y": 2118.5
+        "x": -147,
+        "y": 2054.5
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-029-n001",
@@ -156,13 +156,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 2190.0
+        "x": 106,
+        "y": 2166
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking026prod",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -171,10 +173,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 883,
-        "y": 2045.5833333333335
+        "x": 375,
+        "y": 2035.5833333333335
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-029-n002",
@@ -195,13 +197,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 2029.5833333333335
+        "x": 544,
+        "y": 2171.5833333333335
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking026prod",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -210,10 +214,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1143,
-        "y": 4306.0
+        "x": 877,
+        "y": 2176
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-029-n003",
@@ -235,13 +239,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 4392.083333333333
+        "x": 1100,
+        "y": 2168.083333333333
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking026prod",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -250,10 +256,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 623,
-        "y": 4247.666666666666
+        "x": 1085,
+        "y": 2433.666666666666
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-029-n004",
@@ -275,13 +281,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 4231.666666666666
+        "x": 1312,
+        "y": 2389.666666666666
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking026prod",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -290,10 +298,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 4247.666666666666
+        "x": 1585,
+        "y": 2399.666666666666
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-029-n005",
@@ -315,13 +323,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 6492.083333333333
+        "x": 1750,
+        "y": 2440.3333791097
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking026prod",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -348,13 +358,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 6492.083333333333
+        "x": 2078,
+        "y": 2258.083333333333
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking026prod",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -363,10 +375,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 623,
-        "y": 6347.666666666666
+        "x": 1759,
+        "y": 2077.666666666666
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-029-n007",
@@ -390,13 +402,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 6331.666666666666
+        "x": 2024,
+        "y": 1801.666666666666
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking026prod",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -516,13 +530,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1679.5833333333335
+        "x": 1138,
+        "y": 1593.5833333333335
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking026prod",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -531,10 +547,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1143,
-        "y": 3781.0
+        "x": 1363,
+        "y": 1323.2998313903809
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-029-n012",
@@ -557,7 +573,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 1315.0
+        "y": 1315
       },
       "layout": "auto",
       "source": {
@@ -651,7 +667,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 1840.0
+        "y": 1840
       },
       "layout": "auto",
       "source": {
@@ -686,7 +702,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1840.0
+        "y": 1840
       },
       "layout": "auto",
       "source": {
@@ -758,13 +774,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 4115.0
+        "x": 1250,
+        "y": 1983
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking026prod",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -773,10 +791,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 883,
-        "y": 3970.583333333333
+        "x": 1451,
+        "y": 1844.583333333333
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-029-n019",
@@ -799,7 +817,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 1140.0
+        "y": 1140
       },
       "layout": "auto",
       "source": {
@@ -861,13 +879,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 90.0
+        "x": 498,
+        "y": 862
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking026prod",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -895,13 +915,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 265.0
+        "x": 50,
+        "y": 121
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking026prod",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1000,7 +1022,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 790.0
+        "y": 790
       },
       "layout": "auto",
       "source": {
@@ -1032,7 +1054,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 965.0
+        "y": 965
       },
       "layout": "auto",
       "source": {
@@ -1046,10 +1068,10 @@
       "junctionType": "OR",
       "direction": "join",
       "position": {
-        "x": 1143,
-        "y": 5472.666666666666
+        "x": 1713,
+        "y": 803.8165079752598
       },
-      "layout": "auto"
+      "layout": "manual"
     }
   ],
   "edges": [
