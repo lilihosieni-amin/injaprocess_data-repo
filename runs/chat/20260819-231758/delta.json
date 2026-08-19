@@ -1,0 +1,15 @@
+{
+  "add_nodes": [],
+  "add_edges": [
+    { "from": "cooking-027-j10", "to": "cooking-027-n038", "label": "سفارش سالن" }
+  ],
+  "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [
+    { "from": "cooking-027-j10", "to": "cooking-027-n039" },
+    { "from": "cooking-027-n039", "to": "cooking-027-n038" }
+  ],
+  "flag_removed": [
+    { "id": "cooking-027-n039" }
+  ]
+}

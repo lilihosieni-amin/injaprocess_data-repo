@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T12:36:03Z",
-  "updated_at": "2026-08-19T23:15:08Z",
+  "updated_at": "2026-08-19T23:18:05Z",
   "idef0": {
     "inputs": [
       "بسته‌های بار ملزومات از انبار و مرکز",
@@ -872,7 +872,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 3278.28125
+        "y": 1578.6129816685375
       },
       "layout": "auto",
       "source": {
@@ -889,8 +889,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 3294.28125
+        "x": 1143,
+        "y": 3266.016835016835
       },
       "layout": "auto",
       "removed": true
@@ -916,8 +916,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 3453.28125
+        "x": 820,
+        "y": 3337.516835016835
       },
       "layout": "auto",
       "source": {
@@ -934,8 +934,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
-        "y": 3469.28125
+        "x": 623,
+        "y": 3353.516835016835
       },
       "layout": "auto",
       "removed": true
@@ -964,8 +964,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 3278.28125
+        "x": 300,
+        "y": 2993.9983164983164
       },
       "layout": "auto",
       "source": {
@@ -1000,8 +1000,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 3453.28125
+        "x": 300,
+        "y": 3343.998316498317
       },
       "layout": "auto",
       "source": {
@@ -1034,8 +1034,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 3628.28125
+        "x": 300,
+        "y": 3518.998316498317
       },
       "layout": "auto",
       "source": {
@@ -1071,7 +1071,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 4153.28125
+        "y": 3747.0286195286194
       },
       "layout": "auto",
       "source": {
@@ -1088,8 +1088,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 363,
-        "y": 3994.28125
+        "x": 103,
+        "y": 5279.695286195286
       },
       "layout": "auto",
       "removed": true
@@ -1117,8 +1117,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 3978.28125
+        "x": 300,
+        "y": 5263.695286195286
       },
       "layout": "auto",
       "source": {
@@ -1153,8 +1153,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 3978.28125
+        "x": 560,
+        "y": 5263.695286195286
       },
       "layout": "auto",
       "source": {
@@ -1171,8 +1171,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1143,
-        "y": 3994.28125
+        "x": 883,
+        "y": 5279.695286195286
       },
       "layout": "auto",
       "removed": true
@@ -1202,7 +1202,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 4503.28125
+        "y": 5351.195286195287
       },
       "layout": "auto",
       "source": {
@@ -1234,8 +1234,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 4503.28125
+        "x": 1080,
+        "y": 6955.361952861954
       },
       "layout": "auto",
       "source": {
@@ -1252,8 +1252,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 623,
-        "y": 4431.78125
+        "x": 883,
+        "y": 6840.111952861954
       },
       "layout": "auto",
       "removed": true
@@ -1525,9 +1525,11 @@
         "created_by": "runs/chat/20260817-counter",
         "touched_by": [
           "ui-edit",
-          "runs/chat/20260819-231431"
+          "runs/chat/20260819-231431",
+          "runs/chat/20260819-231758"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-027-n040",
@@ -2329,17 +2331,13 @@
       "to": "cooking-027-j9"
     },
     {
-      "from": "cooking-027-j10",
-      "to": "cooking-027-n039",
-      "label": "سفارش سالن"
-    },
-    {
-      "from": "cooking-027-n039",
-      "to": "cooking-027-n038"
-    },
-    {
       "from": "cooking-027-n038",
       "to": "cooking-027-n040"
+    },
+    {
+      "from": "cooking-027-j10",
+      "to": "cooking-027-n038",
+      "label": "سفارش سالن"
     }
   ],
   "pending": []
