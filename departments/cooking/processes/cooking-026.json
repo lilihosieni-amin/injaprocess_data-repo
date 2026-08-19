@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T12:05:52Z",
-  "updated_at": "2026-08-19T00:57:34Z",
+  "updated_at": "2026-08-19T01:01:17Z",
   "idef0": {
     "inputs": [
       "مواد اولیه تحویل‌گرفته و شمارش‌شده لاین فرنگی، سالاد و گریل",
@@ -2011,8 +2011,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1582,
-        "y": 1163.8888888888887
+        "x": 2210,
+        "y": 1075.8888888888887
       },
       "layout": "manual",
       "source": {
@@ -2042,8 +2042,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 498,
-        "y": 4906.563368055556
+        "x": 2214,
+        "y": 1317.4008657667373
       },
       "layout": "manual",
       "source": {
@@ -2074,8 +2074,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1410,
-        "y": 5275.834201388889
+        "x": 2202,
+        "y": 1615.8342013888887
       },
       "layout": "manual",
       "source": {
@@ -2091,8 +2091,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1419,
-        "y": 5509.834201388889
+        "x": 1579,
+        "y": 2123.8342013888887
       },
       "layout": "manual"
     },
@@ -2118,8 +2118,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1658,
-        "y": 5619.334201388889
+        "x": 2234,
+        "y": 2189.3342013888887
       },
       "layout": "manual",
       "source": {
@@ -2152,8 +2152,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1414,
-        "y": 5677.334201388889
+        "x": 2270,
+        "y": 2643.3342013888887
       },
       "layout": "manual",
       "source": {
@@ -2170,8 +2170,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1191,
-        "y": 5735.834201388889
+        "x": 1555,
+        "y": 2503.8342013888887
       },
       "layout": "manual"
     },
@@ -3515,8 +3515,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 986,
-        "y": 8791.674230004986
+        "x": 1104,
+        "y": 3203.6742300049864
       },
       "layout": "manual",
       "source": {
@@ -3933,8 +3933,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1780,
-        "y": 751.8888888888887
+        "x": 2184,
+        "y": 731.8888888888887
       },
       "layout": "manual",
       "source": {
@@ -4235,14 +4235,15 @@
       },
       "subprocess": "cooking-029",
       "position": {
-        "x": 300,
-        "y": 25320.12121212122
+        "x": 1518,
+        "y": 2718.5462075435826
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking026prod",
         "touched_by": [
-          "runs/chat/20260817-cooking026prod"
+          "runs/chat/20260817-cooking026prod",
+          "ui-edit"
         ]
       }
     },
@@ -4270,13 +4271,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 25407.62121212122
+        "x": 1770,
+        "y": 2944.3087006771275
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking026prod",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
