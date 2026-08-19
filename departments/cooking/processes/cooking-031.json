@@ -13,7 +13,7 @@
     "node": "cooking-027-n049"
   },
   "created_at": "2026-08-19T09:18:50Z",
-  "updated_at": "2026-08-19T10:13:43Z",
+  "updated_at": "2026-08-19T22:51:48Z",
   "idef0": {
     "inputs": [
       "فیش چاپ‌شده سفارش",
@@ -324,8 +324,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 151,
-        "y": 506.5
+        "x": 162,
+        "y": 437.5
       },
       "layout": "manual",
       "source": {
@@ -505,10 +505,10 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1227.5
+        "x": 535,
+        "y": 1251.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking027sub",
         "touched_by": [
@@ -516,17 +516,6 @@
           "runs/chat/20260817-cooking031b"
         ]
       }
-    },
-    {
-      "id": "cooking-031-j5",
-      "type": "junction",
-      "junctionType": "XOR",
-      "direction": "split",
-      "position": {
-        "x": 623,
-        "y": 2118.5
-      },
-      "layout": "auto"
     },
     {
       "id": "cooking-031-n013",
@@ -552,13 +541,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 2190.0
+        "x": 596,
+        "y": 1693.6250228881836
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking027sub",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -582,8 +573,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1070,
-        "y": 1527.5
+        "x": 640,
+        "y": 1926.5
       },
       "layout": "manual",
       "source": {
@@ -594,24 +585,13 @@
       }
     },
     {
-      "id": "cooking-031-j6",
-      "type": "junction",
-      "junctionType": "XOR",
-      "direction": "join",
-      "position": {
-        "x": 803,
-        "y": 1608
-      },
-      "layout": "manual"
-    },
-    {
       "id": "cooking-031-j7",
       "type": "junction",
       "junctionType": "OR",
       "direction": "split",
       "position": {
         "x": 883,
-        "y": 1506.0
+        "y": 1506
       },
       "layout": "auto"
     },
@@ -651,13 +631,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1140.0
+        "x": 774,
+        "y": 1732.3750915527344
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking031b",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -684,13 +666,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1315.0
+        "x": 1359,
+        "y": 1592
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking031b",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -717,13 +701,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1490.0
+        "x": 1647,
+        "y": 1447
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking031b",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -750,13 +736,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1665.0
+        "x": 1136,
+        "y": 1750
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking031b",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -784,13 +772,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1840.0
+        "x": 951,
+        "y": 1634
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking031b",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -818,13 +808,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 2102.5
+        "x": 1075,
+        "y": 2219.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking031b",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
@@ -905,22 +897,8 @@
       "to": "cooking-031-n012"
     },
     {
-      "from": "cooking-031-j5",
-      "to": "cooking-031-n013",
-      "label": "فیش دارای سوپ شیر است"
-    },
-    {
-      "from": "cooking-031-j5",
-      "to": "cooking-031-j6",
-      "label": "فیش سوپ شیر ندارد"
-    },
-    {
       "from": "cooking-031-n013",
       "to": "cooking-031-n014"
-    },
-    {
-      "from": "cooking-031-n014",
-      "to": "cooking-031-j6"
     },
     {
       "from": "cooking-031-n012",
@@ -976,8 +954,14 @@
       "to": "cooking-031-n020"
     },
     {
-      "from": "cooking-031-n020",
-      "to": "cooking-031-j5"
+      "from": "cooking-031-n014",
+      "to": "cooking-031-j8",
+      "label": ""
+    },
+    {
+      "from": "cooking-031-j7",
+      "to": "cooking-031-n013",
+      "label": "فیش دارای سوپ شیر"
     }
   ],
   "pending": []
