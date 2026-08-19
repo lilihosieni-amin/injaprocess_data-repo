@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T12:36:03Z",
-  "updated_at": "2026-08-19T09:18:50Z",
+  "updated_at": "2026-08-19T09:23:16Z",
   "idef0": {
     "inputs": [
       "بسته‌های بار ملزومات از انبار و مرکز",
@@ -1282,13 +1282,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 3932.9292929292924
+        "x": 1526,
+        "y": 1764.9292929292924
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-counter",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1816,13 +1818,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 3932.9292929292924
+        "x": 1526,
+        "y": 2072.9292929292924
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking027b",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1892,14 +1896,15 @@
       },
       "subprocess": "cooking-031",
       "position": {
-        "x": 40,
-        "y": 3932.9292929292924
+        "x": 1532,
+        "y": 1509.5291922212846
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking027sub",
         "touched_by": [
-          "runs/chat/20260817-cooking027sub"
+          "runs/chat/20260817-cooking027sub",
+          "ui-edit"
         ]
       }
     }
