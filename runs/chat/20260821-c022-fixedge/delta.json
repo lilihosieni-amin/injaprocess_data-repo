@@ -1,0 +1,14 @@
+{
+  "add_nodes": [],
+  "add_edges": [
+    {
+      "from": "cooking-022-j2",
+      "to": "cooking-022-n006",
+      "label": "در صورت تحویل‌شدن غذا به مشتری و احراز نرسیدن قلم"
+    }
+  ],
+  "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [],
+  "flag_removed": []
+}
