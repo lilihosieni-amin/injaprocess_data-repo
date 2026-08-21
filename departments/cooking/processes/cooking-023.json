@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T09:55:50Z",
-  "updated_at": "2026-08-21T22:10:09Z",
+  "updated_at": "2026-08-21T22:12:41Z",
   "idef0": {
     "inputs": [
       "اعلام کمبود ماده اولیه از سوی نیروی لاین",
@@ -1476,6 +1476,31 @@
       "layout": "manual",
       "source": {
         "created_by": "runs/cooking/20260816-212142",
+        "touched_by": [
+          "ui-edit"
+        ]
+      }
+    },
+    {
+      "id": "cooking-023-n037",
+      "type": "activity",
+      "label": "فعالیت جدید",
+      "description": "",
+      "actor": "",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 2141.0909423828125,
+        "y": 3567.6894327799478
+      },
+      "layout": "manual",
+      "source": {
+        "created_by": "ui-edit",
         "touched_by": [
           "ui-edit"
         ]
