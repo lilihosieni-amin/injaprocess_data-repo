@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T09:05:30Z",
-  "updated_at": "2026-08-21T22:26:57Z",
+  "updated_at": "2026-08-21T22:38:23Z",
   "idef0": {
     "inputs": [
       "مواد اولیه فاسد یا گذشته از عمر مفید",
@@ -632,5 +632,9 @@
       "to": "cooking-018-n014"
     }
   ],
-  "pending": []
+  "pending": [],
+  "tombstoned": true,
+  "superseded_by": [
+    "cooking-032"
+  ]
 }
