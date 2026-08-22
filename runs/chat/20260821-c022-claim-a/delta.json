@@ -1,0 +1,12 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [
+    { "from": "cooking-022-n010", "to": "cooking-022-j4" },
+    { "from": "cooking-022-n012", "to": "cooking-022-n013" },
+    { "from": "cooking-022-j3", "to": "cooking-022-j4" }
+  ],
+  "flag_removed": []
+}
