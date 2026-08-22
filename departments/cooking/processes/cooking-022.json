@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T09:05:32Z",
-  "updated_at": "2026-08-22T09:47:45Z",
+  "updated_at": "2026-08-22T10:11:59Z",
   "idef0": {
     "inputs": [
       "تماس شکایت مشتری",
@@ -28,8 +28,7 @@
     "outputs": [
       "قلم جامانده ارسال‌شده برای مشتری",
       "غذای جایگزین ارسال‌شده",
-      "فرم ضایعات و مرجوعی تأیید و امضاشده",
-      "پرس مرجوعی خارج‌شده از فروش و ثبت‌شده به‌عنوان هزینه",
+      "فیش ضایعات ثبت‌شده",
       "فرم عودت وجه تحویل‌شده به حسابداری"
     ],
     "mechanisms": [
@@ -90,10 +89,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
-        "y": 421.9722222222222
+        "x": 269,
+        "y": 123
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-022-n002",
@@ -316,8 +315,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 246,
-        "y": 274
+        "x": 190,
+        "y": 334
       },
       "layout": "manual",
       "source": {
@@ -349,8 +348,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 260,
-        "y": 447.7495422363281
+        "x": 190,
+        "y": 511.7495422363281
       },
       "layout": "manual",
       "source": {
@@ -366,8 +365,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 311,
-        "y": 796
+        "x": 241,
+        "y": 692
       },
       "layout": "manual"
     },
@@ -395,8 +394,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 568,
-        "y": 810.375
+        "x": 656,
+        "y": 806.375
       },
       "layout": "manual",
       "source": {
@@ -412,8 +411,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 427,
-        "y": 1089
+        "x": 393,
+        "y": 1203
       },
       "layout": "manual"
     },
@@ -437,8 +436,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 394,
-        "y": 1233.6363906860352
+        "x": 338,
+        "y": 1345.6363906860352
       },
       "layout": "manual",
       "source": {
@@ -476,8 +475,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 408,
-        "y": 1374.7498626708984
+        "x": 336,
+        "y": 1516.7498626708984
       },
       "layout": "manual",
       "source": {
@@ -506,8 +505,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 426,
-        "y": 1509.2495193481445
+        "x": 554,
+        "y": 1041.2495193481445
       },
       "layout": "manual",
       "source": {
@@ -789,8 +788,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 686,
-        "y": 227.66666666666652
+        "x": 744,
+        "y": 413.6666666666665
       },
       "layout": "manual",
       "source": {
@@ -827,17 +826,16 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 2309.5833333333335
+        "x": 368,
+        "y": 1733.5833333333335
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260821-c022-claim-b",
         "touched_by": [
-          "runs/chat/20260821-c022-rm-n022"
+          "ui-edit"
         ]
-      },
-      "removed": true
+      }
     }
   ],
   "edges": [
@@ -949,6 +947,10 @@
     {
       "from": "cooking-022-n013",
       "to": "cooking-022-j4"
+    },
+    {
+      "from": "cooking-022-n012",
+      "to": "cooking-022-n022"
     }
   ],
   "pending": []
