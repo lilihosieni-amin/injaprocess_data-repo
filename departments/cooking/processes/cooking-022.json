@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T09:05:32Z",
-  "updated_at": "2026-08-21T23:15:28Z",
+  "updated_at": "2026-08-22T09:22:01Z",
   "idef0": {
     "inputs": [
       "تماس شکایت مشتری",
@@ -72,13 +72,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 90.0
+        "x": -38,
+        "y": 70
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cooking/20260816-212142",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -88,7 +90,7 @@
       "direction": "split",
       "position": {
         "x": 363,
-        "y": 106.0
+        "y": 106
       },
       "layout": "auto"
     },
@@ -115,14 +117,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 265.0
+        "x": 538,
+        "y": -65.97996520996094
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cooking/20260816-212142",
         "touched_by": [
-          "runs/chat/20260821-c022-split-b"
+          "runs/chat/20260821-c022-split-b",
+          "ui-edit"
         ]
       }
     },
@@ -145,8 +148,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 788,
-        "y": 101.24978637695312
+        "x": 800,
+        "y": -38.750213623046875
       },
       "layout": "manual",
       "source": {
@@ -176,8 +179,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1022,
-        "y": 102
+        "x": 1036,
+        "y": -20
       },
       "layout": "manual",
       "source": {
@@ -208,8 +211,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1252,
-        "y": 90.875
+        "x": 1260,
+        "y": -21.125
       },
       "layout": "manual",
       "source": {
@@ -250,8 +253,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1620.2493286132812,
-        "y": 393
+        "x": 1520.2493286132812,
+        "y": -23
       },
       "layout": "manual",
       "source": {
@@ -312,8 +315,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 350,
-        "y": 488
+        "x": 246,
+        "y": 274
       },
       "layout": "manual",
       "source": {
@@ -345,8 +348,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 360,
-        "y": 625.7495422363281
+        "x": 260,
+        "y": 447.7495422363281
       },
       "layout": "manual",
       "source": {
@@ -774,13 +777,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 731.6666666666665
+        "x": 686,
+        "y": 227.66666666666652
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260821-c022-split-b",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
