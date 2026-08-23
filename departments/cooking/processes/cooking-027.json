@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T12:36:03Z",
-  "updated_at": "2026-08-23T11:45:54Z",
+  "updated_at": "2026-08-23T11:48:34Z",
   "idef0": {
     "inputs": [
       "بسته‌های بار ملزومات از انبار و مرکز",
@@ -1282,8 +1282,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1275,
-        "y": 1494.9292929292924
+        "x": 1208,
+        "y": 1463.9292929292924
       },
       "layout": "manual",
       "source": {
@@ -1848,8 +1848,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 982,
-        "y": 1509.9292929292924
+        "x": 910,
+        "y": 1464.9292929292924
       },
       "layout": "manual",
       "source": {
@@ -1926,8 +1926,8 @@
       },
       "subprocess": "cooking-031",
       "position": {
-        "x": 1532,
-        "y": 1509.5291922212846
+        "x": 1623,
+        "y": 1529.5291922212846
       },
       "layout": "manual",
       "source": {
@@ -2447,8 +2447,8 @@
       },
       "subprocess": "cooking-033",
       "position": {
-        "x": 1674,
-        "y": 1284.75831146754
+        "x": 1610,
+        "y": 1327.75831146754
       },
       "layout": "manual",
       "source": {
@@ -2465,10 +2465,10 @@
       "junctionType": "AND",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 3939.6489898989903
+        "x": 1855,
+        "y": 1467.2161934207188
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-027-j18",
@@ -2476,10 +2476,10 @@
       "junctionType": "AND",
       "direction": "join",
       "position": {
-        "x": 623,
-        "y": 3910.482323232324
+        "x": 1462,
+        "y": 1527.4823232323238
       },
-      "layout": "auto"
+      "layout": "manual"
     }
   ],
   "edges": [
