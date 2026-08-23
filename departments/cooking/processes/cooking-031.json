@@ -13,7 +13,7 @@
     "node": "cooking-027-n049"
   },
   "created_at": "2026-08-19T09:18:50Z",
-  "updated_at": "2026-08-23T11:31:54Z",
+  "updated_at": "2026-08-23T11:38:42Z",
   "idef0": {
     "inputs": [
       "فیش چاپ‌شده سفارش",
@@ -864,9 +864,11 @@
         "created_by": "runs/chat/20260819-233702",
         "touched_by": [
           "runs/chat/20260821-c031-comments",
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260823-c031-prune"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-031-n022",
@@ -899,9 +901,11 @@
       "source": {
         "created_by": "runs/chat/20260821-c031-comments",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260823-c031-prune"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-031-n023",
@@ -935,9 +939,11 @@
         "created_by": "runs/chat/20260821-c031-comments",
         "touched_by": [
           "ui-edit",
-          "runs/chat/20260823-c031-n023"
+          "runs/chat/20260823-c031-n023",
+          "runs/chat/20260823-c031-prune"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-031-n024",
@@ -968,9 +974,11 @@
       "source": {
         "created_by": "runs/chat/20260821-c031-comments",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260823-c031-prune"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-031-n025",
@@ -1001,9 +1009,11 @@
       "source": {
         "created_by": "runs/chat/20260821-c031-comments",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260823-c031-prune"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-031-n026",
@@ -1035,9 +1045,11 @@
       "source": {
         "created_by": "runs/chat/20260821-c031-comments",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260823-c031-prune"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-031-n027",
@@ -1069,9 +1081,11 @@
       "source": {
         "created_by": "runs/chat/20260821-c031-comments",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260823-c031-prune"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-031-n028",
@@ -1102,9 +1116,11 @@
       "source": {
         "created_by": "runs/chat/20260821-c031-comments",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260823-c031-prune"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-031-n029",
@@ -1136,9 +1152,11 @@
       "source": {
         "created_by": "runs/chat/20260821-c031-comments",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260823-c031-prune"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-031-n030",
@@ -1170,9 +1188,11 @@
       "source": {
         "created_by": "runs/chat/20260821-c031-comments",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260823-c031-prune"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-031-n031",
@@ -1205,9 +1225,11 @@
       "source": {
         "created_by": "runs/chat/20260821-c031-comments",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260823-c031-prune"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-031-j9",
@@ -1218,7 +1240,8 @@
         "x": 569,
         "y": 170
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cooking-031-j10",
@@ -1229,7 +1252,8 @@
         "x": 1445,
         "y": 105.7996826171875
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cooking-031-j11",
@@ -1240,7 +1264,8 @@
         "x": 1495,
         "y": 426
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cooking-031-j12",
@@ -1251,7 +1276,8 @@
         "x": 987,
         "y": 583.2999801635742
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cooking-031-j13",
@@ -1262,7 +1288,8 @@
         "x": 1031,
         "y": 394.24995040893555
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cooking-031-j14",
@@ -1273,7 +1300,8 @@
         "x": 1117,
         "y": 286.25
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cooking-031-j15",
@@ -1284,7 +1312,8 @@
         "x": 1297,
         "y": 660.6284255981445
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cooking-031-j16",
@@ -1295,7 +1324,8 @@
         "x": 1207,
         "y": 948.5
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cooking-031-j17",
@@ -1306,7 +1336,8 @@
         "x": 991,
         "y": 1218.5
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cooking-031-n032",
@@ -1329,9 +1360,11 @@
       "source": {
         "created_by": "ui-edit",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260823-c031-prune"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-031-j18",
@@ -1342,7 +1375,8 @@
         "x": 1629,
         "y": 1050.9166666666667
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cooking-031-n033",
@@ -1373,9 +1407,11 @@
       "source": {
         "created_by": "runs/chat/20260823-c031-forgot",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260823-c031-prune"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-031-n034",
@@ -1404,9 +1440,11 @@
       "source": {
         "created_by": "runs/chat/20260823-c031-forgot",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260823-c031-prune"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-031-n035",
@@ -1437,9 +1475,11 @@
       "source": {
         "created_by": "runs/chat/20260823-c031-forgot",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260823-c031-prune"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-031-j19",
@@ -1450,7 +1490,8 @@
         "x": 1683,
         "y": 1766.6493377685551
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cooking-031-n036",
@@ -1479,9 +1520,11 @@
       "source": {
         "created_by": "runs/chat/20260823-c031-forgot",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260823-c031-prune"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-031-n037",
@@ -1513,9 +1556,11 @@
       "source": {
         "created_by": "runs/chat/20260823-c031-forgot",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260823-c031-prune"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-031-n038",
@@ -1546,9 +1591,11 @@
       "source": {
         "created_by": "runs/chat/20260823-c031-forgot",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260823-c031-prune"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-031-n039",
@@ -1577,9 +1624,11 @@
       "source": {
         "created_by": "runs/chat/20260823-c031-forgot",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260823-c031-prune"
         ]
-      }
+      },
+      "removed": true
     }
   ],
   "edges": [
@@ -1718,184 +1767,12 @@
     },
     {
       "from": "cooking-031-j3",
-      "to": "cooking-031-n021",
-      "label": "رسیدن توضیح غذایی جدید مشتری از سالن یا صندوق"
-    },
-    {
-      "from": "cooking-031-n021",
-      "to": "cooking-031-j4"
-    },
-    {
-      "from": "cooking-031-j3",
       "to": "cooking-031-n008",
       "label": "اصلاحیه یا تغییر آیتم سفارش"
     },
     {
       "from": "cooking-031-n002",
-      "to": "cooking-031-n022"
-    },
-    {
-      "from": "cooking-031-n022",
-      "to": "cooking-031-j9"
-    },
-    {
-      "from": "cooking-031-j9",
-      "to": "cooking-031-n023",
-      "label": "فیش سالن"
-    },
-    {
-      "from": "cooking-031-j9",
-      "to": "cooking-031-n025",
-      "label": "فیش بیرون‌بر حضوری"
-    },
-    {
-      "from": "cooking-031-j9",
-      "to": "cooking-031-n026",
-      "label": "فیش بیرون‌بر تلفنی"
-    },
-    {
-      "from": "cooking-031-j9",
-      "to": "cooking-031-n027",
-      "label": "فیش پلتفرم آنلاین دلینو، اسنپ‌فود یا سایت اختصاصی"
-    },
-    {
-      "from": "cooking-031-n023",
-      "to": "cooking-031-j10"
-    },
-    {
-      "from": "cooking-031-j10",
-      "to": "cooking-031-n024",
-      "label": "شماره پیجر در قسمت توضیحات فیش ثبت نشده است"
-    },
-    {
-      "from": "cooking-031-j10",
-      "to": "cooking-031-j11",
-      "label": "شماره پیجر در قسمت توضیحات فیش ثبت شده است"
-    },
-    {
-      "from": "cooking-031-n024",
-      "to": "cooking-031-j11"
-    },
-    {
-      "from": "cooking-031-n025",
-      "to": "cooking-031-j14"
-    },
-    {
-      "from": "cooking-031-n026",
-      "to": "cooking-031-j14"
-    },
-    {
-      "from": "cooking-031-n027",
-      "to": "cooking-031-j12"
-    },
-    {
-      "from": "cooking-031-j12",
-      "to": "cooking-031-n028",
-      "label": "درخواست آیتم اضافه پرداخت‌نشده در توضیحات"
-    },
-    {
-      "from": "cooking-031-j12",
-      "to": "cooking-031-j13",
-      "label": "درخواست در حد توضیح غذایی یا سس‌های خود مجموعه"
-    },
-    {
-      "from": "cooking-031-n028",
-      "to": "cooking-031-j13"
-    },
-    {
-      "from": "cooking-031-j13",
-      "to": "cooking-031-j14"
-    },
-    {
-      "from": "cooking-031-j14",
-      "to": "cooking-031-n029"
-    },
-    {
-      "from": "cooking-031-n029",
-      "to": "cooking-031-j15"
-    },
-    {
-      "from": "cooking-031-j15",
-      "to": "cooking-031-n030"
-    },
-    {
-      "from": "cooking-031-n030",
-      "to": "cooking-031-j16"
-    },
-    {
-      "from": "cooking-031-j16",
-      "to": "cooking-031-j17",
-      "label": "توضیح مشتری قابل اجراست"
-    },
-    {
-      "from": "cooking-031-j16",
-      "to": "cooking-031-n031",
-      "label": "توضیح مشتری قابل اجرا نیست"
-    },
-    {
-      "from": "cooking-031-n031",
-      "to": "cooking-031-j17"
-    },
-    {
-      "from": "cooking-031-j17",
       "to": "cooking-031-j1"
-    },
-    {
-      "from": "cooking-031-j11",
-      "to": "cooking-031-n032",
-      "label": ""
-    },
-    {
-      "from": "cooking-031-n032",
-      "to": "cooking-031-j18"
-    },
-    {
-      "from": "cooking-031-j18",
-      "to": "cooking-031-j15",
-      "label": "توضیح مشتری به کانتر اعلام شده است"
-    },
-    {
-      "from": "cooking-031-j18",
-      "to": "cooking-031-n033",
-      "label": "پرسنل سالن اعلام توضیح به کانتر را فراموش کرده است"
-    },
-    {
-      "from": "cooking-031-n033",
-      "to": "cooking-031-n034"
-    },
-    {
-      "from": "cooking-031-n034",
-      "to": "cooking-031-n035"
-    },
-    {
-      "from": "cooking-031-n035",
-      "to": "cooking-031-j19"
-    },
-    {
-      "from": "cooking-031-j19",
-      "to": "cooking-031-n021",
-      "label": "غذا هنوز آماده‌سازی نشده است"
-    },
-    {
-      "from": "cooking-031-j19",
-      "to": "cooking-031-n036",
-      "label": "غذا در فر رفته یا پخته شده است"
-    },
-    {
-      "from": "cooking-031-n036",
-      "to": "cooking-031-n037"
-    },
-    {
-      "from": "cooking-031-n037",
-      "to": "cooking-031-n038"
-    },
-    {
-      "from": "cooking-031-n038",
-      "to": "cooking-031-n039"
-    },
-    {
-      "from": "cooking-031-n039",
-      "to": "cooking-031-j17"
     }
   ],
   "pending": []
