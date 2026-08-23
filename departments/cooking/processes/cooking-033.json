@@ -13,7 +13,7 @@
     "node": "cooking-027-n064"
   },
   "created_at": "2026-08-23T11:38:17Z",
-  "updated_at": "2026-08-23T11:38:17Z",
+  "updated_at": "2026-08-23T21:28:43Z",
   "idef0": {
     "inputs": [
       "فیش سفارش",
@@ -175,13 +175,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 265.0000000000001
+        "x": 1148.3191872427985,
+        "y": 179.80195473251032
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260823-c027-comments-sub",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -190,15 +192,15 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1143,
-        "y": 1156.0
+        "x": 1099.5972222222222,
+        "y": 497.7245370370372
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-033-n004",
       "type": "activity",
-      "label": "اطلاع درخواست یا توضیحات مشتری درباره سفارشش توسط پرسنل سالن به کانتر آشپزخانه",
+      "label": "انتقال توضیحات یا درخواستهای مشتری درباره سفارشش توسط پرسنل سالن به کانتر آشپزخانه",
       "description": "مشتری اگر درخواستی در باره سفارش و رسپی دارد باید به پرسنل سالن اطلاع دهد و پرسنل سالن به کانتر کار اطلاع دهند",
       "actor": "پرسنل سالن",
       "icom": {
@@ -209,13 +211,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1271.25
+        "x": 1109.351851851852,
+        "y": 619.4045781893004
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260823-c027-comments-sub",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -224,10 +228,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 623,
-        "y": 1287.25
+        "x": 1266.8078703703704,
+        "y": 795.3518518518517
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-033-n005",
@@ -251,13 +255,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1161.875
+        "x": 1299.0676440329219,
+        "y": 946.468621399177
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260823-c027-comments-sub",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -280,13 +286,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1161.875
+        "x": 1323.5969650205766,
+        "y": 1083.9107510288065
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260823-c027-comments-sub",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -311,13 +319,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1898.3333333333333
+        "x": 1304,
+        "y": 1266.3333333333333
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260823-c027-comments-sub",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -326,10 +336,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
-        "y": 1914.3333333333333
+        "x": 1385.7831790123455,
+        "y": 1490.1437757201645
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-033-n008",
@@ -351,13 +361,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1840.0
+        "x": 1471.4948559670781,
+        "y": 1628.8001543209875
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260823-c027-comments-sub",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -383,13 +395,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1840.0
+        "x": 1486.2235082304528,
+        "y": 1805.2489711934156
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260823-c027-comments-sub",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -414,13 +428,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1840.0
+        "x": 1493.5699588477366,
+        "y": 1965.0126028806583
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260823-c027-comments-sub",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -443,19 +459,21 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 2423.3333333333335
+        "x": 1496.6535493827162,
+        "y": 2150.0771604938273
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260823-c027-comments-sub",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
       "id": "cooking-033-n012",
       "type": "activity",
-      "label": "کنترل فیش بیرون‌بر حضوری ثبت‌شده در کیوسک که توضیحات ندارد",
+      "label": "انتقال توضیحات یا درخواست های مربوط به فیش بیرون بر ثبت شده در کیوسک توسط پرسنل صتدوق به کانتر آشپزخانه",
       "description": "حالت عادی سفارش بیرون‌بر حضوری این است که خود مشتری پای کیوسک بیرون‌بر سفارش را ثبت می‌کند، و فیشی که در کیوسک ثبت می‌شود توضیحات ندارد؛ بنابراین کانتر روی این فیش دنبال توضیح آیتمی یا توضیح کلی نمی‌گردد. خواسته مشتری درباره غذایش از طریق صندوق به کانتر اعلام می‌شود و اگر اعلام نشود، غذا مطابق فیش تولید می‌شود و بعداً باید بررسی شود کوتاهی از کدام واحد بوده است. رویه ثبت سفارش و رفتن فیش به آشپزخانه فرقی با بقیه ندارد؛ با زدن ذخیره و چاپ، همان لحظه فیش برای آشپزخانه چاپ می‌شود. تفاوت دیگرش با سالن این است که غذایش باید پک شود و کیوسک بیرون‌بر شماره پیجر ندارد.",
       "actor": "کانترکار",
       "icom": {
@@ -482,7 +500,9 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260823-c027-comments-sub",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -540,13 +560,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 877.5
+        "x": 243.00848765432096,
+        "y": 705.9112654320987
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260823-c027-comments-sub",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -555,10 +577,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 893.5
+        "x": 309,
+        "y": 897.5
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-033-n015",
@@ -582,13 +604,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 965.0
+        "x": 519.8292181069957,
+        "y": 968.6159014917696
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260823-c027-comments-sub",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -597,10 +621,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1143,
-        "y": 1681.0
+        "x": 721,
+        "y": 797
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-033-j8",
@@ -608,10 +632,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 883,
-        "y": 1462.25
+        "x": 941,
+        "y": 546.25
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-033-n016",
@@ -636,13 +660,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1446.25
+        "x": 865.3840020576132,
+        "y": 933.7636316872428
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260823-c027-comments-sub",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -651,10 +677,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 363,
-        "y": 1440.375
+        "x": 983,
+        "y": 1416.375
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-033-n017",
@@ -679,13 +705,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1424.375
+        "x": 944,
+        "y": 1544.375
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260823-c027-comments-sub",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -694,10 +722,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 2176.8333333333335
+        "x": 945,
+        "y": 1902.8333333333335
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-033-n018",
@@ -723,13 +751,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 2248.3333333333335
+        "x": 680.7438271604938,
+        "y": 2041.1522633744858
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260823-c027-comments-sub",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -757,13 +787,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 2015.0
+        "x": 1155.6075102880657,
+        "y": 1984.3482510288068
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260823-c027-comments-sub",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
