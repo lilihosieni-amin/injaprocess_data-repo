@@ -13,7 +13,7 @@
     "node": "cooking-027-n049"
   },
   "created_at": "2026-08-19T09:18:50Z",
-  "updated_at": "2026-08-22T10:33:09Z",
+  "updated_at": "2026-08-23T05:51:09Z",
   "idef0": {
     "inputs": [
       "فیش چاپ‌شده سفارش",
@@ -95,13 +95,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 177.5
+        "x": -236,
+        "y": 117.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking027sub",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -126,15 +128,16 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 177.5
+        "x": 12,
+        "y": 109.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking027sub",
         "touched_by": [
           "runs/chat/20260820-051613",
-          "runs/chat/20260821-c031-comments"
+          "runs/chat/20260821-c031-comments",
+          "ui-edit"
         ]
       }
     },
@@ -144,10 +147,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1143,
-        "y": 2551.625
+        "x": 981,
+        "y": 1379.8749504089355
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-031-n003",
@@ -171,8 +174,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 840.5,
-        "y": 6.5
+        "x": 942.5,
+        "y": 1488.5
       },
       "layout": "manual",
       "source": {
@@ -204,8 +207,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 788,
-        "y": 276.5
+        "x": 1558,
+        "y": 526.5
       },
       "layout": "manual",
       "source": {
@@ -238,8 +241,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1053,
-        "y": 271.625
+        "x": 1657,
+        "y": 679.625
       },
       "layout": "manual",
       "source": {
@@ -255,10 +258,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
-        "y": 2599.75
+        "x": 1713,
+        "y": 847.75
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-031-n006",
@@ -281,8 +284,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 647,
-        "y": 510
+        "x": 1477,
+        "y": 1000
       },
       "layout": "manual",
       "source": {
@@ -298,8 +301,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 560.5,
-        "y": 639.5
+        "x": 1528.5,
+        "y": 1166.7487602233887
       },
       "layout": "manual"
     },
@@ -327,8 +330,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 162,
-        "y": 437.5
+        "x": 1246,
+        "y": 1267.5
       },
       "layout": "manual",
       "source": {
@@ -362,8 +365,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 5,
-        "y": 655.5
+        "x": 1721,
+        "y": 1097.5
       },
       "layout": "manual",
       "source": {
@@ -398,8 +401,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 245.5,
-        "y": 767
+        "x": 1451.5,
+        "y": 1381.4986114501953
       },
       "layout": "manual",
       "source": {
@@ -434,8 +437,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 181,
-        "y": 929.1666666666666
+        "x": 1615,
+        "y": 1655.166617075602
       },
       "layout": "manual",
       "source": {
@@ -451,8 +454,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": -27,
-        "y": 1188.5
+        "x": 2013,
+        "y": 1088.5
       },
       "layout": "manual"
     },
@@ -479,13 +482,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 3371.25
+        "x": 2008,
+        "y": 1494.399990081787
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-cooking027sub",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -512,8 +517,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 535,
-        "y": 1251.5
+        "x": 2019,
+        "y": 1750.699821472168
       },
       "layout": "manual",
       "source": {
@@ -548,8 +553,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 596,
-        "y": 1693.6250228881836
+        "x": 1296,
+        "y": 1703.6250228881836
       },
       "layout": "manual",
       "source": {
@@ -580,8 +585,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 640,
-        "y": 1926.5
+        "x": 922,
+        "y": 1712.5
       },
       "layout": "manual",
       "source": {
@@ -597,10 +602,10 @@
       "junctionType": "OR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 4306.0
+        "x": 1819,
+        "y": 1813.1999702453613
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-031-j8",
@@ -608,10 +613,10 @@
       "junctionType": "OR",
       "direction": "join",
       "position": {
-        "x": 103,
-        "y": 4306.0
+        "x": 735,
+        "y": 1995.4999504089355
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-031-n015",
@@ -638,8 +643,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 774,
-        "y": 1732.3750915527344
+        "x": 1226,
+        "y": 2002.3750915527344
       },
       "layout": "manual",
       "source": {
@@ -673,8 +678,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1359,
-        "y": 1592
+        "x": 1185,
+        "y": 2910.749256134033
       },
       "layout": "manual",
       "source": {
@@ -708,8 +713,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1647,
-        "y": 1447
+        "x": 1255,
+        "y": 2257.999355316162
       },
       "layout": "manual",
       "source": {
@@ -743,8 +748,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1136,
-        "y": 1750
+        "x": 1184,
+        "y": 2535.7981452941895
       },
       "layout": "manual",
       "source": {
@@ -779,8 +784,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 951,
-        "y": 1634
+        "x": 1099,
+        "y": 1864.2489585876465
       },
       "layout": "manual",
       "source": {
@@ -815,8 +820,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1075,
-        "y": 2219.5
+        "x": 443,
+        "y": 1971.6499404907227
       },
       "layout": "manual",
       "source": {
@@ -851,14 +856,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 3502.5
+        "x": 1646,
+        "y": 1280.0499801635742
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260819-233702",
         "touched_by": [
-          "runs/chat/20260821-c031-comments"
+          "runs/chat/20260821-c031-comments",
+          "ui-edit"
         ]
       }
     },
@@ -886,13 +892,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 440.0
+        "x": 322,
+        "y": 124
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260821-c031-comments",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -918,13 +926,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 90.0
+        "x": 1564,
+        "y": 16
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260821-c031-comments",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -949,13 +959,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1140.0
+        "x": 1574,
+        "y": 352
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260821-c031-comments",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -980,13 +992,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 352.5
+        "x": 990,
+        "y": 118.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260821-c031-comments",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1012,13 +1026,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 527.5
+        "x": 758,
+        "y": 233.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260821-c031-comments",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1044,13 +1060,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 790.0
+        "x": 468,
+        "y": 552
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260821-c031-comments",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1075,13 +1093,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1840.0
+        "x": 656,
+        "y": 355.54983139038086
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260821-c031-comments",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1107,13 +1127,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1446.25
+        "x": 1066,
+        "y": 466.25
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260821-c031-comments",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1139,13 +1161,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 2102.5
+        "x": 1000,
+        "y": 811.6499900817871
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260821-c031-comments",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1172,13 +1196,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 2190.0
+        "x": 716,
+        "y": 982.0499801635742
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260821-c031-comments",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1187,10 +1213,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 456.0
+        "x": 569,
+        "y": 170
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-031-j10",
@@ -1198,10 +1224,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1143,
-        "y": 1068.5
+        "x": 1689,
+        "y": 157.7996826171875
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-031-j11",
@@ -1209,10 +1235,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 623,
-        "y": 1156.0
+        "x": 1517,
+        "y": 258
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-031-j12",
@@ -1220,10 +1246,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1143,
-        "y": 1768.5
+        "x": 987,
+        "y": 583.2999801635742
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-031-j13",
@@ -1231,10 +1257,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 623,
-        "y": 1681.0
+        "x": 1031,
+        "y": 394.24995040893555
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-031-j14",
@@ -1242,10 +1268,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 363,
-        "y": 1462.25
+        "x": 1117,
+        "y": 286.25
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-031-j15",
@@ -1253,10 +1279,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 103,
-        "y": 2118.5
+        "x": 1049,
+        "y": 693.449821472168
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-031-j16",
@@ -1264,10 +1290,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 623,
-        "y": 2118.5
+        "x": 1061,
+        "y": 982.5
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-031-j17",
@@ -1275,10 +1301,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1143,
-        "y": 2118.5
+        "x": 991,
+        "y": 1218.5
       },
-      "layout": "auto"
+      "layout": "manual"
     }
   ],
   "edges": [
