@@ -1,0 +1,32 @@
+{
+  "add_nodes": [
+    {
+      "key": "j1",
+      "type": "junction",
+      "junctionType": "AND",
+      "direction": "split"
+    },
+    {
+      "key": "j2",
+      "type": "junction",
+      "junctionType": "AND",
+      "direction": "join"
+    }
+  ],
+  "add_edges": [
+    { "from": "cooking-027-j13", "to": "j1" },
+    { "from": "j1", "to": "cooking-027-n064" },
+    { "from": "j1", "to": "cooking-027-n049" },
+    { "from": "cooking-027-n064", "to": "j2" },
+    { "from": "cooking-027-n049", "to": "j2" },
+    { "from": "j2", "to": "cooking-027-n033" }
+  ],
+  "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [
+    { "from": "cooking-027-j13", "to": "cooking-027-n064" },
+    { "from": "cooking-027-n064", "to": "cooking-027-n049" },
+    { "from": "cooking-027-n049", "to": "cooking-027-n033" }
+  ],
+  "flag_removed": []
+}
