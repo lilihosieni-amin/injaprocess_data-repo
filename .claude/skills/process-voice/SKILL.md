@@ -101,13 +101,18 @@ Before transcribing anything, disclose the resolved set and pause.
 1. Init `{run_dir}` (create the directory) and write an initial `{run_dir}/meta.json` with
    `finished_at: null` and `processes: []` (Stage 2 shape) so Stage-0 resume can re-enter here.
 2. Send a Persian checkpoint listing **the set** (every basename, transcript or audio) and, for the
-   explicit-list form, **which department recordings are left out**. Example:
+   explicit-list form, **which department recordings are left out**. Mark each recording's
+   transcript state, because it decides the cost: it already has an approved transcript at
+   `meetings/transcripts/{basename}.txt`; or it has only a bot-produced raw transcript at
+   `meetings/transcripts/raw/{basename}.txt`, which Stage 1 merely reviews and promotes —
+   **no Vertex call**; or it has neither, and Stage 1 transcribes it — one Vertex call. Example:
 
    ```
    مجموعهٔ ضبط‌های دپارتمان dining برای این اجرا:
      ۱. dining-1405-04-11
      ۲. dining-1405-04-14
      ۳. dining-1405-04-15 (فاقد رونویس — رونویسی می‌شود)
+     ۴. dining-1405-04-18 (رونویس خام آماده است — بازبینی می‌شود)
    (فرم فهرست صریح) موارد کنار گذاشته‌شده: dining-1405-04-20
    تأیید می‌کنید یا مجموعه اصلاح شود؟
    ```
@@ -122,22 +127,33 @@ Before transcribing anything, disclose the resolved set and pause.
 ## Stage 1 — Transcribe-missing reconcile (FR-P1, FR-P2)
 
 Runs **after** Gate A, only for the confirmed set. Idempotent. For **each** confirmed recording
-that lacks a transcript at `meetings/transcripts/{basename}.txt`:
+that lacks an **approved** transcript at `meetings/transcripts/{basename}.txt` — a recording with
+only a raw file at `meetings/transcripts/raw/{basename}.txt` still lacks one and must enter this
+loop; only a recording that already has the approved file is skipped:
 
-1. Run the transcription CLI (idempotent — skips Vertex AI if the transcript already exists):
+1. **If `meetings/transcripts/raw/{basename}.txt` exists** — Bot 1 already transcribed this
+   recording at upload time. Read that file. **No Vertex call is needed or allowed.**
+2. **Otherwise** run the transcription CLI (idempotent — skips Vertex AI if the transcript
+   already exists) and read its stdout:
    ```
    Bash: DATA_ROOT=<data-repo> transcribe {basename}
    ```
-2. On a **fresh transcription** (the transcript file did not exist before):
-   - Read stdout. Strip any Gemini preamble, postamble, or section headings injected by the model.
+3. Either way, the text you now hold is **raw**: strip any Gemini preamble, postamble, or
+   section headings injected by the model.
    - **Per-file verbatim sanity gate:** if the text appears summarized or rewritten (rather than
      verbatim speech), flag it to the user and STOP. When stopping, tell the user (in Persian) their
-     options: «(الف) پردازش را دوباره اجرا کنید تا رونویسی از نو انجام شود؛ یا (ب) یک رونویسِ
-     اصلاح‌شده را به‌صورت دستی در `meetings/transcripts/{basename}.txt` قرار دهید و دوباره اجرا کنید
-     — در این حالت خط لوله به‌دلیل ایدمپوتنسی از Vertex عبور می‌کند و همان فایل شما را استفاده
-     می‌کند.»
-   - Write the cleaned text to `meetings/transcripts/{basename}.txt`.
-3. Confirm every recording in the set now has a transcript before continuing. (Recordings that
+     options: «(الف) پردازش را دوباره اجرا کنید تا رونویسِ خام قبلی کنار گذاشته شود و صدا از نو
+     رونویسی شود — ممکن است نتیجه باز هم همین باشد؛ یا (ب) یک رونویسِ اصلاح‌شده را به‌صورت دستی در
+     `meetings/transcripts/{basename}.txt` قرار دهید و دوباره اجرا کنید — در این حالت خط لوله
+     به‌دلیل ایدمپوتنسی از Vertex عبور می‌کند و همان فایل شما را استفاده می‌کند.» If the user
+     answers (الف) and `meetings/transcripts/raw/{basename}.txt` exists, **delete that raw file**,
+     then re-run this stage for that recording: with the raw gone, item 1's condition fails, item 2
+     runs the CLI, and a fresh Vertex call actually happens (it may return summarized text again —
+     that is what (ب) is for). This is the **only** point in this stage where a raw file is deleted;
+     everywhere else it stays put as the audit trail.
+   - Write the cleaned text to `meetings/transcripts/{basename}.txt`. Leave the raw file in
+     place; it is the audit trail of what the model actually returned.
+4. Confirm every recording in the set now has a transcript before continuing. (Recordings that
    already had a transcript are untouched.) This whole reconcile runs **in one turn** (each
    `transcribe` is a CLI call, not a turn end) — proceed to Stage 2 in the same turn.
 
