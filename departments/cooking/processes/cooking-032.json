@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-21T22:38:23Z",
-  "updated_at": "2026-08-26T10:42:00Z",
+  "updated_at": "2026-08-26T10:43:22Z",
   "idef0": {
     "inputs": [
       "مواد اولیه تحویلی از انبار",
@@ -433,8 +433,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 258,
-        "y": 1161
+        "x": 132,
+        "y": 1203
       },
       "layout": "manual",
       "source": {
@@ -1085,8 +1085,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 54,
-        "y": 1146.5885416666665
+        "x": 190,
+        "y": 998.5885416666665
       },
       "layout": "manual",
       "source": {
