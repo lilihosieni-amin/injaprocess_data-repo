@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-19T01:18:31Z",
-  "updated_at": "2026-08-26T11:13:31Z",
+  "updated_at": "2026-08-26T21:34:41Z",
   "idef0": {
     "inputs": [
       "موجودی مواد اولیه دست‌نخورده داخل یخچال و سردخانه",
@@ -314,8 +314,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 164,
-        "y": 430
+        "x": 82,
+        "y": 433
       },
       "layout": "manual",
       "source": {
@@ -478,35 +478,6 @@
       }
     },
     {
-      "id": "cooking-030-n015",
-      "type": "activity",
-      "label": "آمارگیری نوشیدنی‌های کانتر از ساعت یک و نیم به بعد",
-      "description": "آخر شب از ساعت یک و نیم به بعد آمار نوشابه‌ها گرفته می‌شود که چه مقدار موجود است، چه مقدار سر شب آمده و چه مقدار باقی مانده. فقط نوشیدنی‌ها آمار داده می‌شوند و برای جعبه‌های پیتزا و اقلام بسته‌بندی که کانتر آماده می‌کند آماری داده نمی‌شود. آمار قوطی‌های نوشابه از اقلامی مانند سالاد کنتاکی مهم‌تر است و دقیق شمرده می‌شود.",
-      "actor": "پرسنل کانتر",
-      "icom": {
-        "inputs": [
-          "موجودی نوشیدنی‌های کانتر"
-        ],
-        "controls": [],
-        "outputs": [
-          "آمار نوشیدنی‌های کانتر"
-        ],
-        "mechanisms": [
-          "پرسنل کانتر"
-        ]
-      },
-      "subprocess": null,
-      "position": {
-        "x": 820,
-        "y": 790
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/chat/20260817-merge002-016",
-        "touched_by": []
-      }
-    },
-    {
       "id": "cooking-030-n016",
       "type": "activity",
       "label": "ثبت نهایی آمار مانده آخر شب در چک‌لیست",
@@ -529,13 +500,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 790.0
+        "x": 456,
+        "y": 797
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-merge002-016",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -558,13 +531,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 790.0
+        "x": 157.75,
+        "y": 796
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-merge002-016",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -590,13 +565,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1052.5
+        "x": 278,
+        "y": 1037.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-merge002-016",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -605,10 +582,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
-        "y": 1068.5
+        "x": 503,
+        "y": 1076.5
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-030-n019",
@@ -631,13 +608,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 965.0
+        "x": 648,
+        "y": 974
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-merge002-016",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -662,13 +641,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1140.0
+        "x": 650,
+        "y": 1134
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-merge002-016",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -688,10 +669,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1143,
-        "y": 1068.5
+        "x": 1088,
+        "y": 1066.5
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-030-n021",
@@ -717,13 +698,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 2015.0
+        "x": 1095,
+        "y": 1265.6499643325806
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-merge002-016",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -732,10 +715,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 883,
-        "y": 1943.5
+        "x": 986,
+        "y": 1513.5
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-030-n022",
@@ -759,13 +742,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1927.5
+        "x": 916,
+        "y": 1795.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-merge002-016",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -794,13 +779,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1927.5
+        "x": 712,
+        "y": 1793.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-merge002-016",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -809,10 +796,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 1943.5
+        "x": 573,
+        "y": 1823.5
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-030-n024",
@@ -840,8 +827,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": -46,
-        "y": 1418
+        "x": 143,
+        "y": 1733.4999656677246
       },
       "layout": "manual",
       "source": {
@@ -858,8 +845,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 121,
-        "y": 1654.5
+        "x": 184,
+        "y": 1963.5
       },
       "layout": "manual"
     },
@@ -884,13 +871,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 2277.5
+        "x": 321,
+        "y": 2093.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-merge002-016",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -911,13 +900,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 2277.5
+        "x": 520,
+        "y": 2090.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260817-merge002-016",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -945,8 +936,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 650,
-        "y": 1900
+        "x": 727,
+        "y": 2082.2496271133423
       },
       "layout": "manual",
       "source": {
@@ -962,8 +953,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 889,
-        "y": 1930
+        "x": 950,
+        "y": 2117
       },
       "layout": "manual"
     },
@@ -991,8 +982,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1046,
-        "y": 1764
+        "x": 1021,
+        "y": 2285
       },
       "layout": "manual",
       "source": {
@@ -1023,8 +1014,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1280,
-        "y": 1854
+        "x": 786,
+        "y": 2274
       },
       "layout": "manual",
       "source": {
@@ -1055,8 +1046,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1332,
-        "y": 2078
+        "x": 547,
+        "y": 2279
       },
       "layout": "manual",
       "source": {
@@ -1091,8 +1082,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1028,
-        "y": 2117.75
+        "x": 1066,
+        "y": 1978.75
       },
       "layout": "manual",
       "source": {
@@ -1128,8 +1119,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 26,
-        "y": 1773.5
+        "x": 104,
+        "y": 2086.8745832443237
       },
       "layout": "manual",
       "source": {
@@ -1163,13 +1154,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 790.0
+        "x": 955,
+        "y": 795
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260826-030-accounting-gaps",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1196,13 +1189,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 790.0
+        "x": 692,
+        "y": 781
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260826-030-accounting-gaps",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1211,10 +1206,10 @@
       "junctionType": "OR",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 806.0
+        "x": 51,
+        "y": 822
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-030-n035",
@@ -1239,13 +1234,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1280.0
+        "x": -24,
+        "y": 1244
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260826-030-accounting-gaps",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1271,13 +1268,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1490.0
+        "x": 166,
+        "y": 1380
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260826-030-accounting-gaps",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1287,7 +1286,7 @@
       "direction": "split",
       "position": {
         "x": 363,
-        "y": 1506.0
+        "y": 1506
       },
       "layout": "auto"
     },
@@ -1311,13 +1310,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1315.0
+        "x": 633,
+        "y": 1314
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260826-030-accounting-gaps",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1341,13 +1342,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1490.0
+        "x": 649,
+        "y": 1487
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260826-030-accounting-gaps",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1372,13 +1375,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1665.0
+        "x": 461,
+        "y": 1613
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260826-030-accounting-gaps",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
@@ -1536,11 +1541,6 @@
       "label": ""
     },
     {
-      "from": "cooking-030-n013",
-      "to": "cooking-030-n015",
-      "label": ""
-    },
-    {
       "from": "cooking-030-n026",
       "to": "cooking-030-n027",
       "label": ""
@@ -1557,10 +1557,6 @@
     {
       "from": "cooking-030-n032",
       "to": "cooking-030-n025"
-    },
-    {
-      "from": "cooking-030-n015",
-      "to": "cooking-030-n033"
     },
     {
       "from": "cooking-030-n033",
@@ -1607,6 +1603,11 @@
       "from": "cooking-030-j12",
       "to": "cooking-030-n039",
       "label": "در صورت جابه‌جایی کد یا اشکال در آمار فروش گوگل‌شیت"
+    },
+    {
+      "from": "cooking-030-n013",
+      "to": "cooking-030-n033",
+      "label": ""
     }
   ],
   "pending": []
