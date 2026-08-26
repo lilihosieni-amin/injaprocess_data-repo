@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T09:55:50Z",
-  "updated_at": "2026-08-26T10:26:14Z",
+  "updated_at": "2026-08-26T10:27:54Z",
   "idef0": {
     "inputs": [
       "اعلام کمبود ماده اولیه از سوی نیروی لاین",
@@ -806,7 +806,7 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 231,
+        "x": 163,
         "y": 1538.4999999999998
       },
       "layout": "manual"
@@ -817,8 +817,8 @@
       "junctionType": "OR",
       "direction": "split",
       "position": {
-        "x": 195,
-        "y": 1703.029763539632
+        "x": 33,
+        "y": 1681.029763539632
       },
       "layout": "manual"
     },
@@ -828,8 +828,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 509,
-        "y": 1567.666666666667
+        "x": 529,
+        "y": 1517.666666666667
       },
       "layout": "manual"
     },
@@ -958,8 +958,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 366,
-        "y": 1720.666666666667
+        "x": 238,
+        "y": 1656.666666666667
       },
       "layout": "manual",
       "source": {
@@ -994,8 +994,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 544,
-        "y": 1840.666666666667
+        "x": 450,
+        "y": 1718.666666666667
       },
       "layout": "manual",
       "source": {
@@ -1030,8 +1030,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 710,
-        "y": 1908.666666666667
+        "x": 676,
+        "y": 1810.666666666667
       },
       "layout": "manual",
       "source": {
@@ -1047,8 +1047,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 941,
-        "y": 1898.666666666667
+        "x": 945,
+        "y": 1814.666666666667
       },
       "layout": "manual"
     },
