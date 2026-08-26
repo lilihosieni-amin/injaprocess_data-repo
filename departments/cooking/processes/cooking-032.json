@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-21T22:38:23Z",
-  "updated_at": "2026-08-26T10:36:56Z",
+  "updated_at": "2026-08-26T10:40:35Z",
   "idef0": {
     "inputs": [
       "مواد اولیه تحویلی از انبار",
@@ -402,8 +402,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 138,
-        "y": 1058
+        "x": -26,
+        "y": 952
       },
       "layout": "manual",
       "source": {
@@ -433,8 +433,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": -50,
-        "y": 1003
+        "x": 258,
+        "y": 1161
       },
       "layout": "manual",
       "source": {
@@ -465,8 +465,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 202,
-        "y": 1331.415023803711
+        "x": 360,
+        "y": 1329.415023803711
       },
       "layout": "manual",
       "source": {
@@ -1085,13 +1085,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1576.5885416666665
+        "x": 54,
+        "y": 1146.5885416666665
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260826-mgmt-report",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
