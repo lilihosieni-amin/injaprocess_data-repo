@@ -1,0 +1,19 @@
+{
+  "add_nodes": [],
+  "add_edges": [
+    {
+      "from": "cooking-032-n028",
+      "to": "cooking-032-n010",
+      "label": "در صورت احراز تقصیر لاین"
+    }
+  ],
+  "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [
+    {
+      "from": "cooking-032-j3",
+      "to": "cooking-032-n010"
+    }
+  ],
+  "flag_removed": []
+}
