@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-19T01:18:31Z",
-  "updated_at": "2026-08-27T12:30:15Z",
+  "updated_at": "2026-08-28T22:06:44Z",
   "idef0": {
     "inputs": [
       "موجودی مواد اولیه دست‌نخورده داخل یخچال و سردخانه",
@@ -669,8 +669,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1088,
-        "y": 1066.5
+        "x": 1096,
+        "y": 984.5
       },
       "layout": "manual"
     },
@@ -827,8 +827,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 143,
-        "y": 1733.4999656677246
+        "x": 419,
+        "y": 1963.4999656677246
       },
       "layout": "manual",
       "source": {
@@ -1285,10 +1285,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
-        "y": 1870.583333333333
+        "x": 269,
+        "y": 1552.583333333333
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-030-n037",
@@ -1413,13 +1413,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1212.9166666666665
+        "x": 94,
+        "y": 1070.9166666666665
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260827-030-accounting-variance",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
