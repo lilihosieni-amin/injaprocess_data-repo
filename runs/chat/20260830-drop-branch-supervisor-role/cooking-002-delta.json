@@ -1,0 +1,27 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "flag_removed": [],
+  "remove_edges": [],
+  "revise_nodes": [
+    {
+      "id": "cooking-002-n001",
+      "set": {
+        "icom": {
+          "inputs": [
+            "لیست درخواست ثبت‌شده شب گذشته آشپزخانه"
+          ],
+          "controls": [
+            "ساعت حضور ۵ عصر، نیم ساعت پیش از شروع شیفت"
+          ],
+          "outputs": [],
+          "mechanisms": [
+            "جانشین سرپرست آشپزخانه",
+            "سرپرست آشپزخانه"
+          ]
+        }
+      }
+    }
+  ]
+}
