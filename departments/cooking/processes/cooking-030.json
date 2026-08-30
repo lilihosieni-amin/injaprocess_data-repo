@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-19T01:18:31Z",
-  "updated_at": "2026-08-30T23:02:33Z",
+  "updated_at": "2026-08-30T23:04:03Z",
   "idef0": {
     "inputs": [
       "موجودی مواد اولیه دست‌نخورده داخل یخچال و سردخانه",
@@ -1535,8 +1535,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 208.11878429355286,
-        "y": 1672.6721107681758
+        "x": 192.11878429355286,
+        "y": 1678.6721107681758
       },
       "layout": "manual",
       "source": {
@@ -1571,13 +1571,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1810.8333333333335
+        "x": 28,
+        "y": 1542.8333333333335
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260830-030-counter-prep-causes",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
