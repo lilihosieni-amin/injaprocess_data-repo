@@ -1,0 +1,14 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "flag_removed": [],
+  "revise_nodes": [
+    {
+      "id": "cooking-030-n001",
+      "set": {
+        "label": "ثبت آمار موجودی و مانده اقلام لاین در پایان شب توسط سرلاین"
+      }
+    }
+  ]
+}
