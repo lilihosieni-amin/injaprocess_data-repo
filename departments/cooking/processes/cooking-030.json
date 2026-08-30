@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-19T01:18:31Z",
-  "updated_at": "2026-08-30T22:30:52Z",
+  "updated_at": "2026-08-30T22:34:32Z",
   "idef0": {
     "inputs": [
       "موجودی مواد اولیه دست‌نخورده داخل یخچال و سردخانه",
@@ -182,7 +182,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -225,7 +225,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -256,7 +256,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -511,8 +511,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 986,
-        "y": 799
+        "x": 990,
+        "y": 769
       },
       "layout": "manual",
       "source": {
@@ -542,8 +542,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 607.75,
-        "y": 796
+        "x": 597.75,
+        "y": 760
       },
       "layout": "manual",
       "source": {
@@ -576,8 +576,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 274.893213519107,
-        "y": 929.1472471835193
+        "x": 238.893213519107,
+        "y": 907.1472471835193
       },
       "layout": "manual",
       "source": {
@@ -593,8 +593,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 503,
-        "y": 1076.5
+        "x": 477,
+        "y": 980.5
       },
       "layout": "manual"
     },
@@ -619,8 +619,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 648,
-        "y": 974
+        "x": 614,
+        "y": 928
       },
       "layout": "manual",
       "source": {
@@ -652,8 +652,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 650,
-        "y": 1134
+        "x": 546,
+        "y": 1128
       },
       "layout": "manual",
       "source": {
@@ -670,8 +670,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 893,
-        "y": 1143.1905644734702
+        "x": 865,
+        "y": 1015.1905644734702
       },
       "layout": "manual"
     },
@@ -681,8 +681,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1048.9902695820092,
-        "y": 963.606786480893
+        "x": 1038.9902695820092,
+        "y": 1015.606786480893
       },
       "layout": "manual"
     },
@@ -753,8 +753,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 916,
-        "y": 1795.5
+        "x": 722,
+        "y": 1773.5
       },
       "layout": "manual",
       "source": {
@@ -791,8 +791,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 712,
-        "y": 1793.5
+        "x": 482,
+        "y": 1777.5
       },
       "layout": "manual",
       "source": {
@@ -808,8 +808,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 573,
-        "y": 1823.5
+        "x": 345,
+        "y": 1815.5
       },
       "layout": "manual"
     },
@@ -839,8 +839,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 419,
-        "y": 1963.4999656677246
+        "x": 343,
+        "y": 1939.4999656677246
       },
       "layout": "manual",
       "source": {
@@ -926,7 +926,7 @@
     {
       "id": "cooking-030-n027",
       "type": "activity",
-      "label": "مطابقت دادن اقلام رسیده با آمار چک‌لیست درخواستی شب گذشته در سر لاین",
+      "label": "مطابقت دادن اقلام رسیده با آمار چک‌لیست درخواستی شب گذشته ",
       "description": "این دومین کنترل پس از کنترل انجام‌شده در انبار است و به‌عنوان دابل‌چک برای محکم‌کاری و کم شدن خطا انجام می‌شود؛ حتی با وجود پک پنج‌تایی انبار پیش آمده که داخل بسته چهار عدد بوده است. این کنترل تنها جایی است که سرلاین بار خود را می‌شمارد و کاملاً در آشپزخانه انجام می‌شود، نه در انبار. کارکنان چک می‌کنند همه اقلام آمده باشد و کم و کسری نباشد — مثلاً نوشته‌اند ۱۶ کیلو مرغ گریل و باید ببینند ۱۶ کیلو آمده یا ۱۸ کیلو. سرلاین روی لیست خود تیک می‌زند و در صورت اشتباه ضربدر می‌زند. اقلام پرمصرف مثل ژامبون، پپرونی و مرغ با دقت بیشتری کنترل می‌شود. در بخش سوخاری همه مواد از فیله تا سایر اقلام چک و شمارش می‌شود و در بخش کانتر هم تمام موارد لیست‌های درخواستی چک می‌شود.",
       "actor": "سرلاین بخش",
       "icom": {
@@ -994,8 +994,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1021,
-        "y": 2285
+        "x": 933,
+        "y": 2277
       },
       "layout": "manual",
       "source": {
@@ -1027,8 +1027,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 786,
-        "y": 2274
+        "x": 696,
+        "y": 2276
       },
       "layout": "manual",
       "source": {
@@ -1059,7 +1059,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 547,
+        "x": 473,
         "y": 2279
       },
       "layout": "manual",
@@ -1470,13 +1470,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1723.3333333333333
+        "x": 926,
+        "y": 1599.3333333333333
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260830-030-prep-loop",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1500,13 +1502,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1723.3333333333333
+        "x": 932,
+        "y": 1767.3333333333333
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260830-030-prep-loop",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
@@ -1659,7 +1663,7 @@
     {
       "from": "cooking-030-j10",
       "to": "cooking-030-n028",
-      "label": "در صورت وود مغایرت"
+      "label": "در صورت وجود مغایرت"
     },
     {
       "from": "cooking-030-j8",
