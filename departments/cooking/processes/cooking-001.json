@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T09:05:21Z",
-  "updated_at": "2026-08-17T11:15:10Z",
+  "updated_at": "2026-08-30T21:42:38Z",
   "idef0": {
     "inputs": [
       "حضور همکار آشپزخانه در ابتدای شیفت",
@@ -267,8 +267,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 138.36223277909738,
-        "y": 355.4429928741093
+        "x": 147.43685619655383,
+        "y": 322.1693736767689
       },
       "layout": "manual",
       "source": {
@@ -294,13 +294,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 615
+        "x": -3.356534105625286,
+        "y": 540.3864296786913
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/cooking/20260816-212142",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -309,10 +311,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 806
+        "x": 61.660048876031695,
+        "y": 768.6932148393457
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-001-n009",
@@ -330,8 +332,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 41.152019002375326,
-        "y": 938.4061757719716
+        "x": 14.936440240834457,
+        "y": 937.3978842811431
       },
       "layout": "manual",
       "source": {
