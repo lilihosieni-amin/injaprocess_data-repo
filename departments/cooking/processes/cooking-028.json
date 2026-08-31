@@ -13,7 +13,7 @@
     "node": "cooking-026-n100"
   },
   "created_at": "2026-08-18T23:23:55Z",
-  "updated_at": "2026-08-31T23:05:27Z",
+  "updated_at": "2026-08-31T23:07:58Z",
   "idef0": {
     "inputs": [
       "قارچ فرنگی تحویل‌گرفته از لاین سوخاری",
@@ -106,7 +106,7 @@
       "direction": "split",
       "position": {
         "x": 103,
-        "y": 781
+        "y": 912.9444444444446
       },
       "layout": "auto"
     },
@@ -161,7 +161,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1052.5
+        "y": 1490.0
       },
       "layout": "auto",
       "source": {
@@ -190,7 +190,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 1052.5
+        "y": 1490.0
       },
       "layout": "auto",
       "source": {
@@ -880,9 +880,11 @@
       "source": {
         "created_by": "runs/chat/20260817-cooking026sub",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260831-cooking028-branches"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-028-n025",
@@ -911,9 +913,11 @@
       "source": {
         "created_by": "runs/chat/20260817-cooking026sub",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260831-cooking028-branches"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-028-n026",
@@ -1523,17 +1527,21 @@
     {
       "id": "cooking-028-n044",
       "type": "activity",
-      "label": "ریختن مواد لازم داخل تاپینگ‌ها به‌جز سس قارچ",
-      "description": "مواد لازم داخل تاپینگ‌های خودشان ریخته می‌شود، به‌جز سس قارچ که تا زمانی که نیاز پیش بیاید صبر می‌شود، چون ممکن است ترش و خراب شود.",
-      "actor": "کارکنان لاین گریل",
+      "label": "پر کردن تاپینگ‌های لاین فرنگی و گریل",
+      "description": "مواد لازم داخل تاپینگ‌های خودشان ریخته می‌شود: سس آلفردو که برای پاستا استفاده می‌شود در تاپینگ لاین فرنگی ریخته می‌شود، پس از سس آلفردو خود پنه هم داخل تاپینگ ریخته می‌شود، و مابقی مواد اولیه لاین فرنگی و گریل نیز در تاپینگ خودشان ریخته می‌شود؛ به‌جز سس قارچ که تا زمانی که نیاز پیش بیاید صبر می‌شود، چون ممکن است ترش و خراب شود.",
+      "actor": "کارکنان لاین فرنگی و گریل",
       "icom": {
         "inputs": [
+          "سس آلفردو",
+          "پنه",
           "مواد اولیه لاین فرنگی و گریل"
         ],
         "controls": [
           "نریختن سس قارچ تا زمان نیاز به دلیل احتمال ترش و خراب شدن"
         ],
         "outputs": [
+          "تاپینگ سس آلفردو",
+          "تاپینگ پنه",
           "تاپینگ‌های پرشده"
         ],
         "mechanisms": [
@@ -1549,7 +1557,8 @@
       "source": {
         "created_by": "runs/chat/20260817-cooking026sub",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260831-cooking028-branches"
         ]
       }
     },
@@ -1731,10 +1740,6 @@
     },
     {
       "from": "cooking-028-j1",
-      "to": "cooking-028-n024"
-    },
-    {
-      "from": "cooking-028-j1",
       "to": "cooking-028-n035",
       "label": "آماده‌سازی گریل و پیش‌پخت مرغ"
     },
@@ -1821,14 +1826,6 @@
       "to": "cooking-028-j8"
     },
     {
-      "from": "cooking-028-n024",
-      "to": "cooking-028-n025"
-    },
-    {
-      "from": "cooking-028-n025",
-      "to": "cooking-028-n026"
-    },
-    {
       "from": "cooking-028-n026",
       "to": "cooking-028-n027"
     },
@@ -1843,10 +1840,6 @@
     {
       "from": "cooking-028-n029",
       "to": "cooking-028-n030"
-    },
-    {
-      "from": "cooking-028-n030",
-      "to": "cooking-028-n031"
     },
     {
       "from": "cooking-028-n031",
@@ -1865,10 +1858,6 @@
     {
       "from": "cooking-028-n032",
       "to": "cooking-028-j7"
-    },
-    {
-      "from": "cooking-028-j7",
-      "to": "cooking-028-n033"
     },
     {
       "from": "cooking-028-n033",
@@ -1962,6 +1951,29 @@
       "from": "cooking-028-n048",
       "to": "cooking-028-j8",
       "label": ""
+    },
+    {
+      "from": "cooking-028-j1",
+      "to": "cooking-028-n026",
+      "label": "آماده‌سازی جعفری"
+    },
+    {
+      "from": "cooking-028-n030",
+      "to": "cooking-028-j8"
+    },
+    {
+      "from": "cooking-028-j1",
+      "to": "cooking-028-n031",
+      "label": "برچسب زدن درِ ظروف"
+    },
+    {
+      "from": "cooking-028-j7",
+      "to": "cooking-028-j8"
+    },
+    {
+      "from": "cooking-028-j1",
+      "to": "cooking-028-n033",
+      "label": "آماده‌سازی سس‌های میز کار"
     }
   ],
   "pending": []
