@@ -1,0 +1,54 @@
+{
+  "id": "cooking-034",
+  "department": "cooking",
+  "name": "زیرفرآیند جدید",
+  "summary": "",
+  "source": {
+    "type": "manual",
+    "ref": null,
+    "run": null
+  },
+  "parent": {
+    "process": "cooking-025",
+    "node": "cooking-025-n015"
+  },
+  "created_at": "2026-08-31T21:53:43Z",
+  "updated_at": "2026-08-31T21:53:43Z",
+  "idef0": {
+    "inputs": [],
+    "controls": [],
+    "outputs": [],
+    "mechanisms": []
+  },
+  "kpis": [],
+  "pending": [],
+  "nodes": [
+    {
+      "id": "start",
+      "type": "start",
+      "label": "شروع",
+      "position": {
+        "x": 60,
+        "y": 120
+      },
+      "layout": "manual"
+    },
+    {
+      "id": "end",
+      "type": "end",
+      "label": "پایان",
+      "position": {
+        "x": 320,
+        "y": 120
+      },
+      "layout": "manual"
+    }
+  ],
+  "edges": [
+    {
+      "from": "start",
+      "to": "end",
+      "label": ""
+    }
+  ]
+}
