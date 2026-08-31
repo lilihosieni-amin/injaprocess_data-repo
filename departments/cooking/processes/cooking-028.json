@@ -13,7 +13,7 @@
     "node": "cooking-026-n100"
   },
   "created_at": "2026-08-18T23:23:55Z",
-  "updated_at": "2026-08-31T23:15:54Z",
+  "updated_at": "2026-08-31T23:21:37Z",
   "idef0": {
     "inputs": [
       "قارچ فرنگی تحویل‌گرفته از لاین سوخاری",
@@ -1447,7 +1447,8 @@
         "x": 2357,
         "y": 3328.1875
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cooking-028-n041",
@@ -1587,7 +1588,8 @@
         "x": 667,
         "y": 3634.1875
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cooking-028-n045",
@@ -1884,38 +1886,12 @@
       "to": "cooking-028-j8"
     },
     {
-      "from": "cooking-028-j8",
-      "to": "cooking-028-j9"
-    },
-    {
-      "from": "cooking-028-j9",
-      "to": "cooking-028-n041",
-      "label": "راه‌اندازی وارمر"
-    },
-    {
-      "from": "cooking-028-j9",
-      "to": "cooking-028-n044",
-      "label": "پر کردن تاپینگ‌ها"
-    },
-    {
       "from": "cooking-028-n041",
       "to": "cooking-028-n042"
     },
     {
       "from": "cooking-028-n042",
       "to": "cooking-028-n043"
-    },
-    {
-      "from": "cooking-028-n043",
-      "to": "cooking-028-j10"
-    },
-    {
-      "from": "cooking-028-n044",
-      "to": "cooking-028-j10"
-    },
-    {
-      "from": "cooking-028-j10",
-      "to": "cooking-028-n045"
     },
     {
       "from": "cooking-028-j1",
@@ -1978,6 +1954,23 @@
     {
       "from": "cooking-028-n010",
       "to": "cooking-028-n012"
+    },
+    {
+      "from": "cooking-028-j1",
+      "to": "cooking-028-n044",
+      "label": "پر کردن تاپینگ‌ها و راه‌اندازی وارمر"
+    },
+    {
+      "from": "cooking-028-n044",
+      "to": "cooking-028-n041"
+    },
+    {
+      "from": "cooking-028-n043",
+      "to": "cooking-028-n045"
+    },
+    {
+      "from": "cooking-028-n045",
+      "to": "cooking-028-j8"
     }
   ],
   "pending": []

@@ -1,0 +1,23 @@
+{
+  "add_nodes": [],
+  "add_edges": [
+    { "from": "cooking-028-j1", "to": "cooking-028-n044", "label": "پر کردن تاپینگ‌ها و راه‌اندازی وارمر" },
+    { "from": "cooking-028-n044", "to": "cooking-028-n041" },
+    { "from": "cooking-028-n043", "to": "cooking-028-n045" },
+    { "from": "cooking-028-n045", "to": "cooking-028-j8" }
+  ],
+  "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [
+    { "from": "cooking-028-j8", "to": "cooking-028-j9" },
+    { "from": "cooking-028-j9", "to": "cooking-028-n041" },
+    { "from": "cooking-028-j9", "to": "cooking-028-n044" },
+    { "from": "cooking-028-n043", "to": "cooking-028-j10" },
+    { "from": "cooking-028-n044", "to": "cooking-028-j10" },
+    { "from": "cooking-028-j10", "to": "cooking-028-n045" }
+  ],
+  "flag_removed": [
+    { "id": "cooking-028-j9" },
+    { "id": "cooking-028-j10" }
+  ]
+}
