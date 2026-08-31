@@ -13,7 +13,7 @@
     "node": "cooking-025-n046"
   },
   "created_at": "2026-08-31T22:26:07Z",
-  "updated_at": "2026-08-31T22:32:34Z",
+  "updated_at": "2026-08-31T22:35:40Z",
   "idef0": {
     "inputs": [
       "گوشت چرخ‌کرده موجود در تاپینگ لاین پیتزا",
@@ -275,13 +275,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 265
+        "x": 907.5462962962962,
+        "y": 532.3611111111111
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260831-cooking025-exchange",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -307,8 +309,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 838,
-        "y": 1152
+        "x": 890.0833333333333,
+        "y": 751.9710846830297
       },
       "layout": "manual",
       "source": {
@@ -343,8 +345,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 764,
-        "y": 716.0500183105471
+        "x": 502.425925925926,
+        "y": 662.8092775698063
       },
       "layout": "manual",
       "source": {
@@ -353,17 +355,6 @@
           "ui-edit"
         ]
       }
-    },
-    {
-      "id": "cooking-035-j3",
-      "type": "junction",
-      "junctionType": "XOR",
-      "direction": "join",
-      "position": {
-        "x": 541,
-        "y": 798.9000034332278
-      },
-      "layout": "manual"
     },
     {
       "id": "cooking-035-n009",
@@ -390,12 +381,14 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 440
+        "y": 306.89814814814815
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260831-cooking025-exchange",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -421,8 +414,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 894,
-        "y": 1423
+        "x": 1077.0925925925926,
+        "y": 700.3055555555554
       },
       "layout": "manual",
       "source": {
@@ -457,13 +450,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 615
+        "x": 720.0462962962964,
+        "y": 584.9074074074074
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260831-cooking025-exchange",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -490,8 +485,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1016,
-        "y": 1604
+        "x": 675.7222222222223,
+        "y": 796.4768531763995
       },
       "layout": "manual",
       "source": {
@@ -700,13 +695,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 2715
+        "x": -2.712962962962969,
+        "y": 1469.9944284227158
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260831-cooking025-exchange",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -715,10 +712,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 363,
-        "y": 2643.5
+        "x": 339.19444444444446,
+        "y": 1477.3000011444092
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-035-n019",
@@ -743,13 +740,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 2627.5
+        "x": 225.8611111111111,
+        "y": 1627.864810237178
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260831-cooking025-exchange",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -775,13 +774,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 2627.5
+        "x": 221.73148148148147,
+        "y": 1777.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260831-cooking025-exchange",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -807,13 +808,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 2627.5
+        "x": 228.8055555555555,
+        "y": 1927.2222222222224
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260831-cooking025-exchange",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -822,8 +825,8 @@
       "junctionType": "OR",
       "direction": "join",
       "position": {
-        "x": 389,
-        "y": 1442.0833333333333
+        "x": 661,
+        "y": 1262.0833333333333
       },
       "layout": "manual"
     },
@@ -853,13 +856,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1712.0833333333333
+        "x": 594,
+        "y": 1382.0833333333333
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260831-cooking025-exchange",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
@@ -900,14 +905,6 @@
     },
     {
       "from": "cooking-035-n007",
-      "to": "cooking-035-j6"
-    },
-    {
-      "from": "cooking-035-n008",
-      "to": "cooking-035-j3"
-    },
-    {
-      "from": "cooking-035-j3",
       "to": "cooking-035-j6"
     },
     {
@@ -990,6 +987,16 @@
     {
       "from": "cooking-035-n020",
       "to": "cooking-035-n021"
+    },
+    {
+      "from": "cooking-035-j1",
+      "to": "cooking-035-n008",
+      "label": "تامین گوشت رست بیف لاین فرنگی در شعبه نهارخوران"
+    },
+    {
+      "from": "cooking-035-n008",
+      "to": "cooking-035-j6",
+      "label": ""
     }
   ],
   "pending": []
