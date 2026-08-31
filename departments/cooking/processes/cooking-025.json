@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T12:05:52Z",
-  "updated_at": "2026-08-31T22:26:07Z",
+  "updated_at": "2026-08-31T22:27:55Z",
   "idef0": {
     "inputs": [
       "مواد اولیه تحویل‌گرفته و شمارش‌شده لاین پیتزا",
@@ -1638,14 +1638,15 @@
       },
       "subprocess": "cooking-035",
       "position": {
-        "x": 300,
-        "y": 1665.0
+        "x": 897.2222222222223,
+        "y": 1718.2407407407406
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260831-cooking025-exchange",
         "touched_by": [
-          "runs/chat/20260831-cooking025-exchange"
+          "runs/chat/20260831-cooking025-exchange",
+          "ui-edit"
         ]
       }
     }
