@@ -13,7 +13,7 @@
     "node": "cooking-025-n046"
   },
   "created_at": "2026-08-31T22:26:07Z",
-  "updated_at": "2026-08-31T22:31:57Z",
+  "updated_at": "2026-08-31T22:32:34Z",
   "idef0": {
     "inputs": [
       "گوشت چرخ‌کرده موجود در تاپینگ لاین پیتزا",
@@ -317,17 +317,6 @@
           "ui-edit"
         ]
       }
-    },
-    {
-      "id": "cooking-035-j2",
-      "type": "junction",
-      "junctionType": "XOR",
-      "direction": "split",
-      "position": {
-        "x": 537.4629629629629,
-        "y": 517.5185185185185
-      },
-      "layout": "manual"
     },
     {
       "id": "cooking-035-n008",
@@ -912,16 +901,6 @@
     {
       "from": "cooking-035-n007",
       "to": "cooking-035-j6"
-    },
-    {
-      "from": "cooking-035-j1",
-      "to": "cooking-035-j2",
-      "label": "تأمین رست‌بیف ساندویچ به لاین فرنگی"
-    },
-    {
-      "from": "cooking-035-j2",
-      "to": "cooking-035-j3",
-      "label": "در شعبه مرکزی که لاین فرنگی رست‌بیف خود را مستقل سفارش می‌دهد"
     },
     {
       "from": "cooking-035-n008",
