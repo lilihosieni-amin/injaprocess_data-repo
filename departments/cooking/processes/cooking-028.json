@@ -13,7 +13,7 @@
     "node": "cooking-026-n100"
   },
   "created_at": "2026-08-18T23:23:55Z",
-  "updated_at": "2026-08-31T23:14:44Z",
+  "updated_at": "2026-08-31T23:15:54Z",
   "idef0": {
     "inputs": [
       "قارچ فرنگی تحویل‌گرفته از لاین سوخاری",
@@ -313,15 +313,17 @@
       "source": {
         "created_by": "runs/chat/20260817-cooking026sub",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260831-cooking028-shorten"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-028-n007",
       "type": "activity",
       "label": "خلالی ریز کردن گوجه برای سالاد ساندویچ",
-      "description": "به دلیل تغییر سبک ساندویچ، گوجه به‌صورت خلالی ریز می‌شود.",
+      "description": "پیش از ریز کردن مواد ساندویچ، تخته کار روی میز کار گذاشته می‌شود. سپس به دلیل تغییر سبک ساندویچ، گوجه به‌صورت خلالی ریز می‌شود.",
       "actor": "کارکنان لاین گریل",
       "icom": {
         "inputs": [
@@ -344,7 +346,8 @@
       "source": {
         "created_by": "runs/chat/20260817-cooking026sub",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260831-cooking028-shorten"
         ]
       }
     },
@@ -405,28 +408,34 @@
       "source": {
         "created_by": "runs/chat/20260817-cooking026sub",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260831-cooking028-shorten"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-028-n010",
       "type": "activity",
-      "label": "آغشته کردن مخلوط کاهو و گوجه به سس کف برگر",
-      "description": "سس کف برگر به میزانی زده می‌شود که نه سس و نه مواد دیده شود و دوطرفه نباشد، یعنی در حد وسط قشنگ آغشته شود.",
+      "label": "آماده‌سازی سالاد ساندویچ و ریختن آن در تاپینگ جدا",
+      "description": "کاهوی ریزشده و گوجه خلالی با هم مخلوط می‌شوند، سپس سس کف برگر به میزانی زده می‌شود که نه سس و نه مواد دیده شود و دوطرفه نباشد، یعنی در حد وسط قشنگ آغشته شود. سالاد آماده در تاپینگ جدا ریخته می‌شود؛ در شعبه ناهارخوران برای دو تا سه پرس و در شعبه مرکزی برای پنج یا شش پرس.",
       "actor": "کارکنان لاین گریل",
       "icom": {
         "inputs": [
-          "سس کف برگر",
-          "مخلوط کاهو و گوجه"
+          "کاهوی ریزشده",
+          "گوجه خلالی",
+          "سس کف برگر"
         ],
         "controls": [
-          "میزان سس به اندازه‌ای که نه سس و نه مواد دیده نشود"
+          "میزان سس به اندازه‌ای که نه سس و نه مواد دیده نشود",
+          "دو تا سه پرس در شعبه ناهارخوران و پنج تا شش پرس در شعبه مرکزی"
         ],
         "outputs": [
-          "سالاد ساندویچ آماده"
+          "تاپینگ سالاد ساندویچ"
         ],
-        "mechanisms": []
+        "mechanisms": [
+          "تاپینگ"
+        ]
       },
       "subprocess": null,
       "position": {
@@ -437,7 +446,8 @@
       "source": {
         "created_by": "runs/chat/20260817-cooking026sub",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260831-cooking028-shorten"
         ]
       }
     },
@@ -470,9 +480,11 @@
       "source": {
         "created_by": "runs/chat/20260817-cooking026sub",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260831-cooking028-shorten"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-028-n012",
@@ -1730,10 +1742,6 @@
     },
     {
       "from": "cooking-028-j1",
-      "to": "cooking-028-n006"
-    },
-    {
-      "from": "cooking-028-j1",
       "to": "cooking-028-n017",
       "label": "تهیه کروتون نان تست"
     },
@@ -1780,26 +1788,6 @@
     {
       "from": "cooking-028-n005",
       "to": "cooking-028-j8"
-    },
-    {
-      "from": "cooking-028-n006",
-      "to": "cooking-028-n007"
-    },
-    {
-      "from": "cooking-028-n008",
-      "to": "cooking-028-n009"
-    },
-    {
-      "from": "cooking-028-n009",
-      "to": "cooking-028-n010"
-    },
-    {
-      "from": "cooking-028-n010",
-      "to": "cooking-028-n011"
-    },
-    {
-      "from": "cooking-028-n011",
-      "to": "cooking-028-n012"
     },
     {
       "from": "cooking-028-n012",
@@ -1978,6 +1966,18 @@
       "from": "cooking-028-j1",
       "to": "cooking-028-n033",
       "label": "آماده‌سازی سس‌های میز کار"
+    },
+    {
+      "from": "cooking-028-j1",
+      "to": "cooking-028-n007"
+    },
+    {
+      "from": "cooking-028-n008",
+      "to": "cooking-028-n010"
+    },
+    {
+      "from": "cooking-028-n010",
+      "to": "cooking-028-n012"
     }
   ],
   "pending": []
