@@ -13,7 +13,7 @@
     "node": "cooking-026-n111"
   },
   "created_at": "2026-08-19T00:57:34Z",
-  "updated_at": "2026-08-21T11:42:33Z",
+  "updated_at": "2026-08-31T23:46:13Z",
   "idef0": {
     "inputs": [
       "فیش ساندویچ رست‌بیف",
@@ -434,7 +434,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 1577.5
+        "y": 877.5
       },
       "layout": "auto",
       "source": {
@@ -449,7 +449,7 @@
       "direction": "split",
       "position": {
         "x": 623,
-        "y": 1593.5
+        "y": 893.5
       },
       "layout": "auto"
     },
@@ -473,7 +473,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 1504.5833333333335
+        "y": 811.875
       },
       "layout": "auto",
       "source": {
@@ -507,7 +507,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 1679.5833333333335
+        "y": 986.875
       },
       "layout": "auto",
       "source": {
@@ -580,7 +580,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 1315
+        "y": 615.0000000000001
       },
       "layout": "auto",
       "source": {
@@ -611,7 +611,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1315.0000000000002
+        "y": 615.0000000000001
       },
       "layout": "auto",
       "source": {
@@ -640,7 +640,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 1329.5833333333335
+        "y": 636.8750000000001
       },
       "layout": "auto",
       "source": {
@@ -674,7 +674,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 1840
+        "y": 1140.0
       },
       "layout": "auto",
       "source": {
@@ -709,7 +709,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1840
+        "y": 1140.0
       },
       "layout": "auto",
       "source": {
@@ -742,7 +742,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 1854.5833333333335
+        "y": 1161.875
       },
       "layout": "auto",
       "source": {
@@ -757,7 +757,7 @@
       "direction": "split",
       "position": {
         "x": 1143,
-        "y": 1870.5833333333335
+        "y": 1177.875
       },
       "layout": "auto"
     },
@@ -824,7 +824,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 1140
+        "y": 440.00000000000006
       },
       "layout": "auto",
       "source": {
@@ -855,7 +855,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1140.0000000000002
+        "y": 440.00000000000006
       },
       "layout": "auto",
       "source": {
@@ -929,9 +929,11 @@
       "source": {
         "created_by": "runs/chat/20260817-cooking026prod",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260831-cooking029-strip"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-029-n023",
@@ -958,14 +960,17 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 440.00000000000006
+        "x": 40,
+        "y": 4749.375
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260817-cooking026prod",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260831-cooking029-strip"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-029-n024",
@@ -994,14 +999,17 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 615.0000000000001
+        "x": 40,
+        "y": 4924.375
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260817-cooking026prod",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260831-cooking029-strip"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-029-n025",
@@ -1032,16 +1040,18 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 790
+        "x": 40,
+        "y": 5099.375
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260817-cooking026prod",
         "touched_by": [
-          "runs/chat/20260821-c029-veg-chiza"
+          "runs/chat/20260821-c029-veg-chiza",
+          "runs/chat/20260831-cooking029-strip"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-029-n026",
@@ -1067,7 +1077,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 965
+        "y": 265.0000000000001
       },
       "layout": "auto",
       "source": {
@@ -1117,26 +1127,6 @@
       "from": "cooking-029-j1",
       "to": "cooking-029-j2",
       "label": "آیتم برگر یا ساندویچ گریلی"
-    },
-    {
-      "from": "cooking-029-j1",
-      "to": "cooking-029-n022",
-      "label": "همکاری با لاین پیتزا — تست نان پروتان"
-    },
-    {
-      "from": "cooking-029-j1",
-      "to": "cooking-029-n023",
-      "label": "همکاری با لاین پیتزا — رست‌بیف (شعبه ناهارخوران)"
-    },
-    {
-      "from": "cooking-029-j1",
-      "to": "cooking-029-n024",
-      "label": "همکاری با لاین سوخاری — سینه مرغ"
-    },
-    {
-      "from": "cooking-029-j1",
-      "to": "cooking-029-n025",
-      "label": "همکاری با لاین پیتزا — پوره سیر"
     },
     {
       "from": "cooking-029-j1",
@@ -1295,22 +1285,6 @@
     },
     {
       "from": "cooking-029-n021",
-      "to": "cooking-029-j12"
-    },
-    {
-      "from": "cooking-029-n022",
-      "to": "cooking-029-j12"
-    },
-    {
-      "from": "cooking-029-n023",
-      "to": "cooking-029-j12"
-    },
-    {
-      "from": "cooking-029-n024",
-      "to": "cooking-029-j12"
-    },
-    {
-      "from": "cooking-029-n025",
       "to": "cooking-029-j12"
     },
     {
