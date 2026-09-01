@@ -13,7 +13,7 @@
     "node": "cooking-026-n111"
   },
   "created_at": "2026-08-19T00:57:34Z",
-  "updated_at": "2026-09-01T06:55:33Z",
+  "updated_at": "2026-09-01T07:18:34Z",
   "idef0": {
     "inputs": [
       "فیش ساندویچ رست‌بیف",
@@ -520,7 +520,8 @@
         "touched_by": [
           "runs/chat/20260821-c029-veg-chiza",
           "ui-edit",
-          "runs/chat/20260831-cooking029-chiza-strip"
+          "runs/chat/20260831-cooking029-chiza-strip",
+          "runs/chat/20260901-fix-dupes"
         ]
       },
       "removed": true
@@ -553,7 +554,8 @@
         "created_by": "runs/chat/20260817-cooking026prod",
         "touched_by": [
           "ui-edit",
-          "runs/chat/20260831-cooking029-chiza-strip"
+          "runs/chat/20260831-cooking029-chiza-strip",
+          "runs/chat/20260901-fix-dupes"
         ]
       },
       "removed": true
@@ -597,9 +599,11 @@
       "source": {
         "created_by": "runs/chat/20260817-cooking026prod",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260901-fix-dupes"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-029-n013",
@@ -630,9 +634,11 @@
       "source": {
         "created_by": "runs/chat/20260817-cooking026prod",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260901-fix-dupes"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-029-n014",
@@ -661,9 +667,11 @@
       "source": {
         "created_by": "runs/chat/20260817-cooking026prod",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260901-fix-dupes"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-029-n015",
@@ -988,7 +996,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 5449.375
+        "y": 5452.5
       },
       "layout": "auto",
       "source": {
@@ -1028,7 +1036,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 5624.375
+        "y": 5627.5
       },
       "layout": "auto",
       "source": {
@@ -1070,7 +1078,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 5799.375
+        "y": 5802.5
       },
       "layout": "auto",
       "source": {
@@ -1134,11 +1142,6 @@
       "from": "cooking-029-j1",
       "to": "cooking-029-n008",
       "label": "آیتم سالاد"
-    },
-    {
-      "from": "cooking-029-j1",
-      "to": "cooking-029-n012",
-      "label": "آیتم سیب‌ویژه"
     },
     {
       "from": "cooking-029-j1",
@@ -1233,18 +1236,6 @@
     },
     {
       "from": "cooking-029-n007",
-      "to": "cooking-029-j12"
-    },
-    {
-      "from": "cooking-029-n012",
-      "to": "cooking-029-n013"
-    },
-    {
-      "from": "cooking-029-n013",
-      "to": "cooking-029-n014"
-    },
-    {
-      "from": "cooking-029-n014",
       "to": "cooking-029-j12"
     },
     {
