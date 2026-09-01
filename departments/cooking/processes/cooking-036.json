@@ -13,7 +13,7 @@
     "node": "cooking-026-n113"
   },
   "created_at": "2026-08-31T23:46:10Z",
-  "updated_at": "2026-09-01T06:58:33Z",
+  "updated_at": "2026-09-01T06:58:55Z",
   "idef0": {
     "inputs": [
       "نان پروتان لاین فرنگی",
@@ -255,13 +255,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 883.3333333333331
+        "x": 591.3528319999999,
+        "y": 920.6581333333331
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260831-cooking026-exchange",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
