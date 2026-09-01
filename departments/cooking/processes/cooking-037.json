@@ -13,7 +13,7 @@
     "node": "cooking-030-n016"
   },
   "created_at": "2026-09-01T22:45:57Z",
-  "updated_at": "2026-09-01T22:45:57Z",
+  "updated_at": "2026-09-01T23:09:33Z",
   "idef0": {
     "inputs": [
       "آمار شمارش و وزن‌شده مانده آخر شب لاین",
@@ -44,7 +44,7 @@
     {
       "id": "cooking-037-n001",
       "type": "activity",
-      "label": "قرار دادن فرم نصفه‌پرشده مانده شب قبل و فرم مانده بعدی کنار دست هنگام تکمیل مانده آخر شب",
+      "label": "قرار دادن فرم نصفه‌پرشده مانده شب قبل و فرم مانده برای فرداشب کنار دست هنگام تکمیل مانده آخر شب",
       "description": "هنگام پر کردن مانده آخر شب، کارکنان آشپزخانه دو فرم کنار دست خود می‌گذارند: یکی فرم نصفه‌پرشده از دیشب که تاریخ هم دارد و ارقام آن همان مانده اول شب امشب است، و دیگری فرم بعدی که قرار است برای فردا آماده شود.",
       "actor": "کارکنان آشپزخانه",
       "icom": {
@@ -62,12 +62,14 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/cooking/20260901-223016",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -94,7 +96,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -125,7 +127,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -155,7 +157,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -190,7 +192,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -220,7 +222,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -251,7 +253,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -281,7 +283,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
