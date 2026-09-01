@@ -13,7 +13,7 @@
     "node": "cooking-026-n111"
   },
   "created_at": "2026-08-19T00:57:34Z",
-  "updated_at": "2026-09-01T07:25:17Z",
+  "updated_at": "2026-09-01T07:29:45Z",
   "idef0": {
     "inputs": [
       "فیش ساندویچ رست‌بیف",
@@ -1186,7 +1186,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 3240.0
+        "y": 3240
       },
       "layout": "auto",
       "source": {
@@ -1471,7 +1471,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 3065.0
+        "y": 3065
       },
       "layout": "auto",
       "source": {
@@ -1595,13 +1595,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 615.0
+        "x": -740,
+        "y": 187.05001831054688
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260901-cooking029-restore",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1624,13 +1626,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 615.0
+        "x": 42,
+        "y": 251
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260901-cooking029-restore",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1656,13 +1660,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 636.875
+        "x": 384,
+        "y": 261.77501487731934
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260901-cooking029-restore",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1683,13 +1689,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 636.875
+        "x": 818,
+        "y": 314.875
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260901-cooking029-restore",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1713,7 +1721,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 2365.0
+        "y": 2365
       },
       "layout": "auto",
       "source": {
