@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T12:36:03Z",
-  "updated_at": "2026-09-01T22:36:27Z",
+  "updated_at": "2026-09-01T23:08:11Z",
   "idef0": {
     "inputs": [
       "بسته‌های بار ملزومات از انبار و مرکز",
@@ -2056,7 +2056,8 @@
         "x": 797,
         "y": 3633.6488697360273
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cooking-027-j16",
@@ -2067,7 +2068,8 @@
         "x": 414,
         "y": 4639.861487610174
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "cooking-027-n054",
@@ -2161,9 +2163,11 @@
       "source": {
         "created_by": "runs/chat/20260820-051613",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260901-counter-endnight"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-027-n057",
@@ -2192,9 +2196,11 @@
       "source": {
         "created_by": "runs/chat/20260820-051613",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260901-counter-endnight"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-027-n058",
@@ -2225,9 +2231,11 @@
       "source": {
         "created_by": "runs/chat/20260820-051613",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260901-counter-endnight"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-027-n059",
@@ -2259,9 +2267,11 @@
       "source": {
         "created_by": "runs/chat/20260820-051613",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260901-counter-endnight"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-027-n060",
@@ -2288,9 +2298,11 @@
       "source": {
         "created_by": "runs/chat/20260820-051613",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260901-counter-endnight"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-027-n061",
@@ -2317,9 +2329,11 @@
       "source": {
         "created_by": "runs/chat/20260820-051613",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260901-counter-endnight"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-027-n062",
@@ -2348,9 +2362,11 @@
       "source": {
         "created_by": "runs/chat/20260820-051613",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260901-counter-endnight"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-027-n063",
@@ -2379,9 +2395,11 @@
       "source": {
         "created_by": "runs/chat/20260820-051613",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260901-counter-endnight"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-027-n064",
@@ -2833,54 +2851,8 @@
       "to": "cooking-027-j14"
     },
     {
-      "from": "cooking-027-j15",
-      "to": "cooking-027-n054",
-      "label": "آمارگیری و درخواست کالا"
-    },
-    {
-      "from": "cooking-027-j15",
-      "to": "cooking-027-n056",
-      "label": "تعطیل کردن و تمیزکاری کانتر"
-    },
-    {
       "from": "cooking-027-n054",
       "to": "cooking-027-n055"
-    },
-    {
-      "from": "cooking-027-n055",
-      "to": "cooking-027-j16"
-    },
-    {
-      "from": "cooking-027-n056",
-      "to": "cooking-027-n057"
-    },
-    {
-      "from": "cooking-027-n057",
-      "to": "cooking-027-n058"
-    },
-    {
-      "from": "cooking-027-n058",
-      "to": "cooking-027-n059"
-    },
-    {
-      "from": "cooking-027-n059",
-      "to": "cooking-027-n060"
-    },
-    {
-      "from": "cooking-027-n060",
-      "to": "cooking-027-n061"
-    },
-    {
-      "from": "cooking-027-n061",
-      "to": "cooking-027-n062"
-    },
-    {
-      "from": "cooking-027-n062",
-      "to": "cooking-027-j16"
-    },
-    {
-      "from": "cooking-027-j16",
-      "to": "cooking-027-n063"
     },
     {
       "from": "cooking-027-j17",
@@ -2942,8 +2914,8 @@
     },
     {
       "from": "cooking-027-j14",
-      "to": "cooking-027-j15",
-      "label": ""
+      "to": "cooking-027-n054",
+      "label": "پایان تایم کاری شیفت"
     }
   ],
   "pending": []

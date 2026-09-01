@@ -1,0 +1,34 @@
+{
+  "add_nodes": [],
+  "add_edges": [
+    { "from": "cooking-027-j14", "to": "cooking-027-n054", "label": "پایان تایم کاری شیفت" }
+  ],
+  "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [
+    { "from": "cooking-027-j14", "to": "cooking-027-j15" },
+    { "from": "cooking-027-j15", "to": "cooking-027-n054" },
+    { "from": "cooking-027-j15", "to": "cooking-027-n056" },
+    { "from": "cooking-027-n055", "to": "cooking-027-j16" },
+    { "from": "cooking-027-n056", "to": "cooking-027-n057" },
+    { "from": "cooking-027-n057", "to": "cooking-027-n058" },
+    { "from": "cooking-027-n058", "to": "cooking-027-n059" },
+    { "from": "cooking-027-n059", "to": "cooking-027-n060" },
+    { "from": "cooking-027-n060", "to": "cooking-027-n061" },
+    { "from": "cooking-027-n061", "to": "cooking-027-n062" },
+    { "from": "cooking-027-n062", "to": "cooking-027-j16" },
+    { "from": "cooking-027-j16", "to": "cooking-027-n063" }
+  ],
+  "flag_removed": [
+    { "id": "cooking-027-n056" },
+    { "id": "cooking-027-n057" },
+    { "id": "cooking-027-n058" },
+    { "id": "cooking-027-n059" },
+    { "id": "cooking-027-n060" },
+    { "id": "cooking-027-n061" },
+    { "id": "cooking-027-n062" },
+    { "id": "cooking-027-n063" },
+    { "id": "cooking-027-j15" },
+    { "id": "cooking-027-j16" }
+  ]
+}
