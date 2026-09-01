@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T12:36:03Z",
-  "updated_at": "2026-09-01T10:41:10Z",
+  "updated_at": "2026-09-01T10:48:04Z",
   "idef0": {
     "inputs": [
       "بسته‌های بار ملزومات از انبار و مرکز",
@@ -200,8 +200,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 864,
-        "y": 201
+        "x": 817.7037037037037,
+        "y": 192.31944444444446
       },
       "layout": "manual",
       "source": {
@@ -233,8 +233,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 192,
-        "y": 1182.40625
+        "x": 260.4799382716049,
+        "y": 816.8584104938271
       },
       "layout": "manual",
       "source": {
@@ -268,8 +268,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 946,
-        "y": 1184.40625
+        "x": 538.9783950617285,
+        "y": 898.9124228395063
       },
       "layout": "manual",
       "source": {
@@ -299,8 +299,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1378,
-        "y": 1188.40625
+        "x": 957.4753086419752,
+        "y": 888.4448302469137
       },
       "layout": "manual",
       "source": {
@@ -332,8 +332,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 310,
-        "y": 798
+        "x": 66.94444444444444,
+        "y": 1022.729938271605
       },
       "layout": "manual",
       "source": {
@@ -363,8 +363,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 428,
-        "y": 960
+        "x": 368.20061728395063,
+        "y": 1047.7700617283951
       },
       "layout": "manual",
       "source": {
@@ -397,8 +397,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 660,
-        "y": 971.25
+        "x": 585.733024691358,
+        "y": 1035.8719135802469
       },
       "layout": "manual",
       "source": {
@@ -429,8 +429,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 866,
-        "y": 991
+        "x": 810.0586419753087,
+        "y": 1029.5802469135804
       },
       "layout": "manual",
       "source": {
@@ -461,8 +461,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1082,
-        "y": 985
+        "x": 1041.4907407407406,
+        "y": 1025.5092592592594
       },
       "layout": "manual",
       "source": {
@@ -492,8 +492,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1320,
-        "y": 925
+        "x": 1267.9166666666665,
+        "y": 1012.770061728395
       },
       "layout": "manual",
       "source": {
@@ -523,8 +523,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 834,
-        "y": 360
+        "x": 804.1003086419753,
+        "y": 338.7808641975309
       },
       "layout": "manual",
       "source": {
@@ -558,8 +558,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 810,
-        "y": 477
+        "x": 795.5324074074074,
+        "y": 468.31944444444446
       },
       "layout": "manual",
       "source": {
@@ -589,8 +589,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 782,
-        "y": 620
+        "x": 712.5555555555555,
+        "y": 605.5324074074074
       },
       "layout": "manual",
       "source": {
@@ -620,8 +620,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1046,
-        "y": 622
+        "x": 1066.2546296296296,
+        "y": 608.4969135802469
       },
       "layout": "manual",
       "source": {
@@ -654,8 +654,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 802,
-        "y": 797
+        "x": 600.4182098765432,
+        "y": 734.3070987654321
       },
       "layout": "manual",
       "source": {
@@ -687,8 +687,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1120,
-        "y": 797
+        "x": 934.8148148148148,
+        "y": 752.6327160493827
       },
       "layout": "manual",
       "source": {
@@ -1282,8 +1282,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1208,
-        "y": 1463.9292929292924
+        "x": 971.2716049382716,
+        "y": 1483.0650953984282
       },
       "layout": "manual",
       "source": {
@@ -1299,8 +1299,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 785,
-        "y": 1536.9292929292924
+        "x": 676.9753086419753,
+        "y": 1520.5326879910208
       },
       "layout": "manual"
     },
@@ -1848,8 +1848,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 910,
-        "y": 1464.9292929292924
+        "x": 758.5725308641976,
+        "y": 1481.325897867564
       },
       "layout": "manual",
       "source": {
@@ -1926,8 +1926,8 @@
       },
       "subprocess": "cooking-031",
       "position": {
-        "x": 1623,
-        "y": 1529.5291922212846
+        "x": 1346.611111111111,
+        "y": 1562.8625255546178
       },
       "layout": "manual",
       "source": {
@@ -2469,8 +2469,8 @@
       },
       "subprocess": "cooking-033",
       "position": {
-        "x": 1610,
-        "y": 1327.75831146754
+        "x": 1336.388888888889,
+        "y": 1372.2027559119845
       },
       "layout": "manual",
       "source": {
@@ -2487,8 +2487,8 @@
       "junctionType": "AND",
       "direction": "split",
       "position": {
-        "x": 1855,
-        "y": 1467.2161934207188
+        "x": 1570.625,
+        "y": 1519.2609465071384
       },
       "layout": "manual"
     },
@@ -2498,8 +2498,8 @@
       "junctionType": "AND",
       "direction": "join",
       "position": {
-        "x": 1462,
-        "y": 1527.4823232323238
+        "x": 1207.8333333333333,
+        "y": 1537.204545454546
       },
       "layout": "manual"
     }
