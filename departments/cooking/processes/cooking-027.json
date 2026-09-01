@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T12:36:03Z",
-  "updated_at": "2026-09-01T10:50:20Z",
+  "updated_at": "2026-09-01T10:56:41Z",
   "idef0": {
     "inputs": [
       "بسته‌های بار ملزومات از انبار و مرکز",
@@ -1326,8 +1326,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 65,
-        "y": 1397.2730372072465
+        "x": 85,
+        "y": 1387.2730372072465
       },
       "layout": "manual",
       "source": {
@@ -1344,8 +1344,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 385,
-        "y": 1805.4584206860472
+        "x": 347,
+        "y": 1733.4584206860472
       },
       "layout": "manual"
     },
@@ -1372,8 +1372,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 492,
-        "y": 1859.7042791963822
+        "x": 522,
+        "y": 1711.7042791963822
       },
       "layout": "manual",
       "source": {
@@ -1404,8 +1404,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 800,
-        "y": 1867.6980326296098
+        "x": 734,
+        "y": 1717.6980326296098
       },
       "layout": "manual",
       "source": {
@@ -1439,8 +1439,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1063,
-        "y": 1837.4105303407914
+        "x": 959,
+        "y": 1715.4105303407914
       },
       "layout": "manual",
       "source": {
@@ -1456,8 +1456,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 682,
-        "y": 2164.235534918428
+        "x": 1030,
+        "y": 1894.2355349184281
       },
       "layout": "manual"
     },
@@ -1616,8 +1616,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 866,
-        "y": 2249.225123973808
+        "x": 1008,
+        "y": 2031.225123973808
       },
       "layout": "manual",
       "source": {
@@ -1959,8 +1959,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 348,
-        "y": 1403.3786218174373
+        "x": 318,
+        "y": 1395.3786218174373
       },
       "layout": "manual",
       "source": {
@@ -1991,8 +1991,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 76,
-        "y": 1604.0953525710192
+        "x": 72,
+        "y": 1548.0953525710192
       },
       "layout": "manual",
       "source": {
@@ -2025,8 +2025,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 82,
-        "y": 1895.5452884841052
+        "x": 64,
+        "y": 1713.5452884841052
       },
       "layout": "manual",
       "source": {
@@ -2529,13 +2529,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 3987.2853535353534
+        "x": 1491.8179321289062,
+        "y": 1110.3079918562762
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260901-cooking027-fish",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
