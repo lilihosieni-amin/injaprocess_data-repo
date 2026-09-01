@@ -13,7 +13,7 @@
     "node": "cooking-026-n113"
   },
   "created_at": "2026-08-31T23:46:10Z",
-  "updated_at": "2026-09-01T07:34:53Z",
+  "updated_at": "2026-09-01T10:51:29Z",
   "idef0": {
     "inputs": [
       "نان پروتان لاین فرنگی",
@@ -336,8 +336,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1012,
-        "y": 874.7398153940835
+        "x": 1054,
+        "y": 896.7398153940835
       },
       "layout": "manual",
       "source": {
@@ -439,8 +439,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 806,
-        "y": 652.8908697764077
+        "x": 734,
+        "y": 624.8908697764077
       },
       "layout": "manual",
       "source": {
@@ -633,8 +633,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 482.59110399999986,
-        "y": 1235.9960426666664
+        "x": 348.59110399999986,
+        "y": 1359.9960426666664
       },
       "layout": "manual",
       "source": {
@@ -665,8 +665,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 729.521024,
-        "y": 1262.4189546666667
+        "x": 633.521024,
+        "y": 1398.4189546666667
       },
       "layout": "manual",
       "source": {
@@ -700,8 +700,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 973.689216,
-        "y": 1206.7932571666665
+        "x": 901.689216,
+        "y": 1366.7932571666665
       },
       "layout": "manual",
       "source": {
@@ -771,8 +771,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 290.6959360000001,
-        "y": 1510.1526506666664
+        "x": 318.6959360000001,
+        "y": 1530.1526506666664
       },
       "layout": "manual",
       "source": {
@@ -1063,8 +1063,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 285.2894720000001,
-        "y": 1282.4528000000003
+        "x": 429.2894720000001,
+        "y": 1202.4528000000003
       },
       "layout": "manual",
       "source": {
@@ -1094,8 +1094,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 513.9366400000001,
-        "y": 1427.2730240000003
+        "x": 651.9366400000001,
+        "y": 1243.2730240000003
       },
       "layout": "manual",
       "source": {
@@ -1128,13 +1128,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1949.375
+        "x": 752,
+        "y": 795.3749580383301
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260901-mushroom-and-n111",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1161,13 +1163,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1949.375
+        "x": 960,
+        "y": 793.375
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260901-mushroom-and-n111",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
