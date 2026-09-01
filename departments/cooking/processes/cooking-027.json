@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T12:36:03Z",
-  "updated_at": "2026-09-01T11:11:34Z",
+  "updated_at": "2026-09-01T11:12:04Z",
   "idef0": {
     "inputs": [
       "بسته‌های بار ملزومات از انبار و مرکز",
@@ -2727,10 +2727,6 @@
       "to": "cooking-027-n041"
     },
     {
-      "from": "cooking-027-n042",
-      "to": "cooking-027-n043"
-    },
-    {
       "from": "cooking-027-n043",
       "to": "cooking-027-n044"
     },
@@ -2961,11 +2957,6 @@
       "to": "cooking-027-j8"
     },
     {
-      "from": "cooking-027-j8",
-      "to": "cooking-027-j9",
-      "label": "کل فیش در یک پک جا می‌شود"
-    },
-    {
       "from": "cooking-027-n037",
       "to": "cooking-027-j10"
     },
@@ -2975,8 +2966,17 @@
       "label": "سفارش بیرون‌بر یا حضوری"
     },
     {
+      "from": "cooking-027-j8",
+      "to": "cooking-027-n042",
+      "label": "کل فیش در یک پک جا می‌شود"
+    },
+    {
+      "from": "cooking-027-n042",
+      "to": "cooking-027-j9"
+    },
+    {
       "from": "cooking-027-j9",
-      "to": "cooking-027-n042"
+      "to": "cooking-027-n043"
     }
   ],
   "pending": []

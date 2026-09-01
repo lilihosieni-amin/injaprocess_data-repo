@@ -1,0 +1,15 @@
+{
+  "add_nodes": [],
+  "add_edges": [
+    { "from": "cooking-027-j8", "to": "cooking-027-n042", "label": "کل فیش در یک پک جا می‌شود" },
+    { "from": "cooking-027-n042", "to": "cooking-027-j9" },
+    { "from": "cooking-027-j9", "to": "cooking-027-n043" }
+  ],
+  "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [
+    { "from": "cooking-027-j8", "to": "cooking-027-j9" },
+    { "from": "cooking-027-j9", "to": "cooking-027-n042" }
+  ],
+  "flag_removed": []
+}
