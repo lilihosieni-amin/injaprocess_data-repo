@@ -13,7 +13,7 @@
     "node": "cooking-026-n111"
   },
   "created_at": "2026-08-19T00:57:34Z",
-  "updated_at": "2026-09-01T07:29:45Z",
+  "updated_at": "2026-09-01T07:30:35Z",
   "idef0": {
     "inputs": [
       "فیش ساندویچ رست‌بیف",
@@ -138,20 +138,28 @@
       "id": "cooking-029-n001",
       "type": "activity",
       "label": "به تأخیر انداختن دو تا سه دقیقه‌ای گذاشتن برگر روی گریل برای ساندویچ‌های نیازمند فیله",
-      "description": "ساندویچ‌هایی که پروتئین سرخ‌شده لازم دارند — دبل‌دان، دبل‌کینگ، اینجابرگر، ساندویچ زینگر و فیله استریپس — فیله‌شان از بخش سوخاری تأمین می‌شود. چون آماده شدن فیله در آن بخش زمان می‌برد، لاین گریل برگر این ساندویچ‌ها را دو تا سه دقیقه دیرتر روی گریل می‌گذارد تا آماده شدن دو جزء با هم هم‌زمان شود و هیچ‌کدام تا رسیدن دیگری سرد نماند.",
+      "description": "ساندویچ‌هایی که پروتئین سرخ‌شده لازم دارند — دبل‌دان، دبل‌کینگ، اینجابرگر، ساندویچ زینگر و فیله استریپس — فیله‌شان از بخش سوخاری تأمین می‌شود. چون آماده شدن فیله در آن بخش زمان می‌برد، لاین گریل برگر این ساندویچ‌ها را دو تا سه دقیقه دیرتر روی گریل می‌گذارد تا آماده شدن دو جزء با هم هم‌زمان شود و هیچ‌کدام تا رسیدن دیگری سرد نماند. رسپی پخت خود ساندویچ چنین است: روی قسمت چپ صفحه داغ گریل اسپری روغن زده می‌شود، برگر روی گریل گذاشته می‌شود تا یخش باز شود که چند ثانیه بیشتر طول نمی‌کشد، و هم‌زمان نان ساندویچ باز و سالاد آماده داخل ساندویچ روی نان ریخته می‌شود. برگر یا مرغ گریل تا پخت کامل روی گریل می‌ماند و برای چیزبرگر دو تا سه ثانیه مانده به پایان پخت پنیر گودا روی برگر گذاشته می‌شود تا کاملاً آب شود؛ سپس برگر یا مرغ گریل پخته روی نان قرار می‌گیرد و ساندویچ بسته می‌شود.",
       "actor": "کارکن لاین گریل و ساندویچ",
       "icom": {
         "inputs": [
-          "برگر منجمد"
+          "برگر منجمد",
+          "مرغ گریل",
+          "نان ساندویچ",
+          "سالاد آماده داخل ساندویچ",
+          "پنیر گودا",
+          "اسپری روغن"
         ],
         "controls": [
-          "هم‌زمانی با آماده شدن فیله بخش سوخاری"
+          "هم‌زمانی با آماده شدن فیله بخش سوخاری",
+          "گذاشتن پنیر گودا دو تا سه ثانیه مانده به پایان پخت برای چیزبرگر"
         ],
         "outputs": [
-          "برگر آماده قرار گرفتن روی گریل"
+          "برگر آماده قرار گرفتن روی گریل",
+          "ساندویچ بسته‌شده"
         ],
         "mechanisms": [
-          "بخش سوخاری"
+          "بخش سوخاری",
+          "صفحه گریل"
         ]
       },
       "subprocess": null,
@@ -163,7 +171,8 @@
       "source": {
         "created_by": "runs/chat/20260817-cooking026prod",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260901-cooking029-recipe-fold"
         ]
       }
     },
@@ -460,16 +469,23 @@
       "id": "cooking-029-n009",
       "type": "activity",
       "label": "افزودن نان تست و گوجه‌گیلاسی به ظرف سالاد",
-      "description": "نان تست سس‌کروتون‌زده و پخته‌شده در فر و گوجه‌گیلاسی شسته‌شده از پیش در تاپینگ‌ها آماده است و به محض داشتن سفارش به تعداد گفته‌شده ریخته می‌شود؛ حدود ۱۰ تا ۱۲ عدد نان تست و حدود ۸ عدد گوجه‌گیلاسی.",
+      "description": "نان تست سس‌کروتون‌زده و پخته‌شده در فر و گوجه‌گیلاسی شسته‌شده از پیش در تاپینگ‌ها آماده است و به محض داشتن سفارش به تعداد گفته‌شده ریخته می‌شود؛ حدود ۱۰ تا ۱۲ عدد نان تست و حدود ۸ عدد گوجه‌گیلاسی. تکمیل سالاد بر حسب نوع آن فرق می‌کند: برای سالاد سزار ۱۵۰ گرم مرغ گریل به‌صورت خلالی ریز و روی سالاد ریخته می‌شود و برای سالاد چیزا، چیزای برش‌خورده تحویلی از بخش سوخاری روی سالاد چیده می‌شود. سپس روی سالاد روغن زیتون ریخته و پنیر پارمسان پاشیده می‌شود و سالاد تحویل داده می‌شود.",
       "actor": "کارکن لاین فرنگی و سالاد",
       "icom": {
         "inputs": [
           "نان تست آماده",
-          "گوجه‌گیلاسی"
+          "گوجه‌گیلاسی",
+          "مرغ گریل پخته",
+          "چیزای برش‌خورده تحویلی از بخش سوخاری",
+          "روغن زیتون",
+          "پنیر پارمسان"
         ],
-        "controls": [],
+        "controls": [
+          "۱۵۰ گرم مرغ گریل خلالی برای سالاد سزار"
+        ],
         "outputs": [
-          "ظرف سالاد با نان تست و گوجه‌گیلاسی"
+          "ظرف سالاد با نان تست و گوجه‌گیلاسی",
+          "سالاد آماده تحویل"
         ],
         "mechanisms": []
       },
@@ -482,7 +498,8 @@
       "source": {
         "created_by": "runs/chat/20260817-cooking026prod",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260901-cooking029-recipe-fold"
         ]
       }
     },
@@ -996,7 +1013,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 9535.138888888889
+        "y": 6502.5
       },
       "layout": "auto",
       "source": {
@@ -1036,7 +1053,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 9710.138888888889
+        "y": 6677.5
       },
       "layout": "auto",
       "source": {
@@ -1078,7 +1095,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 9885.138888888889
+        "y": 6852.5
       },
       "layout": "auto",
       "source": {
@@ -1156,14 +1173,17 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1511.875
+        "x": 40,
+        "y": 7027.5
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260901-cooking029-restore",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260901-cooking029-recipe-fold"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-029-n028",
@@ -1185,14 +1205,17 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 3240
+        "x": 40,
+        "y": 7202.5
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260901-cooking029-restore",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260901-cooking029-recipe-fold"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-029-j13",
@@ -1200,10 +1223,11 @@
       "junctionType": "AND",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 3294.8888888888887
+        "x": 103,
+        "y": 4418.5
       },
-      "layout": "auto"
+      "layout": "auto",
+      "removed": true
     },
     {
       "id": "cooking-029-n029",
@@ -1223,14 +1247,17 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 3147.6388888888887
+        "x": 40,
+        "y": 7377.5
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260901-cooking029-restore",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260901-cooking029-recipe-fold"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-029-n030",
@@ -1251,14 +1278,17 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 3147.6388888888887
+        "x": 40,
+        "y": 7552.5
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260901-cooking029-restore",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260901-cooking029-recipe-fold"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-029-n031",
@@ -1284,14 +1314,17 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 3410.1388888888887
+        "x": 40,
+        "y": 7727.5
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260901-cooking029-restore",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260901-cooking029-recipe-fold"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-029-j14",
@@ -1299,10 +1332,11 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
-        "y": 3426.1388888888887
+        "x": 103,
+        "y": 4593.5
       },
-      "layout": "auto"
+      "layout": "auto",
+      "removed": true
     },
     {
       "id": "cooking-029-n032",
@@ -1326,13 +1360,16 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 3497.6388888888887
+        "y": 7902.5
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260901-cooking029-restore",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260901-cooking029-recipe-fold"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-029-j15",
@@ -1341,9 +1378,10 @@
       "direction": "join",
       "position": {
         "x": 103,
-        "y": 5088.638888888889
+        "y": 4768.5
       },
-      "layout": "auto"
+      "layout": "auto",
+      "removed": true
     },
     {
       "id": "cooking-029-j16",
@@ -1351,10 +1389,11 @@
       "junctionType": "AND",
       "direction": "join",
       "position": {
-        "x": 363,
-        "y": 4935.513888888889
+        "x": 103,
+        "y": 4943.5
       },
-      "layout": "auto"
+      "layout": "auto",
+      "removed": true
     },
     {
       "id": "cooking-029-n033",
@@ -1375,14 +1414,17 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 4919.513888888889
+        "x": 40,
+        "y": 8077.5
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260901-cooking029-restore",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260901-cooking029-recipe-fold"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-029-n034",
@@ -1402,14 +1444,17 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 4919.513888888889
+        "x": 40,
+        "y": 8252.5
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260901-cooking029-restore",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260901-cooking029-recipe-fold"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-029-j17",
@@ -1417,10 +1462,11 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 1265.375
+        "x": 103,
+        "y": 5118.5
       },
-      "layout": "auto"
+      "layout": "auto",
+      "removed": true
     },
     {
       "id": "cooking-029-n035",
@@ -1442,14 +1488,17 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1336.875
+        "x": 40,
+        "y": 8427.5
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260901-cooking029-restore",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260901-cooking029-recipe-fold"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-029-n036",
@@ -1470,14 +1519,17 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 3065
+        "x": 40,
+        "y": 8602.5
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260901-cooking029-restore",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260901-cooking029-recipe-fold"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-029-n037",
@@ -1500,14 +1552,17 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1161.875
+        "x": 40,
+        "y": 8777.5
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260901-cooking029-restore",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260901-cooking029-recipe-fold"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-029-j18",
@@ -1515,10 +1570,11 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 883,
-        "y": 2813.6388888888887
+        "x": 103,
+        "y": 5293.5
       },
-      "layout": "auto"
+      "layout": "auto",
+      "removed": true
     },
     {
       "id": "cooking-029-n038",
@@ -1538,14 +1594,17 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 2797.6388888888887
+        "x": 40,
+        "y": 8952.5
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260901-cooking029-restore",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260901-cooking029-recipe-fold"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-029-n039",
@@ -1565,14 +1624,17 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 2797.6388888888887
+        "x": 40,
+        "y": 9127.5
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260901-cooking029-restore",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260901-cooking029-recipe-fold"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-029-n040",
@@ -1602,9 +1664,11 @@
       "source": {
         "created_by": "runs/chat/20260901-cooking029-restore",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260901-cooking029-recipe-fold"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-029-n041",
@@ -1633,9 +1697,11 @@
       "source": {
         "created_by": "runs/chat/20260901-cooking029-restore",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260901-cooking029-recipe-fold"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-029-n042",
@@ -1667,9 +1733,11 @@
       "source": {
         "created_by": "runs/chat/20260901-cooking029-restore",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260901-cooking029-recipe-fold"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-029-n043",
@@ -1696,9 +1764,11 @@
       "source": {
         "created_by": "runs/chat/20260901-cooking029-restore",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260901-cooking029-recipe-fold"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "cooking-029-n044",
@@ -1720,14 +1790,17 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 2365
+        "x": 40,
+        "y": 10002.5
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260901-cooking029-restore",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260901-cooking029-recipe-fold"
+        ]
+      },
+      "removed": true
     }
   ],
   "edges": [
@@ -1879,127 +1952,10 @@
     },
     {
       "from": "cooking-029-j3",
-      "to": "cooking-029-n027"
-    },
-    {
-      "from": "cooking-029-n027",
-      "to": "cooking-029-n028"
-    },
-    {
-      "from": "cooking-029-n028",
-      "to": "cooking-029-j13"
-    },
-    {
-      "from": "cooking-029-j13",
-      "to": "cooking-029-n029"
-    },
-    {
-      "from": "cooking-029-j13",
-      "to": "cooking-029-n031"
-    },
-    {
-      "from": "cooking-029-n029",
-      "to": "cooking-029-n030"
-    },
-    {
-      "from": "cooking-029-n030",
-      "to": "cooking-029-j16"
-    },
-    {
-      "from": "cooking-029-n031",
-      "to": "cooking-029-j14"
-    },
-    {
-      "from": "cooking-029-j14",
-      "to": "cooking-029-n032",
-      "label": "چیزبرگر"
-    },
-    {
-      "from": "cooking-029-j14",
-      "to": "cooking-029-j15",
-      "label": "برگر یا ساندویچ گریلی بدون پنیر گودا"
-    },
-    {
-      "from": "cooking-029-n032",
-      "to": "cooking-029-j15"
-    },
-    {
-      "from": "cooking-029-j15",
-      "to": "cooking-029-j16"
-    },
-    {
-      "from": "cooking-029-j16",
-      "to": "cooking-029-n033"
-    },
-    {
-      "from": "cooking-029-n033",
-      "to": "cooking-029-n034"
-    },
-    {
-      "from": "cooking-029-n034",
       "to": "cooking-029-n002"
     },
     {
       "from": "cooking-029-n009",
-      "to": "cooking-029-j17"
-    },
-    {
-      "from": "cooking-029-j17",
-      "to": "cooking-029-n035",
-      "label": "سالاد سزار"
-    },
-    {
-      "from": "cooking-029-j17",
-      "to": "cooking-029-n037",
-      "label": "سالاد چیزا"
-    },
-    {
-      "from": "cooking-029-n035",
-      "to": "cooking-029-n036"
-    },
-    {
-      "from": "cooking-029-n036",
-      "to": "cooking-029-j18"
-    },
-    {
-      "from": "cooking-029-n037",
-      "to": "cooking-029-j18"
-    },
-    {
-      "from": "cooking-029-j18",
-      "to": "cooking-029-n038"
-    },
-    {
-      "from": "cooking-029-n038",
-      "to": "cooking-029-n039"
-    },
-    {
-      "from": "cooking-029-n039",
-      "to": "cooking-029-j12"
-    },
-    {
-      "from": "cooking-029-j1",
-      "to": "cooking-029-n040",
-      "label": "آیتم سیب‌ویژه"
-    },
-    {
-      "from": "cooking-029-n040",
-      "to": "cooking-029-n041"
-    },
-    {
-      "from": "cooking-029-n041",
-      "to": "cooking-029-n042"
-    },
-    {
-      "from": "cooking-029-n042",
-      "to": "cooking-029-n043"
-    },
-    {
-      "from": "cooking-029-n043",
-      "to": "cooking-029-n044"
-    },
-    {
-      "from": "cooking-029-n044",
       "to": "cooking-029-j12"
     }
   ],
