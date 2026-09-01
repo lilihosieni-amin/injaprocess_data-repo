@@ -13,7 +13,7 @@
     "node": "cooking-030-n016"
   },
   "created_at": "2026-09-01T22:45:57Z",
-  "updated_at": "2026-09-01T23:21:34Z",
+  "updated_at": "2026-09-01T23:25:16Z",
   "idef0": {
     "inputs": [
       "آمار شمارش و وزن‌شده مانده آخر شب لاین",
@@ -194,7 +194,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
+        "x": 820,
         "y": 265.0
       },
       "layout": "auto",
@@ -257,7 +257,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
+        "x": 1080,
         "y": 265.0
       },
       "layout": "auto",
@@ -315,20 +315,20 @@
       "to": "cooking-037-n004"
     },
     {
-      "from": "cooking-037-n007",
-      "to": "cooking-037-n008"
-    },
-    {
       "from": "cooking-037-n004",
       "to": "cooking-037-n006"
     },
     {
       "from": "cooking-037-n006",
+      "to": "cooking-037-n007"
+    },
+    {
+      "from": "cooking-037-n007",
       "to": "cooking-037-n005"
     },
     {
       "from": "cooking-037-n005",
-      "to": "cooking-037-n007"
+      "to": "cooking-037-n008"
     }
   ],
   "pending": []
