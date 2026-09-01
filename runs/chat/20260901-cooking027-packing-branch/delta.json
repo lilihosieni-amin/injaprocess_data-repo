@@ -1,0 +1,16 @@
+{
+  "add_nodes": [],
+  "add_edges": [
+    { "from": "cooking-027-n037", "to": "cooking-027-j10" },
+    { "from": "cooking-027-j10", "to": "cooking-027-n066", "label": "سفارش بیرون‌بر یا حضوری" },
+    { "from": "cooking-027-j9", "to": "cooking-027-n042" }
+  ],
+  "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [
+    { "from": "cooking-027-n037", "to": "cooking-027-n066" },
+    { "from": "cooking-027-j9", "to": "cooking-027-j10" },
+    { "from": "cooking-027-j10", "to": "cooking-027-n042" }
+  ],
+  "flag_removed": []
+}

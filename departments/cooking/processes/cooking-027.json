@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T12:36:03Z",
-  "updated_at": "2026-09-01T11:00:19Z",
+  "updated_at": "2026-09-01T11:03:05Z",
   "idef0": {
     "inputs": [
       "بسته‌های بار ملزومات از انبار و مرکز",
@@ -872,7 +872,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 1504.9761503928173
+        "y": 1506.3019079685746
       },
       "layout": "auto",
       "source": {
@@ -890,7 +890,7 @@
       "direction": "split",
       "position": {
         "x": 1143,
-        "y": 3215.7853535353534
+        "y": 3227.7171717171714
       },
       "layout": "auto",
       "removed": true
@@ -917,7 +917,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 3374.7853535353534
+        "y": 3386.7171717171714
       },
       "layout": "auto",
       "source": {
@@ -935,7 +935,7 @@
       "direction": "split",
       "position": {
         "x": 623,
-        "y": 3390.7853535353534
+        "y": 3402.7171717171714
       },
       "layout": "auto",
       "removed": true
@@ -965,7 +965,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 3199.7853535353534
+        "y": 3211.7171717171714
       },
       "layout": "auto",
       "source": {
@@ -1001,7 +1001,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 3374.7853535353534
+        "y": 3386.7171717171714
       },
       "layout": "auto",
       "source": {
@@ -1035,7 +1035,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 3549.7853535353534
+        "y": 3561.7171717171714
       },
       "layout": "auto",
       "source": {
@@ -1071,7 +1071,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 3661.1489898989903
+        "y": 3743.3459595959594
       },
       "layout": "auto",
       "source": {
@@ -1089,7 +1089,7 @@
       "direction": "join",
       "position": {
         "x": 103,
-        "y": 5033.398989898991
+        "y": 5217.679292929293
       },
       "layout": "auto",
       "removed": true
@@ -1118,7 +1118,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 5017.398989898991
+        "y": 5201.679292929293
       },
       "layout": "auto",
       "source": {
@@ -1154,7 +1154,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 5075.732323232324
+        "y": 5201.679292929293
       },
       "layout": "auto",
       "source": {
@@ -1172,7 +1172,7 @@
       "direction": "split",
       "position": {
         "x": 883,
-        "y": 5091.732323232324
+        "y": 5276.012626262626
       },
       "layout": "auto",
       "removed": true
@@ -1202,7 +1202,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 5163.232323232324
+        "y": 5347.512626262626
       },
       "layout": "auto",
       "source": {
@@ -1235,7 +1235,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 6636.148989898991
+        "y": 6893.34595959596
       },
       "layout": "auto",
       "source": {
@@ -1253,7 +1253,7 @@
       "direction": "join",
       "position": {
         "x": 883,
-        "y": 6535.482323232324
+        "y": 6792.679292929293
       },
       "layout": "auto",
       "removed": true
@@ -2723,11 +2723,6 @@
       "to": "cooking-027-n037"
     },
     {
-      "from": "cooking-027-j10",
-      "to": "cooking-027-n042",
-      "label": "سفارش بیرون‌بر یا حضوری"
-    },
-    {
       "from": "cooking-027-n040",
       "to": "cooking-027-n041"
     },
@@ -2962,21 +2957,26 @@
       "to": "cooking-027-n035"
     },
     {
-      "from": "cooking-027-n037",
-      "to": "cooking-027-n066"
-    },
-    {
       "from": "cooking-027-n066",
       "to": "cooking-027-j8"
-    },
-    {
-      "from": "cooking-027-j9",
-      "to": "cooking-027-j10"
     },
     {
       "from": "cooking-027-j8",
       "to": "cooking-027-j9",
       "label": "کل فیش در یک پک جا می‌شود"
+    },
+    {
+      "from": "cooking-027-n037",
+      "to": "cooking-027-j10"
+    },
+    {
+      "from": "cooking-027-j10",
+      "to": "cooking-027-n066",
+      "label": "سفارش بیرون‌بر یا حضوری"
+    },
+    {
+      "from": "cooking-027-j9",
+      "to": "cooking-027-n042"
     }
   ],
   "pending": []
