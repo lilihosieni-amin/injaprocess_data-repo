@@ -1,0 +1,10 @@
+{
+  "add_nodes": [],
+  "add_edges": [
+    { "from": "cooking-027-j8", "to": "cooking-027-j9", "label": "کل فیش در یک پک جا می‌شود" }
+  ],
+  "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [],
+  "flag_removed": []
+}

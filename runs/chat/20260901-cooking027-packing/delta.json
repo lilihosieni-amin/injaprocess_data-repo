@@ -1,0 +1,43 @@
+{
+  "add_nodes": [
+    {
+      "key": "n1",
+      "type": "activity",
+      "label": "بررسی تعداد آیتم‌های فیش پیش از شروع پک کردن",
+      "description": "نفر پک‌کننده پس از دابل‌چک آیتم‌های سینی با فاکتور، تعداد و نوع غذاهای همان فیش را می‌بیند تا مشخص شود کل سفارش در یک پک جا می‌شود یا فیش بزرگ است و به دو یا سه پک نیاز دارد؛ بر همین اساس روند پک کردن ادامه پیدا می‌کند.",
+      "actor": "نفر پک‌کننده کانتر",
+      "icom": {
+        "inputs": [
+          "سینی کامل‌شده آیتم‌های فیش",
+          "فیش سفارش"
+        ],
+        "controls": [
+          "تعداد و نوع غذاهای فیش"
+        ],
+        "outputs": [
+          "مشخص شدن تک‌پکی یا چندپکی بودن سفارش"
+        ],
+        "mechanisms": [
+          "نفر پک‌کننده کانتر"
+        ]
+      },
+      "subprocess": null
+    }
+  ],
+  "add_edges": [
+    { "from": "cooking-027-n048", "to": "cooking-027-n035" },
+    { "from": "cooking-027-n037", "to": "n1" },
+    { "from": "n1", "to": "cooking-027-j8" },
+    { "from": "cooking-027-j8", "to": "cooking-027-j9", "label": "کل فیش در یک پک جا می‌شود" },
+    { "from": "cooking-027-j9", "to": "cooking-027-j10" }
+  ],
+  "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [
+    { "from": "cooking-027-n048", "to": "cooking-027-j8" },
+    { "from": "cooking-027-j8", "to": "cooking-027-j9" },
+    { "from": "cooking-027-j9", "to": "cooking-027-n035" },
+    { "from": "cooking-027-n037", "to": "cooking-027-j10" }
+  ],
+  "flag_removed": []
+}
