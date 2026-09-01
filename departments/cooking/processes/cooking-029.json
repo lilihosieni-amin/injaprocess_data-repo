@@ -13,7 +13,7 @@
     "node": "cooking-026-n111"
   },
   "created_at": "2026-08-19T00:57:34Z",
-  "updated_at": "2026-09-01T07:18:34Z",
+  "updated_at": "2026-09-01T07:25:17Z",
   "idef0": {
     "inputs": [
       "فیش ساندویچ رست‌بیف",
@@ -996,7 +996,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 5452.5
+        "y": 9535.138888888889
       },
       "layout": "auto",
       "source": {
@@ -1036,7 +1036,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 5627.5
+        "y": 9710.138888888889
       },
       "layout": "auto",
       "source": {
@@ -1078,7 +1078,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 5802.5
+        "y": 9885.138888888889
       },
       "layout": "auto",
       "source": {
@@ -1135,6 +1135,591 @@
         "y": 940.4831746419266
       },
       "layout": "manual"
+    },
+    {
+      "id": "cooking-029-n027",
+      "type": "activity",
+      "label": "اسپری کردن روغن روی قسمت چپ صفحه داغ گریل",
+      "description": "گریل از ابتدای شیفت روشن و داغ است و پیش از گذاشتن برگر، روی قسمت چپ صفحه آن روغن اسپری می‌شود. معمولاً با آمدن فیش، اولین آیتمی که زده می‌شود برگر است.",
+      "actor": "کارکن لاین گریل و ساندویچ",
+      "icom": {
+        "inputs": [
+          "اسپری روغن"
+        ],
+        "controls": [],
+        "outputs": [
+          "صفحه گریل روغن‌زده"
+        ],
+        "mechanisms": [
+          "گریل"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 1511.875
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260901-cooking029-restore",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cooking-029-n028",
+      "type": "activity",
+      "label": "قرار دادن برگر روی گریل داغ تا باز شدن یخ آن",
+      "description": "باز شدن یخ برگر روی گریل داغ چند ثانیه بیشتر طول نمی‌کشد.",
+      "actor": "کارکن لاین گریل و ساندویچ",
+      "icom": {
+        "inputs": [
+          "برگر منجمد"
+        ],
+        "controls": [],
+        "outputs": [
+          "برگر یخ‌بازشده روی گریل"
+        ],
+        "mechanisms": [
+          "گریل"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 3240.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260901-cooking029-restore",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cooking-029-j13",
+      "type": "junction",
+      "junctionType": "AND",
+      "direction": "split",
+      "position": {
+        "x": 883,
+        "y": 3294.8888888888887
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "cooking-029-n029",
+      "type": "activity",
+      "label": "باز کردن نان ساندویچ",
+      "description": "این کار هم‌زمان و سریع، در همان فاصله‌ای که یخ برگر روی گریل باز می‌شود انجام می‌گیرد.",
+      "actor": "کارکن لاین گریل و ساندویچ",
+      "icom": {
+        "inputs": [
+          "نان ساندویچ"
+        ],
+        "controls": [],
+        "outputs": [
+          "نان باز‌شده ساندویچ"
+        ],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 3147.6388888888887
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260901-cooking029-restore",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cooking-029-n030",
+      "type": "activity",
+      "label": "ریختن سالاد آماده داخل ساندویچ روی نان",
+      "description": "سالاد داخل ساندویچ از پیش در آماده‌سازی ابتدای شیفت درست شده است؛ کاهو و گوجه ریز و خلالی شده و به سس کف برگر آغشته شده‌اند و همان مخلوط آماده روی نان باز‌شده ریخته می‌شود.",
+      "actor": "کارکن لاین گریل و ساندویچ",
+      "icom": {
+        "inputs": [
+          "نان باز‌شده ساندویچ",
+          "سالاد آماده داخل ساندویچ"
+        ],
+        "controls": [],
+        "outputs": [
+          "نان آماده با سالاد"
+        ],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
+        "y": 3147.6388888888887
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260901-cooking029-restore",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cooking-029-n031",
+      "type": "activity",
+      "label": "پخت کامل برگر یا مرغ گریل روی گریل طبق سفارش",
+      "description": "پس از باز شدن یخ، برگر تا پخت کامل روی گریل می‌ماند و زدن سفارش‌ها به دلیل متفاوت بودن منوها با هم فرق دارد. برای ساندویچ مرغ گریل هم به همین صورت صبر می‌شود تا مرغ کاملاً پخته شود.",
+      "actor": "کارکن لاین گریل و ساندویچ",
+      "icom": {
+        "inputs": [
+          "برگر یخ‌بازشده روی گریل",
+          "مرغ گریل"
+        ],
+        "controls": [
+          "نوع آیتم ثبت‌شده روی فیش",
+          "آماده‌سازی و پخت غذاها طبق دستورالعمل و استانداردهای کیفیت، طعم و ظاهر"
+        ],
+        "outputs": [
+          "برگر یا مرغ گریل پخته"
+        ],
+        "mechanisms": [
+          "گریل"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 3410.1388888888887
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260901-cooking029-restore",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cooking-029-j14",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "split",
+      "position": {
+        "x": 363,
+        "y": 3426.1388888888887
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "cooking-029-n032",
+      "type": "activity",
+      "label": "قرار دادن پنیر گودا روی برگر دو تا سه ثانیه مانده به پایان پخت",
+      "description": "برای چیزبرگر، دو سه ثانیه مانده به پخت کامل طرف دیگر برگر، پنیر گودا روی برگر گذاشته می‌شود و روی گریل می‌ماند تا کاملاً آب شود.",
+      "actor": "کارکن لاین گریل و ساندویچ",
+      "icom": {
+        "inputs": [
+          "پنیر گودا",
+          "برگر در حال پخت روی گریل"
+        ],
+        "controls": [],
+        "outputs": [
+          "برگر با پنیر گودای آب‌شده"
+        ],
+        "mechanisms": [
+          "گریل"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 40,
+        "y": 3497.6388888888887
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260901-cooking029-restore",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cooking-029-j15",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "join",
+      "position": {
+        "x": 103,
+        "y": 5088.638888888889
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "cooking-029-j16",
+      "type": "junction",
+      "junctionType": "AND",
+      "direction": "join",
+      "position": {
+        "x": 363,
+        "y": 4935.513888888889
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "cooking-029-n033",
+      "type": "activity",
+      "label": "قرار دادن برگر یا مرغ گریل پخته روی نان",
+      "description": "برگر یا مرغ گریل پخته روی همان نانی که از قبل باز شده و سالادش ریخته شده گذاشته می‌شود.",
+      "actor": "کارکن لاین گریل و ساندویچ",
+      "icom": {
+        "inputs": [
+          "برگر یا مرغ گریل پخته",
+          "نان آماده با سالاد"
+        ],
+        "controls": [],
+        "outputs": [
+          "ساندویچ چیده‌شده"
+        ],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 4919.513888888889
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260901-cooking029-restore",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cooking-029-n034",
+      "type": "activity",
+      "label": "بستن ساندویچ",
+      "description": "پس از چیده شدن مواد روی نان، ساندویچ بسته می‌شود و آماده بسته‌بندی است.",
+      "actor": "کارکن لاین گریل و ساندویچ",
+      "icom": {
+        "inputs": [
+          "ساندویچ چیده‌شده"
+        ],
+        "controls": [],
+        "outputs": [
+          "ساندویچ بسته‌شده"
+        ],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 4919.513888888889
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260901-cooking029-restore",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cooking-029-j17",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "split",
+      "position": {
+        "x": 883,
+        "y": 1265.375
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "cooking-029-n035",
+      "type": "activity",
+      "label": "ریز کردن ۱۵۰ گرم مرغ گریل به صورت خلالی برای سالاد سزار",
+      "description": "روچین سالاد سزار مرغ گریل‌شده است و برای هر پرس ۱۵۰ گرم مرغ گریل به شکل خلالی ریز می‌شود. مرغ گریل آن از پیش و در آماده‌سازی ابتدای شیفت پخته شده است.",
+      "actor": "کارکن لاین فرنگی و سالاد",
+      "icom": {
+        "inputs": [
+          "مرغ گریل پخته"
+        ],
+        "controls": [
+          "مقدار ۱۵۰ گرم مرغ گریل برای هر سالاد سزار"
+        ],
+        "outputs": [
+          "مرغ گریل خلالی‌شده"
+        ],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 1336.875
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260901-cooking029-restore",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cooking-029-n036",
+      "type": "activity",
+      "label": "ریختن مرغ گریل خلالی‌شده روی سالاد سزار",
+      "description": "مرغ خلالی‌شده روی همان ظرف سالادی که نان تست و گوجه‌گیلاسی آن ریخته شده است ریخته می‌شود.",
+      "actor": "کارکن لاین فرنگی و سالاد",
+      "icom": {
+        "inputs": [
+          "مرغ گریل خلالی‌شده",
+          "ظرف سالاد با نان تست و گوجه‌گیلاسی"
+        ],
+        "controls": [],
+        "outputs": [
+          "سالاد سزار روچین‌شده"
+        ],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 3065.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260901-cooking029-restore",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cooking-029-n037",
+      "type": "activity",
+      "label": "چیدن چیزای برش‌خورده روی سالاد چیزا",
+      "description": "چیزایی که بخش سوخاری آماده کرده و برش‌خورده و بررسی‌شده است داخل ظرف سالاد چیده می‌شود؛ در ایام شلوغ چیدن آن به شکل برش‌خورده ظاهر بهتری هم دارد.",
+      "actor": "کارکن لاین فرنگی و سالاد",
+      "icom": {
+        "inputs": [
+          "چیزای برش‌خورده و بررسی‌شده",
+          "ظرف سالاد با نان تست و گوجه‌گیلاسی"
+        ],
+        "controls": [],
+        "outputs": [
+          "سالاد چیزای روچین‌شده"
+        ],
+        "mechanisms": [
+          "بخش سوخاری"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 1161.875
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260901-cooking029-restore",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cooking-029-j18",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "join",
+      "position": {
+        "x": 883,
+        "y": 2813.6388888888887
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "cooking-029-n038",
+      "type": "activity",
+      "label": "ریختن روغن زیتون روی سالاد",
+      "description": "روی سالاد روچین‌شده — چه سزار و چه چیزا — روغن زیتون ریخته می‌شود.",
+      "actor": "کارکن لاین فرنگی و سالاد",
+      "icom": {
+        "inputs": [
+          "روغن زیتون"
+        ],
+        "controls": [],
+        "outputs": [
+          "سالاد با روغن زیتون"
+        ],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 2797.6388888888887
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260901-cooking029-restore",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cooking-029-n039",
+      "type": "activity",
+      "label": "پاشیدن پنیر پارمسان روی سالاد",
+      "description": "آخرین مرحله روچین سالاد پاشیدن پنیر پارمسان است و پس از آن سالاد تحویل داده می‌شود.",
+      "actor": "کارکن لاین فرنگی و سالاد",
+      "icom": {
+        "inputs": [
+          "پنیر پارمسان"
+        ],
+        "controls": [],
+        "outputs": [
+          "سالاد آماده تحویل"
+        ],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
+        "y": 2797.6388888888887
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260901-cooking029-restore",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cooking-029-n040",
+      "type": "activity",
+      "label": "ریختن سیب آماده تحویل‌گرفته از بخش سوخاری در ظرف پاستا",
+      "description": "با آمدن فیش سیب‌ویژه، سیبی که بخش سوخاری آماده کرده برداشته و داخل ظرف پاستا ریخته می‌شود.",
+      "actor": "کارکن لاین فرنگی و سالاد",
+      "icom": {
+        "inputs": [
+          "سیب آماده تحویل‌گرفته از بخش سوخاری",
+          "ظرف پاستا"
+        ],
+        "controls": [],
+        "outputs": [
+          "ظرف سیب‌ویژه"
+        ],
+        "mechanisms": [
+          "بخش سوخاری"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
+        "y": 615.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260901-cooking029-restore",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cooking-029-n041",
+      "type": "activity",
+      "label": "ریختن مخلوط آماده قارچ و ژامبون از وارمر روی سیب‌ویژه",
+      "description": "قارچ و ژامبون از پیش با هم ترکیب شده و داخل وارمری که با آب روشن شده نگهداری می‌شود؛ هنگام سفارش سیب‌ویژه از همان مخلوط آماده روی سیب ریخته می‌شود.",
+      "actor": "کارکن لاین فرنگی و سالاد",
+      "icom": {
+        "inputs": [
+          "مخلوط آماده قارچ و ژامبون"
+        ],
+        "controls": [],
+        "outputs": [
+          "سیب‌ویژه با قارچ و ژامبون"
+        ],
+        "mechanisms": [
+          "وارمر"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 615.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260901-cooking029-restore",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cooking-029-n042",
+      "type": "activity",
+      "label": "داغ کردن حدود ۷۰ گرم سس دیپ روی گاز",
+      "description": "سس دیپ در همان لحظه سفارش و به اندازه حدود ۷۰ گرم، همراه کمی شیر گرم‌شده، روی گاز داغ می‌شود.",
+      "actor": "کارکن لاین فرنگی و سالاد",
+      "icom": {
+        "inputs": [
+          "سس دیپ",
+          "شیر"
+        ],
+        "controls": [
+          "مقدار حدود ۷۰ گرم سس دیپ برای هر سیب‌ویژه"
+        ],
+        "outputs": [
+          "سس دیپ داغ"
+        ],
+        "mechanisms": [
+          "ماهیتابه و گاز"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 636.875
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260901-cooking029-restore",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cooking-029-n043",
+      "type": "activity",
+      "label": "ریختن سس دیپ داغ روی سیب‌ویژه",
+      "description": "سس دیپ داغ‌شده روی سیب‌ویژه ریخته می‌شود.",
+      "actor": "کارکن لاین فرنگی و سالاد",
+      "icom": {
+        "inputs": [
+          "سس دیپ داغ"
+        ],
+        "controls": [],
+        "outputs": [
+          "سیب‌ویژه با سس دیپ"
+        ],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 636.875
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260901-cooking029-restore",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cooking-029-n044",
+      "type": "activity",
+      "label": "بستن در ظرف سیب‌ویژه",
+      "description": "در ظرف سیب‌ویژه شفاف است و داخل آن دیده می‌شود، بنابراین نیازی به نوشتن نام روی آن نیست؛ پس از بستن در، ظرف تحویل بخش کانتر می‌شود.",
+      "actor": "کارکن لاین فرنگی و سالاد",
+      "icom": {
+        "inputs": [
+          "سیب‌ویژه تکمیل‌شده"
+        ],
+        "controls": [],
+        "outputs": [
+          "سیب‌ویژه آماده و دربسته"
+        ],
+        "mechanisms": [
+          "بخش کانتر"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 2365.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260901-cooking029-restore",
+        "touched_by": []
+      }
     }
   ],
   "edges": [
@@ -1181,10 +1766,6 @@
     {
       "from": "cooking-029-n001",
       "to": "cooking-029-j3"
-    },
-    {
-      "from": "cooking-029-j3",
-      "to": "cooking-029-n002"
     },
     {
       "from": "cooking-029-n002",
@@ -1289,7 +1870,128 @@
       "to": "cooking-029-n009"
     },
     {
+      "from": "cooking-029-j3",
+      "to": "cooking-029-n027"
+    },
+    {
+      "from": "cooking-029-n027",
+      "to": "cooking-029-n028"
+    },
+    {
+      "from": "cooking-029-n028",
+      "to": "cooking-029-j13"
+    },
+    {
+      "from": "cooking-029-j13",
+      "to": "cooking-029-n029"
+    },
+    {
+      "from": "cooking-029-j13",
+      "to": "cooking-029-n031"
+    },
+    {
+      "from": "cooking-029-n029",
+      "to": "cooking-029-n030"
+    },
+    {
+      "from": "cooking-029-n030",
+      "to": "cooking-029-j16"
+    },
+    {
+      "from": "cooking-029-n031",
+      "to": "cooking-029-j14"
+    },
+    {
+      "from": "cooking-029-j14",
+      "to": "cooking-029-n032",
+      "label": "چیزبرگر"
+    },
+    {
+      "from": "cooking-029-j14",
+      "to": "cooking-029-j15",
+      "label": "برگر یا ساندویچ گریلی بدون پنیر گودا"
+    },
+    {
+      "from": "cooking-029-n032",
+      "to": "cooking-029-j15"
+    },
+    {
+      "from": "cooking-029-j15",
+      "to": "cooking-029-j16"
+    },
+    {
+      "from": "cooking-029-j16",
+      "to": "cooking-029-n033"
+    },
+    {
+      "from": "cooking-029-n033",
+      "to": "cooking-029-n034"
+    },
+    {
+      "from": "cooking-029-n034",
+      "to": "cooking-029-n002"
+    },
+    {
       "from": "cooking-029-n009",
+      "to": "cooking-029-j17"
+    },
+    {
+      "from": "cooking-029-j17",
+      "to": "cooking-029-n035",
+      "label": "سالاد سزار"
+    },
+    {
+      "from": "cooking-029-j17",
+      "to": "cooking-029-n037",
+      "label": "سالاد چیزا"
+    },
+    {
+      "from": "cooking-029-n035",
+      "to": "cooking-029-n036"
+    },
+    {
+      "from": "cooking-029-n036",
+      "to": "cooking-029-j18"
+    },
+    {
+      "from": "cooking-029-n037",
+      "to": "cooking-029-j18"
+    },
+    {
+      "from": "cooking-029-j18",
+      "to": "cooking-029-n038"
+    },
+    {
+      "from": "cooking-029-n038",
+      "to": "cooking-029-n039"
+    },
+    {
+      "from": "cooking-029-n039",
+      "to": "cooking-029-j12"
+    },
+    {
+      "from": "cooking-029-j1",
+      "to": "cooking-029-n040",
+      "label": "آیتم سیب‌ویژه"
+    },
+    {
+      "from": "cooking-029-n040",
+      "to": "cooking-029-n041"
+    },
+    {
+      "from": "cooking-029-n041",
+      "to": "cooking-029-n042"
+    },
+    {
+      "from": "cooking-029-n042",
+      "to": "cooking-029-n043"
+    },
+    {
+      "from": "cooking-029-n043",
+      "to": "cooking-029-n044"
+    },
+    {
+      "from": "cooking-029-n044",
       "to": "cooking-029-j12"
     }
   ],
