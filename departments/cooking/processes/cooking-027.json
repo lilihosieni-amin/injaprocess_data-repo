@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T12:36:03Z",
-  "updated_at": "2026-09-01T11:03:05Z",
+  "updated_at": "2026-09-01T11:11:34Z",
   "idef0": {
     "inputs": [
       "بسته‌های بار ملزومات از انبار و مرکز",
@@ -1456,8 +1456,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1082,
-        "y": 2026.2355349184281
+        "x": -182,
+        "y": 1598.2355349184281
       },
       "layout": "manual"
     },
@@ -1483,8 +1483,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 333,
-        "y": 2129.7626262626263
+        "x": -325,
+        "y": 1971.7626262626263
       },
       "layout": "manual",
       "source": {
@@ -2563,8 +2563,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 78,
-        "y": 1681.618686232904
+        "x": 60,
+        "y": 1683.618686232904
       },
       "layout": "manual",
       "source": {
