@@ -1,0 +1,11 @@
+{
+  "department": "cooking",
+  "transcripts": ["cooking-1405-06-10"],
+  "started_at": "2026-09-01T22:30:16Z",
+  "finished_at": "2026-09-01T22:52:00Z",
+  "attempt": 1,
+  "processes": [
+    { "id": "cooking-030", "status": "update" },
+    { "id": "cooking-037", "status": "new", "auto_subprocess_of": "cooking-030" }
+  ]
+}
