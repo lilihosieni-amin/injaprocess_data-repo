@@ -13,7 +13,7 @@
     "node": "cooking-026-n113"
   },
   "created_at": "2026-08-31T23:46:10Z",
-  "updated_at": "2026-09-01T06:37:34Z",
+  "updated_at": "2026-09-01T06:44:45Z",
   "idef0": {
     "inputs": [
       "نان پروتان لاین فرنگی",
@@ -930,6 +930,95 @@
         ]
       },
       "removed": true
+    },
+    {
+      "id": "cooking-036-n024",
+      "type": "activity",
+      "label": "تحویل گرفتن سیب آماده از بخش سوخاری",
+      "description": "برای سفارش سیب‌ویژه، سیب را بخش سوخاری آماده می‌کند و لاین فرنگی و سالاد آن را تحویل می‌گیرد.",
+      "actor": "کارکن لاین فرنگی و سالاد",
+      "icom": {
+        "inputs": [
+          "سیب آماده"
+        ],
+        "controls": [],
+        "outputs": [
+          "سیب تحویل‌گرفته‌شده"
+        ],
+        "mechanisms": [
+          "بخش سوخاری"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 1630.0000000000002
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260831-cooking036-sibvijeh",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cooking-036-n025",
+      "type": "activity",
+      "label": "پاشیدن ۵ تا ۱۰ گرم گوشت چرخ‌کرده پخته گرفته‌شده از لاین پیتزا روی سیب‌ویژه",
+      "description": "گوشت چرخ‌کرده پخته‌شده در قسمت پیتزا موجود است و برای سیب‌ویژه از همان مقدار کمی گرفته و پاشیده می‌شود.",
+      "actor": "کارکن لاین فرنگی و سالاد",
+      "icom": {
+        "inputs": [
+          "گوشت چرخ‌کرده پخته"
+        ],
+        "controls": [
+          "مقدار ۵ تا ۱۰ گرم برای هر سیب‌ویژه"
+        ],
+        "outputs": [
+          "سیب‌ویژه با گوشت چرخ‌کرده"
+        ],
+        "mechanisms": [
+          "لاین پیتزا"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 2680.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260831-cooking036-sibvijeh",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cooking-036-n026",
+      "type": "activity",
+      "label": "پاشیدن جعفری خردشده گرفته‌شده از لاین پیتزا روی سیب‌ویژه",
+      "description": "جعفری خردشده از قسمت لاین پیتزا گرفته می‌شود و روی سیب‌ویژه پاشیده می‌شود.",
+      "actor": "کارکن لاین فرنگی و سالاد",
+      "icom": {
+        "inputs": [
+          "جعفری خردشده"
+        ],
+        "controls": [],
+        "outputs": [
+          "سیب‌ویژه تکمیل‌شده"
+        ],
+        "mechanisms": [
+          "لاین پیتزا"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 2563.333333333334
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260831-cooking036-sibvijeh",
+        "touched_by": []
+      }
     }
   ],
   "edges": [
@@ -974,17 +1063,8 @@
       "to": "cooking-036-j5"
     },
     {
-      "from": "cooking-036-j1",
-      "to": "cooking-036-n008",
-      "label": "فیش سیب‌ویژه"
-    },
-    {
       "from": "cooking-036-n008",
       "to": "cooking-036-n009"
-    },
-    {
-      "from": "cooking-036-n009",
-      "to": "cooking-036-j5"
     },
     {
       "from": "cooking-036-j1",
@@ -1068,6 +1148,27 @@
     {
       "from": "cooking-036-j5",
       "to": "cooking-036-n022"
+    },
+    {
+      "from": "cooking-036-j1",
+      "to": "cooking-036-n024",
+      "label": "فیش سیب‌ویژه"
+    },
+    {
+      "from": "cooking-036-n024",
+      "to": "cooking-036-n008"
+    },
+    {
+      "from": "cooking-036-n009",
+      "to": "cooking-036-n025"
+    },
+    {
+      "from": "cooking-036-n025",
+      "to": "cooking-036-n026"
+    },
+    {
+      "from": "cooking-036-n026",
+      "to": "cooking-036-j5"
     }
   ],
   "pending": []
