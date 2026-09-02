@@ -1,0 +1,18 @@
+{
+  "add_nodes": [],
+  "add_edges": [
+    {
+      "from": "cooking-033-j1",
+      "to": "cooking-033-n012",
+      "label": "فیش بیرون‌بر حضوری، تلفنی یا پلتفرم آنلاین"
+    },
+    {
+      "from": "cooking-033-n012",
+      "to": "cooking-033-j6"
+    }
+  ],
+  "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [],
+  "flag_removed": []
+}
