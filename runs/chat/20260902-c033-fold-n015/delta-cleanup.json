@@ -1,0 +1,13 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [
+    {
+      "from": "cooking-033-j7",
+      "to": "cooking-033-j9"
+    }
+  ],
+  "flag_removed": []
+}
