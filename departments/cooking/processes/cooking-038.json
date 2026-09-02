@@ -13,7 +13,7 @@
     "node": "cooking-030-n047"
   },
   "created_at": "2026-09-02T12:55:56Z",
-  "updated_at": "2026-09-02T12:55:56Z",
+  "updated_at": "2026-09-02T21:43:49Z",
   "idef0": {
     "inputs": [
       "رخدادهای کیفی کار بخش در همان شب",
@@ -320,5 +320,7 @@
       "to": "cooking-038-n008"
     }
   ],
-  "pending": []
+  "pending": [],
+  "tombstoned": true,
+  "superseded_by": []
 }
