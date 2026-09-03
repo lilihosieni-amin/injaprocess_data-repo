@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-21T22:38:23Z",
-  "updated_at": "2026-08-26T10:43:48Z",
+  "updated_at": "2026-09-03T15:10:19Z",
   "idef0": {
     "inputs": [
       "مواد اولیه تحویلی از انبار",
@@ -106,13 +106,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 308.75
+        "x": 28.425925925925938,
+        "y": 283.28703703703707
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260821-merge-011-018",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -121,10 +123,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
+        "x": 295.8703703703704,
         "y": 324.75
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-032-n002",
@@ -148,8 +150,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 590,
-        "y": 195
+        "x": 476.57407407407413,
+        "y": 154.49074074074076
       },
       "layout": "manual",
       "source": {
@@ -181,8 +183,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 858,
-        "y": 186.39987182617188
+        "x": 717.9537037037037,
+        "y": 155.14987182617188
       },
       "layout": "manual",
       "source": {
@@ -218,8 +220,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1120,
-        "y": 185
+        "x": 951.0185185185187,
+        "y": 154.90740740740742
       },
       "layout": "manual",
       "source": {
@@ -261,8 +263,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 696,
-        "y": 589.625
+        "x": 474.9351851851851,
+        "y": 471.56944444444446
       },
       "layout": "manual",
       "source": {
