@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T09:05:31Z",
-  "updated_at": "2026-09-04T05:55:20Z",
+  "updated_at": "2026-09-04T05:58:19Z",
   "idef0": {
     "inputs": [
       "نیروی جدید تازه‌وارد لاین"
@@ -177,7 +177,8 @@
         "x": 1143,
         "y": 456
       },
-      "layout": "auto"
+      "layout": "auto",
+      "removed": true
     },
     {
       "id": "cooking-020-n006",
@@ -208,8 +209,11 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/cooking/20260816-212142",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260904-training-merge"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-020-n007",
@@ -233,8 +237,11 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/cooking/20260816-212142",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260904-training-merge"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-020-n008",
@@ -260,8 +267,11 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/cooking/20260816-212142",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260904-training-merge"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-020-n009",
@@ -288,8 +298,11 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/cooking/20260816-212142",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260904-training-merge"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-020-n010",
@@ -315,8 +328,11 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/cooking/20260816-212142",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260904-training-merge"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-020-n011",
@@ -342,8 +358,11 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/cooking/20260816-212142",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260904-training-merge"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "cooking-020-j2",
@@ -354,7 +373,8 @@
         "x": 103,
         "y": 456
       },
-      "layout": "auto"
+      "layout": "auto",
+      "removed": true
     },
     {
       "id": "cooking-020-n012",
@@ -372,8 +392,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 790
+        "x": 820,
+        "y": 265.0
       },
       "layout": "auto",
       "source": {
@@ -397,8 +417,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 790
+        "x": 560,
+        "y": 265.0
       },
       "layout": "auto",
       "source": {
@@ -424,12 +444,51 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 790
+        "x": 300,
+        "y": 265.0
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/cooking/20260816-212142",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "cooking-020-n015",
+      "type": "activity",
+      "label": "طی دوره آموزشی در لاین مربوطه",
+      "description": "مسیر و مدت دوره آموزش بسته به لاینی که نیروی جدید در آن به کار گرفته می‌شود متفاوت است. در لاین پیتزا به کسی که به قسمت پیتزا می‌آید تا ۲۰ روز فقط وزن‌کشی مواد را می‌دهند و در این مدت نیروی مستقر لاین پیتزا خودش مواد را می‌ریزد و پیتزا را آماده می‌کند؛ بعد از بیست روز به نیروی جدید می‌گویند حالا سس بزن و کارهایش را انجام بده و به او گفته می‌شود خودت یک دانه پیتزا بزن، و تا پیش از آن کسی نمی‌تواند وارد لاین شود و غذا بزند؛ راه افتادن کامل در لاین پیتزا یک ماه و نیم زمان می‌برد. در لاین فرنگی کسی که وارد این قسمت می‌شود فقط تا یک ماه آموزش می‌بیند؛ حساسیت این لاین از همه بیشتر است، چون اگر ۱۰ گرم یا ۱۵ گرم سس کم و زیاد شود غذا یا شور می‌شود یا بی‌مزه، در حالی که مثلاً در قسمت برگر نهایتاً ممکن است برگر بسوزد و آن را بردارند، و در قسمت فرنگی تولید چیکن استیک، ساندویچ رست‌بیف و پنه خیلی مهم است؛ بعد از یک ماه با نظارت سرپرست لاین دانه‌دانه به نیروی جدید غذا زدن داده می‌شود و گفته شده است که در قسمت فرنگی نیرو زیر ۲۰ روز راه می‌افتد. در لاین سوخاری امکان دارد نیروی جدید در یک ماه راه بیفتد.",
+      "actor": "نیروی جدید",
+      "icom": {
+        "inputs": [
+          "مواد اولیه پیتزا"
+        ],
+        "controls": [
+          "دوره ۲۰ روزه وزن‌کشی پیش از ورود به تولید در لاین پیتزا",
+          "دوره آموزش یک‌ماهه بدون زدن غذا در لاین فرنگی",
+          "حساسیت ۱۰ تا ۱۵ گرمی مقدار سس در لاین فرنگی",
+          "واگذاری دانه‌دانه غذا با نظارت سرپرست لاین پس از یک ماه در لاین فرنگی",
+          "دوره آموزش حدود یک‌ماهه در لاین سوخاری"
+        ],
+        "outputs": [
+          "مواد وزن‌شده",
+          "پیتزای تولیدشده توسط نیروی جدید"
+        ],
+        "mechanisms": [
+          "نیروی جدید",
+          "نیروی باتجربه لاین (آموزش‌دهنده)",
+          "سرپرست لاین",
+          "ترازو"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 265.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260904-training-merge",
         "touched_by": []
       }
     }
@@ -452,59 +511,20 @@
       "to": "cooking-020-n005"
     },
     {
-      "from": "cooking-020-n005",
-      "to": "cooking-020-j1"
-    },
-    {
-      "from": "cooking-020-j1",
-      "to": "cooking-020-n006",
-      "label": "در صورت به‌کارگیری در لاین پیتزا"
-    },
-    {
-      "from": "cooking-020-n006",
-      "to": "cooking-020-n007"
-    },
-    {
-      "from": "cooking-020-n007",
-      "to": "cooking-020-n008"
-    },
-    {
-      "from": "cooking-020-n008",
-      "to": "cooking-020-j2"
-    },
-    {
-      "from": "cooking-020-j1",
-      "to": "cooking-020-n009",
-      "label": "در صورت به‌کارگیری در لاین فرنگی"
-    },
-    {
-      "from": "cooking-020-n009",
-      "to": "cooking-020-n010"
-    },
-    {
-      "from": "cooking-020-n010",
-      "to": "cooking-020-j2"
-    },
-    {
-      "from": "cooking-020-j1",
-      "to": "cooking-020-n011",
-      "label": "در صورت به‌کارگیری در لاین سوخاری"
-    },
-    {
-      "from": "cooking-020-n011",
-      "to": "cooking-020-j2"
-    },
-    {
-      "from": "cooking-020-j2",
-      "to": "cooking-020-n012"
-    },
-    {
       "from": "cooking-020-n012",
       "to": "cooking-020-n013"
     },
     {
       "from": "cooking-020-n013",
       "to": "cooking-020-n014"
+    },
+    {
+      "from": "cooking-020-n005",
+      "to": "cooking-020-n015"
+    },
+    {
+      "from": "cooking-020-n015",
+      "to": "cooking-020-n012"
     }
   ],
   "pending": []
