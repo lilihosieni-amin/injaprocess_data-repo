@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-17T09:05:31Z",
-  "updated_at": "2026-09-04T06:38:05Z",
+  "updated_at": "2026-09-04T06:44:43Z",
   "idef0": {
     "inputs": [
       "آشپزخانه و تجهیزات پس از یک هفته کار",
@@ -45,7 +45,7 @@
     {
       "id": "cooking-019-n001",
       "type": "activity",
-      "label": "آماده‌سازی شروع نظافت کلی در شعبه مرکزی",
+      "label": "حضور پرسنل یک ساعت زودتر در شعبه مرکزی جهت نظافت",
       "description": "در شعبه مرکزی نظافت کلی یک روز در هفته انجام می‌شود و کارکنان آن روز یک ساعت زودتر از روزهای عادی سر کار می‌آیند. چون فردای شب نظافت کلی ظرفشور آف است، آخر شب یکی از بچه‌های کانتر بخش ظرفشویخانه را به عهده می‌گیرد؛ دلیل انتخاب کانتر این است که تعداد نیروی کانتر بیشتر است. پیش از شروع کار، وسایل لاین مرتب می‌شود. برخلاف نظافت هر شب که فقط دستمال‌کشی میز و تمیز کردن دستگاه‌هاست، در نظافت کلی جزئیات بیشتری رعایت می‌شود.",
       "actor": "کارکنان آشپزخانه (شعبه مرکزی)",
       "icom": {
@@ -66,14 +66,15 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/cooking/20260816-212142",
         "touched_by": [
           "runs/chat/20260903-cleaning-checklist",
-          "runs/chat/20260904-cleaning-branches"
+          "runs/chat/20260904-cleaning-branches",
+          "ui-edit"
         ]
       }
     },
@@ -98,7 +99,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -131,7 +132,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 790.0
+        "y": 790
       },
       "layout": "auto",
       "source": {
@@ -159,7 +160,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 965.0
+        "y": 965
       },
       "layout": "auto",
       "source": {
@@ -187,7 +188,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 1140.0
+        "y": 1140
       },
       "layout": "auto",
       "source": {
@@ -215,7 +216,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 1315.0
+        "y": 1315
       },
       "layout": "auto",
       "source": {
@@ -243,7 +244,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 1490.0
+        "y": 1490
       },
       "layout": "auto",
       "source": {
@@ -273,7 +274,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 1665.0
+        "y": 1665
       },
       "layout": "auto",
       "source": {
@@ -304,7 +305,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 1840.0
+        "y": 1840
       },
       "layout": "auto",
       "source": {
@@ -336,7 +337,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 2015.0
+        "y": 2015
       },
       "layout": "auto",
       "source": {
@@ -364,7 +365,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 2190.0
+        "y": 2190
       },
       "layout": "auto",
       "source": {
@@ -382,7 +383,7 @@
       "direction": "split",
       "position": {
         "x": 103,
-        "y": 456.0
+        "y": 456
       },
       "layout": "auto",
       "removed": true
@@ -407,7 +408,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 2365.0
+        "y": 2365
       },
       "layout": "auto",
       "source": {
@@ -425,7 +426,7 @@
       "direction": "join",
       "position": {
         "x": 103,
-        "y": 631.0
+        "y": 631
       },
       "layout": "auto",
       "removed": true
@@ -452,7 +453,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -487,7 +488,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -516,7 +517,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -544,7 +545,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 2540.0
+        "y": 2540
       },
       "layout": "auto",
       "source": {
@@ -572,7 +573,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 2715.0
+        "y": 2715
       },
       "layout": "auto",
       "source": {
@@ -600,7 +601,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 2890.0
+        "y": 2890
       },
       "layout": "auto",
       "source": {
@@ -628,7 +629,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 3065.0
+        "y": 3065
       },
       "layout": "auto",
       "source": {
@@ -656,7 +657,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 3240.0
+        "y": 3240
       },
       "layout": "auto",
       "source": {
@@ -686,7 +687,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 3415.0
+        "y": 3415
       },
       "layout": "auto",
       "source": {
@@ -718,7 +719,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 3590.0
+        "y": 3590
       },
       "layout": "auto",
       "source": {
@@ -752,7 +753,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 3765.0
+        "y": 3765
       },
       "layout": "auto",
       "source": {
@@ -782,7 +783,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 3940.0
+        "y": 3940
       },
       "layout": "auto",
       "source": {
@@ -814,7 +815,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 4115.0
+        "y": 4115
       },
       "layout": "auto",
       "source": {
@@ -864,15 +865,16 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 90.0
+        "x": 797.7156177156178,
+        "y": 94.45687645687644
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260903-cleaning-checklist",
         "touched_by": [
           "runs/chat/20260904-cleaning-reorder",
-          "runs/chat/20260904-cleaning-branches"
+          "runs/chat/20260904-cleaning-branches",
+          "ui-edit"
         ]
       }
     },
@@ -900,13 +902,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 177.5
+        "x": 62.28438228438229,
+        "y": 165.24358974358975
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260904-cleaning-branches",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -947,7 +951,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -993,7 +997,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
