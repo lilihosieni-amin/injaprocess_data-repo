@@ -1,0 +1,15 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "revise_nodes": [
+    {
+      "id": "cooking-019-n001",
+      "set": {
+        "label": "حضور و آماده‌سازی کارکنان شعبه مرکزی"
+      }
+    }
+  ],
+  "remove_edges": [],
+  "flag_removed": []
+}
