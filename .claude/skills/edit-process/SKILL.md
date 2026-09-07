@@ -114,8 +114,10 @@ clean afterward (`git -C <data-repo> status --porcelain` prints nothing).
 ## Step 6 — Report
 
 Reply in Persian with what changed (the process id, the node/edge/label affected, and — for a
-destructive op — that the original was tombstoned/flagged, not deleted). Do not paste the full
-`process.json`.
+destructive op — that the original was tombstoned/flagged, not deleted). If `merge remove`/
+`merge restructure` printed a line prefixed `facts:`, relay it in Persian too — the named
+quantitative fact refers to the process just tombstoned, with the proposed heir shown. Do not paste
+the full `process.json`.
 
 ## Invariants
 

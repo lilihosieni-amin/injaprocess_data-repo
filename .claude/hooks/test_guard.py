@@ -132,3 +132,114 @@ def test_allow_order_show(tmp_path):
 
 def test_allow_order_check(tmp_path):
     assert run(bash("order check --all"), tmp_path) == 0
+
+
+# --- facts/** is merge-only, mirroring processes/*.json (INV-1) --------------
+
+def test_block_facts_write(tmp_path):
+    assert run(w("facts/rules.json"), tmp_path) == 2
+
+
+def test_block_facts_bash_redirect(tmp_path):
+    assert run(bash("echo '{}' > facts/rules.json"), tmp_path) == 2
+
+
+def test_allow_facts_delta_write(tmp_path):
+    assert run(w("runs/facts/cooking/20260901-101500/facts-delta.json"), tmp_path) == 0
+
+
+# --- reads that contain a `>` are still reads (session defff4aa) -------------
+# A bare `>` is not evidence of a write: a stderr redirect, an fd duplication
+# and an arrow inside a quoted string all contain one, and all three were
+# blocking read-only commands in production.
+
+def test_allow_read_with_stderr_redirect(tmp_path):
+    assert run(bash("cat departments/cooking/order.json 2>/dev/null | head -60"), tmp_path) == 0
+
+
+def test_allow_read_with_fd_duplication(tmp_path):
+    assert run(bash("layout --full /tmp/candidate.json 2>&1 | head -60"), tmp_path) == 0
+
+
+def test_allow_python_read_printing_an_arrow(tmp_path):
+    cmd = ("python3 -c \"import json;"
+           "d=json.load(open('departments/cooking/processes/cooking-001.json'));"
+           "print(d['edges'][0]['from'],'->',d['edges'][0]['to'])\"")
+    assert run(bash(cmd), tmp_path) == 0
+
+
+def test_allow_grep_into_devnull(tmp_path):
+    assert run(bash("grep label departments/cooking/processes/cooking-001.json 2>/dev/null"),
+               tmp_path) == 0
+
+
+# --- real writes must still be blocked --------------------------------------
+
+def test_block_cp_onto_process(tmp_path):
+    assert run(bash("cp /tmp/x.json departments/cooking/processes/cooking-001.json"), tmp_path) == 2
+
+
+def test_block_rm_process(tmp_path):
+    assert run(bash("rm departments/cooking/processes/cooking-001.json"), tmp_path) == 2
+
+
+def test_block_append_into_order(tmp_path):
+    assert run(bash("echo x >> departments/cooking/order.json"), tmp_path) == 2
+
+
+def test_block_redirect_into_process_with_stderr_too(tmp_path):
+    # the real write is the stdout redirect; the 2>/dev/null must not mask it
+    assert run(bash("merge_debug 2>/dev/null > departments/cooking/processes/cooking-001.json"),
+               tmp_path) == 2
+
+
+# --- `layout` writes the process file in place (engine/layout/cli.py) --------
+
+def test_block_layout_on_committed_process(tmp_path):
+    assert run(bash("layout --full departments/cooking/processes/cooking-001.json"), tmp_path) == 2
+
+
+def test_allow_layout_on_temp_file(tmp_path):
+    assert run(bash("layout --full /tmp/candidate.json"), tmp_path) == 0
+
+
+# --- the v3 run's own false positives (spec §4) -----------------------------
+# `runs/facts/**` is where the agent is REQUIRED to write; the Write arm has
+# always allowed it (FACTS_REL_RE is fullmatched against the repo-relative
+# path), and the Bash arm must agree.
+
+def test_allow_merge_facts_apply_with_tail(tmp_path):
+    assert run(bash("merge facts apply --delta runs/facts/cooking/20260906-101500/facts-delta.json "
+                    "--run runs/facts/cooking/20260906-101500 2>&1 | tail -40"), tmp_path) == 0
+
+
+def test_allow_validate_facts_delta_with_stderr(tmp_path):
+    assert run(bash("validate facts-delta runs/facts/cooking/20260906-101500/facts-delta.json 2>&1"),
+               tmp_path) == 0
+
+
+def test_allow_cat_parts_into_run_dir(tmp_path):
+    assert run(bash("cat runs/facts/cooking/20260906-101500/part.a "
+                    "runs/facts/cooking/20260906-101500/part.b "
+                    "> runs/facts/cooking/20260906-101500/facts-delta.json"), tmp_path) == 0
+
+
+def test_allow_sed_n_print_of_an_agent_file(tmp_path):
+    assert run(bash("sed -n 1,80p .claude/agents/quantify.md 2>/dev/null"), tmp_path) == 0
+
+
+def test_allow_heredoc_printing_an_arrow(tmp_path):
+    cmd = ("python3 - <<'PY'\n"
+           "import json\n"
+           "d = json.load(open('facts/rules.json'))\n"
+           "print(d['entries'][0]['key'], '->', d['entries'][0]['title'])\n"
+           "PY")
+    assert run(bash(cmd), tmp_path) == 0
+
+
+def test_block_cp_onto_facts_store(tmp_path):
+    assert run(bash("cp /tmp/rules.json facts/rules.json"), tmp_path) == 2
+
+
+def test_block_sed_in_place_on_an_agent_file(tmp_path):
+    assert run(bash("sed -i s/a/b/ .claude/agents/quantify.md"), tmp_path) == 2

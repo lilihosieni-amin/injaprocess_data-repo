@@ -108,7 +108,7 @@ Before transcribing anything, disclose the resolved set and pause.
    **no Vertex call**; or it has neither, and Stage 1 transcribes it — one Vertex call. Example:
 
    ```
-   مجموعهٔ ضبط‌های دپارتمان dining برای این اجرا:
+   مجموعهٔ ضبط‌های سالن برای این اجرا:
      ۱. dining-1405-04-11
      ۲. dining-1405-04-14
      ۳. dining-1405-04-15 (فاقد رونویس — رونویسی می‌شود)
@@ -232,7 +232,7 @@ the **same turn**, into Gate B (read `segments.json`, send the checkpoint).
 **Example (reproduce this structure):**
 
 ```
-فرایندهای پیشنهادی برای دپارتمان dining (به ترتیب شیفت):
+فرایندهای پیشنهادی برای سالن (به ترتیب شیفت):
 الف) جدید:
   ۱. فرایند سفارش‌گیری سالن
      مستند به: «مشتری سر کیوسک سفارشش را می‌زند…» (dining-1405-04-11)
@@ -520,9 +520,8 @@ After the run is committed:
   مقدار پیشنهادی: {proposed_value}
   منبع: {transcript}
 
-برای قبول: merge accept --process {id} --index {n}
-برای رد: merge reject --process {id} --index {n}
-یا از طریق پنل UI اقدام کنید. مقدار اصلی تا تأیید شما تغییر نمی‌کند.
+برای هر مورد، شمارهٔ آن را با «قبول» یا «رد» بفرستید — مثلاً «۱ قبول».
+می‌توانید از پنل هم اقدام کنید. مقدار اصلی تا تأیید شما تغییر نمی‌کند.
 ```
 
 4. If the user resolves inline, run:
@@ -539,7 +538,9 @@ After the run is committed:
    `tombstone` recorded in Stage 8, output a Persian line naming the heir(s) and the superseded/
    retired/re-parented committed ids, e.g. «فرایندهای dining-003 و dining-007 در dining-014 ادغام
    شدند (نسخه‌های قبلی سنگ‌قبر شدند).» Tombstones stay on disk, are excluded from future matching,
-   and are shown labelled in the UI.
+   and are shown labelled in the UI. اگر خروجی `merge remove`/`merge restructure` خطی با پیشوند
+   `facts:` داشت، همان را به فارسی بازگو کن — دادهٔ کمّی نام‌برده به فرایند حذف‌شده اشاره می‌کند و
+   وارث پیشنهادی را نشان می‌دهد.
 
 6. If there are no conflicts (`pending[]` is empty for all written processes), report completion:
    ```

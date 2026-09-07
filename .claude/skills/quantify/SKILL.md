@@ -1,0 +1,478 @@
+---
+name: quantify
+description: Orchestrate the quantitative-facts pipeline v3 — workbook checkpoint, resolve the set, set-confirmation, transcribe, prepare, plan, run the units in bounded batches of four, review, assemble and validate, the facts checkpoint, apply, commit, the report and the audit review. Resumes from `facts-plan status`.
+---
+
+# quantify playbook (v3)
+
+**Invocation:** `/quantify <department>`.
+
+All paths are relative to `<data-repo>` (`DATA_ROOT`). Every engine CLI runs with
+`DATA_ROOT=<data-repo>`; every `validate` call additionally carries `SCHEMA_DIR=<code-repo>/schemas`.
+`{run_dir}` is `runs/facts/{department}/{stamp}/`, `{stamp}` a UTC `YYYYMMDD-HHMMSS`.
+
+## What you are, and what you are not
+
+You dispatch, you validate, you assemble, you apply, and you send two engine-written files
+**verbatim**. You never write fact content and you never compose owner-facing prose out of data.
+
+You read exactly four things: `facts-plan status` output, `{run_dir}/gate-b.md`,
+`{run_dir}/report.md`, and validator output. You do **not** read `skeleton.json`, `plan.json`, a
+unit's output, `assembly.json` or the delta. They are not for you, and the last run's whole failure
+was a coordinator that read them and started authoring.
+
+## Run every command bare
+
+No `2>&1`, no `| head`, no `| tail`, no `>` redirect. The tool result already carries both streams,
+and a pipe both truncates the errors you need and trips the repository's write guard.
+
+## Turn discipline
+
+This playbook runs over a bot that executes **one model turn per user message**: the moment you end
+your turn, it stops and waits.
+
+**The only legitimate end-of-turn points are:** Gate M (conditional), Gate A, a **yield** between
+batches, Gate B, each of Stage C's per-item gates, and the very end of the run.
+
+Everywhere else you continue in the **same turn**. A returning `Task` or a returning CLI is never a
+stopping point. **A message with no tool call ends the turn** — so between stages, either your
+message carries the next call, or you have already made the mistake. Never send a
+«⏳ … در حال …» status as its own message; a status line rides **inside** the message that carries
+the next call.
+
+## Owner vocabulary
+
+«بخش از داده‌ها» for a unit. «فایل» for a workbook, named by its title. Never a unit id, never a
+stage letter, never a department code, never a path, never a command, never an account id. The
+report and the checkpoint are written by the engine — send them as they are.
+
+## Laptop precondition (design §6.1)
+
+Before Stage U, when the run is in a terminal rather than on the bot:
+
+```
+Bash: test -f ~/.claude/.ponytail-active
+```
+
+This must **fail** (exit 1). If it succeeds, stop and say so: a coding-minimality persona is being
+injected into every subagent and the units will under-decide. Also confirm
+`CLAUDE_CODE_DISABLE_BACKGROUND_TASKS=1` is exported, or a unit longer than two minutes may be
+backgrounded (ADR 0006).
+
+---
+
+## Stage 0 — Resume
+
+```
+Bash: DATA_ROOT=<data-repo> facts-plan status --run {run_dir} --new-turn
+```
+
+It writes `{run_dir}/turn.json` and prints a compact table — one line per unit as `unit · type ·
+state · attempts` — plus the stage to enter, `plan_stale`, `elapsed_s` and `yield`.
+
+**Resume ladder**, exactly as `status` reports it: no skeleton → Stage P (or earlier, by what is on
+disk: transcripts, then dumps, then the plan); pending units → Stage U; all units done and no delta
+→ Stage R; a delta present and no `id-map.json` → Gate B (a retry of the apply is safe); an
+`id-map.json` present and the run unfinished → Stage 6.
+
+For a **fresh** run: create `{run_dir}` and write its initial `meta.json` (`facts-run-meta.schema.json`
+— `department`, `origin: "pipeline"`, `actor`, `started_at`, `finished_at: null`, empty
+`recordings`/`attachments`/`workbooks`/`units`, `delta: ""`, `merged: false`, `ids_created: []`),
+then continue to Stage M.
+
+If the previous turn died mid-stage, your **first message of the turn** says so in one sentence and
+**carries the next tool call**:
+
+```persian
+کار قبلی نیمه‌تمام مانده بود؛ ۹ بخش از ۱۵ آماده است و از همان‌جا ادامه می‌دهم.
+```
+
+---
+
+## Stage M — Workbook checkpoint (STOP, conditional)
+
+```
+Bash: DATA_ROOT=<data-repo> dump-workbook --init-manifest
+```
+
+It dumps every workbook, fills the mechanical columns, and writes a proposal into every **empty**
+judgement column, naming that column in the row's unresolved list. A filled column is never
+re-proposed. Its last line reports how many rows still hold an unresolved column.
+
+**If none does, skip straight to "Resolve the set."** Otherwise dispatch, as the first action of
+this turn:
+
+```
+Task: quantify
+  mode: manifest
+  run_dir: {run_dir}
+  manifest_path: attachments/sheets/manifest.json
+  dump_root: attachments/sheets/.dump/
+  schema_path: <code-repo>/schemas/manifest-proposal.schema.json
+```
+
+Then `Bash: DATA_ROOT=<data-repo> SCHEMA_DIR=<code-repo>/schemas validate manifest-proposal {run_dir}/manifest-proposal.json`.
+On a non-zero exit, re-dispatch once with the errors appended; after two attempts, stop and report
+in Persian. Do **not** end your turn here — continue into the checkpoint.
+
+### Gate M (STOP)
+
+Present each row as the workbook's **title** and Persian choices, one workbook per numbered line,
+each choice with its reason:
+
+```persian
+ردیف‌هایی که نیاز به تأیید دارند (۲ مورد):
+
+۱. «کانتر ناهارخوران»
+   دپارتمان: آشپزخانه (چون برگه‌ها مصرف و موجودی آشپزخانه را ثبت می‌کنند)
+   شعبه: ناهارخوران (چون نام پوشه همین را می‌گوید)
+   برگه‌های مرجع: ؟ (هیچ برگه‌ای بدون فرمول و با کد قلم پیدا نشد)
+
+۲. «گزارش مرکزی»
+   دپارتمان: مدیریت (چون مصرف اعلامی همهٔ شعبه‌ها را جمع می‌زند)
+   شعبه: چاله‌باغ (چون نام پوشه همین را می‌گوید)
+   برگه‌های مرجع: هیچ‌کدام (هیچ برگه‌ای شکل مرجع ندارد)
+
+اصلاح می‌کنید یا تأیید؟
+```
+
+**End your turn and wait.** On a correction to a judgement column, re-dispatch, re-validate,
+re-present, wait again. On a correction to a mechanical column, apply it yourself — no dispatch —
+and re-present. On «تأیید»: write the manifest (fill each answered column, remove it from the row's
+unresolved list, set `confirmed` when nothing is left), validate it
+(`validate manifest attachments/sheets/manifest.json`), fix whatever stderr names, and continue in
+the same turn.
+
+A row the owner leaves unresolved is skipped by every later stage and named once in the report.
+
+---
+
+## Resolve the set
+
+Gather, asking nothing yet: every manifest row whose departments include `{department}` or are
+empty; `departments/{department}/attachments/*`; the cached `.text/*.txt` conversions; and the
+candidate recordings — `meetings/transcripts/{department}-*.txt` together with any
+`meetings/audio/{department}-*` that has no transcript. Mark a recording already consumed by an
+earlier facts run or by a process run; neither marker excludes it.
+
+---
+
+## Gate A — Set checkpoint (STOP)
+
+Present every input and its state, and close with the recordings question. Recordings are named by
+their **date**, never by a file name:
+
+```persian
+ورودی‌های آمادهٔ اجرای اعداد آشپزخانه:
+
+الف) فایل‌های Excel (۳ مورد):
+  ۱. «پیتزا» — خوانده شد
+  ۲. «گزارش مرکزی» — خوانده شد
+  ۳. «مواد اولیه» — خوانده شد
+ب) پیوست‌های آشپزخانه (۲ مورد):
+  ۱. شرح شغل سرآشپز — شرح داده شده
+  ۲. فرم کنترل انبار — شرح داده می‌شود
+ج) جلسه‌های ضبط‌شدهٔ آشپزخانه:
+  ۱. ۲۶ مرداد (رونویس تأییدشده — قبلاً در اجرای فرایند خوانده شده)
+  ۲. ۱ شهریور (رونویس خام آماده است — بازبینی می‌شود)
+  ۳. ۵ شهریور (بدون رونویس — رونویسی می‌شود)
+
+کدام جلسه‌ها را وارد کنم؟ تاریخ‌ها را نام ببرید یا «هیچ‌کدام» بنویسید.
+```
+
+**End your turn and wait.** The workbook and attachment lists are not editable here; only the
+recording selection is. A dispute about a workbook's department is a Gate M matter — re-enter it,
+then return here.
+
+---
+
+## Stage 1 — Transcribe
+
+Only the recordings the owner named; skipped entirely on «هیچ‌کدام». For each: if
+`meetings/transcripts/raw/{basename}.txt` exists, read it and make no call; otherwise
+`Bash: DATA_ROOT=<data-repo> transcribe {basename}`. Strip any preamble, run the per-file verbatim
+sanity gate, and write the cleaned text to `meetings/transcripts/{basename}.txt`, leaving the raw
+file as the audit trail. Then the yield check (below) and on to Stage 2 in the same turn.
+
+---
+
+## Stage 2 — Prepare
+
+```
+Bash: DATA_ROOT=<data-repo> dump-workbook --manifest
+Bash: DATA_ROOT=<data-repo> extract-attachment {department}
+Bash: DATA_ROOT=<data-repo> extract-attachment --path attachments/sheets
+```
+
+`--manifest` never fails on a row that still holds an unresolved column: it warns, skips that
+workbook and dumps the rest. `extract-attachment` may exit **3** (advisory — some files skipped,
+every convertible one converted): relay the skipped lines in Persian and continue. Exit **2** is a
+real precondition failure and stops the run. Yield check, then Stage P in the same turn.
+
+---
+
+## Stage P — Plan
+
+```
+Bash: DATA_ROOT=<data-repo> facts-plan build {department} --run {run_dir} --recordings a,b,c
+```
+
+It reads the dumps, the chosen transcripts, the cached attachment text and the store's identity
+slice, and writes the skeleton, the plan, one `input.md` per unit, and the estate's function
+library. It prints the unit count for the log — **nothing owner-facing**. Do not open what it wrote.
+
+Exit 2 means a group could not be split under the size budget, or that a candidate spans two
+workbooks the manifest keeps apart — the second names both rows, and the remedy is a `twin_of` on
+one of them. Report either in Persian and stop. Yield check, then Stage U in the same turn.
+
+A plan is immutable: `build` refuses to replace one whose units have already produced output, and
+`--rebuild` is the only way to renumber them.
+
+---
+
+## Stage U — The units (bounded parallel, batches of at most 4)
+
+Run the pending units in **bounded parallel batches of at most 4** `Task`s per message. Dispatch up
+to 4 in **one message**, wait for the whole batch to return, validate each, then dispatch the next
+batch of up to 4 — repeat until every unit is done or failed. **Never dispatch more than 4 in the
+same message.** Bounded batching, and not full fan-out, is what keeps the run inside the bridge's
+proven-safe envelope (ADR 0011) while recovering most of the wall-clock a serial sweep loses — the
+agents spend their time on model wait, so four-way concurrency overlaps it.
+
+Do the whole batched sweep **within one turn**, subject to the yield rule: dispatching a batch and
+awaiting it is a tool call, not a turn end.
+
+One `Task` per pending unit:
+
+```
+Task: quantify
+  mode: unit
+  run_dir: {run_dir}
+  unit: {unit id}
+  attempt: {1 or 2}
+  input_path: {run_dir}/units/{unit id}/input.md
+  schema_path: <code-repo>/schemas/facts-unit.schema.json
+```
+
+Every dispatch carries the sentence **«nothing runs in the background and no monitor exists; the
+results arrive as tool results in this same turn»**. The progress line rides in the same message:
+
+```persian
+۸ از ۲۶ بخش از داده‌ها بررسی شد.
+```
+
+On return, validate each unit of the batch:
+
+```
+Bash: DATA_ROOT=<data-repo> SCHEMA_DIR=<code-repo>/schemas validate facts-unit {run_dir}/units/{unit id}/out.1.json --run {run_dir}
+```
+
+The unit is taken from the directory the file sits in, so an output must be written at
+`{run_dir}/units/{unit id}/out.{attempt}.json` and nowhere else; a document naming another unit is
+refused.
+
+**The retry rule.** A unit whose output fails validation is re-dispatched **once**, with
+`attempt: 2`, its previous output path and the grouped errors. A unit at two attempts is `failed`
+and the run continues without it; its candidates are reported as unexamined, never as dropped. A
+truncated or unparseable file costs no attempt — `status` deletes it.
+
+Between batches:
+
+```
+Bash: DATA_ROOT=<data-repo> facts-plan status --run {run_dir}
+```
+
+**The yield rule.** `status` prints `elapsed_s` and `yield`. `yield: true` is the **only** signal you
+act on — never your own sense of how long this is taking. Check it after Stage 1, after Stage 2,
+after Stage P, between batches, and before Stage R. On `yield: true`, send the progress line as the
+**last message of the turn** and stop:
+
+```persian
+۸ از ۲۶ بخش از داده‌ها بررسی شد؛ برای ادامه «ادامه بده» را بفرستید.
+```
+
+The owner's next message re-enters Stage 0 and the run continues from the first unfinished unit.
+Ending a turn at a boundary is a normal, lossless outcome. If the run is on the bot and a budget
+warning arrives in the conversation, treat it as a `yield: true` at the next boundary.
+
+---
+
+## Stage R — Review
+
+```
+Bash: DATA_ROOT=<data-repo> facts-plan digest --run {run_dir}
+```
+
+Then one dispatch:
+
+```
+Task: quantify
+  mode: review
+  run_dir: {run_dir}
+  input_path: {run_dir}/review/input.md
+  schema_path: <code-repo>/schemas/facts-unit.schema.json
+```
+
+Then `Bash: DATA_ROOT=<data-repo> SCHEMA_DIR=<code-repo>/schemas validate facts-unit {run_dir}/review/out.json --run {run_dir}`.
+On failure, re-dispatch once; on a second failure, proceed **without** the review — the report says
+so. If `digest` reports the assembled result is too large to review, the same applies.
+
+---
+
+## Stage V — Assemble and validate
+
+```
+Bash: DATA_ROOT=<data-repo> facts-plan assemble --run {run_dir} --review
+Bash: DATA_ROOT=<data-repo> SCHEMA_DIR=<code-repo>/schemas validate facts-delta {run_dir}/facts-delta.json --store --run {run_dir}
+```
+
+(Drop `--review` when the review did not run.) The validate call performs the whole apply in memory,
+including the resulting store's schema, and writes nothing — so a delta that passes here is one
+`apply` cannot refuse.
+
+`assemble` itself exits 2, naming the unit, when that unit's latest attempt is invalid and an
+attempt is still left: re-dispatch that unit and run `assemble` again. On a residual error, the
+message names the unit that produced it. If that unit is under two attempts, re-dispatch it with
+the error, then **re-enter Stage R once** (the assembly changed, so the review is stale) and re-run
+Stage V. If the second review fails too, proceed without it. If Stage V fails again, stop
+**before** Gate B and relay the grouped errors in Persian.
+
+---
+
+## Gate B — Facts checkpoint (STOP)
+
+Read `{run_dir}/gate-b.md` and **send it verbatim**. It is a finished Persian message: counts per
+kind, the rules in words, the disputes lettered, the issues found in the files, the unanswered
+units. Compose nothing, add nothing, summarise nothing.
+
+**End your turn and wait.** Nothing under `facts/` has been written yet.
+
+On «تأیید» / «بله» / «ok», go to Stage 5. On an answer to a lettered dispute («۱ الف»), record it
+and continue — the resolve runs after the apply. On a correction, report that a correction at this
+point needs a new run and ask whether to start one; there is nothing to re-dispatch, because the
+delta is the assembly of every unit.
+
+---
+
+## Stage 5 — Apply
+
+```
+Bash: DATA_ROOT=<data-repo> merge facts apply --delta {run_dir}/facts-delta.json --run {run_dir}
+```
+
+One delta, one run directory, once. Capture every `created`/`updated` id it prints.
+
+A non-zero exit is a **precondition failure with nothing written**. Report it in Persian and **stop
+the run**. Do not re-dispatch anything and do not hand-edit anything — ever:
+
+```persian
+ثبت انجام نشد: یکی از پیش‌شرط‌ها برقرار نبود و هیچ چیزی نوشته نشد. علت را بررسی می‌کنم و نتیجه را می‌گویم.
+```
+
+---
+
+## Stage 6 — Finish and commit
+
+Update `{run_dir}/meta.json` to its final shape — `finished_at`, `recordings`, `attachments`,
+`workbooks`, `delta`, `merged: true`, `ids_created`, and `units` (one `{id, type, state, attempts}`
+per unit, from `facts-plan status`) — and validate it:
+
+```
+Bash: DATA_ROOT=<data-repo> SCHEMA_DIR=<code-repo>/schemas validate facts-run-meta {run_dir}/meta.json
+Bash: DATA_ROOT=<data-repo> facts-plan report --run {run_dir}
+Bash: git -C <data-repo> add departments runs facts attachments && git -C <data-repo> commit -m "quantify({department}): {C} created, {U} updated"
+```
+
+Never `git add -A`. Continue to Stage 7 in the same turn.
+
+---
+
+## Stage 7 — Report
+
+Read `{run_dir}/report.md` and **send it verbatim**. It carries the open disputes lettered, the
+unanswered units grouped per item, the dropped candidates in the owner's own words, every issue
+found in the files, any workbook skipped or part left unfinished, and whether the review ran.
+
+When the owner answers a lettered dispute, **you** run the resolve — never print a command:
+
+```
+Bash: DATA_ROOT=<data-repo> merge facts resolve --id F-… --field <path> --account <id> --run {fix_run}
+```
+
+`{fix_run}` is a **fresh** stamped run directory, never `{run_dir}` (already claimed by the apply).
+Every resolve in this report may share one `{fix_run}`. Confirm by the field's Persian label, never
+by id or path. Then continue to Stage C in the same turn.
+
+---
+
+## Stage C — Audit review (STOP, per item)
+
+```
+Bash: DATA_ROOT=<data-repo> merge facts audit --persian
+```
+
+`--persian` renders every finding as a Persian sentence built from the entry's own title and the
+finding's kind. **Raw audit output is never shown.** If there is nothing to report, say so and the
+run is done.
+
+Otherwise present the findings numbered, split into what can be acted on and what is report-only,
+and wait:
+
+```persian
+بازبینی پایان اجرا — ۴ مورد:
+
+قابل اقدام:
+  ۱. دو ثبت با عنوان یکسان «مصرف اعلامی لاین پیتزا» وجود دارد؛ می‌توانم یکی را بازنشسته کنم.
+  ۲. یک ثبت به فرایندی اشاره می‌کند که بازنشسته شده و جانشین دارد.
+
+فقط گزارش:
+  ۳. یک قاعده به قلمی اشاره می‌کند که دیگر در فهرست نیست.
+  ۴. یک جدول ورودی خود را از فایلی می‌گیرد که هنوز خوانده نشده است.
+
+کدام مورد را انجام بدهم؟ شماره‌اش را بفرستید.
+```
+
+For an approved item, run the matching verb yourself, against a run directory that is **not**
+`{run_dir}`: `resolve`/`retire`/`promote` may share one fresh `{audit_run}` across the sitting; a
+re-point `apply` gets its own fresh directory each time. Commit each applied item with the same
+allowlist, show the result in Persian, **end your turn and wait**, then return for the next item.
+
+When the sitting is over, `Bash: DATA_ROOT=<data-repo> merge facts check` prints the store's
+`readiness:` line as its last line — read it, and act only on what it names.
+
+---
+
+## Stage ordering
+
+| Stage | Name | Tool / CLI | Pauses? |
+|---|---|---|---|
+| 0 | Resume | `facts-plan status --new-turn` | — |
+| M | Workbook checkpoint | `dump-workbook --init-manifest`, `Task: quantify` (manifest) | **STOP** if a row is unresolved |
+| — | Resolve the set | Read / Glob | — |
+| **A** | **Set checkpoint** | message | **STOP** |
+| 1 | Transcribe | `transcribe` × chosen | — |
+| 2 | Prepare | `dump-workbook --manifest`, `extract-attachment` × 2 | — |
+| **P** | **Plan** | `facts-plan build` | — |
+| **U** | **Units** | `Task: quantify` (unit) × ≤4 per message, `validate facts-unit` each | **STOP** at a yield |
+| **R** | **Review** | `facts-plan digest`, `Task: quantify` (review), `validate facts-unit` | — |
+| **V** | **Assemble + validate** | `facts-plan assemble`, `validate facts-delta --store --run` | — |
+| **B** | **Facts checkpoint** | send `gate-b.md` verbatim | **STOP** |
+| 5 | Apply | `merge facts apply` | — |
+| 6 | Finish + commit | Write `meta.json`, `facts-plan report`, `git -C` | — |
+| 7 | Report | send `report.md` verbatim | — |
+| C | Audit review | `merge facts audit --persian`, `merge facts check` + the verbs | per item |
+
+## Key invariants
+
+- `merge facts` is the only writer of `facts/**` (INV-1, guard-enforced). Neither this playbook nor
+  the agent ever writes there.
+- The coordinator writes no fact content and composes no owner-facing prose from data. `gate-b.md`
+  and `report.md` go out verbatim.
+- Batches of at most four `Task`s per message; every unit validated on return; at most two attempts
+  per unit per run.
+- The only yield signal is `facts-plan status`'s own `yield: true`.
+- One `apply` per run, into one run directory. A second apply into a used directory is refused.
+  Stage 7's resolves and Stage C's verbs each open their own fresh directory.
+- Every engine command is run bare.
+- `meta.json` with `finished_at: null` always signals a resumable run; all timestamps are ISO-8601
+  with a `Z`.
