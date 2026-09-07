@@ -27,7 +27,7 @@ No `2>&1`, no `| head`, no `| tail`, no `>` redirect. The tool result already ca
 and a pipe both truncates the errors you need and trips the repository's write guard.
 
 And never through Python. `facts_plan`, `merge_facts` and `engine_common` are the engine's
-internals; the seven CLIs above are its whole interface. A `python -c`, a `-m`, a heredoc or a
+internals; the seven CLIs the guard names are its whole interface. A `python -c`, a `-m`, a heredoc or a
 script under the run directory that imports one of them is blocked by the repository's guard, and
 the thing it was reaching for is either a CLI flag or a defect to report.
 
