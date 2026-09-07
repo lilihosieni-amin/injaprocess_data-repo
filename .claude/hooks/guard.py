@@ -17,6 +17,9 @@ Reads a Claude Code PreToolUse payload on stdin. Exit 0 = allow, exit 2 = block
      right set). `order show` / `order sync` / `order check` stay allowed.
   3. No write/edit to .claude/** or CLAUDE.md at runtime (INV-2).
   4. No Write/Edit outside the data-repo root.
+  5. No Bash `python`/`python3` that imports an engine module (`facts_plan`,
+     `merge_facts`, `engine_common`) or runs a script under `runs/`: the engine
+     is a set of CLIs, not a library the runtime may drive (addendum §3.6).
 A Bash command counts as a write to a protected path only when a write verb takes
 it as an argument or a redirect TARGETS it; a `>` anywhere else (`2>/dev/null`,
 `2>&1`, a quoted `'->'`) is a read and stays allowed. Broad out-of-repo Bash
@@ -50,6 +53,18 @@ ORDER_REL_RE = re.compile(r"departments/[^/]+/order\.json")
 # `order set` / `order move` as a command word, so an env prefix
 # (`DATA_ROOT=. order set …`) or a separator (`cd x && order move …`) is caught.
 ORDER_CURATE_RE = re.compile(r"(?:^|[\s;&|()`])order\s+(?:set|move)\b")
+# The engine is driven through its CLIs; `facts_plan`, `merge_facts` and
+# `engine_common` are internals. The v3 run (20260907-052345) had the
+# coordinator importing them from `python3 -c` to dry-run the fold, which is
+# how a coordinator that reads the delta starts authoring it (postmortem cause
+# D). Matched as "a python invocation" × "an engine module named" — plus a
+# `.py` under `runs/`, where the same import hides behind a file name. `uv run
+# python …` needs no branch of its own: the space before `python` is the
+# separator. A python command with neither (a `json.load` of a run file) is a
+# read and stays allowed, as it always has been.
+PYTHON_CMD_RE = re.compile(r"(?:^|[\s;&|()`])[\w./-]*python[0-9.]*\b")
+ENGINE_MODULE_RE = re.compile(r"\b(?:facts_plan|merge_facts|engine_common)\b")
+RUNS_SCRIPT_RE = re.compile(r"runs/\S*\.py\b")
 
 
 def _deny(msg):
@@ -106,6 +121,11 @@ def main():
                   "order, and the curation is the user's — they reorder it in "
                   "the UI. You may run `order show`, `order sync` and "
                   "`order check` only (INV-1, ARD §4.6)")
+        if PYTHON_CMD_RE.search(cmd) and (ENGINE_MODULE_RE.search(cmd)
+                                          or RUNS_SCRIPT_RE.search(cmd)):
+            _deny("the engine is driven through its CLIs only: facts-plan, "
+                  "validate, merge, dump-workbook, extract-attachment, "
+                  "transcribe, allocate-id")
         redirect_targets = REDIRECT_RE.findall(cmd)
         has_write_verb = bool(WRITE_VERB_RE.search(cmd))
 

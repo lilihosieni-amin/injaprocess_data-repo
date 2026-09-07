@@ -243,3 +243,53 @@ def test_block_cp_onto_facts_store(tmp_path):
 
 def test_block_sed_in_place_on_an_agent_file(tmp_path):
     assert run(bash("sed -i s/a/b/ .claude/agents/quantify.md"), tmp_path) == 2
+
+
+# --- the engine is a set of CLIs, not a library (addendum §3.6) --------------
+# The v3 run's coordinator dry-ran the fold from `python3 -c` and re-derived
+# `assemble`'s output in-process — postmortem cause D. The CLIs stay open; the
+# import route closes.
+
+def test_block_python_c_importing_facts_plan(tmp_path):
+    cmd = ("python3 -c \"import facts_plan.assemble as a;"
+           "print(a.materialise('.', 'runs/facts/cooking/x', {}))\"")
+    assert run(bash(cmd), tmp_path) == 2
+
+
+def test_block_python_m_facts_plan(tmp_path):
+    assert run(bash("python -m facts_plan.assemble --run runs/facts/cooking/x"), tmp_path) == 2
+
+
+def test_block_python_heredoc_importing_merge_facts(tmp_path):
+    cmd = ("python3 - <<'PY'\n"
+           "from merge_facts.content import check_document\n"
+           "print(check_document({}, 'facts-delta', {}, []))\n"
+           "PY")
+    assert run(bash(cmd), tmp_path) == 2
+
+
+def test_block_uv_run_python_importing_engine_common(tmp_path):
+    assert run(bash("uv run python -c 'import engine_common; print(engine_common.validate)'"),
+               tmp_path) == 2
+
+
+def test_block_python_script_under_runs(tmp_path):
+    # The same trick behind a file name: the script is written into the run
+    # directory (which the agent may write) and then executed.
+    assert run(bash("python3 runs/facts/cooking/20260907-052345/dryrun.py"), tmp_path) == 2
+
+
+def test_allow_python_without_an_engine_import(tmp_path):
+    cmd = ("python3 -c \"import json;"
+           "d=json.load(open('runs/facts/cooking/x/facts-delta.json'));"
+           "print(len(d['entries']))\"")
+    assert run(bash(cmd), tmp_path) == 0
+
+
+def test_allow_the_engine_clis(tmp_path):
+    for cli in ("facts-plan status --run runs/facts/cooking/x",
+                "validate facts-unit runs/facts/cooking/x/units/u1/out.1.json --run runs/facts/cooking/x",
+                "merge facts apply --delta runs/facts/cooking/x/facts-delta.json --run runs/facts/cooking/x",
+                "dump-workbook --manifest", "extract-attachment cooking",
+                "transcribe cooking-2026-09-01", "allocate-id fact"):
+        assert run(bash(f"DATA_ROOT=. {cli}"), tmp_path) == 0, cli

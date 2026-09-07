@@ -26,6 +26,11 @@ was a coordinator that read them and started authoring.
 No `2>&1`, no `| head`, no `| tail`, no `>` redirect. The tool result already carries both streams,
 and a pipe both truncates the errors you need and trips the repository's write guard.
 
+And never through Python. `facts_plan`, `merge_facts` and `engine_common` are the engine's
+internals; the seven CLIs above are its whole interface. A `python -c`, a `-m`, a heredoc or a
+script under the run directory that imports one of them is blocked by the repository's guard, and
+the thing it was reaching for is either a CLI flag or a defect to report.
+
 ## Turn discipline
 
 This playbook runs over a bot that executes **one model turn per user message**: the moment you end
@@ -219,7 +224,11 @@ Bash: DATA_ROOT=<data-repo> facts-plan build {department} --run {run_dir} --reco
 
 It reads the dumps, the chosen transcripts, the cached attachment text and the store's identity
 slice, and writes the skeleton, the plan, one `input.md` per unit, and the estate's function
-library. It prints the unit count for the log — **nothing owner-facing**. Do not open what it wrote.
+library. Each `input.md` ends with the **shape section**, rendered from the store's own schema:
+the closed key list per kind with the required keys marked, every enum's values, and a worked
+`new[]` example — a paper form among them. That section is the unit's contract, and a key it does
+not name is refused at the unit's gate. It prints the unit count for the log — **nothing
+owner-facing**. Do not open what it wrote.
 
 Exit 2 means a group could not be split under the size budget, or that a candidate spans two
 workbooks the manifest keeps apart — the second names both rows, and the remedy is a `twin_of` on
@@ -271,10 +280,14 @@ The unit is taken from the directory the file sits in, so an output must be writ
 `{run_dir}/units/{unit id}/out.{attempt}.json` and nowhere else; a document naming another unit is
 refused.
 
-**The retry rule.** A unit whose output fails validation is re-dispatched **once**, with
-`attempt: 2`, its previous output path and the grouped errors. A unit at two attempts is `failed`
-and the run continues without it; its candidates are reported as unexamined, never as dropped. A
-truncated or unparseable file costs no attempt — `status` deletes it.
+**The retry rule — the cap is the engine's, not a choice.** A unit whose output fails validation
+is re-dispatched **once**, with `attempt: 2`, its previous output path and the grouped errors.
+There is no third attempt to give: `validate facts-unit` refuses `out.3.json` outright («attempt
+cap: two per run») and `facts-plan status` reports that unit `failed`, which is what `assemble`
+reads. The run continues without it; its candidates are reported as unexamined, never as dropped.
+A truncated or unparseable file costs no attempt — `status` deletes it.
+Never ask the owner to lift the cap: a unit that fails twice is a defect in the input or in the
+engine, and both are reported after the run, not worked around during it.
 
 Between batches:
 
@@ -285,7 +298,9 @@ Bash: DATA_ROOT=<data-repo> facts-plan status --run {run_dir}
 **The yield rule.** `status` prints `elapsed_s` and `yield`. `yield: true` is the **only** signal you
 act on — never your own sense of how long this is taking. Check it after Stage 1, after Stage 2,
 after Stage P, between batches, and before Stage R. On `yield: true`, send the progress line as the
-**last message of the turn** and stop:
+**last message of the turn** and stop. **You never continue past a `yield: true`** — not for one
+more batch, not to finish validating a unit already returned, not because the next call is cheap.
+Stopping is the engine's instruction, and the next message resumes it losslessly:
 
 ```persian
 ۸ از ۲۶ بخش از داده‌ها بررسی شد؛ برای ادامه «ادامه بده» را بفرستید.
@@ -330,6 +345,13 @@ Bash: DATA_ROOT=<data-repo> SCHEMA_DIR=<code-repo>/schemas validate facts-delta 
 including the resulting store's schema, and writes nothing — so a delta that passes here is one
 `apply` cannot refuse.
 
+**A per-entry error here is a defect, not your work.** Every per-entry rule — the store schema per
+kind and the content pass — is enforced at each unit's own gate, so a delta assembled from
+validated units cannot fail one (design addendum I1). What is left here is cross-entry only: twin
+titles, instance ownership, refs between units, the reviewer's caps. If `validate facts-delta`
+names a single entry's field anyway, stop before Gate B, report it in Persian as a defect, and
+hand-repair nothing.
+
 `assemble` itself exits 2, naming the unit, when that unit's latest attempt is invalid and an
 attempt is still left: re-dispatch that unit and run `assemble` again. On a residual error, the
 message names the unit that produced it. If that unit is under two attempts, re-dispatch it with
@@ -342,8 +364,8 @@ Stage V. If the second review fails too, proceed without it. If Stage V fails ag
 ## Gate B — Facts checkpoint (STOP)
 
 Read `{run_dir}/gate-b.md` and **send it verbatim**. It is a finished Persian message: counts per
-kind, the rules in words, the disputes lettered, the issues found in the files, the unanswered
-units. Compose nothing, add nothing, summarise nothing.
+kind, the rules in words, the disputes lettered, the issues found in the files, the files this run
+did not read, the unanswered units. Compose nothing, add nothing, summarise nothing.
 
 **End your turn and wait.** Nothing under `facts/` has been written yet.
 
@@ -469,8 +491,9 @@ When the sitting is over, `Bash: DATA_ROOT=<data-repo> merge facts check` prints
 - The coordinator writes no fact content and composes no owner-facing prose from data. `gate-b.md`
   and `report.md` go out verbatim.
 - Batches of at most four `Task`s per message; every unit validated on return; at most two attempts
-  per unit per run.
-- The only yield signal is `facts-plan status`'s own `yield: true`.
+  per unit per run — refused by the engine, never lifted.
+- The only yield signal is `facts-plan status`'s own `yield: true`, and it ends the turn.
+- The engine is driven through its CLIs only; no Python touches its internals.
 - One `apply` per run, into one run directory. A second apply into a used directory is refused.
   Stage 7's resolves and Stage C's verbs each open their own fresh directory.
 - Every engine command is run bare.

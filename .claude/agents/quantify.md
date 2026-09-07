@@ -56,6 +56,13 @@ from-scratch instruction), `run_dir`, `facts_index`, `schema_path`
 Your output is a **`facts-unit`** document. Read `schema_path` before you write; the shape below is
 its summary and the file is authoritative.
 
+**The shape section at the end of your `input.md` is the contract for what you may write.** It
+lists, per kind, the closed key list with the required keys marked, every enum's values, and a
+worked example. A key that is not in it is refused at the gate — invent none, and write every
+enum value in its own ASCII spelling, never translated. A **paper form** is a `new[]` record with
+`medium: "paper"` and `location: {"kept_at": "…", "holder": "…"}` — where the blank and filled
+forms are kept, and who holds them, both Persian prose.
+
 ```json
 { "schema_version": 1, "unit": "u-wb-gozaresh", "attempt": 1,
   "decisions": [
