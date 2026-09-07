@@ -1,0 +1,28 @@
+- ⏭ Gozareshat
+- ⏭ Amadesazi__Amadesazi
+- ⏭ Logestic__Logestic - Chalebagh
+- ⏭ Logestic__Logestic - Naharkhoran
+- ⏭ Sandogh__Sandogh - NaharKhoran
+- ⏭ Sandogh__Sandogh - Chalebagh
+- ⏭ Salon__Salon - Chalebagh
+- ⏭ Salon__Salon - Naharkhoran
+- ⏭ MandeShab__Mavade Avalie
+- ⏭ MandeShab__control__Gozareshat
+- ⏭ MandeShab__Naharkhoran__Gozaresh naharkhoran
+- ⏭ MandeShab__Naharkhoran__Amar__Farangi
+- ⏭ MandeShab__Naharkhoran__Amar__Pitza
+- ⏭ MandeShab__Naharkhoran__Amar__Anbar shobe 2
+- ⏭ MandeShab__Naharkhoran__Amar__Tedade Fooroosh naharkhoran
+- ⏭ MandeShab__Naharkhoran__Amar__FRIED🍤
+- ⏭ MandeShab__Naharkhoran__Amar__Kanter
+- ⏭ MandeShab__ChaleBagh__Gozaresh markazi
+- ⏭ MandeShab__ChaleBagh__Amar__Sokhari
+- ⏭ MandeShab__ChaleBagh__Amar__Farangi
+- ⏭ MandeShab__ChaleBagh__Amar__Kanter
+- ⏭ MandeShab__ChaleBagh__Amar__Anbar markazi
+- ⏭ MandeShab__ChaleBagh__Amar__Tedade Fooroosh markazi
+- ⏭ MandeShab__ChaleBagh__Amar__Pitza
+- ⏭ Hesabdari__Hesabdari
+- ⏭ Anbar__Anbar
+- ⏭ Ashpazkhane__Ashpazkhne - Chalebagh
+- ⏭ Ashpazkhane__Ashpazkhne - Naharkhoran

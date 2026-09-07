@@ -1,0 +1,16 @@
+sheet	range	type	values
+انحراف آمارگیری شعبه چاله باغ	A3:A567	custom	OR(NOT(ISERROR(DATEVALUE(A3))), AND(ISNUMBER(A3), LEFT(CELL("format", A3))="D"))
+انحراف آمارگیری شعبه چاله باغ	B3:AI567	custom	AND(ISNUMBER(B3),(NOT(OR(NOT(ISERROR(DATEVALUE(B3))), AND(ISNUMBER(B3), LEFT(CELL("format", B3))="D")))))
+انحراف آمارگیری شعبه ناهارخوران	A3:A125	custom	OR(NOT(ISERROR(DATEVALUE(A3))), AND(ISNUMBER(A3), LEFT(CELL("format", A3))="D"))
+انحراف آمارگیری شعبه ناهارخوران	C3:AI125	custom	AND(ISNUMBER(C3),(NOT(OR(NOT(ISERROR(DATEVALUE(C3))), AND(ISNUMBER(C3), LEFT(CELL("format", C3))="D")))))
+آمار	A3:A240	custom	OR(NOT(ISERROR(DATEVALUE(A3))), AND(ISNUMBER(A3), LEFT(CELL("format", A3))="D"))
+آمار	B3:G240	custom	AND(ISNUMBER(B3),(NOT(OR(NOT(ISERROR(DATEVALUE(B3))), AND(ISNUMBER(B3), LEFT(CELL("format", B3))="D")))))
+گزارش بستن صندوق	A3:A243	custom	OR(NOT(ISERROR(DATEVALUE(A3))), AND(ISNUMBER(A3), LEFT(CELL("format", A3))="D"))
+گزارش بستن صندوق	C3:C243	custom	AND(ISNUMBER(C3),(NOT(OR(NOT(ISERROR(DATEVALUE(C3))), AND(ISNUMBER(C3), LEFT(CELL("format", C3))="D")))))
+گزارش بستن صندوق	B3:B243 D3:E243		
+نیازمندیها و مشکلات	A2:A75	custom	OR(NOT(ISERROR(DATEVALUE(A2))), AND(ISNUMBER(A2), LEFT(CELL("format", A2))="D"))
+نیازمندیها و مشکلات	B2:C75		
+اهداف فروش	B3:B76	list	"فروردین,اردیبهشت,خرداد,تیر,مرداد,شهریور,مهر,آبان,آذر,دی,بهمن,اسفند"
+اهداف فروش	C3:C76	list	"1404,1405,1406,1407,1408,1409,1410"
+اهداف فروش	A3:A76	custom	OR(NOT(ISERROR(DATEVALUE(A3))), AND(ISNUMBER(A3), LEFT(CELL("format", A3))="D"))
+اهداف فروش	D3:G76	custom	AND(ISNUMBER(D3),(NOT(OR(NOT(ISERROR(DATEVALUE(D3))), AND(ISNUMBER(D3), LEFT(CELL("format", D3))="D")))))

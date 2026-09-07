@@ -1,0 +1,11 @@
+sheet	range	type	values
+ضایعات	A2:A566	custom	OR(NOT(ISERROR(DATEVALUE(A2))), AND(ISNUMBER(A2), LEFT(CELL("format", A2))="D"))
+ضایعات	C2:C566	custom	AND(ISNUMBER(C2),(NOT(OR(NOT(ISERROR(DATEVALUE(C2))), AND(ISNUMBER(C2), LEFT(CELL("format", C2))="D")))))
+ضایعات	B2:B566 D2:D566		
+تعداد فیش هرشب	A2:A575	custom	OR(NOT(ISERROR(DATEVALUE(A2))), AND(ISNUMBER(A2), LEFT(CELL("format", A2))="D"))
+تعداد فیش هرشب	C2:D575	custom	AND(ISNUMBER(C2),(NOT(OR(NOT(ISERROR(DATEVALUE(C2))), AND(ISNUMBER(C2), LEFT(CELL("format", C2))="D")))))
+OFF اجرایی	A2:A575	custom	OR(NOT(ISERROR(DATEVALUE(A2))), AND(ISNUMBER(A2), LEFT(CELL("format", A2))="D"))
+OFF اجرایی	B2:C575	custom	AND(ISNUMBER(B2),(NOT(OR(NOT(ISERROR(DATEVALUE(B2))), AND(ISNUMBER(B2), LEFT(CELL("format", B2))="D")))))
+OFF اجرایی	D2:D575		
+نیازمندیها و مشکلات	A2:A575	custom	OR(NOT(ISERROR(DATEVALUE(A2))), AND(ISNUMBER(A2), LEFT(CELL("format", A2))="D"))
+نیازمندیها و مشکلات	B2:C575		

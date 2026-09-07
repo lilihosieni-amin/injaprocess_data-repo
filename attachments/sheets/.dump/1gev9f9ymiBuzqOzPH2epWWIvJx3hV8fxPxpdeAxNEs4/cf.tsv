@@ -1,0 +1,16 @@
+sheet	range	type	formula	format
+مغایرت	F6:K19	containsText containsText "کسری"	NOT(ISERROR(SEARCH(("کسری"),(F6))))	
+مغایرت	G6:G18	cellIs greaterThan	0	color=FFFF0000
+مغایرت	K6:K19	cellIs greaterThan	0	
+انحراف آمارگیری	F6:G39	containsText containsText "کسری"	NOT(ISERROR(SEARCH(("کسری"),(F6))))	
+اطلاعات لجستیک	E6:F7	cellIs equal	"بیش از ۴۰ دقیقه"	fill=FFF84F4F
+اطلاعات لجستیک	E6:F7	containsText containsText "۴۰"	NOT(ISERROR(SEARCH(("۴۰"),(E6))))	color=FFF73C3C
+اطلاعات لجستیک	G6:G7	cellIs equal	"بیش از ۴۰ دقیقه"	fill=FFF84F4F
+اطلاعات لجستیک	G6:G7	containsText containsText "۱۵"	NOT(ISERROR(SEARCH(("۱۵"),(G6))))	
+اطلاعات لجستیک	E6:F7	containsText containsText "۲۵"	NOT(ISERROR(SEARCH(("۲۵"),(E6))))	color=FFF1C232
+اطلاعات لجستیک	E6:F7	containsText containsText "۱۵"	NOT(ISERROR(SEARCH(("۱۵"),(E6))))	
+اطلاعات لجستیک	G6:G7	containsText containsText "۲۵"	NOT(ISERROR(SEARCH(("۲۵"),(G6))))	color=FFF1C232
+اطلاعات لجستیک	G6:G7	containsText containsText "۴۰"	NOT(ISERROR(SEARCH(("۴۰"),(G6))))	color=FFF73C3C
+ تعداد فیش فروش	H6:I11	cellIs lessThan	0	color=FFF73C3C
+ تعداد فیش فروش	H6:I11	cellIs greaterThan	0	
+گزارش بستن صندوق	F6:F7	containsText containsText "کسری"	NOT(ISERROR(SEARCH(("کسری"),(F6))))	

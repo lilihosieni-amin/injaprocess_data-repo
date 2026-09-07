@@ -1,0 +1,3 @@
+name	scope	formula
+SheetsFileId_Accounting_Chalebagh	workbook	SheetsFileIds!$B$2
+IMPORT_FROM_SHEET	workbook	LAMBDA(sheetsfileid, sheetname, datarange, IMPORTRANGE("https://docs.google.com/spreadsheets/d/" & sheetsfileid, sheetname & "!" & datarange))

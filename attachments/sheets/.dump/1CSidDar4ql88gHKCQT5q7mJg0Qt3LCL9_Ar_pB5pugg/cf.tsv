@@ -1,0 +1,3 @@
+sheet	range	type	formula	format
+تعداد فیش هرشب	D2:D566	cellIs lessThan	0	color=FFFF0000
+تعداد فیش هرشب	D2:D566	cellIs greaterThan	0	

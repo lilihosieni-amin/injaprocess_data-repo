@@ -1,0 +1,38 @@
+name	scope	formula
+Table_KitchenCounter_Last	workbook	Table_KitchenCounter_Last!$A:$Z
+Refresher	workbook	Refresher!$A$1
+Table_SalesData_Sandwich	workbook	Table_SalesData_Sandwich!$A:$M
+SheetsFileId_Ingredients	workbook	SheetsFileIDs!$B$7
+Table_Farangi_Last	workbook	Table_Farangi_Last!$A:$Z
+Table_Ingredients_SinglePizza	workbook	Table_Ingredients_SinglePizza!$A:$Z
+Table_Ingredients_AmericanPizza	workbook	Table_Ingredients_AmericanPizza!$A:$Z
+SheetsFileId_Farangi	workbook	SheetsFileIDs!$B$3
+SheetsFileId_Fried	workbook	SheetsFileIDs!$B$6
+Table_Ingredients_Steak	workbook	Table_Ingredients_Steak!$A:$F
+Table_SalesData_ItalianPizza	workbook	Table_SalesData_ItalianPizza!$A:$N
+Table_Ingredients_Lasagna	workbook	Table_Ingredients_Lasagna!$A:$S
+SheetsFileId_SalesData	workbook	SheetsFileIDs!$B$2
+Table_SalesData_AmericanPizza	workbook	Table_SalesData_AmericanPizza!$A:$M
+Table_Ingredients_Salad	workbook	Table_Ingredients_Salad!$A:$S
+Table_Ingredients_Sandwich	workbook	Table_Ingredients_Sandwich!$A:$S
+Table_SalesData_Salad	workbook	Table_SalesData_Salad!$A:$E
+Table_SalesData_Fried	workbook	Table_SalesData_Fried!$A:$I
+Table_Ingredients_Pasta	workbook	Table_Ingredients_Pasta!$A:$S
+SheetsFileId_Pizza	workbook	SheetsFileIDs!$B$5
+Table_Ingredients_Fried	workbook	Table_Ingredients_Fried!$A:$S
+Table_Fried_Last	workbook	Table_Fried_Last!$A:$Q
+SheetsFileId_KitchenCounter	workbook	SheetsFileIDs!$B$4
+Date	workbook	' تاریخ'!$H$2
+Table_Ingredients_Farangi	workbook	Table_Ingredients_Farangi!$A:$S
+Table_Ingredients_ItalianPizza	workbook	Table_Ingredients_ItalianPizza!$A:$Z
+Table_Ingredients_Starter	workbook	Table_Ingredients_Starter!$A:$S
+Table_SalesData_Steak	workbook	Table_SalesData_Steak!$A:$C
+Table_Pizza_Last	workbook	Table_Pizza_Last!$A:$S
+Table_SalesData_Starter	workbook	Table_SalesData_Starter!$A:$X
+Table_SalesData_Farangi	workbook	Table_SalesData_Farangi!$A:$D
+Table_SalesData_Pasta	workbook	Table_SalesData_Pasta!$A:$F
+Table_SalesData_SinglePizza	workbook	Table_SalesData_SinglePizza!$A:$J
+Table_SalesData_Personel	workbook	Table_SalesData_Personel!$A:$B
+CONVERT_GR_TO_KG	workbook	LAMBDA(weight, DIVIDE(weight,1000))
+FORMAT_PERSIAN_DATE	workbook	LAMBDA(day, month, year, TEXT(year, "0000") & "/" & TEXT(MATCH(month, {"فروردین","اردیبهشت","خرداد","تیر","مرداد","شهریور","مهر","آبان","آذر","دی","بهمن","اسفند"}, 0), "00") & "/" & TEXT(day, "00"))
+IMPORT_FROM_SHEET	workbook	LAMBDA(sheetsfileid, sheetname, datarange, IMPORTRANGE("https://docs.google.com/spreadsheets/d/" & sheetsfileid, sheetname & "!" & datarange))

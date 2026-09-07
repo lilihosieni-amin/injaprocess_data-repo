@@ -1,0 +1,10 @@
+sheet	range	type	values
+خروجی انبار به آماده سازی	A3:A1016	custom	OR(NOT(ISERROR(DATEVALUE(A3))), AND(ISNUMBER(A3), LEFT(CELL("format", A3))="D"))
+خروجی انبار به آماده سازی	B3:M1016	custom	AND(ISNUMBER(B3),(NOT(OR(NOT(ISERROR(DATEVALUE(B3))), AND(ISNUMBER(B3), LEFT(CELL("format", B3))="D")))))
+ورودی انبار از آماده سازی	A3:A1016	custom	OR(NOT(ISERROR(DATEVALUE(A3))), AND(ISNUMBER(A3), LEFT(CELL("format", A3))="D"))
+ورودی انبار از آماده سازی	B3:R1016	custom	AND(ISNUMBER(B3),(NOT(OR(NOT(ISERROR(DATEVALUE(B3))), AND(ISNUMBER(B3), LEFT(CELL("format", B3))="D")))))
+ضایعات	G2:G1016 A2:A1016	custom	OR(NOT(ISERROR(DATEVALUE(A2))), AND(ISNUMBER(A2), LEFT(CELL("format", A2))="D"))
+ضایعات	B2:E1016	custom	AND(ISNUMBER(B2),(NOT(OR(NOT(ISERROR(DATEVALUE(B2))), AND(ISNUMBER(B2), LEFT(CELL("format", B2))="D")))))
+ضایعات	H2:H1016		
+نیازمندیها و مشکلات	A2:A574	custom	OR(NOT(ISERROR(DATEVALUE(A2))), AND(ISNUMBER(A2), LEFT(CELL("format", A2))="D"))
+نیازمندیها و مشکلات	B2:C574		

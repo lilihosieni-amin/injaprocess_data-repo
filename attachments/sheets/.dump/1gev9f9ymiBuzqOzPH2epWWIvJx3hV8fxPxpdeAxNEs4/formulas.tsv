@@ -1,0 +1,345 @@
+sheet	range	group	formula	count	cached	error
+مغایرت	B4		'تاریخ'!CN	1	3	
+مغایرت	C4		'تاریخ'!DN	1	شهریور	
+مغایرت	D4		'تاریخ'!EN	1	1405	
+مغایرت	E6		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,6)	1	#NAME?	#NAME?
+مغایرت	F6		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_PrepInputFromWarehouse,6)	1	#NAME?	#NAME?
+مغایرت	G6:G12	1	ABS(MINUS(EN,FN))	7	#NAME?	#NAME?
+مغایرت	I6		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,2)	1	#NAME?	#NAME?
+مغایرت	J6		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_PrepOutputToWarehouse,2)	1	#NAME?	#NAME?
+مغایرت	K6:K19	2	ABS(MINUS(JN,IN))	14	#NAME?	#NAME?
+مغایرت	E7		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,3)	1	#NAME?	#NAME?
+مغایرت	F7		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_PrepInputFromWarehouse,3)	1	#NAME?	#NAME?
+مغایرت	I7		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,3)	1	#NAME?	#NAME?
+مغایرت	J7		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_PrepOutputToWarehouse,3)	1	#NAME?	#NAME?
+مغایرت	E8		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,7)	1	#NAME?	#NAME?
+مغایرت	F8		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_PrepInputFromWarehouse,7)	1	#NAME?	#NAME?
+مغایرت	I8		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,4)	1	#NAME?	#NAME?
+مغایرت	J8		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_PrepOutputToWarehouse,5)	1	#NAME?	#NAME?
+مغایرت	E9		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,8)	1	#NAME?	#NAME?
+مغایرت	F9		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_PrepInputFromWarehouse,8)	1	#NAME?	#NAME?
+مغایرت	I9		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,5)	1	#NAME?	#NAME?
+مغایرت	J9		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_PrepOutputToWarehouse,6)	1	#NAME?	#NAME?
+مغایرت	E10		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,9)	1	#NAME?	#NAME?
+مغایرت	F10		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_PrepInputFromWarehouse,9)	1	#NAME?	#NAME?
+مغایرت	I10		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,6)	1	#NAME?	#NAME?
+مغایرت	J10		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_PrepOutputToWarehouse,7)	1	#NAME?	#NAME?
+مغایرت	E11		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,10)	1	#NAME?	#NAME?
+مغایرت	F11		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_PrepInputFromWarehouse,10)	1	#NAME?	#NAME?
+مغایرت	I11		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,7)	1	#NAME?	#NAME?
+مغایرت	J11		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_PrepOutputToWarehouse,8)	1	#NAME?	#NAME?
+مغایرت	E12		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,11)	1	#NAME?	#NAME?
+مغایرت	F12		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_PrepInputFromWarehouse,11)	1	#NAME?	#NAME?
+مغایرت	I12		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,8)	1	#NAME?	#NAME?
+مغایرت	J12		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_PrepOutputToWarehouse,10)	1	#NAME?	#NAME?
+مغایرت	I13		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,9)	1	#NAME?	#NAME?
+مغایرت	J13		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_PrepOutputToWarehouse,11)	1	#NAME?	#NAME?
+مغایرت	I14		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,10)	1	#NAME?	#NAME?
+مغایرت	J14		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_PrepOutputToWarehouse,13)	1	#NAME?	#NAME?
+مغایرت	I15		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,11)	1	#NAME?	#NAME?
+مغایرت	J15		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_PrepOutputToWarehouse,15)	1	#NAME?	#NAME?
+مغایرت	E16		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,2)	1	#NAME?	#NAME?
+مغایرت	F16		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_PrepInputFromWarehouse,2)	1	#NAME?	#NAME?
+مغایرت	G16:G18	3	ABS(MINUS(EN,FN))	3	#NAME?	#NAME?
+مغایرت	I16		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,12)	1	#NAME?	#NAME?
+مغایرت	J16		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_PrepOutputToWarehouse,14)	1	#NAME?	#NAME?
+مغایرت	E17		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,4)	1	#NAME?	#NAME?
+مغایرت	F17		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_PrepInputFromWarehouse,4)	1	#NAME?	#NAME?
+مغایرت	I17		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,13)+GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,14)	1	#NAME?	#NAME?
+مغایرت	J17		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_PrepOutputToWarehouse,17)+GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_PrepOutputToWarehouse,19)	1	#NAME?	#NAME?
+مغایرت	E18		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,5)	1	#NAME?	#NAME?
+مغایرت	F18		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_PrepInputFromWarehouse,5)	1	#NAME?	#NAME?
+مغایرت	I18		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,15)	1	#NAME?	#NAME?
+مغایرت	J18		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_PrepOutputToWarehouse,21)	1	#NAME?	#NAME?
+مغایرت	I19		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,16)	1	#NAME?	#NAME?
+مغایرت	J19		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_PrepOutputToWarehouse,22)	1	#NAME?	#NAME?
+مواد اولیه	B4		'تاریخ'!CN	1	3	
+مواد اولیه	C4		'تاریخ'!DN	1	شهریور	
+مواد اولیه	D4		'تاریخ'!EN	1	1405	
+مواد اولیه	G8		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Statistics,2)	1	#NAME?	#NAME?
+مواد اولیه	I8		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,7)	1	#NAME?	#NAME?
+مواد اولیه	L8		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,4)	1	#NAME?	#NAME?
+مواد اولیه	M8		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_ChickenAndBeafWaste,2)	1	#NAME?	#NAME?
+مواد اولیه	N8		SUM(LN:LN,MN)	1	#NAME?	#NAME?
+مواد اولیه	P8		MINUS(NN,IN)	1	#NAME?	#NAME?
+مواد اولیه	Q8		MINUS(IN,GN)	1	#NAME?	#NAME?
+مواد اولیه	L9		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,5)	1	#NAME?	#NAME?
+مواد اولیه	L10		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,6)	1	#NAME?	#NAME?
+مواد اولیه	L11		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,7)	1	#NAME?	#NAME?
+مواد اولیه	L12		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,8)	1	#NAME?	#NAME?
+مواد اولیه	G13		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Statistics,3)	1	#NAME?	#NAME?
+مواد اولیه	I13		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,8)	1	#NAME?	#NAME?
+مواد اولیه	L13		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,9)	1	#NAME?	#NAME?
+مواد اولیه	M13		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_ChickenAndBeafWaste,3)	1	#NAME?	#NAME?
+مواد اولیه	N13		SUM(LN:LN,MN)	1	#NAME?	#NAME?
+مواد اولیه	P13		MINUS(NN,IN)	1	#NAME?	#NAME?
+مواد اولیه	Q13		MINUS(IN,GN)	1	#NAME?	#NAME?
+مواد اولیه	L14		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,10)	1	#NAME?	#NAME?
+مواد اولیه	L15		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,11)	1	#NAME?	#NAME?
+مواد اولیه	L16		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,12)	1	#NAME?	#NAME?
+مواد اولیه	G17		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Statistics,4)	1	#NAME?	#NAME?
+مواد اولیه	I17		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,9)	1	#NAME?	#NAME?
+مواد اولیه	L17		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,13)	1	#NAME?	#NAME?
+مواد اولیه	M17		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_ChickenAndBeafWaste,4)	1	#NAME?	#NAME?
+مواد اولیه	N17		SUM(LN:LN,MN)	1	#NAME?	#NAME?
+مواد اولیه	P17		MINUS(NN,IN)	1	#NAME?	#NAME?
+مواد اولیه	Q17		MINUS(IN,GN)	1	#NAME?	#NAME?
+مواد اولیه	L18		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,14)	1	#NAME?	#NAME?
+مواد اولیه	G21		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,10)	1	#NAME?	#NAME?
+مواد اولیه	L21		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,15)	1	#NAME?	#NAME?
+مواد اولیه	M21		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_ChickenAndBeafWaste,5)	1	#NAME?	#NAME?
+مواد اولیه	N21		GN/100*80	1	#NAME?	#NAME?
+مواد اولیه	P21:P24	1	MINUS(LN,NN)	4	#NAME?	#NAME?
+مواد اولیه	G22		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,11)	1	#NAME?	#NAME?
+مواد اولیه	L22		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,16)	1	#NAME?	#NAME?
+مواد اولیه	N22		GN/100*60	1	#NAME?	#NAME?
+مواد اولیه	G23		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,12)	1	#NAME?	#NAME?
+مواد اولیه	L23		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,17)	1	#NAME?	#NAME?
+مواد اولیه	G24		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,13)	1	#NAME?	#NAME?
+مواد اولیه	L24		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,18)	1	#NAME?	#NAME?
+مواد اولیه	G27		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,6)	1	#NAME?	#NAME?
+مواد اولیه	H27		SUM(GN:GN)	1	#NAME?	#NAME?
+مواد اولیه	I27		MULTIPLY(DIVIDE(HN,20),4.1)	1	#NAME?	#NAME?
+مواد اولیه	L27		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,2)	1	#NAME?	#NAME?
+مواد اولیه	M27		DIVIDE(SUM(MULTIPLY(LN,60),MULTIPLY(LN,150)),1000)	1	#NAME?	#NAME?
+مواد اولیه	P27		MINUS(MN,SUM(IN,HN))	1	#NAME?	#NAME?
+مواد اولیه	G28		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,3)	1	#NAME?	#NAME?
+مواد اولیه	L28		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,3)	1	#NAME?	#NAME?
+مواد اولیه	F31		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_Dough,4)	1	#NAME?	#NAME?
+مواد اولیه	L31		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Statistics,8)	1	#NAME?	#NAME?
+مواد اولیه	P31		MINUS(FN, SUM(MULTIPLY(LN,230),MULTIPLY(LN,280),MULTIPLY(LN,1)))	1	#NAME?	#NAME?
+مواد اولیه	L32		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Statistics,9)	1	#NAME?	#NAME?
+مواد اولیه	L33		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Statistics,10)	1	#NAME?	#NAME?
+مواد اولیه	F35		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_Dough,5)	1	#NAME?	#NAME?
+مواد اولیه	L35		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Statistics,11)	1	#NAME?	#NAME?
+مواد اولیه	P35		MINUS(FN, SUM(MULTIPLY(LN,230),MULTIPLY(LN,280),MULTIPLY(LN,1)))	1	#NAME?	#NAME?
+مواد اولیه	L36		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Statistics,12)	1	#NAME?	#NAME?
+مواد اولیه	L37		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Statistics,13)	1	#NAME?	#NAME?
+ضایعات	B4		'تاریخ'!CN	1	3	
+ضایعات	C4		'تاریخ'!DN	1	شهریور	
+ضایعات	D4		'تاریخ'!EN	1	1405	
+ضایعات	D10		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_ChickenAndBeafWaste,2)	1	#NAME?	#NAME?
+ضایعات	E10		LET(\nwaste,DN,\ntotal,GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,6),\nDIVIDE(waste,total)\n)	1	#NAME?	#NAME?
+ضایعات	F10		LET(\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\ndata,Warehouse_OtherWaste,\nfilterByDate(data,date,0))	1	#NAME?	#NAME?
+ضایعات	I10		LET(\nsheetName,"ضایعات",\ndataRange,"A:D",\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\ndata,IMPORT_FROM_SHEET(SheetsFileId_Kitchen_Naharkhoran,sheetName,dataRange),\nfilterByDate(data,date,0))	1	#NAME?	#NAME?
+ضایعات	M10		LET(\nsheetName,"ضایعات",\ndataRange,"A:D",\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\ndata,IMPORT_FROM_SHEET(SheetsFileId_Kitchen_Chalebagh,sheetName,dataRange),\nfilterByDate(data,date,0))	1	#NAME?	#NAME?
+ضایعات	D11		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_ChickenAndBeafWaste,3)	1	#NAME?	#NAME?
+ضایعات	E11		LET(\nwaste,DN,\ntotal,GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,7),\nDIVIDE(waste,total)\n)	1	#NAME?	#NAME?
+ضایعات	D12		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_ChickenAndBeafWaste,4)	1	#NAME?	#NAME?
+ضایعات	E12		LET(\nwaste,DN,\ntotal,GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,8),\nDIVIDE(waste,total)\n)	1	#NAME?	#NAME?
+ضایعات	D13		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_ChickenAndBeafWaste,5)	1	#NAME?	#NAME?
+ضایعات	E13		LET(\nwaste,DN,\ntotal,GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,9) + GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,10),\nDIVIDE(waste,total)\n)	1	#NAME?	#NAME?
+ضایعات	I20		LET(\nsheetName,"ضایعات",\ndataRange,"A:D",\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\ndata,IMPORT_FROM_SHEET(SheetsFileId_Salon_Naharkhoran,sheetName,dataRange),\nfilterByDate(data,date,0))	1	#NAME?	#NAME?
+ضایعات	M20		LET(\nsheetName,"ضایعات",\ndataRange,"A:D",\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\ndata,IMPORT_FROM_SHEET(SheetsFileId_Salon_Chalebagh,sheetName,dataRange),\nfilterByDate(data,date,0))	1	#NAME?	#NAME?
+ضایعات	D26		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_Waste,2)	1	#NAME?	#NAME?
+ضایعات	D27		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_Waste,3)	1	#NAME?	#NAME?
+ضایعات	D28		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_Waste,4)	1	#NAME?	#NAME?
+ضایعات	D29		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_Waste,5)	1	#NAME?	#NAME?
+ضایعات	I30		LET(\nsheetName,"ضایعات",\ndataRange,"A:D",\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\ndata,IMPORT_FROM_SHEET(SheetsFileId_CashRegister_Naharkhoran,sheetName,dataRange),\nfilterByDate(data,date,0))	1	#NAME?	#NAME?
+ضایعات	M30		LET(\nsheetName,"ضایعات",\ndataRange,"A:D",\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\ndata,IMPORT_FROM_SHEET(SheetsFileId_CashRegister_Chalebagh,sheetName,dataRange),\nfilterByDate(data,date,0))	1	#NAME?	#NAME?
+backup مواد اولیه	B4		'تاریخ'!CN	1	3	
+backup مواد اولیه	C4		'تاریخ'!DN	1	شهریور	
+backup مواد اولیه	D4		'تاریخ'!EN	1	1405	
+backup مواد اولیه	G8		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Statistics,2)	1	#NAME?	#NAME?
+backup مواد اولیه	I8		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,7)	1	#NAME?	#NAME?
+backup مواد اولیه	L8		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,4)	1	#NAME?	#NAME?
+backup مواد اولیه	M8		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_ChickenAndBeafWaste,2)	1	#NAME?	#NAME?
+backup مواد اولیه	N8		SUM(LN:LN,MN)	1	#NAME?	#NAME?
+backup مواد اولیه	P8		MINUS(NN,IN)	1	#NAME?	#NAME?
+backup مواد اولیه	Q8		MINUS(IN,GN)	1	#NAME?	#NAME?
+backup مواد اولیه	L9		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,5)	1	#NAME?	#NAME?
+backup مواد اولیه	L10		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,6)	1	#NAME?	#NAME?
+backup مواد اولیه	L11		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,7)	1	#NAME?	#NAME?
+backup مواد اولیه	L12		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,8)	1	#NAME?	#NAME?
+backup مواد اولیه	G13		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Statistics,3)	1	#NAME?	#NAME?
+backup مواد اولیه	I13		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,8)	1	#NAME?	#NAME?
+backup مواد اولیه	L13		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,9)	1	#NAME?	#NAME?
+backup مواد اولیه	M13		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_ChickenAndBeafWaste,3)	1	#NAME?	#NAME?
+backup مواد اولیه	N13		SUM(LN:LN,MN)	1	#NAME?	#NAME?
+backup مواد اولیه	P13		MINUS(NN,IN)	1	#NAME?	#NAME?
+backup مواد اولیه	Q13		MINUS(IN,GN)	1	#NAME?	#NAME?
+backup مواد اولیه	L14		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,10)	1	#NAME?	#NAME?
+backup مواد اولیه	L15		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,11)	1	#NAME?	#NAME?
+backup مواد اولیه	L16		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,12)	1	#NAME?	#NAME?
+backup مواد اولیه	G17		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Statistics,4)	1	#NAME?	#NAME?
+backup مواد اولیه	I17		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,9)	1	#NAME?	#NAME?
+backup مواد اولیه	L17		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,13)	1	#NAME?	#NAME?
+backup مواد اولیه	M17		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_ChickenAndBeafWaste,4)	1	#NAME?	#NAME?
+backup مواد اولیه	N17		SUM(LN:LN,MN)	1	#NAME?	#NAME?
+backup مواد اولیه	P17		MINUS(NN,IN)	1	#NAME?	#NAME?
+backup مواد اولیه	Q17		MINUS(IN,GN)	1	#NAME?	#NAME?
+backup مواد اولیه	L18		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,14)	1	#NAME?	#NAME?
+backup مواد اولیه	G21		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,10)	1	#NAME?	#NAME?
+backup مواد اولیه	L21		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,15)	1	#NAME?	#NAME?
+backup مواد اولیه	M21		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_ChickenAndBeafWaste,5)	1	#NAME?	#NAME?
+backup مواد اولیه	N21		GN/100*80	1	#NAME?	#NAME?
+backup مواد اولیه	P21:P24	1	MINUS(LN,NN)	4	#NAME?	#NAME?
+backup مواد اولیه	G22		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,11)	1	#NAME?	#NAME?
+backup مواد اولیه	L22		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,16)	1	#NAME?	#NAME?
+backup مواد اولیه	N22		GN/100*60	1	#NAME?	#NAME?
+backup مواد اولیه	G23		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,12)	1	#NAME?	#NAME?
+backup مواد اولیه	L23		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,17)	1	#NAME?	#NAME?
+backup مواد اولیه	G24		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,13)	1	#NAME?	#NAME?
+backup مواد اولیه	L24		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,18)	1	#NAME?	#NAME?
+backup مواد اولیه	G27		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,6)	1	#NAME?	#NAME?
+backup مواد اولیه	H27		SUM(GN:GN)	1	#NAME?	#NAME?
+backup مواد اولیه	I27		MULTIPLY(DIVIDE(HN,20),4.1)	1	#NAME?	#NAME?
+backup مواد اولیه	L27		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,2)	1	#NAME?	#NAME?
+backup مواد اولیه	M27		DIVIDE(SUM(MULTIPLY(LN,60),MULTIPLY(LN,150)),1000)	1	#NAME?	#NAME?
+backup مواد اولیه	P27		MINUS(MN,SUM(IN,HN))	1	#NAME?	#NAME?
+backup مواد اولیه	G28		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseOutputToPrep,3)	1	#NAME?	#NAME?
+backup مواد اولیه	L28		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Warehouse_WarehouseInputFromPrep,3)	1	#NAME?	#NAME?
+backup مواد اولیه	L31		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_Dough,2)	1	#NAME?	#NAME?
+backup مواد اولیه	M31		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Statistics,5)	1	#NAME?	#NAME?
+backup مواد اولیه	P31:P33	2	MINUS(LN,MN)	3	#NAME?	#NAME?
+backup مواد اولیه	L32		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_Dough,3)	1	#NAME?	#NAME?
+backup مواد اولیه	M32		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Statistics,6)	1	#NAME?	#NAME?
+backup مواد اولیه	L33		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Prep_Dough,7)	1	#NAME?	#NAME?
+backup مواد اولیه	M33		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Statistics,8)	1	#NAME?	#NAME?
+انحراف آمارگیری	B4		'تاریخ'!CN	1	3	
+انحراف آمارگیری	C4		'تاریخ'!DN	1	شهریور	
+انحراف آمارگیری	D4		'تاریخ'!EN	1	1405	
+انحراف آمارگیری	F6		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,2)	1	#NAME?	#NAME?
+انحراف آمارگیری	G6		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,2)	1	#NAME?	#NAME?
+انحراف آمارگیری	F7		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,3)	1	#NAME?	#NAME?
+انحراف آمارگیری	G7		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,3)	1	#NAME?	#NAME?
+انحراف آمارگیری	F8		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,4)	1	#NAME?	#NAME?
+انحراف آمارگیری	G8		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,4)	1	#NAME?	#NAME?
+انحراف آمارگیری	F9		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,5)	1	#NAME?	#NAME?
+انحراف آمارگیری	G9		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,5)	1	#NAME?	#NAME?
+انحراف آمارگیری	F10		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,6)	1	#NAME?	#NAME?
+انحراف آمارگیری	G10		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,6)	1	#NAME?	#NAME?
+انحراف آمارگیری	F11		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,7)	1	#NAME?	#NAME?
+انحراف آمارگیری	G11		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,7)	1	#NAME?	#NAME?
+انحراف آمارگیری	F12		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,8)	1	#NAME?	#NAME?
+انحراف آمارگیری	G12		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,8)	1	#NAME?	#NAME?
+انحراف آمارگیری	F13		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,9)	1	#NAME?	#NAME?
+انحراف آمارگیری	G13		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,9)	1	#NAME?	#NAME?
+انحراف آمارگیری	F14		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,10)	1	#NAME?	#NAME?
+انحراف آمارگیری	G14		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,10)	1	#NAME?	#NAME?
+انحراف آمارگیری	F15		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,11)	1	#NAME?	#NAME?
+انحراف آمارگیری	G15		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,11)	1	#NAME?	#NAME?
+انحراف آمارگیری	F16		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,12)	1	#NAME?	#NAME?
+انحراف آمارگیری	G16		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,12)	1	#NAME?	#NAME?
+انحراف آمارگیری	F17		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,13)	1	#NAME?	#NAME?
+انحراف آمارگیری	G17		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,13)	1	#NAME?	#NAME?
+انحراف آمارگیری	F18		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,14)	1	#NAME?	#NAME?
+انحراف آمارگیری	G18		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,14)	1	#NAME?	#NAME?
+انحراف آمارگیری	F19		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,15)	1	#NAME?	#NAME?
+انحراف آمارگیری	G19		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,15)	1	#NAME?	#NAME?
+انحراف آمارگیری	F20		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,16)	1	#NAME?	#NAME?
+انحراف آمارگیری	G20		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,16)	1	#NAME?	#NAME?
+انحراف آمارگیری	F21		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,17)	1	#NAME?	#NAME?
+انحراف آمارگیری	G21		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,17)	1	#NAME?	#NAME?
+انحراف آمارگیری	F22		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,18)	1	#NAME?	#NAME?
+انحراف آمارگیری	G22		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,18)	1	#NAME?	#NAME?
+انحراف آمارگیری	F23		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,19)	1	#NAME?	#NAME?
+انحراف آمارگیری	G23		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,19)	1	#NAME?	#NAME?
+انحراف آمارگیری	F24		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,20)	1	#NAME?	#NAME?
+انحراف آمارگیری	G24		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,20)	1	#NAME?	#NAME?
+انحراف آمارگیری	F25		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,21)	1	#NAME?	#NAME?
+انحراف آمارگیری	G25		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,21)	1	#NAME?	#NAME?
+انحراف آمارگیری	F26		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,22)	1	#NAME?	#NAME?
+انحراف آمارگیری	G26		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,22)	1	#NAME?	#NAME?
+انحراف آمارگیری	F27		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,23)	1	#NAME?	#NAME?
+انحراف آمارگیری	G27		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,23)	1	#NAME?	#NAME?
+انحراف آمارگیری	F28		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,24)	1	#NAME?	#NAME?
+انحراف آمارگیری	G28		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,24)	1	#NAME?	#NAME?
+انحراف آمارگیری	F29		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,25)	1	#NAME?	#NAME?
+انحراف آمارگیری	G29		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,25)	1	#NAME?	#NAME?
+انحراف آمارگیری	F30		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,26)	1	#NAME?	#NAME?
+انحراف آمارگیری	G30		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,26)	1	#NAME?	#NAME?
+انحراف آمارگیری	F31		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,27)	1	#NAME?	#NAME?
+انحراف آمارگیری	G31		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,27)	1	#NAME?	#NAME?
+انحراف آمارگیری	F32		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,28)	1	#NAME?	#NAME?
+انحراف آمارگیری	G32		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,28)	1	#NAME?	#NAME?
+انحراف آمارگیری	F33		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,29)	1	#NAME?	#NAME?
+انحراف آمارگیری	G33		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,29)	1	#NAME?	#NAME?
+انحراف آمارگیری	F34		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,30)	1	#NAME?	#NAME?
+انحراف آمارگیری	G34		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,30)	1	#NAME?	#NAME?
+انحراف آمارگیری	F35		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,31)	1	#NAME?	#NAME?
+انحراف آمارگیری	G35		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,31)	1	#NAME?	#NAME?
+انحراف آمارگیری	F36		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,32)	1	#NAME?	#NAME?
+انحراف آمارگیری	G36		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,32)	1	#NAME?	#NAME?
+انحراف آمارگیری	F37		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,33)	1	#NAME?	#NAME?
+انحراف آمارگیری	G37		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,33)	1	#NAME?	#NAME?
+انحراف آمارگیری	F38		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,34)	1	#NAME?	#NAME?
+انحراف آمارگیری	G38		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,34)	1	#NAME?	#NAME?
+انحراف آمارگیری	F39		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_NaharKhoran,35)	1	#NAME?	#NAME?
+انحراف آمارگیری	G39		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_Mismatch_Chalebagh,35)	1	#NAME?	#NAME?
+نیازمندیها و مشکلات	B4		'تاریخ'!CN	1	3	
+نیازمندیها و مشکلات	C4		'تاریخ'!DN	1	شهریور	
+نیازمندیها و مشکلات	D4		'تاریخ'!EN	1	1405	
+نیازمندیها و مشکلات	F6		LET(\nsheetName,"نیازمندیها و مشکلات",\ndataRange,"A:C",\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\ndata,IMPORT_FROM_SHEET(SheetsFileId_Kitchen_Naharkhoran,sheetName,dataRange),\nfilterByDate(data,date,0))	1	#NAME?	#NAME?
+نیازمندیها و مشکلات	F7		LET(\nsheetName,"نیازمندیها و مشکلات",\ndataRange,"A:C",\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\ndata,IMPORT_FROM_SHEET(SheetsFileId_Salon_Naharkhoran,sheetName,dataRange),\nfilterByDate(data,date,0)\n)	1	#NAME?	#NAME?
+نیازمندیها و مشکلات	F8		LET(\nsheetName,"نیازمندیها و مشکلات",\ndataRange,"A:C",\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\ndata,IMPORT_FROM_SHEET(SheetsFileId_CashRegister_Naharkhoran,sheetName,dataRange),\nfilterByDate(data,date,0)\n)	1	#NAME?	#NAME?
+نیازمندیها و مشکلات	F9		LET(\nsheetName,"نیازمندیها و مشکلات",\ndataRange,"A:C",\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\ndata,IMPORT_FROM_SHEET(SheetsFileId_Logestic_Naharkhoran,sheetName,dataRange),\nfilterByDate(data,date,0)\n)	1	#NAME?	#NAME?
+نیازمندیها و مشکلات	F10		LET(\nsheetName,"نیازمندیها و مشکلات",\ndataRange,"A:C",\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\ndata,IMPORT_FROM_SHEET(SheetsFileId_Warehouse_Chalebagh,sheetName,dataRange),\nfilterByDate(data,date,0)\n)	1	#NAME?	#NAME?
+نیازمندیها و مشکلات	F11		LET(\nsheetName,"نیازمندیها و مشکلات",\ndataRange,"A:C",\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\ndata,IMPORT_FROM_SHEET(SheetsFileId_Kitchen_Chalebagh,sheetName,dataRange),\nfilterByDate(data,date,0)\n)	1	#NAME?	#NAME?
+نیازمندیها و مشکلات	F12		LET(\nsheetName,"نیازمندیها و مشکلات",\ndataRange,"A:C",\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\ndata,IMPORT_FROM_SHEET(SheetsFileId_PrepSection_Chalebagh,sheetName,dataRange),\nfilterByDate(data,date,0)\n)	1	#NAME?	#NAME?
+نیازمندیها و مشکلات	F13		LET(\nsheetName,"نیازمندیها و مشکلات",\ndataRange,"A:C",\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\ndata,IMPORT_FROM_SHEET(SheetsFileId_Salon_Chalebagh,sheetName,dataRange),\nfilterByDate(data,date,0)\n)	1	#NAME?	#NAME?
+نیازمندیها و مشکلات	F14		LET(\nsheetName,"نیازمندیها و مشکلات",\ndataRange,"A:C",\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\ndata,IMPORT_FROM_SHEET(SheetsFileId_CashRegister_Chalebagh,sheetName,dataRange),\nfilterByDate(data,date,0)\n)	1	#NAME?	#NAME?
+نیازمندیها و مشکلات	F15		LET(\nsheetName,"نیازمندیها و مشکلات",\ndataRange,"A:C",\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\ndata,IMPORT_FROM_SHEET(SheetsFileId_Logestic_Chalebagh,sheetName,dataRange),\nfilterByDate(data,date,0)\n)	1	#NAME?	#NAME?
+نیازمندیها و مشکلات	F16		LET(\nsheetName,"نیازمندیها و مشکلات",\ndataRange,"A:C",\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\ndata,IMPORT_FROM_SHEET(SheetsFileId_Accounting_Chalebagh,sheetName,dataRange),\nfilterByDate(data,date,0)\n)	1	#NAME?	#NAME?
+OFF اجرایی	B4		'تاریخ'!CN	1	3	
+OFF اجرایی	C4		'تاریخ'!DN	1	شهریور	
+OFF اجرایی	D4		'تاریخ'!EN	1	1405	
+OFF اجرایی	F6		LET(\ntriger,ZN,\nsheetName,"OFF اجرایی",\ndataRange,"A:D",\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\ndata,IMPORT_FROM_SHEET(SheetsFileId_Kitchen_Naharkhoran,sheetName,dataRange),\nfilterByDate(data,date,0)\n)	1	#NAME?	#NAME?
+OFF اجرایی	F7		LET(\ntrigger, ZN,\nsheetName,"OFF اجرایی",\ndataRange,"A:D",\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\ndata,IMPORT_FROM_SHEET(SheetsFileId_Salon_Naharkhoran,sheetName,dataRange),\nfilterByDate(data,date,0)\n)	1	#NAME?	#NAME?
+OFF اجرایی	F8		LET(\ntrigger, ZN,\nsheetName,"OFF اجرایی",\ndataRange,"A:D",\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\ndata,IMPORT_FROM_SHEET(SheetsFileId_CashRegister_Naharkhoran,sheetName,dataRange),\nfilterByDate(data,date,0)\n)	1	#NAME?	#NAME?
+OFF اجرایی	F9		LET(\ntrigger, ZN,\nsheetName,"OFF اجرایی",\ndataRange,"A:D",\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\ndata,IMPORT_FROM_SHEET(SheetsFileId_Kitchen_Chalebagh,sheetName,dataRange),\nfilterByDate(data,date,0)\n)	1	#NAME?	#NAME?
+OFF اجرایی	F10		LET(\ntrigger, ZN,\nsheetName,"OFF اجرایی",\ndataRange,"A:D",\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\ndata,IMPORT_FROM_SHEET(SheetsFileId_PrepSection_Chalebagh,sheetName,dataRange),\nfilterByDate(data,date,0)\n)	1	#NAME?	#NAME?
+OFF اجرایی	F11		LET(\ntrigger, ZN,\nsheetName,"OFF اجرایی",\ndataRange,"A:D",\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\ndata,IMPORT_FROM_SHEET(SheetsFileId_Salon_Chalebagh,sheetName,dataRange),\nfilterByDate(data,date,0)\n)	1	#NAME?	#NAME?
+OFF اجرایی	F12		LET(\ntrigger, ZN,\nsheetName,"OFF اجرایی",\ndataRange,"A:D",\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\ndata,IMPORT_FROM_SHEET(SheetsFileId_CashRegister_Chalebagh,sheetName,dataRange),\nfilterByDate(data,date,0)\n)	1	#NAME?	#NAME?
+اطلاعات لجستیک	B4		'تاریخ'!CN	1	3	
+اطلاعات لجستیک	C4		'تاریخ'!DN	1	شهریور	
+اطلاعات لجستیک	D4		'تاریخ'!EN	1	1405	
+اطلاعات لجستیک	E6:E7	1	IF(SUM(HN:IN) = 0, 0, ROUND(JN / SUM(HN:IN),1))	2	#NAME?	#NAME?
+اطلاعات لجستیک	F6		LET(\ntrigger, ZN,\nsheetName,"زمان ها",\ndataRange,"A:C",\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\ndata,IMPORT_FROM_SHEET(SheetsFileId_Logestic_Naharkhoran,sheetName,dataRange),\nfilterByDate(data,date,0)\n)	1	#NAME?	#NAME?
+اطلاعات لجستیک	H6		LET(\ntrigger, ZN,\nsheetName,"اطلاعات لجستیک",\ndataRange,"A:E",\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\ndata,IMPORT_FROM_SHEET(SheetsFileId_Logestic_Naharkhoran,sheetName,dataRange),\nfilterByDate(data,date,0)\n)	1	#NAME?	#NAME?
+اطلاعات لجستیک	F7		LET(\ntrigger, ZN,\nsheetName,"زمان ها",\ndataRange,"A:C",\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\ndata,IMPORT_FROM_SHEET(SheetsFileId_Logestic_Chalebagh,sheetName,dataRange),\nfilterByDate(data,date,0)\n)	1	#NAME?	#NAME?
+اطلاعات لجستیک	H7		LET(\ntrigger, ZN,\nsheetName,"اطلاعات لجستیک",\ndataRange,"A:E",\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\ndata,IMPORT_FROM_SHEET(SheetsFileId_Logestic_Chalebagh,sheetName,dataRange),\nfilterByDate(data,date,0)\n)	1	#NAME?	#NAME?
+ تعداد فیش فروش	B4		'تاریخ'!CN	1	3	
+ تعداد فیش فروش	C4		'تاریخ'!DN	1	شهریور	
+ تعداد فیش فروش	D4		'تاریخ'!EN	1	1405	
+ تعداد فیش فروش	F6		LET(\ntrigger, ZN,\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\n data, Salon_Recipts_Naharkhoran,\n filteredData, FILTER_BY_DATE(data,date),\nINDEX(filteredData,,2)\n)	1	#NAME?	#NAME?
+ تعداد فیش فروش	G6		LET(\ntrigger, ZN,\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\n data, Salon_Recipts_Naharkhoran,\n filteredData, FILTER_BY_DATE(data,date),\nINDEX(filteredData,,3)\n)	1	#NAME?	#NAME?
+ تعداد فیش فروش	H6		LET(\ntrigger, ZN,\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\n data, Salon_Recipts_Naharkhoran,\n filteredData, FILTER_BY_DATE(data,date),\nINDEX(filteredData,,4)\n)	1	#NAME?	#NAME?
+ تعداد فیش فروش	I6:I11	1	HN / IF(NOT(ISNUMBER(FN)), 1, IF(FN = 0, 1, FN))\n	6	#NAME?	#NAME?
+ تعداد فیش فروش	F7		LET(\ntrigger, ZN,\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\n data, CashRegister_Recipts_Naharkhoran,\n filteredData, FILTER_BY_DATE(data,date),\nINDEX(filteredData,,2)\n)	1	#NAME?	#NAME?
+ تعداد فیش فروش	G7		LET(\ntrigger, ZN,\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\n data, CashRegister_Recipts_Naharkhoran,\n filteredData, FILTER_BY_DATE(data,date),\nINDEX(filteredData,,3)\n)	1	#NAME?	#NAME?
+ تعداد فیش فروش	H7		LET(\ntrigger, ZN,\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\n data, CashRegister_Recipts_Naharkhoran,\n filteredData, FILTER_BY_DATE(data,date),\nINDEX(filteredData,,4)\n)	1	#NAME?	#NAME?
+ تعداد فیش فروش	F8:G8	2	SUM(FN:FN)	2	#NAME?	#NAME?
+ تعداد فیش فروش	H8		GN-FN	1	#NAME?	#NAME?
+ تعداد فیش فروش	F9		LET(\ntrigger, ZN,\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\n data, Salon_Recipts_Chalebagh,\n filteredData, FILTER_BY_DATE(data,date),\nINDEX(filteredData,,2)\n)	1	#NAME?	#NAME?
+ تعداد فیش فروش	G9		LET(\ntrigger, ZN,\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\n data, Salon_Recipts_Chalebagh,\n filteredData, FILTER_BY_DATE(data,date),\nINDEX(filteredData,,3)\n)	1	#NAME?	#NAME?
+ تعداد فیش فروش	H9		LET(\ntrigger, ZN,\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\n data, Salon_Recipts_Chalebagh,\n filteredData, FILTER_BY_DATE(data,date),\nINDEX(filteredData,,4)\n)	1	#NAME?	#NAME?
+ تعداد فیش فروش	F10		LET(\ntrigger, ZN,\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\n data, CashRegister_Recipts_Chalebagh,\n filteredData, FILTER_BY_DATE(data,date),\nINDEX(filteredData,,2)\n)	1	#NAME?	#NAME?
+ تعداد فیش فروش	G10		LET(\ntrigger, ZN,\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\n data, CashRegister_Recipts_Chalebagh,\n filteredData, FILTER_BY_DATE(data,date),\nINDEX(filteredData,,3)\n)	1	#NAME?	#NAME?
+ تعداد فیش فروش	H10		LET(\ntrigger, ZN,\ndate,JALALI_TO_GREG(FORMAT_PERSIAN_DATE(BN,CN,DN)),\n data, CashRegister_Recipts_Chalebagh,\n filteredData, FILTER_BY_DATE(data,date),\nINDEX(filteredData,,4)\n)	1	#NAME?	#NAME?
+ تعداد فیش فروش	F11:G11	3	SUM(FN:FN)	2	#NAME?	#NAME?
+ تعداد فیش فروش	H11		GN-FN	1	#NAME?	#NAME?
+گزارش بستن صندوق	B4		'تاریخ'!CN	1	3	
+گزارش بستن صندوق	C4		'تاریخ'!DN	1	شهریور	
+گزارش بستن صندوق	D4		'تاریخ'!EN	1	1405	
+گزارش بستن صندوق	E6		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_CashRegisterClosingReport,4)	1	#NAME?	#NAME?
+گزارش بستن صندوق	F6		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_CashRegisterClosingReport,5)	1	#NAME?	#NAME?
+گزارش بستن صندوق	E7		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_CashRegisterClosingReport,2)	1	#NAME?	#NAME?
+گزارش بستن صندوق	F7		GET_CELL_VALUE_BY_PERSIAN_DATE(BN,CN,DN,Accounting_CashRegisterClosingReport,3)	1	#NAME?	#NAME?
+Kitchen-Dough-Chalebagh	A1		LET(\nsheetName,"خمیر",\ndataRange,"A:E",\nIMPORT_FROM_SHEET(SheetsFileId_Kitchen_Chalebagh,sheetName,dataRange)\n)	1	#REF!	#REF!
+Kitchen_Dough_Naharkhoran	A1		LET(\nsheetName,"خمیر",\ndataRange,"A:E",\nIMPORT_FROM_SHEET(SheetsFileId_Kitchen_Naharkhoran,sheetName,dataRange)\n)	1	#REF!	#REF!
+Salon-Recipts-Chalebagh	A1		LET(\nsheetName,"تعداد فیش هرشب",\ndataRange,"A:D",\nIMPORT_FROM_SHEET(SheetsFileId_Salon_Chalebagh,sheetName,dataRange)\n)	1	#REF!	#REF!
+Salon-Recipts-Naharkhoran	A1		LET(\nsheetName,"تعداد فیش هرشب",\ndataRange,"A:D",\nIMPORT_FROM_SHEET(SheetsFileId_Salon_Naharkhoran,sheetName,dataRange)\n)	1	#REF!	#REF!
+CashRegister-Recipts-Chalebagh	A1		LET(\nsheetName,"تعداد فیش هرشب بجز سالن",\ndataRange,"A:D",\nIMPORT_FROM_SHEET(SheetsFileId_CashRegister_Chalebagh,sheetName,dataRange)\n)	1	#REF!	#REF!
+CashRegister-Recipts-Naharkhora	A1		LET(\nsheetName,"تعداد فیش هرشب بجز سالن",\ndataRange,"A:D",\nIMPORT_FROM_SHEET(SheetsFileId_CashRegister_Naharkhoran,sheetName,dataRange)\n)	1	#REF!	#REF!
+Warehouse-Waste	A1		LET(\nsheetName,"ضایعات",\ndataRange,"A:I",\nIMPORT_FROM_SHEET(SheetsFileId_Warehouse_Chalebagh,sheetName,dataRange)\n)	1	#REF!	#REF!
+Prep-Waste	A1		LET(\nsheetName,"ضایعات",\ndataRange,"A:E",\nIMPORT_FROM_SHEET(SheetsFileId_PrepSection_Chalebagh,sheetName,dataRange)\n)	1	#REF!	#REF!
+Accounting-CashRegisterClosingR	A1		LET(\nsheetName,"گزارش بستن صندوق",\ndataRange,"A:E",\nIMPORT_FROM_SHEET(SheetsFileId_Accounting_Chalebagh,sheetName,dataRange)\n)	1	#REF!	#REF!
+Prep-Dough	A1		LET(\nsheetName,"خمیر",\ndataRange,"A:E",\nIMPORT_FROM_SHEET(SheetsFileId_PrepSection_Chalebagh,sheetName,dataRange)\n)	1	#REF!	#REF!
+Prep-PrepOutputToWarehouse	A1		LET(\nsheetName,"خروجی آماده سازی به انبار",\ndataRange,"A:X",\nIMPORT_FROM_SHEET(SheetsFileId_PrepSection_Chalebagh,sheetName,dataRange)\n)	1	#REF!	#REF!
+Prep-PrepInputFromWarehouse	A1		LET(\nsheetName,"ورودی آماده سازی از انبار",\ndataRange,"A:X",\nIMPORT_FROM_SHEET(SheetsFileId_PrepSection_Chalebagh,sheetName,dataRange)\n)	1	#REF!	#REF!
+Warehouse-WarehouseOutputToPrep	A1		LET(\nsheetName,"خروجی انبار به آماده سازی",\ndataRange,"A:X",\nIMPORT_FROM_SHEET(SheetsFileId_Warehouse_Chalebagh,sheetName,dataRange)\n)	1	#REF!	#REF!
+Warehouse-WarehouseInputFromPre	A1		LET(\nsheetName,"ورودی انبار از آماده سازی",\ndataRange,"A:X",\nIMPORT_FROM_SHEET(SheetsFileId_Warehouse_Chalebagh,sheetName,dataRange)\n)	1	#REF!	#REF!
+Accounting-Statistics	A1		LET(\nsheetName,"آمار",\ndataRange,"A:X",\nIMPORT_FROM_SHEET(SheetsFileId_Accounting_Chalebagh,sheetName,dataRange)\n)	1	#REF!	#REF!
+Accounting-Mismatch-Chalebagh	A1		LET(\nsheetName,"انحراف آمارگیری شعبه چاله باغ",\ndataRange,"A:AI",\nIMPORT_FROM_SHEET(SheetsFileId_Accounting_Chalebagh,sheetName,dataRange)\n)	1	#REF!	#REF!
+Accounting-Mismatch-NaharKhoran	A1		LET(\nsheetName,"انحراف آمارگیری شعبه ناهارخوران",\ndataRange,"A:AI",\nIMPORT_FROM_SHEET(SheetsFileId_Accounting_Chalebagh,sheetName,dataRange)\n)	1	#REF!	#REF!
