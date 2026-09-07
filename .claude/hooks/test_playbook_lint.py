@@ -42,6 +42,10 @@ BARE_FENCE = re.compile(r"^```[ \t]*$\n(.*?)^```[ \t]*$", re.M | re.S)
 #: A command the playbook prints inline instead of in a fence — same rules.
 INLINE_COMMAND = re.compile(r"`(Bash: [^`]+)`")
 KEYWORD_FENCE = re.compile(r"^```feel-keywords[ \t]*$\n(.*?)^```[ \t]*$", re.M | re.S)
+#: Stage U's own section, heading to next heading. Two sentences of it are
+#: mechanical rules of the engine (addendum §3.5), and prose that states a
+#: mechanical rule is exactly the prose that drifts once the mechanism changes.
+STAGE_U = re.compile(r"^## Stage U\b.*?(?=^## )", re.M | re.S)
 
 #: The nine department slugs. The owner reads «آشپزخانه», never `cooking`.
 DEPARTMENTS = ("cooking", "cashier", "warehouse", "dining", "preparation",
@@ -222,3 +226,15 @@ def test_the_expression_card_quotes_the_two_grammars_verbatim():
     card = AGENT.read_text(encoding="utf-8")
     assert mf.SEGMENT_RE.pattern in card
     assert mf.KEY_RE.pattern in card
+
+
+def test_stage_u_states_the_two_caps_as_the_engine_s():
+    stage = STAGE_U.search(PLAYBOOK.read_text(encoding="utf-8"))
+    assert stage is not None, "Stage U is gone from the playbook"
+    text = stage.group(0)
+    # §3.5's first cap: the engine refuses the third output, so the playbook may
+    # not offer one — the v3 run's coordinator dispatched `out.3.json`.
+    assert "refuses `out.3.json`" in text
+    assert "Never ask the owner to lift the cap" in text
+    # §3.5's second: `yield: true` is a stop, not a hint.
+    assert "You never continue past a `yield: true`" in text
