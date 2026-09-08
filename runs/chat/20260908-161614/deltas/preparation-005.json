@@ -1,0 +1,66 @@
+{
+  "set_process": {
+    "name": "فرایندهای لاین سبزیجات آماده‌سازی"
+  },
+  "add_nodes": [
+    {
+      "key": "n1",
+      "type": "activity",
+      "label": "تولید سالاد کنتاکی",
+      "description": "سالاد کنتاکی هم در لاین سبزیجات آماده‌سازی تولید می‌شود.",
+      "actor": "پرسنل لاین سبزیجات",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [
+          "سالاد کنتاکی آماده"
+        ],
+        "mechanisms": [
+          "پرسنل لاین سبزیجات"
+        ]
+      },
+      "subprocess": null
+    },
+    {
+      "key": "n2",
+      "type": "activity",
+      "label": "تولید مرغ پیتزا",
+      "description": "پخت، اسلایس و سس‌زنی مرغ پیتزا هم در لاین سبزیجات آماده‌سازی انجام می‌شود.",
+      "actor": "پرسنل لاین سبزیجات",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [
+          "مرغ پیتزای آماده"
+        ],
+        "mechanisms": [
+          "پرسنل لاین سبزیجات"
+        ]
+      },
+      "subprocess": null
+    }
+  ],
+  "add_edges": [
+    {
+      "from": "preparation-005-n007",
+      "to": "n1"
+    },
+    {
+      "from": "n1",
+      "to": "n2"
+    },
+    {
+      "from": "n2",
+      "to": "preparation-005-n008"
+    }
+  ],
+  "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [
+    {
+      "from": "preparation-005-n007",
+      "to": "preparation-005-n008"
+    }
+  ],
+  "flag_removed": []
+}

@@ -8,9 +8,12 @@
     "ref": "20260904-210205",
     "run": "runs/preparation/20260904-210205"
   },
-  "parent": null,
+  "parent": {
+    "process": "preparation-005",
+    "node": "preparation-005-n010"
+  },
   "created_at": "2026-09-04T23:44:43Z",
-  "updated_at": "2026-09-04T23:44:43Z",
+  "updated_at": "2026-09-08T16:16:29Z",
   "idef0": {
     "inputs": [
       "کلم",
