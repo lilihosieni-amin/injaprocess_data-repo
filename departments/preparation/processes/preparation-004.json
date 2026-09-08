@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-04T23:44:42Z",
-  "updated_at": "2026-09-08T14:32:00Z",
+  "updated_at": "2026-09-08T14:45:11Z",
   "idef0": {
     "inputs": [
       "چک‌لیست و لیست درخواست شب قبل آماده‌سازی",
@@ -77,8 +77,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 37.2222222222222,
-        "y": 167.77777777777777
+        "x": -66.7777777777778,
+        "y": 1.7777777777777715
       },
       "layout": "manual",
       "source": {
@@ -108,13 +108,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 90.0
+        "x": 170,
+        "y": 10
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -124,7 +126,7 @@
       "direction": "split",
       "position": {
         "x": 103,
-        "y": 981.0
+        "y": 981
       },
       "layout": "auto",
       "removed": true
@@ -152,7 +154,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 1665.0
+        "y": 1665
       },
       "layout": "auto",
       "source": {
@@ -170,7 +172,7 @@
       "direction": "join",
       "position": {
         "x": 103,
-        "y": 1156.0
+        "y": 1156
       },
       "layout": "auto",
       "removed": true
@@ -195,8 +197,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1492,
-        "y": 587.5
+        "x": 416,
+        "y": 9.5
       },
       "layout": "manual",
       "source": {
@@ -229,13 +231,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 90.0
+        "x": 742,
+        "y": -6
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -245,7 +249,7 @@
       "direction": "split",
       "position": {
         "x": 1143,
-        "y": 106.0
+        "y": 106
       },
       "layout": "auto"
     },
@@ -271,7 +275,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -299,7 +303,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -330,7 +334,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -344,10 +348,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 363,
-        "y": 368.5
+        "x": 475,
+        "y": 302.5
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "preparation-004-n009",
@@ -374,7 +378,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 1840.0
+        "y": 1840
       },
       "layout": "auto",
       "source": {
@@ -391,10 +395,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 368.5
+        "x": 319,
+        "y": 334.5
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "preparation-004-n010",
@@ -420,8 +424,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1140,
-        "y": 811
+        "x": 46,
+        "y": 224.30004119873047
       },
       "layout": "manual",
       "source": {
@@ -508,7 +512,7 @@
       "direction": "join",
       "position": {
         "x": 103,
-        "y": 1331.0
+        "y": 1331
       },
       "layout": "auto",
       "removed": true
@@ -539,7 +543,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 2365.0
+        "y": 2365
       },
       "layout": "auto",
       "source": {
@@ -557,7 +561,7 @@
       "direction": "split",
       "position": {
         "x": 103,
-        "y": 1506.0
+        "y": 1506
       },
       "layout": "auto",
       "removed": true
@@ -622,7 +626,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 2715.0
+        "y": 2715
       },
       "layout": "auto",
       "source": {
@@ -689,8 +693,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 416,
-        "y": 1774.25
+        "x": 62,
+        "y": 549.4800109863281
       },
       "layout": "manual",
       "source": {
