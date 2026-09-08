@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-04T23:44:42Z",
-  "updated_at": "2026-09-04T23:44:42Z",
+  "updated_at": "2026-09-08T11:54:45Z",
   "idef0": {
     "inputs": [
       "فرم درخواست کالای روزانه آماده‌سازی (چک‌لیست غروب)",
@@ -75,7 +75,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -102,7 +102,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -127,7 +127,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -156,7 +156,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -187,7 +187,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -312,7 +312,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -336,13 +336,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 615.0
+        "x": 271.119960286627,
+        "y": 238.07183052770398
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -363,13 +365,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 440.0
+        "x": 201.73577656910996,
+        "y": 505.17626694293364
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -392,13 +396,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 790.0
+        "x": 61.90710524043858,
+        "y": 649.7945264611932
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -423,13 +429,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 790.0
+        "x": 212.37157903824567,
+        "y": 790
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -454,13 +462,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 790.0
+        "x": 447.17840801174145,
+        "y": 791.0953552620218
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -481,13 +491,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 790.0
+        "x": 679.7945264611931,
+        "y": 799.8581973581973
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -510,13 +522,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 790.0
+        "x": 932.1270396270395,
+        "y": 816.2885262885263
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
