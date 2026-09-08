@@ -1,0 +1,25 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "revise_nodes": [
+    {
+      "id": "preparation-003-n007",
+      "set": {
+        "icom": {
+          "inputs": [
+            "فرم پرینتی مرینت‌ها"
+          ],
+          "controls": [],
+          "outputs": [],
+          "mechanisms": [
+            "مسئول لاین مرینت",
+            "انباردار"
+          ]
+        }
+      }
+    }
+  ],
+  "remove_edges": [],
+  "flag_removed": []
+}
