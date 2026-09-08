@@ -501,5 +501,27 @@
       ],
       "unresolved": []
     }
-  ]
+  ],
+  "conventions": {
+    "code_namespaces": {
+      "##": "ing",
+      "#": "food"
+    },
+    "placeholder_header": "^Column [0-9]+$",
+    "month_names": [
+      "فروردین",
+      "اردیبهشت",
+      "خرداد",
+      "تیر",
+      "مرداد",
+      "شهریور",
+      "مهر",
+      "آبان",
+      "آذر",
+      "دی",
+      "بهمن",
+      "اسفند"
+    ],
+    "table_prefix": "Table_"
+  }
 }
