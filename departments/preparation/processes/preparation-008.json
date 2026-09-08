@@ -13,7 +13,7 @@
     "node": "preparation-005-n007"
   },
   "created_at": "2026-09-04T23:44:43Z",
-  "updated_at": "2026-09-04T23:44:43Z",
+  "updated_at": "2026-09-08T15:48:15Z",
   "idef0": {
     "inputs": [
       "قارچ تحویلی از انبار",
@@ -89,7 +89,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
+        "x": 560,
         "y": 90.0
       },
       "layout": "auto",
@@ -122,7 +122,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
+        "x": 820,
         "y": 90.0
       },
       "layout": "auto",
@@ -154,7 +154,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
+        "x": 1080,
         "y": 90.0
       },
       "layout": "auto",
@@ -186,7 +186,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 90.0
+        "y": 265.0
       },
       "layout": "auto",
       "source": {
@@ -212,7 +212,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
+        "x": 820,
         "y": 265.0
       },
       "layout": "auto",
@@ -241,7 +241,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
+        "x": 560,
         "y": 265.0
       },
       "layout": "auto",
@@ -273,7 +273,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
+        "x": 300,
         "y": 265.0
       },
       "layout": "auto",
@@ -304,7 +304,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
+        "x": 40,
         "y": 265.0
       },
       "layout": "auto",
@@ -334,7 +334,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 265.0
+        "y": 440.0
       },
       "layout": "auto",
       "source": {
@@ -363,7 +363,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
+        "x": 300,
         "y": 440.0
       },
       "layout": "auto",
@@ -392,7 +392,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
+        "x": 560,
         "y": 440.0
       },
       "layout": "auto",
@@ -421,7 +421,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
+        "x": 820,
         "y": 440.0
       },
       "layout": "auto",
@@ -453,7 +453,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
+        "x": 1080,
         "y": 440.0
       },
       "layout": "auto",
@@ -461,13 +461,41 @@
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": []
       }
+    },
+    {
+      "id": "preparation-008-n015",
+      "type": "activity",
+      "label": "بررسی میزان سفارش قارچ و تأمین آن از دو منبع توسط انبار",
+      "description": "انبار خودش وزن‌گیری می‌کند که چند کیلو قارچ موجود است و سفارش روز را از دو منبع تأمین می‌کند: قارچ موجود در خود انبار، و قارچ باقی‌مانده از قسمت سوخاری از روز قبل. قارچ باقی‌مانده شب‌ها به‌صورت امانی در یخچال انبار که داخل واحد آماده‌سازی است نگهداری می‌شود و دست آماده‌سازی نیست؛ فردا خود پرسنل انبار باید آن را بیاورند. مثلاً وقتی امروز ده کیلو قارچ لازم است و دیشب پنج کیلو برگشته، انبار ادامه‌اش را از انبار برمی‌دارد و بالا می‌آورد.",
+      "actor": "انبار",
+      "icom": {
+        "inputs": [
+          "درخواست قارچ در لیست تکمیلی انبار"
+        ],
+        "controls": [
+          "نگهداری امانی قارچ باقی‌مانده در یخچال انبار داخل آماده‌سازی"
+        ],
+        "outputs": [
+          "قارچ تأمین‌شده از انبار و قارچ امانی روز قبل"
+        ],
+        "mechanisms": [
+          "انبار",
+          "یخچال انبار در واحد آماده‌سازی"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260908-154802",
+        "touched_by": []
+      }
     }
   ],
   "edges": [
-    {
-      "from": "preparation-008-n001",
-      "to": "preparation-008-n002"
-    },
     {
       "from": "preparation-008-n002",
       "to": "preparation-008-n003"
@@ -515,6 +543,14 @@
     {
       "from": "preparation-008-n013",
       "to": "preparation-008-n014"
+    },
+    {
+      "from": "preparation-008-n001",
+      "to": "preparation-008-n015"
+    },
+    {
+      "from": "preparation-008-n015",
+      "to": "preparation-008-n002"
     }
   ],
   "pending": []
