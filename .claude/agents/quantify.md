@@ -121,7 +121,7 @@ Rules the validator enforces, so get them right the first time:
 | note (`new` only) | `about[]` (at least one ref) and `question`, both required | the key |
 
 A column whose cells are names is `type: string`; `refItems` is only for cells that are the
-catalogue's `##` codes or item keys.
+catalogue's codes (the namespaces your input's shape section names) or item keys.
 
 **A rule whose bindings carry a varying number or a varying basis column is ONE rule.** The
 tolerances 5 / 140 / 4 / 75 / 100 are not five rules and not five constants: they are the values of
@@ -213,8 +213,9 @@ cell name and no Latin except an item code.
 computed, in what unit, by whom, when; for a record, what it is and who fills it; for an item, what
 it is and how it is counted.
 
-Never, in either: an A1 address, a column letter, a tab, file or `Table_*` name, formula text, a
-function name, a schema field name, the pipeline's own words («پاس», «اسکلت», «بخش از داده‌ها»,
+Never, in either: an A1 address, a column letter, a tab name, a table or file name of the kind your
+input's shape section lists, formula text, a function name, a schema field name, the pipeline's own
+words («پاس», «اسکلت», «بخش از داده‌ها»,
 «واحد کاری», «بچ», `original`, `bindings`, `FEEL`, `account`, `expr`), a quotation, «گفته شد»,
 «گوینده». Locators belong in `source[]`, quotes in `source[].quote` and `accounts[].statement`.
 «ستون», «تب» and «سلول» are allowed **only** in a record's own `statement` and in a field's
@@ -228,8 +229,8 @@ The worked pair — the left side is refused, the right side is the same fact wr
 
 The lint runs on `title`, `statement`, `aliases[]`, and on `fields[].description`, `grain`,
 `method`, `exceptions`, `tracked[].reason` and any `issues[].description` you wrote. It refuses a
-reference token, `.xlsx`, `.gs`, `Table_`, `IMPORT_FROM_SHEET`, `LET(`, `LAMBDA`, the pipeline
-words, any Latin token of four letters or more (except `csv`, `Excel`, `sheet`, a unit symbol your
+reference token, `.xlsx`, `.gs`, a table name of the kind your input's shape section lists,
+`IMPORT_FROM_SHEET`, `LET(`, `LAMBDA`, the pipeline words, any Latin token of four letters or more (except `csv`, `Excel`, `sheet`, a unit symbol your
 input listed, and an item code), a quoted span longer than eight words, and the colloquial endings
 «می‌زنن», «می‌کنن», «داشته باشن», «بگیم», «می‌گیم». A failing sentence comes back to **you**, so
 write it right rather than fixing it on a retry.

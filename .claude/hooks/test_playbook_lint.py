@@ -268,7 +268,8 @@ def test_review_mode_admits_a_contradiction_only_on_a_flagged_field():
 def test_the_unit_contract_says_a_column_of_names_is_a_string():
     assert (
         "A column whose cells are names is `type: string`; `refItems` is only"
-        " for cells that are the catalogue's `##` codes or item keys."
+        " for cells that are the catalogue's codes (the namespaces your input's"
+        " shape section names) or item keys."
     ) in agent_section("What you decide, per kind")
 
 
