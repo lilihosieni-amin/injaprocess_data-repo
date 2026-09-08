@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-04T23:44:42Z",
-  "updated_at": "2026-09-08T12:13:48Z",
+  "updated_at": "2026-09-08T14:53:19Z",
   "idef0": {
     "inputs": [
       "فرم درخواست کالای روزانه آماده‌سازی (چک‌لیست غروب)",
@@ -292,10 +292,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
-        "y": 368.5
+        "x": 389.8672246341244,
+        "y": 422.2344492682488
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "preparation-003-n009",
@@ -315,12 +315,14 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 265
+        "y": 282.2717872647943
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -368,8 +370,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 201.73577656910996,
-        "y": 505.17626694293364
+        "x": 172.9494644611196,
+        "y": 635.6742151658236
       },
       "layout": "manual",
       "source": {
@@ -399,8 +401,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 61.90710524043858,
-        "y": 649.7945264611932
+        "x": 194.32414093719456,
+        "y": 778.3733872102171
       },
       "layout": "manual",
       "source": {
@@ -433,8 +435,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 212.37157903824567,
-        "y": 790
+        "x": 195.09979177345141,
+        "y": 932.0124730660863
       },
       "layout": "manual",
       "source": {
@@ -467,8 +469,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 447.17840801174145,
-        "y": 791.0953552620218
+        "x": 435.6638831685453,
+        "y": 917.7551285371798
       },
       "layout": "manual",
       "source": {
@@ -496,8 +498,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 679.7945264611931,
-        "y": 799.8581973581973
+        "x": 664.4418266702648,
+        "y": 915.0034457901592
       },
       "layout": "manual",
       "source": {
@@ -527,8 +529,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 932.1270396270395,
-        "y": 816.2885262885263
+        "x": 899.502552571317,
+        "y": 925.67651229889
       },
       "layout": "manual",
       "source": {
@@ -556,13 +558,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 440.0
+        "x": 178.17429811835407,
+        "y": 485.2137035197492
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260908-120221",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
