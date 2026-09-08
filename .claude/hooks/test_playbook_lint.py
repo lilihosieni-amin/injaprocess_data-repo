@@ -238,3 +238,42 @@ def test_stage_u_states_the_two_caps_as_the_engine_s():
     assert "Never ask the owner to lift the cap" in text
     # §3.5's second: `yield: true` is a stop, not a hint.
     assert "You never continue past a `yield: true`" in text
+
+
+def agent_section(heading):
+    """One `###` section of the agent file, flattened to a single line.
+
+    The agent wraps its prose, so a pinned sentence spans lines; flattening
+    makes the sentence in the file comparable with the sentence here.
+    """
+    text = AGENT.read_text(encoding="utf-8")
+    found = re.search(rf"^### {heading}\b.*?(?=^### )", text, re.M | re.S)
+    assert found is not None, f"section {heading!r} is gone from quantify.md"
+    return " ".join(found.group(0).split())
+
+
+# The three sentences the v3 acceptance run cost us (design §3.6): the reviewer
+# wrote `contradiction` on fields nothing flagged, a unit typed a column of
+# ingredient names as `refItems`, and a unit named parameter-bound inputs by
+# position. Each is a mechanical rule, and prose stating one drifts unpinned.
+
+def test_review_mode_admits_a_contradiction_only_on_a_flagged_field():
+    assert (
+        "A `contradiction` is admissible only on a field the digest lists under"
+        " its drift flags; two entries you believe disagree on any other field"
+        " are a `keep` carrying the reason, never a `contradiction`."
+    ) in agent_section("`review` mode")
+
+
+def test_the_unit_contract_says_a_column_of_names_is_a_string():
+    assert (
+        "A column whose cells are names is `type: string`; `refItems` is only"
+        " for cells that are the catalogue's `##` codes or item keys."
+    ) in agent_section("What you decide, per kind")
+
+
+def test_the_unit_contract_names_a_bound_input_after_its_column():
+    assert (
+        "An input bound through a parameter takes its key and title from the"
+        " column the parameter resolves to, as printed under the candidate."
+    ) in agent_section("What you decide, per kind")
