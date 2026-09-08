@@ -1,4 +1,351 @@
 {
   "schema_version": 2,
-  "entries": []
+  "entries": [
+    {
+      "kind": "note",
+      "key": "note_887a9c60ad29",
+      "title": "تغییر اندازه بسته پنیر پارمسان",
+      "statement": "اندازه بسته پنیر پارمسان از دویست گرم به صد گرم تغییر کرده است و مانده کمتر از یک بسته با دقت گرم نوشته می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/cooking-1405-05-26.txt",
+          "lines": "1-174",
+          "hash": "sha256:b85c2a0c6fbc8d7218dd41051ac682d8150905be5340fcafac209c0437157357",
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00066"
+          }
+        ],
+        "question": "اندازه بسته ثبت‌شده برای پنیر پارمسان صد گرم است یا هنوز دویست گرم؟"
+      },
+      "id": "F-00220",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_de66a13131a3",
+      "title": "دامنه آمار مانده کانتر",
+      "statement": "در پایان شب از کانتر تنها مانده نوشیدنی‌ها به حسابداری داده می‌شود، در حالی که سالاد کنتاکی و نان مینی‌مک هر شب برای سفارش فردا شمارش می‌شوند. دلستر که پیش‌تر یکپارچه ثبت می‌شد اکنون باید به تفکیک نوع نوشته شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/cooking-1405-05-26.txt",
+          "lines": "1-174",
+          "hash": "sha256:b85c2a0c6fbc8d7218dd41051ac682d8150905be5340fcafac209c0437157357",
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00149"
+          }
+        ],
+        "question": "آیا مانده سالاد کنتاکی و نان مینی‌مک هم باید در کانتر ثبت شود و آیا سه نوع دلستر جدا از هم نوشته می‌شوند؟"
+      },
+      "id": "F-00221",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_cee30b114c6f",
+      "title": "سطح ثبت سنجش کیفیت شبانه",
+      "statement": "سنجش کیفیت هر شب برای کل بخش ثبت می‌شود و نه برای یک غذا، و مقدار آن یکی از سه سطح خوب، متوسط یا بد است؛ نبود یک ماده و جایگزینی آن نمونه‌ای از دلیل افت کیفیت بخش است.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/cooking-1405-05-26.txt",
+          "lines": "1-174",
+          "hash": "sha256:b85c2a0c6fbc8d7218dd41051ac682d8150905be5340fcafac209c0437157357",
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00150"
+          }
+        ],
+        "question": "آیا مقادیر مجاز سنجش کیفیت همان سه سطح خوب، متوسط و بد است و ثبت آن در سطح بخش انجام می‌شود؟"
+      },
+      "id": "F-00222",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_153ea970b4e3",
+      "title": "مبنای شمارش پنیر گودا",
+      "statement": "مانده پنیر گودا در لاین فرنگی به‌صورت کارتن کامل یا کارتن باز ثبت می‌شود، ولی تعداد ورق هر کارتن و معادل یک کارتن باز مشخص نیست.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/cooking-1405-05-26.txt",
+          "lines": "175-347",
+          "hash": "sha256:b85c2a0c6fbc8d7218dd41051ac682d8150905be5340fcafac209c0437157357",
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00006"
+          }
+        ],
+        "question": "هر کارتن پنیر گودا چند ورق دارد و کارتن باز در مانده پایان شب معادل چه مقداری حساب می‌شود؟"
+      },
+      "id": "F-00223",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_b15b330cb711",
+      "title": "نسبت فرم کاغذی ضایعات با ثبت ضایعات",
+      "statement": "روشن نیست ضایعات غیرمحصولی که با فرم کاغذی و پس از وزن‌کشی تحویل انبار می‌شود، در ثبت ضایعات آشپزخانه هم وارد می‌شود یا جداگانه نگه داشته می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/cooking-1405-05-26.txt",
+          "lines": "348-452",
+          "hash": "sha256:b85c2a0c6fbc8d7218dd41051ac682d8150905be5340fcafac209c0437157357",
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00165"
+          }
+        ],
+        "question": "آیا مقدار ضایعات غیرمحصول که در فرم کاغذی نوشته و به انبار تحویل می‌شود در همین ثبت هم وارد می‌شود یا این دو ثبت جدا از هم‌اند؟"
+      },
+      "id": "F-00224",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_3154518a397f",
+      "title": "نسبت برگهٔ مرخصی هفتگی با ثبت آف",
+      "statement": "روشن نیست آف هفتگی و مرخصی ساعتی که در برگهٔ کاغذی حسابداری نوشته می‌شود همان چیزی است که در این ثبت وارد می‌شود یا دو ثبت جداگانه‌اند.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/cooking-1405-05-26.txt",
+          "lines": "348-452",
+          "hash": "sha256:b85c2a0c6fbc8d7218dd41051ac682d8150905be5340fcafac209c0437157357",
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00164"
+          }
+        ],
+        "question": "آیا آف هفتگی و مرخصی ساعتی ثبت‌شده در برگهٔ کاغذی حسابداری همان مواردی است که در این ثبت وارد می‌شود؟"
+      },
+      "id": "F-00225",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_e45586d3e4fb",
+      "title": "برابری مصرف اعلامی با دریافت از انبار",
+      "statement": "در فرم‌های موجودی شب دیده شده است که عدد مصرف اعلامی هر ردیف دقیقاً برابر عدد دریافت از انبار همان ردیف است. این برابری با تعریف مصرف اعلامی سازگار نیست و باید بررسی شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/cooking-1405-06-01.txt",
+          "lines": "1-114",
+          "hash": "sha256:5d8d93c83bad2fd84bb6a8a28751cd50781e3d5d63ac28c80081f7b4db57b1d0",
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00147"
+          },
+          {
+            "ref": "F-00161"
+          },
+          {
+            "ref": "F-00153"
+          },
+          {
+            "ref": "F-00151"
+          },
+          {
+            "ref": "F-00169"
+          },
+          {
+            "ref": "F-00173"
+          }
+        ],
+        "question": "چرا در فرم‌های موجودی شب، مقدار مصرف اعلامی هر ردیف با مقدار دریافت از انبار همان ردیف یکسان ثبت شده است؟"
+      },
+      "id": "F-00226",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_2312100717f9",
+      "title": "پرکننده موجودی آخر شب",
+      "statement": "مانده آخر شب هر شب توسط خود نیروی لاین ثبت می‌شود و همان اطلاعات به‌صورت رایانه‌ای هم وارد می‌شود؛ باید روشن شود که پرکننده این جدول‌ها نیروی لاین است، نه حسابداری.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/cooking-1405-06-10.txt",
+          "lines": "1-75",
+          "hash": "sha256:4a0c2b1a5605905d28f001615e8efcc71651d538e0cebc69026faa8e2a3971ee",
+          "run": "runs/facts/cooking/20260908-151433"
+        },
+        {
+          "type": "photo",
+          "ref": "departments/cooking/attachments/.text/photo_2026-08-29_14-23-51.image.md",
+          "hash": "sha256:4e924d40a0f66e4e9e0b5a81e6ae0f3a2420f805060dcbe1c50d20c7e9b9c4e1",
+          "run": "runs/facts/cooking/20260908-151433"
+        },
+        {
+          "type": "photo",
+          "ref": "departments/cooking/attachments/.text/photo_2026-08-29_14-23-56.image.md",
+          "hash": "sha256:144255103f6868e0b1464296cd89ba8f06652226238405f16c6beaf0a953ea82",
+          "run": "runs/facts/cooking/20260908-151433"
+        },
+        {
+          "type": "docx",
+          "ref": "departments/cooking/attachments/.text/شرح_شغل_سرپرست_آشپزخانه___2_.txt",
+          "hash": "sha256:457fce62ff762a849e164b1e645535550c98bdeb604f0e47fbfdb956382d2e63",
+          "run": "runs/facts/cooking/20260908-151433"
+        },
+        {
+          "type": "docx",
+          "ref": "departments/cooking/attachments/.text/شرح_شغل_کارکنان_آشپزخانه.txt",
+          "hash": "sha256:5c6a1786b64737a9ada2fc0c1f8f1de7b43340fff09104d7414fa36139d534ce",
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00161"
+          },
+          {
+            "ref": "F-00151"
+          },
+          {
+            "ref": "F-00173"
+          },
+          {
+            "ref": "F-00160"
+          }
+        ],
+        "question": "آیا این جدول‌ها را هر شب خود نیروی لاین پر می‌کند، یا حسابداری آن‌ها را از روی فرم کاغذی مانده آخر شب وارد می‌کند؟"
+      },
+      "id": "F-00227",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    }
+  ]
 }

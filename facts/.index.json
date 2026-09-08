@@ -2,6 +2,3503 @@
   "schema_version": 2,
   "entries": [
     {
+      "id": "F-00002",
+      "kind": "item",
+      "key": "inja_burger",
+      "title": "اینجا برگر",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00003",
+      "kind": "item",
+      "key": "jabe_sib_o_qarch",
+      "title": "جعبه سیب و قارچ",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00004",
+      "kind": "item",
+      "key": "mini_mak_43",
+      "title": "نان مینی مک",
+      "aliases": [
+        "تعداد مینی مک",
+        "مینی مک"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00005",
+      "kind": "item",
+      "key": "file_morgh_sukhari_tond",
+      "title": "فیله مرغ سوخاری تند",
+      "aliases": [
+        "تعداد فیله مرغ سوخاری تند"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00006",
+      "kind": "item",
+      "key": "panir_guda_farangi",
+      "title": "پنیر گودا فرنگی",
+      "aliases": [
+        "تعداد پنیر گودا"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00007",
+      "kind": "item",
+      "key": "rema_alfredo",
+      "title": "رما آلفردو",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00008",
+      "kind": "item",
+      "key": "gusht_charkh_karde",
+      "title": "گوشت چرخ کرده",
+      "aliases": [
+        "وزن گوشت چرخ کرده"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00009",
+      "kind": "item",
+      "key": "karton_italiyayi",
+      "title": "کارتن ایتالیایی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00010",
+      "kind": "item",
+      "key": "file_espaysi_chahar_tekke",
+      "title": "فیله اسپایسی چهار تکه",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00011",
+      "kind": "item",
+      "key": "burger_klasik",
+      "title": "برگر کلاسیک",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00012",
+      "kind": "item",
+      "key": "peperoni_75",
+      "title": "پپرونی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00013",
+      "kind": "item",
+      "key": "filadelfia_552",
+      "title": "فیلادلفیا",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00014",
+      "kind": "item",
+      "key": "mit_780",
+      "title": "میت",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00015",
+      "kind": "item",
+      "key": "khamir_pitza",
+      "title": "خمیر پیتزا",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00016",
+      "kind": "item",
+      "key": "dabl_king",
+      "title": "دبل کینگ",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00017",
+      "kind": "item",
+      "key": "zinger_plas",
+      "title": "زینگرپلاس",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00018",
+      "kind": "item",
+      "key": "makhsus_767",
+      "title": "مخصوص",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00019",
+      "kind": "item",
+      "key": "dabl_dan",
+      "title": "دبل دان",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00020",
+      "kind": "item",
+      "key": "felfel_dolme_miks",
+      "title": "فلفل دلمه میکس",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00021",
+      "kind": "item",
+      "key": "ses_goje_kaf",
+      "title": "سس گوجه کف پیتزا",
+      "aliases": [
+        "سس گوجه کف"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00022",
+      "kind": "item",
+      "key": "zeytun_siah",
+      "title": "زیتون سیاه",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00023",
+      "kind": "item",
+      "key": "krakof_766",
+      "title": "کراکف",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00024",
+      "kind": "item",
+      "key": "pitza_kapri_chiyusa",
+      "title": "پیتزا کاپری چیوسا",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00025",
+      "kind": "item",
+      "key": "dabl_burger",
+      "title": "دبل برگر",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00026",
+      "kind": "item",
+      "key": "gusht_rostbif_farangi",
+      "title": "گوشت رستبیف فرنگی",
+      "aliases": [
+        "وزن گوشت رستبیف فرنگی"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00027",
+      "kind": "item",
+      "key": "beykan_sandevich",
+      "title": "بیکن ساندویچ",
+      "aliases": [
+        "وزن بیکن ساندویچ",
+        "تعداد بیکن ساندویچ"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00028",
+      "kind": "item",
+      "key": "susis_krakof",
+      "title": "سوسیس کراکف",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00029",
+      "kind": "item",
+      "key": "bif_esteroganof",
+      "title": "بیف استراگانف",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00030",
+      "kind": "item",
+      "key": "mekzikano",
+      "title": "مکزیکانو",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00031",
+      "kind": "item",
+      "key": "kabab_torki",
+      "title": "کباب ترکی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00032",
+      "kind": "item",
+      "key": "qarch_sukhari_5",
+      "title": "قارچ سوخاری",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00033",
+      "kind": "item",
+      "key": "gusht_rost_bif",
+      "title": "گوشت رست بیف",
+      "aliases": [
+        "وزن گوشت رست بیف"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00034",
+      "kind": "item",
+      "key": "nushabe_khanevade_sun_ap",
+      "title": "نوشابه خانواده سون آپ",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00035",
+      "kind": "item",
+      "key": "kahu_pak_shode",
+      "title": "کاهو پاک شده",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00036",
+      "kind": "item",
+      "key": "se_paye_pitza",
+      "title": "سه پایه پیتزا",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00037",
+      "kind": "item",
+      "key": "ses_kaf_rost_bif",
+      "title": "سس کف رست بیف",
+      "aliases": [
+        "سس رست بیف"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00038",
+      "kind": "item",
+      "key": "dorchin_esteyk",
+      "title": "دورچین استیک",
+      "aliases": [
+        "پرس دورچین استیک"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00039",
+      "kind": "item",
+      "key": "nan_baget",
+      "title": "نان باگت",
+      "aliases": [
+        "تعداد نان باگت"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00040",
+      "kind": "item",
+      "key": "dugh_sun_kale",
+      "title": "دوغ سون کاله",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00041",
+      "kind": "item",
+      "key": "jabe_sukhari",
+      "title": "جعبه سوخاری",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00042",
+      "kind": "item",
+      "key": "sandevich_rostbif",
+      "title": "ساندویچ رستبیف",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00043",
+      "kind": "item",
+      "key": "burger",
+      "title": "برگر",
+      "aliases": [
+        "تعداد برگر"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00044",
+      "kind": "item",
+      "key": "karton_emrikayi",
+      "title": "کارتن امریکایی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00045",
+      "kind": "item",
+      "key": "makhsus_782",
+      "title": "مخصوص",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00046",
+      "kind": "item",
+      "key": "morgh_pitza",
+      "title": "مرغ پیتزا",
+      "aliases": [
+        "وزن مرغ پیتزا"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00047",
+      "kind": "item",
+      "key": "salad_chiza",
+      "title": "سالاد چیزا",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00048",
+      "kind": "item",
+      "key": "chikan_esteyk",
+      "title": "چیکن استیک",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00049",
+      "kind": "item",
+      "key": "nushabe_khanevade_ziro",
+      "title": "نوشابه خانواده زیرو",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00050",
+      "kind": "item",
+      "key": "yunani",
+      "title": "یونانی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00051",
+      "kind": "item",
+      "key": "nushabe_quti_esprayt",
+      "title": "نوشابه قوطی اسپرایت",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00052",
+      "kind": "item",
+      "key": "mini_mak_kanter",
+      "title": "مینی مک کانتر",
+      "aliases": [
+        "تعداد مینی مک کانتر"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00053",
+      "kind": "item",
+      "key": "makhlut",
+      "title": "مخلوط",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00054",
+      "kind": "item",
+      "key": "mashrum_burger",
+      "title": "ماشروم برگر",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00055",
+      "kind": "item",
+      "key": "nushabe_khanevade_porteqali",
+      "title": "نوشابه خانواده پرتقالی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00056",
+      "kind": "item",
+      "key": "pasta_pene_morgh",
+      "title": "پاستا پنه مرغ",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00057",
+      "kind": "item",
+      "key": "chikan_esteroganof",
+      "title": "چیکن استراگانف",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00058",
+      "kind": "item",
+      "key": "salad_sezar",
+      "title": "سالاد سزار",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00059",
+      "kind": "item",
+      "key": "limunad_khoshgovar",
+      "title": "لیموناد خوشگوار",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00060",
+      "kind": "item",
+      "key": "chiz_burger",
+      "title": "چیز برگر",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00061",
+      "kind": "item",
+      "key": "pitza_esteyk",
+      "title": "پیتزا استیک",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00062",
+      "kind": "item",
+      "key": "sib_panir",
+      "title": "سیب پنیر",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00063",
+      "kind": "item",
+      "key": "peperoni_781",
+      "title": "پپرونی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00064",
+      "kind": "item",
+      "key": "makhsus_768",
+      "title": "مخصوص",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00065",
+      "kind": "item",
+      "key": "morgh_farangi",
+      "title": "مرغ فرنگی",
+      "aliases": [
+        "وزن مرغ فرنگی"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00066",
+      "kind": "item",
+      "key": "panir_parmisan",
+      "title": "پنیر پارمیسان",
+      "aliases": [
+        "وزن پنیر پارمیسان"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00067",
+      "kind": "item",
+      "key": "sine_morgh_sukhari",
+      "title": "سینه مرغ سوخاری",
+      "aliases": [
+        "تعداد سینه مرغ سوخاری"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00068",
+      "kind": "item",
+      "key": "pitza_napoli",
+      "title": "پیتزا ناپولی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00069",
+      "kind": "item",
+      "key": "nan_sir_pitzayi",
+      "title": "نان سیر پیتزایی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00070",
+      "kind": "item",
+      "key": "lazanya_rost_bif",
+      "title": "لازانیا رست بیف",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00071",
+      "kind": "item",
+      "key": "rostbif_71",
+      "title": "رستبیف",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00072",
+      "kind": "item",
+      "key": "burger_makhsus_769",
+      "title": "برگر مخصوص",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00073",
+      "kind": "item",
+      "key": "sib_zamini_vije",
+      "title": "سیب زمینی ویژه",
+      "aliases": [
+        "میت"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00074",
+      "kind": "item",
+      "key": "loqme_morgh_sukhari",
+      "title": "لقمه مرغ سوخاری",
+      "aliases": [
+        "تعداد لقمه مرغ سوخاری"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00075",
+      "kind": "item",
+      "key": "roghan_zeytun",
+      "title": "روغن زیتون",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00076",
+      "kind": "item",
+      "key": "hat_dag_16",
+      "title": "هات داگ",
+      "aliases": [
+        "تعداد هات داگ"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00077",
+      "kind": "item",
+      "key": "file_morgh_sukhari",
+      "title": "فیله مرغ سوخاری",
+      "aliases": [
+        "تعداد فیله مرغ سوخاری"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00078",
+      "kind": "item",
+      "key": "file_esterips_chahar_tekke",
+      "title": "فیله استریپس چهار تکه",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00079",
+      "kind": "item",
+      "key": "inja_baks",
+      "title": "اینجا باکس",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00080",
+      "kind": "item",
+      "key": "bal_o_kataf",
+      "title": "بال و کتف",
+      "aliases": [
+        "تعداد بال و کتف"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00081",
+      "kind": "item",
+      "key": "pitza_chikan_barbikyu",
+      "title": "پیتزا چیکن باربیکیو",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00082",
+      "kind": "item",
+      "key": "qarch_sukhari_39",
+      "title": "قارچ سوخاری",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00083",
+      "kind": "item",
+      "key": "pitza_chaharfasl",
+      "title": "پیتزا چهارفصل",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00084",
+      "kind": "item",
+      "key": "dugh_quti_khoshgovar",
+      "title": "دوغ قوطی خوشگوار",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00085",
+      "kind": "item",
+      "key": "goje_gilasi",
+      "title": "گوجه گیلاسی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00086",
+      "kind": "item",
+      "key": "makhsus_1",
+      "title": "مخصوص",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00087",
+      "kind": "item",
+      "key": "nushabe_quti_rezhimi",
+      "title": "نوشابه قوطی رژیمی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00088",
+      "kind": "item",
+      "key": "lazanya_bolonz",
+      "title": "لازانیا بلونز",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00089",
+      "kind": "item",
+      "key": "tegzas",
+      "title": "تگزاس",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00090",
+      "kind": "item",
+      "key": "gusht_charkh_karde_farangi",
+      "title": "گوشت چرخ کرده فرنگی",
+      "aliases": [
+        "وزن گوشت چرخ کرده فرنگی"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00091",
+      "kind": "item",
+      "key": "delester_limu",
+      "title": "دلستر لیمو",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00092",
+      "kind": "item",
+      "key": "sabzijat_551",
+      "title": "سبزیجات",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00093",
+      "kind": "item",
+      "key": "filadelfia",
+      "title": "فیلادلفیا",
+      "aliases": [
+        "وزن فیلادلفیا"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00094",
+      "kind": "item",
+      "key": "bal_o_kataf_sukhari",
+      "title": "بال و کتف سوخاری",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00095",
+      "kind": "item",
+      "key": "salad_kentaki_338",
+      "title": "سالاد کنتاکی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00096",
+      "kind": "item",
+      "key": "panir_guda_livani",
+      "title": "پنیر گودا لیوانی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00097",
+      "kind": "item",
+      "key": "panir_pitza",
+      "title": "پنیر پیتزا",
+      "aliases": [
+        "وزن پنیر پیتزا"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00098",
+      "kind": "item",
+      "key": "nushabe_khanevade_meshki",
+      "title": "نوشابه خانواده مشکی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00099",
+      "kind": "item",
+      "key": "ses_alfredo_pitza",
+      "title": "سس آلفردو پیتزا",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00100",
+      "kind": "item",
+      "key": "krispi_sine_do_tekke",
+      "title": "کریسپی سینه دو تکه",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00101",
+      "kind": "item",
+      "key": "nushabe_quti_porteqali",
+      "title": "نوشابه قوطی پرتقالی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00102",
+      "kind": "item",
+      "key": "delester_estvayi",
+      "title": "دلستر استوایی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00103",
+      "kind": "item",
+      "key": "peperoni",
+      "title": "پپرونی",
+      "aliases": [
+        "وزن پپرونی"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00104",
+      "kind": "item",
+      "key": "nushabe_quti_meshki",
+      "title": "نوشابه قوطی مشکی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00105",
+      "kind": "item",
+      "key": "nan_mak",
+      "title": "نان مک",
+      "aliases": [
+        "تعداد نان مک"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00106",
+      "kind": "item",
+      "key": "inja_pitza",
+      "title": "اینجا پیتزا",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00107",
+      "kind": "item",
+      "key": "pasta_pene_kham",
+      "title": "پاستا پنه خام",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00108",
+      "kind": "item",
+      "key": "miks_49",
+      "title": "میکس",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00109",
+      "kind": "item",
+      "key": "zhambon_miks",
+      "title": "ژامبون مرغ و گوشت میکس",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00110",
+      "kind": "item",
+      "key": "file_espaysi_se_tekke",
+      "title": "فیله اسپایسی سه تکه",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00111",
+      "kind": "item",
+      "key": "jafari",
+      "title": "جعفری",
+      "aliases": [
+        "وزن جعفری"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00112",
+      "kind": "item",
+      "key": "mini_burger",
+      "title": "مینی برگر",
+      "aliases": [
+        "تعداد مینی برگر"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00113",
+      "kind": "item",
+      "key": "sib_sorkh_shode",
+      "title": "سیب سرخ شده",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00114",
+      "kind": "item",
+      "key": "salad_chiza_ba_panir_ezafe",
+      "title": "سالاد چیزا با پنیر اضافه",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00115",
+      "kind": "item",
+      "key": "morgh_rol_sukhari",
+      "title": "مرغ رول سوخاری",
+      "aliases": [
+        "تعداد پرس مرغ رول سوخاری"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00116",
+      "kind": "item",
+      "key": "pitza_personeli",
+      "title": "پیتزا پرسنلی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00117",
+      "kind": "item",
+      "key": "krakof_784",
+      "title": "کراکف",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00118",
+      "kind": "item",
+      "key": "mini_mak_348",
+      "title": "مینی مک",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00119",
+      "kind": "item",
+      "key": "hat_dag_139",
+      "title": "هات داگ",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00120",
+      "kind": "item",
+      "key": "qarch_farangi",
+      "title": "قارچ فرنگی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00121",
+      "kind": "item",
+      "key": "qarch_eslays_shode",
+      "title": "قارچ اسلایس شده",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00122",
+      "kind": "item",
+      "key": "doner",
+      "title": "دونر",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00123",
+      "kind": "item",
+      "key": "ab_madani",
+      "title": "آب معدنی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00124",
+      "kind": "item",
+      "key": "esteyk",
+      "title": "استیک",
+      "aliases": [
+        "وزن استیک"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00125",
+      "kind": "item",
+      "key": "burger_makhsus_773",
+      "title": "برگر مخصوص",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00126",
+      "kind": "item",
+      "key": "makhsus_771",
+      "title": "مخصوص",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00127",
+      "kind": "item",
+      "key": "zhambon_se_gane",
+      "title": "ژامبون سه گانه",
+      "aliases": [
+        "وزن ژامبون سه گانه"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00128",
+      "kind": "item",
+      "key": "panir_rol_sukhari",
+      "title": "پنیر رول سوخاری",
+      "aliases": [
+        "تعداد پنیر رول سوخاری",
+        "پنیر چیزا"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00129",
+      "kind": "item",
+      "key": "chikan_alfredo_65",
+      "title": "چیکن آلفردو",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00130",
+      "kind": "item",
+      "key": "file_esterips_se_tekke",
+      "title": "فیله استریپس سه تکه",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00131",
+      "kind": "item",
+      "key": "zarf_salad_kentaki",
+      "title": "ظرف سالاد کنتاکی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00132",
+      "kind": "item",
+      "key": "beykan_308",
+      "title": "بیکن",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00133",
+      "kind": "item",
+      "key": "geril_chikan",
+      "title": "گریل چیکن",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00134",
+      "kind": "item",
+      "key": "salad_kentaki_46",
+      "title": "سالاد کنتاکی آماده",
+      "aliases": [
+        "سالاد کنتاکی",
+        "وزن سالاد کنتاکی"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00135",
+      "kind": "item",
+      "key": "rostbif_4",
+      "title": "رستبیف",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00136",
+      "kind": "item",
+      "key": "pasta_pesto",
+      "title": "پاستا پستو",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00137",
+      "kind": "item",
+      "key": "chikan_alfredo_783",
+      "title": "چیکن آلفردو",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00138",
+      "kind": "item",
+      "key": "singel_moraba_italiyayi",
+      "title": "سینگل مربع ایتالیایی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
       "id": "F-00001",
       "kind": "record",
       "key": "units",
@@ -23,6 +3520,2412 @@
       "valid_to": null,
       "stub": false,
       "updated_at": "2026-09-02T08:17:10Z"
+    },
+    {
+      "id": "F-00139",
+      "kind": "record",
+      "key": "barge_mande_akhar_shab",
+      "title": "برگه مانده آخر شب",
+      "aliases": [
+        "مانده شب"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 2,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00140",
+      "kind": "record",
+      "key": "barge_darkhast_kala",
+      "title": "برگه درخواست کالا از انبار",
+      "aliases": [
+        "لیست سفارشات"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00141",
+      "kind": "record",
+      "key": "checklist_shoru_va_payan_shift",
+      "title": "چک‌لیست شروع و پایان شیفت دستگاه‌های آشپزخانه",
+      "aliases": [
+        "چک‌لیست ابتدا و انتهای کار"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00142",
+      "kind": "record",
+      "key": "barge_haftegi_morakhasi_va_eslah_saat",
+      "title": "برگهٔ هفتگی مرخصی و اصلاح ساعت کارکرد",
+      "aliases": [
+        "برگه مرخصی"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00143",
+      "kind": "record",
+      "key": "form_zayeat_gheyre_mahsul",
+      "title": "فرم ضایعات غیرمحصول",
+      "aliases": [
+        "برگه ضایعات"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00144",
+      "kind": "record",
+      "key": "mande_shab_farangi_burger",
+      "title": "مانده شب فرنگی و برگر",
+      "aliases": [
+        "فرم مانده آخر شب فرنگی و برگر"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 4,
+        "informal": 0,
+        "inferred": 1
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00145",
+      "kind": "record",
+      "key": "darkhast_kala_kanter",
+      "title": "درخواست کالا بخش کانتر آشپزخانه",
+      "aliases": [
+        "چک‌لیست درخواست کالای کانتر"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 42,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00146",
+      "kind": "record",
+      "key": "noskhe__pitza_italiayi",
+      "title": "نسخهٔ مواد اولیهٔ پیتزاهای ایتالیایی",
+      "aliases": [
+        "پیتزا ایتالیایی"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 22
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00147",
+      "kind": "record",
+      "key": "mojudi_avval_shab__farangi",
+      "title": "موجودی اول شب لاین فرنگی",
+      "aliases": [
+        "مانده اول شب",
+        "موجودی ابتدای شیفت فرنگی"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "status": "inferred",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 12
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00148",
+      "kind": "record",
+      "key": "noskhe__pitza_personeli",
+      "title": "نسخهٔ مواد اولیهٔ پیتزای پرسنلی",
+      "aliases": [
+        "پرسنلی"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 3
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00149",
+      "kind": "record",
+      "key": "masraf_enheraf_counter",
+      "title": "صورت مصرف و انحراف نوشیدنی‌های کانتر",
+      "aliases": [
+        "کانتر"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 4,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00150",
+      "kind": "record",
+      "key": "zaman_tahvil_va_sanjesh_keyfiyat",
+      "title": "زمان تحویل و سنجش کیفیت",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "status": "inferred",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 3
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00151",
+      "kind": "record",
+      "key": "mojudi_akhar_shab__kanter",
+      "title": "موجودی آخر شب کانتر",
+      "aliases": [
+        "مانده آخر شب کانتر"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 2,
+        "informal": 0,
+        "inferred": 15
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00152",
+      "kind": "record",
+      "key": "noskhe__pasta",
+      "title": "نسخهٔ مواد اولیهٔ پاستا",
+      "aliases": [
+        "پاستا"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 5
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00153",
+      "kind": "record",
+      "key": "mojudi_avval_shab__kanter",
+      "title": "موجودی اول شب کانتر",
+      "aliases": [
+        "مانده اول شب کانتر"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 2,
+        "informal": 0,
+        "inferred": 15
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00154",
+      "kind": "record",
+      "key": "masraf_enheraf_pizza",
+      "title": "صورت مصرف و انحراف لاین پیتزا",
+      "aliases": [
+        "پیتزا"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 5,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00155",
+      "kind": "record",
+      "key": "noskhe__chicken_steak",
+      "title": "نسخهٔ مواد اولیهٔ چیکن استیک",
+      "aliases": [
+        "استیک"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 2
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00156",
+      "kind": "record",
+      "key": "masraf_enheraf_farangi",
+      "title": "صورت مصرف و انحراف لاین فرنگی",
+      "aliases": [
+        "فرنگی"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 12,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00157",
+      "kind": "record",
+      "key": "niazmandiha_va_moshkelat",
+      "title": "نیازمندی‌ها و مشکلات",
+      "aliases": [
+        "نیازمندیها و مشکلات"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "status": "inferred",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 2
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00158",
+      "kind": "record",
+      "key": "noskhe__pitza_amrikayi",
+      "title": "نسخهٔ مواد اولیهٔ پیتزاهای امریکایی",
+      "aliases": [
+        "پیتزا امریکایی"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 18
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00159",
+      "kind": "record",
+      "key": "masraf_enheraf_sukhari",
+      "title": "صورت مصرف و انحراف لاین سوخاری",
+      "aliases": [
+        "سوخاری"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 4,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00160",
+      "kind": "record",
+      "key": "mojudi_akhar_shab__sokhari",
+      "title": "موجودی آخر شب لاین سوخاری",
+      "aliases": [
+        "مانده آخر شب",
+        "آمار مانده آخر شب"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 2
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00161",
+      "kind": "record",
+      "key": "mojudi_akhar_shab__farangi",
+      "title": "موجودی آخر شب لاین فرنگی",
+      "aliases": [
+        "مانده آخر شب",
+        "آمار مانده آخر شب فرنگی"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "status": "inferred",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 12
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00162",
+      "kind": "record",
+      "key": "noskhe__sandvich",
+      "title": "نسخهٔ مواد اولیهٔ ساندویچ‌ها",
+      "aliases": [
+        "ساندویچ"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 2,
+        "informal": 0,
+        "inferred": 12
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00163",
+      "kind": "record",
+      "key": "noskhe__sukhari",
+      "title": "نسخهٔ مواد اولیهٔ محصولات سوخاری",
+      "aliases": [
+        "سوخاری"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 10
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00164",
+      "kind": "record",
+      "key": "off_ejraei",
+      "title": "آف اجرایی",
+      "aliases": [
+        "OFF اجرایی"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "status": "inferred",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 3
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00165",
+      "kind": "record",
+      "key": "zayeat_ashpazkhane",
+      "title": "ضایعات آشپزخانه",
+      "aliases": [
+        "ضایعات"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "status": "inferred",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 3
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00166",
+      "kind": "record",
+      "key": "mojudi_avval_shab__sokhari",
+      "title": "موجودی اول شب لاین سوخاری",
+      "aliases": [
+        "مانده اول شب"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 2,
+        "informal": 0,
+        "inferred": 1
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00167",
+      "kind": "record",
+      "key": "khamir_pizza_rozane",
+      "title": "خمیر پیتزا روزانه",
+      "aliases": [
+        "خمیر"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh"
+        ]
+      },
+      "status": "inferred",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 3
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00168",
+      "kind": "record",
+      "key": "noskhe__pitza_single",
+      "title": "نسخهٔ مواد اولیهٔ پیتزاهای سینگل",
+      "aliases": [
+        "پیتزا سینگل"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 18
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00169",
+      "kind": "record",
+      "key": "mojudi_avval_shab__pitza",
+      "title": "موجودی اول شب لاین پیتزا",
+      "aliases": [
+        "مانده اول شب",
+        "موجودی ابتدای شیفت"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 3,
+        "informal": 0,
+        "inferred": 9
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00170",
+      "kind": "record",
+      "key": "noskhe__salad",
+      "title": "نسخهٔ مواد اولیهٔ سالادها",
+      "aliases": [
+        "سالاد"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 8
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00171",
+      "kind": "record",
+      "key": "noskhe__farangi",
+      "title": "نسخهٔ مواد اولیهٔ غذاهای فرنگی",
+      "aliases": [
+        "فرنگی"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 4
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00172",
+      "kind": "record",
+      "key": "noskhe__lazania",
+      "title": "نسخهٔ مواد اولیهٔ لازانیا",
+      "aliases": [
+        "لازانیا"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 7
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00173",
+      "kind": "record",
+      "key": "mojudi_akhar_shab__pitza",
+      "title": "موجودی آخر شب لاین پیتزا",
+      "aliases": [
+        "مانده آخر شب",
+        "آمار مانده آخر شب",
+        "موجودی پایان شیفت"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 10
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00174",
+      "kind": "record",
+      "key": "noskhe__starter",
+      "title": "نسخهٔ مواد اولیهٔ استارترها",
+      "aliases": [
+        "استارتر",
+        "پیش‌غذا"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 15
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00175",
+      "kind": "measurement",
+      "key": "shomaresh_khamir_ruzane",
+      "title": "شمارش روزانه خمیر پیتزا",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh"
+        ]
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00176",
+      "kind": "measurement",
+      "key": "vazn_giri_mande_akhar_shab",
+      "title": "وزن‌گیری مانده مواد اولیه در پایان شب",
+      "aliases": [
+        "وزن‌کشی آخر شب"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00177",
+      "kind": "measurement",
+      "key": "shomaresh_mande_aqlam_tedadi",
+      "title": "شمارش مانده اقلام تعدادی در پایان شب",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00178",
+      "kind": "measurement",
+      "key": "tedad_forush_har_mahsul",
+      "title": "تعداد فروش هر محصول",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00179",
+      "kind": "measurement",
+      "key": "shomaresh_mande_akhar_shab",
+      "title": "شمارش مانده آخر شب لاین",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00180",
+      "kind": "rule",
+      "key": "tarkib_pak_inja_box",
+      "title": "ترکیب استاندارد پک اینجا باکس",
+      "aliases": [
+        "اینجا باکس"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00181",
+      "kind": "rule",
+      "key": "astane_zaman_tahvil_sefaresh",
+      "title": "آستانه زمان تحویل سفارش به واحد ارسال",
+      "aliases": [
+        "زمان تحویل سفارشات"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00182",
+      "kind": "rule",
+      "key": "siasat_sabt_zayeat",
+      "title": "سیاست ثبت ضایعات آشپزخانه",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 2,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00183",
+      "kind": "rule",
+      "key": "vazn_rost_bif_har_pors_sandwich",
+      "title": "وزن رست‌بیف هر پرس ساندویچ",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00184",
+      "kind": "rule",
+      "key": "hesab_aqlam_tabadoli_bein_lain",
+      "title": "حساب اقلام تبادلی میان لاین‌ها",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 2,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00185",
+      "kind": "rule",
+      "key": "tedad_off_ejrayi_ruzane",
+      "title": "تعداد نفرات آف روزانه آشپزخانه",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00186",
+      "kind": "rule",
+      "key": "tabdil_vazn_morgh_pokhte_be_kham",
+      "title": "تبدیل وزن مرغ پخته به وزن خام معادل",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00187",
+      "kind": "rule",
+      "key": "kasti_vazn_morgh_dar_pokht",
+      "title": "کاست وزن مرغ در پخت",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00188",
+      "kind": "rule",
+      "key": "khunabe_steak_dar_har_kilo",
+      "title": "خونابه استیک یخ‌زده در هر کیلوگرم",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00189",
+      "kind": "rule",
+      "key": "meyar_shomul_amargiri_mande",
+      "title": "معیار انتخاب اقلام مشمول آمارگیری مانده",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00190",
+      "kind": "rule",
+      "key": "meyar_qarch_sukhari",
+      "title": "معیار پذیرش قارچ برای سوخاری",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00191",
+      "kind": "rule",
+      "key": "atlaf_shabane_roghan",
+      "title": "کسری شبانه روغن سرخ‌کن",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00192",
+      "kind": "rule",
+      "key": "dore_taviz_roghan_sorkhkon",
+      "title": "دوره تعویض روغن هر سرخ‌کن",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00193",
+      "kind": "rule",
+      "key": "mabnaye_sabt_mande_akhar_shab",
+      "title": "مبنای ثبت مانده پایان شب",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00194",
+      "kind": "rule",
+      "key": "par_pasta_pene_farangi",
+      "title": "موجودی هدف پاستا پنه لاین فرنگی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00195",
+      "kind": "rule",
+      "key": "vazn_pors_pasta_pene",
+      "title": "وزن هر پرس و هر بسته پاستا پنه پخته",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00196",
+      "kind": "rule",
+      "key": "vazn_sos_alfredo_har_pors",
+      "title": "سس آلفردوی هر پرس پاستا",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00197",
+      "kind": "rule",
+      "key": "sefaresh_baste_pasta_pene",
+      "title": "تعداد بسته درخواستی پاستا پنه",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00198",
+      "kind": "rule",
+      "key": "zakhire_ehtiyati_sos",
+      "title": "ذخیره احتیاطی اقلام وزنی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00199",
+      "kind": "rule",
+      "key": "vazn_morgh_har_pors_sukhari",
+      "title": "وزن مرغ هر پرس سینه سوخاری",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00200",
+      "kind": "rule",
+      "key": "moadel_kham_morgh_gril",
+      "title": "معادل خام مانده مرغ گریل پخته",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00201",
+      "kind": "rule",
+      "key": "tafkik_zayeat_mahsul_va_gheyre_mahsul",
+      "title": "تفکیک ضایعات محصول و غیرمحصول",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00202",
+      "kind": "rule",
+      "key": "sabt_test_ghaza",
+      "title": "ثبت تست غذا",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00203",
+      "kind": "rule",
+      "key": "masraf_elami",
+      "title": "مصرف اعلامی لاین",
+      "aliases": [
+        "مصرف اعلامی"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00204",
+      "kind": "rule",
+      "key": "enheraf_masraf",
+      "title": "انحراف مصرف",
+      "aliases": [
+        "انحراف"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00205",
+      "kind": "rule",
+      "key": "enteqal_mojudi_shab_be_shab",
+      "title": "انتقال موجودی آخر شب به اول شب بعد",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00206",
+      "kind": "rule",
+      "key": "astaneh_bazbini_enheraf",
+      "title": "آستانهٔ انحراف برای بازشماری",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00207",
+      "kind": "rule",
+      "key": "bazbini_enheraf_bozorg",
+      "title": "بازبینی انحراف بزرگ در شمارش شبانه",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00208",
+      "kind": "rule",
+      "key": "tedad_loqmeh_morgh_dar_pers",
+      "title": "تعداد لقمه مرغ سوخاری در هر پرس",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "inferred",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 1
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00209",
+      "kind": "rule",
+      "key": "sabt_fish_zayeat_ghazaye_bargashti",
+      "title": "ثبت غذای برگشتی با فیش ضایعات",
+      "aliases": [
+        "فیش ضایعات"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00210",
+      "kind": "rule",
+      "key": "taein_meqdar_sefaresh_az_amar_mojudi",
+      "title": "تعیین میزان سفارش از روی آمار موجودی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00211",
+      "kind": "rule",
+      "key": "saqf_zayeat_shift",
+      "title": "سقف ضایعات هر شیفت آشپزخانه",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00212",
+      "kind": "rule",
+      "key": "hadaf_amadegi_ghazaha",
+      "title": "هدف آماده‌سازی غذاها طبق استاندارد",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00213",
+      "kind": "rule",
+      "key": "entegal_mande_akhar_shab_be_avval_shab",
+      "title": "انتقال مانده آخر شب به موجودی اول شب",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00214",
+      "kind": "rule",
+      "key": "enheraf_masraf",
+      "title": "انحراف مصرف",
+      "aliases": [
+        "مغایرت مصرف"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 13,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00215",
+      "kind": "rule",
+      "key": "masraf_elami",
+      "title": "مصرف اعلامی لاین",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 14,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00216",
+      "kind": "rule",
+      "key": "tedad_forush",
+      "title": "تعداد فروش غذاهای دربردارندهٔ یک قلم",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00217",
+      "kind": "rule",
+      "key": "enheraf_har_forush",
+      "title": "انحراف با تلورانس به ازای هر فروش",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00218",
+      "kind": "rule",
+      "key": "enheraf_ba_tolerance",
+      "title": "انحراف مصرف با تلورانس",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00219",
+      "kind": "rule",
+      "key": "masraf_vaqei",
+      "title": "مصرف واقعی برآوردشده از فروش",
+      "aliases": [
+        "مصرف استاندارد"
+      ],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 11,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00220",
+      "kind": "note",
+      "key": "note_887a9c60ad29",
+      "title": "تغییر اندازه بسته پنیر پارمسان",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00221",
+      "kind": "note",
+      "key": "note_de66a13131a3",
+      "title": "دامنه آمار مانده کانتر",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00222",
+      "kind": "note",
+      "key": "note_cee30b114c6f",
+      "title": "سطح ثبت سنجش کیفیت شبانه",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00223",
+      "kind": "note",
+      "key": "note_153ea970b4e3",
+      "title": "مبنای شمارش پنیر گودا",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00224",
+      "kind": "note",
+      "key": "note_b15b330cb711",
+      "title": "نسبت فرم کاغذی ضایعات با ثبت ضایعات",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00225",
+      "kind": "note",
+      "key": "note_3154518a397f",
+      "title": "نسبت برگهٔ مرخصی هفتگی با ثبت آف",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00226",
+      "kind": "note",
+      "key": "note_e45586d3e4fb",
+      "title": "برابری مصرف اعلامی با دریافت از انبار",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "id": "F-00227",
+      "kind": "note",
+      "key": "note_2312100717f9",
+      "title": "پرکننده موجودی آخر شب",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-08T16:53:00Z"
     }
   ]
 }

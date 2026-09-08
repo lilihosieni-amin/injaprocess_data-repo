@@ -1,0 +1,156 @@
+# gozaresh_markazi__s4__k__r6
+LET(
+amFoodIds, {71, 309, 74, 65, 76, 75, 308, 400, 27, 766, 767, 1},
+sinFoodIds, {4, 780, 781, 782, 783, 784},
+itFoodIds, {61, 62, 63, 310, 87, 73, 49, 551, 552, 553, 13, 768, 771},
+laFoodIds, {85, 84},
+stFoodIds, {360, 504},
+americanPizzaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_AmericanPizza),
+singlePizzaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_SinglePizza),
+italianPizzaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_ItalianPizza),
+pastaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_Pasta),
+starterSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_Starter),
+personelSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_Personel),
+amTotal, getTotalFoodsCountsInRowById(amFoodIds,americanPizzaSalesData,Refresher),
+sinTotal, getTotalFoodsCountsInRowById(sinFoodIds,singlePizzaSalesData,Refresher),
+itTotal, getTotalFoodsCountsInRowById(itFoodIds,italianPizzaSalesData,Refresher),
+laTotal, getTotalFoodsCountsInRowById(laFoodIds,pastaSalesData,Refresher),
+stTotal, getTotalFoodsCountsInRowById(stFoodIds,starterSalesData,Refresher),
+perTotal, getTotalFoodsCountsInRowById(10,personelSalesData,Refresher),
+SUM(amTotal, sinTotal, itTotal,laTotal,stTotal,perTotal)
+)
+
+# gozaresh_markazi__s4__k__r7
+LET(
+americanPizzaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_AmericanPizza),
+italianPizzaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_ItalianPizza),
+pastaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_Pasta),
+singlePizzaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_SinglePizza),
+sinTotal, getTotalFoodsCountsInRowById(4,singlePizzaSalesData,Refresher),
+amTotal, getTotalFoodsCountsInRowById(71,americanPizzaSalesData,Refresher),
+itTotal, getTotalFoodsCountsInRowById(61,italianPizzaSalesData,Refresher),
+laTotal, getTotalFoodsCountsInRowById(84,pastaSalesData,Refresher),
+SUM(amTotal,itTotal,laTotal,sinTotal)
+)
+
+# gozaresh_markazi__s4__k__r8
+LET(
+amFoodIds, {74, 76, 308, 767, 1},
+itFoodIds, {63, 310, 49, 768, 771},
+sinFoodIds, 782,
+americanPizzaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_AmericanPizza),
+italianPizzaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_ItalianPizza),
+personelSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_Personel),
+singlePizzaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_SinglePizza),
+sinTotal, getTotalFoodsCountsInRowById(sinFoodIds,singlePizzaSalesData,Refresher),
+amTotal, getTotalFoodsCountsInRowById(amFoodIds,americanPizzaSalesData,Refresher),
+itTotal, getTotalFoodsCountsInRowById(itFoodIds,italianPizzaSalesData,Refresher),
+perTotal, getTotalFoodsCountsInRowById(10,personelSalesData,Refresher),
+SUM(amTotal,itTotal,perTotal,sinTotal)
+)
+
+# gozaresh_markazi__s4__k__r9
+LET(
+amFoodIds, {75, 309},
+itFoodIds, {63, 87},
+sinFoodIds, 781,
+singlePizzaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_SinglePizza),
+americanPizzaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_AmericanPizza),
+italianPizzaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_ItalianPizza),
+sinTotal, getTotalFoodsCountsInRowById(sinFoodIds,singlePizzaSalesData,Refresher),
+amTotal, getTotalFoodsCountsInRowById(amFoodIds,americanPizzaSalesData,Refresher),
+itTotal, getTotalFoodsCountsInRowById(itFoodIds,italianPizzaSalesData,Refresher),
+SUM(amTotal,itTotal,sinTotal)
+)
+
+# gozaresh_markazi__s4__k__r11
+LET(
+amFoodIds, {74, 309, 27},
+itFoodIds, {49, 13},
+sinFoodIds, 780,
+singlePizzaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_SinglePizza),
+americanPizzaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_AmericanPizza),
+italianPizzaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_ItalianPizza),
+pastaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_Pasta),
+sinTotal, getTotalFoodsCountsInRowById(sinFoodIds,singlePizzaSalesData,Refresher),
+amTotal, getTotalFoodsCountsInRowById(amFoodIds,americanPizzaSalesData,Refresher),
+itTotal, getTotalFoodsCountsInRowById(itFoodIds,italianPizzaSalesData,Refresher),
+laTotal, getTotalFoodsCountsInRowById(85,pastaSalesData,Refresher),
+SUM(amTotal,itTotal,laTotal,sinTotal)
+)
+
+# gozaresh_markazi__s4__k__r12
+LET(
+americanPizzaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_AmericanPizza),
+getTotalFoodsCountsInRowById(400,americanPizzaSalesData,Refresher)
+)
+
+# gozaresh_markazi__s4__k__r13
+LET(
+itFoodIds, {62, 63},
+italianPizzaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_ItalianPizza),
+getTotalFoodsCountsInRowById(itFoodIds,italianPizzaSalesData,Refresher)
+)
+
+# gozaresh_markazi__s4__k__r15
+LET(
+amFoodIds, {766, 767, 1},
+itFoodIds, {768, 771},
+sinFoodIds, {784, 782},
+singlePizzaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_SinglePizza),
+americanPizzaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_AmericanPizza),
+italianPizzaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_ItalianPizza),
+sinTotal, getTotalFoodsCountsInRowById(sinFoodIds,singlePizzaSalesData,Refresher),
+amTotal, getTotalFoodsCountsInRowById(amFoodIds,americanPizzaSalesData,Refresher),
+itTotal, getTotalFoodsCountsInRowById(itFoodIds,italianPizzaSalesData,Refresher),
+SUM(amTotal,itTotal,sinTotal)
+)
+
+# gozaresh_markazi__s5__k__r7
+LET(
+itFoodIds, 61,
+italianPizzaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_ItalianPizza),
+getTotalFoodsCountsInRowById(itFoodIds,italianPizzaSalesData,Refresher)
+)
+
+# gozaresh_markazi__s5__k__r10
+LET(
+fraFoodIds, 86,
+sanFoodIds, 136,
+frangiSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_Farangi),
+sandwichSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_Sandwich),
+fraTotal, getTotalFoodsCountsInRowById(fraFoodIds,frangiSalesData,Refresher),
+sanTotal, getTotalFoodsCountsInRowById(sanFoodIds,sandwichSalesData,Refresher),
+SUM(fraTotal, sanTotal)
+)
+
+# gozaresh_markazi__s5__k__r11
+LET(
+saFoodIds, {401, 402, 407},
+paFoodIds, {601, 82},
+saladSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_Salad),
+pastaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_Pasta),
+saTotal, getTotalFoodsCountsInRowById(saFoodIds,saladSalesData,Refresher),
+paTotal, getTotalFoodsCountsInRowById(paFoodIds,pastaSalesData,Refresher),
+SUM(saTotal, paTotal)
+)
+
+# gozaresh_markazi__s5__k__r12
+LET(
+saFoodIds, 401,
+paFoodIds, {601, 82},
+fraFoodIds, 303,
+sanFoodIds, 137,
+steakFoodIds, 81,
+saladSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_Salad),
+pastaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_Pasta),
+farangiSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_Farangi),
+sandwichSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_Sandwich),
+steakSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_Steak),
+saTotal, getTotalFoodsCountsInRowById(saFoodIds,saladSalesData,Refresher),
+paTotal, getTotalFoodsCountsInRowById(paFoodIds,pastaSalesData,Refresher),
+fraTotal, getTotalFoodsCountsInRowById(fraFoodIds,farangiSalesData,Refresher),
+sanTotal, getTotalFoodsCountsInRowById(sanFoodIds,sandwichSalesData,Refresher),
+steakTotal, getTotalFoodsCountsInRowById(steakFoodIds,steakSalesData,Refresher),
+SUM(saTotal, paTotal, fraTotal, sanTotal, steakTotal)
+)

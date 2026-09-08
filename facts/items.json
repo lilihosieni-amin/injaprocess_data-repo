@@ -1,4 +1,4426 @@
 {
   "schema_version": 2,
-  "entries": []
+  "entries": [
+    {
+      "kind": "item",
+      "key": "inja_burger",
+      "title": "اینجا برگر",
+      "statement": "برگر فروشی با کد #131 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#131",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00002",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "jabe_sib_o_qarch",
+      "title": "جعبه سیب و قارچ",
+      "statement": "جعبهٔ بسته‌بندی سیب‌زمینی و قارچ سوخاری که به تعداد شمارش و انبار می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##52",
+        "category": "packaging",
+        "unit": "pcs"
+      },
+      "id": "F-00003",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "mini_mak_43",
+      "title": "نان مینی مک",
+      "statement": "نان مینی مک که مصرف آن برای هر پرس به تعداد شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##43",
+        "category": "ingredient",
+        "unit": "pcs"
+      },
+      "aliases": [
+        "تعداد مینی مک",
+        "مینی مک"
+      ],
+      "id": "F-00004",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "file_morgh_sukhari_tond",
+      "title": "فیله مرغ سوخاری تند",
+      "statement": "گونهٔ تند فیله مرغ سوخاری که مصرف آن برای هر پرس به تعداد شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##18",
+        "category": "ingredient",
+        "unit": "pcs"
+      },
+      "aliases": [
+        "تعداد فیله مرغ سوخاری تند"
+      ],
+      "id": "F-00005",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "panir_guda_farangi",
+      "title": "پنیر گودا فرنگی",
+      "statement": "ورقهٔ پنیر گودای مصرفی لاین فرنگی که به تعداد شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##69",
+        "category": "ingredient",
+        "unit": "pcs"
+      },
+      "aliases": [
+        "تعداد پنیر گودا"
+      ],
+      "id": "F-00006",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "rema_alfredo",
+      "title": "رما آلفردو",
+      "statement": "قلم فروشی با کد #553 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#553",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00007",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "gusht_charkh_karde",
+      "title": "گوشت چرخ کرده",
+      "statement": "گوشت چرخ‌کردهٔ پختهٔ تاپینگ لاین پیتزا که مقدار مصرف آن برای هر پرس بر حسب گرم سنجیده می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/cooking/processes/cooking-036.json",
+          "node": "cooking-036-n009",
+          "quote": "برداشتن ۵ تا ۱۰ گرم گوشت چرخ‌کرده پخته از تاپینگ لاین پیتزا برای هر پرس سیب‌ویژه",
+          "hash": "sha256:9f05fc5f3cf8b96917aef7d9ad1716fa6aa4525c6ca4d8a195747c529afed247",
+          "run": "runs/facts/cooking/20260908-151433"
+        },
+        {
+          "type": "process",
+          "ref": "departments/cooking/processes/cooking-035.json",
+          "node": "cooking-035-n005",
+          "quote": "تحویل گوشت چرخ‌کرده به لاین فرنگی از تاپینگ لاین پیتزا",
+          "hash": "sha256:b59e97447ac6eebf9aa1171c410989dbd91fd5a4e4b1bf4dc7b438e9146d8032",
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##6",
+        "category": "ingredient",
+        "unit": "g",
+        "state": "cooked"
+      },
+      "aliases": [
+        "وزن گوشت چرخ کرده"
+      ],
+      "id": "F-00008",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "karton_italiyayi",
+      "title": "کارتن ایتالیایی",
+      "statement": "کارتن بسته‌بندی پیتزای ایتالیایی که به تعداد شمارش و انبار می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##54",
+        "category": "packaging",
+        "unit": "pcs"
+      },
+      "id": "F-00009",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "file_espaysi_chahar_tekke",
+      "title": "فیله اسپایسی چهار تکه",
+      "statement": "پرس چهارتکه‌ای فیله سوخاری تند با کد #350 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#350",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00010",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "burger_klasik",
+      "title": "برگر کلاسیک",
+      "statement": "برگر فروشی با کد #138 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#138",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00011",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "peperoni_75",
+      "title": "پپرونی",
+      "statement": "پیتزای فروشی با کد #75 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#75",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00012",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "filadelfia_552",
+      "title": "فیلادلفیا",
+      "statement": "قلم فروشی با کد #552 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#552",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00013",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "mit_780",
+      "title": "میت",
+      "statement": "قلم فروشی با کد #780 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#780",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00014",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "khamir_pitza",
+      "title": "خمیر پیتزا",
+      "statement": "خمیر آمادهٔ پیتزا که پیش از سرویس تولید و به تعداد چانه شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##26",
+        "category": "ingredient",
+        "unit": "pcs",
+        "state": "prepared"
+      },
+      "id": "F-00015",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "dabl_king",
+      "title": "دبل کینگ",
+      "statement": "ساندویچ سوخاری با کد #150 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/cooking/processes/cooking-029.json",
+          "node": "cooking-029-n024",
+          "quote": "تحویل سینه مرغ به لاین سوخاری برای دبل‌دان، دبل‌کینگ و کریسپی",
+          "hash": "sha256:2a01551b57a48974b6bf056a8228d2c35b364442aef0e3f1fa4c01859cdd31ef",
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#150",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00016",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "zinger_plas",
+      "title": "زینگرپلاس",
+      "statement": "ساندویچ سوخاری با کد #151 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#151",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00017",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "makhsus_767",
+      "title": "مخصوص",
+      "statement": "قلم فروشی با کد #767 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#767",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00018",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "dabl_dan",
+      "title": "دبل دان",
+      "statement": "ساندویچ سوخاری با کد #44 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/cooking/processes/cooking-026.json",
+          "node": "cooking-026-n103",
+          "quote": "تحویل سینه مرغ به لاین سوخاری برای دبل‌دان، دبل‌کینگ و کریسپی",
+          "hash": "sha256:06446dc4ddf8079e69b0b01b40da3c6e13d7117530de906bd45e616c34d471df",
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#44",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00019",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "felfel_dolme_miks",
+      "title": "فلفل دلمه میکس",
+      "statement": "فلفل دلمه‌ای میکس خردشده که در تاپینگ مصرف می‌شود؛ واحد شمارش آن در منبع نیامده است.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##31",
+        "category": "ingredient",
+        "unit": null,
+        "state": "prepared"
+      },
+      "id": "F-00020",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "ses_goje_kaf",
+      "title": "سس گوجه کف پیتزا",
+      "statement": "سس گوجهٔ کف پیتزا که پیش از تاپینگ روی خمیر پخش می‌شود؛ واحد شمارش آن در منبع نیامده است.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##33",
+        "category": "ingredient",
+        "unit": null,
+        "state": "prepared"
+      },
+      "aliases": [
+        "سس گوجه کف"
+      ],
+      "id": "F-00021",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "zeytun_siah",
+      "title": "زیتون سیاه",
+      "statement": "زیتون سیاه مصرفی روی پیتزا و سالاد؛ واحد شمارش آن در منبع نیامده است.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##30",
+        "category": "ingredient",
+        "unit": null
+      },
+      "id": "F-00022",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "krakof_766",
+      "title": "کراکف",
+      "statement": "قلم فروشی با کد #766 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#766",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00023",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "pitza_kapri_chiyusa",
+      "title": "پیتزا کاپری چیوسا",
+      "statement": "پیتزای فروشی با کد #310 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#310",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00024",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "dabl_burger",
+      "title": "دبل برگر",
+      "statement": "برگر دو لایه فروشی با کد #134 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#134",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00025",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "gusht_rostbif_farangi",
+      "title": "گوشت رستبیف فرنگی",
+      "statement": "گوشت رستبیف مصرفی لاین فرنگی که مقدار آن برای هر پرس بر حسب گرم سنجیده می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##11",
+        "category": "ingredient",
+        "unit": "g"
+      },
+      "aliases": [
+        "وزن گوشت رستبیف فرنگی"
+      ],
+      "id": "F-00026",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "beykan_sandevich",
+      "title": "بیکن ساندویچ",
+      "statement": "بیکن مصرفی ساندویچ‌ها؛ منبع هم وزن و هم تعداد را نام برده و واحد شمارش قطعی آن روشن نیست.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##15",
+        "category": "ingredient",
+        "unit": null
+      },
+      "aliases": [
+        "وزن بیکن ساندویچ",
+        "تعداد بیکن ساندویچ"
+      ],
+      "id": "F-00027",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "susis_krakof",
+      "title": "سوسیس کراکف",
+      "statement": "سوسیس کراکف که در آماده‌سازی مصرف می‌شود؛ واحد شمارش آن در منبع نیامده است.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##25",
+        "category": "ingredient",
+        "unit": null
+      },
+      "id": "F-00028",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "bif_esteroganof",
+      "title": "بیف استراگانف",
+      "statement": "غذای فروشی لاین فرنگی با کد #86 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#86",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00029",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "mekzikano",
+      "title": "مکزیکانو",
+      "statement": "یکی از اقلام فروش منو با کد #13 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#13",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00030",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "kabab_torki",
+      "title": "کباب ترکی",
+      "statement": "گوشت کباب ترکی که در آماده‌سازی ساندویچ‌ها مصرف می‌شود؛ واحد شمارش آن در منبع نیامده است.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##7",
+        "category": "ingredient",
+        "unit": null
+      },
+      "id": "F-00031",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "qarch_sukhari_5",
+      "title": "قارچ سوخاری",
+      "statement": "قلم فروشی سرخ‌کرده با کد #5 که به صورت پرس آماده و شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#5",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00032",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "gusht_rost_bif",
+      "title": "گوشت رست بیف",
+      "statement": "گوشت رست بیف آماده که مقدار مصرف آن برای هر پرس بر حسب گرم سنجیده می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##2",
+        "category": "ingredient",
+        "unit": "g",
+        "state": "prepared"
+      },
+      "aliases": [
+        "وزن گوشت رست بیف"
+      ],
+      "id": "F-00033",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "nushabe_khanevade_sun_ap",
+      "title": "نوشابه خانواده سون آپ",
+      "statement": "نوشابهٔ لیمویی در بطری خانواده که به تعداد شمارش و فروخته می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##358",
+        "category": "product",
+        "unit": "pcs",
+        "group": "نوشیدنی"
+      },
+      "id": "F-00034",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "kahu_pak_shode",
+      "title": "کاهو پاک شده",
+      "statement": "کاهوی شسته و پاک‌شده که در سالادها و ساندویچ‌ها مصرف می‌شود؛ واحد شمارش آن در منبع نیامده است.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##27",
+        "category": "ingredient",
+        "unit": null,
+        "state": "prepared"
+      },
+      "id": "F-00035",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "se_paye_pitza",
+      "title": "سه پایه پیتزا",
+      "statement": "سه‌پایهٔ نگهدارندهٔ داخل کارتن پیتزا که به تعداد شمارش و انبار می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##63",
+        "category": "packaging",
+        "unit": "pcs"
+      },
+      "id": "F-00036",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "ses_kaf_rost_bif",
+      "title": "سس کف رست بیف",
+      "statement": "سس کف پیتزای رست بیف؛ واحد شمارش آن در منبع نیامده است.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##36",
+        "category": "ingredient",
+        "unit": null,
+        "state": "prepared"
+      },
+      "aliases": [
+        "سس رست بیف"
+      ],
+      "id": "F-00037",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "dorchin_esteyk",
+      "title": "دورچین استیک",
+      "statement": "دورچین همراه پرس استیک که به پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##48",
+        "category": "ingredient",
+        "unit": "portion",
+        "state": "prepared"
+      },
+      "aliases": [
+        "پرس دورچین استیک"
+      ],
+      "id": "F-00038",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "nan_baget",
+      "title": "نان باگت",
+      "statement": "نان باگت ساندویچ که مصرف آن برای هر پرس به تعداد شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##42",
+        "category": "ingredient",
+        "unit": "pcs"
+      },
+      "aliases": [
+        "تعداد نان باگت"
+      ],
+      "id": "F-00039",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "dugh_sun_kale",
+      "title": "دوغ سون کاله",
+      "statement": "دوغ بسته‌بندی‌شدهٔ برند کاله که به تعداد شمارش و فروخته می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##110",
+        "category": "product",
+        "unit": "pcs",
+        "group": "نوشیدنی"
+      },
+      "id": "F-00040",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "jabe_sukhari",
+      "title": "جعبه سوخاری",
+      "statement": "جعبهٔ بسته‌بندی اقلام سوخاری که به تعداد شمارش و انبار می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##53",
+        "category": "packaging",
+        "unit": "pcs"
+      },
+      "id": "F-00041",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "sandevich_rostbif",
+      "title": "ساندویچ رستبیف",
+      "statement": "ساندویچ فروشی با کد #136 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/cooking/processes/cooking-035.json",
+          "node": "cooking-035-n008",
+          "quote": "برداشتن رست‌بیف به اندازه هر پرس ساندویچ از لاین پیتزا توسط لاین فرنگی",
+          "hash": "sha256:b59e97447ac6eebf9aa1171c410989dbd91fd5a4e4b1bf4dc7b438e9146d8032",
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#136",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00042",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "burger",
+      "title": "برگر",
+      "statement": "قرص برگر که مصرف آن برای هر پرس به تعداد شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##14",
+        "category": "ingredient",
+        "unit": "pcs"
+      },
+      "aliases": [
+        "تعداد برگر"
+      ],
+      "id": "F-00043",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "karton_emrikayi",
+      "title": "کارتن امریکایی",
+      "statement": "کارتن بسته‌بندی پیتزای امریکایی که به تعداد شمارش و انبار می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##55",
+        "category": "packaging",
+        "unit": "pcs"
+      },
+      "id": "F-00044",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "makhsus_782",
+      "title": "مخصوص",
+      "statement": "قلم فروشی با کد #782 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#782",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00045",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "morgh_pitza",
+      "title": "مرغ پیتزا",
+      "statement": "مرغ آماده‌شده برای پیتزا که مقدار مصرف آن برای هر پرس بر حسب گرم سنجیده می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##5",
+        "category": "ingredient",
+        "unit": "g"
+      },
+      "aliases": [
+        "وزن مرغ پیتزا"
+      ],
+      "id": "F-00046",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "salad_chiza",
+      "title": "سالاد چیزا",
+      "statement": "سالاد فروشی با کد #402 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#402",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00047",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "chikan_esteyk",
+      "title": "چیکن استیک",
+      "statement": "غذای فروشی لاین فرنگی با کد #81 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#81",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00048",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "nushabe_khanevade_ziro",
+      "title": "نوشابه خانواده زیرو",
+      "statement": "نوشابهٔ بدون قند در بطری خانواده که به تعداد شمارش و فروخته می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##374",
+        "category": "product",
+        "unit": "pcs",
+        "group": "نوشیدنی"
+      },
+      "id": "F-00049",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "yunani",
+      "title": "یونانی",
+      "statement": "پیتزای فروشی با کد #76 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#76",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00050",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "nushabe_quti_esprayt",
+      "title": "نوشابه قوطی اسپرایت",
+      "statement": "نوشابهٔ قوطی لیمویی که به تعداد شمارش و فروخته می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##104",
+        "category": "product",
+        "unit": "pcs",
+        "group": "نوشیدنی"
+      },
+      "id": "F-00051",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "mini_mak_kanter",
+      "title": "مینی مک کانتر",
+      "statement": "مینی مک آماده‌شده در کانتر که به تعداد شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##47",
+        "category": "ingredient",
+        "unit": "pcs"
+      },
+      "aliases": [
+        "تعداد مینی مک کانتر"
+      ],
+      "id": "F-00052",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "makhlut",
+      "title": "مخلوط",
+      "statement": "یکی از اقلام فروش منو با کد #74 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#74",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00053",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "mashrum_burger",
+      "title": "ماشروم برگر",
+      "statement": "برگر فروشی با کد #133 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#133",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00054",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "nushabe_khanevade_porteqali",
+      "title": "نوشابه خانواده پرتقالی",
+      "statement": "نوشابهٔ پرتقالی در بطری خانواده که به تعداد شمارش و فروخته می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##112",
+        "category": "product",
+        "unit": "pcs",
+        "group": "نوشیدنی"
+      },
+      "id": "F-00055",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "pasta_pene_morgh",
+      "title": "پاستا پنه مرغ",
+      "statement": "پاستای فروشی با کد #82 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#82",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00056",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "chikan_esteroganof",
+      "title": "چیکن استراگانف",
+      "statement": "غذای فروشی لاین فرنگی با کد #303 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#303",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00057",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "salad_sezar",
+      "title": "سالاد سزار",
+      "statement": "سالاد فروشی با کد #401 که با مرغ گریل خلالی‌شده آماده و به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/cooking/processes/cooking-029.json",
+          "node": "cooking-029-n036",
+          "quote": "ریختن مرغ گریل خلالی‌شده روی سالاد سزار",
+          "hash": "sha256:2a01551b57a48974b6bf056a8228d2c35b364442aef0e3f1fa4c01859cdd31ef",
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#401",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00058",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "limunad_khoshgovar",
+      "title": "لیموناد خوشگوار",
+      "statement": "لیموناد برند خوشگوار که به تعداد شمارش و فروخته می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##757",
+        "category": "product",
+        "unit": "pcs",
+        "group": "نوشیدنی"
+      },
+      "id": "F-00059",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "chiz_burger",
+      "title": "چیز برگر",
+      "statement": "برگر فروشی با کد #132 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#132",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00060",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "pitza_esteyk",
+      "title": "پیتزا استیک",
+      "statement": "پیتزای فروشی با کد #62 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#62",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00061",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "sib_panir",
+      "title": "سیب پنیر",
+      "statement": "سیب‌زمینی سرخ‌شده با پنیر، با کد #504، که سیب آن در لاین سوخاری سرخ می‌شود و به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/cooking/processes/cooking-035.json",
+          "node": "cooking-035-n015",
+          "quote": "سرخ کردن سیب سیب‌پنیر در لاین سوخاری طبق فیش چاپ‌شده در همان لاین",
+          "hash": "sha256:b59e97447ac6eebf9aa1171c410989dbd91fd5a4e4b1bf4dc7b438e9146d8032",
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#504",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00062",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "peperoni_781",
+      "title": "پپرونی",
+      "statement": "قلم فروشی با کد #781 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#781",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00063",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "makhsus_768",
+      "title": "مخصوص",
+      "statement": "قلم فروشی با کد #768 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#768",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00064",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "morgh_farangi",
+      "title": "مرغ فرنگی",
+      "statement": "مرغ مصرفی لاین فرنگی که مقدار آن برای هر پرس بر حسب گرم سنجیده می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##12",
+        "category": "ingredient",
+        "unit": "g"
+      },
+      "aliases": [
+        "وزن مرغ فرنگی"
+      ],
+      "id": "F-00065",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "panir_parmisan",
+      "title": "پنیر پارمیسان",
+      "statement": "پنیر پارمیسان که مقدار مصرف آن برای هر پرس بر حسب گرم سنجیده می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##13",
+        "category": "ingredient",
+        "unit": "g"
+      },
+      "aliases": [
+        "وزن پنیر پارمیسان"
+      ],
+      "id": "F-00066",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "sine_morgh_sukhari",
+      "title": "سینه مرغ سوخاری",
+      "statement": "سینه مرغ سوخاری که از لاین فرنگی به لاین سوخاری تحویل می‌شود و مصرف آن به تعداد شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/cooking/processes/cooking-024.json",
+          "node": "cooking-024-n030",
+          "quote": "تحویل گرفتن سینه مرغ از لاین فرنگی و آماده‌سازی آن در لاین سوخاری",
+          "hash": "sha256:c65a5b0d0b3de8f0e94e154d6fadd5aaae69898f725b7ed1d129680721af13d9",
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##19",
+        "category": "ingredient",
+        "unit": "pcs"
+      },
+      "aliases": [
+        "تعداد سینه مرغ سوخاری"
+      ],
+      "id": "F-00067",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "pitza_napoli",
+      "title": "پیتزا ناپولی",
+      "statement": "پیتزای فروشی با کد #87 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#87",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00068",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "nan_sir_pitzayi",
+      "title": "نان سیر پیتزایی",
+      "statement": "پیش‌غذای فروشی با کد #360 که در لاین پیتزا با سیر روغن آماده و به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/cooking/processes/cooking-035.json",
+          "node": "cooking-035-n012",
+          "quote": "آماده کردن نان سیر در لاین پیتزا با سیر روغن گرفته‌شده از لاین فرنگی",
+          "hash": "sha256:b59e97447ac6eebf9aa1171c410989dbd91fd5a4e4b1bf4dc7b438e9146d8032",
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#360",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00069",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "lazanya_rost_bif",
+      "title": "لازانیا رست بیف",
+      "statement": "لازانیای فروشی با کد #84 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#84",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00070",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "rostbif_71",
+      "title": "رستبیف",
+      "statement": "قلم فروشی با کد #71 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#71",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00071",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "burger_makhsus_769",
+      "title": "برگر مخصوص",
+      "statement": "برگر فروشی با کد #769 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#769",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00072",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "sib_zamini_vije",
+      "title": "سیب زمینی ویژه",
+      "statement": "سیب‌زمینی ویژه با کد #27 که با مخلوط قارچ و ژامبون و گوشت چرخ‌کرده پخته آماده و به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/cooking/processes/cooking-026.json",
+          "node": "cooking-026-n085",
+          "quote": "ریختن مخلوط آماده قارچ و ژامبون از وارمر روی سیب‌ویژه",
+          "hash": "sha256:06446dc4ddf8079e69b0b01b40da3c6e13d7117530de906bd45e616c34d471df",
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#27",
+        "category": "product",
+        "unit": "portion"
+      },
+      "aliases": [
+        "میت"
+      ],
+      "id": "F-00073",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "loqme_morgh_sukhari",
+      "title": "لقمه مرغ سوخاری",
+      "statement": "لقمه مرغ سوخاری که مصرف آن برای هر پرس به تعداد شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##24",
+        "category": "ingredient",
+        "unit": "pcs"
+      },
+      "aliases": [
+        "تعداد لقمه مرغ سوخاری"
+      ],
+      "id": "F-00074",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "roghan_zeytun",
+      "title": "روغن زیتون",
+      "statement": "روغن زیتون مصرفی در سالادها و سس‌ها؛ واحد شمارش آن در منبع نیامده است.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##28",
+        "category": "ingredient",
+        "unit": null
+      },
+      "id": "F-00075",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "hat_dag_16",
+      "title": "هات داگ",
+      "statement": "سوسیس هات داگ که مصرف آن برای هر پرس به تعداد شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##16",
+        "category": "ingredient",
+        "unit": "pcs"
+      },
+      "aliases": [
+        "تعداد هات داگ"
+      ],
+      "id": "F-00076",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "file_morgh_sukhari",
+      "title": "فیله مرغ سوخاری",
+      "statement": "فیله مرغ آمادهٔ سوخاری که مصرف آن برای هر پرس به تعداد شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/cooking/processes/cooking-024.json",
+          "node": "cooking-024-n031",
+          "quote": "تأمین فیله و مرغ سوخاری برای ساندویچ‌های لاین گریل",
+          "hash": "sha256:c65a5b0d0b3de8f0e94e154d6fadd5aaae69898f725b7ed1d129680721af13d9",
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##17",
+        "category": "ingredient",
+        "unit": "pcs"
+      },
+      "aliases": [
+        "تعداد فیله مرغ سوخاری"
+      ],
+      "id": "F-00077",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "file_esterips_chahar_tekke",
+      "title": "فیله استریپس چهار تکه",
+      "statement": "پرس چهارتکه‌ای فیله سوخاری با کد #120 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#120",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00078",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "inja_baks",
+      "title": "اینجا باکس",
+      "statement": "قلم فروشی ترکیبی با کد #7 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#7",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00079",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "bal_o_kataf",
+      "title": "بال و کتف",
+      "statement": "بال و کتف مرغ که مصرف آن برای هر پرس به تعداد شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##20",
+        "category": "ingredient",
+        "unit": "pcs"
+      },
+      "aliases": [
+        "تعداد بال و کتف"
+      ],
+      "id": "F-00080",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "pitza_chikan_barbikyu",
+      "title": "پیتزا چیکن باربیکیو",
+      "statement": "پیتزای فروشی با کد #73 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#73",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00081",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "qarch_sukhari_39",
+      "title": "قارچ سوخاری",
+      "statement": "قارچ آمادهٔ سوخاری‌کردن به عنوان مادهٔ مصرفی؛ واحد شمارش آن در منبع نیامده است.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##39",
+        "category": "ingredient",
+        "unit": null
+      },
+      "id": "F-00082",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "pitza_chaharfasl",
+      "title": "پیتزا چهارفصل",
+      "statement": "پیتزای فروشی با کد #63 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#63",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00083",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "dugh_quti_khoshgovar",
+      "title": "دوغ قوطی خوشگوار",
+      "statement": "دوغ قوطی برند خوشگوار که به تعداد شمارش و فروخته می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##752",
+        "category": "product",
+        "unit": "pcs",
+        "group": "نوشیدنی"
+      },
+      "id": "F-00084",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "goje_gilasi",
+      "title": "گوجه گیلاسی",
+      "statement": "گوجهٔ گیلاسی که همراه نان تست به ظرف سالاد افزوده می‌شود؛ واحد شمارش آن در منبع نیامده است.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/cooking/processes/cooking-026.json",
+          "node": "cooking-026-n076",
+          "quote": "افزودن نان تست و گوجه‌گیلاسی به ظرف سالاد",
+          "hash": "sha256:06446dc4ddf8079e69b0b01b40da3c6e13d7117530de906bd45e616c34d471df",
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##29",
+        "category": "ingredient",
+        "unit": null
+      },
+      "id": "F-00085",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "makhsus_1",
+      "title": "مخصوص",
+      "statement": "یکی از اقلام فروش منو با کد #1 که به صورت پرس آماده و شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#1",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00086",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "nushabe_quti_rezhimi",
+      "title": "نوشابه قوطی رژیمی",
+      "statement": "نوشابهٔ قوطی رژیمی که به تعداد شمارش و فروخته می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##108",
+        "category": "product",
+        "unit": "pcs",
+        "group": "نوشیدنی"
+      },
+      "id": "F-00087",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "lazanya_bolonz",
+      "title": "لازانیا بلونز",
+      "statement": "لازانیای فروشی با کد #85 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#85",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00088",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "tegzas",
+      "title": "تگزاس",
+      "statement": "قلم فروشی با کد #309 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#309",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00089",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "gusht_charkh_karde_farangi",
+      "title": "گوشت چرخ کرده فرنگی",
+      "statement": "گوشت چرخ‌کردهٔ مصرفی لاین فرنگی که مقدار آن برای هر پرس بر حسب گرم سنجیده می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/cooking/processes/cooking-035.json",
+          "node": "cooking-035-n004",
+          "quote": "مراجعه لاین فرنگی به لاین پیتزا هنگام نیاز به گوشت چرخ‌کرده سیب‌ویژه",
+          "hash": "sha256:b59e97447ac6eebf9aa1171c410989dbd91fd5a4e4b1bf4dc7b438e9146d8032",
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##23",
+        "category": "ingredient",
+        "unit": "g"
+      },
+      "aliases": [
+        "وزن گوشت چرخ کرده فرنگی"
+      ],
+      "id": "F-00090",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "delester_limu",
+      "title": "دلستر لیمو",
+      "statement": "دلستر با طعم لیمو که به تعداد شمارش و فروخته می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##754",
+        "category": "product",
+        "unit": "pcs",
+        "group": "نوشیدنی"
+      },
+      "id": "F-00091",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "sabzijat_551",
+      "title": "سبزیجات",
+      "statement": "قلم فروشی با کد #551 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#551",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00092",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "filadelfia",
+      "title": "فیلادلفیا",
+      "statement": "پنیر فیلادلفیا که مقدار مصرف آن برای هر پرس بر حسب گرم سنجیده می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##9",
+        "category": "ingredient",
+        "unit": "g"
+      },
+      "aliases": [
+        "وزن فیلادلفیا"
+      ],
+      "id": "F-00093",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "bal_o_kataf_sukhari",
+      "title": "بال و کتف سوخاری",
+      "statement": "پرس بال و کتف سوخاری با کد #122 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#122",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00094",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "salad_kentaki_338",
+      "title": "سالاد کنتاکی",
+      "statement": "سالاد فروشی با کد #338 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#338",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00095",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "panir_guda_livani",
+      "title": "پنیر گودا لیوانی",
+      "statement": "پنیر گودای عرضه‌شده در بستهٔ لیوانی؛ واحد شمارش آن در منبع نیامده است.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##74",
+        "category": "ingredient",
+        "unit": null
+      },
+      "id": "F-00096",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "panir_pitza",
+      "title": "پنیر پیتزا",
+      "statement": "پنیر مصرفی روی پیتزا که مقدار آن برای هر پرس بر حسب گرم سنجیده و در نسخهٔ غذا ثبت می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##1",
+        "category": "ingredient",
+        "unit": "g"
+      },
+      "aliases": [
+        "وزن پنیر پیتزا"
+      ],
+      "id": "F-00097",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "nushabe_khanevade_meshki",
+      "title": "نوشابه خانواده مشکی",
+      "statement": "نوشابهٔ کولا در بطری خانواده که به تعداد شمارش و فروخته می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##277",
+        "category": "product",
+        "unit": "pcs",
+        "group": "نوشیدنی"
+      },
+      "id": "F-00098",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "ses_alfredo_pitza",
+      "title": "سس آلفردو پیتزا",
+      "statement": "سس آلفردوی کف پیتزا؛ واحد شمارش آن در منبع نیامده است.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##37",
+        "category": "ingredient",
+        "unit": null,
+        "state": "prepared"
+      },
+      "id": "F-00099",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "krispi_sine_do_tekke",
+      "title": "کریسپی سینه دو تکه",
+      "statement": "پرس دوتکه‌ای سینه مرغ سوخاری با کد #123 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/cooking/processes/cooking-036.json",
+          "node": "cooking-036-n011",
+          "quote": "تحویل سینه مرغ به لاین سوخاری با رسیدن فیش دبل‌دان، دبل‌کینگ یا سینه کریسپی دو تیکه",
+          "hash": "sha256:9f05fc5f3cf8b96917aef7d9ad1716fa6aa4525c6ca4d8a195747c529afed247",
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#123",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00100",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "nushabe_quti_porteqali",
+      "title": "نوشابه قوطی پرتقالی",
+      "statement": "نوشابهٔ قوطی پرتقالی که به تعداد شمارش و فروخته می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##102",
+        "category": "product",
+        "unit": "pcs",
+        "group": "نوشیدنی"
+      },
+      "id": "F-00101",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "delester_estvayi",
+      "title": "دلستر استوایی",
+      "statement": "دلستر با طعم استوایی که به تعداد شمارش و فروخته می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##368",
+        "category": "product",
+        "unit": "pcs",
+        "group": "نوشیدنی"
+      },
+      "id": "F-00102",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "peperoni",
+      "title": "پپرونی",
+      "statement": "پپرونی مصرفی روی پیتزا که مقدار آن برای هر پرس بر حسب گرم سنجیده می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##4",
+        "category": "ingredient",
+        "unit": "g"
+      },
+      "aliases": [
+        "وزن پپرونی"
+      ],
+      "id": "F-00103",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "nushabe_quti_meshki",
+      "title": "نوشابه قوطی مشکی",
+      "statement": "نوشابهٔ قوطی کولا که به تعداد شمارش و فروخته می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##101",
+        "category": "product",
+        "unit": "pcs",
+        "group": "نوشیدنی"
+      },
+      "id": "F-00104",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "nan_mak",
+      "title": "نان مک",
+      "statement": "نان ساندویچ مک که مصرف آن برای هر پرس به تعداد شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##41",
+        "category": "ingredient",
+        "unit": "pcs"
+      },
+      "aliases": [
+        "تعداد نان مک"
+      ],
+      "id": "F-00105",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "inja_pitza",
+      "title": "اینجا پیتزا",
+      "statement": "پیتزای فروشی با کد #61 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#61",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00106",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "pasta_pene_kham",
+      "title": "پاستا پنه خام",
+      "statement": "پاستای پنهٔ خام پیش از پخت؛ واحد شمارش آن در منبع نیامده است.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##44",
+        "category": "ingredient",
+        "unit": null,
+        "state": "raw"
+      },
+      "id": "F-00107",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "miks_49",
+      "title": "میکس",
+      "statement": "یکی از اقلام فروش منو با کد #49 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#49",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00108",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "zhambon_miks",
+      "title": "ژامبون مرغ و گوشت میکس",
+      "statement": "ژامبون میکس مرغ و گوشت که در آماده‌سازی مصرف می‌شود؛ واحد شمارش آن در منبع نیامده است.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##22",
+        "category": "ingredient",
+        "unit": null
+      },
+      "id": "F-00109",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "file_espaysi_se_tekke",
+      "title": "فیله اسپایسی سه تکه",
+      "statement": "پرس سه‌تکه‌ای فیله سوخاری تند با کد #386 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#386",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00110",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "jafari",
+      "title": "جعفری",
+      "statement": "جعفری خردشده که روی غذاها پاشیده می‌شود و مقدار آن بر حسب گرم سنجیده می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/cooking/processes/cooking-026.json",
+          "node": "cooking-026-n089",
+          "quote": "پاشیدن جعفری خردشده گرفته‌شده از لاین پیتزا روی سیب‌ویژه",
+          "hash": "sha256:06446dc4ddf8079e69b0b01b40da3c6e13d7117530de906bd45e616c34d471df",
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##45",
+        "category": "ingredient",
+        "unit": "g",
+        "state": "prepared"
+      },
+      "aliases": [
+        "وزن جعفری"
+      ],
+      "id": "F-00111",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "mini_burger",
+      "title": "مینی برگر",
+      "statement": "قرص مینی برگر که مصرف آن برای هر پرس به تعداد شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##10",
+        "category": "ingredient",
+        "unit": "pcs"
+      },
+      "aliases": [
+        "تعداد مینی برگر"
+      ],
+      "id": "F-00112",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "sib_sorkh_shode",
+      "title": "سیب سرخ شده",
+      "statement": "سیب‌زمینی سرخ‌شده با کد #11 که به صورت پرس آماده و شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/cooking/processes/cooking-035.json",
+          "node": "cooking-035-n016",
+          "quote": "رساندن سیب سرخ‌شده از لاین سوخاری به لاین پیتزا",
+          "hash": "sha256:b59e97447ac6eebf9aa1171c410989dbd91fd5a4e4b1bf4dc7b438e9146d8032",
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#11",
+        "category": "product",
+        "unit": "portion",
+        "state": "cooked"
+      },
+      "id": "F-00113",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "salad_chiza_ba_panir_ezafe",
+      "title": "سالاد چیزا با پنیر اضافه",
+      "statement": "گونهٔ سالاد چیزا با پنیر بیشتر، با کد #407، که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#407",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00114",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "morgh_rol_sukhari",
+      "title": "مرغ رول سوخاری",
+      "statement": "مرغ رول سوخاری که مصرف آن به پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##21",
+        "category": "ingredient",
+        "unit": "portion"
+      },
+      "aliases": [
+        "تعداد پرس مرغ رول سوخاری"
+      ],
+      "id": "F-00115",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "pitza_personeli",
+      "title": "پیتزا پرسنلی",
+      "statement": "پیتزای مصرف پرسنل با کد #10 که به صورت پرس شمارش می‌شود و فروش نمی‌رود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#10",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00116",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "krakof_784",
+      "title": "کراکف",
+      "statement": "قلم فروشی با کد #784 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#784",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00117",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "mini_mak_348",
+      "title": "مینی مک",
+      "statement": "ساندویچ فروشی با کد #348 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#348",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00118",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "hat_dag_139",
+      "title": "هات داگ",
+      "statement": "ساندویچ فروشی با کد #139 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#139",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00119",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "qarch_farangi",
+      "title": "قارچ فرنگی",
+      "statement": "قارچ مصرفی لاین فرنگی؛ واحد شمارش آن در منبع نیامده است.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##40",
+        "category": "ingredient",
+        "unit": null
+      },
+      "id": "F-00120",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "qarch_eslays_shode",
+      "title": "قارچ اسلایس شده",
+      "statement": "قارچ اسلایس‌شده که پیش از سرویس در ماهیتابه با کمی روغن سرخ می‌شود؛ واحد شمارش آن در منبع نیامده است.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/cooking/processes/cooking-026.json",
+          "node": "cooking-026-n012",
+          "quote": "سرخ کردن قارچ اسلایس‌شده در ماهیتابه با کمی روغن",
+          "hash": "sha256:06446dc4ddf8079e69b0b01b40da3c6e13d7117530de906bd45e616c34d471df",
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##32",
+        "category": "ingredient",
+        "unit": null,
+        "state": "prepared"
+      },
+      "id": "F-00121",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "doner",
+      "title": "دونر",
+      "statement": "ساندویچ فروشی با کد #400 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#400",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00122",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "ab_madani",
+      "title": "آب معدنی",
+      "statement": "بطری آب معدنی که به تعداد شمارش و فروخته می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##273",
+        "category": "product",
+        "unit": "pcs",
+        "group": "نوشیدنی"
+      },
+      "id": "F-00123",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "esteyk",
+      "title": "استیک",
+      "statement": "گوشت استیک که مقدار مصرف آن برای هر پرس بر حسب گرم سنجیده می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##8",
+        "category": "ingredient",
+        "unit": "g"
+      },
+      "aliases": [
+        "وزن استیک"
+      ],
+      "id": "F-00124",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "burger_makhsus_773",
+      "title": "برگر مخصوص",
+      "statement": "برگر فروشی با کد #773 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#773",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00125",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "makhsus_771",
+      "title": "مخصوص",
+      "statement": "قلم فروشی با کد #771 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#771",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00126",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "zhambon_se_gane",
+      "title": "ژامبون سه گانه",
+      "statement": "ژامبون سه‌گانه که مقدار مصرف آن برای هر پرس بر حسب گرم سنجیده می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##3",
+        "category": "ingredient",
+        "unit": "g"
+      },
+      "aliases": [
+        "وزن ژامبون سه گانه"
+      ],
+      "id": "F-00127",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "panir_rol_sukhari",
+      "title": "پنیر رول سوخاری",
+      "statement": "پنیر مصرفی در رول سوخاری و سالاد چیزا که به تعداد شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##38",
+        "category": "ingredient",
+        "unit": "pcs"
+      },
+      "aliases": [
+        "تعداد پنیر رول سوخاری",
+        "پنیر چیزا"
+      ],
+      "id": "F-00128",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "chikan_alfredo_65",
+      "title": "چیکن آلفردو",
+      "statement": "قلم فروشی با کد #65 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#65",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00129",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "file_esterips_se_tekke",
+      "title": "فیله استریپس سه تکه",
+      "statement": "پرس سه‌تکه‌ای فیله سوخاری با کد #385 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#385",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00130",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "zarf_salad_kentaki",
+      "title": "ظرف سالاد کنتاکی",
+      "statement": "ظرف بسته‌بندی سالاد کنتاکی که به تعداد شمارش و انبار می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##60",
+        "category": "packaging",
+        "unit": "pcs"
+      },
+      "id": "F-00131",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "beykan_308",
+      "title": "بیکن",
+      "statement": "قلم فروشی با کد #308 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#308",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00132",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "geril_chikan",
+      "title": "گریل چیکن",
+      "statement": "ساندویچ فروشی لاین گریل با کد #137 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#137",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00133",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "salad_kentaki_46",
+      "title": "سالاد کنتاکی آماده",
+      "statement": "سالاد کنتاکی آماده به عنوان مادهٔ مصرفی که مقدار آن بر حسب گرم سنجیده می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##46",
+        "category": "ingredient",
+        "unit": "g",
+        "state": "prepared"
+      },
+      "aliases": [
+        "سالاد کنتاکی",
+        "وزن سالاد کنتاکی"
+      ],
+      "id": "F-00134",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "rostbif_4",
+      "title": "رستبیف",
+      "statement": "یکی از اقلام فروش منو با کد #4 که به صورت پرس آماده و شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#4",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00135",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "pasta_pesto",
+      "title": "پاستا پستو",
+      "statement": "پاستای فروشی با کد #601 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#601",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00136",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "chikan_alfredo_783",
+      "title": "چیکن آلفردو",
+      "statement": "قلم فروشی با کد #783 که به صورت پرس شمارش می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "#783",
+        "category": "product",
+        "unit": "portion"
+      },
+      "id": "F-00137",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "item",
+      "key": "singel_moraba_italiyayi",
+      "title": "سینگل مربع ایتالیایی",
+      "statement": "ظرف تک‌نفرهٔ مربع پیتزای ایتالیایی که به تعداد شمارش و انبار می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "code": "##59",
+        "category": "packaging",
+        "unit": "pcs"
+      },
+      "id": "F-00138",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    }
+  ]
 }
