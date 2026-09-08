@@ -120,6 +120,9 @@ Rules the validator enforces, so get them right the first time:
 | measurement (`new` only) | `of`, `quantity` (the **kind** of quantity, never a number), `unit`, `method`, `when`, `by`, `writes_to`, `exceptions` — either `writes_to`, or both `by` and `when` | — |
 | note (`new` only) | `about[]` (at least one ref) and `question`, both required | the key |
 
+A column whose cells are names is `type: string`; `refItems` is only for cells that are the
+catalogue's `##` codes or item keys.
+
 **A rule whose bindings carry a varying number or a varying basis column is ONE rule.** The
 tolerances 5 / 140 / 4 / 75 / 100 are not five rules and not five constants: they are the values of
 one parameter. Write one expression that reads the parameters —
@@ -127,7 +130,8 @@ one parameter. Write one expression that reads the parameters —
 `{"key": "tolerance_gr", "from": {"param": "tolerancePerFoodGr"}}` and
 `{"key": "basis", "from": {"param": "ref_1"}}` in `inputs[]`. The values are already in
 `applies_to[].params`. Nothing here ever produces one rule per line, and no constant entry is minted
-for a formula's literal.
+for a formula's literal. An input bound through a parameter takes its key and title from the
+column the parameter resolves to, as printed under the candidate.
 
 ### `review` mode
 
@@ -137,7 +141,9 @@ Your input is a digest of the whole assembled result plus the flags the engine r
 `{"action": "contradiction", "field": "<path>", "resolution": "account" | "fix", "value": …,
 "reason": "…"}` — `fix` only when one side is a demonstrable slip you can name. A `contradiction` is
 addressed by `entry` like every other review decision; one addressed by `skeleton` discards the
-whole review.
+whole review. A `contradiction` is admissible only on a field the digest lists under
+its drift flags; two entries you believe disagree on any other field are a `keep` carrying the
+reason, never a `contradiction`.
 
 **At most 60 decisions and at most 20 statement rewrites.** Your input prints both caps and the
 validator refuses a document that exceeds them. Address an entry unambiguously: an address matching
