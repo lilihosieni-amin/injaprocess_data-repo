@@ -1,0 +1,55 @@
+{
+  "add_nodes": [],
+  "add_edges": [
+    {
+      "from": "preparation-004-n002",
+      "to": "preparation-004-n004"
+    },
+    {
+      "from": "preparation-004-j4",
+      "to": "preparation-004-j5"
+    },
+    {
+      "from": "preparation-004-j5",
+      "to": "preparation-004-n017",
+      "label": "در صورت مطابقت اقلام و تکمیل تحویل‌گیری"
+    }
+  ],
+  "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [
+    { "from": "preparation-004-n002", "to": "preparation-004-j1" },
+    { "from": "preparation-004-j1", "to": "preparation-004-n003" },
+    { "from": "preparation-004-j1", "to": "preparation-004-j2" },
+    { "from": "preparation-004-n003", "to": "preparation-004-j2" },
+    { "from": "preparation-004-j2", "to": "preparation-004-n004" },
+    { "from": "preparation-004-j4", "to": "preparation-004-n009" },
+    { "from": "preparation-004-n009", "to": "preparation-004-j5" },
+    { "from": "preparation-004-j5", "to": "preparation-004-n011" },
+    { "from": "preparation-004-j5", "to": "preparation-004-j6" },
+    { "from": "preparation-004-n011", "to": "preparation-004-n012" },
+    { "from": "preparation-004-n012", "to": "preparation-004-j6" },
+    { "from": "preparation-004-j6", "to": "preparation-004-n013" },
+    { "from": "preparation-004-n013", "to": "preparation-004-j7" },
+    { "from": "preparation-004-j7", "to": "preparation-004-n014" },
+    { "from": "preparation-004-j7", "to": "preparation-004-n015" },
+    { "from": "preparation-004-j7", "to": "preparation-004-n017" },
+    { "from": "preparation-004-n014", "to": "preparation-004-n004" },
+    { "from": "preparation-004-n015", "to": "preparation-004-n016" },
+    { "from": "preparation-004-n016", "to": "preparation-004-n009" }
+  ],
+  "flag_removed": [
+    { "id": "preparation-004-n003" },
+    { "id": "preparation-004-n009" },
+    { "id": "preparation-004-n011" },
+    { "id": "preparation-004-n012" },
+    { "id": "preparation-004-n013" },
+    { "id": "preparation-004-n014" },
+    { "id": "preparation-004-n015" },
+    { "id": "preparation-004-n016" },
+    { "id": "preparation-004-j1" },
+    { "id": "preparation-004-j2" },
+    { "id": "preparation-004-j6" },
+    { "id": "preparation-004-j7" }
+  ]
+}
