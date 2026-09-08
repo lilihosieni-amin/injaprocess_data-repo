@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-04T23:44:41Z",
-  "updated_at": "2026-09-04T23:44:41Z",
+  "updated_at": "2026-09-08T14:52:06Z",
   "idef0": {
     "inputs": [
       "تخته کار آغشته به روغن و نمک شب قبل",
@@ -269,7 +269,7 @@
       "direction": "join",
       "position": {
         "x": 1143,
-        "y": 806.0
+        "y": 981.0
       },
       "layout": "auto"
     },
@@ -295,11 +295,38 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 790.0
+        "y": 965.0
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "preparation-002-n009",
+      "type": "activity",
+      "label": "شروع زدن سس‌ها توسط مسئول قسمت سس‌ها پیش از رسیدن لیست و مرغ",
+      "description": "کسی که قدیمی‌تر است و با سس آشنایی دارد اول کار شروع به سس زدن می‌کند و تا وقتی مرغ نیامده، مسئول لاین مرغ (تخته‌کار) سس آلفردو، سس قارچ و سس بیف را می‌زند؛ سس آلفردوی پاستا هم در همین فاصله زده می‌شود. مقدار موردنیاز از لیست انبار می‌آید، مثلاً شش کیلو سس آلفردو.",
+      "actor": "مسئول قسمت سس‌ها",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [
+          "آغاز تولید سس‌های اول وقت"
+        ],
+        "mechanisms": [
+          "مسئول قسمت سس‌ها"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 615.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260908-145155",
         "touched_by": []
       }
     }
@@ -352,6 +379,14 @@
     {
       "from": "preparation-002-j2",
       "to": "preparation-002-n008"
+    },
+    {
+      "from": "preparation-002-j1",
+      "to": "preparation-002-n009"
+    },
+    {
+      "from": "preparation-002-n009",
+      "to": "preparation-002-j2"
     }
   ],
   "pending": []
