@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "unit": "review",
+  "attempt": 1,
+  "decisions": [
+    {
+      "entry": {
+        "kind": "record",
+        "key": "enheraf_amargiri_naharkhoran",
+        "scope": { "branches": [], "departments": ["accounting"] }
+      },
+      "action": "merge_into",
+      "into": {
+        "kind": "record",
+        "key": "enheraf_amargiri_chalebagh",
+        "scope": { "branches": [], "departments": ["accounting"] }
+      },
+      "reason_code": "duplicate",
+      "reason": "One and the same daily deviation log, kept once per branch: same grain (one row per day), same column layout by counter and line, and the same 33 of 34 columns. The branch belongs on the instances, not on two separate entries."
+    },
+    {
+      "entry": {
+        "kind": "record",
+        "key": "enheraf_amargiri_chalebagh",
+        "scope": { "branches": [], "departments": ["accounting"] }
+      },
+      "action": "keep",
+      "key": "enheraf_amargiri",
+      "title": "انحراف آمارگیری روزانه",
+      "statement": "سیاههٔ روزانهٔ انحراف آمارگیری اقلام است؛ برای هر شعبه و هر روز یک سطر پر می‌شود و در هر ستون اختلاف مقدار شمارش‌شدهٔ یک قلم با مقدار مورد انتظار آن ثبت می‌گردد. ستون‌ها به تفکیک کانتر آشپزخانه، سوخاری، کانتر سالن، لاین پیتزا و لاین فرنگی چیده شده‌اند.",
+      "aliases": ["انحراف آمارگیری شعبه چاله باغ", "انحراف آمارگیری شعبه ناهارخوران"],
+      "reason": "The entry now covers both branches, so its key, title and statement must not name one branch; the branch is carried by the instances."
+    },
+    {
+      "entry": {
+        "kind": "record",
+        "key": "amar_morgh_va_foroush_pizza",
+        "scope": { "branches": [], "departments": ["accounting"] }
+      },
+      "action": "keep",
+      "key": "amar_morgh_va_foroush_pizza",
+      "title": "آمار روزانه مرغ خام ورودی و فروش پیتزا",
+      "statement": "سیاههٔ روزانه‌ای که وزن مرغ خام ورودی را به تفکیک سینه، فیله و بال و همچنین تعداد پیتزای فروخته‌شدهٔ هر شعبه را به تفکیک نوع پیتزا ثبت می‌کند. برای هر روز یک سطر پر می‌شود.",
+      "data": {
+        "fields": [
+          { "from": "tarikh" },
+          { "from": "vazn_sine" },
+          { "from": "vazn_file" },
+          { "from": "vazn_bal" },
+          { "from": "amrikaei" },
+          { "from": "italiaei" },
+          { "from": "inja_pizza" },
+          {
+            "from": "pizza_amrikaei_chalebagh",
+            "type": "number",
+            "unit": { "value": "pcs", "inferred": true }
+          },
+          {
+            "from": "pizza_italiaei_chalebagh",
+            "type": "number",
+            "unit": { "value": "pcs", "inferred": true }
+          },
+          {
+            "from": "pizza_single_chalebagh",
+            "type": "number",
+            "unit": { "value": "pcs", "inferred": true }
+          },
+          {
+            "from": "pizza_amrikaei_naharkhoran",
+            "type": "number",
+            "unit": { "value": "pcs", "inferred": true }
+          },
+          {
+            "from": "pizza_italiaei_naharkhoran",
+            "type": "number",
+            "unit": { "value": "pcs", "inferred": true }
+          },
+          {
+            "from": "pizza_single_naharkhoran",
+            "type": "number",
+            "unit": { "value": "pcs", "inferred": true }
+          }
+        ]
+      },
+      "reason": "The branch pizza columns are sold counts and were left without a unit; the entry's own statement says they are counts, so the unit is pcs, marked inferred. Every other column of the record is declared here unchanged, so that the primary key and the existing field statuses keep pointing at fields that exist."
+    }
+  ]
+}

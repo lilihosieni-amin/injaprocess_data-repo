@@ -1,0 +1,16 @@
+{
+  "department": "accounting",
+  "origin": "pipeline",
+  "actor": "coordinator",
+  "started_at": "2026-09-09T03:39:25Z",
+  "finished_at": "2026-09-09T04:12:00Z",
+  "recordings": [],
+  "attachments": [],
+  "workbooks": ["Hesabdari.xlsx"],
+  "delta": "runs/facts/accounting/20260909-033925/facts-delta.json",
+  "merged": true,
+  "ids_created": ["F-00228", "F-00229", "F-00230", "F-00231", "F-00232", "F-00233"],
+  "units": [
+    { "id": "u-wb-hesabdari", "type": "workbook", "state": "done", "attempts": 2 }
+  ]
+}

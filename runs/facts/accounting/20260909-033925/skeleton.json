@@ -1,0 +1,1244 @@
+{
+  "schema_version": 1,
+  "department": "accounting",
+  "run": "20260909-033925",
+  "unit_symbols": [
+    "carton",
+    "day",
+    "g",
+    "hour",
+    "irr",
+    "kg",
+    "l",
+    "min",
+    "ml",
+    "pack",
+    "pcs",
+    "percent",
+    "portion",
+    "ratio",
+    "slice"
+  ],
+  "candidates": [
+    {
+      "id": "S-rec-e4e1eafc52a5",
+      "kind": "record",
+      "unit": "u-wb-hesabdari",
+      "payload": {
+        "medium": "sheet",
+        "location": {
+          "path": "attachments/sheets/Hesabdari__Hesabdari/Hesabdari.xlsx",
+          "spreadsheetId": "1MRTM9BV9y0bHGM79QxkE6pHhCdy45aT9hSQXGKJOWHo",
+          "sheet": "انحراف آمارگیری شعبه چاله باغ"
+        },
+        "instances": [
+          {
+            "key": "hesabdari__s1",
+            "spreadsheetId": "1MRTM9BV9y0bHGM79QxkE6pHhCdy45aT9hSQXGKJOWHo",
+            "sheetId": 1,
+            "sheet": "انحراف آمارگیری شعبه چاله باغ",
+            "branch": null,
+            "hidden": false
+          }
+        ],
+        "fields": [
+          {
+            "key": "c_a",
+            "title": "تاریخ",
+            "columns": {
+              "hesabdari__s1": "a"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_b",
+            "title": "نوشابه قوطی (آشپزخانه)",
+            "columns": {
+              "hesabdari__s1": "b"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_c",
+            "title": "نوشابه خانواده (آشپزخانه)",
+            "columns": {
+              "hesabdari__s1": "c"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_d",
+            "title": "دوغ (آشپزخانه)",
+            "columns": {
+              "hesabdari__s1": "d"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_e",
+            "title": "دلستر (آشپزخانه)",
+            "columns": {
+              "hesabdari__s1": "e"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_f",
+            "title": "آب معدنی (آشپزخانه)",
+            "columns": {
+              "hesabdari__s1": "f"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_g",
+            "title": "چیزا",
+            "columns": {
+              "hesabdari__s1": "g"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_h",
+            "title": "استریپس",
+            "columns": {
+              "hesabdari__s1": "h"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_i",
+            "title": "اسپایسی",
+            "columns": {
+              "hesabdari__s1": "i"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_j",
+            "title": "بال",
+            "columns": {
+              "hesabdari__s1": "j"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_k",
+            "title": "لقمه",
+            "columns": {
+              "hesabdari__s1": "k"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_l",
+            "title": "نوشابه قوطی (سالن)",
+            "columns": {
+              "hesabdari__s1": "l"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_m",
+            "title": "دوغ (سالن)",
+            "columns": {
+              "hesabdari__s1": "m"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_n",
+            "title": "دلستر (سالن)",
+            "columns": {
+              "hesabdari__s1": "n"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_o",
+            "title": "آب معدنی (سالن)",
+            "columns": {
+              "hesabdari__s1": "o"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_p",
+            "title": "پنیر",
+            "columns": {
+              "hesabdari__s1": "p"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_q",
+            "title": "رست بیف (پیتزا)",
+            "columns": {
+              "hesabdari__s1": "q"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_r",
+            "title": "استیک",
+            "columns": {
+              "hesabdari__s1": "r"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_s",
+            "title": "ژامبون سه گانه",
+            "columns": {
+              "hesabdari__s1": "s"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_t",
+            "title": "پپرونی",
+            "columns": {
+              "hesabdari__s1": "t"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_u",
+            "title": "مرغ پیتزا",
+            "columns": {
+              "hesabdari__s1": "u"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_v",
+            "title": "چرخ کرده (پیتزا)",
+            "columns": {
+              "hesabdari__s1": "v"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_w",
+            "title": "کباب دونر",
+            "columns": {
+              "hesabdari__s1": "w"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_x",
+            "title": "فیلادلفیا",
+            "columns": {
+              "hesabdari__s1": "x"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_y",
+            "title": "برگر",
+            "columns": {
+              "hesabdari__s1": "y"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_z",
+            "title": "مینی برگر",
+            "columns": {
+              "hesabdari__s1": "z"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_aa",
+            "title": "هات داگ",
+            "columns": {
+              "hesabdari__s1": "aa"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_ab",
+            "title": "گودا لیوانی",
+            "columns": {
+              "hesabdari__s1": "ab"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_ac",
+            "title": "چرخ کرده (فرنگی)",
+            "columns": {
+              "hesabdari__s1": "ac"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_ad",
+            "title": "رست بیف (فرنگی)",
+            "columns": {
+              "hesabdari__s1": "ad"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_ae",
+            "title": "پنیر پارمیسان",
+            "columns": {
+              "hesabdari__s1": "ae"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_af",
+            "title": "گودا ورقه ای",
+            "columns": {
+              "hesabdari__s1": "af"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_ag",
+            "title": "مرغ پاستا",
+            "columns": {
+              "hesabdari__s1": "ag"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_ah",
+            "title": "ژامبون سیب ویژه",
+            "columns": {
+              "hesabdari__s1": "ah"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_ai",
+            "title": "بیکن",
+            "columns": {
+              "hesabdari__s1": "ai"
+            },
+            "type": "number"
+          }
+        ]
+      },
+      "render": {
+        "sheet": "انحراف آمارگیری شعبه چاله باغ",
+        "signature": [
+          "انحراف آمارگیری شعبه",
+          []
+        ],
+        "header_notes": [
+          {
+            "column": "b",
+            "text": "کانتر آشپزخانه"
+          },
+          {
+            "column": "g",
+            "text": "سوخاری"
+          },
+          {
+            "column": "l",
+            "text": "پیتزا"
+          },
+          {
+            "column": "y",
+            "text": "فرنگی"
+          }
+        ],
+        "row_labels": null,
+        "reference": false
+      }
+    },
+    {
+      "id": "S-rec-7db1308fa458",
+      "kind": "record",
+      "unit": "u-wb-hesabdari",
+      "payload": {
+        "medium": "sheet",
+        "location": {
+          "path": "attachments/sheets/Hesabdari__Hesabdari/Hesabdari.xlsx",
+          "spreadsheetId": "1MRTM9BV9y0bHGM79QxkE6pHhCdy45aT9hSQXGKJOWHo",
+          "sheet": "انحراف آمارگیری شعبه ناهارخوران"
+        },
+        "instances": [
+          {
+            "key": "hesabdari__s2",
+            "spreadsheetId": "1MRTM9BV9y0bHGM79QxkE6pHhCdy45aT9hSQXGKJOWHo",
+            "sheetId": 2,
+            "sheet": "انحراف آمارگیری شعبه ناهارخوران",
+            "branch": null,
+            "hidden": false
+          }
+        ],
+        "fields": [
+          {
+            "key": "c_a",
+            "title": "تاریخ",
+            "columns": {
+              "hesabdari__s2": "a"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_b",
+            "title": "نوشابه قوطی ( اشپزخانه )",
+            "columns": {
+              "hesabdari__s2": "b"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_c",
+            "title": "نوشابه خانواده (آشپزخانه)",
+            "columns": {
+              "hesabdari__s2": "c"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_d",
+            "title": "دوغ (آشپزخانه)",
+            "columns": {
+              "hesabdari__s2": "d"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_e",
+            "title": "دلستر (آشپزخانه)",
+            "columns": {
+              "hesabdari__s2": "e"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_f",
+            "title": "آب معدنی (آشپزخانه)",
+            "columns": {
+              "hesabdari__s2": "f"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_g",
+            "title": "چیزا",
+            "columns": {
+              "hesabdari__s2": "g"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_h",
+            "title": "استریپس",
+            "columns": {
+              "hesabdari__s2": "h"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_i",
+            "title": "اسپایسی",
+            "columns": {
+              "hesabdari__s2": "i"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_j",
+            "title": "بال",
+            "columns": {
+              "hesabdari__s2": "j"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_k",
+            "title": "لقمه",
+            "columns": {
+              "hesabdari__s2": "k"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_l",
+            "title": "نوشابه قوطی (سالن)",
+            "columns": {
+              "hesabdari__s2": "l"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_m",
+            "title": "دوغ (سالن)",
+            "columns": {
+              "hesabdari__s2": "m"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_n",
+            "title": "دلستر (سالن)",
+            "columns": {
+              "hesabdari__s2": "n"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_o",
+            "title": "آب معدنی (سالن)",
+            "columns": {
+              "hesabdari__s2": "o"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_p",
+            "title": "پنیر",
+            "columns": {
+              "hesabdari__s2": "p"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_q",
+            "title": "رست بیف (پیتزا)",
+            "columns": {
+              "hesabdari__s2": "q"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_r",
+            "title": "استیک",
+            "columns": {
+              "hesabdari__s2": "r"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_s",
+            "title": "ژامبون سه گانه",
+            "columns": {
+              "hesabdari__s2": "s"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_t",
+            "title": "پپرونی",
+            "columns": {
+              "hesabdari__s2": "t"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_u",
+            "title": "مرغ باربیکیو",
+            "columns": {
+              "hesabdari__s2": "u"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_v",
+            "title": "چرخ کرده (پیتزا)",
+            "columns": {
+              "hesabdari__s2": "v"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_w",
+            "title": "کباب دونر",
+            "columns": {
+              "hesabdari__s2": "w"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_x",
+            "title": "فیلادلفیا",
+            "columns": {
+              "hesabdari__s2": "x"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_y",
+            "title": "برگر",
+            "columns": {
+              "hesabdari__s2": "y"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_z",
+            "title": "مینی برگر",
+            "columns": {
+              "hesabdari__s2": "z"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_aa",
+            "title": "هات داگ",
+            "columns": {
+              "hesabdari__s2": "aa"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_ab",
+            "title": "گودا لیوانی",
+            "columns": {
+              "hesabdari__s2": "ab"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_ac",
+            "title": "چرخ کرده (فرنگی)",
+            "columns": {
+              "hesabdari__s2": "ac"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_ad",
+            "title": "رست بیف (فرنگی)",
+            "columns": {
+              "hesabdari__s2": "ad"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_ae",
+            "title": "پنیر پارمیسان",
+            "columns": {
+              "hesabdari__s2": "ae"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_af",
+            "title": "گودا ورقه ای",
+            "columns": {
+              "hesabdari__s2": "af"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_ag",
+            "title": "مرغ پاستا",
+            "columns": {
+              "hesabdari__s2": "ag"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_ah",
+            "title": "ژامبون سیب ویژه",
+            "columns": {
+              "hesabdari__s2": "ah"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_ai",
+            "title": "بیکن",
+            "columns": {
+              "hesabdari__s2": "ai"
+            },
+            "type": "number"
+          }
+        ]
+      },
+      "render": {
+        "sheet": "انحراف آمارگیری شعبه ناهارخوران",
+        "signature": [
+          "انحراف آمارگیری شعبه",
+          []
+        ],
+        "header_notes": [
+          {
+            "column": "b",
+            "text": "کانتر آشپزخانه"
+          },
+          {
+            "column": "g",
+            "text": "سوخاری"
+          },
+          {
+            "column": "l",
+            "text": "کانتر سالن"
+          },
+          {
+            "column": "p",
+            "text": "پیتزا"
+          },
+          {
+            "column": "y",
+            "text": "فرنگی"
+          }
+        ],
+        "row_labels": null,
+        "reference": false
+      }
+    },
+    {
+      "id": "S-rec-8612e62796d6",
+      "kind": "record",
+      "unit": "u-wb-hesabdari",
+      "payload": {
+        "medium": "sheet",
+        "location": {
+          "path": "attachments/sheets/Hesabdari__Hesabdari/Hesabdari.xlsx",
+          "spreadsheetId": "1MRTM9BV9y0bHGM79QxkE6pHhCdy45aT9hSQXGKJOWHo",
+          "sheet": "آمار"
+        },
+        "instances": [
+          {
+            "key": "hesabdari__s3",
+            "spreadsheetId": "1MRTM9BV9y0bHGM79QxkE6pHhCdy45aT9hSQXGKJOWHo",
+            "sheetId": 3,
+            "sheet": "آمار",
+            "branch": null,
+            "hidden": false
+          }
+        ],
+        "fields": [
+          {
+            "key": "c_a",
+            "title": "تاریخ",
+            "columns": {
+              "hesabdari__s3": "a"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_b",
+            "title": "وزن سینه",
+            "columns": {
+              "hesabdari__s3": "b"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_c",
+            "title": "وزن فیله",
+            "columns": {
+              "hesabdari__s3": "c"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_d",
+            "title": "وزن بال",
+            "columns": {
+              "hesabdari__s3": "d"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_e",
+            "title": "آمریکایی",
+            "columns": {
+              "hesabdari__s3": "e"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_f",
+            "title": "ایتالیائی",
+            "columns": {
+              "hesabdari__s3": "f"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_g",
+            "title": "اینجا پیتزا",
+            "columns": {
+              "hesabdari__s3": "g"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_h",
+            "title": "آمریکایی۱",
+            "columns": {
+              "hesabdari__s3": "h"
+            },
+            "type": "string"
+          },
+          {
+            "key": "c_i",
+            "title": "ایتالیائی۱",
+            "columns": {
+              "hesabdari__s3": "i"
+            },
+            "type": "string"
+          },
+          {
+            "key": "c_j",
+            "title": "سینگل۱",
+            "columns": {
+              "hesabdari__s3": "j"
+            },
+            "type": "string"
+          },
+          {
+            "key": "c_k",
+            "title": "آمریکایی۲",
+            "columns": {
+              "hesabdari__s3": "k"
+            },
+            "type": "string"
+          },
+          {
+            "key": "c_l",
+            "title": "ایتالیائی۲",
+            "columns": {
+              "hesabdari__s3": "l"
+            },
+            "type": "string"
+          },
+          {
+            "key": "c_m",
+            "title": "سینگل۲",
+            "columns": {
+              "hesabdari__s3": "m"
+            },
+            "type": "string"
+          }
+        ]
+      },
+      "render": {
+        "sheet": "آمار",
+        "signature": [
+          "آمار",
+          []
+        ],
+        "header_notes": [
+          {
+            "column": "b",
+            "text": "وزن مرغ خام ورودی"
+          },
+          {
+            "column": "e",
+            "text": "چیزی وارد نشود"
+          },
+          {
+            "column": "h",
+            "text": "تعداد پیتزا فروخته شده شعبه چاله باغ"
+          },
+          {
+            "column": "k",
+            "text": "تعداد پیتزا فروخته شده شعبه ناهارخوران"
+          }
+        ],
+        "row_labels": null,
+        "reference": false
+      }
+    },
+    {
+      "id": "S-rec-f2bde9550dfb",
+      "kind": "record",
+      "unit": "u-wb-hesabdari",
+      "payload": {
+        "medium": "sheet",
+        "location": {
+          "path": "attachments/sheets/Hesabdari__Hesabdari/Hesabdari.xlsx",
+          "spreadsheetId": "1MRTM9BV9y0bHGM79QxkE6pHhCdy45aT9hSQXGKJOWHo",
+          "sheet": "گزارش بستن صندوق"
+        },
+        "instances": [
+          {
+            "key": "hesabdari__s4",
+            "spreadsheetId": "1MRTM9BV9y0bHGM79QxkE6pHhCdy45aT9hSQXGKJOWHo",
+            "sheetId": 4,
+            "sheet": "گزارش بستن صندوق",
+            "branch": null,
+            "hidden": false
+          }
+        ],
+        "fields": [
+          {
+            "key": "c_a",
+            "title": "تاریخ",
+            "columns": {
+              "hesabdari__s4": "a"
+            },
+            "type": "number"
+          },
+          {
+            "key": "c_b",
+            "title": "نام مسئول صندوق (چاله باغ)",
+            "columns": {
+              "hesabdari__s4": "b"
+            },
+            "type": "string"
+          },
+          {
+            "key": "c_c",
+            "title": "وضعیت صندوق (چاله باغ)",
+            "columns": {
+              "hesabdari__s4": "c"
+            },
+            "type": "string"
+          },
+          {
+            "key": "c_d",
+            "title": "نام مسئول صندوق (ناهارخوران)",
+            "columns": {
+              "hesabdari__s4": "d"
+            },
+            "type": "string"
+          },
+          {
+            "key": "c_e",
+            "title": "وضعیت صندوق (ناهارخوران)",
+            "columns": {
+              "hesabdari__s4": "e"
+            },
+            "type": "string"
+          }
+        ]
+      },
+      "render": {
+        "sheet": "گزارش بستن صندوق",
+        "signature": [
+          "گزارش بستن صندوق",
+          []
+        ],
+        "header_notes": [
+          {
+            "column": "b",
+            "text": "شعبه چاله باغ"
+          },
+          {
+            "column": "d",
+            "text": "شعبه ناهارخوران"
+          }
+        ],
+        "row_labels": null,
+        "reference": false
+      }
+    },
+    {
+      "id": "S-rec-199eb923602d",
+      "kind": "record",
+      "unit": "u-wb-hesabdari",
+      "payload": {
+        "medium": "sheet",
+        "location": {
+          "path": "attachments/sheets/Hesabdari__Hesabdari/Hesabdari.xlsx",
+          "spreadsheetId": "1MRTM9BV9y0bHGM79QxkE6pHhCdy45aT9hSQXGKJOWHo",
+          "sheet": "نیازمندیها و مشکلات"
+        },
+        "instances": [
+          {
+            "key": "hesabdari__s5",
+            "spreadsheetId": "1MRTM9BV9y0bHGM79QxkE6pHhCdy45aT9hSQXGKJOWHo",
+            "sheetId": 5,
+            "sheet": "نیازمندیها و مشکلات",
+            "branch": null,
+            "hidden": false
+          }
+        ],
+        "fields": [
+          {
+            "key": "c_a",
+            "title": "تاریخ",
+            "columns": {
+              "hesabdari__s5": "a"
+            },
+            "type": "string"
+          },
+          {
+            "key": "c_b",
+            "title": "نیازمندیها و مشکلات",
+            "columns": {
+              "hesabdari__s5": "b"
+            },
+            "type": "string"
+          },
+          {
+            "key": "c_c",
+            "title": "توضیحات و راه حل ها",
+            "columns": {
+              "hesabdari__s5": "c"
+            },
+            "type": "string"
+          }
+        ]
+      },
+      "render": {
+        "sheet": "نیازمندیها و مشکلات",
+        "signature": [
+          "نیازمندیها و مشکلات",
+          []
+        ],
+        "header_notes": [],
+        "row_labels": null,
+        "reference": false
+      }
+    },
+    {
+      "id": "S-rec-e6811aa233ba",
+      "kind": "record",
+      "unit": "u-wb-hesabdari",
+      "payload": {
+        "medium": "sheet",
+        "location": {
+          "path": "attachments/sheets/Hesabdari__Hesabdari/Hesabdari.xlsx",
+          "spreadsheetId": "1MRTM9BV9y0bHGM79QxkE6pHhCdy45aT9hSQXGKJOWHo",
+          "sheet": "اهداف فروش"
+        },
+        "instances": [
+          {
+            "key": "hesabdari__s6",
+            "spreadsheetId": "1MRTM9BV9y0bHGM79QxkE6pHhCdy45aT9hSQXGKJOWHo",
+            "sheetId": 6,
+            "sheet": "اهداف فروش",
+            "branch": null,
+            "hidden": false
+          }
+        ],
+        "fields": [
+          {
+            "key": "c_a",
+            "title": "تاریخ ثبت",
+            "columns": {
+              "hesabdari__s6": "a"
+            },
+            "type": "string"
+          },
+          {
+            "key": "c_b",
+            "title": "ماه",
+            "columns": {
+              "hesabdari__s6": "b"
+            },
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "فروردین",
+                "اردیبهشت",
+                "خرداد",
+                "تیر",
+                "مرداد",
+                "شهریور",
+                "مهر",
+                "آبان",
+                "آذر",
+                "دی",
+                "بهمن",
+                "اسفند"
+              ]
+            }
+          },
+          {
+            "key": "c_c",
+            "title": "سال",
+            "columns": {
+              "hesabdari__s6": "c"
+            },
+            "type": "number",
+            "constraints": {
+              "enum": [
+                "1404",
+                "1405",
+                "1406",
+                "1407",
+                "1408",
+                "1409",
+                "1410"
+              ]
+            }
+          },
+          {
+            "key": "c_d",
+            "title": "سالن چاله باغ",
+            "columns": {
+              "hesabdari__s6": "d"
+            },
+            "type": "string"
+          },
+          {
+            "key": "c_e",
+            "title": "بیرونبر چاله باغ",
+            "columns": {
+              "hesabdari__s6": "e"
+            },
+            "type": "string"
+          },
+          {
+            "key": "c_f",
+            "title": "سالن ناهارخوران",
+            "columns": {
+              "hesabdari__s6": "f"
+            },
+            "type": "string"
+          },
+          {
+            "key": "c_g",
+            "title": "بیرونبر ناهارخوران",
+            "columns": {
+              "hesabdari__s6": "g"
+            },
+            "type": "string"
+          }
+        ],
+        "rows": [],
+        "primaryKey": []
+      },
+      "render": {
+        "sheet": "اهداف فروش",
+        "signature": [
+          "اهداف فروش",
+          []
+        ],
+        "header_notes": [
+          {
+            "column": "d",
+            "text": "هدف فروش شعبه چاله باغ (تعداد فیش)"
+          },
+          {
+            "column": "f",
+            "text": "هدف فروش شعبه ناهارخوران (تعداد فیش)"
+          }
+        ],
+        "row_labels": null,
+        "reference": true
+      }
+    },
+    {
+      "id": "S-r-9ff44f72c753",
+      "kind": "rule",
+      "unit": "u-wb-hesabdari",
+      "payload": {
+        "original": "# hesabdari__s4__c__r142\n4441100",
+        "applies_to": [
+          {
+            "key": "hesabdari__s4__c__r142",
+            "record": {
+              "ref": "S-rec-f2bde9550dfb",
+              "field": "c_c"
+            },
+            "variant": "v1",
+            "range": "C142",
+            "params": {
+              "p1": 4441100
+            },
+            "rows": []
+          }
+        ]
+      },
+      "render": {
+        "output": "وضعیت صندوق (چاله باغ)",
+        "variants": [
+          {
+            "key": "v1",
+            "shape": "#",
+            "functions": [],
+            "table_reader": false
+          }
+        ],
+        "input_headers": [],
+        "calls": []
+      }
+    }
+  ],
+  "instances": [
+    {
+      "key": "hesabdari__s1",
+      "spreadsheetId": "1MRTM9BV9y0bHGM79QxkE6pHhCdy45aT9hSQXGKJOWHo",
+      "sheetId": 1,
+      "sheet": "انحراف آمارگیری شعبه چاله باغ",
+      "branch": null,
+      "hidden": false,
+      "reference": false,
+      "signature": [
+        "انحراف آمارگیری شعبه",
+        []
+      ],
+      "template": "S-rec-e4e1eafc52a5"
+    },
+    {
+      "key": "hesabdari__s2",
+      "spreadsheetId": "1MRTM9BV9y0bHGM79QxkE6pHhCdy45aT9hSQXGKJOWHo",
+      "sheetId": 2,
+      "sheet": "انحراف آمارگیری شعبه ناهارخوران",
+      "branch": null,
+      "hidden": false,
+      "reference": false,
+      "signature": [
+        "انحراف آمارگیری شعبه",
+        []
+      ],
+      "template": "S-rec-7db1308fa458"
+    },
+    {
+      "key": "hesabdari__s3",
+      "spreadsheetId": "1MRTM9BV9y0bHGM79QxkE6pHhCdy45aT9hSQXGKJOWHo",
+      "sheetId": 3,
+      "sheet": "آمار",
+      "branch": null,
+      "hidden": false,
+      "reference": false,
+      "signature": [
+        "آمار",
+        []
+      ],
+      "template": "S-rec-8612e62796d6"
+    },
+    {
+      "key": "hesabdari__s4",
+      "spreadsheetId": "1MRTM9BV9y0bHGM79QxkE6pHhCdy45aT9hSQXGKJOWHo",
+      "sheetId": 4,
+      "sheet": "گزارش بستن صندوق",
+      "branch": null,
+      "hidden": false,
+      "reference": false,
+      "signature": [
+        "گزارش بستن صندوق",
+        []
+      ],
+      "template": "S-rec-f2bde9550dfb"
+    },
+    {
+      "key": "hesabdari__s5",
+      "spreadsheetId": "1MRTM9BV9y0bHGM79QxkE6pHhCdy45aT9hSQXGKJOWHo",
+      "sheetId": 5,
+      "sheet": "نیازمندیها و مشکلات",
+      "branch": null,
+      "hidden": false,
+      "reference": false,
+      "signature": [
+        "نیازمندیها و مشکلات",
+        []
+      ],
+      "template": "S-rec-199eb923602d"
+    },
+    {
+      "key": "hesabdari__s6",
+      "spreadsheetId": "1MRTM9BV9y0bHGM79QxkE6pHhCdy45aT9hSQXGKJOWHo",
+      "sheetId": 6,
+      "sheet": "اهداف فروش",
+      "branch": null,
+      "hidden": false,
+      "reference": true,
+      "signature": [
+        "اهداف فروش",
+        []
+      ],
+      "template": "S-rec-e6811aa233ba"
+    }
+  ],
+  "imports": [],
+  "issues": []
+}

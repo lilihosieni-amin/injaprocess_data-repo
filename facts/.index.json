@@ -4549,6 +4549,164 @@
       "updated_at": "2026-09-08T16:53:00Z"
     },
     {
+      "id": "F-00228",
+      "kind": "record",
+      "key": "niazmandiha_va_moshkelat",
+      "title": "نیازمندی‌ها و مشکلات",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "accounting"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-09T03:52:59Z"
+    },
+    {
+      "id": "F-00229",
+      "kind": "record",
+      "key": "enheraf_amargiri_naharkhoran",
+      "title": "انحراف آمارگیری شعبه ناهارخوران",
+      "aliases": [
+        "انحراف شمارش ناهارخوران"
+      ],
+      "scope": {
+        "departments": [
+          "accounting"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 34
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-09T03:52:59Z"
+    },
+    {
+      "id": "F-00230",
+      "kind": "record",
+      "key": "amar_morgh_va_foroush_pizza",
+      "title": "آمار روزانه مرغ خام ورودی و فروش پیتزا",
+      "aliases": [
+        "آمار"
+      ],
+      "scope": {
+        "departments": [
+          "accounting"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 3
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-09T03:52:59Z"
+    },
+    {
+      "id": "F-00231",
+      "kind": "record",
+      "key": "enheraf_amargiri_chalebagh",
+      "title": "انحراف آمارگیری شعبه چاله باغ",
+      "aliases": [
+        "انحراف شمارش چاله باغ"
+      ],
+      "scope": {
+        "departments": [
+          "accounting"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 34
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-09T03:52:59Z"
+    },
+    {
+      "id": "F-00232",
+      "kind": "record",
+      "key": "ahdaf_foroush_mahane",
+      "title": "اهداف فروش ماهانه شعبه‌ها",
+      "aliases": [
+        "هدف فروش"
+      ],
+      "scope": {
+        "departments": [
+          "accounting"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-09T03:52:59Z"
+    },
+    {
+      "id": "F-00233",
+      "kind": "record",
+      "key": "gozaresh_bastan_sandogh",
+      "title": "گزارش بستن صندوق",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "accounting"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-09T03:52:59Z"
+    },
+    {
       "id": "F-00175",
       "kind": "measurement",
       "key": "shomaresh_khamir_ruzane",
