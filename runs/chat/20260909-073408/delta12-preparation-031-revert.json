@@ -1,0 +1,23 @@
+{
+  "add_nodes": [],
+  "add_edges": [
+    { "from": "preparation-031-n003", "to": "preparation-031-n004" },
+    { "from": "preparation-031-j2", "to": "preparation-031-n006" },
+    { "from": "preparation-031-n006", "to": "preparation-031-n007" }
+  ],
+  "remove_edges": [
+    { "from": "preparation-031-n003", "to": "preparation-031-n006" },
+    { "from": "preparation-031-n006", "to": "preparation-031-n004" },
+    { "from": "preparation-031-j2", "to": "preparation-031-n007" }
+  ],
+  "enrich_nodes": [],
+  "flag_removed": [],
+  "revise_nodes": [
+    {
+      "id": "preparation-031-n006",
+      "set": {
+        "description": "پس از تمام شدن خمیر نوبت به چیزا می‌رسد. چیزا یک فرایند دو روزه است: مرغ چیزا در ظرف‌های ۴۸ عددی از شب قبل از انبار تحویل گرفته می‌شود تا یخش باز شود، صبح روز بعد شسته و به‌صورت دستی مرینت و رول و منجمد می‌شود و روز بعد پانکو می‌خورد. کنترل موجودی چیزا به‌همراه سس‌ها تنها موردی است که زیر نظر خود آماده‌سازی انجام می‌شود؛ چون هم تولید و هم فریز شدن چیزا زمان‌بر است، درخواست لحظه‌آخری انبار قابل انجام نیست."
+      }
+    }
+  ]
+}
