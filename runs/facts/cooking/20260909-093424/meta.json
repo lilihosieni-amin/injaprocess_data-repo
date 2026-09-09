@@ -1,0 +1,14 @@
+{
+  "department": "cooking",
+  "origin": "chat",
+  "actor": "owner",
+  "started_at": "2026-09-09T09:34:24Z",
+  "finished_at": null,
+  "recordings": [],
+  "attachments": [],
+  "workbooks": [],
+  "delta": "",
+  "merged": false,
+  "ids_created": [],
+  "instruction": "شرح ستون «مقدار درخواستی» در برگه درخواست کالا از انبار را اصلاح کن تا فقط کیلوگرم بگوید"
+}

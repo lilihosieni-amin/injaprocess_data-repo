@@ -280,11 +280,6 @@
           "ref": null,
           "hash": null,
           "run": "runs/facts/cooking/20260909-092949"
-        },
-        {
-          "type": "chat",
-          "ref": "runs/facts/cooking/20260909-093424/meta.json",
-          "run": "runs/facts/cooking/20260909-093424"
         }
       ],
       "retired": false,
@@ -316,7 +311,7 @@
             "title": "مقدار درخواستی",
             "type": "number",
             "unit": "kg",
-            "description": "مقدار درخواستی هر قلم برای روز بعد؛ این مقدار برای همهٔ اقلام بر حسب کیلوگرم نوشته می‌شود."
+            "description": "مقدار درخواستی هر قلم برای روز بعد؛ برای اقلام وزنی بر حسب کیلوگرم و برای اقلام عددی بر حسب تعداد یا بسته نوشته می‌شود."
           }
         ]
       },
@@ -327,7 +322,7 @@
       "valid_from": null,
       "valid_to": null,
       "status": "confirmed",
-      "updated_at": "2026-09-09T09:36:22Z"
+      "updated_at": "2026-09-09T09:31:44Z"
     },
     {
       "kind": "record",
