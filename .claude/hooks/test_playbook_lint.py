@@ -311,3 +311,8 @@ def test_the_edit_fact_playbook_has_the_three_case_table_and_no_account_hunt():
     assert "facts-patch.json" in text
     assert "در پنل تأییدشده است" in text
     assert "account id" not in text.lower() or "Never compute an account id" not in text
+    # The table's two load-bearing cells: its header, and the row that says the
+    # playbook writes a mechanical change itself. Gutting either is what would
+    # send a change back through `apply` and lose it to a dispute again.
+    assert "| the instruction … | vehicle | who writes it |" in text
+    assert "**this playbook**, with no dispatch" in text

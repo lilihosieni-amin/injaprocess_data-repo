@@ -52,7 +52,9 @@ same two roots — see Step 3.
    and run everything below **once per entry, each in its own run directory, in order**. An entry
    that fails does not stop the others; Step 6's report names every one of them, and says which
    failed and why. Step 4's one question, where the case needs one, is still **one** message for
-   the whole set: preview every entry first, ask once, then write.
+   the whole set: preview every entry first, ask once, then write. In a **mixed** batch that
+   message carries only the entries that need a question — the rest are written without waiting,
+   and nothing is written for any questioned entry until the answer comes.
 
 ## Step 2 — Create the run directory and its initial `meta.json`
 
@@ -123,10 +125,12 @@ wrong. `append` adds to a list, and refuses a keyed member already present (that
 No path begins with `id`, `kind`, `key`, `status` or `updated_at`, and no op reaches under `source`
 — provenance is never edited out.
 
-**Writing a mechanical change yourself** (case 2) is one `set` per field the owner named, carrying
-their exact value; a member they asked to drop is one `remove`; «هم‌چنین …» is an `append`. Read
-the current value out of Step 1's envelope so the path is one that exists. The style card below is
-still the law — the same lint runs at the verb's gate, whoever wrote the sentence.
+**Writing a mechanical change yourself** (case 2): write `{run_dir}/facts-patch.json` in the shape
+above — one `set` per field the owner named, carrying their exact value; a member they asked to
+drop is one `remove`; «هم‌چنین …» is an `append`. Read the current value out of Step 1's envelope
+so the path is one that exists. This is the one file this playbook writes itself; everything under
+`facts/**` still goes through the verb. The style card below is still the law — the same lint runs
+at the verb's gate, whoever wrote the sentence.
 
 ### The dispatch (cases 1 and 3)
 
@@ -283,11 +287,17 @@ was written:
    (QF-8, "Reporting a tombstone", item 1) — relay them in the Persian report exactly as
    `process-voice` Stage 9 and `edit-process` Step 6 do; `edit-fact`'s own verbs do not print these,
    so this is normally a no-op here.
-3. Reply in Persian with what changed. Per entry: the preview's own «فعلی» and «پیشنهاد» lines,
-   the id, and the field or lifecycle change; for a destructive op, that the original was retired
-   (not deleted) and its heir, if any. With several entries (Step 1.6), one line each, and the
-   ones that failed named with the reason. Name every run directory a command in Step 5 actually
-   used. Do not paste the full entry JSON back.
+3. Reply in Persian with what changed, one line per entry — and only a patch has preview lines,
+   because only a patch was previewed:
+   - **a change (cases 2 and 3)** — the id and the preview's own «فعلی» and «پیشنهاد» lines for
+     that entry;
+   - **an addition (case 1)** — the id and what was added: the new entry, or the field that was
+     filled and with what;
+   - **a retirement or a merge** — the id, that the original was retired (**not deleted**), and its
+     heir, if any.
+   With several entries (Step 1.6), one such line each, and the ones that failed named with the
+   reason. Name every run directory a command in Step 5 actually used. Do not paste the full entry
+   JSON back.
 4. End the report with **«در پنل تأییدشده است»** whenever the entry came out confirmed. `merge
    facts edit` always confirms the entry it wrote as the chat actor's, and this run's other verbs
    do too — `meta.json` says `origin: "chat"`. The sentence is what tells the owner there is
