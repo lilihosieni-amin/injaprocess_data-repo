@@ -1,0 +1,210 @@
+{
+  "schema_version": 2,
+  "entries": [
+    {
+      "kind": "measurement",
+      "key": "shomaresh_khamir_ruzane",
+      "title": "شمارش روزانه خمیر پیتزا",
+      "statement": "تعداد خمیر مصرف‌شده در هر شب به تفکیک آمریکایی، ایتالیایی و سینگل شمارش و در گزارش پایان شب ثبت می‌شود. چون خمیر همان روز تولید و مصرف می‌شود، عدد ثبت‌شده همان تعداد فروش‌رفته آن روز است و هدف تولید از پیش تعیین نمی‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh"
+        ]
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/cooking-1405-05-26.txt",
+          "lines": "1-174",
+          "hash": "sha256:b85c2a0c6fbc8d7218dd41051ac682d8150905be5340fcafac209c0437157357",
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "count",
+        "unit": "pcs",
+        "method": "شمارش تعداد خمیر مصرف‌شده به تفکیک نوع",
+        "when": "پایان هر شب",
+        "by": "سرپرست بخش",
+        "writes_to": {
+          "ref": "F-00167"
+        }
+      },
+      "id": "F-00175",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_giri_mande_akhar_shab",
+      "title": "وزن‌گیری مانده مواد اولیه در پایان شب",
+      "statement": "سرلاین هر لاین در پایان شب مانده هر ماده اولیه را اندازه می‌گیرد: تعداد بسته‌های لیبل‌خورده در وزن هر بسته ضرب و مانده فله با ترازو وزن و به آن افزوده می‌شود. حاصل با دقت گرم ثبت می‌شود و آمارگیری از ساعت یک و ربع بامداد آغاز و تا پایان کار ادامه دارد.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/cooking-1405-05-26.txt",
+          "lines": "1-174",
+          "hash": "sha256:b85c2a0c6fbc8d7218dd41051ac682d8150905be5340fcafac209c0437157357",
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "ضرب تعداد بسته در وزن هر بسته به‌علاوه وزن مانده فله با ترازوی لاین، با دقت گرم",
+        "when": "از ساعت یک و ربع بامداد تا پایان کار شب",
+        "by": "سرلاین هر لاین",
+        "exceptions": "اقلام شمارشی به جای وزن، بر حسب تعداد ثبت می‌شوند."
+      },
+      "aliases": [
+        "وزن‌کشی آخر شب"
+      ],
+      "id": "F-00176",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "shomaresh_mande_aqlam_tedadi",
+      "title": "شمارش مانده اقلام تعدادی در پایان شب",
+      "statement": "اقلام تعدادی مانند برگر و هات‌داگ در ابتدای شب شمارش می‌شوند و با رسیدن هر فیش، تعداد فروش‌رفته از شمارش اولیه کسر می‌شود تا مانده پایان شب به دست آید. اقلام وزنی از این روش مستثنا هستند.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/cooking-1405-05-26.txt",
+          "lines": "1-174",
+          "hash": "sha256:b85c2a0c6fbc8d7218dd41051ac682d8150905be5340fcafac209c0437157357",
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "count",
+        "unit": "pcs",
+        "method": "کسر تعداد فروش‌رفته از شمارش ابتدای شب بر پایه فیش‌ها",
+        "when": "در طول شب تا پایان کار",
+        "by": "سرلاین هر لاین",
+        "exceptions": "اقلام وزنی با این روش کسر نمی‌شوند و در پایان شب وزن می‌شوند."
+      },
+      "id": "F-00177",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "tedad_forush_har_mahsul",
+      "title": "تعداد فروش هر محصول",
+      "statement": "تعداد فروش‌رفته هر محصول در پایان هر شب از سیستم فروش گرفته و به تفکیک هر محصول ثبت می‌شود. این تعداد مبنای برآورد مصرف مورد انتظار هر ماده اولیه و مقایسه آن با مانده پایان شب است.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/cooking-1405-05-26.txt",
+          "lines": "175-347",
+          "hash": "sha256:b85c2a0c6fbc8d7218dd41051ac682d8150905be5340fcafac209c0437157357",
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "count",
+        "unit": "pcs",
+        "method": "خروجی تعدادی سیستم فروش به تفکیک کد هر محصول",
+        "when": "پایان هر شب پس از بسته شدن فروش",
+        "by": "حسابداری"
+      },
+      "id": "F-00178",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "shomaresh_mande_akhar_shab",
+      "title": "شمارش مانده آخر شب لاین",
+      "statement": "نیروی لاین در پایان شیفت شب مانده هر قلم را می‌شمارد و همان مقدار را هم روی فرم کاغذی مانده آخر شب و هم در فرم رایانه‌ای ثبت می‌کند. مانده ثبت‌شده امشب، مانده اول شب فرم فردا می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/cooking-1405-06-10.txt",
+          "lines": "1-75",
+          "hash": "sha256:4a0c2b1a5605905d28f001615e8efcc71651d538e0cebc69026faa8e2a3971ee",
+          "run": "runs/facts/cooking/20260908-151433"
+        },
+        {
+          "type": "photo",
+          "ref": "departments/cooking/attachments/.text/photo_2026-08-29_14-23-51.image.md",
+          "hash": "sha256:4e924d40a0f66e4e9e0b5a81e6ae0f3a2420f805060dcbe1c50d20c7e9b9c4e1",
+          "run": "runs/facts/cooking/20260908-151433"
+        },
+        {
+          "type": "photo",
+          "ref": "departments/cooking/attachments/.text/photo_2026-08-29_14-23-56.image.md",
+          "hash": "sha256:144255103f6868e0b1464296cd89ba8f06652226238405f16c6beaf0a953ea82",
+          "run": "runs/facts/cooking/20260908-151433"
+        },
+        {
+          "type": "docx",
+          "ref": "departments/cooking/attachments/.text/شرح_شغل_سرپرست_آشپزخانه___2_.txt",
+          "hash": "sha256:457fce62ff762a849e164b1e645535550c98bdeb604f0e47fbfdb956382d2e63",
+          "run": "runs/facts/cooking/20260908-151433"
+        },
+        {
+          "type": "docx",
+          "ref": "departments/cooking/attachments/.text/شرح_شغل_کارکنان_آشپزخانه.txt",
+          "hash": "sha256:5c6a1786b64737a9ada2fc0c1f8f1de7b43340fff09104d7414fa36139d534ce",
+          "run": "runs/facts/cooking/20260908-151433"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "count",
+        "unit": "pcs",
+        "method": "شمارش دستی هر قلم در پایان شیفت و ثبت هم‌زمان همان مقدار روی فرم کاغذی و در فرم رایانه‌ای",
+        "when": "پایان شیفت شب، با تاریخ همان روز کاری",
+        "by": "نیروی لاین",
+        "exceptions": "اقلامی که واحد شمارش آن‌ها وزنی است، بر حسب واحد وزنی خودشان ثبت می‌شوند."
+      },
+      "id": "F-00179",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-08T16:53:00Z"
+    }
+  ]
+}

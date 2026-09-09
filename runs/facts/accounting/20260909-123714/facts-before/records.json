@@ -8889,36 +8889,14 @@
             },
             "type": "string",
             "description": "توضیح تکمیلی مورد و راه حل پیشنهادی یا اقدام انجام‌شده."
-          },
-          {
-            "key": "niaz_ya_moshkel",
-            "title": "نیازمندیها و مشکلات",
-            "columns": {
-              "hesabdari__s5": "b"
-            },
-            "type": "string",
-            "description": "شرح کوتاه نیاز یا مشکل."
-          },
-          {
-            "key": "tozih_va_rah_hal",
-            "title": "توضیحات و راه حل ها",
-            "columns": {
-              "hesabdari__s5": "c"
-            },
-            "type": "string",
-            "description": "توضیح بیشتر یا راه‌حل پیشنهادی برای مورد ثبت‌شده."
           }
-        ],
-        "primaryKey": [
-          "tarikh",
-          "niaz_ya_moshkel"
         ]
       },
       "id": "F-00228",
       "valid_from": null,
       "valid_to": null,
       "status": "unknown",
-      "updated_at": "2026-09-09T12:50:35Z"
+      "updated_at": "2026-09-09T06:33:40Z"
     },
     {
       "kind": "record",
@@ -9310,86 +9288,6 @@
             "type": "number",
             "unit": "kg",
             "description": "انحراف شمارش بیکن در لاین فرنگی."
-          },
-          {
-            "key": "esterips",
-            "title": "استریپس",
-            "columns": {
-              "hesabdari__s2": "h"
-            },
-            "type": "number"
-          },
-          {
-            "key": "bal",
-            "title": "بال",
-            "columns": {
-              "hesabdari__s2": "j"
-            },
-            "type": "number"
-          },
-          {
-            "key": "panir",
-            "title": "پنیر",
-            "columns": {
-              "hesabdari__s2": "p"
-            },
-            "type": "number"
-          },
-          {
-            "key": "esteyk",
-            "title": "استیک",
-            "columns": {
-              "hesabdari__s2": "r"
-            },
-            "type": "number"
-          },
-          {
-            "key": "morgh_barbikiu",
-            "title": "مرغ باربیکیو",
-            "columns": {
-              "hesabdari__s2": "u"
-            },
-            "type": "number"
-          },
-          {
-            "key": "berger",
-            "title": "برگر",
-            "columns": {
-              "hesabdari__s2": "y"
-            },
-            "type": "number"
-          },
-          {
-            "key": "mini_berger",
-            "title": "مینی برگر",
-            "columns": {
-              "hesabdari__s2": "z"
-            },
-            "type": "number"
-          },
-          {
-            "key": "panir_parmisan",
-            "title": "پنیر پارمیسان",
-            "columns": {
-              "hesabdari__s2": "ae"
-            },
-            "type": "number"
-          },
-          {
-            "key": "guda_varaghe",
-            "title": "گودا ورقه ای",
-            "columns": {
-              "hesabdari__s2": "af"
-            },
-            "type": "number"
-          },
-          {
-            "key": "beykan",
-            "title": "بیکن",
-            "columns": {
-              "hesabdari__s2": "ai"
-            },
-            "type": "number"
           }
         ]
       },
@@ -9436,7 +9334,7 @@
       "valid_from": null,
       "valid_to": null,
       "status": "unknown",
-      "updated_at": "2026-09-09T12:50:35Z"
+      "updated_at": "2026-09-09T06:33:41Z"
     },
     {
       "kind": "record",
@@ -9608,77 +9506,6 @@
             },
             "type": "integer",
             "description": "تعداد پیتزا سینگل فروخته‌شده در شعبه ناهارخوران."
-          },
-          {
-            "key": "amrikayi",
-            "title": "آمریکایی",
-            "columns": {
-              "hesabdari__s3": "e"
-            },
-            "type": "number",
-            "description": "این ستون پر نمی‌شود."
-          },
-          {
-            "key": "italiayi",
-            "title": "ایتالیائی",
-            "columns": {
-              "hesabdari__s3": "f"
-            },
-            "type": "number"
-          },
-          {
-            "key": "amrikayi_chalebagh",
-            "title": "آمریکایی۱",
-            "columns": {
-              "hesabdari__s3": "h"
-            },
-            "type": "integer",
-            "description": "تعداد پیتزای آمریکایی فروخته‌شده در شعبهٔ چاله باغ."
-          },
-          {
-            "key": "italiayi_chalebagh",
-            "title": "ایتالیائی۱",
-            "columns": {
-              "hesabdari__s3": "i"
-            },
-            "type": "integer",
-            "description": "تعداد پیتزای ایتالیایی فروخته‌شده در شعبهٔ چاله باغ."
-          },
-          {
-            "key": "singel_chalebagh",
-            "title": "سینگل۱",
-            "columns": {
-              "hesabdari__s3": "j"
-            },
-            "type": "integer",
-            "description": "تعداد پیتزای سینگل فروخته‌شده در شعبهٔ چاله باغ."
-          },
-          {
-            "key": "amrikayi_naharkhoran",
-            "title": "آمریکایی۲",
-            "columns": {
-              "hesabdari__s3": "k"
-            },
-            "type": "integer",
-            "description": "تعداد پیتزای آمریکایی فروخته‌شده در شعبهٔ ناهارخوران."
-          },
-          {
-            "key": "italiayi_naharkhoran",
-            "title": "ایتالیائی۲",
-            "columns": {
-              "hesabdari__s3": "l"
-            },
-            "type": "integer",
-            "description": "تعداد پیتزای ایتالیایی فروخته‌شده در شعبهٔ ناهارخوران."
-          },
-          {
-            "key": "singel_naharkhoran",
-            "title": "سینگل۲",
-            "columns": {
-              "hesabdari__s3": "m"
-            },
-            "type": "integer",
-            "description": "تعداد پیتزای سینگل فروخته‌شده در شعبهٔ ناهارخوران."
           }
         ]
       },
@@ -9694,7 +9521,7 @@
       "valid_from": null,
       "valid_to": null,
       "status": "unknown",
-      "updated_at": "2026-09-09T12:50:35Z"
+      "updated_at": "2026-09-09T06:33:42Z"
     },
     {
       "kind": "record",
@@ -10086,78 +9913,6 @@
             "type": "number",
             "unit": "kg",
             "description": "انحراف شمارش بیکن در لاین فرنگی."
-          },
-          {
-            "key": "esterips",
-            "title": "استریپس",
-            "columns": {
-              "hesabdari__s1": "h"
-            },
-            "type": "number"
-          },
-          {
-            "key": "bal",
-            "title": "بال",
-            "columns": {
-              "hesabdari__s1": "j"
-            },
-            "type": "number"
-          },
-          {
-            "key": "panir",
-            "title": "پنیر",
-            "columns": {
-              "hesabdari__s1": "p"
-            },
-            "type": "number"
-          },
-          {
-            "key": "esteyk",
-            "title": "استیک",
-            "columns": {
-              "hesabdari__s1": "r"
-            },
-            "type": "number"
-          },
-          {
-            "key": "berger",
-            "title": "برگر",
-            "columns": {
-              "hesabdari__s1": "y"
-            },
-            "type": "number"
-          },
-          {
-            "key": "mini_berger",
-            "title": "مینی برگر",
-            "columns": {
-              "hesabdari__s1": "z"
-            },
-            "type": "number"
-          },
-          {
-            "key": "panir_parmisan",
-            "title": "پنیر پارمیسان",
-            "columns": {
-              "hesabdari__s1": "ae"
-            },
-            "type": "number"
-          },
-          {
-            "key": "guda_varaghe",
-            "title": "گودا ورقه ای",
-            "columns": {
-              "hesabdari__s1": "af"
-            },
-            "type": "number"
-          },
-          {
-            "key": "beykan",
-            "title": "بیکن",
-            "columns": {
-              "hesabdari__s1": "ai"
-            },
-            "type": "number"
           }
         ]
       },
@@ -10204,7 +9959,7 @@
       "valid_from": null,
       "valid_to": null,
       "status": "unknown",
-      "updated_at": "2026-09-09T12:50:35Z"
+      "updated_at": "2026-09-09T06:33:43Z"
     },
     {
       "kind": "record",
@@ -10343,42 +10098,6 @@
             },
             "type": "integer",
             "description": "هدف فروش بیرون‌بر شعبه ناهارخوران بر حسب تعداد فیش."
-          },
-          {
-            "key": "salon_chalebagh",
-            "title": "سالن چاله باغ",
-            "columns": {
-              "hesabdari__s6": "d"
-            },
-            "type": "integer",
-            "description": "هدف فروش سالن شعبهٔ چاله باغ بر حسب تعداد فیش."
-          },
-          {
-            "key": "birunbar_chalebagh",
-            "title": "بیرونبر چاله باغ",
-            "columns": {
-              "hesabdari__s6": "e"
-            },
-            "type": "integer",
-            "description": "هدف فروش بیرون‌بر شعبهٔ چاله باغ بر حسب تعداد فیش."
-          },
-          {
-            "key": "salon_naharkhoran",
-            "title": "سالن ناهارخوران",
-            "columns": {
-              "hesabdari__s6": "f"
-            },
-            "type": "integer",
-            "description": "هدف فروش سالن شعبهٔ ناهارخوران بر حسب تعداد فیش."
-          },
-          {
-            "key": "birunbar_naharkhoran",
-            "title": "بیرونبر ناهارخوران",
-            "columns": {
-              "hesabdari__s6": "g"
-            },
-            "type": "integer",
-            "description": "هدف فروش بیرون‌بر شعبهٔ ناهارخوران بر حسب تعداد فیش."
           }
         ]
       },
@@ -10389,7 +10108,7 @@
       "valid_from": null,
       "valid_to": null,
       "status": "unknown",
-      "updated_at": "2026-09-09T12:50:35Z"
+      "updated_at": "2026-09-09T03:52:59Z"
     },
     {
       "kind": "record",
@@ -10486,24 +10205,6 @@
             },
             "type": "string",
             "description": "وضعیت صندوق شعبه ناهارخوران هنگام بستن."
-          },
-          {
-            "key": "masul_sandogh_chalebagh",
-            "title": "نام مسئول صندوق (چاله باغ)",
-            "columns": {
-              "hesabdari__s4": "b"
-            },
-            "type": "string",
-            "description": "مسئول صندوق شعبهٔ چاله باغ در آن روز."
-          },
-          {
-            "key": "masul_sandogh_naharkhoran",
-            "title": "نام مسئول صندوق (ناهارخوران)",
-            "columns": {
-              "hesabdari__s4": "d"
-            },
-            "type": "string",
-            "description": "مسئول صندوق شعبهٔ ناهارخوران در آن روز."
           }
         ]
       },
@@ -10511,7 +10212,7 @@
       "valid_from": null,
       "valid_to": null,
       "status": "unknown",
-      "updated_at": "2026-09-09T12:50:35Z"
+      "updated_at": "2026-09-09T06:33:43Z"
     }
   ]
 }
