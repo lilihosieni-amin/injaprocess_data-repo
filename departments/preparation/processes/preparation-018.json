@@ -13,7 +13,7 @@
     "node": "preparation-030-n012"
   },
   "created_at": "2026-09-04T23:44:46Z",
-  "updated_at": "2026-09-09T22:08:15Z",
+  "updated_at": "2026-09-09T22:12:14Z",
   "idef0": {
     "inputs": [
       "گوشت مغز ران خام تحویلی از انبار",
@@ -207,7 +207,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -236,13 +236,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 265.0
+        "x": 987.8399999999999,
+        "y": 221.8
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -268,13 +270,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 265.0
+        "x": 769.6,
+        "y": 237.64
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -299,7 +303,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -329,7 +333,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -361,7 +365,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -428,7 +432,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 615.0
+        "y": 615
       },
       "layout": "auto",
       "source": {
@@ -458,7 +462,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 615.0
+        "y": 615
       },
       "layout": "auto",
       "source": {
@@ -491,24 +495,13 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 615.0
+        "y": 615
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": []
       }
-    },
-    {
-      "id": "preparation-018-j1",
-      "type": "junction",
-      "junctionType": "XOR",
-      "direction": "split",
-      "position": {
-        "x": 883,
-        "y": 631.0
-      },
-      "layout": "auto"
     },
     {
       "id": "preparation-018-n015",
@@ -532,8 +525,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1076,
-        "y": 614.25
+        "x": 1048.64,
+        "y": 630.0900000000001
       },
       "layout": "manual",
       "source": {
@@ -549,10 +542,10 @@
       "junctionType": "AND",
       "direction": "split",
       "position": {
-        "x": 1143,
-        "y": 937.25
+        "x": 1164.6000000000001,
+        "y": 837.89
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "preparation-018-n016",
@@ -577,7 +570,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 790.0
+        "y": 790
       },
       "layout": "auto",
       "source": {
@@ -607,7 +600,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 790.0
+        "y": 790
       },
       "layout": "auto",
       "source": {
@@ -637,7 +630,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 790.0
+        "y": 790
       },
       "layout": "auto",
       "source": {
@@ -666,8 +659,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 903.9583333333334,
-        "y": 911.429012345679
+        "x": 993.2383333333333,
+        "y": 954.629012345679
       },
       "layout": "manual",
       "source": {
@@ -698,8 +691,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 923.0864197530865,
-        "y": 1045.2824074074074
+        "x": 999.4064197530864,
+        "y": 1115.8424074074076
       },
       "layout": "manual",
       "source": {
@@ -731,7 +724,7 @@
       "subprocess": null,
       "position": {
         "x": 950.7685185185185,
-        "y": 1217.70987654321
+        "y": 1302.66987654321
       },
       "layout": "manual",
       "source": {
@@ -1107,8 +1100,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 110.40895061728395,
-        "y": 1923.641975308642
+        "x": 153.60895061728388,
+        "y": 1985.561975308642
       },
       "layout": "manual",
       "source": {
@@ -1138,8 +1131,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 347.2608024691358,
-        "y": 1935.2160493827162
+        "x": 450.94080246913575,
+        "y": 1976.9760493827162
       },
       "layout": "manual",
       "source": {
@@ -1170,13 +1163,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1927.5
+        "x": 724,
+        "y": 1959.18
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1201,14 +1196,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1927.5
+        "x": 996.9599999999999,
+        "y": 1954.8599999999997
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
-          "runs/chat/20260909-073408"
+          "runs/chat/20260909-073408",
+          "ui-edit"
         ]
       }
     },
@@ -1219,18 +1215,7 @@
       "direction": "split",
       "position": {
         "x": 1143,
-        "y": 106.0
-      },
-      "layout": "auto"
-    },
-    {
-      "id": "preparation-018-j9",
-      "type": "junction",
-      "junctionType": "AND",
-      "direction": "join",
-      "position": {
-        "x": 363,
-        "y": 368.5
+        "y": 106
       },
       "layout": "auto"
     }
@@ -1271,20 +1256,6 @@
     {
       "from": "preparation-018-n013",
       "to": "preparation-018-n014"
-    },
-    {
-      "from": "preparation-018-n014",
-      "to": "preparation-018-j1"
-    },
-    {
-      "from": "preparation-018-j1",
-      "to": "preparation-018-n014",
-      "label": "تا آماده نشدن گوشت، هر نیم ساعت تا حدود سه ساعت"
-    },
-    {
-      "from": "preparation-018-j1",
-      "to": "preparation-018-n015",
-      "label": "پس از آماده شدن گوشت"
     },
     {
       "from": "preparation-018-n015",
@@ -1416,15 +1387,13 @@
     },
     {
       "from": "preparation-018-n008",
-      "to": "preparation-018-j9"
+      "to": "preparation-018-n011",
+      "label": ""
     },
     {
-      "from": "preparation-018-n010",
-      "to": "preparation-018-j9"
-    },
-    {
-      "from": "preparation-018-j9",
-      "to": "preparation-018-n011"
+      "from": "preparation-018-n014",
+      "to": "preparation-018-n015",
+      "label": ""
     }
   ],
   "pending": []
