@@ -3562,10 +3562,10 @@
         ],
         "branches": []
       },
-      "status": "unknown",
+      "status": "confirmed",
       "field_status_counts": {
         "disputed": 0,
-        "unknown": 1,
+        "unknown": 0,
         "informal": 0,
         "inferred": 0
       },
@@ -3573,7 +3573,7 @@
       "retired": false,
       "valid_to": null,
       "stub": false,
-      "updated_at": "2026-09-08T16:53:00Z"
+      "updated_at": "2026-09-09T09:31:44Z"
     },
     {
       "id": "F-00141",

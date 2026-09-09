@@ -274,12 +274,6 @@
           "quote": "قرار دادن برگه درخواست در محل مشخص برای جمع‌آوری توسط انبار",
           "hash": "sha256:83555b282ebab5a2cc257c38ea3d15dc30b97b467a5a88bbcf8dc96bbc79bdf6",
           "run": "runs/facts/cooking/20260908-151433"
-        },
-        {
-          "type": "chat",
-          "ref": null,
-          "hash": null,
-          "run": "runs/facts/cooking/20260909-092949"
         }
       ],
       "retired": false,
@@ -310,7 +304,7 @@
             "key": "meqdar_darkhasti",
             "title": "مقدار درخواستی",
             "type": "number",
-            "unit": "kg",
+            "unit": null,
             "description": "مقدار درخواستی هر قلم برای روز بعد؛ برای اقلام وزنی بر حسب کیلوگرم و برای اقلام عددی بر حسب تعداد یا بسته نوشته می‌شود."
           }
         ]
@@ -321,8 +315,8 @@
       "id": "F-00140",
       "valid_from": null,
       "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-09T09:31:44Z"
+      "status": "unknown",
+      "updated_at": "2026-09-08T16:53:00Z"
     },
     {
       "kind": "record",

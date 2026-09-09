@@ -1,0 +1,14 @@
+{
+  "department": "cooking",
+  "origin": "chat",
+  "actor": "owner",
+  "started_at": "2026-09-09T09:29:49Z",
+  "finished_at": null,
+  "recordings": [],
+  "attachments": [],
+  "workbooks": [],
+  "delta": "",
+  "merged": false,
+  "ids_created": [],
+  "instruction": "در برگه درخواست کالا از انبار، واحد مقدار درخواستی را کیلوگرم کن"
+}

@@ -60,6 +60,12 @@
       "by": "owner",
       "run": "runs/facts/accounting/20260909-060010",
       "at": "2026-09-09T06:33:44Z"
+    },
+    "F-00140": {
+      "updated_at": "2026-09-09T09:31:44Z",
+      "by": "owner",
+      "run": "runs/facts/cooking/20260909-092949",
+      "at": "2026-09-09T09:31:44Z"
     }
   }
 }
