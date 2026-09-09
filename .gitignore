@@ -14,6 +14,9 @@ attachments/sheets/**/*.xlsx
 *.key
 *service-account*.json
 
+# The confirmation ledger's lock — an empty flock sidecar, never content
+facts/.confirmations.lock
+
 # Python caches
 __pycache__/
 *.pyc

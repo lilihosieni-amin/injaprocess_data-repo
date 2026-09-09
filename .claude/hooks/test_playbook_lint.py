@@ -32,6 +32,7 @@ import pytest
 ROOT = Path(__file__).resolve().parents[2]
 PLAYBOOK = ROOT / ".claude" / "skills" / "quantify" / "SKILL.md"
 AGENT = ROOT / ".claude" / "agents" / "quantify.md"
+EDIT_FACT = ROOT / ".claude" / "skills" / "edit-fact" / "SKILL.md"
 
 #: An owner-facing block: a fence whose info string is exactly `persian`.
 FENCE = re.compile(r"^```persian[ \t]*$\n(.*?)^```[ \t]*$", re.M | re.S)
@@ -290,3 +291,39 @@ def test_the_unit_contract_names_a_bound_input_after_its_column():
         "An input bound through a parameter takes its key and title from the"
         " column the parameter resolves to, as printed under the candidate."
     ) in agent_section("What you decide, per kind")
+
+
+# The chat edit (v3.7 §5/§6): the owner asked for one word to change in ten
+# statements and the write ladder dropped it silently. The patch verb is the
+# fix, and the two prompts that reach for it are prose — pinned here so a later
+# edit cannot quietly put the old apply→dispute→resolve dance back.
+
+def test_targeted_mode_names_its_two_output_files():
+    text = AGENT.read_text(encoding="utf-8")
+    section = text.split("### `targeted` mode", 1)[1].split("\n---", 1)[0]
+    assert "facts-patch.json" in section and "facts-delta.json" in section
+    assert '"op": "set"' in section or "`set`" in section
+
+
+def test_the_edit_fact_playbook_has_the_three_case_table_and_no_account_hunt():
+    text = EDIT_FACT.read_text(encoding="utf-8")
+    assert "merge facts edit" in text and "--preview" in text
+    assert "facts-patch.json" in text
+    assert "در پنل تأییدشده است" in text
+    assert "account id" not in text.lower() or "Never compute an account id" not in text
+    # The table's two load-bearing cells: its header, and the row that says the
+    # playbook writes a mechanical change itself. Gutting either is what would
+    # send a change back through `apply` and lose it to a dispute again.
+    assert "| the instruction … | vehicle | who writes it |" in text
+    assert "**this playbook**, with no dispatch" in text
+
+
+def test_the_edit_fact_playbook_never_relays_the_preview_op_lines():
+    """Bot messages hide internals: the preview's `[n] op path` header is an
+    English op name and a store path, and the owner is shown only the
+    «فعلی»/«پیشنهاد» values under the Persian titles they belong to."""
+    text = EDIT_FACT.read_text(encoding="utf-8")
+    assert "The preview's `[n] op path` lines are internals" in text
+    assert "**Never relay them.**" in text
+    assert "No id, no path, no op name, no command, no English word goes into the message" in text
+    assert "{the preview output of every entry, exactly as printed}" not in text

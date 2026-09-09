@@ -50,7 +50,7 @@ translate them to «صفحات گسترده»; the user does not recognise it.
   or `order move` either — those two verbs *choose* the order, which is the user's job in the UI;
   the hook blocks them.
 - `facts/**` is written **only** by the `merge facts` CLI — the agent writes only
-  `runs/facts/{dept}/{stamp}/facts-delta.json`.
+  `runs/facts/{dept}/{stamp}/facts-delta.json` and `runs/facts/{dept}/{stamp}/facts-patch.json`.
 - Never edit `.claude/**` or this `CLAUDE.md` at runtime.
 - Never write files outside this repo.
 
@@ -88,10 +88,13 @@ The `process-voice` playbook owns the human checkpoint and the conflict report.
 Do not invoke `merge` directly before the checkpoint clears.
 
 `/quantify` runs a facts pass over the estate — dumped workbooks, the
-manifest, and any recordings the user names — and owns the manifest and facts
-checkpoints. `/edit-fact` applies one chat-driven correction to a single fact
-(e.g. «پارمسان الان ۱۰۰ گرمه»). Neither writes `facts/**` directly; both
-dispatch the `quantify` agent and invoke `merge facts`.
+manifest, and any recordings the user names — dispatches the `quantify` agent,
+and owns the manifest and facts checkpoints. `/edit-fact` applies one
+chat-driven correction to a single fact (e.g. «پارمسان الان ۱۰۰ گرمه»): a
+change whose value the owner states exactly, it writes as a patch itself, with
+no dispatch; it dispatches the `quantify` agent only for prose it has to
+compose or for an addition. Neither playbook writes `facts/**` directly — both
+invoke `merge facts` (`edit`, `apply` or `retire`), the sole writer.
 
 ---
 
@@ -103,7 +106,7 @@ dispatch the `quantify` agent and invoke `merge facts`.
 | `.claude/skills/idef-extraction/` | IDEF0/IDEF3 field extraction rules |
 | `.claude/skills/edit-process/` | Chat-driven direct edits (no voice) → the `merge` verbs; merge/split heirs are built by `extract` (Mode C) |
 | `.claude/skills/quantify/` | Facts pipeline orchestration playbook v3 — the planner packs the estate into units, the units run four at a time, one reviewer reads the assembled result |
-| `.claude/skills/edit-fact/` | Chat-driven direct edit to one fact (no recording) → the `merge facts` verbs; mirrors `edit-process` |
+| `.claude/skills/edit-fact/` | Chat-driven direct edit to one fact (no recording) → `merge facts edit` for a change, `apply` for an addition, `retire` for a retirement; mirrors `edit-process` |
 | `.claude/agents/classify.md` | Meeting classifier agent |
 | `.claude/agents/extract.md` | IDEF candidate + delta agent — **and the sole builder of restructure/merge heirs** (Mode C), for the pipeline, `consolidate`, and `edit-process` |
 | `.claude/agents/summarize.md` | Department overview agent |

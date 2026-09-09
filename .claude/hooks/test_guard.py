@@ -293,3 +293,22 @@ def test_allow_the_engine_clis(tmp_path):
                 "dump-workbook --manifest", "extract-attachment cooking",
                 "transcribe cooking-2026-09-01", "allocate-id fact"):
         assert run(bash(f"DATA_ROOT=. {cli}"), tmp_path) == 0, cli
+
+
+# --- the chat edit's own two paths (v3.7 §2) --------------------------------
+# `merge facts edit` reads a patch the playbook wrote under `runs/facts/**` and
+# is the sanctioned writer of the entry; the ledger it also writes lives under
+# `facts/`, so a Bash write into it is a direct store write like any other.
+
+def test_allow_merge_facts_edit_with_a_patch_under_runs(tmp_path):
+    assert run(bash("DATA_ROOT=/data merge facts edit --id F-00150 --patch "
+                    "runs/facts/cooking/20260909-091210/facts-patch.json "
+                    "--run runs/facts/cooking/20260909-091210 --preview"), tmp_path) == 0
+
+
+def test_allow_writing_the_patch_file_under_runs(tmp_path):
+    assert run(w("runs/facts/cooking/20260909-091210/facts-patch.json"), tmp_path) == 0
+
+
+def test_block_bash_write_into_the_ledger(tmp_path):
+    assert run(bash("echo '{}' > facts/.confirmations.json"), tmp_path) == 2
