@@ -13,7 +13,7 @@
     "node": "preparation-030-n016"
   },
   "created_at": "2026-09-04T23:44:46Z",
-  "updated_at": "2026-09-09T10:27:58Z",
+  "updated_at": "2026-09-09T10:31:50Z",
   "idef0": {
     "inputs": [
       "رول‌های ژامبون چهار کیلویی",
@@ -190,51 +190,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 177.5
+        "x": 19.16666666666667,
+        "y": 141.62037037037038
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
-      }
-    },
-    {
-      "id": "preparation-017-j1",
-      "type": "junction",
-      "junctionType": "XOR",
-      "direction": "split",
-      "position": {
-        "x": 363,
-        "y": 193.5
-      },
-      "layout": "auto"
-    },
-    {
-      "id": "preparation-017-n006",
-      "type": "activity",
-      "label": "کنار گذاشتن اسلایس آن قلم در روزی که سفارشی برایش ثبت نشده",
-      "description": "امکان دارد آن روز اصلاً قلمی برای آماده‌سازی وجود نداشته باشد؛ در این حالت آن قلم آماده نمی‌شود چون تولید این اقلام همیشگی نیست و طبق فرمی است که انبار می‌نویسد.",
-      "actor": "سرپرست آماده‌سازی",
-      "icom": {
-        "inputs": [],
-        "controls": [
-          "فرم درخواست روزانه انبار"
-        ],
-        "outputs": [],
-        "mechanisms": [
-          "سرپرست آماده‌سازی"
+        "touched_by": [
+          "ui-edit"
         ]
-      },
-      "subprocess": null,
-      "position": {
-        "x": 560,
-        "y": 90.0
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
       }
     },
     {
@@ -255,13 +219,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 265.0
+        "x": 311.15740740740745,
+        "y": 136.52777777777777
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -270,10 +236,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 281.0
+        "x": 543.8796296296296,
+        "y": 177.99074074074073
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "preparation-017-n008",
@@ -291,13 +257,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 90.00000000000001
+        "x": 983.9351851851852,
+        "y": 46.01851851851853
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -318,13 +286,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 265.0
+        "x": 770.9722222222222,
+        "y": 248.79629629629628
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -343,14 +313,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 440.0
+        "x": 623.9814814814814,
+        "y": 377.49999999999994
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
-          "runs/chat/20260909-073408"
+          "runs/chat/20260909-073408",
+          "ui-edit"
         ]
       }
     },
@@ -573,7 +544,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 615.0
+        "y": 615
       },
       "layout": "auto",
       "source": {
@@ -604,7 +575,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 790.0
+        "y": 790
       },
       "layout": "auto",
       "source": {
@@ -841,20 +812,6 @@
   ],
   "edges": [
     {
-      "from": "preparation-017-n005",
-      "to": "preparation-017-j1"
-    },
-    {
-      "from": "preparation-017-j1",
-      "to": "preparation-017-n006",
-      "label": "در صورت نبودن سفارش برای آن قلم در آن روز"
-    },
-    {
-      "from": "preparation-017-j1",
-      "to": "preparation-017-n007",
-      "label": "در صورت وجود سفارش در فرم انبار"
-    },
-    {
       "from": "preparation-017-n007",
       "to": "preparation-017-j2"
     },
@@ -973,6 +930,11 @@
       "from": "preparation-017-j2",
       "to": "preparation-017-n010",
       "label": "در صورت فراغت مسئول لاین مرینت"
+    },
+    {
+      "from": "preparation-017-n005",
+      "to": "preparation-017-n007",
+      "label": ""
     }
   ],
   "pending": []
