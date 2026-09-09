@@ -1,0 +1,23 @@
+{
+  "add_nodes": [
+    { "key": "ja", "type": "junction", "junctionType": "AND", "direction": "split" },
+    { "key": "jb", "type": "junction", "junctionType": "AND", "direction": "join" }
+  ],
+  "add_edges": [
+    { "from": "preparation-019-n004", "to": "ja" },
+    { "from": "ja", "to": "preparation-019-n005" },
+    { "from": "ja", "to": "preparation-019-n007" },
+    { "from": "preparation-019-n005", "to": "jb" },
+    { "from": "preparation-019-n008", "to": "jb" },
+    { "from": "jb", "to": "preparation-019-n006" },
+    { "from": "preparation-019-n006", "to": "preparation-019-j1" }
+  ],
+  "remove_edges": [
+    { "from": "preparation-019-n004", "to": "preparation-019-n005" },
+    { "from": "preparation-019-n005", "to": "preparation-019-n006" },
+    { "from": "preparation-019-n006", "to": "preparation-019-n007" },
+    { "from": "preparation-019-n008", "to": "preparation-019-j1" }
+  ],
+  "enrich_nodes": [],
+  "flag_removed": []
+}

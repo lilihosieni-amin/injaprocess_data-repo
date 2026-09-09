@@ -13,7 +13,7 @@
     "node": "preparation-030-n013"
   },
   "created_at": "2026-09-04T23:44:47Z",
-  "updated_at": "2026-09-08T14:31:55Z",
+  "updated_at": "2026-09-09T22:16:23Z",
   "idef0": {
     "inputs": [
       "گوشت گردن",
@@ -205,7 +205,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 90.0
+        "y": 265.0
       },
       "layout": "auto",
       "source": {
@@ -236,7 +236,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
+        "x": 300,
         "y": 352.5
       },
       "layout": "auto",
@@ -266,8 +266,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 352.5
+        "x": 1080,
+        "y": 440.0
       },
       "layout": "auto",
       "source": {
@@ -296,8 +296,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 352.5
+        "x": 820,
+        "y": 440.0
       },
       "layout": "auto",
       "source": {
@@ -311,7 +311,7 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
+        "x": 103,
         "y": 368.5
       },
       "layout": "auto"
@@ -340,7 +340,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 440.0
+        "y": 790.0
       },
       "layout": "auto",
       "source": {
@@ -369,7 +369,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
+        "x": 300,
         "y": 790.0
       },
       "layout": "auto",
@@ -384,7 +384,7 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 363,
+        "x": 623,
         "y": 718.5
       },
       "layout": "auto"
@@ -410,7 +410,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
+        "x": 820,
         "y": 702.5
       },
       "layout": "auto",
@@ -440,7 +440,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
+        "x": 1080,
         "y": 702.5
       },
       "layout": "auto",
@@ -471,7 +471,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 702.5
+        "y": 965.0
       },
       "layout": "auto",
       "source": {
@@ -502,7 +502,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
+        "x": 820,
         "y": 965.0
       },
       "layout": "auto",
@@ -532,7 +532,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
+        "x": 560,
         "y": 965.0
       },
       "layout": "auto",
@@ -565,7 +565,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
+        "x": 300,
         "y": 965.0
       },
       "layout": "auto",
@@ -596,7 +596,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
+        "x": 40,
         "y": 965.0
       },
       "layout": "auto",
@@ -628,7 +628,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 965.0
+        "y": 1140.0
       },
       "layout": "auto",
       "source": {
@@ -661,7 +661,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
+        "x": 300,
         "y": 1140.0
       },
       "layout": "auto",
@@ -695,7 +695,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
+        "x": 560,
         "y": 1140.0
       },
       "layout": "auto",
@@ -725,7 +725,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
+        "x": 820,
         "y": 1140.0
       },
       "layout": "auto",
@@ -757,7 +757,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
+        "x": 1080,
         "y": 1140.0
       },
       "layout": "auto",
@@ -787,7 +787,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 1140.0
+        "y": 1315.0
       },
       "layout": "auto",
       "source": {
@@ -819,7 +819,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
+        "x": 820,
         "y": 1315.0
       },
       "layout": "auto",
@@ -849,7 +849,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
+        "x": 560,
         "y": 1315.0
       },
       "layout": "auto",
@@ -880,7 +880,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
+        "x": 300,
         "y": 1315.0
       },
       "layout": "auto",
@@ -910,7 +910,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
+        "x": 40,
         "y": 1315.0
       },
       "layout": "auto",
@@ -942,7 +942,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 1315.0
+        "y": 1577.5
       },
       "layout": "auto",
       "source": {
@@ -956,7 +956,7 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 103,
+        "x": 363,
         "y": 1593.5
       },
       "layout": "auto"
@@ -983,7 +983,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
+        "x": 560,
         "y": 1665.0
       },
       "layout": "auto",
@@ -998,7 +998,7 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 623,
+        "x": 883,
         "y": 1593.5
       },
       "layout": "auto"
@@ -1024,7 +1024,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
+        "x": 1080,
         "y": 1577.5
       },
       "layout": "auto",
@@ -1055,7 +1055,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 1577.5
+        "y": 1840.0
       },
       "layout": "auto",
       "source": {
@@ -1087,7 +1087,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
+        "x": 820,
         "y": 1840.0
       },
       "layout": "auto",
@@ -1095,6 +1095,28 @@
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": []
       }
+    },
+    {
+      "id": "preparation-019-j5",
+      "type": "junction",
+      "junctionType": "AND",
+      "direction": "split",
+      "position": {
+        "x": 1143,
+        "y": 106.0
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "preparation-019-j6",
+      "type": "junction",
+      "junctionType": "AND",
+      "direction": "join",
+      "position": {
+        "x": 623,
+        "y": 368.5
+      },
+      "layout": "auto"
     }
   ],
   "edges": [
@@ -1111,24 +1133,8 @@
       "to": "preparation-019-n004"
     },
     {
-      "from": "preparation-019-n004",
-      "to": "preparation-019-n005"
-    },
-    {
-      "from": "preparation-019-n005",
-      "to": "preparation-019-n006"
-    },
-    {
-      "from": "preparation-019-n006",
-      "to": "preparation-019-n007"
-    },
-    {
       "from": "preparation-019-n007",
       "to": "preparation-019-n008"
-    },
-    {
-      "from": "preparation-019-n008",
-      "to": "preparation-019-j1"
     },
     {
       "from": "preparation-019-j1",
@@ -1249,6 +1255,34 @@
     {
       "from": "preparation-019-n031",
       "to": "preparation-019-n032"
+    },
+    {
+      "from": "preparation-019-n004",
+      "to": "preparation-019-j5"
+    },
+    {
+      "from": "preparation-019-j5",
+      "to": "preparation-019-n005"
+    },
+    {
+      "from": "preparation-019-j5",
+      "to": "preparation-019-n007"
+    },
+    {
+      "from": "preparation-019-n005",
+      "to": "preparation-019-j6"
+    },
+    {
+      "from": "preparation-019-n008",
+      "to": "preparation-019-j6"
+    },
+    {
+      "from": "preparation-019-j6",
+      "to": "preparation-019-n006"
+    },
+    {
+      "from": "preparation-019-n006",
+      "to": "preparation-019-j1"
     }
   ],
   "pending": []
