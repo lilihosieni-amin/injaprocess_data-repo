@@ -13,7 +13,7 @@
     "node": "preparation-031-n003"
   },
   "created_at": "2026-09-04T23:44:43Z",
-  "updated_at": "2026-09-09T08:48:34Z",
+  "updated_at": "2026-09-09T08:53:41Z",
   "idef0": {
     "inputs": [
       "مرغ منجمد خارج‌شده از فریزر توسط انبار از شب قبل (مرغ پیتزا، مرغ گریل، لقمه، مرغ چیزا، فیله)",
@@ -67,74 +67,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 177.5
+        "x": 167.52020725388599,
+        "y": 160.57253886010363
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
-      }
-    },
-    {
-      "id": "preparation-010-n002",
-      "type": "activity",
-      "label": "شستن جداگانه هر نوع مرغ در آشپزخانه برای خروج خونابه",
-      "description": "شستشو جدا جدا و به تفکیک هر محصول انجام می‌شود تا خونابه مرغ خارج شود. این کار از همان ابتدای وقت و پیش از رسیدن لیست درخواست روزانه (حدود ساعت ده و بیست دقیقه) شروع می‌شود تا وقت تلف نشود.",
-      "actor": "نیروی لاین مرینت",
-      "icom": {
-        "inputs": [
-          "مرغ تفکیک‌شده"
-        ],
-        "controls": [],
-        "outputs": [
-          "مرغ شسته‌شده و بدون خونابه"
-        ],
-        "mechanisms": [
-          "نیروی لاین مرینت"
+        "touched_by": [
+          "ui-edit"
         ]
-      },
-      "subprocess": null,
-      "position": {
-        "x": 300,
-        "y": 177.5
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
-      }
-    },
-    {
-      "id": "preparation-010-n003",
-      "type": "activity",
-      "label": "تحویل گرفتن فرم مرینت روزانه و مقادیر مورد نیاز از انبار",
-      "description": "انبار پیش از شروع کار مقدار هر نوع مرغ تحویلی را شفاهی توضیح می‌دهد و فرم جداگانه مرینت‌ها را همراه لیست درخواست روزانه به لاین مرینت می‌رساند؛ مثلاً «۴۰۰ عدد لقمه لازم است و ۲۰۰ عدد از شب قبل بیرون گذاشته شده» یا «۴۰ کیلو مرغ پیتزا بیرون گذاشته شده ولی امروز ۵۰ کیلو مرینت لازم است».",
-      "actor": "نیروی لاین مرینت",
-      "icom": {
-        "inputs": [
-          "فرم مرینت روزانه انبار"
-        ],
-        "controls": [
-          "مقادیر درخواستی آشپزخانه مرکزی و شعبه ناهارخوران"
-        ],
-        "outputs": [
-          "برنامه مرینت روز به تفکیک محصول"
-        ],
-        "mechanisms": [
-          "نیروی لاین مرینت",
-          "انباردار"
-        ]
-      },
-      "subprocess": null,
-      "position": {
-        "x": 560,
-        "y": 177.5
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
       }
     },
     {
@@ -143,10 +84,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 193.5
+        "x": 414.67357512953373,
+        "y": 200.27098445595854
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "preparation-010-n004",
@@ -170,13 +111,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 265
+        "x": 612.8020725388602,
+        "y": -2.4538860103626305
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -185,10 +128,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1143,
-        "y": 456
+        "x": 937.6134715025908,
+        "y": 199.83108808290157
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "preparation-010-n005",
@@ -213,13 +156,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 440
+        "x": 876.4248704663212,
+        "y": 441.1284974093264
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -246,13 +191,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 440
+        "x": 619.8103626943005,
+        "y": 435.4860103626943
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -276,13 +223,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 440
+        "x": 377.8663212435233,
+        "y": 442.25699481865286
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -380,13 +329,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 615
+        "x": 227.33056994818648,
+        "y": 610.4860103626943
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -419,43 +370,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
+        "x": 813.2290155440415,
         "y": 702.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
-      }
-    },
-    {
-      "id": "preparation-010-n012",
-      "type": "activity",
-      "label": "فاکتورزدن هر بسته روی ترازوی فاکتوردار با درج نام و وزن محصول",
-      "description": "ترازوی مورد استفاده فاکتور چاپ می‌کند؛ روی فاکتور نام محصول و وزن آن ثبت می‌شود.",
-      "actor": "نیروی لاین مرینت",
-      "icom": {
-        "inputs": [
-          "مرغ مرینت‌شده"
-        ],
-        "controls": [],
-        "outputs": [
-          "فاکتور وزن و نام محصول"
-        ],
-        "mechanisms": [
-          "نیروی لاین مرینت",
-          "ترازوی فاکتوردار"
+        "touched_by": [
+          "ui-edit"
         ]
-      },
-      "subprocess": null,
-      "position": {
-        "x": 1080,
-        "y": 702.5
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
       }
     },
     {
@@ -478,13 +401,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1052.5
+        "x": 822.7025906735751,
+        "y": 887.739378238342
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -697,18 +622,6 @@
   ],
   "edges": [
     {
-      "from": "preparation-010-n001",
-      "to": "preparation-010-n002"
-    },
-    {
-      "from": "preparation-010-n002",
-      "to": "preparation-010-n003"
-    },
-    {
-      "from": "preparation-010-n003",
-      "to": "preparation-010-j1"
-    },
-    {
       "from": "preparation-010-j1",
       "to": "preparation-010-n004",
       "label": "در صورت کمتر بودن مرغ خارج‌شده از فریزر نسبت به درخواست انبار"
@@ -765,14 +678,6 @@
       "to": "preparation-010-n011"
     },
     {
-      "from": "preparation-010-n011",
-      "to": "preparation-010-n012"
-    },
-    {
-      "from": "preparation-010-n012",
-      "to": "preparation-010-n013"
-    },
-    {
       "from": "preparation-010-n013",
       "to": "preparation-010-n014"
     },
@@ -809,6 +714,16 @@
     {
       "from": "preparation-010-n018",
       "to": "preparation-010-n019"
+    },
+    {
+      "from": "preparation-010-n001",
+      "to": "preparation-010-j1",
+      "label": ""
+    },
+    {
+      "from": "preparation-010-n011",
+      "to": "preparation-010-n013",
+      "label": ""
     }
   ],
   "pending": []
