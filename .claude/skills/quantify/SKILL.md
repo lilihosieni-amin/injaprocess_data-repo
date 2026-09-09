@@ -412,9 +412,10 @@ Never `git add -A`. Continue to Stage 7 in the same turn.
 ## Stage 7 — Report
 
 Read `{run_dir}/report.md` and **send it verbatim**. It carries the open disputes lettered, the
-unanswered units grouped per item, the dropped candidates in the owner's own words, every issue
-found in the files, any workbook skipped or part left unfinished, and what the review changed and
-what of it was set aside.
+unanswered units grouped per item, the dropped candidates in the owner's own words, any workbook
+skipped or part left unfinished, and what the review changed and what of it was set aside. It does
+not carry the engine's findings inside the files (owner ruling, 2026-09-09): those are drawn on the
+entry in the panel, and the run keeps its own count of them.
 
 When the owner answers a lettered dispute, **you** run the resolve — never print a command:
 
