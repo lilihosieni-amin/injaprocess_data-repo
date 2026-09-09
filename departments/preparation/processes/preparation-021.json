@@ -13,7 +13,7 @@
     "node": "preparation-030-n015"
   },
   "created_at": "2026-09-04T23:44:48Z",
-  "updated_at": "2026-09-08T14:31:56Z",
+  "updated_at": "2026-09-09T11:02:33Z",
   "idef0": {
     "inputs": [
       "گوشت سردست خام",
@@ -77,7 +77,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -109,7 +109,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -139,7 +139,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -172,7 +172,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -201,7 +201,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -236,7 +236,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -251,7 +251,7 @@
       "direction": "split",
       "position": {
         "x": 883,
-        "y": 456.0
+        "y": 456
       },
       "layout": "auto"
     },
@@ -278,13 +278,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 440.0
+        "x": 562,
+        "y": 301.4166507720947
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -311,12 +313,14 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 615.0
+        "y": 575
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -388,7 +392,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 790.0
+        "y": 790
       },
       "layout": "auto",
       "source": {
@@ -420,7 +424,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 790.0
+        "y": 790
       },
       "layout": "auto",
       "source": {
@@ -453,7 +457,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 790.0
+        "y": 790
       },
       "layout": "auto",
       "source": {
@@ -485,7 +489,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 790.0
+        "y": 790
       },
       "layout": "auto",
       "source": {
@@ -517,7 +521,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 790.0
+        "y": 790
       },
       "layout": "auto",
       "source": {
@@ -550,7 +554,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 965.0
+        "y": 965
       },
       "layout": "auto",
       "source": {
@@ -584,7 +588,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 965.0
+        "y": 965
       },
       "layout": "auto",
       "source": {
@@ -616,7 +620,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 965.0
+        "y": 965
       },
       "layout": "auto",
       "source": {
@@ -646,7 +650,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 965.0
+        "y": 965
       },
       "layout": "auto",
       "source": {
@@ -678,7 +682,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 965.0
+        "y": 965
       },
       "layout": "auto",
       "source": {
@@ -707,7 +711,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 1315.0
+        "y": 1315
       },
       "layout": "auto",
       "source": {
@@ -722,7 +726,7 @@
       "direction": "split",
       "position": {
         "x": 363,
-        "y": 1331.0
+        "y": 1331
       },
       "layout": "auto"
     },
@@ -750,13 +754,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1315.0
+        "x": 606,
+        "y": 1167
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -783,13 +789,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1490.0
+        "x": 576,
+        "y": 1382
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -816,13 +824,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1140.0
+        "x": 284,
+        "y": 1534
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -891,13 +901,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1840.0
+        "x": 1074,
+        "y": 1578
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -923,13 +935,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1840.0
+        "x": 1054,
+        "y": 1734
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -953,13 +967,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1840.0
+        "x": 1060,
+        "y": 1882
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -983,13 +999,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1840.0
+        "x": 834,
+        "y": 1886
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1012,13 +1030,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1840.0
+        "x": 580,
+        "y": 1892
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1041,13 +1061,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1198.3333333333333
+        "x": 240,
+        "y": 1680.3333333333333
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1056,10 +1078,10 @@
       "junctionType": "OR",
       "direction": "join",
       "position": {
-        "x": 103,
-        "y": 2031.0
+        "x": 259,
+        "y": 1917
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "preparation-021-n031",
@@ -1082,13 +1104,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 2015.0
+        "x": 196,
+        "y": 2035
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1116,13 +1140,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 2015.0
+        "x": 172,
+        "y": 2185.583225250244
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
