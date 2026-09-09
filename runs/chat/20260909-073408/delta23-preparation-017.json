@@ -1,0 +1,83 @@
+{
+  "add_nodes": [],
+  "add_edges": [
+    {
+      "from": "preparation-017-n007",
+      "to": "preparation-017-j4"
+    }
+  ],
+  "enrich_nodes": [],
+  "flag_removed": [
+    {
+      "id": "preparation-017-n008"
+    },
+    {
+      "id": "preparation-017-n009"
+    },
+    {
+      "id": "preparation-017-n010"
+    },
+    {
+      "id": "preparation-017-j2"
+    },
+    {
+      "id": "preparation-017-j3"
+    }
+  ],
+  "remove_edges": [
+    {
+      "from": "preparation-017-n007",
+      "to": "preparation-017-j2"
+    },
+    {
+      "from": "preparation-017-j2",
+      "to": "preparation-017-n008"
+    },
+    {
+      "from": "preparation-017-j2",
+      "to": "preparation-017-n009"
+    },
+    {
+      "from": "preparation-017-n008",
+      "to": "preparation-017-j3"
+    },
+    {
+      "from": "preparation-017-n009",
+      "to": "preparation-017-j3"
+    },
+    {
+      "from": "preparation-017-n010",
+      "to": "preparation-017-j3"
+    },
+    {
+      "from": "preparation-017-j3",
+      "to": "preparation-017-j4"
+    },
+    {
+      "from": "preparation-017-j2",
+      "to": "preparation-017-n010"
+    }
+  ],
+  "revise_nodes": [
+    {
+      "id": "preparation-017-n007",
+      "set": {
+        "description": "این کار به هیچ لاینی وابسته نیست و بین بقیه دوستان تقسیم شده است؛ تقریباً همه آن را بلدند. سرپرست اول صبح می‌بیند امروز کدام لاین ضعیف است یا کار اضافه‌تری دارد و می‌گوید چه کسی این کارها را علاوه بر کار خودش انجام دهد. فردی که سرپرست نامش را می‌برد، این کارها را علاوه بر کارهای لاین خودش انجام می‌دهد. اگر سرپرست چیزی به آن‌ها نگوید، خود کارکنان طبق لیست می‌دانند هر کسی کدام قسمت کار را باید بگیرد و انجام دهد. همچنین مسئول لاین مرینت هر وقت کار خودش تمام شود و وقت داشته باشد به کمک بقیه لاین‌ها می‌رود و بیکن و ژامبون می‌زند؛ این کار فرم‌های خاص خودش را دارد، از جمله فرم نیم‌ساخت.",
+        "icom": {
+          "inputs": [],
+          "controls": [
+            "لیست کارهای روزانه"
+          ],
+          "outputs": [
+            "تقسیم کار روزانه"
+          ],
+          "mechanisms": [
+            "سرپرست آماده‌سازی",
+            "کارکنان آماده‌سازی",
+            "مسئول لاین مرینت"
+          ]
+        }
+      }
+    }
+  ]
+}
