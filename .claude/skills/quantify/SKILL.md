@@ -329,8 +329,17 @@ Task: quantify
 ```
 
 Then `Bash: DATA_ROOT=<data-repo> SCHEMA_DIR=<code-repo>/schemas validate facts-unit {run_dir}/review/out.json --run {run_dir}`.
-On failure, re-dispatch once; on a second failure, proceed **without** the review — the report says
-so. If `digest` reports the assembled result is too large to review, the same applies.
+On failure, re-dispatch once with the validator's lines appended — they name the decision and the
+member. On a second failure, continue to Stage V anyway: `assemble --review` applies every decision
+that passes and holds back the rest **by decision**, and the report names each one. The review is
+never dropped — owner ruling, 2026-09-09. `digest` shares `assemble`'s preparation: when it exits 2
+naming a **unit**, that unit's latest output is invalid and an attempt is left — re-dispatch it
+exactly as Stage U says and run `digest` again. Only when its line says the digest is over the
+engine's ceiling is the run over: stop it and send
+
+```persian
+نتیجهٔ این اجرا بزرگ‌تر از آن است که یکجا بازبینی شود. این یک نقص فنی است و باید برطرف شود؛ هیچ‌چیز ثبت نشد.
+```
 
 ---
 
@@ -341,22 +350,21 @@ Bash: DATA_ROOT=<data-repo> facts-plan assemble --run {run_dir} --review
 Bash: DATA_ROOT=<data-repo> SCHEMA_DIR=<code-repo>/schemas validate facts-delta {run_dir}/facts-delta.json --store --run {run_dir}
 ```
 
-(Drop `--review` when the review did not run.) The validate call performs the whole apply in memory,
-including the resulting store's schema, and writes nothing — so a delta that passes here is one
-`apply` cannot refuse.
+The validate call performs the whole apply in memory, including the resulting store's schema, and
+writes nothing — so a delta that passes here is one `apply` cannot refuse.
 
 **A per-entry error here is a defect, not your work.** Every per-entry rule — the store schema per
 kind and the content pass — is enforced at each unit's own gate, so a delta assembled from
 validated units cannot fail one (design addendum I1). What is left here is cross-entry only: twin
-titles, instance ownership, refs between units, the reviewer's caps. If `validate facts-delta`
-names a single entry's field anyway, stop before the apply, report it in Persian as a defect, and
-hand-repair nothing.
+titles, instance ownership, refs between units. If `validate facts-delta` names a single entry's
+field anyway, stop before the apply, report it in Persian as a defect, and hand-repair nothing.
 
 `assemble` itself exits 2, naming the unit, when that unit's latest attempt is invalid and an
 attempt is still left: re-dispatch that unit and run `assemble` again. On a residual error, the
 message names the unit that produced it. If that unit is under two attempts, re-dispatch it with
-the error, then **re-enter Stage R once** (the assembly changed, so the review is stale) and re-run
-Stage V. If the second review fails too, proceed without it. If Stage V fails again, stop
+the error, then **re-enter Stage R** (the assembly changed, so the review is stale: digest, review,
+validate) and re-run Stage V. `assemble --review` exits 2 naming a stale review for the same
+reason — re-enter Stage R. Never proceed without the review. If Stage V fails again, stop
 **before** the apply and relay the grouped errors in Persian.
 
 ---
@@ -405,7 +413,8 @@ Never `git add -A`. Continue to Stage 7 in the same turn.
 
 Read `{run_dir}/report.md` and **send it verbatim**. It carries the open disputes lettered, the
 unanswered units grouped per item, the dropped candidates in the owner's own words, every issue
-found in the files, any workbook skipped or part left unfinished, and whether the review ran.
+found in the files, any workbook skipped or part left unfinished, and what the review changed and
+what of it was set aside.
 
 When the owner answers a lettered dispute, **you** run the resolve — never print a command:
 
@@ -446,6 +455,8 @@ operator's tool (runbook 07 §5) and is not run here.
   goes out verbatim.
 - Batches of at most four `Task`s per message; every unit validated on return; at most two attempts
   per unit per run — refused by the engine, never lifted.
+- The review is never dropped: what passes is applied, what fails is held back by decision and
+  named in the report; a stale review is redone.
 - The only yield signal is `facts-plan status`'s own `yield: true`, and it ends the turn.
 - The engine is driven through its CLIs only; no Python touches its internals.
 - One `apply` per run, into one run directory. A second apply into a used directory is refused.

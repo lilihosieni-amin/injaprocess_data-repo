@@ -270,9 +270,7 @@ was written:
    | Promoting a `note` to another kind | `Bash: DATA_ROOT=<data-repo> merge facts promote --id F-… --kind <kind> [--key <key>] --run {run_dir}` |
 
    **No `resolve` ever follows an `edit`.** The verb settles the disagreement on every path it sets
-   by itself — the account matching the new value becomes the chosen one, the rest are rejected —
-   and it records the entry as confirmed by the chat actor. There is nothing left to do in the
-   panel afterwards.
+   by itself — the account matching the new value becomes the chosen one, the rest are rejected.
 3. **Each verb gets THIS run's directory, and it is theirs alone.** `apply`'s own
    `{run_dir}/facts-delta.json` is the applied delta itself (a dict); `edit`, `resolve`, `retire`
    and `promote` each *append* `{"verb": …, "args": …}` to `{run_dir}/facts-delta.json` as a
@@ -317,10 +315,10 @@ was written:
    With several entries (Step 1.6), one such line each, and the ones that failed named with the
    reason. Name every run directory a command in Step 5 actually used. Do not paste the full entry
    JSON back.
-4. End the report with **«در پنل تأییدشده است»** whenever the entry came out confirmed. `merge
-   facts edit` always confirms the entry it wrote as the chat actor's, and this run's other verbs
-   do too — `meta.json` says `origin: "chat"`. The sentence is what tells the owner there is
-   nothing left for them to accept in the panel.
+4. End the report with **«این تغییر ثبت شد؛ در پنل هنوز تأییدنشده است و باید آنجا تأیید شود.»** No verb
+   here confirms anything: the tick is set by a person in the panel and by nothing else (the
+   owner's ruling of 2026-09-09). A write moves the entry's content, so the panel's earlier tick
+   goes stale by itself and the entry shows «تأییدنشده» until someone confirms it there.
 
 ## Usage examples
 
@@ -341,8 +339,8 @@ And the two the patch verb was built for:
 
 - «در شرح این ثبت به‌جای «سیاهه» بنویس «برگه»» — the owner names the target and the exact word:
   case 2. This playbook writes a one-op patch setting `statement` to the sentence with the word
-  replaced → `--preview` → no question → `merge facts edit`, and the report ends with
-  «در پنل تأییدشده است».
+  replaced → `--preview` → no question → `merge facts edit`, and the report ends with the
+  «تأییدنشده» sentence.
 - «در شرح ۱۰ ثبت آشپزخانه «سیاهه» را «برگه» کن» — Step 1.6: ten entries, ten run directories, the
   same one-op patch in each, in order. An entry whose gate refuses is reported and the rest carry
   on.
@@ -370,6 +368,5 @@ And the two the patch verb was built for:
   with `edit`/`resolve`/`retire`/`promote` or with a different `apply` call; a second verb call an
   entry needs gets its own second stamped directory.
 - **Provenance** — the resulting change is `source.type: "chat"` (set by the delta or the verb,
-  never by you) and `meta.json`'s `origin: "chat"`; `merge facts edit` unions that source itself
-  and records the entry as the chat actor's, which is why nothing is left pending in the panel;
-  Claude commits it.
+  never by you) and `meta.json`'s `origin: "chat"`; `merge facts edit` unions that source itself;
+  Claude commits it. No verb confirms the entry: the panel's tick is a person's alone.

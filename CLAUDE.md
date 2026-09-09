@@ -106,7 +106,7 @@ invoke `merge facts` (`edit`, `apply` or `retire`), the sole writer.
 | `.claude/skills/process-voice/` | Pipeline orchestration playbook |
 | `.claude/skills/idef-extraction/` | IDEF0/IDEF3 field extraction rules |
 | `.claude/skills/edit-process/` | Chat-driven direct edits (no voice) → the `merge` verbs; merge/split heirs are built by `extract` (Mode C) |
-| `.claude/skills/quantify/` | Facts pipeline orchestration playbook v3 — the planner packs the estate into units, the units run four at a time, one reviewer reads the assembled result |
+| `.claude/skills/quantify/` | Facts pipeline orchestration playbook v3 — the planner packs the estate into units, the units run four at a time, one reviewer reads the assembled result, and the review is never dropped — what passes is applied and the rest is held back by decision |
 | `.claude/skills/edit-fact/` | Chat-driven direct edit to one fact (no recording) → `merge facts edit` for a change, `apply` for an addition, `retire` for a retirement; mirrors `edit-process` |
 | `.claude/agents/classify.md` | Meeting classifier agent |
 | `.claude/agents/extract.md` | IDEF candidate + delta agent — **and the sole builder of restructure/merge heirs** (Mode C), for the pipeline, `consolidate`, and `edit-process` |

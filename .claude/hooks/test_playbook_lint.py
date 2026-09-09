@@ -278,6 +278,31 @@ def test_review_mode_says_a_keep_with_data_changes_only_what_it_lists():
     ) in agent_section("`review` mode")
 
 
+# The 2026-09-09 ruling: the review is never dropped. Both real runs lost theirs
+# whole — one to a cap, one to a single bad decision — so the two rules that
+# replaced them are pinned here, and the playbook's escape hatches are pinned
+# shut: a text that still offers one is a text that will take it.
+
+def test_review_mode_has_no_cap_and_holds_back_by_decision():
+    """Owner ruling 2026-09-09: both real runs lost their review whole."""
+    assert (
+        "There is no cap on decisions or rewrites. A decision whose address matches"
+        " zero entries, or more than one, is held back on its own and named in the"
+        " report; the rest of your review is applied."
+    ) in agent_section("`review` mode")
+    assert (
+        "A record's `fields[]` is not yours to rewrite — the digest does not show the"
+        " column keys the shape needs — and a `keep` carrying `fields` is held back."
+    ) in agent_section("`review` mode")
+
+
+def test_the_playbook_never_proceeds_without_the_review():
+    text = PLAYBOOK.read_text(encoding="utf-8")
+    assert "proceed **without** the review" not in text
+    assert "proceed without it" not in text
+    assert "The review is never dropped" in text
+
+
 def test_the_unit_contract_says_a_column_of_names_is_a_string():
     assert (
         "A column whose cells are names is `type: string`; `refItems` is only"
@@ -309,7 +334,10 @@ def test_the_edit_fact_playbook_has_the_three_case_table_and_no_account_hunt():
     text = EDIT_FACT.read_text(encoding="utf-8")
     assert "merge facts edit" in text and "--preview" in text
     assert "facts-patch.json" in text
-    assert "در پنل تأییدشده است" in text
+    # The report never claims a confirmation: the panel's tick is a person's
+    # alone (owner ruling, 2026-09-09), so the sentence says the opposite.
+    assert "در پنل هنوز تأییدنشده است" in text
+    assert "تأییدشده است" not in text
     assert "account id" not in text.lower() or "Never compute an account id" not in text
     # The table's two load-bearing cells: its header, and the row that says the
     # playbook writes a mechanical change itself. Gutting either is what would

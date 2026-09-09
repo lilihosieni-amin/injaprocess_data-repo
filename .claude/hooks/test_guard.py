@@ -297,8 +297,8 @@ def test_allow_the_engine_clis(tmp_path):
 
 # --- the chat edit's own two paths (v3.7 §2) --------------------------------
 # `merge facts edit` reads a patch the playbook wrote under `runs/facts/**` and
-# is the sanctioned writer of the entry; the ledger it also writes lives under
-# `facts/`, so a Bash write into it is a direct store write like any other.
+# is the sanctioned writer of the entry; anything under `facts/` written by hand
+# is a direct store write like any other, dotfile or not.
 
 def test_allow_merge_facts_edit_with_a_patch_under_runs(tmp_path):
     assert run(bash("DATA_ROOT=/data merge facts edit --id F-00150 --patch "
@@ -310,5 +310,5 @@ def test_allow_writing_the_patch_file_under_runs(tmp_path):
     assert run(w("runs/facts/cooking/20260909-091210/facts-patch.json"), tmp_path) == 0
 
 
-def test_block_bash_write_into_the_ledger(tmp_path):
-    assert run(bash("echo '{}' > facts/.confirmations.json"), tmp_path) == 2
+def test_block_bash_write_of_a_dotfile_under_facts(tmp_path):
+    assert run(bash("echo '{}' > facts/.index.json"), tmp_path) == 2

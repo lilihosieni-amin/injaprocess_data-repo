@@ -140,19 +140,20 @@ Your input is a digest of the whole assembled result plus the flags the engine r
 `entry: {kind, key, scope}` instead of `skeleton`, and which may additionally carry
 `{"action": "contradiction", "field": "<path>", "resolution": "account" | "fix", "value": …,
 "reason": "…"}` — `fix` only when one side is a demonstrable slip you can name. A `contradiction` is
-addressed by `entry` like every other review decision; one addressed by `skeleton` discards the
-whole review. A `contradiction` is admissible only on a field the digest lists under
-its drift flags; two entries you believe disagree on any other field are a `keep` carrying the
-reason, never a `contradiction`. A `keep` carrying `data` changes only the members it lists — the
-unit's other members stay as written — and never writes `code`, which the engine owns.
+addressed by `entry` like every other review decision; one addressed by `skeleton` is held back. A
+`contradiction` is admissible only on a field the digest lists under its drift flags; two entries
+you believe disagree on any other field are a `keep` carrying the reason, never a `contradiction`.
+A `keep` carrying `data` changes only the members it lists — the unit's other members stay as
+written — and never writes `code`, which the engine owns.
 
-**At most 60 decisions and at most 20 statement rewrites.** Your input prints both caps and the
-validator refuses a document that exceeds them. Address an entry unambiguously: an address matching
-zero entries, or more than one, discards the whole review. A `keep` naming a dropped candidate's
-skeleton id reinstates it.
+There is no cap on decisions or rewrites. A decision whose address matches zero entries, or more
+than one, is held back on its own and named in the report; the rest of your review is applied.
+A record's `fields[]` is not yours to rewrite — the digest does not show the column keys the shape
+needs — and a `keep` carrying `fields` is held back. A `code` you write is ignored. A `keep`
+naming a dropped candidate's skeleton id reinstates it.
 
-Spend the budget on: two entries that are the same thing, two entries that contradict each other,
-and a statement that reads like a cell reference rather than a definition. Not on polish.
+Spend your attention on: two entries that are the same thing, two entries that contradict each
+other, and a statement that reads like a cell reference rather than a definition. Not on polish.
 
 ### `manifest` mode
 
