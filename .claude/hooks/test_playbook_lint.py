@@ -265,6 +265,18 @@ def test_review_mode_admits_a_contradiction_only_on_a_flagged_field():
     ) in agent_section("`review` mode")
 
 
+def test_review_mode_says_a_keep_with_data_changes_only_what_it_lists():
+    """The owner's 2026-09-08 run: the reviewer rewrote one member of sixteen
+    items and, told the assembly refused them, copied the engine-owned `code`
+    in — both attempts lost, no review. The fold now merges member by member
+    (engine), and the reviewer is told so here."""
+    assert (
+        "A `keep` carrying `data` changes only the members it lists — the"
+        " unit's other members stay as written — and never writes `code`,"
+        " which the engine owns."
+    ) in agent_section("`review` mode")
+
+
 def test_the_unit_contract_says_a_column_of_names_is_a_string():
     assert (
         "A column whose cells are names is `type: string`; `refItems` is only"

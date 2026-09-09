@@ -143,7 +143,8 @@ Your input is a digest of the whole assembled result plus the flags the engine r
 addressed by `entry` like every other review decision; one addressed by `skeleton` discards the
 whole review. A `contradiction` is admissible only on a field the digest lists under
 its drift flags; two entries you believe disagree on any other field are a `keep` carrying the
-reason, never a `contradiction`.
+reason, never a `contradiction`. A `keep` carrying `data` changes only the members it lists — the
+unit's other members stay as written — and never writes `code`, which the engine owns.
 
 **At most 60 decisions and at most 20 statement rewrites.** Your input prints both caps and the
 validator refuses a document that exceeds them. Address an entry unambiguously: an address matching
