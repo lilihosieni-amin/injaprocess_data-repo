@@ -13,7 +13,7 @@
     "node": "preparation-030-n016"
   },
   "created_at": "2026-09-04T23:44:46Z",
-  "updated_at": "2026-09-09T10:32:42Z",
+  "updated_at": "2026-09-09T10:38:35Z",
   "idef0": {
     "inputs": [
       "رول‌های ژامبون چهار کیلویی",
@@ -380,13 +380,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 527.5
+        "x": 855.6867283950617,
+        "y": 340.3858024691358
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -407,13 +409,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 527.5
+        "x": 859.128086419753,
+        "y": 478.3101851851852
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -422,10 +426,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1143,
-        "y": 1156.0
+        "x": 937.5601851851851,
+        "y": 635.1666666666667
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "preparation-017-n013",
@@ -448,13 +452,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1227.5
+        "x": 948.2793209876543,
+        "y": 804.0817901234568
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -463,10 +469,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 623,
-        "y": 1112.25
+        "x": 764.7824074074074,
+        "y": 781.4243827160493
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "preparation-017-n014",
@@ -490,13 +496,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1096.25
+        "x": 572.9552469135803,
+        "y": 936.1419753086421
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -524,13 +532,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1096.25
+        "x": 428.695987654321,
+        "y": 785.679012345679
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -555,13 +565,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 90.0
+        "x": 290,
+        "y": 418
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -586,13 +598,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 265.0
+        "x": 513.7746913580246,
+        "y": 502.6743827160493
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -601,10 +615,10 @@
       "junctionType": "OR",
       "direction": "join",
       "position": {
-        "x": 103,
-        "y": 1418.5
+        "x": 369,
+        "y": 727.9166526794434
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "preparation-017-n018",
