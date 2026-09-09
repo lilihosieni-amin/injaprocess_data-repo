@@ -1,0 +1,40 @@
+{
+  "add_nodes": [
+    {
+      "key": "n1",
+      "type": "activity",
+      "label": "تحویل مرغ چیزا از انبار به آماده‌سازی",
+      "description": "ظرف ۴۸ عددی مرغ چیزا از انبار به آماده‌سازی تحویل داده می‌شود تا تا صبح روز بعد یخش کامل باز شود و کار روی آن شروع شود. انبار این قلم را به تعداد تحویل می‌دهد و به تعداد تحویل می‌گیرد و برای آن فرم نیم‌ساخت پر نمی‌شود.",
+      "actor": "انبار",
+      "icom": {
+        "inputs": [
+          "ظرف ۴۸ عددی مرغ چیزای خارج‌شده از فریزر"
+        ],
+        "controls": [
+          "تحویل و تحویل‌گیری چیزا بر مبنای تعداد"
+        ],
+        "outputs": [
+          "مرغ چیزای تحویل‌شده به آماده‌سازی"
+        ],
+        "mechanisms": [
+          "انبار",
+          "مسئول لاین مرینت"
+        ]
+      },
+      "subprocess": null
+    }
+  ],
+  "add_edges": [
+    { "from": "preparation-014-n001", "to": "preparation-014-n002" },
+    { "from": "preparation-014-n002", "to": "preparation-014-j1" },
+    { "from": "preparation-014-j1", "to": "n1" },
+    { "from": "n1", "to": "preparation-014-n003" }
+  ],
+  "remove_edges": [
+    { "from": "preparation-014-n001", "to": "preparation-014-j1" },
+    { "from": "preparation-014-j1", "to": "preparation-014-n002" },
+    { "from": "preparation-014-n002", "to": "preparation-014-n003" }
+  ],
+  "enrich_nodes": [],
+  "flag_removed": []
+}
