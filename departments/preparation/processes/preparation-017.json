@@ -13,7 +13,7 @@
     "node": "preparation-030-n016"
   },
   "created_at": "2026-09-04T23:44:46Z",
-  "updated_at": "2026-09-09T10:11:33Z",
+  "updated_at": "2026-09-09T10:24:33Z",
   "idef0": {
     "inputs": [
       "رول‌های ژامبون چهار کیلویی",
@@ -61,14 +61,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 352.5
+        "x": 264,
+        "y": -131.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
-          "runs/chat/20260909-073408"
+          "runs/chat/20260909-073408",
+          "ui-edit"
         ]
       }
     },
@@ -89,14 +90,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 352.5
+        "x": 268,
+        "y": 38.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
-          "runs/chat/20260909-073408"
+          "runs/chat/20260909-073408",
+          "ui-edit"
         ]
       }
     },
@@ -118,13 +120,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 352.5
+        "x": 290,
+        "y": 208.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -149,14 +153,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 352.5
+        "x": 374,
+        "y": 362.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
-          "runs/chat/20260909-073408"
+          "runs/chat/20260909-073408",
+          "ui-edit"
         ]
       }
     },
@@ -196,7 +201,7 @@
       "direction": "split",
       "position": {
         "x": 1143,
-        "y": 806.0
+        "y": 806
       },
       "layout": "auto"
     },
@@ -334,7 +339,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
