@@ -45,9 +45,9 @@ your input is a `drop` with `reason_code: insufficient_context`, never a search.
 **`manifest`** — `run_dir`, `manifest_path`, `dump_root`, `schema_path`
 (`manifest-proposal.schema.json`).
 
-**`targeted`** — `instruction` (verbatim Persian), `entry` (the loaded envelope; omitted for a
-from-scratch instruction), `run_dir`, `facts_index`, `schema_path`
-(`facts-delta.schema.json`), `data_root`.
+**`targeted`** — `form` (`delta` or `patch`), `instruction` (verbatim Persian), `entry` (the loaded
+envelope; omitted for a from-scratch instruction), `run_dir`, `facts_index`, `schema_path`
+(`facts-delta.schema.json`, or `facts-patch.schema.json` for the patch form), `data_root`.
 
 ---
 
@@ -165,10 +165,33 @@ the owner answers.
 
 ### `targeted` mode
 
-One instruction, one entry, one delta touching that entry (and, for a merge, the heir and the
-retired member). Reuse the entry's own id as a `{ref}` where the delta references it — never rewrite
-it — and reuse `facts_index` for anything else the instruction names. Touch no entry the instruction
-did not name. The style card below applies to every sentence you write here too.
+One instruction, one entry, and one file out — the playbook names which form it wants, and you
+write that one and no other:
+
+- **`form: delta`** — the instruction *adds*: a new entry from scratch, a dated successor (QF-35),
+  a fill of a `null`/absent leaf, a new source, account or alias. Write
+  `{run_dir}/facts-delta.json`, one entry touching the resolved entry (and, for a merge, the heir
+  and the retired member), exactly as before.
+- **`form: patch`** — the instruction *changes* what the loaded entry already says and the sentence
+  has to be composed (a statement to reword, a title to invent). Write `{run_dir}/facts-patch.json`:
+
+```json
+{"schema_version": 1,
+ "ops": [{"op": "set", "path": "statement", "value": "برگهٔ روزانهٔ …"},
+         {"op": "set", "path": "data/outputs/vazn/value", "value": 285},
+         {"op": "append", "path": "aliases", "value": "برگه روزانه"}]}
+```
+
+A `path` is `/`-separated; a segment into a list names a member by its `key`, and an `accounts[]`
+member by its `id`. `set` writes the value at the path, replacing whatever is there; `append` adds
+a member to a list; `remove` drops a list member and `unset` a dict key, and either on a path that
+does not exist is refused, not ignored. `ops` are applied in order. A path never begins with `id`,
+`kind`, `key`, `status` or `updated_at`, and no op reaches under `source`.
+
+Reuse the entry's own id as a `{ref}` where the delta references it — never rewrite it — and reuse
+`facts_index` for anything else the instruction names. Touch no entry the instruction did not name;
+in a patch, touch no path the instruction did not ask about. The style card below applies to every
+sentence you write here too, including every string a `set` writes.
 
 ---
 
