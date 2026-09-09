@@ -1,2 +1,0 @@
-# gozaresh_markazi__s4__h__r6
-MINUS(SUM(FN,EN),GN)
