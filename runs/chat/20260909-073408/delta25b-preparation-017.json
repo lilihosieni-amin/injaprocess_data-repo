@@ -1,0 +1,8 @@
+{
+  "add_nodes": [],
+  "add_edges": [
+    { "from": "preparation-017-j5", "to": "preparation-017-j6", "label": "در صورت سالم بودن قلم" }
+  ],
+  "enrich_nodes": [],
+  "flag_removed": []
+}
