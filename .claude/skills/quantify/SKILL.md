@@ -332,8 +332,10 @@ Then `Bash: DATA_ROOT=<data-repo> SCHEMA_DIR=<code-repo>/schemas validate facts-
 On failure, re-dispatch once with the validator's lines appended — they name the decision and the
 member. On a second failure, continue to Stage V anyway: `assemble --review` applies every decision
 that passes and holds back the rest **by decision**, and the report names each one. The review is
-never dropped — owner ruling, 2026-09-09. If `digest` exits 2, the assembled result is over the
-engine's ceiling: stop the run and send
+never dropped — owner ruling, 2026-09-09. `digest` shares `assemble`'s preparation: when it exits 2
+naming a **unit**, that unit's latest output is invalid and an attempt is left — re-dispatch it
+exactly as Stage U says and run `digest` again. Only when its line says the digest is over the
+engine's ceiling is the run over: stop it and send
 
 ```persian
 نتیجهٔ این اجرا بزرگ‌تر از آن است که یکجا بازبینی شود. این یک نقص فنی است و باید برطرف شود؛ هیچ‌چیز ثبت نشد.
