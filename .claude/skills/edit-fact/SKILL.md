@@ -186,10 +186,11 @@ For a patch (cases 2 and 3), run the verb in preview first. It writes nothing:
 Bash: DATA_ROOT=<data-repo> merge facts edit --id F-… --patch {run_dir}/facts-patch.json --run {run_dir} --preview
 ```
 
-It prints one block per op — the op, «فعلی» (the value as the store holds it now) and «پیشنهاد»
-(what the op would write) — then `OK`, or the refusal lines and a non-zero exit. **Keep that
-output**: it is INV-5's field-by-field view, built without reading the store file yourself, and
-Step 6's report is made of it.
+It prints one block per op — a `[n] op path` header line, «فعلی» (the value as the store holds it
+now) and «پیشنهاد» (what the op would write) — then `OK`, or the refusal lines and a non-zero exit.
+**Keep that output**: it is INV-5's field-by-field view, built without reading the store file
+yourself, and Step 6's report is made of it. The `[n] op path` lines are for **your** reading only;
+they are op names and store paths, and they are never shown to the owner (see below).
 
 Then gate, in this order:
 
@@ -201,13 +202,28 @@ Then gate, in this order:
   it touches — never one question per field, and never one per entry. Wait for an explicit
   «تأیید». **If declined, write nothing at all** — do not "prepare it anyway."
 
-For composed prose or a removal, the preview goes to the owner as the command printed it — those
-are their own values:
+For composed prose or a removal, the owner sees the **values** — those are their own — and nothing
+else. The preview's `[n] op path` lines are internals: an op name and a store path, in English, in
+a Telegram message. **Never relay them.** Build the question out of the «فعلی»/«پیشنهاد» pairs
+alone:
+
+- one block per entry, headed by that entry's own Persian title;
+- inside it, the pairs in the preview's order, one per op;
+- when an op's path names a **keyed member that carries its own `title`** — an input, an output, a
+  column of a table, a row of a reference record — that member's Persian title heads its pair,
+  read off the entry you loaded in Step 1;
+- a **top-level prose field** (`statement`, `title`) needs no label beyond the entry's own title;
+- an op with only «پیشنهاد» (an append) or only «فعلی» (a removal) shows the one line it has.
+
+No id, no path, no op name, no command, no English word goes into the message:
 
 ```
 تغییرهای زیر انجام می‌شود:
 
-{the preview output of every entry, exactly as printed}
+«{عنوان ثبت}»
+{عنوان عضو، اگر آن عضو عنوان دارد}
+فعلی:    {مقدار کنونی}
+پیشنهاد: {مقدار پیشنهادی}
 
 تأیید می‌کنید؟
 ```
@@ -289,8 +305,9 @@ was written:
    so this is normally a no-op here.
 3. Reply in Persian with what changed, one line per entry — and only a patch has preview lines,
    because only a patch was previewed:
-   - **a change (cases 2 and 3)** — the id and the preview's own «فعلی» and «پیشنهاد» lines for
-     that entry;
+   - **a change (cases 2 and 3)** — the entry's title and its «فعلی»/«پیشنهاد» pairs, shaped
+     exactly as Step 4 shapes them for the question; the preview's `[n] op path` lines are never
+     relayed here either;
    - **an addition (case 1)** — the id and what was added: the new entry, or the field that was
      filled and with what;
    - **a retirement or a merge** — the id, that the original was retired (**not deleted**), and its

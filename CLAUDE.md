@@ -88,10 +88,13 @@ The `process-voice` playbook owns the human checkpoint and the conflict report.
 Do not invoke `merge` directly before the checkpoint clears.
 
 `/quantify` runs a facts pass over the estate — dumped workbooks, the
-manifest, and any recordings the user names — and owns the manifest and facts
-checkpoints. `/edit-fact` applies one chat-driven correction to a single fact
-(e.g. «پارمسان الان ۱۰۰ گرمه»). Neither writes `facts/**` directly; both
-dispatch the `quantify` agent and invoke `merge facts`.
+manifest, and any recordings the user names — dispatches the `quantify` agent,
+and owns the manifest and facts checkpoints. `/edit-fact` applies one
+chat-driven correction to a single fact (e.g. «پارمسان الان ۱۰۰ گرمه»): a
+change whose value the owner states exactly, it writes as a patch itself, with
+no dispatch; it dispatches the `quantify` agent only for prose it has to
+compose or for an addition. Neither playbook writes `facts/**` directly — both
+invoke `merge facts` (`edit`, `apply` or `retire`), the sole writer.
 
 ---
 

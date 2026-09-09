@@ -316,3 +316,14 @@ def test_the_edit_fact_playbook_has_the_three_case_table_and_no_account_hunt():
     # send a change back through `apply` and lose it to a dispute again.
     assert "| the instruction … | vehicle | who writes it |" in text
     assert "**this playbook**, with no dispatch" in text
+
+
+def test_the_edit_fact_playbook_never_relays_the_preview_op_lines():
+    """Bot messages hide internals: the preview's `[n] op path` header is an
+    English op name and a store path, and the owner is shown only the
+    «فعلی»/«پیشنهاد» values under the Persian titles they belong to."""
+    text = EDIT_FACT.read_text(encoding="utf-8")
+    assert "The preview's `[n] op path` lines are internals" in text
+    assert "**Never relay them.**" in text
+    assert "No id, no path, no op name, no command, no English word goes into the message" in text
+    assert "{the preview output of every entry, exactly as printed}" not in text
