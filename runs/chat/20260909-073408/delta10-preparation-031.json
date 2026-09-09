@@ -1,0 +1,15 @@
+{
+  "add_nodes": [],
+  "add_edges": [
+    { "from": "preparation-031-n003", "to": "preparation-031-n006" },
+    { "from": "preparation-031-n006", "to": "preparation-031-n004" },
+    { "from": "preparation-031-j2", "to": "preparation-031-n007" }
+  ],
+  "remove_edges": [
+    { "from": "preparation-031-n003", "to": "preparation-031-n004" },
+    { "from": "preparation-031-j2", "to": "preparation-031-n006" },
+    { "from": "preparation-031-n006", "to": "preparation-031-n007" }
+  ],
+  "enrich_nodes": [],
+  "flag_removed": []
+}
