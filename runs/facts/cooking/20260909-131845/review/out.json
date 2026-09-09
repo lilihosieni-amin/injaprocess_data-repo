@@ -1,0 +1,117 @@
+{
+  "schema_version": 1,
+  "unit": "review",
+  "attempt": 1,
+  "decisions": [
+    {
+      "entry": { "kind": "rule", "key": "masraf_elami_shabaneh" },
+      "action": "merge_into",
+      "into": {
+        "kind": "rule",
+        "key": "masraf_elami",
+        "scope": { "branches": ["chalebagh", "naharkhoran"], "departments": ["cooking"] }
+      },
+      "reason_code": "duplicate",
+      "reason": "همان تعریف مصرف اعلامی است: مانده ابتدای شب به‌علاوهٔ دریافتی از انبار منهای ماندهٔ پایان شب."
+    },
+    {
+      "entry": {
+        "kind": "rule",
+        "key": "masraf_elami",
+        "scope": { "branches": [], "departments": ["cooking"] }
+      },
+      "action": "merge_into",
+      "into": {
+        "kind": "rule",
+        "key": "masraf_elami",
+        "scope": { "branches": ["chalebagh", "naharkhoran"], "departments": ["cooking"] }
+      },
+      "reason_code": "duplicate",
+      "reason": "دو ثبت از یک قاعده با یک محاسبهٔ یکسان؛ نسخهٔ بسته‌شده به ستون‌های گزارش شبانه مرجع می‌ماند."
+    },
+    {
+      "entry": { "kind": "rule", "key": "masraf_vaqei_bar_asas_tedad_forush" },
+      "action": "merge_into",
+      "into": { "kind": "rule", "key": "masraf_vaqei" },
+      "reason_code": "duplicate",
+      "reason": "هر دو مصرف واقعی را از ضرب تعداد فروش در مقدار نسخهٔ هر غذا و جمع آن‌ها تعریف می‌کنند؛ نسخهٔ دارای رابطه مرجع می‌ماند."
+    },
+    {
+      "entry": { "kind": "rule", "key": "mande_moadel_kham_morgh_grill" },
+      "action": "merge_into",
+      "into": { "kind": "rule", "key": "tabdil_vazn_morgh_pokhte_be_kham" },
+      "reason_code": "duplicate",
+      "reason": "یک تبدیل واحد با دو نوشتار؛ افزودن سیصد گرم به ازای هر هفتصد گرم همان تقسیم بر یک منهای سی درصد است."
+    },
+    {
+      "entry": { "kind": "rule", "key": "masir_sabt_zayeat" },
+      "action": "merge_into",
+      "into": { "kind": "rule", "key": "nahve_sabt_zayeat" },
+      "reason_code": "duplicate",
+      "reason": "هر دو همان دو دستهٔ ضایعات فیش‌پذیر و فیش‌ناپذیر را تعریف می‌کنند؛ نسخهٔ کامل‌تر مرجع می‌ماند."
+    },
+    {
+      "entry": { "kind": "measurement", "key": "vaznkeshi_mande_akhar_shab" },
+      "action": "merge_into",
+      "into": { "kind": "measurement", "key": "vazn_keshi_mande_akhar_shab" },
+      "reason_code": "duplicate",
+      "reason": "یک اندازه‌گیری با دو کلید هم‌شکل؛ وزن‌کشی ماندهٔ پایان شب هر لاین."
+    },
+    {
+      "entry": { "kind": "rule", "key": "mande_avval_shab_az_shab_qabl" },
+      "action": "merge_into",
+      "into": { "kind": "rule", "key": "enteqal_mande_akhar_shab_be_avval_shab" },
+      "reason_code": "duplicate",
+      "reason": "همان انتقال ماندهٔ پایان شب به موجودی ابتدای شب بعد، با نوشتار دیگر."
+    },
+    {
+      "entry": { "kind": "rule", "key": "enteqal_mande_akhar_shab_be_avval_shab__farangi" },
+      "action": "merge_into",
+      "into": { "kind": "rule", "key": "enteqal_mande_akhar_shab_be_avval_shab" },
+      "reason_code": "duplicate",
+      "reason": "همان قاعده است و تنها به یک لاین محدود نوشته شده؛ قاعده برای همهٔ لاین‌ها یکسان است."
+    },
+    {
+      "entry": { "kind": "rule", "key": "enteqal_mande_akhar_shab_be_avval_shab" },
+      "action": "keep",
+      "key": "enteqal_mande_akhar_shab_be_avval_shab",
+      "title": "انتقال ماندهٔ پایان شب به موجودی ابتدای شب",
+      "statement": "موجودی ابتدای هر شب در هر لاین برابر با ماندهٔ شمرده‌شدهٔ پایان شب پیش است و در آغاز شیفت بدون شمارش دوباره از همان رقم برداشته می‌شود. چون در طول شب کالا از انبار تحویل گرفته می‌شود، ماندهٔ پایان شب می‌تواند از موجودی ابتدای همان شب بیشتر باشد.",
+      "reason": "جمله بازنویسی شد تا نکتهٔ ثبت‌شده در نوشتار ادغام‌شده هم در همین قاعده بماند."
+    },
+    {
+      "entry": { "kind": "measurement", "key": "vazn_keshi_mande_akhar_shab" },
+      "action": "keep",
+      "key": "vazn_keshi_mande_akhar_shab",
+      "title": "وزن‌کشی ماندهٔ پایان شب هر لاین",
+      "statement": "سرپرست هر لاین در پایان شب ماندهٔ اقلام وزنی لاین خود را با ترازو وزن می‌کند و مقدار آن را برای محاسبهٔ مصرف شبانه ثبت می‌کند. توزین با دقت گرم انجام می‌شود و آمارگیری از ساعت یک و ربع بامداد آغاز می‌شود و فهرست نهایی در پایان کار نوشته می‌شود.",
+      "reason": "جمله پس از ادغام دو ثبت هم‌معنا بازنویسی شد."
+    },
+    {
+      "entry": { "kind": "rule", "key": "tedad_forush" },
+      "action": "keep",
+      "key": "tedad_forush",
+      "title": "تعداد فروش غذاهای مرتبط با هر قلم",
+      "statement": "تعداد فروش مربوط به هر قلم در یک شب برابر است با مجموع پرس‌های فروخته‌شدهٔ همهٔ غذاهایی که آن قلم در نسخهٔ آن‌ها به کار می‌رود. این عدد مبنای سنجش انحراف مصرف به ازای هر واحد فروخته‌شده است.",
+      "reason": "جمله به تعریف کسب‌وکاری برگردانده شد و اشارهٔ آن به جای سطر برگه به خود قلم است."
+    },
+    {
+      "entry": { "kind": "rule", "key": "enheraf_har_forush" },
+      "action": "keep",
+      "key": "enheraf_har_forush",
+      "title": "انحراف مصرف به ازای هر واحد فروش",
+      "statement": "انحراف مصرف به ازای هر واحد فروش برابر است با انحراف با احتساب تلورانس تقسیم بر تعداد پرس فروخته‌شدهٔ غذاهایی که آن قلم در آن‌ها به کار می‌رود، در همان شب. این مقدار نشان می‌دهد به ازای هر پرس فروخته‌شده چه مقدار انحراف مصرف رخ داده است.",
+      "reason": "جمله به تعریف کسب‌وکاری برگردانده شد و اشارهٔ آن به جای سطر برگه به خود قلم است."
+    },
+    {
+      "entry": { "kind": "record", "key": "off_ejraei" },
+      "action": "keep",
+      "key": "off_ejraei",
+      "title": "آف اجرایی روزانهٔ آشپزخانه",
+      "statement": "برگهٔ روزانه‌ای که برای هر تاریخ تعداد آف اجرایی برنامه‌ریزی‌شدهٔ پرسنل آشپزخانه و تعداد آف تحقق‌یافتهٔ همان روز را همراه با توضیح تفاوت آن‌ها ثبت می‌کند. سرپرست بخش آن را در پایان هر شب پر می‌کند و هر سطر به یک تاریخ تعلق دارد.",
+      "aliases": ["آف اجرایی"],
+      "reason": "عنوان پیشین نام برگه در فایل بود و جمله نمی‌گفت این تعدادها تعداد آف پرسنل است."
+    }
+  ],
+  "new": []
+}

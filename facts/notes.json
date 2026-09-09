@@ -1,4 +1,456 @@
 {
   "schema_version": 2,
-  "entries": []
+  "entries": [
+    {
+      "kind": "note",
+      "key": "note_e272d7b961e5",
+      "title": "مقدار نامشخص سیب‌زمینی پک اینجا باکس",
+      "statement": "مقدار سیب‌زمینی که همراه هر پک اینجا باکس ریخته می‌شود مشخص نشده و تنها به صورت «حجم سیب‌زمینی» بیان شده است. برای کامل شدن ترکیب استاندارد این پک باید تعیین شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/cooking-1405-05-26-02.txt",
+          "lines": "1-66",
+          "hash": "sha256:1b80b4bb5156326d8a1a9303cd401503b30dda50f745a97e4c488c8635b2097f",
+          "run": "runs/facts/cooking/20260909-131845"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00079"
+          }
+        ],
+        "question": "سهم سیب‌زمینی هر پک اینجا باکس چقدر است و بر چه مبنایی شمرده می‌شود؟"
+      },
+      "id": "F-00218",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-09T14:05:54Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_df5dda745bd1",
+      "title": "ثبت یکپارچه یا تفکیکی دلستر در ماندهٔ کانتر",
+      "statement": "ماندهٔ دلستر در بخش کانتر پیش‌تر یکپارچه و بدون تفکیک نوع ثبت می‌شد، در حالی که اکنون هر نوع باید جدا نوشته شود؛ نوشابهٔ خانواده و قوطی از ابتدا به تفکیک نوع ثبت می‌شوند.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/cooking-1405-05-26.txt",
+          "lines": "1-174",
+          "hash": "sha256:b85c2a0c6fbc8d7218dd41051ac682d8150905be5340fcafac209c0437157357",
+          "run": "runs/facts/cooking/20260909-131845"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00148"
+          }
+        ],
+        "question": "آیا ماندهٔ دلستر در بخش کانتر باید به تفکیک هر نوع ثبت شود یا یکپارچه؟"
+      },
+      "id": "F-00219",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-09T14:05:54Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_feb1ae9a2cd0",
+      "title": "مسئول و تناوب پر کردن گزارش پایان شب",
+      "statement": "گزارش پایان شب پنج بخش دارد: زمان تحویل و سنجش کیفیت، ضایعات، آف اجرایی، نیازمندی‌ها و مشکلات، و تعداد خمیر. سرپرست هر بخش این گزارش را هر شب پس از پایان کار پر می‌کند و موارد آن روز بعد در جلسهٔ روزانه پیگیری می‌شود.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/cooking-1405-05-26.txt",
+          "lines": "1-174",
+          "hash": "sha256:b85c2a0c6fbc8d7218dd41051ac682d8150905be5340fcafac209c0437157357",
+          "run": "runs/facts/cooking/20260909-131845"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00149"
+          },
+          {
+            "ref": "F-00164"
+          },
+          {
+            "ref": "F-00163"
+          },
+          {
+            "ref": "F-00156"
+          },
+          {
+            "ref": "F-00166"
+          }
+        ],
+        "question": "آیا مسئول پر کردن و تناوب شبانهٔ این جدول‌ها در تعریفشان ثبت شده است؟"
+      },
+      "id": "F-00220",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-09T14:05:54Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_39bfecbc4e02",
+      "title": "تغییر اندازهٔ بستهٔ پنیر پارمسان",
+      "statement": "پنیر پارمسان پیش‌تر در بسته‌های ۲۰۰ گرمی تحویل می‌شد و اکنون بسته‌ها ۱۰۰ گرمی هستند؛ لاین فرنگی مانده را بر پایهٔ تعداد بستهٔ کامل و وزن فله به گرم ثبت می‌کند.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/cooking-1405-05-26.txt",
+          "lines": "1-174",
+          "hash": "sha256:b85c2a0c6fbc8d7218dd41051ac682d8150905be5340fcafac209c0437157357",
+          "run": "runs/facts/cooking/20260909-131845"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00066"
+          }
+        ],
+        "question": "آیا اندازهٔ بستهٔ ثبت‌شده برای پنیر پارمسان به ۱۰۰ گرم به‌روز شده است؟"
+      },
+      "id": "F-00221",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-09T14:05:54Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_4c57ecf8d262",
+      "title": "پرسش دربارهٔ ثبت ضایعات غیرمحصول",
+      "statement": "ضایعات غیرمحصول با وزن روی برگهٔ کاغذی نوشته و به انبار تحویل می‌شود و روشن نیست که این مقدارها در ثبت ضایعات روزانه هم منظور می‌شوند یا نه.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/cooking-1405-05-26.txt",
+          "lines": "348-452",
+          "hash": "sha256:b85c2a0c6fbc8d7218dd41051ac682d8150905be5340fcafac209c0437157357",
+          "run": "runs/facts/cooking/20260909-131845"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00164"
+          }
+        ],
+        "question": "آیا ضایعات غیرمحصول که با وزن در برگهٔ کاغذی نوشته و به انبار تحویل می‌شود، در همین ثبت ضایعات هم وارد می‌شود و با چه مبنایی، وزن یا تعداد؟"
+      },
+      "id": "F-00222",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-09T14:05:54Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_37008c9a967e",
+      "title": "برابری مصرف اعلامی با مقدار دریافتی از انبار",
+      "statement": "در بررسی فرم‌های مانده شب دیده شد که مصرف اعلامی هر ردیف دقیقاً برابر مقدار دریافتی از انبار ثبت شده است، در حالی که مصرف اعلامی باید از تفاوت مانده اول و آخر شب به دست بیاید. شعبه و بازهٔ زمانی این مشاهده مشخص نیست و در همان بازه سامانه در حال اصلاح بوده است.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/cooking-1405-06-01.txt",
+          "lines": "1-114",
+          "hash": "sha256:5d8d93c83bad2fd84bb6a8a28751cd50781e3d5d63ac28c80081f7b4db57b1d0",
+          "run": "runs/facts/cooking/20260909-131845"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00160"
+          },
+          {
+            "ref": "F-00150"
+          },
+          {
+            "ref": "F-00172"
+          },
+          {
+            "ref": "F-00159"
+          }
+        ],
+        "question": "آیا مصرف اعلامی هر قلم همیشه برابر مقدار دریافتی از انبار ثبت می‌شود، یا این برابری تنها در بازهٔ اصلاح سامانه رخ داده است؟"
+      },
+      "id": "F-00223",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-09T14:05:54Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_9b6faa272580",
+      "title": "ثبت هم‌زمان ماندهٔ آخر شب در برگه و فایل",
+      "statement": "ماندهٔ آخر شب هر شب هم روی برگهٔ دست‌نویس لاین و هم در فایل رایانه‌ای ثبت می‌شود و هر دو را خود نیروی لاین پر می‌کند، نه حسابداری. مرجع بودن یکی از این دو ثبت روشن نیست.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/cooking-1405-06-10.txt",
+          "lines": "1-75",
+          "hash": "sha256:4a0c2b1a5605905d28f001615e8efcc71651d538e0cebc69026faa8e2a3971ee",
+          "run": "runs/facts/cooking/20260909-131845"
+        },
+        {
+          "type": "photo",
+          "ref": "departments/cooking/attachments/.text/photo_2026-08-29_14-23-51.image.md",
+          "hash": "sha256:4e924d40a0f66e4e9e0b5a81e6ae0f3a2420f805060dcbe1c50d20c7e9b9c4e1",
+          "run": "runs/facts/cooking/20260909-131845"
+        },
+        {
+          "type": "photo",
+          "ref": "departments/cooking/attachments/.text/photo_2026-08-29_14-23-56.image.md",
+          "hash": "sha256:144255103f6868e0b1464296cd89ba8f06652226238405f16c6beaf0a953ea82",
+          "run": "runs/facts/cooking/20260909-131845"
+        },
+        {
+          "type": "docx",
+          "ref": "departments/cooking/attachments/.text/شرح_شغل_سرپرست_آشپزخانه___2_.txt",
+          "hash": "sha256:457fce62ff762a849e164b1e645535550c98bdeb604f0e47fbfdb956382d2e63",
+          "run": "runs/facts/cooking/20260909-131845"
+        },
+        {
+          "type": "docx",
+          "ref": "departments/cooking/attachments/.text/شرح_شغل_کارکنان_آشپزخانه.txt",
+          "hash": "sha256:5c6a1786b64737a9ada2fc0c1f8f1de7b43340fff09104d7414fa36139d534ce",
+          "run": "runs/facts/cooking/20260909-131845"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00146"
+          },
+          {
+            "ref": "F-00160"
+          }
+        ],
+        "question": "کدام ثبت ماندهٔ آخر شب مرجع رسمی است و در صورت اختلاف میان برگهٔ دست‌نویس و فایل رایانه‌ای کدام ملاک قرار می‌گیرد؟"
+      },
+      "id": "F-00224",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-09T14:05:54Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_460e342268ea",
+      "title": "اندازهٔ بستهٔ نوشیدنی‌ها در درخواست کانتر",
+      "statement": "روی برگهٔ درخواست کانتر برای نوشابهٔ قوطی بستهٔ بیست و چهارتایی، برای نوشابهٔ خانواده بستهٔ شش‌تایی و برای آب معدنی بستهٔ دوازده‌تایی به عنوان واحد درخواست چاپ شده است.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/cooking-1405-06-10.txt",
+          "lines": "1-75",
+          "hash": "sha256:4a0c2b1a5605905d28f001615e8efcc71651d538e0cebc69026faa8e2a3971ee",
+          "run": "runs/facts/cooking/20260909-131845"
+        },
+        {
+          "type": "photo",
+          "ref": "departments/cooking/attachments/.text/photo_2026-08-29_14-23-51.image.md",
+          "hash": "sha256:4e924d40a0f66e4e9e0b5a81e6ae0f3a2420f805060dcbe1c50d20c7e9b9c4e1",
+          "run": "runs/facts/cooking/20260909-131845"
+        },
+        {
+          "type": "photo",
+          "ref": "departments/cooking/attachments/.text/photo_2026-08-29_14-23-56.image.md",
+          "hash": "sha256:144255103f6868e0b1464296cd89ba8f06652226238405f16c6beaf0a953ea82",
+          "run": "runs/facts/cooking/20260909-131845"
+        },
+        {
+          "type": "docx",
+          "ref": "departments/cooking/attachments/.text/شرح_شغل_سرپرست_آشپزخانه___2_.txt",
+          "hash": "sha256:457fce62ff762a849e164b1e645535550c98bdeb604f0e47fbfdb956382d2e63",
+          "run": "runs/facts/cooking/20260909-131845"
+        },
+        {
+          "type": "docx",
+          "ref": "departments/cooking/attachments/.text/شرح_شغل_کارکنان_آشپزخانه.txt",
+          "hash": "sha256:5c6a1786b64737a9ada2fc0c1f8f1de7b43340fff09104d7414fa36139d534ce",
+          "run": "runs/facts/cooking/20260909-131845"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00104"
+          },
+          {
+            "ref": "F-00098"
+          },
+          {
+            "ref": "F-00123"
+          }
+        ],
+        "question": "آیا همین اندازه‌های بسته، اندازهٔ بستهٔ رسمی این اقلام است تا روی خود قلم ثبت شود؟"
+      },
+      "id": "F-00225",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-09T14:05:54Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_e795ed0896f9",
+      "title": "واحد ثبت اقلام وزنی لاین فرنگی",
+      "statement": "مقدار اقلام وزنی لاین فرنگی در برگه‌های موجودی آغاز و پایان شب بدون واحد نوشته می‌شود و مبنای ثبت آن روشن نیست.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": [
+          "chalebagh",
+          "naharkhoran"
+        ]
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260909-131845"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00146"
+          },
+          {
+            "ref": "F-00160"
+          }
+        ],
+        "question": "مقدار اقلام وزنی لاین فرنگی با کیلوگرم ثبت می‌شود یا با گرم؟ ژامبون مرغ و گوشت میکس با وزن شمرده می‌شود یا با تعداد؟"
+      },
+      "id": "F-00226",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-09T14:05:54Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_7b6de5eff7ed",
+      "title": "مبنای ثبت بیکن ساندویچ",
+      "statement": "برای بیکن مصرفی هر ساندویچ در دو جا دو مبنای متفاوت آمده است: یک جا شمارش ورقه و جای دیگر وزن. تا روشن شدن مبنا، مقدار این قلم قابل تبدیل به وزن نیست.",
+      "scope": {
+        "departments": [
+          "cooking"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/cooking/20260909-131845"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00161",
+            "field": "bikon_sandwich"
+          },
+          {
+            "ref": "F-00027"
+          }
+        ],
+        "question": "مقدار بیکن هر ساندویچ بر پایهٔ تعداد ورقه ثبت می‌شود یا وزن بر حسب گرم؟"
+      },
+      "id": "F-00227",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-09T14:05:54Z"
+    }
+  ]
 }

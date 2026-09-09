@@ -1,0 +1,5 @@
+# gozaresh_markazi__s4__m__r6
+ROUND(DIVIDE(LN,KN),3)
+
+# gozaresh_naharkhoran__s4__m__r6
+DIVIDE(LN,KN)

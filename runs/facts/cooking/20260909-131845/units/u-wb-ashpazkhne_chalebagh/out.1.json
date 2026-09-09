@@ -1,0 +1,217 @@
+{
+  "schema_version": 1,
+  "unit": "u-wb-ashpazkhne_chalebagh",
+  "attempt": 1,
+  "decisions": [
+    {
+      "skeleton": "S-r-345a7b88667e",
+      "action": "drop",
+      "reason_code": "date_passthrough",
+      "reason": "ساخت تاریخ از سه عدد سال، ماه و روز؛ هیچ محاسبهٔ کاری‌ای بیان نمی‌کند."
+    },
+    {
+      "skeleton": "S-rec-1ce20a4c9a9a",
+      "action": "keep",
+      "key": "zaman_tahvil_va_keyfiyat",
+      "title": "زمان تحویل سفارش و سنجش کیفیت",
+      "statement": "برگهٔ روزانهٔ آشپزخانه که برای هر روز نتیجهٔ سنجش کیفیت غذاهای تولیدشده و زمان تحویل سفارش‌ها به واحد ارسال را ثبت می‌کند. هر سطر به یک تاریخ تعلق دارد.",
+      "aliases": ["سنجش کیفیت"],
+      "data": {
+        "role": "log",
+        "cadence": "daily",
+        "grain": "هر روز یک سطر",
+        "filled_by": null,
+        "approved_by": null,
+        "primaryKey": ["tarikh"],
+        "fields": [
+          {
+            "from": "c_a",
+            "key": "tarikh",
+            "type": "date",
+            "description": "تاریخ روزی که ثبت به آن مربوط است."
+          },
+          {
+            "from": "c_b",
+            "key": "sanjesh_keyfiyat",
+            "type": "string",
+            "description": "نتیجهٔ ارزیابی کیفیت غذاهای تولیدشده در همان روز، به صورت متن."
+          },
+          {
+            "from": "c_c",
+            "key": "zaman_tahvil",
+            "type": "string",
+            "description": "زمان تحویل سفارش‌ها به واحد ارسال، همان‌گونه که در همان روز یادداشت شده است."
+          }
+        ]
+      }
+    },
+    {
+      "skeleton": "S-rec-56332d3ae472",
+      "action": "keep",
+      "key": "niyazmandiha_va_moshkelat",
+      "title": "نیازها و مشکلات آشپزخانه",
+      "statement": "فهرستی که هر نیاز یا مشکل مطرح‌شده در آشپزخانه را همراه با تاریخ طرح آن و توضیح یا راه‌حل پیشنهادی نگه می‌دارد. در روزهایی که چیزی مطرح شود پر می‌شود، نه هر روز.",
+      "aliases": ["نیازمندیها و مشکلات"],
+      "data": {
+        "role": "log",
+        "cadence": "ad_hoc",
+        "grain": "هر نیاز یا مشکل مطرح‌شده",
+        "filled_by": null,
+        "approved_by": null,
+        "fields": [
+          {
+            "from": "c_a",
+            "key": "tarikh",
+            "type": "date",
+            "description": "تاریخ روزی که نیاز یا مشکل مطرح شده است."
+          },
+          {
+            "from": "c_b",
+            "key": "niyaz_ya_moshkel",
+            "type": "string",
+            "description": "شرح نیاز یا مشکل، برای نمونه خرابی یک دستگاه یا کمبود یک وسیله."
+          },
+          {
+            "from": "c_c",
+            "key": "tozih_va_rah_hal",
+            "type": "string",
+            "description": "توضیح تکمیلی یا راه‌حلی که برای همان نیاز یا مشکل انجام یا پیشنهاد شده است."
+          }
+        ]
+      }
+    },
+    {
+      "skeleton": "S-rec-8a136070d6a1",
+      "action": "keep",
+      "key": "off_ejraei",
+      "title": "OFF اجرایی",
+      "statement": "برگهٔ روزانه‌ای که برای هر تاریخ، تعداد هدف‌گذاری‌شده و تعداد کسب‌شده را در کنار توضیح ثبت می‌کند. هر سطر به یک تاریخ تعلق دارد.",
+      "data": {
+        "role": "log",
+        "cadence": "daily",
+        "grain": "هر روز یک سطر",
+        "filled_by": null,
+        "approved_by": null,
+        "primaryKey": ["tarikh"],
+        "fields": [
+          {
+            "from": "c_a",
+            "key": "tarikh",
+            "type": "date",
+            "description": "تاریخ روزی که ثبت به آن مربوط است."
+          },
+          {
+            "from": "c_b",
+            "key": "tedad_hadaf",
+            "type": "integer",
+            "description": "تعدادی که برای آن روز هدف‌گذاری شده است."
+          },
+          {
+            "from": "c_c",
+            "key": "tedad_kasb_shode",
+            "type": "integer",
+            "description": "تعداد نفری که در آن روز کسب شده است."
+          },
+          {
+            "from": "c_d",
+            "key": "tozihat",
+            "type": "string",
+            "description": "توضیح آزاد دربارهٔ ثبت همان روز."
+          }
+        ]
+      }
+    },
+    {
+      "skeleton": "S-rec-91d33a7a601c",
+      "action": "keep",
+      "key": "zayeat_rozane",
+      "title": "ضایعات روزانهٔ آشپزخانه",
+      "statement": "برگه‌ای که ضایعات آشپزخانه را ثبت می‌کند: برای هر قلم ضایع‌شده، نام قلم، تعداد و علت ضایع شدن در تاریخ همان روز نوشته می‌شود.",
+      "aliases": ["ضایعات"],
+      "data": {
+        "role": "log",
+        "cadence": "daily",
+        "grain": "هر قلم ضایع‌شده در یک روز",
+        "filled_by": null,
+        "approved_by": null,
+        "primaryKey": ["tarikh", "nam_qalam"],
+        "fields": [
+          {
+            "from": "c_a",
+            "key": "tarikh",
+            "type": "date",
+            "description": "تاریخ روزی که ضایع شدن در آن رخ داده است."
+          },
+          {
+            "from": "c_b",
+            "key": "nam_qalam",
+            "type": "string",
+            "description": "نام قلمی که ضایع شده است، به همان صورتی که نوشته می‌شود."
+          },
+          {
+            "from": "c_c",
+            "key": "tedad",
+            "type": "integer",
+            "description": "تعداد قلم ضایع‌شده."
+          },
+          {
+            "from": "c_d",
+            "key": "elat",
+            "type": "string",
+            "description": "علت ضایع شدن آن قلم."
+          }
+        ]
+      },
+      "processes": [
+        {
+          "process": "cooking-032",
+          "node": "cooking-032-n016",
+          "quote": "تحویل اقلام ضایعات همراه با فرم ضایعات به انبار در غروب روز بعد"
+        }
+      ]
+    },
+    {
+      "skeleton": "S-rec-b831bf99eb37",
+      "action": "keep",
+      "key": "khamir_rozane",
+      "title": "خمیر آمادهٔ روزانه",
+      "statement": "برگه‌ای که برای هر تاریخ، تعداد خمیرهای آماده‌شده را به تفکیک آمریکایی، ایتالیایی و سینگل ثبت می‌کند. هر سطر به یک تاریخ تعلق دارد.",
+      "aliases": ["خمیر"],
+      "data": {
+        "role": "log",
+        "cadence": "daily",
+        "grain": "هر روز یک سطر",
+        "filled_by": null,
+        "approved_by": null,
+        "primaryKey": ["tarikh"],
+        "fields": [
+          {
+            "from": "c_a",
+            "key": "tarikh",
+            "type": "date",
+            "description": "تاریخ روزی که خمیرها در آن آماده شده‌اند."
+          },
+          {
+            "from": "c_b",
+            "key": "tedad_amrikai",
+            "type": "integer",
+            "description": "تعداد خمیر آماده‌شده از نوع آمریکایی."
+          },
+          {
+            "from": "c_c",
+            "key": "tedad_italiai",
+            "type": "integer",
+            "description": "تعداد خمیر آماده‌شده از نوع ایتالیایی."
+          },
+          {
+            "from": "c_d",
+            "key": "tedad_single",
+            "type": "integer",
+            "description": "تعداد خمیر آماده‌شده از نوع سینگل."
+          }
+        ]
+      }
+    }
+  ],
+  "new": []
+}

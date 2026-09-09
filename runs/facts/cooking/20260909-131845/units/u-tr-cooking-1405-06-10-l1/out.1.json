@@ -1,0 +1,308 @@
+{
+  "schema_version": 1,
+  "unit": "u-tr-cooking-1405-06-10-l1",
+  "attempt": 1,
+  "decisions": [],
+  "new": [
+    {
+      "kind": "record",
+      "key": "barge_mande_shab_farangi_burger",
+      "title": "برگهٔ ماندهٔ شب لاین فرنگی و برگر",
+      "statement": "برگهٔ کاغذی چاپی که در پایان هر شب برای لاین فرنگی و برگر پر می‌شود و برای هر قلم، ماندهٔ اول شب، مقدار دریافتی از انبار، ماندهٔ آخر شب و اختلاف روز را ثبت می‌کند. سرپرست لاین آن را با تاریخ همان روز و نام متصدی تکمیل می‌کند و پس از تکمیل به انبار تحویل می‌دهد. ستون درخواست دریافتی برای لاین قفل است و روی برگه چاپ شده که در آن چیزی نوشته نشود.",
+      "aliases": ["مانده شب فرنگی و برگر", "مانده آخر شب"],
+      "processes": [
+        {"process": "cooking-037", "node": "cooking-037-n002", "quote": "درج تاریخ امروز در گوشه بالای فرم دست‌نویس مانده آخر شب"},
+        {"process": "cooking-037", "node": "cooking-037-n003", "quote": "نوشتن نام متصدی در پایین فرم دست‌نویس مانده آخر شب"},
+        {"process": "cooking-023", "node": "cooking-023-n030", "quote": "ثبت مقدار دریافتی یا تبدیل‌شده در زیر برگه مانده آخر شب"}
+      ],
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": {"value": "لاین فرنگی و برگر آشپزخانه", "inferred": true},
+          "holder": {"value": "سرپرست لاین فرنگی و برگر", "inferred": true}
+        },
+        "cadence": "nightly",
+        "grain": "هر قلم در هر شب",
+        "day_boundary": "برگه با تاریخ همان روزی که به پایان رسیده پر می‌شود، حتی اگر تکمیل آن پس از نیمه‌شب باشد.",
+        "filled_by": "سرپرست لاین فرنگی و برگر",
+        "approved_by": "مسئول واحد",
+        "blank_master": true,
+        "header_fields": [
+          {"key": "nam_motasaddi", "title": "نام متصدی", "type": "string", "description": "نام متصدی تکمیل‌کنندهٔ برگه که در گوشهٔ برگه نوشته می‌شود"},
+          {"key": "tarikh", "title": "تاریخ", "type": "date", "description": "تاریخ همان روزی که شب آن به پایان رسیده است"}
+        ],
+        "fields": [
+          {"key": "radif", "title": "ردیف", "type": "integer", "description": "شمارهٔ سطر چاپی برگه"},
+          {"key": "nam_kala", "title": "نام کالا", "type": "string", "refItems": {"namespace": "##", "resolved_by": "title"}},
+          {"key": "mande_avval_shab", "title": "مانده اول شب", "type": "number", "unit": null, "description": "مقدار موجود هر قلم در آغاز شب که از ماندهٔ آخر شب شب گذشته منتقل می‌شود"},
+          {"key": "darkhast_daryafti", "title": "درخواست دریافتی", "type": "number", "unit": null, "constraints": {"readOnly": true}, "description": "مقدار تحویل‌گرفته‌شده از انبار؛ این ستون برای لاین قفل است و در آن چیزی نوشته نمی‌شود"},
+          {"key": "mande_akhar_shab", "title": "مانده آخر شب", "type": "number", "unit": null, "description": "مقدار باقی‌ماندهٔ هر قلم در پایان شب که با شمارش ثبت می‌شود"},
+          {"key": "ekhtelaf_ruz", "title": "اختلاف روز", "type": "number", "unit": null, "description": "اختلاف مقدار هر قلم در طول روز"},
+          {"key": "emza", "title": "امضا", "type": "string", "description": "ستون امضا که روی برگه به دو بازهٔ مسئول واحد و انباردار تقسیم شده است"}
+        ],
+        "signatures": [
+          {"role": "مسئول واحد", "row_range": "1-5"},
+          {"role": "انباردار", "row_range": "6-10"}
+        ],
+        "rows": [
+          {"key": "burger", "title": "برگر"},
+          {"key": "mini_burger", "title": "مینی برگر"},
+          {"key": "rost_bif", "title": "رست بیف"},
+          {"key": "morgh_gril", "title": "مرغ گریل"},
+          {"key": "hat_dag", "title": "هات داگ"},
+          {"key": "zhambon_dogane", "title": "ژامبون دوگانه"},
+          {"key": "bikon_varaqei", "title": "بیکن ورقه ای"},
+          {"key": "parmesan", "title": "پارمسان"},
+          {"key": "guda_varaqei", "title": "گودا ورقه ای"},
+          {"key": "guda_livani", "title": "گودا لیوانی"}
+        ],
+        "primaryKey": ["nam_kala"]
+      }
+    },
+    {
+      "kind": "record",
+      "key": "barge_darkhast_kala_kanter",
+      "title": "برگهٔ درخواست کالای بخش کانتر آشپزخانه",
+      "statement": "برگهٔ کاغذی چاپی که هر روز برای درخواست اقلام بخش کانتر آشپزخانه از انبار پر می‌شود و برای هر قلم واحد شمارش، مقدار درخواستی و مقدار تحویلی انبار روی آن ثبت می‌شود. سرپرست لاین آن را با تاریخ روز بعد و روز هفته تکمیل می‌کند و نام متصدی را در پایین برگه می‌نویسد. هر لاین آشپزخانه برگهٔ جدای خود را دارد و هر برگه جداگانه به انبار تحویل داده می‌شود.",
+      "aliases": ["چک‌لیست", "درخواست کالا"],
+      "processes": [
+        {"process": "cooking-030", "node": "cooking-030-n045", "quote": "درج تاریخ فردا در گوشه بالای برگه درخواست کالا"},
+        {"process": "cooking-030", "node": "cooking-030-n046", "quote": "نوشتن نام متصدی در پایین برگه درخواست کالا"},
+        {"process": "cooking-030", "node": "cooking-030-n004", "quote": "تعیین مقدار درخواستی هر قلم برای فردا بر اساس موجودی ثبت‌شده و روز هفته"}
+      ],
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": {"value": "بخش کانتر آشپزخانه", "inferred": true},
+          "holder": {"value": "سرپرست لاین کانتر", "inferred": true}
+        },
+        "cadence": "daily",
+        "grain": "هر قلم در هر روز",
+        "day_boundary": "برگه با تاریخ روز بعد نوشته می‌شود، چون درخواست برای فردا است.",
+        "filled_by": "سرپرست لاین کانتر",
+        "approved_by": null,
+        "blank_master": true,
+        "header_fields": [
+          {"key": "tarikh", "title": "تاریخ", "type": "date", "description": "تاریخ روزی که اقلام برای آن درخواست می‌شود"},
+          {"key": "ruz_hafte", "title": "روز هفته", "type": "string", "description": "روز هفته‌ای که مقدار درخواستی بر پایهٔ آن تعیین می‌شود"}
+        ],
+        "fields": [
+          {"key": "tik_anbar", "title": "تیک انبار", "type": "boolean", "description": "ستونی که انبار برای هر قلم تحویل‌شده علامت می‌زند"},
+          {"key": "sharh_kala", "title": "شرح کالا", "type": "string", "refItems": {"namespace": "##", "resolved_by": "title"}},
+          {"key": "vahed", "title": "واحد", "type": "string", "description": "واحد شمارش یا بسته‌بندی چاپ‌شده برای هر قلم"},
+          {"key": "meqdar_darkhast", "title": "مقدار درخواست", "type": "number", "unit": null, "description": "مقدار درخواستی هر قلم بر پایهٔ واحد همان قلم"},
+          {"key": "meqdar_tahvil_anbar", "title": "مقدار تحویل انبار", "type": "number", "unit": null, "description": "مقدار و واحدی که انبار برای هر قلم تحویل داده است"}
+        ],
+        "sections": [
+          {"key": "masraf_mostaqim", "title": "مصرف مستقیم"},
+          {"key": "sh_s", "title": "ش س"},
+          {"key": "anbar_be_anbar", "title": "ح انبار به انبار"},
+          {"key": "bedun_sanad", "title": "بدون سند"}
+        ],
+        "rows": [
+          {"key": "bastebandi_beroniz_bozorg", "title": "یک بسته بندی برونیز بزرگ", "unit": "pack", "unit_raw": "بسته ۱۰۰ تایی"},
+          {"key": "bastebandi_beroniz_kuchak", "title": "یک بسته بندی برونیز کوچک", "unit": "pack", "unit_raw": "بسته ۱۰۰ تایی"},
+          {"key": "jabe_bastebandi_sandvich", "title": "جعبه بسته بندی ساندویچ", "unit": "pack", "unit_raw": "بسته ۵۰/۸ تایی"},
+          {"key": "jabe_sib_va_qarch", "title": "جعبه سیب و قارچ", "unit": "carton", "unit_raw": "کارتن ۲۰۰ تایی"},
+          {"key": "jabe_sukhari", "title": "جعبه سوخاری", "unit": null, "unit_raw": "۵۵۰ تایی"},
+          {"key": "karton_italiyai", "title": "کارتن ایتالیایی", "unit": null, "unit_raw": "۱۰۰ تایی"},
+          {"key": "karton_amrikai", "title": "کارتن آمریکایی", "unit": null, "unit_raw": "۱۰۰ تایی"},
+          {"key": "ney_nush", "title": "نی نوش", "unit": null, "unit_raw": null},
+          {"key": "dastmal_nano", "title": "دستمال نانو", "unit": null, "unit_raw": null},
+          {"key": "pak_salad", "title": "پک سالاد", "unit": "kg", "unit_raw": "کیلو"},
+          {"key": "singel_moraba_amrikai", "title": "سینگل مربع آمریکایی ک", "unit": "pack", "unit_raw": "بسته"},
+          {"key": "singel_moraba_italiyai", "title": "سینگل مربع ایتالیایی پ", "unit": "pack", "unit_raw": "بسته"},
+          {"key": "zarf_salad_kentaki", "title": "ظرف سالاد کنتاکی (دلی ۱۵۰)", "unit": "carton", "unit_raw": "کارتن ۱۰۰۰ تایی"},
+          {"key": "shishe_pak_kon", "title": "وایت / شیشه پاک کن", "unit": null, "unit_raw": null},
+          {"key": "zarf_sup", "title": "ظرف سوپ", "unit": "pcs", "unit_raw": "عدد"},
+          {"key": "sepaye_pitza", "title": "سه پایه پیتزا", "unit": "pack", "unit_raw": "بسته"},
+          {"key": "zarf_sos_ostovanei", "title": "ظرف سس استوانه ای", "unit": "pcs", "unit_raw": "عدد"},
+          {"key": "chaqu_yekbar_masraf", "title": "چاقو یکبار مصرف", "unit": null, "unit_raw": null},
+          {"key": "pak_qashoq_va_changal", "title": "پک قاشق و چنگال", "unit": "kg", "unit_raw": "کیلو"},
+          {"key": "qashoq_yekbar_masraf", "title": "قاشق یکبار مصرف", "unit": "pack", "unit_raw": "بسته"},
+          {"key": "changal_yekbar_masraf", "title": "چنگال یکبار مصرف", "unit": "pack", "unit_raw": "بسته"},
+          {"key": "qashoq_bastani", "title": "قاشق بستنی", "unit": null, "unit_raw": null},
+          {"key": "dastmal_kaghazi_persenli", "title": "دستمال کاغذی پرسنلی", "unit": "pcs", "unit_raw": "عدد"},
+          {"key": "dastkesh_yekbar_masraf_naylani", "title": "دستکش یکبار مصرف نایلونی", "unit": "pack", "unit_raw": "بسته"},
+          {"key": "kolah_yekbar_masraf", "title": "کلاه یکبار مصرف", "unit": "pack", "unit_raw": "بسته"},
+          {"key": "kaghaz_kafi_sini", "title": "کاغذ کفی سینی", "unit": null, "unit_raw": null},
+          {"key": "plastik_frizer", "title": "پلاستیک فریزر", "unit": "pack", "unit_raw": "بسته"},
+          {"key": "plastik_dastedar_bozorg", "title": "پلاستیک دسته دار بزرگ", "unit": "kg", "unit_raw": "کیلو"},
+          {"key": "plastik_dastedar_kuchak", "title": "پلاستیک دسته دار کوچک", "unit": "kg", "unit_raw": "کیلو"},
+          {"key": "plastik_zobale", "title": "پلاستیک زباله", "unit": "kg", "unit_raw": "کیلو"},
+          {"key": "maye_zarfshuyi", "title": "مایع ظرفشویی", "unit": "l", "unit_raw": "لیتر"},
+          {"key": "boshqab_sib_va_qarch", "title": "بشقاب سیب و قارچ", "unit": "pack", "unit_raw": "بسته"},
+          {"key": "khodkar", "title": "خودکار", "unit": "pcs", "unit_raw": "عدد"},
+          {"key": "rol_printer_hararati", "title": "رول پرینتر حرارتی", "unit": "pcs", "unit_raw": "عدد"},
+          {"key": "livan_kaghazi_50", "title": "لیوان کاغذی ۵۰ عددی", "unit": "pcs", "unit_raw": "عدد"},
+          {"key": "barchasb_inja", "title": "برچسب اینجا", "unit": "pcs", "unit_raw": "عدد"},
+          {"key": "chasb_zakhm", "title": "چسب زخم", "unit": "pcs", "unit_raw": "عدد"},
+          {"key": "bateri", "title": "باطری", "unit": "pcs", "unit_raw": "عدد"},
+          {"key": "qand_persenli", "title": "قند پرسنلی", "unit": "kg", "unit_raw": "کیلوگرم", "when": "پنجشنبه‌ها"},
+          {"key": "advie_makhsus_sabzijat", "title": "ادویه مخصوص سبزیجات", "unit": "kg", "unit_raw": "کیلوگرم"},
+          {"key": "jafari", "title": "جعفری", "unit": "kg", "unit_raw": "کیلوگرم"},
+          {"key": "sos_tak_nafare_mayo_chili", "title": "سس تک نفره مایو چیلی", "unit": null, "unit_raw": "۳۰۰ عددی"},
+          {"key": "sos_tak_nafare_kechap", "title": "سس تک نفره کچاپ", "unit": null, "unit_raw": "۳۵۰ عددی"},
+          {"key": "sos_tak_nafare_faranse", "title": "سس تک نفره فرانسه", "unit": null, "unit_raw": "۳۰۰ عددی"},
+          {"key": "sos_tak_nafare_kechapino", "title": "سس تک نفره کچاپینو", "unit": null, "unit_raw": "۳۵۰ عددی"},
+          {"key": "sos_inja", "title": "سس اینجا سس عددی", "unit": null, "unit_raw": "جعبه"},
+          {"key": "eskach_sim_zarfshuyi", "title": "اسکاچ / سیم ظرفشویی", "unit": null, "unit_raw": null},
+          {"key": "boshqab_sukhari", "title": "بشقاب سوخاری", "unit": null, "unit_raw": "۳۰۰ عددی"},
+          {"key": "roghan_zeytun_tak_nafare", "title": "روغن زیتون تکنفره", "unit": null, "unit_raw": "۲۵۰ عددی"},
+          {"key": "serke_balzamik_tak_nafare", "title": "سرکه بالزامیک تکنفره", "unit": null, "unit_raw": "۲۵۰ عددی"},
+          {"key": "dastkesh_lateks", "title": "دستکش لاتکس", "unit": "pack", "unit_raw": "بسته"},
+          {"key": "jabe_burger", "title": "جعبه برگر", "unit": "pack", "unit_raw": "بسته"},
+          {"key": "livan_nushabe_ba_darb", "title": "لیوان نوشابه + درب", "unit": "pcs", "unit_raw": "عدد"},
+          {"key": "mini_mak", "title": "مینی مک", "unit": "pcs", "unit_raw": "عدد"},
+          {"key": "quti_kokakola", "title": "قوطی کوکاکولا", "unit": null, "unit_raw": "۲۴ تایی"},
+          {"key": "quti_fanta", "title": "قوطی فانتا", "unit": null, "unit_raw": "۲۴ تایی"},
+          {"key": "quti_esperayt", "title": "قوطی سپرایت", "unit": null, "unit_raw": "۲۴ تایی"},
+          {"key": "quti_ziro", "title": "قوطی زیرو", "unit": null, "unit_raw": "۲۴ تایی"},
+          {"key": "khanevade_kokakola", "title": "خانواده کوکاکولا", "unit": null, "unit_raw": "۶ تایی"},
+          {"key": "khanevade_fanta", "title": "خانواده فانتا", "unit": null, "unit_raw": "۶ تایی"},
+          {"key": "khanevade_esperayt", "title": "خانواده سپرایت", "unit": null, "unit_raw": "۶ تایی"},
+          {"key": "khanevade_ziro", "title": "خانواده زیرو", "unit": null, "unit_raw": "۶ تایی"},
+          {"key": "pet_ab_madani", "title": "پت آب معدنی", "unit": null, "unit_raw": "۱۲ تایی"},
+          {"key": "delester_limu_barbikan", "title": "دلستر لیمو باربیکن", "unit": null, "unit_raw": "۲۴ تایی"},
+          {"key": "delester_limunad_khoshgovar", "title": "دلستر لیموناد خوشگوار", "unit": null, "unit_raw": "۲۴ تایی"},
+          {"key": "pet_dugh_kaleh", "title": "پت دوغ کاله", "unit": null, "unit_raw": "۱۲ تایی"},
+          {"key": "quti_dugh", "title": "قوطی دوغ", "unit": null, "unit_raw": "۲۴ تایی"},
+          {"key": "salad_kentaki", "title": "سالاد کنتاکی", "unit": "kg", "unit_raw": "کیلو"},
+          {"key": "tigh_kater", "title": "تیغ کاتر", "unit": "pcs", "unit_raw": "عدد"},
+          {"key": "chasb_navari", "title": "چسب نواری", "unit": "pcs", "unit_raw": "عدد"},
+          {"key": "mazhik", "title": "ماژیک", "unit": "pcs", "unit_raw": "عدد"},
+          {"key": "suzan_mangane", "title": "سوزن منگنه ۲۴/۶", "unit": "pack", "unit_raw": "بسته"},
+          {"key": "darkhast_kharej_az_list", "title": "درخواست خارج از لیست", "unit": null, "unit_raw": null}
+        ],
+        "primaryKey": ["sharh_kala"]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "tarikh_barge_haye_shab",
+      "title": "تاریخ‌گذاری برگه‌های پایان شب آشپزخانه",
+      "statement": "برگهٔ ماندهٔ آخر شب با تاریخ همان روزی که به پایان رسیده پر می‌شود، حتی اگر تکمیل آن پس از نیمه‌شب انجام شود. برگهٔ درخواست کالا با تاریخ روز بعد پر می‌شود، چون درخواست برای فردا است. تاریخ در گوشهٔ بالای هر دو برگه و نام متصدی در پایین آن نوشته می‌شود.",
+      "processes": [
+        {"process": "cooking-037", "node": "cooking-037-n002", "quote": "درج تاریخ امروز در گوشه بالای فرم دست‌نویس مانده آخر شب"},
+        {"process": "cooking-030", "node": "cooking-030-n045", "quote": "درج تاریخ فردا در گوشه بالای برگه درخواست کالا"}
+      ],
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "inputs": [
+          {"key": "no_barge", "title": "نوع برگه"}
+        ],
+        "outputs": [
+          {"key": "tarikh_barge", "title": "تاریخ درج‌شده روی برگه"}
+        ],
+        "table": {
+          "hit": "unique",
+          "inputs": ["no_barge"],
+          "outputs": ["tarikh_barge"],
+          "rows": [
+            {"no_barge": "برگهٔ ماندهٔ آخر شب", "tarikh_barge": "تاریخ همان روزی که شب آن به پایان رسیده"},
+            {"no_barge": "برگهٔ درخواست کالا", "tarikh_barge": "تاریخ روز بعد"}
+          ]
+        }
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "emza_pas_az_tahvil_kamel",
+      "title": "امضای برگهٔ درخواست پس از تحویل کامل",
+      "statement": "سرپرست لاین هنگام دریافت اقلام از انبار برگه را امضا نمی‌کند و تنها تاریخ و نام متصدی را می‌نویسد. امضا را کسی می‌زند که تحویل می‌گیرد و تنها پس از آنکه همهٔ اقلام برگه تحویل گرفته شده باشد. این ترتیب برای جلوگیری از پذیرش مسئولیت اقلام تحویل‌نشده تعیین شده است.",
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "original": "امضا زمانی می‌زنیم که تمام فرم را تحویل گرفته باشیم.",
+        "inputs": [
+          {"key": "tahvil_kamel_aqlam", "title": "تحویل کامل اقلام برگه", "from": "operator"}
+        ],
+        "outputs": [
+          {"key": "mojavvez_emza", "title": "مجوز امضای برگهٔ درخواست"}
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "mande_avval_shab_az_shab_qabl",
+      "title": "انتقال ماندهٔ آخر شب به ماندهٔ اول شب فردا",
+      "statement": "ماندهٔ اول شب هر قلم برابر است با ماندهٔ آخر شب همان قلم در شب گذشته. سرپرست لاین هنگام تکمیل برگهٔ امشب، همین مقدارها را در برگهٔ آماده‌شده برای فردا به عنوان ماندهٔ اول شب می‌نویسد.",
+      "data": {
+        "lang": "feel",
+        "expr": "mande_avval_shab = mande_akhar_shab_shab_qabl",
+        "inputs": [
+          {"key": "mande_akhar_shab_shab_qabl", "title": "ماندهٔ آخر شب شب گذشته"}
+        ],
+        "outputs": [
+          {"key": "mande_avval_shab", "title": "ماندهٔ اول شب", "nature": "observed"}
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "saqf_zayeat_shift",
+      "title": "سقف ضایعات هر شیفت آشپزخانه",
+      "statement": "ضایعات آشپزخانه در پایان هر شیفت باید کمتر از دو درصد باشد. این سقف در شرح وظایف سرپرست و نیروی آشپزخانه به عنوان هدف عملکرد تعیین شده است.",
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {"key": "saqf_zayeat", "title": "سقف ضایعات شیفت", "unit": "percent", "nature": "limit", "value": 2}
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "hadaf_keyfiat_ghaza",
+      "title": "هدف کیفیت آماده‌سازی و سرو غذا",
+      "statement": "دست‌کم نود و پنج درصد غذاهای هر شیفت باید طبق استاندارد کیفیت، طعم و ظاهر آماده و سرو شوند. این هدف در شرح وظایف سرپرست و نیروی آشپزخانه تعیین شده است.",
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {"key": "hadaf_keyfiat", "title": "هدف کیفیت غذای هر شیفت", "unit": "percent", "nature": "target", "value": 95}
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "mohlat_gozaresh_payan_shift",
+      "title": "مهلت ارائهٔ گزارش روزانه به مدیریت",
+      "statement": "گزارش روزانهٔ عملکرد آشپزخانه و نیازهای مواد اولیه باید حداکثر تا سی دقیقه پس از پایان شیفت به مدیریت ارائه شود.",
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {"key": "mohlat_gozaresh", "title": "مهلت ارائهٔ گزارش پس از پایان شیفت", "unit": "min", "nature": "limit", "value": 30}
+        ]
+      }
+    },
+    {
+      "kind": "note",
+      "key": "sabt_dogane_mande_akhar_shab",
+      "title": "ثبت هم‌زمان ماندهٔ آخر شب در برگه و فایل",
+      "statement": "ماندهٔ آخر شب هر شب هم روی برگهٔ دست‌نویس لاین و هم در فایل رایانه‌ای ثبت می‌شود و هر دو را خود نیروی لاین پر می‌کند، نه حسابداری. مرجع بودن یکی از این دو ثبت روشن نیست.",
+      "data": {
+        "about": [
+          {"ref": "S-rec-042805e68d8b"},
+          {"ref": "S-rec-628ff9016caa"}
+        ],
+        "question": "کدام ثبت ماندهٔ آخر شب مرجع رسمی است و در صورت اختلاف میان برگهٔ دست‌نویس و فایل رایانه‌ای کدام ملاک قرار می‌گیرد؟"
+      }
+    },
+    {
+      "kind": "note",
+      "key": "andaze_baste_nushidani_kanter",
+      "title": "اندازهٔ بستهٔ نوشیدنی‌ها در درخواست کانتر",
+      "statement": "روی برگهٔ درخواست کانتر برای نوشابهٔ قوطی بستهٔ بیست و چهارتایی، برای نوشابهٔ خانواده بستهٔ شش‌تایی و برای آب معدنی بستهٔ دوازده‌تایی به عنوان واحد درخواست چاپ شده است.",
+      "data": {
+        "about": [
+          {"ref": "S-i-b783563415ef"},
+          {"ref": "S-i-a9ab76f77fc5"},
+          {"ref": "S-i-e36b25a026a2"}
+        ],
+        "question": "آیا همین اندازه‌های بسته، اندازهٔ بستهٔ رسمی این اقلام است تا روی خود قلم ثبت شود؟"
+      }
+    }
+  ]
+}

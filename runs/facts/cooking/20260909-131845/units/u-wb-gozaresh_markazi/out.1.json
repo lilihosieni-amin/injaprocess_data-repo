@@ -1,0 +1,324 @@
+{
+  "schema_version": 1,
+  "unit": "u-wb-gozaresh_markazi",
+  "attempt": 1,
+  "decisions": [
+    {
+      "skeleton": "S-gs-94fd545e6e24",
+      "action": "drop",
+      "reason_code": "not_a_fact",
+      "reason": "اسکریپت وادارکنندهٔ محاسبهٔ دوباره؛ هیچ کمیت، محاسبه یا سیاستی را تعریف نمی‌کند."
+    },
+    {
+      "skeleton": "S-gs-c02f6e7d98e9",
+      "action": "drop",
+      "reason_code": "not_a_fact",
+      "reason": "اسکریپت وادارکنندهٔ محاسبهٔ دوباره؛ هیچ کمیت، محاسبه یا سیاستی را تعریف نمی‌کند."
+    },
+    {
+      "skeleton": "S-r-23eed1eb390c",
+      "action": "drop",
+      "reason_code": "has_a_home",
+      "reason": "انتقال مقدار ثبت‌شدهٔ موجودی اول شب به همین ستون است؛ معنایش در توضیح همان ستون و در پیوند ورودی نمونه‌ها نوشته شده است."
+    },
+    {
+      "skeleton": "S-r-03cc0b0a549b",
+      "action": "drop",
+      "reason_code": "has_a_home",
+      "reason": "انتقال مقدار ثبت‌شدهٔ موجودی آخر شب به همین ستون است؛ معنایش در توضیح همان ستون و در پیوند ورودی نمونه‌ها نوشته شده است."
+    },
+    {
+      "skeleton": "S-r-e17b4ed8faf8",
+      "action": "drop",
+      "reason_code": "has_a_home",
+      "reason": "انتقال مقدار ثبت‌شدهٔ تحویلی انبار به همین ستون است؛ معنایش در توضیح همان ستون و در پیوند ورودی نمونه‌ها نوشته شده است."
+    },
+    {
+      "skeleton": "S-rec-fa0721f822cc",
+      "action": "drop",
+      "reason_code": "date_passthrough",
+      "reason": "بلوک روز، ماه و سال گزارش است و جز تاریخ همان شب چیزی تعریف نمی‌کند."
+    },
+    {
+      "skeleton": "S-r-528d396c09d4",
+      "action": "keep",
+      "key": "masraf_elami",
+      "title": "مصرف اعلامی لاین",
+      "statement": "مصرف اعلامی هر قلم در پایان شب برابر است با موجودی اول شب به‌علاوهٔ مقدار دریافتی از انبار منهای موجودی آخر شب. این مقدار همان مصرفی است که از جابه‌جایی موجودی خود لاین به دست می‌آید و بر حسب واحد همان قلم نوشته می‌شود.",
+      "aliases": ["مصرف اعلامی"],
+      "data": {
+        "lang": "feel",
+        "expr": "masraf_elami = mojudi_avval_shab + daryaft_az_anbar - mojudi_akhar_shab",
+        "inputs": [
+          {"key": "mojudi_avval_shab", "title": "موجودی اول شب", "from": {"param": "ref_2"}},
+          {"key": "daryaft_az_anbar", "title": "مقدار دریافت از انبار", "from": {"param": "ref_1"}},
+          {"key": "mojudi_akhar_shab", "title": "موجودی آخر شب", "from": {"param": "ref_3"}}
+        ],
+        "outputs": [
+          {"key": "masraf_elami", "title": "مصرف اعلامی", "nature": "observed",
+           "writes_to": {"ref": "S-rec-33084d66d76a", "field": "c_h"}}
+        ]
+      }
+    },
+    {
+      "skeleton": "S-r-a282b09bfd90",
+      "action": "keep",
+      "key": "masraf_vaqei",
+      "title": "مصرف واقعی برآوردشده از فروش",
+      "statement": "مصرف واقعی هر مادهٔ اولیه در هر شب از روی تعداد پرس فروخته‌شدهٔ غذاها و مقدار استاندارد آن ماده در نسخهٔ هر غذا برآورد می‌شود. مقدارهای نسخه بر حسب گرم است و نتیجه بر حسب کیلوگرم نوشته می‌شود.",
+      "aliases": ["مصرف واقعی"],
+      "data": {
+        "lang": "feel",
+        "expr": "masraf_vaqei = sum over bom of (gram_per_portion * portions_sold) / 1000",
+        "inputs": [
+          {"key": "bom", "title": "نسخهٔ غذاها", "from": {"ref": "S-rec-bf477559ad68", "field": "c_f"}},
+          {"key": "gram_per_portion", "title": "مقدار استاندارد این ماده در هر پرس", "unit": "g",
+           "from": {"ref": "S-rec-bf477559ad68", "field": "c_f"}},
+          {"key": "portions_sold", "title": "تعداد پرس فروخته‌شدهٔ هر غذا", "unit": "pcs",
+           "from": {"param": "table_1"}}
+        ],
+        "outputs": [
+          {"key": "masraf_vaqei", "title": "مصرف واقعی", "unit": "kg", "nature": "observed",
+           "writes_to": {"ref": "S-rec-33084d66d76a", "field": "c_i"}}
+        ]
+      },
+      "processes": [
+        {"process": "cooking-024", "node": "cooking-024-n018",
+         "quote": "برداشت اقلام سوخاری به تعداد یا مقدار استاندارد هر آیتم طبق رسپی"}
+      ]
+    },
+    {
+      "skeleton": "S-r-7317c7a8ece3",
+      "action": "keep",
+      "key": "tedad_forush",
+      "title": "تعداد فروش غذاهای مرتبط با هر قلم",
+      "statement": "تعداد فروش هر ردیف برابر است با مجموع پرس‌های فروخته‌شدهٔ همهٔ غذاهایی که آن قلم در آن‌ها به کار می‌رود، در همان شب. این عدد مبنای سنجش انحراف به ازای هر واحد فروخته‌شده است.",
+      "aliases": ["تعداد فروش"],
+      "data": {
+        "lang": "feel",
+        "expr": "tedad_forush = sum over foods of (portions_sold)",
+        "inputs": [
+          {"key": "foods", "title": "غذاهایی که این قلم در آن‌ها به کار می‌رود",
+           "from": {"ref": "S-rec-bf477559ad68", "field": "c_a"}},
+          {"key": "portions_sold", "title": "تعداد پرس فروخته‌شدهٔ هر غذا", "unit": "pcs",
+           "from": {"param": "table_1"}}
+        ],
+        "outputs": [
+          {"key": "tedad_forush", "title": "تعداد فروش", "unit": "pcs", "nature": "observed",
+           "writes_to": {"ref": "S-rec-33084d66d76a", "field": "c_k"}}
+        ]
+      }
+    },
+    {
+      "skeleton": "S-r-2290f11e1731",
+      "action": "keep",
+      "key": "enheraf_masraf",
+      "title": "انحراف مصرف",
+      "statement": "انحراف مصرف هر قلم در پایان شب برابر است با مصرف واقعی منهای مصرف اعلامی. مقدار منفی یعنی لاین بیش از انتظار مصرف کرده است.",
+      "aliases": ["انحراف"],
+      "data": {
+        "lang": "feel",
+        "expr": "enheraf = masraf_vaqei - masraf_elami",
+        "inputs": [
+          {"key": "masraf_vaqei", "title": "مصرف واقعی", "from": {"param": "ref_1"}},
+          {"key": "masraf_elami", "title": "مصرف اعلامی", "from": {"param": "ref_2"}}
+        ],
+        "outputs": [
+          {"key": "enheraf", "title": "انحراف مصرف", "nature": "observed",
+           "writes_to": {"ref": "S-rec-33084d66d76a", "field": "c_j"}}
+        ]
+      }
+    },
+    {
+      "skeleton": "S-r-821dcf50a715",
+      "action": "keep",
+      "key": "enheraf_ba_tolerance",
+      "title": "انحراف مصرف با احتساب تلورانس",
+      "statement": "انحراف با احتساب تلورانس، انحراف مصرف است پس از کسر خطای مجاز. خطای مجاز بر حسب گرم به ازای هر کیلوگرم مصرف واقعی تعیین و پیش از کسر به کیلوگرم تبدیل می‌شود.",
+      "aliases": ["انحراف (با تلورانس)"],
+      "data": {
+        "lang": "feel",
+        "expr": "enheraf_ba_tolerance = enheraf - tolerance_gr / 1000 * basis",
+        "inputs": [
+          {"key": "enheraf", "title": "انحراف مصرف", "from": {"param": "ref_2"}},
+          {"key": "basis", "title": "مصرف واقعی", "from": {"param": "ref_1"}},
+          {"key": "tolerance_gr", "title": "خطای مجاز به ازای هر کیلوگرم", "unit": "g",
+           "from": {"param": "tolerancePerKilogramGr"}}
+        ],
+        "outputs": [
+          {"key": "enheraf_ba_tolerance", "title": "انحراف با احتساب تلورانس", "unit": "kg",
+           "nature": "observed",
+           "writes_to": {"ref": "S-rec-33084d66d76a", "field": "c_l"}}
+        ]
+      }
+    },
+    {
+      "skeleton": "S-r-81679c88d37b",
+      "action": "keep",
+      "key": "enheraf_har_forush",
+      "title": "انحراف مصرف به ازای هر واحد فروش",
+      "statement": "انحراف با احتساب تلورانس تقسیم بر تعداد فروش همان ردیف، یعنی انحراف مصرف به ازای هر واحد فروخته‌شده در آن شب.",
+      "aliases": ["انحراف به ازای هر عدد (با تلورانس)"],
+      "data": {
+        "lang": "feel",
+        "expr": "enheraf_har_forush = enheraf_ba_tolerance / tedad_forush",
+        "inputs": [
+          {"key": "enheraf_ba_tolerance", "title": "انحراف با احتساب تلورانس", "from": {"param": "ref_1"}},
+          {"key": "tedad_forush", "title": "تعداد فروش", "unit": "pcs", "from": {"param": "ref_2"}}
+        ],
+        "outputs": [
+          {"key": "enheraf_har_forush", "title": "انحراف به ازای هر واحد فروش", "unit": "kg",
+           "nature": "observed",
+           "writes_to": {"ref": "S-rec-33084d66d76a", "field": "c_m"}}
+        ]
+      }
+    },
+    {
+      "skeleton": "S-rec-33084d66d76a",
+      "action": "keep",
+      "key": "gozaresh_shabane__pitza",
+      "title": "گزارش شبانهٔ مصرف لاین پیتزا",
+      "statement": "برگهٔ شبانهٔ کنترل مصرف لاین پیتزا. برای هر مادهٔ اولیهٔ این لاین، موجودی آغاز شب، مقدار دریافتی از انبار، موجودی پایان شب، مصرف اعلامی، مصرف واقعی و انحراف آن در پایان هر شب ثبت یا محاسبه می‌شود. همهٔ وزن‌ها بر حسب کیلوگرم است.",
+      "data": {
+        "role": "report",
+        "cadence": "nightly",
+        "grain": "یک ردیف برای هر مادهٔ اولیهٔ لاین پیتزا در هر شب",
+        "primaryKey": ["qalam"],
+        "fields": [
+          {"from": "c_b", "key": "qalam", "type": "string",
+           "description": "نام مادهٔ اولیه‌ای که ردیف به آن مربوط است."},
+          {"from": "c_e", "key": "mojudi_avval_shab", "type": "number", "unit": "kg",
+           "description": "مقدار موجود از این ماده در لاین پیتزا در آغاز شب، برگرفته از ثبت موجودی اول شب همان لاین."},
+          {"from": "c_f", "key": "daryaft_az_anbar", "type": "number", "unit": "kg",
+           "description": "مقداری که در طول شب از انبار به لاین پیتزا تحویل شده است."},
+          {"from": "c_g", "key": "mojudi_akhar_shab", "type": "number", "unit": "kg",
+           "description": "مقدار باقی‌مانده از این ماده در پایان شب، برگرفته از ثبت موجودی آخر شب همان لاین."},
+          {"from": "c_h", "key": "masraf_elami", "type": "number", "unit": "kg",
+           "description": "مصرفی که از جابه‌جایی موجودی لاین به دست می‌آید.",
+           "derived": {"ref": "S-r-528d396c09d4"}},
+          {"from": "c_i", "key": "masraf_vaqei", "type": "number", "unit": "kg",
+           "description": "مصرف برآوردشده از تعداد فروش و نسخهٔ غذاها.",
+           "derived": {"ref": "S-r-a282b09bfd90"}},
+          {"from": "c_j", "key": "enheraf", "type": "number", "unit": "kg",
+           "description": "تفاوت مصرف واقعی و مصرف اعلامی.",
+           "derived": {"ref": "S-r-2290f11e1731"}},
+          {"from": "c_k", "key": "tedad_forush", "type": "number", "unit": "pcs",
+           "description": "تعداد پرس فروخته‌شدهٔ غذاهایی که این ماده در آن‌ها به کار می‌رود.",
+           "derived": {"ref": "S-r-7317c7a8ece3"}},
+          {"from": "c_l", "key": "enheraf_ba_tolerance", "type": "number", "unit": "kg",
+           "description": "انحراف مصرف پس از کسر خطای مجاز.",
+           "derived": {"ref": "S-r-821dcf50a715"}},
+          {"from": "c_m", "key": "enheraf_har_forush", "type": "number", "unit": "kg",
+           "description": "انحراف با احتساب تلورانس به ازای هر واحد فروخته‌شده.",
+           "derived": {"ref": "S-r-81679c88d37b"}}
+        ]
+      }
+    },
+    {
+      "skeleton": "S-rec-4559ed2575eb",
+      "action": "keep",
+      "key": "gozaresh_shabane__farangi",
+      "title": "گزارش شبانهٔ مصرف لاین فرنگی",
+      "statement": "برگهٔ شبانهٔ کنترل مصرف لاین فرنگی. برای هر قلم این لاین، موجودی آغاز شب، مقدار دریافتی از انبار، موجودی پایان شب، مصرف اعلامی، مصرف واقعی و انحراف آن در پایان هر شب ثبت یا محاسبه می‌شود. قلم‌های وزنی بر حسب کیلوگرم و قلم‌های شمارشی بر حسب تعداد نوشته می‌شوند.",
+      "data": {
+        "role": "report",
+        "cadence": "nightly",
+        "grain": "یک ردیف برای هر قلم لاین فرنگی در هر شب",
+        "primaryKey": ["qalam"],
+        "fields": [
+          {"from": "c_b", "key": "qalam", "type": "string",
+           "description": "نام قلم یا مادهٔ اولیه‌ای که ردیف به آن مربوط است."},
+          {"from": "c_e", "key": "mojudi_avval_shab", "type": "number",
+           "description": "مقدار یا تعداد موجود از این قلم در لاین فرنگی در آغاز شب؛ واحد هر ردیف بسته به همان قلم است."},
+          {"from": "c_f", "key": "daryaft_az_anbar", "type": "number",
+           "description": "مقدار یا تعدادی که در طول شب از انبار به لاین فرنگی تحویل شده است."},
+          {"from": "c_g", "key": "mojudi_akhar_shab", "type": "number",
+           "description": "مقدار یا تعداد باقی‌مانده از این قلم در پایان شب."},
+          {"from": "c_h", "key": "masraf_elami", "type": "number",
+           "description": "مصرفی که از جابه‌جایی موجودی لاین به دست می‌آید.",
+           "derived": {"ref": "S-r-528d396c09d4"}},
+          {"from": "c_i", "key": "masraf_vaqei", "type": "number",
+           "description": "مصرف برآوردشده از تعداد فروش و نسخهٔ غذاها.",
+           "derived": {"ref": "S-r-a282b09bfd90"}},
+          {"from": "c_j", "key": "enheraf", "type": "number",
+           "description": "تفاوت مصرف واقعی و مصرف اعلامی.",
+           "derived": {"ref": "S-r-2290f11e1731"}},
+          {"from": "c_k", "key": "tedad_forush", "type": "number", "unit": "pcs",
+           "description": "تعداد پرس فروخته‌شدهٔ غذاهایی که این قلم در آن‌ها به کار می‌رود.",
+           "derived": {"ref": "S-r-7317c7a8ece3"}},
+          {"from": "c_l", "key": "enheraf_ba_tolerance", "type": "number",
+           "description": "انحراف مصرف پس از کسر خطای مجاز.",
+           "derived": {"ref": "S-r-821dcf50a715"}},
+          {"from": "c_m", "key": "enheraf_har_forush", "type": "number",
+           "description": "انحراف با احتساب تلورانس به ازای هر واحد فروخته‌شده.",
+           "derived": {"ref": "S-r-81679c88d37b"}}
+        ]
+      }
+    },
+    {
+      "skeleton": "S-rec-5b04f031f49d",
+      "action": "keep",
+      "key": "gozaresh_shabane__sukhari",
+      "title": "گزارش شبانهٔ مصرف لاین سوخاری",
+      "statement": "برگهٔ شبانهٔ کنترل مصرف لاین سوخاری. برای هر قلم این لاین، موجودی آغاز شب، مقدار دریافتی از انبار، موجودی پایان شب، مصرف اعلامی، مصرف واقعی و انحراف آن در پایان هر شب ثبت یا محاسبه می‌شود. قلم‌ها شمرده می‌شوند.",
+      "data": {
+        "role": "report",
+        "cadence": "nightly",
+        "grain": "یک ردیف برای هر قلم لاین سوخاری در هر شب",
+        "primaryKey": ["qalam"],
+        "fields": [
+          {"from": "c_b", "key": "qalam", "type": "string",
+           "description": "نام قلمی که ردیف به آن مربوط است."},
+          {"from": "c_e", "key": "mojudi_avval_shab", "type": "number", "unit": "pcs",
+           "description": "تعداد موجود از این قلم در لاین سوخاری در آغاز شب."},
+          {"from": "c_f", "key": "daryaft_az_anbar", "type": "number", "unit": "pcs",
+           "description": "تعدادی که در طول شب از انبار به لاین سوخاری تحویل شده است."},
+          {"from": "c_g", "key": "mojudi_akhar_shab", "type": "number", "unit": "pcs",
+           "description": "تعداد باقی‌مانده از این قلم در پایان شب."},
+          {"from": "c_h", "key": "masraf_elami", "type": "number", "unit": "pcs",
+           "description": "مصرفی که از جابه‌جایی موجودی لاین به دست می‌آید.",
+           "derived": {"ref": "S-r-528d396c09d4"}},
+          {"from": "c_i", "key": "masraf_vaqei", "type": "number", "unit": "pcs",
+           "description": "مصرف برآوردشده از تعداد فروش و نسخهٔ غذاها.",
+           "derived": {"ref": "S-r-a282b09bfd90"}},
+          {"from": "c_j", "key": "enheraf", "type": "number", "unit": "pcs",
+           "description": "تفاوت مصرف واقعی و مصرف اعلامی.",
+           "derived": {"ref": "S-r-2290f11e1731"}}
+        ]
+      }
+    },
+    {
+      "skeleton": "S-rec-16b45c5a1403",
+      "action": "keep",
+      "key": "gozaresh_shabane__kanter",
+      "title": "گزارش شبانهٔ مصرف کانتر",
+      "statement": "برگهٔ شبانهٔ کنترل مصرف کانتر. برای هر قلم نوشیدنی، موجودی آغاز شب، مقدار دریافتی از انبار، موجودی پایان شب، مصرف اعلامی، مصرف واقعی و انحراف آن در پایان هر شب ثبت یا محاسبه می‌شود. قلم‌ها شمرده می‌شوند.",
+      "data": {
+        "role": "report",
+        "cadence": "nightly",
+        "grain": "یک ردیف برای هر قلم نوشیدنی کانتر در هر شب",
+        "primaryKey": ["qalam"],
+        "fields": [
+          {"from": "c_b", "key": "qalam", "type": "string",
+           "description": "نام قلم نوشیدنی که ردیف به آن مربوط است."},
+          {"from": "c_e", "key": "mojudi_avval_shab", "type": "number", "unit": "pcs",
+           "description": "تعداد موجود از این قلم در کانتر در آغاز شب."},
+          {"from": "c_f", "key": "daryaft_az_anbar", "type": "number", "unit": "pcs",
+           "description": "تعدادی که در طول شب از انبار به کانتر تحویل شده است."},
+          {"from": "c_g", "key": "mojudi_akhar_shab", "type": "number", "unit": "pcs",
+           "description": "تعداد باقی‌مانده از این قلم در پایان شب."},
+          {"from": "c_h", "key": "masraf_elami", "type": "number", "unit": "pcs",
+           "description": "مصرفی که از جابه‌جایی موجودی کانتر به دست می‌آید.",
+           "derived": {"ref": "S-r-528d396c09d4"}},
+          {"from": "c_i", "key": "masraf_vaqei", "type": "number", "unit": "pcs",
+           "description": "مصرف برآوردشده از تعداد فروش شب.",
+           "derived": {"ref": "S-r-a282b09bfd90"}},
+          {"from": "c_j", "key": "enheraf", "type": "number", "unit": "pcs",
+           "description": "تفاوت مصرف واقعی و مصرف اعلامی.",
+           "derived": {"ref": "S-r-2290f11e1731"}}
+        ]
+      }
+    }
+  ],
+  "new": []
+}

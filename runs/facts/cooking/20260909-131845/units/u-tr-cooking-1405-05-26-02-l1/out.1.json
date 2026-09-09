@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "unit": "u-tr-cooking-1405-05-26-02-l1",
+  "attempt": 1,
+  "decisions": [],
+  "new": [
+    {
+      "kind": "rule",
+      "key": "mohtaviyat_pack_inja_box",
+      "title": "ترکیب استاندارد پک اینجا باکس",
+      "statement": "هر پک اینجا باکس با ده لقمه مرغ سوخاری و ده قارچ سوخاری به همراه سهم سیب‌زمینی آن پر می‌شود. پک وقتی کامل شمرده می‌شود که هر سه قلم در آن گذاشته شده باشد.",
+      "aliases": ["اینجا باکس"],
+      "data": {
+        "lang": null,
+        "expr": null,
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "tedad_loqme_morgh",
+            "title": "تعداد لقمه مرغ سوخاری در پک",
+            "unit": "pcs",
+            "value": 10,
+            "nature": "standard",
+            "of": { "ref": "S-i-8673ff933335" }
+          },
+          {
+            "key": "tedad_qarch_sukhari",
+            "title": "تعداد قارچ سوخاری در پک",
+            "unit": "pcs",
+            "value": 10,
+            "nature": "standard",
+            "of": { "ref": "S-i-907905be99be" }
+          }
+        ]
+      }
+    },
+    {
+      "kind": "note",
+      "key": "sahm_sibzamini_pack_inja_box",
+      "title": "مقدار نامشخص سیب‌زمینی پک اینجا باکس",
+      "statement": "مقدار سیب‌زمینی که همراه هر پک اینجا باکس ریخته می‌شود مشخص نشده و تنها به صورت «حجم سیب‌زمینی» بیان شده است. برای کامل شدن ترکیب استاندارد این پک باید تعیین شود.",
+      "data": {
+        "about": [
+          { "ref": "S-i-8c956aed07ae" }
+        ],
+        "question": "سهم سیب‌زمینی هر پک اینجا باکس چقدر است و بر چه مبنایی شمرده می‌شود؟"
+      }
+    }
+  ]
+}

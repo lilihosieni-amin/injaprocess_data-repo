@@ -1,0 +1,112 @@
+# gozaresh_markazi__s4__i__r6
+LET(
+ingredientId, 1,
+amFoodIds, {71, 309, 74, 65, 76, 75, 308, 400, 27, 766, 767, 1},
+sinFoodIds, {4, 780, 781, 782, 783, 784},
+itFoodIds, {61, 62, 63, 310, 87, 73, 49, 551, 552, 553, 13, 768, 771},
+laFoodIds, {85, 84},
+stFoodIds, {360, 504},
+americanPizzaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_AmericanPizza),
+singlePizzaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_SinglePizza),
+italianPizzaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_ItalianPizza),
+pastaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_Pasta),
+starterSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_Starter),
+personelSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_Personel),
+amTotal, getTotalFoodsIngredient(amFoodIds,ingredientId,americanPizzaSalesData,"Table_Ingredients_AmericanPizza",Refresher),
+sinTotal, getTotalFoodsIngredient(sinFoodIds,ingredientId,singlePizzaSalesData,"Table_Ingredients_SinglePizza",Refresher),
+itTotal, getTotalFoodsIngredient(itFoodIds,ingredientId,italianPizzaSalesData,"Table_Ingredients_ItalianPizza",Refresher),
+laTotal, getTotalFoodsIngredient(laFoodIds,ingredientId,pastaSalesData,"Table_Ingredients_Lasagna",Refresher),
+stTotal, getTotalFoodsIngredient(stFoodIds,ingredientId,starterSalesData,"Table_Ingredients_Starter",Refresher),
+perTotal, getFoodValueById(10,personelSalesData) * getIngredientValue(10,ingredientId,"Table_Ingredients_Personel",Refresher),
+totalGr, SUM(amTotal,sinTotal, itTotal,laTotal,stTotal,perTotal),
+CONVERT_GR_TO_KG(totalGr)
+)
+
+# gozaresh_markazi__s4__i__r7
+LET(
+ingredientId, 2,
+amFoodIds, 71,
+itFoodIds, 61,
+laFoodIds, 84,
+sinFoodIds, 4,
+americanPizzaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_AmericanPizza),
+italianPizzaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_ItalianPizza),
+pastaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_Pasta),
+singlePizzaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_SinglePizza),
+sinTotal, getTotalFoodsIngredient(sinFoodIds,ingredientId,singlePizzaSalesData,"Table_Ingredients_SinglePizza",Refresher),
+amTotal, getTotalFoodsIngredient(amFoodIds,ingredientId,americanPizzaSalesData,"Table_Ingredients_AmericanPizza",Refresher),
+itTotal, getTotalFoodsIngredient(itFoodIds,ingredientId,italianPizzaSalesData,"Table_Ingredients_ItalianPizza",Refresher),
+laTotal, getTotalFoodsIngredient(laFoodIds,ingredientId,pastaSalesData,"Table_Ingredients_Lasagna",Refresher),
+totalGr, SUM(amTotal, sinTotal, itTotal, laTotal),
+CONVERT_GR_TO_KG(totalGr)
+)
+
+# gozaresh_markazi__s4__i__r12
+LET(
+ingredientId, 7,
+americanPizzaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_AmericanPizza),
+totalGr, getFoodValueById(400,americanPizzaSalesData,Refresher) * getIngredientValue(400,ingredientId,"Table_Ingredients_AmericanPizza",Refresher),
+CONVERT_GR_TO_KG(totalGr)
+)
+
+# gozaresh_markazi__s4__i__r13
+LET(
+ingredientId, 8,
+itFoodIds, {62, 63},
+italianPizzaSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_ItalianPizza),
+totalGr, getTotalFoodsIngredient(itFoodIds,ingredientId,italianPizzaSalesData,"Table_Ingredients_ItalianPizza",Refresher),
+CONVERT_GR_TO_KG(totalGr)
+
+)
+
+# gozaresh_markazi__s5__i__r6
+LET(
+ingredientId, 14,
+sanFoodIds, {131, 133, 132, 138, 134, 150, 773, 769},
+sandwichSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_Sandwich),
+getTotalFoodsIngredient(sanFoodIds,ingredientId,sandwichSalesData,"Table_Ingredients_Sandwich",Refresher))
+
+# gozaresh_markazi__s6__i__r7
+LET(
+ingredientId, 19,
+frFoodIds, 123,
+sanFoodIds, {44, 150},
+friedSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_Fried),
+sandwichSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_Sandwich),
+frTotal, getTotalFoodsIngredient(frFoodIds,ingredientId,friedSalesData,"Table_Ingredients_Fried",Refresher),
+sanTotal, getTotalFoodsIngredient(sanFoodIds,ingredientId,sandwichSalesData,"Table_Ingredients_Sandwich",Refresher),
+SUM(frTotal,sanTotal)
+)
+
+# gozaresh_markazi__s7__i__r6
+LET(
+starterSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_Starter),
+SUM(
+getFoodValueById(101,starterSalesData,Refresher),
+getFoodValueById(102,starterSalesData,Refresher),
+getFoodValueById(104,starterSalesData,Refresher),
+getFoodValueById(108,starterSalesData,Refresher),
+))
+
+# gozaresh_markazi__s7__i__r8
+LET(
+starterSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_Starter),
+SUM(
+getFoodValueById(752,starterSalesData,Refresher),
+getFoodValueById(110,starterSalesData,Refresher)
+))
+
+# gozaresh_markazi__s7__i__r9
+LET(
+starterSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_Starter),
+SUM(
+getFoodValueById(368,starterSalesData,Refresher),
+getFoodValueById(754,starterSalesData,Refresher),
+getFoodValueById(757,starterSalesData,Refresher)
+))
+
+# gozaresh_markazi__s7__i__r10
+LET(
+starterSalesData, GET_ROW_BY_PERSIAN_DATE(BN,CN,DN,Table_SalesData_Starter),
+getFoodValueById(273,starterSalesData,Refresher)
+)
