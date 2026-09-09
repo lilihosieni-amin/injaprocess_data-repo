@@ -1,0 +1,14 @@
+{
+  "department": "cooking",
+  "origin": "chat",
+  "actor": "owner",
+  "started_at": "2026-09-09T06:00:02Z",
+  "finished_at": null,
+  "recordings": [],
+  "attachments": [],
+  "workbooks": [],
+  "delta": "",
+  "merged": false,
+  "ids_created": [],
+  "instruction": "در شرح ۱۰ ثبت، واژهٔ «سیاهه» را به «برگه» تغییر بده؛ بقیهٔ جمله دست‌نخورده بماند."
+}

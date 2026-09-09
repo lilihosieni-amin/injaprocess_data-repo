@@ -1,0 +1,10 @@
+[
+  {
+    "verb": "edit",
+    "args": {
+      "id": "F-00230",
+      "patch": "facts-patch.json",
+      "ops": 1
+    }
+  }
+]

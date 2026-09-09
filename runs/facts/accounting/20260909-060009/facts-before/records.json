@@ -9516,7 +9516,7 @@
       "kind": "record",
       "key": "enheraf_amargiri_chalebagh",
       "title": "انحراف آمارگیری شعبه چاله باغ",
-      "statement": "برگهٔ روزانهٔ انحراف آمارگیری شعبه چاله باغ. برای هر روز یک سطر پر می‌شود و در هر ستون، اختلاف مقدار شمارش‌شدهٔ یک قلم با مقدار مورد انتظار آن ثبت می‌گردد؛ ستون‌ها به تفکیک کانتر آشپزخانه، سوخاری، کانتر سالن، لاین پیتزا و لاین فرنگی چیده شده‌اند.",
+      "statement": "سیاههٔ روزانهٔ انحراف آمارگیری شعبه چاله باغ. برای هر روز یک سطر پر می‌شود و در هر ستون، اختلاف مقدار شمارش‌شدهٔ یک قلم با مقدار مورد انتظار آن ثبت می‌گردد؛ ستون‌ها به تفکیک کانتر آشپزخانه، سوخاری، کانتر سالن، لاین پیتزا و لاین فرنگی چیده شده‌اند.",
       "scope": {
         "departments": [
           "accounting"
@@ -9530,11 +9530,6 @@
           "sheet": "انحراف آمارگیری شعبه چاله باغ",
           "hash": "sha256:37333bcad627a4d0a4bf5d684ed7066ff6cb2184d7e3ad4d7b1aff7dfb6fbbda",
           "run": "runs/facts/accounting/20260909-033925"
-        },
-        {
-          "type": "chat",
-          "ref": "runs/facts/accounting/20260909-060009/meta.json",
-          "run": "runs/facts/accounting/20260909-060009"
         }
       ],
       "retired": false,
@@ -9948,7 +9943,7 @@
       "valid_from": null,
       "valid_to": null,
       "status": "unknown",
-      "updated_at": "2026-09-09T06:33:43Z"
+      "updated_at": "2026-09-09T03:52:59Z"
     },
     {
       "kind": "record",
@@ -10103,7 +10098,7 @@
       "kind": "record",
       "key": "gozaresh_bastan_sandogh",
       "title": "گزارش بستن صندوق",
-      "statement": "برگهٔ روزانهٔ بستن صندوق دو شعبه که برای هر روز، مسئول صندوق و وضعیت صندوق را در پایان کار ثبت می‌کند. برای هر روز یک سطر پر می‌شود.",
+      "statement": "سیاههٔ روزانهٔ بستن صندوق دو شعبه که برای هر روز، مسئول صندوق و وضعیت صندوق را در پایان کار ثبت می‌کند. برای هر روز یک سطر پر می‌شود.",
       "scope": {
         "departments": [
           "accounting"
@@ -10117,11 +10112,6 @@
           "sheet": "گزارش بستن صندوق",
           "hash": "sha256:37333bcad627a4d0a4bf5d684ed7066ff6cb2184d7e3ad4d7b1aff7dfb6fbbda",
           "run": "runs/facts/accounting/20260909-033925"
-        },
-        {
-          "type": "chat",
-          "ref": "runs/facts/accounting/20260909-060010/meta.json",
-          "run": "runs/facts/accounting/20260909-060010"
         }
       ],
       "retired": false,
@@ -10201,7 +10191,7 @@
       "valid_from": null,
       "valid_to": null,
       "status": "unknown",
-      "updated_at": "2026-09-09T06:33:43Z"
+      "updated_at": "2026-09-09T03:52:59Z"
     }
   ]
 }
