@@ -1,6 +1,6 @@
 ---
 name: quantify
-description: Orchestrate the quantitative-facts pipeline v3 — workbook checkpoint, resolve the set, set-confirmation, transcribe, prepare, plan, run the units in bounded batches of four, review, assemble and validate, the facts checkpoint, apply, commit, the report and the audit review. Resumes from `facts-plan status`.
+description: Orchestrate the quantitative-facts pipeline v3 — workbook checkpoint, resolve the set, set-confirmation, transcribe, prepare, plan, run the units in bounded batches of four, review, assemble and validate, apply, commit, the report and the audit review. Resumes from `facts-plan status`.
 ---
 
 # quantify playbook (v3)
@@ -13,11 +13,11 @@ All paths are relative to `<data-repo>` (`DATA_ROOT`). Every engine CLI runs wit
 
 ## What you are, and what you are not
 
-You dispatch, you validate, you assemble, you apply, and you send two engine-written files
+You dispatch, you validate, you assemble, you apply, and you send one engine-written file
 **verbatim**. You never write fact content and you never compose owner-facing prose out of data.
 
-You read exactly four things: `facts-plan status` output, `{run_dir}/gate-b.md`,
-`{run_dir}/report.md`, and validator output. You do **not** read `skeleton.json`, `plan.json`, a
+You read exactly three things: `facts-plan status` output, `{run_dir}/report.md`, and
+validator output. You do **not** read `skeleton.json`, `plan.json`, a
 unit's output, `assembly.json` or the delta. They are not for you, and the last run's whole failure
 was a coordinator that read them and started authoring.
 
@@ -37,7 +37,7 @@ This playbook runs over a bot that executes **one model turn per user message**:
 your turn, it stops and waits.
 
 **The only legitimate end-of-turn points are:** Gate M (conditional), Gate A, a **yield** between
-batches, Gate B, each of Stage C's per-item gates, and the very end of the run.
+batches, each of Stage C's per-item gates, and the very end of the run.
 
 Everywhere else you continue in the **same turn**. A returning `Task` or a returning CLI is never a
 stopping point. **A message with no tool call ends the turn** — so between stages, either your
@@ -49,7 +49,7 @@ the next call.
 
 «بخش از داده‌ها» for a unit. «فایل» for a workbook, named by its title. Never a unit id, never a
 stage letter, never a department code, never a path, never a command, never an account id. The
-report and the checkpoint are written by the engine — send them as they are.
+report is written by the engine — send it as it is.
 
 ## Laptop precondition (design §6.1)
 
@@ -77,7 +77,7 @@ state · attempts` — plus the stage to enter, `plan_stale`, `elapsed_s` and `y
 
 **Resume ladder**, exactly as `status` reports it: no skeleton → Stage P (or earlier, by what is on
 disk: transcripts, then dumps, then the plan); pending units → Stage U; all units done and no delta
-→ Stage R; a delta present and no `id-map.json` → Gate B (a retry of the apply is safe); an
+→ Stage R; a delta present and no `id-map.json` → Stage 5 (a retry of the apply is safe); an
 `id-map.json` present and the run unfinished → Stage 6.
 
 For a **fresh** run: create `{run_dir}` and write its initial `meta.json` (`facts-run-meta.schema.json`
@@ -349,7 +349,7 @@ including the resulting store's schema, and writes nothing — so a delta that p
 kind and the content pass — is enforced at each unit's own gate, so a delta assembled from
 validated units cannot fail one (design addendum I1). What is left here is cross-entry only: twin
 titles, instance ownership, refs between units, the reviewer's caps. If `validate facts-delta`
-names a single entry's field anyway, stop before Gate B, report it in Persian as a defect, and
+names a single entry's field anyway, stop before the apply, report it in Persian as a defect, and
 hand-repair nothing.
 
 `assemble` itself exits 2, naming the unit, when that unit's latest attempt is invalid and an
@@ -357,26 +357,18 @@ attempt is still left: re-dispatch that unit and run `assemble` again. On a resi
 message names the unit that produced it. If that unit is under two attempts, re-dispatch it with
 the error, then **re-enter Stage R once** (the assembly changed, so the review is stale) and re-run
 Stage V. If the second review fails too, proceed without it. If Stage V fails again, stop
-**before** Gate B and relay the grouped errors in Persian.
-
----
-
-## Gate B — Facts checkpoint (STOP)
-
-Read `{run_dir}/gate-b.md` and **send it verbatim**. It is a finished Persian message: counts per
-kind, the rules in words, the disputes lettered, the issues found in the files, the files this run
-did not read, the unanswered units. Compose nothing, add nothing, summarise nothing.
-
-**End your turn and wait.** Nothing under `facts/` has been written yet.
-
-On «تأیید» / «بله» / «ok», go to Stage 5. On an answer to a lettered dispute («۱ الف»), record it
-and continue — the resolve runs after the apply. On a correction, report that a correction at this
-point needs a new run and ask whether to start one; there is nothing to re-dispatch, because the
-delta is the assembly of every unit.
+**before** the apply and relay the grouped errors in Persian.
 
 ---
 
 ## Stage 5 — Apply
+
+Stage V passing is the approval — owner ruling, 2026-09-09: the checkpoint message was not
+readable at the size a department produces, and an apply is reversible. Continue **in the same
+turn**, asking nothing. The owner reads the result in the report (Stage 7) and answers any
+dispute there; a run the owner rejects is undone with `merge facts revert --run {run_dir}`
+(runbook 07 §6). `gate-b.md` stays on disk as the run's record of what it proposed and is never
+sent.
 
 ```
 Bash: DATA_ROOT=<data-repo> merge facts apply --delta {run_dir}/facts-delta.json --run {run_dir}
@@ -478,7 +470,6 @@ When the sitting is over, `Bash: DATA_ROOT=<data-repo> merge facts check` prints
 | **U** | **Units** | `Task: quantify` (unit) × ≤4 per message, `validate facts-unit` each | **STOP** at a yield |
 | **R** | **Review** | `facts-plan digest`, `Task: quantify` (review), `validate facts-unit` | — |
 | **V** | **Assemble + validate** | `facts-plan assemble`, `validate facts-delta --store --run` | — |
-| **B** | **Facts checkpoint** | send `gate-b.md` verbatim | **STOP** |
 | 5 | Apply | `merge facts apply` | — |
 | 6 | Finish + commit | Write `meta.json`, `facts-plan report`, `git -C` | — |
 | 7 | Report | send `report.md` verbatim | — |
@@ -488,8 +479,8 @@ When the sitting is over, `Bash: DATA_ROOT=<data-repo> merge facts check` prints
 
 - `merge facts` is the only writer of `facts/**` (INV-1, guard-enforced). Neither this playbook nor
   the agent ever writes there.
-- The coordinator writes no fact content and composes no owner-facing prose from data. `gate-b.md`
-  and `report.md` go out verbatim.
+- The coordinator writes no fact content and composes no owner-facing prose from data. `report.md`
+  goes out verbatim.
 - Batches of at most four `Task`s per message; every unit validated on return; at most two attempts
   per unit per run — refused by the engine, never lifted.
 - The only yield signal is `facts-plan status`'s own `yield: true`, and it ends the turn.
