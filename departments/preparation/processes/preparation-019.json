@@ -13,7 +13,7 @@
     "node": "preparation-030-n013"
   },
   "created_at": "2026-09-04T23:44:47Z",
-  "updated_at": "2026-09-09T22:16:23Z",
+  "updated_at": "2026-09-09T22:19:49Z",
   "idef0": {
     "inputs": [
       "گوشت گردن",
@@ -85,7 +85,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -115,7 +115,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -145,7 +145,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -174,7 +174,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -204,13 +204,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 265.0
+        "x": 838.0799999999999,
+        "y": 273.64000000000004
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -236,13 +238,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 352.5
+        "x": 550.56,
+        "y": 284.82
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -267,7 +271,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -297,7 +301,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -340,7 +344,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 790.0
+        "y": 790
       },
       "layout": "auto",
       "source": {
@@ -370,7 +374,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 790.0
+        "y": 790
       },
       "layout": "auto",
       "source": {
@@ -471,7 +475,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 965.0
+        "y": 965
       },
       "layout": "auto",
       "source": {
@@ -503,7 +507,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 965.0
+        "y": 965
       },
       "layout": "auto",
       "source": {
@@ -533,7 +537,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 965.0
+        "y": 965
       },
       "layout": "auto",
       "source": {
@@ -566,7 +570,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 965.0
+        "y": 965
       },
       "layout": "auto",
       "source": {
@@ -597,7 +601,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 965.0
+        "y": 965
       },
       "layout": "auto",
       "source": {
@@ -628,7 +632,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 1140.0
+        "y": 1140
       },
       "layout": "auto",
       "source": {
@@ -662,7 +666,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 1140.0
+        "y": 1140
       },
       "layout": "auto",
       "source": {
@@ -696,7 +700,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1140.0
+        "y": 1140
       },
       "layout": "auto",
       "source": {
@@ -726,7 +730,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 1140.0
+        "y": 1140
       },
       "layout": "auto",
       "source": {
@@ -758,7 +762,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 1140.0
+        "y": 1140
       },
       "layout": "auto",
       "source": {
@@ -787,7 +791,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 1315.0
+        "y": 1315
       },
       "layout": "auto",
       "source": {
@@ -820,7 +824,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 1315.0
+        "y": 1315
       },
       "layout": "auto",
       "source": {
@@ -850,7 +854,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1315.0
+        "y": 1315
       },
       "layout": "auto",
       "source": {
@@ -881,7 +885,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 1315.0
+        "y": 1315
       },
       "layout": "auto",
       "source": {
@@ -911,7 +915,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 1315.0
+        "y": 1315
       },
       "layout": "auto",
       "source": {
@@ -984,7 +988,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1665.0
+        "y": 1665
       },
       "layout": "auto",
       "source": {
@@ -1055,7 +1059,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 1840.0
+        "y": 1840
       },
       "layout": "auto",
       "source": {
@@ -1088,7 +1092,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 1840.0
+        "y": 1840
       },
       "layout": "auto",
       "source": {
@@ -1103,18 +1107,7 @@
       "direction": "split",
       "position": {
         "x": 1143,
-        "y": 106.0
-      },
-      "layout": "auto"
-    },
-    {
-      "id": "preparation-019-j6",
-      "type": "junction",
-      "junctionType": "AND",
-      "direction": "join",
-      "position": {
-        "x": 623,
-        "y": 368.5
+        "y": 106
       },
       "layout": "auto"
     }
@@ -1269,20 +1262,13 @@
       "to": "preparation-019-n007"
     },
     {
-      "from": "preparation-019-n005",
-      "to": "preparation-019-j6"
-    },
-    {
-      "from": "preparation-019-n008",
-      "to": "preparation-019-j6"
-    },
-    {
-      "from": "preparation-019-j6",
-      "to": "preparation-019-n006"
-    },
-    {
       "from": "preparation-019-n006",
       "to": "preparation-019-j1"
+    },
+    {
+      "from": "preparation-019-n005",
+      "to": "preparation-019-n006",
+      "label": ""
     }
   ],
   "pending": []
