@@ -89,7 +89,8 @@ Do not invoke `merge` directly before the checkpoint clears.
 
 `/quantify` runs a facts pass over the estate — dumped workbooks, the
 manifest, and any recordings the user names — dispatches the `quantify` agent,
-and owns the manifest and facts checkpoints. `/edit-fact` applies one
+owns the manifest checkpoint, writes the store the moment the assembled result passes
+validation, and sends the owner the report. `/edit-fact` applies one
 chat-driven correction to a single fact (e.g. «پارمسان الان ۱۰۰ گرمه»): a
 change whose value the owner states exactly, it writes as a patch itself, with
 no dispatch; it dispatches the `quantify` agent only for prose it has to
