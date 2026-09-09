@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-08T14:31:47Z",
-  "updated_at": "2026-09-09T10:21:51Z",
+  "updated_at": "2026-09-09T10:27:58Z",
   "idef0": {
     "inputs": [
       "گوشت گرم روز تحویلی از انبار (مغز ران، گردن، راسته، سردست)",
@@ -64,8 +64,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 90.0
+        "x": 1080,
+        "y": 265.0
       },
       "layout": "auto",
       "source": {
@@ -97,7 +97,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 90.0
+        "y": 265.0
       },
       "layout": "auto",
       "source": {
@@ -127,8 +127,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 90.0
+        "x": 560,
+        "y": 265.0
       },
       "layout": "auto",
       "source": {
@@ -160,8 +160,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 352.5
+        "x": 300,
+        "y": 265.0
       },
       "layout": "auto",
       "source": {
@@ -175,8 +175,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 368.5
+        "x": 103,
+        "y": 281.0
       },
       "layout": "auto"
     },
@@ -201,8 +201,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 440.0
+        "x": 40,
+        "y": 615.0
       },
       "layout": "auto",
       "source": {
@@ -217,7 +217,7 @@
       "direction": "join",
       "position": {
         "x": 363,
-        "y": 368.5
+        "y": 543.5
       },
       "layout": "auto"
     },
@@ -246,8 +246,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 352.5
+        "x": 560,
+        "y": 527.5
       },
       "layout": "auto",
       "source": {
@@ -276,8 +276,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 615.0
+        "x": 820,
+        "y": 527.5
       },
       "layout": "auto",
       "source": {
@@ -305,8 +305,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 615.0
+        "x": 1080,
+        "y": 527.5
       },
       "layout": "auto",
       "source": {
@@ -335,8 +335,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 615.0
+        "x": 1080,
+        "y": 1052.5
       },
       "layout": "auto",
       "source": {
@@ -366,7 +366,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 615.0
+        "y": 1052.5
       },
       "layout": "auto",
       "source": {
@@ -395,8 +395,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 615.0
+        "x": 560,
+        "y": 1052.5
       },
       "layout": "auto",
       "source": {
@@ -410,7 +410,7 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1143,
+        "x": 363,
         "y": 1068.5
       },
       "layout": "auto"
@@ -461,7 +461,7 @@
       },
       "subprocess": "preparation-018",
       "position": {
-        "x": 820,
+        "x": 40,
         "y": 790.0
       },
       "layout": "auto",
@@ -517,7 +517,7 @@
       },
       "subprocess": "preparation-019",
       "position": {
-        "x": 820,
+        "x": 40,
         "y": 965.0
       },
       "layout": "auto",
@@ -565,7 +565,7 @@
       },
       "subprocess": "preparation-020",
       "position": {
-        "x": 820,
+        "x": 40,
         "y": 1140.0
       },
       "layout": "auto",
@@ -620,7 +620,7 @@
       },
       "subprocess": "preparation-021",
       "position": {
-        "x": 820,
+        "x": 40,
         "y": 1315.0
       },
       "layout": "auto",
@@ -668,7 +668,7 @@
       },
       "subprocess": "preparation-017",
       "position": {
-        "x": 300,
+        "x": 1080,
         "y": 90.0
       },
       "layout": "auto",
@@ -704,6 +704,118 @@
       "subprocess": null,
       "position": {
         "x": 40,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260909-073408",
+        "touched_by": [
+          "runs/chat/20260909-073408"
+        ]
+      },
+      "removed": true
+    },
+    {
+      "id": "preparation-030-n018",
+      "type": "activity",
+      "label": "مراجعه زودتر مسئول لاین گوشت به انبار پیش از پرینت لیست مرکزی و شعب",
+      "description": "مسئول لاین گوشت پیش از آنکه انبار لیست مرکزی و شعب و برگه چک‌لیست را چاپ کند و تحویل آماده‌سازی بدهد، زودتر به انبار می‌رود تا وقت گرفته نشود، به بچه‌ها کمک کند و روند کار جلوتر بیفتد. سرپرست آماده‌سازی این پیش‌دستی را خلاف روند درست می‌داند و می‌گوید نباید در این کار دخالت کرد چون بابت آن مؤاخذه می‌شوند.",
+      "actor": "مسئول لاین گوشت",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": [
+          "مسئول لاین گوشت"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 40,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260909-073408",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "preparation-030-n019",
+      "type": "activity",
+      "label": "پرسیدن مقدار موردنیاز ژامبون، پپرونی و بیکن از انبار",
+      "description": "در انبار پرسیده می‌شود که امروز از هر قلم چه مقدار لازم است، پیش از آنکه کل لیست دانه‌به‌دانه چک شود.",
+      "actor": "مسئول لاین گوشت",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": [
+          "مسئول لاین گوشت",
+          "انباردار"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260909-073408",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "preparation-030-n020",
+      "type": "activity",
+      "label": "اعلام مقدار روزانه هر قلم توسط انباردار پس از بررسی سرانگشتی در سیستم",
+      "description": "انباردار یک لحظه سرانگشتی در سیستم نگاه می‌کند و مقدار را اعلام می‌کند؛ مثلاً امروز شش کیلو ژامبون سه‌گانه، دو کیلو ژامبون دوگانه فرنگی، یک کیلو سینه و بیکن طلایی و چهار کیلو پپرونی. بعداً کل لیست‌ها دانه‌به‌دانه چک می‌شود.",
+      "actor": "انباردار",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [
+          "مقدار اعلام‌شده هر قلم"
+        ],
+        "mechanisms": [
+          "انباردار"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260909-073408",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "preparation-030-n021",
+      "type": "activity",
+      "label": "تحویل گرفتن پپرونی، ژامبون‌ها و استیک ورقه‌ای ژاپنی از انبار و آوردن به آماده‌سازی",
+      "description": "اقلام بر اساس همان لیستی که آشپزخانه به انبار داده تحویل گرفته می‌شود و به واحد آماده‌سازی آورده می‌شود.",
+      "actor": "مسئول لاین گوشت",
+      "icom": {
+        "inputs": [
+          "پپرونی",
+          "ژامبون‌ها",
+          "استیک ورقه‌ای ژاپنی"
+        ],
+        "controls": [
+          "لیست درخواست آشپزخانه به انبار"
+        ],
+        "outputs": [],
+        "mechanisms": [
+          "مسئول لاین گوشت"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
         "y": 90.0
       },
       "layout": "auto",
@@ -797,7 +909,19 @@
       "to": "preparation-030-n001"
     },
     {
-      "from": "preparation-030-n017",
+      "from": "preparation-030-n018",
+      "to": "preparation-030-n019"
+    },
+    {
+      "from": "preparation-030-n019",
+      "to": "preparation-030-n020"
+    },
+    {
+      "from": "preparation-030-n020",
+      "to": "preparation-030-n021"
+    },
+    {
+      "from": "preparation-030-n021",
       "to": "preparation-030-n016"
     }
   ],
