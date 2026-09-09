@@ -334,7 +334,10 @@ def test_the_edit_fact_playbook_has_the_three_case_table_and_no_account_hunt():
     text = EDIT_FACT.read_text(encoding="utf-8")
     assert "merge facts edit" in text and "--preview" in text
     assert "facts-patch.json" in text
-    assert "در پنل تأییدشده است" in text
+    # The report never claims a confirmation: the panel's tick is a person's
+    # alone (owner ruling, 2026-09-09), so the sentence says the opposite.
+    assert "در پنل هنوز تأییدنشده است" in text
+    assert "تأییدشده است" not in text
     assert "account id" not in text.lower() or "Never compute an account id" not in text
     # The table's two load-bearing cells: its header, and the row that says the
     # playbook writes a mechanical change itself. Gutting either is what would
