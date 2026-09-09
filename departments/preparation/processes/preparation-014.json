@@ -13,7 +13,7 @@
     "node": "preparation-031-n006"
   },
   "created_at": "2026-09-04T23:44:45Z",
-  "updated_at": "2026-09-04T23:44:45Z",
+  "updated_at": "2026-09-09T09:39:15Z",
   "idef0": {
     "inputs": [
       "مرغ چیزا (سینه مرغ ۸۰ گرمی) در ظرف‌های ۴۸ عددی از انبار",
@@ -95,7 +95,7 @@
     {
       "id": "preparation-014-n002",
       "type": "activity",
-      "label": "تحویل گرفتن ظرف‌های ۴۸ عددی مرغ چیزا از انبار در شب قبل برای یخ‌گشایی",
+      "label": "بیرون اوردن  ظرف‌های ۴۸ عددی مرغ چیزا از فریزر انبار در شب قبل برای یخ‌گشایی",
       "description": "انبار مرغ چیزا را در ظرف‌های ۴۸ عددی از شب قبل می‌آورد تا تا صبح فردا آب شود. هر ۴۸ تک‌دانه جمعاً ۲۴ پرس چیزا می‌شود، چون روی هر سالاد چیزا دو رول مرغ گذاشته می‌شود.",
       "actor": "انبار",
       "icom": {
@@ -112,13 +112,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 265.0
+        "x": 469.720207253886,
+        "y": 257.4766839378238
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -141,13 +143,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 265.0
+        "x": 681.759067357513,
+        "y": 277.2253886010363
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -171,13 +175,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 265.0
+        "x": 985.018134715026,
+        "y": 270.6424870466322
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -204,7 +210,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 615.0
+        "y": 615
       },
       "layout": "auto",
       "source": {
@@ -231,7 +237,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 615.0
+        "y": 615
       },
       "layout": "auto",
       "source": {
@@ -258,7 +264,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 615.0
+        "y": 615
       },
       "layout": "auto",
       "source": {
@@ -287,7 +293,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 615.0
+        "y": 615
       },
       "layout": "auto",
       "source": {
@@ -315,13 +321,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 615.0
+        "x": 146.26683937823836,
+        "y": 750.4196891191709
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -372,13 +380,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1052.5
+        "x": 247.33678756476684,
+        "y": 1291.3652849740931
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -412,7 +422,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 1140.0
+        "y": 1140
       },
       "layout": "auto",
       "source": {
@@ -441,13 +451,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1140.0
+        "x": 516,
+        "y": 1456
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -468,13 +480,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1665.0
+        "x": 826,
+        "y": 1447
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -500,13 +514,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1665.0
+        "x": 884,
+        "y": 1653
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -530,7 +546,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 790.0
+        "y": 790
       },
       "layout": "auto",
       "source": {
@@ -561,7 +577,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 790.0
+        "y": 790
       },
       "layout": "auto",
       "source": {
@@ -590,13 +606,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1315.0
+        "x": 1072,
+        "y": 953
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -618,13 +636,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1315.0
+        "x": 1094,
+        "y": 1163
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -647,7 +667,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -676,7 +696,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -706,7 +726,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -737,13 +757,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 440.0
+        "x": 1237.9896373056995,
+        "y": 381.6943005181347
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -765,13 +787,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 440.0
+        "x": 1257.2927461139896,
+        "y": 517.1139896373056
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -795,13 +819,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 440.0
+        "x": 1273.7746113989638,
+        "y": 651.5932642487046
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -824,13 +850,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 440.0
+        "x": 1294.0181347150258,
+        "y": 738.1113989637305
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -852,13 +880,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 440.0
+        "x": 1293.5725388601036,
+        "y": 885.7564766839379
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -879,13 +909,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 877.5
+        "x": 1302.9766839378237,
+        "y": 1054.2979274611398
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -909,13 +941,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 877.5
+        "x": 1355.145077720207,
+        "y": 1260.2487046632125
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -924,10 +958,10 @@
       "junctionType": "AND",
       "direction": "join",
       "position": {
-        "x": 623,
-        "y": 1506.0
+        "x": 1553,
+        "y": 1608
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "preparation-014-n030",
@@ -956,13 +990,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1490.0
+        "x": 1492,
+        "y": 1856
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -985,13 +1021,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1490.0
+        "x": 1514,
+        "y": 2081.666482925415
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1012,13 +1050,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1840.0
+        "x": 1532,
+        "y": 2236
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1042,13 +1082,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1840.0
+        "x": 1376,
+        "y": 2332
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1073,13 +1115,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1840.0
+        "x": 1310,
+        "y": 1986
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1105,13 +1149,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1840.0
+        "x": 1184,
+        "y": 2366
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1134,13 +1180,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1840.0
+        "x": 1040,
+        "y": 2254
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1235,7 +1283,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 2015.0
+        "y": 2015
       },
       "layout": "auto",
       "source": {
@@ -1265,7 +1313,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 2190.0
+        "y": 2190
       },
       "layout": "auto",
       "source": {
