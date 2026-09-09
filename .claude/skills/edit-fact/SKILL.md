@@ -122,8 +122,10 @@ the path, replacing whatever is there — a scalar, an object, a list, a whole l
 `key` it may not change). `remove` drops a list member and `unset` a dict key; either on a path
 that does not exist is a **refusal**, not a no-op — nothing to remove means the instruction was
 wrong. `append` adds to a list, and refuses a keyed member already present (that one is a `set`).
-No path begins with `id`, `kind`, `key`, `status` or `updated_at`, and no op reaches under `source`
-— provenance is never edited out.
+No path begins with `id`, `kind`, `key`, `status` or `updated_at`. A citation (`source[]`) is
+editable like any other member — owner ruling, 2026-09-09 — and is addressed by position, since it
+carries no key: `source/0`, `source/1/quote`. The verb re-stamps a citation the instruction adds or
+changes and refuses a `ref` that names no file.
 
 **Writing a mechanical change yourself** (case 2): write `{run_dir}/facts-patch.json` in the shape
 above — one `set` per field the owner named, carrying their exact value; a member they asked to

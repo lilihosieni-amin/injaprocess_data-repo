@@ -186,7 +186,7 @@ A `path` is `/`-separated; a segment into a list names a member by its `key`, an
 member by its `id`. `set` writes the value at the path, replacing whatever is there; `append` adds
 a member to a list; `remove` drops a list member and `unset` a dict key, and either on a path that
 does not exist is refused, not ignored. `ops` are applied in order. A path never begins with `id`,
-`kind`, `key`, `status` or `updated_at`, and no op reaches under `source`.
+`kind`, `key`, `status` or `updated_at`; a `source[]` member is addressed by its position (`source/0`).
 
 Reuse the entry's own id as a `{ref}` where the delta references it — never rewrite it — and reuse
 `facts_index` for anything else the instruction names. Touch no entry the instruction did not name;

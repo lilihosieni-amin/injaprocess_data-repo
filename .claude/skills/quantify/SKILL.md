@@ -1,6 +1,6 @@
 ---
 name: quantify
-description: Orchestrate the quantitative-facts pipeline v3 — workbook checkpoint, resolve the set, set-confirmation, transcribe, prepare, plan, run the units in bounded batches of four, review, assemble and validate, apply, commit, the report and the audit review. Resumes from `facts-plan status`.
+description: Orchestrate the quantitative-facts pipeline v3 — workbook checkpoint, resolve the set, set-confirmation, transcribe, prepare, plan, run the units in bounded batches of four, review, assemble and validate, apply, commit and the report. Resumes from `facts-plan status`.
 ---
 
 # quantify playbook (v3)
@@ -37,7 +37,7 @@ This playbook runs over a bot that executes **one model turn per user message**:
 your turn, it stops and waits.
 
 **The only legitimate end-of-turn points are:** Gate M (conditional), Gate A, a **yield** between
-batches, each of Stage C's per-item gates, and the very end of the run.
+batches, and the very end of the run.
 
 Everywhere else you continue in the **same turn**. A returning `Task` or a returning CLI is never a
 stopping point. **A message with no tool call ends the turn** — so between stages, either your
@@ -415,44 +415,8 @@ Bash: DATA_ROOT=<data-repo> merge facts resolve --id F-… --field <path> --acco
 
 `{fix_run}` is a **fresh** stamped run directory, never `{run_dir}` (already claimed by the apply).
 Every resolve in this report may share one `{fix_run}`. Confirm by the field's Persian label, never
-by id or path. Then continue to Stage C in the same turn.
-
----
-
-## Stage C — Audit review (STOP, per item)
-
-```
-Bash: DATA_ROOT=<data-repo> merge facts audit --persian
-```
-
-`--persian` renders every finding as a Persian sentence built from the entry's own title and the
-finding's kind. **Raw audit output is never shown.** If there is nothing to report, say so and the
-run is done.
-
-Otherwise present the findings numbered, split into what can be acted on and what is report-only,
-and wait:
-
-```persian
-بازبینی پایان اجرا — ۴ مورد:
-
-قابل اقدام:
-  ۱. دو ثبت با عنوان یکسان «مصرف اعلامی لاین پیتزا» وجود دارد؛ می‌توانم یکی را بازنشسته کنم.
-  ۲. یک ثبت به فرایندی اشاره می‌کند که بازنشسته شده و جانشین دارد.
-
-فقط گزارش:
-  ۳. یک قاعده به قلمی اشاره می‌کند که دیگر در فهرست نیست.
-  ۴. یک جدول ورودی خود را از فایلی می‌گیرد که هنوز خوانده نشده است.
-
-کدام مورد را انجام بدهم؟ شماره‌اش را بفرستید.
-```
-
-For an approved item, run the matching verb yourself, against a run directory that is **not**
-`{run_dir}`: `resolve`/`retire`/`promote` may share one fresh `{audit_run}` across the sitting; a
-re-point `apply` gets its own fresh directory each time. Commit each applied item with the same
-allowlist, show the result in Persian, **end your turn and wait**, then return for the next item.
-
-When the sitting is over, `Bash: DATA_ROOT=<data-repo> merge facts check` prints the store's
-`readiness:` line as its last line — read it, and act only on what it names.
+by id or path. The run ends with the report — owner ruling, 2026-09-09: the store-wide audit is an
+operator's tool (runbook 07 §5) and is not run here.
 
 ---
 
@@ -473,7 +437,6 @@ When the sitting is over, `Bash: DATA_ROOT=<data-repo> merge facts check` prints
 | 5 | Apply | `merge facts apply` | — |
 | 6 | Finish + commit | Write `meta.json`, `facts-plan report`, `git -C` | — |
 | 7 | Report | send `report.md` verbatim | — |
-| C | Audit review | `merge facts audit --persian`, `merge facts check` + the verbs | per item |
 
 ## Key invariants
 
@@ -486,7 +449,7 @@ When the sitting is over, `Bash: DATA_ROOT=<data-repo> merge facts check` prints
 - The only yield signal is `facts-plan status`'s own `yield: true`, and it ends the turn.
 - The engine is driven through its CLIs only; no Python touches its internals.
 - One `apply` per run, into one run directory. A second apply into a used directory is refused.
-  Stage 7's resolves and Stage C's verbs each open their own fresh directory.
+  Stage 7's resolves open their own fresh directory.
 - Every engine command is run bare.
 - `meta.json` with `finished_at: null` always signals a resumable run; all timestamps are ISO-8601
   with a `Z`.
