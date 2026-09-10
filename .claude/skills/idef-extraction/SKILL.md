@@ -13,6 +13,18 @@ This skill is **preloaded into the `extract` agent**. It defines:
 
 All `label`, `description`, `summary`, `actor`, and ICOM string values the agent writes **must be in Persian**, matching the language of the source voice/document.
 
+**Register (owner's ruling, 2026-09-10).** Every `description` and `summary` is written in
+formal, professional Persian — the register of a written procedure: third person, present
+tense, complete sentences. The transcript is the source of the *facts*, never the source of the
+*phrasing*. Do not carry the speaker's wording into the text: no colloquial verb forms
+(«می‌گیم», «می‌ذاریم», «اینجوری», «رو»), no first person («ما», «سعی می‌کنیم»), no filler
+(«یعنی», «مثلاً» as a hedge), no bracketed corrections, and no quoted spans from the recording.
+State what is done, by which role, under what condition and with what — and nothing about how it
+was said.
+
+- Spoken, as heard: «همراه را سعی می‌کنیم در قسمت موبایل وارد کنیم و نه در قسمت تلفن‌ها، چون اگر در موبایل وارد شود همراه با فاکتور چاپ می‌شود.»
+- Written, as required: «شمارهٔ همراه در فیلد «موبایل» ثبت می‌شود، نه در فیلد «تلفن‌ها»؛ زیرا تنها شمارهٔ ثبت‌شده در این فیلد همراه با فاکتور چاپ می‌شود.»
+
 ---
 
 ## 1. IDEF0 / ICOM
