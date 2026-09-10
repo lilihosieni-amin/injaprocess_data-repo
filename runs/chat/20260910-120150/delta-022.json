@@ -1,0 +1,21 @@
+{
+  "add_nodes": [],
+  "add_edges": [
+    { "from": "preparation-022-n004", "to": "preparation-022-n009" }
+  ],
+  "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [
+    { "from": "preparation-022-n004", "to": "preparation-022-n005" },
+    { "from": "preparation-022-n005", "to": "preparation-022-n006" },
+    { "from": "preparation-022-n006", "to": "preparation-022-n007" },
+    { "from": "preparation-022-n007", "to": "preparation-022-n008" },
+    { "from": "preparation-022-n008", "to": "preparation-022-n009" }
+  ],
+  "flag_removed": [
+    { "id": "preparation-022-n005" },
+    { "id": "preparation-022-n006" },
+    { "id": "preparation-022-n007" },
+    { "id": "preparation-022-n008" }
+  ]
+}
