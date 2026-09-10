@@ -5,6 +5,9 @@
 meetings/audio/*
 !meetings/audio/.gitkeep
 
+# Server-local spreadsheet dumps — not committed (QF-44)
+attachments/sheets/**/*.xlsx
+
 # Secrets never live in data-repo (ARD §14)
 .env
 *.env

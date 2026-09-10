@@ -1,0 +1,3 @@
+sheet	range	type	formula	format
+تعداد فیش هرشب بجز سالن	D2:D415	cellIs lessThan	0	
+تعداد فیش هرشب بجز سالن	D2:D415	cellIs greaterThan	0	

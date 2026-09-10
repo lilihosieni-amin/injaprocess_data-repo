@@ -1,0 +1,15 @@
+sheet	range	type	values
+ضایعات	A2:A591	custom	OR(NOT(ISERROR(DATEVALUE(A2))), AND(ISNUMBER(A2), LEFT(CELL("format", A2))="D"))
+ضایعات	B2:E591	custom	AND(ISNUMBER(B2),(NOT(OR(NOT(ISERROR(DATEVALUE(B2))), AND(ISNUMBER(B2), LEFT(CELL("format", B2))="D")))))
+خمیر	A2:A593	custom	OR(NOT(ISERROR(DATEVALUE(A2))), AND(ISNUMBER(A2), LEFT(CELL("format", A2))="D"))
+خمیر	B2:D593	custom	AND(ISNUMBER(B2),(NOT(OR(NOT(ISERROR(DATEVALUE(B2))), AND(ISNUMBER(B2), LEFT(CELL("format", B2))="D")))))
+خروجی آماده سازی به انبار	A3:A590	custom	OR(NOT(ISERROR(DATEVALUE(A3))), AND(ISNUMBER(A3), LEFT(CELL("format", A3))="D"))
+خروجی آماده سازی به انبار	B3:R590 U3:V590	custom	AND(ISNUMBER(B3),(NOT(OR(NOT(ISERROR(DATEVALUE(B3))), AND(ISNUMBER(B3), LEFT(CELL("format", B3))="D")))))
+ورودی آماده سازی از انبار	A3:A587	custom	OR(NOT(ISERROR(DATEVALUE(A3))), AND(ISNUMBER(A3), LEFT(CELL("format", A3))="D"))
+ورودی آماده سازی از انبار	B3:C587 F3:K587	custom	AND(ISNUMBER(B3),(NOT(OR(NOT(ISERROR(DATEVALUE(B3))), AND(ISNUMBER(B3), LEFT(CELL("format", B3))="D")))))
+OFF اجرایی	A2:A592	custom	OR(NOT(ISERROR(DATEVALUE(A2))), AND(ISNUMBER(A2), LEFT(CELL("format", A2))="D"))
+OFF اجرایی	B2:C592	custom	AND(ISNUMBER(B2),(NOT(OR(NOT(ISERROR(DATEVALUE(B2))), AND(ISNUMBER(B2), LEFT(CELL("format", B2))="D")))))
+OFF اجرایی	D2:D592		
+نیازمندیها و مشکلات	A2:A575	custom	OR(NOT(ISERROR(DATEVALUE(A2))), AND(ISNUMBER(A2), LEFT(CELL("format", A2))="D"))
+نیازمندیها و مشکلات	B2:C575		
+بازدهی	A2:A465	custom	OR(NOT(ISERROR(DATEVALUE(A2))), AND(ISNUMBER(A2), LEFT(CELL("format", A2))="D"))

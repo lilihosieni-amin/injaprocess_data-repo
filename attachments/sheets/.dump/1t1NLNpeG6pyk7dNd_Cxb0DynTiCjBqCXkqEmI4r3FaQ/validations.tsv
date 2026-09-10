@@ -1,0 +1,8 @@
+sheet	range	type	values
+زمان ها	B2:C566	list	"تا ۱۵ دقیقه,تا ۲۵ دقیقه,تا ۴۰ دقیقه,بیش از ۴۰ دقیقه"
+زمان ها	A2:A566	custom	OR(NOT(ISERROR(DATEVALUE(A2))), AND(ISNUMBER(A2), LEFT(CELL("format", A2))="D"))
+اطلاعات لجستیک	A2:A575	custom	OR(NOT(ISERROR(DATEVALUE(A2))), AND(ISNUMBER(A2), LEFT(CELL("format", A2))="D"))
+اطلاعات لجستیک	B2:D575	custom	AND(ISNUMBER(B2),(NOT(OR(NOT(ISERROR(DATEVALUE(B2))), AND(ISNUMBER(B2), LEFT(CELL("format", B2))="D")))))
+اطلاعات لجستیک	E2:E575		
+نیازمندیها و مشکلات	A2:A575	custom	OR(NOT(ISERROR(DATEVALUE(A2))), AND(ISNUMBER(A2), LEFT(CELL("format", A2))="D"))
+نیازمندیها و مشکلات	B2:C575		
