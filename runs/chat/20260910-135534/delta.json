@@ -1,0 +1,22 @@
+{
+  "add_nodes": [],
+  "add_edges": [
+    { "from": "preparation-032-n001", "to": "preparation-032-n011" },
+    { "from": "preparation-032-n011", "to": "preparation-032-n005" },
+    { "from": "preparation-032-n005", "to": "preparation-032-j3" },
+    { "from": "preparation-032-j3", "to": "preparation-032-n009", "label": "تهیه پاستا" },
+    { "from": "preparation-032-n009", "to": "preparation-032-j4" },
+    { "from": "preparation-032-j4", "to": "preparation-032-n010" }
+  ],
+  "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [
+    { "from": "preparation-032-n001", "to": "preparation-032-j3" },
+    { "from": "preparation-032-j3", "to": "preparation-032-n011" },
+    { "from": "preparation-032-n011", "to": "preparation-032-j4" },
+    { "from": "preparation-032-j4", "to": "preparation-032-n005" },
+    { "from": "preparation-032-n005", "to": "preparation-032-n009" },
+    { "from": "preparation-032-n009", "to": "preparation-032-n010" }
+  ],
+  "flag_removed": []
+}
