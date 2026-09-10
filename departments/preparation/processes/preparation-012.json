@@ -13,7 +13,7 @@
     "node": "preparation-032-n010"
   },
   "created_at": "2026-09-04T23:44:44Z",
-  "updated_at": "2026-09-10T12:03:04Z",
+  "updated_at": "2026-09-10T14:09:42Z",
   "idef0": {
     "inputs": [
       "سینه مرغ خام (شنیسل)",
@@ -107,13 +107,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 352.5
+        "x": 8.789655172413788,
+        "y": 179.4244514106583
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -139,13 +141,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 440.0
+        "x": 717.083699059561,
+        "y": 549.2362068965517
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -171,13 +175,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 440.0
+        "x": 447.1531347962383,
+        "y": 527.9564263322884
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -186,10 +192,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 368.5
+        "x": 534.0115987460816,
+        "y": 670.6728840125392
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "preparation-012-n004",
@@ -217,13 +223,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 790.0
+        "x": 697.2225705329154,
+        "y": 706.2995297805643
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -248,13 +256,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 790.0
+        "x": 938.7800940438872,
+        "y": 814.1170846394984
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -280,13 +290,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 790.0
+        "x": 973.2144200626959,
+        "y": 977.3802286357338
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -295,10 +307,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 623,
-        "y": 806.0
+        "x": 806.0061128526645,
+        "y": 1365.9536050158235
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "preparation-012-n007",
@@ -320,13 +332,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1577.5
+        "x": 604.7515673981192,
+        "y": 1530.6844827586208
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -335,10 +349,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 838.8125
+        "x": 1054.9155172413793,
+        "y": 1747.3997052612722
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "preparation-012-n008",
@@ -362,13 +376,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1490.0
+        "x": 870.6847962382443,
+        "y": 1526.8849529780564
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -396,13 +412,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1665.0
+        "x": 1076.38934169279,
+        "y": 1469.2260188087776
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -411,10 +429,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 363,
-        "y": 1593.5
+        "x": 1060.976802507837,
+        "y": 1333.8866771159876
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "preparation-012-n010",
@@ -441,13 +459,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 965.0
+        "x": 243.2539184952978,
+        "y": 780.5752351097179
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -473,13 +493,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 965.0
+        "x": 76.23965517241379,
+        "y": 913.9285266457681
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -507,13 +529,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1140.0
+        "x": 680.1987460815046,
+        "y": 955.5752351097179
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -538,13 +562,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1140.0
+        "x": 660.7242946708463,
+        "y": 1149.9305642633228
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -571,13 +597,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1315.0
+        "x": 427.6786833855799,
+        "y": 947.5691222570534
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -603,13 +631,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1315.0
+        "x": 294.7120689655173,
+        "y": 1241.230094043887
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -618,10 +648,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 363,
-        "y": 1101.3125
+        "x": 188.50579937304082,
+        "y": 1564.0293606039124
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "preparation-012-j6",
@@ -629,10 +659,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 1101.3125
+        "x": 43.4166144200627,
+        "y": 1709.0865774499957
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "preparation-012-n016",
@@ -657,13 +687,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1840.0
+        "x": 276.2695924764891,
+        "y": 1710.9026645768024
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -690,7 +722,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 1840.0
+        "y": 1840
       },
       "layout": "auto",
       "source": {
@@ -722,13 +754,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1840.0
+        "x": 325.1490595611285,
+        "y": 1987.5398119122256
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -737,10 +771,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 1856.0
+        "x": 342.4935736677116,
+        "y": 2114.1946708463947
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "preparation-012-n019",
@@ -765,13 +799,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 2190.0
+        "x": 609.266144200627,
+        "y": 2128.997962382445
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -798,7 +834,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 2365.0
+        "y": 2365
       },
       "layout": "auto",
       "source": {
@@ -812,10 +848,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1143,
-        "y": 2118.5
+        "x": 598.237617554859,
+        "y": 2344.065673981191
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "preparation-012-n021",
@@ -841,13 +877,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 2277.5
+        "x": 808.6507836990595,
+        "y": 2473.273981191223
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -872,13 +910,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 2277.5
+        "x": 799.1068965517242,
+        "y": 2620.813793103448
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -906,13 +946,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 177.5
+        "x": 234.74200626959248,
+        "y": 171.82539184952978
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260908-142238",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -921,10 +963,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 623,
-        "y": 193.5
+        "x": 491.0653605015674,
+        "y": 192.08134796238244
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "preparation-012-n024",
@@ -947,13 +989,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 265.0
+        "x": 716.4384012539185,
+        "y": 47.946238244514106
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260908-142238",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -979,13 +1023,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 265.0
+        "x": 1055.8829153605016,
+        "y": 30.92241379310343
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260908-142238",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -994,10 +1040,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1143,
-        "y": 543.5
+        "x": 1154.3492163009405,
+        "y": 237.07115987460818
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "preparation-012-n026",
@@ -1024,13 +1070,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 527.5
+        "x": 1082.4506269592475,
+        "y": 357.26175548589333
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260908-142238",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1039,10 +1087,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 623,
-        "y": 543.5
+        "x": 1146.4826018808776,
+        "y": 601.6647335423197
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "preparation-012-n027",
@@ -1066,13 +1114,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 615.0
+        "x": 688.71065830721,
+        "y": 339.78150470219435
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260908-142238",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1098,13 +1148,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 615.0
+        "x": 457.0836990595611,
+        "y": 328.432288401254
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260908-142238",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1131,13 +1183,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 2015.0
+        "x": -274.16739811912214,
+        "y": 1580.8924764890282
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260908-142238",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
