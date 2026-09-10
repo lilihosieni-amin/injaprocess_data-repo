@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-10T12:02:58Z",
-  "updated_at": "2026-09-10T13:55:44Z",
+  "updated_at": "2026-09-10T13:58:16Z",
   "idef0": {
     "inputs": [
       "تخته کار آغشته به آرد و نمک از شب قبل",
@@ -233,7 +233,7 @@
       "direction": "split",
       "position": {
         "x": 1143,
-        "y": 806.0
+        "y": 806
       },
       "layout": "auto"
     },
@@ -334,15 +334,16 @@
       },
       "subprocess": "preparation-011",
       "position": {
-        "x": 1080,
-        "y": 90.0
+        "x": 583.1206896551724,
+        "y": 467.4594104783289
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260910-120150",
         "touched_by": [
           "runs/chat/20260910-120150",
-          "runs/chat/20260910-134317"
+          "runs/chat/20260910-134317",
+          "ui-edit"
         ]
       }
     },
@@ -415,9 +416,9 @@
       "direction": "split",
       "position": {
         "x": 883,
-        "y": 237.25
+        "y": 285.82758620689657
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "preparation-032-n011",
