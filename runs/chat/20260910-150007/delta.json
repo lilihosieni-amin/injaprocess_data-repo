@@ -1,0 +1,20 @@
+{
+  "add_nodes": [
+    { "key": "j1", "type": "junction", "junctionType": "XOR", "direction": "split" },
+    { "key": "j2", "type": "junction", "junctionType": "XOR", "direction": "join" }
+  ],
+  "add_edges": [
+    { "from": "preparation-012-j8", "to": "j1" },
+    { "from": "j1", "to": "preparation-012-n027", "label": "در صورت کسری مرینت‌های شب قبل نسبت به سفارش روز" },
+    { "from": "j1", "to": "j2", "label": "در صورت کفایت مرینت‌های شب قبل برای سفارش روز" },
+    { "from": "preparation-012-n028", "to": "j2" },
+    { "from": "j2", "to": "preparation-012-n021" }
+  ],
+  "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [
+    { "from": "preparation-012-j8", "to": "preparation-012-n021" },
+    { "from": "preparation-012-n022", "to": "preparation-012-n027" }
+  ],
+  "flag_removed": []
+}
