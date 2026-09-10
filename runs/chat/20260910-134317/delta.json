@@ -1,0 +1,67 @@
+{
+  "add_nodes": [
+    {
+      "key": "j1",
+      "type": "junction",
+      "junctionType": "AND",
+      "direction": "split"
+    },
+    {
+      "key": "n1",
+      "type": "activity",
+      "label": "زدن سس‌های لاین مرغ طبق رسپی تا پیش از رسیدن مرغ",
+      "description": "سس‌هایی که این لاین می‌زند انواع سس آلفردو از جمله سس آلفردو پاستا، سس قارچ، و سس بیف یا رست‌بیف است که همان آلفردو با شکلی دیگر است؛ سس استیک هم به این لاین نسبت داده شده و تصریح شده که بقیه سس‌های مجموعه کار این لاین نیست. مقدار موردنیاز هر سس از لیست درخواست روزانه انبار می‌آید، مثلاً شش کیلو سس آلفردو. سس‌ها طبق رسپی مکتوب و تفکیک‌شده‌ای زده می‌شود که به پرسنل تحویل داده شده است و باید طبق اصول و رویه خودش انجام شود، نه یک گرم بالا نه یک گرم پایین. این کار از ابتدای شیفت و تا پیش از رسیدن مرغ که حدود ظهر است انجام می‌شود.",
+      "actor": "مسئول لاین مرغ (تخته‌کار)",
+      "icom": {
+        "inputs": ["مواد اولیه سس‌های تحویل‌گرفته‌شده از انبار"],
+        "controls": [
+          "رسپی مکتوب و تفکیک‌شده سس‌های مجموعه",
+          "لیست درخواست روزانه انبار به تفکیک آشپزخانه مرکزی و شعبه ناهارخوران"
+        ],
+        "outputs": ["سس‌های آلفردو، قارچ و بیف آماده‌شده"],
+        "mechanisms": ["مسئول لاین مرغ (تخته‌کار)", "میکسر", "ترازو"]
+      },
+      "subprocess": null
+    },
+    {
+      "key": "j2",
+      "type": "junction",
+      "junctionType": "AND",
+      "direction": "join"
+    }
+  ],
+  "add_edges": [
+    { "from": "preparation-032-n001", "to": "preparation-032-n005" },
+    { "from": "preparation-032-n005", "to": "j1" },
+    { "from": "j1", "to": "preparation-032-n009", "label": "تهیه پاستا" },
+    { "from": "j1", "to": "n1", "label": "زدن سس‌ها" },
+    { "from": "j1", "to": "preparation-032-n006", "label": "سوپ شیر" },
+    { "from": "preparation-032-n009", "to": "j2" },
+    { "from": "n1", "to": "j2" },
+    { "from": "preparation-032-j2", "to": "j2" },
+    { "from": "j2", "to": "preparation-032-n010" }
+  ],
+  "enrich_nodes": [],
+  "revise_nodes": [
+    {
+      "id": "preparation-032-n009",
+      "set": {
+        "label": "پخت، بسته‌بندی، وزن‌کشی و لیبل‌زنی پاستا (پنه)"
+      }
+    }
+  ],
+  "remove_edges": [
+    { "from": "preparation-032-n001", "to": "preparation-032-n002" },
+    { "from": "preparation-032-n002", "to": "preparation-032-n003" },
+    { "from": "preparation-032-n003", "to": "preparation-032-n004" },
+    { "from": "preparation-032-n004", "to": "preparation-032-n005" },
+    { "from": "preparation-032-n005", "to": "preparation-032-n006" },
+    { "from": "preparation-032-j2", "to": "preparation-032-n009" },
+    { "from": "preparation-032-n009", "to": "preparation-032-n010" }
+  ],
+  "flag_removed": [
+    { "id": "preparation-032-n002" },
+    { "id": "preparation-032-n003" },
+    { "id": "preparation-032-n004" }
+  ]
+}
