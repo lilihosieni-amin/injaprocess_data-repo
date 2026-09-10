@@ -13,7 +13,7 @@
     "node": "preparation-032-n010"
   },
   "created_at": "2026-09-04T23:44:44Z",
-  "updated_at": "2026-09-10T15:06:17Z",
+  "updated_at": "2026-09-10T15:09:27Z",
   "idef0": {
     "inputs": [
       "سینه مرغ خام (شنیسل)",
@@ -792,8 +792,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 911.9883664228491,
-        "y": 2179.868332752815
+        "x": 943.817070126553,
+        "y": 2195.300431518247
       },
       "layout": "manual",
       "source": {
@@ -826,8 +826,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 468.90432098765433,
-        "y": 2196.9552469135806
+        "x": 471.452160493827,
+        "y": 2175.623456790124
       },
       "layout": "manual",
       "source": {
@@ -872,8 +872,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 718.6507836990595,
-        "y": 2463.773981191223
+        "x": 907.6939935756028,
+        "y": 2717.4391046480123
       },
       "layout": "manual",
       "source": {
@@ -905,8 +905,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 728.6068965517242,
-        "y": 2603.313793103448
+        "x": 918.6146126011068,
+        "y": 2867.5884844614734
       },
       "layout": "manual",
       "source": {
@@ -1123,8 +1123,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 735.7106583072098,
-        "y": 2735.781224957728
+        "x": 392.9051027516542,
+        "y": 2520.400052118223
       },
       "layout": "manual",
       "source": {
@@ -1157,8 +1157,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1548.7503657262278,
-        "y": 2425.862528714466
+        "x": 593.8892546151166,
+        "y": 2675.6696274798987
       },
       "layout": "manual",
       "source": {
@@ -1244,10 +1244,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 1768.5
+        "x": 683.6589506172837,
+        "y": 2457.030864197531
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "preparation-012-j13",
@@ -1255,10 +1255,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 623,
-        "y": 2118.5
+        "x": 820.7237654320988,
+        "y": 2596.171682098766
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "preparation-012-n031",
@@ -1283,13 +1283,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 2365.0
+        "x": 890.5756172839506,
+        "y": 3006.1300154320984
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260910-150601",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
