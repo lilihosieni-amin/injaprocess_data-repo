@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-04T23:44:48Z",
-  "updated_at": "2026-09-10T12:15:23Z",
+  "updated_at": "2026-09-10T13:34:39Z",
   "idef0": {
     "inputs": [
       "مواد اولیه سس (خامه، شیر، سیر، روغن، فلفل، سس مایونز، فلفل دلمه، خیارشور، ادویه‌ها)",
@@ -95,7 +95,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -125,7 +125,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -155,7 +155,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -183,7 +183,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 1665.0
+        "y": 1665
       },
       "layout": "auto",
       "source": {
@@ -217,7 +217,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 1840.0
+        "y": 1840
       },
       "layout": "auto",
       "source": {
@@ -248,7 +248,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 2015.0
+        "y": 2015
       },
       "layout": "auto",
       "source": {
@@ -281,7 +281,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 2190.0
+        "y": 2190
       },
       "layout": "auto",
       "source": {
@@ -318,7 +318,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -350,7 +350,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -379,7 +379,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -412,7 +412,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -508,13 +508,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 615.0
+        "x": 836.2037037037037,
+        "y": 838.3796296296298
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -538,13 +540,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 790.0
+        "x": 860.5092592592592,
+        "y": 607.1296296296296
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -565,13 +569,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 790.0
+        "x": 1095.0462962962963,
+        "y": 621.0185185185185
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -596,7 +602,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 1140.0
+        "y": 1140
       },
       "layout": "auto",
       "source": {
@@ -623,7 +629,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 1140.0
+        "y": 1140
       },
       "layout": "auto",
       "source": {
@@ -655,7 +661,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1140.0
+        "y": 1140
       },
       "layout": "auto",
       "source": {
@@ -685,7 +691,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 1140.0
+        "y": 1140
       },
       "layout": "auto",
       "source": {
@@ -775,7 +781,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 1315.0
+        "y": 1315
       },
       "layout": "auto",
       "source": {
@@ -804,7 +810,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 1490.0
+        "y": 1490
       },
       "layout": "auto",
       "source": {
@@ -877,7 +883,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
