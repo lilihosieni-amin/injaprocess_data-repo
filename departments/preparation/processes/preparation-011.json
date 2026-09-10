@@ -13,7 +13,7 @@
     "node": "preparation-032-n009"
   },
   "created_at": "2026-09-04T23:44:44Z",
-  "updated_at": "2026-09-10T12:03:04Z",
+  "updated_at": "2026-09-10T14:02:55Z",
   "idef0": {
     "inputs": [
       "پنه خام در بسته‌های ۵۰۰ گرمی",
@@ -39,7 +39,7 @@
     {
       "id": "preparation-011-n001",
       "type": "activity",
-      "label": "دریافت نظریه (سفارش) روزانه انبار و مشخص شدن مقدار درخواستی پنه",
+      "label": "بررسی سفارش روزانه انبار و مشخص شدن مقدار درخواستی پنه",
       "description": "انبار هر روز مقدار موردنیاز هر قلم را به تفکیک شعبه مرکزی و شعبه در فرم نظریه برای آماده‌سازی می‌نویسد و آماده‌سازی طبق همین نظریه جلو می‌رود. تولید پاستا چیز ثابتی نیست و مقدار آن هر روز بر اساس نیاز تعیین می‌شود؛ مثلاً «به وزنی که خواستن، پنج بسته یا شش بسته».",
       "actor": "سرپرست آماده‌سازی",
       "icom": {
@@ -65,7 +65,9 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -97,13 +99,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 90.0
+        "x": 586.0086206896551,
+        "y": 69.90242946708463
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -128,7 +132,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -157,7 +161,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -190,7 +194,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -222,7 +226,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -253,7 +257,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -282,7 +286,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -299,7 +303,7 @@
     {
       "from": "preparation-011-j1",
       "to": "preparation-011-n002",
-      "label": "در صورت نبود درخواست پاستا در نظریه انبار"
+      "label": "در صورت نبود درخواست پاستا در  انبار"
     },
     {
       "from": "preparation-011-j1",
