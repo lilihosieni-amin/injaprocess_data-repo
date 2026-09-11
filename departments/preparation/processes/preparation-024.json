@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-04T23:44:49Z",
-  "updated_at": "2026-09-11T10:09:00Z",
+  "updated_at": "2026-09-11T10:13:41Z",
   "idef0": {
     "inputs": [
       "مواد اولیه ناهار و شام پرسنل خروج‌شده از انبار",
@@ -166,13 +166,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 265
+        "x": 1070,
+        "y": 259
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -193,13 +195,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 615
+        "x": 1034,
+        "y": 441
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -247,7 +251,7 @@
     {
       "id": "preparation-024-n007",
       "type": "activity",
-      "label": "قید کردن عنوان «شام پرسنل» روی اقلام اختصاصی پرسنل",
+      "label": "قید کردن عنوان «شام و نهار پرسنل» روی اقلام اختصاصی پرسنل",
       "description": "روی این اقلام «شام پرسنل» قید می‌شود که کسی از آن‌ها برای تولید کارهای رستوران استفاده نکند. کنار فیله خام هم که در زیر صفر نگهداری می‌شود فقط برای شام و ناهار پرسنل استفاده می‌شود.",
       "actor": "آماده‌سازی",
       "icom": {
@@ -271,7 +275,8 @@
       "source": {
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
-          "runs/chat/20260910-153112"
+          "runs/chat/20260910-153112",
+          "ui-edit"
         ]
       }
     },
@@ -843,8 +848,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 748.5040000000001,
-        "y": 1936.4426666666664
+        "x": 1058.5040000000001,
+        "y": 1174.4426666666664
       },
       "layout": "manual",
       "source": {
@@ -879,8 +884,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 810,
-        "y": 1644
+        "x": 790,
+        "y": 1208
       },
       "layout": "manual",
       "source": {
@@ -912,8 +917,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 586,
-        "y": 1646
+        "x": 504,
+        "y": 1206
       },
       "layout": "manual",
       "source": {
@@ -943,8 +948,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 292,
-        "y": 1652
+        "x": 798,
+        "y": 822
       },
       "layout": "manual",
       "source": {
@@ -977,8 +982,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 292,
-        "y": 1840
+        "x": 1048,
+        "y": 816
       },
       "layout": "manual",
       "source": {
@@ -1007,8 +1012,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 286,
-        "y": 1989
+        "x": 1050,
+        "y": 987
       },
       "layout": "manual",
       "source": {
