@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-04T23:44:50Z",
-  "updated_at": "2026-09-04T23:44:50Z",
+  "updated_at": "2026-09-11T10:16:09Z",
   "idef0": {
     "inputs": [
       "کار پایان‌نیافته لاین‌های آماده‌سازی در پایان شیفت",
@@ -126,13 +126,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 265.0
+        "x": 840.2840002279983,
+        "y": 61.19409294725638
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -155,13 +157,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 265.0
+        "x": 1078.0681904544763,
+        "y": 190.62533249734003
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -170,10 +174,10 @@
       "junctionType": "AND",
       "direction": "split",
       "position": {
-        "x": 1143,
-        "y": 631.0
+        "x": 1114.0228568171453,
+        "y": 550.8299038607692
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "preparation-028-n005",
@@ -255,13 +259,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 658.75
+        "x": 350.22704818361456,
+        "y": 663.5795238638091
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -283,13 +289,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 658.75
+        "x": 389.6575277397782,
+        "y": 849.99914500684
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -311,13 +319,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1008.75
+        "x": 391.58933728530184,
+        "y": 983.6364759081928
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -326,10 +336,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
-        "y": 1024.75
+        "x": 603.5102884176927,
+        "y": 1028.6136190910474
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "preparation-028-n010",
@@ -351,13 +361,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 921.25
+        "x": 797.6125740994073,
+        "y": 903.8637140902873
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -378,13 +390,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1096.25
+        "x": 823.6920029639763,
+        "y": 1105.9090477276181
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -502,13 +516,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 833.75
+        "x": 31.306857045143644,
+        "y": 639.6031406748746
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -532,13 +548,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 833.75
+        "x": 33.410282717738184,
+        "y": 784.4888565891473
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
