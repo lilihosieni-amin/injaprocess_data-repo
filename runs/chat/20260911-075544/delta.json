@@ -1,0 +1,134 @@
+{
+  "add_nodes": [
+    {
+      "key": "n1",
+      "type": "activity",
+      "label": "پخت و آماده‌سازی غذای روز پرسنل در طول روز توسط آماده‌سازی",
+      "description": "غذای هر روز طبق رسپی و گراماژ همان چک‌لیست دوهفته‌ای آماده می‌شود. اقلامی که به آماده‌سازی پیش از روز مصرف نیاز دارند از روز قبل تحویل گرفته می‌شوند؛ در روزهای خوراک لوبیا، لوبیا روز قبل از انبار تحویل گرفته و خیس می‌شود و صبح روز بعد در دیگ بار گذاشته می‌شود تا پیش از غروب آماده باشد. اگر غذای شام مرغ مرینتی باشد، مرغ صبح به مسئول مرینت تحویل داده می‌شود تا برای شام همان شب مرینت شود و پس از مرینت با عنوان «شام پرسنل» در یخچال آماده‌سازی نگهداری می‌شود و انبار آن را نمی‌برد. در روزهای ساندویچی مانند مرغ میلانو، آماده‌سازی همه اقلام را از پیش مهیا می‌کند و تنها خیارشور و گوجه و پخت مرغ برای آشپزخانه باقی می‌ماند.",
+      "actor": "آماده‌سازی",
+      "icom": {
+        "inputs": [
+          "مواد اولیه ناهار و شام پرسنل",
+          "لوبیای تحویل‌گرفته‌شده از روز قبل",
+          "مرغ خام شام پرسنل"
+        ],
+        "controls": [
+          "چک‌لیست دوهفته‌ای غذای پرسنل",
+          "رسپی و گراماژ غذای هر روز"
+        ],
+        "outputs": [
+          "غذای آماده‌شده شام و ناهار پرسنل",
+          "مرغ مرینت‌شده با عنوان شام پرسنل"
+        ],
+        "mechanisms": [
+          "آماده‌سازی",
+          "مسئول مرینت",
+          "دیگ",
+          "یخچال آماده‌سازی"
+        ]
+      },
+      "subprocess": null
+    },
+    {
+      "key": "n2",
+      "type": "activity",
+      "label": "تکمیل و پخت نهایی غذای روز پرسنل در آشپزخانه در روزهای ساندویچی",
+      "description": "در روزهای ساندویچی، آشپزخانه خیارشور و گوجه را از آماده‌سازی تحویل می‌گیرد، خرد می‌کند، در تاپینگ می‌چیند و سپس در ظرف سلفون‌کشیده به یخچال آماده‌سازی بازمی‌گرداند. پخت مرغ از ساعت ۱۰:۳۰ آغاز می‌شود، مرغ سس‌مالی می‌شود و ساندویچ‌گیری از ساعت ۱۱:۳۰ انجام می‌گیرد.",
+      "actor": "آشپزخانه",
+      "icom": {
+        "inputs": [
+          "خیارشور",
+          "گوجه",
+          "مرغ میلانو",
+          "نان پرسنلی"
+        ],
+        "controls": [
+          "شروع پخت مرغ در ساعت ۱۰:۳۰",
+          "شروع ساندویچ‌گیری در ساعت ۱۱:۳۰"
+        ],
+        "outputs": [
+          "ساندویچ آماده پرسنل",
+          "ظرف سلفون‌کشیده خیارشور و گوجه در یخچال آماده‌سازی"
+        ],
+        "mechanisms": [
+          "آشپزخانه",
+          "تاپینگ",
+          "یخچال آماده‌سازی"
+        ]
+      },
+      "subprocess": null
+    },
+    {
+      "key": "j1",
+      "type": "junction",
+      "junctionType": "AND",
+      "direction": "split"
+    }
+  ],
+  "add_edges": [
+    { "from": "preparation-024-n007", "to": "n1" },
+    { "from": "n1", "to": "n2" },
+    { "from": "n2", "to": "j1" },
+    { "from": "j1", "to": "preparation-024-n024" },
+    { "from": "j1", "to": "preparation-024-n027" }
+  ],
+  "enrich_nodes": [],
+  "revise_nodes": [
+    {
+      "id": "preparation-024-n024",
+      "set": {
+        "label": "کنار گذاشتن سهم ناهار پرسنل توسط آشپزخانه به تعداد نفرات و وزن طبق چک‌لیست"
+      }
+    },
+    {
+      "id": "preparation-024-n027",
+      "set": {
+        "description": "شام پرسنل توسط شیفت شب آشپزخانه آماده می‌شود؛ غذایی که آماده‌سازی در طول روز پخته است — مانند خوراک لوبیا — در آشپزخانه گرم می‌شود."
+      }
+    }
+  ],
+  "remove_edges": [
+    { "from": "preparation-024-n007", "to": "preparation-024-j3" },
+    { "from": "preparation-024-j3", "to": "preparation-024-n008" },
+    { "from": "preparation-024-j3", "to": "preparation-024-n012" },
+    { "from": "preparation-024-j3", "to": "preparation-024-n015" },
+    { "from": "preparation-024-n008", "to": "preparation-024-n009" },
+    { "from": "preparation-024-n009", "to": "preparation-024-n010" },
+    { "from": "preparation-024-n010", "to": "preparation-024-n011" },
+    { "from": "preparation-024-n011", "to": "preparation-024-j4" },
+    { "from": "preparation-024-n012", "to": "preparation-024-n013" },
+    { "from": "preparation-024-n013", "to": "preparation-024-n014" },
+    { "from": "preparation-024-n014", "to": "preparation-024-j4" },
+    { "from": "preparation-024-n015", "to": "preparation-024-n016" },
+    { "from": "preparation-024-n016", "to": "preparation-024-n017" },
+    { "from": "preparation-024-n017", "to": "preparation-024-n018" },
+    { "from": "preparation-024-n018", "to": "preparation-024-n019" },
+    { "from": "preparation-024-n019", "to": "preparation-024-n020" },
+    { "from": "preparation-024-n020", "to": "preparation-024-n021" },
+    { "from": "preparation-024-n021", "to": "preparation-024-n022" },
+    { "from": "preparation-024-n022", "to": "preparation-024-n023" },
+    { "from": "preparation-024-n023", "to": "preparation-024-j4" },
+    { "from": "preparation-024-j4", "to": "preparation-024-n024" },
+    { "from": "preparation-024-n026", "to": "preparation-024-n027" }
+  ],
+  "flag_removed": [
+    { "id": "preparation-024-j3" },
+    { "id": "preparation-024-n008" },
+    { "id": "preparation-024-n009" },
+    { "id": "preparation-024-n010" },
+    { "id": "preparation-024-n011" },
+    { "id": "preparation-024-n012" },
+    { "id": "preparation-024-n013" },
+    { "id": "preparation-024-n014" },
+    { "id": "preparation-024-n015" },
+    { "id": "preparation-024-n016" },
+    { "id": "preparation-024-n017" },
+    { "id": "preparation-024-n018" },
+    { "id": "preparation-024-n019" },
+    { "id": "preparation-024-n020" },
+    { "id": "preparation-024-n021" },
+    { "id": "preparation-024-n022" },
+    { "id": "preparation-024-n023" },
+    { "id": "preparation-024-j4" }
+  ]
+}
