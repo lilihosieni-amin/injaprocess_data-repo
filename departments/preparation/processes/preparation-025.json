@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-04T23:44:49Z",
-  "updated_at": "2026-09-11T08:09:14Z",
+  "updated_at": "2026-09-11T08:10:37Z",
   "idef0": {
     "inputs": [
       "محصولات و نیم‌ساخت‌های تولیدشده در لاین‌های آماده‌سازی",
@@ -167,7 +167,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -196,7 +196,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 615.0
+        "y": 615
       },
       "layout": "auto",
       "source": {
@@ -280,7 +280,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 615.0
+        "y": 615
       },
       "layout": "auto",
       "source": {
@@ -294,8 +294,8 @@
       "id": "preparation-025-n008",
       "type": "activity",
       "label": "پخت نمونه برگر توسط سرپرست آشپزخانه",
-      "description": "سرپرست آشپزخانه یک عدد برگر را می‌گیرد و برای تست می‌پزد.",
-      "actor": "سرپرست آشپزخانه",
+      "description": "پرسنل آشپزخانه یک عدد برگر را می‌گیرد و برای تست می‌پزد.",
+      "actor": "پرسنل آشپزخانه",
       "icom": {
         "inputs": [
           "نمونه برگر خام"
@@ -311,13 +311,14 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 965.0
+        "y": 965
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
-          "runs/chat/20260911-084500"
+          "runs/chat/20260911-084500",
+          "ui-edit"
         ]
       }
     },
@@ -342,7 +343,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 965.0
+        "y": 965
       },
       "layout": "auto",
       "source": {
@@ -374,7 +375,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 965.0
+        "y": 965
       },
       "layout": "auto",
       "source": {
@@ -487,7 +488,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1140.0
+        "y": 1140
       },
       "layout": "auto",
       "source": {
@@ -516,7 +517,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1315.0
+        "y": 1315
       },
       "layout": "auto",
       "source": {
@@ -545,7 +546,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 1315.0
+        "y": 1315
       },
       "layout": "auto",
       "source": {
@@ -574,7 +575,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 1315.0
+        "y": 1315
       },
       "layout": "auto",
       "source": {
@@ -605,7 +606,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 1490.0
+        "y": 1490
       },
       "layout": "auto",
       "source": {
