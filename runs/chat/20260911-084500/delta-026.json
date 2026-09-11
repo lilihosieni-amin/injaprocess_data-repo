@@ -1,0 +1,38 @@
+{
+  "add_nodes": [],
+  "add_edges": [
+    { "from": "preparation-026-n014", "to": "preparation-026-n016" }
+  ],
+  "enrich_nodes": [],
+  "revise_nodes": [
+    {
+      "id": "preparation-026-n016",
+      "set": {
+        "icom": {
+          "inputs": [
+            "فرم تبدیل و نیم‌ساخت کنترل‌شده",
+            "ثبت ورودی و خروجی انبار"
+          ],
+          "controls": [
+            "الزام هم‌خوانی ورودی و خروجی آماده‌سازی با انبار",
+            "گزارش‌های انبارگردانی"
+          ],
+          "outputs": [
+            "ورودی و خروجی تطبیق‌داده‌شده"
+          ],
+          "mechanisms": [
+            "سرپرست آماده‌سازی",
+            "انبار"
+          ]
+        }
+      }
+    }
+  ],
+  "remove_edges": [
+    { "from": "preparation-026-n014", "to": "preparation-026-n015" },
+    { "from": "preparation-026-n015", "to": "preparation-026-n016" }
+  ],
+  "flag_removed": [
+    { "id": "preparation-026-n015" }
+  ]
+}
