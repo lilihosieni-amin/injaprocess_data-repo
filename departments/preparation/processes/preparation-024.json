@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-04T23:44:49Z",
-  "updated_at": "2026-09-11T09:17:34Z",
+  "updated_at": "2026-09-11T10:07:14Z",
   "idef0": {
     "inputs": [
       "مواد اولیه ناهار و شام پرسنل خروج‌شده از انبار",
@@ -843,8 +843,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1063,
-        "y": 1604.6666666666663
+        "x": 748.5040000000001,
+        "y": 1936.4426666666664
       },
       "layout": "manual",
       "source": {
@@ -988,7 +988,7 @@
     {
       "id": "preparation-024-n029",
       "type": "activity",
-      "label": "بیرون دادن شام به پرسنل",
+      "label": "تحویل شام به پرسنل",
       "description": "",
       "actor": "شیفت شب آشپزخانه",
       "icom": {
@@ -1039,7 +1039,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 790.0
+        "y": 790
       },
       "layout": "auto",
       "source": {
@@ -1079,7 +1079,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 790.0
+        "y": 790
       },
       "layout": "auto",
       "source": {
@@ -1158,7 +1158,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 790.0
+        "y": 790
       },
       "layout": "auto",
       "source": {
