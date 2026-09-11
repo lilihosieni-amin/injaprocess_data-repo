@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-04T23:44:50Z",
-  "updated_at": "2026-09-10T12:16:32Z",
+  "updated_at": "2026-09-11T07:57:25Z",
   "idef0": {
     "inputs": [
       "مواد اولیه تحویلی از انبار به هر لاین",
@@ -67,7 +67,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -97,7 +97,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -127,7 +127,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -157,7 +157,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -172,7 +172,7 @@
       "direction": "split",
       "position": {
         "x": 1143,
-        "y": 106.0
+        "y": 106
       },
       "layout": "auto"
     },
@@ -200,7 +200,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -232,7 +232,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -261,13 +261,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 265.0
+        "x": 845.7736738106095,
+        "y": 273.8387292901657
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -403,13 +405,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 965.0
+        "x": 1081.1048411612708,
+        "y": 979.3629350965193
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -436,7 +440,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 965.0
+        "y": 965
       },
       "layout": "auto",
       "source": {
@@ -468,7 +472,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 965.0
+        "y": 965
       },
       "layout": "auto",
       "source": {
@@ -500,7 +504,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 965.0
+        "y": 965
       },
       "layout": "auto",
       "source": {
@@ -533,7 +537,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 1140.0
+        "y": 1140
       },
       "layout": "auto",
       "source": {
@@ -568,7 +572,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 1140.0
+        "y": 1140
       },
       "layout": "auto",
       "source": {
@@ -601,7 +605,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1140.0
+        "y": 1140
       },
       "layout": "auto",
       "source": {
@@ -701,13 +705,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 790.0
+        "x": 1112.0403936768505,
+        "y": 690.5642954856362
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260910-121204",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -731,7 +737,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 965.0
+        "y": 965
       },
       "layout": "auto",
       "source": {
