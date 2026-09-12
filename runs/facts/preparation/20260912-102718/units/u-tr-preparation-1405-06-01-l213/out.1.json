@@ -1,0 +1,368 @@
+{
+  "schema_version": 1,
+  "unit": "u-tr-preparation-1405-06-01-l213",
+  "attempt": 1,
+  "decisions": [],
+  "new": [
+    {
+      "kind": "record",
+      "key": "daftar_ruzane_line",
+      "title": "دفتر روزانهٔ ثبت هر لاین",
+      "statement": "دفتر دست‌نویسی که مسئول هر لاین وزن و تعداد اقلام تحویل‌گرفته‌شده از انبار را هر روز در آن ثبت می‌کند. در پایان روز به سرپرست تحویل داده می‌شود و مبنای سنجش بازدهی همان لاین است.",
+      "aliases": ["دفتر لاین"],
+      "processes": [
+        {"process": "preparation-004", "node": "preparation-004-n013", "quote": "توی دفتر دارم می‌نویسم هر روز یادداشت می‌کنم"},
+        {"process": "preparation-012", "node": "preparation-012-n026", "quote": "ثبت وزن و تعداد مرغ تحویل‌گرفته‌شده در دفتر مرغ"},
+        {"process": "preparation-020", "node": "preparation-020-n002", "quote": "ثبت آن در دفتر به‌عنوان ورودی آماده‌سازی"}
+      ],
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "لاین مربوطه در آماده‌سازی",
+          "holder": "مسئول لاین"
+        },
+        "cadence": "daily",
+        "grain": "هر قلم تحویل‌گرفته‌شده در هر روز",
+        "filled_by": "مسئول لاین",
+        "approved_by": "سرپرست آماده‌سازی",
+        "blank_master": false,
+        "fields": [
+          {"key": "tarikh", "title": "تاریخ", "type": "date"},
+          {"key": "qalam", "title": "نام قلم", "type": "string", "description": "نام مادهٔ اولیه یا محصولی که آن روز تحویل گرفته شده است."},
+          {"key": "vazn", "title": "وزن", "type": "number", "unit": "kg", "description": "وزن قلم تحویل‌گرفته‌شده بر حسب کیلوگرم."},
+          {"key": "tedad", "title": "تعداد", "type": "integer", "description": "تعداد بسته یا ظرف تحویل‌گرفته‌شده، برای اقلامی که شمارشی تحویل می‌شوند."}
+        ],
+        "primaryKey": ["tarikh", "qalam"]
+      }
+    },
+    {
+      "kind": "record",
+      "key": "cheklist_ghazaye_porsonel",
+      "title": "چک‌لیست دوهفته‌ای غذای پرسنل",
+      "statement": "فهرست از پیش تعیین‌شده‌ای که برای هر روز از یک دورهٔ دوهفته‌ای، غذای ناهار و شام پرسنل، تعداد نفرات، گراماژ هر نفر و وزن کل مادهٔ اولیه را مشخص می‌کند. پس از پایان دو هفته همان دوره از ابتدا تکرار می‌شود و تا آن زمان غذای تکراری وجود ندارد. انبار بر پایهٔ آن هر روز مواد را خروج می‌زند و آماده‌سازی سهم ناهار روز بعد را کنار می‌گذارد.",
+      "aliases": ["برنامه دوهفته‌ای غذای پرسنل"],
+      "processes": [
+        {"process": "preparation-024", "node": "preparation-024-n001", "quote": "چک‌لیست دارن از قبل تعیین شده برای هر روز"},
+        {"process": "preparation-024", "node": "preparation-024-n024", "quote": "یکشنبه یازده نفر ناهار. دو کیلو و دویست"}
+      ],
+      "data": {
+        "medium": "paper",
+        "role": "reference",
+        "location": {
+          "kept_at": "انبار و آماده‌سازی",
+          "holder": "سرپرست آماده‌سازی"
+        },
+        "cadence": null,
+        "grain": "هر روز از دورهٔ دوهفته‌ای",
+        "filled_by": null,
+        "blank_master": false,
+        "fields": [
+          {"key": "ruz", "title": "روز هفته", "type": "string"},
+          {"key": "ghaza", "title": "نام غذا", "type": "string", "description": "غذای ناهار یا شام پرسنل که برای آن روز در نظر گرفته شده است."},
+          {"key": "tedad_nafarat", "title": "تعداد نفرات", "type": "integer", "description": "تعداد نفراتی که آن روز غذا می‌خورند؛ در روزهای پرترددتر بیشتر است."},
+          {"key": "geramaj_har_nafar", "title": "گراماژ هر نفر", "type": "number", "unit": "g", "description": "وزن هر پرس بر حسب گرم که برای آن غذا تعیین شده است."},
+          {"key": "vazn_kol", "title": "وزن کل مادهٔ اولیه", "type": "number", "unit": "kg", "description": "وزن کل مادهٔ اولیهٔ لازم آن روز بر حسب کیلوگرم."}
+        ]
+      }
+    },
+    {
+      "kind": "item",
+      "key": "salad_kentaki",
+      "title": "سالاد کنتاکی",
+      "statement": "سالادی از کلم، هویج، کشمش و سس کنتاکی که در آماده‌سازی تولید و در ظرف‌های تک‌نفری وکیوم می‌شود. واحد شمارش آن پرس است و هر پرس نود گرم سالاد خالص دارد؛ به تعداد سفارش کانتر تحویل می‌شود.",
+      "processes": [
+        {"process": "preparation-009", "node": "preparation-009-n002", "quote": "وزن‌گیری کلم بر اساس تعداد سالاد کنتاکی سفارش‌شده"},
+        {"process": "preparation-009", "node": "preparation-009-n016", "quote": "وکیوم کردن پلاستیک سالاد زیر دستگاه پرس"}
+      ],
+      "data": {
+        "category": "product",
+        "unit": "portion",
+        "unit_raw": "پرس",
+        "pack": {"size": 90, "unit": "g"},
+        "state": "prepared",
+        "code_absent": true
+      }
+    },
+    {
+      "kind": "item",
+      "key": "qarch_slice_shode",
+      "title": "قارچ اسلایس‌شده",
+      "statement": "قارچ تازه‌ای که در آماده‌سازی با دستگاه اسلایسر برش می‌خورد و بدون شستشو در ظرف‌های پلاستیکی سفید دو کیلویی بسته‌بندی و لیبل می‌شود. مقدار آن با وزن بر حسب کیلوگرم شمرده می‌شود و هر ظرف وزن ثابت دو کیلوگرم دارد.",
+      "processes": [
+        {"process": "preparation-008", "node": "preparation-008-n008", "quote": "دو کیلو جدا می‌کنیم، لیبل می‌خوره، وزن‌کشی می‌شه، فیکس دو کیلو"},
+        {"process": "preparation-008", "node": "preparation-008-n013", "quote": "قرار دادن ظرف‌های قارچ در یخچال"}
+      ],
+      "data": {
+        "category": "product",
+        "unit": "kg",
+        "unit_raw": "کیلو",
+        "pack": {"size": 2, "unit": "kg"},
+        "state": "prepared",
+        "code_absent": true
+      }
+    },
+    {
+      "kind": "item",
+      "key": "felfel_dolmei_slice_shode",
+      "title": "فلفل دلمه‌ای اسلایس‌شده",
+      "statement": "فلفل دلمه‌ای شسته و تخم‌گرفته که با دستگاه اسلایسر به قطعات نیم‌سانتی برش می‌خورد و یک کیلو یک کیلو در ظرف‌های یک‌بار مصرف بسته‌بندی می‌شود. ظرف زیرین سوراخ می‌شود تا آب آن جدا بماند و مقدار آن با وزن بر حسب کیلوگرم شمرده می‌شود.",
+      "processes": [
+        {"process": "preparation-007", "node": "preparation-007-n009", "quote": "اسلایس کردن فلفل دلمه‌ای با دستگاه اسلایسر مربعی نیم‌سانتی"},
+        {"process": "preparation-007", "node": "preparation-007-n013", "quote": "قرار دادن پایه ظرف برش‌خورده هم‌سایز در یک ظرف"}
+      ],
+      "data": {
+        "category": "product",
+        "unit": "kg",
+        "unit_raw": "کیلو",
+        "pack": {"size": 1, "unit": "kg"},
+        "state": "prepared",
+        "code_absent": true
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "saqf_zayeat_amadesazi",
+      "title": "سقف مجاز ضایعات آماده‌سازی",
+      "statement": "نسبت ضایعات هر قلم در آماده‌سازی نباید از چهل درصد وزن ورودی آن بیشتر شود. این سقف مبنای پذیرش بازدهی لاین است.",
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "saqf_zayeat",
+            "title": "سقف مجاز ضایعات",
+            "unit": "percent",
+            "value": 40,
+            "nature": "limit"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "vazn_pors_salad_kentaki",
+      "title": "وزن هر پرس سالاد کنتاکی",
+      "statement": "هر پرس سالاد کنتاکی نود گرم سالاد خالص دارد و وزن آن همراه با ظرف بین نود و پنج تا نود و هفت گرم است. توزین هنگام پر کردن هر ظرف و پیش از وکیوم انجام می‌شود.",
+      "processes": [
+        {"process": "preparation-009", "node": "preparation-009-n016", "quote": "به ازای هر ظرف نود گرم"}
+      ],
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "vazn_khales",
+            "title": "وزن خالص هر پرس",
+            "unit": "g",
+            "value": 90,
+            "nature": "standard",
+            "per": "salad_kentaki"
+          },
+          {
+            "key": "vazn_ba_zarf",
+            "title": "وزن هر پرس با ظرف",
+            "unit": "g",
+            "range": {"min": 95, "max": 97},
+            "nature": "standard",
+            "per": "salad_kentaki"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "omr_mofid_salad_kentaki",
+      "title": "عمر مفید سالاد کنتاکی",
+      "statement": "عمر مفید سالاد کنتاکی پس از تولید دو تا سه ساعت است و پس از آن بو می‌گیرد و قابل استفاده نیست. به همین دلیل در تولید آن از شستشوی مواد و افزودن آب پرهیز می‌شود.",
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "omr_mofid",
+            "title": "عمر مفید",
+            "unit": "hour",
+            "range": {"min": 2, "max": 3},
+            "nature": "limit",
+            "per": "salad_kentaki"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "vazn_mavad_ghazaye_porsonel",
+      "title": "وزن مادهٔ اولیهٔ غذای پرسنل در هر روز",
+      "statement": "وزن مادهٔ اولیهٔ لازم برای غذای پرسنل در هر روز از ضرب گراماژ هر نفر در تعداد نفرات همان روز به دست می‌آید. چون تعداد نفرات در روزهای مختلف هفته یکسان نیست، وزن روزانه نیز تغییر می‌کند.",
+      "processes": [
+        {"process": "preparation-024", "node": "preparation-024-n024", "quote": "به ازای هر نفر وزن‌کشی شده"}
+      ],
+      "data": {
+        "lang": "feel",
+        "expr": "vazn_kol = geramaj_har_nafar * tedad_nafarat / 1000",
+        "inputs": [
+          {"key": "geramaj_har_nafar", "title": "گراماژ هر نفر", "unit": "g", "from": null},
+          {"key": "tedad_nafarat", "title": "تعداد نفرات", "from": null}
+        ],
+        "outputs": [
+          {"key": "vazn_kol", "title": "وزن کل مادهٔ اولیه", "unit": "kg", "nature": "target"}
+        ],
+        "edge_cases": [
+          {
+            "input": {"geramaj_har_nafar": 200, "tedad_nafarat": 11},
+            "expected": 2.2,
+            "why": "یازده نفر ناهار با هر پرس دویست گرم، دو کیلو و دویست گرم"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "kasri_qarch_ruzane",
+      "title": "کسری قارچ درخواستی روز",
+      "statement": "مقداری که باید از انبار تحویل گرفته شود برابر است با مقدار قارچ درخواستی آن روز منهای وزن قارچ سالم بازگشتی از شب پیش. قارچ بازگشتی که تا فردا ماندگاری ندارد زودتر مصرف می‌شود تا ضایعات نشود.",
+      "processes": [
+        {"process": "preparation-008", "node": "preparation-008-n014", "quote": "امروز ده کیلو قارچ می‌خوایم ولی دیشب کلاً پنج کیلو برگشته"}
+      ],
+      "data": {
+        "lang": "feel",
+        "expr": "kasri_qarch = meqdar_darkhasti - vazn_bargashti_salem",
+        "inputs": [
+          {"key": "meqdar_darkhasti", "title": "مقدار قارچ درخواستی روز", "unit": "kg", "from": null},
+          {"key": "vazn_bargashti_salem", "title": "وزن قارچ سالم بازگشتی", "unit": "kg", "from": null}
+        ],
+        "outputs": [
+          {"key": "kasri_qarch", "title": "کسری قارچ از انبار", "unit": "kg", "nature": "target"}
+        ],
+        "edge_cases": [
+          {
+            "input": {"meqdar_darkhasti": 10, "vazn_bargashti_salem": 5},
+            "expected": 5,
+            "why": "ده کیلو نیاز روز و پنج کیلو بازگشتی سالم شب پیش"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "tarif_bazdehi_line",
+      "title": "تعریف بازدهی لاین",
+      "statement": "بازدهی هر لاین از رابطهٔ وزن مواد ورودی، وزن محصول خروجی و وزن ضایعات همان قلم سنجیده می‌شود. ضایعات به‌صورت کلی ثبت می‌شود و به تفکیک نوع آن جدا نمی‌شود.",
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "original": "بازدهی یعنی ورودی و خروجی و اون ضایعاتی که داره. نه کلی.",
+        "inputs": [
+          {"key": "vazn_vorudi", "title": "وزن ورودی", "unit": "kg", "from": {"ref": "S-rec-e3f80534814b"}},
+          {"key": "vazn_khoruji", "title": "وزن خروجی", "unit": "kg", "from": {"ref": "S-rec-2c141582db58"}},
+          {"key": "vazn_zayeat", "title": "وزن ضایعات", "unit": "kg", "from": {"ref": "S-rec-ef021443f7dc"}}
+        ],
+        "outputs": [
+          {"key": "bazdehi", "title": "بازدهی لاین", "unit": "ratio", "nature": "observed"}
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "sabt_zayeat_pak_sazi_felfel",
+      "title": "ثبت ضایعات پاک‌سازی فلفل دلمه‌ای",
+      "statement": "ضایعات معمول پاک‌سازی فلفل دلمه‌ای مانند تخم و بخش داخلی آن وزن نمی‌شود و در ضایعات ثبت نمی‌شود. تنها هنگامی که بخش قابل‌توجهی از بار خراب باشد، موضوع به سرپرست و انبار اعلام می‌شود، چون از حجم قابل استفاده کم می‌کند.",
+      "processes": [
+        {"process": "preparation-007", "node": "preparation-007-n005", "quote": "نه اون ضایعاتش نه"}
+      ],
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "original": "نه اون ضایعاتش نه. خیلی بخواد خراب باشه آره. استثنائاتشه.",
+        "inputs": [
+          {"key": "vazn_zayeat_pak_sazi", "title": "وزن ضایعات پاک‌سازی", "unit": "kg", "from": null}
+        ],
+        "outputs": [
+          {"key": "sabt_dar_zayeat", "title": "ثبت در ضایعات"}
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "tafkik_mavad_ghazaye_porsonel",
+      "title": "تفکیک مواد اولیهٔ غذای پرسنل",
+      "statement": "مواد اولیهٔ ناهار و شام پرسنل جدا از مواد تولید رستوران از انبار خروج می‌خورد و روی بسته‌ها سهم پرسنل بودن آن نوشته می‌شود تا در تولید رستوران به کار نرود. این مواد غروب تحویل می‌شود، مگر مرغی که باید مرینت شود و صبح به مسئول مرینت می‌رسد. مایونز و خیارشور که در ظرف بزرگ عرضه می‌شود، با یادآوری مسئول مربوط جداگانه خروج می‌خورد.",
+      "processes": [
+        {"process": "preparation-024", "node": "preparation-024-n005", "quote": "خروج دادن حلبی یا دبه مایونز یا خیارشور"},
+        {"process": "preparation-024", "node": "preparation-024-n011", "quote": "روش می‌نویسن شام پرسنل. می‌ذارن تو یخچال"},
+        {"process": "preparation-024", "node": "preparation-024-n002", "quote": "برگه خروجشو خودش پر می‌کنه"}
+      ],
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "original": "روش قید شده شام پرسنل که کسی استفاده نکنه برای تولید کارهای رستوران.",
+        "inputs": [
+          {"key": "mavad_ghazaye_porsonel", "title": "مواد اولیهٔ غذای پرسنل", "from": null}
+        ],
+        "outputs": [
+          {"key": "tafkik_az_tolid_restoran", "title": "تفکیک از مواد تولید رستوران"}
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "khord_kardan_felfel_line_pitza",
+      "title": "خرد کردن فلفل دلمه‌ای در لاین پیتزا",
+      "statement": "فلفل دلمه‌ای برای لاین پیتزا اسلایس‌نشده ارسال می‌شود و در همان لاین به اندازهٔ نیاز همان شب خرد می‌شود. دلیل آن این است که حجم فروش از پیش معلوم نیست و مقدار خردشدهٔ اضافی تا روز بعد آب می‌اندازد و ضایعات می‌شود.",
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "original": "چون ضایعاتش می‌ره بالا و معلوم نیست حجم فروششون چقدره.",
+        "inputs": [
+          {"key": "meqdar_niyaz_shab", "title": "مقدار نیاز همان شب", "unit": "kg", "from": null}
+        ],
+        "outputs": [
+          {"key": "meqdar_khord_shode", "title": "مقدار خردشده در لاین", "unit": "kg", "nature": "target"}
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "tekleef_salad_kentaki_baqimande",
+      "title": "تعیین تکلیف سالاد کنتاکی باقی‌مانده",
+      "statement": "سالاد کنتاکی باقی‌مانده از سفارش کانتر در یخچال آشپزخانه می‌ماند و غروب روز بعد یک عدد از آن باز و بررسی می‌شود. اگر قابل استفاده باشد پیش از تولید تازه مصرف می‌شود و در غیر این صورت ضایعات ثبت می‌شود.",
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "original": "فردا غروبش چک می‌شه. اگه قابل استفاده باشن همون روز استفاده می‌شه. اگه نه باشن ضایعات می‌شه.",
+        "inputs": [
+          {"key": "tedad_baqimande", "title": "تعداد باقی‌ماندهٔ سفارش کانتر", "from": null}
+        ],
+        "outputs": [
+          {"key": "tekleef_baqimande", "title": "تعیین تکلیف باقی‌مانده"}
+        ]
+      }
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_aqlam_vorudi_line",
+      "title": "توزین اقلام ورودی هر لاین",
+      "statement": "وزن هر قلم مادهٔ اولیه هنگام تحویل از انبار به لاین با ترازوی همان لاین بر حسب کیلوگرم اندازه گرفته می‌شود و پیش از شروع کار در دفتر روزانهٔ لاین ثبت می‌شود.",
+      "processes": [
+        {"process": "preparation-004", "node": "preparation-004-n013", "quote": "وزن می‌کنن که چقدره وزنش"},
+        {"process": "preparation-004", "node": "preparation-004-n017", "quote": "شروع کار هر لاین روی مواد اولیه تحویل‌گرفته‌شده"}
+      ],
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "ترازوی لاین",
+        "when": "هنگام تحویل مواد اولیه از انبار به لاین و پیش از شروع کار",
+        "by": "مسئول لاین",
+        "exceptions": "اقلامی که شمارشی تحویل می‌شوند با تعداد ثبت می‌شوند."
+      }
+    },
+    {
+      "kind": "note",
+      "key": "porsesh_daman_saqf_zayeat",
+      "title": "دامنهٔ سقف مجاز ضایعات",
+      "statement": "روشن نیست که سقف مجاز ضایعات برای هر قلم به‌تنهایی سنجیده می‌شود یا برای مجموع ورودی روزانهٔ لاین.",
+      "data": {
+        "about": [{"ref": "S-rec-3d5d67801f5d"}],
+        "question": "سقف مجاز ضایعات چهل درصد برای هر قلم جداگانه سنجیده می‌شود یا برای مجموع ورودی روزانهٔ هر لاین؟"
+      }
+    }
+  ]
+}

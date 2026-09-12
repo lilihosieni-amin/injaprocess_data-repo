@@ -2,6 +2,2773 @@
   "schema_version": 2,
   "entries": [
     {
+      "kind": "item",
+      "key": "kahoo_khord_shode",
+      "title": "کاهوی خردشده",
+      "statement": "کاهوی خردشده، شسته و خشک‌شدهٔ آمادهٔ مصرف که لاین سبزیجات تولید می‌کند و بر حسب کیلوگرم وزن و لیبل می‌شود و در پلاستیک بسته‌بندی می‌شود. پس از خرد شدن بیش از یک روز قابل نگهداری نیست، پس در حد مصرف همان روز تولید می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-01.txt",
+          "lines": "1-212"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "unit": "kg",
+        "unit_raw": "کیلوگرم",
+        "state": "prepared",
+        "group": "سبزیجات",
+        "code": null,
+        "pack": {
+          "size": null,
+          "unit": null
+        }
+      },
+      "aliases": [
+        "کاهوی خردشدهٔ آماده"
+      ],
+      "id": "T-1"
+    },
+    {
+      "kind": "item",
+      "key": "kahoo_pak_shode",
+      "title": "کاهوی پاک‌شده",
+      "statement": "کاهوی پاک‌شده و بدون برگ ضایعاتی که خرد نشده است و در پلاستیک بسته‌بندی و بر حسب کیلوگرم وزن و لیبل می‌شود. نیمی از آن در یخچال آماده‌سازی برای آشپزخانهٔ مرکزی می‌ماند و نیم دیگر به شعبهٔ ناهارخوران می‌رود تا در صورت شلوغی روز خرد شود و در غیر این صورت برای روز بعد بماند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-01.txt",
+          "lines": "1-212"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "unit": "kg",
+        "unit_raw": "کیلوگرم",
+        "state": "prepared",
+        "group": "سبزیجات",
+        "code": null,
+        "pack": {
+          "size": null,
+          "unit": null
+        }
+      },
+      "aliases": [
+        "کاهوی پوست‌کنده"
+      ],
+      "id": "T-2"
+    },
+    {
+      "kind": "item",
+      "key": "salad_kentaki",
+      "title": "سالاد کنتاکی",
+      "statement": "سالادی از کلم، هویج، کشمش و سس کنتاکی که در آماده‌سازی تولید و در ظرف‌های تک‌نفری وکیوم می‌شود. واحد شمارش آن پرس است و هر پرس نود گرم سالاد خالص دارد؛ به تعداد سفارش کانتر تحویل می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-009.json",
+          "node": "preparation-009-n002",
+          "quote": "وزن‌گیری کلم بر اساس تعداد سالاد کنتاکی سفارش‌شده"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-009.json",
+          "node": "preparation-009-n016",
+          "quote": "وکیوم کردن پلاستیک سالاد زیر دستگاه پرس"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "unit": "portion",
+        "unit_raw": "پرس",
+        "pack": {
+          "size": 90,
+          "unit": "g"
+        },
+        "state": "prepared",
+        "code_absent": true
+      },
+      "id": "T-3"
+    },
+    {
+      "kind": "item",
+      "key": "qarch_slice_shode",
+      "title": "قارچ اسلایس‌شده",
+      "statement": "قارچ تازه‌ای که در آماده‌سازی با دستگاه اسلایسر برش می‌خورد و بدون شستشو در ظرف‌های پلاستیکی سفید دو کیلویی بسته‌بندی و لیبل می‌شود. مقدار آن با وزن بر حسب کیلوگرم شمرده می‌شود و هر ظرف وزن ثابت دو کیلوگرم دارد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-008.json",
+          "node": "preparation-008-n008",
+          "quote": "دو کیلو جدا می‌کنیم، لیبل می‌خوره، وزن‌کشی می‌شه، فیکس دو کیلو"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-008.json",
+          "node": "preparation-008-n013",
+          "quote": "قرار دادن ظرف‌های قارچ در یخچال"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "unit": "kg",
+        "unit_raw": "کیلو",
+        "pack": {
+          "size": 2,
+          "unit": "kg"
+        },
+        "state": "prepared",
+        "code_absent": true
+      },
+      "id": "T-4"
+    },
+    {
+      "kind": "item",
+      "key": "felfel_dolmei_slice_shode",
+      "title": "فلفل دلمه‌ای اسلایس‌شده",
+      "statement": "فلفل دلمه‌ای شسته و تخم‌گرفته که با دستگاه اسلایسر به قطعات نیم‌سانتی برش می‌خورد و یک کیلو یک کیلو در ظرف‌های یک‌بار مصرف بسته‌بندی می‌شود. ظرف زیرین سوراخ می‌شود تا آب آن جدا بماند و مقدار آن با وزن بر حسب کیلوگرم شمرده می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-007.json",
+          "node": "preparation-007-n009",
+          "quote": "اسلایس کردن فلفل دلمه‌ای با دستگاه اسلایسر مربعی نیم‌سانتی"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-007.json",
+          "node": "preparation-007-n013",
+          "quote": "قرار دادن پایه ظرف برش‌خورده هم‌سایز در یک ظرف"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "unit": "kg",
+        "unit_raw": "کیلو",
+        "pack": {
+          "size": 1,
+          "unit": "kg"
+        },
+        "state": "prepared",
+        "code_absent": true
+      },
+      "id": "T-5"
+    },
+    {
+      "kind": "item",
+      "key": "morgh_pizza_pokhte",
+      "title": "مرغ پختهٔ اسلایس‌شدهٔ پیتزا",
+      "statement": "مرغ پیتزا پس از پخت در فر، اسلایس شدن و سس خوردن، در ظرف‌های دو کیلویی بسته‌بندی می‌شود و شمارش خروجی بر مبنای همین ظرف‌ها انجام می‌شود. ظرف آخر هر نوبت وزن متغیر دارد و با وزن دقیق خود لیبل می‌خورد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n043",
+          "quote": "هر دو کیلو دو کیلو شمارش می‌کنیم"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "unit": "kg",
+        "state": "cooked",
+        "group": "مرغ",
+        "code": null,
+        "code_absent": true,
+        "pack": {
+          "size": 2,
+          "unit": "kg"
+        }
+      },
+      "aliases": [
+        "مرغ پخته پیتزا"
+      ],
+      "id": "T-7"
+    },
+    {
+      "kind": "item",
+      "key": "sos_morgh_pizza",
+      "title": "سس مرغ پیتزا",
+      "statement": "سسی که در آماده‌سازی بر پایهٔ مایونز و خامه ساخته می‌شود و به مرغ پختهٔ اسلایس‌شدهٔ پیتزا زده می‌شود. مصرف آن به کیلوگرم اندازه گرفته و ثبت می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-01.txt",
+          "lines": "425-758"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "ingredient",
+        "unit": "kg",
+        "state": "prepared",
+        "group": "سس",
+        "code": null,
+        "code_absent": true
+      },
+      "id": "T-8"
+    },
+    {
+      "kind": "item",
+      "key": "estak_goosht",
+      "title": "عصارهٔ گوشت",
+      "statement": "آب حاصل از پخت گوشت مغز ران که پس از صاف شدن دوباره پخته و غلیظ می‌شود و برای رساندن رست‌بیف به مبنای بازدهی به آن افزوده می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
+          "lines": "1-158"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "ingredient",
+        "unit": "kg",
+        "state": "cooked",
+        "code": null,
+        "code_absent": true
+      },
+      "aliases": [
+        "استاک"
+      ],
+      "id": "T-12"
+    },
+    {
+      "kind": "item",
+      "key": "khorde_estik",
+      "title": "خرده‌استیک",
+      "statement": "ته‌مانده و خرده‌های استیک پخته که هنگام اسلایس کردن جمع‌آوری و به انبار تحویل می‌شود و در روز تولید چرخ‌کرده به گوشت گردن افزوده می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-019.json",
+          "node": "preparation-019-n009",
+          "quote": "خرده‌استیک‌هایی که از اون یک هفته مونده"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "ingredient",
+        "unit": "kg",
+        "state": "cooked",
+        "code": null,
+        "code_absent": true
+      },
+      "id": "T-18"
+    },
+    {
+      "kind": "item",
+      "key": "filadelfia",
+      "title": "گوشت فیلادلفیا",
+      "statement": "برش‌های اریب و کوبیدهٔ راسته که مرینت می‌خورد و در بسته‌های یک کیلوگرمی به انبار تحویل می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
+          "lines": "1-158"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "unit": "kg",
+        "state": "prepared",
+        "code": null,
+        "code_absent": true,
+        "pack": {
+          "size": 1,
+          "unit": "kg"
+        }
+      },
+      "id": "T-19"
+    },
+    {
+      "kind": "item",
+      "key": "estik_roli",
+      "title": "استیک رولی",
+      "statement": "راستهٔ مرینت‌شده و نیم‌پز که پس از سرد شدن سلفون‌پیچ و رول می‌شود، فریز می‌شود و بعداً برای تولید استیک ورقه‌ای اسلایس می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-020.json",
+          "node": "preparation-020-n007",
+          "quote": "راسته همون روز باید مرینت بخوره"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "unit": "kg",
+        "state": "frozen",
+        "code": null,
+        "code_absent": true
+      },
+      "id": "T-20"
+    },
+    {
+      "kind": "item",
+      "key": "burger",
+      "title": "برگر ۱۵۰ گرمی",
+      "statement": "چانهٔ ۱۵۰ گرمی مایهٔ گوشت که با برگرزن دستی میان دو لایه پلاستیک پرس می‌شود، در بسته‌های پنج‌عددی وکیوم می‌شود و به انبار تحویل می‌رود. شمارش آن با تعداد است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
+          "lines": "159-315"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "code": null,
+        "code_absent": true,
+        "unit": "pcs",
+        "unit_raw": "عدد",
+        "state": "prepared",
+        "group": "لاین گوشت",
+        "pack": {
+          "size": 5,
+          "unit": "pcs"
+        },
+        "units": [
+          {
+            "pack_unit": "pack",
+            "factor_to_base": 5
+          }
+        ]
+      },
+      "aliases": [
+        "برگر اصلی"
+      ],
+      "id": "T-21"
+    },
+    {
+      "kind": "item",
+      "key": "mini_burger",
+      "title": "مینی برگر ۶۰ گرمی",
+      "statement": "چانهٔ ۶۰ گرمی مایهٔ گوشت برگر که مانند برگر اصلی پرس و بسته‌بندی می‌شود. تعداد تولید روزانهٔ آن را سفارش انبار تعیین می‌کند و شمارش آن با تعداد است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
+          "lines": "159-315"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "code": null,
+        "code_absent": true,
+        "unit": "pcs",
+        "unit_raw": "عدد",
+        "state": "prepared",
+        "group": "لاین گوشت",
+        "pack": {
+          "size": null,
+          "unit": null
+        }
+      },
+      "aliases": [
+        "مینی"
+      ],
+      "id": "T-22"
+    },
+    {
+      "kind": "item",
+      "key": "shenisel_morgh",
+      "title": "سینهٔ مرغ خام",
+      "statement": "سینهٔ مرغ خام که با وزن از انبار به لاین تخته‌کاری تحویل می‌شود و در چند پارت بالا می‌آید. پس از پاک‌سازی، به لقمه، مرغ گریل، مرغ پیتزا و چیزا تفکیک می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n023",
+          "quote": "مرغ خام سینه خامی که برای ما میاد به اسم شنیسل و فیله است"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "ingredient",
+        "unit": "kg",
+        "unit_raw": "کیلو",
+        "group": "مرغ",
+        "state": "raw",
+        "code": null,
+        "code_absent": true
+      },
+      "aliases": [
+        "شنیسل"
+      ],
+      "id": "T-24"
+    },
+    {
+      "kind": "item",
+      "key": "file_morgh_kham",
+      "title": "فیلهٔ مرغ خام",
+      "statement": "فیلهٔ خام مرغ که جدا از سینه و با وزن از انبار تحویل می‌شود. روی یک طرف آن پوستی کشیده شده که در پاک‌سازی گرفته می‌شود، و پس از آن بر پایهٔ وزن هر عدد به فیلهٔ سوخاری یا مرغ پیتزا تفکیک می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n023",
+          "quote": "بعد شنیسل تموم شد فیله میاد"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "ingredient",
+        "unit": "kg",
+        "unit_raw": "کیلو",
+        "group": "مرغ",
+        "state": "raw",
+        "code": null,
+        "code_absent": true
+      },
+      "id": "T-25"
+    },
+    {
+      "kind": "item",
+      "key": "loqme_morgh",
+      "title": "لقمهٔ مرغ",
+      "statement": "تکه‌های مکعبی مرغ که از سینهٔ پاک‌شده بریده می‌شوند و مبنای شمارش آن‌ها عدد است. هر بسته دویست عدد لقمه دارد و وزن هر عدد میان ده تا سیزده گرم است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-032.json",
+          "node": "preparation-032-n010",
+          "quote": "لقمه ها که بسته هاش ۲۰۰ تاییه ۲۰۰ عدد"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "unit": "pcs",
+        "unit_raw": "عدد",
+        "group": "مرغ",
+        "state": "prepared",
+        "pack": {
+          "size": 200,
+          "unit": "pcs"
+        },
+        "code": null,
+        "code_absent": true
+      },
+      "id": "T-26"
+    },
+    {
+      "kind": "item",
+      "key": "morgh_grill",
+      "title": "مرغ گریل",
+      "statement": "سینهٔ مرغ برش‌خورده برای گریل که با وزن و در بسته‌های چهار کیلوگرمی بسته‌بندی می‌شود. اندازهٔ قطعات باید یکدست و نه خیلی بزرگ و نه خیلی کوچک باشد، زیرا همهٔ آن‌ها هم‌زمان و با دمای از پیش تعیین‌شده پخته می‌شوند؛ قطعهٔ کلفت از وسط دو قبضه می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-032.json",
+          "node": "preparation-032-n010",
+          "quote": "من گریل رو بسته بندی میکنم ۴ کیلویی"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "unit": "kg",
+        "unit_raw": "کیلو",
+        "group": "مرغ",
+        "state": "prepared",
+        "pack": {
+          "size": 4,
+          "unit": "kg"
+        },
+        "code": null,
+        "code_absent": true
+      },
+      "id": "T-27"
+    },
+    {
+      "kind": "item",
+      "key": "morgh_pizza",
+      "title": "مرغ پیتزا",
+      "statement": "قطعات ریز، پاره و کناره‌های باقی‌مانده از برش سینه و فیله که با وزن و در بسته‌های چهار کیلوگرمی بسته‌بندی می‌شود. این قلم تنها پاک‌سازی می‌خواهد و برش دیگری روی آن انجام نمی‌شود؛ اندازهٔ قطعات در آن اهمیتی ندارد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n020",
+          "quote": "اونا هم دوباره ۴ کیلویی بسته بندی میشه"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "unit": "kg",
+        "unit_raw": "کیلو",
+        "group": "مرغ",
+        "state": "prepared",
+        "pack": {
+          "size": 4,
+          "unit": "kg"
+        },
+        "code": null,
+        "code_absent": true
+      },
+      "id": "T-28"
+    },
+    {
+      "kind": "item",
+      "key": "chiza_morgh",
+      "title": "مرغ چیزا",
+      "statement": "قطعات مرغ آماده برای چیزا که وزن هر عدد حدود هشتاد گرم است و در بسته‌های چهل‌وهشت‌عددی بسته‌بندی می‌شود. اضافهٔ وزن بسته مشکلی ایجاد نمی‌کند، چون در مرحلهٔ فرآوری بعدی گرفته و به مرغ پیتزا تبدیل می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-014.json",
+          "node": "preparation-014-n002",
+          "quote": "هر بسته چیزا ۴۸ تاست"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "unit": "pcs",
+        "unit_raw": "عدد",
+        "group": "مرغ",
+        "state": "prepared",
+        "pack": {
+          "size": 48,
+          "unit": "pcs"
+        },
+        "code": null,
+        "code_absent": true
+      },
+      "id": "T-29"
+    },
+    {
+      "kind": "item",
+      "key": "file_sukhari",
+      "title": "فیلهٔ سوخاری",
+      "statement": "فیله‌های پاک‌شدهٔ درشت با وزن پنجاه تا هشتاد گرم که برای سوخاری کنار گذاشته می‌شوند. هر بسته شصت عدد فیله دارد و تعداد، وزن و تاریخ روی بسته نوشته می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-032.json",
+          "node": "preparation-032-n010",
+          "quote": "فیله ها هم اونم ۶۰ عددیه"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "unit": "pcs",
+        "unit_raw": "عدد",
+        "group": "مرغ",
+        "state": "prepared",
+        "pack": {
+          "size": 60,
+          "unit": "pcs"
+        },
+        "code": null,
+        "code_absent": true
+      },
+      "id": "T-30"
+    },
+    {
+      "kind": "item",
+      "key": "penne_pokhte",
+      "title": "پنهٔ پخته",
+      "statement": "پاستای پنه که در آب جوش پخته و در بسته‌های یک کیلو و دویست گرمی بسته‌بندی می‌شود. هر بسته وزن‌گیری و نام‌گذاری می‌شود و تعداد بسته‌ها بر پایهٔ سفارش روز تعیین می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-011.json",
+          "node": "preparation-011-n006",
+          "quote": "هر بسته اش یک و دویست"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "unit": "kg",
+        "unit_raw": "کیلو",
+        "state": "cooked",
+        "pack": {
+          "size": 1.2,
+          "unit": "kg"
+        },
+        "code": null,
+        "code_absent": true
+      },
+      "id": "T-33"
+    },
+    {
+      "kind": "item",
+      "key": "kenar_file",
+      "title": "کنار فیله مرغ",
+      "statement": "تکه‌های گوشت مرغ که هنگام کندن پوست از فیله جدا می‌شود و پس از پاک‌سازی دوباره، جدا از خود فیله و جدا از ضایعات فیله به انبار تحویل می‌شود. بر حسب وزن ثبت و تحویل می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-04.txt",
+          "lines": "206-410"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "ingredient",
+        "unit": "kg",
+        "unit_raw": null,
+        "state": "raw",
+        "code_absent": true
+      },
+      "id": "T-34"
+    },
+    {
+      "kind": "item",
+      "key": "kenar_shinsel",
+      "title": "کنار شینسل",
+      "statement": "ضایعات کنار شینسل که گوشت مرغ به آن چسبیده است و طی هفته جمع می‌شود. نوع خام آن در فریزر زیر صفر نگهداری و تنها برای ناهار و شام پرسنل استفاده می‌شود و نوع پخته‌شده پس از جداسازی گوشت قابل استفاده، در همان روز به مرغ پیتزای پخته تبدیل می‌شود. بر حسب کیلوگرم وزن می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n034",
+          "quote": "جداسازی گوشت قابل استفاده از کنار شینسل پخته"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "ingredient",
+        "unit": "kg",
+        "unit_raw": null,
+        "state": null,
+        "code_absent": true
+      },
+      "aliases": [
+        "ضایعات شینسل"
+      ],
+      "id": "T-35"
+    },
+    {
+      "kind": "record",
+      "key": "form_tabdil",
+      "title": "فرم تبدیل",
+      "statement": "فرم کاغذی که برای هر قلم و در هر لاین وزن مادهٔ اولیهٔ ورودی، وزن محصول خروجی و وزن ضایعات و دورریز میان این دو را ثبت می‌کند. مسئول همان لاین آن را پر می‌کند و به سرپرست آماده‌سازی تحویل می‌دهد. لاین سبزیجات چنین فرمی ندارد و آمار ورودی، خروجی و ضایعات خود را در دفتر می‌نویسد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-017.json",
+          "node": "preparation-017-n021",
+          "quote": "فرم تبدیل دارن برای هر چیزی"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n045",
+          "quote": "تحویل فرم تبدیل به سرپرست"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-005.json",
+          "node": "preparation-005-n008",
+          "quote": "به جز سبزیجات همه موارد فرم تبدیل دارن"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "بخش آماده‌سازی",
+          "holder": "سرپرست آماده‌سازی"
+        },
+        "cadence": "daily",
+        "grain": "هر قلم در هر لاین در هر روز",
+        "filled_by": "مسئول لاین",
+        "approved_by": "سرپرست آماده‌سازی",
+        "primaryKey": [
+          "qalam"
+        ],
+        "fields": [
+          {
+            "key": "qalam",
+            "title": "نام قلم",
+            "type": "string",
+            "description": "نام مادهٔ اولیه‌ای که روی آن کار انجام شده است."
+          },
+          {
+            "key": "vazn_vorudi",
+            "title": "وزن ورودی",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن مادهٔ اولیه هنگام تحویل گرفتن از انبار و پیش از شروع کار."
+          },
+          {
+            "key": "vazn_khoruji",
+            "title": "وزن خروجی",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن محصول آمادهٔ بسته‌بندی‌شده پس از پایان کار."
+          },
+          {
+            "key": "vazn_zayeat",
+            "title": "وزن ضایعات و دورریز",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن هر چه میان ورودی و خروجی جدا می‌شود: پوست، کاور پلاستیکی، خونابه و تکه‌های غیرقابل استفاده."
+          }
+        ]
+      },
+      "id": "T-36"
+    },
+    {
+      "kind": "record",
+      "key": "form_nimsakht_amadesazi",
+      "title": "فرم نیم‌ساخت آماده‌سازی",
+      "statement": "برگهٔ کاغذی هر لاین آماده‌سازی برای محصولاتی که از حالت خام درآمده‌اند ولی هنوز مستقیم قابل استفاده نیستند، مانند مایهٔ برگر، رست‌بیف، گوشت چرخ‌کرده، استیک و فیلادلفیا؛ نام محصول در بالای برگه نوشته می‌شود و اجزای مصرفی و وزن هر جزء، نوع و تعداد محصول تولیدشده و ضایعات در آن ثبت می‌شود. مسئول هر لاین آن را پر می‌کند، سرپرست آماده‌سازی بررسی می‌کند و سپس به حسابداری تحویل می‌شود؛ محصول نیم‌ساخت پس از تکمیل برگه تحویل انبار می‌شود و انبار به اندازهٔ نیاز روز از آن برمی‌دارد. انبار نسخه‌ای با همین ساختار دارد که در آن فقط مقدار تحویل‌داده‌شده و تحویل‌گرفته‌شده ثبت می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-017.json",
+          "node": "preparation-017-n022",
+          "quote": "این همون نیم‌ساختشه دیگه"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-017.json",
+          "node": "preparation-017-n024",
+          "quote": "ولی خب چک باید بشه توسط سرپرست"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-017.json",
+          "node": "preparation-017-n025",
+          "quote": "اینا همه‌شون تو قیمت‌گذاری تأثیر دارن"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-018.json",
+          "node": "preparation-018-n034",
+          "quote": "بعد رست‌بیف، اینا از این فرم نیم‌ساخت استفاده می‌شه"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n042",
+          "quote": "برای مرغ پیتزا مثلاً برای مرغ پخته شده و سسش این استفاده می‌شه"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "واحد آماده‌سازی",
+          "holder": "سرپرست آماده‌سازی"
+        },
+        "grain": "هر نوبت تولید یک نیم‌ساخت در یک لاین",
+        "filled_by": "مسئول لاین",
+        "approved_by": "سرپرست آماده‌سازی",
+        "header_fields": [
+          {
+            "key": "noe_mahsul",
+            "title": "نوع محصول نیم‌ساخت",
+            "type": "string",
+            "description": "محصولی که این نوبت تولید برای آن انجام شده است، مانند مایه برگر، ژامبون سه‌گانه یا مرغ پخته."
+          }
+        ],
+        "fields": [
+          {
+            "key": "joz_masrafi",
+            "title": "جزء مصرفی",
+            "type": "string",
+            "description": "نام ماده‌ای که در ساخت این نیم‌ساخت مصرف شده است؛ هر ماده در یک سطر نوشته می‌شود.",
+            "refItems": {
+              "namespace": "##",
+              "resolved_by": "title"
+            }
+          },
+          {
+            "key": "vazn_masrafi",
+            "title": "وزن مصرفی",
+            "type": "number",
+            "unit": "g",
+            "description": "وزن مصرف‌شده از همان جزء در این نوبت تولید."
+          },
+          {
+            "key": "noe_tolid",
+            "title": "نوع محصول تولیدشده",
+            "type": "string",
+            "description": "اندازه یا نوع محصولی که از این نیم‌ساخت به دست آمده است، مانند برگر صد و پنجاه گرمی یا برگر شصت گرمی."
+          },
+          {
+            "key": "tedad_tolid",
+            "title": "تعداد تولیدشده",
+            "type": "integer",
+            "unit": "pcs",
+            "description": "تعداد قرص یا بسته تولیدشده از همان نوع محصول."
+          },
+          {
+            "key": "vazn_zayeat",
+            "title": "وزن ضایعات",
+            "type": "number",
+            "unit": "g",
+            "description": "وزن مقداری که در جریان تولید از دست رفته است، مانند مقدار چسبیده به ترازو یا ریخته‌شده روی زمین."
+          }
+        ]
+      },
+      "aliases": [
+        "فرم نیم‌ساخت"
+      ],
+      "field_status": {
+        "data/location/kept_at": "inferred",
+        "data/location/holder": "inferred",
+        "data/fields/vazn_masrafi/unit": "inferred",
+        "data/fields/vazn_zayeat/unit": "inferred"
+      },
+      "id": "T-37"
+    },
+    {
+      "kind": "record",
+      "key": "form_niaz_ashpazkhane",
+      "title": "فرم نیازهای روزانهٔ آشپزخانه‌ها",
+      "statement": "فرم کاغذی که انبار هر روز صبح با تجمیع درخواست شب قبل آشپزخانهٔ مرکزی و شعبهٔ ناهارخوران آماده می‌کند و تا ساعت ده و بیست دقیقه به آماده‌سازی تحویل می‌دهد؛ هر سطر یک قلم نیم‌ساخته است و مقدار درخواستی هر آشپزخانه جداگانه نوشته می‌شود. کار روزانهٔ هر لاین بر پایهٔ همین فرم تعیین می‌شود و قلمی که در آن نیامده باشد آن روز آماده نمی‌شود. مسئول هر لاین جلوی قلمی که تولید یا آماده کرده تیک می‌زند و برگهٔ امضاشده غروب به انبار بازگردانده می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-003.json",
+          "node": "preparation-003-n017",
+          "quote": "انبار فرم نیازها را بر اساس درخواست آشپزخانه آماده و تحویل آماده‌سازی می‌دهد"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-003.json",
+          "node": "preparation-003-n006",
+          "quote": "انبار می‌آورد تحویل آماده‌سازی می‌دهد"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "location": {
+          "kept_at": "محیط آماده‌سازی",
+          "holder": "سرپرست آماده‌سازی"
+        },
+        "role": "log",
+        "cadence": "daily",
+        "grain": "هر قلم نیم‌ساختهٔ درخواستی در هر روز",
+        "filled_by": "انباردار",
+        "fields": [
+          {
+            "key": "qalam",
+            "title": "قلم نیم‌ساخته",
+            "type": "string",
+            "refItems": {
+              "namespace": "##",
+              "resolved_by": "title"
+            },
+            "description": "قلمی که روی آن عملیاتی انجام شده است، مانند مرغ مرینت‌شده، کاهوی خردشده یا دورچین."
+          },
+          {
+            "key": "meqdar_markazi",
+            "title": "مقدار درخواستی آشپزخانهٔ مرکزی",
+            "type": "number",
+            "unit": null,
+            "description": "واحد بر حسب قلم متفاوت است؛ برخی اقلام با کیلوگرم و برخی با پرس نوشته می‌شوند."
+          },
+          {
+            "key": "meqdar_naharkhoran",
+            "title": "مقدار درخواستی شعبهٔ ناهارخوران",
+            "type": "number",
+            "unit": null,
+            "description": "واحد بر حسب قلم متفاوت است؛ برخی اقلام با کیلوگرم و برخی با پرس نوشته می‌شوند."
+          }
+        ]
+      },
+      "aliases": [
+        "فرم درخواست روزانهٔ انبار",
+        "فرم نیازهای آشپزخانه و شعبه"
+      ],
+      "field_status": {
+        "data/location/kept_at": "inferred",
+        "data/location/holder": "inferred"
+      },
+      "id": "T-38"
+    },
+    {
+      "kind": "record",
+      "key": "form_darkhast_marinate",
+      "title": "فرم درخواست روزانهٔ لاین مرینت",
+      "statement": "فرم کاغذی جداگانه‌ای که انبار هر روز برای لاین مرینت می‌آورد و در آن مقدار درخواستی امروز هر قلم مرغ در کنار مقداری که شب قبل از فریزر بیرون گذاشته شده نوشته می‌شود. مسئول لاین مرینت بر پایهٔ همین فرم تعیین می‌کند چه مقدار از مرغ گرم همان روز باید به مرینت افزوده شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-05-28.txt",
+          "lines": "1-150"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "location": {
+          "kept_at": "لاین مرینت آماده‌سازی",
+          "holder": "مسئول لاین مرینت"
+        },
+        "role": "log",
+        "cadence": "daily",
+        "grain": "هر قلم مرغ در هر روز",
+        "filled_by": "انباردار",
+        "fields": [
+          {
+            "key": "qalam",
+            "title": "قلم مرغ",
+            "type": "string",
+            "refItems": {
+              "namespace": "##",
+              "resolved_by": "title"
+            }
+          },
+          {
+            "key": "meqdar_darkhasti",
+            "title": "مقدار درخواستی امروز",
+            "type": "number",
+            "unit": null,
+            "description": "بر حسب قلم نوشته می‌شود؛ اقلامی مانند لقمه و فیله با تعداد و مرغ پیتزا با کیلوگرم."
+          },
+          {
+            "key": "meqdar_khorooj_az_freezer",
+            "title": "مقدار بیرون‌آورده‌شده از فریزر در شب قبل",
+            "type": "number",
+            "unit": null,
+            "description": "مقداری که انبار شب قبل برای یخ‌گشایی از فریزر بیرون گذاشته است؛ واحد آن با ستون مقدار درخواستی یکسان است."
+          }
+        ]
+      },
+      "aliases": [
+        "لیست جدای مرینت"
+      ],
+      "field_status": {
+        "data/location/kept_at": "inferred",
+        "data/location/holder": "inferred"
+      },
+      "id": "T-39"
+    },
+    {
+      "kind": "record",
+      "key": "form_marinat",
+      "title": "فرم مرینت",
+      "statement": "فرم دست‌نویسی که انبار برای اقلام مرینتی آماده می‌کند و برای هر قلم، مقدار کل کنارگذاشته‌شده و سهم آشپزخانه مرکزی، سهم شعبه و سهم انبار را ثبت می‌کند. این فرم از فرم‌های دیگر آماده‌سازی جداست و چاپی نیست.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-003.json",
+          "node": "preparation-003-n017",
+          "quote": "اون لیست کلاً جدا انبار میاره طبق سفارش‌هایی که هر دو تا شعبه میدن"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "لاین مرینت در آماده‌سازی",
+          "holder": "مسئول لاین مرینت"
+        },
+        "cadence": "daily",
+        "grain": "هر قلم مرینتی در هر روز",
+        "filled_by": "انباردار",
+        "approved_by": null,
+        "blank_master": false,
+        "primaryKey": [
+          "tarikh",
+          "qalam"
+        ],
+        "fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "type": "date"
+          },
+          {
+            "key": "qalam",
+            "title": "نام قلم مرینتی",
+            "type": "string",
+            "refItems": {
+              "namespace": "##",
+              "resolved_by": "title"
+            }
+          },
+          {
+            "key": "meqdar_kol",
+            "title": "مقدار کل کنارگذاشته‌شده",
+            "type": "number",
+            "unit": null,
+            "description": "مجموع مقداری که انبار برای آن روز بیرون گذاشته است، بر حسب واحد همان قلم: تعداد یا کیلوگرم."
+          },
+          {
+            "key": "sahm_markazi",
+            "title": "سهم آشپزخانه مرکزی",
+            "type": "number",
+            "unit": null
+          },
+          {
+            "key": "sahm_shobe",
+            "title": "سهم شعبه",
+            "type": "number",
+            "unit": null
+          },
+          {
+            "key": "sahm_anbar",
+            "title": "سهم انبار برای سردخانه",
+            "type": "number",
+            "unit": null,
+            "description": "مقدار اضافه‌ای که به خود انبار تحویل داده می‌شود تا در سردخانه نگهداری شود."
+          }
+        ]
+      },
+      "aliases": [
+        "لیست مرینت"
+      ],
+      "field_status": {
+        "data/location/kept_at": "inferred",
+        "data/location/holder": "inferred"
+      },
+      "id": "T-40"
+    },
+    {
+      "kind": "record",
+      "key": "daftar_ruzane_line_sabzijat",
+      "title": "دفتر روزانهٔ لاین سبزیجات",
+      "statement": "دفتر دست‌نویسی که مسئول لاین سبزیجات در طول روز پر می‌کند و وزن کاهوی دریافتی، وزن کاهوی خردشده و شسته‌شده، وزن کاهوی پاک‌شده و وزن ضایعات را بر حسب کیلوگرم ثبت می‌کند. سهم آشپزخانه مرکزی و شعبه جدا نوشته می‌شود و نوع ظرف هم می‌آید، چون وزن ظرف‌ها با هم فرق دارد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-021.json",
+          "node": "preparation-021-n012",
+          "quote": "وزن‌کشی می‌کنیم توی برگه می‌نویسیم"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "لاین سبزیجات در آماده‌سازی",
+          "holder": "مسئول لاین سبزیجات"
+        },
+        "cadence": "daily",
+        "grain": "هر سهم از کاهو در هر روز",
+        "filled_by": "مسئول لاین سبزیجات",
+        "approved_by": null,
+        "blank_master": false,
+        "primaryKey": [
+          "tarikh",
+          "sahm"
+        ],
+        "fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "type": "date"
+          },
+          {
+            "key": "vazn_vorudi",
+            "title": "وزن کاهوی دریافتی",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن کاهوی خامی که از انبار تحویل گرفته شده است."
+          },
+          {
+            "key": "vazn_khord_shode",
+            "title": "وزن کاهوی خردشده و شسته‌شده",
+            "type": "number",
+            "unit": "kg"
+          },
+          {
+            "key": "vazn_pak_shode",
+            "title": "وزن کاهوی پاک‌شده",
+            "type": "number",
+            "unit": "kg"
+          },
+          {
+            "key": "vazn_zayeat",
+            "title": "وزن ضایعات",
+            "type": "number",
+            "unit": "kg"
+          },
+          {
+            "key": "noe_zarf",
+            "title": "نوع ظرف",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "کارتن",
+                "سبد"
+              ]
+            },
+            "description": "ظرفی که محصول در آن وزن شده است؛ چون وزن کارتن و سبد با هم فرق دارد."
+          },
+          {
+            "key": "sahm",
+            "title": "سهم",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "مرکزی",
+                "شعبه",
+                "ناهار و شام پرسنل"
+              ]
+            }
+          }
+        ]
+      },
+      "aliases": [
+        "برگهٔ ثبت لاین سبزیجات"
+      ],
+      "field_status": {
+        "data/location/kept_at": "inferred"
+      },
+      "id": "T-41"
+    },
+    {
+      "kind": "record",
+      "key": "cheklist_ghazaye_porsonel",
+      "title": "چک‌لیست دوهفته‌ای غذای پرسنل",
+      "statement": "فهرست از پیش تعیین‌شده‌ای که برای هر روز از یک دورهٔ دوهفته‌ای، غذای ناهار و شام پرسنل، تعداد نفرات، گراماژ هر نفر و وزن کل مادهٔ اولیه را مشخص می‌کند. پس از پایان دو هفته همان دوره از ابتدا تکرار می‌شود و تا آن زمان غذای تکراری وجود ندارد. انبار بر پایهٔ آن هر روز مواد را خروج می‌زند و آماده‌سازی سهم ناهار روز بعد را کنار می‌گذارد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-024.json",
+          "node": "preparation-024-n001",
+          "quote": "چک‌لیست دارن از قبل تعیین شده برای هر روز"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-024.json",
+          "node": "preparation-024-n024",
+          "quote": "یکشنبه یازده نفر ناهار. دو کیلو و دویست"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "reference",
+        "location": {
+          "kept_at": "انبار و آماده‌سازی",
+          "holder": "سرپرست آماده‌سازی"
+        },
+        "cadence": null,
+        "grain": "هر روز از دورهٔ دوهفته‌ای",
+        "filled_by": null,
+        "blank_master": false,
+        "fields": [
+          {
+            "key": "ruz",
+            "title": "روز هفته",
+            "type": "string"
+          },
+          {
+            "key": "ghaza",
+            "title": "نام غذا",
+            "type": "string",
+            "description": "غذای ناهار یا شام پرسنل که برای آن روز در نظر گرفته شده است."
+          },
+          {
+            "key": "tedad_nafarat",
+            "title": "تعداد نفرات",
+            "type": "integer",
+            "description": "تعداد نفراتی که آن روز غذا می‌خورند؛ در روزهای پرترددتر بیشتر است."
+          },
+          {
+            "key": "geramaj_har_nafar",
+            "title": "گراماژ هر نفر",
+            "type": "number",
+            "unit": "g",
+            "description": "وزن هر پرس بر حسب گرم که برای آن غذا تعیین شده است."
+          },
+          {
+            "key": "vazn_kol",
+            "title": "وزن کل مادهٔ اولیه",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن کل مادهٔ اولیهٔ لازم آن روز بر حسب کیلوگرم."
+          }
+        ]
+      },
+      "aliases": [
+        "برنامه دوهفته‌ای غذای پرسنل"
+      ],
+      "id": "T-42"
+    },
+    {
+      "kind": "record",
+      "key": "form_tahvil_morgh_pokhte",
+      "title": "فرم تحویل مرغ پختهٔ پیتزا",
+      "statement": "فرم کاغذی لاین مرغ آماده‌سازی که در آن وزن کل مرغ خام تحویل‌گرفته‌شده، وزن مرغ پختهٔ به‌دست‌آمده، وزن ضایعات و کاست پخت نوشته می‌شود. مسئول لاین مرغ آن را پر می‌کند و در پایان هفته به سرپرست آماده‌سازی تحویل می‌دهد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n045",
+          "quote": "یه فرم تحویل مرغ پخته شده داریم"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "لاین مرغ در آماده‌سازی",
+          "holder": "مسئول لاین مرغ آماده‌سازی"
+        },
+        "cadence": "daily",
+        "grain": "هر نوبت پخت مرغ پیتزا در روز",
+        "filled_by": "مسئول لاین مرغ آماده‌سازی",
+        "approved_by": "سرپرست آماده‌سازی",
+        "fields": [
+          {
+            "key": "vazn_morgh_kham",
+            "title": "وزن کل مرغ خام",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن کل مرغ خام تحویل‌گرفته‌شده از انبار که در بالای فرم نوشته می‌شود"
+          },
+          {
+            "key": "vazn_morgh_pokhte",
+            "title": "وزن مرغ پخته‌شده",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن خالص مرغ پختهٔ اسلایس‌شده که در قسمت پایین‌تر فرم نوشته می‌شود"
+          },
+          {
+            "key": "vazn_zayeat",
+            "title": "وزن ضایعات",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن قطعه‌های کبود و خون‌مرده که کنار گذاشته شده‌اند؛ معمولاً ضایعاتی وجود ندارد و این مقدار خالی می‌ماند"
+          },
+          {
+            "key": "kast",
+            "title": "کاست پخت",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن از دست رفته در پخت که از کسر وزن مرغ پخته و ضایعات از وزن مرغ خام به دست می‌آید"
+          }
+        ]
+      },
+      "id": "T-43"
+    },
+    {
+      "kind": "record",
+      "key": "form_nimsakht_morgh_pizza",
+      "title": "فرم نیم‌ساخت مرغ پیتزا",
+      "statement": "فرم کاغذی که در آن مقدار مرغ پختهٔ به‌دست‌آمده به کیلوگرم، مقدار سس مصرف‌شده و مقدار خروجی بسته‌بندی‌شده ثبت می‌شود تا مجموع مرغ پخته و سس با خروجی سنجیده شود. مسئول لاین مرغ آن را در پایان کار پر می‌کند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n043",
+          "quote": "مقدار خروجی کارش هم ثبت می‌کنیم"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "لاین مرغ در آماده‌سازی",
+          "holder": "مسئول لاین مرغ آماده‌سازی"
+        },
+        "cadence": "daily",
+        "grain": "هر نوبت پخت مرغ پیتزا در روز",
+        "filled_by": "مسئول لاین مرغ آماده‌سازی",
+        "approved_by": "سرپرست آماده‌سازی",
+        "fields": [
+          {
+            "key": "vazn_morgh_pokhte",
+            "title": "مقدار مرغ پخته‌شده",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن مرغ پختهٔ اسلایس‌شده پیش از زدن سس"
+          },
+          {
+            "key": "vazn_sos_masrafi",
+            "title": "مقدار سس مصرف‌شده",
+            "type": "number",
+            "unit": "kg",
+            "description": "مقدار سس زده‌شده که از وزن مرغ پخته محاسبه می‌شود"
+          },
+          {
+            "key": "meqdar_khoruji",
+            "title": "مقدار خروجی",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن کل بسته‌های خروجی که از شمارش ظرف‌های دو کیلویی به دست می‌آید"
+          }
+        ]
+      },
+      "id": "T-44"
+    },
+    {
+      "kind": "record",
+      "key": "daftar_amar_lain_morgh",
+      "title": "دفتر آمار لاین مرغ آماده‌سازی",
+      "statement": "دفتر کاغذی شخصی مسئول لاین مرغ که وزن مرغ خام، وزن مرغ پخته، مقدار سس زده‌شده و وزن ظرف استیل مورد استفاده در آن یادداشت می‌شود و مبنای پر کردن فرم‌های لاین است. مسئول لاین آن را روزانه پر می‌کند و در پایان هفته به سرپرست آماده‌سازی تحویل می‌دهد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n040",
+          "quote": "اول مقدار مرغ خامم می‌نویسم"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-004.json",
+          "node": "preparation-004-n013",
+          "quote": "تو اون دفتری که دارم"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "لاین مرغ در آماده‌سازی",
+          "holder": "مسئول لاین مرغ آماده‌سازی"
+        },
+        "cadence": "daily",
+        "grain": "هر قلم کار روزانهٔ لاین",
+        "filled_by": "مسئول لاین مرغ آماده‌سازی",
+        "approved_by": "سرپرست آماده‌سازی",
+        "fields": [
+          {
+            "key": "vazn_morgh_kham",
+            "title": "وزن مرغ خام",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن مرغ خام تحویل‌گرفته‌شده از انبار"
+          },
+          {
+            "key": "vazn_morgh_pokhte",
+            "title": "وزن مرغ پخته‌شده",
+            "type": "number",
+            "unit": "kg"
+          },
+          {
+            "key": "vazn_sos",
+            "title": "مقدار سس زده‌شده",
+            "type": "number",
+            "unit": "kg"
+          },
+          {
+            "key": "vazn_zarf",
+            "title": "وزن ظرف",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن ظرف استیلی که مرغ اسلایس‌شده در آن گرفته شده است، برای اینکه در حساب و کتاب اشتباهی پیش نیاید"
+          }
+        ]
+      },
+      "aliases": [
+        "دفتر یادداشت لاین مرغ"
+      ],
+      "id": "T-45"
+    },
+    {
+      "kind": "record",
+      "key": "form_tabdil_raste",
+      "title": "فرم تبدیل راسته",
+      "statement": "فرم کاغذی که برای هر راستهٔ کامل تحویل‌گرفته‌شده پر می‌شود و نشان می‌دهد وزن خام راسته به چه مقدار استیک، فیلادلفیا، خرده راسته و ضایعات تبدیل شده است. مسئول لاین گوشت آن را پر می‌کند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-020.json",
+          "node": "preparation-020-n004",
+          "quote": "جدا کردن دمار و غضروف به‌عنوان ضایعات"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "واحد آماده‌سازی",
+          "holder": "مسئول لاین گوشت"
+        },
+        "cadence": "ad_hoc",
+        "grain": "هر محمولهٔ راستهٔ خام تحویل‌گرفته‌شده",
+        "filled_by": "مسئول لاین گوشت",
+        "primaryKey": [
+          "tarikh"
+        ],
+        "fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "type": "date"
+          },
+          {
+            "key": "vazn_raste_kham",
+            "title": "وزن راستهٔ خام",
+            "type": "number",
+            "unit": "kg"
+          },
+          {
+            "key": "vazn_estik",
+            "title": "وزن استیک",
+            "type": "number",
+            "unit": "kg"
+          },
+          {
+            "key": "vazn_filadelfia",
+            "title": "وزن فیلادلفیا",
+            "type": "number",
+            "unit": "kg"
+          },
+          {
+            "key": "vazn_khorde_raste",
+            "title": "وزن خرده راسته",
+            "type": "number",
+            "unit": "kg"
+          },
+          {
+            "key": "vazn_zayeat",
+            "title": "وزن ضایعات",
+            "type": "number",
+            "unit": "kg"
+          }
+        ]
+      },
+      "id": "T-46"
+    },
+    {
+      "kind": "record",
+      "key": "form_faravari_estik_filadelfia",
+      "title": "فرم فراوری استیک و فیلادلفیا",
+      "statement": "فرم کاغذی جداگانه‌ای که استیک و فیلادلفیای فراوری‌شده را ثبت می‌کند. چون این دو پس از مرینت و نیم‌پز تحویل انبار می‌شوند، وزن تحویلی آن‌ها با وزن خام برابر نیست و جدا از فرم تبدیل راسته نوشته می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-020.json",
+          "node": "preparation-020-n022",
+          "quote": "پر کردن فرم تبدیل استیک رولی"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "واحد آماده‌سازی",
+          "holder": "مسئول لاین گوشت"
+        },
+        "cadence": "ad_hoc",
+        "grain": "هر پارت استیک و فیلادلفیای فراوری‌شده",
+        "filled_by": "مسئول لاین گوشت",
+        "primaryKey": [
+          "tarikh"
+        ],
+        "fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "type": "date"
+          },
+          {
+            "key": "vazn_estik_kham",
+            "title": "وزن استیک خام",
+            "type": "number",
+            "unit": "kg"
+          },
+          {
+            "key": "vazn_estik_tahvili",
+            "title": "وزن استیک تحویلی به انبار",
+            "type": "number",
+            "unit": "kg"
+          },
+          {
+            "key": "vazn_filadelfia_kham",
+            "title": "وزن فیلادلفیای خام",
+            "type": "number",
+            "unit": "kg"
+          },
+          {
+            "key": "vazn_filadelfia_tahvili",
+            "title": "وزن فیلادلفیای تحویلی به انبار",
+            "type": "number",
+            "unit": "kg"
+          }
+        ]
+      },
+      "id": "T-47"
+    },
+    {
+      "kind": "record",
+      "key": "form_tabdil_sine",
+      "title": "فرم تبدیل سینه مرغ",
+      "statement": "فرم کاغذی لاین مرغ که وزن سینه تحویل‌گرفته‌شده و خروجی‌های حاصل از پاک‌سازی آن — لقمه، گریل، مرغ پیتزا، ضایعات و خونابه و پلاستیک — را ثبت می‌کند؛ برای محصولات شمارشی مانند لقمه، هم تعداد و هم وزن نوشته می‌شود. پرسنل لاین آن را در پایان کار روزانه پر می‌کنند و نسخه پرشده به حسابداری تحویل می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n003",
+          "quote": "تفکیک سینه‌های پاک‌شده بر اساس اندازه و بافت"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "حسابداری",
+          "holder": "مسئول لاین مرغ"
+        },
+        "cadence": "daily",
+        "grain": "هر روز کاری لاین مرغ، به تفکیک هر محصول خروجی",
+        "day_boundary": null,
+        "filled_by": "پرسنل لاین مرغ",
+        "approved_by": null,
+        "blank_master": true,
+        "header_fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "type": "date"
+          },
+          {
+            "key": "vazn_sine_vorudi",
+            "title": "وزن سینه ورودی",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن سینه مرغ تحویل‌گرفته‌شده از انبار، پیش از پاک‌سازی و تفکیک"
+          }
+        ],
+        "rows": [
+          {
+            "key": "loqme",
+            "title": "لقمه"
+          },
+          {
+            "key": "gril",
+            "title": "گریل مرغ"
+          },
+          {
+            "key": "morgh_pizza",
+            "title": "مرغ پیتزا"
+          },
+          {
+            "key": "zayeat",
+            "title": "ضایعات"
+          },
+          {
+            "key": "khunabe_va_plastic",
+            "title": "خونابه و پلاستیک"
+          }
+        ],
+        "primaryKey": [
+          "tarikh",
+          "mahsul"
+        ],
+        "fields": [
+          {
+            "key": "mahsul",
+            "title": "محصول",
+            "type": "string",
+            "description": "نام محصول یا خروجی حاصل از پاک‌سازی سینه"
+          },
+          {
+            "key": "tedad",
+            "title": "تعداد",
+            "type": "integer",
+            "description": "شمار قطعات تولیدشده؛ تنها برای محصولات شمارشی مانند لقمه پر می‌شود"
+          },
+          {
+            "key": "vazn",
+            "title": "وزن",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن محصول تولیدشده در همان روز"
+          }
+        ]
+      },
+      "aliases": [
+        "فرم تبدیل سینه"
+      ],
+      "field_status": {
+        "data/location/holder": "inferred"
+      },
+      "id": "T-48"
+    },
+    {
+      "kind": "record",
+      "key": "form_tabdil_file",
+      "title": "فرم تبدیل فیله مرغ",
+      "statement": "فرم کاغذی لاین مرغ که تعداد فیله تحویل‌گرفته‌شده و خروجی‌های پاک‌سازی آن — فیله پاک‌شده، کنار فیله و ضایعات فیله — را با تعداد و وزن ثبت می‌کند. پرسنل لاین آن را در پایان کار روزانه پر می‌کنند و نسخه پرشده به حسابداری تحویل می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-04.txt",
+          "lines": "206-410"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "حسابداری",
+          "holder": "مسئول لاین مرغ"
+        },
+        "cadence": "daily",
+        "grain": "هر روز کاری لاین مرغ، به تفکیک هر محصول خروجی",
+        "day_boundary": null,
+        "filled_by": "پرسنل لاین مرغ",
+        "approved_by": null,
+        "blank_master": true,
+        "header_fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "type": "date"
+          },
+          {
+            "key": "tedad_file_vorudi",
+            "title": "تعداد فیله ورودی",
+            "type": "integer",
+            "description": "شمار فیله‌های تحویل‌گرفته‌شده در همان روز، پیش از پاک‌سازی"
+          }
+        ],
+        "rows": [
+          {
+            "key": "file_pak_shode",
+            "title": "فیله پاک‌شده"
+          },
+          {
+            "key": "kenar_file",
+            "title": "کنار فیله"
+          },
+          {
+            "key": "zayeat_file",
+            "title": "ضایعات فیله"
+          }
+        ],
+        "primaryKey": [
+          "tarikh",
+          "mahsul"
+        ],
+        "fields": [
+          {
+            "key": "mahsul",
+            "title": "محصول",
+            "type": "string",
+            "description": "نام محصول یا خروجی حاصل از پاک‌سازی فیله"
+          },
+          {
+            "key": "tedad",
+            "title": "تعداد",
+            "type": "integer",
+            "description": "شمار قطعات؛ تنها برای محصولات شمارشی پر می‌شود"
+          },
+          {
+            "key": "vazn",
+            "title": "وزن",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن محصول تولیدشده در همان روز؛ مقادیر کوچک مانند کنار فیله به گرم گفته می‌شود"
+          }
+        ]
+      },
+      "aliases": [
+        "فرم فیله",
+        "فرم تبدیل فیله"
+      ],
+      "field_status": {
+        "data/location/holder": "inferred",
+        "data/fields/vazn/unit": "inferred"
+      },
+      "id": "T-49"
+    },
+    {
+      "kind": "record",
+      "key": "form_ezafe_kari_va_morakhasi",
+      "title": "جدول مرخصی و اضافه‌کاری کارخانه",
+      "statement": "جدولی در شیت آنلاین مجموعه که هر مورد اضافه‌کاری یا مرخصی با تاریخ، نام فرد، ساعت و مدت و شرح کار ثبت می‌شود؛ ثبت باید همان روز و حداکثر روز بعد انجام شود. اضافه‌کاری تنها پس از تأیید مدیر مجموعه در همین جدول برای پرداخت نزد حسابداری معتبر است و ثبت روی برگه کاغذی پذیرفته نمی‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-04.txt",
+          "lines": "206-410"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "sheet",
+        "role": "log",
+        "location": {},
+        "cadence": "ad_hoc",
+        "grain": "هر مورد اضافه‌کاری یا مرخصی هر نفر در هر روز",
+        "day_boundary": null,
+        "filled_by": "سرپرست بخش",
+        "approved_by": "مدیر مجموعه",
+        "primaryKey": [
+          "tarikh",
+          "nam_fard"
+        ],
+        "fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "type": "date"
+          },
+          {
+            "key": "nam_fard",
+            "title": "نام فرد",
+            "type": "string",
+            "description": "نام پرسنلی که اضافه‌کاری یا مرخصی برای او ثبت می‌شود"
+          },
+          {
+            "key": "zaman",
+            "title": "زمان",
+            "type": "string",
+            "description": "ساعت شروع و پایان بازه اضافه‌کاری یا مرخصی"
+          },
+          {
+            "key": "moddat",
+            "title": "مدت",
+            "type": "number",
+            "unit": "hour",
+            "description": "مدت اضافه‌کاری یا مرخصی بر حسب ساعت"
+          },
+          {
+            "key": "sharh_kar",
+            "title": "شرح کار",
+            "type": "string",
+            "description": "کاری که اضافه‌کاری برای انجام آن انجام شده است"
+          },
+          {
+            "key": "tayid_modir",
+            "title": "تأیید مدیر",
+            "type": "string",
+            "description": "ثبت تأیید مدیر مجموعه؛ بدون آن حسابداری مبلغ را پرداخت نمی‌کند"
+          }
+        ]
+      },
+      "aliases": [
+        "فرم اضافه‌کاری و مرخصی"
+      ],
+      "field_status": {
+        "data/filled_by": "inferred"
+      },
+      "id": "T-50"
+    },
+    {
+      "kind": "record",
+      "key": "raspi_sos_ha",
+      "title": "رسپی سس‌های مجموعه",
+      "statement": "مرجع مکتوبی که برای هر سس، وزن هر ماده اولیه — از جمله فلفل دلمه، خیارشور، سیر، ادویه‌ها و آب — را به ازای یک نوبت پخت هفت‌دبه‌ای مشخص می‌کند. نسخه مکتوب نزد حسابداری نگهداری می‌شود و همه پرسنل آماده‌سازی از آن آگاه‌اند، پس تهیه سس به یک نفر وابسته نیست.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-04.txt",
+          "lines": "206-410"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "reference",
+        "location": {
+          "kept_at": "حسابداری",
+          "holder": "مسئول حسابداری"
+        },
+        "cadence": null,
+        "grain": "هر ماده اولیه در هر سس",
+        "filled_by": null,
+        "approved_by": null,
+        "blank_master": false,
+        "header_fields": [
+          {
+            "key": "tedad_dabbe",
+            "title": "تعداد دبه مبنای نسخه",
+            "type": "integer",
+            "description": "شمار دبه سسی که وزن‌های نسخه بر مبنای آن نوشته شده است"
+          }
+        ],
+        "primaryKey": [
+          "sos",
+          "madde_avvaliye"
+        ],
+        "fields": [
+          {
+            "key": "sos",
+            "title": "نام سس",
+            "type": "string",
+            "description": "سسی که نسخه برای آن نوشته شده است"
+          },
+          {
+            "key": "madde_avvaliye",
+            "title": "ماده اولیه",
+            "type": "string",
+            "description": "ماده اولیه‌ای که در نسخه سس به کار می‌رود"
+          },
+          {
+            "key": "vazn",
+            "title": "وزن",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن ماده اولیه برای یک نوبت پخت با تعداد دبه مشخص‌شده"
+          }
+        ]
+      },
+      "aliases": [
+        "رسپی سس"
+      ],
+      "field_status": {
+        "data/location/holder": "inferred",
+        "data/fields/vazn/unit": "inferred"
+      },
+      "id": "T-51"
+    },
+    {
+      "kind": "record",
+      "key": "form_darkhast_kala_amadesazi",
+      "title": "فرم درخواست کالای روزانهٔ آماده‌سازی",
+      "statement": "فرم کاغذی نیاز همیشگی روزانهٔ آماده‌سازی است که مسئول هر لاین کسری اقلام لاین خود را در آن می‌نویسد و سرپرست آماده‌سازی پیش از تحویل آن را تأیید می‌کند؛ حدود صد قلم مانند شیر، خامه، نمک، فلفل، زردچوبه و پودر سیر دارد و به سبب تعداد زیاد در دو برگه آمده است. اقلام مقطعی و مواد اولیهٔ اصلی مانند مرغ و گوشت در آن نوشته نمی‌شود. برگه هر روز غروب به انبار تحویل می‌شود، انبار جلوی هر قلم تحویل‌شده تیک می‌زند و اقلام را تا ساعت ده صبح روز بعد به آماده‌سازی می‌رساند تا لاین‌ها بیکار نمانند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-003.json",
+          "node": "preparation-003-n005",
+          "quote": "این فرمو غروب بهشون تحویل می‌دیم به انبار"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-003.json",
+          "node": "preparation-003-n012",
+          "quote": "یک دیگه اضافه می‌کنیم که انبار هم متوجه می‌شه"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-003.json",
+          "node": "preparation-003-n013",
+          "quote": "فردا هر چیزی که از ذهن ما دیروز خارج بوده به همین اضافه می‌کنیم"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-003.json",
+          "node": "preparation-003-n001",
+          "quote": "چک کنید ببینید ادویه‌ها کامل باشه"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-016.json",
+          "node": "preparation-016-n002",
+          "quote": "مسئول لاین خمیر باید اعلام بکنه که ۵۰۰ گرم ژلاتین رو کم دارم"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "انبار، پس از تحویل غروب",
+          "holder": "انباردار"
+        },
+        "cadence": "daily",
+        "day_boundary": "غروب، هنگام تحویل فرم به انبار",
+        "grain": "هر قلم درخواستی در هر روز",
+        "filled_by": "مسئول لاین",
+        "approved_by": "سرپرست آماده‌سازی",
+        "blank_master": false,
+        "primaryKey": [
+          "qalam"
+        ],
+        "fields": [
+          {
+            "key": "qalam",
+            "title": "نام کالا",
+            "type": "string",
+            "description": "نام قلم درخواستی که روی فرم فهرست شده است."
+          },
+          {
+            "key": "meqdar_darkhast",
+            "title": "مقدار درخواستی",
+            "type": "number",
+            "unit": null,
+            "description": "مقدار موردنیاز هر قلم که مسئول لاین جلوی آن می‌نویسد؛ واحد آن بسته به قلم، وزن یا تعداد است."
+          },
+          {
+            "key": "meqdar_ezafe",
+            "title": "مقدار اضافه‌شدهٔ اصلاحی",
+            "type": "number",
+            "unit": null,
+            "description": "عددی که صبح روز بعد روی همان برگه جلوی قلم افزوده می‌شود تا انبار بداند مقدار بیشتری لازم است.",
+            "filled_by": "مسئول لاین"
+          },
+          {
+            "key": "tik_tahvil",
+            "title": "تیک تحویل انبار",
+            "type": "boolean",
+            "description": "انبار جلوی هر قلمی که تحویل داده است تیک می‌زند؛ نبود تیک یعنی آن قلم هنوز تحویل نشده است.",
+            "filled_by": "انباردار"
+          }
+        ]
+      },
+      "aliases": [
+        "چک‌لیست غروب درخواست مواد اولیه"
+      ],
+      "field_status": {
+        "data/location/kept_at": "inferred"
+      },
+      "id": "T-52"
+    },
+    {
+      "kind": "record",
+      "key": "daftar_gozaresh_ruzaneye_sarparast",
+      "title": "دفتر گزارش روزانهٔ سرپرست آماده‌سازی",
+      "statement": "دفتر کاغذی است که سرپرست آماده‌سازی گزارش‌های روزانه و موارد تأخیر یا غیبت پرسنل لاین‌ها را در آن یادداشت می‌کند. هر کس که دیرتر از ساعت شروع کار برسد باید چند ساعت پیش‌تر اعلام کند و همان اعلام در این دفتر ثبت می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-001.json",
+          "node": "preparation-001-n007",
+          "quote": "سر ساعت ۱۰ توی محیط آماده‌سازی باشم"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "محیط آماده‌سازی",
+          "holder": "سرپرست آماده‌سازی"
+        },
+        "cadence": "daily",
+        "grain": "هر مورد گزارش یا تأخیر در هر روز",
+        "filled_by": "سرپرست آماده‌سازی",
+        "blank_master": false
+      },
+      "field_status": {
+        "data/location/kept_at": "inferred"
+      },
+      "id": "T-53"
+    },
+    {
+      "kind": "record",
+      "key": "daftar_amar_line",
+      "title": "دفتر آمار لاین",
+      "statement": "دفتر کاغذی هر لاین که مسئول همان لاین هر روز وزن و تعداد اقلام تحویل‌گرفته‌شده از انبار و اقلام تولیدشده را در آن می‌نویسد؛ هر لاین دفتر جداگانهٔ خود را دارد، مانند دفتر مرغ و دفتر گوشت. این دفتر در پایان روز به سرپرست آماده‌سازی تحویل داده می‌شود، مبنای سنجش بازدهی همان لاین است و آمار ورودی، خروجی و تولید از روی آن وارد فایل آماده‌سازی می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-004.json",
+          "node": "preparation-004-n013",
+          "quote": "دفتر مخصوص هر لاین"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n026",
+          "quote": "ثبت وزن و تعداد مرغ در دفتر مرغ"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-006.json",
+          "node": "preparation-006-n025",
+          "quote": "تحویل روزانه یادداشت‌های دفتر"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-005.json",
+          "node": "preparation-005-n009",
+          "quote": "تحویل روزانه دفتر آمار لاین سبزیجات"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n040",
+          "quote": "ثبت وزن مرغ خام و مرغ پخته‌شده در دفتر"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "لاین مربوط در بخش آماده‌سازی",
+          "holder": "مسئول لاین"
+        },
+        "cadence": "daily",
+        "grain": "هر قلم تحویل‌گرفته‌شده یا تولیدشده در لاین",
+        "filled_by": "مسئول لاین",
+        "approved_by": "سرپرست آماده‌سازی",
+        "fields": [
+          {
+            "key": "qalam",
+            "title": "نام قلم",
+            "type": "string",
+            "description": "نام مادهٔ اولیه یا محصولی که تحویل گرفته یا تولید شده است."
+          },
+          {
+            "key": "vazn",
+            "title": "وزن",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزنی که مسئول لاین خودش اندازه گرفته است، نه مقداری که انبار اعلام کرده است."
+          },
+          {
+            "key": "tedad",
+            "title": "تعداد",
+            "type": "number",
+            "unit": "pcs",
+            "description": "تعداد شمارش‌شدهٔ اقلام شمارشی مانند لقمه و فیله."
+          }
+        ]
+      },
+      "aliases": [
+        "دفتر روزانهٔ ثبت هر لاین"
+      ],
+      "id": "T-54"
+    },
+    {
+      "kind": "record",
+      "key": "barge_morakhasi_saati",
+      "title": "برگهٔ مرخصی ساعتی پرسنل",
+      "statement": "برگه‌ای کاغذی که مرخصی ساعتی هر پرسنل آماده‌سازی در آن ثبت می‌شود: تاریخ، نقش فرد و بازهٔ ساعتی مرخصی تأییدشده. پرسنل آن را پر می‌کنند و در پایان هر هفته، روز شنبه، به حسابداری تحویل می‌دهند و برگهٔ هفتهٔ تازه را همان روز تحویل می‌گیرند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-001.json",
+          "node": "preparation-001-n002",
+          "quote": "برگه دارن برگه مرخصی تو اون قید میشه"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "واحد حسابداری",
+          "holder": "حسابداری"
+        },
+        "cadence": "weekly",
+        "grain": "هر مورد مرخصی ساعتی برای یک پرسنل",
+        "filled_by": "پرسنل آماده‌سازی",
+        "approved_by": null,
+        "primaryKey": [
+          "tarikh",
+          "naqsh_personel"
+        ],
+        "fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "type": "date"
+          },
+          {
+            "key": "naqsh_personel",
+            "title": "نقش پرسنل",
+            "type": "string",
+            "description": "نقش فردی که مرخصی ساعتی برای او ثبت شده است."
+          },
+          {
+            "key": "saat_shoru",
+            "title": "ساعت شروع مرخصی",
+            "type": "string"
+          },
+          {
+            "key": "saat_payan",
+            "title": "ساعت پایان مرخصی",
+            "type": "string"
+          }
+        ]
+      },
+      "aliases": [
+        "برگه مرخصی"
+      ],
+      "id": "T-55"
+    },
+    {
+      "kind": "measurement",
+      "key": "tozin_vorudi_khoruji_line",
+      "title": "توزین ورودی، خروجی و دورریز هر لاین",
+      "statement": "هر لاین مادهٔ اولیهٔ تحویل‌گرفته را پیش از شروع کار توزین می‌کند و محصول آمادهٔ خود را هنگام تحویل دوباره توزین می‌کند؛ پوست، کاور پلاستیکی، خونابه و دیگر دورریزها هم جداگانه وزن و ثبت می‌شوند. همهٔ این وزن‌ها بر حسب کیلوگرم و توسط مسئول همان لاین ثبت می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n001",
+          "quote": "اول ورودی وزن‌کشی می‌کنه خروجی هم وزن‌کشی می‌کنه"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-017.json",
+          "node": "preparation-017-n011",
+          "quote": "باز کردن رول و جدا کردن پوست و کاور پلاستیکی"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "توزین با ترازو؛ برای دورریز و خونابه هیچ وزن فرضی در نظر گرفته نمی‌شود و هر بار عدد ترازو نوشته می‌شود.",
+        "when": "پیش از شروع کار روی مادهٔ اولیه و پس از آماده شدن محصول",
+        "by": "مسئول لاین",
+        "exceptions": null
+      },
+      "id": "T-56"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_giri_baste_nahayi",
+      "title": "وزن‌گیری و لیبل‌زنی بستهٔ محصول نهایی",
+      "statement": "هر بستهٔ محصول آمادهٔ لاین روی ترازوی لیبل‌گذاری وزن می‌شود و لیبل چاپی آن نام محصول، وزن، تاریخ و ساعت را نشان می‌دهد. نام هر محصول از پیش روی همان ترازو تعریف شده است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n008",
+          "quote": "هر محصولی که می‌ذاریم روی ترازو خودش رو می‌زنیم اسمش می‌افته"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n010",
+          "quote": "وقتی پرینت رو می‌زنیم همه اطلاعات چاپ میشه"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-006.json",
+          "node": "preparation-006-n019",
+          "quote": "وزن میده، تاریخ میده و اسم محصول"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "ترازوی لیبل‌گذاری با چاپ لیبل روز، ساعت، نوع جنس و وزن",
+        "when": "پس از بسته‌بندی هر بستهٔ محصول نهایی",
+        "by": "مسئول لاین",
+        "exceptions": "ضایعات کاهو لیبل نمی‌خورد و فقط وزن آن در دفتر لاین نوشته می‌شود."
+      },
+      "id": "T-57"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_khales_morgh_pokhte",
+      "title": "وزن خالص مرغ پختهٔ اسلایس‌شده",
+      "statement": "وزن خالص مرغ پختهٔ اسلایس‌شده به کیلوگرم اندازه گرفته می‌شود تا مقدار سس بر مبنای آن محاسبه شود. مسئول لاین مرغ پیش از ریختن مرغ، وزن ظرف خالی را روی ترازو صفر می‌کند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n033",
+          "quote": "وزن خالص مرغ پخته شده رو باید به دست بیارم"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n018",
+          "quote": "وزن ظرفی که خالیه رو اونو می‌گیرم صفر می‌کنم"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "صفر کردن وزن ظرف خالی روی ترازو و سپس ریختن مرغ اسلایس‌شده در همان ظرف",
+        "when": "پس از پایان اسلایس کردن و پیش از زدن سس",
+        "by": "مسئول لاین مرغ آماده‌سازی"
+      },
+      "id": "T-59"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_plastik_khunabe",
+      "title": "وزن‌گیری پلاستیک و خونابهٔ گوشت",
+      "statement": "پس از خرد کردن گوشت و ریختن آن در دیگ، کیسه‌های پلاستیک و خونابهٔ کنارگذاشته‌شده بر حسب گرم وزن و در دفتر لاین ثبت می‌شود تا از وزن گوشت خام کسر شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-030.json",
+          "node": "preparation-030-n008",
+          "quote": "کنار گذاشتن کیسه‌های پلاستیک گوشت"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-018.json",
+          "node": "preparation-018-n005",
+          "quote": "کنار گذاشتن کیسه‌ها برای وزن‌گیری بعدی"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "g",
+        "when": "بلافاصله پس از خرد کردن گوشت و ریختن آن در دیگ",
+        "by": "مسئول لاین گوشت",
+        "method": "وزن‌گیری کیسه‌های کنارگذاشته‌شده با ترازوی لاین"
+      },
+      "id": "T-61"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_adviyeh_marinat",
+      "title": "وزن‌گیری جداگانهٔ ادویه و سس مایهٔ چرخ‌کرده",
+      "statement": "پیاز، سیر، خردل، سس ورچستر، سس سویا، نمک و فلفل هرکدام جداگانه و بر حسب گرم طبق نسخهٔ هر کیلوگرم گوشت وزن می‌شوند و سپس در یک ظرف با هم مخلوط می‌شوند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-019.json",
+          "node": "preparation-019-n022",
+          "quote": "وزن‌گیری جداگانه ادویه‌ها و سس‌ها"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-019.json",
+          "node": "preparation-019-n016",
+          "quote": "وزن‌گیری پیاز و سیر طبق رسپی"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "g",
+        "when": "پیش از تفت دادن مایه",
+        "by": "مسئول لاین گوشت",
+        "method": "وزن‌گیری تک‌به‌تک هر قلم طبق نسخه به ازای هر کیلوگرم گوشت"
+      },
+      "id": "T-63"
+    },
+    {
+      "kind": "measurement",
+      "key": "shomaresh_burger_tolidi",
+      "title": "شمارش برگر و مینی برگر تولیدشده",
+      "statement": "در پایان تولید، مسئول لاین گوشت تعداد برگر و مینی برگر تولیدشده را خودش می‌شمارد و آن را در کنار وزن گوشت دریافتی، ضایعات پلاستیک و ضایعات گوشت چسبیده به دستگاه ثبت می‌کند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
+          "lines": "159-315"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "count",
+        "unit": "pcs",
+        "method": "شمارش دستی توسط خود لاین گوشت",
+        "when": "پایان تولید روزانه، پیش از تحویل به انبار",
+        "by": "مسئول لاین گوشت"
+      },
+      "id": "T-65"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_morgh_tafkik_shode",
+      "title": "وزن مرغ تفکیک‌شده پیش از مرینت",
+      "statement": "هر نوع مرغ پس از تفکیک و شستشو جداگانه روی ترازوی تاپینگ وزن می‌شود تا مقدار مواد مرینت آن نوع بر مبنای کیلوگرم محاسبه شود. این توزین را مسئول لاین مرینت پیش از ریختن مرغ در دستگاه انجام می‌دهد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n003",
+          "quote": "هر کدومو جدا جدا وزن میگیرم"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "توزین جداگانهٔ هر نوع مرغ روی ترازوی تاپینگ",
+        "when": "پس از شستشو و پیش از مرینت",
+        "by": "مسئول لاین مرینت",
+        "exceptions": "فیله و سینهٔ چیزا نیز وزن می‌شوند اما در دستگاه مرینت نمی‌شوند."
+      },
+      "id": "T-66"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_kenar_chizza",
+      "title": "وزن کنار چیزا",
+      "statement": "سر و گوشه‌های بریده‌شدهٔ رول‌های چیزا جمع، در پلاستیک بسته و روی ترازو وزن می‌شوند و با نام و وزن برچسب می‌خورند تا انبار آن‌ها را از فریزر ببرد. مقدار روزانه در حدود پانصد تا ششصد گرم است و فرم جداگانه‌ای ندارد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-014.json",
+          "node": "preparation-014-n019",
+          "quote": "اونم توی پلاستیک میذارم مجددا لیبل میزنم وزنش مشخص میشه"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "g",
+        "method": "توزین بستهٔ کنار چیزا روی ترازوی برچسب‌گذاری",
+        "when": "پایان کار تولید چیزا",
+        "by": "مسئول لاین مرینت",
+        "exceptions": "فرم مشخصی پر نمی‌شود و اطلاع‌رسانی شفاهی به انبار انجام می‌شود."
+      },
+      "id": "T-67"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_giri_baste_loqme",
+      "title": "وزن‌کشی بستهٔ لقمه",
+      "statement": "هر بستهٔ دویست‌عددی لقمه پس از شمارش روی ترازوی لیبل‌گذاری وزن می‌شود تا درستی شمارش کنترل شود. اگر وزن بسته از حد مجاز بالاتر باشد، بسته باز و دوباره شمرده می‌شود و لقمهٔ اضافه برداشته می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n008",
+          "quote": "الان من ۲۰۰ تا لقمه رو بسته بندی وزن میگیرم"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "g",
+        "method": "ترازوی لیبل‌گذاری",
+        "when": "پس از شمارش و بسته‌بندی هر بسته",
+        "by": "پرسنل لاین تخته‌کاری",
+        "exceptions": null
+      },
+      "id": "T-68"
+    },
+    {
+      "kind": "measurement",
+      "key": "sabte_zayeat_kahu",
+      "title": "ثبت ضایعات کاهو",
+      "statement": "ضایعات کاهو از اختلاف وزن ورودی و خروجی به دست می‌آید و در دفتر آماده‌سازی ثبت می‌شود تا آمار حدودی در دسترس باشد؛ برای کاهو برگهٔ تبدیل جداگانه پر نمی‌شود. این آمار هر زمان که مدیریت بخواهد گزارش می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-006.json",
+          "node": "preparation-006-n020",
+          "quote": "چاپ و زدن لیبل تاریخ، ساعت، نام محصول و وزن روی بسته‌های کاهو"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "اختلاف وزن کاهوی تحویل‌گرفته‌شده و وزن بسته‌های آمادهٔ تحویل، که در دفتر آماده‌سازی نوشته می‌شود.",
+        "when": "هر روز پس از پاک کردن و بسته‌بندی کاهو",
+        "by": "مسئول لاین سبزیجات"
+      },
+      "id": "T-70"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_giri_mavad_vorudi_line",
+      "title": "وزن‌گیری و شمارش اقلام ورودی هر لاین",
+      "statement": "مسئول هر لاین هر قلم مادهٔ اولیه را هنگام تحویل گرفتن از انبار و در محل تحویل بر حسب کیلوگرم وزن می‌کند و اقلام شمارشی را می‌شمارد تا مقدار اعلام‌شدهٔ انبار راستی‌آزمایی شود. وزن یا تعداد به‌دست‌آمده پیش از شروع کار در دفتر همان لاین نوشته می‌شود؛ مرغ و گوشت در چند پارت و هر بار هنگام رسیدن بار وزن می‌شوند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n001",
+          "quote": "وزن‌کشی مواد اولیه ورودی هر لاین"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n023",
+          "quote": "تحویل گرفتن، وزن‌گیری و شمارش"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-004.json",
+          "node": "preparation-004-n013",
+          "quote": "ثبت وزن و تعداد اقلام تحویل‌گرفته‌شده"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "ترازوی آماده‌سازی با خطای مقیاس ده گرم",
+        "when": "هنگام تحویل گرفتن هر پارت از انبار",
+        "by": "مسئول لاین",
+        "exceptions": null
+      },
+      "aliases": [
+        "توزین اقلام ورودی هر لاین",
+        "وزن‌گیری اقلام تحویلی از انبار"
+      ],
+      "id": "T-71"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_keshi_adviye_respi",
+      "title": "وزن‌کشی ادویه‌ها و مواد رسپی",
+      "statement": "ادویه‌ها و مواد هر رسپی پیش از افزودن، بر حسب گرم و طبق مقدار رسپی وزن می‌شوند و هیچ انحرافی از آن مقدار، حتی یک گرم، پذیرفته نیست. وزن ظرف پیش از وزن‌کشی صفر می‌شود و سرپرست هنگام وزن‌کشی محصولات گوشتی حضور دارد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-019.json",
+          "node": "preparation-019-n022",
+          "quote": "وزن‌گیری جداگانه ادویه‌ها و سس‌ها"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n018",
+          "quote": "صفر کردن وزن ظرف"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-021.json",
+          "node": "preparation-021-n016",
+          "quote": "وزن‌گیری دانه‌به‌دانه مواد و ادویه‌ها"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "g",
+        "method": "ترازوی لاین پس از صفر کردن وزن ظرف",
+        "when": "هنگام اجرای هر رسپی",
+        "by": "مسئول لاین زیر نظر سرپرست آماده‌سازی",
+        "exceptions": null
+      },
+      "id": "T-72"
+    },
+    {
       "kind": "rule",
       "key": "vazn_pust_rol_zhambon",
       "title": "وزن پوست هر رول ژامبون",
@@ -17,15 +2784,14 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-017.json",
           "node": "preparation-017-n011",
-          "quote": "تو هر یه رولش ۱۷۰ گرم پوست داره. توی چهار کیلوش",
-          "hash": "sha256:d77039c788fc575235300064893d26c47f7d1e4ab3a4de6caaa5eda4e795f8bb",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "تو هر یه رولش ۱۷۰ گرم پوست داره. توی چهار کیلوش"
         }
       ],
       "retired": false,
       "data": {
         "lang": null,
         "expr": null,
+        "original": "تو هر یه رولش جسارتا ۱۷۰ گرم پوست داره. توی چهار کیلوش.",
         "inputs": [],
         "outputs": [
           {
@@ -35,14 +2801,9 @@
             "value": 170,
             "nature": "standard"
           }
-        ],
-        "original_ref": "facts/originals/F-00057.txt"
+        ]
       },
-      "id": "F-00057",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-73"
     },
     {
       "kind": "rule",
@@ -60,15 +2821,14 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-004.json",
           "node": "preparation-004-n005",
-          "quote": "اگه بد باشه تحویل نمی‌گیره",
-          "hash": "sha256:0292f1872d6a75ebab891b39dd470e40840a95d6fcca4a5a4c9c952554d15948",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "اگه بد باشه تحویل نمی‌گیره"
         }
       ],
       "retired": false,
       "data": {
         "lang": "text",
         "expr": null,
+        "original": "جسارت نباشه آماده‌سازی ضایعات نداره. دورریز داره. چون همونو صبح تحویل می‌گیره اگه بد باشه تحویل نمی‌گیره. ضایعات تحویل انبار داده میشه.",
         "inputs": [
           {
             "key": "vaziat_qalam",
@@ -82,14 +2842,9 @@
             "title": "دسته‌بندی ضایعات یا دورریز",
             "nature": null
           }
-        ],
-        "original_ref": "facts/originals/F-00058.txt"
+        ]
       },
-      "id": "F-00058",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-74"
     },
     {
       "kind": "rule",
@@ -106,15 +2861,14 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-05-28-02.txt",
-          "lines": "1-117",
-          "hash": "sha256:b6b6c0e5358cb64b0f4d13b61be777e44578f68adb055fe58e56c5001d081b57",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "1-117"
         }
       ],
       "retired": false,
       "data": {
         "lang": "text",
         "expr": null,
+        "original": "مانده شب نداریم. چون همه چی رو همون روز تحویل انبار میدن.",
         "inputs": [
           {
             "key": "tolid_ruz",
@@ -128,14 +2882,9 @@
             "title": "زمان تحویل به انبار",
             "nature": null
           }
-        ],
-        "original_ref": "facts/originals/F-00059.txt"
+        ]
       },
-      "id": "F-00059",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-75"
     },
     {
       "kind": "rule",
@@ -152,9 +2901,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-05-28-03.txt",
-          "lines": "1-103",
-          "hash": "sha256:cdb93d1b736e60b9176d42bd375e7759b9a57387103a62cc7fd446a5dfe99d3b",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "1-103"
         }
       ],
       "retired": false,
@@ -182,11 +2929,7 @@
           }
         ]
       },
-      "id": "F-00060",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-76"
     },
     {
       "kind": "rule",
@@ -204,17 +2947,13 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-013.json",
           "node": "preparation-013-n044",
-          "quote": "به اضافه ضایعات باید... جمع اینا با این باید بخونه",
-          "hash": "sha256:6769fff3022c28d868f73d8050cb8b86a7c2e9192e0062b54095cb37baf8638c",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "به اضافه ضایعات باید... جمع اینا با این باید بخونه"
         },
         {
           "type": "process",
           "ref": "departments/preparation/processes/preparation-018.json",
           "node": "preparation-018-n034",
-          "quote": "اگه ضایعاتی هم داشتین از این مقدار",
-          "hash": "sha256:b8db2f8e083760395ae374650628e8052d6ca182dacc67dd0e4ac2205a596f49",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "اگه ضایعاتی هم داشتین از این مقدار"
         }
       ],
       "retired": false,
@@ -242,11 +2981,7 @@
           }
         ]
       },
-      "id": "F-00061",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-77"
     },
     {
       "kind": "rule",
@@ -263,9 +2998,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-05-28.txt",
-          "lines": "1-150",
-          "hash": "sha256:158ef6036b07131e4f7d1b6d144b45862a2c111e0cee54dcc89129fc5ad4f280",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "1-150"
         }
       ],
       "retired": false,
@@ -284,11 +3017,7 @@
           }
         ]
       },
-      "id": "F-00062",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-79"
     },
     {
       "kind": "rule",
@@ -306,25 +3035,19 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-001.json",
           "node": "preparation-001-n007",
-          "quote": "ملاک ما حضور ساعت ده در محل کار برای آماده به کار است",
-          "hash": "sha256:d47645941743989e3cd9715aab3fec21e3b26f3d2aa6296ba328c0cc294027ea",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "ملاک ما حضور ساعت ده در محل کار برای آماده به کار است"
         },
         {
           "type": "process",
           "ref": "departments/preparation/processes/preparation-003.json",
           "node": "preparation-003-n006",
-          "quote": "ده و بیست دقیقه باید انبار لیست را به ما تحویل بدهد",
-          "hash": "sha256:5afd869846e73ac739993f143e169b6e6a94a9cae85c7dbfd74c450b24645b05",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "ده و بیست دقیقه باید انبار لیست را به ما تحویل بدهد"
         },
         {
           "type": "process",
           "ref": "departments/preparation/processes/preparation-003.json",
           "node": "preparation-003-n013",
-          "quote": "ده و سی دقیقه لیست ما باید دست انبار باشد",
-          "hash": "sha256:5afd869846e73ac739993f143e169b6e6a94a9cae85c7dbfd74c450b24645b05",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "ده و سی دقیقه لیست ما باید دست انبار باشد"
         }
       ],
       "retired": false,
@@ -372,11 +3095,7 @@
           ]
         }
       },
-      "id": "F-00063",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-80"
     },
     {
       "kind": "rule",
@@ -394,9 +3113,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-016.json",
           "node": "preparation-016-n006",
-          "quote": "هر پارتمون فکر کنم بیست و هشت تا سی کیلو ما خمیر می‌گیریم",
-          "hash": "sha256:54451a8035a0b5f4528300627c14b3afb4ac99abc48b77265b42a4347fb9c77f",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "هر پارتمون فکر کنم بیست و هشت تا سی کیلو ما خمیر می‌گیریم"
         }
       ],
       "retired": false,
@@ -418,11 +3135,7 @@
       "aliases": [
         "پارت خمیر"
       ],
-      "id": "F-00064",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-81"
     },
     {
       "kind": "rule",
@@ -440,9 +3153,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-019.json",
           "node": "preparation-019-n001",
-          "quote": "طی یک هفته یا هشت روز باید دپوشو نگه داره",
-          "hash": "sha256:6d6fcbc9fcd824451499c4080ee4516002002ac7b990c6a2ee2c278524e04499",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "طی یک هفته یا هشت روز باید دپوشو نگه داره"
         }
       ],
       "retired": false,
@@ -461,11 +3172,7 @@
           }
         ]
       },
-      "id": "F-00065",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-82"
     },
     {
       "kind": "rule",
@@ -482,9 +3189,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-05-28.txt",
-          "lines": "151-300",
-          "hash": "sha256:158ef6036b07131e4f7d1b6d144b45862a2c111e0cee54dcc89129fc5ad4f280",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "151-300"
         }
       ],
       "retired": false,
@@ -503,11 +3208,7 @@
           }
         ]
       },
-      "id": "F-00066",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-83"
     },
     {
       "kind": "rule",
@@ -525,9 +3226,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-019.json",
           "node": "preparation-019-n001",
-          "quote": "یه برنامه براشون تعریف کردیم که یکشنبه ها فرض مثال رست بیف باشه",
-          "hash": "sha256:6d6fcbc9fcd824451499c4080ee4516002002ac7b990c6a2ee2c278524e04499",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "یه برنامه براشون تعریف کردیم که یکشنبه ها فرض مثال رست بیف باشه"
         }
       ],
       "retired": false,
@@ -586,11 +3285,7 @@
           ]
         }
       },
-      "id": "F-00067",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-84"
     },
     {
       "kind": "rule",
@@ -608,9 +3303,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-016.json",
           "node": "preparation-016-n011",
-          "quote": "شعبه ساعت چهار باید خمیرش بره ولی مرکزی تا شش و نیم هم بهش نرسونن اشکال نداره",
-          "hash": "sha256:54451a8035a0b5f4528300627c14b3afb4ac99abc48b77265b42a4347fb9c77f",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "شعبه ساعت چهار باید خمیرش بره ولی مرکزی تا شش و نیم هم بهش نرسونن اشکال نداره"
         }
       ],
       "retired": false,
@@ -652,11 +3345,7 @@
       "aliases": [
         "اولویت شعبه"
       ],
-      "id": "F-00068",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-85"
     },
     {
       "kind": "rule",
@@ -674,15 +3363,14 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-004.json",
           "node": "preparation-004-n016",
-          "quote": "هیچ کسی حق نداره حتی ۱۰۰ گرم ازش برداره",
-          "hash": "sha256:0292f1872d6a75ebab891b39dd470e40840a95d6fcca4a5a4c9c952554d15948",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "هیچ کسی حق نداره حتی ۱۰۰ گرم ازش برداره"
         }
       ],
       "retired": false,
       "data": {
         "lang": "text",
         "expr": null,
+        "original": "ما طبق وزن برامون میاد طبق وزن تحویل انبار میدیم، هیچ کسی حق نداره حتی ۱۰۰ گرم ازش برداره؛ بچه های انبار باید بیان بردارن.",
         "inputs": [
           {
             "key": "vazn_tahvili_az_anbar",
@@ -696,14 +3384,9 @@
             "title": "وزن محصول تحویلی به انبار",
             "unit": "kg"
           }
-        ],
-        "original_ref": "facts/originals/F-00069.txt"
+        ]
       },
-      "id": "F-00069",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-86"
     },
     {
       "kind": "rule",
@@ -721,15 +3404,14 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-002.json",
           "node": "preparation-002-n005",
-          "quote": "روندمون به اینه که اصلا ضایعات نداشته باشیم",
-          "hash": "sha256:c2440b484d1560e73a95517337345887aa0bd2a7f06729bbd84d57a7fac699e1",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "روندمون به اینه که اصلا ضایعات نداشته باشیم"
         }
       ],
       "retired": false,
       "data": {
         "lang": "text",
         "expr": null,
+        "original": "اگه قرار باشه این تا فردا بمونه مسلما زنگ میزنه و خراب میشه؛ تو هفته دو شب سه شب میریم کاهو دوباره تولید میکنیم.",
         "inputs": [
           {
             "key": "kahooye_amade_bagimande",
@@ -743,14 +3425,9 @@
             "title": "انتقال کاهوی آماده به روز بعد",
             "nature": "limit"
           }
-        ],
-        "original_ref": "facts/originals/F-00070.txt"
+        ]
       },
-      "id": "F-00070",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-87"
     },
     {
       "kind": "rule",
@@ -768,15 +3445,14 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-002.json",
           "node": "preparation-002-n005",
-          "quote": "کاهویی که کرم داره رو مستقیم دور بریزید",
-          "hash": "sha256:c2440b484d1560e73a95517337345887aa0bd2a7f06729bbd84d57a7fac699e1",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "کاهویی که کرم داره رو مستقیم دور بریزید"
         }
       ],
       "retired": false,
       "data": {
         "lang": "text",
         "expr": null,
+        "original": "کاهویی که کرم داره یعنی می‌بینن سوراخه مستقیم پرت بدن اصلاً نباید بازش کنن دیگه. چون تخم کرم تو بقیه کاهوها ریخته میشه.",
         "inputs": [
           {
             "key": "vaziat_zaheri_kahoo",
@@ -789,14 +3465,9 @@
             "key": "taklif_kahoo",
             "title": "تکلیف کاهو"
           }
-        ],
-        "original_ref": "facts/originals/F-00071.txt"
+        ]
       },
-      "id": "F-00071",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-88"
     },
     {
       "kind": "rule",
@@ -813,9 +3484,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-01.txt",
-          "lines": "1-212",
-          "hash": "sha256:fc7d9f14ad8514931d243e838aaa563a319ceaf543eee3bc472a1c0f74e77607",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "1-212"
         }
       ],
       "retired": false,
@@ -833,11 +3502,7 @@
           }
         ]
       },
-      "id": "F-00072",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-89"
     },
     {
       "kind": "rule",
@@ -855,9 +3520,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-026.json",
           "node": "preparation-026-n006",
-          "quote": "وزن که لیبل‌گذاری می‌شه تحویل انبار داده می‌شه",
-          "hash": "sha256:a43acf874fce9ac22a497659448764b2c90438fd001e1ffc1d8cfcdc0606bce2",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "وزن که لیبل‌گذاری می‌شه تحویل انبار داده می‌شه"
         }
       ],
       "retired": false,
@@ -897,11 +3560,7 @@
           ]
         }
       },
-      "id": "F-00073",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-90"
     },
     {
       "kind": "rule",
@@ -918,15 +3577,14 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-01.txt",
-          "lines": "1-212",
-          "hash": "sha256:fc7d9f14ad8514931d243e838aaa563a319ceaf543eee3bc472a1c0f74e77607",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "1-212"
         }
       ],
       "retired": false,
       "data": {
         "lang": "text",
         "expr": null,
+        "original": "اون کاهوییه توی آشپزخونه حالت امانی مونده که اگه ما شب کم بیاریم بتونیم تولید کنیم. می‌مونه برای فردا.",
         "inputs": [
           {
             "key": "kahoo_pak_shode_baqimande",
@@ -940,14 +3598,9 @@
             "key": "vaziat_negahdari",
             "title": "وضعیت نگهداری"
           }
-        ],
-        "original_ref": "facts/originals/F-00074.txt"
+        ]
       },
-      "id": "F-00074",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-91"
     },
     {
       "kind": "rule",
@@ -964,9 +3617,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-01.txt",
-          "lines": "1-212",
-          "hash": "sha256:fc7d9f14ad8514931d243e838aaa563a319ceaf543eee3bc472a1c0f74e77607",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "1-212"
         }
       ],
       "retired": false,
@@ -984,11 +3635,7 @@
           }
         ]
       },
-      "id": "F-00075",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-92"
     },
     {
       "kind": "rule",
@@ -1006,9 +3653,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-006.json",
           "node": "preparation-006-n004",
-          "quote": "هشت کیلو و نیم باید کاهوی خرد شده تولید کنید",
-          "hash": "sha256:9e3950273179d2613d95526566ab12d7dd3ab17934c023faaaf1bf6e0ae7cc83",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "هشت کیلو و نیم باید کاهوی خرد شده تولید کنید"
         }
       ],
       "retired": false,
@@ -1038,11 +3683,7 @@
           }
         ]
       },
-      "id": "F-00076",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-93"
     },
     {
       "kind": "rule",
@@ -1060,9 +3701,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-006.json",
           "node": "preparation-006-n004",
-          "quote": "۱۶ کیلو، ۸ کیلوشو خرد کنید، ۸ کیلو پاک شده",
-          "hash": "sha256:9e3950273179d2613d95526566ab12d7dd3ab17934c023faaaf1bf6e0ae7cc83",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "۱۶ کیلو، ۸ کیلوشو خرد کنید، ۸ کیلو پاک شده"
         }
       ],
       "retired": false,
@@ -1092,11 +3731,7 @@
           }
         ]
       },
-      "id": "F-00077",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-94"
     },
     {
       "kind": "rule",
@@ -1114,15 +3749,14 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-007.json",
           "node": "preparation-007-n005",
-          "quote": "نه اون ضایعاتش نه",
-          "hash": "sha256:0ebce9134d4b0cfe8260d5ee01ae1eda9818416ebeda158ef18d001f30f1f606",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "نه اون ضایعاتش نه"
         }
       ],
       "retired": false,
       "data": {
         "lang": "text",
         "expr": null,
+        "original": "نه اون ضایعاتش نه. خیلی بخواد خراب باشه آره. استثنائاتشه.",
         "inputs": [
           {
             "key": "vazn_zayeat_pak_sazi",
@@ -1136,14 +3770,9 @@
             "key": "sabt_dar_zayeat",
             "title": "ثبت در ضایعات"
           }
-        ],
-        "original_ref": "facts/originals/F-00078.txt"
+        ]
       },
-      "id": "F-00078",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-96"
     },
     {
       "kind": "rule",
@@ -1161,31 +3790,26 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-024.json",
           "node": "preparation-024-n005",
-          "quote": "خروج دادن حلبی یا دبه مایونز یا خیارشور",
-          "hash": "sha256:c702c985c07c95f304822dedc03be83346331f918e5f772fee511c919a594c8e",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "خروج دادن حلبی یا دبه مایونز یا خیارشور"
         },
         {
           "type": "process",
           "ref": "departments/preparation/processes/preparation-024.json",
           "node": "preparation-024-n011",
-          "quote": "روش می‌نویسن شام پرسنل. می‌ذارن تو یخچال",
-          "hash": "sha256:c702c985c07c95f304822dedc03be83346331f918e5f772fee511c919a594c8e",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "روش می‌نویسن شام پرسنل. می‌ذارن تو یخچال"
         },
         {
           "type": "process",
           "ref": "departments/preparation/processes/preparation-024.json",
           "node": "preparation-024-n002",
-          "quote": "برگه خروجشو خودش پر می‌کنه",
-          "hash": "sha256:c702c985c07c95f304822dedc03be83346331f918e5f772fee511c919a594c8e",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "برگه خروجشو خودش پر می‌کنه"
         }
       ],
       "retired": false,
       "data": {
         "lang": "text",
         "expr": null,
+        "original": "روش قید شده شام پرسنل که کسی استفاده نکنه برای تولید کارهای رستوران.",
         "inputs": [
           {
             "key": "mavad_ghazaye_porsonel",
@@ -1198,14 +3822,9 @@
             "key": "tafkik_az_tolid_restoran",
             "title": "تفکیک از مواد تولید رستوران"
           }
-        ],
-        "original_ref": "facts/originals/F-00079.txt"
+        ]
       },
-      "id": "F-00079",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-97"
     },
     {
       "kind": "rule",
@@ -1222,15 +3841,14 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-01.txt",
-          "lines": "213-424",
-          "hash": "sha256:fc7d9f14ad8514931d243e838aaa563a319ceaf543eee3bc472a1c0f74e77607",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "213-424"
         }
       ],
       "retired": false,
       "data": {
         "lang": "text",
         "expr": null,
+        "original": "چون ضایعاتش می‌ره بالا و معلوم نیست حجم فروششون چقدره.",
         "inputs": [
           {
             "key": "meqdar_niyaz_shab",
@@ -1246,14 +3864,9 @@
             "unit": "kg",
             "nature": "target"
           }
-        ],
-        "original_ref": "facts/originals/F-00080.txt"
+        ]
       },
-      "id": "F-00080",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-98"
     },
     {
       "kind": "rule",
@@ -1270,15 +3883,14 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-01.txt",
-          "lines": "213-424",
-          "hash": "sha256:fc7d9f14ad8514931d243e838aaa563a319ceaf543eee3bc472a1c0f74e77607",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "213-424"
         }
       ],
       "retired": false,
       "data": {
         "lang": "text",
         "expr": null,
+        "original": "فردا غروبش چک می‌شه. اگه قابل استفاده باشن همون روز استفاده می‌شه. اگه نه باشن ضایعات می‌شه.",
         "inputs": [
           {
             "key": "tedad_baqimande",
@@ -1291,14 +3903,9 @@
             "key": "tekleef_baqimande",
             "title": "تعیین تکلیف باقی‌مانده"
           }
-        ],
-        "original_ref": "facts/originals/F-00081.txt"
+        ]
       },
-      "id": "F-00081",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-99"
     },
     {
       "kind": "rule",
@@ -1315,9 +3922,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-01.txt",
-          "lines": "213-424",
-          "hash": "sha256:fc7d9f14ad8514931d243e838aaa563a319ceaf543eee3bc472a1c0f74e77607",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "213-424"
         }
       ],
       "retired": false,
@@ -1333,11 +3938,7 @@
           }
         ]
       },
-      "id": "F-00082",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-100"
     },
     {
       "kind": "rule",
@@ -1355,9 +3956,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-009.json",
           "node": "preparation-009-n016",
-          "quote": "به ازای هر ظرف نود گرم",
-          "hash": "sha256:8ac2671b0fffa58e708ae72709b6d9147f36592bba771296ad9a67fa353c17a8",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "به ازای هر ظرف نود گرم"
         }
       ],
       "retired": false,
@@ -1385,11 +3984,7 @@
           }
         ]
       },
-      "id": "F-00083",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-101"
     },
     {
       "kind": "rule",
@@ -1406,9 +4001,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-01.txt",
-          "lines": "213-424",
-          "hash": "sha256:fc7d9f14ad8514931d243e838aaa563a319ceaf543eee3bc472a1c0f74e77607",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "213-424"
         }
       ],
       "retired": false,
@@ -1428,11 +4021,7 @@
           }
         ]
       },
-      "id": "F-00084",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-102"
     },
     {
       "kind": "rule",
@@ -1450,9 +4039,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-024.json",
           "node": "preparation-024-n024",
-          "quote": "به ازای هر نفر وزن‌کشی شده",
-          "hash": "sha256:c702c985c07c95f304822dedc03be83346331f918e5f772fee511c919a594c8e",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "به ازای هر نفر وزن‌کشی شده"
         }
       ],
       "retired": false,
@@ -1491,11 +4078,7 @@
           }
         ]
       },
-      "id": "F-00085",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-103"
     },
     {
       "kind": "rule",
@@ -1513,9 +4096,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-008.json",
           "node": "preparation-008-n014",
-          "quote": "امروز ده کیلو قارچ می‌خوایم ولی دیشب کلاً پنج کیلو برگشته",
-          "hash": "sha256:5ac36aaac13b4d0175adb601e17212830bcf2e16f29935189f93bacc1bab6ddd",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "امروز ده کیلو قارچ می‌خوایم ولی دیشب کلاً پنج کیلو برگشته"
         }
       ],
       "retired": false,
@@ -1555,11 +4136,7 @@
           }
         ]
       },
-      "id": "F-00086",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-104"
     },
     {
       "kind": "rule",
@@ -1577,9 +4154,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-013.json",
           "node": "preparation-013-n044",
-          "quote": "همخونی داره با خروجی کارش یا نه",
-          "hash": "sha256:6769fff3022c28d868f73d8050cb8b86a7c2e9192e0062b54095cb37baf8638c",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "همخونی داره با خروجی کارش یا نه"
         }
       ],
       "retired": false,
@@ -1607,11 +4182,7 @@
           }
         ]
       },
-      "id": "F-00087",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-105"
     },
     {
       "kind": "rule",
@@ -1628,15 +4199,14 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-01.txt",
-          "lines": "425-758",
-          "hash": "sha256:fc7d9f14ad8514931d243e838aaa563a319ceaf543eee3bc472a1c0f74e77607",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "425-758"
         }
       ],
       "retired": false,
       "data": {
         "lang": "text",
         "expr": null,
+        "original": "اگه خون مردگی داشته باشه کبود باشه باید بذارن کنار نباید بپزن",
         "inputs": [
           {
             "key": "vaziat_zaheri_qete_morgh",
@@ -1650,14 +4220,9 @@
             "unit": "kg",
             "nature": "observed"
           }
-        ],
-        "original_ref": "facts/originals/F-00088.txt"
+        ]
       },
-      "id": "F-00088",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-106"
     },
     {
       "kind": "rule",
@@ -1674,9 +4239,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-01.txt",
-          "lines": "425-758",
-          "hash": "sha256:fc7d9f14ad8514931d243e838aaa563a319ceaf543eee3bc472a1c0f74e77607",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "425-758"
         }
       ],
       "retired": false,
@@ -1693,11 +4256,7 @@
           }
         ]
       },
-      "id": "F-00089",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-107"
     },
     {
       "kind": "rule",
@@ -1714,9 +4273,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-01.txt",
-          "lines": "425-758",
-          "hash": "sha256:fc7d9f14ad8514931d243e838aaa563a319ceaf543eee3bc472a1c0f74e77607",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "425-758"
         }
       ],
       "retired": false,
@@ -1735,11 +4292,7 @@
           }
         ]
       },
-      "id": "F-00090",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-108"
     },
     {
       "kind": "rule",
@@ -1757,9 +4310,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-013.json",
           "node": "preparation-013-n001",
-          "quote": "در ازای هر ده کیلو من سه کیلو مرغ بیشتر می‌گیرم",
-          "hash": "sha256:6769fff3022c28d868f73d8050cb8b86a7c2e9192e0062b54095cb37baf8638c",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "در ازای هر ده کیلو من سه کیلو مرغ بیشتر می‌گیرم"
         }
       ],
       "retired": false,
@@ -1789,11 +4340,7 @@
           }
         ]
       },
-      "id": "F-00091",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-109"
     },
     {
       "kind": "rule",
@@ -1810,9 +4357,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-01.txt",
-          "lines": "425-758",
-          "hash": "sha256:fc7d9f14ad8514931d243e838aaa563a319ceaf543eee3bc472a1c0f74e77607",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "425-758"
         }
       ],
       "retired": false,
@@ -1845,11 +4390,7 @@
           }
         ]
       },
-      "id": "F-00092",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-110"
     },
     {
       "kind": "rule",
@@ -1866,9 +4407,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-01.txt",
-          "lines": "425-758",
-          "hash": "sha256:fc7d9f14ad8514931d243e838aaa563a319ceaf543eee3bc472a1c0f74e77607",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "425-758"
         }
       ],
       "retired": false,
@@ -1888,11 +4427,7 @@
       "aliases": [
         "کاست وزن مرغ در پخت"
       ],
-      "id": "F-00093",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-111"
     },
     {
       "kind": "rule",
@@ -1910,9 +4445,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-013.json",
           "node": "preparation-013-n034",
-          "quote": "یک کیلو هشتاد گرم",
-          "hash": "sha256:6769fff3022c28d868f73d8050cb8b86a7c2e9192e0062b54095cb37baf8638c",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "یک کیلو هشتاد گرم"
         }
       ],
       "retired": false,
@@ -1929,11 +4462,7 @@
           }
         ]
       },
-      "id": "F-00094",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-112"
     },
     {
       "kind": "rule",
@@ -1951,9 +4480,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-018.json",
           "node": "preparation-018-n028",
-          "quote": "مبنا رو می‌ذاریم هفتاد درصد",
-          "hash": "sha256:b8db2f8e083760395ae374650628e8052d6ca182dacc67dd0e4ac2205a596f49",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "مبنا رو می‌ذاریم هفتاد درصد"
         }
       ],
       "retired": false,
@@ -1976,11 +4503,7 @@
           }
         ]
       },
-      "id": "F-00095",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-113"
     },
     {
       "kind": "rule",
@@ -1998,9 +4521,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-018.json",
           "node": "preparation-018-n028",
-          "quote": "نه درصدش رو باید از اون استاکه بریزیم",
-          "hash": "sha256:b8db2f8e083760395ae374650628e8052d6ca182dacc67dd0e4ac2205a596f49",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "نه درصدش رو باید از اون استاکه بریزیم"
         }
       ],
       "retired": false,
@@ -2032,11 +4553,7 @@
           }
         ]
       },
-      "id": "F-00096",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-114"
     },
     {
       "kind": "rule",
@@ -2053,9 +4570,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
-          "lines": "1-158",
-          "hash": "sha256:45b8ecae3d03200501e93d22a48b6cc3ad748bfb64bffffdddaa4c7214120edf",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "1-158"
         }
       ],
       "retired": false,
@@ -2082,11 +4597,7 @@
           }
         ]
       },
-      "id": "F-00097",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-115"
     },
     {
       "kind": "rule",
@@ -2103,9 +4614,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
-          "lines": "1-158",
-          "hash": "sha256:45b8ecae3d03200501e93d22a48b6cc3ad748bfb64bffffdddaa4c7214120edf",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "1-158"
         }
       ],
       "retired": false,
@@ -2127,11 +4636,7 @@
           }
         ]
       },
-      "id": "F-00098",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-116"
     },
     {
       "kind": "rule",
@@ -2149,9 +4654,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-021.json",
           "node": "preparation-021-n006",
-          "quote": "یک میزان پنجاه پنجاه",
-          "hash": "sha256:50a3aebd36644d1cdaed0c0fca8acd10d563d800f9f37326768c20c31a186570",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "یک میزان پنجاه پنجاه"
         }
       ],
       "retired": false,
@@ -2174,11 +4677,7 @@
           }
         ]
       },
-      "id": "F-00099",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-117"
     },
     {
       "kind": "rule",
@@ -2196,9 +4695,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-021.json",
           "node": "preparation-021-n006",
-          "quote": "بیشتر از اون نمی‌تونیم تولید کنیم",
-          "hash": "sha256:50a3aebd36644d1cdaed0c0fca8acd10d563d800f9f37326768c20c31a186570",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "بیشتر از اون نمی‌تونیم تولید کنیم"
         }
       ],
       "retired": false,
@@ -2226,11 +4723,7 @@
           }
         ]
       },
-      "id": "F-00100",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-118"
     },
     {
       "kind": "rule",
@@ -2248,9 +4741,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-021.json",
           "node": "preparation-021-n007",
-          "quote": "صد گرم دویست گرم مسئله‌ای نداره",
-          "hash": "sha256:50a3aebd36644d1cdaed0c0fca8acd10d563d800f9f37326768c20c31a186570",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "صد گرم دویست گرم مسئله‌ای نداره"
         }
       ],
       "retired": false,
@@ -2268,11 +4759,7 @@
           }
         ]
       },
-      "id": "F-00101",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-119"
     },
     {
       "kind": "rule",
@@ -2290,9 +4777,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-019.json",
           "node": "preparation-019-n009",
-          "quote": "نهایتاً یک هفته باشه",
-          "hash": "sha256:6d6fcbc9fcd824451499c4080ee4516002002ac7b990c6a2ee2c278524e04499",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "نهایتاً یک هفته باشه"
         }
       ],
       "retired": false,
@@ -2311,11 +4796,7 @@
           }
         ]
       },
-      "id": "F-00102",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-120"
     },
     {
       "kind": "rule",
@@ -2333,9 +4814,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-019.json",
           "node": "preparation-019-n001",
-          "quote": "ده تا بیست درصد اضافه‌تر",
-          "hash": "sha256:6d6fcbc9fcd824451499c4080ee4516002002ac7b990c6a2ee2c278524e04499",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "ده تا بیست درصد اضافه‌تر"
         }
       ],
       "retired": false,
@@ -2356,11 +4835,7 @@
           }
         ]
       },
-      "id": "F-00103",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-121"
     },
     {
       "kind": "rule",
@@ -2378,15 +4853,14 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-020.json",
           "node": "preparation-020-n004",
-          "quote": "جدا کردن دمار و غضروف به‌عنوان ضایعات",
-          "hash": "sha256:dda96b1292e58599b2884e79b38ab3e877d01e188177a861fb6b508823e70c7b",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "جدا کردن دمار و غضروف به‌عنوان ضایعات"
         }
       ],
       "retired": false,
       "data": {
         "lang": "text",
         "expr": null,
+        "original": "یک راسته آماده شده که برای ما میاد از قصابی ما چهار تا آیتم ازش درست می‌کنیم.",
         "inputs": [
           {
             "key": "vazn_raste_kham",
@@ -2419,14 +4893,9 @@
             "unit": "kg",
             "share": null
           }
-        ],
-        "original_ref": "facts/originals/F-00104.txt"
+        ]
       },
-      "id": "F-00104",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-122"
     },
     {
       "kind": "rule",
@@ -2443,9 +4912,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
-          "lines": "1-158",
-          "hash": "sha256:45b8ecae3d03200501e93d22a48b6cc3ad748bfb64bffffdddaa4c7214120edf",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "1-158"
         }
       ],
       "retired": false,
@@ -2470,11 +4937,7 @@
           }
         ]
       },
-      "id": "F-00105",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-123"
     },
     {
       "kind": "rule",
@@ -2492,9 +4955,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-019.json",
           "node": "preparation-019-n019",
-          "quote": "افزودن گوشت چرخ‌کرده و نصف لیوان آب",
-          "hash": "sha256:6d6fcbc9fcd824451499c4080ee4516002002ac7b990c6a2ee2c278524e04499",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "افزودن گوشت چرخ‌کرده و نصف لیوان آب"
         }
       ],
       "retired": false,
@@ -2519,11 +4980,7 @@
           }
         ]
       },
-      "id": "F-00106",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-124"
     },
     {
       "kind": "rule",
@@ -2540,9 +4997,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
-          "lines": "1-158",
-          "hash": "sha256:45b8ecae3d03200501e93d22a48b6cc3ad748bfb64bffffdddaa4c7214120edf",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "1-158"
         }
       ],
       "retired": false,
@@ -2565,11 +5020,7 @@
           }
         ]
       },
-      "id": "F-00107",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-125"
     },
     {
       "kind": "rule",
@@ -2587,23 +5038,20 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-021.json",
           "node": "preparation-021-n011",
-          "quote": "برای چسبندگی بهتره برگر",
-          "hash": "sha256:50a3aebd36644d1cdaed0c0fca8acd10d563d800f9f37326768c20c31a186570",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "برای چسبندگی بهتره برگر"
         },
         {
           "type": "process",
           "ref": "departments/preparation/processes/preparation-021.json",
           "node": "preparation-021-n009",
-          "quote": "پارت اول با نخودی",
-          "hash": "sha256:50a3aebd36644d1cdaed0c0fca8acd10d563d800f9f37326768c20c31a186570",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "پارت اول با نخودی"
         }
       ],
       "retired": false,
       "data": {
         "lang": "text",
         "expr": null,
+        "original": "پارت دومی که با کبریتی می‌زنیم صرفا جهت چسبندگی برگر قاطی میشه.",
         "inputs": [
           {
             "key": "vazn_part_dovom",
@@ -2617,14 +5065,9 @@
             "title": "نسبت بخش دوباره چرخ‌شده",
             "unit": "ratio"
           }
-        ],
-        "original_ref": "facts/originals/F-00108.txt"
+        ]
       },
-      "id": "F-00108",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-126"
     },
     {
       "kind": "rule",
@@ -2642,17 +5085,13 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-021.json",
           "node": "preparation-021-n021",
-          "quote": "برگرها رو میاره به ۱۵۰ گرم",
-          "hash": "sha256:50a3aebd36644d1cdaed0c0fca8acd10d563d800f9f37326768c20c31a186570",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "برگرها رو میاره به ۱۵۰ گرم"
         },
         {
           "type": "process",
           "ref": "departments/preparation/processes/preparation-021.json",
           "node": "preparation-021-n022",
-          "quote": "مینی‌ها ۶۰ گرمیه",
-          "hash": "sha256:50a3aebd36644d1cdaed0c0fca8acd10d563d800f9f37326768c20c31a186570",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "مینی‌ها ۶۰ گرمیه"
         }
       ],
       "retired": false,
@@ -2695,11 +5134,7 @@
       "aliases": [
         "وزن هر عدد برگر خام"
       ],
-      "id": "F-00109",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-127"
     },
     {
       "kind": "rule",
@@ -2717,9 +5152,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-021.json",
           "node": "preparation-021-n019",
-          "quote": "چهل دقیقه باید توی خمیرگیر قشنگ کاملاً مخلوط بشه",
-          "hash": "sha256:50a3aebd36644d1cdaed0c0fca8acd10d563d800f9f37326768c20c31a186570",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "چهل دقیقه باید توی خمیرگیر قشنگ کاملاً مخلوط بشه"
         }
       ],
       "retired": false,
@@ -2738,11 +5171,7 @@
           }
         ]
       },
-      "id": "F-00110",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-128"
     },
     {
       "kind": "rule",
@@ -2759,9 +5188,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
-          "lines": "159-315",
-          "hash": "sha256:45b8ecae3d03200501e93d22a48b6cc3ad748bfb64bffffdddaa4c7214120edf",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "159-315"
         }
       ],
       "retired": false,
@@ -2780,11 +5207,7 @@
           }
         ]
       },
-      "id": "F-00111",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-129"
     },
     {
       "kind": "rule",
@@ -2801,15 +5224,14 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
-          "lines": "159-315",
-          "hash": "sha256:45b8ecae3d03200501e93d22a48b6cc3ad748bfb64bffffdddaa4c7214120edf",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "159-315"
         }
       ],
       "retired": false,
       "data": {
         "lang": "text",
         "expr": null,
+        "original": "یه ۶۰ گرمی می‌زنه اون ۲۰ گرم میشه اون تسته. آره ۳۰ گرم ۴۰ گرم ۲۰ گرم هرچی موند بقیه‌اش میشه همون تسته.",
         "inputs": [
           {
             "key": "vazn_bagimande",
@@ -2822,14 +5244,9 @@
             "key": "masraf_bagimande",
             "title": "مصرف باقی‌ماندهٔ مایه"
           }
-        ],
-        "original_ref": "facts/originals/F-00112.txt"
+        ]
       },
-      "id": "F-00112",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-130"
     },
     {
       "kind": "rule",
@@ -2847,17 +5264,13 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-021.json",
           "node": "preparation-021-n016",
-          "quote": "طبق رسپی که برای هر کیلو وزن مایه برگر بهشون دادیم",
-          "hash": "sha256:50a3aebd36644d1cdaed0c0fca8acd10d563d800f9f37326768c20c31a186570",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "طبق رسپی که برای هر کیلو وزن مایه برگر بهشون دادیم"
         },
         {
           "type": "process",
           "ref": "departments/preparation/processes/preparation-019.json",
           "node": "preparation-019-n022",
-          "quote": "دونه به دونه وزن‌گیری میشه",
-          "hash": "sha256:6d6fcbc9fcd824451499c4080ee4516002002ac7b990c6a2ee2c278524e04499",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "دونه به دونه وزن‌گیری میشه"
         }
       ],
       "retired": false,
@@ -2885,11 +5298,7 @@
           }
         ]
       },
-      "id": "F-00113",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-131"
     },
     {
       "kind": "rule",
@@ -2907,9 +5316,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-010.json",
           "node": "preparation-010-n006",
-          "quote": "به ازای هر یک کیلو ۳۰ گرم پودر مرینت لازم داریم و ۷۰ گرم هم آبه",
-          "hash": "sha256:e187eba3f76b67d385faa987a86ae59f9ae4292e23a3eacc168a5b342a924769",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "به ازای هر یک کیلو ۳۰ گرم پودر مرینت لازم داریم و ۷۰ گرم هم آبه"
         }
       ],
       "retired": false,
@@ -2935,11 +5342,7 @@
       "aliases": [
         "مواد مرینت هر کیلو مرغ"
       ],
-      "id": "F-00114",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-132"
     },
     {
       "kind": "rule",
@@ -2957,15 +5360,14 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-012.json",
           "node": "preparation-012-n003",
-          "quote": "به جز فیله و چیزا چون بافتشون نرمه له میشه",
-          "hash": "sha256:53fc35010dc4a0800d99630ae08c4be906adcc600aebdbefdd7bddbd8fff9428",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "به جز فیله و چیزا چون بافتشون نرمه له میشه"
         }
       ],
       "retired": false,
       "data": {
         "lang": "text",
         "expr": null,
+        "original": "فیله و چیزا به دلیل نرمی بافت در دستگاه مرینیتور ریخته نمی‌شوند.",
         "inputs": [
           {
             "key": "noe_morgh",
@@ -2977,14 +5379,9 @@
             "key": "ravesh_marinate",
             "title": "روش مرینت"
           }
-        ],
-        "original_ref": "facts/originals/F-00115.txt"
+        ]
       },
-      "id": "F-00115",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-133"
     },
     {
       "kind": "rule",
@@ -3002,15 +5399,14 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-014.json",
           "node": "preparation-014-n039",
-          "quote": "اونایی که لیبل نخورده یعنی ناقصه دست بهش نمیزنن",
-          "hash": "sha256:26afada1ed97ea0188db3e3b56579607741df095c814b1892cd10545bf1e3ced",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "اونایی که لیبل نخورده یعنی ناقصه دست بهش نمیزنن"
         }
       ],
       "retired": false,
       "data": {
         "lang": "text",
         "expr": null,
+        "original": "فقط ظرف کامل و لیبل‌خورده از فریزر برداشته می‌شود؛ ظرف ناقص تا تکمیل در فریزر می‌ماند.",
         "inputs": [
           {
             "key": "vaziat_zarf",
@@ -3022,14 +5418,9 @@
             "key": "mojavez_bardasht",
             "title": "مجوز برداشت ظرف"
           }
-        ],
-        "original_ref": "facts/originals/F-00116.txt"
+        ]
       },
-      "id": "F-00116",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-134"
     },
     {
       "kind": "rule",
@@ -3047,9 +5438,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-022.json",
           "node": "preparation-022-n012",
-          "quote": "۳۲۰ گرم سیر ۳۲۰ گرم روغن که میکس میشه",
-          "hash": "sha256:f284f70949200f9160431ffb6f5419112ffed41249750e969e1d7f9f81ad3630",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "۳۲۰ گرم سیر ۳۲۰ گرم روغن که میکس میشه"
         }
       ],
       "retired": false,
@@ -3093,11 +5482,7 @@
           }
         ]
       },
-      "id": "F-00117",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-135"
     },
     {
       "kind": "rule",
@@ -3115,15 +5500,14 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-006.json",
           "node": "preparation-006-n020",
-          "quote": "دست به تاریخ و اسم نمیزنن فقط تعداد رو تغییر میدن",
-          "hash": "sha256:9e3950273179d2613d95526566ab12d7dd3ab17934c023faaaf1bf6e0ae7cc83",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "دست به تاریخ و اسم نمیزنن فقط تعداد رو تغییر میدن"
         }
       ],
       "retired": false,
       "data": {
         "lang": "text",
         "expr": null,
+        "original": "تعداد استاندارد روی برچسب خط زده و تعداد درخواستی نوشته می‌شود؛ نام و تاریخ تغییر نمی‌کند.",
         "inputs": [
           {
             "key": "tedad_darkhasti",
@@ -3142,14 +5526,9 @@
             "title": "تعداد ثبت‌شده روی برچسب",
             "unit": "pcs"
           }
-        ],
-        "original_ref": "facts/originals/F-00118.txt"
+        ]
       },
-      "id": "F-00118",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-136"
     },
     {
       "kind": "rule",
@@ -3167,9 +5546,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-015.json",
           "node": "preparation-015-n006",
-          "quote": "برای هر ۱۰ پرس ۵ تا کدو و ۵ تا هویج ریز میشه",
-          "hash": "sha256:0878c34d2b1cae8c9fb9d52f35f2fb2cfbac61bebd498f0d7ae41af64f96e13b",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "برای هر ۱۰ پرس ۵ تا کدو و ۵ تا هویج ریز میشه"
         }
       ],
       "retired": false,
@@ -3208,11 +5585,7 @@
           ]
         }
       },
-      "id": "F-00119",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-137"
     },
     {
       "kind": "rule",
@@ -3229,15 +5602,14 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-02.txt",
-          "lines": "1-331",
-          "hash": "sha256:92fc16927652439d8a206fe561e4c9671e7c9e588881e463006d50742be1cd78",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "1-331"
         }
       ],
       "retired": false,
       "data": {
         "lang": "text",
         "expr": null,
+        "original": "وزن دورچین ملاک نیست؛ برچسب ده پرسی و تعداد سبزی ملاک تحویل است.",
         "inputs": [
           {
             "key": "tedad_sabzi",
@@ -3250,14 +5622,9 @@
             "key": "mabnaye_tahvil",
             "title": "مبنای تحویل بستهٔ دورچین"
           }
-        ],
-        "original_ref": "facts/originals/F-00120.txt"
+        ]
       },
-      "id": "F-00120",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-138"
     },
     {
       "kind": "rule",
@@ -3274,9 +5641,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-02.txt",
-          "lines": "1-331",
-          "hash": "sha256:92fc16927652439d8a206fe561e4c9671e7c9e588881e463006d50742be1cd78",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "1-331"
         }
       ],
       "retired": false,
@@ -3292,11 +5657,7 @@
           }
         ]
       },
-      "id": "F-00121",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-139"
     },
     {
       "kind": "rule",
@@ -3314,15 +5675,14 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-031.json",
           "node": "preparation-031-n008",
-          "quote": "از شب قبل باز شده همه اینا رو",
-          "hash": "sha256:4d08bcab88f24e6e53bf576225d9b11ad4bc4cf495f4dfa1c0e476f8409450af",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "از شب قبل باز شده همه اینا رو"
         }
       ],
       "retired": false,
       "data": {
         "lang": "text",
         "expr": null,
+        "original": "انبار از شب قبل مرغ و ظرف چیزا را از فریزر خارج می‌کند؛ فصل گرم در یخچال آماده‌سازی و فصل سرد روی میز.",
         "inputs": [
           {
             "key": "fasl",
@@ -3334,14 +5694,9 @@
             "key": "mahal_yakhgoshayi",
             "title": "محل یخ‌گشایی"
           }
-        ],
-        "original_ref": "facts/originals/F-00122.txt"
+        ]
       },
-      "id": "F-00122",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-140"
     },
     {
       "kind": "rule",
@@ -3358,9 +5713,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-02.txt",
-          "lines": "1-331",
-          "hash": "sha256:92fc16927652439d8a206fe561e4c9671e7c9e588881e463006d50742be1cd78",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "1-331"
         }
       ],
       "retired": false,
@@ -3376,11 +5729,7 @@
           }
         ]
       },
-      "id": "F-00123",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-141"
     },
     {
       "kind": "rule",
@@ -3397,15 +5746,14 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-02.txt",
-          "lines": "1-331",
-          "hash": "sha256:92fc16927652439d8a206fe561e4c9671e7c9e588881e463006d50742be1cd78",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "1-331"
         }
       ],
       "retired": false,
       "data": {
         "lang": "text",
         "expr": null,
+        "original": "خروج مواد اولیهٔ سس هنگام تولید سس در انبار ثبت می‌شود و سس تولیدشده در انبار نگهداری می‌شود.",
         "inputs": [
           {
             "key": "zaman_tolid_sos",
@@ -3417,14 +5765,9 @@
             "key": "zaman_sabt_khoruj",
             "title": "زمان ثبت خروج مواد اولیه"
           }
-        ],
-        "original_ref": "facts/originals/F-00124.txt"
+        ]
       },
-      "id": "F-00124",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-142"
     },
     {
       "kind": "rule",
@@ -3442,9 +5785,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-016.json",
           "node": "preparation-016-n008",
-          "quote": "خمیر آماده شده توی بسته های هفت کیلویی بسته بندی میشه",
-          "hash": "sha256:54451a8035a0b5f4528300627c14b3afb4ac99abc48b77265b42a4347fb9c77f",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "خمیر آماده شده توی بسته های هفت کیلویی بسته بندی میشه"
         }
       ],
       "retired": false,
@@ -3467,11 +5808,7 @@
       "aliases": [
         "بستهٔ هفت کیلویی خمیر"
       ],
-      "id": "F-00125",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-143"
     },
     {
       "kind": "rule",
@@ -3489,9 +5826,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-014.json",
           "node": "preparation-014-n002",
-          "quote": "۴۸ تا تک دونه بهشون میده که جمعا میشه ۲۴ تا چیزا",
-          "hash": "sha256:26afada1ed97ea0188db3e3b56579607741df095c814b1892cd10545bf1e3ced",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "۴۸ تا تک دونه بهشون میده که جمعا میشه ۲۴ تا چیزا"
         }
       ],
       "retired": false,
@@ -3514,11 +5849,7 @@
           }
         ]
       },
-      "id": "F-00126",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-144"
     },
     {
       "kind": "rule",
@@ -3536,9 +5867,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-014.json",
           "node": "preparation-014-n023",
-          "quote": "به وزن ۳۴ گرم روی ترازو چونه میشه",
-          "hash": "sha256:26afada1ed97ea0188db3e3b56579607741df095c814b1892cd10545bf1e3ced",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "به وزن ۳۴ گرم روی ترازو چونه میشه"
         }
       ],
       "retired": false,
@@ -3554,11 +5883,7 @@
           }
         ]
       },
-      "id": "F-00127",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-145"
     },
     {
       "kind": "rule",
@@ -3575,9 +5900,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-02.txt",
-          "lines": "1-331",
-          "hash": "sha256:92fc16927652439d8a206fe561e4c9671e7c9e588881e463006d50742be1cd78",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "1-331"
         }
       ],
       "retired": false,
@@ -3600,11 +5923,7 @@
           }
         ]
       },
-      "id": "F-00128",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-146"
     },
     {
       "kind": "rule",
@@ -3622,9 +5941,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-014.json",
           "node": "preparation-014-n039",
-          "quote": "۱۲ تا مرغ چیزا چیده میشه ۶ تا هم پنیر چیزا",
-          "hash": "sha256:26afada1ed97ea0188db3e3b56579607741df095c814b1892cd10545bf1e3ced",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "۱۲ تا مرغ چیزا چیده میشه ۶ تا هم پنیر چیزا"
         }
       ],
       "retired": false,
@@ -3650,11 +5967,7 @@
       "aliases": [
         "ترکیب بستهٔ شش‌تایی مرغ چیزا"
       ],
-      "id": "F-00129",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-147"
     },
     {
       "kind": "rule",
@@ -3671,9 +5984,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-02.txt",
-          "lines": "1-331",
-          "hash": "sha256:92fc16927652439d8a206fe561e4c9671e7c9e588881e463006d50742be1cd78",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "1-331"
         }
       ],
       "retired": false,
@@ -3715,11 +6026,7 @@
           ]
         }
       },
-      "id": "F-00130",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-148"
     },
     {
       "kind": "rule",
@@ -3736,9 +6043,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-02.txt",
-          "lines": "1-331",
-          "hash": "sha256:92fc16927652439d8a206fe561e4c9671e7c9e588881e463006d50742be1cd78",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "1-331"
         }
       ],
       "retired": false,
@@ -3754,11 +6059,7 @@
           }
         ]
       },
-      "id": "F-00131",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-149"
     },
     {
       "kind": "rule",
@@ -3776,9 +6077,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-026.json",
           "node": "preparation-026-n008",
-          "quote": "لقمه هامون بین ۱۰ تا ۱۳ گرمه هر عددش",
-          "hash": "sha256:a43acf874fce9ac22a497659448764b2c90438fd001e1ffc1d8cfcdc0606bce2",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "لقمه هامون بین ۱۰ تا ۱۳ گرمه هر عددش"
         }
       ],
       "retired": false,
@@ -3798,11 +6097,7 @@
           }
         ]
       },
-      "id": "F-00132",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-150"
     },
     {
       "kind": "rule",
@@ -3820,9 +6115,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-026.json",
           "node": "preparation-026-n008",
-          "quote": "۲۰۰ تا لقمه رو بسته بندی وزن میگیرم باید بشه ۲ کیلو و ۱۳۰",
-          "hash": "sha256:a43acf874fce9ac22a497659448764b2c90438fd001e1ffc1d8cfcdc0606bce2",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "۲۰۰ تا لقمه رو بسته بندی وزن میگیرم باید بشه ۲ کیلو و ۱۳۰"
         }
       ],
       "retired": false,
@@ -3852,11 +6145,7 @@
           }
         ]
       },
-      "id": "F-00133",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-151"
     },
     {
       "kind": "rule",
@@ -3874,9 +6163,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-012.json",
           "node": "preparation-012-n003",
-          "quote": "این سینه مرغ چون بزرگه از این لقمه بهتری در میاد",
-          "hash": "sha256:53fc35010dc4a0800d99630ae08c4be906adcc600aebdbefdd7bddbd8fff9428",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "این سینه مرغ چون بزرگه از این لقمه بهتری در میاد"
         }
       ],
       "retired": false,
@@ -3923,11 +6210,7 @@
           ]
         }
       },
-      "id": "F-00134",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-152"
     },
     {
       "kind": "rule",
@@ -3945,9 +6228,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-012.json",
           "node": "preparation-012-n020",
-          "quote": "فیله های کوچیک از مثلا از ۵۰ گرم به پایین میشه مرغ پیتزا",
-          "hash": "sha256:53fc35010dc4a0800d99630ae08c4be906adcc600aebdbefdd7bddbd8fff9428",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "فیله های کوچیک از مثلا از ۵۰ گرم به پایین میشه مرغ پیتزا"
         }
       ],
       "retired": false,
@@ -3987,11 +6268,7 @@
           ]
         }
       },
-      "id": "F-00135",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-153"
     },
     {
       "kind": "rule",
@@ -4008,9 +6285,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-04.txt",
-          "lines": "1-205",
-          "hash": "sha256:cd6d82e4fab1293439a9807b5648e7c47e7ba388a221ba5cf4235ad4e1296c01",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "1-205"
         }
       ],
       "retired": false,
@@ -4027,11 +6302,7 @@
           }
         ]
       },
-      "id": "F-00136",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-154"
     },
     {
       "kind": "rule",
@@ -4048,9 +6319,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-04.txt",
-          "lines": "1-205",
-          "hash": "sha256:cd6d82e4fab1293439a9807b5648e7c47e7ba388a221ba5cf4235ad4e1296c01",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "1-205"
         }
       ],
       "retired": false,
@@ -4069,11 +6338,7 @@
           }
         ]
       },
-      "id": "F-00137",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-155"
     },
     {
       "kind": "rule",
@@ -4091,9 +6356,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-012.json",
           "node": "preparation-012-n023",
-          "quote": "هر چیزی رو تحویل میگیرم به همون وزن بهشون تحویل میدم",
-          "hash": "sha256:53fc35010dc4a0800d99630ae08c4be906adcc600aebdbefdd7bddbd8fff9428",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "هر چیزی رو تحویل میگیرم به همون وزن بهشون تحویل میدم"
         }
       ],
       "retired": false,
@@ -4116,11 +6379,7 @@
           }
         ]
       },
-      "id": "F-00138",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-156"
     },
     {
       "kind": "rule",
@@ -4137,15 +6396,14 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-04.txt",
-          "lines": "1-205",
-          "hash": "sha256:cd6d82e4fab1293439a9807b5648e7c47e7ba388a221ba5cf4235ad4e1296c01",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "1-205"
         }
       ],
       "retired": false,
       "data": {
         "lang": "text",
         "expr": null,
+        "original": "نگاه میکنن بر مبنایی که بهشون داده شده که همیشه تا کجای دیپ سوپ داشتیم نزنید اگه از اون حد رفت پایین تر شروع کنید به پختن سوپ.",
         "inputs": [
           {
             "key": "mojudi_sup",
@@ -4158,14 +6416,9 @@
             "key": "shoru_pokht",
             "title": "تصمیم به شروع پخت سوپ شیر"
           }
-        ],
-        "original_ref": "facts/originals/F-00139.txt"
+        ]
       },
-      "id": "F-00139",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-157"
     },
     {
       "kind": "rule",
@@ -4182,9 +6435,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-04.txt",
-          "lines": "1-205",
-          "hash": "sha256:cd6d82e4fab1293439a9807b5648e7c47e7ba388a221ba5cf4235ad4e1296c01",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "1-205"
         }
       ],
       "retired": false,
@@ -4207,11 +6458,7 @@
           }
         ]
       },
-      "id": "F-00140",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-158"
     },
     {
       "kind": "rule",
@@ -4228,9 +6475,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-04.txt",
-          "lines": "206-410",
-          "hash": "sha256:cd6d82e4fab1293439a9807b5648e7c47e7ba388a221ba5cf4235ad4e1296c01",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "206-410"
         }
       ],
       "retired": false,
@@ -4266,11 +6511,7 @@
           }
         ]
       },
-      "id": "F-00141",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-159"
     },
     {
       "kind": "rule",
@@ -4287,9 +6528,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-04.txt",
-          "lines": "206-410",
-          "hash": "sha256:cd6d82e4fab1293439a9807b5648e7c47e7ba388a221ba5cf4235ad4e1296c01",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "206-410"
         }
       ],
       "retired": false,
@@ -4315,11 +6554,7 @@
           }
         ]
       },
-      "id": "F-00142",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-160"
     },
     {
       "kind": "rule",
@@ -4336,9 +6571,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-04.txt",
-          "lines": "206-410",
-          "hash": "sha256:cd6d82e4fab1293439a9807b5648e7c47e7ba388a221ba5cf4235ad4e1296c01",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "206-410"
         }
       ],
       "retired": false,
@@ -4357,11 +6590,7 @@
           }
         ]
       },
-      "id": "F-00143",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-161"
     },
     {
       "kind": "rule",
@@ -4378,9 +6607,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-10.txt",
-          "lines": "1-153",
-          "hash": "sha256:1e3b2baf89a5ddab872162cf0e6153dbe2259c374bcc349f7fa1ca20f3c287db",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "1-153"
         }
       ],
       "retired": false,
@@ -4423,11 +6650,7 @@
       "aliases": [
         "ضایعات فصلی کاهو"
       ],
-      "id": "F-00144",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-162"
     },
     {
       "kind": "rule",
@@ -4445,17 +6668,13 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-011.json",
           "node": "preparation-011-n006",
-          "quote": "بسته‌بندی پنه پخته در بسته‌های یک کیلو و دویست گرمی",
-          "hash": "sha256:3f2e70b413dd54ecd7ef6ef08d259e0756a338dba11af6c3bdee1f732d82faec",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "بسته‌بندی پنه پخته در بسته‌های یک کیلو و دویست گرمی"
         },
         {
           "type": "process",
           "ref": "departments/preparation/processes/preparation-011.json",
           "node": "preparation-011-n005",
-          "quote": "پخت پنه خام در آب جوش به تعداد بسته‌های درخواست‌شده",
-          "hash": "sha256:3f2e70b413dd54ecd7ef6ef08d259e0756a338dba11af6c3bdee1f732d82faec",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "پخت پنه خام در آب جوش به تعداد بسته‌های درخواست‌شده"
         }
       ],
       "retired": false,
@@ -4481,11 +6700,7 @@
           }
         ]
       },
-      "id": "F-00145",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-163"
     },
     {
       "kind": "rule",
@@ -4503,23 +6718,20 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-008.json",
           "node": "preparation-008-n014",
-          "quote": "تحویل قارچ سالم باقی‌مانده به انبار برای نگهداری امانی تا روز بعد",
-          "hash": "sha256:5ac36aaac13b4d0175adb601e17212830bcf2e16f29935189f93bacc1bab6ddd",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "تحویل قارچ سالم باقی‌مانده به انبار برای نگهداری امانی تا روز بعد"
         },
         {
           "type": "process",
           "ref": "departments/preparation/processes/preparation-008.json",
           "node": "preparation-008-n013",
-          "quote": "قرار دادن ظرف‌های قارچ در یخچال یا آماده کردن آن‌ها برای ارسال به شعبه",
-          "hash": "sha256:5ac36aaac13b4d0175adb601e17212830bcf2e16f29935189f93bacc1bab6ddd",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "قرار دادن ظرف‌های قارچ در یخچال یا آماده کردن آن‌ها برای ارسال به شعبه"
         }
       ],
       "retired": false,
       "data": {
         "lang": "text",
         "expr": null,
+        "original": "اولین و مهم‌ترینش سفیده. بعدش قارچی که استفاده می‌کنیم پشت‌باز نباشه، یعنی قارچ کاملاً بسته باشه، دکمه‌ای بسته باشه، باز نباشه.",
         "inputs": [
           {
             "key": "vaziyate_qarch",
@@ -4531,17 +6743,12 @@
             "key": "qabele_masraf",
             "title": "قابل استفاده بودن قارچ"
           }
-        ],
-        "original_ref": "facts/originals/F-00146.txt"
+        ]
       },
       "aliases": [
         "قارچ دکمه‌ای بسته"
       ],
-      "id": "F-00146",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-164"
     },
     {
       "kind": "rule",
@@ -4559,9 +6766,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-020.json",
           "node": "preparation-020-n007",
-          "quote": "مرینت کردن راسته در همان روز طبق فرمول از پیش داده‌شده مرینت استیک",
-          "hash": "sha256:dda96b1292e58599b2884e79b38ab3e877d01e188177a861fb6b508823e70c7b",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "مرینت کردن راسته در همان روز طبق فرمول از پیش داده‌شده مرینت استیک"
         }
       ],
       "retired": false,
@@ -4584,11 +6789,7 @@
           }
         ]
       },
-      "id": "F-00147",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-165"
     },
     {
       "kind": "rule",
@@ -4606,9 +6807,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-020.json",
           "node": "preparation-020-n006",
-          "quote": "برش زدن راسته پاک‌شده برای تولید استیک رولی",
-          "hash": "sha256:dda96b1292e58599b2884e79b38ab3e877d01e188177a861fb6b508823e70c7b",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "برش زدن راسته پاک‌شده برای تولید استیک رولی"
         }
       ],
       "retired": false,
@@ -4647,11 +6846,7 @@
           ]
         }
       },
-      "id": "F-00148",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-166"
     },
     {
       "kind": "rule",
@@ -4669,9 +6864,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-020.json",
           "node": "preparation-020-n018",
-          "quote": "پر کردن فرم تبدیل فیلادلفیا با کسر کردن مقدار فیلادلفیا از وزن کل گوشت راسته",
-          "hash": "sha256:dda96b1292e58599b2884e79b38ab3e877d01e188177a861fb6b508823e70c7b",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "پر کردن فرم تبدیل فیلادلفیا با کسر کردن مقدار فیلادلفیا از وزن کل گوشت راسته"
         }
       ],
       "retired": false,
@@ -4701,11 +6894,7 @@
           }
         ]
       },
-      "id": "F-00149",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-167"
     },
     {
       "kind": "rule",
@@ -4723,15 +6912,14 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-021.json",
           "node": "preparation-021-n001",
-          "quote": "تحویل گرفتن گوشت سردست و خرده راسته از انبار در روز تولید برگر",
-          "hash": "sha256:50a3aebd36644d1cdaed0c0fca8acd10d563d800f9f37326768c20c31a186570",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "تحویل گرفتن گوشت سردست و خرده راسته از انبار در روز تولید برگر"
         }
       ],
       "retired": false,
       "data": {
         "lang": "text",
         "expr": null,
+        "original": "این مایه دوباره همون روز باید تبدیل بشه. همون روز که تبدیل میشه یعنی این مایه شد اینقدر برگر.",
         "inputs": [
           {
             "key": "maye_burger",
@@ -4743,14 +6931,9 @@
             "key": "mohlate_tabdil",
             "title": "مهلت تبدیل مایه به برگر"
           }
-        ],
-        "original_ref": "facts/originals/F-00150.txt"
+        ]
       },
-      "id": "F-00150",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-168"
     },
     {
       "kind": "rule",
@@ -4768,9 +6951,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-014.json",
           "node": "preparation-014-n002",
-          "quote": "بیرون اوردن ظرف‌های ۴۸ عددی مرغ چیزا از فریزر انبار در شب قبل برای یخ‌گشایی",
-          "hash": "sha256:26afada1ed97ea0188db3e3b56579607741df095c814b1892cd10545bf1e3ced",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "بیرون اوردن ظرف‌های ۴۸ عددی مرغ چیزا از فریزر انبار در شب قبل برای یخ‌گشایی"
         }
       ],
       "retired": false,
@@ -4786,11 +6967,7 @@
           }
         ]
       },
-      "id": "F-00151",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-169"
     },
     {
       "kind": "rule",
@@ -4808,17 +6985,13 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-019.json",
           "node": "preparation-019-n001",
-          "quote": "هرچی می‌آد باید چرخ بشه",
-          "hash": "sha256:6d6fcbc9fcd824451499c4080ee4516002002ac7b990c6a2ee2c278524e04499",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "هرچی می‌آد باید چرخ بشه"
         },
         {
           "type": "process",
           "ref": "departments/preparation/processes/preparation-021.json",
           "node": "preparation-021-n001",
-          "quote": "سردست هم دوباره چرخ می‌شه با خرده‌راسته‌مون",
-          "hash": "sha256:50a3aebd36644d1cdaed0c0fca8acd10d563d800f9f37326768c20c31a186570",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "سردست هم دوباره چرخ می‌شه با خرده‌راسته‌مون"
         }
       ],
       "retired": false,
@@ -4837,13 +7010,9 @@
             "title": "ثبت ضایعات"
           }
         ],
-        "original_ref": "facts/originals/F-00152.txt"
+        "original": "گوشت گردن ضایعات نداره، هرچی می‌آد مستقیماً چرخ می‌شه؛ سردست هم با خرده‌راسته چرخ می‌شود و مایه برگر می‌شود."
       },
-      "id": "F-00152",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-170"
     },
     {
       "kind": "rule",
@@ -4861,9 +7030,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-004.json",
           "node": "preparation-004-n007",
-          "quote": "مسئولش با سرپرسته که اعلام بکنه، پیگیری بکنه و همون مقدار سالم تحویل بگیره",
-          "hash": "sha256:0292f1872d6a75ebab891b39dd470e40840a95d6fcca4a5a4c9c952554d15948",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "مسئولش با سرپرسته که اعلام بکنه، پیگیری بکنه و همون مقدار سالم تحویل بگیره"
         }
       ],
       "retired": false,
@@ -4889,13 +7056,9 @@
             "unit": "kg"
           }
         ],
-        "original_ref": "facts/originals/F-00153.txt"
+        "original": "فلفل دلمه‌ای که تو لیستمون زدیم دو و نیم کیلو، این دو و نیم کیلو سالم باشه؛ اگه خراب باشه ضایعاتش میره بالا."
       },
-      "id": "F-00153",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-171"
     },
     {
       "kind": "rule",
@@ -4912,9 +7075,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-10.txt",
-          "lines": "154-306",
-          "hash": "sha256:1e3b2baf89a5ddab872162cf0e6153dbe2259c374bcc349f7fa1ca20f3c287db",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "154-306"
         }
       ],
       "retired": false,
@@ -4931,11 +7092,7 @@
           }
         ]
       },
-      "id": "F-00154",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-172"
     },
     {
       "kind": "rule",
@@ -4952,9 +7109,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-10.txt",
-          "lines": "307-430",
-          "hash": "sha256:1e3b2baf89a5ddab872162cf0e6153dbe2259c374bcc349f7fa1ca20f3c287db",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "307-430"
         }
       ],
       "retired": false,
@@ -5006,11 +7161,7 @@
         "دقت ترازو",
         "خطای مقیاس ترازو"
       ],
-      "id": "F-00155",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-173"
     },
     {
       "kind": "rule",
@@ -5028,23 +7179,20 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-026.json",
           "node": "preparation-026-n001",
-          "quote": "وزن‌گیری با خود پرسنله",
-          "hash": "sha256:a43acf874fce9ac22a497659448764b2c90438fd001e1ffc1d8cfcdc0606bce2",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "وزن‌گیری با خود پرسنله"
         },
         {
           "type": "process",
           "ref": "departments/preparation/processes/preparation-026.json",
           "node": "preparation-026-n017",
-          "quote": "ورودی و خروجی و چیزایی که تولید کردیم",
-          "hash": "sha256:a43acf874fce9ac22a497659448764b2c90438fd001e1ffc1d8cfcdc0606bce2",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "ورودی و خروجی و چیزایی که تولید کردیم"
         }
       ],
       "retired": false,
       "data": {
         "lang": "text",
         "expr": null,
+        "original": "ما هر چیزی که میاد رو خودمون وزن‌گیری می‌کنیم، خودمون همون وزن هم تحویل می‌دیم. این قانون آماده‌سازیه.",
         "inputs": [
           {
             "key": "vazn_tahvil_gerefte",
@@ -5058,14 +7206,9 @@
             "title": "وزن تحویل‌داده‌شده",
             "unit": "kg"
           }
-        ],
-        "original_ref": "facts/originals/F-00156.txt"
+        ]
       },
-      "id": "F-00156",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-174"
     },
     {
       "kind": "rule",
@@ -5083,17 +7226,13 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-012.json",
           "node": "preparation-012-n024",
-          "quote": "زمانی که فقط خونابه زیاد باشه اعلام می‌کنیم",
-          "hash": "sha256:53fc35010dc4a0800d99630ae08c4be906adcc600aebdbefdd7bddbd8fff9428",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "زمانی که فقط خونابه زیاد باشه اعلام می‌کنیم"
         },
         {
           "type": "process",
           "ref": "departments/preparation/processes/preparation-012.json",
           "node": "preparation-012-n023",
-          "quote": "بررسی وزن و خونابه",
-          "hash": "sha256:53fc35010dc4a0800d99630ae08c4be906adcc600aebdbefdd7bddbd8fff9428",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "بررسی وزن و خونابه"
         }
       ],
       "retired": false,
@@ -5115,11 +7254,7 @@
       "aliases": [
         "خونابهٔ مجاز مرغ"
       ],
-      "id": "F-00157",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-175"
     },
     {
       "kind": "rule",
@@ -5137,9 +7272,7 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-010.json",
           "node": "preparation-010-n006",
-          "quote": "به ازای هر یک کیلو مرغ",
-          "hash": "sha256:e187eba3f76b67d385faa987a86ae59f9ae4292e23a3eacc168a5b342a924769",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "به ازای هر یک کیلو مرغ"
         }
       ],
       "retired": false,
@@ -5175,11 +7308,7 @@
           }
         ]
       },
-      "id": "F-00158",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-176"
     },
     {
       "kind": "rule",
@@ -5196,9 +7325,7 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-10.txt",
-          "lines": "307-430",
-          "hash": "sha256:1e3b2baf89a5ddab872162cf0e6153dbe2259c374bcc349f7fa1ca20f3c287db",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "307-430"
         }
       ],
       "retired": false,
@@ -5226,11 +7353,7 @@
           }
         ]
       },
-      "id": "F-00159",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-177"
     },
     {
       "kind": "rule",
@@ -5247,15 +7370,14 @@
         {
           "type": "voice",
           "ref": "meetings/transcripts/preparation-1405-06-10.txt",
-          "lines": "307-430",
-          "hash": "sha256:1e3b2baf89a5ddab872162cf0e6153dbe2259c374bcc349f7fa1ca20f3c287db",
-          "run": "runs/facts/preparation/20260912-102718"
+          "lines": "307-430"
         }
       ],
       "retired": false,
       "data": {
         "lang": "text",
         "expr": null,
+        "original": "باید پیگیری بکنیم این نیست چشم‌پوشی کنیم. باید از همونجا جلوی عیبه رو بگیریم که وارد سیستم نشه.",
         "inputs": [
           {
             "key": "tedad_shomarde_shode",
@@ -5274,14 +7396,9 @@
             "title": "اختلاف شمارش",
             "unit": "pcs"
           }
-        ],
-        "original_ref": "facts/originals/F-00160.txt"
+        ]
       },
-      "id": "F-00160",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-178"
     },
     {
       "kind": "rule",
@@ -5299,15 +7416,14 @@
           "type": "process",
           "ref": "departments/preparation/processes/preparation-001.json",
           "node": "preparation-001-n002",
-          "quote": "اگه داده نشده باشه نه مرخصی رد نمیشه و آخر ماه کسر میشه",
-          "hash": "sha256:d47645941743989e3cd9715aab3fec21e3b26f3d2aa6296ba328c0cc294027ea",
-          "run": "runs/facts/preparation/20260912-102718"
+          "quote": "اگه داده نشده باشه نه مرخصی رد نمیشه و آخر ماه کسر میشه"
         }
       ],
       "retired": false,
       "data": {
         "lang": "text",
         "expr": null,
+        "original": "اگر مرخصی ساعتی از پیش تأیید نشده باشد، ساعت‌های تأخیر در پایان ماه از حقوق کسر می‌شود.",
         "inputs": [
           {
             "key": "taeid_ghabli",
@@ -5325,14 +7441,9 @@
             "title": "کسر از حقوق پایان ماه",
             "unit": "hour"
           }
-        ],
-        "original_ref": "facts/originals/F-00161.txt"
+        ]
       },
-      "id": "F-00161",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "unknown",
-      "updated_at": "2026-09-12T12:17:25Z"
+      "id": "T-179"
     }
   ]
 }

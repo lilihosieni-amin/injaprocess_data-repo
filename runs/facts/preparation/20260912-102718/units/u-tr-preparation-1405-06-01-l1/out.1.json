@@ -1,0 +1,372 @@
+{
+  "schema_version": 1,
+  "unit": "u-tr-preparation-1405-06-01-l1",
+  "attempt": 1,
+  "decisions": [],
+  "new": [
+    {
+      "kind": "record",
+      "key": "form_marinat",
+      "title": "فرم مرینت",
+      "statement": "فرم دست‌نویسی که انبار برای اقلام مرینتی آماده می‌کند و برای هر قلم، مقدار کل کنارگذاشته‌شده و سهم آشپزخانه مرکزی، سهم شعبه و سهم انبار را ثبت می‌کند. این فرم از فرم‌های دیگر آماده‌سازی جداست و چاپی نیست.",
+      "aliases": ["لیست مرینت"],
+      "processes": [
+        {
+          "process": "preparation-003",
+          "node": "preparation-003-n017",
+          "quote": "اون لیست کلاً جدا انبار میاره طبق سفارش‌هایی که هر دو تا شعبه میدن"
+        }
+      ],
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": { "value": "لاین مرینت در آماده‌سازی", "inferred": true },
+          "holder": { "value": "مسئول لاین مرینت", "inferred": true }
+        },
+        "cadence": "daily",
+        "grain": "هر قلم مرینتی در هر روز",
+        "filled_by": "انباردار",
+        "approved_by": null,
+        "blank_master": false,
+        "fields": [
+          { "key": "tarikh", "title": "تاریخ", "type": "date" },
+          {
+            "key": "qalam",
+            "title": "نام قلم مرینتی",
+            "type": "string",
+            "refItems": { "namespace": "##", "resolved_by": "title" }
+          },
+          {
+            "key": "meqdar_kol",
+            "title": "مقدار کل کنارگذاشته‌شده",
+            "type": "number",
+            "unit": null,
+            "description": "مجموع مقداری که انبار برای آن روز بیرون گذاشته است، بر حسب واحد همان قلم: تعداد یا کیلوگرم."
+          },
+          {
+            "key": "sahm_markazi",
+            "title": "سهم آشپزخانه مرکزی",
+            "type": "number",
+            "unit": null
+          },
+          {
+            "key": "sahm_shobe",
+            "title": "سهم شعبه",
+            "type": "number",
+            "unit": null
+          },
+          {
+            "key": "sahm_anbar",
+            "title": "سهم انبار برای سردخانه",
+            "type": "number",
+            "unit": null,
+            "description": "مقدار اضافه‌ای که به خود انبار تحویل داده می‌شود تا در سردخانه نگهداری شود."
+          }
+        ],
+        "primaryKey": ["tarikh", "qalam"]
+      }
+    },
+    {
+      "kind": "record",
+      "key": "daftar_ruzane_line_sabzijat",
+      "title": "دفتر روزانهٔ لاین سبزیجات",
+      "statement": "دفتر دست‌نویسی که مسئول لاین سبزیجات در طول روز پر می‌کند و وزن کاهوی دریافتی، وزن کاهوی خردشده و شسته‌شده، وزن کاهوی پاک‌شده و وزن ضایعات را بر حسب کیلوگرم ثبت می‌کند. سهم آشپزخانه مرکزی و شعبه جدا نوشته می‌شود و نوع ظرف هم می‌آید، چون وزن ظرف‌ها با هم فرق دارد.",
+      "aliases": ["برگهٔ ثبت لاین سبزیجات"],
+      "processes": [
+        {
+          "process": "preparation-021",
+          "node": "preparation-021-n012",
+          "quote": "وزن‌کشی می‌کنیم توی برگه می‌نویسیم"
+        }
+      ],
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": { "value": "لاین سبزیجات در آماده‌سازی", "inferred": true },
+          "holder": "مسئول لاین سبزیجات"
+        },
+        "cadence": "daily",
+        "grain": "هر سهم از کاهو در هر روز",
+        "filled_by": "مسئول لاین سبزیجات",
+        "approved_by": null,
+        "blank_master": false,
+        "fields": [
+          { "key": "tarikh", "title": "تاریخ", "type": "date" },
+          {
+            "key": "vazn_vorudi",
+            "title": "وزن کاهوی دریافتی",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن کاهوی خامی که از انبار تحویل گرفته شده است."
+          },
+          {
+            "key": "vazn_khord_shode",
+            "title": "وزن کاهوی خردشده و شسته‌شده",
+            "type": "number",
+            "unit": "kg"
+          },
+          {
+            "key": "vazn_pak_shode",
+            "title": "وزن کاهوی پاک‌شده",
+            "type": "number",
+            "unit": "kg"
+          },
+          {
+            "key": "vazn_zayeat",
+            "title": "وزن ضایعات",
+            "type": "number",
+            "unit": "kg"
+          },
+          {
+            "key": "noe_zarf",
+            "title": "نوع ظرف",
+            "type": "string",
+            "constraints": { "enum": ["کارتن", "سبد"] },
+            "description": "ظرفی که محصول در آن وزن شده است؛ چون وزن کارتن و سبد با هم فرق دارد."
+          },
+          {
+            "key": "sahm",
+            "title": "سهم",
+            "type": "string",
+            "constraints": { "enum": ["مرکزی", "شعبه", "ناهار و شام پرسنل"] }
+          }
+        ],
+        "primaryKey": ["tarikh", "sahm"]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "taklif_kahoo_kerm_khorde",
+      "title": "تکلیف کاهوی کرم‌خورده",
+      "statement": "کاهویی که نشانهٔ کرم‌خوردگی دارد باز و پاک نمی‌شود و مستقیم دور ریخته می‌شود، چون پاک کردن آن حدود یک ساعت وقت می‌برد و باز کردنش تخم کرم را به کاهوی سالم منتقل می‌کند. این کاهو جدا از ظرف ضایعات لاین گذاشته می‌شود.",
+      "processes": [
+        {
+          "process": "preparation-002",
+          "node": "preparation-002-n005",
+          "quote": "کاهویی که کرم داره رو مستقیم دور بریزید"
+        }
+      ],
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "original": "کاهویی که کرم داره یعنی می‌بینن سوراخه مستقیم پرت بدن اصلاً نباید بازش کنن دیگه. چون تخم کرم تو بقیه کاهوها ریخته میشه.",
+        "inputs": [
+          { "key": "vaziat_zaheri_kahoo", "title": "وضعیت ظاهری کاهو", "from": null }
+        ],
+        "outputs": [
+          { "key": "taklif_kahoo", "title": "تکلیف کاهو" }
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "dose_maye_zed_ofuni_kahoo",
+      "title": "مقدار مایع ضدعفونی‌کننده در شست‌وشوی کاهو",
+      "statement": "برای هر بار پر کردن سینک شست‌وشوی کاهو، یک درِ بطری مایع ضدعفونی‌کننده به آب اضافه می‌شود و کاهو چند دقیقه در آن می‌ماند.",
+      "data": {
+        "lang": null,
+        "expr": null,
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "meqdar_maye_zed_ofuni",
+            "title": "مقدار مایع ضدعفونی‌کننده",
+            "value": "یک درِ بطری در هر سینک",
+            "unit": null,
+            "nature": "standard"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "nahve_sabt_zayeat",
+      "title": "نحوهٔ ثبت ضایعات بر حسب ارزش قلم",
+      "statement": "ضایعات اقلام کم‌ارزش مانند کاهو فقط وزن می‌شود و در دفتر لاین نوشته می‌شود و لیبل نمی‌خورد، ولی ضایعات اقلام باارزش مانند گوشت و مرغ باید وزن، لیبل‌گذاری و تحویل انبار شود تا در حساب‌ها سند بخورد.",
+      "processes": [
+        {
+          "process": "preparation-026",
+          "node": "preparation-026-n006",
+          "quote": "وزن که لیبل‌گذاری می‌شه تحویل انبار داده می‌شه"
+        }
+      ],
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "inputs": [
+          { "key": "goruh_qalam", "title": "گروه قلم", "from": null }
+        ],
+        "outputs": [
+          { "key": "nahve_sabt", "title": "نحوهٔ ثبت ضایعات" }
+        ],
+        "table": {
+          "inputs": ["goruh_qalam"],
+          "outputs": ["nahve_sabt"],
+          "hit": "first",
+          "rows": [
+            { "goruh_qalam": "کاهو", "nahve_sabt": "وزن‌کشی و ثبت دستی در دفتر لاین، بدون لیبل" },
+            { "goruh_qalam": "گوشت و مرغ", "nahve_sabt": "وزن‌کشی، لیبل‌گذاری و تحویل به انبار" }
+          ]
+        }
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "kahoo_pak_shode_amani",
+      "title": "نگهداری امانی کاهوی پاک‌شدهٔ باقی‌مانده",
+      "statement": "کاهوی پاک‌شده‌ای که در یخچال آشپزخانه می‌ماند به صورت امانی نگهداری می‌شود؛ اگر شب کاهوی خردشده کم بیاید از همان تولید می‌شود و در غیر این صورت برای روز بعد باقی می‌ماند. این موجودی دپوی لاین به شمار نمی‌رود.",
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "original": "اون کاهوییه توی آشپزخونه حالت امانی مونده که اگه ما شب کم بیاریم بتونیم تولید کنیم. می‌مونه برای فردا.",
+        "inputs": [
+          { "key": "kahoo_pak_shode_baqimande", "title": "کاهوی پاک‌شدهٔ باقی‌مانده", "unit": "kg", "from": null }
+        ],
+        "outputs": [
+          { "key": "vaziat_negahdari", "title": "وضعیت نگهداری" }
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "mohlat_tahvil_fehrest_gorub",
+      "title": "مهلت تحویل فهرست غروب به انبار",
+      "statement": "فهرستی که آماده‌سازی در غروب می‌نویسد باید پیش از ساعت شش و نیم بعدازظهر و در عمل نزدیک ساعت شش به انبار تحویل داده شود تا انبار خرده‌های اقلام را برای روز بعد کنار بگذارد. تحویل آن بر عهدهٔ مسئول آماده‌سازی است.",
+      "data": {
+        "lang": null,
+        "expr": null,
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "mohlat_tahvil",
+            "title": "مهلت تحویل فهرست غروب",
+            "value": "18:30",
+            "unit": null,
+            "nature": "limit"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_giri_baste_nahayi",
+      "title": "وزن‌گیری و لیبل‌زنی بستهٔ محصول نهایی",
+      "statement": "هر بستهٔ محصول آمادهٔ لاین روی ترازوی لیبل‌گذاری وزن می‌شود و لیبل چاپی آن نام محصول، وزن، تاریخ و ساعت را نشان می‌دهد. نام هر محصول از پیش روی همان ترازو تعریف شده است.",
+      "processes": [
+        {
+          "process": "preparation-026",
+          "node": "preparation-026-n008",
+          "quote": "هر محصولی که می‌ذاریم روی ترازو خودش رو می‌زنیم اسمش می‌افته"
+        },
+        {
+          "process": "preparation-026",
+          "node": "preparation-026-n010",
+          "quote": "وقتی پرینت رو می‌زنیم همه اطلاعات چاپ میشه"
+        },
+        {
+          "process": "preparation-006",
+          "node": "preparation-006-n019",
+          "quote": "وزن میده، تاریخ میده و اسم محصول"
+        }
+      ],
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "ترازوی لیبل‌گذاری با چاپ لیبل روز، ساعت، نوع جنس و وزن",
+        "when": "پس از بسته‌بندی هر بستهٔ محصول نهایی",
+        "by": "مسئول لاین",
+        "exceptions": "ضایعات کاهو لیبل نمی‌خورد و فقط وزن آن در دفتر لاین نوشته می‌شود."
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "kahoo_khord_shode_mored_niaz",
+      "title": "مقدار کاهوی خردشدهٔ مورد نیاز روز",
+      "statement": "مقدار کاهوی خردشده‌ای که لاین سبزیجات باید در روز تولید کند برابر است با مجموع سفارش آشپزخانه‌ها برای وعدهٔ روز و سفارش شام، بر حسب کیلوگرم.",
+      "processes": [
+        {
+          "process": "preparation-006",
+          "node": "preparation-006-n004",
+          "quote": "هشت کیلو و نیم باید کاهوی خرد شده تولید کنید"
+        }
+      ],
+      "data": {
+        "lang": "feel",
+        "expr": "kahoo_khord_shode_mored_niaz = sefaresh_ruz + sefaresh_sham",
+        "inputs": [
+          { "key": "sefaresh_ruz", "title": "سفارش کاهوی خردشده برای وعدهٔ روز", "unit": "kg", "from": null },
+          { "key": "sefaresh_sham", "title": "سفارش کاهوی خردشده برای شام", "unit": "kg", "from": null }
+        ],
+        "outputs": [
+          {
+            "key": "kahoo_khord_shode_mored_niaz",
+            "title": "کاهوی خردشدهٔ مورد نیاز",
+            "unit": "kg",
+            "nature": "target"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "kahoo_pak_shode_ruzane",
+      "title": "مقدار کاهوی پاک‌شدهٔ روز",
+      "statement": "هرچه از کاهوی دریافتی روز پس از کسر مقدار خردشده باقی بماند، پاک‌شده آماده و بسته‌بندی می‌شود؛ مقدار آن بر حسب کیلوگرم به دست می‌آید.",
+      "processes": [
+        {
+          "process": "preparation-006",
+          "node": "preparation-006-n004",
+          "quote": "۱۶ کیلو، ۸ کیلوشو خرد کنید، ۸ کیلو پاک شده"
+        }
+      ],
+      "data": {
+        "lang": "feel",
+        "expr": "kahoo_pak_shode = kahoo_daryafti - kahoo_khord_shode",
+        "inputs": [
+          { "key": "kahoo_daryafti", "title": "کاهوی دریافتی روز", "unit": "kg", "from": null },
+          { "key": "kahoo_khord_shode", "title": "کاهوی خردشدهٔ مورد نیاز", "unit": "kg", "from": null }
+        ],
+        "outputs": [
+          {
+            "key": "kahoo_pak_shode",
+            "title": "کاهوی پاک‌شدهٔ روز",
+            "unit": "kg",
+            "nature": "target"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "item",
+      "key": "kahoo_khord_shode",
+      "title": "کاهوی خردشده",
+      "statement": "کاهوی خردشده، شسته و خشک‌شدهٔ آمادهٔ مصرف که لاین سبزیجات تولید می‌کند و بر حسب کیلوگرم وزن و لیبل می‌شود و در پلاستیک بسته‌بندی می‌شود.",
+      "data": {
+        "category": "product",
+        "unit": "kg",
+        "unit_raw": "کیلوگرم",
+        "state": "prepared",
+        "group": "سبزیجات",
+        "code": null,
+        "pack": { "size": null, "unit": null }
+      }
+    },
+    {
+      "kind": "item",
+      "key": "kahoo_pak_shode",
+      "title": "کاهوی پاک‌شده",
+      "statement": "کاهوی پاک‌شده و بدون برگ ضایعاتی که خرد نشده است و در پلاستیک بسته‌بندی می‌شود؛ بر حسب کیلوگرم وزن و لیبل می‌شود و به سهم آشپزخانه مرکزی و شعبه تفکیک می‌شود.",
+      "data": {
+        "category": "product",
+        "unit": "kg",
+        "unit_raw": "کیلوگرم",
+        "state": "prepared",
+        "group": "سبزیجات",
+        "code": null,
+        "pack": { "size": null, "unit": null }
+      }
+    }
+  ]
+}

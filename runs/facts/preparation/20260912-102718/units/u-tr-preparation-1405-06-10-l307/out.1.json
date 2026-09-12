@@ -1,0 +1,281 @@
+{
+  "schema_version": 1,
+  "unit": "u-tr-preparation-1405-06-10-l307",
+  "attempt": 1,
+  "decisions": [],
+  "new": [
+    {
+      "kind": "rule",
+      "key": "deqqat_va_zarfiat_taraziha",
+      "title": "دقت و ظرفیت ترازوهای انبار و آماده‌سازی",
+      "statement": "ترازوی انبار تا صد گرم خطای مقیاس دارد و تا صد و پنجاه کیلوگرم وزن‌کشی می‌کند، ولی ترازوی آماده‌سازی تا ده گرم خطای مقیاس دارد و تا شصت تا هفتاد کیلوگرم وزن‌کشی می‌کند. به همین دلیل مواد ورودی در آماده‌سازی دوباره وزن‌گیری می‌شود.",
+      "aliases": ["دقت ترازو", "خطای مقیاس ترازو"],
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "inputs": [
+          { "key": "taraz", "title": "ترازو" }
+        ],
+        "outputs": [
+          { "key": "deqqat_moqyas_gr", "title": "خطای مقیاس", "unit": "g" },
+          { "key": "zarfiat_kg", "title": "بیشترین وزن قابل اندازه‌گیری", "unit": "kg" }
+        ],
+        "table": {
+          "inputs": ["taraz"],
+          "outputs": ["deqqat_moqyas_gr", "zarfiat_kg"],
+          "hit": "unique",
+          "rows": [
+            { "taraz": "ترازوی انبار", "deqqat_moqyas_gr": 100, "zarfiat_kg": 150 },
+            { "taraz": "ترازوی آماده‌سازی", "deqqat_moqyas_gr": 10, "zarfiat_kg": "۶۰ تا ۷۰" }
+          ]
+        }
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "taahod_vazni_amadesazi",
+      "title": "قاعدهٔ تحویل بر مبنای وزن‌گیری آماده‌سازی",
+      "statement": "هر قلمی که به آماده‌سازی می‌رسد توسط مسئول همان لاین وزن‌گیری می‌شود و آماده‌سازی همان وزن اندازه‌گرفته‌شده را تحویل می‌دهد. اختلاف این وزن با مقدار اعلام‌شدهٔ انبار مبنای ثبت نیست و از سوی آماده‌سازی اعلام نمی‌شود.",
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "original": "ما هر چیزی که میاد رو خودمون وزن‌گیری می‌کنیم، خودمون همون وزن هم تحویل می‌دیم. این قانون آماده‌سازیه.",
+        "inputs": [
+          { "key": "vazn_tahvil_gerefte", "title": "وزن تحویل‌گرفته‌شده", "unit": "kg" }
+        ],
+        "outputs": [
+          { "key": "vazn_tahvil_dade", "title": "وزن تحویل‌داده‌شده", "unit": "kg" }
+        ]
+      },
+      "processes": [
+        { "process": "preparation-026", "node": "preparation-026-n001", "quote": "وزن‌گیری با خود پرسنله" },
+        { "process": "preparation-026", "node": "preparation-026-n017", "quote": "ورودی و خروجی و چیزایی که تولید کردیم" }
+      ]
+    },
+    {
+      "kind": "rule",
+      "key": "hadde_khunabe_morgh",
+      "title": "حد معمول خونابهٔ مرغ ورودی",
+      "statement": "خونابهٔ هر پنجاه کیلوگرم مرغ ورودی به‌طور معمول سیصد تا چهارصد گرم است. اگر بیش از این مقدار باشد، آماده‌سازی موضوع را به مدیریت اعلام می‌کند تا از تأمین‌کننده پیگیری شود.",
+      "aliases": ["خونابهٔ مجاز مرغ"],
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "khunabe_mojaz",
+            "title": "خونابهٔ معمول هر پنجاه کیلوگرم مرغ",
+            "unit": "g",
+            "nature": "limit",
+            "range": { "min": 300, "max": 400 }
+          }
+        ]
+      },
+      "processes": [
+        { "process": "preparation-012", "node": "preparation-012-n024", "quote": "زمانی که فقط خونابه زیاد باشه اعلام می‌کنیم" },
+        { "process": "preparation-012", "node": "preparation-012-n023", "quote": "بررسی وزن و خونابه" }
+      ]
+    },
+    {
+      "kind": "rule",
+      "key": "nesbat_mavad_marinat_morgh",
+      "title": "نسبت مواد مرینت به ازای هر کیلوگرم مرغ",
+      "statement": "به ازای هر یک کیلوگرم مرغ، سی گرم پودر مرینت و هفتاد گرم آب استفاده می‌شود. این مواد پیش از افزودن به مرغ و طبق همین نسبت وزن می‌شوند.",
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "pudr_marinat_gr",
+            "title": "پودر مرینت هر کیلوگرم مرغ",
+            "unit": "g",
+            "nature": "standard",
+            "value": 30
+          },
+          {
+            "key": "ab_marinat_gr",
+            "title": "آب مرینت هر کیلوگرم مرغ",
+            "unit": "g",
+            "nature": "standard",
+            "value": 70
+          }
+        ]
+      },
+      "processes": [
+        { "process": "preparation-010", "node": "preparation-010-n006", "quote": "۳۰ گرم پودر مرینت و ۷۰ گرم آب" }
+      ]
+    },
+    {
+      "kind": "rule",
+      "key": "afzayesh_vazn_morgh_marinat",
+      "title": "افزایش وزن مرغ پس از مرینت",
+      "statement": "وزن مرغ مرینت‌شده برابر است با وزن مرغ خام به‌علاوهٔ پودر مرینت و آبی که به ازای هر کیلوگرم به آن افزوده می‌شود. به این ترتیب بیست کیلوگرم مرغ خام پس از مرینت بیست و دو کیلوگرم تحویل داده می‌شود.",
+      "data": {
+        "lang": "feel",
+        "expr": "vazn_morgh_marinat = vazn_morgh_kham + (pudr_marinat_gr + ab_marinat_gr) / 1000 * vazn_morgh_kham",
+        "inputs": [
+          { "key": "vazn_morgh_kham", "title": "وزن مرغ خام", "unit": "kg", "from": null },
+          { "key": "pudr_marinat_gr", "title": "پودر مرینت هر کیلوگرم مرغ", "unit": "g", "from": null },
+          { "key": "ab_marinat_gr", "title": "آب مرینت هر کیلوگرم مرغ", "unit": "g", "from": null }
+        ],
+        "outputs": [
+          {
+            "key": "vazn_morgh_marinat",
+            "title": "وزن مرغ مرینت‌شده",
+            "unit": "kg",
+            "nature": "observed"
+          }
+        ]
+      },
+      "processes": [
+        { "process": "preparation-010", "node": "preparation-010-n006", "quote": "به ازای هر یک کیلو مرغ" }
+      ]
+    },
+    {
+      "kind": "rule",
+      "key": "kast_pokht_morgh",
+      "title": "کاست وزن مرغ در پخت",
+      "statement": "از هر صد کیلوگرم مرغ خامی که به آشپزخانه می‌رسد هفتاد کیلوگرم مرغ پخته به دست می‌آید، یعنی سی درصد وزن در پخت کاسته می‌شود. این نسبت مبنای اعلام کاست مرغ به حسابداری است.",
+      "aliases": ["کاست مرغ پخته"],
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "darsad_kast_pokht",
+            "title": "درصد کاست پخت مرغ",
+            "unit": "percent",
+            "nature": "standard",
+            "value": 30
+          }
+        ]
+      },
+      "processes": [
+        { "process": "preparation-013", "node": "preparation-013-n033", "quote": "وزن خالص مرغ پخته‌شده" }
+      ]
+    },
+    {
+      "kind": "rule",
+      "key": "meqdar_adviye_esterips",
+      "title": "مقدار استاندارد ادویهٔ استریپس",
+      "statement": "مقدار استاندارد ادویه‌ای که به مرغ استریپس زده می‌شود هفتاد گرم است. پنج گرم بیشتر کل مرغ را شور و پنج گرم کمتر آن را بی‌مزه می‌کند، بنابراین وزن‌کشی آن باید دقیق باشد.",
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "adviye_esterips",
+            "title": "ادویهٔ استریپس",
+            "unit": "g",
+            "nature": "standard",
+            "value": 70
+          }
+        ],
+        "edge_cases": [
+          { "input": 75, "expected": "شور شدن کل مرغ", "why": "پنج گرم ادویهٔ بیشتر مزهٔ کل نوبت را شور می‌کند." },
+          { "input": 65, "expected": "بی‌مزه شدن کل مرغ", "why": "پنج گرم ادویهٔ کمتر مزهٔ کل نوبت را از بین می‌برد." }
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "peygiri_ekhtelaf_shomaresh",
+      "title": "پیگیری اختلاف شمارش اقلام شمارشی",
+      "statement": "اختلاف میان تعداد شمارش‌شده و تعداد اعلام‌شدهٔ اقلام شمارشی مانند لقمه و فیله، حتی یک یا دو عدد، خطای شمارش به شمار می‌آید و همان‌جا به انبار اعلام و پیگیری می‌شود و از آن چشم‌پوشی نمی‌شود. این اختلاف اگر پیگیری نشود در پایان شب به مغایرت آمار آشپزخانه و حسابداری می‌انجامد.",
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "original": "باید پیگیری بکنیم این نیست چشم‌پوشی کنیم. باید از همونجا جلوی عیبه رو بگیریم که وارد سیستم نشه.",
+        "inputs": [
+          { "key": "tedad_shomarde_shode", "title": "تعداد شمارش‌شده", "unit": "pcs" },
+          { "key": "tedad_elami", "title": "تعداد اعلام‌شده", "unit": "pcs" }
+        ],
+        "outputs": [
+          { "key": "ekhtelaf_shomaresh", "title": "اختلاف شمارش", "unit": "pcs" }
+        ]
+      }
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_giri_mavad_vorudi_line",
+      "title": "وزن‌گیری مواد اولیهٔ ورودی هر لاین",
+      "statement": "مسئول هر لاین هر قلم مواد اولیه را هنگام تحویل گرفتن از انبار بر حسب کیلوگرم وزن می‌کند و وزن به‌دست‌آمده را در دفتر همان لاین می‌نویسد. مرغ و گوشت در چند پارت و هر بار هنگام رسیدن بار وزن می‌شوند.",
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "ترازوی آماده‌سازی با خطای مقیاس ده گرم",
+        "when": "هنگام تحویل گرفتن هر پارت از انبار",
+        "by": "مسئول لاین",
+        "exceptions": null
+      },
+      "processes": [
+        { "process": "preparation-026", "node": "preparation-026-n001", "quote": "وزن‌کشی مواد اولیه ورودی هر لاین" },
+        { "process": "preparation-012", "node": "preparation-012-n023", "quote": "تحویل گرفتن، وزن‌گیری و شمارش" },
+        { "process": "preparation-004", "node": "preparation-004-n013", "quote": "ثبت وزن و تعداد اقلام تحویل‌گرفته‌شده" }
+      ]
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_keshi_adviye_respi",
+      "title": "وزن‌کشی ادویه‌ها و مواد رسپی",
+      "statement": "ادویه‌ها و مواد هر رسپی پیش از افزودن، بر حسب گرم و طبق مقدار رسپی وزن می‌شوند و هیچ انحرافی از آن مقدار، حتی یک گرم، پذیرفته نیست. وزن ظرف پیش از وزن‌کشی صفر می‌شود و سرپرست هنگام وزن‌کشی محصولات گوشتی حضور دارد.",
+      "data": {
+        "quantity": "mass",
+        "unit": "g",
+        "method": "ترازوی لاین پس از صفر کردن وزن ظرف",
+        "when": "هنگام اجرای هر رسپی",
+        "by": "مسئول لاین زیر نظر سرپرست آماده‌سازی",
+        "exceptions": null
+      },
+      "processes": [
+        { "process": "preparation-019", "node": "preparation-019-n022", "quote": "وزن‌گیری جداگانه ادویه‌ها و سس‌ها" },
+        { "process": "preparation-026", "node": "preparation-026-n018", "quote": "صفر کردن وزن ظرف" },
+        { "process": "preparation-021", "node": "preparation-021-n016", "quote": "وزن‌گیری دانه‌به‌دانه مواد و ادویه‌ها" }
+      ]
+    },
+    {
+      "kind": "record",
+      "key": "daftar_amar_line",
+      "title": "دفتر آمار لاین",
+      "statement": "دفتر کاغذی هر لاین که مسئول همان لاین وزن و تعداد اقلام تحویل‌گرفته‌شده و تولیدشده را در آن می‌نویسد؛ هر لاین دفتر جداگانهٔ خود را دارد، مانند دفتر مرغ و دفتر گوشت. این دفتر روزانه به سرپرست آماده‌سازی تحویل داده می‌شود و مبنای ورود آمار ورودی، خروجی و تولید به فایل آماده‌سازی است.",
+      "aliases": ["دفتر مرغ", "دفتر گوشت", "دفتر یادداشت لاین"],
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "لاین مربوط در بخش آماده‌سازی",
+          "holder": "مسئول لاین"
+        },
+        "cadence": "daily",
+        "grain": "هر قلم تحویل‌گرفته‌شده یا تولیدشده در لاین",
+        "filled_by": "مسئول لاین",
+        "approved_by": "سرپرست آماده‌سازی",
+        "fields": [
+          {
+            "key": "qalam",
+            "title": "نام قلم",
+            "type": "string",
+            "description": "نام مادهٔ اولیه یا محصولی که تحویل گرفته یا تولید شده است."
+          },
+          {
+            "key": "vazn",
+            "title": "وزن",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزنی که مسئول لاین خودش اندازه گرفته است، نه مقداری که انبار اعلام کرده است."
+          },
+          {
+            "key": "tedad",
+            "title": "تعداد",
+            "type": "number",
+            "unit": "pcs",
+            "description": "تعداد شمارش‌شدهٔ اقلام شمارشی مانند لقمه و فیله."
+          }
+        ]
+      },
+      "processes": [
+        { "process": "preparation-004", "node": "preparation-004-n013", "quote": "دفتر مخصوص هر لاین" },
+        { "process": "preparation-012", "node": "preparation-012-n026", "quote": "ثبت وزن و تعداد مرغ در دفتر مرغ" },
+        { "process": "preparation-006", "node": "preparation-006-n025", "quote": "تحویل روزانه یادداشت‌های دفتر" },
+        { "process": "preparation-005", "node": "preparation-005-n009", "quote": "تحویل روزانه دفتر آمار لاین سبزیجات" },
+        { "process": "preparation-013", "node": "preparation-013-n040", "quote": "ثبت وزن مرغ خام و مرغ پخته‌شده در دفتر" }
+      ]
+    }
+  ]
+}
