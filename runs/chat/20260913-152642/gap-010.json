@@ -1,0 +1,28 @@
+{
+  "add_nodes": [
+    {
+      "key": "n1",
+      "type": "activity",
+      "label": "بردن مرغ تفکیک‌شده به آشپزخانه و شستن آن برای خروج خونابه",
+      "description": "مرغ‌های تفکیک‌شده جدا جدا به آشپزخانه برده و شسته می‌شوند تا خونابه آن‌ها خارج شود؛ شستشو در آشپزخانه انجام می‌گیرد و پس از آن نوبت وزن‌کشی است.",
+      "actor": "نیروی لاین مرینت",
+      "icom": {
+        "inputs": ["مرغ تفکیک‌شده به تفکیک نوع"],
+        "controls": ["انجام شستشو در آشپزخانه"],
+        "outputs": ["مرغ شسته‌شده"],
+        "mechanisms": ["نیروی لاین مرینت", "آشپزخانه"]
+      },
+      "subprocess": null
+    }
+  ],
+  "add_edges": [
+    { "from": "preparation-010-j2", "to": "n1" },
+    { "from": "n1", "to": "preparation-010-n005" }
+  ],
+  "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [
+    { "from": "preparation-010-j2", "to": "preparation-010-n005" }
+  ],
+  "flag_removed": []
+}
