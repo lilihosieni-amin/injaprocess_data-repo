@@ -87,7 +87,8 @@ forms are kept, and who holds them, both Persian prose.
 Rules the validator enforces, so get them right the first time. A refusal costs only the decision
 that broke the rule — your other decisions land, and the refused one waits for a retry. Anything
 else the gate dislikes is stored with a mark a person reads before confirming, and never comes
-back to you.
+back to you — with one exception: a candidate you left without a decision joins the retry your unit
+already owes for a refusal, listed in `retry` like the refused ones.
 
 - **Every candidate your input lists appears in `decisions` exactly once.** Not more, not fewer.
 - **A retry answers only the decisions listed in `retry`.** Read each one in `previous_output`, fix

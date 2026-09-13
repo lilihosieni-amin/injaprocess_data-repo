@@ -346,7 +346,7 @@ On failure, re-dispatch once with the validator's lines appended — they name t
 member. On a second failure, continue to Stage V anyway: `assemble --review` applies every decision
 that passes and holds back the rest **by decision**, and the report names each one. The review is
 never dropped — owner ruling, 2026-09-09. `digest` shares `assemble`'s preparation: when it exits 2
-naming a **unit**, that unit's latest output is invalid and an attempt is left — re-dispatch it
+naming a **unit**, no output of that unit is usable and an attempt is left — re-dispatch it
 exactly as Stage U says and run `digest` again. Only when its line says the digest is over the
 engine's ceiling is the run over: stop it and send
 
@@ -372,8 +372,8 @@ gate, so a delta assembled from validated units should not fail one (design adde
 `validate facts-delta` names a single entry anyway, do not stop: `apply` holds that entry back,
 writes the rest, and the report names it. Hand-repair nothing. `note:` lines are marks, not errors.
 
-`assemble` itself exits 2, naming the unit, when that unit's latest attempt is invalid and an
-attempt is still left: re-dispatch that unit and run `assemble` again. On a residual error, the
+`assemble` itself exits 2, naming the unit, when no attempt of that unit is usable (each was
+refused as a whole) and an attempt is still left: re-dispatch that unit and run `assemble` again. On a residual error, the
 message names the unit that produced it. If that unit is under two attempts, re-dispatch it with
 the error, then **re-enter Stage R** (the assembly changed, so the review is stale: digest, review,
 validate) and re-run Stage V. `assemble --review` exits 2 naming a stale review for the same
