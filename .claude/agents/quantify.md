@@ -60,7 +60,7 @@ its summary and the file is authoritative.
 
 **The shape section at the end of your `input.md` is the contract for what you may write.** It
 lists, per kind, the closed key list with the required keys marked, every enum's values, and a
-worked example. A key that is not in it is set aside unused and flagged on the entry — invent none,
+worked example. A key that is not in it is set aside unused (kept aside on the entry, never shown) — invent none,
 and write every enum value in its own ASCII spelling, never translated. A **paper form** is a
 `new[]` record with `medium: "paper"` and `location: {"kept_at": "…", "holder": "…"}` — where the blank and filled
 forms are kept, and who holds them, both Persian prose.
