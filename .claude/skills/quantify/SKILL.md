@@ -73,11 +73,12 @@ Bash: DATA_ROOT=<data-repo> facts-plan status --run {run_dir} --new-turn
 ```
 
 It writes `{run_dir}/turn.json` and prints a compact table — one line per unit as `unit · type ·
-state · attempts` — plus the stage to enter, `plan_stale`, `elapsed_s` and `yield`.
+state · attempts`, followed by `· retry` and the refused labels when a decision is owed a retry —
+plus the stage to enter, `plan_stale`, `elapsed_s` and `yield`.
 
 **Resume ladder**, exactly as `status` reports it: no skeleton → Stage P (or earlier, by what is on
-disk: transcripts, then dumps, then the plan); pending units → Stage U; all units done and no delta
-→ Stage R; a delta present and no `id-map.json` → Stage 5 (a retry of the apply is safe); an
+disk: transcripts, then dumps, then the plan); pending units, or a unit with a `retry` list → Stage
+U; all units done and no delta → Stage R; a delta present and no `id-map.json` → Stage 5 (a retry of the apply is safe); an
 `id-map.json` present and the run unfinished → Stage 6.
 
 For a **fresh** run: create `{run_dir}` and write its initial `meta.json` (`facts-run-meta.schema.json`
@@ -227,12 +228,16 @@ slice, and writes the skeleton, the plan, one `input.md` per unit, and the estat
 library. Each `input.md` ends with the **shape section**, rendered from the store's own schema:
 the closed key list per kind with the required keys marked, every enum's values, and a worked
 `new[]` example — a paper form among them. That section is the unit's contract, and a key it does
-not name is refused at the unit's gate. It prints the unit count for the log — **nothing
-owner-facing**. Do not open what it wrote.
+not name is set aside at the unit's gate, never used. It prints the unit count for the log —
+**nothing owner-facing**. Do not open what it wrote.
 
-Exit 2 means a group could not be split under the size budget, or that a candidate spans two
+Every attachment — a form photo, a pdf, a docx text — goes into an `attachment` unit of its own
+(`u-att-1`, `u-att-2`, … in input order, packed to the size budget), never onto a transcript unit.
+
+Exit 2 means a group could not be split under the size budget, that a candidate spans two
 workbooks the manifest keeps apart — the second names both rows, and the remedy is a `twin_of` on
-one of them. Report either in Persian and stop. Yield check, then Stage U in the same turn.
+one of them — or that a chosen transcript range or an attachment was placed in no unit, naming the
+file. Report any of them in Persian and stop. Yield check, then Stage U in the same turn.
 
 A plan is immutable: `build` refuses to replace one whose units have already produced output, and
 `--rebuild` is the only way to renumber them.
@@ -251,7 +256,7 @@ agents spend their time on model wait, so four-way concurrency overlaps it.
 Do the whole batched sweep **within one turn**, subject to the yield rule: dispatching a batch and
 awaiting it is a tool call, not a turn end.
 
-One `Task` per pending unit:
+One `Task` per pending unit. Attachment units are dispatched like any unit, in the same batches:
 
 ```
 Task: quantify
@@ -261,6 +266,7 @@ Task: quantify
   attempt: {1 or 2}
   input_path: {run_dir}/units/{unit id}/input.md
   schema_path: <code-repo>/schemas/facts-unit.schema.json
+  retry: {on attempt 2 only: the labels `status` printed after `retry`}
 ```
 
 Every dispatch carries the sentence **«nothing runs in the background and no monitor exists; the
@@ -280,8 +286,15 @@ The unit is taken from the directory the file sits in, so an output must be writ
 `{run_dir}/units/{unit id}/out.{attempt}.json` and nowhere else; a document naming another unit is
 refused.
 
-**The retry rule — the cap is the engine's, not a choice.** A unit whose output fails validation
-is re-dispatched **once**, with `attempt: 2`, its previous output path and the grouped errors.
+A line beginning `note:` is not a failure: the engine stores that entry with a mark the panel
+shows, and nothing is retried for it. A refusal costs only its own decision — the unit's other
+decisions land, and `status` prints the unit `done` with `· retry` and the refused labels.
+
+**The retry rule — the cap is the engine's, not a choice.** Retry only refused decisions: a unit
+whose `status` line carries `retry` is re-dispatched **once**, with `attempt: 2`, its previous
+output path, those labels as `retry` and the validator's lines for them — and its answer is folded
+over the first attempt by candidate. A unit still `pending` after a refused first attempt (its
+output refused as a whole) is re-dispatched the same way with no `retry` list.
 There is no third attempt to give: `validate facts-unit` refuses `out.3.json` outright («attempt
 cap: two per run») and `facts-plan status` reports that unit `failed`, which is what `assemble`
 reads. The run continues without it; its candidates are reported as unexamined, never as dropped.
@@ -351,21 +364,21 @@ Bash: DATA_ROOT=<data-repo> SCHEMA_DIR=<code-repo>/schemas validate facts-delta 
 ```
 
 The validate call performs the whole apply in memory, including the resulting store's schema, and
-writes nothing — so a delta that passes here is one `apply` cannot refuse.
+writes nothing — so what it refuses is exactly what `apply` will hold back, and nothing more.
 
-**A per-entry error here is a defect, not your work.** Every per-entry rule — the store schema per
-kind and the content pass — is enforced at each unit's own gate, so a delta assembled from
-validated units cannot fail one (design addendum I1). What is left here is cross-entry only: twin
-titles, instance ownership, refs between units. If `validate facts-delta` names a single entry's
-field anyway, stop before the apply, report it in Persian as a defect, and hand-repair nothing.
+**A per-entry error here is a defect, not your work — and it costs only that entry.** Every
+per-entry rule — the store schema per kind and the content pass — is enforced at each unit's own
+gate, so a delta assembled from validated units should not fail one (design addendum I1). If
+`validate facts-delta` names a single entry anyway, do not stop: `apply` holds that entry back,
+writes the rest, and the report names it. Hand-repair nothing. `note:` lines are marks, not errors.
 
 `assemble` itself exits 2, naming the unit, when that unit's latest attempt is invalid and an
 attempt is still left: re-dispatch that unit and run `assemble` again. On a residual error, the
 message names the unit that produced it. If that unit is under two attempts, re-dispatch it with
 the error, then **re-enter Stage R** (the assembly changed, so the review is stale: digest, review,
 validate) and re-run Stage V. `assemble --review` exits 2 naming a stale review for the same
-reason — re-enter Stage R. Never proceed without the review. If Stage V fails again, stop
-**before** the apply and relay the grouped errors in Persian.
+reason — re-enter Stage R. Never proceed without the review. If Stage V fails again on an error
+that names no entry — the delta itself — stop **before** the apply and relay it in Persian.
 
 ---
 
@@ -384,8 +397,13 @@ Bash: DATA_ROOT=<data-repo> merge facts apply --delta {run_dir}/facts-delta.json
 
 One delta, one run directory, once. Capture every `created`/`updated` id it prints.
 
-A non-zero exit is a **precondition failure with nothing written**. Report it in Persian and **stop
-the run**. Do not re-dispatch anything and do not hand-edit anything — ever:
+`apply` judges the delta entry by entry. An entry that would break the store is held back — a
+`precondition failed: held back:` line on stderr, and a row in `{run_dir}/held.json` — and every
+other entry is written. **Exit 0 with held entries is a finished apply: the run continues to
+Stage 6.** Do not re-dispatch for a held entry, do not relay the lines — the report names it.
+
+Exit 2 is a **precondition failure with nothing written** — not one entry could be. Report it in
+Persian and **stop the run**. Do not re-dispatch anything and do not hand-edit anything — ever:
 
 ```persian
 ثبت انجام نشد: یکی از پیش‌شرط‌ها برقرار نبود و هیچ چیزی نوشته نشد. علت را بررسی می‌کنم و نتیجه را می‌گویم.
@@ -411,8 +429,9 @@ Never `git add -A`. Continue to Stage 7 in the same turn.
 
 ## Stage 7 — Report
 
-Read `{run_dir}/report.md` and **send it verbatim**. It carries the open disputes lettered, the
-unanswered units grouped per item, the dropped candidates in the owner's own words, any workbook
+Read `{run_dir}/report.md` and **send it verbatim**. Its first lines name any lost source — a file,
+a meeting or photos no unit could carry into the store — in the owner's own names; after them it
+carries the open disputes lettered, the unanswered units grouped per item, the dropped candidates in the owner's own words, any workbook
 skipped or part left unfinished, and what the review changed and what of it was set aside. It does
 not carry the engine's findings inside the files (owner ruling, 2026-09-09): those are drawn on the
 entry in the panel, and the run keeps its own count of them.
@@ -460,6 +479,8 @@ operator's tool (runbook 07 §5) and is not run here.
   named in the report; a stale review is redone.
 - The only yield signal is `facts-plan status`'s own `yield: true`, and it ends the turn.
 - The engine is driven through its CLIs only; no Python touches its internals.
+- A refusal costs one decision or one entry, never a unit or a file: a unit retries only its refused
+  decisions, and `apply` holds back only the entries that would break the store and writes the rest.
 - One `apply` per run, into one run directory. A second apply into a used directory is refused.
   Stage 7's resolves open their own fresh directory.
 - Every engine command is run bare.

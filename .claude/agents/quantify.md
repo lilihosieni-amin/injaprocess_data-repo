@@ -38,7 +38,9 @@ your input is a `drop` with `reason_code: insufficient_context`, never a search.
 
 **`unit`** — `input_path` (`{run_dir}/units/{unit}/input.md`), `schema_path`
 (`<code-repo>/schemas/facts-unit.schema.json`), `run_dir`, `unit`, `attempt`, and on a retry
-`previous_output` (the last `out.{n}.json`) and `errors` (the validator's grouped messages).
+`previous_output` (the last `out.{n}.json`), `errors` (the validator's grouped messages) and `retry`
+(the labels of the refused decisions — `decisions[n]` or `new[n]` of `previous_output`, or a
+candidate id nobody decided).
 
 **`review`** — `input_path` (`{run_dir}/review/input.md`), `schema_path`, `run_dir`.
 
@@ -58,9 +60,9 @@ its summary and the file is authoritative.
 
 **The shape section at the end of your `input.md` is the contract for what you may write.** It
 lists, per kind, the closed key list with the required keys marked, every enum's values, and a
-worked example. A key that is not in it is refused at the gate — invent none, and write every
-enum value in its own ASCII spelling, never translated. A **paper form** is a `new[]` record with
-`medium: "paper"` and `location: {"kept_at": "…", "holder": "…"}` — where the blank and filled
+worked example. A key that is not in it is set aside unused and flagged on the entry — invent none,
+and write every enum value in its own ASCII spelling, never translated. A **paper form** is a
+`new[]` record with `medium: "paper"` and `location: {"kept_at": "…", "holder": "…"}` — where the blank and filled
 forms are kept, and who holds them, both Persian prose.
 
 ```json
@@ -82,9 +84,16 @@ forms are kept, and who holds them, both Persian prose.
   "new": [] }
 ```
 
-Rules the validator enforces, so get them right the first time:
+Rules the validator enforces, so get them right the first time. A refusal costs only the decision
+that broke the rule — your other decisions land, and the refused one waits for a retry. Anything
+else the gate dislikes is stored with a mark a person reads before confirming, and never comes
+back to you.
 
 - **Every candidate your input lists appears in `decisions` exactly once.** Not more, not fewer.
+- **A retry answers only the decisions listed in `retry`.** Read each one in `previous_output`, fix
+  what `errors` names for it, and write `out.2.json` with those decisions only — a refused `new[]`
+  entry again under its own kind and key. Everything else of the first attempt has already landed
+  and is left out.
 - `key`, `title` and `statement` are required on `keep` and on every `split` part.
 - `reason_code` is one of `not_a_fact | date_passthrough | cosmetic | duplicate | has_a_home |
   insufficient_context | other`. `reason` is optional free text, never shown to anyone.
@@ -113,7 +122,7 @@ Rules the validator enforces, so get them right the first time:
 
 | kind | you write | already written for you |
 |---|---|---|
-| record (from a sheet) | `role` (`log`/`reference`/`report`/`config`), `grain`, `cadence`, `day_boundary`, `filled_by`, `approved_by`, `movement`, `reconciled_against[]`, and per field `{from, key, unit, type, description, refItems, derived}` — `unit` **only** on a field whose `type` is `number`; `primaryKey` only on a non-reference record | `medium`, `location`, `instances[]`, each field's `title` and `columns`, `constraints.enum`, `rows[]`, a reference record's `primaryKey`, `imports[]`, `issues[]` |
+| record (from a sheet) | `role` (`log`/`reference`/`report`/`config`), `grain`, `cadence`, `day_boundary`, `filled_by`, `approved_by`, `movement`, `reconciled_against[]`, and per field `{from, key, unit, type, description, refItems, derived, group}` — `unit` **only** on a field whose `type` is `number`; `primaryKey` only on a non-reference record | `medium`, `location`, `instances[]`, each field's `title` and `columns`, `constraints.enum`, `rows[]`, a reference record's `primaryKey`, `imports[]`, `issues[]` |
 | record (`new`, no dump — a paper form, an external system, a native table) | the whole payload: `medium`, `location`, `fields[]`, `header_fields[]`, `sections[]`, `rows[]`, `signatures[]`, `blank_master`, plus the sheet list above | — |
 | item | `category`, `unit`, `unit_raw`, `units[]`, `pack`, `tracked[]`, `group`, `state`, `grade`, `code_absent` | `code`, sources |
 | rule | `expr` + `lang`, or `table`, or `lang: text`; `inputs[]`/`outputs[]` members (`key`, `title`, `unit`, `nature`, `per`, `of`; `from`/`writes_to` as `{"ref": "S-rec-…", "field": "c_h"}`, or `from: {"param": "<a params key>"}` for a value bound per binding), `calls[]`, `value`/`range` on a constant, `edge_cases[]`, `template_of`, `divergence` | `original`, `applies_to[]` with its `variant`, `params` and `rows[]`, sources |
@@ -122,6 +131,15 @@ Rules the validator enforces, so get them right the first time:
 
 A column whose cells are names is `type: string`; `refItems` is only for cells that are the
 catalogue's codes (the namespaces your input's shape section names) or item keys.
+
+A column that sits under a shared header on the sheet or the form may carry
+`group: {key, title}` — the header's minted segment and its Persian title, the same on every column
+under it.
+
+**An attachment unit** — `نوع: attachment`, zero candidates — carries one or more attached files'
+text (a form photo, a pdf, a docx) and nothing else. Its `decisions` is `[]`; everything you find in
+it is a `new[]` entry — a paper form is a record with `medium: "paper"`, its columns written from
+the form itself.
 
 **A rule whose bindings carry a varying number or a varying basis column is ONE rule.** The
 tolerances 5 / 140 / 4 / 75 / 100 are not five rules and not five constants: they are the values of
@@ -240,25 +258,26 @@ it is and how it is counted.
 
 Never, in either: an A1 address, a column letter, a tab name, a table or file name of the kind your
 input's shape section lists, formula text, a function name, a schema field name, the pipeline's own
-words («پاس», «اسکلت», «بخش از داده‌ها»,
-«واحد کاری», «بچ», `original`, `bindings`, `FEEL`, `account`, `expr`), a quotation, «گفته شد»,
+words («اسکلت», «بخش از داده‌ها»,
+«واحد کاری», `original`, `bindings`, `FEEL`, `account`, `expr`), a quotation, «گفته شد»,
 «گوینده». Locators belong in `source[]`, quotes in `source[].quote` and `accounts[].statement`.
 «ستون», «تب» and «سلول» are allowed **only** in a record's own `statement` and in a field's
 `description`.
 
-The worked pair — the left side is refused, the right side is the same fact written properly:
+The worked pair — the left side is flagged, the right side is the same fact written properly:
 
 - «ستون J تب پیتزا (گروه J6:J15): انحراف برابر است با مصرف واقعی منهای مصرف اعلامی.»
 - «انحراف مصرف هر مادهٔ اولیه در پایان شب برابر است با مصرف واقعی (برآوردشده از فروش و نسخهٔ
   غذاها) منهای مصرف اعلامی لاین. مقدار منفی یعنی لاین بیش از انتظار مصرف کرده است.»
 
 The lint runs on `title`, `statement`, `aliases[]`, and on `fields[].description`, `grain`,
-`method`, `exceptions`, `tracked[].reason` and any `issues[].description` you wrote. It refuses a
+`method`, `exceptions`, `tracked[].reason` and any `issues[].description` you wrote. It flags a
 reference token, `.xlsx`, `.gs`, a table name of the kind your input's shape section lists,
 `IMPORT_FROM_SHEET`, `LET(`, `LAMBDA`, the pipeline words, any Latin token of four letters or more (except `csv`, `Excel`, `sheet`, a unit symbol your
 input listed, and an item code), a quoted span longer than eight words, and the colloquial endings
-«می‌زنن», «می‌کنن», «داشته باشن», «بگیم», «می‌گیم». A failing sentence comes back to **you**, so
-write it right rather than fixing it on a retry.
+«می‌زنن», «می‌کنن», «داشته باشن», «بگیم», «می‌گیم». A flagged sentence is stored as you wrote it,
+under a note a person has to read before confirming, and never comes back for a retry — so write it
+right the first time.
 
 ---
 
