@@ -1,0 +1,101 @@
+{
+  "department": "warehouse",
+  "transcripts": [
+    "warehouse-1405-06-11",
+    "warehouse-1405-06-15",
+    "warehouse-1405-06-16"
+  ],
+  "started_at": "2026-09-13T14:17:52Z",
+  "finished_at": "2026-09-13T16:53:00Z",
+  "attempt": 1,
+  "processes": [
+    {
+      "id": "warehouse-001",
+      "status": "new"
+    },
+    {
+      "id": "warehouse-002",
+      "status": "new"
+    },
+    {
+      "id": "warehouse-003",
+      "status": "new"
+    },
+    {
+      "id": "warehouse-004",
+      "status": "new"
+    },
+    {
+      "id": "warehouse-005",
+      "status": "new"
+    },
+    {
+      "id": "warehouse-006",
+      "status": "new"
+    },
+    {
+      "id": "warehouse-007",
+      "status": "new"
+    },
+    {
+      "id": "warehouse-008",
+      "status": "new"
+    },
+    {
+      "id": "warehouse-009",
+      "status": "new"
+    },
+    {
+      "id": "warehouse-010",
+      "status": "new"
+    },
+    {
+      "id": "warehouse-011",
+      "status": "new"
+    },
+    {
+      "id": "warehouse-012",
+      "status": "new"
+    },
+    {
+      "id": "warehouse-013",
+      "status": "new"
+    },
+    {
+      "id": "warehouse-014",
+      "status": "new"
+    },
+    {
+      "id": "warehouse-015",
+      "status": "new"
+    },
+    {
+      "id": "warehouse-016",
+      "status": "new"
+    },
+    {
+      "id": "warehouse-017",
+      "status": "new"
+    },
+    {
+      "id": "warehouse-018",
+      "status": "new"
+    },
+    {
+      "id": "warehouse-019",
+      "status": "new"
+    },
+    {
+      "id": "warehouse-020",
+      "status": "new"
+    },
+    {
+      "id": "warehouse-021",
+      "status": "new"
+    },
+    {
+      "id": "warehouse-022",
+      "status": "new"
+    }
+  ]
+}
