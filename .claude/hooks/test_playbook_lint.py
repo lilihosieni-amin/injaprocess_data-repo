@@ -355,3 +355,38 @@ def test_the_edit_fact_playbook_never_relays_the_preview_op_lines():
     assert "**Never relay them.**" in text
     assert "No id, no path, no op name, no command, no English word goes into the message" in text
     assert "{the preview output of every entry, exactly as printed}" not in text
+
+
+# The gate tiers (spec 2026-09-13, owner-approved): a refusal costs one decision
+# or one entry, never a unit or a file, and nothing is lost silently. Each of
+# these sentences is what the coordinator or the unit acts on; a text that
+# drops one sends a whole unit back, stops a run at an apply that wrote, or
+# sends a report without the file it lost.
+
+def test_stage_u_retries_only_refused_decisions_and_runs_attachment_units():
+    text = " ".join(STAGE_U.search(PLAYBOOK.read_text(encoding="utf-8")).group(0).split())
+    assert "Retry only refused decisions" in text
+    assert "Attachment units are dispatched like any unit" in text
+
+
+def test_the_playbook_continues_after_an_apply_that_held_entries_back():
+    text = " ".join(PLAYBOOK.read_text(encoding="utf-8").split())
+    assert ("**Exit 0 with held entries is a finished apply: the run continues to"
+            " Stage 6.**") in text
+    assert "not one entry could be" in text
+
+
+def test_the_report_names_lost_sources_first():
+    text = " ".join(PLAYBOOK.read_text(encoding="utf-8").split())
+    assert "Its first lines name any lost source" in text
+
+
+def test_the_unit_contract_retries_only_the_listed_decisions():
+    text = " ".join(AGENT.read_text(encoding="utf-8").split())
+    assert "A retry answers only the decisions listed in `retry`." in text
+
+
+def test_the_unit_contract_admits_a_column_group_and_attachment_units():
+    section = agent_section("What you decide, per kind")
+    assert "may carry `group: {key, title}`" in section
+    assert "**An attachment unit** — `نوع: attachment`, zero candidates" in section
