@@ -1,0 +1,208 @@
+{
+"schema_version": 1,
+"unit": "u-tr-preparation-1405-06-02-02-l1",
+"attempt": 1,
+"decisions": [],
+"new": [
+{"kind":"item","key":"gusht_rostbif","title":"گوشت رست‌بیف","aliases":["رست بیف"],
+"statement":"گوشت مغز ران که پس از پخت، ریش‌ریش شدن و غضروف‌گیری با عصارهٔ گوشت و چاشنی آماده می‌شود و در بسته‌های دو کیلوگرمی لیبل‌گذاری و به انبار تحویل می‌شود. مقدار آن با کیلوگرم شمرده می‌شود.",
+"data":{"category":"product","unit":"kg","state":"cooked","code_absent":true,
+"pack":{"size":2,"unit":"kg"},
+"tracked":[{"record":{"ref":"S-rec-2c141582db58"},"value":true,"reason":"تحویل بسته‌های دو کیلوگرمی به انبار در همین سیاهه ثبت می‌شود."}]}},
+
+{"kind":"item","key":"gusht_charkh_kardeh","title":"گوشت چرخ‌کرده","aliases":["چرخی"],
+"statement":"گوشت گردن که همراه خرده‌استیک‌های ذخیره‌شده چرخ و با پیاز و سیر و مایهٔ ادویه پخته می‌شود. در بسته‌های دو کیلوگرمی بسته‌بندی و لیبل‌گذاری می‌شود و باقی‌ماندهٔ کمتر از دو کیلوگرم در ظرف جداگانه تحویل انبار می‌شود.",
+"data":{"category":"product","unit":"kg","state":"cooked","code_absent":true,
+"pack":{"size":2,"unit":"kg"},
+"tracked":[{"record":{"ref":"S-rec-2c141582db58"},"value":true,"reason":"وزن بسته‌های تحویلی به انبار در همین سیاهه ثبت می‌شود."}]},
+"processes":[{"process":"preparation-019","node":"preparation-019-n027","quote":"وزن‌گیری نهایی گوشت چرخ‌کرده آماده برای بسته‌بندی"}]},
+
+{"kind":"item","key":"khordeh_rasteh","title":"خرده راسته","aliases":["خرده‌راسته"],
+"statement":"قطعات کوچک باقی‌مانده از پاک کردن و برش راستهٔ کامل که در بسته‌های چهار کیلوگرمی به انبار تحویل می‌شود و در روز تولید برگر همراه گوشت سردست چرخ می‌شود. مقدار آن با کیلوگرم شمرده می‌شود.",
+"data":{"category":"ingredient","unit":"kg","state":"raw","code_absent":true,
+"pack":{"size":4,"unit":"kg"}},
+"processes":[{"process":"preparation-021","node":"preparation-021-n007","quote":"افزودن ۱۰۰ تا ۲۰۰ گرم خرده راسته برای جبران کسری وزن گوشت سردست"}]},
+
+{"kind":"item","key":"gusht_filadelfia","title":"گوشت فیلادلفیا",
+"statement":"برش‌های اریب و لایه‌ای راسته به اندازهٔ کف دست یا بزرگ‌تر که کوبیده و مرینت می‌شود و در بسته‌های یک کیلوگرمی به انبار تحویل می‌شود. مقدار آن با کیلوگرم شمرده می‌شود.",
+"data":{"category":"product","unit":"kg","state":"prepared","code_absent":true,
+"pack":{"size":1,"unit":"kg"}}},
+
+{"kind":"item","key":"zayeat_charkh_gusht","title":"ضایعات چرخ‌گوشت",
+"statement":"گوشت سفت و دمار و غضروف باقی‌مانده روی محور چرخ‌گوشت در پایان هر پارت، حدود صد تا صد و پنجاه گرم، که خوراک انسان نیست و با همین عنوان لیبل‌گذاری و به انبار تحویل می‌شود.",
+"data":{"category":"other","unit":"kg","state":"raw","code_absent":true,
+"tracked":[{"record":{"ref":"S-rec-ef021443f7dc"},"value":true,"reason":"ضایعات لیبل‌خورده پیش از تحویل به انبار در سیاههٔ ضایعات ثبت می‌شود."}]},
+"processes":[{"process":"preparation-026","node":"preparation-026-n006","quote":"قرار دادن ضایعات لیبل‌خورده در یخچال‌های اختصاصی انبار"}]},
+
+{"kind":"measurement","key":"vazn_gusht_kham_vorudi","title":"وزن‌گیری گوشت خام ورودی",
+"statement":"هر محمولهٔ گوشتی که از انبار به لاین گوشت می‌رسد پیش از پاک‌سازی و خرد شدن وزن می‌شود و وزن آن بر حسب کیلوگرم به‌عنوان ورودی آماده‌سازی ثبت می‌شود. مسئول لاین گوشت این وزن‌گیری را انجام می‌دهد.",
+"data":{"quantity":"mass","unit":"kg","method":"ترازوی لاین آماده‌سازی",
+"when":"هنگام تحویل گرفتن گوشت از انبار و پیش از پاک‌سازی","by":"مسئول لاین گوشت",
+"writes_to":{"ref":"S-rec-e3f80534814b"}},
+"processes":[
+{"process":"preparation-019","node":"preparation-019-n002","quote":"وزن‌گیری گوشت گردن خام تحویل‌گرفته‌شده"},
+{"process":"preparation-020","node":"preparation-020-n002","quote":"وزن‌گیری گوشت راسته خام و ثبت آن در دفتر"},
+{"process":"preparation-021","node":"preparation-021-n002","quote":"وزن‌گیری گوشت سردست خام و ثبت آن در دفتر"}]},
+
+{"kind":"measurement","key":"vazn_plastik_khunabeh","title":"وزن‌گیری پلاستیک و خونابهٔ گوشت",
+"statement":"پس از خالی کردن گوشت روی تخته‌کار، کیسه‌های پلاستیک و خونابهٔ همراه آن کنار دست نگه داشته می‌شود و وزنشان بر حسب گرم اندازه گرفته و در دفتر لاین نوشته می‌شود. این اندازه‌گیری در همان مرحلهٔ ابتدایی و پس از ریختن گوشت در دیگ انجام می‌شود.",
+"data":{"quantity":"mass","unit":"g","method":"ترازوی لاین آماده‌سازی",
+"when":"پس از خرد کردن گوشت و ریختن آن در دیگ","by":"مسئول لاین گوشت"},
+"processes":[
+{"process":"preparation-030","node":"preparation-030-n008","quote":"کنار گذاشتن کیسه‌های پلاستیک گوشت کنار دست برای وزن‌گیری بعدی"},
+{"process":"preparation-018","node":"preparation-018-n005","quote":"کنار گذاشتن کیسه‌های پلاستیک گوشت برای وزن‌گیری بعدی"}]},
+
+{"kind":"measurement","key":"vazn_gusht_pokhteh_rostbif","title":"وزن‌گیری گوشت پختهٔ رست‌بیف",
+"statement":"پس از ریش‌ریش کردن و جدا کردن غضروف‌ها، گوشت پخته وزن می‌شود تا روشن شود هر محمولهٔ گوشت خام چه اندازه محصول داده است. اندازه بر حسب کیلوگرم است و مبنای تعیین مقدار عصارهٔ افزودنی قرار می‌گیرد.",
+"data":{"quantity":"mass","unit":"kg","method":"ترازوی لاین آماده‌سازی",
+"when":"پس از غضروف‌گیری و پیش از افزودن عصارهٔ گوشت","by":"مسئول لاین گوشت"},
+"processes":[{"process":"preparation-018","node":"preparation-018-n015","quote":"جدا کردن دونه‌دونه گوشت پخته و قرار دادن آن در آبکش"}]},
+
+{"kind":"measurement","key":"vazn_advieh_va_sos","title":"وزن‌گیری ادویه و سس مایهٔ چرخ‌کرده",
+"statement":"پیاز، سیر، خردل، ورچستر، سویا سس، نمک و فلفل هر کدام جداگانه و به ازای هر کیلوگرم گوشت آن روز وزن می‌شوند و سپس با هم میکس می‌شوند. اندازه بر حسب گرم است و مسئول لاین گوشت آن را انجام می‌دهد.",
+"data":{"quantity":"mass","unit":"g","method":"وزن‌گیری جداگانهٔ هر قلم با ترازو",
+"when":"پیش از تفت دادن مایه و افزودن آن به گوشت","by":"مسئول لاین گوشت",
+"exceptions":"این وزن‌ها به وزن گوشت افزوده نمی‌شوند، چون اقلام تشکیل‌دهندهٔ مایه‌اند."},
+"processes":[
+{"process":"preparation-019","node":"preparation-019-n022","quote":"وزن‌گیری جداگانه ادویه‌ها و سس‌های مایه چرخ‌کرده طبق رسپی هر کیلو"},
+{"process":"preparation-019","node":"preparation-019-n016","quote":"وزن‌گیری پیاز و سیر طبق رسپی و مقدار گوشت"}]},
+
+{"kind":"measurement","key":"vazn_mahsul_basteh_bandi","title":"وزن‌گیری محصول هنگام بسته‌بندی",
+"statement":"محصول آمادهٔ هر لاین هنگام بسته‌بندی وزن می‌شود تا بسته‌های دو کیلوگرمی ساخته شود و باقی‌ماندهٔ کمتر از دو کیلوگرم جداگانه وزن و بسته‌بندی شود. همین وزن مبنای تحویل به انبار است و بر حسب کیلوگرم ثبت می‌شود.",
+"data":{"quantity":"mass","unit":"kg","method":"ترازوی لیبل‌گذاری پس از صفر کردن وزن ظرف",
+"when":"هنگام بسته‌بندی و پیش از تحویل به انبار","by":"مسئول لاین گوشت",
+"writes_to":{"ref":"S-rec-2c141582db58"},
+"exceptions":"پس از آبگیری گوشت چرخ‌کرده در آبکش وزن‌گیری جداگانه‌ای انجام نمی‌شود."},
+"processes":[
+{"process":"preparation-019","node":"preparation-019-n027","quote":"وزن‌گیری نهایی گوشت چرخ‌کرده آماده برای بسته‌بندی"},
+{"process":"preparation-026","node":"preparation-026-n018","quote":"صفر کردن وزن ظرف روی ترازوی لیبل‌گذاری پیش از وزن‌کشی محصول"}]},
+
+{"kind":"record","key":"daftar_amar_lain_gusht","title":"دفتر آمار لاین گوشت",
+"statement":"دفتر کاغذی لاین گوشت که وزن هر محمولهٔ گوشت خام تحویلی از انبار و وزن پلاستیک و خونابهٔ آن در آن نوشته می‌شود. مسئول لاین گوشت آن را پر می‌کند و در پایان هفته همراه فرم‌های تبدیل به سرپرست تحویل می‌دهد.",
+"data":{"medium":"paper","role":"log",
+"location":{"kept_at":"لاین گوشت واحد آماده‌سازی","holder":"مسئول لاین گوشت"},
+"cadence":"daily","grain":"هر محمولهٔ گوشت خام تحویل‌گرفته‌شده",
+"filled_by":"مسئول لاین گوشت","approved_by":"سرپرست آماده‌سازی",
+"fields":[
+{"key":"now_gusht","title":"نوع گوشت","type":"string","description":"نام گوشت خامی که از انبار تحویل گرفته شده است."},
+{"key":"vazn_gusht_kham","title":"وزن گوشت خام","type":"number","unit":"kg","description":"وزن محموله هنگام تحویل، که به‌عنوان ورودی آماده‌سازی نوشته می‌شود."},
+{"key":"vazn_plastik_khunabeh","title":"وزن پلاستیک و خونابه","type":"number","unit":"g","description":"وزن کیسه‌های پلاستیک و خونابهٔ کنار گذاشته‌شدهٔ همان محموله."}]},
+"processes":[
+{"process":"preparation-019","node":"preparation-019-n003","quote":"ثبت وزن گوشت خام در دفتر آماده‌سازی به عنوان ورودی آماده‌سازی"},
+{"process":"preparation-013","node":"preparation-013-n045","quote":"تحویل فرم تبدیل و دفتر یادداشت آمار به سرپرست در پایان هفته"}]},
+
+{"kind":"record","key":"form_tabdil_rasteh","title":"فرم تبدیل راسته",
+"statement":"فرم کاغذی که برای هر راستهٔ کامل تحویل‌گرفته‌شده پر می‌شود و نشان می‌دهد آن راسته به چه مقدار استیک خام، فیلادلفیا، خرده راسته و ضایعات تبدیل شده است. مسئول لاین گوشت آن را پر می‌کند و همراه تحویل محصول به انبار می‌رود.",
+"data":{"medium":"paper","role":"log",
+"location":{"kept_at":"لاین گوشت واحد آماده‌سازی","holder":"مسئول لاین گوشت"},
+"cadence":"daily","grain":"هر راستهٔ کامل تحویل‌گرفته‌شده از انبار",
+"filled_by":"مسئول لاین گوشت","approved_by":"سرپرست آماده‌سازی",
+"fields":[
+{"key":"vazn_rasteh_kham","title":"وزن راستهٔ خام","type":"number","unit":"kg","description":"وزن راستهٔ کامل هنگام تحویل از انبار."},
+{"key":"vazn_estik_kham","title":"وزن استیک خام","type":"number","unit":"kg","description":"وزن بخشی که گوشت سالم‌تر و بدون دمار دارد و برای استیک جدا می‌شود."},
+{"key":"vazn_filadelfia","title":"وزن فیلادلفیا","type":"number","unit":"kg","description":"وزن بخشی که برای فیلادلفیا برش داده می‌شود."},
+{"key":"vazn_khordeh_rasteh","title":"وزن خرده راسته","type":"number","unit":"kg","description":"وزن قطعات کوچک جداشده که برای برگر و چرخ‌کرده کنار گذاشته می‌شود."},
+{"key":"vazn_zayeat","title":"وزن ضایعات","type":"number","unit":"kg","description":"وزن دمار و غضروف جداشده که هیچ استفاده‌ای ندارد."}]}},
+
+{"kind":"record","key":"form_faravari_estik_filadelfia","title":"فرم فراوری استیک و فیلادلفیا",
+"statement":"فرم کاغذی جداگانه‌ای که وزن استیک و فیلادلفیا را پس از مرینت و فراوری ثبت می‌کند، چون این دو قلم خام تحویل انبار نمی‌شوند. مسئول لاین گوشت آن را هنگام تحویل محصول فراوری‌شده پر می‌کند.",
+"data":{"medium":"paper","role":"log",
+"location":{"kept_at":"لاین گوشت واحد آماده‌سازی","holder":"مسئول لاین گوشت"},
+"cadence":"daily","grain":"هر پارت استیک یا فیلادلفیای فراوری‌شده",
+"filled_by":"مسئول لاین گوشت",
+"fields":[
+{"key":"now_qalam","title":"نوع قلم","type":"string","description":"استیک یا فیلادلفیا."},
+{"key":"vazn_kham","title":"وزن خام","type":"number","unit":"kg","description":"وزن قلم پیش از مرینت و فراوری."},
+{"key":"vazn_faravari_shodeh","title":"وزن فراوری‌شده","type":"number","unit":"kg","description":"وزن همان قلم پس از مرینت و فراوری، هنگام تحویل به انبار."}]},
+"processes":[{"process":"preparation-020","node":"preparation-020-n022","quote":"پر کردن فرم تبدیل استیک رولی و ثبت مقدار محصول تحویل‌شده به انبار"}]},
+
+{"kind":"rule","key":"mabnaye_bazdehi_rostbif","title":"مبنای بازدهی رست‌بیف",
+"statement":"مبنای محصول رست‌بیف هفتاد درصد وزن گوشت خام است؛ یعنی از هر محمولهٔ گوشت مغز ران باید هفتاد درصد وزن آن محصول به دست آید. بسته به نرمی یا خشکی گوشت، در یک تا دو مورد از هر ده مورد این مبنا تا شصت و پنج درصد پایین می‌آید.",
+"data":{"inputs":[],
+"outputs":[{"key":"bazdehi","title":"بازدهی رست‌بیف","unit":"percent","value":70,"range":{"min":65,"max":70},"nature":"target"}]},
+"processes":[{"process":"preparation-018","node":"preparation-018-n028","quote":"تنظیم مبنای محصول روی شصت و پنج تا شصت و هفت درصد"}]},
+
+{"kind":"rule","key":"afzudan_stock_be_rostbif","title":"مقدار عصارهٔ افزودنی به رست‌بیف",
+"statement":"مقدار عصارهٔ گوشتی که به رست‌بیف افزوده می‌شود برابر است با وزن هدف بر پایهٔ مبنای بازدهی منهای وزن گوشت پختهٔ به‌دست‌آمده. هرچه بافت رست‌بیف خشک‌تر باشد این مقدار بیشتر و هرچه خیس‌تر باشد کمتر است.",
+"data":{"lang":"feel",
+"expr":"vazn_stock = bazdehi_hadaf / 100 * vazn_gusht_kham - vazn_gusht_pokhteh",
+"inputs":[
+{"key":"bazdehi_hadaf","title":"مبنای بازدهی","unit":"percent","from":null},
+{"key":"vazn_gusht_kham","title":"وزن گوشت خام","unit":"kg","from":null},
+{"key":"vazn_gusht_pokhteh","title":"وزن گوشت پخته","unit":"kg","from":null}],
+"outputs":[{"key":"vazn_stock","title":"وزن عصارهٔ افزوده","unit":"kg","nature":"observed"}]},
+"processes":[{"process":"preparation-018","node":"preparation-018-n028","quote":"افزودن استاک کمتر"}]},
+
+{"kind":"rule","key":"chashni_rostbif","title":"چاشنی رست‌بیف به ازای هر کیلوگرم",
+"statement":"به ازای هر کیلوگرم رست‌بیف آماده، سی و هشت گرم سویا سس و چهار گرم فلفل سیاه افزوده و تا یک‌دست شدن مخلوط می‌شود.",
+"data":{"inputs":[],
+"outputs":[
+{"key":"soya_sos","title":"سویا سس","unit":"g","value":38,"per":"gusht_rostbif","nature":"standard"},
+{"key":"felfel_siah","title":"فلفل سیاه","unit":"g","value":4,"per":"gusht_rostbif","nature":"standard"}]}},
+
+{"kind":"rule","key":"kast_gusht_charkh_kardeh","title":"کاست وزن گوشت چرخ‌کرده",
+"statement":"وزن گوشت چرخ‌کرده از خام تا محصول آماده بین هشت تا پانزده درصد کم می‌شود و به بیست درصد نمی‌رسد. ادویه و مایهٔ آن بر پایهٔ وزن گوشت خام چیده می‌شود و بر خلاف رست‌بیف کاست چشمگیری در کار نیست.",
+"data":{"inputs":[],
+"outputs":[{"key":"kast","title":"درصد کاست وزن","unit":"percent","range":{"min":8,"max":15},"nature":"standard"}]}},
+
+{"kind":"rule","key":"tarkib_gusht_borger","title":"ترکیب گوشت برگر",
+"statement":"مایهٔ برگر از گوشت سردست و خرده راسته به نسبت مساوی ساخته می‌شود. اختلاف صد تا دویست گرمی برای جبران کسری وزن سردست پذیرفته است، اما اختلاف در حد یک تا دو کیلوگرم مجاز نیست چون تناسب مایه به هم می‌خورد.",
+"data":{"inputs":[],
+"outputs":[
+{"key":"sahm_sardast","title":"سهم گوشت سردست","unit":"percent","value":50,"share":0.5,"nature":"standard"},
+{"key":"sahm_khordeh_rasteh","title":"سهم خرده راسته","unit":"percent","value":50,"share":0.5,"nature":"standard"}]},
+"processes":[
+{"process":"preparation-021","node":"preparation-021-n006","quote":"کنترل تناسب وزن گوشت سردست و خرده راسته پیش از چرخ کردن"},
+{"process":"preparation-021","node":"preparation-021-n007","quote":"افزودن ۱۰۰ تا ۲۰۰ گرم خرده راسته برای جبران کسری وزن گوشت سردست"}]},
+
+{"kind":"rule","key":"saqf_tolid_borger","title":"سقف تولید برگر بر پایهٔ جزء کم‌مقدار",
+"statement":"بیشترین وزن مایهٔ برگر که می‌توان تولید کرد دو برابر وزن کم‌مقدارترین جزء میان گوشت سردست و خرده راسته است، چون نسبت مساوی این دو باید حفظ شود. اگر یکی از دو جزء کمتر تحویل شود، تولید به همان اندازه محدود می‌شود.",
+"data":{"lang":"feel",
+"expr":"vazn_qabel_tolid = 2 * min(vazn_sardast, vazn_khordeh_rasteh)",
+"inputs":[
+{"key":"vazn_sardast","title":"وزن گوشت سردست","unit":"kg","from":null},
+{"key":"vazn_khordeh_rasteh","title":"وزن خرده راسته","unit":"kg","from":null}],
+"outputs":[{"key":"vazn_qabel_tolid","title":"بیشترین وزن قابل تولید","unit":"kg","nature":"limit"}]},
+"processes":[{"process":"preparation-021","node":"preparation-021-n006","quote":"کنترل تناسب وزن گوشت سردست و خرده راسته پیش از چرخ کردن"}]},
+
+{"kind":"rule","key":"panjareh_charkh_borger","title":"انتخاب پنجرهٔ چرخ‌گوشت در تولید برگر",
+"statement":"پارت اول مایهٔ برگر با پنجرهٔ نخودی و پارت دوم با پنجرهٔ کبریتی چرخ می‌شود؛ پنجرهٔ کبریتی بافت را له‌تر می‌کند و تنها برای چسبندگی مایه به کار می‌رود. همهٔ گوشت دو بار چرخ نمی‌شود تا دانه‌درشتی محصول دست‌ساز حفظ شود.",
+"data":{"lang":"table","expr":null,
+"inputs":[{"key":"part","title":"پارت چرخ کردن"}],
+"outputs":[{"key":"panjareh","title":"پنجرهٔ چرخ‌گوشت"}],
+"table":{"hit":"first","inputs":["part"],"outputs":["panjareh"],
+"rows":[{"part":"پارت اول","panjareh":"نخودی"},{"part":"پارت دوم","panjareh":"کبریتی"}]}},
+"processes":[
+{"process":"preparation-021","node":"preparation-021-n009","quote":"چرخ کردن پارت اول مخلوط گوشت سردست و خرده راسته با پنجره نخودی"},
+{"process":"preparation-021","node":"preparation-021-n011","quote":"دو چرخ کردن یک‌سوم تا دو‌سوم گوشت پارت دوم برای چسبندگی برگر"}]},
+
+{"kind":"rule","key":"mohlat_negahdari_khordeh_estik","title":"مهلت نگهداری خرده‌استیک برای چرخ‌کرده",
+"statement":"خرده‌استیک‌های جمع‌آوری‌شده حداکثر تا یک هفته نگهداری و در روز تولید چرخ‌کرده مصرف می‌شوند؛ خرده‌استیک هفته‌های پیش‌تر به مایهٔ چرخ‌کرده افزوده نمی‌شود.",
+"data":{"inputs":[],
+"outputs":[{"key":"mohlat","title":"بیشترین مهلت نگهداری","unit":"day","value":7,"nature":"limit"}]},
+"processes":[{"process":"preparation-019","node":"preparation-019-n009","quote":"تحویل گرفتن خرده‌استیک‌های ذخیره‌شده انبار در روز چرخ‌کرده"}]},
+
+{"kind":"rule","key":"ezafeh_sefaresh_gusht","title":"اضافهٔ سفارش گوشت نسبت به نیاز هفته",
+"statement":"مقدار گوشتی که هر روز به آماده‌سازی تحویل می‌شود بر پایهٔ میانگین مصرف هفتگی تعیین می‌شود و همیشه ده تا بیست درصد بیشتر از نیاز هفته در نظر گرفته می‌شود. آماده‌سازی از مقدار روز بعد پیشاپیش خبر ندارد.",
+"data":{"inputs":[],
+"outputs":[{"key":"ezafeh","title":"درصد اضافهٔ سفارش","unit":"percent","range":{"min":10,"max":20},"nature":"standard"}]},
+"processes":[{"process":"preparation-019","node":"preparation-019-n001","quote":"تحویل گرفتن گوشت گردن از انبار طبق سفارش و برنامه هفتگی لاین گوشت"}]},
+
+{"kind":"rule","key":"tabdil_piaz_abgerefteh","title":"تبدیل پیاز خام به پیاز آب‌گرفته",
+"statement":"پیاز مایهٔ برگر پیش از مصرف میکس و از صافی رد می‌شود تا کاملاً خشک شود؛ برای به دست آوردن چهار کیلوگرم پیاز آب‌گرفته باید شش کیلوگرم پیاز خام میکس شود.",
+"data":{"inputs":[],
+"outputs":[
+{"key":"piaz_kham","title":"پیاز خام لازم","unit":"kg","value":6,"nature":"standard"},
+{"key":"piaz_abgerefteh","title":"پیاز آب‌گرفتهٔ حاصل","unit":"kg","value":4,"nature":"standard"}]}},
+
+{"kind":"note","key":"porsesh_afzayesh_vazn_marinate","title":"پرسش دربارهٔ افزایش وزن خروجی به سبب مرینت",
+"statement":"وزن استیک و فیلادلفیای تحویلی به انبار به سبب مرینت از وزن گوشت خام دریافتی بیشتر می‌شود و تطبیق ورودی و خروجی آماده‌سازی را به هم می‌زند.",
+"data":{"about":[{"ref":"S-rec-2c141582db58"},{"ref":"S-rec-e3f80534814b"}],
+"question":"افزایش وزن ناشی از مرینت هنگام تطبیق ورودی و خروجی آماده‌سازی چگونه کنار گذاشته یا محاسبه می‌شود؟"}},
+
+{"kind":"note","key":"porsesh_sabt_tabdil_rasteh","title":"پرسش دربارهٔ جای ثبت تبدیل راسته",
+"statement":"لاین گوشت تبدیل هر راستهٔ کامل به استیک، فیلادلفیا، خرده راسته و ضایعات را روی فرم کاغذی می‌نویسد و روشن نیست همان داده جای دیگری هم برای سنجش بازدهی ثبت می‌شود یا نه.",
+"data":{"about":[{"ref":"S-rec-3d5d67801f5d"}],
+"question":"آیا نسبت تبدیل راسته و بازدهی رست‌بیف در همان جایی که بازدهی لاین‌ها ثبت می‌شود نگه داشته می‌شود، یا فقط روی فرم کاغذی لاین گوشت می‌ماند؟"}}
+]
+}

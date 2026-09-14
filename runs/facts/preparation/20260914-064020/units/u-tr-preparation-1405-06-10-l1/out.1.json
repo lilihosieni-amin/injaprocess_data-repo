@@ -1,0 +1,294 @@
+{
+  "schema_version": 1,
+  "unit": "u-tr-preparation-1405-06-10-l1",
+  "attempt": 1,
+  "decisions": [],
+  "new": [
+    {
+      "kind": "rule",
+      "key": "darsad_zayeat_kahu_bar_hasb_fasl",
+      "title": "درصد ضایعات کاهو بر حسب فصل",
+      "statement": "ضایعات پاک‌سازی کاهو بر حسب فصل متفاوت است: در فصل سرد حدود بیست درصد و در فصل گرم، یعنی از میانهٔ بهار تا پایان تابستان، تا شصت درصد. این درصدها از آزمون‌های اولیهٔ آماده‌سازی به دست آمده و مبنای تأییدشدهٔ آمار کاهو است.",
+      "aliases": ["ضایعات فصلی کاهو"],
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "original": "توی فصل گرم چقدر ضایعات داره، توی فصل سرد چقدر ضایعات داره",
+        "inputs": [
+          { "key": "fasl", "title": "فصل سال" }
+        ],
+        "outputs": [
+          { "key": "darsad_zayeat", "title": "درصد ضایعات کاهو", "unit": "percent" }
+        ],
+        "table": {
+          "hit": "first",
+          "inputs": ["fasl"],
+          "outputs": ["darsad_zayeat"],
+          "rows": [
+            { "fasl": "فصل گرم (میانهٔ بهار تا پایان تابستان)", "darsad_zayeat": 60 },
+            { "fasl": "فصل سرد", "darsad_zayeat": 20 }
+          ]
+        }
+      }
+    },
+    {
+      "kind": "measurement",
+      "key": "baravord_zayeat_kahu",
+      "title": "برآورد ضایعات کاهو",
+      "statement": "کاهو برگهٔ تبدیل جداگانه ندارد؛ لاین سبزیجات وزن ورودی و خروجی کاهو را در دفتر آماده‌سازی ثبت می‌کند تا آمار تقریبی ضایعات به دست آید. این آمار در صورت درخواست مدیریت گزارش می‌شود.",
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "ثبت وزن ورودی و خروجی کاهو در دفتر آماده‌سازی",
+        "when": { "value": "هر روز", "inferred": true },
+        "by": "مسئول لاین سبزیجات",
+        "exceptions": "با افت کیفیت بار، وزن‌گیری جداگانه انجام و درصد ضایعات بازنگری و به مدیریت اعلام می‌شود."
+      },
+      "processes": [
+        { "process": "preparation-006", "node": "preparation-006-n020", "quote": "این کاهو و اینا که اینقدر ضایعات داره" }
+      ]
+    },
+    {
+      "kind": "rule",
+      "key": "meyar_paziresh_qarch",
+      "title": "معیار پذیرش قارچ مصرفی",
+      "statement": "قارچ مصرفی باید سفید و دکمه‌ای بسته باشد. قارچ پشت‌باز یا بیش از اندازه بزرگ هنگام تفکیک کنار گذاشته می‌شود و به مصرف نمی‌رسد؛ قارچ سالم باقی‌مانده تا روز بعد به صورت امانی در یخچال انبار مستقر در آماده‌سازی نگهداری می‌شود.",
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "original": "اولین و مهم‌ترینش سفیده. بعدش قارچی که استفاده می‌کنیم پشت‌باز نباشه، یعنی قارچ کاملاً بسته باشه، دکمه‌ای بسته باشه، باز نباشه.",
+        "inputs": [
+          { "key": "qarch_vorudi", "title": "قارچ رسیده به آماده‌سازی" }
+        ],
+        "outputs": [
+          { "key": "paziresh", "title": "پذیرش قارچ برای مصرف", "nature": "limit" }
+        ]
+      },
+      "processes": [
+        { "process": "preparation-008", "node": "preparation-008-n014", "quote": "قارچ دیروز توی انبار موجود بوده" }
+      ]
+    },
+    {
+      "kind": "record",
+      "key": "form_nim_sakht",
+      "title": "فرم نیم‌ساخت",
+      "statement": "برگهٔ کاغذی مشترکی که برای هر محصول نیمه‌آمادهٔ آماده‌سازی — مانند مایهٔ برگر، رست‌بیف، گوشت چرخ‌کرده، استیک و فیلادلفیا — پر می‌شود. برگهٔ خام عنوان محصول ندارد و مسئول لاین نام محصول را بالای برگه می‌نویسد، چون محصول‌ها متغیرند. وزن مادهٔ اولیه، ادویه‌ها و سس‌های مصرفی و وزن نیم‌ساخت تولیدشده در آن ثبت می‌شود.",
+      "aliases": ["برگهٔ نیم‌ساخت"],
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "بخش آماده‌سازی",
+          "holder": "سرپرست آماده‌سازی"
+        },
+        "cadence": "ad_hoc",
+        "grain": "هر نوبت تولید یک محصول نیمه‌آماده",
+        "filled_by": "مسئول لاین تولیدکننده",
+        "blank_master": true,
+        "header_fields": [
+          {
+            "key": "nam_mahsul",
+            "title": "نام محصول",
+            "type": "string",
+            "description": "عنوان محصول نیمه‌آماده که بالای برگه نوشته می‌شود؛ برگهٔ خام عنوان چاپی ندارد."
+          }
+        ],
+        "fields": [
+          {
+            "key": "vazn_madde_avvaliye",
+            "title": "وزن مادهٔ اولیه",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن گوشت یا مرغ خامی که برای این نوبت تولید مصرف شده است."
+          },
+          {
+            "key": "advie_va_sos",
+            "title": "ادویه و سس مصرفی",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن ادویه‌ها، مرینت و سس‌های افزوده‌شده به مادهٔ اولیه."
+          },
+          {
+            "key": "vazn_nim_sakht",
+            "title": "وزن نیم‌ساخت تولیدشده",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن محصول نیمه‌آماده‌ای که تحویل انبار می‌شود."
+          }
+        ]
+      },
+      "processes": [
+        { "process": "preparation-018", "node": "preparation-018-n034", "quote": "نیم‌ساخت برگر، نیم‌ساخت رست‌بیف" },
+        { "process": "preparation-019", "node": "preparation-019-n032", "quote": "فرم نیم‌ساخت برای گوشت گردن می‌زنیم" }
+      ]
+    },
+    {
+      "kind": "rule",
+      "key": "zayeat_philadelphia",
+      "title": "ضایعات تبدیل راستهٔ پاک‌نشده به فیلادلفیا",
+      "statement": "ضایعات تولید فیلادلفیا برابر است با وزن گوشت راستهٔ اختصاص‌یافته به فیلادلفیا منهای وزن فیلادلفیای تولیدشده پس از ساطوری‌کردن. وزن اختصاص‌یافته خود از کسر سهم استیک رولی از وزن کل راستهٔ پاک‌نشده به دست می‌آید.",
+      "data": {
+        "lang": "feel",
+        "expr": "zayeat_philadelphia = vazn_rasteh_takhsis - vazn_philadelphia",
+        "inputs": [
+          { "key": "vazn_rasteh_takhsis", "title": "وزن راستهٔ اختصاص‌یافته به فیلادلفیا", "unit": "kg" },
+          { "key": "vazn_philadelphia", "title": "وزن فیلادلفیای تولیدشده", "unit": "kg" }
+        ],
+        "outputs": [
+          { "key": "zayeat_philadelphia", "title": "ضایعات تولید فیلادلفیا", "unit": "kg", "nature": "observed" }
+        ]
+      },
+      "processes": [
+        { "process": "preparation-020", "node": "preparation-020-n018", "quote": "مقدار ضایعات هم کسر مقدار کل هستش" }
+      ]
+    },
+    {
+      "kind": "note",
+      "key": "porsesh_tafkik_rasteh",
+      "title": "پرسش دربارهٔ تفکیک دستی تبدیل راسته",
+      "statement": "از یک محمولهٔ راستهٔ پاک‌نشده هم استیک رولی و هم فیلادلفیا به دست می‌آید، اما هر محصول برگهٔ تبدیل جداگانه دارد و کارکنان سهم هر محصول و ضایعات آن را دستی از وزن کل کسر می‌کنند. راستهٔ پاک‌شده تنها به استیک رولی تبدیل می‌شود.",
+      "data": {
+        "about": [
+          { "ref": "S-rec-3d5d67801f5d" },
+          { "ref": "S-rec-ef021443f7dc" }
+        ],
+        "question": "آیا تبدیل راستهٔ پاک‌نشده به استیک رولی و فیلادلفیا باید در یک برگهٔ واحد ثبت شود تا کسر دستی وزن‌ها و تفکیک دستی ضایعات حذف شود؟"
+      },
+      "processes": [
+        { "process": "preparation-020", "node": "preparation-020-n022", "quote": "خودمون تفکیک می‌کنیم دستی می‌شه" }
+      ]
+    },
+    {
+      "kind": "rule",
+      "key": "oft_va_jobran_marinate_estek",
+      "title": "افت وزن استیک و جبران آن با مرینت",
+      "statement": "در تولید استیک رولی حدود پنج درصد از وزن گوشت به صورت خون‌آبه از دست می‌رود و تقریباً همان اندازه مرینت به آن افزوده می‌شود. به همین دلیل وزن تحویلی به انبار با وزن گوشت دریافتی برابر است و این محصول کسری ثبت‌شده ندارد.",
+      "data": {
+        "inputs": [],
+        "outputs": [
+          { "key": "darsad_oft_vazn", "title": "درصد افت وزن گوشت", "unit": "percent", "value": 5, "nature": "standard" },
+          { "key": "darsad_marinate_ezafe", "title": "درصد مرینت افزوده", "unit": "percent", "value": 5, "nature": "standard" }
+        ]
+      },
+      "processes": [
+        { "process": "preparation-020", "node": "preparation-020-n007", "quote": "تقریباً پنج درصد کاست داره" }
+      ]
+    },
+    {
+      "kind": "rule",
+      "key": "estandard_baste_penne",
+      "title": "استاندارد وزن و بازده بستهٔ پنه",
+      "statement": "هر بستهٔ پنهٔ پخته یک کیلو و دویست گرم وزن می‌شود و هر بستهٔ پانصد گرمی پنهٔ خام بین یک کیلو و دویست تا یک کیلو و دویست و پنجاه گرم پنهٔ پخته می‌دهد. پنهٔ شکسته از این مبنا بیرون است و تولید بر پایهٔ نیاز روز انجام می‌شود، نه بر پایهٔ این نسبت.",
+      "data": {
+        "inputs": [],
+        "outputs": [
+          { "key": "vazn_baste_penne_pokhte", "title": "وزن بستهٔ پنهٔ پخته", "unit": "kg", "value": 1.2, "nature": "standard" },
+          { "key": "bazdeh_har_baste_kham", "title": "بازده هر بستهٔ پنهٔ خام", "unit": "kg", "range": { "min": 1.2, "max": 1.25 }, "nature": "standard" }
+        ]
+      },
+      "processes": [
+        { "process": "preparation-011", "node": "preparation-011-n006", "quote": "یک کیلو و دویست" },
+        { "process": "preparation-011", "node": "preparation-011-n005", "quote": "یه پنه ۵۰۰ گرمی یک کیلو و دویست" }
+      ]
+    },
+    {
+      "kind": "rule",
+      "key": "tarkib_baste_shesh_taei_chiza",
+      "title": "ترکیب بستهٔ شش‌تایی مرغ چیزا",
+      "statement": "هر بستهٔ شش‌تایی مرغ چیزا شامل دوازده تکه مرغ و شش ورق پنیر است. پس از سلفون‌کشیدن و لیبل‌خوردن، بسته آمادهٔ برداشت انبار می‌شود.",
+      "data": {
+        "inputs": [],
+        "outputs": [
+          { "key": "tedad_tekke_morgh", "title": "تعداد تکه مرغ در بسته", "unit": "pcs", "value": 12, "nature": "standard" },
+          { "key": "tedad_varaq_panir", "title": "تعداد ورق پنیر در بسته", "unit": "slice", "value": 6, "nature": "standard" }
+        ]
+      },
+      "processes": [
+        { "process": "preparation-014", "node": "preparation-014-n039", "quote": "بسته‌بندی شش‌تایی یعنی ۱۲ تا چیزا، شش تا پنیر" }
+      ]
+    },
+    {
+      "kind": "rule",
+      "key": "zaman_enjemad_chiza",
+      "title": "زمان انجماد مرغ چیزا پیش از پانکو",
+      "statement": "مرغ چیزای مرینت و رول‌شده باید حدود بیست و چهار ساعت بماند تا کاملاً منجمد شود، وگرنه هنگام پانکوزدن از هم می‌پاشد. به همین دلیل سفارش روز انبار همان روز تحویل نمی‌شود و نوبت پانکو و بسته‌بندی به روز بعد می‌افتد.",
+      "data": {
+        "inputs": [],
+        "outputs": [
+          { "key": "zaman_enjemad", "title": "زمان انجماد پیش از پانکو", "unit": "hour", "value": 24, "nature": "standard" }
+        ],
+        "edge_cases": [
+          { "why": "در کمبود موجودی، بار همان صبح تولید و برای انجماد سریع‌تر به فریزر انبار سپرده می‌شود تا همان روز پانکو بخورد." }
+        ]
+      },
+      "processes": [
+        { "process": "preparation-014", "node": "preparation-014-n002", "quote": "تا فریز بشه" }
+      ]
+    },
+    {
+      "kind": "item",
+      "key": "morgh_grill",
+      "title": "مرغ گریل",
+      "statement": "مرغ مرینت‌شده‌ای که آماده‌سازی بر پایهٔ سفارش آشپزخانه آماده می‌کند و بر حسب کیلوگرم شمرده و تحویل انبار می‌شود. پس از پخت در آشپزخانه، مرغ سالاد، مرغ پاستا، چیکن استیک و کریسپی از همین مرغ به دست می‌آید.",
+      "data": {
+        "category": "product",
+        "unit": "kg",
+        "unit_raw": "کیلو",
+        "state": "raw",
+        "code_absent": true
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "yeksani_marinate_morgh",
+      "title": "یکسان بودن مرینت مرغ برای همهٔ محصولات",
+      "statement": "فرمول مرینت مرغ برای همهٔ محصولات مرغی یکسان است و بسته به محصول نهایی تفاوتی ندارد؛ تفکیک محصول پس از پخت در آشپزخانه انجام می‌شود.",
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "original": "و پس فرقی نداره عملاً تو کدوم یک از این مواردی که شما گفتید استفاده میشه. نه همه کلاً یکیه.",
+        "inputs": [
+          { "key": "mahsul_morghi", "title": "محصول مرغی نهایی" }
+        ],
+        "outputs": [
+          { "key": "formul_marinate", "title": "فرمول مرینت مرغ" }
+        ]
+      },
+      "processes": [
+        { "process": "preparation-012", "node": "preparation-012-n028", "quote": "همه کلاً یکیه" }
+      ]
+    },
+    {
+      "kind": "rule",
+      "key": "bazdeh_mayeh_burger",
+      "title": "بازده مایهٔ برگر از گوشت",
+      "statement": "از هر بیست کیلوگرم گوشت حدود بیست و چهار کیلوگرم مایهٔ برگر به دست می‌آید؛ افزایش وزن از گوشت نوع دوم، پیاز و ادویه‌هاست. این مایه باید همان روز به برگر تبدیل شود و شمار برگرهای تولیدشده در همان برگه ثبت می‌شود.",
+      "data": {
+        "inputs": [],
+        "outputs": [
+          { "key": "vazn_gusht_vorudi", "title": "وزن گوشت ورودی", "unit": "kg", "value": 20, "nature": "standard" },
+          { "key": "vazn_mayeh_khoruji", "title": "وزن مایهٔ برگر تولیدشده", "unit": "kg", "value": 24, "nature": "standard" }
+        ]
+      },
+      "processes": [
+        { "process": "preparation-021", "node": "preparation-021-n001", "quote": "از ۲۰ کیلو گوشت به ما ۲۴ کیلو مایه میده" }
+      ]
+    },
+    {
+      "kind": "note",
+      "key": "porsesh_porkonande_jadvalhaye_amade_sazi",
+      "title": "پرکننده و تناوب جدول‌های روزانهٔ آماده‌سازی",
+      "statement": "جدول‌های روزانهٔ بخش آماده‌سازی را سرپرست آماده‌سازی هر روز پر می‌کند.",
+      "data": {
+        "about": [
+          { "ref": "S-rec-ef021443f7dc" },
+          { "ref": "S-rec-9f60dda7c289" },
+          { "ref": "S-rec-2c141582db58" },
+          { "ref": "S-rec-e3f80534814b" },
+          { "ref": "S-rec-3d5d67801f5d" }
+        ],
+        "question": "آیا برای همهٔ این جدول‌ها پرکننده سرپرست آماده‌سازی و تناوب روزانه ثبت شود؟"
+      }
+    }
+  ]
+}

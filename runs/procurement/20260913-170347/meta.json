@@ -1,0 +1,18 @@
+{
+  "department": "procurement",
+  "transcripts": [
+    "warehouse-1405-06-11",
+    "warehouse-1405-06-15",
+    "warehouse-1405-06-16"
+  ],
+  "started_at": "2026-09-13T17:03:47Z",
+  "finished_at": "2026-09-13T17:22:00Z",
+  "attempt": 1,
+  "origin_run": "runs/warehouse/20260913-141752",
+  "processes": [
+    {
+      "id": "procurement-001",
+      "status": "new"
+    }
+  ]
+}

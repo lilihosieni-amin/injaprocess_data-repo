@@ -1,0 +1,212 @@
+{
+  "schema_version": 1,
+  "unit": "u-tr-preparation-1405-05-28-03-l1",
+  "attempt": 1,
+  "decisions": [],
+  "new": [
+    {
+      "kind": "record",
+      "key": "form_nimsakht_amadesazi",
+      "title": "فرم نیم‌ساخت و تبدیل آماده‌سازی",
+      "statement": "فرم کاغذی واحد آماده‌سازی که برای هر دسته تولید، مواد مصرفی و مقدار هر ماده را در یک بخش و نوع، تعداد و وزن محصول تولیدشده را در بخش دیگر ثبت می‌کند و ضایعات همان دسته را هم می‌گیرد. هر لاین فرم خودش را پر می‌کند، سرپرست آماده‌سازی آن را بررسی می‌کند و نتیجه مبنای قیمت‌گذاری است. انبار نسخهٔ مشابهی از همین فرم دارد که فقط مقدار تحویل‌داده‌شده و تحویل‌گرفته‌شده را ثبت می‌کند.",
+      "aliases": ["فرم نیم‌ساخت", "فرم تبدیل"],
+      "processes": [
+        { "process": "preparation-017", "node": "preparation-017-n022", "quote": "این همون نیم‌ساختشه دیگه" },
+        { "process": "preparation-017", "node": "preparation-017-n021", "quote": "اینجا نیم‌ساختشو می‌زنین، اینجا تولیدشو می‌زنین" },
+        { "process": "preparation-018", "node": "preparation-018-n034", "quote": "بعد رست‌بیف، اینا از این فرم نیم‌ساخت استفاده می‌شه" },
+        { "process": "preparation-013", "node": "preparation-013-n042", "quote": "برای مرغ پخته شده و سسش این استفاده می‌شه" },
+        { "process": "preparation-012", "node": "preparation-012-n035", "quote": "اینا همه‌شون تو قیمت‌گذاری تأثیر دارن" }
+      ],
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "واحد آماده‌سازی",
+          "holder": "سرپرست آماده‌سازی"
+        },
+        "grain": "هر دستهٔ نیم‌ساخت تولیدشده",
+        "cadence": null,
+        "filled_by": "مسئول لاین",
+        "approved_by": "سرپرست آماده‌سازی",
+        "header_fields": [
+          {
+            "key": "vahed",
+            "title": "واحد",
+            "type": "string",
+            "description": "نام واحدی که فرم برای آن پر می‌شود و بالای فرم نوشته شده است؛ برای این فرم آماده‌سازی و برای نسخهٔ مشابه، انبار."
+          }
+        ],
+        "fields": [
+          {
+            "key": "nam_maddeh",
+            "title": "نام مادهٔ مصرفی",
+            "type": "string",
+            "group": { "key": "mavad_masrafi", "title": "مواد مصرفی" },
+            "description": "نام هر ماده‌ای که برای ساختن این نیم‌ساخت مصرف شده است؛ مانند گوشت، پیاز، جعفری، نمک، فلفل و دیگر ادویه‌ها و چاشنی‌ها.",
+            "refItems": { "namespace": "##", "resolved_by": "title" }
+          },
+          {
+            "key": "meqdar_masrafi",
+            "title": "مقدار مصرفی",
+            "type": "number",
+            "unit": "kg",
+            "group": { "key": "mavad_masrafi", "title": "مواد مصرفی" },
+            "description": "مقدار مصرف‌شده از همان ماده در همین دسته."
+          },
+          {
+            "key": "jam_vazn_mavad",
+            "title": "جمع وزن مواد مصرفی",
+            "type": "number",
+            "unit": "kg",
+            "group": { "key": "mavad_masrafi", "title": "مواد مصرفی" },
+            "description": "مجموع وزن همهٔ مواد مصرفی این دسته."
+          },
+          {
+            "key": "noe_mahsul",
+            "title": "نوع محصول تولیدی",
+            "type": "string",
+            "group": { "key": "tolid", "title": "تولید" },
+            "description": "نوع محصولی که از این مواد ساخته شده است؛ در لاین گوشت هر وزن برگر یک سطر جداگانه دارد.",
+            "refItems": { "namespace": "##", "resolved_by": "title" }
+          },
+          {
+            "key": "tedad_tolid",
+            "title": "تعداد تولیدشده",
+            "type": "integer",
+            "unit": "pcs",
+            "group": { "key": "tolid", "title": "تولید" },
+            "description": "تعداد عددی محصول تولیدشده از همان نوع."
+          },
+          {
+            "key": "vazn_vahed",
+            "title": "وزن واحد",
+            "type": "number",
+            "unit": "g",
+            "group": { "key": "tolid", "title": "تولید" },
+            "description": "وزن یک عدد از همان محصول، که مبنای تبدیل تعداد به وزن کل است."
+          },
+          {
+            "key": "vazn_tolid",
+            "title": "وزن کل تولید",
+            "type": "number",
+            "unit": "kg",
+            "group": { "key": "tolid", "title": "تولید" },
+            "description": "وزن کل محصول تولیدشده از همان نوع، برابر تعداد ضربدر وزن واحد."
+          },
+          {
+            "key": "vazn_zayeat",
+            "title": "ضایعات",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن مادهٔ ازدست‌رفته در جریان تولید همین دسته؛ مانند مقداری که به ترازو می‌چسبد یا هنگام کار روی زمین می‌ریزد."
+          }
+        ],
+        "sections": [
+          { "key": "mavad_masrafi", "title": "مواد مصرفی" },
+          { "key": "tolid", "title": "تولید" }
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "vazn_tolid_az_tedad",
+      "title": "وزن کل تولید از تعداد و وزن واحد",
+      "statement": "وزن کل هر محصول تولیدشده در آماده‌سازی از ضرب تعداد آن در وزن واحد آن به دست می‌آید و بر حسب کیلوگرم ثبت می‌شود. برای نمونه صد عدد محصول صد و پنجاه گرمی پانزده کیلوگرم است.",
+      "data": {
+        "lang": "feel",
+        "expr": "vazn_tolid = tedad * vazn_vahed / 1000",
+        "inputs": [
+          { "key": "tedad", "title": "تعداد تولیدشده", "unit": "pcs" },
+          { "key": "vazn_vahed", "title": "وزن واحد محصول", "unit": "g" }
+        ],
+        "outputs": [
+          { "key": "vazn_tolid", "title": "وزن کل تولید", "unit": "kg", "nature": "observed" }
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "taraz_nimsakht_ba_tolid",
+      "title": "تراز مواد مصرفی با تولید و ضایعات",
+      "statement": "مجموع وزن مواد مصرفی هر دستهٔ نیم‌ساخت باید با مجموع وزن محصولات تولیدشده به‌علاوهٔ ضایعات همان دسته برابر باشد. اختلاف این دو بر حسب کیلوگرم سنجیده می‌شود و مقدار غیرصفر یعنی ثبت مواد و ثبت تولید با هم نمی‌خوانند.",
+      "processes": [
+        { "process": "preparation-013", "node": "preparation-013-n044", "quote": "جمع اینا با این باید بخونه" }
+      ],
+      "data": {
+        "lang": "feel",
+        "expr": "ekhtelaf_taraz = vazn_mavad_masrafi - vazn_tolid_kol - vazn_zayeat",
+        "inputs": [
+          { "key": "vazn_mavad_masrafi", "title": "جمع وزن مواد مصرفی", "unit": "kg" },
+          { "key": "vazn_tolid_kol", "title": "جمع وزن محصولات تولیدشده", "unit": "kg" },
+          { "key": "vazn_zayeat", "title": "ضایعات", "unit": "kg" }
+        ],
+        "outputs": [
+          { "key": "ekhtelaf_taraz", "title": "اختلاف تراز", "unit": "kg", "nature": "observed" }
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "vazn_vahed_anvae_burger",
+      "title": "وزن واحد انواع برگر",
+      "statement": "وزن یک عدد از هر نوع برگر تولیدی آماده‌سازی بر حسب گرم مشخص است و مبنای تبدیل تعداد تولیدشده به وزن کل قرار می‌گیرد.",
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "inputs": [
+          { "key": "noe_burger", "title": "نوع برگر" }
+        ],
+        "outputs": [
+          { "key": "vazn_vahed", "title": "وزن واحد", "unit": "g" }
+        ],
+        "table": {
+          "inputs": ["noe_burger"],
+          "outputs": ["vazn_vahed"],
+          "hit": "unique",
+          "rows": [
+            { "noe_burger": "برگر ۱۵۰ گرمی", "vazn_vahed": 150 },
+            { "noe_burger": "برگر ۶۰ گرمی", "vazn_vahed": 60 }
+          ]
+        }
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "hamkhani_daryaft_ba_ersal_anbar",
+      "title": "هم‌خوانی تحویل انبار با دریافت آماده‌سازی",
+      "statement": "مقدار هر قلمی که انبار به آماده‌سازی می‌فرستد باید با مقداری که آماده‌سازی تحویل گرفته و ثبت کرده برابر باشد و اختلاف آن بر حسب کیلوگرم سنجیده می‌شود. محصول فرآوری‌شدهٔ آماده‌سازی در این مقایسه وارد نمی‌شود و تنها مادهٔ خام تحویلی سنجیده می‌شود.",
+      "processes": [
+        { "process": "preparation-004", "node": "preparation-004-n013", "quote": "ورودی خروجی انبار باید با ورودی خروجی ما هم‌خونی داشته باشه" }
+      ],
+      "data": {
+        "lang": "feel",
+        "expr": "ekhtelaf_tahvil = meqdar_ersali_az_anbar - meqdar_daryafti_amadesazi",
+        "inputs": [
+          { "key": "meqdar_ersali_az_anbar", "title": "مقدار ارسالی انبار", "unit": "kg" },
+          {
+            "key": "meqdar_daryafti_amadesazi",
+            "title": "مقدار دریافتی آماده‌سازی",
+            "unit": "kg",
+            "from": { "ref": "S-rec-e3f80534814b" }
+          }
+        ],
+        "outputs": [
+          { "key": "ekhtelaf_tahvil", "title": "اختلاف تحویل", "unit": "kg", "nature": "observed" }
+        ]
+      }
+    },
+    {
+      "kind": "note",
+      "key": "soal_por_kardane_form_niazha",
+      "title": "مسئول پر کردن فرم نیازهای آماده‌سازی",
+      "statement": "فرم درخواست اقلام آماده‌سازی یکی است و هر لاین نیازهای خودش را در همان می‌نویسد؛ پر کردن آن به سرپرست محدود نیست ولی بررسی نهایی بر عهدهٔ سرپرست آماده‌سازی است. باید روشن شود این توضیح به همین سیاهه مربوط است یا به فرم دیگری.",
+      "processes": [
+        { "process": "preparation-003", "node": "preparation-003-n017", "quote": "هر لاینی جدا پر می‌کنه" }
+      ],
+      "data": {
+        "about": [{ "ref": "S-rec-a680471323d6" }],
+        "question": "آیا هر لاین بخش خودش را در همین فرم مشترک می‌نویسد و سرپرست آماده‌سازی آن را بررسی می‌کند؟"
+      }
+    }
+  ]
+}

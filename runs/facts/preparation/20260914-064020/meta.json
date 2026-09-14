@@ -1,0 +1,14 @@
+{
+  "department": "preparation",
+  "origin": "pipeline",
+  "actor": "quantify-playbook",
+  "started_at": "2026-09-14T06:40:20Z",
+  "finished_at": null,
+  "recordings": [],
+  "attachments": [],
+  "workbooks": [],
+  "delta": "",
+  "merged": false,
+  "ids_created": [],
+  "units": []
+}

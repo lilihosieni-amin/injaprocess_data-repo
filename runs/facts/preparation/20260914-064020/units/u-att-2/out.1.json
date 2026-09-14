@@ -1,0 +1,187 @@
+{
+  "schema_version": 1,
+  "unit": "u-att-2",
+  "attempt": 1,
+  "decisions": [],
+  "new": [
+    {
+      "kind": "record",
+      "key": "form_darkhast_kala_amade_sazi_2",
+      "title": "فرم درخواست کالا بخش آماده‌سازی ۲",
+      "statement": "برگهٔ کاغذی درخواست کالا از انبار برای بخش آماده‌سازی ۲ که فهرست ثابت اقلام و واحد هر قلم روی آن چاپ شده است. آماده‌سازی مقدار موردنیاز هر قلم را جلوی همان قلم می‌نویسد و برگه را به انبار می‌دهد؛ انبار پس از تحویل، تیک تحویل و مقدار تحویل‌شده و شمارهٔ سند را روی همان برگه ثبت می‌کند. اقلام بر پایهٔ نوع سند خروج در سه بخش مصرف مستقیم، حوالهٔ انبار به انبار و بدون سند گروه‌بندی شده‌اند.",
+      "aliases": [
+        "چک‌لیست درخواست کالا"
+      ],
+      "processes": [
+        {
+          "process": "preparation-003",
+          "node": "preparation-003-n005",
+          "quote": "تحویل حضوری چک‌لیست درخواست کالا به انبار پیش از ساعت شش و نیم غروب"
+        },
+        {
+          "process": "preparation-003",
+          "node": "preparation-003-n012",
+          "quote": "اصلاح فرم درخواست کالا روی همان برگه با تیک و افزودن عدد جلوی اقلام"
+        },
+        {
+          "process": "preparation-003",
+          "node": "preparation-003-n013",
+          "quote": "تحویل لیست اصلاح‌شده درخواست کالا به انبار حداکثر تا ساعت ده و نیم"
+        }
+      ],
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": { "value": "بخش آماده‌سازی ۲", "inferred": true },
+          "holder": { "value": "سرپرست آماده‌سازی", "inferred": true }
+        },
+        "cadence": { "value": "daily", "inferred": true },
+        "grain": "هر قلم درخواستی در هر روز",
+        "filled_by": { "value": "پرسنل بخش آماده‌سازی ۲", "inferred": true },
+        "approved_by": null,
+        "day_boundary": null,
+        "blank_master": true,
+        "header_fields": [
+          {
+            "key": "ruz_hafte",
+            "title": "روز هفته",
+            "type": "string",
+            "description": "روز هفته‌ای که درخواست برای آن نوشته می‌شود."
+          },
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "type": "date",
+            "description": "تاریخ نوشتن درخواست."
+          }
+        ],
+        "fields": [
+          {
+            "key": "tik_anbar",
+            "title": "تیک انبار",
+            "type": "boolean",
+            "description": "انبار سطر هر قلمی را که تحویل داده است تیک می‌زند.",
+            "filled_by": { "value": "انباردار", "inferred": true }
+          },
+          {
+            "key": "sharh_kala",
+            "title": "شرح کالا",
+            "type": "string",
+            "description": "نام قلم درخواستی که از پیش روی برگه چاپ شده است.",
+            "refItems": {
+              "namespace": "##",
+              "resolved_by": "title"
+            }
+          },
+          {
+            "key": "vahed",
+            "title": "واحد",
+            "type": "string",
+            "description": "واحد شمارش یا توزین همان قلم که از پیش روی برگه چاپ شده است؛ برای چند قلم دو واحد جایگزین چاپ شده است."
+          },
+          {
+            "key": "meqdar_darkhast",
+            "title": "مقدار درخواست",
+            "type": "number",
+            "unit": null,
+            "description": "مقداری که آماده‌سازی از انبار می‌خواهد، بر حسب واحد چاپ‌شدهٔ همان سطر."
+          },
+          {
+            "key": "shomare_sanad",
+            "title": "شمارهٔ سند",
+            "type": "string",
+            "description": "شمارهٔ سند خروج کالا از انبار که هنگام تحویل جلوی همان قلم نوشته می‌شود؛ عنوان چاپ‌شدهٔ آن «ش س» است.",
+            "filled_by": { "value": "انباردار", "inferred": true }
+          },
+          {
+            "key": "meqdar_tahvil_anbar",
+            "title": "مقدار تحویل انبار",
+            "type": "number",
+            "unit": null,
+            "description": "مقداری که انبار عملاً تحویل داده است، بر حسب واحد چاپ‌شدهٔ همان سطر؛ ممکن است با مقدار درخواستی یکی نباشد.",
+            "filled_by": { "value": "انباردار", "inferred": true }
+          }
+        ],
+        "sections": [
+          { "key": "masraf_mostaghim", "title": "مصرف مستقیم" },
+          { "key": "havale_anbar_be_anbar", "title": "حواله انبار به انبار" },
+          { "key": "bedun_sanad", "title": "بدون سند" }
+        ],
+        "rows": [
+          { "key": "marinet_espaysi", "title": "مرینت اسپایسی", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "marinet_normal", "title": "مرینت نرمال", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "panir_parmesan", "title": "پنیر پارمسان", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "shir", "title": "شیر", "section": "masraf_mostaghim", "unit": "l", "unit_raw": "لیتر" },
+          { "key": "kare", "title": "کره", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "khame", "title": "خامه", "section": "masraf_mostaghim", "unit": "pack", "unit_raw": "بسته" },
+          { "key": "panir_pitza", "title": "پنیر پیتزا", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "panir_labne_churla", "title": "پنیر لبنه (مخصوص تولید پنیر چورلا)", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "ard", "title": "آرد", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "khamir_maye_500", "title": "خمیر مایه ۵۰۰", "section": "masraf_mostaghim", "unit": "pack", "unit_raw": "بسته" },
+          { "key": "khamir_maye_faransavi", "title": "خمیر مایه فرانسوی", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "khamir_maye_kiluyi", "title": "خمیر مایه کیلویی", "section": "masraf_mostaghim", "unit": null, "unit_raw": "کیلو/لیتر" },
+          { "key": "roghan_pokht_o_paz", "title": "روغن پخت و پز", "section": "masraf_mostaghim", "unit": null, "unit_raw": "لیتر/عدد" },
+          { "key": "shekar", "title": "شکر", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "zhelatin", "title": "ژلاتین", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "delester", "title": "دلستر", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "pudr_paprika", "title": "پودر پاپریکا", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "zardchube", "title": "زردچوبه", "section": "masraf_mostaghim", "unit": "pack", "unit_raw": "بسته" },
+          { "key": "advie_ghermez", "title": "ادویه قرمز (سس پاپریکا)", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "advie_gusht_u", "title": "ادویه گوشت U", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "osare_morgh", "title": "عصاره مرغ", "section": "masraf_mostaghim", "unit": "pack", "unit_raw": "بسته" },
+          { "key": "avishan", "title": "آویشن", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "tarkhun_khoshk", "title": "ترخون خشک", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "kadu", "title": "کدو", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "kalam_brokoli", "title": "کلم بروکلی", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "sir", "title": "سیر", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "piaz", "title": "پیاز", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "sib_zamini", "title": "سیب زمینی", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "reyhan", "title": "ریحان", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "piazche", "title": "پیازچه", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "havij", "title": "هویج", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "kalam", "title": "کلم", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "ablimu", "title": "آبلیمو", "section": "masraf_mostaghim", "unit": "l", "unit_raw": "لیتر" },
+          { "key": "rob_anar", "title": "رب انار", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "musir", "title": "موسیر", "section": "masraf_mostaghim", "unit": null, "unit_raw": "عدد/کیلو" },
+          { "key": "serke_sefid", "title": "سرکه سفید", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "rob_goje_farangi", "title": "رب گوجه فرنگی", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "dolme_sezar", "title": "دلمه (مخصوص سس سیزر)", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "sir_2", "title": "سیر", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "tabasko_burger", "title": "تاباسکو (برگر)", "section": "masraf_mostaghim", "unit": null, "unit_raw": "عدد/کیلو" },
+          { "key": "advie_esmuk_u", "title": "ادویه اسموک U", "section": "masraf_mostaghim", "unit": "pack", "unit_raw": "بسته" },
+          { "key": "advie_burger_u", "title": "ادویه برگر U", "section": "masraf_mostaghim", "unit": "pack", "unit_raw": "بسته" },
+          { "key": "sos_mayonez_mahram", "title": "سس مایونز مهرام (به جز سس سیزر)", "section": "masraf_mostaghim", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "lazania", "title": "لازانیا", "section": "havale_anbar_be_anbar", "unit": "pack", "unit_raw": "بسته" },
+          { "key": "meygu", "title": "میگو", "section": "havale_anbar_be_anbar", "unit": null, "unit_raw": "عدد/کیلو" },
+          { "key": "pasta", "title": "پاستا", "section": "havale_anbar_be_anbar", "unit": "pack", "unit_raw": "بسته" },
+          { "key": "gharch", "title": "قارچ", "section": "havale_anbar_be_anbar", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "felfel_dolme", "title": "فلفل دلمه", "section": "havale_anbar_be_anbar", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "kahu", "title": "کاهو", "section": "havale_anbar_be_anbar", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "jafari", "title": "جعفری", "section": "havale_anbar_be_anbar", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "goje", "title": "گوجه", "section": "havale_anbar_be_anbar", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "morgh_chizra", "title": "مرغ چیزرا", "section": "havale_anbar_be_anbar", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "sos_mayonez_dobe_sezar", "title": "سس مایونز دبه (سس سیزر)", "section": "bedun_sanad", "unit": null, "unit_raw": "دبه" },
+          { "key": "khiarshur_sezar", "title": "خیارشور (سس سیزر)", "section": "bedun_sanad", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "esteyk", "title": "استیک", "section": "bedun_sanad", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "zhambon_file_makhlut_maye_burger", "title": "ژامبون فیله مخلوط (مایه برگر)", "section": "bedun_sanad", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "labne_maye_burger", "title": "لبنه (مخصوص تولید مایه برگر)", "section": "bedun_sanad", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "zhambon_file_makhlut_beykon", "title": "ژامبون فیله مخلوط (بیکن)", "section": "bedun_sanad", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "zhambon_gusht", "title": "ژامبون گوشت", "section": "bedun_sanad", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "zhambon_morgh_persi", "title": "ژامبون مرغ پرسی", "section": "bedun_sanad", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "peperoni", "title": "پپرونی", "section": "bedun_sanad", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "maghz_ran", "title": "مغز ران", "section": "bedun_sanad", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "sardast_gusale", "title": "سردست گوساله", "section": "bedun_sanad", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "ghelve_gah_bare", "title": "قلوه گاه بره", "section": "bedun_sanad", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "ghelve_gah_gusale", "title": "قلوه گاه گوساله", "section": "bedun_sanad", "unit": "kg", "unit_raw": "کیلو" },
+          { "key": "chaghu_tizkan", "title": "چاقوتیزکن", "section": "bedun_sanad", "unit": "pcs", "unit_raw": "عدد" },
+          { "key": "khelal_dandan", "title": "خلال دندان", "section": "bedun_sanad", "unit": "pcs", "unit_raw": "عدد" }
+        ],
+        "primaryKey": [
+          "tarikh",
+          "sharh_kala"
+        ]
+      }
+    }
+  ]
+}
