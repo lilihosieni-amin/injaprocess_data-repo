@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "ops": [
+    {
+      "op": "set",
+      "path": "source/0",
+      "value": {
+        "type": "photo",
+        "ref": "departments/preparation/attachments/photo-AQADghBrGz8GSFF-.jpg",
+        "hash": "sha256:7b81a0a07f4e69f1bf8c62fbd9fd200e1435c2c3f92092e64ae967082a1c69f9"
+      }
+    }
+  ]
+}

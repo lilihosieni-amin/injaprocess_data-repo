@@ -5784,15 +5784,10 @@
       },
       "source": [
         {
-          "type": "photo",
-          "ref": "departments/preparation/attachments/photo-AQADghBrGz8GSFF-.jpg",
-          "hash": "sha256:7b81a0a07f4e69f1bf8c62fbd9fd200e1435c2c3f92092e64ae967082a1c69f9",
-          "run": "runs/facts/preparation/20260915-082411"
-        },
-        {
           "type": "chat",
-          "ref": "runs/facts/preparation/20260915-082411/meta.json",
-          "run": "runs/facts/preparation/20260915-082411"
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/preparation/20260915-081357"
         }
       ],
       "retired": false,
@@ -5996,7 +5991,7 @@
       "valid_from": null,
       "valid_to": null,
       "status": "unknown",
-      "updated_at": "2026-09-15T08:24:32Z"
+      "updated_at": "2026-09-15T08:18:22Z"
     }
   ]
 }

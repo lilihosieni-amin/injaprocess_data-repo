@@ -1,0 +1,16 @@
+{
+  "department": "preparation",
+  "origin": "chat",
+  "actor": "owner",
+  "started_at": "2026-09-15T08:24:11Z",
+  "finished_at": "2026-09-15T08:25:30Z",
+  "recordings": [],
+  "attachments": [
+    "departments/preparation/attachments/photo-AQADghBrGz8GSFF-.jpg"
+  ],
+  "workbooks": [],
+  "delta": "runs/facts/preparation/20260915-082411/facts-delta.json",
+  "merged": true,
+  "ids_created": [],
+  "instruction": "همچنین چرا منبع شو نوشتی گفنگو؟؟تو که از عکس استخراج کردی"
+}
