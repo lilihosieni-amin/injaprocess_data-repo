@@ -1,0 +1,14 @@
+{
+  "department": "preparation",
+  "origin": "chat",
+  "actor": "owner",
+  "started_at": "2026-09-15T08:26:06Z",
+  "finished_at": "2026-09-15T08:26:15Z",
+  "recordings": [],
+  "attachments": [],
+  "workbooks": [],
+  "delta": "runs/facts/preparation/20260915-082606/facts-delta.json",
+  "merged": true,
+  "ids_created": [],
+  "instruction": "اوکیه.اما اسمشو بکن فرم مرینت"
+}

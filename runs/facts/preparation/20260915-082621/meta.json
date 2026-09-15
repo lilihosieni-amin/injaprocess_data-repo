@@ -1,0 +1,14 @@
+{
+  "department": "preparation",
+  "origin": "chat",
+  "actor": "owner",
+  "started_at": "2026-09-15T08:26:21Z",
+  "finished_at": "2026-09-15T08:26:40Z",
+  "recordings": [],
+  "attachments": [],
+  "workbooks": [],
+  "delta": "runs/facts/preparation/20260915-082621/facts-delta.json",
+  "merged": true,
+  "ids_created": [],
+  "instruction": "این جدول درواقع همون فرم مرینت بود.پس فرم مرینتی رو از دیتا ها پاک کن."
+}

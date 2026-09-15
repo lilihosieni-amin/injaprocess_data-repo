@@ -1,0 +1,1097 @@
+{
+  "schema_version": 2,
+  "entries": [
+    {
+      "kind": "item",
+      "key": "zhambon",
+      "title": "ژامبون",
+      "statement": "ژامبونی که به صورت رول چهار کیلوگرمی از انبار تحویل آماده‌سازی می‌شود و پس از جدا شدن پوست و کاور، اسلایس و بسته‌بندی می‌شود. مقدار آن با کیلوگرم شمرده می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-05-28-02.txt",
+          "lines": "1-117",
+          "hash": "sha256:b6b6c0e5358cb64b0f4d13b61be777e44578f68adb055fe58e56c5001d081b57",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "ingredient",
+        "unit": "kg",
+        "unit_raw": "کیلو",
+        "pack": {
+          "size": 4,
+          "unit": "kg"
+        },
+        "state": null,
+        "grade": null,
+        "group": null,
+        "code_absent": true
+      },
+      "id": "F-00002",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "item",
+      "key": "kaho_khord_shode",
+      "title": "کاهوی خرد شده",
+      "statement": "کاهویی که خرد و بازرسی شده، شسته و خشک شده و پس از وزن‌کشی به کیلوگرم به انبار تحویل می‌شود. مقدار روزانهٔ آن را فرم نیازهای روزانه تعیین می‌کند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-002.json",
+          "node": "preparation-002-n005",
+          "quote": "باید همان ده که می‌آید شروع کند زدن کاهو",
+          "hash": "sha256:c2440b484d1560e73a95517337345887aa0bd2a7f06729bbd84d57a7fac699e1",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "unit": "kg",
+        "state": "prepared",
+        "code_absent": true
+      },
+      "id": "F-00003",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "item",
+      "key": "kaho_pust_kande",
+      "title": "کاهوی پوست‌کنده",
+      "statement": "کاهویی که فقط لایه‌های رویی آن برداشته شده تا تمیز و بدون ضایعات باشد و خرد نشده نگهداری می‌شود. به کیلوگرم شمرده می‌شود و در صورت شلوغی شب شسته و خرد می‌شود، وگرنه برای روز بعد می‌ماند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-05-28.txt",
+          "lines": "1-150",
+          "hash": "sha256:158ef6036b07131e4f7d1b6d144b45862a2c111e0cee54dcc89129fc5ad4f280",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "unit": "kg",
+        "state": "prepared",
+        "code_absent": true
+      },
+      "id": "F-00004",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "item",
+      "key": "felfel_delmei_slays_shode",
+      "title": "فلفل دلمه‌ای اسلایس‌شده",
+      "statement": "فلفل دلمه‌ای پاک‌شده و شسته‌شده که پس از آب‌گیری با دستگاه اسلایسر به قطعات نیم‌سانتی بریده می‌شود و در ظرف‌های یک‌کیلویی خالص بسته‌بندی و لیبل می‌خورد. شمارش و تحویل آن بر حسب کیلوگرم است و مصرف روزانهٔ آن معمولاً دو تا چهار کیلوگرم است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-007.json",
+          "node": "preparation-007-n009",
+          "quote": "دستگاه اسلایسر مربعی‌طوره با حجم نیم‌سانت",
+          "hash": "sha256:d801ac8e521b3ccc8c20f3d43d86045fb72c9c4d22a6023aa873d01afcdf0df8",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "ingredient",
+        "unit": "kg",
+        "unit_raw": "کیلو",
+        "pack": {
+          "size": 1,
+          "unit": "kg"
+        },
+        "state": "prepared",
+        "grade": "اسلایس نیم‌سانتی",
+        "code_absent": true
+      },
+      "id": "F-00005",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "item",
+      "key": "gharch_slays_shode",
+      "title": "قارچ اسلایس‌شده",
+      "statement": "قارچ سالم که تنها بخش‌های سیاه آن جدا و بدون شستشو با دستگاه اسلایس می‌شود و در ظرف‌های پلاستیکی سفید با وزن ثابت دو کیلوگرم بسته‌بندی می‌شود. تحویل و شمارش آن بر حسب کیلوگرم است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-008.json",
+          "node": "preparation-008-n008",
+          "quote": "دو کیلو جدا می‌کنیم، فیکس دو کیلو",
+          "hash": "sha256:5ac36aaac13b4d0175adb601e17212830bcf2e16f29935189f93bacc1bab6ddd",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "ingredient",
+        "unit": "kg",
+        "unit_raw": "کیلو",
+        "pack": {
+          "size": 2,
+          "unit": "kg"
+        },
+        "state": "prepared",
+        "code_absent": true
+      },
+      "id": "F-00006",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "item",
+      "key": "salad_kentaki",
+      "title": "سالاد کنتاکی",
+      "statement": "سالاد آمادهٔ مصرف از کلم، هویج، کشمش و سس مخصوص کنتاکی که طبق نسخهٔ وزنی تهیه و در پرس‌های نود گرمی وکیوم می‌شود. شمارش و تحویل آن به کانتر بر حسب تعداد پرس است و سهم آشپزخانه مرکزی و شعب روی بستهٔ بیرونی نوشته می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-009.json",
+          "node": "preparation-009-n016",
+          "quote": "می‌برن زیر دستگاه پرس وکیوم",
+          "hash": "sha256:8ac2671b0fffa58e708ae72709b6d9147f36592bba771296ad9a67fa353c17a8",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "unit": "portion",
+        "unit_raw": "پرس",
+        "pack": {
+          "size": 90,
+          "unit": "g"
+        },
+        "state": "prepared",
+        "code_absent": true
+      },
+      "id": "F-00007",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "item",
+      "key": "morgh_kham_marinate_pitza",
+      "title": "مرغ خام مرینت‌شدهٔ پیتزا",
+      "statement": "مرغ خام مرینت‌شده‌ای که لاین مرغ پیتزا هر روز از انبار تحویل می‌گیرد. مرینت آن پیش از تحویل به انبار انجام شده است و مقدار تحویلی بر حسب کیلوگرم در انبار وزن‌کشی و اعلام می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n001",
+          "quote": "می‌رم از انبار تحویل می‌گیرم",
+          "hash": "sha256:2f810b9b069e9d6b5c60980a2e96832e86ea507962dde384d9c265915e5ed7a7",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "ingredient",
+        "unit": "kg",
+        "state": "raw",
+        "code_absent": true,
+        "tracked": [
+          {
+            "record": {
+              "ref": "F-00063"
+            },
+            "value": true,
+            "reason": "وزن مرغ خام تحویل‌گرفته‌شده از انبار به‌عنوان ورودی آماده‌سازی ثبت می‌شود."
+          }
+        ]
+      },
+      "aliases": [
+        "مرغ پیتزا خام"
+      ],
+      "id": "F-00008",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "item",
+      "key": "morgh_pokhte_pitza",
+      "title": "مرغ پختهٔ اسلایس‌شدهٔ پیتزا",
+      "statement": "مرغ پخته، آب‌گرفته و اسلایس‌شده‌ای که پس از سس‌زدن در ظرف‌های دو کیلویی بسته‌بندی و به انبار تحویل می‌شود. ظرف آخر هر روز وزن متغیر دارد و با وزن دقیق خودش لیبل می‌خورد و مبنای شمارش آن کیلوگرم است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n043",
+          "quote": "هر دو کیلو دو کیلو جداشون می‌کنم",
+          "hash": "sha256:2f810b9b069e9d6b5c60980a2e96832e86ea507962dde384d9c265915e5ed7a7",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "unit": "kg",
+        "state": "cooked",
+        "code_absent": true,
+        "pack": {
+          "size": 2,
+          "unit": "kg"
+        },
+        "tracked": [
+          {
+            "record": {
+              "ref": "F-00059"
+            },
+            "value": true,
+            "reason": "مقدار بسته‌بندی‌شده‌ای که به انبار تحویل می‌شود به‌عنوان خروجی آماده‌سازی ثبت می‌شود."
+          }
+        ]
+      },
+      "aliases": [
+        "مرغ پخته‌شده سس‌خورده"
+      ],
+      "id": "F-00009",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "item",
+      "key": "sos_morgh_pitza",
+      "title": "سس مرغ پیتزا",
+      "statement": "سسی که در لاین سس آماده‌سازی ساخته می‌شود و به مرغ پختهٔ اسلایس‌شدهٔ پیتزا اضافه می‌شود. مقدار مصرفی روزانهٔ آن بر حسب کیلوگرم محاسبه و ثبت می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-01.txt",
+          "lines": "425-758",
+          "hash": "sha256:fc7d9f14ad8514931d243e838aaa563a319ceaf543eee3bc472a1c0f74e77607",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "ingredient",
+        "unit": "kg",
+        "state": "prepared",
+        "code_absent": true
+      },
+      "id": "F-00010",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "item",
+      "key": "gusht_rostbif",
+      "title": "گوشت رست‌بیف",
+      "statement": "گوشت مغز ران که پس از پخت، ریش‌ریش شدن و غضروف‌گیری با عصارهٔ گوشت و چاشنی آماده می‌شود و در بسته‌های دو کیلوگرمی لیبل‌گذاری و به انبار تحویل می‌شود. مقدار آن با کیلوگرم شمرده می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
+          "lines": "1-158",
+          "hash": "sha256:45b8ecae3d03200501e93d22a48b6cc3ad748bfb64bffffdddaa4c7214120edf",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "unit": "kg",
+        "state": "cooked",
+        "code_absent": true,
+        "pack": {
+          "size": 2,
+          "unit": "kg"
+        },
+        "tracked": [
+          {
+            "record": {
+              "ref": "F-00059"
+            },
+            "value": true,
+            "reason": "تحویل بسته‌های دو کیلوگرمی به انبار در همین سیاهه ثبت می‌شود."
+          }
+        ]
+      },
+      "aliases": [
+        "رست بیف"
+      ],
+      "id": "F-00011",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "item",
+      "key": "gusht_charkh_kardeh",
+      "title": "گوشت چرخ‌کرده",
+      "statement": "گوشت گردن که همراه خرده‌استیک‌های ذخیره‌شده چرخ و با پیاز و سیر و مایهٔ ادویه پخته می‌شود. در بسته‌های دو کیلوگرمی بسته‌بندی و لیبل‌گذاری می‌شود و باقی‌ماندهٔ کمتر از دو کیلوگرم در ظرف جداگانه تحویل انبار می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-019.json",
+          "node": "preparation-019-n027",
+          "quote": "وزن‌گیری نهایی گوشت چرخ‌کرده آماده برای بسته‌بندی",
+          "hash": "sha256:8bd2c9adf7803a41aa823f8860aff28c80084072e0f664a7ac24110b6b896513",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "unit": "kg",
+        "state": "cooked",
+        "code_absent": true,
+        "pack": {
+          "size": 2,
+          "unit": "kg"
+        },
+        "tracked": [
+          {
+            "record": {
+              "ref": "F-00059"
+            },
+            "value": true,
+            "reason": "وزن بسته‌های تحویلی به انبار در همین سیاهه ثبت می‌شود."
+          }
+        ]
+      },
+      "aliases": [
+        "چرخی"
+      ],
+      "id": "F-00012",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "item",
+      "key": "khordeh_rasteh",
+      "title": "خرده راسته",
+      "statement": "قطعات کوچک باقی‌مانده از پاک کردن و برش راستهٔ کامل که در بسته‌های چهار کیلوگرمی به انبار تحویل می‌شود و در روز تولید برگر همراه گوشت سردست چرخ می‌شود. مقدار آن با کیلوگرم شمرده می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-021.json",
+          "node": "preparation-021-n007",
+          "quote": "افزودن ۱۰۰ تا ۲۰۰ گرم خرده راسته برای جبران کسری وزن گوشت سردست",
+          "hash": "sha256:805a71639e7fea5724a7123735dc357d6c83c0e416c5109972191cbcfc5e9204",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "ingredient",
+        "unit": "kg",
+        "state": "raw",
+        "code_absent": true,
+        "pack": {
+          "size": 4,
+          "unit": "kg"
+        }
+      },
+      "aliases": [
+        "خرده‌راسته"
+      ],
+      "id": "F-00013",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "item",
+      "key": "gusht_filadelfia",
+      "title": "گوشت فیلادلفیا",
+      "statement": "برش‌های اریب و لایه‌ای راسته به اندازهٔ کف دست یا بزرگ‌تر که کوبیده و مرینت می‌شود و در بسته‌های یک کیلوگرمی به انبار تحویل می‌شود. مقدار آن با کیلوگرم شمرده می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
+          "lines": "1-158",
+          "hash": "sha256:45b8ecae3d03200501e93d22a48b6cc3ad748bfb64bffffdddaa4c7214120edf",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "unit": "kg",
+        "state": "prepared",
+        "code_absent": true,
+        "pack": {
+          "size": 1,
+          "unit": "kg"
+        }
+      },
+      "id": "F-00014",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "item",
+      "key": "zayeat_charkh_gusht",
+      "title": "ضایعات چرخ‌گوشت",
+      "statement": "گوشت سفت و دمار و غضروف باقی‌مانده روی محور چرخ‌گوشت در پایان هر پارت، حدود صد تا صد و پنجاه گرم، که خوراک انسان نیست و با همین عنوان لیبل‌گذاری و به انبار تحویل می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n006",
+          "quote": "قرار دادن ضایعات لیبل‌خورده در یخچال‌های اختصاصی انبار",
+          "hash": "sha256:664d3ae91bd5908066ef7f9f2f77b002d63710d3a2f02fe76cd01cbfe5c3bbb2",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "other",
+        "unit": "kg",
+        "state": "raw",
+        "code_absent": true,
+        "tracked": [
+          {
+            "record": {
+              "ref": "F-00064"
+            },
+            "value": true,
+            "reason": "ضایعات لیبل‌خورده پیش از تحویل به انبار در سیاههٔ ضایعات ثبت می‌شود."
+          }
+        ]
+      },
+      "id": "F-00015",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "item",
+      "key": "burger",
+      "title": "برگر ۱۵۰ گرمی",
+      "statement": "برگر خام تولیدشده در لاین گوشت با وزن هر عدد ۱۵۰ گرم، که پس از پرس میان دو لایه پلاستیک در بسته‌های پنج‌عددی وکیوم و به انبار تحویل می‌شود. بر حسب عدد شمرده می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
+          "lines": "159-315",
+          "hash": "sha256:45b8ecae3d03200501e93d22a48b6cc3ad748bfb64bffffdddaa4c7214120edf",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "unit": "pcs",
+        "pack": {
+          "size": 5,
+          "unit": "pcs"
+        },
+        "state": "prepared",
+        "code_absent": true
+      },
+      "aliases": [
+        "برگر اصلی",
+        "برگر پنج عددی"
+      ],
+      "id": "F-00016",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "item",
+      "key": "mini_burger",
+      "title": "مینی برگر ۶۰ گرمی",
+      "statement": "برگر کوچک تولیدشده در لاین گوشت با وزن هر عدد ۶۰ گرم، که تعداد تولید آن را سفارش روزانهٔ انبار تعیین می‌کند و بر حسب عدد شمرده می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
+          "lines": "159-315",
+          "hash": "sha256:45b8ecae3d03200501e93d22a48b6cc3ad748bfb64bffffdddaa4c7214120edf",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "unit": "pcs",
+        "state": "prepared",
+        "code_absent": true
+      },
+      "aliases": [
+        "مینی‌برگر"
+      ],
+      "id": "F-00017",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "item",
+      "key": "sineh_morgh_khaam",
+      "title": "سینه مرغ خام",
+      "statement": "سینهٔ مرغ خامی که به لاین تخته‌کاری تحویل می‌شود و پس از پاک‌سازی چربی، غضروف و استخوان، بر اساس اندازه و بافت به چهار محصول لقمه، مرغ گریل، مرغ پیتزا و چیزا تفکیک می‌شود. تحویل آن بر مبنای وزن و در چند پارت در طول روز انجام می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n023",
+          "quote": "این ۸۰ کیلوش با همدیگه نمیاد. توی سه چهار پارت میاد بالا.",
+          "hash": "sha256:069e41119c232bb93896da81016dc1b976dcd9342c022b64fe5ab196b059c8cc",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "ingredient",
+        "code": null,
+        "code_absent": true,
+        "unit": "kg",
+        "unit_raw": "کیلو",
+        "state": "raw"
+      },
+      "aliases": [
+        "شنیسل"
+      ],
+      "id": "F-00018",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "item",
+      "key": "file_morgh_khaam",
+      "title": "فیله مرغ خام",
+      "statement": "فیلهٔ مرغ خام که جدا از سینه و بر مبنای وزن به لاین تخته‌کاری تحویل می‌شود. پس از پاک‌سازی و جدا کردن پوست یک طرف آن، بر اساس وزن هر عدد به فیلهٔ سوخاری یا مرغ پیتزا تبدیل می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n020",
+          "quote": "فیله های کوچیک از ۵۰ گرم به پایین میشه مرغ پیتزا",
+          "hash": "sha256:069e41119c232bb93896da81016dc1b976dcd9342c022b64fe5ab196b059c8cc",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "ingredient",
+        "code": null,
+        "code_absent": true,
+        "unit": "kg",
+        "unit_raw": "کیلو",
+        "state": "raw"
+      },
+      "id": "F-00019",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "item",
+      "key": "morgh_loqme",
+      "title": "مرغ لقمه",
+      "statement": "لقمهٔ مرغ، تکهٔ مکعبی بریده‌شده از سینهٔ مرغ خام است که وزن هر عدد آن بین ۱۰ تا ۱۳ گرم است. بسته‌بندی آن بر مبنای تعداد و در بسته‌های ۲۰۰ عددی انجام می‌شود و هر بسته وزن‌گیری و تاریخ‌گذاری می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-032.json",
+          "node": "preparation-032-n010",
+          "quote": "لقمه ها که بسته هاش ۲۰۰ تاییه ۲۰۰ عدد.",
+          "hash": "sha256:0c77366d5e9e11453eb567ccad402b1a6859ce07c3dbeee7d758409365cdeced",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "code": null,
+        "code_absent": true,
+        "unit": "pcs",
+        "unit_raw": "عدد",
+        "state": "prepared",
+        "pack": {
+          "size": 200,
+          "unit": "pcs"
+        }
+      },
+      "aliases": [
+        "لقمه"
+      ],
+      "id": "F-00020",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "item",
+      "key": "morgh_gril",
+      "title": "مرغ گریل",
+      "statement": "مرغ گریل از سینه‌های یکدست و هم‌اندازهٔ پاک‌شده به دست می‌آید که همه با یک دما و یک زمان پخته می‌شوند، و پیش از تحویل مرینت می‌شود. بر مبنای وزن در بسته‌های چهار کیلوگرمی به انبار تحویل و با کیلوگرم شمرده می‌شود. پس از پخت در آشپزخانه، مرغ سالاد، مرغ پاستا، چیکن استیک و کریسپی از همین قلم تهیه می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n003",
+          "quote": "گریل رو بسته بندی میکنم ۴ کیلویی",
+          "hash": "sha256:069e41119c232bb93896da81016dc1b976dcd9342c022b64fe5ab196b059c8cc",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "code": null,
+        "code_absent": true,
+        "unit": "kg",
+        "unit_raw": "کیلو",
+        "state": "prepared",
+        "pack": {
+          "size": 4,
+          "unit": "kg"
+        }
+      },
+      "aliases": [
+        "مرغ گریل مرینت‌شده"
+      ],
+      "id": "F-00021",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "item",
+      "key": "morgh_pizza",
+      "title": "مرغ پیتزا",
+      "statement": "مرغ پیتزا از تکه‌های کناری، پاره و کوچک مرغ و فیله‌های ریز به دست می‌آید و ابعاد مشخصی ندارد؛ هر تکه‌ای که برای سایر محصولات مناسب نباشد به آن تبدیل می‌شود و مرغ دورریز نداریم. بسته‌بندی آن بر مبنای وزن و در بسته‌های ۴ کیلویی است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n020",
+          "quote": "مرغ پیتزا همونطور ۴ کیلویی بسته بندی میشه",
+          "hash": "sha256:069e41119c232bb93896da81016dc1b976dcd9342c022b64fe5ab196b059c8cc",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "code": null,
+        "code_absent": true,
+        "unit": "kg",
+        "unit_raw": "کیلو",
+        "state": "prepared",
+        "pack": {
+          "size": 4,
+          "unit": "kg"
+        }
+      },
+      "id": "F-00022",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "item",
+      "key": "morgh_chiza",
+      "title": "مرغ چیزا",
+      "statement": "چیزا تکهٔ تقریباً ۸۰ گرمی مرغ است که با دست و بدون برش دستگاهی جدا می‌شود و در مرحلهٔ بعد کوبیده و با پنیر فراوری می‌شود. بسته‌بندی آن بر مبنای تعداد و در بسته‌های ۴۸ عددی است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-014.json",
+          "node": "preparation-014-n002",
+          "quote": "هر بسته چیزا ۴۸ تاست",
+          "hash": "sha256:26afada1ed97ea0188db3e3b56579607741df095c814b1892cd10545bf1e3ced",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "code": null,
+        "code_absent": true,
+        "unit": "pcs",
+        "unit_raw": "عدد",
+        "state": "prepared",
+        "pack": {
+          "size": 48,
+          "unit": "pcs"
+        }
+      },
+      "id": "F-00023",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "item",
+      "key": "file_sukhari",
+      "title": "فیله سوخاری",
+      "statement": "فیلهٔ سوخاری از فیله‌های پاک‌شدهٔ ۵۰ تا ۸۰ گرمی تهیه می‌شود و بسته‌بندی آن بر مبنای تعداد و در بسته‌های ۶۰ عددی است؛ روی هر بسته تعداد، وزن و تاریخ درج می‌شود. برای یکسان شدن بسته‌ها، فیله‌های درشت و ریز میان بسته‌ها تقسیم می‌شوند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n003",
+          "quote": "۶۰ عدد بسته بندی میکردم",
+          "hash": "sha256:069e41119c232bb93896da81016dc1b976dcd9342c022b64fe5ab196b059c8cc",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "code": null,
+        "code_absent": true,
+        "unit": "pcs",
+        "unit_raw": "عدد",
+        "state": "prepared",
+        "pack": {
+          "size": 60,
+          "unit": "pcs"
+        }
+      },
+      "id": "F-00024",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "item",
+      "key": "morgh_zayeat",
+      "title": "ضایعات مرغ",
+      "statement": "چربی، غضروف و استخوان جداشده از سینهٔ مرغ و پوست کنارهٔ فیله که در هیچ‌کدام از محصولات لاین قابل مصرف نیست. بر مبنای وزن جمع‌آوری و لیبل‌گذاری می‌شود و ضایعات سینه و ضایعات فیله جداگانه ثبت می‌شوند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n006",
+          "quote": "اینا همه میشه مرغ ضایعات",
+          "hash": "sha256:664d3ae91bd5908066ef7f9f2f77b002d63710d3a2f02fe76cd01cbfe5c3bbb2",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "other",
+        "code": null,
+        "code_absent": true,
+        "unit": "kg",
+        "unit_raw": "کیلو",
+        "state": "raw",
+        "tracked": [
+          {
+            "record": {
+              "ref": "F-00064"
+            },
+            "value": true,
+            "reason": "ضایعات سینهٔ مرغ و ضایعات فیله جدا از هم ثبت می‌شوند."
+          }
+        ]
+      },
+      "id": "F-00025",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "item",
+      "key": "pane_pokhte",
+      "title": "پنه پخته",
+      "statement": "پنهٔ پخته‌شده در آب جوش که در بسته‌های یک کیلو و دویست گرمی بسته‌بندی، وزن‌گیری و لیبل‌گذاری می‌شود. تعداد بسته‌های روز بر اساس مقدار درخواستی تعیین می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-011.json",
+          "node": "preparation-011-n006",
+          "quote": "هر بسته اش یک و دویست",
+          "hash": "sha256:632dd0eec1cfa9e2bdd455ab4c718a3008d7d886c911de0cce09a443abad7956",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "product",
+        "code": null,
+        "code_absent": true,
+        "unit": "kg",
+        "unit_raw": "کیلو",
+        "state": "cooked",
+        "pack": {
+          "size": 1.2,
+          "unit": "kg"
+        }
+      },
+      "aliases": [
+        "پنه"
+      ],
+      "id": "F-00026",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "item",
+      "key": "kenar_file",
+      "title": "کنار فیله",
+      "statement": "تکه‌های مرغی که هنگام کندن پوست فیله از کنار آن جدا می‌شود و پس از پاکسازی جداگانه وزن و تحویل انبار می‌شود. با وزن شمرده می‌شود و در فرم تبدیل فیله ثبت می‌گردد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-04.txt",
+          "lines": "206-410",
+          "hash": "sha256:cd6d82e4fab1293439a9807b5648e7c47e7ba388a221ba5cf4235ad4e1296c01",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "ingredient",
+        "code": null,
+        "code_absent": true,
+        "unit": "kg",
+        "state": "raw"
+      },
+      "id": "F-00027",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "item",
+      "key": "kenar_shinsel",
+      "title": "کنار شینسل",
+      "statement": "تکه‌های مرغ چسبیده به ضایعات شینسل که طی هفته جمع می‌شود و یک روز در هفته به پخت می‌رسد. با وزن شمرده می‌شود و بخشی خام برای غذای پرسنل و بخشی پخته برای مرغ پیتزا مصرف می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n033",
+          "quote": "طی هفته جمع میشه میاد برای پخت",
+          "hash": "sha256:069e41119c232bb93896da81016dc1b976dcd9342c022b64fe5ab196b059c8cc",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "category": "ingredient",
+        "code": null,
+        "code_absent": true,
+        "unit": "kg",
+        "state": "raw"
+      },
+      "aliases": [
+        "ضایعات شینسل"
+      ],
+      "id": "F-00028",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-14T08:39:49Z"
+    }
+  ]
+}

@@ -3116,7 +3116,7 @@
           "run": "runs/facts/preparation/20260914-064020"
         }
       ],
-      "retired": true,
+      "retired": false,
       "data": {
         "medium": "paper",
         "role": "log",
@@ -3195,12 +3195,9 @@
       },
       "id": "F-00043",
       "valid_from": null,
-      "valid_to": "1405-06-24",
+      "valid_to": null,
       "status": "unknown",
-      "updated_at": "2026-09-15T08:26:28Z",
-      "superseded_by": {
-        "ref": "F-00221"
-      }
+      "updated_at": "2026-09-14T08:39:49Z"
     },
     {
       "kind": "record",

@@ -1121,10 +1121,10 @@
         "inferred": 16
       },
       "processes": [],
-      "retired": false,
-      "valid_to": null,
+      "retired": true,
+      "valid_to": "1405-06-24",
       "stub": false,
-      "updated_at": "2026-09-14T08:39:49Z"
+      "updated_at": "2026-09-15T08:26:28Z"
     },
     {
       "id": "F-00044",
@@ -1714,7 +1714,7 @@
       "id": "F-00221",
       "kind": "record",
       "key": "list_tahvil_nimsakht_morgh_goje",
-      "title": "لیست تحویل مرغ و گوجهٔ نیم‌ساخته به انبار",
+      "title": "فرم مرینت",
       "aliases": [
         "لیست مرغ و گوجه نیم ساخته"
       ],
@@ -1735,7 +1735,7 @@
       "retired": false,
       "valid_to": null,
       "stub": false,
-      "updated_at": "2026-09-15T08:24:32Z"
+      "updated_at": "2026-09-15T08:26:18Z"
     },
     {
       "id": "F-00066",
