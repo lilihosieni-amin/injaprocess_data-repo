@@ -259,6 +259,25 @@ def test_the_agent_reads_the_talk_beside_the_form_and_keeps_the_forms_value():
     assert "the spoken value becomes an `account` on the same entry" in agent
 
 
+def test_the_agent_cites_a_passage_by_the_path_in_its_heading():
+    """The engine admits a citation only for the transcript the passage heading
+    prints, and only for lines inside that passage — the agent has to be told
+    both, or every account it writes is dropped."""
+    agent = " ".join(AGENT.read_text(encoding="utf-8").split())
+    assert "the transcript path printed in its heading" in agent
+    assert "inside that passage" in agent
+    assert "lines must lie inside one passage" in agent
+
+
+def test_the_agent_knows_the_voice_list_and_its_shape():
+    """Spec §3: the talk that filled in what the form does not state is cited
+    as the meeting, beside the sheet and never instead of it."""
+    agent = " ".join(AGENT.read_text(encoding="utf-8").split())
+    assert ('"voice": [{"ref": "<transcript path printed in the passage '
+            'heading>", "lines": "a-b"}]') in agent
+    assert "appends them to `source[]` after the sheet or the photo" in agent
+
+
 def test_the_agent_attaches_speech_to_a_listed_table_before_describing_a_new_one():
     agent = " ".join(AGENT.read_text(encoding="utf-8").split())
     assert "## آنچه تا کنون ثبت شده" in agent

@@ -56,10 +56,13 @@ Two sections of a `unit` input are the engine's own selection, and both are read
 past.
 
 **`## گفت‌وگوهای مرتبط`** — a form unit's input carries it after `## متن`: the passages of this
-run's meetings that talk about your tables, items and columns, each headed by the meeting's date
-and the lines it covers (`### ۱۴۰۵/۰۶/۰۱ · L213–L252`). The engine chose them by what your
-candidates are named; they are not the whole meeting, and what is not here is read by another unit.
-Cite a passage by the transcript path printed with it and the lines you used.
+run's meetings that talk about your tables, items and columns, each headed by the meeting's date,
+the lines it covers and the transcript it is from
+(`### ۱۴۰۵/۰۶/۰۱ · L213–L252 · meetings/transcripts/preparation-1405-06-01.txt`). The engine chose
+them by what your candidates are named; they are not the whole meeting, and what is not here is
+read by another unit. Cite a passage by **the transcript path printed in its heading**, and by
+lines that lie **inside that passage** — the engine drops a citation to talk it did not print for
+you, silently and with no entry of its own.
 
 **`## آنچه تا کنون ثبت شده`** — a transcript unit's input carries it where the reuse slice used to
 sit: every entry the form units of this run already recorded, one line each — `handle · kind · key ·
@@ -134,11 +137,17 @@ already owes for a refusal, listed in `retry` like the refused ones.
   the two.
 - **Form first.** For a workbook or attachment unit, the table's columns and values are the file's
   or the photo's; the talk fills what the file does not state — titles, units, cadence, holder,
-  thresholds, aliases — and is cited as a `voice` source with its lines. When the talk states a
-  value the form contradicts, the form's value is written and the spoken value becomes an `account`
-  on the same entry:
-  `{"path": "…", "value": …, "source": {"type": "voice", "ref": "<transcript path as printed>", "lines": "a-b"}}`.
-  Never a second entry for it.
+  thresholds, aliases — and is cited as a `voice` source with its lines: a decision or a `new[]`
+  entry may carry
+  `"voice": [{"ref": "<transcript path printed in the passage heading>", "lines": "a-b"}]`,
+  one member per passage you used. The engine appends them to `source[]` after the sheet or the
+  photo, which stays first. When the talk states a value the form contradicts, the form's value is
+  written and the spoken value becomes an `account` on the same entry:
+  `{"path": "…", "value": …, "source": {"type": "voice", "ref": "<transcript path printed in the passage heading>", "lines": "a-b"}}`,
+  and the engine records the form's own value beside it as the second side, so the owner may keep
+  either. Never a second entry for it.
+  In both, the lines must lie inside one passage `## گفت‌وگوهای مرتبط` printed for **this** unit;
+  a range that reaches past it, or a transcript you were shown no line of, is dropped.
 - `branches` is written only when the source itself names a branch. A sheet-derived entry needs none
   — the engine derives it from the instances.
 
