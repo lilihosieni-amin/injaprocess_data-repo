@@ -1,0 +1,739 @@
+{
+  "schema_version": 2,
+  "entries": [
+    {
+      "kind": "note",
+      "key": "note_22ed2082d9ba",
+      "title": "ابهام در ضریب تبدیل قارچ، فلفل دلمه‌ای و پاستا",
+      "statement": "برای قارچ و فلفل دلمه‌ای وزن پیش و پس از ریز کردن یکسان است و ضریب تبدیلی برای آن‌ها در نظر گرفته نمی‌شود، ولی وزن پاستا هنگام پخت تغییر می‌کند. روشن نیست ضریب تبدیل این اقلام ثبت می‌شود یا نه.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-05-28-02.txt",
+          "lines": "1-117",
+          "hash": "sha256:b6b6c0e5358cb64b0f4d13b61be777e44578f68adb055fe58e56c5001d081b57",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00060"
+          }
+        ],
+        "question": "برای کدام اقلام آماده‌سازی ضریب تبدیل ثبت می‌شود و قارچ، فلفل دلمه‌ای و پاستا در کدام دسته قرار می‌گیرند؟"
+      },
+      "id": "F-00201",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_b7debe423f74",
+      "title": "محل ثبت وزن‌های فرم تبدیل",
+      "statement": "لاین‌ها وزن ورودی، خروجی و ضایعات را روی فرم کاغذی می‌نویسند و فرم تکمیل‌شده را به سرپرست آماده‌سازی می‌دهند. روشن نیست این وزن‌ها بعداً در کدام محل ثبت بازدهی و ضایعات وارد می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-05-28-02.txt",
+          "lines": "1-117",
+          "hash": "sha256:b6b6c0e5358cb64b0f4d13b61be777e44578f68adb055fe58e56c5001d081b57",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00060"
+          },
+          {
+            "ref": "F-00064"
+          }
+        ],
+        "question": "وزن‌های ورودی، خروجی و ضایعات که روی فرم کاغذی لاین‌ها نوشته می‌شود، در کدام محل ثبت بازدهی یا ضایعات وارد می‌شود؟"
+      },
+      "id": "F-00202",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_0212bc84e38a",
+      "title": "مسئول پر کردن فرم نیازهای آماده‌سازی",
+      "statement": "فرم درخواست اقلام آماده‌سازی یکی است و هر لاین نیازهای خودش را در همان می‌نویسد؛ پر کردن آن به سرپرست محدود نیست ولی بررسی نهایی بر عهدهٔ سرپرست آماده‌سازی است. باید روشن شود این توضیح به همین سیاهه مربوط است یا به فرم دیگری.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-003.json",
+          "node": "preparation-003-n017",
+          "quote": "هر لاینی جدا پر می‌کنه",
+          "hash": "sha256:4aa597e2577ece4ba46364842fb0b73243ba480bbad414863ab2c7689e6069e0",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00062"
+          }
+        ],
+        "question": "آیا هر لاین بخش خودش را در همین فرم مشترک می‌نویسد و سرپرست آماده‌سازی آن را بررسی می‌کند؟"
+      },
+      "id": "F-00203",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_788e1f214752",
+      "title": "محل ثبت نیازهای روزانهٔ دریافتی از انبار",
+      "statement": "روشن نیست نیازهای روزانه‌ای که انبار روی برگهٔ کاغذی به آماده‌سازی می‌دهد، در همان جدول ورودی آماده‌سازی از انبار ثبت می‌شود یا جدا از آن نگهداری می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-05-28.txt",
+          "lines": "1-150",
+          "hash": "sha256:158ef6036b07131e4f7d1b6d144b45862a2c111e0cee54dcc89129fc5ad4f280",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00063"
+          }
+        ],
+        "question": "نیازهای روزانه‌ای که انبار ساعت ده و بیست دقیقه روی برگهٔ کاغذی تحویل آماده‌سازی می‌دهد، در همین جدول ثبت می‌شود یا جدا از آن می‌ماند؟"
+      },
+      "id": "F-00204",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_6a46b7e5cb2b",
+      "title": "ابهام وزن بستهٔ مرغ پیتزا",
+      "statement": "وزن بستهٔ مرغ پیتزای پخته که به انبار تحویل می‌شود در دو مقدار متفاوت بیان شده است و باید مشخص شود کدام مقدار مبنای بسته‌بندی است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-05-28.txt",
+          "lines": "151-300",
+          "hash": "sha256:158ef6036b07131e4f7d1b6d144b45862a2c111e0cee54dcc89129fc5ad4f280",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00059"
+          }
+        ],
+        "question": "بستهٔ مرغ پیتزای پختهٔ تحویلی به انبار دو کیلوگرمی است یا چهار کیلوگرمی؟"
+      },
+      "id": "F-00205",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_21fefabd6d65",
+      "title": "تکلیف کاهوی کرم‌دار در ثبت ضایعات",
+      "statement": "دربارهٔ اینکه کاهوی کرم‌خورده جزو ضایعات ثبت‌شده به شمار می‌آید یا جدا از ظرف ضایعات دور ریخته می‌شود، دو برداشت متفاوت در آماده‌سازی وجود دارد و باید یکی از آن‌ها تثبیت شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-01.txt",
+          "lines": "1-212",
+          "hash": "sha256:fc7d9f14ad8514931d243e838aaa563a319ceaf543eee3bc472a1c0f74e77607",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00064"
+          }
+        ],
+        "question": "کاهوی کرم‌خورده در وزن ضایعات ثبت می‌شود یا جدا از ضایعات و بدون ثبت دور ریخته می‌شود؟"
+      },
+      "id": "F-00206",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_2b95b3d446f9",
+      "title": "اقلام وزنی لازم در ثبت روزانهٔ کاهو",
+      "statement": "فهرست وزن‌هایی که باید برای کاهو در ثبت روزانه نوشته شود — وزن ورودی، وزن خردشده و شسته‌شده، وزن پاک‌شده و وزن ضایعات — هنوز نهایی نشده است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-01.txt",
+          "lines": "1-212",
+          "hash": "sha256:fc7d9f14ad8514931d243e838aaa563a319ceaf543eee3bc472a1c0f74e77607",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00059"
+          }
+        ],
+        "question": "کدام وزن‌های کاهو و در چند قلم باید در ثبت روزانهٔ لاین سبزیجات نوشته شود و این ثبت با خروجی آماده‌سازی به انبار یکی است؟"
+      },
+      "id": "F-00207",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_9b959de01e51",
+      "title": "ابهام دفتر روزانهٔ لاین",
+      "statement": "مسئول هر لاین اقلام و وزن‌های روز را در یک دفتر دست‌نویس ثبت و هر روز به مسئول کیفیت تحویل می‌دهد؛ نسبت این دفتر با سابقهٔ بازدهی و سابقهٔ ضایعات روشن نیست.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-004.json",
+          "node": "preparation-004-n013",
+          "quote": "توی دفتر دارم می‌نویسم هر روز یادداشت می‌کنم",
+          "hash": "sha256:70b8f4dc621113c39f3bcf2462f1331a0dbad452f7705c71a35763976d42c49f",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00060"
+          },
+          {
+            "ref": "F-00064"
+          }
+        ],
+        "question": "دفتر دست‌نویس روزانه‌ای که مسئول هر لاین پر می‌کند و به مسئول کیفیت تحویل می‌دهد، همان سابقهٔ بازدهی است یا سندی جداگانه؟ چه اقلام و مقادیری در آن ثبت می‌شود؟"
+      },
+      "id": "F-00208",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_0ec3d6cfffa5",
+      "title": "ثبت ضایعات مرغ کبود لاین پیتزا",
+      "statement": "قسمت‌های کبود و خون‌مردهٔ مرغ پیش از چیدن در سینی کنار گذاشته می‌شوند و پخته نمی‌شوند، و مقدار آن‌ها در فرم تحویل لاین وارد می‌شود. روشن نیست همین مقدار جدا از ضایعات سایر لاین‌ها هم ثبت می‌شود یا نه.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n006",
+          "quote": "ضایعات لیبل‌خورده در یخچال اختصاصی",
+          "hash": "sha256:664d3ae91bd5908066ef7f9f2f77b002d63710d3a2f02fe76cd01cbfe5c3bbb2",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00064"
+          }
+        ],
+        "question": "مرغ کبود و خون‌مردهٔ کنارگذاشته‌شده در لاین مرغ پیتزا با چه وزنی و ذیل کدام قلم در ثبت ضایعات وارد می‌شود؟"
+      },
+      "id": "F-00209",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_36463cd6b99e",
+      "title": "پرسش دربارهٔ افزایش وزن خروجی به سبب مرینت",
+      "statement": "وزن استیک و فیلادلفیای تحویلی به انبار به سبب مرینت از وزن گوشت خام دریافتی بیشتر می‌شود و تطبیق ورودی و خروجی آماده‌سازی را به هم می‌زند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
+          "lines": "1-158",
+          "hash": "sha256:45b8ecae3d03200501e93d22a48b6cc3ad748bfb64bffffdddaa4c7214120edf",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00059"
+          },
+          {
+            "ref": "F-00063"
+          }
+        ],
+        "question": "افزایش وزن ناشی از مرینت هنگام تطبیق ورودی و خروجی آماده‌سازی چگونه کنار گذاشته یا محاسبه می‌شود؟"
+      },
+      "id": "F-00210",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_6fc18b280706",
+      "title": "پرسش دربارهٔ جای ثبت تبدیل راسته",
+      "statement": "لاین گوشت تبدیل هر راستهٔ کامل به استیک، فیلادلفیا، خرده راسته و ضایعات را روی فرم کاغذی می‌نویسد و روشن نیست همان داده جای دیگری هم برای سنجش بازدهی ثبت می‌شود یا نه.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
+          "lines": "1-158",
+          "hash": "sha256:45b8ecae3d03200501e93d22a48b6cc3ad748bfb64bffffdddaa4c7214120edf",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00060"
+          }
+        ],
+        "question": "آیا نسبت تبدیل راسته و بازدهی رست‌بیف در همان جایی که بازدهی لاین‌ها ثبت می‌شود نگه داشته می‌شود، یا فقط روی فرم کاغذی لاین گوشت می‌ماند؟"
+      },
+      "id": "F-00211",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_3b61a6c56c79",
+      "title": "درج وزن روی لیبل بسته‌های تعدادی",
+      "statement": "دربارهٔ اینکه روی لیبل بسته‌های تعدادی مانند لقمه و فیله، علاوه بر تعداد، وزن هم درج می‌شود یا نه، پاسخ‌های یکسانی داده نشد و مبنای ثبت روشن نیست.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-04.txt",
+          "lines": "1-205",
+          "hash": "sha256:cd6d82e4fab1293439a9807b5648e7c47e7ba388a221ba5cf4235ad4e1296c01",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00059"
+          }
+        ],
+        "question": "روی لیبل بسته‌های تعدادی (لقمه و فیله) فقط تعداد درج می‌شود یا وزن و تاریخ هم روی همان لیبل ثبت می‌شود؟"
+      },
+      "id": "F-00212",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_dbe360d77219",
+      "title": "مسئول پر کردن فرم‌های ورودی و خروجی آماده‌سازی",
+      "statement": "مسئول پر کردن فرم‌های ورودی و خروجی روزانهٔ آماده‌سازی روشن نیست: در فرایندهای ثبت‌شده مسئول هر لاین وزن و تعداد اقلام تحویل‌گرفته‌شده را در دفتر اختصاصی همان لاین ثبت می‌کند، اما سرپرست آماده‌سازی پر کردن این فرم‌ها را بر عهدهٔ خود می‌داند. تعیین این مسئولیت برای مشخص کردن پرکنندهٔ هر فرم لازم است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-004.json",
+          "node": "preparation-004-n013",
+          "quote": "ثبت وزن و تعداد اقلام تحویل‌گرفته‌شده در دفتر مخصوص هر لاین",
+          "hash": "sha256:70b8f4dc621113c39f3bcf2462f1331a0dbad452f7705c71a35763976d42c49f",
+          "run": "runs/facts/preparation/20260914-064020"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n016",
+          "quote": "ثبت مستقل شمارش و وزن‌گیری آماده‌سازی در فرم اختصاصی این واحد",
+          "hash": "sha256:664d3ae91bd5908066ef7f9f2f77b002d63710d3a2f02fe76cd01cbfe5c3bbb2",
+          "run": "runs/facts/preparation/20260914-064020"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-017.json",
+          "node": "preparation-017-n024",
+          "quote": "تحویل فرم‌های تکمیل‌شده به سرپرست آماده‌سازی",
+          "hash": "sha256:d77039c788fc575235300064893d26c47f7d1e4ab3a4de6caaa5eda4e795f8bb",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00063"
+          },
+          {
+            "ref": "F-00059"
+          }
+        ],
+        "question": "فرم‌های ورودی و خروجی آماده‌سازی را مسئول هر لاین پر می‌کند یا سرپرست آماده‌سازی؟"
+      },
+      "id": "F-00213",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_38209f32fc6d",
+      "title": "پرسش دربارهٔ تفکیک دستی تبدیل راسته",
+      "statement": "از یک محمولهٔ راستهٔ پاک‌نشده هم استیک رولی و هم فیلادلفیا به دست می‌آید، اما هر محصول برگهٔ تبدیل جداگانه دارد و کارکنان سهم هر محصول و ضایعات آن را دستی از وزن کل کسر می‌کنند. راستهٔ پاک‌شده تنها به استیک رولی تبدیل می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-020.json",
+          "node": "preparation-020-n022",
+          "quote": "خودمون تفکیک می‌کنیم دستی می‌شه",
+          "hash": "sha256:c065ef261ace264587bebc710d7977d2bc1c549f98d5699cedea0b1d03e01638",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00060"
+          },
+          {
+            "ref": "F-00064"
+          }
+        ],
+        "question": "آیا تبدیل راستهٔ پاک‌نشده به استیک رولی و فیلادلفیا باید در یک برگهٔ واحد ثبت شود تا کسر دستی وزن‌ها و تفکیک دستی ضایعات حذف شود؟"
+      },
+      "id": "F-00214",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_05732657b085",
+      "title": "پرسش دربارهٔ ثبت مقدار تولید درخواستی انبار",
+      "statement": "مقدار تولیدی که انبار از آماده‌سازی می‌خواهد، مانند وزن مرغ یا تعداد برگر، فقط شفاهی اعلام می‌شود و جای مکتوبی ندارد؛ پیشنهاد شده است این مقدارها ذیل لیست مرینت روزانه نوشته شود تا هر روز از شب قبل روشن باشد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-10.txt",
+          "lines": "154-306",
+          "hash": "sha256:1e3b2baf89a5ddab872162cf0e6153dbe2259c374bcc349f7fa1ca20f3c287db",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00059"
+          }
+        ],
+        "question": "مقدار تولید درخواستی انبار برای هر لاین کجا و توسط چه کسی به صورت مکتوب ثبت می‌شود؟"
+      },
+      "id": "F-00215",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_fbace90b9cae",
+      "title": "پرسش دربارهٔ تأییدیهٔ تحویل بار از انبار",
+      "statement": "تحویل بار از انبار به لاین‌ها امضا یا تأییدیهٔ مکتوب ندارد و وزن‌گیری تحویل در هیچ فرمی ثبت نمی‌شود؛ در نتیجه مغایرت وزن یا خرابی بار فقط شفاهی اعلام می‌شود و انبار هم برای کنترل بار منتظر نمی‌ماند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-10.txt",
+          "lines": "154-306",
+          "hash": "sha256:1e3b2baf89a5ddab872162cf0e6153dbe2259c374bcc349f7fa1ca20f3c287db",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00063"
+          }
+        ],
+        "question": "آیا وزن و سلامت بار تحویل‌گرفته‌شده از انبار باید در فرمی ثبت و امضا شود؟"
+      },
+      "id": "F-00216",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_fab1c0e7e788",
+      "title": "پرسش دربارهٔ مبنای وزن ورودی ثبت‌شده",
+      "statement": "آماده‌سازی هر قلم را خودش وزن می‌کند و همان وزن را مبنا می‌گیرد، ولی روشن نیست عددی که در ثبت ورودی می‌نشیند وزن اندازه‌گرفته‌شدهٔ آماده‌سازی است یا وزن اعلامی انبار.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-10.txt",
+          "lines": "307-553",
+          "hash": "sha256:1e3b2baf89a5ddab872162cf0e6153dbe2259c374bcc349f7fa1ca20f3c287db",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00063"
+          }
+        ],
+        "question": "عدد ثبت‌شده به عنوان ورودی آماده‌سازی، وزن اندازه‌گرفته‌شده در آماده‌سازی است یا وزن اعلامی انبار؟"
+      },
+      "id": "F-00217",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_60248a20ee75",
+      "title": "پرسش دربارهٔ اصلاح لیبل اشتباه خروجی",
+      "statement": "گاهی هنگام لیبل زدن، شمارهٔ مادهٔ غذایی اشتباه زده می‌شود و چون خروجی آماده‌سازی ورودی آشپزخانه است، این خطا به مغایرت می‌انجامد؛ روش اصلاح آن در ثبت خروجی روشن نیست.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-10.txt",
+          "lines": "307-553",
+          "hash": "sha256:1e3b2baf89a5ddab872162cf0e6153dbe2259c374bcc349f7fa1ca20f3c287db",
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00059"
+          }
+        ],
+        "question": "وقتی لیبل خروجی با کد اشتباه زده شود، اصلاح آن چگونه و در کدام ثبت انجام می‌شود و آیا ثبت اولیه جایگزین می‌شود؟"
+      },
+      "id": "F-00218",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_88b751faa950",
+      "title": "مبنای ثبت مقدار خمیر",
+      "statement": "مشخص نیست مقدار خمیر آمریکایی و ایتالیایی بر حسب تعداد چانه ثبت می‌شود یا وزن، و واحد ثبت آن روشن نشده است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00061"
+          }
+        ],
+        "question": "مقدار خمیر آمریکایی و ایتالیایی بر حسب تعداد چانه ثبت می‌شود یا بر حسب وزن؟"
+      },
+      "id": "F-00219",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_8185ffa821f2",
+      "title": "معنای هدف و تحقق آف اجرایی",
+      "statement": "معنای تعداد هدف و تعداد نفرات تحقق‌یافته در آف اجرایی و مسئول ثبت روزانهٔ آن از منبع موجود روشن نیست.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/preparation/20260914-064020"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00065"
+          }
+        ],
+        "question": "منظور از تعداد هدف و تعداد نفر کسب‌شده در آف اجرایی چیست و ثبت روزانهٔ آن بر عهدهٔ چه نقشی است؟"
+      },
+      "id": "F-00220",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-14T08:39:49Z"
+    }
+  ]
+}

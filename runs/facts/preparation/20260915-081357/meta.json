@@ -1,0 +1,18 @@
+{
+  "department": "preparation",
+  "origin": "chat",
+  "actor": "owner",
+  "started_at": "2026-09-15T08:13:57Z",
+  "finished_at": "2026-09-15T08:20:00Z",
+  "recordings": [],
+  "attachments": [
+    "departments/preparation/attachments/photo-AQADghBrGz8GSFF-.jpg"
+  ],
+  "workbooks": [],
+  "delta": "runs/facts/preparation/20260915-081357/facts-delta.json",
+  "merged": true,
+  "ids_created": [
+    "F-00221"
+  ],
+  "instruction": "من یه فرم جدید به بخش اماده سازی اضافه کردم.میخوام اینو فقط به دیتای کمی اضافه کنی"
+}

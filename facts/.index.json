@@ -1711,6 +1711,33 @@
       "updated_at": "2026-09-14T08:39:49Z"
     },
     {
+      "id": "F-00221",
+      "kind": "record",
+      "key": "list_tahvil_nimsakht_morgh_goje",
+      "title": "لیست تحویل مرغ و گوجهٔ نیم‌ساخته به انبار",
+      "aliases": [
+        "لیست مرغ و گوجه نیم ساخته"
+      ],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 21,
+        "informal": 0,
+        "inferred": 16
+      },
+      "processes": [],
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-15T08:18:22Z"
+    },
+    {
       "id": "F-00066",
       "kind": "measurement",
       "key": "vazn_zayeat_tahvili_be_anbar",
