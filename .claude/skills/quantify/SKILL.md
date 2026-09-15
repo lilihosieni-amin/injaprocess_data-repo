@@ -240,7 +240,9 @@ one of them — or that a chosen transcript range or an attachment was placed in
 file. Report any of them in Persian and stop. Yield check, then Stage U in the same turn.
 
 A plan is immutable: `build` refuses to replace one whose units have already produced output, and
-`--rebuild` is the only way to renumber them.
+`--rebuild` is the only way to renumber them. `plan.json` and the unit ids are what is immutable; a
+unit's `input.md` may be rewritten by the engine, and only when phase 1 ends, and only for a unit
+that has not run.
 
 ---
 

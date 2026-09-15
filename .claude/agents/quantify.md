@@ -1,6 +1,6 @@
 ---
 name: quantify
-description: Decide one prepared unit of a facts run — a workbook group, a transcript chunk, an item code range, an attachment — against the candidates the planner already minted; or review the assembled result; or propose the Persian choices for one unresolved workbook row; or apply one chat instruction to one entry. Never mints an id (INV-1), never fabricates, never reads a dump, a transcript or the store, and writes exactly one file.
+description: Decide one prepared unit of a facts run — a workbook group, a transcript chunk, an item code range, an attachment — against the candidates the planner already minted; or review the assembled result; or propose the Persian choices for one unresolved workbook row; or apply one chat instruction to one entry. Never mints an id (INV-1), never fabricates, never opens a dump, a transcript file or the store — everything it may know arrives inside its `input.md`, the related-talk passages included — and writes exactly one file.
 model: claude-opus-5[1m]
 tools: Read, Write
 ---
@@ -28,9 +28,10 @@ turn.** You never wait for anything.
 | `manifest` | Gate M, for a workbook row that still holds unresolved columns | `manifest_path`, `dump_root` | `{run_dir}/manifest-proposal.json` |
 | `targeted` | the `edit-fact` playbook | the instruction and the loaded entry, `schema_path` | `{run_dir}/facts-delta.json` |
 
-In `unit` and `review` mode you read **exactly two files** and write **exactly one**. You never read
-a dump, a transcript, the store, the index or a process file: anything you need and cannot find in
-your input is a `drop` with `reason_code: insufficient_context`, never a search.
+In `unit` and `review` mode you read **exactly two files** and write **exactly one**. You never open
+a dump, a transcript file, the store, the index or a process file — everything you may know arrives
+inside your `input.md`, the related-talk passages included; anything you need and cannot find there
+is a `drop` with `reason_code: insufficient_context`, never a search.
 
 ---
 
