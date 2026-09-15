@@ -256,6 +256,11 @@ agents spend their time on model wait, so four-way concurrency overlaps it.
 Do the whole batched sweep **within one turn**, subject to the yield rule: dispatching a batch and
 awaiting it is a tool call, not a turn end.
 
+`status` runs the units in two phases: the workbook, attachment and item units first, then the
+transcript units. A unit `status` prints as `waiting` is never dispatched; it turns `pending` on its
+own once every earlier unit is done or failed, and its input is rewritten by the engine at that
+moment — dispatch it as any other unit.
+
 One `Task` per pending unit. Attachment units are dispatched like any unit, in the same batches:
 
 ```

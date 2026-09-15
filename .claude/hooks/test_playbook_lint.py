@@ -241,6 +241,36 @@ def test_stage_u_states_the_two_caps_as_the_engine_s():
     assert "You never continue past a `yield: true`" in text
 
 
+# The two phases (design 2026-09-15 §3): the forms are decided first, with the
+# meeting passages about them beside them, and the transcripts are read after,
+# knowing what the forms recorded. Each sentence below is a mechanical rule of
+# the engine — the `waiting` state, the two input sections, the account a unit
+# writes instead of a second entry, and which source wins a merge.
+
+def test_stage_u_never_dispatches_a_waiting_unit():
+    stage = " ".join(STAGE_U.search(PLAYBOOK.read_text(encoding="utf-8")).group(0).split())
+    assert "A unit `status` prints as `waiting` is never dispatched" in stage
+
+
+def test_the_agent_reads_the_talk_beside_the_form_and_keeps_the_forms_value():
+    agent = " ".join(AGENT.read_text(encoding="utf-8").split())
+    assert "## گفت‌وگوهای مرتبط" in agent
+    assert "the table's columns and values are the file's or the photo's" in agent
+    assert "the spoken value becomes an `account` on the same entry" in agent
+
+
+def test_the_agent_attaches_speech_to_a_listed_table_before_describing_a_new_one():
+    agent = " ".join(AGENT.read_text(encoding="utf-8").split())
+    assert "## آنچه تا کنون ثبت شده" in agent
+    assert "describe a new table only when no listed table fits" in agent
+
+
+def test_review_mode_keeps_the_entry_read_off_a_form():
+    assert (
+        "when two entries merge, the one read off a form is the keeper"
+    ) in agent_section("`review` mode")
+
+
 def agent_section(heading):
     """One `###` section of the agent file, flattened to a single line.
 

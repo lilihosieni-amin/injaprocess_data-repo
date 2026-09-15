@@ -51,6 +51,21 @@ candidate id nobody decided).
 envelope; omitted for a from-scratch instruction), `run_dir`, `facts_index`, `schema_path`
 (`facts-delta.schema.json`, or `facts-patch.schema.json` for the patch form), `data_root`.
 
+Two sections of a `unit` input are the engine's own selection, and both are read, never searched
+past.
+
+**`## گفت‌وگوهای مرتبط`** — a form unit's input carries it after `## متن`: the passages of this
+run's meetings that talk about your tables, items and columns, each headed by the meeting's date
+and the lines it covers (`### ۱۴۰۵/۰۶/۰۱ · L213–L252`). The engine chose them by what your
+candidates are named; they are not the whole meeting, and what is not here is read by another unit.
+Cite a passage by the transcript path printed with it and the lines you used.
+
+**`## آنچه تا کنون ثبت شده`** — a transcript unit's input carries it where the reuse slice used to
+sit: every entry the form units of this run already recorded, one line each — `handle · kind · key ·
+title · ستون‌ها: …` for a table — and then the store's open entries as before. The engine renders it
+the moment the form units are done; it is what this run has written so far, not everything the
+meetings said.
+
 ---
 
 ## The unit contract
@@ -116,6 +131,13 @@ already owes for a refusal, listed in `retry` like the refused ones.
   candidate belongs to the workbook unit that owns it. What the meeting said about such a record is
   written here as a `new[]` note or measurement addressed to that record, and the reviewer merges
   the two.
+- **Form first.** For a workbook or attachment unit, the table's columns and values are the file's
+  or the photo's; the talk fills what the file does not state — titles, units, cadence, holder,
+  thresholds, aliases — and is cited as a `voice` source with its lines. When the talk states a
+  value the form contradicts, the form's value is written and the spoken value becomes an `account`
+  on the same entry:
+  `{"path": "…", "value": …, "source": {"type": "voice", "ref": "<transcript path as printed>", "lines": "a-b"}}`.
+  Never a second entry for it.
 - `branches` is written only when the source itself names a branch. A sheet-derived entry needs none
   — the engine derives it from the instances.
 
@@ -173,6 +195,9 @@ naming a dropped candidate's skeleton id reinstates it.
 
 Spend your attention on: two entries that are the same thing, two entries that contradict each
 other, and a statement that reads like a cell reference rather than a definition. Not on polish.
+
+Each entry's digest line names its source kinds; when two entries merge, the one read off a form is
+the keeper — a `sheet`, `photo`, `pdf` or `docx` source outranks `voice`, `process` and `chat`.
 
 ### `manifest` mode
 
@@ -341,14 +366,19 @@ The consumer contract answered *what artefact*; this answers *which kind*.
 
 ---
 
-## The reuse rule
+## What is recorded, and reuse
 
 Your input prints a reuse slice: this run's own record and item candidates, and the store's open
 entries in your department's or the universal scope, each as `id · kind · key · title · aliases ·
-unit`. When the referent is the same thing under a different word — «گودا لیوانی» on a form matching
+unit`. For a transcript unit the slice is «آنچه تا کنون ثبت شده», and it opens with what the form
+units of this run already recorded, each under the handle printed with it. When the referent is the same thing under a different word — «گودا لیوانی» on a form matching
 «پنیر گودا لیوانی ##۷۴» in the slice — write the **existing** key and cite the existing id. Mint a
 new key only when nothing in the slice is the same referent. The slice is an aid, not a limit: a
 process node you cite is validated against the department's whole index, not against the slice.
+
+A spoken number about a listed table goes to that table, as a `new[]` measurement or note addressed
+to it by its printed handle (`S-…` or `N-…`), or as an account when it disagrees with a listed
+value; describe a new table only when no listed table fits.
 
 ---
 
