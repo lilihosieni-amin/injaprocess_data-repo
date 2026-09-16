@@ -241,6 +241,55 @@ def test_stage_u_states_the_two_caps_as_the_engine_s():
     assert "You never continue past a `yield: true`" in text
 
 
+# The two phases (design 2026-09-15 §3): the forms are decided first, with the
+# meeting passages about them beside them, and the transcripts are read after,
+# knowing what the forms recorded. Each sentence below is a mechanical rule of
+# the engine — the `waiting` state, the two input sections, the account a unit
+# writes instead of a second entry, and which source wins a merge.
+
+def test_stage_u_never_dispatches_a_waiting_unit():
+    stage = " ".join(STAGE_U.search(PLAYBOOK.read_text(encoding="utf-8")).group(0).split())
+    assert "A unit `status` prints as `waiting` is never dispatched" in stage
+
+
+def test_the_agent_reads_the_talk_beside_the_form_and_keeps_the_forms_value():
+    agent = " ".join(AGENT.read_text(encoding="utf-8").split())
+    assert "## گفت‌وگوهای مرتبط" in agent
+    assert "the table's columns and values are the file's or the photo's" in agent
+    assert "the spoken value becomes an `account` on the same entry" in agent
+
+
+def test_the_agent_cites_a_passage_by_the_path_in_its_heading():
+    """The engine admits a citation only for the transcript the passage heading
+    prints, and only for lines inside that passage — the agent has to be told
+    both, or every account it writes is dropped."""
+    agent = " ".join(AGENT.read_text(encoding="utf-8").split())
+    assert "the transcript path printed in its heading" in agent
+    assert "inside that passage" in agent
+    assert "lines must lie inside one passage" in agent
+
+
+def test_the_agent_knows_the_voice_list_and_its_shape():
+    """Spec §3: the talk that filled in what the form does not state is cited
+    as the meeting, beside the sheet and never instead of it."""
+    agent = " ".join(AGENT.read_text(encoding="utf-8").split())
+    assert ('"voice": [{"ref": "<transcript path printed in the passage '
+            'heading>", "lines": "a-b"}]') in agent
+    assert "appends them to `source[]` after the sheet or the photo" in agent
+
+
+def test_the_agent_attaches_speech_to_a_listed_table_before_describing_a_new_one():
+    agent = " ".join(AGENT.read_text(encoding="utf-8").split())
+    assert "## آنچه تا کنون ثبت شده" in agent
+    assert "describe a new table only when no listed table fits" in agent
+
+
+def test_review_mode_keeps_the_entry_read_off_a_form():
+    assert (
+        "when two entries merge, the one read off a form is the keeper"
+    ) in agent_section("`review` mode")
+
+
 def agent_section(heading):
     """One `###` section of the agent file, flattened to a single line.
 
@@ -390,3 +439,43 @@ def test_the_unit_contract_admits_a_column_group_and_attachment_units():
     section = agent_section("What you decide, per kind")
     assert "may carry `group: {key, title}`" in section
     assert "**An attachment unit** — `نوع: attachment`, zero candidates" in section
+
+
+def test_the_agent_cites_the_file_an_entry_was_read_off():
+    """Task G 2026-09-16: a unit handed several photos must name the one an
+    entry came off, or the engine credits the entry to all of them."""
+    text = " ".join(AGENT.read_text(encoding="utf-8").split())
+    assert "each file's text is headed by its name and path" in text
+    assert ('an entry read off a photo or document cites it as '
+            '`from: ["<path exactly as printed>"]` — one path, or more only '
+            'when the entry spans several files; a path not printed in your '
+            'input is dropped') in text
+
+
+def test_the_agent_looks_at_the_photo_for_structure_and_keeps_the_description():
+    """Task H 2026-09-16: the extracted description is the source; the image is
+    opened only to see the structure it cannot spell, and a difference is a note
+    rather than a rewrite."""
+    text = " ".join(AGENT.read_text(encoding="utf-8").split())
+    assert "the form photos your own headings name as `عکس:`" in text
+    assert ("For every file whose heading names a `عکس:` path, open that image "
+            "too (the Read tool) and use it only to understand the table's "
+            "structure") in text
+    assert ("The description printed under the heading is the source and has "
+            "priority") in text
+    assert "do not change the description's reading; add a `new[]` note" in text
+    # QF-50 reserves «ستون» for a record's own statement, so the example
+    # note the agent copies must not use it.
+    assert "«در عکس، «فیله» دو خانهٔ واحد دارد: کیلو و عدد.»" in text
+    assert "ستون" not in text.split("open that image too")[1].split("never another file")[0]
+    assert "Open only the images your headings name — never another file." in text
+
+
+def test_the_unit_contract_spells_a_new_entrys_own_handle():
+    """A note about a form the same document writes has to name it, and
+    `N-<unit>-<index>` was nowhere the unit could read it."""
+    text = " ".join(AGENT.read_text(encoding="utf-8").split())
+    assert ("A `new[]` entry of this document is addressed as "
+            "`N-<unit id>-<index>`, the index counted from 0 in `new[]` "
+            "(`N-u-att-1-0` is the first)") in text
+    assert "exactly as printed in «آنچه تا کنون ثبت شده»" in text

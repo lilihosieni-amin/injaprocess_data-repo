@@ -240,7 +240,9 @@ one of them — or that a chosen transcript range or an attachment was placed in
 file. Report any of them in Persian and stop. Yield check, then Stage U in the same turn.
 
 A plan is immutable: `build` refuses to replace one whose units have already produced output, and
-`--rebuild` is the only way to renumber them.
+`--rebuild` is the only way to renumber them. `plan.json` and the unit ids are what is immutable; a
+unit's `input.md` may be rewritten by the engine, and only when phase 1 ends, and only for a unit
+that has not run.
 
 ---
 
@@ -255,6 +257,11 @@ agents spend their time on model wait, so four-way concurrency overlaps it.
 
 Do the whole batched sweep **within one turn**, subject to the yield rule: dispatching a batch and
 awaiting it is a tool call, not a turn end.
+
+`status` runs the units in two phases: the workbook, attachment and item units first, then the
+transcript units. A unit `status` prints as `waiting` is never dispatched; it turns `pending` on its
+own once every earlier unit is done or failed, and its input is rewritten by the engine at that
+moment — dispatch it as any other unit.
 
 One `Task` per pending unit. Attachment units are dispatched like any unit, in the same batches:
 

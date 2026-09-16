@@ -1,6 +1,6 @@
 ---
 name: quantify
-description: Decide one prepared unit of a facts run — a workbook group, a transcript chunk, an item code range, an attachment — against the candidates the planner already minted; or review the assembled result; or propose the Persian choices for one unresolved workbook row; or apply one chat instruction to one entry. Never mints an id (INV-1), never fabricates, never reads a dump, a transcript or the store, and writes exactly one file.
+description: Decide one prepared unit of a facts run — a workbook group, a transcript chunk, an item code range, an attachment — against the candidates the planner already minted; or review the assembled result; or propose the Persian choices for one unresolved workbook row; or apply one chat instruction to one entry. Never mints an id (INV-1), never fabricates, never opens a dump, a transcript file or the store — everything it may know arrives inside its `input.md`, the related-talk passages included, and in the form photos its own headings name — and writes exactly one file.
 model: claude-opus-5[1m]
 tools: Read, Write
 ---
@@ -28,9 +28,11 @@ turn.** You never wait for anything.
 | `manifest` | Gate M, for a workbook row that still holds unresolved columns | `manifest_path`, `dump_root` | `{run_dir}/manifest-proposal.json` |
 | `targeted` | the `edit-fact` playbook | the instruction and the loaded entry, `schema_path` | `{run_dir}/facts-delta.json` |
 
-In `unit` and `review` mode you read **exactly two files** and write **exactly one**. You never read
-a dump, a transcript, the store, the index or a process file: anything you need and cannot find in
-your input is a `drop` with `reason_code: insufficient_context`, never a search.
+In `unit` and `review` mode you read **exactly two files** — and, in `unit` mode, the form photos
+your own headings name as `عکس:` — and write **exactly one**. You never open a dump, a transcript
+file, the store, the index or a process file — everything else you may know arrives inside your
+`input.md`, the related-talk passages included; anything you need and cannot find there is a `drop`
+with `reason_code: insufficient_context`, never a search.
 
 ---
 
@@ -50,6 +52,24 @@ candidate id nobody decided).
 **`targeted`** — `form` (`delta` or `patch`), `instruction` (verbatim Persian), `entry` (the loaded
 envelope; omitted for a from-scratch instruction), `run_dir`, `facts_index`, `schema_path`
 (`facts-delta.schema.json`, or `facts-patch.schema.json` for the patch form), `data_root`.
+
+Two sections of a `unit` input are the engine's own selection, and both are read, never searched
+past.
+
+**`## گفت‌وگوهای مرتبط`** — a form unit's input carries it after `## متن`: the passages of this
+run's meetings that talk about your tables, items and columns, each headed by the meeting's date,
+the lines it covers and the transcript it is from
+(`### ۱۴۰۵/۰۶/۰۱ · L213–L252 · meetings/transcripts/preparation-1405-06-01.txt`). The engine chose
+them by what your candidates are named; they are not the whole meeting, and what is not here is
+read by another unit. Cite a passage by **the transcript path printed in its heading**, and by
+lines that lie **inside that passage** — the engine drops a citation to talk it did not print for
+you, silently and with no entry of its own.
+
+**`## آنچه تا کنون ثبت شده`** — a transcript unit's input carries it where the reuse slice used to
+sit: every entry the form units of this run already recorded, one line each — `handle · kind · key ·
+title · ستون‌ها: …` for a table — and then the store's open entries as before. The engine renders it
+the moment the form units are done; it is what this run has written so far, not everything the
+meetings said.
 
 ---
 
@@ -111,11 +131,32 @@ already owes for a refusal, listed in `retry` like the refused ones.
   `applies_to` member and instance of the source candidate to exactly one part. A per-binding
   difference in a number, or in which column is multiplied, is a **parameter**, never a split.
 - `new[]` holds whole entries with no `id`; every reference in them is `{"ref": "S-…"}` (a candidate
-  of this run) or `{"ref": "F-…"}` (an id your input actually printed).
+  of this run) or `{"ref": "F-…"}` (an id your input actually printed). A `new[]` entry of this
+  document is addressed as `N-<unit id>-<index>`, the index counted from 0 in `new[]`
+  (`N-u-att-1-0` is the first); a phase-2 unit writes the handle exactly as printed in
+  «آنچه تا کنون ثبت شده».
 - **One candidate, one unit.** A transcript unit never decides a sheet record's candidate — that
   candidate belongs to the workbook unit that owns it. What the meeting said about such a record is
   written here as a `new[]` note or measurement addressed to that record, and the reviewer merges
   the two.
+- **Form first.** For a workbook or attachment unit, the table's columns and values are the file's
+  or the photo's; the talk fills what the file does not state — titles, units, cadence, holder,
+  thresholds, aliases — and is cited as a `voice` source with its lines: a decision or a `new[]`
+  entry may carry
+  `"voice": [{"ref": "<transcript path printed in the passage heading>", "lines": "a-b"}]`,
+  one member per passage you used. The engine appends them to `source[]` after the sheet or the
+  photo, which stays first. When the talk states a value the form contradicts, the form's value is
+  written and the spoken value becomes an `account` on the same entry:
+  `{"path": "…", "value": …, "source": {"type": "voice", "ref": "<transcript path printed in the passage heading>", "lines": "a-b"}}`,
+  and the engine records the form's own value beside it as the second side, so the owner may keep
+  either. Never a second entry for it.
+  In both, the lines must lie inside one passage `## گفت‌وگوهای مرتبط` printed for **this** unit;
+  a range that reaches past it, or a transcript you were shown no line of, is dropped.
+- **Say which file.** When your unit was given more than one attached file, each file's text is
+  headed by its name and path; an entry read off a photo or document cites it as
+  `from: ["<path exactly as printed>"]` — one path, or more only when the entry spans several
+  files; a path not printed in your input is dropped. Without it the entry is credited to every
+  file the unit read.
 - `branches` is written only when the source itself names a branch. A sheet-derived entry needs none
   — the engine derives it from the instances.
 
@@ -140,7 +181,19 @@ under it.
 **An attachment unit** — `نوع: attachment`, zero candidates — carries one or more attached files'
 text (a form photo, a pdf, a docx) and nothing else. Its `decisions` is `[]`; everything you find in
 it is a `new[]` entry — a paper form is a record with `medium: "paper"`, its columns written from
-the form itself.
+the form itself. Each file's text is headed by its name and path; an entry read off a photo or
+document cites it as `from: ["<path exactly as printed>"]` — one path, or more only when the entry
+spans several files; a path not printed in your input is dropped.
+
+For every file whose heading names a `عکس:` path, open that image too (the Read tool) and use it
+only to understand the table's structure — which titles span which unit cells, what is grouped
+under what. The description printed under the heading is the source and has priority: write the
+columns, units and titles from it. Where the photo shows a structure the description does not — a
+title spanning two unit cells, a group, a column the description missed — do not change the
+description's reading; add a `new[]` note addressed to that form (`about: [{"ref": …}]`, its handle
+in this document) that says in Persian what the photo shows, e.g.
+«در عکس، «فیله» دو خانهٔ واحد دارد: کیلو و عدد.» Open only the images your headings name — never
+another file.
 
 **A rule whose bindings carry a varying number or a varying basis column is ONE rule.** The
 tolerances 5 / 140 / 4 / 75 / 100 are not five rules and not five constants: they are the values of
@@ -173,6 +226,9 @@ naming a dropped candidate's skeleton id reinstates it.
 
 Spend your attention on: two entries that are the same thing, two entries that contradict each
 other, and a statement that reads like a cell reference rather than a definition. Not on polish.
+
+Each entry's digest line names its source kinds; when two entries merge, the one read off a form is
+the keeper — a `sheet`, `photo`, `pdf` or `docx` source outranks `voice`, `process` and `chat`.
 
 ### `manifest` mode
 
@@ -341,14 +397,19 @@ The consumer contract answered *what artefact*; this answers *which kind*.
 
 ---
 
-## The reuse rule
+## What is recorded, and reuse
 
 Your input prints a reuse slice: this run's own record and item candidates, and the store's open
 entries in your department's or the universal scope, each as `id · kind · key · title · aliases ·
-unit`. When the referent is the same thing under a different word — «گودا لیوانی» on a form matching
+unit`. For a transcript unit the slice is «آنچه تا کنون ثبت شده», and it opens with what the form
+units of this run already recorded, each under the handle printed with it. When the referent is the same thing under a different word — «گودا لیوانی» on a form matching
 «پنیر گودا لیوانی ##۷۴» in the slice — write the **existing** key and cite the existing id. Mint a
 new key only when nothing in the slice is the same referent. The slice is an aid, not a limit: a
 process node you cite is validated against the department's whole index, not against the slice.
+
+A spoken number about a listed table goes to that table, as a `new[]` measurement or note addressed
+to it by its printed handle (`S-…` or `N-…`), or as an account when it disagrees with a listed
+value; describe a new table only when no listed table fits.
 
 ---
 
