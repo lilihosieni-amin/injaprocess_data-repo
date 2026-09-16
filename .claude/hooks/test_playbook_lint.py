@@ -517,11 +517,16 @@ def test_every_rule_measurement_and_note_names_its_home():
 
 
 def test_review_mode_may_set_a_home_on_a_homeless_flag():
+    """The line is quoted as `assemble._digest_text` prints it: the flag names
+    the entry the way a decision addresses it, and each candidate table by the
+    temp id a review's `home` carries, its key and its title."""
     section = agent_section("`review` mode")
-    assert "`homeless · <handle> · candidates: <handles>`" in section
+    assert ("`homeless · <kind> <key> · no home; these tables read like it:"
+            " <id> <key> «<title>»`") in section
     assert (
-        "answer it with a `keep` carrying `home`, which the review corrects"
-        " exactly as it corrects any other field"
+        'answer it with a `keep` carrying `home: {"ref": "<that table\'s id'
+        ' in the line>"}`, which the review corrects exactly as it corrects any'
+        " other field"
     ) in section
 
 

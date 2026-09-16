@@ -225,10 +225,11 @@ you believe disagree on any other field are a `keep` carrying the reason, never 
 A `keep` carrying `data` changes only the members it lists — the unit's other members stay as
 written — and never writes `code`, which the engine owns.
 
-A flag `homeless · <handle> · candidates: <handles>` marks a rule or measurement with no home
-beside the records whose titles share its subject. When one of those candidates is the table the
-entry belongs on, answer it with a `keep` carrying `home`, which the review corrects exactly as it
-corrects any other field; when none of them is, leave the entry unattached.
+A flag `homeless · <kind> <key> · no home; these tables read like it: <id> <key> «<title>»`
+marks a rule or measurement with no home beside the records whose titles share its subject. When
+one of those tables is the one the entry belongs on, answer it with a `keep` carrying
+`home: {"ref": "<that table's id in the line>"}`, which the review corrects exactly as it corrects
+any other field; when none of them is, leave the entry unattached.
 
 There is no cap on decisions or rewrites. A decision whose address matches zero entries, or more
 than one, is held back on its own and named in the report; the rest of your review is applied.
@@ -319,7 +320,8 @@ function.
 ## The style card
 
 **`title`** — a noun phrase naming the concept, at most 60 characters, Persian, with no file, tab or
-cell name and no Latin except an item code.
+cell name and no Latin of four letters or more except `csv`, `Excel`, `sheet` and a unit
+symbol your input listed.
 
 **`statement`** — one to three sentences in the register of a written procedure: what is measured or
 computed, in what unit, by whom, when; for a record, what it is and who fills it.
@@ -341,8 +343,8 @@ The worked pair — the left side is flagged, the right side is the same fact wr
 The lint runs on `title`, `statement`, `aliases[]`, and on `fields[].description`, `grain`,
 `method`, `exceptions`, `tracked[].reason` and any `issues[].description` you wrote. It flags a
 reference token, `.xlsx`, `.gs`, a table name of the kind your input's shape section lists,
-`IMPORT_FROM_SHEET`, `LET(`, `LAMBDA`, the pipeline words, any Latin token of four letters or more (except `csv`, `Excel`, `sheet`, a unit symbol your
-input listed, and an item code), a quoted span longer than eight words, and the colloquial endings
+`IMPORT_FROM_SHEET`, `LET(`, `LAMBDA`, the pipeline words, any Latin token of four letters or more (except `csv`, `Excel`, `sheet` and a unit symbol your
+input listed), a quoted span longer than eight words, and the colloquial endings
 «می‌زنن», «می‌کنن», «داشته باشن», «بگیم», «می‌گیم». A flagged sentence is stored as you wrote it,
 under a note a person has to read before confirming, and never comes back for a retry — so write it
 right the first time.

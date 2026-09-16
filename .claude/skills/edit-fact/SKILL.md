@@ -201,7 +201,7 @@ refuses it — so the same card applies, whether the agent wrote the sentence or
 sentence surfaces at `validate facts-delta` for an addition, and at `--preview` for a patch.
 
 - **`title`** — a noun phrase naming the concept, at most 60 characters, Persian, no file, tab or
-  cell name, no Latin except an item code.
+  cell name, no Latin of four letters or more except `csv`, `Excel`, `sheet` and a unit symbol.
 - **`statement`** — one to three sentences in the register of a written procedure: what is measured
   or computed, in what unit, by whom, when. Never an A1 address, a column letter, a tab, file or
   `Table_*` name, formula text, a function name, a schema field name, the pipeline's own words
@@ -210,7 +210,7 @@ sentence surfaces at `validate facts-delta` for an addition, and at `--preview` 
   record's own `statement` and in a field's `description`.
 - The lint also covers `aliases[]`, `fields[].description`, `grain`, `method`, `exceptions`,
   `tracked[].reason` and any `issues[].description` the agent wrote, and it refuses any Latin token
-  of four letters or more except `csv`, `Excel`, `sheet`, a unit symbol and an item code.
+  of four letters or more except `csv`, `Excel`, `sheet` and a unit symbol.
 
 The instruction the owner typed is **not** the statement. «پارمسان الان ۱۰۰ گرمه» becomes «بستهٔ
 پنیر پارمسان ۱۰۰ گرم است», not a quotation of what was said.

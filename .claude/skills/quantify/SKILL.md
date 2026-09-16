@@ -437,7 +437,8 @@ Never `git add -A`. Continue to Stage 7 in the same turn.
 ## Stage 7 — Report
 
 Read `{run_dir}/report.md` and **send it verbatim**. Its first lines name any lost source — a file,
-a meeting or photos no unit could carry into the store — in the owner's own names; after them it
+a meeting or photos no unit could carry into the store — in the owner's own names; after them
+comes the run's own count of what was recorded, dropped and left unreviewed, and then it
 leads by table — one line per table with how many rules, measurements and notes now sit on it,
 then the entries that sit under no table, and then any entry a person had already placed that this
 run saw under another table, whose place was left as the person put it. After the tables it carries
