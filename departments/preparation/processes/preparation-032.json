@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-10T12:02:58Z",
-  "updated_at": "2026-09-10T13:59:16Z",
+  "updated_at": "2026-09-16T22:22:12Z",
   "idef0": {
     "inputs": [
       "تخته کار آغشته به آرد و نمک از شب قبل",
@@ -188,7 +188,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
+        "x": 300,
         "y": 221.25
       },
       "layout": "auto",
@@ -239,7 +239,7 @@
       "direction": "split",
       "position": {
         "x": 1143,
-        "y": 806
+        "y": 806.0
       },
       "layout": "auto"
     },
@@ -418,7 +418,7 @@
     {
       "id": "preparation-032-j3",
       "type": "junction",
-      "junctionType": "AND",
+      "junctionType": "OR",
       "direction": "split",
       "position": {
         "x": 883,
@@ -451,7 +451,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
+        "x": 560,
         "y": 221.25
       },
       "layout": "auto",
@@ -463,7 +463,7 @@
     {
       "id": "preparation-032-j4",
       "type": "junction",
-      "junctionType": "AND",
+      "junctionType": "OR",
       "direction": "join",
       "position": {
         "x": 363,
@@ -505,18 +505,6 @@
       "to": "preparation-032-j4"
     },
     {
-      "from": "preparation-032-n001",
-      "to": "preparation-032-n011"
-    },
-    {
-      "from": "preparation-032-n011",
-      "to": "preparation-032-n005"
-    },
-    {
-      "from": "preparation-032-n005",
-      "to": "preparation-032-j3"
-    },
-    {
       "from": "preparation-032-j3",
       "to": "preparation-032-n009",
       "label": "تهیه پاستا"
@@ -528,6 +516,18 @@
     {
       "from": "preparation-032-j4",
       "to": "preparation-032-n010"
+    },
+    {
+      "from": "preparation-032-n001",
+      "to": "preparation-032-n005"
+    },
+    {
+      "from": "preparation-032-n005",
+      "to": "preparation-032-n011"
+    },
+    {
+      "from": "preparation-032-n011",
+      "to": "preparation-032-j3"
     }
   ],
   "pending": []
