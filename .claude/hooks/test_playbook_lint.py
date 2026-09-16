@@ -464,4 +464,18 @@ def test_the_agent_looks_at_the_photo_for_structure_and_keeps_the_description():
     assert ("The description printed under the heading is the source and has "
             "priority") in text
     assert "do not change the description's reading; add a `new[]` note" in text
+    # QF-50 reserves «ستون» for a record's own statement, so the example
+    # note the agent copies must not use it.
+    assert "«در عکس، «فیله» دو خانهٔ واحد دارد: کیلو و عدد.»" in text
+    assert "ستون" not in text.split("open that image too")[1].split("never another file")[0]
     assert "Open only the images your headings name — never another file." in text
+
+
+def test_the_unit_contract_spells_a_new_entrys_own_handle():
+    """A note about a form the same document writes has to name it, and
+    `N-<unit>-<index>` was nowhere the unit could read it."""
+    text = " ".join(AGENT.read_text(encoding="utf-8").split())
+    assert ("A `new[]` entry of this document is addressed as "
+            "`N-<unit id>-<index>`, the index counted from 0 in `new[]` "
+            "(`N-u-att-1-0` is the first)") in text
+    assert "exactly as printed in «آنچه تا کنون ثبت شده»" in text

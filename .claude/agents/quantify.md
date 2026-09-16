@@ -131,7 +131,10 @@ already owes for a refusal, listed in `retry` like the refused ones.
   `applies_to` member and instance of the source candidate to exactly one part. A per-binding
   difference in a number, or in which column is multiplied, is a **parameter**, never a split.
 - `new[]` holds whole entries with no `id`; every reference in them is `{"ref": "S-…"}` (a candidate
-  of this run) or `{"ref": "F-…"}` (an id your input actually printed).
+  of this run) or `{"ref": "F-…"}` (an id your input actually printed). A `new[]` entry of this
+  document is addressed as `N-<unit id>-<index>`, the index counted from 0 in `new[]`
+  (`N-u-att-1-0` is the first); a phase-2 unit writes the handle exactly as printed in
+  «آنچه تا کنون ثبت شده».
 - **One candidate, one unit.** A transcript unit never decides a sheet record's candidate — that
   candidate belongs to the workbook unit that owns it. What the meeting said about such a record is
   written here as a `new[]` note or measurement addressed to that record, and the reviewer merges
@@ -189,8 +192,8 @@ columns, units and titles from it. Where the photo shows a structure the descrip
 title spanning two unit cells, a group, a column the description missed — do not change the
 description's reading; add a `new[]` note addressed to that form (`about: [{"ref": …}]`, its handle
 in this document) that says in Persian what the photo shows, e.g.
-«در عکس، «فیله» دو ستون دارد: کیلو و عدد.» Open only the images your headings name — never another
-file.
+«در عکس، «فیله» دو خانهٔ واحد دارد: کیلو و عدد.» Open only the images your headings name — never
+another file.
 
 **A rule whose bindings carry a varying number or a varying basis column is ONE rule.** The
 tolerances 5 / 140 / 4 / 75 / 100 are not five rules and not five constants: they are the values of
