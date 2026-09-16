@@ -13,7 +13,7 @@
     "node": "preparation-030-n014"
   },
   "created_at": "2026-09-04T23:44:47Z",
-  "updated_at": "2026-09-16T22:39:12Z",
+  "updated_at": "2026-09-16T22:42:44Z",
   "idef0": {
     "inputs": [
       "گوشت راسته کامل پاک‌شده",
@@ -922,14 +922,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1315.0
+        "x": 434.1666666666667,
+        "y": 1258.287037037037
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260913-152642",
         "touched_by": [
-          "runs/chat/20260916-200000"
+          "runs/chat/20260916-200000",
+          "ui-edit"
         ]
       }
     }
