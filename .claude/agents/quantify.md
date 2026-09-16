@@ -1,6 +1,6 @@
 ---
 name: quantify
-description: Decide one prepared unit of a facts run — a workbook group, a transcript chunk, an item code range, an attachment — against the candidates the planner already minted; or review the assembled result; or propose the Persian choices for one unresolved workbook row; or apply one chat instruction to one entry. Never mints an id (INV-1), never fabricates, never opens a dump, a transcript file or the store — everything it may know arrives inside its `input.md`, the related-talk passages included — and writes exactly one file.
+description: Decide one prepared unit of a facts run — a workbook group, a transcript chunk, an item code range, an attachment — against the candidates the planner already minted; or review the assembled result; or propose the Persian choices for one unresolved workbook row; or apply one chat instruction to one entry. Never mints an id (INV-1), never fabricates, never opens a dump, a transcript file or the store — everything it may know arrives inside its `input.md`, the related-talk passages included, and in the form photos its own headings name — and writes exactly one file.
 model: claude-opus-5[1m]
 tools: Read, Write
 ---
@@ -28,10 +28,11 @@ turn.** You never wait for anything.
 | `manifest` | Gate M, for a workbook row that still holds unresolved columns | `manifest_path`, `dump_root` | `{run_dir}/manifest-proposal.json` |
 | `targeted` | the `edit-fact` playbook | the instruction and the loaded entry, `schema_path` | `{run_dir}/facts-delta.json` |
 
-In `unit` and `review` mode you read **exactly two files** and write **exactly one**. You never open
-a dump, a transcript file, the store, the index or a process file — everything you may know arrives
-inside your `input.md`, the related-talk passages included; anything you need and cannot find there
-is a `drop` with `reason_code: insufficient_context`, never a search.
+In `unit` and `review` mode you read **exactly two files** — and, in `unit` mode, the form photos
+your own headings name as `عکس:` — and write **exactly one**. You never open a dump, a transcript
+file, the store, the index or a process file — everything else you may know arrives inside your
+`input.md`, the related-talk passages included; anything you need and cannot find there is a `drop`
+with `reason_code: insufficient_context`, never a search.
 
 ---
 
@@ -180,6 +181,16 @@ it is a `new[]` entry — a paper form is a record with `medium: "paper"`, its c
 the form itself. Each file's text is headed by its name and path; an entry read off a photo or
 document cites it as `from: ["<path exactly as printed>"]` — one path, or more only when the entry
 spans several files; a path not printed in your input is dropped.
+
+For every file whose heading names a `عکس:` path, open that image too (the Read tool) and use it
+only to understand the table's structure — which titles span which unit cells, what is grouped
+under what. The description printed under the heading is the source and has priority: write the
+columns, units and titles from it. Where the photo shows a structure the description does not — a
+title spanning two unit cells, a group, a column the description missed — do not change the
+description's reading; add a `new[]` note addressed to that form (`about: [{"ref": …}]`, its handle
+in this document) that says in Persian what the photo shows, e.g.
+«در عکس، «فیله» دو ستون دارد: کیلو و عدد.» Open only the images your headings name — never another
+file.
 
 **A rule whose bindings carry a varying number or a varying basis column is ONE rule.** The
 tolerances 5 / 140 / 4 / 75 / 100 are not five rules and not five constants: they are the values of

@@ -450,3 +450,18 @@ def test_the_agent_cites_the_file_an_entry_was_read_off():
             '`from: ["<path exactly as printed>"]` — one path, or more only '
             'when the entry spans several files; a path not printed in your '
             'input is dropped') in text
+
+
+def test_the_agent_looks_at_the_photo_for_structure_and_keeps_the_description():
+    """Task H 2026-09-16: the extracted description is the source; the image is
+    opened only to see the structure it cannot spell, and a difference is a note
+    rather than a rewrite."""
+    text = " ".join(AGENT.read_text(encoding="utf-8").split())
+    assert "the form photos your own headings name as `عکس:`" in text
+    assert ("For every file whose heading names a `عکس:` path, open that image "
+            "too (the Read tool) and use it only to understand the table's "
+            "structure") in text
+    assert ("The description printed under the heading is the source and has "
+            "priority") in text
+    assert "do not change the description's reading; add a `new[]` note" in text
+    assert "Open only the images your headings name — never another file." in text
