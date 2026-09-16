@@ -34,18 +34,17 @@ same two roots — see Step 3.
 2. **Ambiguity → ask in Persian**, listing every candidate by id, kind, title and scope, and wait
    for the user to pick one — never guess (mirrors `edit-process` Step 1's "list candidate
    processes by name and id").
-3. **No candidate, and the instruction reads as introducing a fact from scratch** (a new item,
-   record, rule or note nothing in the store yet names — e.g. «واحد جدید: حلب») — there is nothing
-   to load. Continue with no entry; Step 3 dispatches `quantify` without one, and its targeted-mode
+3. **No candidate, and the instruction reads as introducing a fact from scratch** (a new record,
+   rule, measurement or note nothing in the store yet names — e.g. «واحد جدید: حلب») — there is
+   nothing to load. Continue with no entry; Step 3 dispatches `quantify` without one, and its targeted-mode
    contract covers exactly this case ("a single new entry the instruction describes from
    scratch").
 4. **No candidate, and the instruction reads as referring to something that should already
    exist** — ask the user in Persian rather than guessing; do not fabricate a from-scratch entry
    the instruction did not actually ask for.
 5. **Exactly one candidate** (or one named directly) — read its **full envelope** from the matching
-   store file, by the index row's `kind`: `item` → `facts/items.json`, `record` →
-   `facts/records.json`, `measurement` → `facts/measurements.json`, `rule` → `facts/rules.json`,
-   `note` → `facts/notes.json`. You will pass this envelope to `quantify` verbatim, or read the
+   store file, by the index row's `kind`: `record` → `facts/records.json`, `measurement` →
+   `facts/measurements.json`, `rule` → `facts/rules.json`, `note` → `facts/notes.json`. You will pass this envelope to `quantify` verbatim, or read the
    path you are about to patch out of it (INV-1: never invent or edit a field yourself).
 6. **Several entries.** An instruction may name a set rather than one entry — «در شرح ۱۰ ثبت …»,
    «همهٔ قاعده‌های آشپزخانه که …». Resolve it to a **list** of entries, read each one's envelope,
@@ -98,6 +97,8 @@ Three cases, decided from the instruction and the entry Step 1 loaded:
 | **adds** — a new entry from scratch, a dated successor (QF-35), a fill of a `null`/absent leaf, a new source, account or alias | `{run_dir}/facts-delta.json` → `merge facts apply` | the `quantify` agent, targeted mode, delta form |
 | **changes or removes what an existing entry says, and names the value** — a word, a sentence, a number, a member to drop, a department to add | `{run_dir}/facts-patch.json` → `merge facts edit` | **this playbook**, with no dispatch — the value is the owner's, there is nothing to compose |
 | **changes what an existing entry says and the text has to be composed** — a statement to reword, a title to invent | `{run_dir}/facts-patch.json` → `merge facts edit` | the `quantify` agent, targeted mode, patch form |
+| **moves an entry under a table** — «… را زیر «…» ببر» | `{run_dir}/facts-patch.json` → `merge facts edit` | **this playbook**, with no dispatch — one `set` of `home` |
+| **detaches an entry from its table** — «… را از جدولش جدا کن» | `{run_dir}/facts-patch.json` → `merge facts edit` | **this playbook**, with no dispatch — one `unset` of `home` |
 | **retires or merges** | `merge facts retire [--heir]` | — |
 
 A change to a field that already holds a value is an **`edit`**, never an `apply`: the write ladder
@@ -112,7 +113,7 @@ owner's ten-statement correction was silently dropped once already.
          {"op": "set",    "path": "data/outputs/vazn/value", "value": 285},
          {"op": "set",    "path": "scope/departments",       "value": ["cooking", "warehouse"]},
          {"op": "remove", "path": "data/applies_to/pitza__s0__j__r6"},
-         {"op": "unset",  "path": "data/pack"},
+         {"op": "unset",  "path": "data/edge_cases"},
          {"op": "append", "path": "aliases",                 "value": "برگه روزانه"}]}
 ```
 
@@ -133,6 +134,40 @@ drop is one `remove`; «هم‌چنین …» is an `append`. Read the current v
 so the path is one that exists. This is the one file this playbook writes itself; everything under
 `facts/**` still goes through the verb. The style card below is still the law — the same lint runs
 at the verb's gate, whoever wrote the sentence.
+
+### The move and the detach
+
+Each is one op, and both are this playbook's own to write — the owner named the table, so there is
+nothing to compose:
+
+```json
+{"schema_version": 1, "ops": [{"op": "set", "path": "home", "value": {"ref": "F-00031"}}]}
+```
+
+```json
+{"schema_version": 1, "ops": [{"op": "unset", "path": "home"}]}
+```
+
+Resolve **both** names against `facts/.index.json` before you write: the entry by Step 1's ladder,
+and the table the same way — an id, then an exact `key`, then the Persian title and the aliases —
+and check that the row you landed on is a `record`. **Never guess between two matches:** ask in
+Persian, the candidates lettered, one line each under its own title, and wait for the letter.
+
+The verb refuses a target that is not a table (`home: F-… is not a record`) or that names no entry
+(`home: F-… names no entry`) in one line and writes nothing. Either means the name resolved to the
+wrong row, so ask the owner which table they meant — never try a second id.
+
+A move carries the entry's tick and its history with it: nothing the entry says changes, only where
+it sits. Neither case asks a question, and neither is reported by the preview's «فعلی»/«پیشنهاد»
+pair — that pair's value is an id. Each has its own line, built from the two titles:
+
+```
+قاعدهٔ «سقف ضایعات» زیر «فرم تبدیل آماده‌سازی برگر» می‌رود.
+```
+
+```
+قاعدهٔ «سقف ضایعات» از جدولش جدا می‌شود.
+```
 
 ### The dispatch (cases 1 and 3)
 
@@ -196,9 +231,9 @@ they are op names and store paths, and they are never shown to the owner (see be
 
 Then gate, in this order:
 
-- **No question** for a mechanical change (case 2) or an addition (case 1). The instruction named
-  the target and the exact value, and that **is** INV-5's approval (owner ruling, 2026-09-09). Go
-  straight to Step 5.
+- **No question** for a mechanical change (case 2), for a move or a detach, or for an addition
+  (case 1). The instruction named the target and the exact value, and that **is** INV-5's approval
+  (owner ruling, 2026-09-09). Go straight to Step 5.
 - **One question**, the preview shown in full, for prose you composed (case 3), for any `remove`,
   and for a retirement or a merge. **One message for the whole instruction**, however many entries
   it touches — never one question per field, and never one per entry. Wait for an explicit
@@ -264,7 +299,7 @@ was written:
    | Situation | Verb |
    |---|---|
    | A change or a removal in an entry that already exists (cases 2 and 3) | `Bash: DATA_ROOT=<data-repo> merge facts edit --id F-… --patch {run_dir}/facts-patch.json --run {run_dir}` |
-   | A field fill, a new source/account/item, a from-scratch new entry, a dated successor (case 1) | `Bash: DATA_ROOT=<data-repo> merge facts apply --delta {run_dir}/facts-delta.json --run {run_dir}` |
+   | A field fill, a new source or account, a from-scratch new entry, a dated successor (case 1) | `Bash: DATA_ROOT=<data-repo> merge facts apply --delta {run_dir}/facts-delta.json --run {run_dir}` |
    | Settling an already-recorded disputed account the owner named by id | `Bash: DATA_ROOT=<data-repo> merge facts resolve --id F-… --field <path> --account <id> --run {run_dir}` |
    | Retiring an entry, with or without a heir | `Bash: DATA_ROOT=<data-repo> merge facts retire --id F-… [--heir F-…] --run {run_dir}` |
    | Promoting a `note` to another kind | `Bash: DATA_ROOT=<data-repo> merge facts promote --id F-… --kind <kind> [--key <key>] --run {run_dir}` |
@@ -310,6 +345,8 @@ was written:
      relayed here either;
    - **an addition (case 1)** — the id and what was added: the new entry, or the field that was
      filled and with what;
+   - **a move or a detach** — its own line, the one «The move and the detach» shapes out of the
+     two titles, and nothing else;
    - **a retirement or a merge** — the id, that the original was retired (**not deleted**), and its
      heir, if any.
    With several entries (Step 1.6), one such line each, and the ones that failed named with the
@@ -318,14 +355,16 @@ was written:
 4. End the report with **«این تغییر ثبت شد؛ در پنل هنوز تأییدنشده است و باید آنجا تأیید شود.»** No verb
    here confirms anything: the tick is set by a person in the panel and by nothing else (the
    owner's ruling of 2026-09-09). A write moves the entry's content, so the panel's earlier tick
-   goes stale by itself and the entry shows «تأییدنشده» until someone confirms it there.
+   goes stale by itself and the entry shows «تأییدنشده» until someone confirms it there. A move or
+   a detach changes nothing the entry says, so its tick stands: end that report with «وضعیت تأیید
+   این ثبت در پنل دست‌نخورده می‌ماند.» instead.
 
 ## Usage examples
 
 The spec's four (§13, verbatim):
 
-- «پارمسان الان ۱۰۰ گرمه» — a dated change (QF-35): resolve the `pack.size`-bearing item, dispatch
-  `quantify`, receive a successor entry with `supersedes` and a newer `valid_from` → case 1, no
+- «پارمسان الان ۱۰۰ گرمه» — a dated change (QF-35): resolve the entry that states the pack size,
+  dispatch `quantify`, receive a successor entry with `supersedes` and a newer `valid_from` → case 1, no
   question → `merge facts apply`.
 - «این دو تا قانون یکی هستن» — resolve the entry the instruction names most directly; `quantify`
   locates the other via `facts_index` and returns which is the heir → one question (the retire
@@ -344,6 +383,15 @@ And the two the patch verb was built for:
 - «در شرح ۱۰ ثبت آشپزخانه «سیاهه» را «برگه» کن» — Step 1.6: ten entries, ten run directories, the
   same one-op patch in each, in order. An entry whose gate refuses is reported and the rest carry
   on.
+
+And the two the tables brought:
+
+- «قاعدهٔ «سقف ضایعات» را زیر «فرم تبدیل آماده‌سازی برگر» ببر» — a move: resolve the rule and the
+  form against the index, check the target is a table, write the one-op patch yourself → `--preview`
+  → no question → `merge facts edit`. The report is the one line «قاعدهٔ «سقف ضایعات» زیر «فرم تبدیل
+  آماده‌سازی برگر» می‌رود.», and the panel's tick is left as it was.
+- «این قاعده به هیچ جدولی مربوط نیست» — a detach: one `unset` of `home` over the resolved entry, and
+  the line «قاعدهٔ «سقف ضایعات» از جدولش جدا می‌شود.»
 
 ## Invariants
 

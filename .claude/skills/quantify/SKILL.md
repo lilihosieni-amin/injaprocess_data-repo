@@ -132,7 +132,7 @@ each choice with its reason:
 ۱. «کانتر ناهارخوران»
    دپارتمان: آشپزخانه (چون برگه‌ها مصرف و موجودی آشپزخانه را ثبت می‌کنند)
    شعبه: ناهارخوران (چون نام پوشه همین را می‌گوید)
-   برگه‌های مرجع: ؟ (هیچ برگه‌ای بدون فرمول و با کد قلم پیدا نشد)
+   برگه‌های مرجع: ؟ (هیچ برگه‌ای بدون فرمول و با ستون کد پیدا نشد)
 
 ۲. «گزارش مرکزی»
    دپارتمان: مدیریت (چون مصرف اعلامی همهٔ شعبه‌ها را جمع می‌زند)
@@ -258,7 +258,7 @@ agents spend their time on model wait, so four-way concurrency overlaps it.
 Do the whole batched sweep **within one turn**, subject to the yield rule: dispatching a batch and
 awaiting it is a tool call, not a turn end.
 
-`status` runs the units in two phases: the workbook, attachment and item units first, then the
+`status` runs the units in two phases: the workbook and attachment units first, then the
 transcript units. A unit `status` prints as `waiting` is never dispatched; it turns `pending` on its
 own once every earlier unit is done or failed, and its input is rewritten by the engine at that
 moment — dispatch it as any other unit.
@@ -438,10 +438,13 @@ Never `git add -A`. Continue to Stage 7 in the same turn.
 
 Read `{run_dir}/report.md` and **send it verbatim**. Its first lines name any lost source — a file,
 a meeting or photos no unit could carry into the store — in the owner's own names; after them it
-carries the open disputes lettered, the unanswered units grouped per item, the dropped candidates in the owner's own words, any workbook
-skipped or part left unfinished, and what the review changed and what of it was set aside. It does
-not carry the engine's findings inside the files (owner ruling, 2026-09-09): those are drawn on the
-entry in the panel, and the run keeps its own count of them.
+leads by table — one line per table with how many rules, measurements and notes now sit on it,
+then the entries that sit under no table, and then any entry a person had already placed that this
+run saw under another table, whose place was left as the person put it. After the tables it carries
+the open disputes lettered, the unanswered units, the dropped candidates in the owner's own words,
+any workbook skipped or part left unfinished, and what the review changed and what of it was set
+aside. It does not carry the engine's findings inside the files (owner ruling, 2026-09-09): those
+are drawn on the entry in the panel, and the run keeps its own count of them.
 
 When the owner answers a lettered dispute, **you** run the resolve — never print a command:
 
