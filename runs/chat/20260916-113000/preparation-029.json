@@ -1,0 +1,23 @@
+{
+  "add_nodes": [
+    {
+      "key": "jstart",
+      "type": "junction",
+      "junctionType": "AND",
+      "direction": "split"
+    }
+  ],
+  "add_edges": [
+    {
+      "from": "jstart",
+      "to": "preparation-029-n001"
+    },
+    {
+      "from": "jstart",
+      "to": "preparation-029-n007"
+    }
+  ],
+  "remove_edges": [],
+  "enrich_nodes": [],
+  "flag_removed": []
+}
