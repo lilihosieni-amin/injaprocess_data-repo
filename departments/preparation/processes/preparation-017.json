@@ -13,7 +13,7 @@
     "node": "preparation-030-n016"
   },
   "created_at": "2026-09-04T23:44:46Z",
-  "updated_at": "2026-09-12T10:15:06Z",
+  "updated_at": "2026-09-16T18:59:47Z",
   "idef0": {
     "inputs": [
       "رول‌های ژامبون چهار کیلویی",
@@ -197,9 +197,11 @@
       "source": {
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260916-180000"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "preparation-017-n007",
@@ -343,7 +345,7 @@
       "direction": "join",
       "position": {
         "x": 103,
-        "y": 1331
+        "y": 1506.0
       },
       "layout": "auto",
       "removed": true
@@ -881,7 +883,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
+        "x": 560,
         "y": 1140.0
       },
       "layout": "auto",
@@ -963,11 +965,6 @@
     {
       "from": "preparation-017-n023",
       "to": "preparation-017-n024"
-    },
-    {
-      "from": "preparation-017-n005",
-      "to": "preparation-017-n007",
-      "label": ""
     },
     {
       "from": "preparation-017-n007",

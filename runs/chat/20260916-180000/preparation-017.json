@@ -1,0 +1,16 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "remove_edges": [
+    {
+      "from": "preparation-017-n005",
+      "to": "preparation-017-n007"
+    }
+  ],
+  "enrich_nodes": [],
+  "flag_removed": [
+    {
+      "id": "preparation-017-n005"
+    }
+  ]
+}

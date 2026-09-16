@@ -1,0 +1,33 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "remove_edges": [],
+  "enrich_nodes": [],
+  "flag_removed": [],
+  "revise_nodes": [
+    {
+      "id": "preparation-029-n007",
+      "set": {
+        "actor": "سرپرست‌ها و مدیر مجموعه"
+      }
+    },
+    {
+      "id": "preparation-029-n008",
+      "set": {
+        "actor": "سرپرست‌ها"
+      }
+    },
+    {
+      "id": "preparation-029-n009",
+      "set": {
+        "actor": "سرپرست‌ها و مدیر مجموعه"
+      }
+    },
+    {
+      "id": "preparation-029-n010",
+      "set": {
+        "actor": "سرپرست‌ها و مدیر مجموعه"
+      }
+    }
+  ]
+}

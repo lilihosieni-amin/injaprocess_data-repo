@@ -1,0 +1,28 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "remove_edges": [],
+  "enrich_nodes": [],
+  "flag_removed": [],
+  "revise_nodes": [
+    {
+      "id": "preparation-022-n028",
+      "set": {
+        "icom": {
+          "inputs": [
+            "سس تولیدشده نگهداری‌شده در آماده‌سازی"
+          ],
+          "controls": [
+            "معافیت برداشت شبانه سس از ثبت آمار"
+          ],
+          "outputs": [
+            "سس مصرف‌شده در شیفت شب آشپزخانه"
+          ],
+          "mechanisms": [
+            "پرسنل شیفت شب آشپزخانه"
+          ]
+        }
+      }
+    }
+  ]
+}
