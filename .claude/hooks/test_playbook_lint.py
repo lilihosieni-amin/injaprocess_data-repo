@@ -439,3 +439,14 @@ def test_the_unit_contract_admits_a_column_group_and_attachment_units():
     section = agent_section("What you decide, per kind")
     assert "may carry `group: {key, title}`" in section
     assert "**An attachment unit** — `نوع: attachment`, zero candidates" in section
+
+
+def test_the_agent_cites_the_file_an_entry_was_read_off():
+    """Task G 2026-09-16: a unit handed several photos must name the one an
+    entry came off, or the engine credits the entry to all of them."""
+    text = " ".join(AGENT.read_text(encoding="utf-8").split())
+    assert "each file's text is headed by its name and path" in text
+    assert ('an entry read off a photo or document cites it as '
+            '`from: ["<path exactly as printed>"]` — one path, or more only '
+            'when the entry spans several files; a path not printed in your '
+            'input is dropped') in text

@@ -148,6 +148,11 @@ already owes for a refusal, listed in `retry` like the refused ones.
   either. Never a second entry for it.
   In both, the lines must lie inside one passage `## گفت‌وگوهای مرتبط` printed for **this** unit;
   a range that reaches past it, or a transcript you were shown no line of, is dropped.
+- **Say which file.** When your unit was given more than one attached file, each file's text is
+  headed by its name and path; an entry read off a photo or document cites it as
+  `from: ["<path exactly as printed>"]` — one path, or more only when the entry spans several
+  files; a path not printed in your input is dropped. Without it the entry is credited to every
+  file the unit read.
 - `branches` is written only when the source itself names a branch. A sheet-derived entry needs none
   — the engine derives it from the instances.
 
@@ -172,7 +177,9 @@ under it.
 **An attachment unit** — `نوع: attachment`, zero candidates — carries one or more attached files'
 text (a form photo, a pdf, a docx) and nothing else. Its `decisions` is `[]`; everything you find in
 it is a `new[]` entry — a paper form is a record with `medium: "paper"`, its columns written from
-the form itself.
+the form itself. Each file's text is headed by its name and path; an entry read off a photo or
+document cites it as `from: ["<path exactly as printed>"]` — one path, or more only when the entry
+spans several files; a path not printed in your input is dropped.
 
 **A rule whose bindings carry a varying number or a varying basis column is ONE rule.** The
 tolerances 5 / 140 / 4 / 75 / 100 are not five rules and not five constants: they are the values of
