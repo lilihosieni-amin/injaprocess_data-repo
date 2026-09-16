@@ -299,6 +299,8 @@ was written:
    | Situation | Verb |
    |---|---|
    | A change or a removal in an entry that already exists (cases 2 and 3) | `Bash: DATA_ROOT=<data-repo> merge facts edit --id F-… --patch {run_dir}/facts-patch.json --run {run_dir}` |
+   | Moving an entry under a table — one `set` of `home` | `Bash: DATA_ROOT=<data-repo> merge facts edit --id F-… --patch {run_dir}/facts-patch.json --run {run_dir}` |
+   | Detaching an entry from its table — one `unset` of `home` | `Bash: DATA_ROOT=<data-repo> merge facts edit --id F-… --patch {run_dir}/facts-patch.json --run {run_dir}` |
    | A field fill, a new source or account, a from-scratch new entry, a dated successor (case 1) | `Bash: DATA_ROOT=<data-repo> merge facts apply --delta {run_dir}/facts-delta.json --run {run_dir}` |
    | Settling an already-recorded disputed account the owner named by id | `Bash: DATA_ROOT=<data-repo> merge facts resolve --id F-… --field <path> --account <id> --run {run_dir}` |
    | Retiring an entry, with or without a heir | `Bash: DATA_ROOT=<data-repo> merge facts retire --id F-… [--heir F-…] --run {run_dir}` |
