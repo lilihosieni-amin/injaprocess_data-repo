@@ -1,0 +1,24 @@
+{
+  "add_nodes": [],
+  "add_edges": [
+    { "from": "warehouse-007-j4", "to": "warehouse-007-n013" }
+  ],
+  "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [
+    { "from": "warehouse-007-j4", "to": "warehouse-007-n010" },
+    { "from": "warehouse-007-n010", "to": "warehouse-007-j5" },
+    { "from": "warehouse-007-j5", "to": "warehouse-007-n011" },
+    { "from": "warehouse-007-j5", "to": "warehouse-007-n012" },
+    { "from": "warehouse-007-n011", "to": "warehouse-007-j6" },
+    { "from": "warehouse-007-n012", "to": "warehouse-007-j6" },
+    { "from": "warehouse-007-j6", "to": "warehouse-007-n013" }
+  ],
+  "flag_removed": [
+    { "id": "warehouse-007-n010" },
+    { "id": "warehouse-007-n011" },
+    { "id": "warehouse-007-n012" },
+    { "id": "warehouse-007-j5" },
+    { "id": "warehouse-007-j6" }
+  ]
+}
