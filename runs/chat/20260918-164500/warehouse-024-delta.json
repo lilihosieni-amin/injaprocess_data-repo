@@ -1,0 +1,20 @@
+{
+  "add_nodes": [
+    { "key": "j1", "type": "junction", "junctionType": "AND", "direction": "split" },
+    { "key": "j2", "type": "junction", "junctionType": "AND", "direction": "join" }
+  ],
+  "add_edges": [
+    { "from": "j1", "to": "warehouse-024-n001" },
+    { "from": "j1", "to": "warehouse-024-n002" },
+    { "from": "warehouse-024-n003", "to": "j2" },
+    { "from": "warehouse-024-n004", "to": "j2" },
+    { "from": "j2", "to": "warehouse-024-n005" }
+  ],
+  "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [
+    { "from": "warehouse-024-n003", "to": "warehouse-024-n004" },
+    { "from": "warehouse-024-n004", "to": "warehouse-024-n005" }
+  ],
+  "flag_removed": []
+}
