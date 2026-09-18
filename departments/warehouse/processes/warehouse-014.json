@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-13T16:48:58Z",
-  "updated_at": "2026-09-13T16:48:58Z",
+  "updated_at": "2026-09-18T21:57:01Z",
   "idef0": {
     "inputs": [
       "فرم مانده شب بخش‌های آشپزخانه با ثبت موجودی ابتدا و انتهای شب",
@@ -37,37 +37,6 @@
   "kpis": [],
   "nodes": [
     {
-      "id": "warehouse-014-n001",
-      "type": "activity",
-      "label": "نگهداری فرم‌های درخواست کالای امضاشده در انبار تا صبح روز بعد",
-      "description": "در غروب، پس از تحویل اقلام به بخش‌های آشپزخانه و ثبت وزن یا تعداد آن‌ها، تحویل‌گیرنده فرم درخواست کالا را امضا می‌کند و امضا به منزلهٔ دریافت کامل اقلام فهرست است. فرم‌های امضاشده تا صبح روز بعد نزد انبار نگهداری می‌شود و همان شب به حسابداری تحویل نمی‌گردد.",
-      "actor": "انباردار",
-      "icom": {
-        "inputs": [
-          "فرم درخواست کالای امضاشدهٔ بخش‌ها"
-        ],
-        "controls": [
-          "الزام امضای تحویل‌گیرنده پس از ثبت وزن یا تعداد اقلام"
-        ],
-        "outputs": [
-          "فرم‌های درخواست کالای نگهداری‌شده در انبار"
-        ],
-        "mechanisms": [
-          "انباردار"
-        ]
-      },
-      "subprocess": null,
-      "position": {
-        "x": 40,
-        "y": 90.0
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/warehouse/20260913-141752",
-        "touched_by": []
-      }
-    },
-    {
       "id": "warehouse-014-n002",
       "type": "activity",
       "label": "ثبت موجودی ابتدای شب هر بخش در فرم مانده شب",
@@ -89,13 +58,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 90.0
+        "x": 235.94936708860757,
+        "y": 88.60759493670886
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260913-141752",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -120,13 +91,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 90.0
+        "x": 450.6962025316456,
+        "y": 86.51898734177215
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260913-141752",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -153,7 +126,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -187,7 +160,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -220,7 +193,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -251,7 +224,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -261,10 +234,6 @@
     }
   ],
   "edges": [
-    {
-      "from": "warehouse-014-n001",
-      "to": "warehouse-014-n002"
-    },
     {
       "from": "warehouse-014-n002",
       "to": "warehouse-014-n003"
