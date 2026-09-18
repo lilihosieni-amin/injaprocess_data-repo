@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-18T05:04:24Z",
-  "updated_at": "2026-09-18T19:11:37Z",
+  "updated_at": "2026-09-18T19:13:11Z",
   "idef0": {
     "inputs": [
       "فرم درخواست کالای اولیهٔ واحد آماده‌سازی",
@@ -755,8 +755,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 261.712962962963,
-        "y": 1846.7129629629628
+        "x": -78.75771604938272,
+        "y": 1873.719135802469
       },
       "layout": "manual",
       "source": {
@@ -1046,8 +1046,8 @@
       },
       "subprocess": "warehouse-010",
       "position": {
-        "x": -307.3148148148148,
-        "y": 2083.0555555555557
+        "x": 757.5,
+        "y": 2043.5108024691358
       },
       "layout": "manual",
       "source": {
@@ -1089,8 +1089,8 @@
       },
       "subprocess": "warehouse-011",
       "position": {
-        "x": 246.3425925925926,
-        "y": 2028.6574074074074
+        "x": 476.8595679012346,
+        "y": 2060.486111111111
       },
       "layout": "manual",
       "source": {
@@ -1135,8 +1135,8 @@
       },
       "subprocess": "warehouse-012",
       "position": {
-        "x": 103.24074074074073,
-        "y": 2337.685185185185
+        "x": 474.57561728395063,
+        "y": 2262.4537037037035
       },
       "layout": "manual",
       "source": {
@@ -1201,13 +1201,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1490.0
+        "x": 226.412037037037,
+        "y": 1853.377700617284
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260918-174500",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1231,13 +1233,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1665.0
+        "x": 464.64506172839515,
+        "y": 1861.7592592592596
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260918-174500",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1260,13 +1264,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1665.0
+        "x": 742.8395061728395,
+        "y": 1889.7299382716046
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260918-174500",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
