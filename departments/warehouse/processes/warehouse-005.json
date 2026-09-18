@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-13T16:48:52Z",
-  "updated_at": "2026-09-13T16:48:52Z",
+  "updated_at": "2026-09-18T08:30:57Z",
   "idef0": {
     "inputs": [
       "مرغ گرم روزانه تأمین‌کننده",
@@ -69,7 +69,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -98,7 +98,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -128,7 +128,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -158,7 +158,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -188,7 +188,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -258,7 +258,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -289,7 +289,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -319,7 +319,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -350,13 +350,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 790.0
+        "x": -10.925925925925924,
+        "y": 425.41666666666663
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260913-141752",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -365,10 +367,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
-        "y": 806.0
+        "x": 61,
+        "y": 684
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "warehouse-005-n011",
@@ -394,13 +396,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 877.5
+        "x": 270,
+        "y": 645.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260913-141752",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -426,13 +430,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 877.5
+        "x": 480,
+        "y": 657.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260913-141752",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -456,13 +462,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 877.5
+        "x": 720,
+        "y": 637.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260913-141752",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -486,13 +494,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1402.5
+        "x": 666,
+        "y": 916.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260913-141752",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -517,13 +527,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1402.5
+        "x": 396,
+        "y": 894.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260913-141752",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -532,10 +544,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 623,
-        "y": 1360.1666666666667
+        "x": 127,
+        "y": 966.1666666666667
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "warehouse-005-n016",
@@ -558,13 +570,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1344.1666666666667
+        "x": 45.415123456790134,
+        "y": 1065.057098765432
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260913-141752",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -588,13 +602,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1344.1666666666667
+        "x": 280.641975308642,
+        "y": 1052.516975308642
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260913-141752",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -619,13 +635,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1960.3125
+        "x": 517.0586419753088,
+        "y": 1062.4268904320988
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260913-141752",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -652,13 +670,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1960.3125
+        "x": 510.2654320987655,
+        "y": 1207.5052083333335
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260913-141752",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -667,10 +687,10 @@
       "junctionType": "AND",
       "direction": "split",
       "position": {
-        "x": 623,
-        "y": 1976.3125
+        "x": 581.520061728395,
+        "y": 1382.286072530864
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "warehouse-005-n020",
@@ -696,13 +716,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1752.5
+        "x": 496.3996913580247,
+        "y": 1522.7438271604938
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260913-141752",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -726,13 +748,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1752.5
+        "x": 491.9367283950618,
+        "y": 1708.183834876543
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260913-141752",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -756,13 +780,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 2496.25
+        "x": 475.2731481481481,
+        "y": 1896.138888888889
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260913-141752",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -787,13 +813,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 2321.25
+        "x": 142.99691358024694,
+        "y": 1408.3121141975307
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260913-141752",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -802,10 +830,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1143,
-        "y": 2337.25
+        "x": 207.43827160493828,
+        "y": 1604.031635802469
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "warehouse-005-n024",
@@ -830,13 +858,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 3152.5
+        "x": 11.341049382716008,
+        "y": 1733.266975308642
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260913-141752",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -845,10 +875,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 883,
-        "y": 3037.25
+        "x": 223.48765432098773,
+        "y": 1884.2613811728395
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "warehouse-005-n025",
@@ -873,44 +903,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 527.5
+        "x": 989.1358024691358,
+        "y": 599.8256172839506
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260913-141752",
-        "touched_by": []
-      }
-    },
-    {
-      "id": "warehouse-005-n026",
-      "type": "activity",
-      "label": "تقسیم پارت‌های سنگین گوشت به دو وعده در دو روز مختلف هفته",
-      "description": "هنگامی که وزن یک پارت زیاد باشد، برای نمونه شصت کیلوگرم گوشت برگر، در دو روز مختلف هفته هر وعده سی کیلوگرم در نظر گرفته می‌شود تا آماده‌سازی تحت فشار نباشد و به کارهای دیگر خود برسد.",
-      "actor": "کارکنان انبار",
-      "icom": {
-        "inputs": [
-          "گوشت گرم تحویل‌گرفته‌شده"
-        ],
-        "controls": [
-          "برنامه هفتگی تولید"
-        ],
-        "outputs": [
-          "پارت‌های گوشت تقسیم‌شده"
-        ],
-        "mechanisms": [
-          "کارکنان انبار"
+        "touched_by": [
+          "ui-edit"
         ]
-      },
-      "subprocess": null,
-      "position": {
-        "x": 300,
-        "y": 527.5
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/warehouse/20260913-141752",
-        "touched_by": []
       }
     },
     {
@@ -934,13 +935,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 527.5
+        "x": 1005.2253086419751,
+        "y": 891.2407407407406
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260913-141752",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -949,10 +952,10 @@
       "junctionType": "OR",
       "direction": "join",
       "position": {
-        "x": 623,
-        "y": 2949.75
+        "x": 666.4027777777778,
+        "y": 2166.450424382716
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "warehouse-005-n028",
@@ -975,13 +978,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 2933.75
+        "x": 622.6388888888889,
+        "y": 2488.520061728395
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260913-141752",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1005,13 +1010,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 2933.75
+        "x": 622,
+        "y": 3157.75
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260913-141752",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1034,13 +1041,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 3327.5
+        "x": 326.4583333333333,
+        "y": 3157.7469135802467
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260913-141752",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1249,14 +1258,6 @@
       "to": "warehouse-005-j7"
     },
     {
-      "from": "warehouse-005-n025",
-      "to": "warehouse-005-n026"
-    },
-    {
-      "from": "warehouse-005-n026",
-      "to": "warehouse-005-n027"
-    },
-    {
       "from": "warehouse-005-n027",
       "to": "warehouse-005-j7"
     },
@@ -1279,6 +1280,11 @@
     {
       "from": "warehouse-005-n031",
       "to": "warehouse-005-n032"
+    },
+    {
+      "from": "warehouse-005-n025",
+      "to": "warehouse-005-n027",
+      "label": ""
     }
   ],
   "pending": []
