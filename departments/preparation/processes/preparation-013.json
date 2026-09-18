@@ -13,7 +13,7 @@
     "node": "preparation-005-n011"
   },
   "created_at": "2026-09-04T23:44:44Z",
-  "updated_at": "2026-09-18T11:06:18Z",
+  "updated_at": "2026-09-18T11:09:42Z",
   "idef0": {
     "inputs": [
       "مرغ خام مرینت‌شده و پاک‌شده مخصوص مرغ پیتزا",
@@ -88,16 +88,17 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 965
+        "x": 414.5833333333333,
+        "y": 622.4074074074074
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
           "runs/chat/20260909-073408",
           "runs/chat/20260913-152642",
-          "runs/preparation/20260915-220527"
+          "runs/preparation/20260915-220527",
+          "ui-edit"
         ]
       }
     },
@@ -122,13 +123,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 965
+        "x": 156.89814814814815,
+        "y": 625.8796296296297
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -151,13 +154,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1490
+        "x": -63.49074074074076,
+        "y": 658.6388888888888
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -180,14 +185,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1490
+        "x": -22,
+        "y": 836
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
-          "runs/chat/20260909-073408"
+          "runs/chat/20260909-073408",
+          "ui-edit"
         ]
       }
     },
@@ -457,10 +463,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 1506
+        "x": 541,
+        "y": 898
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "preparation-013-n013",
@@ -484,8 +490,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 201.80262394055504,
-        "y": 772.9290026703819
+        "x": 254.73780912574023,
+        "y": 1001.0077063740855
       },
       "layout": "manual",
       "source": {
@@ -516,8 +522,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": -191.4814814814814,
-        "y": 729.1203703703706
+        "x": 836.5185185185186,
+        "y": 947.1203703703704
       },
       "layout": "manual",
       "source": {
@@ -534,8 +540,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 66.70370370370372,
-        "y": 834.0092592592592
+        "x": 606.7037037037037,
+        "y": 1198.0092592592591
       },
       "layout": "manual"
     },
@@ -836,8 +842,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 114.81481481481481,
-        "y": 1193.7037037037037
+        "x": 522.7962962962963,
+        "y": 1443.3796296296296
       },
       "layout": "manual",
       "source": {
@@ -869,8 +875,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 147.962962962963,
-        "y": 1414.7685185185187
+        "x": 837.962962962963,
+        "y": 1450.7685185185187
       },
       "layout": "manual",
       "source": {
@@ -901,8 +907,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 409.1203703703704,
-        "y": 1429.814814814815
+        "x": 1061.1203703703704,
+        "y": 1477.814814814815
       },
       "layout": "manual",
       "source": {
@@ -933,8 +939,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 661.0185185185185,
-        "y": 1439.0740740740741
+        "x": 1027.0185185185185,
+        "y": 1665.0740740740741
       },
       "layout": "manual",
       "source": {
@@ -965,8 +971,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 912.1759259259259,
-        "y": 1439.3055555555557
+        "x": 698.1759259259259,
+        "y": 1721.3055555555557
       },
       "layout": "manual",
       "source": {
@@ -995,8 +1001,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1081.9521604938273,
-        "y": 1813.2391975308642
+        "x": 395.95216049382725,
+        "y": 1701.2391975308642
       },
       "layout": "manual",
       "source": {
@@ -1027,8 +1033,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1160,
-        "y": 2003
+        "x": 110,
+        "y": 1675
       },
       "layout": "manual",
       "source": {
@@ -1058,8 +1064,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1156,
-        "y": 2233
+        "x": 112,
+        "y": 1837
       },
       "layout": "manual",
       "source": {
@@ -1092,8 +1098,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1210,
-        "y": 2407
+        "x": 410,
+        "y": 1887
       },
       "layout": "manual",
       "source": {
@@ -1124,14 +1130,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 2627.5
+        "x": 709.9537037037037,
+        "y": 1894.8703703703704
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
-          "runs/chat/20260909-073408"
+          "runs/chat/20260909-073408",
+          "ui-edit"
         ]
       }
     },
@@ -1155,14 +1162,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 2627.5
+        "x": 914.3796296296296,
+        "y": 1885.9166666666665
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
-          "runs/chat/20260909-073408"
+          "runs/chat/20260909-073408",
+          "ui-edit"
         ]
       }
     },
@@ -1188,14 +1196,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 2890.0
+        "x": 1345.5555555555554,
+        "y": 2675.8796296296296
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
-          "runs/chat/20260909-073408"
+          "runs/chat/20260909-073408",
+          "ui-edit"
         ]
       }
     },
@@ -1222,14 +1231,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 2890.0
+        "x": 1353.2407407407406,
+        "y": 2830.972222222222
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
-          "runs/chat/20260909-073408"
+          "runs/chat/20260909-073408",
+          "ui-edit"
         ]
       }
     },
@@ -1256,14 +1266,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 2890.0
+        "x": 1404.0740740740741,
+        "y": 3218.703703703704
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
-          "runs/chat/20260909-073408"
+          "runs/chat/20260909-073408",
+          "ui-edit"
         ]
       }
     },
@@ -1290,7 +1301,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 3065.0
+        "y": 3065
       },
       "layout": "auto",
       "source": {
@@ -1324,7 +1335,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 3065.0
+        "y": 3065
       },
       "layout": "auto",
       "source": {
@@ -1355,7 +1366,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 3065.0
+        "y": 3065
       },
       "layout": "auto",
       "source": {
@@ -1388,7 +1399,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 3065.0
+        "y": 3065
       },
       "layout": "auto",
       "source": {
@@ -1420,16 +1431,17 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 2627.5
+        "x": 1191.6296296296296,
+        "y": 1883.6296296296296
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
           "runs/chat/20260909-073408",
           "runs/preparation/20260915-220527",
-          "runs/chat/20260917-153000"
+          "runs/chat/20260917-153000",
+          "ui-edit"
         ]
       }
     },
@@ -1456,15 +1468,16 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 2890.0
+        "x": 1371.3425925925926,
+        "y": 2959.444444444445
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
           "runs/chat/20260909-073408",
-          "runs/preparation/20260915-220527"
+          "runs/preparation/20260915-220527",
+          "ui-edit"
         ]
       }
     },
@@ -1491,7 +1504,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 3065.0
+        "y": 3065
       },
       "layout": "auto",
       "source": {
@@ -1524,7 +1537,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 3240.0
+        "y": 3240
       },
       "layout": "auto",
       "source": {
@@ -1556,7 +1569,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 3240.0
+        "y": 3240
       },
       "layout": "auto",
       "source": {
@@ -1592,7 +1605,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 3240.0
+        "y": 3240
       },
       "layout": "auto",
       "source": {
@@ -1624,13 +1637,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 2890.0
+        "x": 1394.074074074074,
+        "y": 3091.388888888889
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260913-152642",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1712,8 +1727,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 818.6188271604938,
-        "y": 738.0324074074074
+        "x": 1036.2114197530864,
+        "y": 433.6342592592593
       },
       "layout": "manual",
       "source": {
@@ -1743,13 +1758,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 965
+        "x": 1053.3796296296296,
+        "y": 623.5648148148149
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260915-220527",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1773,13 +1790,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 965
+        "x": 825.787037037037,
+        "y": 620.0925925925925
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260915-220527",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1806,13 +1825,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 965
+        "x": 624.8148148148148,
+        "y": 620.0925925925925
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260915-220527",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1859,8 +1880,8 @@
       "junctionType": "OR",
       "direction": "join",
       "position": {
-        "x": 1429,
-        "y": 2591.5
+        "x": 1447,
+        "y": 2093.5
       },
       "layout": "manual"
     },
@@ -2059,13 +2080,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1490
+        "x": 210,
+        "y": 814
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260917-150000",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -2101,13 +2124,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 2015
+        "x": 516,
+        "y": 1293
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260917-150000",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -2134,13 +2159,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 615.0
+        "x": 1474,
+        "y": 459
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260917-153000",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
