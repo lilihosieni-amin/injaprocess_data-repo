@@ -1,0 +1,16 @@
+{
+  "add_nodes": [
+    { "key": "j1", "type": "junction", "junctionType": "OR", "direction": "join" }
+  ],
+  "add_edges": [
+    { "from": "warehouse-023-n036", "to": "j1" },
+    { "from": "warehouse-023-n030", "to": "j1" },
+    { "from": "j1", "to": "warehouse-023-n031" }
+  ],
+  "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [
+    { "from": "warehouse-023-n030", "to": "warehouse-023-n031" }
+  ],
+  "flag_removed": []
+}
