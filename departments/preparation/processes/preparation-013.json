@@ -13,7 +13,7 @@
     "node": "preparation-005-n011"
   },
   "created_at": "2026-09-04T23:44:44Z",
-  "updated_at": "2026-09-18T10:02:29Z",
+  "updated_at": "2026-09-18T11:00:44Z",
   "idef0": {
     "inputs": [
       "مرغ خام مرینت‌شده و پاک‌شده مخصوص مرغ پیتزا",
@@ -88,8 +88,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 265.0
+        "x": 300,
+        "y": 965.0
       },
       "layout": "auto",
       "source": {
@@ -122,8 +122,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 265.0
+        "x": 40,
+        "y": 965.0
       },
       "layout": "auto",
       "source": {
@@ -152,7 +152,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 265.0
+        "y": 1490.0
       },
       "layout": "auto",
       "source": {
@@ -180,8 +180,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 440.0
+        "x": 300,
+        "y": 1490.0
       },
       "layout": "auto",
       "source": {
@@ -211,16 +211,18 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 440.0
+        "x": 40,
+        "y": 3415.0
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
-          "runs/chat/20260909-073408"
+          "runs/chat/20260909-073408",
+          "runs/chat/20260917-150000"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "preparation-013-n006",
@@ -242,16 +244,18 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 440.0
+        "x": 40,
+        "y": 3590.0
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
-          "runs/chat/20260909-073408"
+          "runs/chat/20260909-073408",
+          "runs/chat/20260917-150000"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "preparation-013-n007",
@@ -271,16 +275,18 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 440.0
+        "x": 40,
+        "y": 3765.0
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
-          "runs/chat/20260909-073408"
+          "runs/chat/20260909-073408",
+          "runs/chat/20260917-150000"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "preparation-013-n008",
@@ -300,16 +306,18 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 440.0
+        "x": 40,
+        "y": 3940.0
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
-          "runs/chat/20260909-073408"
+          "runs/chat/20260909-073408",
+          "runs/chat/20260917-150000"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "preparation-013-n009",
@@ -329,16 +337,18 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 615.0
+        "x": 40,
+        "y": 4115.0
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
-          "runs/chat/20260909-073408"
+          "runs/chat/20260909-073408",
+          "runs/chat/20260917-150000"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "preparation-013-n010",
@@ -360,16 +370,18 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 615.0
+        "x": 40,
+        "y": 4290.0
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
-          "runs/chat/20260909-073408"
+          "runs/chat/20260909-073408",
+          "runs/chat/20260917-150000"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "preparation-013-n011",
@@ -389,16 +401,18 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 615.0
+        "x": 40,
+        "y": 4465.0
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
-          "runs/chat/20260909-073408"
+          "runs/chat/20260909-073408",
+          "runs/chat/20260917-150000"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "preparation-013-n012",
@@ -431,9 +445,11 @@
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
           "runs/chat/20260909-073408",
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260917-150000"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "preparation-013-j1",
@@ -441,8 +457,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 631.0
+        "x": 883,
+        "y": 1506.0
       },
       "layout": "auto"
     },
@@ -555,9 +571,11 @@
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
           "runs/chat/20260909-073408",
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260917-150000"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "preparation-013-n016",
@@ -589,9 +607,11 @@
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
           "runs/chat/20260909-073408",
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260917-150000"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "preparation-013-n017",
@@ -624,9 +644,11 @@
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
           "runs/chat/20260909-073408",
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260917-150000"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "preparation-013-n018",
@@ -658,9 +680,11 @@
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
           "runs/chat/20260909-073408",
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260917-150000"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "preparation-013-n019",
@@ -690,9 +714,11 @@
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
           "runs/chat/20260909-073408",
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260917-150000"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "preparation-013-n020",
@@ -720,9 +746,11 @@
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
           "runs/chat/20260909-073408",
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260917-150000"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "preparation-013-n021",
@@ -750,9 +778,11 @@
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
           "runs/chat/20260909-073408",
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260917-150000"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "preparation-013-n022",
@@ -780,9 +810,11 @@
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
           "runs/chat/20260909-073408",
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260917-150000"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "preparation-013-n023",
@@ -963,8 +995,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1665.0
+        "x": 560,
+        "y": 2365.0
       },
       "layout": "auto",
       "source": {
@@ -995,7 +1027,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 1665.0
+        "y": 2365.0
       },
       "layout": "auto",
       "source": {
@@ -1024,8 +1056,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1665.0
+        "x": 1080,
+        "y": 2365.0
       },
       "layout": "auto",
       "source": {
@@ -1057,8 +1089,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1665.0
+        "x": 1080,
+        "y": 2715.0
       },
       "layout": "auto",
       "source": {
@@ -1088,8 +1120,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1665.0
+        "x": 560,
+        "y": 2627.5
       },
       "layout": "auto",
       "source": {
@@ -1119,8 +1151,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1840.0
+        "x": 300,
+        "y": 2627.5
       },
       "layout": "auto",
       "source": {
@@ -1152,8 +1184,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1840.0
+        "x": 40,
+        "y": 2890.0
       },
       "layout": "auto",
       "source": {
@@ -1186,8 +1218,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1840.0
+        "x": 300,
+        "y": 2890.0
       },
       "layout": "auto",
       "source": {
@@ -1220,8 +1252,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 2015.0
+        "x": 1080,
+        "y": 2890.0
       },
       "layout": "auto",
       "source": {
@@ -1253,8 +1285,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 2015.0
+        "x": 1080,
+        "y": 3065.0
       },
       "layout": "auto",
       "source": {
@@ -1287,8 +1319,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 2015.0
+        "x": 820,
+        "y": 3065.0
       },
       "layout": "auto",
       "source": {
@@ -1318,8 +1350,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 2015.0
+        "x": 560,
+        "y": 3065.0
       },
       "layout": "auto",
       "source": {
@@ -1351,8 +1383,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 2190.0
+        "x": 300,
+        "y": 3065.0
       },
       "layout": "auto",
       "source": {
@@ -1384,8 +1416,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1840.0
+        "x": 40,
+        "y": 2627.5
       },
       "layout": "auto",
       "source": {
@@ -1419,8 +1451,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1840.0
+        "x": 560,
+        "y": 2890.0
       },
       "layout": "auto",
       "source": {
@@ -1453,8 +1485,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 2190.0
+        "x": 40,
+        "y": 3065.0
       },
       "layout": "auto",
       "source": {
@@ -1486,8 +1518,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 2190.0
+        "x": 40,
+        "y": 3240.0
       },
       "layout": "auto",
       "source": {
@@ -1518,8 +1550,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 2190.0
+        "x": 300,
+        "y": 3240.0
       },
       "layout": "auto",
       "source": {
@@ -1553,8 +1585,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 2190.0
+        "x": 560,
+        "y": 3240.0
       },
       "layout": "auto",
       "source": {
@@ -1586,8 +1618,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 2015.0
+        "x": 820,
+        "y": 2890.0
       },
       "layout": "auto",
       "source": {
@@ -1616,8 +1648,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 90.0
+        "x": 300,
+        "y": 440.0
       },
       "layout": "auto",
       "source": {
@@ -1645,8 +1677,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 90.0
+        "x": 560,
+        "y": 440.0
       },
       "layout": "auto",
       "source": {
@@ -1674,8 +1706,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 90.0
+        "x": 1080,
+        "y": 440.0
       },
       "layout": "auto",
       "source": {
@@ -1704,7 +1736,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 90.0
+        "y": 965.0
       },
       "layout": "auto",
       "source": {
@@ -1733,8 +1765,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 265.0
+        "x": 820,
+        "y": 965.0
       },
       "layout": "auto",
       "source": {
@@ -1766,8 +1798,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 265.0
+        "x": 560,
+        "y": 965.0
       },
       "layout": "auto",
       "source": {
@@ -1793,12 +1825,277 @@
       },
       "subprocess": null,
       "position": {
+        "x": 820,
+        "y": 440.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260916-112000",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "preparation-013-j3",
+      "type": "junction",
+      "junctionType": "OR",
+      "direction": "split",
+      "position": {
+        "x": 103,
+        "y": 281.0
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "preparation-013-j4",
+      "type": "junction",
+      "junctionType": "OR",
+      "direction": "join",
+      "position": {
+        "x": 883,
+        "y": 2643.5
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "preparation-013-n055",
+      "type": "activity",
+      "label": "جمع‌آوری کنار شینسل طی هفته تا رسیدن به هشت تا ده کیلوگرم",
+      "description": "کنار شینسل یا همان ضایعات شینسل، دورریز کناره‌های سینه است که هنوز گوشت مرغ به آن چسبیده. این ضایعات یک‌باره مصرف نمی‌شود و طی هفته جمع می‌شود تا به هشت تا ده کیلوگرم برسد؛ انبار همین آستانه را ده تا دوازده کیلوگرم بیان کرده است.",
+      "actor": "مسئول لاین مرغ",
+      "icom": {
+        "inputs": [
+          "کناره‌های سینه مرغ در لاین تخته‌کاری"
+        ],
+        "controls": [
+          "جمع‌آوری هفتگی تا رسیدن به حجم قابل پخت"
+        ],
+        "outputs": [
+          "کنار شینسل خام جمع‌آوری‌شده"
+        ],
+        "mechanisms": [
+          "مسئول لاین مرغ"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260917-150000",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "preparation-013-n056",
+      "type": "activity",
+      "label": "تحویل کنار شینسل خام به انبار و نگهداری آن در سردخانه زیر صفر",
+      "description": "کنار شینسل خام به‌عنوان ضایعات تحویل انبار می‌شود و تا روز پخت هفتگی به‌صورت منجمد در سردخانه زیر صفر نگهداری می‌گردد. این قلم تنها برای تولید مرغ پیتزای پخته به کار می‌رود و در غذای پرسنل مصرف نمی‌شود. تحویل آن از انبار به آماده‌سازی بر مبنای وزن و در لیست مرغ و گوجه نیم‌ساخته ثبت می‌شود.",
+      "actor": "مسئول لاین مرغ",
+      "icom": {
+        "inputs": [
+          "کنار شینسل خام جمع‌آوری‌شده"
+        ],
+        "controls": [
+          "اختصاص کنار شینسل خام تنها به تولید مرغ پیتزای پخته"
+        ],
+        "outputs": [
+          "کنار شینسل خام منجمد در سردخانه زیر صفر انبار"
+        ],
+        "mechanisms": [
+          "مسئول لاین مرغ",
+          "انباردار",
+          "سردخانه زیر صفر انبار"
+        ]
+      },
+      "subprocess": null,
+      "position": {
         "x": 560,
         "y": 90.0
       },
       "layout": "auto",
       "source": {
-        "created_by": "runs/chat/20260916-112000",
+        "created_by": "runs/chat/20260917-150000",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "preparation-013-n057",
+      "type": "activity",
+      "label": "خارج کردن کنار شینسل منجمد از انبار در شب پیش از روز پخت",
+      "description": "در شب پیش از روز پخت هفتگی، کنار شینسل به‌صورت منجمد از سردخانه زیر صفر خارج می‌شود تا یخ آن تا زمان پخت باز شود.",
+      "actor": "انباردار",
+      "icom": {
+        "inputs": [
+          "کنار شینسل خام منجمد"
+        ],
+        "controls": [
+          "خروج از شب قبل جهت یخ‌گشایی تا زمان پخت"
+        ],
+        "outputs": [
+          "کنار شینسل یخ‌گشایی‌شده"
+        ],
+        "mechanisms": [
+          "انباردار"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260917-150000",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "preparation-013-n058",
+      "type": "activity",
+      "label": "پخت کنار شینسل با افزودن بیست گرم ماده مرینت به ازای هر ده کیلوگرم",
+      "description": "کنار شینسل مرحله مرینت جداگانه ندارد و تنها یک مرحله پخت دارد؛ در حین پخت به ازای هر ده کیلوگرم حدود بیست گرم ماده مرینت به آن افزوده می‌شود تا طعم‌دار شود. این کار را مسئول لاین مرغ یا هر یک از پرسنل آماده‌سازی که سرش خلوت‌تر باشد انجام می‌دهد و باید در همان روزی که کنار شینسل بالا می‌آید انجام شود.",
+      "actor": "پرسنل آماده‌سازی",
+      "icom": {
+        "inputs": [
+          "کنار شینسل یخ‌گشایی‌شده",
+          "ماده مرینت"
+        ],
+        "controls": [
+          "نداشتن مرحله مرینت جداگانه",
+          "بیست گرم ماده مرینت به ازای هر ده کیلوگرم",
+          "انجام پخت در همان روز"
+        ],
+        "outputs": [
+          "کنار شینسل پخته‌شده"
+        ],
+        "mechanisms": [
+          "پرسنل آماده‌سازی",
+          "فر آشپزخانه پایین"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260917-150000",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "preparation-013-n059",
+      "type": "activity",
+      "label": "جداسازی و پاک‌سازی تکه‌های قابل استفاده از کنار شینسل پخته و تولید مرغ پیتزای پخته",
+      "description": "پس از پخت، تکه‌های مرغی که قابل استفاده‌اند از ضایعات جدا و پاک‌سازی می‌شوند؛ برای نمونه از ده کیلوگرم کنار شینسل، یک تا دو کیلو و هشتصد گرم مرغ پخته به دست می‌آید. این تبدیل باید در همان روز انجام شود و محصول آن از این نقطه به بعد همان مرغ پیتزای پخته است و مسیر مشترک وزن‌کشی، سس‌زنی و بسته‌بندی را طی می‌کند.",
+      "actor": "پرسنل آماده‌سازی",
+      "icom": {
+        "inputs": [
+          "کنار شینسل پخته‌شده"
+        ],
+        "controls": [
+          "انجام تبدیل در همان روز پخت"
+        ],
+        "outputs": [
+          "مرغ پیتزای پخته حاصل از کنار شینسل"
+        ],
+        "mechanisms": [
+          "پرسنل آماده‌سازی"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 615.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260917-150000",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "preparation-013-n060",
+      "type": "activity",
+      "label": "آماده کردن سینی‌ها، روشن کردن فن و فر و بررسی قطعات مرغ پیش از چیدن",
+      "description": "سینی‌های استیل مخصوص پخت مرغ از روز قبل خیس خورده‌اند و پیش از استفاده شسته می‌شوند، سپس به آشپزخانه پایین برده و کنار فر آماده گذاشته می‌شوند تا در زمان گرم شدن فر چیده شوند. نخستین اقدام پیش از ورود به آشپزخانه روشن کردن فن است؛ فن دو دکمه دارد، یک دکمه مشکی و یک استارت سبز. پس از آن و داخل آشپزخانه، نخست شیر گاز فر باز می‌شود، سپس هر سه دکمه فر روشن می‌گردد و در پایان دکمه استارت سبز فر زده می‌شود؛ گرم شدن فر حدود پنج دقیقه طول می‌کشد تا دما به حدود دویست‌وهفتاد تا دویست‌وهشتاد درجه برسد. در همین فاصله دستکش یک‌بارمصرف پوشیده می‌شود و قطعات مرغ از نظر خون‌مردگی و ضخامت بررسی می‌گردد: قطعاتی که خون‌مردگی و کبودی دارند نباید پخته شوند و قسمت‌های بالای سینه مرغ که ضخامت بیشتری دارند با دو دور پخت کامل نمی‌پزند.",
+      "actor": "مسئول لاین سبزیجات",
+      "icom": {
+        "inputs": [
+          "سینی‌های استیل پخت مرغ",
+          "دستکش یک‌بارمصرف",
+          "مرغ خام مرینت‌شده"
+        ],
+        "controls": [
+          "دمای دویست‌وهفتاد تا دویست‌وهشتاد درجه",
+          "کنار گذاشتن قطعات دارای خون‌مردگی",
+          "یکنواخت بودن ضخامت قطعات برای پخت کامل"
+        ],
+        "outputs": [
+          "سینی‌های شسته و آماده در آشپزخانه پایین",
+          "فن روشن",
+          "فر گرم‌شده",
+          "قطعات بررسی‌شده"
+        ],
+        "mechanisms": [
+          "مسئول لاین سبزیجات",
+          "فن آشپزخانه پایین",
+          "فر آشپزخانه پایین"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 1490.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260917-150000",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "preparation-013-n061",
+      "type": "activity",
+      "label": "چیدن مرغ در سینی و پخت آن در دو دور و خاموش کردن فر و فن",
+      "description": "مرغ‌ها در یک لایه روی کف سینی چیده می‌شوند و نباید روی هم باشند، چون مرغ زیرین نمی‌پزد؛ لایه نه خیلی کلفت و نه خیلی نازک باشد، چون لایه نازک می‌سوزد و بیش از حد برشته می‌شود. مرغ نباید خیلی خام و نه خیلی پخته باشد، چون اسلایس کردن مرغ زیاد پخته سخت است و بافت آن سفت و نامطلوب می‌شود. پس از رسیدن دمای فر به دویست‌وهفتاد تا دویست‌وهشتاد درجه، سینی‌ها یکی‌یکی گذاشته می‌شوند؛ در هر ردیف فر دو سینی جا می‌گیرد و مجموعاً شش سینی در اختیار است و با جلو رفتن کار سینی بعدی گذاشته می‌شود. با یک دور مرغ کامل نمی‌پزد، پس سینی از فر بیرون آورده و مرغ‌ها با انبر برگردانده می‌شوند و دوباره در فر قرار می‌گیرند؛ هر سینی باید دو دور در فر بماند تا مرغ کامل بپزد. مرغ‌هایی که دو دورشان تمام شده در ظرف خالی جداگانه‌ای تخلیه می‌شوند تا با مرغ خام مخلوط نشوند. پس از پایان پخت همه مرغ‌ها، نخست فر خاموش می‌شود، سپس شیر گاز فر بسته می‌شود و در پایان فن آشپزخانه پایین خاموش می‌گردد.",
+      "actor": "مسئول لاین سبزیجات",
+      "icom": {
+        "inputs": [
+          "مرغ خام بررسی‌شده",
+          "سینی‌های استیل"
+        ],
+        "controls": [
+          "چیدن در یک لایه و پرهیز از روی هم قرار گرفتن",
+          "دمای دویست‌وهفتاد تا دویست‌وهشتاد درجه",
+          "پخت در دو دور"
+        ],
+        "outputs": [
+          "مرغ پخته‌شده جمع‌آوری‌شده",
+          "فر خاموش",
+          "شیر گاز بسته",
+          "فن خاموش"
+        ],
+        "mechanisms": [
+          "مسئول لاین سبزیجات",
+          "فر آشپزخانه پایین",
+          "فن آشپزخانه پایین",
+          "انبر",
+          "ظرف جداگانه",
+          "دستکش یک‌بارمصرف"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 2015.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260917-150000",
         "touched_by": []
       }
     }
@@ -1815,42 +2112,6 @@
     {
       "from": "preparation-013-n003",
       "to": "preparation-013-n004"
-    },
-    {
-      "from": "preparation-013-n004",
-      "to": "preparation-013-n005"
-    },
-    {
-      "from": "preparation-013-n005",
-      "to": "preparation-013-n006"
-    },
-    {
-      "from": "preparation-013-n006",
-      "to": "preparation-013-n007"
-    },
-    {
-      "from": "preparation-013-n007",
-      "to": "preparation-013-n008"
-    },
-    {
-      "from": "preparation-013-n008",
-      "to": "preparation-013-n009"
-    },
-    {
-      "from": "preparation-013-n009",
-      "to": "preparation-013-n010"
-    },
-    {
-      "from": "preparation-013-n010",
-      "to": "preparation-013-n011"
-    },
-    {
-      "from": "preparation-013-n011",
-      "to": "preparation-013-n012"
-    },
-    {
-      "from": "preparation-013-n012",
-      "to": "preparation-013-j1"
     },
     {
       "from": "preparation-013-j1",
@@ -1874,38 +2135,6 @@
     {
       "from": "preparation-013-n014",
       "to": "preparation-013-j2"
-    },
-    {
-      "from": "preparation-013-j2",
-      "to": "preparation-013-n015"
-    },
-    {
-      "from": "preparation-013-n015",
-      "to": "preparation-013-n016"
-    },
-    {
-      "from": "preparation-013-n016",
-      "to": "preparation-013-n017"
-    },
-    {
-      "from": "preparation-013-n017",
-      "to": "preparation-013-n018"
-    },
-    {
-      "from": "preparation-013-n018",
-      "to": "preparation-013-n019"
-    },
-    {
-      "from": "preparation-013-n020",
-      "to": "preparation-013-n021"
-    },
-    {
-      "from": "preparation-013-n021",
-      "to": "preparation-013-n022"
-    },
-    {
-      "from": "preparation-013-n022",
-      "to": "preparation-013-n023"
     },
     {
       "from": "preparation-013-n023",
@@ -1938,10 +2167,6 @@
     {
       "from": "preparation-013-n030",
       "to": "preparation-013-n031"
-    },
-    {
-      "from": "preparation-013-n031",
-      "to": "preparation-013-n032"
     },
     {
       "from": "preparation-013-n032",
@@ -2013,11 +2238,6 @@
       "to": "preparation-013-n050"
     },
     {
-      "from": "preparation-013-n019",
-      "to": "preparation-013-n020",
-      "label": ""
-    },
-    {
       "from": "preparation-013-n033",
       "to": "preparation-013-n041"
     },
@@ -2036,6 +2256,58 @@
     {
       "from": "preparation-013-n040",
       "to": "preparation-013-n043"
+    },
+    {
+      "from": "preparation-013-j3",
+      "to": "preparation-013-n048"
+    },
+    {
+      "from": "preparation-013-j3",
+      "to": "preparation-013-n055"
+    },
+    {
+      "from": "preparation-013-n055",
+      "to": "preparation-013-n056"
+    },
+    {
+      "from": "preparation-013-n056",
+      "to": "preparation-013-n057"
+    },
+    {
+      "from": "preparation-013-n057",
+      "to": "preparation-013-n058"
+    },
+    {
+      "from": "preparation-013-n058",
+      "to": "preparation-013-n059"
+    },
+    {
+      "from": "preparation-013-n059",
+      "to": "preparation-013-j4"
+    },
+    {
+      "from": "preparation-013-n031",
+      "to": "preparation-013-j4"
+    },
+    {
+      "from": "preparation-013-j4",
+      "to": "preparation-013-n032"
+    },
+    {
+      "from": "preparation-013-n004",
+      "to": "preparation-013-n060"
+    },
+    {
+      "from": "preparation-013-n060",
+      "to": "preparation-013-j1"
+    },
+    {
+      "from": "preparation-013-j2",
+      "to": "preparation-013-n061"
+    },
+    {
+      "from": "preparation-013-n061",
+      "to": "preparation-013-n023"
     }
   ],
   "pending": []
