@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-13T16:48:52Z",
-  "updated_at": "2026-09-18T15:07:23Z",
+  "updated_at": "2026-09-18T15:08:14Z",
   "idef0": {
     "inputs": [
       "مرغ گرم روزانه تأمین‌کننده",
@@ -69,7 +69,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 90
+        "y": 90.0
       },
       "layout": "auto",
       "source": {
@@ -98,7 +98,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 90
+        "y": 90.0
       },
       "layout": "auto",
       "source": {
@@ -128,7 +128,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 90
+        "y": 90.0
       },
       "layout": "auto",
       "source": {
@@ -158,7 +158,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 90
+        "y": 90.0
       },
       "layout": "auto",
       "source": {
@@ -188,7 +188,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 90
+        "y": 90.0
       },
       "layout": "auto",
       "source": {
@@ -258,7 +258,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 265
+        "y": 265.0
       },
       "layout": "auto",
       "source": {
@@ -289,7 +289,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 265
+        "y": 265.0
       },
       "layout": "auto",
       "source": {
@@ -321,7 +321,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 265
+        "y": 265.0
       },
       "layout": "auto",
       "source": {
@@ -1100,7 +1100,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 2933.75
+        "y": 2671.25
       },
       "layout": "auto",
       "source": {
@@ -1132,7 +1132,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
+        "x": 40,
         "y": 2933.75
       },
       "layout": "auto",
@@ -1347,14 +1347,6 @@
       "to": "warehouse-005-n028"
     },
     {
-      "from": "warehouse-005-n028",
-      "to": "warehouse-005-n029"
-    },
-    {
-      "from": "warehouse-005-n029",
-      "to": "warehouse-005-n030"
-    },
-    {
       "from": "warehouse-005-n030",
       "to": "warehouse-005-n031"
     },
@@ -1385,7 +1377,15 @@
     },
     {
       "from": "warehouse-005-n034",
+      "to": "warehouse-005-n029"
+    },
+    {
+      "from": "warehouse-005-n029",
       "to": "warehouse-005-j7"
+    },
+    {
+      "from": "warehouse-005-n028",
+      "to": "warehouse-005-n030"
     }
   ],
   "pending": []

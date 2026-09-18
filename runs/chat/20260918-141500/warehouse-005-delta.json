@@ -1,0 +1,16 @@
+{
+  "add_nodes": [],
+  "add_edges": [
+    { "from": "warehouse-005-n034", "to": "warehouse-005-n029" },
+    { "from": "warehouse-005-n029", "to": "warehouse-005-j7" },
+    { "from": "warehouse-005-n028", "to": "warehouse-005-n030" }
+  ],
+  "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [
+    { "from": "warehouse-005-n034", "to": "warehouse-005-j7" },
+    { "from": "warehouse-005-n028", "to": "warehouse-005-n029" },
+    { "from": "warehouse-005-n029", "to": "warehouse-005-n030" }
+  ],
+  "flag_removed": []
+}
