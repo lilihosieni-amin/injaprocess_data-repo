@@ -2,8 +2,7 @@
   "department": "warehouse",
   "order": [
     "warehouse-001",
-    "warehouse-002",
-    "warehouse-003",
+    "warehouse-023",
     "warehouse-004",
     "warehouse-005",
     "warehouse-006",
@@ -24,5 +23,5 @@
     "warehouse-021",
     "warehouse-022"
   ],
-  "updated_at": "2026-09-13T16:49:02Z"
+  "updated_at": "2026-09-18T05:04:24Z"
 }
