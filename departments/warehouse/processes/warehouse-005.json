@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-13T16:48:52Z",
-  "updated_at": "2026-09-18T15:14:08Z",
+  "updated_at": "2026-09-18T15:14:44Z",
   "idef0": {
     "inputs": [
       "مرغ گرم روزانه تأمین‌کننده",
@@ -1065,8 +1065,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 662.4583333333333,
-        "y": 2395.7469135802467
+        "x": 637.3811728395061,
+        "y": 2647.483024691358
       },
       "layout": "manual",
       "source": {
@@ -1099,21 +1099,22 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 2933.75
+        "x": 614.8456790123457,
+        "y": 2791.003086419753
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260913-141752",
         "touched_by": [
-          "runs/chat/20260918-131500"
+          "runs/chat/20260918-131500",
+          "ui-edit"
         ]
       }
     },
     {
       "id": "warehouse-005-n032",
       "type": "activity",
-      "label": "بایگانی فرم تولید",
+      "label": "بایگانی فرم تولید و تبدیل",
       "description": "فرم تولید (نام چاپی روی کاغذ: فرآیند تحویل و تبدیل گوشت مرغ و گوساله) پس از ثبت همه اقلام، وزن‌ها و ضایعات تکمیل و بایگانی می‌شود.",
       "actor": "کارکنان انبار",
       "icom": {
@@ -1132,16 +1133,16 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 2933.75
+        "x": 624.0740740740741,
+        "y": 2924.1049382716046
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260913-141752",
         "touched_by": [
           "runs/chat/20260918-120000",
           "runs/chat/20260918-121500",
-          "runs/chat/20260918-144500"
+          "ui-edit"
         ]
       }
     },
@@ -1242,13 +1243,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 2671.25
+        "x": 640.4706790123457,
+        "y": 2429.1589506172845
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260918-143000",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
