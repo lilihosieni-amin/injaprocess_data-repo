@@ -13,7 +13,7 @@
     "node": "preparation-032-n010"
   },
   "created_at": "2026-09-04T23:44:44Z",
-  "updated_at": "2026-09-16T22:46:34Z",
+  "updated_at": "2026-09-18T10:59:17Z",
   "idef0": {
     "inputs": [
       "سینه مرغ خام (شنیسل)",
@@ -451,8 +451,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 281.58725182863117,
-        "y": 665.5752351097179
+        "x": 331.3557703471497,
+        "y": 655.1585684430512
       },
       "layout": "manual",
       "source": {
@@ -485,8 +485,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 142.90632183908045,
-        "y": 872.2618599791015
+        "x": 270.22113665389526,
+        "y": 897.7248229420644
       },
       "layout": "manual",
       "source": {
@@ -651,8 +651,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 501.7499477533961,
-        "y": 1659.0865774499957
+        "x": 492.49068849413686,
+        "y": 1593.1143552277736
       },
       "layout": "manual"
     },
@@ -1196,8 +1196,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": -274.16739811912214,
-        "y": 1580.8924764890282
+        "x": 147.3217994117421,
+        "y": 1304.07920488409
       },
       "layout": "manual",
       "source": {
@@ -1319,8 +1319,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1422,
-        "y": 489.75
+        "x": 1279.638888888889,
+        "y": 481.64814814814815
       },
       "layout": "manual",
       "source": {
@@ -1356,8 +1356,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1422,
-        "y": 665
+        "x": 1472,
+        "y": 959
       },
       "layout": "manual",
       "source": {
@@ -1390,8 +1390,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1434,
-        "y": 843
+        "x": 1492,
+        "y": 1205
       },
       "layout": "manual",
       "source": {
@@ -1458,7 +1458,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -1574,14 +1574,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1140.0
+        "x": 1492,
+        "y": 598
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260913-152642",
         "touched_by": [
-          "runs/preparation/20260915-220527"
+          "runs/preparation/20260915-220527",
+          "ui-edit"
         ]
       }
     },
@@ -1609,14 +1610,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 965.0
+        "x": 1482,
+        "y": 755
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/preparation/20260915-220527",
         "touched_by": [
-          "runs/chat/20260916-170000"
+          "runs/chat/20260916-170000",
+          "ui-edit"
         ]
       }
     }
