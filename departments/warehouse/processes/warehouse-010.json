@@ -8,9 +8,12 @@
     "ref": "20260913-141752",
     "run": "runs/warehouse/20260913-141752"
   },
-  "parent": null,
+  "parent": {
+    "process": "warehouse-024",
+    "node": "warehouse-024-n008"
+  },
   "created_at": "2026-09-13T16:48:54Z",
-  "updated_at": "2026-09-13T16:48:54Z",
+  "updated_at": "2026-09-18T18:15:30Z",
   "idef0": {
     "inputs": [
       "فرم‌های درخواست کالای بخش‌ها",
