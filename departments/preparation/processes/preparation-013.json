@@ -13,7 +13,7 @@
     "node": "preparation-005-n011"
   },
   "created_at": "2026-09-04T23:44:44Z",
-  "updated_at": "2026-09-18T11:13:05Z",
+  "updated_at": "2026-09-18T11:13:19Z",
   "idef0": {
     "inputs": [
       "مرغ خام مرینت‌شده و پاک‌شده مخصوص مرغ پیتزا",
@@ -218,7 +218,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 3415.0
+        "y": 3415
       },
       "layout": "auto",
       "source": {
@@ -251,7 +251,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 3590.0
+        "y": 3590
       },
       "layout": "auto",
       "source": {
@@ -282,7 +282,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 3765.0
+        "y": 3765
       },
       "layout": "auto",
       "source": {
@@ -313,7 +313,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 3940.0
+        "y": 3940
       },
       "layout": "auto",
       "source": {
@@ -344,7 +344,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 4115.0
+        "y": 4115
       },
       "layout": "auto",
       "source": {
@@ -377,7 +377,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 4290.0
+        "y": 4290
       },
       "layout": "auto",
       "source": {
@@ -408,7 +408,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 4465.0
+        "y": 4465
       },
       "layout": "auto",
       "source": {
@@ -1301,13 +1301,14 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 2890.0
+        "y": 3065
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
-          "runs/chat/20260909-073408"
+          "runs/chat/20260909-073408",
+          "ui-edit"
         ]
       }
     },
@@ -1334,14 +1335,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 3065.0
+        "x": 820,
+        "y": 3065
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
-          "runs/chat/20260909-073408"
+          "runs/chat/20260909-073408",
+          "ui-edit"
         ]
       }
     },
@@ -1365,14 +1367,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 3065.0
+        "x": 560,
+        "y": 3065
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
-          "runs/chat/20260909-073408"
+          "runs/chat/20260909-073408",
+          "ui-edit"
         ]
       }
     },
@@ -1398,14 +1401,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 3065.0
+        "x": 300,
+        "y": 3065
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/preparation/20260904-210205",
         "touched_by": [
-          "runs/chat/20260909-073408"
+          "runs/chat/20260909-073408",
+          "ui-edit"
         ]
       }
     },
@@ -1504,7 +1508,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 3065.0
+        "y": 3065
       },
       "layout": "auto",
       "source": {
@@ -1537,7 +1541,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 3240.0
+        "y": 3240
       },
       "layout": "auto",
       "source": {
@@ -1569,7 +1573,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 3240.0
+        "y": 3240
       },
       "layout": "auto",
       "source": {
@@ -1605,7 +1609,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 3240.0
+        "y": 3240
       },
       "layout": "auto",
       "source": {
@@ -1670,7 +1674,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -1699,7 +1703,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -1855,7 +1859,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -1870,7 +1874,7 @@
       "direction": "split",
       "position": {
         "x": 103,
-        "y": 281.0
+        "y": 281
       },
       "layout": "auto"
     },
@@ -1888,8 +1892,8 @@
     {
       "id": "preparation-013-n055",
       "type": "activity",
-      "label": "جمع‌آوری کنار شینسل طی هفته تا رسیدن به هشت تا ده کیلوگرم",
-      "description": "کنار شینسل یا همان ضایعات شینسل، دورریز کناره‌های سینه است که هنوز گوشت مرغ به آن چسبیده. این ضایعات یک‌باره مصرف نمی‌شود و طی هفته جمع می‌شود تا به هشت تا ده کیلوگرم برسد؛ انبار همین آستانه را ده تا دوازده کیلوگرم بیان کرده است.",
+      "label": "جمع‌آوری کنار شینسل طی هفته ",
+      "description": "کنار شینسل یا همان ضایعات شینسل، دورریز کناره‌های سینه است که هنوز گوشت مرغ به آن چسبیده. این ضایعات یک‌باره مصرف نمی‌شود و طی هفته جمع می‌شود",
       "actor": "مسئول لاین مرغ",
       "icom": {
         "inputs": [
@@ -1908,19 +1912,21 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260917-150000",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
       "id": "preparation-013-n056",
       "type": "activity",
       "label": "تحویل کنار شینسل خام به انبار و نگهداری آن در سردخانه زیر صفر",
-      "description": "کنار شینسل خام به‌عنوان ضایعات تحویل انبار می‌شود و تا روز پخت هفتگی به‌صورت منجمد در سردخانه زیر صفر نگهداری می‌گردد. این قلم تنها برای تولید مرغ پیتزای پخته به کار می‌رود و در غذای پرسنل مصرف نمی‌شود. تحویل آن از انبار به آماده‌سازی بر مبنای وزن و در لیست مرغ و گوجه نیم‌ساخته ثبت می‌شود.",
+      "description": "کنار شینسل خام به‌عنوان ضایعات تحویل انبار می‌شود  تا  به هشت تا ده کیلوگرم برسد؛ انبار همین آستانه را ده تا دوازده کیلوگرم بیان کرده است. و تا روز پخت هفتگی به‌صورت منجمد در سردخانه زیر صفر نگهداری می‌گردد. این قلم تنها برای تولید مرغ پیتزای پخته به کار می‌رود و در غذای پرسنل مصرف نمی‌شود. تحویل آن از انبار به آماده‌سازی بر مبنای وزن و در لیست مرغ و گوجه نیم‌ساخته ثبت می‌شود.",
       "actor": "مسئول لاین مرغ",
       "icom": {
         "inputs": [
@@ -1941,12 +1947,14 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260917-150000",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1972,7 +1980,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -2007,7 +2015,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -2313,6 +2321,18 @@
       "to": "preparation-013-n041"
     },
     {
+      "from": "preparation-013-n035",
+      "to": "preparation-013-n042"
+    },
+    {
+      "from": "preparation-013-n042",
+      "to": "preparation-013-n047"
+    },
+    {
+      "from": "preparation-013-n040",
+      "to": "preparation-013-n043"
+    },
+    {
       "from": "preparation-013-j3",
       "to": "preparation-013-n048"
     },
@@ -2371,18 +2391,6 @@
     {
       "from": "preparation-013-j4",
       "to": "preparation-013-n034"
-    },
-    {
-      "from": "preparation-013-n035",
-      "to": "preparation-013-n047"
-    },
-    {
-      "from": "preparation-013-n040",
-      "to": "preparation-013-n042"
-    },
-    {
-      "from": "preparation-013-n042",
-      "to": "preparation-013-n043"
     }
   ],
   "pending": []
