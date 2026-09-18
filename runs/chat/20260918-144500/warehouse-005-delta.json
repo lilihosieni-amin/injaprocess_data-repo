@@ -1,0 +1,13 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "revise_nodes": [
+    {
+      "id": "warehouse-005-n032",
+      "set": { "label": "بایگانی فرم تولید" }
+    }
+  ],
+  "remove_edges": [],
+  "flag_removed": []
+}
