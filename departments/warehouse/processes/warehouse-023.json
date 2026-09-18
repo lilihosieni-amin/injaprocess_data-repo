@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-18T05:04:24Z",
-  "updated_at": "2026-09-18T18:54:23Z",
+  "updated_at": "2026-09-18T19:01:45Z",
   "idef0": {
     "inputs": [
       "فرم درخواست کالای اولیهٔ واحد آماده‌سازی",
@@ -382,48 +382,6 @@
       "removed": true
     },
     {
-      "id": "warehouse-023-j3",
-      "type": "junction",
-      "junctionType": "XOR",
-      "direction": "split",
-      "position": {
-        "x": 623,
-        "y": 1068.5
-      },
-      "layout": "auto"
-    },
-    {
-      "id": "warehouse-023-n010",
-      "type": "activity",
-      "label": "تفکیک درخواست ملزومات بخش‌ها جهت تأمین از موجودی انبار",
-      "description": "اقلامی مانند دستمال کاغذی، چنگال، قاشق و رول حرارتی که به تولید آماده‌سازی ارتباطی ندارد، جدا از فرم درخواست تولید و به صورت مستقل برای بخش درخواست‌کننده تأمین می‌شود؛ بخشی از این اقلام در انبار موجود است و بخشی از انبار قدس ۸ آورده می‌شود.",
-      "actor": "انباردار",
-      "icom": {
-        "inputs": [
-          "درخواست ملزومات سالن، کانتر و صندوق"
-        ],
-        "controls": [],
-        "outputs": [
-          "درخواست‌های ملزوماتی تفکیک‌شده جهت تأمین از موجودی انبار"
-        ],
-        "mechanisms": [
-          "انباردار"
-        ]
-      },
-      "subprocess": null,
-      "position": {
-        "x": 231.52006172839504,
-        "y": 937.0293209876543
-      },
-      "layout": "manual",
-      "source": {
-        "created_by": "runs/warehouse/20260917-merge23",
-        "touched_by": [
-          "ui-edit"
-        ]
-      }
-    },
-    {
       "id": "warehouse-023-n011",
       "type": "activity",
       "label": "تجمیع درخواست کالای لاین‌های آشپزخانه مرکزی و شعبه در یک فهرست واحد",
@@ -446,13 +404,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1140
+        "x": 381.01851851851853,
+        "y": 1021.9444444444443
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260917-merge23",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -795,13 +755,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1665.0
+        "x": 261.712962962963,
+        "y": 1846.7129629629628
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260918-160000",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -988,7 +950,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 2540.0
+        "y": 2540
       },
       "layout": "auto",
       "source": {
@@ -1038,14 +1000,15 @@
       },
       "subprocess": "warehouse-009",
       "position": {
-        "x": 1080,
-        "y": 1840.0
+        "x": -110.97222222222226,
+        "y": 1871.2500000000002
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260918-170000",
         "touched_by": [
-          "runs/chat/20260918-170000"
+          "runs/chat/20260918-170000",
+          "ui-edit"
         ]
       }
     },
@@ -1081,14 +1044,15 @@
       },
       "subprocess": "warehouse-010",
       "position": {
-        "x": 820,
-        "y": 1840.0
+        "x": -307.3148148148148,
+        "y": 2083.0555555555557
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260918-170000",
         "touched_by": [
-          "runs/chat/20260918-170000"
+          "runs/chat/20260918-170000",
+          "ui-edit"
         ]
       }
     },
@@ -1123,14 +1087,15 @@
       },
       "subprocess": "warehouse-011",
       "position": {
-        "x": 560,
-        "y": 1840.0
+        "x": 246.3425925925926,
+        "y": 2028.6574074074074
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260918-170000",
         "touched_by": [
-          "runs/chat/20260918-170000"
+          "runs/chat/20260918-170000",
+          "ui-edit"
         ]
       }
     },
@@ -1168,14 +1133,15 @@
       },
       "subprocess": "warehouse-012",
       "position": {
-        "x": 300,
-        "y": 1840.0
+        "x": 103.24074074074073,
+        "y": 2337.685185185185
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260918-170000",
         "touched_by": [
-          "runs/chat/20260918-170000"
+          "runs/chat/20260918-170000",
+          "ui-edit"
         ]
       }
     },
@@ -1207,10 +1173,10 @@
       "junctionType": "OR",
       "direction": "split",
       "position": {
-        "x": 1143,
-        "y": 1506.0
+        "x": 109.43518518518513,
+        "y": 1753.6851851851852
       },
-      "layout": "auto"
+      "layout": "manual"
     }
   ],
   "edges": [
@@ -1247,16 +1213,6 @@
     {
       "from": "warehouse-023-n005",
       "to": "warehouse-023-n006"
-    },
-    {
-      "from": "warehouse-023-j3",
-      "to": "warehouse-023-n010",
-      "label": "درخواست ملزومات غیرمرتبط با تولید آماده‌سازی"
-    },
-    {
-      "from": "warehouse-023-j3",
-      "to": "warehouse-023-n011",
-      "label": "درخواست اقلام خوراکی لاین‌های آشپزخانه و شعبه"
     },
     {
       "from": "warehouse-023-n011",
@@ -1349,10 +1305,6 @@
       "to": "warehouse-023-j5"
     },
     {
-      "from": "warehouse-023-n027",
-      "to": "warehouse-023-j3"
-    },
-    {
       "from": "warehouse-023-n021",
       "to": "warehouse-023-j7"
     },
@@ -1363,6 +1315,11 @@
     {
       "from": "warehouse-023-j7",
       "to": "warehouse-023-n029"
+    },
+    {
+      "from": "warehouse-023-n027",
+      "to": "warehouse-023-n011",
+      "label": ""
     }
   ],
   "pending": []
