@@ -1,0 +1,20 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "revise_nodes": [
+    {
+      "id": "warehouse-005-n029",
+      "set": {
+        "icom": {
+          "inputs": ["اقلام تولیدی آماده‌سازی"],
+          "controls": [],
+          "outputs": ["تعداد و ضایعات ثبت‌شده در فرم تولید گوشت"],
+          "mechanisms": ["کارکنان انبار", "فرم تولید"]
+        }
+      }
+    }
+  ],
+  "remove_edges": [],
+  "flag_removed": []
+}
