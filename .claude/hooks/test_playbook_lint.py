@@ -541,3 +541,32 @@ def test_edit_fact_has_move_and_detach_cases():
     assert "«قاعدهٔ «سقف ضایعات» را زیر «فرم تبدیل آماده‌سازی برگر» ببر»" in text
     assert "قاعدهٔ «سقف ضایعات» زیر «فرم تبدیل آماده‌سازی برگر» می‌رود." in text
     assert "از جدولش جدا می‌شود." in text
+
+
+# Two bugs from the owner's server test, 2026-09-19. Both are the same class:
+# what the model was never told, it never wrote.
+
+
+def test_the_agent_never_invents_a_column_title():
+    """Fourteen blank hand-filled columns under one printed heading «نیمه ساخته
+    برگر» came back as fourteen fields titled «مادهٔ اول»…«مادهٔ چهاردهم»
+    (INV-3). One printed heading is one field, with `repeat`."""
+    text = " ".join(AGENT.read_text(encoding="utf-8").split())
+    assert ("Never invent a column title: a title is copied as printed on the "
+            "form or the sheet. A block of columns with no printed name of "
+            "their own — blank on the paper, filled in by hand — is ONE field: "
+            "the printed heading over the block as its `title`, "
+            "`repeat: <how many>`, and the printed unit. Never numbered "
+            "fields.") in text
+
+
+def test_the_agent_keeps_a_unit_word_that_is_the_whole_heading():
+    """The same form's printed «عدد» and «کیلو» came back as «تعداد» and
+    «وزن» — the same invention one column over."""
+    text = " ".join(AGENT.read_text(encoding="utf-8").split())
+    assert ("A column whose only printed heading is a unit word (e.g. «کیلو», "
+            "«عدد») keeps that word as its `title`; two columns headed alike "
+            "get different keys and the same title.") in text
+    row = next(line for line in AGENT.read_text(encoding="utf-8").splitlines()
+               if line.startswith("| record (`new`"))
+    assert "`repeat`" in row and "never a title you invented" in row
