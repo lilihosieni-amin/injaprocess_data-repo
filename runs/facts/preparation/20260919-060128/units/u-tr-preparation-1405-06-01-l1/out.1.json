@@ -1,0 +1,369 @@
+{
+  "schema_version": 1,
+  "unit": "u-tr-preparation-1405-06-01-l1",
+  "attempt": 1,
+  "decisions": [],
+  "new": [
+    {
+      "kind": "record",
+      "key": "daftar_rozane_lain_sabzijat",
+      "title": "دفتر ثبت روزانهٔ لاین سبزیجات",
+      "statement": "دفتر دست‌نویسی که مسئول لاین سبزیجات هر روز وزن ورودی خام، وزن خرد شده، وزن پاک شده، وزن ضایعات، وزن ظرف و سهم آشپزخانهٔ مرکزی و شعبه را در آن می‌نویسد. اقلامی که برگهٔ تبدیل چاپی ندارند — کاهو، فلفل دلمه‌ای، قارچ و مرغ پیتزای پخته — تنها در همین دفتر ثبت می‌شوند و دفتر در پایان هر هفته به مدیر ناظر تحویل داده می‌شود.",
+      "aliases": ["دفتر یادداشت لاین", "دفتر شخصی مسئول لاین"],
+      "processes": [
+        {"process": "preparation-026", "node": "preparation-026-n024", "quote": "ثبت دست‌نویس ورودی، ضایعات و خروجی اقلام فاقد فرم"},
+        {"process": "preparation-013", "node": "preparation-013-n040", "quote": "ثبت وزن مرغ خام، مرغ پخته‌شده، مقدار سس و وزن ظرف در دفتر"},
+        {"process": "preparation-004", "node": "preparation-004-n013", "quote": "ثبت وزن و تعداد اقلام تحویل‌گرفته‌شده در دفتر"}
+      ],
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "لاین سبزیجات در بخش آماده‌سازی",
+          "holder": "مسئول لاین سبزیجات"
+        },
+        "cadence": "daily",
+        "grain": "هر قلم در هر روز",
+        "filled_by": "مسئول لاین سبزیجات",
+        "approved_by": null,
+        "blank_master": false,
+        "fields": [
+          {"key": "tarikh", "title": "تاریخ", "type": "date"},
+          {"key": "qalam", "title": "نام قلم", "type": "string",
+           "description": "نام مادهٔ اولیه یا محصولی که در آن روز روی آن کار شده است."},
+          {"key": "vazn_vorudi", "title": "وزن ورودی خام", "type": "number", "unit": "kg",
+           "description": "وزنی که هنگام تحویل گرفتن قلم از انبار گرفته می‌شود."},
+          {"key": "vazn_khord_shode", "title": "وزن خرد شده", "type": "number", "unit": "kg"},
+          {"key": "vazn_pak_shode", "title": "وزن پاک شده", "type": "number", "unit": "kg"},
+          {"key": "vazn_zayeat", "title": "وزن ضایعات", "type": "number", "unit": "kg"},
+          {"key": "vazn_sos", "title": "وزن سس مصرفی", "type": "number", "unit": "kg"},
+          {"key": "vazn_zarf", "title": "وزن ظرف", "type": "number", "unit": "kg",
+           "description": "وزن ظرف استیل یا ظرف بسته‌بندی که برای درست درآمدن حساب نوشته می‌شود."},
+          {"key": "sahm_markazi", "title": "سهم آشپزخانهٔ مرکزی", "type": "number", "unit": "kg"},
+          {"key": "sahm_shobe", "title": "سهم شعبه", "type": "number", "unit": "kg"},
+          {"key": "tozihat", "title": "توضیحات", "type": "string"}
+        ],
+        "primaryKey": ["tarikh", "qalam"]
+      }
+    },
+    {
+      "kind": "record",
+      "key": "checklist_dohaftei_ghazaye_personel",
+      "title": "چک‌لیست دوهفته‌ای ناهار و شام پرسنل",
+      "statement": "فهرست از پیش تعیین‌شده‌ای که برای هر روز از یک دورهٔ دوهفته‌ای، نام غذای ناهار و شام پرسنل، گراماژ هر پرس، تعداد نفرات و وزن کل مادهٔ اولیهٔ لازم را مشخص می‌کند. انبار بر پایهٔ همین فهرست هر روز مواد را خروج می‌زند و درخواست جداگانه‌ای پر نمی‌شود؛ پس از پایان دوره، همان دوره از ابتدا تکرار می‌شود.",
+      "aliases": ["برنامه دوهفته‌ای غذای پرسنل"],
+      "processes": [
+        {"process": "preparation-024", "node": "preparation-024-n001", "quote": "خروج زدن مواد اولیه ناهار و شام پرسنل طبق چک‌لیست دوهفته‌ای"}
+      ],
+      "data": {
+        "medium": "paper",
+        "role": "reference",
+        "location": {
+          "kept_at": "انبار و بخش آماده‌سازی",
+          "holder": "سرپرست انبار"
+        },
+        "cadence": null,
+        "grain": "هر روز از دورهٔ دوهفته‌ای",
+        "filled_by": null,
+        "approved_by": null,
+        "fields": [
+          {"key": "rooz", "title": "روز", "type": "string"},
+          {"key": "nam_ghaza", "title": "نام غذا", "type": "string"},
+          {"key": "goramaj_har_pors", "title": "گراماژ هر پرس", "type": "number", "unit": "g"},
+          {"key": "tedad_nafarat", "title": "تعداد نفرات", "type": "integer", "unit": "pcs"},
+          {"key": "vazn_kol", "title": "وزن کل مادهٔ اولیه", "type": "number", "unit": "kg"},
+          {"key": "vazn_takmili", "title": "وزن تکمیلی", "type": "number", "unit": "kg",
+           "description": "وزنی که در روزهای پرجمعیت‌تر به وزن پایه افزوده می‌شود."}
+        ]
+      }
+    },
+    {
+      "kind": "record",
+      "key": "daftar_sos_amadesazi",
+      "title": "دفتر دستور سس‌های آماده‌سازی",
+      "statement": "دفتر دست‌نویسی که دستور و مواد تشکیل‌دهندهٔ سس‌های تولیدی آماده‌سازی در آن نوشته شده است و مسئول سس هنگام تولید از روی آن کار می‌کند. مقدار مواد هر سس و ساختار خود دفتر در منبع این ثبت نیامده است.",
+      "data": {
+        "medium": "paper",
+        "role": "reference",
+        "location": {
+          "kept_at": "بخش آماده‌سازی",
+          "holder": "مسئول سس آماده‌سازی"
+        },
+        "cadence": null,
+        "filled_by": null,
+        "stub": true
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "kast_pokht_morgh_pizza",
+      "title": "کاست پخت مرغ پیتزا",
+      "statement": "کاست وزنی مرغ پیتزا در پخت حدود سی درصد وزن خام است. به ازای هر ده کیلوگرم مرغ پختهٔ مورد نیاز، سه کیلوگرم بیشتر از انبار تحویل گرفته می‌شود و کاست به‌دست‌آمده در پایان کار باید نزدیک همین نسبت باشد.",
+      "home": {"ref": "N-u-att-1-0", "field": "kast"},
+      "processes": [
+        {"process": "preparation-013", "node": "preparation-013-n001", "quote": "با احتساب سه کیلو اضافه به ازای هر ده کیلو"}
+      ],
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {"key": "nesbat_kast", "title": "نسبت کاست پخت", "unit": "percent",
+           "value": 30, "per": "وزن مرغ خام تحویلی", "nature": "standard"}
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "mohasebe_kast_morgh_pokhte",
+      "title": "محاسبهٔ کاست مرغ پختهٔ تحویلی",
+      "statement": "کاست هر محمولهٔ مرغ پیتزا برابر است با وزن مرغ خام تحویل‌گرفته‌شده منهای وزن مرغ پختهٔ تحویلی و منهای ضایعات جداشده. وزن خام در سربرگ برگهٔ تبدیل و دو مقدار دیگر در بدنهٔ آن نوشته می‌شود و کاست از تفاضل آن‌ها به دست می‌آید.",
+      "home": {"ref": "N-u-att-1-0"},
+      "data": {
+        "lang": "feel",
+        "expr": "kast = vazn_morgh_khaam - morgh_pokhte - zayeat_morgh",
+        "inputs": [
+          {"key": "vazn_morgh_khaam", "title": "وزن مرغ خام تحویلی", "unit": "kg"},
+          {"key": "morgh_pokhte", "title": "وزن مرغ پخته", "unit": "kg",
+           "from": {"ref": "N-u-att-1-0", "field": "morgh_pokhte"}},
+          {"key": "zayeat_morgh", "title": "ضایعات مرغ", "unit": "kg",
+           "from": {"ref": "N-u-att-1-0", "field": "zayeat_morgh"}}
+        ],
+        "outputs": [
+          {"key": "kast", "title": "کاست", "unit": "kg", "nature": "observed",
+           "writes_to": {"ref": "N-u-att-1-0", "field": "kast"}}
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "nesbat_sos_morgh_pizza",
+      "title": "نسبت سس به مرغ پیتزای پخته",
+      "statement": "به ازای هر یک کیلوگرم مرغ پختهٔ خرد شده، هشتاد گرم سس مرغ پیتزا افزوده می‌شود. مسئول لاین وزن خالص مرغ پخته را پس از خرد شدن می‌گیرد و مقدار سس را از همین نسبت به دست می‌آورد.",
+      "home": {"ref": "N-u-att-1-3"},
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {"key": "meghdar_sos", "title": "مقدار سس", "unit": "g",
+           "value": 80, "per": "هر کیلوگرم مرغ پختهٔ خرد شده", "nature": "standard"}
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "taraz_khoruji_morgh_pizza",
+      "title": "تراز خروجی مرغ پیتزای پخته",
+      "statement": "وزن خروجی تحویلی مرغ پیتزا برابر است با وزن مرغ پختهٔ خرد شده به‌علاوهٔ وزن سس افزوده‌شده. این جمع با وزن شمارش‌شدهٔ ظرف‌های دو کیلویی بسته‌بندی‌شده سنجیده می‌شود و باید با آن هم‌خوانی داشته باشد.",
+      "home": {"ref": "N-u-att-1-3"},
+      "processes": [
+        {"process": "preparation-013", "node": "preparation-013-n043", "quote": "ثبت مقدار نهایی تحویلی بر اساس شمارش ظرف‌های دو کیلویی"}
+      ],
+      "data": {
+        "lang": "feel",
+        "expr": "khoruji_morgh_sos = morgh_pokhte + sos",
+        "inputs": [
+          {"key": "morgh_pokhte", "title": "وزن مرغ پختهٔ خرد شده", "unit": "kg"},
+          {"key": "sos", "title": "وزن سس مصرفی", "unit": "kg"}
+        ],
+        "outputs": [
+          {"key": "khoruji_morgh_sos", "title": "وزن خروجی مرغ با سس", "unit": "kg", "nature": "observed"}
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "vazn_ghazaye_personel_rozane",
+      "title": "وزن مادهٔ اولیهٔ ناهار و شام پرسنل",
+      "statement": "وزن مادهٔ اولیهٔ لازم برای هر وعدهٔ پرسنل برابر است با تعداد نفرات آن روز ضرب در گراماژ هر پرس. انبار همین وزن را طبق برنامهٔ دوهفته‌ای خروج می‌زند و آشپزخانه به همان اندازه سهم وعدهٔ بعد را کنار می‌گذارد.",
+      "home": {"ref": "N-u-tr-preparation-1405-06-01-l1-1"},
+      "processes": [
+        {"process": "preparation-024", "node": "preparation-024-n024", "quote": "به تعداد نفرات و وزن هر پرس طبق چک‌لیست"}
+      ],
+      "data": {
+        "lang": "feel",
+        "expr": "vazn_kol = tedad_nafarat * goramaj_har_pors / 1000",
+        "inputs": [
+          {"key": "tedad_nafarat", "title": "تعداد نفرات", "unit": "pcs",
+           "from": {"ref": "N-u-tr-preparation-1405-06-01-l1-1", "field": "tedad_nafarat"}},
+          {"key": "goramaj_har_pors", "title": "گراماژ هر پرس", "unit": "g",
+           "from": {"ref": "N-u-tr-preparation-1405-06-01-l1-1", "field": "goramaj_har_pors"}}
+        ],
+        "outputs": [
+          {"key": "vazn_kol", "title": "وزن کل مادهٔ اولیه", "unit": "kg", "nature": "observed",
+           "writes_to": {"ref": "N-u-tr-preparation-1405-06-01-l1-1", "field": "vazn_kol"}}
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "taraz_tolid_merinat",
+      "title": "تراز مقدار مرینت روزانه",
+      "statement": "مقدار مرینت‌شدهٔ هر قلم در روز برابر است با سفارش آشپزخانهٔ مرکزی به‌علاوهٔ سفارش شعبه به‌علاوهٔ مقداری که افزون بر سفارش‌ها مرینت و برای نگهداری در سردخانه به انبار برگردانده می‌شود. انبار سفارش‌های دو آشپزخانه را جمع می‌بندد و مقدار نهایی را برای لاین مرینت مشخص می‌کند.",
+      "home": {"ref": "N-u-att-1-12"},
+      "data": {
+        "lang": "feel",
+        "expr": "tedad_vazn = markazi + shobe + bargasht_be_anbar",
+        "inputs": [
+          {"key": "markazi", "title": "سفارش آشپزخانهٔ مرکزی",
+           "from": {"ref": "N-u-att-1-12", "field": "markazi"}},
+          {"key": "shobe", "title": "سفارش شعبه",
+           "from": {"ref": "N-u-att-1-12", "field": "shobe"}},
+          {"key": "bargasht_be_anbar", "title": "مقدار برگشتی به انبار",
+           "from": {"ref": "N-u-att-1-12", "field": "bargasht_be_anbar"}}
+        ],
+        "outputs": [
+          {"key": "tedad_vazn", "title": "تعداد یا وزن مرینت‌شده", "nature": "observed",
+           "writes_to": {"ref": "N-u-att-1-12", "field": "tedad_vazn"}}
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "kasri_tahvil_az_anbar",
+      "title": "کسری تحویل اقلام درخواستی از انبار",
+      "statement": "کسری تحویل هر قلم برابر است با مقدار درخواست‌شده منهای مقدار تحویل‌شده. چون اقلام تحویلی مصرف همان روز هستند، مسئول لاین کسری را همان شیفت به انبار اعلام می‌کند و انبار باقی‌مانده را تکمیل و تحویل می‌دهد.",
+      "home": {"ref": "N-u-att-1-10"},
+      "processes": [
+        {"process": "preparation-003", "node": "preparation-003-n006", "quote": "تحویل گرفتن چک‌لیست تکمیل‌شده و فرم نیازها از انبار"}
+      ],
+      "data": {
+        "lang": "feel",
+        "expr": "kasri = meghdar_darkhast - meghdar_tahvil",
+        "inputs": [
+          {"key": "meghdar_darkhast", "title": "مقدار درخواست",
+           "from": {"ref": "N-u-att-1-10", "field": "meghdar_darkhast"}},
+          {"key": "meghdar_tahvil", "title": "مقدار تحویل",
+           "from": {"ref": "N-u-att-1-10", "field": "meghdar_tahvil"}}
+        ],
+        "outputs": [
+          {"key": "kasri", "title": "کسری تحویل", "nature": "observed"}
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "mabnaye_baste_bandi_lain_sabzijat",
+      "title": "مبنای بسته‌بندی محصولات لاین سبزیجات",
+      "statement": "مبنای بسته‌بندی هر محصول لاین سبزیجات ثابت است: فلفل دلمه‌ای اسلایس‌شده یک کیلوگرم، قارچ اسلایس‌شده دو کیلوگرم، مرغ پیتزای پختهٔ سس‌خورده دو کیلوگرم و سالاد کنتاکی نود گرم در هر ظرف. سهم آشپزخانهٔ مرکزی و سهم شعبه جدا بسته می‌شوند و ظرف آخر که به اندازهٔ کامل نمی‌رسد با وزن واقعی خود لیبل می‌خورد.",
+      "home": {"ref": "N-u-tr-preparation-1405-06-01-l1-0"},
+      "processes": [
+        {"process": "preparation-008", "node": "preparation-008-n008", "quote": "تقسیم قارچ اسلایس‌شده در ظرف‌های پلاستیکی سفید به‌صورت دو کیلویی"},
+        {"process": "preparation-007", "node": "preparation-007-n013", "quote": "قرار دادن پایه ظرف برش‌خورده هم‌سایز در یک ظرف سوراخ‌نشده"}
+      ],
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "inputs": [
+          {"key": "mahsul", "title": "محصول"}
+        ],
+        "outputs": [
+          {"key": "mabnaye_baste", "title": "مبنای هر بسته", "unit": "kg", "nature": "standard"}
+        ],
+        "table": {
+          "inputs": ["mahsul"],
+          "outputs": ["mabnaye_baste"],
+          "hit": "unique",
+          "rows": [
+            {"mahsul": "فلفل دلمه‌ای اسلایس‌شده", "mabnaye_baste": 1},
+            {"mahsul": "قارچ اسلایس‌شده", "mabnaye_baste": 2},
+            {"mahsul": "مرغ پیتزای پختهٔ سس‌خورده", "mabnaye_baste": 2},
+            {"mahsul": "سالاد کنتاکی", "mabnaye_baste": 0.09}
+          ]
+        }
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "omr_mofid_salad_kentaki",
+      "title": "عمر مفید سالاد کنتاکی",
+      "statement": "اگر در تولید سالاد کنتاکی آب به مواد برسد، عمر مفید آن به دو تا سه ساعت کاهش می‌یابد و پس از آن بو می‌گیرد و قابل مصرف نیست؛ به همین سبب کلم و هویج و کشمش شسته نمی‌شوند. باقی‌ماندهٔ سفارش کانتر غروب روز بعد بررسی می‌شود و اگر سالم باشد همان روز پیش از بقیه مصرف و در غیر این صورت ضایعات می‌شود. برای این محصول هیچ برگه یا ثبت روزانه‌ای پر نمی‌شود و جدولی برای آن وجود ندارد.",
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {"key": "omr_mofid", "title": "عمر مفید", "unit": "hour",
+           "range": {"min": 2, "max": 3}, "nature": "limit"}
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "tahvil_kamel_tolid_be_anbar",
+      "title": "تحویل کامل تولید روزانه به انبار",
+      "statement": "هر چه آماده‌سازی در طول روز تولید می‌کند همان روز به انبار تحویل داده می‌شود و ماندهٔ پایان شب برای آماده‌سازی ثبت نمی‌شود. مادهٔ اولیهٔ پاک‌شده‌ای که به‌صورت امانی در یخچال آماده‌سازی می‌ماند دارایی انبار است، اما چون انبار شب تعطیل است آماده‌سازی مجاز است صبح روز بعد آن را دوباره وارد چرخهٔ تولید کند تا فاسد نشود.",
+      "home": {"ref": "S-rec-2c141582db58"},
+      "processes": [
+        {"process": "preparation-008", "node": "preparation-008-n014", "quote": "تحویل قارچ سالم باقی‌مانده به انبار برای نگهداری امانی تا روز بعد"}
+      ],
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "original": "هر چیزی که میاد تولید میشه میدن انبار. هیچ چیزی نمی‌مونه.",
+        "inputs": [
+          {"key": "mahsul_tolid_shode", "title": "محصول تولیدشدهٔ روز"}
+        ],
+        "outputs": [
+          {"key": "mabnaye_tahvil", "title": "مبنای تحویل روزانه",
+           "value": "تحویل کامل همان روز به انبار", "nature": "standard"}
+        ]
+      }
+    },
+    {
+      "kind": "measurement",
+      "key": "tozin_marahel_lain_sabzijat",
+      "title": "توزین مرحله‌به‌مرحلهٔ اقلام لاین سبزیجات",
+      "statement": "مسئول لاین سبزیجات وزن ورودی خام، وزن خرد شده و شسته، وزن پاک شده و وزن ضایعات هر قلم را جداگانه با ترازوی لیبل‌گذاری می‌گیرد و همه را در دفتر روزانهٔ خود می‌نویسد. برای هر قلم پنج تا شش وزن ثبت می‌شود و بستهٔ آماده با نام محصول، تاریخ و وزن لیبل می‌خورد.",
+      "home": {"ref": "N-u-tr-preparation-1405-06-01-l1-0"},
+      "processes": [
+        {"process": "preparation-006", "node": "preparation-006-n020", "quote": "چاپ و زدن لیبل تاریخ، ساعت، نام محصول و وزن روی بسته‌های کاهو"}
+      ],
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "ترازوی لیبل‌گذاری آماده‌سازی",
+        "when": "در پایان هر مرحله از کار روی هر قلم",
+        "by": "مسئول لاین سبزیجات",
+        "writes_to": {"ref": "N-u-tr-preparation-1405-06-01-l1-0"},
+        "exceptions": "ضایعات فلفل دلمه‌ای وزن نمی‌شود، مگر آنکه بخش چشمگیری از محموله فاسد باشد که در آن صورت به مدیر ناظر و انبار اعلام می‌شود."
+      }
+    },
+    {
+      "kind": "measurement",
+      "key": "tozin_morgh_pokhte_baraye_sos",
+      "title": "توزین خالص مرغ پختهٔ خرد شده",
+      "statement": "پس از اسلایس شدن مرغ پخته، وزن ظرف خالی روی ترازو صفر می‌شود و مرغ خرد شده در همان ظرف وزن می‌شود تا وزن خالص به دست آید. همین وزن مبنای محاسبهٔ مقدار سس و مبنای ثبت در برگهٔ تولید نیم‌ساخته است.",
+      "home": {"ref": "N-u-att-1-3", "field": "meghdar_vazn"},
+      "processes": [
+        {"process": "preparation-013", "node": "preparation-013-n033", "quote": "وزن‌کشی مرغ خرد شده برای به‌دست آوردن وزن خالص مرغ پخته‌شده"},
+        {"process": "preparation-026", "node": "preparation-026-n018", "quote": "صفر کردن وزن ظرف روی ترازوی لیبل‌گذاری پیش از وزن‌کشی محصول"}
+      ],
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "ترازوی لیبل‌گذاری با صفر کردن وزن ظرف",
+        "when": "پس از پایان اسلایس مرغ پخته و پیش از سس زدن",
+        "by": "مسئول لاین سبزیجات",
+        "writes_to": {"ref": "N-u-att-1-3", "field": "meghdar_vazn"}
+      }
+    },
+    {
+      "kind": "note",
+      "key": "note_saghf_zayeat_kahu",
+      "title": "سقف ضایعات کاهو",
+      "statement": "برای ضایعات کاهو سقف چهل درصد وزن ورودی مطرح است، در حالی که ضایعات فصل گرم تا شصت درصد وزن ورودی هم می‌رسد. روشن نیست چهل درصد یک هدف است یا حد پذیرش.",
+      "home": {"ref": "N-u-tr-preparation-1405-06-01-l1-0"},
+      "data": {
+        "about": [{"ref": "N-u-att-1-21"}],
+        "question": "سقف پذیرفته‌شدهٔ ضایعات کاهو چهل درصد است یا در فصل گرم تا شصت درصد پذیرفته می‌شود؟"
+      }
+    },
+    {
+      "kind": "note",
+      "key": "note_meghdar_mavad_sos_morgh",
+      "title": "مقدار مواد سس مرغ پیتزا",
+      "statement": "مواد تشکیل‌دهندهٔ سس مرغ پیتزا مایونز، خامه، عصارهٔ مرغ، سس ورچستر، جوز هندی و فلفل است، اما مقدار هیچ‌یک روشن نیست و تنها در دفتر دستور سس‌ها نوشته شده است.",
+      "home": {"ref": "N-u-tr-preparation-1405-06-01-l1-2"},
+      "data": {
+        "about": [{"ref": "N-u-tr-preparation-1405-06-01-l1-2"}],
+        "question": "مقدار هر یک از مواد سس مرغ پیتزا در هر نوبت تولید چقدر است؟"
+      }
+    }
+  ]
+}
