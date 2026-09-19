@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-13T16:49:00Z",
-  "updated_at": "2026-09-19T21:45:18Z",
+  "updated_at": "2026-09-19T21:46:33Z",
   "idef0": {
     "inputs": [
       "موجودی باقی‌مانده اقلام یک‌بارمصرف در انبار",
@@ -66,14 +66,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 90.0
+        "x": 53.63611491108071,
+        "y": 168.4076607387141
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260913-141752",
         "touched_by": [
-          "runs/chat/20260919-113000"
+          "runs/chat/20260919-113000",
+          "ui-edit"
         ]
       }
     },
@@ -101,7 +102,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -136,7 +137,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -314,13 +315,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 440.0
+        "x": -3.465116279069761,
+        "y": 406.76196990424074
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260913-141752",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -347,14 +350,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 615.0
+        "x": 153.3502051983584,
+        "y": 657.6128590971272
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260913-141752",
         "touched_by": [
-          "runs/chat/20260919-113000"
+          "runs/chat/20260919-113000",
+          "ui-edit"
         ]
       }
     },
@@ -365,7 +369,7 @@
       "direction": "join",
       "position": {
         "x": 103,
-        "y": 806.0
+        "y": 806
       },
       "layout": "auto"
     },
@@ -393,7 +397,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 790.0
+        "y": 790
       },
       "layout": "auto",
       "source": {
