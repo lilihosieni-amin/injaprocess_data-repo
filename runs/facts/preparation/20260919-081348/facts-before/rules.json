@@ -5229,14 +5229,12 @@
           }
         ]
       },
-      "home": {
-        "ref": "F-00011"
-      },
+      "home": null,
       "id": "F-00107",
       "valid_from": null,
       "valid_to": null,
       "status": "confirmed",
-      "updated_at": "2026-09-19T08:14:00Z"
+      "updated_at": "2026-09-19T07:12:52Z"
     },
     {
       "kind": "rule",
