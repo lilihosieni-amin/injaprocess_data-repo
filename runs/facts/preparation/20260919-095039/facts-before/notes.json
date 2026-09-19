@@ -1,0 +1,822 @@
+{
+  "schema_version": 2,
+  "entries": [
+    {
+      "kind": "note",
+      "key": "note_9e2d120ea3b2",
+      "title": "سطر لقمه روی فرم تبدیل فیله مرغ",
+      "statement": "روی فرم تبدیل فیلهٔ مرغ سطر لقمه چاپ شده است، در حالی که اکنون از فیله لقمه تولید نمی‌شود و فیله‌های کوچک به مرغ پیتزا تبدیل می‌شوند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdg5rG7piKFF-.image.md",
+          "hash": "sha256:522e3b8ab426547aa322838f8efbbc90c40231c81cc1538fd143dea9766192b8",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00014"
+          }
+        ],
+        "question": "آیا سطر لقمه باید از فرم تبدیل فیلهٔ مرغ برداشته شود؟"
+      },
+      "home": {
+        "ref": "F-00014"
+      },
+      "id": "F-00132",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_a49ee83500d3",
+      "title": "نسخهٔ آماده‌سازی فرم‌های تبدیل انبار",
+      "statement": "دو فرم تبدیل مرغ پیتزای تکه‌شده و رول استیک با عنوان انبار چاپ شده‌اند، در حالی که همان فرم‌ها نسخه‌ای با عنوان آماده‌سازی هم دارند که نزد پرسنل آماده‌سازی پر می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADbg5rG7piKFF-.image.md",
+          "hash": "sha256:139a0796a3743c4bacab767f32749ebd0fe0f4e2c1e72de3a5e27a2a51201004",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADbw5rG7piKFF-.image.md",
+          "hash": "sha256:5b6e32cf7c7efaed3806530f1019e38936ae150469a4c5f53d4791f2daa6b5e7",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00002"
+          },
+          {
+            "ref": "F-00003"
+          }
+        ],
+        "question": "آیا نسخهٔ آماده‌سازی این دو فرم هم باید جداگانه ثبت شود؟"
+      },
+      "home": {
+        "ref": "F-00002"
+      },
+      "id": "F-00133",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_72af3561c7ff",
+      "title": "تفکیک استیک رولی و فیلادلفیا در دو فرم",
+      "statement": "از یک گوشت راستهٔ پاک‌نشده هم استیک رولی و هم فیلادلفیا به دست می‌آید و وزن فیلادلفیا با محاسبهٔ دستی از وزن کل راسته کسر می‌شود. برگه‌های چاپ‌شده برای این دو قلم جداگانه است، ولی اکنون برای فیلادلفیا فرم تبدیل پر نمی‌شود و به جای آن فرم تولید نیمه ساخته تکمیل می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADcg5rG7piKFF-.image.md",
+          "hash": "sha256:2f11b6cefb182523ae2c731474027b556ffbe1e24d68379d296baf3365ad5219",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdQ5rG7piKFF-.image.md",
+          "hash": "sha256:3483ac303e1e1c448a98972723665302ab10be6bff602f2e834c60a30a39db03",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00013"
+          },
+          {
+            "ref": "F-00010"
+          }
+        ],
+        "question": "آیا استیک رولی و فیلادلفیا باید در یک فرم تبدیل واحد برای گوشت راسته ادغام شوند؟"
+      },
+      "home": {
+        "ref": "F-00013"
+      },
+      "id": "F-00134",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_913e9a48fc69",
+      "title": "جایگاه جمع در فرم تبدیل مرغ پیتزا",
+      "statement": "در عکس این فرم، جمع سربرگ چاپ‌شدهٔ آخرین ستون سمت چپ جدول است، نه یک خانهٔ سربرگ بالای برگه؛ میان نام قلم و واحد هم یک ستون خالی دیگر دیده می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADbg5rG7piKFF-.image.md",
+          "hash": "sha256:139a0796a3743c4bacab767f32749ebd0fe0f4e2c1e72de3a5e27a2a51201004",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00002"
+          }
+        ],
+        "question": "آیا جمع در این فرم یک ستون جدول است یا یک خانهٔ سربرگ؟"
+      },
+      "home": {
+        "ref": "F-00002"
+      },
+      "id": "F-00135",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_e1a5c2dee13b",
+      "title": "ابهام در الزام فرم تبدیل برای پاستا",
+      "statement": "پاستا از اقلامی شمرده شده که ضریب تبدیل ندارد، ولی روشن نیست که مانند سبزیجات از پر کردن فرم تبدیل هم معاف باشد یا نه. هیچ‌یک از فرم‌های تبدیل موجود به پخت پاستا مربوط نیست، بنابراین این ابهام جای مشخصی ندارد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-05-28-02.txt",
+          "lines": "1-117",
+          "hash": "sha256:b6b6c0e5358cb64b0f4d13b61be777e44578f68adb055fe58e56c5001d081b57",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-011.json",
+          "node": "preparation-011-n005",
+          "quote": "پاستا مثلا تبدیل نداره",
+          "hash": "sha256:632dd0eec1cfa9e2bdd455ab4c718a3008d7d886c911de0cce09a443abad7956",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00043"
+          }
+        ],
+        "question": "آیا پخت پاستا فرم تبدیل دارد یا مانند سبزیجات از آن معاف است؟"
+      },
+      "home": null,
+      "id": "F-00136",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_527ccd167790",
+      "title": "پرکنندهٔ فرم درخواست کالای آماده‌سازی",
+      "statement": "برای همهٔ لاین‌های آماده‌سازی یک فرم درخواست مشترک پر می‌شود و هر پرسنلی که قلمی نیاز دارد خودش آن قلم را می‌نویسد؛ پر کردن فرم تنها بر عهدهٔ سرپرست نیست، ولی سرپرست آماده‌سازی فرم تکمیل‌شده را بررسی می‌کند. هم‌اکنون پرکنندهٔ این فرم سرپرست آماده‌سازی ثبت شده است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-05-28-03.txt",
+          "lines": "1-103",
+          "hash": "sha256:cdb93d1b736e60b9176d42bd375e7759b9a57387103a62cc7fd446a5dfe99d3b",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00004"
+          },
+          {
+            "ref": "F-00006"
+          }
+        ],
+        "question": "آیا پرکنندهٔ فرم درخواست کالا باید پرسنل هر لاین ثبت شود و سرپرست آماده‌سازی تنها تأییدکنندهٔ آن باشد؟"
+      },
+      "home": {
+        "ref": "F-00004"
+      },
+      "id": "F-00137",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_9bd6775c6a48",
+      "title": "ابهام در اندازهٔ بستهٔ مرغ پیتزا",
+      "statement": "اندازهٔ بستهٔ مرغ پیتزای پخته هنگام تحویل به انبار روشن نیست: در یک جا دو کیلوگرم و برای فیله‌های ریز چهار کیلوگرم گفته شده و در قاعدهٔ اندازهٔ بستهٔ تحویل محصولات هم اندازه‌ای برای مرغ پیتزا نیامده است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-05-28.txt",
+          "lines": "1-300",
+          "hash": "sha256:158ef6036b07131e4f7d1b6d144b45862a2c111e0cee54dcc89129fc5ad4f280",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n020",
+          "quote": "بسته‌بندی فیله‌های ریز به‌عنوان مرغ پیتزا در بسته‌های ۴ کیلویی",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00126"
+          }
+        ],
+        "question": "اندازهٔ استاندارد بستهٔ مرغ پیتزای پخته هنگام تحویل به انبار چند کیلوگرم است و آیا برای مرغ پیتزای سینه و فیله متفاوت است؟"
+      },
+      "home": {
+        "ref": "F-00019"
+      },
+      "id": "F-00138",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_27de8018d2d6",
+      "title": "ابهام در سقف ضایعات لاین سبزیجات",
+      "statement": "برای ضایعات مواد اولیهٔ لاین سبزیجات سقف چهل درصد مطرح است و بازدهی هر قلم از رابطهٔ ورودی، خروجی و ضایعات سنجیده می‌شود، ولی مرجع این عدد و مبنای محاسبهٔ آن روشن نیست و در هیچ فرمی ثبت نمی‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-01.txt",
+          "lines": "1-758",
+          "hash": "sha256:fc7d9f14ad8514931d243e838aaa563a319ceaf543eee3bc472a1c0f74e77607",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00016"
+          }
+        ],
+        "question": "آیا سقف چهل درصد ضایعات مبنای رسمی سنجش بازدهی لاین سبزیجات است و بر پایهٔ وزن ورودی سنجیده می‌شود یا وزن خروجی؟"
+      },
+      "home": {
+        "ref": "F-00016"
+      },
+      "id": "F-00139",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_3e00f833b9e9",
+      "title": "نبود گراماژ رسپی سالاد کنتاکی",
+      "statement": "سالاد کنتاکی رسپی مشخصی با کلم، هویج، کشمش و سس مخصوص دارد و پیش از هم زدن همهٔ اجزا وزن‌گیری می‌شوند، ولی مقدار هر جزء در هیچ منبعی ثبت نشده است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-01.txt",
+          "lines": "1-758",
+          "hash": "sha256:fc7d9f14ad8514931d243e838aaa563a319ceaf543eee3bc472a1c0f74e77607",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00016"
+          }
+        ],
+        "question": "وزن کلم، هویج، کشمش و سس در رسپی سالاد کنتاکی به ازای هر بار تولید چقدر است؟"
+      },
+      "home": {
+        "ref": "F-00016"
+      },
+      "id": "F-00140",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_0b3dd82cc597",
+      "title": "نبودن فرم تبدیل رست‌بیف و چرخ‌کرده",
+      "statement": "لاین گوشت در هفته چهار فرم تبدیل پر و تحویل می‌دهد، ولی تنها فرم برگر و فرم گوشت راسته در دست است و از فرم رست‌بیف و فرم چرخ‌کرده نسخه‌ای دیده نشده است. چون این یادداشت دربارهٔ دو فرمی است که در دست نیست، به جدول مشخصی وابسته نمی‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
+          "lines": "1-315",
+          "hash": "sha256:45b8ecae3d03200501e93d22a48b6cc3ad748bfb64bffffdddaa4c7214120edf",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00008"
+          },
+          {
+            "ref": "F-00010"
+          }
+        ],
+        "question": "فرم تبدیل رست‌بیف و فرم تبدیل چرخ‌کرده کجا پر و نگهداری می‌شود و نسخهٔ خام آن‌ها نزد چه کسی است؟"
+      },
+      "home": {
+        "ref": "F-00008"
+      },
+      "id": "F-00141",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_dd8145da19a7",
+      "title": "ابهام در ثبت مقدار کنار چیزای برگشتی",
+      "statement": "مقدار کنار چیزایی که هر روز به انبار برگردانده می‌شود تنها به صورت شفاهی اطلاع داده می‌شود و فرمی برای ثبت آن وجود ندارد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02.txt",
+          "lines": "1-331",
+          "hash": "sha256:92fc16927652439d8a206fe561e4c9671e7c9e588881e463006d50742be1cd78",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-014.json",
+          "node": "preparation-014-n019",
+          "quote": "اطلاع دادن مقدار کنار چیزا به انبار بدون فرم مشخص",
+          "hash": "sha256:26afada1ed97ea0188db3e3b56579607741df095c814b1892cd10545bf1e3ced",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00019"
+          }
+        ],
+        "question": "وزن کنار چیزای برگشتی به انبار باید در کدام فرم یا جدول ثبت شود؟"
+      },
+      "home": {
+        "ref": "F-00019"
+      },
+      "id": "F-00142",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_5c2c0ed21d76",
+      "title": "ابهام در درج وزن روی برچسب بستهٔ لقمه",
+      "statement": "دربارهٔ برچسب بستهٔ دویست‌عددی لقمه دو روایت ناهمخوان وجود دارد: بر پایهٔ یکی تنها تعداد روی برچسب می‌آید و بر پایهٔ دیگری وزن و تاریخ هم نوشته می‌شود. تکلیف درج وزن روی برچسب لقمه روشن نیست، در حالی که برای فیله هم تعداد و هم وزن نوشته می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-04.txt",
+          "lines": "1-473",
+          "hash": "sha256:cd6d82e4fab1293439a9807b5648e7c47e7ba388a221ba5cf4235ad4e1296c01",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00019",
+            "field": "vazn_loqme_sine"
+          }
+        ],
+        "question": "آیا روی برچسب بستهٔ دویست‌عددی لقمه وزن بسته هم درج می‌شود یا تنها تعداد و تاریخ؟"
+      },
+      "home": {
+        "ref": "F-00019",
+        "field": "vazn_loqme_sine"
+      },
+      "id": "F-00143",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_e2e9bb10bd68",
+      "title": "اقلام ثبت‌شده در فرم تبدیل سینهٔ مرغ",
+      "statement": "برای هر روز شش قلم در این فرم نوشته می‌شود: لقمه با تعداد و وزن، مرغ پیتزا با وزن، گریل با وزن، چیزا با تعداد و وزن، ضایعات با وزن، و خونابه و پلاستیک که از تفاضل جمع به دست می‌آید. روشن نیست این شش قلم روی فرم چاپ شده است یا مسئول لاین خودش آن‌ها را می‌نویسد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-04.txt",
+          "lines": "1-473",
+          "hash": "sha256:cd6d82e4fab1293439a9807b5648e7c47e7ba388a221ba5cf4235ad4e1296c01",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00012"
+          }
+        ],
+        "question": "آیا سطرهای چاپ‌شدهٔ فرم تبدیل سینهٔ مرغ همین شش قلم است؟"
+      },
+      "home": {
+        "ref": "F-00012"
+      },
+      "id": "F-00144",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_66a8ed551cf6",
+      "title": "جایگاه لیست روزانهٔ مرینت",
+      "statement": "انبار هر روز لیستی از مرینت‌ها به آماده‌سازی می‌دهد که مبنای کار لاین مرینت است و سرپرست آن را کنترل می‌کند، اما این لیست میان فرم‌های ثبت‌شده شناسایی نشده است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-10.txt",
+          "lines": "1-553",
+          "hash": "sha256:1e3b2baf89a5ddab872162cf0e6153dbe2259c374bcc349f7fa1ca20f3c287db",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00007"
+          }
+        ],
+        "question": "لیست روزانهٔ مرینت چه فرمی است، چه کسی آن را پر می‌کند و آیا همان لیست مرغ و گوجهٔ نیمه‌ساخته است؟"
+      },
+      "home": {
+        "ref": "F-00007"
+      },
+      "id": "F-00145",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_54318c0860fb",
+      "title": "دو برگ فرم درخواست کالا",
+      "statement": "فرم درخواست کالای بخش آماده‌سازی یک فرم است که به دلیل زیاد بودن اقلام در دو برگ چاپ شده و هر دو با هم به انبار تحویل می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-10.txt",
+          "lines": "1-553",
+          "hash": "sha256:1e3b2baf89a5ddab872162cf0e6153dbe2259c374bcc349f7fa1ca20f3c287db",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00004"
+          },
+          {
+            "ref": "F-00006"
+          }
+        ],
+        "question": "آیا این دو برگ باید یک فرم واحد ثبت شوند یا دو فرم جدا باقی بمانند؟"
+      },
+      "home": {
+        "ref": "F-00004"
+      },
+      "id": "F-00146",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_30835c4cbc57",
+      "title": "مبنای ثبت وزن ورودی آماده‌سازی",
+      "statement": "آماده‌سازی هر قلم رسیده را خودش وزن می‌کند و همان وزن را مبنای ورودی و خروجی خود قرار می‌دهد و اختلاف آن با وزن اعلامی انبار را پیگیری نمی‌کند، مگر در مورد خونابهٔ بیش از حد مرغ. امضا یا تأییدیه‌ای هم پای برگهٔ انبار زده نمی‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-10.txt",
+          "lines": "1-553",
+          "hash": "sha256:1e3b2baf89a5ddab872162cf0e6153dbe2259c374bcc349f7fa1ca20f3c287db",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00128"
+          },
+          {
+            "ref": "F-00023"
+          }
+        ],
+        "question": "مبنای ثبت ورودی آماده‌سازی وزن اعلامی انبار است یا وزن‌گیری خود لاین، و اختلاف این دو کجا پیگیری می‌شود؟"
+      },
+      "home": {
+        "ref": "F-00023"
+      },
+      "id": "F-00147",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_f93cb5c59d06",
+      "title": "ابهام در مبنای نسبت مادهٔ مرینت",
+      "statement": "روشن نیست سی گرم مادهٔ مرینت و هفتاد گرم آب به ازای هر کیلوگرم مرغ مصرف می‌شود یا به ازای هر ده کیلوگرم؛ هر دو مبنا در منابع آماده‌سازی آمده است. این نسبت را خود پرسنل آماده‌سازی حساب می‌کنند و در هیچ فرم و جدولی نوشته نمی‌شود، پس جدولی برای این یادداشت وجود ندارد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-23-02.txt",
+          "lines": "1-102",
+          "hash": "sha256:0816f9ba996f5d4e490d1b0f6a6bb3530748adf42e3422004f70a2e4ceb65a01",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00127"
+          }
+        ],
+        "question": "نسبت سی به هفتاد مادهٔ مرینت و آب به ازای هر کیلوگرم مرغ است یا به ازای هر ده کیلوگرم؟"
+      },
+      "home": null,
+      "id": "F-00148",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_e37ef2a92940",
+      "title": "مغایرت در وجود فرم تبدیل فیلادلفیا",
+      "statement": "در ثبت پیشین آمده است که استیک رولی و فیلادلفیا هر کدام فرم تبدیل جداگانه دارند، در حالی که اکنون برای فیلادلفیا فرم تبدیل پر نمی‌شود و جای آن فرم نیم‌ساخت تکمیل می‌شود. این تغییر هنوز به همهٔ مسئولان لاین یکسان توضیح داده نشده است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-23.txt",
+          "lines": "1-69",
+          "hash": "sha256:162c3d8fecfb4896393d22913cc990822e3f4bb5358b5730fdf173aba5340c8e",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00134"
+          },
+          {
+            "ref": "F-00010"
+          }
+        ],
+        "question": "آیا فرم تبدیل فیلادلفیا به‌کلی از فرم‌های موظف حذف شده یا هنوز در برخی لاین‌ها پر می‌شود؟"
+      },
+      "home": {
+        "ref": "F-00010"
+      },
+      "id": "F-00149",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_8ea063003064",
+      "title": "ابهام در مبنای آف اجرایی",
+      "statement": "مبنای تعیین تعداد هدف و تعداد نفرات محقق‌شده در آف اجرایی آماده‌سازی و مسئول ثبت روزانهٔ آن در هیچ منبعی روشن نشده است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00025"
+          }
+        ],
+        "question": "تعداد هدف و تعداد نفر کسب‌شده در آف اجرایی بر چه مبنایی تعیین و توسط چه کسی ثبت می‌شود؟"
+      },
+      "home": {
+        "ref": "F-00025"
+      },
+      "id": "F-00150",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_17737cf27b2e",
+      "title": "ابهام در ثبت ورودی و خروجی خمیر",
+      "statement": "وزن آرد ورودی و وزن خمیر تولیدشده در هیچ فرم یا جدولی ثبت نمی‌شود و پرسنل آماده‌سازی بخش خمیر را قابل تکمیل نمی‌دانند؛ تفکیک خمیر آمریکایی و ایتالیایی هم برای آن‌ها روشن نیست.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00021"
+          }
+        ],
+        "question": "خمیر آمریکایی و ایتالیایی بر چه مبنایی تفکیک و توسط چه کسی ثبت می‌شود و وزن آرد ورودی کجا ثبت می‌شود؟"
+      },
+      "home": {
+        "ref": "F-00021"
+      },
+      "extra": {
+        "voice": [
+          {
+            "ref": "meetings/transcripts/preparation-1405-06-23-02.txt",
+            "lines": "1-102"
+          }
+        ]
+      },
+      "id": "F-00151",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    }
+  ]
+}

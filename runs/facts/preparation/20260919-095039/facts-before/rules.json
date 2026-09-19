@@ -1117,14 +1117,12 @@
           }
         ]
       },
-      "home": {
-        "ref": "F-00008"
-      },
+      "home": null,
       "id": "F-00056",
       "valid_from": null,
       "valid_to": null,
       "status": "unknown",
-      "updated_at": "2026-09-19T09:50:53Z"
+      "updated_at": "2026-09-19T09:42:28Z"
     },
     {
       "kind": "rule",
