@@ -174,7 +174,7 @@ already owes for a refusal, listed in `retry` like the refused ones.
 | kind | you write | already written for you |
 |---|---|---|
 | record (from a sheet) | `role` (`log`/`reference`/`report`/`config`), `grain`, `cadence`, `day_boundary`, `filled_by`, `approved_by`, `movement`, `reconciled_against[]`, and per field `{from, key, unit, type, description, derived, group}` — `unit` **only** on a field whose `type` is `number`; `primaryKey` only on a non-reference record | `medium`, `location`, `instances[]`, each field's `title` and `columns`, `constraints.enum`, `rows[]`, a reference record's `primaryKey`, `imports[]`, `issues[]` |
-| record (`new`, no dump — a paper form, an external system, a native table) | the whole payload: `medium`, `location`, `fields[]`, `header_fields[]`, `sections[]`, `rows[]`, `signatures[]`, `blank_master`, plus the sheet list above | — |
+| record (`new`, no dump — a paper form, an external system, a native table) | the whole payload: `medium`, `location`, `fields[]` — each `title` copied as printed and `repeat` on a block of blank columns under one heading, never a title you invented — `header_fields[]`, `sections[]`, `rows[]`, `signatures[]`, `blank_master`, plus the sheet list above | — |
 | rule | `home`, `expr` + `lang`, or `table`, or `lang: text`; `inputs[]`/`outputs[]` members (`key`, `title`, `unit`, `nature`, `per`, `of`; `from`/`writes_to` as `{"ref": "S-rec-…", "field": "c_h"}`, or `from: {"param": "<a params key>"}` for a value bound per binding), `calls[]`, `value`/`range` on a constant, `edge_cases[]`, `template_of`, `divergence` | `original`, `applies_to[]` with its `variant`, `params` and `rows[]`, sources |
 | measurement (`new` only) | `home`, `of`, `quantity` (the **kind** of quantity, never a number), `unit`, `method`, `when`, `by`, `writes_to`, `exceptions` — either `writes_to`, or both `by` and `when` | — |
 | note (`new` only) | `home`, plus `about[]` (at least one ref) and `question`, both required | the key |
@@ -191,6 +191,12 @@ it is a `new[]` entry — a paper form is a record with `medium: "paper"`, its c
 the form itself. Each file's text is headed by its name and path; an entry read off a photo or
 document cites it as `from: ["<path exactly as printed>"]` — one path, or more only when the entry
 spans several files; a path not printed in your input is dropped.
+
+Never invent a column title: a title is copied as printed on the form or the sheet. A block of
+columns with no printed name of their own — blank on the paper, filled in by hand — is ONE field:
+the printed heading over the block as its `title`, `repeat: <how many>`, and the printed unit.
+Never numbered fields. A column whose only printed heading is a unit word (e.g. «کیلو», «عدد»)
+keeps that word as its `title`; two columns headed alike get different keys and the same title.
 
 For every file whose heading names a `عکس:` path, open that image too (the Read tool) and use it
 only to understand the table's structure — which titles span which unit cells, what is grouped
