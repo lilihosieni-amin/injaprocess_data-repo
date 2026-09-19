@@ -160,6 +160,4471 @@
       "valid_to": null,
       "status": "unknown",
       "updated_at": "2026-09-02T08:17:10Z"
+    },
+    {
+      "kind": "record",
+      "key": "form_tabdil_anbar_morgh_pizza",
+      "title": "فرم تبدیل انبار مرغ پیتزا تکه‌شده",
+      "statement": "برگهٔ کاغذی تبدیل که در انبار نگهداری می‌شود و نتیجهٔ کار روی مرغ پیتزای تکه‌شده را ثبت می‌کند: وزن مرغ پخته، ضایعات مرغ و کاست، هر یک به کیلوگرم. تاریخ و وزن مادهٔ خام ورودی در سربرگ نوشته می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADbg5rG7piKFF-.image.md",
+          "hash": "sha256:139a0796a3743c4bacab767f32749ebd0fe0f4e2c1e72de3a5e27a2a51201004",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "انبار",
+          "holder": "انباردار"
+        },
+        "cadence": "daily",
+        "grain": "هر برگه یک روز کار و هر سطر یک قلم خروجی",
+        "filled_by": "مسئول لاین مرغ",
+        "approved_by": null,
+        "blank_master": true,
+        "header_fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "type": "date"
+          },
+          {
+            "key": "bedun_onvan",
+            "title": null,
+            "type": "string",
+            "description": "خط نقطه‌چین بدون عنوان چاپ‌شده زیر تاریخ."
+          },
+          {
+            "key": "jam",
+            "title": "جمع",
+            "type": "number",
+            "unit": null
+          }
+        ],
+        "sections": [
+          {
+            "key": "tabdil",
+            "title": "مواد خام زیر تبدیل می شود و تحویل انبار میگردد."
+          }
+        ],
+        "rows": [
+          {
+            "key": "morgh_pokhte",
+            "title": "مرغ پخته",
+            "unit": "kg",
+            "unit_raw": "کیلو"
+          },
+          {
+            "key": "zayeat_morgh",
+            "title": "ضایعات مرغ",
+            "unit": "kg",
+            "unit_raw": "کیلو"
+          },
+          {
+            "key": "kast",
+            "title": "کاست",
+            "unit": "kg",
+            "unit_raw": "کیلو"
+          }
+        ],
+        "fields": [
+          {
+            "key": "qalam",
+            "title": null,
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            },
+            "description": "نام قلم خروجی که روی برگه چاپ شده است."
+          },
+          {
+            "key": "vahed",
+            "title": null,
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            },
+            "description": "واحد چاپ‌شدهٔ هر سطر."
+          },
+          {
+            "key": "meqdar",
+            "title": null,
+            "type": "number",
+            "repeat": 3,
+            "description": "خانه‌های خالی که مقدار هر سطر با دست در آن‌ها نوشته می‌شود."
+          }
+        ]
+      },
+      "id": "F-00002",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "record",
+      "key": "form_tabdil_anbar_rol_steak",
+      "title": "فرم تبدیل انبار رول استیک و گوشت راستهٔ گرم",
+      "statement": "برگهٔ کاغذی تبدیل نگهداری‌شده در انبار که تبدیل گوشت راستهٔ گرم را ثبت می‌کند: استیک ورقه‌ای، ضایعات قابل استفاده در چرخی و ضایعات، هر یک به کیلوگرم. تاریخ و وزن ورودی در سربرگ نوشته می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADbw5rG7piKFF-.image.md",
+          "hash": "sha256:5b6e32cf7c7efaed3806530f1019e38936ae150469a4c5f53d4791f2daa6b5e7",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "انبار",
+          "holder": "انباردار"
+        },
+        "cadence": "weekly",
+        "grain": "هر برگه یک نوبت کار روی گوشت راستهٔ گرم و هر سطر یک قلم خروجی",
+        "filled_by": "مسئول لاین گوشت",
+        "approved_by": null,
+        "blank_master": true,
+        "header_fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "type": "date"
+          },
+          {
+            "key": "vazn_kham",
+            "title": "کیلو",
+            "type": "number",
+            "unit": "kg"
+          }
+        ],
+        "sections": [
+          {
+            "key": "tabdil",
+            "title": "که به مواد خام زیر تبدیل می شود و تحویل انبار میگردد."
+          }
+        ],
+        "rows": [
+          {
+            "key": "steak_varaqei",
+            "title": "استیک ورقه ای",
+            "unit": "kg",
+            "unit_raw": "کیلو"
+          },
+          {
+            "key": "zayeat_qabel_estefade",
+            "title": "ضایعات قابل استفاده در چرخی",
+            "unit": "kg",
+            "unit_raw": "کیلو"
+          },
+          {
+            "key": "zayeat",
+            "title": "ضایعات",
+            "unit": "kg",
+            "unit_raw": "کیلو"
+          }
+        ],
+        "fields": [
+          {
+            "key": "qalam",
+            "title": null,
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            },
+            "description": "نام قلم خروجی که روی برگه چاپ شده است."
+          },
+          {
+            "key": "vahed",
+            "title": null,
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            },
+            "description": "واحد چاپ‌شدهٔ هر سطر."
+          },
+          {
+            "key": "meqdar",
+            "title": null,
+            "type": "number",
+            "repeat": 3,
+            "description": "خانه‌های خالی مقدار که در دو سطر پایانی به یک خانهٔ پهن تبدیل می‌شود."
+          },
+          {
+            "key": "jam",
+            "title": "جمع",
+            "type": "number",
+            "unit": "kg"
+          }
+        ]
+      },
+      "id": "F-00003",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "record",
+      "key": "form_darkhast_kala_yek",
+      "title": "فرم درخواست کالا بخش آماده‌سازی (برگ یکم)",
+      "statement": "چک‌لیست کاغذی درخواست کالای آماده‌سازی با فهرست چاپ‌شدهٔ ادویه‌ها، سس‌ها و اقلام مصرفی که هر غروب مقدار درخواستی هر قلم در آن نوشته و به انبار تحویل می‌شود؛ صبح روز بعد انبار مقدار تحویل‌شده را در همان برگه می‌نویسد و قلم تحویل‌شده را تیک می‌زند. این برگ یکم از یک فرم دوبرگی است و همراه برگ دوم به انبار می‌رود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADeA5rG7piKFF-.image.md",
+          "hash": "sha256:3337ad6431f940a1002ece6e0313421eafa0395e849758e19d16ba85849d436d",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-003.json",
+          "node": "preparation-003-n005",
+          "quote": "تحویل حضوری چک‌لیست درخواست کالا به انبار پیش از ساعت شش و نیم غروب",
+          "hash": "sha256:035ec918878a335535e08a1ec583311a3e67143299fb049a1903ca6ac749e822",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-003.json",
+          "node": "preparation-003-n012",
+          "quote": "اصلاح فرم درخواست کالا روی همان برگه با تیک و افزودن عدد جلوی اقلام",
+          "hash": "sha256:035ec918878a335535e08a1ec583311a3e67143299fb049a1903ca6ac749e822",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-003.json",
+          "node": "preparation-003-n013",
+          "quote": "تحویل لیست اصلاح‌شده درخواست کالا به انبار حداکثر تا ساعت ده و نیم",
+          "hash": "sha256:035ec918878a335535e08a1ec583311a3e67143299fb049a1903ca6ac749e822",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "واحد آماده‌سازی",
+          "holder": "سرپرست آماده‌سازی"
+        },
+        "cadence": "daily",
+        "grain": "هر برگه یک روز و هر سطر یک قلم کالا",
+        "filled_by": "سرپرست آماده‌سازی",
+        "approved_by": null,
+        "blank_master": true,
+        "header_fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ:",
+            "type": "date"
+          },
+          {
+            "key": "ruz_hafte",
+            "title": "روز/هفته:",
+            "type": "string"
+          },
+          {
+            "key": "shomare_sanad",
+            "title": "ش س:",
+            "type": "string",
+            "filled_by": "انباردار"
+          }
+        ],
+        "sections": [
+          {
+            "key": "masraf_mostaqim",
+            "title": "مصرف مستقیم"
+          }
+        ],
+        "rows": [
+          {
+            "key": "pudr_panko",
+            "title": "پودر پانکو",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "pudr_sir",
+            "title": "پودر سیر",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "felfel_siah",
+            "title": "فلفل سیاه",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "felfel_qermez",
+            "title": "فلفل قرمز",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "advie_kari",
+            "title": "ادویه کاری",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "pudr_piaz",
+            "title": "پودر پیاز",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "organo",
+            "title": "اورگانو",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "shevid",
+            "title": "شوید",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "geshniz",
+            "title": "گشنیز",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "advie_sabzijat",
+            "title": "ادویه سبزیجات",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "sos_kechap",
+            "title": "سس کچاپ",
+            "unit": null,
+            "unit_raw": "دبه",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "soya_sos",
+            "title": "سویاسس",
+            "unit": null,
+            "unit_raw": "لیتر/عدد",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "mayonez_kale",
+            "title": "مایونز کاله",
+            "unit": null,
+            "unit_raw": "دبه",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "sos_khardal_kale",
+            "title": "سس خردل کاله",
+            "unit": null,
+            "unit_raw": "دبه",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "sos_chili_tai_kale",
+            "title": "سس چیلی تای کاله",
+            "unit": null,
+            "unit_raw": "دبه",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "sos_barbikiu_kale",
+            "title": "سس باربیکیو کاله",
+            "unit": null,
+            "unit_raw": "دبه",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "gloria",
+            "title": "گلوریا",
+            "unit": "pcs",
+            "unit_raw": "عدد",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "ech_pi_sos",
+            "title": "اچ پی سس",
+            "unit": "pcs",
+            "unit_raw": "عدد",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "vorchester",
+            "title": "ورچستر",
+            "unit": null,
+            "unit_raw": "دبه",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "mamasita",
+            "title": "ماماسیتا",
+            "unit": null,
+            "unit_raw": "دبه",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "khardal_franches",
+            "title": "خردل فرانچس",
+            "unit": null,
+            "unit_raw": "دبه ۲.۸",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "serke_balzamik",
+            "title": "سرکه بالزامیک",
+            "unit": "pcs",
+            "unit_raw": "عدد",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "tokhm_morgh",
+            "title": "تخم مرغ",
+            "unit": "pcs",
+            "unit_raw": "عدد",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "goje_farangi_sos_kaf_pizza",
+            "title": "گوجه فرنگی سس کف پیزا",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "keshmesh",
+            "title": "کشمش",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "gerdu",
+            "title": "گردو",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "mast_son",
+            "title": "ماست سون",
+            "unit": null,
+            "unit_raw": "دبه",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "ab_porteqal",
+            "title": "آب پرتقال",
+            "unit": null,
+            "unit_raw": "لیتر/عدد",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "namak",
+            "title": "نمک",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "khat_zard",
+            "title": "خط زرد",
+            "unit": "pcs",
+            "unit_raw": "عدد",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "plastik_zobale",
+            "title": "پلاستیک زباله",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "foil",
+            "title": "فویل",
+            "unit": "pcs",
+            "unit_raw": "عدد",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "qand",
+            "title": "قند(پنجشنبه ها)",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "fandak",
+            "title": "فندک",
+            "unit": "pcs",
+            "unit_raw": "عدد",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "selofon",
+            "title": "سلفون",
+            "unit": null,
+            "unit_raw": "رول",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "dastkesh_lateks",
+            "title": "دستکش لاتکس",
+            "unit": "pack",
+            "unit_raw": "بسته",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "eskaj",
+            "title": "اسکاج",
+            "unit": "pcs",
+            "unit_raw": "عدد",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "barchasb",
+            "title": "برچسب",
+            "unit": "pack",
+            "unit_raw": "بسته",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "dastkesh_yekbar_masraf",
+            "title": "دستکش یکبار مصرف",
+            "unit": "pack",
+            "unit_raw": "بسته",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "kolah_yekbar_masraf",
+            "title": "کلاه یکبارمصرف",
+            "unit": "pack",
+            "unit_raw": "بسته",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "maye_zarfshui",
+            "title": "مایع ظرفشویی",
+            "unit": "l",
+            "unit_raw": "لیتر",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "chai",
+            "title": "چای",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "vaitex_jermgir",
+            "title": "وایتکس / جرمگیر",
+            "unit": "l",
+            "unit_raw": "لیتر",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "plastik_pengoen",
+            "title": "پلاستیک پنگوئن",
+            "unit": "pack",
+            "unit_raw": "بسته",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "dastmal_personeli",
+            "title": "دستمال پرسنلی",
+            "unit": "pack",
+            "unit_raw": "بسته",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "saq_dast",
+            "title": "ساق دست",
+            "unit": "pack",
+            "unit_raw": "بسته",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "naylon_daste_dar_k",
+            "title": "نایلون دسته دار ک",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "naylon_daste_dar_b",
+            "title": "نایلون دسته دار ب",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "plastik_mian_burger_k_60",
+            "title": "پلاستیک میان برگر ک ۶۰گرمی",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "plastik_mian_burger_b_150",
+            "title": "پلاستیک میان برگر ب۱۵۰گرمی",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "selofon_burger",
+            "title": "سلفون برگر",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "dastkesh_zarfshui",
+            "title": "دستکش ظرفشویی",
+            "unit": null,
+            "unit_raw": "جفت",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "ti_abgir_jaru",
+            "title": "تی آبگیر- جارو",
+            "unit": "pcs",
+            "unit_raw": "عدد",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "rol_selofon_lefaf",
+            "title": "رول سلفون لفاف",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "sim_zarfshui",
+            "title": "سیم ظرفشویی",
+            "unit": "pcs",
+            "unit_raw": "عدد",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "jagushti_kuchak",
+            "title": "جاگوشتی کوچک",
+            "unit": "pcs",
+            "unit_raw": "عدد",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "jagushti_motevasset",
+            "title": "جاگوشتی متوسط",
+            "unit": "pcs",
+            "unit_raw": "عدد",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "jagushti_bozorg",
+            "title": "جاگوشتی بزرگ",
+            "unit": "pcs",
+            "unit_raw": "عدد",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "shishe_shur",
+            "title": "شیشه شور",
+            "unit": "pcs",
+            "unit_raw": "عدد",
+            "section": "masraf_mostaqim"
+          }
+        ],
+        "fields": [
+          {
+            "key": "tik_anbar",
+            "title": "تیک انبار",
+            "type": "boolean",
+            "filled_by": "انباردار",
+            "description": "انبار قلم تحویل‌داده‌شده را در این خانه تیک می‌زند."
+          },
+          {
+            "key": "sharh_kala",
+            "title": "شرح کالا",
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            }
+          },
+          {
+            "key": "vahed",
+            "title": "واحد",
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            }
+          },
+          {
+            "key": "meqdar_darkhast",
+            "title": "مقدار درخواست",
+            "type": "number",
+            "unit": null
+          },
+          {
+            "key": "meqdar_tahvil",
+            "title": "مقدار تحویل/واحد",
+            "type": "number",
+            "unit": null,
+            "filled_by": "انباردار",
+            "group": {
+              "key": "anbar",
+              "title": "انبار"
+            }
+          }
+        ]
+      },
+      "aliases": [
+        "چک‌لیست درخواست کالا"
+      ],
+      "id": "F-00004",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "record",
+      "key": "form_darkhast_mahsulat_rooz",
+      "title": "فرم درخواست روزانهٔ محصولات پیتزا، سوخاری و سالاد",
+      "statement": "برگهٔ کاغذی درخواست روزانهٔ محصولات آماده‌سازی که برای هر محصول بخش پیتزا، سوخاری و سالاد واحد سنجش بسته و مقدار درخواست آشپزخانهٔ مرکزی و شعبه را ثبت می‌کند و صبح از انبار به آماده‌سازی تحویل داده می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADeQ5rG7piKFF-.image.md",
+          "hash": "sha256:8ecdb1977943184612a2a3046bdd0234d82a34e98b67e7bd04cdde957969710e",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-003.json",
+          "node": "preparation-003-n006",
+          "quote": "تحویل گرفتن چک‌لیست تکمیل‌شده و فرم نیازهای آشپزخانه و شعبه از انبار در ساعت ده و بیست دقیقه",
+          "hash": "sha256:035ec918878a335535e08a1ec583311a3e67143299fb049a1903ca6ac749e822",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-032.json",
+          "node": "preparation-032-n005",
+          "quote": "تحویل گرفتن لیست درخواست روزانه از انبار و تیک زدن اقلام به تعداد و وزن",
+          "hash": "sha256:c3178a5355eea80a57e7370fbfb7742baa04797a07ab4e3a5d94f8d0a53ea121",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "واحد آماده‌سازی",
+          "holder": "سرپرست آماده‌سازی"
+        },
+        "cadence": "daily",
+        "grain": "هر برگه یک روز و هر سطر یک محصول",
+        "filled_by": "انباردار",
+        "approved_by": null,
+        "blank_master": false,
+        "header_fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "type": "date"
+          },
+          {
+            "key": "ruz_hafte",
+            "title": "روز هفته",
+            "type": "string"
+          }
+        ],
+        "sections": [
+          {
+            "key": "bakhsh_pizza",
+            "title": "بخش پیتزا"
+          },
+          {
+            "key": "sukhari",
+            "title": "سوخاری"
+          },
+          {
+            "key": "bakhsh_salad",
+            "title": "بخش سالاد"
+          },
+          {
+            "key": "tozihat",
+            "title": "توضیحات :"
+          }
+        ],
+        "rows": [
+          {
+            "key": "morgh_pizza",
+            "title": "مرغ پیتزا",
+            "unit": null,
+            "unit_raw": "یک کیلویی",
+            "section": "bakhsh_pizza"
+          },
+          {
+            "key": "peperoni",
+            "title": "پپرونی",
+            "unit": null,
+            "unit_raw": "یک کیلویی",
+            "section": "bakhsh_pizza"
+          },
+          {
+            "key": "jambon_se_gane",
+            "title": "ژامبون سه گانه",
+            "unit": null,
+            "unit_raw": "یک کیلویی",
+            "section": "bakhsh_pizza"
+          },
+          {
+            "key": "steak",
+            "title": "استیک",
+            "unit": null,
+            "unit_raw": "یک کیلویی",
+            "section": "bakhsh_pizza"
+          },
+          {
+            "key": "felfel_dolme_slicei",
+            "title": "فلفل دلمه اسلایسی",
+            "unit": null,
+            "unit_raw": "یک کیلویی",
+            "section": "bakhsh_pizza"
+          },
+          {
+            "key": "qarch_slice",
+            "title": "قارچ اسلایس",
+            "unit": null,
+            "unit_raw": "یک کیلویی",
+            "section": "bakhsh_pizza"
+          },
+          {
+            "key": "sos_rost_bif",
+            "title": "سس رست بیف",
+            "unit": null,
+            "unit_raw": "یک کیلویی",
+            "section": "bakhsh_pizza"
+          },
+          {
+            "key": "sos_alfredo_pizza",
+            "title": "سس آلفردو پیتزا",
+            "unit": null,
+            "unit_raw": "یک کیلویی",
+            "section": "bakhsh_pizza"
+          },
+          {
+            "key": "sos_kaf_pizza",
+            "title": "سس کف پیتزا",
+            "unit": null,
+            "unit_raw": "یک کیلویی",
+            "section": "bakhsh_pizza"
+          },
+          {
+            "key": "khamir",
+            "title": "خمیر",
+            "unit": null,
+            "unit_raw": "یک کیلویی",
+            "section": "bakhsh_pizza"
+          },
+          {
+            "key": "jambon_do_gane",
+            "title": "ژامبون دوگانه",
+            "unit": null,
+            "unit_raw": "یک کیلویی",
+            "section": "bakhsh_pizza"
+          },
+          {
+            "key": "bikan_varaqei",
+            "title": "بیکن ورقه ای",
+            "unit": "pcs",
+            "unit_raw": "عدد",
+            "section": "bakhsh_pizza"
+          },
+          {
+            "key": "pasta_penne",
+            "title": "پاستا پنه",
+            "unit": null,
+            "unit_raw": "۱.۲۰۰ گرمی",
+            "section": "bakhsh_pizza"
+          },
+          {
+            "key": "dorchin_steak",
+            "title": "دورچین استیک",
+            "unit": null,
+            "unit_raw": "۱۰ پرسی",
+            "section": "bakhsh_pizza"
+          },
+          {
+            "key": "sos_qarch",
+            "title": "سس قارچ",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "bakhsh_pizza"
+          },
+          {
+            "key": "sos_alfredo_pasta",
+            "title": "سس آلفردو پاستا",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "bakhsh_pizza"
+          },
+          {
+            "key": "sos_bif_esterra",
+            "title": "سس بیف استرا",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "bakhsh_pizza"
+          },
+          {
+            "key": "sir_roghan",
+            "title": "سیر روغن",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "bakhsh_pizza"
+          },
+          {
+            "key": "chiza",
+            "title": "چیزا",
+            "unit": "pcs",
+            "unit_raw": "عدد",
+            "section": "sukhari"
+          },
+          {
+            "key": "panir_chiza",
+            "title": "پنیر چیزا",
+            "unit": "pcs",
+            "unit_raw": "عدد",
+            "section": "sukhari"
+          },
+          {
+            "key": "sos_sezar",
+            "title": "سس سزار",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "bakhsh_salad"
+          },
+          {
+            "key": "sos_sat_vest",
+            "title": "سس سات وست",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "bakhsh_salad"
+          },
+          {
+            "key": "sos_barbikiu_dasti",
+            "title": "سس باربیکیو دستی",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "bakhsh_salad"
+          },
+          {
+            "key": "sos_kaf_burger",
+            "title": "سس کف برگر",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "bakhsh_salad"
+          },
+          {
+            "key": "sos_pesto",
+            "title": "سس پستو",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "bakhsh_salad"
+          },
+          {
+            "key": "sos_kerutan",
+            "title": "سس کروتان",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "bakhsh_salad"
+          },
+          {
+            "key": "sos_ranj",
+            "title": "سس رنج",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "bakhsh_salad"
+          },
+          {
+            "key": "salad_kentaki",
+            "title": "سالاد کنتاکی",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "bakhsh_salad"
+          },
+          {
+            "key": "sos_ivolai",
+            "title": "سس ایولای",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "bakhsh_salad"
+          },
+          {
+            "key": "kahu",
+            "title": "کاهو",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "bakhsh_salad"
+          }
+        ],
+        "fields": [
+          {
+            "key": "radif",
+            "title": "ردیف",
+            "type": "integer",
+            "constraints": {
+              "readOnly": true
+            }
+          },
+          {
+            "key": "nam_mahsul",
+            "title": "نام محصول",
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            }
+          },
+          {
+            "key": "vahed_sanjesh_baste",
+            "title": "واحد سنجش بسته",
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            }
+          },
+          {
+            "key": "darkhast_markazi",
+            "title": "درخواست مرکزی",
+            "type": "number",
+            "unit": null
+          },
+          {
+            "key": "nam_mahsul_dovom",
+            "title": null,
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            },
+            "description": "نام محصول در بخش سمت چپ برگه که سربرگ چاپ‌شده ندارد."
+          },
+          {
+            "key": "baste",
+            "title": "بسته",
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            }
+          },
+          {
+            "key": "darkhast_markazi_dovom",
+            "title": "درخواست مرکزی",
+            "type": "number",
+            "unit": null
+          },
+          {
+            "key": "darkhast_shobe",
+            "title": "درخواست شعبه",
+            "type": "number",
+            "unit": null
+          }
+        ]
+      },
+      "id": "F-00005",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "record",
+      "key": "form_darkhast_kala_do",
+      "title": "فرم درخواست کالا بخش آماده‌سازی (برگ دوم)",
+      "statement": "دنبالهٔ چک‌لیست کاغذی درخواست کالای آماده‌سازی با فهرست چاپ‌شدهٔ مواد اولیهٔ پروتئینی، لبنی و سبزیجات که مقدار درخواستی و مقدار تحویل‌شدهٔ هر قلم در آن نوشته می‌شود. اقلام آن به سه دستهٔ مصرف مستقیم، حواله انبار به انبار و بدون سند تقسیم شده است. این برگ دوم از همان فرم دوبرگی است و همراه برگ یکم تحویل انبار می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADeg5rG7piKFF-.image.md",
+          "hash": "sha256:795cade1da8c80fbdf3a49be3d828cf9c182f4ca1aa91f7397bdbbd30817be5f",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-003.json",
+          "node": "preparation-003-n005",
+          "quote": "تحویل حضوری چک‌لیست درخواست کالا به انبار پیش از ساعت شش و نیم غروب",
+          "hash": "sha256:035ec918878a335535e08a1ec583311a3e67143299fb049a1903ca6ac749e822",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-003.json",
+          "node": "preparation-003-n012",
+          "quote": "اصلاح فرم درخواست کالا روی همان برگه با تیک و افزودن عدد جلوی اقلام",
+          "hash": "sha256:035ec918878a335535e08a1ec583311a3e67143299fb049a1903ca6ac749e822",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "واحد آماده‌سازی",
+          "holder": "سرپرست آماده‌سازی"
+        },
+        "cadence": "daily",
+        "grain": "هر برگه یک روز و هر سطر یک قلم کالا",
+        "filled_by": "سرپرست آماده‌سازی",
+        "approved_by": null,
+        "blank_master": true,
+        "header_fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ :",
+            "type": "date"
+          },
+          {
+            "key": "ruz_hafte",
+            "title": "روز هفته :",
+            "type": "string"
+          },
+          {
+            "key": "shomare_sanad",
+            "title": "ش س:",
+            "type": "string",
+            "filled_by": "انباردار"
+          }
+        ],
+        "sections": [
+          {
+            "key": "masraf_mostaqim",
+            "title": "مصرف مستقیم"
+          },
+          {
+            "key": "havale_anbar",
+            "title": "حواله انبار به انبار"
+          },
+          {
+            "key": "bedun_sanad",
+            "title": "بدون سند"
+          }
+        ],
+        "rows": [
+          {
+            "key": "merinat_espaisi",
+            "title": "مرینت اسپایسی",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "merinat_normal",
+            "title": "مرینت نرمال",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "kare",
+            "title": "کره",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "panir_parmesan",
+            "title": "پنیر پارمسان",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "shir",
+            "title": "شیر",
+            "unit": "l",
+            "unit_raw": "لیتر",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "khame",
+            "title": "خامه",
+            "unit": "l",
+            "unit_raw": "لیتر",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "panir_pizza",
+            "title": "پنیر پیتزا",
+            "unit": "pack",
+            "unit_raw": "بسته",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "panir_labne",
+            "title": "پنیر لبنه (مخصوص تولید پنیر چیزا)",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "ard",
+            "title": "آرد",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "s500",
+            "title": "S۵۰۰",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "khamir_maye_faransavi",
+            "title": "خمیر مایه فرانسوی",
+            "unit": "pack",
+            "unit_raw": "بسته",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "khamir_maye_kiluyi",
+            "title": "خمیر مایه کیلویی",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "roghan_pokht_o_paz",
+            "title": "روغن پخت و پز",
+            "unit": null,
+            "unit_raw": "کیلو/لیتر",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "shekar",
+            "title": "شکر",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "zhelatin",
+            "title": "ژلاتین",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "delester",
+            "title": "دلستر",
+            "unit": null,
+            "unit_raw": "۱لیتری/عدد",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "pudr_paprika",
+            "title": "پودر پاپریکا",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "zardchube",
+            "title": "زردچوبه",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "dolme_qermez",
+            "title": "دلمه قرمز(سس پاپریکا)",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "advie_gusht_u",
+            "title": "ادویه گوشت U",
+            "unit": "pack",
+            "unit_raw": "بسته",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "osare_morgh",
+            "title": "عصاره مرغ",
+            "unit": "pack",
+            "unit_raw": "بسته",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "avishan",
+            "title": "آویشن",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "tarkhun_khoshk",
+            "title": "ترخون خشک",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "kadu",
+            "title": "کدو",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "kalam_borokoli",
+            "title": "کلم بروکلی",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "sir",
+            "title": "سیر",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "piaz",
+            "title": "پیاز",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "sib_zamini",
+            "title": "سیب زمینی",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "reyhan",
+            "title": "ریحان",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "piazche",
+            "title": "پیازچه",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "havij",
+            "title": "هویج",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "kalam",
+            "title": "کلم",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "ablimu",
+            "title": "آبلیمو",
+            "unit": "l",
+            "unit_raw": "لیتر",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "rob_anar",
+            "title": "رب انار",
+            "unit": null,
+            "unit_raw": "عدد/کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "musir",
+            "title": "موسیر",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "serke_sefid",
+            "title": "سرکه سفید",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "rob_goje_farangi",
+            "title": "رب گوجه فرنگی",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "dolme_sos_sir",
+            "title": "دلمه (مخصوص سس سیر)",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "sir_2",
+            "title": "سیر",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "tabasko_burger",
+            "title": "تاباسکو(برگر)",
+            "unit": null,
+            "unit_raw": "عدد/کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "advie_esmok_u",
+            "title": "ادویه اسموک U",
+            "unit": "pack",
+            "unit_raw": "بسته",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "advie_burger_u",
+            "title": "ادویه برگر U",
+            "unit": "pack",
+            "unit_raw": "بسته",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "sos_mayonez_mehram",
+            "title": "سس مایونز مهرام (به جز سس سیر)",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "masraf_mostaqim"
+          },
+          {
+            "key": "lazania",
+            "title": "لازانیا",
+            "unit": "pack",
+            "unit_raw": "بسته",
+            "section": "havale_anbar"
+          },
+          {
+            "key": "meygu",
+            "title": "میگو",
+            "unit": null,
+            "unit_raw": "عدد/کیلو",
+            "section": "havale_anbar"
+          },
+          {
+            "key": "pasta",
+            "title": "پاستا",
+            "unit": "pack",
+            "unit_raw": "بسته",
+            "section": "havale_anbar"
+          },
+          {
+            "key": "qarch",
+            "title": "قارچ",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "havale_anbar"
+          },
+          {
+            "key": "felfel_dolme",
+            "title": "فلفل دلمه",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "havale_anbar"
+          },
+          {
+            "key": "kahu",
+            "title": "کاهو",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "havale_anbar"
+          },
+          {
+            "key": "jafari",
+            "title": "جعفری",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "havale_anbar"
+          },
+          {
+            "key": "goje",
+            "title": "گوجه",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "havale_anbar"
+          },
+          {
+            "key": "morgh_chiza",
+            "title": "مرغ چیزا",
+            "unit": "pcs",
+            "unit_raw": "عدد",
+            "section": "bedun_sanad"
+          },
+          {
+            "key": "sos_mayonez_dabe",
+            "title": "سس مایونز دبه ( سس سیر)",
+            "unit": null,
+            "unit_raw": "دبه",
+            "section": "bedun_sanad"
+          },
+          {
+            "key": "khiarshur",
+            "title": "خیارشور (سس سیر)",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "bedun_sanad"
+          },
+          {
+            "key": "steak",
+            "title": "استیک",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "bedun_sanad"
+          },
+          {
+            "key": "labne",
+            "title": "لبنه ( مخصوص تولید مایه برگر)",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "bedun_sanad"
+          },
+          {
+            "key": "jambon_file_makhlut",
+            "title": "ژامبون فیله مخلوط (بیکن)",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "bedun_sanad"
+          },
+          {
+            "key": "jambon_gusht",
+            "title": "ژامبون گوشت",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "bedun_sanad"
+          },
+          {
+            "key": "jambon_morgh_persi",
+            "title": "ژامبون مرغ پرسی",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "bedun_sanad"
+          },
+          {
+            "key": "peperoni",
+            "title": "پپرونی",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "bedun_sanad"
+          },
+          {
+            "key": "maghz_ran",
+            "title": "مغزران",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "bedun_sanad"
+          },
+          {
+            "key": "sardast_gusale",
+            "title": "سردست گوساله",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "bedun_sanad"
+          },
+          {
+            "key": "qalve_gah_bare",
+            "title": "قلوه گاه بره",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "bedun_sanad"
+          },
+          {
+            "key": "qalve_gah_gusale",
+            "title": "قلوه گاه گوساله",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "bedun_sanad"
+          },
+          {
+            "key": "chaqu_tizkon",
+            "title": "چاقوتیزکن",
+            "unit": "pcs",
+            "unit_raw": "عدد",
+            "section": "bedun_sanad"
+          },
+          {
+            "key": "khelal_dandan",
+            "title": "خلال دندان",
+            "unit": "pcs",
+            "unit_raw": "عدد",
+            "section": "bedun_sanad"
+          }
+        ],
+        "fields": [
+          {
+            "key": "tik_anbar",
+            "title": "تیک انبار",
+            "type": "boolean",
+            "filled_by": "انباردار",
+            "description": "انبار قلم تحویل‌داده‌شده را در این خانه تیک می‌زند."
+          },
+          {
+            "key": "sharh_kala",
+            "title": "شرح کالا",
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            }
+          },
+          {
+            "key": "vahed",
+            "title": "واحد",
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            }
+          },
+          {
+            "key": "meqdar_darkhast",
+            "title": "مقدار درخواست",
+            "type": "number",
+            "unit": null
+          },
+          {
+            "key": "meqdar_tahvil",
+            "title": "مقدار تحویل/واحد",
+            "type": "number",
+            "unit": null,
+            "filled_by": "انباردار",
+            "group": {
+              "key": "anbar",
+              "title": "انبار"
+            }
+          }
+        ]
+      },
+      "id": "F-00006",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "record",
+      "key": "list_morgh_goje_nime_sakhte",
+      "title": "لیست مرغ و گوجه نیمه‌ساختهٔ تحویلی به آماده‌سازی",
+      "statement": "برگهٔ کاغذی انبار که مرغ و گوجهٔ نیمه‌ساختهٔ تحویل‌شده به آماده‌سازی را ثبت می‌کند: نوع قلم خام، تعداد یا وزن، نوع تولید خواسته‌شده، سهم مرکزی و شعبه، مقدار نیاز از مرغ گرم و برگشت به انبار. برگه در پایان با امضای تحویل‌دار آماده‌سازی و تحویل‌دار انبار بسته می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADghBrGz8GSFF-.image.md",
+          "hash": "sha256:a2514ace111e0da7cfd3fb997b3795682f5f8ada9bd3bdd63a8233dd74bd469f",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-010.json",
+          "node": "preparation-010-n018",
+          "quote": "عدم ثبت اقلام مرینت‌شده در فرم مرینت توسط آماده‌سازی",
+          "hash": "sha256:16617ca8648c0e64fd73cc5294290f2f19a4d9d50ca22cdb438b16badd34bd8a",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "انبار",
+          "holder": "انباردار"
+        },
+        "cadence": "daily",
+        "grain": "هر برگه یک روز و هر سطر یک قلم خام با نوع تولید آن",
+        "filled_by": "انباردار",
+        "approved_by": null,
+        "blank_master": false,
+        "header_fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ:",
+            "type": "date"
+          },
+          {
+            "key": "ruz",
+            "title": "روز:",
+            "type": "string"
+          }
+        ],
+        "signatures": [
+          {
+            "role": "تحویلدار آماده سازی"
+          },
+          {
+            "role": "تحویلدار انبار"
+          }
+        ],
+        "rows": [
+          {
+            "key": "file_estrips",
+            "title": "فیله",
+            "unit": null,
+            "unit_raw": "تعداد و وزن"
+          },
+          {
+            "key": "file_espaisi",
+            "title": "فیله",
+            "unit": null,
+            "unit_raw": "تعداد و وزن"
+          },
+          {
+            "key": "gril_kham",
+            "title": "گریل خام",
+            "unit": "kg",
+            "unit_raw": "وزن"
+          },
+          {
+            "key": "loqme_kham",
+            "title": "لقمه خام",
+            "unit": null,
+            "unit_raw": "تعداد و وزن"
+          },
+          {
+            "key": "morgh_pizza_kham",
+            "title": "مرغ پیتزا خام",
+            "unit": "kg",
+            "unit_raw": "وزن"
+          },
+          {
+            "key": "morgh_chiza_kham",
+            "title": "مرغ چیزا خام",
+            "unit": "kg",
+            "unit_raw": "وزن"
+          },
+          {
+            "key": "kenar_shenisel_kham",
+            "title": "کنار شنیسل خام",
+            "unit": "kg",
+            "unit_raw": "وزن"
+          },
+          {
+            "key": "kenar_file_kham",
+            "title": "کنار فیله خام",
+            "unit": "kg",
+            "unit_raw": "وزن"
+          },
+          {
+            "key": "goje_nime_sakhte",
+            "title": "گوجه نیم ساخته",
+            "unit": "kg",
+            "unit_raw": "وزن"
+          },
+          {
+            "key": "goje_kham_sos_kaf_pizza",
+            "title": "گوجه خام سس کف پیتزا",
+            "unit": "kg",
+            "unit_raw": "وزن"
+          }
+        ],
+        "fields": [
+          {
+            "key": "no_aqlam",
+            "title": "نوع اقلام",
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            }
+          },
+          {
+            "key": "tedad_vazn",
+            "title": "تعداد وزن",
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            },
+            "description": "مبنای ثبت هر سطر که روی برگه چاپ شده است: تعداد یا وزن."
+          },
+          {
+            "key": "no_tolid",
+            "title": "نوع تولید",
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            }
+          },
+          {
+            "key": "markazi",
+            "title": "مرکزی",
+            "type": "number",
+            "unit": null
+          },
+          {
+            "key": "shobe",
+            "title": "شعبه",
+            "type": "number",
+            "unit": null
+          },
+          {
+            "key": "meqdar_niaz_morgh_garm",
+            "title": "مقدار نیاز از مرغ گرم",
+            "type": "number",
+            "unit": null
+          },
+          {
+            "key": "bargasht_be_anbar",
+            "title": "برگشت به انبار",
+            "type": "number",
+            "unit": null
+          }
+        ]
+      },
+      "aliases": [
+        "فرم مرینت",
+        "لیست مرینت"
+      ],
+      "id": "F-00007",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "record",
+      "key": "form_tabdil_burger",
+      "title": "فرم تبدیل آماده‌سازی برگر",
+      "statement": "برگهٔ کاغذی آماده‌سازی که تبدیل مایهٔ برگر را ثبت می‌کند: تعداد برگر صد و پنجاه گرمی و مینی برگر شصت گرمی، وزن تست برگر و ضایعات، و در کنار آن وزن نیمه ساختهٔ برگر و جمع نهایی مایهٔ برگر به کیلوگرم.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADcA5rG7piKFF-.image.md",
+          "hash": "sha256:0354228a5b1a324cacca65fe5de12ff4ea6a77f2517220127c41baaabaa67735",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "واحد آماده‌سازی",
+          "holder": "سرپرست آماده‌سازی"
+        },
+        "cadence": "weekly",
+        "grain": "هر برگه یک نوبت تولید برگر",
+        "filled_by": "مسئول لاین گوشت",
+        "approved_by": null,
+        "blank_master": true,
+        "header_fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "type": "date"
+          },
+          {
+            "key": "vazn_kham",
+            "title": "کیلو",
+            "type": "number",
+            "unit": "kg"
+          },
+          {
+            "key": "jam_vazn_maye_burger",
+            "title": "جمع وزن مایه برگر :",
+            "type": "number",
+            "unit": "kg"
+          }
+        ],
+        "sections": [
+          {
+            "key": "burger",
+            "title": "برگر"
+          },
+          {
+            "key": "tabdil_burger",
+            "title": "تبدیل برگر"
+          }
+        ],
+        "rows": [
+          {
+            "key": "burger_150",
+            "title": "برگر ۱۵۰ گرمی",
+            "unit": "pcs",
+            "unit_raw": "عدد",
+            "section": "tabdil_burger"
+          },
+          {
+            "key": "mini_burger_60",
+            "title": "مینی برگر ۶۰ گرمی",
+            "unit": "pcs",
+            "unit_raw": "عدد",
+            "section": "tabdil_burger"
+          },
+          {
+            "key": "test_burger",
+            "title": "تست برگر",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "tabdil_burger"
+          },
+          {
+            "key": "zayeat",
+            "title": "ضایعات",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "tabdil_burger"
+          }
+        ],
+        "fields": [
+          {
+            "key": "qalam",
+            "title": null,
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            },
+            "description": "نام قلم خروجی تبدیل برگر که روی برگه چاپ شده است."
+          },
+          {
+            "key": "meqdar",
+            "title": null,
+            "type": "number",
+            "description": "خانهٔ خالی مقدار هر قلم تبدیل برگر."
+          },
+          {
+            "key": "vahed",
+            "title": null,
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            },
+            "description": "واحد چاپ‌شدهٔ هر سطر تبدیل برگر: عدد یا کیلو."
+          },
+          {
+            "key": "nime_sakhte_burger",
+            "title": "نیمه ساخته برگر",
+            "type": "number",
+            "unit": "kg",
+            "repeat": 14,
+            "description": "خانه‌های خالی نیمه ساختهٔ برگر که با دست پر می‌شوند."
+          },
+          {
+            "key": "vahed_nime_sakhte",
+            "title": "کیلو",
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            }
+          },
+          {
+            "key": "jam",
+            "title": "جمع",
+            "type": "number",
+            "unit": "kg"
+          },
+          {
+            "key": "jam_nahayi_maye",
+            "title": "جمع نهایی مایه برگر",
+            "type": "number",
+            "unit": "kg"
+          }
+        ]
+      },
+      "id": "F-00008",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "record",
+      "key": "form_tolid_nime_sakhte",
+      "title": "فرم تولید نیمه ساخته",
+      "statement": "برگهٔ کاغذی تولید نیمه ساخته که برای هر محصول نیمه‌آماده پر می‌شود: نام محصول در سربرگ با دست نوشته می‌شود و مواد اولیهٔ بکار رفته با مقدار یا وزن و توضیحات در سطرها ثبت می‌شود. مقدار محصول تولیدشده و محل تحویل آن در پایان برگه نوشته می‌شود و روی هر برگه دو نسخهٔ یکسان چاپ شده است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADcQ5rG7piKFF-.image.md",
+          "hash": "sha256:8c8c98c31aba2ea385dff81ff37f341cb173f2c63b6f12015b30f3a86ed505fd",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-020.json",
+          "node": "preparation-020-n023",
+          "quote": "پر کردن فرم نیم‌ساخت فیلادلفیا و استیک رولی با ثبت مواد اولیه و مقدار مصرفی",
+          "hash": "sha256:6755b679a16e891ef948b2bf7441eacba82cd728c1619bdbb7b09be20df8539a",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-017.json",
+          "node": "preparation-017-n022",
+          "quote": "پر کردن فرم نیم‌ساخت ژامبون دوگانه و سه‌گانه با ثبت گرم مصرفی هر نوع ژامبون",
+          "hash": "sha256:ce35bd499dad22394e6b0098703b10831bd05d11999394ac8b2e0b2feaab41f3",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "واحد آماده‌سازی",
+          "holder": "سرپرست آماده‌سازی"
+        },
+        "cadence": "ad_hoc",
+        "grain": "هر برگه یک نوبت تولید یک محصول نیمه ساخته و هر سطر یک مادهٔ اولیه",
+        "filled_by": "مسئول لاین مربوط",
+        "approved_by": null,
+        "blank_master": true,
+        "header_fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ:",
+            "type": "date"
+          },
+          {
+            "key": "nam_mahsul",
+            "title": "نام محصول نیمه ساخته:",
+            "type": "string"
+          }
+        ],
+        "fields": [
+          {
+            "key": "mavad_avalie",
+            "title": "مواد اولیه بکار رفته",
+            "type": "string"
+          },
+          {
+            "key": "meqdar_vazn",
+            "title": "مقدار/ وزن",
+            "type": "number",
+            "unit": null
+          },
+          {
+            "key": "tozihat",
+            "title": "توضیحات",
+            "type": "string"
+          },
+          {
+            "key": "vazn_mahsul_tolid_shode",
+            "title": "مقدار / وزن محصول نیم ساخته تولید شده:",
+            "type": "number",
+            "unit": null
+          },
+          {
+            "key": "mahal_tahvil",
+            "title": "محل تحویل کالای نیمه ساخته تولید شده:",
+            "type": "string"
+          }
+        ]
+      },
+      "aliases": [
+        "فرم نیم‌ساخت"
+      ],
+      "id": "F-00009",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "record",
+      "key": "form_tabdil_gusht_raste",
+      "title": "فرم تبدیل آماده‌سازی گوشت راسته",
+      "statement": "برگهٔ کاغذی تبدیل آماده‌سازی برای گوشت راسته که وزن فیلادلفیای تولیدشده و ضایعات را به کیلوگرم ثبت می‌کند. تاریخ و وزن راستهٔ ورودی در سربرگ نوشته می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADcg5rG7piKFF-.image.md",
+          "hash": "sha256:2f11b6cefb182523ae2c731474027b556ffbe1e24d68379d296baf3365ad5219",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "واحد آماده‌سازی",
+          "holder": "سرپرست آماده‌سازی"
+        },
+        "cadence": "weekly",
+        "grain": "هر برگه یک نوبت کار روی گوشت راسته و هر سطر یک قلم خروجی",
+        "filled_by": "مسئول لاین گوشت",
+        "approved_by": null,
+        "blank_master": true,
+        "header_fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "type": "date"
+          },
+          {
+            "key": "vazn_kham",
+            "title": "کیلو",
+            "type": "number",
+            "unit": "kg"
+          }
+        ],
+        "sections": [
+          {
+            "key": "tabdil",
+            "title": "که به مواد خام زیر تبدیل می شود و تحویل انبار میگردد."
+          }
+        ],
+        "rows": [
+          {
+            "key": "philadelphia",
+            "title": "فیلادلفیا",
+            "unit": "kg",
+            "unit_raw": "کیلو"
+          },
+          {
+            "key": "zayeat",
+            "title": "ضایعات",
+            "unit": "kg",
+            "unit_raw": "کیلو"
+          }
+        ],
+        "fields": [
+          {
+            "key": "qalam",
+            "title": null,
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            },
+            "description": "نام قلم خروجی که روی برگه چاپ شده است."
+          },
+          {
+            "key": "vahed",
+            "title": null,
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            },
+            "description": "واحد چاپ‌شدهٔ هر سطر."
+          },
+          {
+            "key": "meqdar",
+            "title": null,
+            "type": "number",
+            "repeat": 2,
+            "description": "خانه‌های خالی مقدار که در سطر ضایعات به یک خانهٔ پهن تبدیل می‌شود."
+          },
+          {
+            "key": "jam",
+            "title": "جمع",
+            "type": "number",
+            "unit": "kg"
+          }
+        ]
+      },
+      "id": "F-00010",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "record",
+      "key": "form_tabdil_jambon_bikan",
+      "title": "فرم تبدیل آماده‌سازی ژامبون بیکن",
+      "statement": "برگهٔ کاغذی تبدیل آماده‌سازی ژامبون بیکن که مقدار بیکن تولیدشده را به کیلو و ورق و ضایعات را شامل ژامبون خرد شده و پلاستیک ثبت می‌کند. تاریخ و وزن ورودی در سربرگ نوشته می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADcw5rG7piKFF-.image.md",
+          "hash": "sha256:c30f9285529e68fce74a646f6817d0eda238f2445c8f27d7088d4431894c3c89",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "واحد آماده‌سازی",
+          "holder": "سرپرست آماده‌سازی"
+        },
+        "cadence": "daily",
+        "grain": "هر برگه یک روز کار روی ژامبون بیکن و هر سطر یک قلم خروجی",
+        "filled_by": "مسئول لاین گوشت",
+        "approved_by": null,
+        "blank_master": true,
+        "header_fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "type": "date"
+          },
+          {
+            "key": "vazn_kham",
+            "title": "کیلو",
+            "type": "number",
+            "unit": "kg"
+          }
+        ],
+        "sections": [
+          {
+            "key": "tabdil",
+            "title": "که به مواد خام زیر تبدیل می شود و تحویل انبار میگردد."
+          },
+          {
+            "key": "zayeat",
+            "title": "ضایعات"
+          }
+        ],
+        "rows": [
+          {
+            "key": "bikan_kilo",
+            "title": "بیکن",
+            "unit": "kg",
+            "unit_raw": "کیلو"
+          },
+          {
+            "key": "bikan_varaq",
+            "title": "بیکن",
+            "unit": "slice",
+            "unit_raw": "ورق"
+          },
+          {
+            "key": "jambon_khord_shode",
+            "title": "ژامبون خرد شده",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "zayeat"
+          },
+          {
+            "key": "plastik",
+            "title": "پلاستیک",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "zayeat"
+          }
+        ],
+        "fields": [
+          {
+            "key": "goruh",
+            "title": null,
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            },
+            "description": "ستون دسته که روی برگه تنها برای بخش ضایعات چاپ شده است."
+          },
+          {
+            "key": "qalam",
+            "title": null,
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            },
+            "description": "نام قلم خروجی که روی برگه چاپ شده است."
+          },
+          {
+            "key": "vahed",
+            "title": null,
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            },
+            "description": "واحد چاپ‌شدهٔ هر سطر: کیلو یا ورق."
+          },
+          {
+            "key": "meqdar",
+            "title": null,
+            "type": "number",
+            "repeat": 2,
+            "description": "خانه‌های خالی مقدار که در بخش ضایعات به یک خانهٔ پهن تبدیل می‌شود."
+          },
+          {
+            "key": "jam",
+            "title": "جمع",
+            "type": "number",
+            "unit": null
+          }
+        ]
+      },
+      "id": "F-00011",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "record",
+      "key": "form_tabdil_sine_morgh",
+      "title": "فرم تبدیل آماده‌سازی سینه مرغ",
+      "statement": "برگهٔ کاغذی تبدیل آماده‌سازی سینهٔ مرغ که خروجی‌های هر روز را ثبت می‌کند: لقمه به کیلو و عدد، مرغ پیتزای تکه‌شده، مرغ چیزا به کیلو و عدد، مرغ گریل، کنار شنیسل و ضایعات شامل خون‌آبه و پلاستیک. مابقی باقی‌مانده در آماده‌سازی و جمع هر سطر در همان برگه نوشته می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdA5rG7piKFF-.image.md",
+          "hash": "sha256:32331a979fdfa0a891c87800f8a855121ebc98d2862d41144769251a8223e2bf",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "واحد آماده‌سازی",
+          "holder": "سرپرست آماده‌سازی"
+        },
+        "cadence": "daily",
+        "grain": "هر برگه یک روز کار روی سینهٔ مرغ و هر سطر یک قلم خروجی",
+        "filled_by": "مسئول لاین مرغ",
+        "approved_by": null,
+        "blank_master": true,
+        "header_fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "type": "date"
+          },
+          {
+            "key": "vazn_kham",
+            "title": "کیلو",
+            "type": "number",
+            "unit": "kg"
+          }
+        ],
+        "sections": [
+          {
+            "key": "zayeat",
+            "title": "ضایعات"
+          }
+        ],
+        "rows": [
+          {
+            "key": "loqme_kilo",
+            "title": "لقمه",
+            "unit": "kg",
+            "unit_raw": "کیلو"
+          },
+          {
+            "key": "loqme_adad",
+            "title": "لقمه",
+            "unit": "pcs",
+            "unit_raw": "عدد"
+          },
+          {
+            "key": "morgh_pizza_tekke",
+            "title": "مرغ پیتزا تکه شده",
+            "unit": "kg",
+            "unit_raw": "کیلو"
+          },
+          {
+            "key": "morgh_chiza_kilo",
+            "title": "مرغ چیزا",
+            "unit": "kg",
+            "unit_raw": "کیلو"
+          },
+          {
+            "key": "morgh_chiza_adad",
+            "title": "مرغ چیزا",
+            "unit": "pcs",
+            "unit_raw": "عدد"
+          },
+          {
+            "key": "morgh_gril",
+            "title": "مرغ گریل",
+            "unit": "kg",
+            "unit_raw": "کیلو"
+          },
+          {
+            "key": "kenar_shenisel",
+            "title": "کنار شنیسل",
+            "unit": "kg",
+            "unit_raw": "کیلو"
+          },
+          {
+            "key": "khun_abe",
+            "title": "خون آبه",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "zayeat"
+          },
+          {
+            "key": "plastik",
+            "title": "پلاستیک",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "zayeat"
+          }
+        ],
+        "fields": [
+          {
+            "key": "qalam",
+            "title": null,
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            },
+            "group": {
+              "key": "tabdil",
+              "title": "که به مواد خام زیر تبدیل می شود و تحویل انبار میگردد."
+            },
+            "description": "نام قلم خروجی که روی برگه چاپ شده است."
+          },
+          {
+            "key": "vahed",
+            "title": null,
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            },
+            "group": {
+              "key": "tabdil",
+              "title": "که به مواد خام زیر تبدیل می شود و تحویل انبار میگردد."
+            },
+            "description": "واحد چاپ‌شدهٔ هر سطر: کیلو یا عدد."
+          },
+          {
+            "key": "meqdar",
+            "title": null,
+            "type": "number",
+            "group": {
+              "key": "tabdil",
+              "title": "که به مواد خام زیر تبدیل می شود و تحویل انبار میگردد."
+            },
+            "description": "خانهٔ خالی مقدار تحویل‌شده به انبار."
+          },
+          {
+            "key": "mabaqi",
+            "title": null,
+            "type": "number",
+            "repeat": 2,
+            "group": {
+              "key": "mabaqi",
+              "title": "مابقی که در آماده سازی باقی مانده"
+            },
+            "description": "خانه‌های خالی مقدار باقی‌مانده؛ برای دو بخش پایانی روی برگه خاکستری و غیرقابل تکمیل است."
+          },
+          {
+            "key": "jam",
+            "title": "جمع",
+            "type": "number",
+            "unit": null
+          }
+        ]
+      },
+      "id": "F-00012",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "record",
+      "key": "form_tabdil_gusht_raste_garm",
+      "title": "فرم تبدیل آماده‌سازی گوشت راستهٔ گرم",
+      "statement": "برگهٔ کاغذی تبدیل آماده‌سازی گوشت راستهٔ گرم که تفکیک آن به استیک رولی، خرده گوشت و ضایعات را به کیلوگرم ثبت می‌کند. تاریخ و وزن راستهٔ ورودی در سربرگ نوشته می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdQ5rG7piKFF-.image.md",
+          "hash": "sha256:3483ac303e1e1c448a98972723665302ab10be6bff602f2e834c60a30a39db03",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-020.json",
+          "node": "preparation-020-n022",
+          "quote": "پر کردن فرم تبدیل استیک رولی با ثبت وزن کل گوشت راسته و تفکیک آن به استیک رولی، خرده راسته و ضایعات",
+          "hash": "sha256:6755b679a16e891ef948b2bf7441eacba82cd728c1619bdbb7b09be20df8539a",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "واحد آماده‌سازی",
+          "holder": "سرپرست آماده‌سازی"
+        },
+        "cadence": "weekly",
+        "grain": "هر برگه یک نوبت کار روی گوشت راستهٔ گرم و هر سطر یک قلم خروجی",
+        "filled_by": "مسئول لاین گوشت",
+        "approved_by": null,
+        "blank_master": true,
+        "header_fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "type": "date"
+          },
+          {
+            "key": "vazn_kham",
+            "title": "کیلو",
+            "type": "number",
+            "unit": "kg"
+          }
+        ],
+        "sections": [
+          {
+            "key": "tabdil",
+            "title": "که به مواد خام زیر تبدیل می شود و تحویل انبار میگردد."
+          }
+        ],
+        "rows": [
+          {
+            "key": "steak_roli",
+            "title": "استیک رولی",
+            "unit": "kg",
+            "unit_raw": "کیلو"
+          },
+          {
+            "key": "khorde_gusht",
+            "title": "خرده گوشت",
+            "unit": "kg",
+            "unit_raw": "کیلو"
+          },
+          {
+            "key": "zayeat",
+            "title": "ضایعات",
+            "unit": "kg",
+            "unit_raw": "کیلو"
+          }
+        ],
+        "fields": [
+          {
+            "key": "qalam",
+            "title": null,
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            },
+            "description": "نام قلم خروجی که روی برگه چاپ شده است."
+          },
+          {
+            "key": "vahed",
+            "title": null,
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            },
+            "description": "واحد چاپ‌شدهٔ هر سطر."
+          },
+          {
+            "key": "meqdar",
+            "title": null,
+            "type": "number",
+            "repeat": 3,
+            "description": "خانه‌های خالی مقدار که در دو سطر پایانی به یک خانهٔ پهن تبدیل می‌شود."
+          },
+          {
+            "key": "jam",
+            "title": "جمع",
+            "type": "number",
+            "unit": "kg"
+          }
+        ]
+      },
+      "aliases": [
+        "فرم تبدیل استیک رولی"
+      ],
+      "id": "F-00013",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "record",
+      "key": "form_tabdil_file_morgh",
+      "title": "فرم تبدیل آماده‌سازی فیله مرغ",
+      "statement": "برگهٔ کاغذی تبدیل آماده‌سازی فیلهٔ مرغ که خروجی‌های هر روز را ثبت می‌کند: فیله به کیلو و عدد، مرغ پیتزای تکه‌شده، لقمه به کیلو و عدد، کنارفیله، ضایعات مرغ و ضایعات شامل خون‌آبه و پلاستیک. تاریخ و وزن فیلهٔ ورودی در سربرگ نوشته می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdg5rG7piKFF-.image.md",
+          "hash": "sha256:522e3b8ab426547aa322838f8efbbc90c40231c81cc1538fd143dea9766192b8",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "واحد آماده‌سازی",
+          "holder": "سرپرست آماده‌سازی"
+        },
+        "cadence": "daily",
+        "grain": "هر برگه یک روز کار روی فیلهٔ مرغ و هر سطر یک قلم خروجی",
+        "filled_by": "مسئول لاین مرغ",
+        "approved_by": null,
+        "blank_master": true,
+        "header_fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "type": "date"
+          },
+          {
+            "key": "vazn_kham",
+            "title": "کيلو",
+            "type": "number",
+            "unit": "kg"
+          }
+        ],
+        "sections": [
+          {
+            "key": "tabdil",
+            "title": "که به مواد خام زیر تبدیل می شود و تحویل انبار میگردد."
+          },
+          {
+            "key": "zayeat",
+            "title": "ضايعات"
+          }
+        ],
+        "rows": [
+          {
+            "key": "file_kilo",
+            "title": "فیله",
+            "unit": "kg",
+            "unit_raw": "کیلو"
+          },
+          {
+            "key": "file_adad",
+            "title": "فیله",
+            "unit": "pcs",
+            "unit_raw": "عدد"
+          },
+          {
+            "key": "morgh_pizza_tekke",
+            "title": "مرغ پیتزا تکه شده",
+            "unit": "kg",
+            "unit_raw": "کیلو"
+          },
+          {
+            "key": "loqme_kilo",
+            "title": "لقمه",
+            "unit": "kg",
+            "unit_raw": "کیلو"
+          },
+          {
+            "key": "loqme_adad",
+            "title": "لقمه",
+            "unit": "pcs",
+            "unit_raw": "عدد"
+          },
+          {
+            "key": "kenar_file",
+            "title": "کنارفیله",
+            "unit": "kg",
+            "unit_raw": "کیلو"
+          },
+          {
+            "key": "zayeat_morgh",
+            "title": "ضایعات مرغ",
+            "unit": "kg",
+            "unit_raw": "کیلو"
+          },
+          {
+            "key": "khun_abe",
+            "title": "خون آبه",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "zayeat"
+          },
+          {
+            "key": "plastik",
+            "title": "پلاستیک",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "section": "zayeat"
+          }
+        ],
+        "fields": [
+          {
+            "key": "qalam",
+            "title": null,
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            },
+            "description": "نام قلم خروجی که روی برگه چاپ شده است."
+          },
+          {
+            "key": "zir_qalam",
+            "title": null,
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            },
+            "description": "نام زیرقلم که روی برگه تنها برای بخش ضایعات چاپ شده است."
+          },
+          {
+            "key": "vahed",
+            "title": null,
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            },
+            "description": "واحد چاپ‌شدهٔ هر سطر: کیلو یا عدد."
+          },
+          {
+            "key": "meqdar",
+            "title": null,
+            "type": "number",
+            "repeat": 3,
+            "description": "خانه‌های خالی مقدار که در سطرهای پایانی کم‌تر می‌شود."
+          },
+          {
+            "key": "jam",
+            "title": "جمع",
+            "type": "number",
+            "unit": null
+          }
+        ]
+      },
+      "id": "F-00014",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "record",
+      "key": "form_tabdil_kenar_shenisel",
+      "title": "فرم تبدیل آماده‌سازی کنار شنیسل",
+      "statement": "برگهٔ کاغذی تبدیل آماده‌سازی کنار شنیسل که وزن مرغ پخته، ضایعات شنیسل و کاست را به کیلوگرم ثبت می‌کند. تاریخ و وزن کنار شنیسل ورودی در سربرگ نوشته می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdw5rG7piKFF-.image.md",
+          "hash": "sha256:d2d42c77d9b9695226349e3d4785303533ab3e854c9e3073de1bcbb30ff3a5d5",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n033",
+          "quote": "پخت کنار شینسل یخ‌باز‌شده در آماده‌سازی یک روز در هفته همراه با افزودن ماده مرینت",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "واحد آماده‌سازی",
+          "holder": "سرپرست آماده‌سازی"
+        },
+        "cadence": "weekly",
+        "grain": "هر برگه یک نوبت پخت کنار شنیسل و هر سطر یک قلم خروجی",
+        "filled_by": "مسئول لاین مرغ",
+        "approved_by": null,
+        "blank_master": true,
+        "header_fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "type": "date"
+          },
+          {
+            "key": "vazn_kham",
+            "title": "کیلو",
+            "type": "number",
+            "unit": "kg"
+          }
+        ],
+        "sections": [
+          {
+            "key": "tabdil",
+            "title": "که به مواد خام زیر تبدیل می شود و تحویل انبار میگردد."
+          }
+        ],
+        "rows": [
+          {
+            "key": "morgh_pokhte",
+            "title": "مرغ پخته",
+            "unit": "kg",
+            "unit_raw": "کیلو"
+          },
+          {
+            "key": "zayeat_shenisel",
+            "title": "ضایعات شنیسل",
+            "unit": "kg",
+            "unit_raw": "کیلو"
+          },
+          {
+            "key": "kast",
+            "title": "کاست",
+            "unit": "kg",
+            "unit_raw": "کیلو"
+          }
+        ],
+        "fields": [
+          {
+            "key": "qalam",
+            "title": null,
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            },
+            "description": "نام قلم خروجی که روی برگه چاپ شده است."
+          },
+          {
+            "key": "vahed",
+            "title": null,
+            "type": "string",
+            "constraints": {
+              "readOnly": true
+            },
+            "description": "واحد چاپ‌شدهٔ هر سطر."
+          },
+          {
+            "key": "meqdar",
+            "title": null,
+            "type": "number",
+            "repeat": 2,
+            "description": "خانه‌های خالی مقدار؛ در سطر کاست این خانه‌ها روی برگه خاکستری و غیرقابل تکمیل است."
+          }
+        ]
+      },
+      "id": "F-00015",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "record",
+      "key": "daftar_sabt_line_sabzijat",
+      "title": "دفتر ثبت روزانهٔ لاین سبزیجات",
+      "statement": "دفتر دست‌نویسی که مسئول لاین سبزیجات هر روز وزن ورودی، وزن خرد شده، وزن پاک شده و وزن ضایعات هر قلم را در آن می‌نویسد و وزن مرغ خام، وزن مرغ پختهٔ مرغ پیتزا، مقدار سس مصرفی و وزن ظرف را هم در همان ستون‌ها ثبت می‌کند. اقلامی که فرم جداگانه ندارند تنها در این دفتر ثبت می‌شوند و دفتر در پایان هر هفته تحویل داده می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-01.txt",
+          "lines": "1-758",
+          "hash": "sha256:fc7d9f14ad8514931d243e838aaa563a319ceaf543eee3bc472a1c0f74e77607",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n024",
+          "quote": "ثبت دست‌نویس ورودی، ضایعات و خروجی اقلام فاقد فرم در دفتر شخصی مسئول لاین",
+          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n040",
+          "quote": "ثبت وزن مرغ خام، مرغ پخته‌شده، مقدار سس و وزن ظرف در دفتر یادداشت",
+          "hash": "sha256:ecef39b667404cd777c0b03d08c4fe51ab3e43135e0250e95dc875871bb76c1f",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "واحد آماده‌سازی",
+          "holder": "مسئول لاین سبزیجات"
+        },
+        "cadence": "daily",
+        "grain": "هر قلم در هر روز",
+        "filled_by": "مسئول لاین سبزیجات",
+        "approved_by": null,
+        "blank_master": false,
+        "fields": [
+          {
+            "key": "qalam",
+            "title": "نام ماده اولیه",
+            "type": "string",
+            "description": "قلمی که آن روز در لاین سبزیجات کار شده است؛ کاهو، فلفل دلمه‌ای، قارچ، کلم و مرغ پیتزا."
+          },
+          {
+            "key": "vorudi",
+            "title": "ورودی",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن مادهٔ اولیه هنگام تحویل از انبار و پیش از پاک کردن."
+          },
+          {
+            "key": "khord_shode",
+            "title": "خرد شده",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن محصول خرد و شسته‌شدهٔ همان روز، به تفکیک سهم آشپزخانهٔ مرکزی و شعبه."
+          },
+          {
+            "key": "pak_shode",
+            "title": "پاک شده",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن محصول پاک‌شده‌ای که خرد نمی‌شود و بسته‌بندی‌شده در یخچال می‌ماند."
+          },
+          {
+            "key": "zayeat",
+            "title": "ضایعات",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن ضایعات جداشدهٔ همان روز، چه در کارتن و چه در سبد، پس از وزن‌کشی."
+          },
+          {
+            "key": "morgh_kham",
+            "title": "مرغ خام",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن مرغ خام مرینت‌شده‌ای که برای مرغ پیتزا از انبار تحویل گرفته شده است."
+          },
+          {
+            "key": "morgh_pokhte",
+            "title": "مرغ پخته شده",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن خالص مرغ پختهٔ خردشده پس از صفر کردن وزن ظرف."
+          },
+          {
+            "key": "sos",
+            "title": "سس",
+            "type": "number",
+            "unit": "kg",
+            "description": "مقدار سس مخصوص مرغ پیتزا که به مرغ پختهٔ همان روز زده شده است."
+          },
+          {
+            "key": "vazn_zarf",
+            "title": "وزن ظرف",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن ظرف استیلی که مرغ خردشده در آن گرفته می‌شود و در حساب روز کسر می‌شود."
+          }
+        ]
+      },
+      "aliases": [
+        "دفتر یادداشت لاین سبزیجات"
+      ],
+      "field_status": {
+        "data/fields/qalam/title": "inferred",
+        "data/fields/qalam/type": "inferred",
+        "data/fields/vorudi/title": "inferred",
+        "data/fields/vorudi/type": "inferred",
+        "data/fields/vorudi/unit": "inferred",
+        "data/fields/khord_shode/title": "inferred",
+        "data/fields/khord_shode/type": "inferred",
+        "data/fields/khord_shode/unit": "inferred",
+        "data/fields/pak_shode/title": "inferred",
+        "data/fields/pak_shode/type": "inferred",
+        "data/fields/pak_shode/unit": "inferred",
+        "data/fields/zayeat/title": "inferred",
+        "data/fields/zayeat/type": "inferred",
+        "data/fields/zayeat/unit": "inferred",
+        "data/fields/morgh_kham/title": "inferred",
+        "data/fields/morgh_kham/type": "inferred",
+        "data/fields/morgh_kham/unit": "inferred",
+        "data/fields/morgh_pokhte/title": "inferred",
+        "data/fields/morgh_pokhte/type": "inferred",
+        "data/fields/morgh_pokhte/unit": "inferred",
+        "data/fields/sos/title": "inferred",
+        "data/fields/sos/type": "inferred",
+        "data/fields/sos/unit": "inferred",
+        "data/fields/vazn_zarf/title": "inferred",
+        "data/fields/vazn_zarf/type": "inferred",
+        "data/fields/vazn_zarf/unit": "inferred"
+      },
+      "id": "F-00016",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "record",
+      "key": "checklist_ghazaye_personel",
+      "title": "چک‌لیست دوهفته‌ای ناهار و شام پرسنل",
+      "statement": "چک‌لیست از پیش تعیین‌شده‌ای که برای هر روز از یک دورهٔ دوهفته‌ای نام غذا، تعداد نفرات و وزن به ازای هر نفر را مشخص می‌کند و پس از پایان دوره از ابتدا تکرار می‌شود. انبار بر پایهٔ همین چک‌لیست هر روز مواد اولیهٔ ناهار و شام پرسنل را خارج می‌کند و آماده‌سازی سهم وعدهٔ بعد را به همان وزن کنار می‌گذارد؛ درخواست جداگانه‌ای برای این مواد پر نمی‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-01.txt",
+          "lines": "1-758",
+          "hash": "sha256:fc7d9f14ad8514931d243e838aaa563a319ceaf543eee3bc472a1c0f74e77607",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-024.json",
+          "node": "preparation-024-n001",
+          "quote": "خروج زدن مواد اولیه ناهار و شام پرسنل از انبار طبق چک‌لیست دوهفته‌ای",
+          "hash": "sha256:0e5b8bc0c3c4e8a3fbd643b31b9eed73dc69d81f9e0691002a201235d4c84c08",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-024.json",
+          "node": "preparation-024-n024",
+          "quote": "کنار گذاشتن سهم ناهار روز بعد به تعداد نفرات و وزن هر پرس طبق چک‌لیست",
+          "hash": "sha256:0e5b8bc0c3c4e8a3fbd643b31b9eed73dc69d81f9e0691002a201235d4c84c08",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "paper",
+        "role": "reference",
+        "location": {
+          "kept_at": "انبار و واحد آماده‌سازی",
+          "holder": "سرپرست آماده‌سازی"
+        },
+        "cadence": null,
+        "grain": "هر وعده در هر روز از دورهٔ دوهفته‌ای",
+        "filled_by": null,
+        "approved_by": null,
+        "fields": [
+          {
+            "key": "ruz",
+            "title": "روز",
+            "type": "string",
+            "description": "روز هفته در دورهٔ دوهفته‌ای که پس از پایان دوره دوباره از ابتدا تکرار می‌شود."
+          },
+          {
+            "key": "nam_ghaza",
+            "title": "نام غذا",
+            "type": "string",
+            "description": "غذای ناهار یا شام پرسنل همان روز، همراه با اقلام تشکیل‌دهندهٔ آن."
+          },
+          {
+            "key": "tedad_nafar",
+            "title": "تعداد نفرات",
+            "type": "integer",
+            "description": "شمار پرسنلی که آن روز از آن وعده استفاده می‌کنند؛ در روزهای شلوغ‌تر بیشتر است."
+          },
+          {
+            "key": "vazn_har_nafar",
+            "title": "وزن به ازای هر نفر",
+            "type": "number",
+            "unit": "g",
+            "description": "وزن تعیین‌شدهٔ مادهٔ اولیهٔ اصلی برای هر نفر."
+          },
+          {
+            "key": "vazn_kol",
+            "title": "وزن کل",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن کل مادهٔ اولیهٔ اصلی آن وعده که انبار بر پایهٔ آن خروج می‌دهد."
+          }
+        ]
+      },
+      "aliases": [
+        "چک‌لیست غذای پرسنل"
+      ],
+      "field_status": {
+        "data/fields/ruz/title": "inferred",
+        "data/fields/ruz/type": "inferred",
+        "data/fields/nam_ghaza/title": "inferred",
+        "data/fields/nam_ghaza/type": "inferred",
+        "data/fields/tedad_nafar/title": "inferred",
+        "data/fields/tedad_nafar/type": "inferred",
+        "data/fields/vazn_har_nafar/title": "inferred",
+        "data/fields/vazn_har_nafar/type": "inferred",
+        "data/fields/vazn_har_nafar/unit": "inferred",
+        "data/fields/vazn_kol/title": "inferred",
+        "data/fields/vazn_kol/type": "inferred",
+        "data/fields/vazn_kol/unit": "inferred"
+      },
+      "id": "F-00017",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "record",
+      "key": "jadval_morakhkhasi_va_ezafe_kari",
+      "title": "جدول مرخصی و اضافه‌کاری کارخانه",
+      "statement": "جدولی در شیت آنلاین مجموعه که هر مورد اضافه‌کاری یا مرخصی پرسنل در آن ثبت می‌شود. مسئول هر لاین آن را در همان روزِ کارِ اضافه پر می‌کند و ستون‌های آن تاریخ، نام شخص، زمان و شرح کار است؛ پرداخت تنها پس از تایید مدیر مجموعه انجام می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-04.txt",
+          "lines": "1-473",
+          "hash": "sha256:cd6d82e4fab1293439a9807b5648e7c47e7ba388a221ba5cf4235ad4e1296c01",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "external",
+        "role": "log",
+        "location": {
+          "system": "شیت آنلاین حضور و غیاب مجموعه",
+          "kept_at": "دفتر مجموعه"
+        },
+        "cadence": "daily",
+        "grain": "هر مورد اضافه‌کاری یا مرخصی یک نفر",
+        "filled_by": "مسئول لاین",
+        "approved_by": "مدیر مجموعه",
+        "primaryKey": [
+          "tarikh",
+          "nam_shakhs"
+        ],
+        "fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "type": "date"
+          },
+          {
+            "key": "nam_shakhs",
+            "title": "نام شخص",
+            "type": "string"
+          },
+          {
+            "key": "zaman",
+            "title": "زمان",
+            "type": "string",
+            "description": "ساعت و مدت ماندن اضافه بر شیفت"
+          },
+          {
+            "key": "sharh_kar",
+            "title": "شرح کار",
+            "type": "string"
+          }
+        ]
+      },
+      "field_status": {
+        "data/fields/tarikh/title": "inferred",
+        "data/fields/tarikh/type": "inferred",
+        "data/fields/nam_shakhs/title": "inferred",
+        "data/fields/nam_shakhs/type": "inferred",
+        "data/fields/zaman/title": "inferred",
+        "data/fields/zaman/type": "inferred",
+        "data/fields/sharh_kar/title": "inferred",
+        "data/fields/sharh_kar/type": "inferred"
+      },
+      "id": "F-00018",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "inferred",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "record",
+      "key": "khoruji_amadesazi_be_anbar",
+      "title": "خروجی روزانهٔ آماده‌سازی به انبار",
+      "statement": "جدول روزانه‌ای که مقدار هر محصول نیمه‌آمادهٔ تحویل‌شده از آماده‌سازی به انبار را بر حسب وزن یا تعداد ثبت می‌کند. پرسنل هر لاین پس از بسته‌بندی و لیبل‌گذاری، سهم همان لاین را وارد می‌کند و چیزی برای روز بعد نگه داشته نمی‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "sheet",
+          "ref": "attachments/sheets/Amadesazi__Amadesazi/Amadesazi.xlsx",
+          "sheet": "خروجی آماده سازی به انبار",
+          "hash": "sha256:e17a8a3153119fa7a8f3035e58fb0122dddcad80e81ff27df45f6fe85c525596",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n017",
+          "quote": "ورود روزانه ورودی، خروجی و مقدار تولید به فایل اکسل عنکبوتی آماده‌سازی",
+          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "sheet",
+        "location": {
+          "spreadsheetId": "1fAFZ5SbwDIoulj33mPIyyrpvSRBV6EUVQsorQ8MN2Ag",
+          "sheetId": 3,
+          "sheet": "خروجی آماده سازی به انبار",
+          "hidden": false
+        },
+        "instances": [
+          {
+            "key": "amadesazi__s3",
+            "spreadsheetId": "1fAFZ5SbwDIoulj33mPIyyrpvSRBV6EUVQsorQ8MN2Ag",
+            "sheetId": 3,
+            "sheet": "خروجی آماده سازی به انبار",
+            "branch": null,
+            "hidden": false
+          }
+        ],
+        "role": "log",
+        "grain": "هر روز کاری آماده‌سازی",
+        "cadence": "daily",
+        "filled_by": "پرسنل آماده‌سازی",
+        "primaryKey": [
+          "tarikh"
+        ],
+        "fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "columns": {
+              "amadesazi__s3": "a"
+            },
+            "type": "date",
+            "description": "روزی که خروجی آن ثبت می‌شود."
+          },
+          {
+            "key": "tedad_mini_borger",
+            "title": "تعداد مینی برگر",
+            "columns": {
+              "amadesazi__s3": "b"
+            },
+            "type": "number",
+            "unit": "pcs",
+            "group": {
+              "key": "borger",
+              "title": "برگر"
+            },
+            "description": "تعداد مینی برگر تحویل‌شده به انبار؛ بسته‌ها پنج‌عددی است."
+          },
+          {
+            "key": "tedad_borger",
+            "title": "تعداد برگر",
+            "columns": {
+              "amadesazi__s3": "c"
+            },
+            "type": "number",
+            "unit": "pcs",
+            "group": {
+              "key": "borger",
+              "title": "برگر"
+            },
+            "description": "تعداد برگر تحویل‌شده به انبار؛ بسته‌ها پنج‌عددی است."
+          },
+          {
+            "key": "tedad_loqme_sine",
+            "title": "تعداد لقمه (سینه)",
+            "columns": {
+              "amadesazi__s3": "d"
+            },
+            "type": "number",
+            "unit": "pcs",
+            "group": {
+              "key": "sine_morgh",
+              "title": "سینه مرغ"
+            },
+            "description": "تعداد لقمهٔ تولیدشده از سینه مرغ."
+          },
+          {
+            "key": "vazn_loqme_sine",
+            "title": "وزن لقمه (سینه)",
+            "columns": {
+              "amadesazi__s3": "e"
+            },
+            "type": "number",
+            "unit": "kg",
+            "group": {
+              "key": "sine_morgh",
+              "title": "سینه مرغ"
+            },
+            "description": "وزن لقمهٔ تولیدشده از سینه مرغ."
+          },
+          {
+            "key": "vazn_pitza_sine",
+            "title": "وزن پیتزا (سینه)",
+            "columns": {
+              "amadesazi__s3": "f"
+            },
+            "type": "number",
+            "unit": "kg",
+            "group": {
+              "key": "sine_morgh",
+              "title": "سینه مرغ"
+            },
+            "description": "وزن مرغ پیتزای تولیدشده از سینه مرغ."
+          },
+          {
+            "key": "vazn_geril",
+            "title": "وزن گریل",
+            "columns": {
+              "amadesazi__s3": "g"
+            },
+            "type": "number",
+            "unit": "kg",
+            "group": {
+              "key": "sine_morgh",
+              "title": "سینه مرغ"
+            },
+            "description": "وزن مرغ گریل مرینت‌شدهٔ تحویل‌شده به انبار."
+          },
+          {
+            "key": "vazn_kenar_shenisel",
+            "title": "وزن کنار شنیسل",
+            "columns": {
+              "amadesazi__s3": "h"
+            },
+            "type": "number",
+            "unit": "kg",
+            "group": {
+              "key": "sine_morgh",
+              "title": "سینه مرغ"
+            },
+            "description": "وزن کنار شینسل جداشده از سینه مرغ."
+          },
+          {
+            "key": "tedad_chiza",
+            "title": "تعداد چیزا",
+            "columns": {
+              "amadesazi__s3": "i"
+            },
+            "type": "number",
+            "unit": "pcs",
+            "group": {
+              "key": "sine_morgh",
+              "title": "سینه مرغ"
+            },
+            "description": "تعداد چیزای تولیدشده؛ تنها بسته‌های کامل شش‌عددی تحویل انبار می‌شود."
+          },
+          {
+            "key": "vazn_chiza",
+            "title": "وزن چیزا",
+            "columns": {
+              "amadesazi__s3": "j"
+            },
+            "type": "number",
+            "unit": "kg",
+            "group": {
+              "key": "sine_morgh",
+              "title": "سینه مرغ"
+            },
+            "description": "وزن چیزای تولیدشده در آن روز."
+          },
+          {
+            "key": "vazn_loqme_file",
+            "title": "وزن لقمه (فیله)",
+            "columns": {
+              "amadesazi__s3": "k"
+            },
+            "type": "number",
+            "unit": "kg",
+            "group": {
+              "key": "file_morgh",
+              "title": "فیله مرغ"
+            },
+            "description": "وزن لقمهٔ تولیدشده از فیله مرغ."
+          },
+          {
+            "key": "tedad_loqme_file",
+            "title": "تعداد لقمه (فیله)",
+            "columns": {
+              "amadesazi__s3": "l"
+            },
+            "type": "number",
+            "unit": "pcs",
+            "group": {
+              "key": "file_morgh",
+              "title": "فیله مرغ"
+            },
+            "description": "تعداد لقمهٔ تولیدشده از فیله مرغ."
+          },
+          {
+            "key": "vazn_kenar_file",
+            "title": "وزن کنار فیله",
+            "columns": {
+              "amadesazi__s3": "m"
+            },
+            "type": "number",
+            "unit": "kg",
+            "group": {
+              "key": "file_morgh",
+              "title": "فیله مرغ"
+            },
+            "description": "وزن کنار فیله جداشده در آن روز."
+          },
+          {
+            "key": "vazn_pitza_file",
+            "title": "وزن پیتزا (فیله)",
+            "columns": {
+              "amadesazi__s3": "n"
+            },
+            "type": "number",
+            "unit": "kg",
+            "group": {
+              "key": "file_morgh",
+              "title": "فیله مرغ"
+            },
+            "description": "وزن مرغ پیتزای تولیدشده از فیله مرغ."
+          },
+          {
+            "key": "vazn_file",
+            "title": "وزن فیله",
+            "columns": {
+              "amadesazi__s3": "o"
+            },
+            "type": "number",
+            "unit": "kg",
+            "group": {
+              "key": "file_morgh",
+              "title": "فیله مرغ"
+            },
+            "description": "وزن فیلهٔ مرینت‌شده تحویل‌شده به انبار."
+          },
+          {
+            "key": "tedad_file",
+            "title": "تعداد فیله",
+            "columns": {
+              "amadesazi__s3": "p"
+            },
+            "type": "number",
+            "unit": "pcs",
+            "group": {
+              "key": "file_morgh",
+              "title": "فیله مرغ"
+            },
+            "description": "تعداد فیلهٔ مرینت‌شده؛ شمارش آن مبنای تطبیق با انبار است."
+          },
+          {
+            "key": "vazn_bal_standard",
+            "title": "وزن بال استاندارد",
+            "columns": {
+              "amadesazi__s3": "q"
+            },
+            "type": "number",
+            "unit": "kg",
+            "group": {
+              "key": "bal_morgh",
+              "title": "بال مرغ"
+            },
+            "description": "وزن بال استاندارد تحویل‌شده به انبار."
+          },
+          {
+            "key": "tedad_bal_standard",
+            "title": "تعداد بال استاندارد",
+            "columns": {
+              "amadesazi__s3": "r"
+            },
+            "type": "number",
+            "unit": "pcs",
+            "group": {
+              "key": "bal_morgh",
+              "title": "بال مرغ"
+            },
+            "description": "تعداد بال استاندارد تحویل‌شده به انبار."
+          },
+          {
+            "key": "vazn_bal_gheyr_standard",
+            "title": "وزن بال غیر استاندارد",
+            "columns": {
+              "amadesazi__s3": "s"
+            },
+            "type": "number",
+            "unit": "kg",
+            "group": {
+              "key": "bal_morgh",
+              "title": "بال مرغ"
+            },
+            "description": "وزن بال غیر استاندارد تحویل‌شده به انبار."
+          },
+          {
+            "key": "tedad_bal_gheyr_standard",
+            "title": "تعداد بال غیر استاندارد",
+            "columns": {
+              "amadesazi__s3": "t"
+            },
+            "type": "number",
+            "unit": "pcs",
+            "group": {
+              "key": "bal_morgh",
+              "title": "بال مرغ"
+            },
+            "description": "تعداد بال غیر استاندارد تحویل‌شده به انبار."
+          },
+          {
+            "key": "vazn_charkhi",
+            "title": "وزن چرخی",
+            "columns": {
+              "amadesazi__s3": "u"
+            },
+            "type": "number",
+            "unit": "kg",
+            "group": {
+              "key": "gusht",
+              "title": "گوشت"
+            },
+            "description": "وزن گوشت چرخ‌کردهٔ پخته و بسته‌بندی‌شده؛ بسته‌ها دوکیلویی است."
+          },
+          {
+            "key": "vazn_rost_bif",
+            "title": "وزن رست بیف",
+            "columns": {
+              "amadesazi__s3": "v"
+            },
+            "type": "number",
+            "unit": "kg",
+            "group": {
+              "key": "gusht",
+              "title": "گوشت"
+            },
+            "description": "وزن رست‌بیف تولیدشده و بسته‌بندی‌شده؛ بسته‌ها دوکیلویی است."
+          }
+        ]
+      },
+      "aliases": [
+        "خروجی آماده‌سازی"
+      ],
+      "id": "F-00019",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "record",
+      "key": "bazdehi_tabdil_mavad",
+      "title": "بازدهی تبدیل مواد اولیه",
+      "statement": "جدول روزانه‌ای که برای هر محمولهٔ خام ورودی، نوع گوشت، محصولات تولیدشده از آن، وزن هر خروجی و درصد بازدهی هر خروجی را ثبت می‌کند. بازدهی هر خروجی از روی وزن ثبت‌شده به دست می‌آید و نشان می‌دهد چه سهمی از ماده اولیه به محصول تبدیل شده است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "sheet",
+          "ref": "attachments/sheets/Amadesazi__Amadesazi/Amadesazi.xlsx",
+          "sheet": "بازدهی",
+          "hash": "sha256:e17a8a3153119fa7a8f3035e58fb0122dddcad80e81ff27df45f6fe85c525596",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "sheet",
+        "location": {
+          "spreadsheetId": "1fAFZ5SbwDIoulj33mPIyyrpvSRBV6EUVQsorQ8MN2Ag",
+          "sheetId": 7,
+          "sheet": "بازدهی",
+          "hidden": false
+        },
+        "instances": [
+          {
+            "key": "amadesazi__s7",
+            "spreadsheetId": "1fAFZ5SbwDIoulj33mPIyyrpvSRBV6EUVQsorQ8MN2Ag",
+            "sheetId": 7,
+            "sheet": "بازدهی",
+            "branch": null,
+            "hidden": false
+          }
+        ],
+        "role": "log",
+        "grain": "هر محمولهٔ ورودی در هر روز",
+        "cadence": "daily",
+        "filled_by": "پرسنل آماده‌سازی",
+        "fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "columns": {
+              "amadesazi__s7": "a"
+            },
+            "type": "date",
+            "description": "روزی که محموله فرآوری شده است."
+          },
+          {
+            "key": "vorudi",
+            "title": "ورودی (کیلو)",
+            "columns": {
+              "amadesazi__s7": "b"
+            },
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن مادهٔ اولیهٔ خام که مبنای محاسبهٔ بازدهی است."
+          },
+          {
+            "key": "no_gusht",
+            "title": "نوع گوشت",
+            "columns": {
+              "amadesazi__s7": "c"
+            },
+            "type": "string",
+            "description": "نوع گوشت خام ورودی، مانند مغز ران، گردن، سردست یا راسته."
+          },
+          {
+            "key": "tolid_1",
+            "title": "تولید 1",
+            "columns": {
+              "amadesazi__s7": "d"
+            },
+            "type": "string",
+            "description": "نام نخستین محصولی که از این محموله تولید شده است."
+          },
+          {
+            "key": "tolid_2",
+            "title": "تولید 2",
+            "columns": {
+              "amadesazi__s7": "e"
+            },
+            "type": "string",
+            "description": "نام دومین محصولی که از این محموله تولید شده است."
+          },
+          {
+            "key": "tolid_3",
+            "title": "تولید 3",
+            "columns": {
+              "amadesazi__s7": "f"
+            },
+            "type": "string",
+            "description": "نام سومین محصولی که از این محموله تولید شده است."
+          },
+          {
+            "key": "khoruji_1",
+            "title": "خروجی 1 (کیلو)",
+            "columns": {
+              "amadesazi__s7": "g"
+            },
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن محصول نخست تولیدشده از این محموله."
+          },
+          {
+            "key": "khoruji_2",
+            "title": "خروجی 2 (کیلو)",
+            "columns": {
+              "amadesazi__s7": "h"
+            },
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن محصول دوم تولیدشده از این محموله."
+          },
+          {
+            "key": "khoruji_3",
+            "title": "خروجی 3 (کیلو)",
+            "columns": {
+              "amadesazi__s7": "i"
+            },
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن محصول سوم تولیدشده از این محموله."
+          },
+          {
+            "key": "bazdehi_khoruji_1",
+            "title": "بازدهی خروجی 1(%)",
+            "columns": {
+              "amadesazi__s7": "j"
+            },
+            "type": "number",
+            "unit": "percent",
+            "derived": {
+              "ref": "F-00130"
+            },
+            "description": "سهم محصول نخست از وزن ماده اولیه، بر حسب درصد."
+          },
+          {
+            "key": "bazdehi_khoruji_2",
+            "title": "بازدهی خروجی 2(%)",
+            "columns": {
+              "amadesazi__s7": "k"
+            },
+            "type": "number",
+            "unit": "percent",
+            "derived": {
+              "ref": "F-00129"
+            },
+            "description": "سهم محصول دوم از وزن ماده اولیه، بر حسب درصد."
+          },
+          {
+            "key": "bazdehi_khoruji_3",
+            "title": "بازدهی خروجی 3(%)",
+            "columns": {
+              "amadesazi__s7": "l"
+            },
+            "type": "number",
+            "unit": "percent",
+            "derived": {
+              "ref": "F-00131"
+            },
+            "description": "سهم محصول سوم از وزن ماده اولیه، بر حسب درصد."
+          }
+        ]
+      },
+      "aliases": [
+        "بازدهی"
+      ],
+      "field_status": {
+        "data/filled_by": "inferred"
+      },
+      "id": "F-00020",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "record",
+      "key": "tolid_khamir",
+      "title": "تولید روزانهٔ خمیر",
+      "statement": "جدول روزانه‌ای که مقدار خمیر آمریکایی و ایتالیایی تولیدشده در آماده‌سازی و وزن تحویلی به هر یک از دو آشپزخانه را ثبت می‌کند. خمیر در چند نوبت گرفته می‌شود و اولویت با سهم شعبه است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "sheet",
+          "ref": "attachments/sheets/Amadesazi__Amadesazi/Amadesazi.xlsx",
+          "sheet": "خمیر",
+          "hash": "sha256:e17a8a3153119fa7a8f3035e58fb0122dddcad80e81ff27df45f6fe85c525596",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "sheet",
+        "location": {
+          "spreadsheetId": "1fAFZ5SbwDIoulj33mPIyyrpvSRBV6EUVQsorQ8MN2Ag",
+          "sheetId": 2,
+          "sheet": "خمیر",
+          "hidden": false
+        },
+        "instances": [
+          {
+            "key": "amadesazi__s2",
+            "spreadsheetId": "1fAFZ5SbwDIoulj33mPIyyrpvSRBV6EUVQsorQ8MN2Ag",
+            "sheetId": 2,
+            "sheet": "خمیر",
+            "branch": null,
+            "hidden": false
+          }
+        ],
+        "role": "log",
+        "grain": "هر روز کاری آماده‌سازی",
+        "cadence": "daily",
+        "filled_by": "پرسنل آماده‌سازی",
+        "primaryKey": [
+          "tarikh"
+        ],
+        "fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "columns": {
+              "amadesazi__s2": "a"
+            },
+            "type": "date",
+            "description": "روزی که تولید خمیر آن ثبت می‌شود."
+          },
+          {
+            "key": "amrikai",
+            "title": "آمریکایی",
+            "columns": {
+              "amadesazi__s2": "b"
+            },
+            "type": "number",
+            "unit": "kg",
+            "description": "مقدار خمیر آمریکایی تولیدشده در آن روز."
+          },
+          {
+            "key": "italiai",
+            "title": "ایتالیایی",
+            "columns": {
+              "amadesazi__s2": "c"
+            },
+            "type": "number",
+            "unit": "kg",
+            "description": "مقدار خمیر ایتالیایی تولیدشده در آن روز."
+          },
+          {
+            "key": "vazn_chalebagh",
+            "title": "وزن چاله باغ",
+            "columns": {
+              "amadesazi__s2": "d"
+            },
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن خمیر تحویل‌شده به آشپزخانهٔ چاله‌باغ."
+          },
+          {
+            "key": "vazn_naharkhoran",
+            "title": "وزن ناهارخوران",
+            "columns": {
+              "amadesazi__s2": "e"
+            },
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن خمیر تحویل‌شده به آشپزخانهٔ ناهارخوران."
+          }
+        ]
+      },
+      "aliases": [
+        "خمیر"
+      ],
+      "field_status": {
+        "data/filled_by": "inferred"
+      },
+      "id": "F-00021",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "record",
+      "key": "niazmandiha_va_moshkelat_amadesazi",
+      "title": "نیازمندی‌ها و مشکلات آماده‌سازی",
+      "statement": "فهرستی که هر نیاز یا خرابی مشاهده‌شده در آماده‌سازی را با تاریخ بروز و راه‌حل یا توضیح پیگیری ثبت می‌کند. هر مورد هنگام مشاهده وارد می‌شود و پایهٔ درخواست تعمیر یا خرید است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "sheet",
+          "ref": "attachments/sheets/Amadesazi__Amadesazi/Amadesazi.xlsx",
+          "sheet": "نیازمندیها و مشکلات",
+          "hash": "sha256:e17a8a3153119fa7a8f3035e58fb0122dddcad80e81ff27df45f6fe85c525596",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "sheet",
+        "location": {
+          "spreadsheetId": "1fAFZ5SbwDIoulj33mPIyyrpvSRBV6EUVQsorQ8MN2Ag",
+          "sheetId": 6,
+          "sheet": "نیازمندیها و مشکلات",
+          "hidden": false
+        },
+        "instances": [
+          {
+            "key": "amadesazi__s6",
+            "spreadsheetId": "1fAFZ5SbwDIoulj33mPIyyrpvSRBV6EUVQsorQ8MN2Ag",
+            "sheetId": 6,
+            "sheet": "نیازمندیها و مشکلات",
+            "branch": null,
+            "hidden": false
+          }
+        ],
+        "role": "log",
+        "grain": "هر مورد نیاز یا خرابی گزارش‌شده",
+        "cadence": "ad_hoc",
+        "filled_by": "سرپرست آماده‌سازی",
+        "fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "columns": {
+              "amadesazi__s6": "a"
+            },
+            "type": "date",
+            "description": "روزی که مورد گزارش شده است."
+          },
+          {
+            "key": "niaz_ya_moshkel",
+            "title": "نیازمندیها و مشکلات",
+            "columns": {
+              "amadesazi__s6": "b"
+            },
+            "type": "string",
+            "description": "شرح نیاز یا خرابی مشاهده‌شده، مانند خرابی دستگاه یا تجهیز سرمایشی."
+          },
+          {
+            "key": "towzih_va_rahehal",
+            "title": "توضیحات و راه حل ها",
+            "columns": {
+              "amadesazi__s6": "c"
+            },
+            "type": "string",
+            "description": "توضیح تکمیلی یا راه‌حل پیشنهادی برای همان مورد."
+          }
+        ]
+      },
+      "field_status": {
+        "data/filled_by": "inferred"
+      },
+      "id": "F-00022",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "record",
+      "key": "vorudi_amadesazi_az_anbar",
+      "title": "ورودی روزانهٔ آماده‌سازی از انبار",
+      "statement": "جدول روزانه‌ای که وزن هر قلم گوشت و مرغ خام تحویل‌گرفته از انبار را بر حسب کیلوگرم ثبت می‌کند. مسئول هر لاین بلافاصله پس از تحویل و پیش از پاک‌سازی، وزن را می‌گیرد و وارد می‌کند؛ این مقدار باید با خروجی ثبت‌شدهٔ انبار برابر باشد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "sheet",
+          "ref": "attachments/sheets/Amadesazi__Amadesazi/Amadesazi.xlsx",
+          "sheet": "ورودی آماده سازی از انبار",
+          "hash": "sha256:e17a8a3153119fa7a8f3035e58fb0122dddcad80e81ff27df45f6fe85c525596",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-018.json",
+          "node": "preparation-018-n003",
+          "quote": "ثبت وزن گوشت در دفتر با عنوان ورودی آماده‌سازی",
+          "hash": "sha256:7fa1000b4db4994a0bdbfb02c14c0a56ddc757598b765b9218cda0bca9d6e66e",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n017",
+          "quote": "ورود روزانه ورودی، خروجی و مقدار تولید به فایل اکسل عنکبوتی آماده‌سازی",
+          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "sheet",
+        "location": {
+          "spreadsheetId": "1fAFZ5SbwDIoulj33mPIyyrpvSRBV6EUVQsorQ8MN2Ag",
+          "sheetId": 4,
+          "sheet": "ورودی آماده سازی از انبار",
+          "hidden": false
+        },
+        "instances": [
+          {
+            "key": "amadesazi__s4",
+            "spreadsheetId": "1fAFZ5SbwDIoulj33mPIyyrpvSRBV6EUVQsorQ8MN2Ag",
+            "sheetId": 4,
+            "sheet": "ورودی آماده سازی از انبار",
+            "branch": null,
+            "hidden": false
+          }
+        ],
+        "role": "log",
+        "grain": "هر روز کاری آماده‌سازی",
+        "cadence": "daily",
+        "filled_by": "پرسنل آماده‌سازی",
+        "primaryKey": [
+          "tarikh"
+        ],
+        "fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "columns": {
+              "amadesazi__s4": "a"
+            },
+            "type": "date",
+            "description": "روزی که ورودی آن ثبت می‌شود."
+          },
+          {
+            "key": "maghz_ran",
+            "title": "مغز ران",
+            "columns": {
+              "amadesazi__s4": "b"
+            },
+            "type": "number",
+            "unit": "kg",
+            "group": {
+              "key": "borger",
+              "title": "برگر (وزن)"
+            },
+            "description": "وزن گوشت مغز ران خام تحویل‌گرفته از انبار؛ مبنای تولید رست‌بیف است."
+          },
+          {
+            "key": "sardast",
+            "title": "سردست",
+            "columns": {
+              "amadesazi__s4": "c"
+            },
+            "type": "number",
+            "unit": "kg",
+            "group": {
+              "key": "borger",
+              "title": "برگر (وزن)"
+            },
+            "description": "وزن گوشت سردست خام تحویل‌گرفته از انبار؛ نیمی از مایهٔ برگر را می‌سازد."
+          },
+          {
+            "key": "qalvegah_gusfandi",
+            "title": "قلوه گاه گوسفندی",
+            "columns": {
+              "amadesazi__s4": "d"
+            },
+            "type": "number",
+            "unit": "kg",
+            "group": {
+              "key": "borger",
+              "title": "برگر (وزن)"
+            },
+            "description": "وزن قلوه‌گاه گوسفندی تحویل‌گرفته از انبار."
+          },
+          {
+            "key": "qalvegah_gusale",
+            "title": "قلوه گاه گوساله",
+            "columns": {
+              "amadesazi__s4": "e"
+            },
+            "type": "number",
+            "unit": "kg",
+            "group": {
+              "key": "borger",
+              "title": "برگر (وزن)"
+            },
+            "description": "وزن قلوه‌گاه گوساله تحویل‌گرفته از انبار."
+          },
+          {
+            "key": "khorde_raste",
+            "title": "خورده راسته",
+            "columns": {
+              "amadesazi__s4": "f"
+            },
+            "type": "number",
+            "unit": "kg",
+            "group": {
+              "key": "borger",
+              "title": "برگر (وزن)"
+            },
+            "description": "وزن خرده راستهٔ تحویل‌گرفته از انبار؛ نیم دیگر مایهٔ برگر است و گاهی با کسر دمار در یادداشت همان خانه تفکیک می‌شود."
+          },
+          {
+            "key": "sine",
+            "title": "سینه",
+            "columns": {
+              "amadesazi__s4": "g"
+            },
+            "type": "number",
+            "unit": "kg",
+            "group": {
+              "key": "morgh",
+              "title": "مرغ (وزن)"
+            },
+            "description": "وزن سینه مرغ خام تحویل‌گرفته از انبار."
+          },
+          {
+            "key": "file",
+            "title": "فیله",
+            "columns": {
+              "amadesazi__s4": "h"
+            },
+            "type": "number",
+            "unit": "kg",
+            "group": {
+              "key": "morgh",
+              "title": "مرغ (وزن)"
+            },
+            "description": "وزن فیله مرغ خام تحویل‌گرفته از انبار."
+          },
+          {
+            "key": "bal",
+            "title": "بال",
+            "columns": {
+              "amadesazi__s4": "i"
+            },
+            "type": "number",
+            "unit": "kg",
+            "group": {
+              "key": "morgh",
+              "title": "مرغ (وزن)"
+            },
+            "description": "وزن بال مرغ خام تحویل‌گرفته از انبار."
+          },
+          {
+            "key": "goldast_charkhi",
+            "title": "گلدست چرخی",
+            "columns": {
+              "amadesazi__s4": "j"
+            },
+            "type": "number",
+            "unit": "kg",
+            "group": {
+              "key": "gusht",
+              "title": "گوشت (وزن)"
+            },
+            "description": "وزن گوشت گردن خام تحویل‌گرفته برای تولید چرخ‌کرده؛ گاهی خرده استیک هم به آن افزوده می‌شود."
+          },
+          {
+            "key": "goldast_rost_bif",
+            "title": "گلدست رست بیف",
+            "columns": {
+              "amadesazi__s4": "k"
+            },
+            "type": "number",
+            "unit": "kg",
+            "group": {
+              "key": "gusht",
+              "title": "گوشت (وزن)"
+            },
+            "description": "وزن گوشت خام تحویل‌گرفته برای تولید رست‌بیف."
+          }
+        ]
+      },
+      "aliases": [
+        "ورودی آماده‌سازی"
+      ],
+      "id": "F-00023",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "record",
+      "key": "zayeat_amadesazi",
+      "title": "ضایعات روزانهٔ آماده‌سازی",
+      "statement": "جدول روزانه‌ای که وزن ضایعات سینه مرغ، فیله مرغ، بال مرغ و گوشت قرمز را بر حسب کیلوگرم در هر روز ثبت می‌کند. مسئول هر لاین پس از جداسازی و وزن‌کشی ضایعات، مقدار آن را وارد می‌کند و ضایعات لیبل‌خورده به انبار تحویل داده می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "sheet",
+          "ref": "attachments/sheets/Amadesazi__Amadesazi/Amadesazi.xlsx",
+          "sheet": "ضایعات",
+          "hash": "sha256:e17a8a3153119fa7a8f3035e58fb0122dddcad80e81ff27df45f6fe85c525596",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n017",
+          "quote": "ورود روزانه ورودی، خروجی و مقدار تولید به فایل اکسل عنکبوتی آماده‌سازی",
+          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "sheet",
+        "location": {
+          "spreadsheetId": "1fAFZ5SbwDIoulj33mPIyyrpvSRBV6EUVQsorQ8MN2Ag",
+          "sheetId": 1,
+          "sheet": "ضایعات",
+          "hidden": false
+        },
+        "instances": [
+          {
+            "key": "amadesazi__s1",
+            "spreadsheetId": "1fAFZ5SbwDIoulj33mPIyyrpvSRBV6EUVQsorQ8MN2Ag",
+            "sheetId": 1,
+            "sheet": "ضایعات",
+            "branch": null,
+            "hidden": false
+          }
+        ],
+        "role": "log",
+        "grain": "هر روز کاری آماده‌سازی",
+        "cadence": "daily",
+        "filled_by": "پرسنل آماده‌سازی",
+        "primaryKey": [
+          "tarikh"
+        ],
+        "fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "columns": {
+              "amadesazi__s1": "a"
+            },
+            "type": "date",
+            "description": "روزی که ضایعات آن ثبت می‌شود."
+          },
+          {
+            "key": "sine_morgh",
+            "title": "سینه مرغ",
+            "columns": {
+              "amadesazi__s1": "b"
+            },
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن ضایعات سینه مرغ در آن روز، شامل کنار شینسل جداشده."
+          },
+          {
+            "key": "file_morgh",
+            "title": "فیله مرغ",
+            "columns": {
+              "amadesazi__s1": "c"
+            },
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن ضایعات فیله مرغ در آن روز."
+          },
+          {
+            "key": "bal_morgh",
+            "title": "بال مرغ",
+            "columns": {
+              "amadesazi__s1": "d"
+            },
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن ضایعات بال مرغ در آن روز."
+          },
+          {
+            "key": "gusht",
+            "title": "گوشت",
+            "columns": {
+              "amadesazi__s1": "e"
+            },
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن ضایعات گوشت قرمز در آن روز، شامل دمار، غضروف، خونابه و خردهٔ چرخ‌گوشت. گاهی سهم هر قلم در یادداشت همان خانه تفکیک می‌شود."
+          }
+        ]
+      },
+      "id": "F-00024",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "record",
+      "key": "af_ejraei_amadesazi",
+      "title": "آف اجرایی آماده‌سازی",
+      "statement": "جدول روزانه‌ای که در هر روز تعداد هدف و تعداد نفرات محقق‌شدهٔ آف اجرایی آماده‌سازی را همراه با توضیح ثبت می‌کند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "sheet",
+          "ref": "attachments/sheets/Amadesazi__Amadesazi/Amadesazi.xlsx",
+          "sheet": "OFF اجرایی",
+          "hash": "sha256:e17a8a3153119fa7a8f3035e58fb0122dddcad80e81ff27df45f6fe85c525596",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "medium": "sheet",
+        "location": {
+          "spreadsheetId": "1fAFZ5SbwDIoulj33mPIyyrpvSRBV6EUVQsorQ8MN2Ag",
+          "sheetId": 5,
+          "sheet": "OFF اجرایی",
+          "hidden": false
+        },
+        "instances": [
+          {
+            "key": "amadesazi__s5",
+            "spreadsheetId": "1fAFZ5SbwDIoulj33mPIyyrpvSRBV6EUVQsorQ8MN2Ag",
+            "sheetId": 5,
+            "sheet": "OFF اجرایی",
+            "branch": null,
+            "hidden": false
+          }
+        ],
+        "role": "log",
+        "grain": "هر روز کاری آماده‌سازی",
+        "cadence": "daily",
+        "filled_by": "سرپرست آماده‌سازی",
+        "primaryKey": [
+          "tarikh"
+        ],
+        "fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "columns": {
+              "amadesazi__s5": "a"
+            },
+            "type": "date",
+            "description": "روزی که آمار آن ثبت می‌شود."
+          },
+          {
+            "key": "tedad_hadaf",
+            "title": "تعداد از نظر هدف",
+            "columns": {
+              "amadesazi__s5": "b"
+            },
+            "type": "number",
+            "description": "تعداد هدف‌گذاری‌شده برای آن روز."
+          },
+          {
+            "key": "tedad_kasb_shode",
+            "title": "تعداد نفر کسب شده",
+            "columns": {
+              "amadesazi__s5": "c"
+            },
+            "type": "number",
+            "description": "تعداد نفرات محقق‌شده در آن روز."
+          },
+          {
+            "key": "towzihat",
+            "title": "توضیحات",
+            "columns": {
+              "amadesazi__s5": "d"
+            },
+            "type": "string",
+            "description": "توضیح دست‌نویس دربارهٔ اختلاف تعداد هدف و تعداد محقق‌شده."
+          }
+        ]
+      },
+      "field_status": {
+        "data/filled_by": "inferred"
+      },
+      "id": "F-00025",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
     }
   ]
 }

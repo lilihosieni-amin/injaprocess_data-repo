@@ -1,0 +1,479 @@
+{
+  "schema_version": 1,
+  "unit": "u-wb-amadesazi",
+  "attempt": 1,
+  "decisions": [
+    {
+      "skeleton": "S-rec-ef021443f7dc",
+      "action": "keep",
+      "key": "zayeat_amadesazi",
+      "title": "ضایعات روزانهٔ آماده‌سازی",
+      "statement": "جدول روزانه‌ای که وزن ضایعات سینه مرغ، فیله مرغ، بال مرغ و گوشت قرمز را بر حسب کیلوگرم در هر روز ثبت می‌کند. مسئول هر لاین پس از جداسازی و وزن‌کشی ضایعات، مقدار آن را وارد می‌کند و ضایعات لیبل‌خورده به انبار تحویل داده می‌شود.",
+      "processes": [
+        {
+          "process": "preparation-026",
+          "node": "preparation-026-n017",
+          "quote": "ورود روزانه ورودی، خروجی و مقدار تولید به فایل اکسل عنکبوتی آماده‌سازی"
+        }
+      ],
+      "data": {
+        "role": "log",
+        "grain": "هر روز کاری آماده‌سازی",
+        "cadence": "daily",
+        "filled_by": "پرسنل آماده‌سازی",
+        "primaryKey": ["tarikh"],
+        "fields": [
+          { "from": "c_a", "key": "tarikh", "type": "date", "description": "روزی که ضایعات آن ثبت می‌شود." },
+          { "from": "c_b", "key": "sine_morgh", "type": "number", "unit": "kg", "description": "وزن ضایعات سینه مرغ در آن روز، شامل کنار شینسل جداشده." },
+          { "from": "c_c", "key": "file_morgh", "type": "number", "unit": "kg", "description": "وزن ضایعات فیله مرغ در آن روز." },
+          { "from": "c_d", "key": "bal_morgh", "type": "number", "unit": "kg", "description": "وزن ضایعات بال مرغ در آن روز." },
+          { "from": "c_e", "key": "gusht", "type": "number", "unit": "kg", "description": "وزن ضایعات گوشت قرمز در آن روز، شامل دمار، غضروف، خونابه و خردهٔ چرخ‌گوشت. گاهی سهم هر قلم در یادداشت همان خانه تفکیک می‌شود." }
+        ]
+      }
+    },
+    {
+      "skeleton": "S-rec-9f60dda7c289",
+      "action": "keep",
+      "key": "tolid_khamir",
+      "title": "تولید روزانهٔ خمیر",
+      "statement": "جدول روزانه‌ای که مقدار خمیر آمریکایی و ایتالیایی تولیدشده در آماده‌سازی و وزن تحویلی به هر یک از دو آشپزخانه را ثبت می‌کند. خمیر در چند نوبت گرفته می‌شود و اولویت با سهم شعبه است.",
+      "aliases": ["خمیر"],
+      "data": {
+        "role": "log",
+        "grain": "هر روز کاری آماده‌سازی",
+        "cadence": "daily",
+        "filled_by": { "value": "پرسنل آماده‌سازی", "inferred": true },
+        "primaryKey": ["tarikh"],
+        "fields": [
+          { "from": "c_a", "key": "tarikh", "type": "date", "description": "روزی که تولید خمیر آن ثبت می‌شود." },
+          { "from": "c_b", "key": "amrikai", "type": "number", "unit": "kg", "description": "مقدار خمیر آمریکایی تولیدشده در آن روز." },
+          { "from": "c_c", "key": "italiai", "type": "number", "unit": "kg", "description": "مقدار خمیر ایتالیایی تولیدشده در آن روز." },
+          { "from": "c_d", "key": "vazn_chalebagh", "type": "number", "unit": "kg", "description": "وزن خمیر تحویل‌شده به آشپزخانهٔ چاله‌باغ." },
+          { "from": "c_e", "key": "vazn_naharkhoran", "type": "number", "unit": "kg", "description": "وزن خمیر تحویل‌شده به آشپزخانهٔ ناهارخوران." }
+        ]
+      }
+    },
+    {
+      "skeleton": "S-rec-2c141582db58",
+      "action": "keep",
+      "key": "khoruji_amadesazi_be_anbar",
+      "title": "خروجی روزانهٔ آماده‌سازی به انبار",
+      "statement": "جدول روزانه‌ای که مقدار هر محصول نیمه‌آمادهٔ تحویل‌شده از آماده‌سازی به انبار را بر حسب وزن یا تعداد ثبت می‌کند. پرسنل هر لاین پس از بسته‌بندی و لیبل‌گذاری، سهم همان لاین را وارد می‌کند و چیزی برای روز بعد نگه داشته نمی‌شود.",
+      "aliases": ["خروجی آماده‌سازی"],
+      "processes": [
+        {
+          "process": "preparation-026",
+          "node": "preparation-026-n017",
+          "quote": "ورود روزانه ورودی، خروجی و مقدار تولید به فایل اکسل عنکبوتی آماده‌سازی"
+        }
+      ],
+      "data": {
+        "role": "log",
+        "grain": "هر روز کاری آماده‌سازی",
+        "cadence": "daily",
+        "filled_by": "پرسنل آماده‌سازی",
+        "primaryKey": ["tarikh"],
+        "fields": [
+          { "from": "c_a", "key": "tarikh", "type": "date", "description": "روزی که خروجی آن ثبت می‌شود." },
+          { "from": "c_b", "key": "tedad_mini_borger", "type": "number", "unit": "pcs", "group": { "key": "borger", "title": "برگر" }, "description": "تعداد مینی برگر تحویل‌شده به انبار؛ بسته‌ها پنج‌عددی است." },
+          { "from": "c_c", "key": "tedad_borger", "type": "number", "unit": "pcs", "group": { "key": "borger", "title": "برگر" }, "description": "تعداد برگر تحویل‌شده به انبار؛ بسته‌ها پنج‌عددی است." },
+          { "from": "c_d", "key": "tedad_loqme_sine", "type": "number", "unit": "pcs", "group": { "key": "sine_morgh", "title": "سینه مرغ" }, "description": "تعداد لقمهٔ تولیدشده از سینه مرغ." },
+          { "from": "c_e", "key": "vazn_loqme_sine", "type": "number", "unit": "kg", "group": { "key": "sine_morgh", "title": "سینه مرغ" }, "description": "وزن لقمهٔ تولیدشده از سینه مرغ." },
+          { "from": "c_f", "key": "vazn_pitza_sine", "type": "number", "unit": "kg", "group": { "key": "sine_morgh", "title": "سینه مرغ" }, "description": "وزن مرغ پیتزای تولیدشده از سینه مرغ." },
+          { "from": "c_g", "key": "vazn_geril", "type": "number", "unit": "kg", "group": { "key": "sine_morgh", "title": "سینه مرغ" }, "description": "وزن مرغ گریل مرینت‌شدهٔ تحویل‌شده به انبار." },
+          { "from": "c_h", "key": "vazn_kenar_shenisel", "type": "number", "unit": "kg", "group": { "key": "sine_morgh", "title": "سینه مرغ" }, "description": "وزن کنار شینسل جداشده از سینه مرغ." },
+          { "from": "c_i", "key": "tedad_chiza", "type": "number", "unit": "pcs", "group": { "key": "sine_morgh", "title": "سینه مرغ" }, "description": "تعداد چیزای تولیدشده؛ تنها بسته‌های کامل شش‌عددی تحویل انبار می‌شود." },
+          { "from": "c_j", "key": "vazn_chiza", "type": "number", "unit": "kg", "group": { "key": "sine_morgh", "title": "سینه مرغ" }, "description": "وزن چیزای تولیدشده در آن روز." },
+          { "from": "c_k", "key": "vazn_loqme_file", "type": "number", "unit": "kg", "group": { "key": "file_morgh", "title": "فیله مرغ" }, "description": "وزن لقمهٔ تولیدشده از فیله مرغ." },
+          { "from": "c_l", "key": "tedad_loqme_file", "type": "number", "unit": "pcs", "group": { "key": "file_morgh", "title": "فیله مرغ" }, "description": "تعداد لقمهٔ تولیدشده از فیله مرغ." },
+          { "from": "c_m", "key": "vazn_kenar_file", "type": "number", "unit": "kg", "group": { "key": "file_morgh", "title": "فیله مرغ" }, "description": "وزن کنار فیله جداشده در آن روز." },
+          { "from": "c_n", "key": "vazn_pitza_file", "type": "number", "unit": "kg", "group": { "key": "file_morgh", "title": "فیله مرغ" }, "description": "وزن مرغ پیتزای تولیدشده از فیله مرغ." },
+          { "from": "c_o", "key": "vazn_file", "type": "number", "unit": "kg", "group": { "key": "file_morgh", "title": "فیله مرغ" }, "description": "وزن فیلهٔ مرینت‌شده تحویل‌شده به انبار." },
+          { "from": "c_p", "key": "tedad_file", "type": "number", "unit": "pcs", "group": { "key": "file_morgh", "title": "فیله مرغ" }, "description": "تعداد فیلهٔ مرینت‌شده؛ شمارش آن مبنای تطبیق با انبار است." },
+          { "from": "c_q", "key": "vazn_bal_standard", "type": "number", "unit": "kg", "group": { "key": "bal_morgh", "title": "بال مرغ" }, "description": "وزن بال استاندارد تحویل‌شده به انبار." },
+          { "from": "c_r", "key": "tedad_bal_standard", "type": "number", "unit": "pcs", "group": { "key": "bal_morgh", "title": "بال مرغ" }, "description": "تعداد بال استاندارد تحویل‌شده به انبار." },
+          { "from": "c_s", "key": "vazn_bal_gheyr_standard", "type": "number", "unit": "kg", "group": { "key": "bal_morgh", "title": "بال مرغ" }, "description": "وزن بال غیر استاندارد تحویل‌شده به انبار." },
+          { "from": "c_t", "key": "tedad_bal_gheyr_standard", "type": "number", "unit": "pcs", "group": { "key": "bal_morgh", "title": "بال مرغ" }, "description": "تعداد بال غیر استاندارد تحویل‌شده به انبار." },
+          { "from": "c_u", "key": "vazn_charkhi", "type": "number", "unit": "kg", "group": { "key": "gusht", "title": "گوشت" }, "description": "وزن گوشت چرخ‌کردهٔ پخته و بسته‌بندی‌شده؛ بسته‌ها دوکیلویی است." },
+          { "from": "c_v", "key": "vazn_rost_bif", "type": "number", "unit": "kg", "group": { "key": "gusht", "title": "گوشت" }, "description": "وزن رست‌بیف تولیدشده و بسته‌بندی‌شده؛ بسته‌ها دوکیلویی است." }
+        ]
+      }
+    },
+    {
+      "skeleton": "S-rec-e3f80534814b",
+      "action": "keep",
+      "key": "vorudi_amadesazi_az_anbar",
+      "title": "ورودی روزانهٔ آماده‌سازی از انبار",
+      "statement": "جدول روزانه‌ای که وزن هر قلم گوشت و مرغ خام تحویل‌گرفته از انبار را بر حسب کیلوگرم ثبت می‌کند. مسئول هر لاین بلافاصله پس از تحویل و پیش از پاک‌سازی، وزن را می‌گیرد و وارد می‌کند؛ این مقدار باید با خروجی ثبت‌شدهٔ انبار برابر باشد.",
+      "aliases": ["ورودی آماده‌سازی"],
+      "processes": [
+        {
+          "process": "preparation-018",
+          "node": "preparation-018-n003",
+          "quote": "ثبت وزن گوشت در دفتر با عنوان ورودی آماده‌سازی"
+        },
+        {
+          "process": "preparation-026",
+          "node": "preparation-026-n017",
+          "quote": "ورود روزانه ورودی، خروجی و مقدار تولید به فایل اکسل عنکبوتی آماده‌سازی"
+        }
+      ],
+      "data": {
+        "role": "log",
+        "grain": "هر روز کاری آماده‌سازی",
+        "cadence": "daily",
+        "filled_by": "پرسنل آماده‌سازی",
+        "primaryKey": ["tarikh"],
+        "fields": [
+          { "from": "c_a", "key": "tarikh", "type": "date", "description": "روزی که ورودی آن ثبت می‌شود." },
+          { "from": "c_b", "key": "maghz_ran", "type": "number", "unit": "kg", "group": { "key": "borger", "title": "برگر (وزن)" }, "description": "وزن گوشت مغز ران خام تحویل‌گرفته از انبار؛ مبنای تولید رست‌بیف است." },
+          { "from": "c_c", "key": "sardast", "type": "number", "unit": "kg", "group": { "key": "borger", "title": "برگر (وزن)" }, "description": "وزن گوشت سردست خام تحویل‌گرفته از انبار؛ نیمی از مایهٔ برگر را می‌سازد." },
+          { "from": "c_d", "key": "qalvegah_gusfandi", "type": "number", "unit": "kg", "group": { "key": "borger", "title": "برگر (وزن)" }, "description": "وزن قلوه‌گاه گوسفندی تحویل‌گرفته از انبار." },
+          { "from": "c_e", "key": "qalvegah_gusale", "type": "number", "unit": "kg", "group": { "key": "borger", "title": "برگر (وزن)" }, "description": "وزن قلوه‌گاه گوساله تحویل‌گرفته از انبار." },
+          { "from": "c_f", "key": "khorde_raste", "type": "number", "unit": "kg", "group": { "key": "borger", "title": "برگر (وزن)" }, "description": "وزن خرده راستهٔ تحویل‌گرفته از انبار؛ نیم دیگر مایهٔ برگر است و گاهی با کسر دمار در یادداشت همان خانه تفکیک می‌شود." },
+          { "from": "c_g", "key": "sine", "type": "number", "unit": "kg", "group": { "key": "morgh", "title": "مرغ (وزن)" }, "description": "وزن سینه مرغ خام تحویل‌گرفته از انبار." },
+          { "from": "c_h", "key": "file", "type": "number", "unit": "kg", "group": { "key": "morgh", "title": "مرغ (وزن)" }, "description": "وزن فیله مرغ خام تحویل‌گرفته از انبار." },
+          { "from": "c_i", "key": "bal", "type": "number", "unit": "kg", "group": { "key": "morgh", "title": "مرغ (وزن)" }, "description": "وزن بال مرغ خام تحویل‌گرفته از انبار." },
+          { "from": "c_j", "key": "goldast_charkhi", "type": "number", "unit": "kg", "group": { "key": "gusht", "title": "گوشت (وزن)" }, "description": "وزن گوشت گردن خام تحویل‌گرفته برای تولید چرخ‌کرده؛ گاهی خرده استیک هم به آن افزوده می‌شود." },
+          { "from": "c_k", "key": "goldast_rost_bif", "type": "number", "unit": "kg", "group": { "key": "gusht", "title": "گوشت (وزن)" }, "description": "وزن گوشت خام تحویل‌گرفته برای تولید رست‌بیف." }
+        ]
+      }
+    },
+    {
+      "skeleton": "S-rec-fedf9cc0dbe1",
+      "action": "keep",
+      "key": "af_ejraei_amadesazi",
+      "title": "آف اجرایی آماده‌سازی",
+      "statement": "جدول روزانه‌ای که در هر روز تعداد هدف و تعداد نفرات محقق‌شدهٔ آف اجرایی آماده‌سازی را همراه با توضیح ثبت می‌کند.",
+      "data": {
+        "role": "log",
+        "grain": "هر روز کاری آماده‌سازی",
+        "cadence": "daily",
+        "filled_by": { "value": "سرپرست آماده‌سازی", "inferred": true },
+        "primaryKey": ["tarikh"],
+        "fields": [
+          { "from": "c_a", "key": "tarikh", "type": "date", "description": "روزی که آمار آن ثبت می‌شود." },
+          { "from": "c_b", "key": "tedad_hadaf", "type": "number", "description": "تعداد هدف‌گذاری‌شده برای آن روز." },
+          { "from": "c_c", "key": "tedad_kasb_shode", "type": "number", "description": "تعداد نفرات محقق‌شده در آن روز." },
+          { "from": "c_d", "key": "towzihat", "type": "string", "description": "توضیح دست‌نویس دربارهٔ اختلاف تعداد هدف و تعداد محقق‌شده." }
+        ]
+      }
+    },
+    {
+      "skeleton": "S-rec-a680471323d6",
+      "action": "keep",
+      "key": "niazmandiha_va_moshkelat_amadesazi",
+      "title": "نیازمندی‌ها و مشکلات آماده‌سازی",
+      "statement": "فهرستی که هر نیاز یا خرابی مشاهده‌شده در آماده‌سازی را با تاریخ بروز و راه‌حل یا توضیح پیگیری ثبت می‌کند. هر مورد هنگام مشاهده وارد می‌شود و پایهٔ درخواست تعمیر یا خرید است.",
+      "data": {
+        "role": "log",
+        "grain": "هر مورد نیاز یا خرابی گزارش‌شده",
+        "cadence": "ad_hoc",
+        "filled_by": { "value": "سرپرست آماده‌سازی", "inferred": true },
+        "fields": [
+          { "from": "c_a", "key": "tarikh", "type": "date", "description": "روزی که مورد گزارش شده است." },
+          { "from": "c_b", "key": "niaz_ya_moshkel", "type": "string", "description": "شرح نیاز یا خرابی مشاهده‌شده، مانند خرابی دستگاه یا تجهیز سرمایشی." },
+          { "from": "c_c", "key": "towzih_va_rahehal", "type": "string", "description": "توضیح تکمیلی یا راه‌حل پیشنهادی برای همان مورد." }
+        ]
+      }
+    },
+    {
+      "skeleton": "S-rec-3d5d67801f5d",
+      "action": "keep",
+      "key": "bazdehi_tabdil_mavad",
+      "title": "بازدهی تبدیل مواد اولیه",
+      "statement": "جدول روزانه‌ای که برای هر محمولهٔ خام ورودی، نوع گوشت، محصولات تولیدشده از آن، وزن هر خروجی و درصد بازدهی هر خروجی را ثبت می‌کند. بازدهی هر خروجی از روی وزن ثبت‌شده به دست می‌آید و نشان می‌دهد چه سهمی از ماده اولیه به محصول تبدیل شده است.",
+      "aliases": ["بازدهی"],
+      "data": {
+        "role": "log",
+        "grain": "هر محمولهٔ ورودی در هر روز",
+        "cadence": "daily",
+        "filled_by": { "value": "پرسنل آماده‌سازی", "inferred": true },
+        "fields": [
+          { "from": "c_a", "key": "tarikh", "type": "date", "description": "روزی که محموله فرآوری شده است." },
+          { "from": "c_b", "key": "vorudi", "type": "number", "unit": "kg", "description": "وزن مادهٔ اولیهٔ خام که مبنای محاسبهٔ بازدهی است." },
+          { "from": "c_c", "key": "no_gusht", "type": "string", "description": "نوع گوشت خام ورودی، مانند مغز ران، گردن، سردست یا راسته." },
+          { "from": "c_d", "key": "tolid_1", "type": "string", "description": "نام نخستین محصولی که از این محموله تولید شده است." },
+          { "from": "c_e", "key": "tolid_2", "type": "string", "description": "نام دومین محصولی که از این محموله تولید شده است." },
+          { "from": "c_f", "key": "tolid_3", "type": "string", "description": "نام سومین محصولی که از این محموله تولید شده است." },
+          { "from": "c_g", "key": "khoruji_1", "type": "number", "unit": "kg", "description": "وزن محصول نخست تولیدشده از این محموله." },
+          { "from": "c_h", "key": "khoruji_2", "type": "number", "unit": "kg", "description": "وزن محصول دوم تولیدشده از این محموله." },
+          { "from": "c_i", "key": "khoruji_3", "type": "number", "unit": "kg", "description": "وزن محصول سوم تولیدشده از این محموله." },
+          { "from": "c_j", "key": "bazdehi_khoruji_1", "type": "number", "unit": "percent", "derived": { "ref": "S-r-c27932c46bfe" }, "description": "سهم محصول نخست از وزن ماده اولیه، بر حسب درصد." },
+          { "from": "c_k", "key": "bazdehi_khoruji_2", "type": "number", "unit": "percent", "derived": { "ref": "S-r-51db194ff5dd" }, "description": "سهم محصول دوم از وزن ماده اولیه، بر حسب درصد." },
+          { "from": "c_l", "key": "bazdehi_khoruji_3", "type": "number", "unit": "percent", "derived": { "ref": "S-r-fd9e0e8a8bd9" }, "description": "سهم محصول سوم از وزن ماده اولیه، بر حسب درصد." }
+        ]
+      }
+    },
+    {
+      "skeleton": "S-r-c27932c46bfe",
+      "action": "keep",
+      "key": "bazdehi_khoruji_avval",
+      "title": "بازدهی خروجی نخست",
+      "statement": "بازدهی محصول نخست هر محموله برابر است با نسبت وزن آن محصول به وزن مادهٔ اولیهٔ خام ورودی، بر حسب درصد. این عدد نشان می‌دهد از هر محمولهٔ خام چه سهمی به محصول نخست تبدیل شده و چه اندازه کاست داشته است.",
+      "home": { "ref": "S-rec-3d5d67801f5d" },
+      "data": {
+        "lang": "feel",
+        "expr": "bazdehi_khoruji_1 = khoruji_1 / vorudi * zarib_darsad",
+        "inputs": [
+          { "key": "khoruji_1", "title": "وزن محصول نخست", "unit": "kg", "from": { "ref": "S-rec-3d5d67801f5d", "field": "c_g" } },
+          { "key": "vorudi", "title": "وزن ماده اولیه ورودی", "unit": "kg", "from": { "ref": "S-rec-3d5d67801f5d", "field": "c_b" } },
+          { "key": "zarib_darsad", "title": "ضریب تبدیل به درصد", "from": { "param": "p1" } }
+        ],
+        "outputs": [
+          { "key": "bazdehi_khoruji_1", "title": "بازدهی محصول نخست", "unit": "percent", "nature": "observed", "per": "هر محمولهٔ ورودی", "writes_to": { "ref": "S-rec-3d5d67801f5d", "field": "c_j" } }
+        ]
+      }
+    },
+    {
+      "skeleton": "S-r-51db194ff5dd",
+      "action": "keep",
+      "key": "bazdehi_khoruji_dovvom",
+      "title": "بازدهی خروجی دوم",
+      "statement": "بازدهی محصول دوم هر محموله برابر است با نسبت وزن آن محصول به وزن مادهٔ اولیهٔ خام ورودی، بر حسب درصد. این عدد سهم دومین محصولی را نشان می‌دهد که از همان محمولهٔ خام گرفته شده است.",
+      "home": { "ref": "S-rec-3d5d67801f5d" },
+      "data": {
+        "lang": "feel",
+        "expr": "bazdehi_khoruji_2 = khoruji_2 / vorudi * zarib_darsad",
+        "inputs": [
+          { "key": "khoruji_2", "title": "وزن محصول دوم", "unit": "kg", "from": { "ref": "S-rec-3d5d67801f5d", "field": "c_h" } },
+          { "key": "vorudi", "title": "وزن ماده اولیه ورودی", "unit": "kg", "from": { "ref": "S-rec-3d5d67801f5d", "field": "c_b" } },
+          { "key": "zarib_darsad", "title": "ضریب تبدیل به درصد", "from": { "param": "p1" } }
+        ],
+        "outputs": [
+          { "key": "bazdehi_khoruji_2", "title": "بازدهی محصول دوم", "unit": "percent", "nature": "observed", "per": "هر محمولهٔ ورودی", "writes_to": { "ref": "S-rec-3d5d67801f5d", "field": "c_k" } }
+        ]
+      }
+    },
+    {
+      "skeleton": "S-r-fd9e0e8a8bd9",
+      "action": "keep",
+      "key": "bazdehi_khoruji_sevvom",
+      "title": "بازدهی خروجی سوم",
+      "statement": "بازدهی محصول سوم هر محموله برابر است با نسبت وزن آن محصول به وزن مادهٔ اولیهٔ خام ورودی، بر حسب درصد. این عدد سهم سومین محصولی را نشان می‌دهد که از همان محمولهٔ خام گرفته شده است.",
+      "home": { "ref": "S-rec-3d5d67801f5d" },
+      "data": {
+        "lang": "feel",
+        "expr": "bazdehi_khoruji_3 = khoruji_3 / vorudi * zarib_darsad",
+        "inputs": [
+          { "key": "khoruji_3", "title": "وزن محصول سوم", "unit": "kg", "from": { "ref": "S-rec-3d5d67801f5d", "field": "c_i" } },
+          { "key": "vorudi", "title": "وزن ماده اولیه ورودی", "unit": "kg", "from": { "ref": "S-rec-3d5d67801f5d", "field": "c_b" } },
+          { "key": "zarib_darsad", "title": "ضریب تبدیل به درصد", "from": { "param": "p1" } }
+        ],
+        "outputs": [
+          { "key": "bazdehi_khoruji_3", "title": "بازدهی محصول سوم", "unit": "percent", "nature": "observed", "per": "هر محمولهٔ ورودی", "writes_to": { "ref": "S-rec-3d5d67801f5d", "field": "c_l" } }
+        ]
+      }
+    }
+  ],
+  "new": [
+    {
+      "kind": "rule",
+      "key": "bazdehi_tolid_rost_bif",
+      "title": "بازدهی تولید رست‌بیف",
+      "statement": "بازدهی تولید رست‌بیف از گوشت مغز ران خام به‌طور استاندارد ۷۰ درصد در نظر گرفته می‌شود و بسته به نوع و بافت گوشت بین ۶۵ تا ۷۰ درصد تغییر می‌کند. برای رسیدن به این مبنا، عصارهٔ گوشت به محصول ریش‌ریش‌شده افزوده می‌شود.",
+      "home": { "ref": "S-rec-3d5d67801f5d" },
+      "data": {
+        "inputs": [],
+        "outputs": [
+          { "key": "bazdehi_rost_bif", "title": "بازدهی رست‌بیف", "unit": "percent", "nature": "target", "value": 70, "of": "گوشت مغز ران خام", "per": "هر محمولهٔ گوشت خام" }
+        ]
+      },
+      "extra": {
+        "voice": [ { "ref": "meetings/transcripts/preparation-1405-06-02-02.txt", "lines": "1-140" } ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "kast_pokht_charkh_karde",
+      "title": "کاست وزنی گوشت چرخ‌کرده",
+      "statement": "کاهش وزن گوشت چرخ‌کرده در فرآیند پخت بین ۸ تا ۱۵ درصد وزن گوشت خام است و برخلاف رست‌بیف از این محدوده بالاتر نمی‌رود. ادویه و پیاز و سیر بر مبنای وزن خام محاسبه می‌شود و در این کاست دخالتی ندارد.",
+      "home": { "ref": "S-rec-3d5d67801f5d" },
+      "data": {
+        "inputs": [],
+        "outputs": [
+          { "key": "kast_charkh_karde", "title": "درصد کاست چرخ‌کرده", "unit": "percent", "nature": "standard", "range": { "min": 8, "max": 15 }, "of": "گوشت گردن خام", "per": "هر محمولهٔ گوشت خام" }
+        ]
+      },
+      "extra": {
+        "voice": [ { "ref": "meetings/transcripts/preparation-1405-06-02-02.txt", "lines": "1-140" } ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "vazn_har_loqme_morgh",
+      "title": "وزن هر لقمه مرغ",
+      "statement": "وزن هر لقمهٔ مرغ بین ۱۰ تا ۱۳ گرم است و مبنای ثابتی برای یک عدد مشخص وجود ندارد. برای کنترل، هر ده عدد با هم وزن می‌شود و مجموع باید بین ۱۰۰ تا ۱۳۰ گرم باشد.",
+      "home": { "ref": "S-rec-2c141582db58", "field": "c_e" },
+      "data": {
+        "inputs": [],
+        "outputs": [
+          { "key": "vazn_loqme", "title": "وزن هر لقمه", "unit": "g", "nature": "standard", "range": { "min": 10, "max": 13 }, "per": "هر عدد لقمه", "of": "لقمه مرغ" }
+        ]
+      },
+      "extra": {
+        "voice": [ { "ref": "meetings/transcripts/preparation-1405-06-04.txt", "lines": "41-240" } ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "tarkib_gusht_borger",
+      "title": "نسبت گوشت سردست و خرده راسته در برگر",
+      "statement": "مایهٔ برگر از وزن برابر گوشت سردست و خرده راستهٔ گوساله ساخته می‌شود؛ هر یک نیمی از وزن کل را تشکیل می‌دهد. اختلاف چند صد گرم برای جبران ضایعات و پلاستیک مجاز است، ولی مقدار تولید به وزن کم‌تر این دو محدود می‌شود و نسبت برابر باید حفظ شود.",
+      "home": { "ref": "S-rec-e3f80534814b" },
+      "data": {
+        "inputs": [],
+        "outputs": [
+          { "key": "sahm_sardast", "title": "سهم گوشت سردست", "unit": "percent", "nature": "standard", "value": 50, "share": 0.5, "per": "وزن مایهٔ برگر" },
+          { "key": "sahm_khorde_raste", "title": "سهم خرده راسته", "unit": "percent", "nature": "standard", "value": 50, "share": 0.5, "per": "وزن مایهٔ برگر" }
+        ]
+      },
+      "extra": {
+        "voice": [ { "ref": "meetings/transcripts/preparation-1405-06-02-02.txt", "lines": "1-140" } ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "andaze_baste_bandi_mahsulat",
+      "title": "اندازهٔ بستهٔ تحویل محصولات به انبار",
+      "statement": "هر محصول آماده‌سازی تنها در بستهٔ با اندازهٔ مشخص تحویل انبار می‌شود: چیزا شش‌عددی، برگر پنج‌عددی و رست‌بیف و چرخ‌کرده دوکیلویی. بستهٔ ناقص لیبل نمی‌خورد و تا کامل شدن در فریزر می‌ماند؛ سفارش خارج از این اندازه به نزدیک‌ترین مضرب گرد می‌شود و تنها باقی‌ماندهٔ پایان کار می‌تواند بستهٔ ناهم‌اندازه داشته باشد.",
+      "home": { "ref": "S-rec-2c141582db58" },
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "inputs": [ { "key": "mahsul", "title": "محصول" } ],
+        "outputs": [ { "key": "andaze_baste", "title": "اندازهٔ بسته" } ],
+        "table": {
+          "hit": "unique",
+          "inputs": ["mahsul"],
+          "outputs": ["andaze_baste"],
+          "rows": [
+            { "mahsul": "چیزا", "andaze_baste": "۶ عدد" },
+            { "mahsul": "برگر", "andaze_baste": "۵ عدد" },
+            { "mahsul": "رست‌بیف", "andaze_baste": "۲ کیلوگرم" },
+            { "mahsul": "چرخ‌کرده", "andaze_baste": "۲ کیلوگرم" }
+          ]
+        }
+      },
+      "extra": {
+        "voice": [
+          { "ref": "meetings/transcripts/preparation-1405-06-02.txt", "lines": "161-220" },
+          { "ref": "meetings/transcripts/preparation-1405-06-02-02.txt", "lines": "1-140" }
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "nesbat_maade_marinet_morgh",
+      "title": "نسبت مادهٔ مرینت و آب برای مرغ",
+      "statement": "به ازای هر کیلوگرم مرغ، ۳۰ گرم پودر مرینت و ۷۰ گرم آب مصرف می‌شود و همین نسبت وزن مرغ مرینت‌شده را حدود ده درصد بالا می‌برد. این نسبت را خود آماده‌سازی محاسبه می‌کند و در هیچ‌یک از جدول‌های آماده‌سازی ثبت نمی‌شود، چون فرم جداگانه‌ای برای مرینت وجود ندارد.",
+      "data": {
+        "inputs": [],
+        "outputs": [
+          { "key": "pudr_marinet", "title": "پودر مرینت", "unit": "g", "nature": "standard", "value": 30, "per": "هر کیلوگرم مرغ" },
+          { "key": "ab_marinet", "title": "آب مرینت", "unit": "g", "nature": "standard", "value": 70, "per": "هر کیلوگرم مرغ" }
+        ]
+      },
+      "extra": {
+        "voice": [
+          { "ref": "meetings/transcripts/preparation-1405-06-02.txt", "lines": "1-60" },
+          { "ref": "meetings/transcripts/preparation-1405-06-10.txt", "lines": "361-440" }
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "tatbiq_vorudi_amadesazi_ba_anbar",
+      "title": "تطبیق ورودی آماده‌سازی با خروجی انبار",
+      "statement": "وزن هر قلمی که آماده‌سازی از انبار تحویل می‌گیرد باید با وزنی که انبار به نام آماده‌سازی خارج کرده برابر باشد. مقدار محصول فرآوری‌شده در این مقایسه دخالتی ندارد و هر اختلاف باید همان روز پیگیری شود.",
+      "home": { "ref": "S-rec-e3f80534814b" },
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "original": "گرفتهٔ آماده‌سازی از انبار با تحویل‌دادهٔ انبار به آماده‌سازی باید با هم بخواند.",
+        "inputs": [
+          { "key": "vorudi_sabt_shode", "title": "وزن ثبت‌شده در ورودی آماده‌سازی", "unit": "kg", "from": { "ref": "S-rec-e3f80534814b" } },
+          { "key": "khoruji_anbar", "title": "وزن خروجی ثبت‌شده در انبار", "unit": "kg" }
+        ],
+        "outputs": [
+          { "key": "moghayerat_vorudi", "title": "مغایرت ورودی با انبار", "unit": "kg", "nature": "observed", "per": "هر قلم تحویلی" }
+        ]
+      },
+      "extra": {
+        "voice": [ { "ref": "meetings/transcripts/preparation-1405-05-28-03.txt", "lines": "41-103" } ]
+      }
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_gusht_vorudi_amadesazi",
+      "title": "وزن‌کشی گوشت ورودی آماده‌سازی",
+      "statement": "هر محمولهٔ گوشت خام هنگام تحویل از انبار و پیش از پاک‌سازی با ترازوی آماده‌سازی وزن می‌شود و مسئول همان لاین وزن را به عنوان ورودی آماده‌سازی ثبت می‌کند. وزن پلاستیک و خونابهٔ جداشده جداگانه گرفته و ثبت می‌شود.",
+      "home": { "ref": "S-rec-e3f80534814b" },
+      "processes": [
+        { "process": "preparation-018", "node": "preparation-018-n003", "quote": "ثبت وزن گوشت در دفتر با عنوان ورودی آماده‌سازی" },
+        { "process": "preparation-030", "node": "preparation-030-n006", "quote": "ثبت وزن گوشت در دفتر گوشت با عنوان ورودی آماده‌سازی" },
+        { "process": "preparation-020", "node": "preparation-020-n002", "quote": "وزن‌گیری گوشت راسته خام و ثبت آن در دفتر به‌عنوان ورودی آماده‌سازی" }
+      ],
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "ترازوی آماده‌سازی",
+        "when": "هنگام تحویل محموله از انبار، پیش از پاک‌سازی و فرآوری",
+        "by": "مسئول لاین گوشت",
+        "writes_to": { "ref": "S-rec-e3f80534814b" },
+        "exceptions": "قلم معیوب پیش از وزن‌کشی تحویل گرفته نمی‌شود و به انبار برمی‌گردد."
+      },
+      "extra": {
+        "voice": [ { "ref": "meetings/transcripts/preparation-1405-06-02-02.txt", "lines": "1-140" } ]
+      }
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_zayeat_ruzane_line",
+      "title": "وزن‌کشی ضایعات روزانهٔ لاین‌ها",
+      "statement": "ضایعات هر لاین — دمار و غضروف گوشت، کنار شینسل و خردهٔ چرخ‌گوشت — پس از جداسازی وزن و لیبل‌گذاری می‌شود و مقدار آن پیش از تحویل به انبار ثبت می‌شود. ضایعات در یخچال اختصاصی انبار در آماده‌سازی گذاشته می‌شود تا انبار آن را ببرد.",
+      "home": { "ref": "S-rec-ef021443f7dc" },
+      "processes": [
+        { "process": "preparation-026", "node": "preparation-026-n006", "quote": "قرار دادن ضایعات لیبل‌خورده در یخچال‌های اختصاصی انبار در آماده‌سازی" },
+        { "process": "preparation-005", "node": "preparation-005-n008", "quote": "ثبت ورودی، خروجی و ضایعات روزانه لاین سبزیجات در دفتر" }
+      ],
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "ترازوی لیبل‌زن آماده‌سازی",
+        "when": "پس از پایان کار هر لاین و پیش از تحویل به انبار",
+        "by": "مسئول همان لاین",
+        "writes_to": { "ref": "S-rec-ef021443f7dc" },
+        "exceptions": "ضایعات کاهو تنها وزن و اعلام می‌شود و لیبل و مدرک جداگانه ندارد؛ ضایعات فلفل دلمه‌ای هم جز در موارد خرابی وزن نمی‌شود."
+      },
+      "extra": {
+        "voice": [ { "ref": "meetings/transcripts/preparation-1405-06-01.txt", "lines": "201-300" } ]
+      }
+    },
+    {
+      "kind": "note",
+      "key": "abham_sabt_vorudi_khoruji_khamir",
+      "title": "ابهام در ثبت ورودی و خروجی خمیر",
+      "statement": "وزن آرد ورودی و وزن خمیر تولیدشده در هیچ فرم یا جدولی ثبت نمی‌شود و پرسنل آماده‌سازی بخش خمیر را قابل تکمیل نمی‌دانند؛ تفکیک خمیر آمریکایی و ایتالیایی هم برای آن‌ها روشن نیست.",
+      "home": { "ref": "S-rec-9f60dda7c289" },
+      "data": {
+        "about": [ { "ref": "S-rec-9f60dda7c289" } ],
+        "question": "خمیر آمریکایی و ایتالیایی بر چه مبنایی تفکیک و توسط چه کسی ثبت می‌شود و وزن آرد ورودی کجا ثبت می‌شود؟"
+      },
+      "extra": {
+        "voice": [ { "ref": "meetings/transcripts/preparation-1405-06-23-02.txt", "lines": "1-102" } ]
+      }
+    },
+    {
+      "kind": "note",
+      "key": "abham_mabnaye_af_ejraei",
+      "title": "ابهام در مبنای آف اجرایی",
+      "statement": "مبنای تعیین تعداد هدف و تعداد نفرات محقق‌شده در آف اجرایی آماده‌سازی و مسئول ثبت روزانهٔ آن در هیچ منبعی روشن نشده است.",
+      "home": { "ref": "S-rec-fedf9cc0dbe1" },
+      "data": {
+        "about": [ { "ref": "S-rec-fedf9cc0dbe1" } ],
+        "question": "تعداد هدف و تعداد نفر کسب‌شده در آف اجرایی بر چه مبنایی تعیین و توسط چه کسی ثبت می‌شود؟"
+      }
+    }
+  ]
+}

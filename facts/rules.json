@@ -1,4 +1,5590 @@
 {
   "schema_version": 2,
-  "entries": []
+  "entries": [
+    {
+      "kind": "rule",
+      "key": "tahvil_hamen_ruz_nime_sakhte",
+      "title": "تحویل اقلام نیمه‌ساخته در همان روز",
+      "statement": "اقلام نیمه‌ساختهٔ مرغ و گوجه که به آماده‌سازی داده می‌شود باید در همان روز تحویل انبار شود؛ در غیر این صورت مسئولیتی متوجه انبار نیست.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADghBrGz8GSFF-.image.md",
+          "hash": "sha256:a2514ace111e0da7cfd3fb997b3795682f5f8ada9bd3bdd63a8233dd74bd469f",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "inputs": [
+          {
+            "key": "ruz_tahvil",
+            "title": "روز تحویل به انبار"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "masuliyat_anbar",
+            "title": "مسئولیت انبار نسبت به اقلام"
+          }
+        ],
+        "original_ref": "facts/originals/F-00040.txt"
+      },
+      "home": {
+        "ref": "F-00007"
+      },
+      "id": "F-00040",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "taraz_maye_burger",
+      "title": "تراز مایهٔ برگر با خروجی‌های تبدیل",
+      "statement": "جمع نهایی مایهٔ برگر باید با مجموع وزن برگرهای تولیدشده برابر باشد: تعداد برگر صد و پنجاه گرمی و مینی برگر شصت گرمی در وزن هر عدد ضرب می‌شود و وزن تست برگر و ضایعات به آن افزوده می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADcA5rG7piKFF-.image.md",
+          "hash": "sha256:0354228a5b1a324cacca65fe5de12ff4ea6a77f2517220127c41baaabaa67735",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "feel",
+        "expr": "jam_nahayi_maye = tedad_burger_150 * 0.15 + tedad_mini_burger_60 * 0.06 + vazn_test_burger + vazn_zayeat",
+        "inputs": [
+          {
+            "key": "tedad_burger_150",
+            "title": "تعداد برگر ۱۵۰ گرمی",
+            "unit": "pcs",
+            "from": {
+              "ref": "F-00008",
+              "field": "meqdar",
+              "row": "burger_150"
+            }
+          },
+          {
+            "key": "tedad_mini_burger_60",
+            "title": "تعداد مینی برگر ۶۰ گرمی",
+            "unit": "pcs",
+            "from": {
+              "ref": "F-00008",
+              "field": "meqdar",
+              "row": "mini_burger_60"
+            }
+          },
+          {
+            "key": "vazn_test_burger",
+            "title": "وزن تست برگر",
+            "unit": "kg",
+            "from": {
+              "ref": "F-00008",
+              "field": "meqdar",
+              "row": "test_burger"
+            }
+          },
+          {
+            "key": "vazn_zayeat",
+            "title": "وزن ضایعات",
+            "unit": "kg",
+            "from": {
+              "ref": "F-00008",
+              "field": "meqdar",
+              "row": "zayeat"
+            }
+          }
+        ],
+        "outputs": [
+          {
+            "key": "jam_nahayi_maye",
+            "title": "جمع نهایی مایه برگر",
+            "unit": "kg",
+            "nature": "observed",
+            "writes_to": {
+              "ref": "F-00008",
+              "field": "jam_nahayi_maye"
+            }
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00008"
+      },
+      "id": "F-00041",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "mabnaye_tolid_ruzane_amadesazi",
+      "title": "مبنای مقدار تولید روزانهٔ آماده‌سازی",
+      "statement": "مقدار تولید هر قلم در آماده‌سازی از درخواست روزانهٔ انبار گرفته می‌شود و همان‌جا به دو سهم شعبهٔ مرکزی و شعبه تقسیم می‌شود. قلمی که در یک روز درخواست نشده باشد آن روز آماده نمی‌شود، بنابراین مقدار تولید ثابت نیست و روز به روز تغییر می‌کند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-05-28-02.txt",
+          "lines": "1-117",
+          "hash": "sha256:b6b6c0e5358cb64b0f4d13b61be777e44578f68adb055fe58e56c5001d081b57",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-017.json",
+          "node": "preparation-017-n005",
+          "quote": "طی نظر انبار جلو می‌رویم",
+          "hash": "sha256:ce35bd499dad22394e6b0098703b10831bd05d11999394ac8b2e0b2feaab41f3",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-003.json",
+          "node": "preparation-003-n017",
+          "quote": "اینا چیزهایی که انبار به ما سفارش میده",
+          "hash": "sha256:035ec918878a335535e08a1ec583311a3e67143299fb049a1903ca6ac749e822",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "inputs": [
+          {
+            "key": "qalam",
+            "title": "قلم درخواستی"
+          },
+          {
+            "key": "meqdar_darkhast_anbar",
+            "title": "مقدار درخواست انبار"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "meqdar_tolid_ruz",
+            "title": "مقدار تولید همان روز",
+            "nature": "observed",
+            "per": "هر قلم در هر روز"
+          }
+        ],
+        "original_ref": "facts/originals/F-00042.txt"
+      },
+      "home": {
+        "ref": "F-00005"
+      },
+      "id": "F-00042",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "aqlam_moshmul_form_tabdil",
+      "title": "اقلام مشمول فرم تبدیل در آماده‌سازی",
+      "statement": "هر قلمی که در آماده‌سازی فرآوری می‌شود فرم تبدیل جداگانه دارد و وزن ورودی و وزن خروجی و آنچه میان این دو جدا می‌شود روی همان فرم نوشته می‌شود. تنها سبزیجات از این الزام بیرون‌اند. این الزام به یک فرم مشخص وابسته نیست و همهٔ لاین‌های آماده‌سازی را در بر می‌گیرد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-05-28-02.txt",
+          "lines": "1-117",
+          "hash": "sha256:b6b6c0e5358cb64b0f4d13b61be777e44578f68adb055fe58e56c5001d081b57",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n023",
+          "quote": "فرم تبدیل دارن برای هر چیزی",
+          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-017.json",
+          "node": "preparation-017-n021",
+          "quote": "به جز سبزیجات همه موارد فرم تبدیل دارن",
+          "hash": "sha256:ce35bd499dad22394e6b0098703b10831bd05d11999394ac8b2e0b2feaab41f3",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "inputs": [
+          {
+            "key": "goruh_qalam",
+            "title": "گروه قلم"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "form_tabdil",
+            "title": "الزام فرم تبدیل"
+          }
+        ],
+        "table": {
+          "inputs": [
+            "goruh_qalam"
+          ],
+          "outputs": [
+            "form_tabdil"
+          ],
+          "hit": "first",
+          "rows": [
+            {
+              "goruh_qalam": "سبزیجات",
+              "form_tabdil": "ندارد"
+            },
+            {
+              "goruh_qalam": "سایر اقلام فرآوری‌شده در آماده‌سازی",
+              "form_tabdil": "دارد"
+            }
+          ]
+        }
+      },
+      "home": null,
+      "id": "F-00043",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "zarib_tabdil_qarch_va_felfel",
+      "title": "ثابت ماندن وزن قارچ و فلفل دلمه‌ای در خرد کردن",
+      "statement": "خرد کردن قارچ و فلفل دلمه‌ای وزن آن‌ها را تغییر نمی‌دهد و پنج کیلوگرم قارچ درسته پس از ریز شدن همان پنج کیلوگرم است. به همین دلیل و به سبب ارزش اقتصادی کم این اقلام، برای آن‌ها ضریب تبدیل جداگانه در نظر گرفته نمی‌شود و این نسبت روی هیچ‌یک از فرم‌های موجود ثبت نمی‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-05-28-02.txt",
+          "lines": "1-117",
+          "hash": "sha256:b6b6c0e5358cb64b0f4d13b61be777e44578f68adb055fe58e56c5001d081b57",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-015.json",
+          "node": "preparation-015-n006",
+          "quote": "پنج کیلو قارچ رو ریز کنید پنج کیلوئه",
+          "hash": "sha256:1e9d5afcbf7cfbe4bd14e18963ca6ce12dc8b48c865e4b12a35b3330f14ca3d8",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "zarib_tabdil",
+            "title": "ضریب تبدیل قارچ و فلفل دلمه‌ای",
+            "unit": "ratio",
+            "value": 1,
+            "nature": "standard",
+            "per": "هر کیلوگرم مادهٔ خام"
+          }
+        ]
+      },
+      "home": null,
+      "id": "F-00044",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "vazn_pust_rol_jambon",
+      "title": "وزن پوست هر رول ژامبون",
+      "statement": "هر رول ژامبون چهار کیلوگرمی حدود ۱۷۰ گرم پوست دارد که هنگام باز کردن رول جدا و به نام همان قلم وزن و ثبت می‌شود. برخی ژامبون‌ها دو پوسته دارند و وزن پوست جداشدهٔ آن‌ها بیشتر است؛ کاور پلاستیکی و تکه‌های گوشهٔ رول هم به همین وزن افزوده می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-05-28-02.txt",
+          "lines": "1-117",
+          "hash": "sha256:b6b6c0e5358cb64b0f4d13b61be777e44578f68adb055fe58e56c5001d081b57",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-017.json",
+          "node": "preparation-017-n011",
+          "quote": "تو هر یه رولش ۱۷۰ گرم پوست داره",
+          "hash": "sha256:ce35bd499dad22394e6b0098703b10831bd05d11999394ac8b2e0b2feaab41f3",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-017.json",
+          "node": "preparation-017-n021",
+          "quote": "کاور پلاستیکی‌شه اینا همش ثبت میشه",
+          "hash": "sha256:ce35bd499dad22394e6b0098703b10831bd05d11999394ac8b2e0b2feaab41f3",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "vazn_pust",
+            "title": "وزن پوست جداشده",
+            "unit": "g",
+            "value": 170,
+            "nature": "standard",
+            "per": "هر رول چهار کیلوگرمی ژامبون"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00011"
+      },
+      "id": "F-00045",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "mabnaye_sabt_zayeat_amadesazi",
+      "title": "مبنای ثبت ضایعات در آماده‌سازی",
+      "statement": "هر آنچه هنگام فرآوری از یک قلم جدا می‌شود — پوست، کاور پلاستیکی، خونابه و آب — به نام همان قلم وزن و به عنوان ضایعات ثبت می‌شود و به انبار تحویل می‌رود. قلم معیوب در زمان تحویل گرفتن از انبار پذیرفته نمی‌شود و همان‌جا برگشت می‌خورد؛ قلم باارزشی که پس از تحویل خراب از آب درآید، مانند تکهٔ کپک‌زدهٔ ژامبون، به انبار برگردانده و ضایعات ثبت می‌شود. سهم این برگشتی بسیار کم و در حدود یک درصد است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-05-28-02.txt",
+          "lines": "1-117",
+          "hash": "sha256:b6b6c0e5358cb64b0f4d13b61be777e44578f68adb055fe58e56c5001d081b57",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-004.json",
+          "node": "preparation-004-n005",
+          "quote": "اگه بد باشه تحویل نمی‌گیره",
+          "hash": "sha256:70b8f4dc621113c39f3bcf2462f1331a0dbad452f7705c71a35763976d42c49f",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-017.json",
+          "node": "preparation-017-n021",
+          "quote": "ثبت ورودی، خروجی و ضایعات",
+          "hash": "sha256:ce35bd499dad22394e6b0098703b10831bd05d11999394ac8b2e0b2feaab41f3",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "inputs": [
+          {
+            "key": "qalam",
+            "title": "قلم فرآوری‌شده"
+          },
+          {
+            "key": "vazn_joda_shode",
+            "title": "وزن جداشده هنگام فرآوری",
+            "unit": "kg"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "vazn_zayeat",
+            "title": "وزن ضایعات ثبت‌شده",
+            "unit": "kg",
+            "nature": "observed",
+            "per": "هر قلم در هر روز"
+          }
+        ],
+        "original_ref": "facts/originals/F-00046.txt"
+      },
+      "home": {
+        "ref": "F-00024"
+      },
+      "id": "F-00046",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "nabud_mande_payan_shab",
+      "title": "نبود ماندهٔ پایان شب در آماده‌سازی",
+      "statement": "آماده‌سازی ماندهٔ پایان شب ندارد، چون هر چه در روز تولید می‌شود همان روز به انبار تحویل می‌رود و چیزی برای شمارش پایان شب باقی نمی‌ماند. مواد مورد نیاز روز بعد صبح فردا دوباره با درخواست از انبار بالا می‌آید.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-05-28-02.txt",
+          "lines": "1-117",
+          "hash": "sha256:b6b6c0e5358cb64b0f4d13b61be777e44578f68adb055fe58e56c5001d081b57",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n043",
+          "quote": "همه چی رو همون روز تحویل انبار میدن",
+          "hash": "sha256:ecef39b667404cd777c0b03d08c4fe51ab3e43135e0250e95dc875871bb76c1f",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-003.json",
+          "node": "preparation-003-n002",
+          "quote": "فردا صبح با فرم درخواست انبار به آماده‌سازی میاد بالا",
+          "hash": "sha256:035ec918878a335535e08a1ec583311a3e67143299fb049a1903ca6ac749e822",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "inputs": [
+          {
+            "key": "qalam_tolid_shode",
+            "title": "قلم تولیدشده در روز"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "mande_payan_shab",
+            "title": "ثبت ماندهٔ پایان شب",
+            "nature": "limit"
+          }
+        ],
+        "original_ref": "facts/originals/F-00047.txt"
+      },
+      "home": {
+        "ref": "F-00019"
+      },
+      "id": "F-00047",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "vazn_standard_borger",
+      "title": "وزن استاندارد هر عدد برگر و مینی برگر",
+      "statement": "هر عدد برگر معمولی ۱۵۰ گرم و هر عدد مینی برگر ۶۰ گرم در نظر گرفته می‌شود. تعداد تولیدشدهٔ هر کدام با همین وزن به کیلوگرم تبدیل می‌شود تا مجموع آن با وزن مایهٔ مصرف‌شده سنجیده شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-05-28-03.txt",
+          "lines": "1-103",
+          "hash": "sha256:cdb93d1b736e60b9176d42bd375e7759b9a57387103a62cc7fd446a5dfe99d3b",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "vazn_borger",
+            "title": "وزن هر عدد برگر",
+            "unit": "g",
+            "value": 150,
+            "nature": "standard",
+            "per": "هر عدد برگر"
+          },
+          {
+            "key": "vazn_mini_borger",
+            "title": "وزن هر عدد مینی برگر",
+            "unit": "g",
+            "value": 60,
+            "nature": "standard",
+            "per": "هر عدد مینی برگر"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00008"
+      },
+      "aliases": [
+        "برگر ۱۵۰ گرمی",
+        "مینی برگر ۶۰ گرمی"
+      ],
+      "id": "F-00048",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "mohlat_tabadol_list_darkhast_ruzane",
+      "title": "مهلت تبادل فهرست درخواست روزانه با انبار",
+      "statement": "انبار فهرست نیازهای دو آشپزخانه و شعبه را حداکثر تا ساعت ده و بیست دقیقهٔ صبح تحویل آماده‌سازی می‌دهد و آماده‌سازی حداکثر تا ده و نیم فهرست تکمیل‌شدهٔ خود را به انبار بازمی‌گرداند. انبار اقلام این فهرست را تا حدود ده و چهل‌وپنج دقیقه تا یازده به آماده‌سازی تحویل می‌دهد و تا آن ساعت لاین‌ها تنها کارهای ثابت خود را انجام می‌دهند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-05-28.txt",
+          "lines": "1-300",
+          "hash": "sha256:158ef6036b07131e4f7d1b6d144b45862a2c111e0cee54dcc89129fc5ad4f280",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-003.json",
+          "node": "preparation-003-n006",
+          "quote": "ده و بیست دقیقه باید انبار لیست رو به ما تحویل بده",
+          "hash": "sha256:035ec918878a335535e08a1ec583311a3e67143299fb049a1903ca6ac749e822",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "mohlat_daryaft_az_anbar",
+            "title": "مهلت دریافت فهرست از انبار",
+            "value": "۱۰:۲۰",
+            "nature": "limit",
+            "per": "هر روز کاری"
+          },
+          {
+            "key": "mohlat_bazgardandan_be_anbar",
+            "title": "مهلت بازگرداندن فهرست تکمیل‌شده به انبار",
+            "value": "۱۰:۳۰",
+            "nature": "limit",
+            "per": "هر روز کاری"
+          },
+          {
+            "key": "mohlat_takmil_aqlam_tavassot_anbar",
+            "title": "مهلت تکمیل اقلام فهرست توسط انبار",
+            "value": "۱۰:۴۵ تا ۱۱:۰۰",
+            "nature": "limit",
+            "per": "هر روز کاری"
+          }
+        ],
+        "original_ref": "facts/originals/F-00049.txt"
+      },
+      "home": {
+        "ref": "F-00004"
+      },
+      "id": "F-00049",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "tafkik_do_list_darkhast_amadesazi",
+      "title": "تفکیک دو فهرست درخواست روزانهٔ آماده‌سازی",
+      "statement": "آماده‌سازی هر روز با دو فهرست جداگانه کار می‌کند: فهرست درخواست کالا که خود آماده‌سازی غروب روز پیش بر پایهٔ کارهای همیشگی‌اش پر می‌کند و تنها مواد اولیهٔ مصرفی مانند نمک و فلفل و زردچوبه و شیر و خامه در آن می‌آید، و فهرست روزانهٔ محصولات که انبار بر پایهٔ سفارش دو آشپزخانه پر می‌کند و اقلام نیمه‌ساخته مانند مرغ مرینت‌شده، کاهوی آماده و دورچین در آن به تفکیک مرکزی و شعبه می‌آید. فهرست نخست حدود صد قلم و فهرست دوم حدود بیست قلم دارد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-05-28.txt",
+          "lines": "1-300",
+          "hash": "sha256:158ef6036b07131e4f7d1b6d144b45862a2c111e0cee54dcc89129fc5ad4f280",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-003.json",
+          "node": "preparation-003-n017",
+          "quote": "انبار میاره تحویل آماده‌سازی می‌ده",
+          "hash": "sha256:035ec918878a335535e08a1ec583311a3e67143299fb049a1903ca6ac749e822",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-003.json",
+          "node": "preparation-003-n005",
+          "quote": "غروب که می‌شه اونو پر می‌کنه در حد وسایل اولیه",
+          "hash": "sha256:035ec918878a335535e08a1ec583311a3e67143299fb049a1903ca6ac749e822",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "inputs": [
+          {
+            "key": "noe_list",
+            "title": "نوع فهرست"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "porkonande",
+            "title": "پرکنندهٔ فهرست"
+          },
+          {
+            "key": "jense_aqlam",
+            "title": "جنس اقلام"
+          },
+          {
+            "key": "shomar_taqribi_aqlam",
+            "title": "شمار تقریبی اقلام"
+          }
+        ],
+        "table": {
+          "hit": "unique",
+          "inputs": [
+            "noe_list"
+          ],
+          "outputs": [
+            "porkonande",
+            "jense_aqlam",
+            "shomar_taqribi_aqlam"
+          ],
+          "rows": [
+            {
+              "noe_list": "فهرست درخواست کالای آماده‌سازی",
+              "porkonande": "سرپرست آماده‌سازی، غروب روز پیش",
+              "jense_aqlam": "مواد اولیهٔ مصرفی آماده‌سازی",
+              "shomar_taqribi_aqlam": "حدود ۱۰۰ قلم"
+            },
+            {
+              "noe_list": "فهرست روزانهٔ محصولات درخواستی",
+              "porkonande": "انبار، بر پایهٔ سفارش دو آشپزخانه",
+              "jense_aqlam": "اقلام نیمه‌ساختهٔ تحویلی به انبار",
+              "shomar_taqribi_aqlam": "حدود ۲۰ قلم"
+            }
+          ]
+        }
+      },
+      "home": {
+        "ref": "F-00005"
+      },
+      "aliases": [
+        "چک‌لیست آخر شب آماده‌سازی"
+      ],
+      "id": "F-00050",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "barname_haftegi_tolid_line_gusht",
+      "title": "برنامهٔ هفتگی تولید لاین گوشت",
+      "statement": "لاین گوشت آماده‌سازی در هفته چهار نوبت تولید دارد — رست‌بیف، گوشت چرخ‌کرده، برگر و راستهٔ پاک‌نشده — و برای هر نوبت یک فرم تبدیل پر و تحویل داده می‌شود. چرخ‌کرده معمولاً یک روز در هفته و رست‌بیف و برگر تا دو روز در هفته است؛ شنبه به جای پخت گوشت سس کف پیتزا تولید می‌شود و جمعه لاین گوشت کار نمی‌کند. مقدار هر نوبت را انبار تعیین می‌کند و جای روزها بسته به خرید و موجودی همان هفته جابه‌جا می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-05-28.txt",
+          "lines": "1-300",
+          "hash": "sha256:158ef6036b07131e4f7d1b6d144b45862a2c111e0cee54dcc89129fc5ad4f280",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-019.json",
+          "node": "preparation-019-n001",
+          "quote": "یه برنامه براشون تعریف کردیم",
+          "hash": "sha256:030f8110b3ebfd8a9a2ea4521e2535220491a542b51a4399079576edbd76523d",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "inputs": [
+          {
+            "key": "ruz_hafte",
+            "title": "روز هفته"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "tolid_line_gusht",
+            "title": "تولید لاین گوشت"
+          }
+        ],
+        "table": {
+          "hit": "unique",
+          "inputs": [
+            "ruz_hafte"
+          ],
+          "outputs": [
+            "tolid_line_gusht"
+          ],
+          "rows": [
+            {
+              "ruz_hafte": "شنبه",
+              "tolid_line_gusht": "بدون پخت گوشت؛ تولید سس کف پیتزا"
+            },
+            {
+              "ruz_hafte": "یکشنبه",
+              "tolid_line_gusht": "رست بیف"
+            },
+            {
+              "ruz_hafte": "دوشنبه",
+              "tolid_line_gusht": "برگر"
+            },
+            {
+              "ruz_hafte": "سه‌شنبه",
+              "tolid_line_gusht": "گوشت چرخ‌کرده"
+            },
+            {
+              "ruz_hafte": "چهارشنبه",
+              "tolid_line_gusht": "فیلادلفیا و استیک"
+            },
+            {
+              "ruz_hafte": "پنجشنبه",
+              "tolid_line_gusht": "رست بیف"
+            },
+            {
+              "ruz_hafte": "جمعه",
+              "tolid_line_gusht": "تعطیل؛ لاین گوشت غیرفعال"
+            }
+          ]
+        }
+      },
+      "home": null,
+      "id": "F-00051",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "bazdehi_paksazi_kahu",
+      "title": "بازدهی پاک‌سازی کاهو",
+      "statement": "برای به‌دست آمدن یک کیلوگرم کاهوی پاک و خردشده حدود دو تا دو و نیم کیلوگرم کاهوی خام لازم است. همین نسبت مبنای پرهیز از خرد کردن بیش از نیاز است، چون کاهوی خردشدهٔ باقی‌مانده تا روز بعد فاسد می‌شود و کاهوی پاک‌نشده برای روز بعد نگه داشته می‌شود. این نسبت در هیچ فرم یا جدول آماده‌سازی ثبت نمی‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-05-28.txt",
+          "lines": "1-300",
+          "hash": "sha256:158ef6036b07131e4f7d1b6d144b45862a2c111e0cee54dcc89129fc5ad4f280",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-002.json",
+          "node": "preparation-002-n005",
+          "quote": "باید همون ده که میاد شروع کنه زدن کاهو",
+          "hash": "sha256:c2440b484d1560e73a95517337345887aa0bd2a7f06729bbd84d57a7fac699e1",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "kahu_kham_lazem",
+            "title": "کاهوی خام لازم",
+            "unit": "kg",
+            "per": "هر کیلوگرم کاهوی پاک‌شده",
+            "nature": "standard",
+            "range": {
+              "min": 2,
+              "max": 2.5
+            }
+          }
+        ]
+      },
+      "home": null,
+      "id": "F-00052",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "andaze_part_tolid_khamir",
+      "title": "اندازهٔ پارت تولید خمیر",
+      "statement": "خمیر آماده‌سازی در پارت‌های ۲۸ تا ۳۰ کیلوگرمی گرفته می‌شود و درخواست روزانهٔ دو آشپزخانه در سه تا چهار پارت تولید و در طول روز تحویل می‌شود. لاین خمیر میان مسئول لاین گوشت و مسئول لاین مرینت تقسیم می‌شود و هر روز کسی که کارش سبک‌تر است آن را برمی‌دارد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-05-28.txt",
+          "lines": "1-300",
+          "hash": "sha256:158ef6036b07131e4f7d1b6d144b45862a2c111e0cee54dcc89129fc5ad4f280",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-016.json",
+          "node": "preparation-016-n006",
+          "quote": "هر پارتمون فکر کنم بیست و هشت تا سی کیلو",
+          "hash": "sha256:8eebf3543434b01f567eab50102cf40fc6009b1bfc64785aad99afde24ed8005",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "vazn_har_part_khamir",
+            "title": "وزن هر پارت خمیر",
+            "unit": "kg",
+            "per": "هر پارت تولید خمیر",
+            "nature": "standard",
+            "range": {
+              "min": 28,
+              "max": 30
+            }
+          },
+          {
+            "key": "tedad_part_ruzane",
+            "title": "شمار پارت‌های روزانهٔ خمیر",
+            "unit": null,
+            "per": "هر روز کاری",
+            "nature": "standard",
+            "range": {
+              "min": 3,
+              "max": 4
+            }
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00021"
+      },
+      "id": "F-00053",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "olaviat_tahvil_shobe_naharkhoran",
+      "title": "اولویت تحویل سفارش‌های شعبهٔ ناهارخوران",
+      "statement": "سفارش‌های شعبهٔ ناهارخوران پیش از سفارش‌های آشپزخانهٔ مرکزی آماده می‌شود، چون بار شعبه ساعت چهار بعدازظهر ارسال می‌شود؛ خمیر شعبه از ساعت دو گرفته می‌شود تا تا ساعت چهار بسته‌بندی و آمادهٔ ارسال باشد. تحویل همان اقلام به آشپزخانهٔ مرکزی تا ساعت شش و نیم غروب پذیرفته است و در صورت نیاز شعبه، سهم شعبه از یک محصول نیمه‌آماده زودتر جدا و تحویل می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-05-28.txt",
+          "lines": "1-300",
+          "hash": "sha256:158ef6036b07131e4f7d1b6d144b45862a2c111e0cee54dcc89129fc5ad4f280",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-016.json",
+          "node": "preparation-016-n011",
+          "quote": "شعبه ساعت چهار باید خمیرش بره",
+          "hash": "sha256:8eebf3543434b01f567eab50102cf40fc6009b1bfc64785aad99afde24ed8005",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "saat_ersal_bar_shobe",
+            "title": "ساعت ارسال بار شعبه",
+            "value": "۱۶:۰۰",
+            "nature": "limit",
+            "per": "هر روز کاری"
+          },
+          {
+            "key": "mohlat_tahvil_be_markazi",
+            "title": "مهلت تحویل به آشپزخانهٔ مرکزی",
+            "value": "۱۸:۳۰",
+            "nature": "limit",
+            "per": "هر روز کاری"
+          }
+        ],
+        "original_ref": "facts/originals/F-00054.txt"
+      },
+      "home": {
+        "ref": "F-00005"
+      },
+      "id": "F-00054",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "mabnaye_tain_meqdar_haftegi_gusht",
+      "title": "مبنای تعیین مقدار تولید هفتگی گوشت",
+      "statement": "مقدار گوشت پختهٔ هر نوبت را انبار بر پایهٔ فروش چند هفتهٔ گذشته تعیین می‌کند؛ کاست پخت را بر آن می‌افزاید و در پایان پنج تا ده درصد بیشتر سفارش می‌دهد تا کم نیاید. هر نوبت تولید باید دپوی هفت تا هشت روز را پوشش بدهد و آماده‌سازی خود در تعیین این مقدار نقشی ندارد. این مبنا در هیچ فرم یا جدول آماده‌سازی ثبت نمی‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-05-28.txt",
+          "lines": "1-300",
+          "hash": "sha256:158ef6036b07131e4f7d1b6d144b45862a2c111e0cee54dcc89129fc5ad4f280",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "darsad_afzude_etminan",
+            "title": "درصد افزودهٔ اطمینان بر مقدار تولید",
+            "unit": "percent",
+            "per": "هر نوبت تولید گوشت",
+            "nature": "limit",
+            "range": {
+              "min": 5,
+              "max": 10
+            }
+          },
+          {
+            "key": "dore_poshesh_depo",
+            "title": "دورهٔ پوشش دپوی گوشت پخته",
+            "unit": "day",
+            "per": "هر نوبت تولید گوشت",
+            "nature": "standard",
+            "range": {
+              "min": 7,
+              "max": 8
+            }
+          }
+        ],
+        "original_ref": "facts/originals/F-00055.txt"
+      },
+      "home": null,
+      "id": "F-00055",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "zaman_hamzan_maye_borger",
+      "title": "زمان هم‌زدن مایهٔ برگر",
+      "statement": "مایهٔ برگر پس از چرخ کردن و افزودن ادویه در دستگاه خمیرگیر هم زده می‌شود و چون حجم آن همیشه بالاست در دو پارت و هر پارت چهل دقیقه انجام می‌شود. پس از آن مایه دانه‌دانه وزن، پرس و بسته‌بندی می‌شود. این زمان در هیچ فرم یا جدول آماده‌سازی ثبت نمی‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-05-28.txt",
+          "lines": "1-300",
+          "hash": "sha256:158ef6036b07131e4f7d1b6d144b45862a2c111e0cee54dcc89129fc5ad4f280",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "zaman_hamzan_har_part",
+            "title": "زمان هم‌زدن هر پارت مایهٔ برگر",
+            "unit": "min",
+            "per": "هر پارت مایهٔ برگر",
+            "nature": "standard",
+            "value": 40
+          },
+          {
+            "key": "tedad_part_hamzan",
+            "title": "شمار پارت‌های هم‌زدن مایهٔ برگر",
+            "unit": null,
+            "per": "هر نوبت تولید برگر",
+            "nature": "standard",
+            "value": 2
+          }
+        ]
+      },
+      "home": null,
+      "id": "F-00056",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "vazn_har_zarf_salad_kentaki",
+      "title": "وزن هر ظرف سالاد کنتاکی",
+      "statement": "هر ظرف سالاد کنتاکی نود گرم سالاد خالص دارد و وزن آن همراه با ظرف نود و شش تا نود و هفت گرم می‌شود. هر ظرف جداگانه در پلاستیک مخصوص وکیوم می‌شود و شمار سهم مرکزی و شعبه روی پلاستیک نوشته می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-01.txt",
+          "lines": "1-758",
+          "hash": "sha256:fc7d9f14ad8514931d243e838aaa563a319ceaf543eee3bc472a1c0f74e77607",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-009.json",
+          "node": "preparation-009-n002",
+          "quote": "وزن‌گیری کلم بر اساس تعداد سالاد کنتاکی سفارش‌شده‌ی روز",
+          "hash": "sha256:8ac2671b0fffa58e708ae72709b6d9147f36592bba771296ad9a67fa353c17a8",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "vazn_khales",
+            "title": "وزن خالص سالاد در هر ظرف",
+            "unit": "g",
+            "value": 90,
+            "nature": "standard",
+            "per": "هر ظرف سالاد کنتاکی"
+          },
+          {
+            "key": "vazn_ba_zarf",
+            "title": "وزن سالاد همراه با ظرف",
+            "unit": "g",
+            "range": {
+              "min": 96,
+              "max": 97
+            },
+            "nature": "standard",
+            "per": "هر ظرف سالاد کنتاکی"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00016"
+      },
+      "id": "F-00057",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "omr_mofid_salad_kentaki",
+      "title": "عمر مفید سالاد کنتاکی",
+      "statement": "عمر مفید سالاد کنتاکی پس از هم زدن دو تا سه ساعت است و پس از آن بو می‌گیرد و قابل استفاده نیست؛ به همین دلیل در تهیهٔ آن آب زیادی به کار نمی‌رود و کلم و هویج شسته نمی‌شوند. ظرف‌های تحویل‌شده به کانتر که مصرف نشده‌اند روز بعد کنترل می‌شوند و در صورت سالم نبودن ضایعات ثبت می‌شوند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-01.txt",
+          "lines": "1-758",
+          "hash": "sha256:fc7d9f14ad8514931d243e838aaa563a319ceaf543eee3bc472a1c0f74e77607",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "omr_mofid",
+            "title": "عمر مفید سالاد",
+            "unit": "hour",
+            "range": {
+              "min": 2,
+              "max": 3
+            },
+            "nature": "limit",
+            "per": "هر ظرف سالاد کنتاکی"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00016"
+      },
+      "id": "F-00058",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "zekhamat_barsh_aslaiser",
+      "title": "ضخامت برش محصولات با اسلایسر",
+      "statement": "ضخامت برش هر محصول روی اسلایسر ثابت است: مرغ پختهٔ مرغ پیتزا یک سانتی‌متر و فلفل دلمه‌ای نیم‌سانت نگینی. کلم سالاد کنتاکی دو بار از اسلایسر رد می‌شود تا کاملاً ریز و نگینی شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-01.txt",
+          "lines": "1-758",
+          "hash": "sha256:fc7d9f14ad8514931d243e838aaa563a319ceaf543eee3bc472a1c0f74e77607",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "inputs": [
+          {
+            "key": "mahsul",
+            "title": "محصول"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "zekhamat_barsh",
+            "title": "ضخامت برش",
+            "nature": "standard"
+          }
+        ],
+        "table": {
+          "hit": "unique",
+          "inputs": [
+            "mahsul"
+          ],
+          "outputs": [
+            "zekhamat_barsh"
+          ],
+          "rows": [
+            {
+              "mahsul": "مرغ پختهٔ مرغ پیتزا",
+              "zekhamat_barsh": "یک سانتی‌متر"
+            },
+            {
+              "mahsul": "فلفل دلمه‌ای",
+              "zekhamat_barsh": "نیم سانتی‌متر نگینی"
+            },
+            {
+              "mahsul": "کلم سالاد کنتاکی",
+              "zekhamat_barsh": "دو بار اسلایس تا اندازهٔ نگینی"
+            }
+          ]
+        }
+      },
+      "home": {
+        "ref": "F-00016"
+      },
+      "id": "F-00059",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "damaye_pokht_morgh_pizza",
+      "title": "دما و شمار دورهای پخت مرغ پیتزا",
+      "statement": "مرغ پیتزا در دمای دویست و هفتاد تا دویست و هشتاد درجه پخته می‌شود و هر سینی باید دو دور کامل در فر بچرخد تا مرغ نه خام بماند و نه بیش از اندازه پخته شود. مرغ‌ها تنها در یک لایه روی سینی چیده می‌شوند و تکه‌های ضخیم پیش از پخت با چاقو برش می‌خورند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-01.txt",
+          "lines": "1-758",
+          "hash": "sha256:fc7d9f14ad8514931d243e838aaa563a319ceaf543eee3bc472a1c0f74e77607",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "damaye_for",
+            "title": "دمای فر پخت",
+            "range": {
+              "min": 270,
+              "max": 280
+            },
+            "nature": "standard"
+          },
+          {
+            "key": "tedad_dor_pokht",
+            "title": "شمار دورهای پخت",
+            "value": 2,
+            "nature": "standard",
+            "per": "هر سینی مرغ"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00012"
+      },
+      "id": "F-00060",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "vazn_kol_ghazaye_personel",
+      "title": "وزن کل مادهٔ اولیهٔ غذای پرسنل",
+      "statement": "وزن مادهٔ اولیهٔ اصلی هر وعدهٔ پرسنل برابر است با تعداد نفرات آن روز ضرب در وزن تعیین‌شده برای هر نفر. در روزهایی که شمار نفرات بالاتر می‌رود همین وزن به همان نسبت بالا می‌رود و انبار بر پایهٔ آن خروج می‌دهد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-01.txt",
+          "lines": "1-758",
+          "hash": "sha256:fc7d9f14ad8514931d243e838aaa563a319ceaf543eee3bc472a1c0f74e77607",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-024.json",
+          "node": "preparation-024-n024",
+          "quote": "کنار گذاشتن سهم ناهار روز بعد به تعداد نفرات و وزن هر پرس طبق چک‌لیست",
+          "hash": "sha256:0e5b8bc0c3c4e8a3fbd643b31b9eed73dc69d81f9e0691002a201235d4c84c08",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "feel",
+        "expr": "vazn_kol = tedad_nafar * vazn_har_nafar / 1000",
+        "inputs": [
+          {
+            "key": "tedad_nafar",
+            "title": "تعداد نفرات",
+            "from": {
+              "ref": "F-00017",
+              "field": "tedad_nafar"
+            }
+          },
+          {
+            "key": "vazn_har_nafar",
+            "title": "وزن به ازای هر نفر",
+            "unit": "g",
+            "from": {
+              "ref": "F-00017",
+              "field": "vazn_har_nafar"
+            }
+          }
+        ],
+        "outputs": [
+          {
+            "key": "vazn_kol",
+            "title": "وزن کل مادهٔ اولیه",
+            "unit": "kg",
+            "nature": "target",
+            "writes_to": {
+              "ref": "F-00017",
+              "field": "vazn_kol"
+            }
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00017"
+      },
+      "id": "F-00061",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "tafkik_mavad_ghazaye_personel",
+      "title": "تفکیک مواد اولیهٔ غذای پرسنل",
+      "statement": "مواد اولیه‌ای که برای ناهار و شام پرسنل خارج می‌شود جدا از مواد تولید رستوران نگهداری می‌شود و روی آن نشانهٔ سهم پرسنل نوشته می‌شود تا در تولید محصولات رستوران مصرف نشود. مرغ مرینت‌شدهٔ شام پرسنل با همین نشانه در یخچال آماده‌سازی می‌ماند و به انبار برگردانده نمی‌شود؛ اقلام حلبی و دبه‌ای مانند سس مایونز و خیارشور جداگانه و با یادآوری مسئول وعده خروج می‌خورند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-01.txt",
+          "lines": "1-758",
+          "hash": "sha256:fc7d9f14ad8514931d243e838aaa563a319ceaf543eee3bc472a1c0f74e77607",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-024.json",
+          "node": "preparation-024-n001",
+          "quote": "خروج زدن مواد اولیه ناهار و شام پرسنل از انبار طبق چک‌لیست دوهفته‌ای",
+          "hash": "sha256:0e5b8bc0c3c4e8a3fbd643b31b9eed73dc69d81f9e0691002a201235d4c84c08",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "tafkik_mavad_personel",
+            "title": "تفکیک مواد اولیهٔ پرسنل",
+            "nature": "limit",
+            "value": null
+          }
+        ],
+        "original_ref": "facts/originals/F-00062.txt"
+      },
+      "home": {
+        "ref": "F-00017"
+      },
+      "id": "F-00062",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "kast_pokht_morgh_pizza",
+      "title": "کاست پخت مرغ پیتزا",
+      "statement": "کاست پخت مرغ پیتزا برابر است با وزن مرغ خام تحویل‌گرفته‌شده منهای وزن مرغ پختهٔ خالص و وزن ضایعات جداشده. ضایعات این مرحله معمولاً وجود ندارد و تنها وقتی ثبت می‌شود که تکه‌های کبود و خون‌مرده پیش از پخت کنار گذاشته شده باشند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-01.txt",
+          "lines": "1-758",
+          "hash": "sha256:fc7d9f14ad8514931d243e838aaa563a319ceaf543eee3bc472a1c0f74e77607",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "feel",
+        "expr": "kast = morgh_kham - morgh_pokhte - zayeat",
+        "inputs": [
+          {
+            "key": "morgh_kham",
+            "title": "وزن مرغ خام تحویلی",
+            "unit": "kg"
+          },
+          {
+            "key": "morgh_pokhte",
+            "title": "وزن مرغ پختهٔ خالص",
+            "unit": "kg"
+          },
+          {
+            "key": "zayeat",
+            "title": "وزن ضایعات جداشده",
+            "unit": "kg"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "kast",
+            "title": "کاست پخت",
+            "unit": "kg",
+            "nature": "observed"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00012"
+      },
+      "id": "F-00063",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "nesbat_kast_pokht_morgh_pizza",
+      "title": "نسبت استاندارد کاست پخت مرغ پیتزا",
+      "statement": "کاست پخت مرغ پیتزا به‌طور استاندارد سه کیلوگرم به ازای هر ده کیلوگرم مرغ خام است و کاست ثبت‌شدهٔ هر روز باید با همین نسبت همخوانی داشته باشد. به همین دلیل به ازای هر ده کیلوگرم مرغ پختهٔ موردنیاز، سه کیلوگرم مرغ خام بیشتر از انبار تحویل گرفته می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-01.txt",
+          "lines": "1-758",
+          "hash": "sha256:fc7d9f14ad8514931d243e838aaa563a319ceaf543eee3bc472a1c0f74e77607",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n001",
+          "quote": "برداشت مرغ خام مرینت‌شده مرغ پیتزا از یخچال امانی زیر نظارت انبار با احتساب سه کیلو اضافه به ازای هر ده کیلو",
+          "hash": "sha256:ecef39b667404cd777c0b03d08c4fe51ab3e43135e0250e95dc875871bb76c1f",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "nesbat_kast",
+            "title": "نسبت کاست پخت",
+            "unit": "percent",
+            "value": 30,
+            "nature": "standard",
+            "per": "وزن مرغ خام تحویلی"
+          },
+          {
+            "key": "kast_dar_har_dah_kilo",
+            "title": "کاست به ازای هر ده کیلوگرم مرغ خام",
+            "unit": "kg",
+            "value": 3,
+            "nature": "standard",
+            "per": "هر ده کیلوگرم مرغ خام"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00012"
+      },
+      "field_status": {
+        "data/outputs/nesbat_kast/value": "inferred"
+      },
+      "id": "F-00064",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "inferred",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "nesbat_sos_morgh_pizza",
+      "title": "نسبت سس مرغ پیتزا",
+      "statement": "به ازای هر کیلوگرم مرغ پختهٔ خردشده هشتاد گرم سس مخصوص مرغ پیتزا زده می‌شود. مقدار سس پس از به‌دست آمدن وزن خالص مرغ پخته محاسبه می‌شود و همراه وزن مرغ پخته در فرم نیمه‌ساخته ثبت می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-01.txt",
+          "lines": "1-758",
+          "hash": "sha256:fc7d9f14ad8514931d243e838aaa563a319ceaf543eee3bc472a1c0f74e77607",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "sos_dar_har_kilo",
+            "title": "سس به ازای هر کیلوگرم مرغ پخته",
+            "unit": "g",
+            "value": 80,
+            "nature": "standard",
+            "per": "هر کیلوگرم مرغ پختهٔ خردشده"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00009"
+      },
+      "id": "F-00065",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "taraz_khoruji_nime_sakhte_morgh_pizza",
+      "title": "تراز خروجی نیمه‌ساختهٔ مرغ پیتزا",
+      "statement": "مجموع وزن مرغ پختهٔ خالص و سس مصرفی باید با وزن خروجی بسته‌بندی‌شدهٔ همان روز برابر باشد. خروجی از شمارش ظرف‌های دو کیلویی و وزن ظرف پایانی به دست می‌آید و هر اختلاف نشانهٔ خطای ثبت یا وزن‌کشی است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-01.txt",
+          "lines": "1-758",
+          "hash": "sha256:fc7d9f14ad8514931d243e838aaa563a319ceaf543eee3bc472a1c0f74e77607",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n043",
+          "quote": "ثبت مقدار نهایی تحویلی به انبار در انتهای فرم نیم‌ساخت بر اساس شمارش ظرف‌های دو کیلویی",
+          "hash": "sha256:ecef39b667404cd777c0b03d08c4fe51ab3e43135e0250e95dc875871bb76c1f",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "feel",
+        "expr": "khoruji_kar = morgh_pokhte + sos",
+        "inputs": [
+          {
+            "key": "morgh_pokhte",
+            "title": "وزن مرغ پختهٔ خالص",
+            "unit": "kg"
+          },
+          {
+            "key": "sos",
+            "title": "مقدار سس مصرفی",
+            "unit": "kg"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "khoruji_kar",
+            "title": "خروجی کار",
+            "unit": "kg",
+            "nature": "observed"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00009"
+      },
+      "id": "F-00066",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "vazn_zarf_khoruji_line_sabzijat",
+      "title": "وزن هر ظرف خروجی لاین سبزیجات",
+      "statement": "هر محصول لاین سبزیجات در ظرف با وزن مشخص تحویل می‌شود: قارچ اسلایس‌شده و مرغ پیتزای پختهٔ سس‌خورده دو کیلوگرمی و فلفل دلمه‌ای اسلایس‌شده یک کیلوگرمی. تنها ظرف پایانی هر محصول می‌تواند وزن کمتر یا بیشتر داشته باشد و وزن دقیق آن روی لیبل نوشته می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-01.txt",
+          "lines": "1-758",
+          "hash": "sha256:fc7d9f14ad8514931d243e838aaa563a319ceaf543eee3bc472a1c0f74e77607",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-008.json",
+          "node": "preparation-008-n008",
+          "quote": "تقسیم قارچ اسلایس‌شده در ظرف‌های پلاستیکی سفید به‌صورت دو کیلویی",
+          "hash": "sha256:6fdff3a970f5a6c840ff0ccf738d8a76c51e36352ca93299d922d34d70b8e502",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "inputs": [
+          {
+            "key": "mahsul",
+            "title": "محصول"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "vazn_har_zarf",
+            "title": "وزن هر ظرف",
+            "unit": "kg",
+            "nature": "standard"
+          }
+        ],
+        "table": {
+          "hit": "unique",
+          "inputs": [
+            "mahsul"
+          ],
+          "outputs": [
+            "vazn_har_zarf"
+          ],
+          "rows": [
+            {
+              "mahsul": "قارچ اسلایس‌شده",
+              "vazn_har_zarf": 2
+            },
+            {
+              "mahsul": "مرغ پیتزای پختهٔ سس‌خورده",
+              "vazn_har_zarf": 2
+            },
+            {
+              "mahsul": "فلفل دلمه‌ای اسلایس‌شده",
+              "vazn_har_zarf": 1
+            }
+          ]
+        }
+      },
+      "home": {
+        "ref": "F-00016"
+      },
+      "id": "F-00067",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "nesbat_sos_va_felfel_rost_bif",
+      "title": "نسبت سویا سس و فلفل سیاه رست‌بیف",
+      "statement": "به ازای هر کیلوگرم رست‌بیف ریش‌ریش‌شده، سی و هشت گرم سویا سس و چهار گرم فلفل سیاه افزوده می‌شود. مسئول لاین گوشت این دو قلم را پیش از بسته‌بندی جداگانه وزن می‌کند و پس از افزودن، محصول تا یک‌دست شدن هم زده می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
+          "lines": "1-315",
+          "hash": "sha256:45b8ecae3d03200501e93d22a48b6cc3ad748bfb64bffffdddaa4c7214120edf",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "soya_sos",
+            "title": "سویا سس رست‌بیف",
+            "unit": "g",
+            "value": 38,
+            "per": "هر کیلوگرم رست‌بیف",
+            "nature": "standard"
+          },
+          {
+            "key": "felfel_siah",
+            "title": "فلفل سیاه رست‌بیف",
+            "unit": "g",
+            "value": 4,
+            "per": "هر کیلوگرم رست‌بیف",
+            "nature": "standard"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00009"
+      },
+      "id": "F-00068",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "moddat_mojaz_khorde_steak",
+      "title": "مهلت نگهداری خرده‌استیک برای چرخ‌کرده",
+      "statement": "خرده‌استیکی که هنگام ریز کردن رول استیک جمع‌آوری و تحویل انبار می‌شود، تنها تا یک هفته برای افزودن به گوشت چرخ‌کرده معتبر است. در روز تولید چرخ‌کرده، انبار خرده‌استیک همان هفته را از شب پیش کنار می‌گذارد و خرده‌استیک هفته‌های پیش‌تر به مایه افزوده نمی‌شود. هیچ‌یک از فرم‌ها و جدول‌های در دست مدت نگهداری این قلم را ثبت نمی‌کند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
+          "lines": "1-315",
+          "hash": "sha256:45b8ecae3d03200501e93d22a48b6cc3ad748bfb64bffffdddaa4c7214120edf",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-019.json",
+          "node": "preparation-019-n009",
+          "quote": "نهایتاً یک هفته باشه",
+          "hash": "sha256:030f8110b3ebfd8a9a2ea4521e2535220491a542b51a4399079576edbd76523d",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "moddat_mojaz",
+            "title": "مهلت مجاز نگهداری",
+            "unit": "day",
+            "value": 7,
+            "nature": "limit"
+          }
+        ]
+      },
+      "home": null,
+      "id": "F-00069",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "zayeat_raste_paknashode",
+      "title": "ضایعات دمار و غضروف راستهٔ پاک‌نشده",
+      "statement": "از هر بیست کیلوگرم راستهٔ پاک‌نشده حدود یک و نیم تا یک کیلو و هشتصد گرم دمار و غضروف جدا می‌شود. این مقدار نه چرخ می‌شود و نه مصرف خوراکی دارد و پس از وزن‌گیری به عنوان ضایعات تحویل انبار می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
+          "lines": "1-315",
+          "hash": "sha256:45b8ecae3d03200501e93d22a48b6cc3ad748bfb64bffffdddaa4c7214120edf",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-020.json",
+          "node": "preparation-020-n004",
+          "quote": "دمار یا غضروف‌هایی که دیگه نه جویده میشه",
+          "hash": "sha256:6755b679a16e891ef948b2bf7441eacba82cd728c1619bdbb7b09be20df8539a",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "vazn_zayeat",
+            "title": "وزن ضایعات راسته",
+            "unit": "kg",
+            "range": {
+              "min": 1.5,
+              "max": 1.8
+            },
+            "per": "هر بیست کیلوگرم راستهٔ پاک‌نشده",
+            "nature": "standard"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00010"
+      },
+      "id": "F-00070",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "tafkik_raste_paknashode",
+      "title": "تفکیک راستهٔ پاک‌نشده به چهار قلم",
+      "statement": "هر راستهٔ پاک‌نشدهٔ ورودی به چهار قلم تفکیک می‌شود: راستهٔ سالم برای استیک رولی، برش‌های فیلادلفیا، خرده راسته برای برگر و ضایعات. سهم هیچ‌یک از پیش تعیین نمی‌شود و به سن و بافت لاشه بستگی دارد؛ از لاشهٔ مسن‌تر خرده راسته و فیلادلفیای بیشتری گرفته می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
+          "lines": "1-315",
+          "hash": "sha256:45b8ecae3d03200501e93d22a48b6cc3ad748bfb64bffffdddaa4c7214120edf",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-020.json",
+          "node": "preparation-020-n006",
+          "quote": "یک راسته آماده شده که برای ما میاد از قصابی ما چهار تا آیتم ازش درست می‌کنیم",
+          "hash": "sha256:6755b679a16e891ef948b2bf7441eacba82cd728c1619bdbb7b09be20df8539a",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "inputs": [
+          {
+            "key": "raste_kham",
+            "title": "راستهٔ پاک‌نشدهٔ ورودی",
+            "unit": "kg"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "steak_roli",
+            "title": "راستهٔ استیک رولی",
+            "unit": "kg",
+            "nature": "observed"
+          },
+          {
+            "key": "filadelfia",
+            "title": "فیلادلفیا",
+            "unit": "kg",
+            "nature": "observed"
+          },
+          {
+            "key": "khorde_raste",
+            "title": "خرده راسته",
+            "unit": "kg",
+            "nature": "observed"
+          },
+          {
+            "key": "zayeat",
+            "title": "ضایعات راسته",
+            "unit": "kg",
+            "nature": "observed"
+          }
+        ],
+        "original_ref": "facts/originals/F-00071.txt"
+      },
+      "home": {
+        "ref": "F-00010"
+      },
+      "id": "F-00071",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "kast_nimpokht_raste",
+      "title": "کاست وزنی راستهٔ نیم‌پخت",
+      "statement": "راستهٔ مرینت‌شده تنها تا کمتر از یک سانتی‌متر از سطح بیرونی در فر برشته می‌شود و کاست وزنی آن ناچیز است؛ از هر پنج کیلوگرم حدود ده گرم کم می‌شود، یعنی نزدیک دو دهم درصد وزن ورودی. پس از سرد شدن و سلفون‌پیچ شدن دوباره وزن‌گیری می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
+          "lines": "1-315",
+          "hash": "sha256:45b8ecae3d03200501e93d22a48b6cc3ad748bfb64bffffdddaa4c7214120edf",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "kast",
+            "title": "کاست وزنی نیم‌پخت",
+            "unit": "percent",
+            "value": 0.2,
+            "nature": "standard"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00010"
+      },
+      "field_status": {
+        "data/outputs/kast/value": "inferred"
+      },
+      "id": "F-00072",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "inferred",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "andaze_baste_mahsulat_raste",
+      "title": "اندازهٔ بستهٔ تحویل محصولات راسته",
+      "statement": "خرده راسته در بسته‌های چهار کیلوگرمی و فیلادلفیای کوبیده و مرینت‌شده در بسته‌های یک کیلوگرمی تحویل انبار می‌شود. باقی‌ماندهٔ کمتر از یک بسته جداگانه وزن و با وزن خودش تحویل می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
+          "lines": "1-315",
+          "hash": "sha256:45b8ecae3d03200501e93d22a48b6cc3ad748bfb64bffffdddaa4c7214120edf",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "inputs": [
+          {
+            "key": "mahsul",
+            "title": "محصول راسته"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "andaze_baste",
+            "title": "اندازهٔ بسته",
+            "unit": "kg",
+            "nature": "standard"
+          }
+        ],
+        "table": {
+          "inputs": [
+            "mahsul"
+          ],
+          "outputs": [
+            "andaze_baste"
+          ],
+          "hit": "unique",
+          "rows": [
+            {
+              "mahsul": "خرده راسته",
+              "andaze_baste": 4
+            },
+            {
+              "mahsul": "فیلادلفیا",
+              "andaze_baste": 1
+            }
+          ]
+        }
+      },
+      "home": {
+        "ref": "F-00010"
+      },
+      "id": "F-00073",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "nesbat_piaz_kham_be_abgerefte",
+      "title": "نسبت پیاز خام به پیاز آب‌گرفتهٔ برگر",
+      "statement": "پیاز مایهٔ برگر پیش از مصرف میکس و در صافی کاملاً آب‌گیری می‌شود؛ برای به دست آمدن چهار کیلوگرم پیاز آب‌گرفته، شش کیلوگرم پیاز خام میکس می‌شود. پیاز باید کاملاً خشک باشد تا آب آن به مایه نرود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
+          "lines": "1-315",
+          "hash": "sha256:45b8ecae3d03200501e93d22a48b6cc3ad748bfb64bffffdddaa4c7214120edf",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "nesbat_tabdil",
+            "title": "نسبت تبدیل پیاز",
+            "unit": "ratio",
+            "value": 1.5,
+            "per": "هر کیلوگرم پیاز آب‌گرفته",
+            "nature": "standard"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00008"
+      },
+      "field_status": {
+        "data/outputs/nesbat_tabdil/value": "inferred"
+      },
+      "id": "F-00074",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "inferred",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "kasri_mojaz_vazn_maye_borger",
+      "title": "کسری مجاز وزن در تراز مایهٔ برگر",
+      "statement": "در پایان تولید برگر همواره صد تا دویست گرم از وزن مایه کم می‌آید. این کسری بابت چربی چسبیده به خمیرگیر، ظرف‌ها و کف سینی است و نه قابل استفاده است و نه قابل جداسازی؛ اختلاف بیش از این محدوده باید همان روز پیگیری شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
+          "lines": "1-315",
+          "hash": "sha256:45b8ecae3d03200501e93d22a48b6cc3ad748bfb64bffffdddaa4c7214120edf",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "kasri_mojaz",
+            "title": "کسری مجاز وزن مایه",
+            "unit": "g",
+            "range": {
+              "min": 100,
+              "max": 200
+            },
+            "per": "هر نوبت تولید برگر",
+            "nature": "limit"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00008"
+      },
+      "id": "F-00075",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "test_borger_baqimande",
+      "title": "تست برگر از باقی‌ماندهٔ مایه",
+      "statement": "باقی‌ماندهٔ مایهٔ برگر که برای یک عدد صد و پنجاه گرمی یا یک مینی برگر شصت گرمی کافی نیست، به عنوان تست کنار گذاشته و به آشپزخانه تحویل می‌شود. وزن این باقی‌مانده در تراز پایان تولید به حساب می‌آید.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
+          "lines": "1-315",
+          "hash": "sha256:45b8ecae3d03200501e93d22a48b6cc3ad748bfb64bffffdddaa4c7214120edf",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "inputs": [
+          {
+            "key": "baqimande_maye",
+            "title": "باقی‌ماندهٔ مایهٔ برگر",
+            "unit": "g"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "vazn_test",
+            "title": "وزن تست برگر",
+            "unit": "g",
+            "nature": "observed"
+          }
+        ],
+        "original_ref": "facts/originals/F-00076.txt"
+      },
+      "home": {
+        "ref": "F-00008"
+      },
+      "id": "F-00076",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "andaze_label_baste_aqlam",
+      "title": "تعداد استاندارد هر بستهٔ لیبل‌خوردهٔ فیله و بیکن",
+      "statement": "لیبل چاپ‌شدهٔ هر قلم نیمه‌ساخته تعداد ثابتی دارد: فیله استریپس و فیله اسپایسی شصت‌عددی و بیکن لایه‌ای سی‌ورقی. اگر آشپزخانه یا شعبه کمتر از این تعداد بخواهد، عدد چاپی خط می‌خورد و تعداد واقعی روی همان لیبل نوشته می‌شود و نام و وزن و تاریخ دست نمی‌خورد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02.txt",
+          "lines": "1-331",
+          "hash": "sha256:92fc16927652439d8a206fe561e4c9671e7c9e588881e463006d50742be1cd78",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "inputs": [
+          {
+            "key": "qalam",
+            "title": "قلم نیمه‌ساخته"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "tedad_label",
+            "title": "تعداد روی لیبل"
+          },
+          {
+            "key": "vahed_baste",
+            "title": "واحد بسته"
+          }
+        ],
+        "table": {
+          "inputs": [
+            "qalam"
+          ],
+          "outputs": [
+            "tedad_label",
+            "vahed_baste"
+          ],
+          "hit": "unique",
+          "rows": [
+            {
+              "qalam": "فیله استریپس",
+              "tedad_label": 60,
+              "vahed_baste": "عدد"
+            },
+            {
+              "qalam": "فیله اسپایسی",
+              "tedad_label": 60,
+              "vahed_baste": "عدد"
+            },
+            {
+              "qalam": "بیکن لایه‌ای",
+              "tedad_label": 30,
+              "vahed_baste": "ورق"
+            }
+          ]
+        }
+      },
+      "home": {
+        "ref": "F-00019"
+      },
+      "id": "F-00077",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "vazn_baste_khamir",
+      "title": "وزن بستهٔ خمیر تحویلی",
+      "statement": "خمیر آمادهٔ هر شعبه در بسته‌های هفت کیلوگرمی پلاستیکی بسته‌بندی و لیبل‌گذاری می‌شود. بستهٔ آخر هر نوبت تا هشت کیلوگرم هم پذیرفته است، ولی وزن بیشتر باعث ور آمدن خمیر و بیرون‌زدن آن از پلاستیک می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02.txt",
+          "lines": "1-331",
+          "hash": "sha256:92fc16927652439d8a206fe561e4c9671e7c9e588881e463006d50742be1cd78",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-016.json",
+          "node": "preparation-016-n008",
+          "quote": "بسته‌بندی خمیر آماده در بسته‌های هفت کیلویی پلاستیکی",
+          "hash": "sha256:8eebf3543434b01f567eab50102cf40fc6009b1bfc64785aad99afde24ed8005",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "vazn_baste",
+            "title": "وزن هر بستهٔ خمیر",
+            "unit": "kg",
+            "value": 7,
+            "range": {
+              "min": 7,
+              "max": 8
+            },
+            "nature": "standard",
+            "per": "هر بستهٔ خمیر"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00021"
+      },
+      "id": "F-00078",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "tarkib_sos_alfredo_pitza",
+      "title": "ترکیب سس آلفردو پیتزا",
+      "statement": "هر نوبت سس آلفردو پیتزا از هشت خامه، سیصد و بیست گرم سیر، سیصد و بیست گرم روغن، نود و هشت گرم فلفل و هشت کیلوگرم سس مایونز ساخته می‌شود؛ سیر و روغن ابتدا با هم میکس و به سیرروغن تبدیل می‌شوند. این سس بر خلاف بقیهٔ سس‌ها در انبار نگهداری نمی‌شود و بالا در آماده‌سازی می‌ماند، و هیچ جدول ثبت‌شدهٔ آماده‌سازی مقدار آن را ثبت نمی‌کند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02.txt",
+          "lines": "1-331",
+          "hash": "sha256:92fc16927652439d8a206fe561e4c9671e7c9e588881e463006d50742be1cd78",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-022.json",
+          "node": "preparation-022-n012",
+          "quote": "میکس سیر و روغن و تهیه سیرروغن برای سس آلفردو پیتزا",
+          "hash": "sha256:4ed835ca88f143d26d31d022315ec7bfd9cbf7e5c2893381fedd31a51c5feee3",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "tedad_khame",
+            "title": "خامه",
+            "unit": "pcs",
+            "value": 8,
+            "nature": "standard",
+            "per": "هر نوبت تهیهٔ سس آلفردو پیتزا"
+          },
+          {
+            "key": "vazn_sir",
+            "title": "سیر",
+            "unit": "g",
+            "value": 320,
+            "nature": "standard",
+            "per": "هر نوبت تهیهٔ سس آلفردو پیتزا"
+          },
+          {
+            "key": "vazn_roghan",
+            "title": "روغن",
+            "unit": "g",
+            "value": 320,
+            "nature": "standard",
+            "per": "هر نوبت تهیهٔ سس آلفردو پیتزا"
+          },
+          {
+            "key": "vazn_felfel",
+            "title": "فلفل",
+            "unit": "g",
+            "value": 98,
+            "nature": "standard",
+            "per": "هر نوبت تهیهٔ سس آلفردو پیتزا"
+          },
+          {
+            "key": "vazn_sos_mayonez",
+            "title": "سس مایونز",
+            "unit": "kg",
+            "value": 8,
+            "nature": "standard",
+            "per": "هر نوبت تهیهٔ سس آلفردو پیتزا"
+          }
+        ]
+      },
+      "home": null,
+      "id": "F-00079",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "noqte_sefaresh_mavad_sos",
+      "title": "نقطهٔ سفارش دوبارهٔ مواد اولیهٔ سس",
+      "statement": "هر سس تا باز شدن آخرین دبه‌اش موجودی کافی در نظر گرفته می‌شود؛ با باز شدن آخرین دبه، مسئول سس اطلاع می‌دهد و مادهٔ اولیهٔ آن را در چک‌لیست انبار تیک می‌زند تا روز بعد تهیه و سس زده شود. کنترل روزانهٔ خالی بودن پمپ‌های سس آشپزخانه هم بر عهدهٔ همان مسئول است و هیچ جدول ثبت‌شدهٔ آماده‌سازی این کنترل را ثبت نمی‌کند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02.txt",
+          "lines": "1-331",
+          "hash": "sha256:92fc16927652439d8a206fe561e4c9671e7c9e588881e463006d50742be1cd78",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "inputs": [
+          {
+            "key": "tedad_dabe_baqimande",
+            "title": "شمار دبه‌های باقی‌مانده",
+            "unit": "pcs"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "sefaresh_madde_avalie",
+            "title": "سفارش مادهٔ اولیهٔ سس"
+          }
+        ],
+        "original_ref": "facts/originals/F-00080.txt"
+      },
+      "home": null,
+      "id": "F-00080",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "zaman_khoruj_mavad_avalie_sos",
+      "title": "زمان ثبت خروج مواد اولیهٔ سس از انبار",
+      "statement": "خروج مواد اولیهٔ هر سس در همان زمان تولید سس در انبار ثبت می‌شود و پس از آن برای پر کردن پمپ‌ها آمار تازه‌ای ثبت نمی‌شود. سس ساخته‌شده در انبار می‌ماند چون دمای انبار ثابت‌تر از یخچال‌های آماده‌سازی است، و هیچ جدول ثبت‌شدهٔ آماده‌سازی برداشت روزانهٔ سس را ثبت نمی‌کند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02.txt",
+          "lines": "1-331",
+          "hash": "sha256:92fc16927652439d8a206fe561e4c9671e7c9e588881e463006d50742be1cd78",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "inputs": [
+          {
+            "key": "zaman_tolid_sos",
+            "title": "زمان تولید سس"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "sabt_khoruj_anbar",
+            "title": "ثبت خروج مواد اولیه"
+          }
+        ],
+        "original_ref": "facts/originals/F-00081.txt"
+      },
+      "home": null,
+      "id": "F-00081",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "nesbat_ard_be_ab_khamir_pitza",
+      "title": "نسبت آرد به آب در خمیر پیتزا",
+      "statement": "در خمیر پیتزا وزن آرد دو برابر وزن آب گرفته می‌شود؛ برای نمونه هشت کیلوگرم آرد با چهار کیلوگرم آب. در خمیر سوخاری ترتیب برعکس است و آرد به‌تدریج همراه ادویه به آب افزوده می‌شود تا غلظت دلخواه به دست آید.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02.txt",
+          "lines": "1-331",
+          "hash": "sha256:92fc16927652439d8a206fe561e4c9671e7c9e588881e463006d50742be1cd78",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-016.json",
+          "node": "preparation-016-n004",
+          "quote": "محاسبه مقدار آرد و سایر مواد لازم طبق وزن درخواستی و مقادیر نوشته‌شده",
+          "hash": "sha256:8eebf3543434b01f567eab50102cf40fc6009b1bfc64785aad99afde24ed8005",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "nesbat_ard_be_ab",
+            "title": "نسبت وزن آرد به آب",
+            "unit": "ratio",
+            "value": 2,
+            "nature": "standard",
+            "per": "هر نوبت خمیر پیتزا"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00021"
+      },
+      "id": "F-00082",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "tarkib_pors_salad_chiza",
+      "title": "ترکیب هر پرس سالاد چیزا",
+      "statement": "هر پرس سالاد چیزا با دو رول مرغ چیزا و یک رول پنیر چیزا سرو می‌شود. هر ظرف تحویلی به انبار دوازده رول مرغ و شش رول پنیر دارد که معادل شش پرس است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02.txt",
+          "lines": "1-331",
+          "hash": "sha256:92fc16927652439d8a206fe561e4c9671e7c9e588881e463006d50742be1cd78",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "rol_morgh_chiza",
+            "title": "رول مرغ چیزا",
+            "unit": "pcs",
+            "value": 2,
+            "nature": "standard",
+            "per": "هر پرس سالاد چیزا"
+          },
+          {
+            "key": "rol_panir_chiza",
+            "title": "رول پنیر چیزا",
+            "unit": "pcs",
+            "value": 1,
+            "nature": "standard",
+            "per": "هر پرس سالاد چیزا"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00019",
+        "field": "tedad_chiza"
+      },
+      "id": "F-00083",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "vazn_tak_done_sine_chiza",
+      "title": "وزن تک‌دونهٔ سینه مرغ چیزا",
+      "statement": "هر رول چیزا از یک تک‌دونهٔ سینه مرغ هشتاد گرمی ساخته می‌شود که کوبیده و به شکل مربع در می‌آید و پس از گذاشتن پنیر رول می‌شود. انبار این تک‌دونه‌ها را در ظرف‌های چهل‌وهشت‌عددی از شب قبل برای یخ‌گشایی تحویل می‌دهد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02.txt",
+          "lines": "1-331",
+          "hash": "sha256:92fc16927652439d8a206fe561e4c9671e7c9e588881e463006d50742be1cd78",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-014.json",
+          "node": "preparation-014-n002",
+          "quote": "بیرون اوردن ظرف‌های ۴۸ عددی مرغ چیزا از فریزر انبار در شب قبل برای یخ‌گشایی",
+          "hash": "sha256:26afada1ed97ea0188db3e3b56579607741df095c814b1892cd10545bf1e3ced",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "vazn_tak_done",
+            "title": "وزن هر تک‌دونهٔ سینه",
+            "unit": "g",
+            "value": 80,
+            "nature": "standard",
+            "per": "هر رول چیزا"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00019",
+        "field": "vazn_chiza"
+      },
+      "id": "F-00084",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "tarkib_va_vazn_rol_panir_chiza",
+      "title": "ترکیب و وزن رول پنیر چیزا",
+      "statement": "مخلوط پنیر چیزا از وزن برابر پنیر لبنه و پنیر پیتزا ساخته می‌شود؛ پنیر پیتزا پیش از میکس کمی به دمای محیط می‌رسد تا از حالت منجمد بیرون بیاید و آب نیندازد. مخلوط روی ترازو به چونه‌های سی‌وچهار گرمی تقسیم و روی آرد رول می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02.txt",
+          "lines": "1-331",
+          "hash": "sha256:92fc16927652439d8a206fe561e4c9671e7c9e588881e463006d50742be1cd78",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-014.json",
+          "node": "preparation-014-n023",
+          "quote": "چونه کردن مخلوط پنیر به وزن ۳۴ گرم روی ترازو",
+          "hash": "sha256:26afada1ed97ea0188db3e3b56579607741df095c814b1892cd10545bf1e3ced",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "vazn_panir_labne",
+            "title": "پنیر لبنه",
+            "unit": "kg",
+            "value": 1,
+            "nature": "standard",
+            "per": "هر نوبت مخلوط پنیر چیزا"
+          },
+          {
+            "key": "vazn_panir_pitza",
+            "title": "پنیر پیتزا",
+            "unit": "kg",
+            "value": 1,
+            "nature": "standard",
+            "per": "هر نوبت مخلوط پنیر چیزا"
+          },
+          {
+            "key": "vazn_har_rol",
+            "title": "وزن هر رول پنیر",
+            "unit": "g",
+            "value": 34,
+            "nature": "standard",
+            "per": "هر رول پنیر چیزا"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00019",
+        "field": "tedad_chiza"
+      },
+      "id": "F-00085",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "zaman_enjemad_chiza_pish_az_panko",
+      "title": "زمان انجماد چیزا پیش از پانکو",
+      "statement": "رول‌های چیزا پس از چیدن در سینی و سلفون‌کشی حدود بیست‌وچهار ساعت در فریزر می‌مانند تا کامل منجمد شوند. پانکو تنها روی رول منجمد زده می‌شود و ترتیب پوشش آرد، سپس خمیر سوخاری و در پایان پودر پانکو است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02.txt",
+          "lines": "1-331",
+          "hash": "sha256:92fc16927652439d8a206fe561e4c9671e7c9e588881e463006d50742be1cd78",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "zaman_enjemad",
+            "title": "زمان انجماد",
+            "unit": "hour",
+            "value": 24,
+            "nature": "standard",
+            "per": "هر سینی چیزا"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00019",
+        "field": "tedad_chiza"
+      },
+      "id": "F-00086",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "kenar_chiza_be_morgh_pitza",
+      "title": "تبدیل کنار چیزا به مرغ پیتزا",
+      "statement": "سر و گوشهٔ بریده‌شدهٔ رول‌های چیزا ضایعات شمرده نمی‌شود؛ روزانه حدود پانصد تا ششصد گرم از آن جدا و وزن و لیبل می‌شود و در فریزر تحویل انبار می‌شود. انبار این مقدار را روز بعد به عنوان مرغ پیتزا به آماده‌سازی برمی‌گرداند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02.txt",
+          "lines": "1-331",
+          "hash": "sha256:92fc16927652439d8a206fe561e4c9671e7c9e588881e463006d50742be1cd78",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-014.json",
+          "node": "preparation-014-n019",
+          "quote": "اطلاع دادن مقدار کنار چیزا به انبار بدون فرم مشخص",
+          "hash": "sha256:26afada1ed97ea0188db3e3b56579607741df095c814b1892cd10545bf1e3ced",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "inputs": [
+          {
+            "key": "vazn_kenar_chiza",
+            "title": "وزن کنار چیزا",
+            "unit": "kg"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "maqsad_kenar_chiza",
+            "title": "مقصد کنار چیزا"
+          }
+        ],
+        "original_ref": "facts/originals/F-00087.txt"
+      },
+      "home": {
+        "ref": "F-00024"
+      },
+      "id": "F-00087",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "tarkib_dorchin_dah_pors",
+      "title": "ترکیب دورچین ده‌پرسی چیکن استیک",
+      "statement": "دورچین سبزیجات کنار چیکن استیک برای هر بستهٔ ده‌پرسی از پنج کدو و پنج هویج ریزشده ساخته می‌شود و پس از بلانچ در آب یخ، وکیوم و با لیبل ده‌پرسی تحویل می‌شود. مبنای تحویل تعداد است نه وزن، چون اندازهٔ سبزی ثابت نیست و برای سبزی کوچک‌تر برش‌ها بزرگ‌تر زده می‌شود. شمار فلفل دلمهٔ رنگی و بروکلی به ازای هر بسته در این منبع روشن نیست و هیچ جدول ثبت‌شدهٔ آماده‌سازی این قلم را ندارد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-02.txt",
+          "lines": "1-331",
+          "hash": "sha256:92fc16927652439d8a206fe561e4c9671e7c9e588881e463006d50742be1cd78",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-015.json",
+          "node": "preparation-015-n006",
+          "quote": "ریز کردن کدو، هویج، فلفل دلمه و بروکلی طبق تعداد سفارش",
+          "hash": "sha256:1e9d5afcbf7cfbe4bd14e18963ca6ce12dc8b48c865e4b12a35b3330f14ca3d8",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "tedad_kadu",
+            "title": "کدو",
+            "unit": "pcs",
+            "value": 5,
+            "nature": "standard",
+            "per": "هر بستهٔ ده‌پرسی دورچین"
+          },
+          {
+            "key": "tedad_havij",
+            "title": "هویج",
+            "unit": "pcs",
+            "value": 5,
+            "nature": "standard",
+            "per": "هر بستهٔ ده‌پرسی دورچین"
+          }
+        ]
+      },
+      "home": null,
+      "id": "F-00088",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "tafkik_sine_morgh_be_mahsulat",
+      "title": "تفکیک سینهٔ مرغ خام به محصولات",
+      "statement": "سینهٔ مرغ خام پس از پاک‌سازی بر پایهٔ اندازه و بافت هر تکه به لقمه، گریل، مرغ پیتزا و چیزا و نیز ضایعات تفکیک می‌شود. کناره‌های بریده‌شده و تکه‌های پاره همگی به مرغ پیتزا تبدیل می‌شود و هیچ بخشی از گوشت مرغ دور ریخته نمی‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-04.txt",
+          "lines": "1-473",
+          "hash": "sha256:cd6d82e4fab1293439a9807b5648e7c47e7ba388a221ba5cf4235ad4e1296c01",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n003",
+          "quote": "این سینه مرغ چون بزرگه از این لقمه بهتری در میاد",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "inputs": [
+          {
+            "key": "vizhegi_tekke",
+            "title": "ویژگی تکهٔ مرغ"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "mahsul",
+            "title": "محصول"
+          }
+        ],
+        "table": {
+          "inputs": [
+            "vizhegi_tekke"
+          ],
+          "outputs": [
+            "mahsul"
+          ],
+          "hit": "first",
+          "rows": [
+            {
+              "vizhegi_tekke": "چربی، غضروف و استخوان کنار سینه",
+              "mahsul": "ضایعات"
+            },
+            {
+              "vizhegi_tekke": "سینهٔ بزرگ و یکدست با ضخامت مناسب",
+              "mahsul": "گریل"
+            },
+            {
+              "vizhegi_tekke": "سینهٔ درشت پس از جدا کردن کناره‌ها، بریده به شکل مکعب",
+              "mahsul": "لقمه"
+            },
+            {
+              "vizhegi_tekke": "تکهٔ سالم حدود هشتاد گرمی",
+              "mahsul": "چیزا"
+            },
+            {
+              "vizhegi_tekke": "کناره‌ها، تکه‌های پاره و خرده‌های کوچک",
+              "mahsul": "مرغ پیتزا"
+            }
+          ]
+        }
+      },
+      "home": {
+        "ref": "F-00012"
+      },
+      "id": "F-00089",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "tahvil_kolle_khoruji_morgh_be_anbar",
+      "title": "تحویل کامل خروجی مرغ به انبار",
+      "statement": "هر چه از مرغ خام به دست می‌آید — محصولات، کنار فیله و ضایعات — به انبار تحویل می‌شود و تنها خونابه و پلاستیک دور ریخته می‌شود. وزن‌گیری و جمع‌زدن همهٔ اقلام باید پیش از رفتن پرسنل و پیش از آنکه انبار وارد وزن‌گیری شود انجام شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-04.txt",
+          "lines": "1-473",
+          "hash": "sha256:cd6d82e4fab1293439a9807b5648e7c47e7ba388a221ba5cf4235ad4e1296c01",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "inputs": [
+          {
+            "key": "vazn_aqlam_khoruji",
+            "title": "وزن اقلام خروجی لاین"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "taklif_tahvil",
+            "title": "تکلیف تحویل به انبار"
+          }
+        ],
+        "original_ref": "facts/originals/F-00090.txt"
+      },
+      "home": {
+        "ref": "F-00019"
+      },
+      "id": "F-00090",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "andaze_har_part_tahvil_morgh",
+      "title": "اندازهٔ هر پارت تحویل مرغ به لاین",
+      "statement": "مرغ خام روز یکجا به لاین داده نمی‌شود و در سه تا چهار پارت ده تا بیست کیلوگرمی بالا می‌آید. با نزدیک شدن پاک‌سازی هر پارت به پایان، لاین پارت بعدی را از انبار درخواست می‌کند و هر پارت همان‌جا تفکیک و آمادهٔ تحویل می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-04.txt",
+          "lines": "1-473",
+          "hash": "sha256:cd6d82e4fab1293439a9807b5648e7c47e7ba388a221ba5cf4235ad4e1296c01",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n023",
+          "quote": "تحویل گرفتن، وزن‌گیری و شمارش مرغ خام در چند پارت",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "vazn_har_part",
+            "title": "وزن هر پارت",
+            "unit": "kg",
+            "range": {
+              "min": 10,
+              "max": 20
+            },
+            "nature": "standard",
+            "per": "هر پارت تحویل مرغ خام"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00023"
+      },
+      "id": "F-00091",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "mabnaye_depo_mahsulat_morgh_anbar",
+      "title": "مبنای دپوی محصولات مرغ در انبار",
+      "statement": "انبار مقدار تولید روزانهٔ هر محصول مرغ را چنان تعیین می‌کند که چهار تا پنج روز موجودی جلوتر بماند و موجودی روزهای پرفروش پایان هفته صفر نشود. برای تعطیلات نوروز که تا هفت روز بار نمی‌رسد، مبنا دو برابر مصرف روزانه گرفته می‌شود. این مبنا نزد انبار است و در هیچ‌یک از جدول‌های آماده‌سازی ثبت نمی‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-04.txt",
+          "lines": "1-473",
+          "hash": "sha256:cd6d82e4fab1293439a9807b5648e7c47e7ba388a221ba5cf4235ad4e1296c01",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n001",
+          "quote": "تعیین نوع و مقدار تولید روزانه مرغ توسط انبار",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "inputs": [
+          {
+            "key": "masraf_ruzane",
+            "title": "مصرف روزانهٔ هر محصول"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "meqdar_depo",
+            "title": "مقدار دپو",
+            "unit": "day"
+          }
+        ],
+        "original_ref": "facts/originals/F-00092.txt"
+      },
+      "home": null,
+      "id": "F-00092",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "vazn_baste_pene_pokhte",
+      "title": "وزن بستهٔ پنهٔ پخته",
+      "statement": "پنه پس از پخت در بسته‌های یک کیلو و دویست گرمی بسته‌بندی، وزن‌گیری و برچسب‌گذاری می‌شود و شمار بسته‌ها بر پایهٔ درخواست همان روز تعیین می‌شود. وزن این بسته در هیچ‌یک از فرم‌های تبدیل آماده‌سازی ثبت نمی‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-04.txt",
+          "lines": "1-473",
+          "hash": "sha256:cd6d82e4fab1293439a9807b5648e7c47e7ba388a221ba5cf4235ad4e1296c01",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-011.json",
+          "node": "preparation-011-n005",
+          "quote": "پخت پنه خام در آب جوش به تعداد بسته‌های درخواست‌شده",
+          "hash": "sha256:632dd0eec1cfa9e2bdd455ab4c718a3008d7d886c911de0cce09a443abad7956",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "vazn_baste_pene",
+            "title": "وزن هر بستهٔ پنه",
+            "unit": "kg",
+            "value": 1.2,
+            "nature": "standard",
+            "per": "هر بستهٔ پنهٔ پخته"
+          }
+        ]
+      },
+      "home": null,
+      "id": "F-00093",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "mabnaye_shoru_pokht_supe_shir",
+      "title": "مبنای شروع پخت سوپ شیر",
+      "statement": "سوپ شیر تنها وقتی پخته می‌شود که موجودی آن در ظرف نگهداری یخچال آماده‌سازی از حد تعیین‌شده پایین‌تر برود؛ تا بالاتر از آن حد باشد پخت تازه انجام نمی‌شود. خود آن حد در هیچ منبعی عدد نخورده است و چون اقلام سوپ خشک است، سفارش مصرف‌نشده تا روز بعد می‌ماند. این مبنا روی هیچ‌یک از جدول‌های آماده‌سازی ثبت نمی‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-04.txt",
+          "lines": "1-473",
+          "hash": "sha256:cd6d82e4fab1293439a9807b5648e7c47e7ba388a221ba5cf4235ad4e1296c01",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "inputs": [
+          {
+            "key": "mojudi_sup",
+            "title": "موجودی سوپ شیر در یخچال"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "taklif_pokht_sup",
+            "title": "تکلیف پخت سوپ شیر"
+          }
+        ],
+        "original_ref": "facts/originals/F-00094.txt"
+      },
+      "home": null,
+      "id": "F-00094",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "tayide_ezafe_kari_pish_az_pardakht",
+      "title": "تایید اضافه‌کاری پیش از پرداخت",
+      "statement": "اضافه‌کاری هر نفر باید همان روز با تاریخ، زمان و شرح کار در جدول مرخصی و اضافه‌کاری ثبت شود و حسابداری تنها پس از تایید مدیر مجموعه آن را پرداخت می‌کند. یادداشت کاغذی اضافه‌کاری پذیرفته نیست، زیرا مدیر آن را نمی‌بیند و بدون تایید او پرداختی انجام نمی‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-04.txt",
+          "lines": "1-473",
+          "hash": "sha256:cd6d82e4fab1293439a9807b5648e7c47e7ba388a221ba5cf4235ad4e1296c01",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "inputs": [
+          {
+            "key": "zaman_ezafe_kari",
+            "title": "زمان اضافه‌کاری ثبت‌شده"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "taklif_pardakht",
+            "title": "تکلیف پرداخت اضافه‌کاری"
+          }
+        ],
+        "original_ref": "facts/originals/F-00095.txt"
+      },
+      "home": {
+        "ref": "F-00018"
+      },
+      "id": "F-00095",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "vazn_khunabe_va_plastik_sine",
+      "title": "وزن خونابه و پلاستیک محمولهٔ مرغ",
+      "statement": "وزن خونابه و پلاستیک هر محمولهٔ سینهٔ مرغ از تفاضل وزن مرغ خام تحویل‌گرفته‌شده با مجموع وزن محصولات تولیدشده و ضایعات به دست می‌آید و در پایان فرم تبدیل نوشته می‌شود. اختلاف بازمانده باید پیش از پایان شیفت و پیش از وزن‌گیری انبار به کمتر از پنجاه تا صد گرم برسد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-04.txt",
+          "lines": "1-473",
+          "hash": "sha256:cd6d82e4fab1293439a9807b5648e7c47e7ba388a221ba5cf4235ad4e1296c01",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "feel",
+        "expr": "khunabe_plastik = vazn_sine_vorudi - vazn_loqme - vazn_pitza - vazn_geril - vazn_chiza - vazn_zayeat",
+        "inputs": [
+          {
+            "key": "vazn_sine_vorudi",
+            "title": "وزن سینهٔ خام ورودی",
+            "unit": "kg"
+          },
+          {
+            "key": "vazn_loqme",
+            "title": "وزن لقمه",
+            "unit": "kg"
+          },
+          {
+            "key": "vazn_pitza",
+            "title": "وزن مرغ پیتزا",
+            "unit": "kg"
+          },
+          {
+            "key": "vazn_geril",
+            "title": "وزن گریل",
+            "unit": "kg"
+          },
+          {
+            "key": "vazn_chiza",
+            "title": "وزن چیزا",
+            "unit": "kg"
+          },
+          {
+            "key": "vazn_zayeat",
+            "title": "وزن ضایعات",
+            "unit": "kg"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "khunabe_plastik",
+            "title": "خونابه و پلاستیک",
+            "unit": "kg",
+            "nature": "observed"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00012"
+      },
+      "id": "F-00096",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "norm_khunabe_va_plastik_morgh",
+      "title": "مقدار عرفی خونابه و پلاستیک مرغ",
+      "statement": "وزن عرفی خونابه و پلاستیک هر محمولهٔ مرغ خام سیصد تا چهارصد گرم است و در محموله‌های پرآب گاهی تا دو کیلوگرم هم می‌رسد. این مقدار برخلاف ضایعات به انبار تحویل نمی‌شود و دور ریخته می‌شود. مبنای وزن این عدد یکسان نیست: در یک جا هر هشتاد کیلوگرم و در جای دیگر، در حد پذیرش هنگام تحویل، هر پنجاه کیلوگرم مرغ خام است و تا روشن شدن مبنا هر دو رقم در کنار هم نگه داشته می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-04.txt",
+          "lines": "1-473",
+          "hash": "sha256:cd6d82e4fab1293439a9807b5648e7c47e7ba388a221ba5cf4235ad4e1296c01",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "vazn_khunabe_plastik",
+            "title": "خونابه و پلاستیک",
+            "unit": "g",
+            "range": {
+              "min": 300,
+              "max": 400
+            },
+            "nature": "standard",
+            "per": "هر هشتاد کیلوگرم مرغ خام"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00012"
+      },
+      "id": "F-00097",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "mabnaye_baste_bandi_mahsulat_morgh",
+      "title": "مبنا و اندازهٔ بستهٔ محصولات مرغ",
+      "statement": "هر محصول لاین مرغ با مبنای ثابتی بسته‌بندی می‌شود: لقمه و فیله و چیزا بر پایهٔ تعداد و گریل و مرغ پیتزا بر پایهٔ وزن. اندازهٔ هر بسته برای همهٔ روزها یکسان است و همین اندازه روی برچسب بسته نوشته می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-04.txt",
+          "lines": "1-473",
+          "hash": "sha256:cd6d82e4fab1293439a9807b5648e7c47e7ba388a221ba5cf4235ad4e1296c01",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "inputs": [
+          {
+            "key": "mahsul",
+            "title": "محصول"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "mabnaye_baste",
+            "title": "مبنای بسته‌بندی"
+          },
+          {
+            "key": "andaze_baste",
+            "title": "اندازهٔ بسته"
+          }
+        ],
+        "table": {
+          "inputs": [
+            "mahsul"
+          ],
+          "outputs": [
+            "mabnaye_baste",
+            "andaze_baste"
+          ],
+          "hit": "unique",
+          "rows": [
+            {
+              "mahsul": "لقمهٔ سینه",
+              "mabnaye_baste": "تعداد",
+              "andaze_baste": "۲۰۰ عدد"
+            },
+            {
+              "mahsul": "فیلهٔ سوخاری",
+              "mabnaye_baste": "تعداد",
+              "andaze_baste": "۶۰ عدد"
+            },
+            {
+              "mahsul": "چیزا",
+              "mabnaye_baste": "تعداد",
+              "andaze_baste": "۴۸ عدد"
+            },
+            {
+              "mahsul": "گریل",
+              "mabnaye_baste": "وزن",
+              "andaze_baste": "۴ کیلوگرم"
+            },
+            {
+              "mahsul": "مرغ پیتزا",
+              "mabnaye_baste": "وزن",
+              "andaze_baste": "۴ کیلوگرم"
+            }
+          ]
+        }
+      },
+      "home": {
+        "ref": "F-00019"
+      },
+      "id": "F-00098",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "vazn_baste_devist_adadi_loqme",
+      "title": "وزن مجاز بستهٔ دویست‌عددی لقمه",
+      "statement": "وزن هر بستهٔ دویست‌عددی لقمهٔ مرغ باید دو کیلوگرم و صد و سی گرم تا دو کیلوگرم و صد و پنجاه گرم باشد و تا پنجاه گرم کم و زیاد پذیرفته است. بسته‌ای که دویست گرم یا بیشتر سنگین‌تر درآید باز و دوباره شمرده می‌شود و عددهای اضافه از آن برداشته می‌شود، چون ناهم‌خوانی تعداد و وزن تا ورودی سالن‌ها ادامه پیدا می‌کند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-04.txt",
+          "lines": "1-473",
+          "hash": "sha256:cd6d82e4fab1293439a9807b5648e7c47e7ba388a221ba5cf4235ad4e1296c01",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "vazn_baste_loqme",
+            "title": "وزن بستهٔ لقمه",
+            "unit": "kg",
+            "range": {
+              "min": 2.13,
+              "max": 2.15
+            },
+            "nature": "limit",
+            "per": "هر بستهٔ دویست‌عددی لقمه"
+          },
+          {
+            "key": "enheraf_mojaz_vazn",
+            "title": "انحراف مجاز وزن بسته",
+            "unit": "g",
+            "value": 50,
+            "nature": "limit",
+            "per": "هر بستهٔ دویست‌عددی لقمه"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00019",
+        "field": "vazn_loqme_sine"
+      },
+      "id": "F-00099",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "hadde_vazn_file_sukhari",
+      "title": "حد وزن فیله برای سوخاری",
+      "statement": "فیله‌ای که برای سوخاری بسته‌بندی می‌شود باید پنجاه تا هشتاد گرم باشد و فیلهٔ سبک‌تر از پنجاه گرم به مرغ پیتزا تبدیل می‌شود. مسئول لاین وزن را با تجربه تشخیص می‌دهد و در صورت تردید با ترازو کنترل می‌کند؛ در هر بسته فیله‌های درشت و کوچک با هم تقسیم می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-04.txt",
+          "lines": "1-473",
+          "hash": "sha256:cd6d82e4fab1293439a9807b5648e7c47e7ba388a221ba5cf4235ad4e1296c01",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "vazn_har_file",
+            "title": "وزن هر عدد فیله",
+            "unit": "g",
+            "range": {
+              "min": 50,
+              "max": 80
+            },
+            "nature": "limit",
+            "per": "هر عدد فیلهٔ سوخاری"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00014"
+      },
+      "id": "F-00100",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "vazn_har_adad_chiza",
+      "title": "وزن هر عدد چیزا",
+      "statement": "هر عدد چیزا باید نزدیک هشتاد گرم بریده شود و چون ترازو و دستگاه برش اختصاصی در دسترس نیست، برش با دست انجام می‌شود. سنگین‌تر درآمدن بستهٔ چیزا تا حدود پانصد گرم مشکلی ندارد، زیرا اضافهٔ آن در مرحلهٔ کوبیدن گرفته و به مرغ پیتزا تبدیل می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-04.txt",
+          "lines": "1-473",
+          "hash": "sha256:cd6d82e4fab1293439a9807b5648e7c47e7ba388a221ba5cf4235ad4e1296c01",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "vazn_har_chiza",
+            "title": "وزن هر عدد چیزا",
+            "unit": "g",
+            "value": 80,
+            "nature": "standard",
+            "per": "هر عدد چیزا"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00012"
+      },
+      "id": "F-00101",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "zayeat_sine_morgh_dar_panjah_kilo",
+      "title": "مقدار ضایعات سینهٔ مرغ",
+      "statement": "ضایعات سینهٔ مرغ — چربی، غضروف و استخوان کنار سینه — در هر پنجاه کیلوگرم مرغ خام یک و نیم تا سه کیلوگرم است. این ضایعات همان ابتدای کار و پیش از برش جدا می‌شود، هیچ بخشی از آن در کار مصرف نمی‌شود و وزن آن جدا از محصولات به انبار تحویل می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-04.txt",
+          "lines": "1-473",
+          "hash": "sha256:cd6d82e4fab1293439a9807b5648e7c47e7ba388a221ba5cf4235ad4e1296c01",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "vazn_zayeat_sine",
+            "title": "ضایعات سینهٔ مرغ",
+            "unit": "kg",
+            "range": {
+              "min": 1.5,
+              "max": 3
+            },
+            "nature": "standard",
+            "per": "هر پنجاه کیلوگرم سینهٔ خام"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00024",
+        "field": "sine_morgh"
+      },
+      "id": "F-00102",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "zayeat_kahu_bar_hasb_fasl",
+      "title": "ضایعات کاهو بر حسب فصل",
+      "statement": "نرخ ضایعات کاهو در لاین سبزیجات بر حسب فصل در نظر گرفته می‌شود: در فصل سرد حدود بیست درصد و در فصل گرم، از میانهٔ بهار تا پایان تابستان، تا شصت درصد. هرگاه سرپرست آماده‌سازی افزایش محسوس ضایعات را ببیند، با وزن‌گیری بازبینی و به مدیریت اعلام می‌کند. برای کاهو هیچ فرم یا جدول ثبتی وجود ندارد و آمار آن تنها در دفتر لاین نگه داشته می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-10.txt",
+          "lines": "1-553",
+          "hash": "sha256:1e3b2baf89a5ddab872162cf0e6153dbe2259c374bcc349f7fa1ca20f3c287db",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "inputs": [
+          {
+            "key": "fasl",
+            "title": "فصل"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "darsad_zayeat",
+            "title": "درصد ضایعات کاهو",
+            "unit": "percent"
+          }
+        ],
+        "table": {
+          "inputs": [
+            "fasl"
+          ],
+          "outputs": [
+            "darsad_zayeat"
+          ],
+          "rows": [
+            {
+              "fasl": "فصل سرد",
+              "darsad_zayeat": 20
+            },
+            {
+              "fasl": "فصل گرم، از میانهٔ بهار تا پایان تابستان",
+              "darsad_zayeat": 60
+            }
+          ]
+        }
+      },
+      "home": null,
+      "id": "F-00103",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "tabdil_penne_kham_be_paste_pokhte",
+      "title": "تبدیل پنهٔ خام به پاستای پخته",
+      "statement": "هر بستهٔ پانصد گرمی پنهٔ خام پس از پخت یک کیلو و دویست تا یک کیلو و دویست و پنجاه گرم پاستای پخته می‌دهد و بستهٔ پاستای پخته یک کیلو و دویست گرم وزن می‌شود. پاستا بر اساس نیاز روز پخته می‌شود و شکستگی بسته‌های خام در این مبنا لحاظ نشده است. برای پاستا هیچ جدول یا فرم ثبت‌شده‌ای وجود ندارد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-10.txt",
+          "lines": "1-553",
+          "hash": "sha256:1e3b2baf89a5ddab872162cf0e6153dbe2259c374bcc349f7fa1ca20f3c287db",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "vazn_paste_pokhte",
+            "title": "پاستای پختهٔ حاصل",
+            "unit": "kg",
+            "per": "هر بستهٔ پانصد گرمی پنهٔ خام",
+            "range": {
+              "min": 1.2,
+              "max": 1.25
+            },
+            "nature": "standard"
+          },
+          {
+            "key": "vazn_baste_paste",
+            "title": "وزن بستهٔ پاستای پخته",
+            "unit": "kg",
+            "value": 1.2,
+            "nature": "standard"
+          }
+        ]
+      },
+      "home": null,
+      "id": "F-00104",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "mahdudiyat_bardasht_morgh_garm",
+      "title": "محدودیت برداشت مرغ گرم در آماده‌سازی",
+      "statement": "پرسنل آماده‌سازی حق برداشت مستقیم از مرغ گرم را ندارند؛ مقدار درخواستی انبار پس از آماده‌سازی تحویل انبار می‌شود و انبار آن را به آشپزخانه می‌دهد. این ترتیب برای جلوگیری از مغایرت در آمار ورودی و خروجی برقرار شده است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-10.txt",
+          "lines": "1-553",
+          "hash": "sha256:1e3b2baf89a5ddab872162cf0e6153dbe2259c374bcc349f7fa1ca20f3c287db",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-004.json",
+          "node": "preparation-004-n016",
+          "hash": "sha256:70b8f4dc621113c39f3bcf2462f1331a0dbad452f7705c71a35763976d42c49f",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "inputs": [],
+        "outputs": [],
+        "original_ref": "facts/originals/F-00105.txt"
+      },
+      "home": {
+        "ref": "F-00007",
+        "field": "meqdar_niaz_morgh_garm"
+      },
+      "id": "F-00105",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "mohlat_tahvil_form_darkhast_kala",
+      "title": "مهلت تحویل فرم درخواست کالا به انبار",
+      "statement": "فرم درخواست کالای آماده‌سازی غروب روز پیش، پیش از ساعت شش و نیم، حضوری به انبار تحویل می‌شود و اصلاحیهٔ روز بعد روی همان برگه با تیک و افزودن عدد جلوی هر قلم انجام و حداکثر تا ساعت ده و نیم به انبار داده می‌شود. انبار هر قلم تحویل‌داده‌شده را روی همین برگه تیک می‌زند. تأخیر از این مهلت، رسیدن مواد اولیه و پایان کار لاین‌ها را عقب می‌اندازد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-10.txt",
+          "lines": "1-553",
+          "hash": "sha256:1e3b2baf89a5ddab872162cf0e6153dbe2259c374bcc349f7fa1ca20f3c287db",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-003.json",
+          "node": "preparation-003-n005",
+          "hash": "sha256:035ec918878a335535e08a1ec583311a3e67143299fb049a1903ca6ac749e822",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-003.json",
+          "node": "preparation-003-n012",
+          "hash": "sha256:035ec918878a335535e08a1ec583311a3e67143299fb049a1903ca6ac749e822",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-003.json",
+          "node": "preparation-003-n013",
+          "hash": "sha256:035ec918878a335535e08a1ec583311a3e67143299fb049a1903ca6ac749e822",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "inputs": [],
+        "outputs": [],
+        "original_ref": "facts/originals/F-00106.txt"
+      },
+      "home": {
+        "ref": "F-00004"
+      },
+      "id": "F-00106",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "kast_pokht_morgh",
+      "title": "کاست پخت مرغ",
+      "statement": "از هر صد کیلوگرم مرغ خام حدود هفتاد کیلوگرم مرغ پخته به دست می‌آید، یعنی سی درصد کاست پخت. برای رسیدن از وزن پخته به وزن خام، سی درصد به وزن افزوده می‌شود و ادویه و آب مرینت در این مبنا اثری ندارد، چون در پخت تبخیر می‌شود. این کاست در آشپزخانه گرفته و به حسابداری داده می‌شود و در جدول‌های آماده‌سازی ثبت نمی‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-10.txt",
+          "lines": "1-553",
+          "hash": "sha256:1e3b2baf89a5ddab872162cf0e6153dbe2259c374bcc349f7fa1ca20f3c287db",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "bazdehi_pokht",
+            "title": "بازدهی پخت مرغ",
+            "unit": "percent",
+            "per": "وزن مرغ خام",
+            "value": 70,
+            "nature": "standard"
+          },
+          {
+            "key": "kast_pokht",
+            "title": "کاست پخت مرغ",
+            "unit": "percent",
+            "per": "وزن مرغ خام",
+            "value": 30,
+            "nature": "standard"
+          }
+        ]
+      },
+      "home": null,
+      "id": "F-00107",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "vazn_advie_stripes_morgh",
+      "title": "وزن ادویهٔ استریپس مرغ",
+      "statement": "ادویهٔ استریپس مرغ دقیقاً هفتاد گرم وزن می‌شود؛ پنج گرم بیشتر کل محصول را شور و پنج گرم کمتر آن را بی‌مزه می‌کند. وزن‌کشی ادویه‌های محصولات گوشتی زیر نظر سرپرست آماده‌سازی انجام می‌شود. مبنای این هفتاد گرم روشن نشده است و در هیچ جدول یا فرمی ثبت نمی‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-10.txt",
+          "lines": "1-553",
+          "hash": "sha256:1e3b2baf89a5ddab872162cf0e6153dbe2259c374bcc349f7fa1ca20f3c287db",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "vazn_advie",
+            "title": "وزن ادویهٔ استریپس",
+            "unit": "g",
+            "value": 70,
+            "nature": "standard"
+          }
+        ]
+      },
+      "home": null,
+      "id": "F-00108",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "kast_vazni_steak_roli",
+      "title": "کاست وزنی استیک رولی و جبران آن با مرینت",
+      "statement": "گوشت راستهٔ تحویلی در تولید استیک رولی حدود پنج درصد کاست وزنی دارد و به همان اندازه مرینت به آن افزوده می‌شود. به همین دلیل وزن تحویلی به انبار با وزن تحویل‌گرفته‌شده برابر می‌ماند و مقدار مرینت مصرفی در فرم نیمه ساخته ثبت می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-10.txt",
+          "lines": "1-553",
+          "hash": "sha256:1e3b2baf89a5ddab872162cf0e6153dbe2259c374bcc349f7fa1ca20f3c287db",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-020.json",
+          "node": "preparation-020-n023",
+          "hash": "sha256:6755b679a16e891ef948b2bf7441eacba82cd728c1619bdbb7b09be20df8539a",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "kast_steak_roli",
+            "title": "کاست وزنی استیک رولی",
+            "unit": "percent",
+            "per": "وزن گوشت راستهٔ تحویل‌گرفته‌شده",
+            "value": 5,
+            "nature": "standard"
+          },
+          {
+            "key": "marinet_ezafe_shode",
+            "title": "مرینت افزوده‌شده به استیک رولی",
+            "unit": "percent",
+            "per": "وزن گوشت راستهٔ تحویل‌گرفته‌شده",
+            "value": 5,
+            "nature": "standard"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00009"
+      },
+      "id": "F-00109",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "zaman_enjemad_morgh_rol_shode",
+      "title": "زمان انجماد مرغ رول‌شده پیش از پانکو",
+      "statement": "مرغ رول‌شدهٔ مرینت‌شده باید بیست و چهار ساعت بماند تا کاملاً منجمد شود و تنها پس از آن پانکو می‌خورد، زیرا پانکوزدن پیش از انجماد محصول را از هم می‌پاشد. در روزهای کمبود، محصول همان روز به فریزر زیر صفر انبار منتقل می‌شود تا زودتر منجمد شود. این مدت در هیچ فرم یا جدول ثبت‌شده‌ای نوشته نمی‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-10.txt",
+          "lines": "1-553",
+          "hash": "sha256:1e3b2baf89a5ddab872162cf0e6153dbe2259c374bcc349f7fa1ca20f3c287db",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "moddat_enjemad",
+            "title": "مدت انجماد پیش از پانکو",
+            "unit": "hour",
+            "value": 24,
+            "nature": "limit"
+          }
+        ]
+      },
+      "home": null,
+      "id": "F-00110",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "form_movazzaf_har_qalam",
+      "title": "فرم موظف هر قلم در آماده‌سازی",
+      "statement": "برای هر قلم آماده‌سازی مشخص است که کدام فرم پر می‌شود: قلمی که از یک مادهٔ خام به چند محصول تفکیک می‌شود فرم تبدیل دارد، قلم فرآوری‌شدهٔ نیمه‌آماده فرم نیمه ساخته و قلمی که کاست ندارد، مانند سبزیجات و مرینت‌ها، هیچ فرمی ندارد. برگر فرم تبدیل و نیمه ساختهٔ یکپارچه دارد و راستهٔ پاک‌نشده هم‌زمان در دو فرم تفکیک می‌شود. این قاعده چند فرم را با هم در بر می‌گیرد و به یک فرم مشخص وابسته نیست.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-10.txt",
+          "lines": "1-553",
+          "hash": "sha256:1e3b2baf89a5ddab872162cf0e6153dbe2259c374bcc349f7fa1ca20f3c287db",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n023",
+          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "inputs": [
+          {
+            "key": "qalam",
+            "title": "قلم آماده‌سازی"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "form_movazzaf",
+            "title": "فرم موظف"
+          }
+        ],
+        "table": {
+          "inputs": [
+            "qalam"
+          ],
+          "outputs": [
+            "form_movazzaf"
+          ],
+          "hit": "first",
+          "rows": [
+            {
+              "qalam": "سبزیجات و کاهو",
+              "form_movazzaf": "بدون فرم"
+            },
+            {
+              "qalam": "مرینت‌های مرغ",
+              "form_movazzaf": "بدون فرم"
+            },
+            {
+              "qalam": "مرغ پیتزا",
+              "form_movazzaf": "فرم تبدیل"
+            },
+            {
+              "qalam": "ژامبون",
+              "form_movazzaf": "فرم تبدیل"
+            },
+            {
+              "qalam": "گوشت گردن",
+              "form_movazzaf": "فرم نیمه ساخته"
+            },
+            {
+              "qalam": "سردست",
+              "form_movazzaf": "فرم نیمه ساخته"
+            },
+            {
+              "qalam": "استیک رولی و فیلادلفیا",
+              "form_movazzaf": "فرم تبدیل و فرم نیمه ساخته"
+            },
+            {
+              "qalam": "برگر",
+              "form_movazzaf": "فرم تبدیل و نیمه ساختهٔ یکپارچه"
+            }
+          ]
+        }
+      },
+      "home": null,
+      "id": "F-00111",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "daman_form_tolid_nime_sakhte",
+      "title": "دامنهٔ فرم تولید نیمه ساخته",
+      "statement": "فرم تولید نیمه ساخته برای هر محصولی پر می‌شود که فرآوری شده ولی هنوز مستقیم قابل استفاده نیست: مایهٔ برگر، رست‌بیف، گوشت چرخ‌کرده، استیک رولی و فیلادلفیا. چون این محصولات متغیرند، فرم عنوان چاپ‌شدهٔ ثابتی ندارد و نام محصول در بالای برگه نوشته می‌شود. مرینت‌های مرغ فرم نیمه ساخته ندارند، چون وزن آن‌ها بر مبنای وزن پروتئین گرفته می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-10.txt",
+          "lines": "1-553",
+          "hash": "sha256:1e3b2baf89a5ddab872162cf0e6153dbe2259c374bcc349f7fa1ca20f3c287db",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n023",
+          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "inputs": [],
+        "outputs": [],
+        "original_ref": "facts/originals/F-00112.txt"
+      },
+      "home": {
+        "ref": "F-00009"
+      },
+      "id": "F-00112",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "hadd_khunabe_morgh_vorudi",
+      "title": "حد مجاز خونابهٔ مرغ ورودی",
+      "statement": "خونابهٔ همراه هر محمولهٔ مرغ خام هنگام تحویل بررسی می‌شود و مبنای پذیرفته‌شده سیصد تا چهارصد گرم به ازای هر پنجاه کیلوگرم مرغ است. اگر خونابه از این مبنا بیشتر باشد، سرپرست آماده‌سازی همان روز مقدار را به مدیریت اعلام می‌کند تا از تأمین‌کننده پیگیری شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-10.txt",
+          "lines": "1-553",
+          "hash": "sha256:1e3b2baf89a5ddab872162cf0e6153dbe2259c374bcc349f7fa1ca20f3c287db",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n023",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "khunabe_mojaz",
+            "title": "خونابهٔ مجاز مرغ ورودی",
+            "unit": "g",
+            "per": "هر پنجاه کیلوگرم مرغ خام",
+            "range": {
+              "min": 300,
+              "max": 400
+            },
+            "nature": "limit"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00023"
+      },
+      "id": "F-00113",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "deqqat_va_zarfiat_tarazuha",
+      "title": "دقت و ظرفیت ترازوهای انبار و آماده‌سازی",
+      "statement": "ترازوی انبار تا صد گرم و ترازوی آماده‌سازی تا ده گرم خطا دارد و ظرفیت وزن‌کشی آن‌ها به ترتیب صد و پنجاه کیلوگرم و شصت تا هفتاد کیلوگرم است. به همین دلیل هر قلم رسیده از انبار، به‌ویژه گوشت و مرغ، دوباره در آماده‌سازی وزن می‌شود. این ارقام مشخصهٔ تجهیزات است و در هیچ جدول یا فرمی ثبت نمی‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-10.txt",
+          "lines": "1-553",
+          "hash": "sha256:1e3b2baf89a5ddab872162cf0e6153dbe2259c374bcc349f7fa1ca20f3c287db",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "khataye_taraz_anbar",
+            "title": "خطای ترازوی انبار",
+            "unit": "g",
+            "value": 100,
+            "nature": "limit"
+          },
+          {
+            "key": "khataye_taraz_amadesazi",
+            "title": "خطای ترازوی آماده‌سازی",
+            "unit": "g",
+            "value": 10,
+            "nature": "limit"
+          },
+          {
+            "key": "zarfiat_taraz_anbar",
+            "title": "ظرفیت ترازوی انبار",
+            "unit": "kg",
+            "value": 150,
+            "nature": "standard"
+          },
+          {
+            "key": "zarfiat_taraz_amadesazi",
+            "title": "ظرفیت ترازوی آماده‌سازی",
+            "unit": "kg",
+            "range": {
+              "min": 60,
+              "max": 70
+            },
+            "nature": "standard"
+          }
+        ]
+      },
+      "home": null,
+      "id": "F-00114",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "peygiri_moghayerat_shomaresh_loqme_va_file",
+      "title": "پیگیری مغایرت شمارش لقمه و فیله",
+      "statement": "هر مغایرت در شمارش لقمه و فیله، حتی یک یا دو عدد، خطای آماده‌سازی شمرده می‌شود و باید همان روز به انبار اعلام شود. شمارش دستی است و تعداد نوشته‌شده روی لیبل در چرخه‌های بعدی مبنای تحویل قرار می‌گیرد، بنابراین خطای اصلاح‌نشده در پایان شب به مغایرت آشپزخانه و حسابداری می‌رسد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-10.txt",
+          "lines": "1-553",
+          "hash": "sha256:1e3b2baf89a5ddab872162cf0e6153dbe2259c374bcc349f7fa1ca20f3c287db",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "inputs": [],
+        "outputs": [],
+        "original_ref": "facts/originals/F-00115.txt"
+      },
+      "home": {
+        "ref": "F-00019"
+      },
+      "id": "F-00115",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "daman_sabt_vorud_khoruj_amadesazi",
+      "title": "دامنهٔ ثبت ورود و خروج مواد در آماده‌سازی",
+      "statement": "ورود و خروج روزانه تنها برای اقلام باارزش مانند گوشت و مرغ در جدول‌های آماده‌سازی ثبت می‌شود. برای کاهو، سبزیجات، سالاد کلم، پنیر، قارچ و فلفل دلمه‌ای نه فرمی پر می‌شود و نه مقداری ثبت می‌شود، پس مقدار واردشده و خارج‌شدهٔ آن‌ها در آماده‌سازی در دسترس نیست.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-23-02.txt",
+          "lines": "1-102",
+          "hash": "sha256:0816f9ba996f5d4e490d1b0f6a6bb3530748adf42e3422004f70a2e4ceb65a01",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n017",
+          "quote": "ورود روزانه ورودی، خروجی و مقدار تولید به فایل اکسل عنکبوتی",
+          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "inputs": [
+          {
+            "key": "arzesh_qalam",
+            "title": "ارزش قلم"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "sabt_vorud_khoruj",
+            "title": "ثبت ورود و خروج",
+            "value": "فقط برای اقلام باارزش مانند گوشت و مرغ"
+          }
+        ],
+        "original_ref": "facts/originals/F-00116.txt"
+      },
+      "home": {
+        "ref": "F-00023"
+      },
+      "id": "F-00116",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "maade_marinet_kenar_shenisel",
+      "title": "مادهٔ مرینت در پخت کنار شینسل",
+      "statement": "در پخت کنار شینسل به ازای هر ده کیلوگرم، بیست گرم مادهٔ مرینت برای طعم‌دار شدن افزوده می‌شود. کنار شینسل مرحلهٔ مرینت جداگانه ندارد و طعم‌دار کردن آن در همان مرحلهٔ پخت انجام می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-23-02.txt",
+          "lines": "1-102",
+          "hash": "sha256:0816f9ba996f5d4e490d1b0f6a6bb3530748adf42e3422004f70a2e4ceb65a01",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n058",
+          "quote": "پخت کنار شینسل با افزودن بیست گرم ماده مرینت به ازای هر ده کیلوگرم",
+          "hash": "sha256:ecef39b667404cd777c0b03d08c4fe51ab3e43135e0250e95dc875871bb76c1f",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n033",
+          "quote": "پخت کنار شینسل یخ‌باز‌شده همراه با افزودن ماده مرینت",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "maade_marinet",
+            "title": "مادهٔ مرینت افزوده‌شده",
+            "value": 20,
+            "unit": "g",
+            "per": "هر ده کیلوگرم کنار شینسل",
+            "nature": "standard"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00015"
+      },
+      "id": "F-00117",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "sabt_nashodan_taghire_vazn_marinet",
+      "title": "ثبت نشدن تغییر وزن پس از مرینت",
+      "statement": "تغییر وزن مرغ پس از افزودن مادهٔ مرینت در هیچ فرمی ثبت نمی‌شود و ناچیز شمرده می‌شود؛ در فرم تحویل انبار تنها وزن تحویل‌شده به آماده‌سازی نوشته می‌شود و مقدار مادهٔ مرینت روی آن نمی‌آید. هنگام پخت نیز تنها وزن خود مرغ شمرده می‌شود و وزن مایع مرینت به حساب نمی‌آید؛ کاست وزنی فقط در پایان فرم تبدیل همان قلم ثبت می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-23-02.txt",
+          "lines": "1-102",
+          "hash": "sha256:0816f9ba996f5d4e490d1b0f6a6bb3530748adf42e3422004f70a2e4ceb65a01",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "inputs": [
+          {
+            "key": "taghire_vazn_pas_az_marinet",
+            "title": "تغییر وزن پس از مرینت"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "mahal_sabt_taghire_vazn",
+            "title": "محل ثبت تغییر وزن",
+            "value": "ثبت نمی‌شود"
+          }
+        ],
+        "original_ref": "facts/originals/F-00118.txt"
+      },
+      "home": {
+        "ref": "F-00007"
+      },
+      "id": "F-00118",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "vazn_kol_raste_pas_az_kasr_filadelfia",
+      "title": "وزن کل گوشت راسته پس از کسر فیلادلفیا",
+      "statement": "وزن کل گوشت راسته‌ای که در فرم تبدیل ثبت می‌شود برابر است با وزن اولیهٔ گوشت راستهٔ تحویل‌گرفته‌شده منهای وزن فیلادلفیایی که همان ابتدا از آن جدا می‌شود، بر حسب کیلوگرم. مسئول لاین این کسر را دستی انجام می‌دهد و تنها مقدار باقی‌مانده را به عنوان وزن کل ثبت می‌کند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-23.txt",
+          "lines": "1-69",
+          "hash": "sha256:162c3d8fecfb4896393d22913cc990822e3f4bb5358b5730fdf173aba5340c8e",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-020.json",
+          "node": "preparation-020-n018",
+          "quote": "کسر کردن وزن فیلادلفیا از وزن اولیه گوشت راسته",
+          "hash": "sha256:6755b679a16e891ef948b2bf7441eacba82cd728c1619bdbb7b09be20df8539a",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "feel",
+        "expr": "vazn_kol_raste = vazn_avalie_raste - vazn_filadelfia",
+        "inputs": [
+          {
+            "key": "vazn_avalie_raste",
+            "title": "وزن اولیهٔ گوشت راسته",
+            "unit": "kg"
+          },
+          {
+            "key": "vazn_filadelfia",
+            "title": "وزن فیلادلفیا",
+            "unit": "kg"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "vazn_kol_raste",
+            "title": "وزن کل گوشت راسته",
+            "unit": "kg",
+            "nature": "observed"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00010"
+      },
+      "id": "F-00119",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "taraz_khorujiha_form_tabdil_raste",
+      "title": "تراز خروجی‌های فرم تبدیل گوشت راسته",
+      "statement": "وزن کل گوشت راستهٔ ثبت‌شده در فرم تبدیل با مجموع وزن استیک رولی، خردهٔ راسته و ضایعات همان محموله برابر است، بر حسب کیلوگرم. مسئول لاین پس از تفکیک، هر سه مقدار را ثبت می‌کند و مجموع آن‌ها باید وزن کل را پوشش دهد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-23.txt",
+          "lines": "1-69",
+          "hash": "sha256:162c3d8fecfb4896393d22913cc990822e3f4bb5358b5730fdf173aba5340c8e",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-020.json",
+          "node": "preparation-020-n022",
+          "quote": "ثبت وزن کل گوشت راسته و تفکیک آن به استیک رولی، خرده راسته و ضایعات",
+          "hash": "sha256:6755b679a16e891ef948b2bf7441eacba82cd728c1619bdbb7b09be20df8539a",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "feel",
+        "expr": "vazn_kol_raste = vazn_estik_roli + vazn_khorde_raste + vazn_zayeat",
+        "inputs": [
+          {
+            "key": "vazn_estik_roli",
+            "title": "وزن استیک رولی",
+            "unit": "kg"
+          },
+          {
+            "key": "vazn_khorde_raste",
+            "title": "وزن خردهٔ راسته",
+            "unit": "kg"
+          },
+          {
+            "key": "vazn_zayeat",
+            "title": "وزن ضایعات",
+            "unit": "kg"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "vazn_kol_raste",
+            "title": "وزن کل گوشت راسته",
+            "unit": "kg",
+            "nature": "observed"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00010"
+      },
+      "id": "F-00120",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "sabt_filadelfia_dar_form_nime_sakht",
+      "title": "ثبت فیلادلفیا در فرم نیم‌ساخت به‌جای فرم تبدیل",
+      "statement": "برای فیلادلفیا دیگر فرم تبدیل پر نمی‌شود؛ گوشت راستهٔ مصرف‌شده برای آن همراه با مقدار مرینیت و سس افزوده‌شده در فرم نیم‌ساخت ثبت می‌شود. مسئول لاین همان ابتدا سهم فیلادلفیا را از گوشت راستهٔ تحویل‌گرفته جدا می‌کند و وزن آن را در فرم تبدیل نمی‌آورد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-06-23.txt",
+          "lines": "1-69",
+          "hash": "sha256:162c3d8fecfb4896393d22913cc990822e3f4bb5358b5730fdf173aba5340c8e",
+          "run": "runs/facts/preparation/20260919-084010"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-020.json",
+          "node": "preparation-020-n023",
+          "quote": "پر کردن فرم نیم‌ساخت فیلادلفیا و استیک رولی با ثبت مواد اولیه و مقدار مصرفی",
+          "hash": "sha256:6755b679a16e891ef948b2bf7441eacba82cd728c1619bdbb7b09be20df8539a",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "inputs": [
+          {
+            "key": "vazn_filadelfia",
+            "title": "وزن فیلادلفیا",
+            "unit": "kg"
+          },
+          {
+            "key": "vazn_marinet_va_sos",
+            "title": "مقدار مرینیت و سس افزوده‌شده",
+            "unit": "kg"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "form_movazzaf_filadelfia",
+            "title": "فرم موظف ثبت فیلادلفیا",
+            "value": "فرم نیم‌ساخت"
+          }
+        ],
+        "original_ref": "facts/originals/F-00121.txt"
+      },
+      "home": {
+        "ref": "F-00009"
+      },
+      "aliases": [
+        "حذف فرم تبدیل فیلادلفیا"
+      ],
+      "id": "F-00121",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "bazdehi_tolid_rost_bif",
+      "title": "بازدهی تولید رست‌بیف",
+      "statement": "بازدهی تولید رست‌بیف از گوشت مغز ران خام به‌طور استاندارد ۷۰ درصد در نظر گرفته می‌شود و بسته به نوع و بافت گوشت بین ۶۵ تا ۷۰ درصد تغییر می‌کند. برای رسیدن به این مبنا، عصارهٔ گوشت به محصول ریش‌ریش‌شده افزوده می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "bazdehi_rost_bif",
+            "title": "بازدهی رست‌بیف",
+            "unit": "percent",
+            "nature": "target",
+            "value": 70,
+            "of": "گوشت مغز ران خام",
+            "per": "هر محمولهٔ گوشت خام"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00020"
+      },
+      "extra": {
+        "voice": [
+          {
+            "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
+            "lines": "1-140"
+          }
+        ]
+      },
+      "id": "F-00122",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "kast_pokht_charkh_karde",
+      "title": "کاست وزنی گوشت چرخ‌کرده",
+      "statement": "کاهش وزن گوشت چرخ‌کرده در فرآیند پخت بین ۸ تا ۱۵ درصد وزن گوشت خام است و برخلاف رست‌بیف از این محدوده بالاتر نمی‌رود. ادویه و پیاز و سیر بر مبنای وزن خام محاسبه می‌شود و در این کاست دخالتی ندارد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "kast_charkh_karde",
+            "title": "درصد کاست چرخ‌کرده",
+            "unit": "percent",
+            "nature": "standard",
+            "range": {
+              "min": 8,
+              "max": 15
+            },
+            "of": "گوشت گردن خام",
+            "per": "هر محمولهٔ گوشت خام"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00020"
+      },
+      "extra": {
+        "voice": [
+          {
+            "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
+            "lines": "1-140"
+          }
+        ]
+      },
+      "id": "F-00123",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "vazn_har_loqme_morgh",
+      "title": "وزن هر لقمه مرغ",
+      "statement": "وزن هر لقمهٔ مرغ بین ۱۰ تا ۱۳ گرم است و مبنای ثابتی برای یک عدد مشخص وجود ندارد. برای کنترل، هر ده عدد با هم وزن می‌شود و مجموع باید بین ۱۰۰ تا ۱۳۰ گرم باشد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "vazn_loqme",
+            "title": "وزن هر لقمه",
+            "unit": "g",
+            "nature": "standard",
+            "range": {
+              "min": 10,
+              "max": 13
+            },
+            "per": "هر عدد لقمه",
+            "of": "لقمه مرغ"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00019",
+        "field": "vazn_loqme_sine"
+      },
+      "extra": {
+        "voice": [
+          {
+            "ref": "meetings/transcripts/preparation-1405-06-04.txt",
+            "lines": "41-240"
+          }
+        ]
+      },
+      "id": "F-00124",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "tarkib_gusht_borger",
+      "title": "نسبت گوشت سردست و خرده راسته در برگر",
+      "statement": "مایهٔ برگر از وزن برابر گوشت سردست و خرده راستهٔ گوساله ساخته می‌شود؛ هر یک نیمی از وزن کل را تشکیل می‌دهد. اختلاف چند صد گرم برای جبران ضایعات و پلاستیک مجاز است، ولی مقدار تولید به وزن کم‌تر این دو محدود می‌شود و نسبت برابر باید حفظ شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "sahm_sardast",
+            "title": "سهم گوشت سردست",
+            "unit": "percent",
+            "nature": "standard",
+            "value": 50,
+            "share": 0.5,
+            "per": "وزن مایهٔ برگر"
+          },
+          {
+            "key": "sahm_khorde_raste",
+            "title": "سهم خرده راسته",
+            "unit": "percent",
+            "nature": "standard",
+            "value": 50,
+            "share": 0.5,
+            "per": "وزن مایهٔ برگر"
+          }
+        ]
+      },
+      "home": {
+        "ref": "F-00023"
+      },
+      "extra": {
+        "voice": [
+          {
+            "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
+            "lines": "1-140"
+          }
+        ]
+      },
+      "id": "F-00125",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "andaze_baste_bandi_mahsulat",
+      "title": "اندازهٔ بستهٔ تحویل محصولات به انبار",
+      "statement": "هر محصول آماده‌سازی تنها در بستهٔ با اندازهٔ مشخص تحویل انبار می‌شود: چیزا شش‌عددی، برگر پنج‌عددی و رست‌بیف و چرخ‌کرده دوکیلویی. بستهٔ ناقص لیبل نمی‌خورد و تا کامل شدن در فریزر می‌ماند؛ سفارش خارج از این اندازه به نزدیک‌ترین مضرب گرد می‌شود و تنها باقی‌ماندهٔ پایان کار می‌تواند بستهٔ ناهم‌اندازه داشته باشد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "inputs": [
+          {
+            "key": "mahsul",
+            "title": "محصول"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "andaze_baste",
+            "title": "اندازهٔ بسته"
+          }
+        ],
+        "table": {
+          "hit": "unique",
+          "inputs": [
+            "mahsul"
+          ],
+          "outputs": [
+            "andaze_baste"
+          ],
+          "rows": [
+            {
+              "mahsul": "چیزا",
+              "andaze_baste": "۶ عدد"
+            },
+            {
+              "mahsul": "برگر",
+              "andaze_baste": "۵ عدد"
+            },
+            {
+              "mahsul": "رست‌بیف",
+              "andaze_baste": "۲ کیلوگرم"
+            },
+            {
+              "mahsul": "چرخ‌کرده",
+              "andaze_baste": "۲ کیلوگرم"
+            }
+          ]
+        }
+      },
+      "home": {
+        "ref": "F-00019"
+      },
+      "extra": {
+        "voice": [
+          {
+            "ref": "meetings/transcripts/preparation-1405-06-02.txt",
+            "lines": "161-220"
+          },
+          {
+            "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
+            "lines": "1-140"
+          }
+        ]
+      },
+      "id": "F-00126",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "nesbat_maade_marinet_morgh",
+      "title": "نسبت مادهٔ مرینت و آب برای مرغ",
+      "statement": "به ازای هر کیلوگرم مرغ، ۳۰ گرم پودر مرینت و ۷۰ گرم آب مصرف می‌شود و همین نسبت وزن مرغ مرینت‌شده را حدود ده درصد بالا می‌برد. این نسبت را خود آماده‌سازی محاسبه می‌کند و در هیچ‌یک از جدول‌های آماده‌سازی ثبت نمی‌شود، چون فرم جداگانه‌ای برای مرینت وجود ندارد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "pudr_marinet",
+            "title": "پودر مرینت",
+            "unit": "g",
+            "nature": "standard",
+            "value": 30,
+            "per": "هر کیلوگرم مرغ"
+          },
+          {
+            "key": "ab_marinet",
+            "title": "آب مرینت",
+            "unit": "g",
+            "nature": "standard",
+            "value": 70,
+            "per": "هر کیلوگرم مرغ"
+          }
+        ]
+      },
+      "home": null,
+      "extra": {
+        "voice": [
+          {
+            "ref": "meetings/transcripts/preparation-1405-06-02.txt",
+            "lines": "1-60"
+          },
+          {
+            "ref": "meetings/transcripts/preparation-1405-06-10.txt",
+            "lines": "361-440"
+          }
+        ]
+      },
+      "id": "F-00127",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "tatbiq_vorudi_amadesazi_ba_anbar",
+      "title": "تطبیق ورودی آماده‌سازی با خروجی انبار",
+      "statement": "وزن هر قلمی که آماده‌سازی از انبار تحویل می‌گیرد باید با وزنی که انبار به نام آماده‌سازی خارج کرده برابر باشد. مقدار محصول فرآوری‌شده در این مقایسه دخالتی ندارد و هر اختلاف باید همان روز پیگیری شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "inputs": [
+          {
+            "key": "vorudi_sabt_shode",
+            "title": "وزن ثبت‌شده در ورودی آماده‌سازی",
+            "unit": "kg",
+            "from": {
+              "ref": "F-00023"
+            }
+          },
+          {
+            "key": "khoruji_anbar",
+            "title": "وزن خروجی ثبت‌شده در انبار",
+            "unit": "kg"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "moghayerat_vorudi",
+            "title": "مغایرت ورودی با انبار",
+            "unit": "kg",
+            "nature": "observed",
+            "per": "هر قلم تحویلی"
+          }
+        ],
+        "original_ref": "facts/originals/F-00128.txt"
+      },
+      "home": {
+        "ref": "F-00023"
+      },
+      "extra": {
+        "voice": [
+          {
+            "ref": "meetings/transcripts/preparation-1405-05-28-03.txt",
+            "lines": "41-103"
+          }
+        ]
+      },
+      "id": "F-00128",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "bazdehi_khoruji_dovvom",
+      "title": "بازدهی خروجی دوم",
+      "statement": "بازدهی محصول دوم هر محموله برابر است با نسبت وزن آن محصول به وزن مادهٔ اولیهٔ خام ورودی، بر حسب درصد. این عدد سهم دومین محصولی را نشان می‌دهد که از همان محمولهٔ خام گرفته شده است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "sheet",
+          "ref": "attachments/sheets/Amadesazi__Amadesazi/Amadesazi.xlsx",
+          "sheet": "بازدهی",
+          "hash": "sha256:e17a8a3153119fa7a8f3035e58fb0122dddcad80e81ff27df45f6fe85c525596",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "applies_to": [
+          {
+            "key": "amadesazi__s7__k__r2",
+            "record": {
+              "ref": "F-00020",
+              "field": "bazdehi_khoruji_2"
+            },
+            "variant": "v1",
+            "range": "K2:K28",
+            "params": {
+              "p1": 100
+            },
+            "rows": []
+          },
+          {
+            "key": "amadesazi__s7__k__r30",
+            "record": {
+              "ref": "F-00020",
+              "field": "bazdehi_khoruji_2"
+            },
+            "variant": "v1",
+            "range": "K30",
+            "params": {
+              "p1": 100
+            },
+            "rows": []
+          },
+          {
+            "key": "amadesazi__s7__k__r32",
+            "record": {
+              "ref": "F-00020",
+              "field": "bazdehi_khoruji_2"
+            },
+            "variant": "v1",
+            "range": "K32:K136",
+            "params": {
+              "p1": 100
+            },
+            "rows": []
+          }
+        ],
+        "lang": "feel",
+        "expr": "bazdehi_khoruji_2 = khoruji_2 / vorudi * zarib_darsad",
+        "inputs": [
+          {
+            "key": "khoruji_2",
+            "title": "وزن محصول دوم",
+            "unit": "kg",
+            "from": {
+              "ref": "F-00020",
+              "field": "khoruji_2"
+            }
+          },
+          {
+            "key": "vorudi",
+            "title": "وزن ماده اولیه ورودی",
+            "unit": "kg",
+            "from": {
+              "ref": "F-00020",
+              "field": "vorudi"
+            }
+          },
+          {
+            "key": "zarib_darsad",
+            "title": "ضریب تبدیل به درصد",
+            "from": {
+              "param": "p1"
+            }
+          }
+        ],
+        "outputs": [
+          {
+            "key": "bazdehi_khoruji_2",
+            "title": "بازدهی محصول دوم",
+            "unit": "percent",
+            "nature": "observed",
+            "per": "هر محمولهٔ ورودی",
+            "writes_to": {
+              "ref": "F-00020",
+              "field": "bazdehi_khoruji_2"
+            }
+          }
+        ],
+        "original_ref": "facts/originals/F-00129.txt"
+      },
+      "home": {
+        "ref": "F-00020"
+      },
+      "id": "F-00129",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "bazdehi_khoruji_avval",
+      "title": "بازدهی خروجی نخست",
+      "statement": "بازدهی محصول نخست هر محموله برابر است با نسبت وزن آن محصول به وزن مادهٔ اولیهٔ خام ورودی، بر حسب درصد. این عدد نشان می‌دهد از هر محمولهٔ خام چه سهمی به محصول نخست تبدیل شده و چه اندازه کاست داشته است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "sheet",
+          "ref": "attachments/sheets/Amadesazi__Amadesazi/Amadesazi.xlsx",
+          "sheet": "بازدهی",
+          "hash": "sha256:e17a8a3153119fa7a8f3035e58fb0122dddcad80e81ff27df45f6fe85c525596",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "applies_to": [
+          {
+            "key": "amadesazi__s7__j__r2",
+            "record": {
+              "ref": "F-00020",
+              "field": "bazdehi_khoruji_1"
+            },
+            "variant": "v1",
+            "range": "J2:J28",
+            "params": {
+              "p1": 100
+            },
+            "rows": []
+          },
+          {
+            "key": "amadesazi__s7__j__r29",
+            "record": {
+              "ref": "F-00020",
+              "field": "bazdehi_khoruji_1"
+            },
+            "variant": "v1",
+            "range": "J29",
+            "params": {
+              "p1": 100
+            },
+            "rows": []
+          },
+          {
+            "key": "amadesazi__s7__j__r30",
+            "record": {
+              "ref": "F-00020",
+              "field": "bazdehi_khoruji_1"
+            },
+            "variant": "v1",
+            "range": "J30",
+            "params": {
+              "p1": 100
+            },
+            "rows": []
+          },
+          {
+            "key": "amadesazi__s7__j__r31",
+            "record": {
+              "ref": "F-00020",
+              "field": "bazdehi_khoruji_1"
+            },
+            "variant": "v1",
+            "range": "J31",
+            "params": {
+              "p1": 100
+            },
+            "rows": []
+          },
+          {
+            "key": "amadesazi__s7__j__r32",
+            "record": {
+              "ref": "F-00020",
+              "field": "bazdehi_khoruji_1"
+            },
+            "variant": "v1",
+            "range": "J32:J136",
+            "params": {
+              "p1": 100
+            },
+            "rows": []
+          }
+        ],
+        "lang": "feel",
+        "expr": "bazdehi_khoruji_1 = khoruji_1 / vorudi * zarib_darsad",
+        "inputs": [
+          {
+            "key": "khoruji_1",
+            "title": "وزن محصول نخست",
+            "unit": "kg",
+            "from": {
+              "ref": "F-00020",
+              "field": "khoruji_1"
+            }
+          },
+          {
+            "key": "vorudi",
+            "title": "وزن ماده اولیه ورودی",
+            "unit": "kg",
+            "from": {
+              "ref": "F-00020",
+              "field": "vorudi"
+            }
+          },
+          {
+            "key": "zarib_darsad",
+            "title": "ضریب تبدیل به درصد",
+            "from": {
+              "param": "p1"
+            }
+          }
+        ],
+        "outputs": [
+          {
+            "key": "bazdehi_khoruji_1",
+            "title": "بازدهی محصول نخست",
+            "unit": "percent",
+            "nature": "observed",
+            "per": "هر محمولهٔ ورودی",
+            "writes_to": {
+              "ref": "F-00020",
+              "field": "bazdehi_khoruji_1"
+            }
+          }
+        ],
+        "original_ref": "facts/originals/F-00130.txt"
+      },
+      "home": {
+        "ref": "F-00020"
+      },
+      "id": "F-00130",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "kind": "rule",
+      "key": "bazdehi_khoruji_sevvom",
+      "title": "بازدهی خروجی سوم",
+      "statement": "بازدهی محصول سوم هر محموله برابر است با نسبت وزن آن محصول به وزن مادهٔ اولیهٔ خام ورودی، بر حسب درصد. این عدد سهم سومین محصولی را نشان می‌دهد که از همان محمولهٔ خام گرفته شده است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "sheet",
+          "ref": "attachments/sheets/Amadesazi__Amadesazi/Amadesazi.xlsx",
+          "sheet": "بازدهی",
+          "hash": "sha256:e17a8a3153119fa7a8f3035e58fb0122dddcad80e81ff27df45f6fe85c525596",
+          "run": "runs/facts/preparation/20260919-084010"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "applies_to": [
+          {
+            "key": "amadesazi__s7__l__r2",
+            "record": {
+              "ref": "F-00020",
+              "field": "bazdehi_khoruji_3"
+            },
+            "variant": "v1",
+            "range": "L2:L28",
+            "params": {
+              "p1": 100
+            },
+            "rows": []
+          },
+          {
+            "key": "amadesazi__s7__l__r30",
+            "record": {
+              "ref": "F-00020",
+              "field": "bazdehi_khoruji_3"
+            },
+            "variant": "v1",
+            "range": "L30",
+            "params": {
+              "p1": 100
+            },
+            "rows": []
+          },
+          {
+            "key": "amadesazi__s7__l__r32",
+            "record": {
+              "ref": "F-00020",
+              "field": "bazdehi_khoruji_3"
+            },
+            "variant": "v1",
+            "range": "L32:L136",
+            "params": {
+              "p1": 100
+            },
+            "rows": []
+          }
+        ],
+        "lang": "feel",
+        "expr": "bazdehi_khoruji_3 = khoruji_3 / vorudi * zarib_darsad",
+        "inputs": [
+          {
+            "key": "khoruji_3",
+            "title": "وزن محصول سوم",
+            "unit": "kg",
+            "from": {
+              "ref": "F-00020",
+              "field": "khoruji_3"
+            }
+          },
+          {
+            "key": "vorudi",
+            "title": "وزن ماده اولیه ورودی",
+            "unit": "kg",
+            "from": {
+              "ref": "F-00020",
+              "field": "vorudi"
+            }
+          },
+          {
+            "key": "zarib_darsad",
+            "title": "ضریب تبدیل به درصد",
+            "from": {
+              "param": "p1"
+            }
+          }
+        ],
+        "outputs": [
+          {
+            "key": "bazdehi_khoruji_3",
+            "title": "بازدهی محصول سوم",
+            "unit": "percent",
+            "nature": "observed",
+            "per": "هر محمولهٔ ورودی",
+            "writes_to": {
+              "ref": "F-00020",
+              "field": "bazdehi_khoruji_3"
+            }
+          }
+        ],
+        "original_ref": "facts/originals/F-00131.txt"
+      },
+      "home": {
+        "ref": "F-00020"
+      },
+      "id": "F-00131",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-19T09:42:28Z"
+    }
+  ]
 }
