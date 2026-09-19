@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-13T16:48:53Z",
-  "updated_at": "2026-09-19T10:50:50Z",
+  "updated_at": "2026-09-19T10:55:21Z",
   "idef0": {
     "inputs": [
       "بار ارسالی تأمین‌کننده",
@@ -274,8 +274,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 608.7932098765432,
-        "y": 469.66975308641986
+        "x": 1061.570987654321,
+        "y": 462.7253086419754
       },
       "layout": "manual",
       "source": {
@@ -306,8 +306,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 382.03703703703707,
-        "y": 491.52314814814827
+        "x": 1018.1481481481483,
+        "y": 612.3564814814816
       },
       "layout": "manual",
       "source": {
@@ -337,8 +337,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 397.0509259259259,
-        "y": 656.0987654320991
+        "x": 1010.9398148148148,
+        "y": 747.7654320987657
       },
       "layout": "manual",
       "source": {
@@ -371,8 +371,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 410,
-        "y": 814.3333333333335
+        "x": 1012.7777777777778,
+        "y": 862.9444444444446
       },
       "layout": "manual",
       "source": {
@@ -403,8 +403,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 464,
-        "y": 972.3333333333335
+        "x": 1014.0000000000001,
+        "y": 991.9513888888889
       },
       "layout": "manual",
       "source": {
@@ -830,8 +830,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 541.6361851851852,
-        "y": 1578.4850987654324
+        "x": 441.63618518518524,
+        "y": 1584.0406543209879
       },
       "layout": "manual",
       "source": {
@@ -863,8 +863,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1004.9815679012347,
-        "y": 1720.2046049382714
+        "x": 1131.3704567901236,
+        "y": 1393.8157160493824
       },
       "layout": "manual",
       "source": {
@@ -1033,10 +1033,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 623,
-        "y": 1686.5416666666667
+        "x": 866.0555555555555,
+        "y": 1065.7083333333333
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "warehouse-006-j9",
@@ -1044,10 +1044,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1143,
-        "y": 1634.0416666666667
+        "x": 766.6111111111112,
+        "y": 1225.7083333333335
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "warehouse-006-n028",
@@ -1072,13 +1072,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1583.0416666666667
+        "x": 956.1111111111111,
+        "y": 1169.1527777777778
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260919-110000",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1103,13 +1105,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1758.0416666666667
+        "x": 656.1111111111112,
+        "y": 1083.0416666666665
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260919-110000",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
