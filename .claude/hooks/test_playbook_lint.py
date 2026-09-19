@@ -354,9 +354,7 @@ def test_the_playbook_never_proceeds_without_the_review():
 
 def test_the_unit_contract_says_a_column_of_names_is_a_string():
     assert (
-        "A column whose cells are names is `type: string`; `refItems` is only"
-        " for cells that are the catalogue's codes (the namespaces your input's"
-        " shape section names) or item keys."
+        "A column whose cells are names is `type: string`."
     ) in agent_section("What you decide, per kind")
 
 
@@ -479,3 +477,67 @@ def test_the_unit_contract_spells_a_new_entrys_own_handle():
             "`N-<unit id>-<index>`, the index counted from 0 in `new[]` "
             "(`N-u-att-1-0` is the first)") in text
     assert "exactly as printed in «آنچه تا کنون ثبت شده»" in text
+
+
+# Tables as the spine (2026-09-16). The four kinds are `record`, `measurement`,
+# `rule` and `note`: the item kind is gone, and so is its vocabulary — prose
+# that still names a kind the schema dropped is prose that sends a unit looking
+# for it. In its place every rule, measurement and note names the table it
+# lives on, which is the one field a unit cannot be told twice.
+
+#: The item kind's leftovers. Substrings: these are Latin runs and one Persian
+#: word, and both appear inside longer tokens.
+ITEM_WORDS = ("refItems", "itemData", "items.json", "item-master", "قلم")
+
+
+@pytest.mark.parametrize("path", [AGENT, PLAYBOOK, EDIT_FACT])
+def test_the_agent_has_no_item_mode_and_the_playbook_no_item_vocabulary(path):
+    text = path.read_text(encoding="utf-8")
+    for word in ITEM_WORDS:
+        assert word not in text, f"{path.name} still says {word!r}"
+    assert not re.search(r"^\|\s*`?item`?\s*\|", text, re.M), \
+        f"{path.name} still has an `item` row"
+    assert not re.search(r"^#+ .*\bitems?\b", text, re.M | re.I), \
+        f"{path.name} still has an item heading"
+
+
+def test_every_rule_measurement_and_note_names_its_home():
+    """A fact's table is the one thing the engine cannot derive twice: the unit
+    that wrote the fact is the only reader who knows which form it came off."""
+    text = " ".join(AGENT.read_text(encoding="utf-8").split())
+    assert (
+        "every rule, measurement or note you write names its `home` — the"
+        " listed table it is about or written on, by its printed handle — and"
+        " leaves it empty only when no listed table fits"
+    ) in text
+    assert '`{"ref": "<handle>", "field": "<column key>"}`' in text
+    assert ("A measurement that is really a column of a listed form is a"
+            " measurement with `home.field`, never a new table.") in text
+    assert "A formula's home is the table its first binding names." in text
+
+
+def test_review_mode_may_set_a_home_on_a_homeless_flag():
+    """The line is quoted as `assemble._digest_text` prints it: the flag names
+    the entry the way a decision addresses it, and each candidate table by the
+    temp id a review's `home` carries, its key and its title."""
+    section = agent_section("`review` mode")
+    assert ("`homeless · <kind> <key> · no home; these tables read like it:"
+            " <id> <key> «<title>»`") in section
+    assert (
+        'answer it with a `keep` carrying `home: {"ref": "<that table\'s id'
+        ' in the line>"}`, which the review corrects exactly as it corrects any'
+        " other field"
+    ) in section
+
+
+def test_edit_fact_has_move_and_detach_cases():
+    """The owner moves an entry by naming two titles; the ids are the
+    playbook's own business, and so is the refusal the engine prints."""
+    text = EDIT_FACT.read_text(encoding="utf-8")
+    assert "| **moves an entry under a table**" in text
+    assert "| **detaches an entry from its table**" in text
+    assert '{"op": "set", "path": "home", "value": {"ref": "F-00031"}}' in text
+    assert '{"op": "unset", "path": "home"}' in text
+    assert "«قاعدهٔ «سقف ضایعات» را زیر «فرم تبدیل آماده‌سازی برگر» ببر»" in text
+    assert "قاعدهٔ «سقف ضایعات» زیر «فرم تبدیل آماده‌سازی برگر» می‌رود." in text
+    assert "از جدولش جدا می‌شود." in text
