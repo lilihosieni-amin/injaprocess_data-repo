@@ -1,0 +1,48 @@
+{
+  "add_nodes": [
+    { "key": "j1", "type": "junction", "junctionType": "XOR", "direction": "split" },
+    { "key": "j2", "type": "junction", "junctionType": "XOR", "direction": "join" },
+    {
+      "key": "n1",
+      "type": "activity",
+      "label": "درخواست تأمین قلم کسری تا عصر همان روز از کارپردازی",
+      "description": "اگر قلم ضروری باشد و دپوی موجود کفایت نکند، تأمین آن همان روز و تا عصر از کارپردازی خواسته می‌شود.",
+      "actor": "سرپرست انبار",
+      "icom": {
+        "inputs": ["کسری اعلام‌شده به کارپردازی"],
+        "controls": ["ضروری بودن قلم و ناکافی بودن دپو"],
+        "outputs": ["درخواست تأمین فوری"],
+        "mechanisms": ["سرپرست انبار", "سرپرست کارپردازی"]
+      },
+      "subprocess": null
+    },
+    {
+      "key": "n2",
+      "type": "activity",
+      "label": "موکول کردن تأمین قلم کسری به سفارش خرید بعدی",
+      "description": "اگر دپوی موجود کفایت کند، تأمین قلم کسری به سفارش خرید بعدی موکول می‌شود.",
+      "actor": "سرپرست انبار",
+      "icom": {
+        "inputs": ["کسری اعلام‌شده به کارپردازی"],
+        "controls": ["کفایت دپوی موجود"],
+        "outputs": ["تأمین موکول‌شده به سفارش بعدی"],
+        "mechanisms": ["سرپرست انبار"]
+      },
+      "subprocess": null
+    }
+  ],
+  "add_edges": [
+    { "from": "warehouse-006-n011", "to": "j1" },
+    { "from": "j1", "to": "n1" },
+    { "from": "j1", "to": "n2" },
+    { "from": "n1", "to": "j2" },
+    { "from": "n2", "to": "j2" },
+    { "from": "j2", "to": "warehouse-006-j3" }
+  ],
+  "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [
+    { "from": "warehouse-006-n011", "to": "warehouse-006-j3" }
+  ],
+  "flag_removed": []
+}

@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-18T22:32:38Z",
-  "updated_at": "2026-09-19T10:49:17Z",
+  "updated_at": "2026-09-19T10:50:59Z",
   "idef0": {
     "inputs": [
       "آمار موجودی اقلام انبار در ابتدای هفته",
@@ -68,7 +68,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 90
+        "y": 90.0
       },
       "layout": "auto",
       "source": {
@@ -98,7 +98,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 90
+        "y": 90.0
       },
       "layout": "auto",
       "source": {
@@ -132,7 +132,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 90
+        "y": 90.0
       },
       "layout": "auto",
       "source": {
@@ -164,7 +164,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 90
+        "y": 90.0
       },
       "layout": "auto",
       "source": {
@@ -200,7 +200,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 90
+        "y": 90.0
       },
       "layout": "auto",
       "source": {
@@ -232,7 +232,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 1402.5
+        "y": 1140.0
       },
       "layout": "auto",
       "source": {
@@ -266,7 +266,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 265
+        "y": 265.0
       },
       "layout": "auto",
       "source": {
@@ -303,7 +303,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 265
+        "y": 265.0
       },
       "layout": "auto",
       "source": {
@@ -336,7 +336,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 265
+        "y": 265.0
       },
       "layout": "auto",
       "source": {
@@ -372,7 +372,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 265
+        "y": 265.0
       },
       "layout": "auto",
       "source": {
@@ -403,7 +403,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 265
+        "y": 265.0
       },
       "layout": "auto",
       "source": {
@@ -434,7 +434,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 571.25
+        "y": 440.0
       },
       "layout": "auto",
       "source": {
@@ -453,10 +453,11 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
-        "y": 587.25
+        "x": 103,
+        "y": 631.0
       },
-      "layout": "auto"
+      "layout": "auto",
+      "removed": true
     },
     {
       "id": "warehouse-025-n013",
@@ -479,8 +480,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 702.5
+        "x": 40,
+        "y": 1315.0
       },
       "layout": "auto",
       "source": {
@@ -489,9 +490,11 @@
           "runs/chat/20260918-234500",
           "runs/chat/20260918-235500",
           "ui-edit",
-          "runs/chat/20260919-104500"
+          "runs/chat/20260919-104500",
+          "runs/chat/20260919-110000"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "warehouse-025-n014",
@@ -514,14 +517,17 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 702.5
+        "x": 40,
+        "y": 1490.0
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260918-210000",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260919-110000"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "warehouse-025-j2",
@@ -529,10 +535,11 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1143,
-        "y": 718.5
+        "x": 103,
+        "y": 806.0
       },
-      "layout": "auto"
+      "layout": "auto",
+      "removed": true
     },
     {
       "id": "warehouse-025-n015",
@@ -557,14 +564,17 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1052.5
+        "x": 40,
+        "y": 1665.0
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260918-210000",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260919-110000"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "warehouse-025-n016",
@@ -588,14 +598,17 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1227.5
+        "x": 40,
+        "y": 1840.0
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/chat/20260918-210000",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260919-110000"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "warehouse-025-j3",
@@ -603,10 +616,11 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 883,
-        "y": 1068.5
+        "x": 103,
+        "y": 981.0
       },
-      "layout": "auto"
+      "layout": "auto",
+      "removed": true
     },
     {
       "id": "warehouse-025-n017",
@@ -631,8 +645,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1052.5
+        "x": 300,
+        "y": 440.0
       },
       "layout": "auto",
       "source": {
@@ -682,48 +696,12 @@
       "to": "warehouse-025-n012"
     },
     {
-      "from": "warehouse-025-n012",
-      "to": "warehouse-025-j1"
-    },
-    {
-      "from": "warehouse-025-j1",
-      "to": "warehouse-025-n013"
-    },
-    {
-      "from": "warehouse-025-j1",
-      "to": "warehouse-025-j3"
-    },
-    {
-      "from": "warehouse-025-n013",
-      "to": "warehouse-025-n014"
-    },
-    {
-      "from": "warehouse-025-n014",
-      "to": "warehouse-025-j2"
-    },
-    {
-      "from": "warehouse-025-j2",
-      "to": "warehouse-025-n015"
-    },
-    {
-      "from": "warehouse-025-j2",
-      "to": "warehouse-025-n016"
-    },
-    {
-      "from": "warehouse-025-n015",
-      "to": "warehouse-025-j3"
-    },
-    {
-      "from": "warehouse-025-n016",
-      "to": "warehouse-025-j3"
-    },
-    {
-      "from": "warehouse-025-j3",
-      "to": "warehouse-025-n017"
-    },
-    {
       "from": "warehouse-025-n005",
       "to": "warehouse-025-n007"
+    },
+    {
+      "from": "warehouse-025-n012",
+      "to": "warehouse-025-n017"
     }
   ],
   "pending": []

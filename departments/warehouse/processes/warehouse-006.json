@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-13T16:48:53Z",
-  "updated_at": "2026-09-18T17:54:31Z",
+  "updated_at": "2026-09-19T10:50:50Z",
   "idef0": {
     "inputs": [
       "بار ارسالی تأمین‌کننده",
@@ -1026,6 +1026,91 @@
           "ui-edit"
         ]
       }
+    },
+    {
+      "id": "warehouse-006-j8",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "split",
+      "position": {
+        "x": 623,
+        "y": 1686.5416666666667
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "warehouse-006-j9",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "join",
+      "position": {
+        "x": 1143,
+        "y": 1634.0416666666667
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "warehouse-006-n028",
+      "type": "activity",
+      "label": "درخواست تأمین قلم کسری تا عصر همان روز از کارپردازی",
+      "description": "اگر قلم ضروری باشد و دپوی موجود کفایت نکند، تأمین آن همان روز و تا عصر از کارپردازی خواسته می‌شود.",
+      "actor": "سرپرست انبار",
+      "icom": {
+        "inputs": [
+          "کسری اعلام‌شده به کارپردازی"
+        ],
+        "controls": [
+          "ضروری بودن قلم و ناکافی بودن دپو"
+        ],
+        "outputs": [
+          "درخواست تأمین فوری"
+        ],
+        "mechanisms": [
+          "سرپرست انبار",
+          "سرپرست کارپردازی"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 1583.0416666666667
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260919-110000",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "warehouse-006-n029",
+      "type": "activity",
+      "label": "موکول کردن تأمین قلم کسری به سفارش خرید بعدی",
+      "description": "اگر دپوی موجود کفایت کند، تأمین قلم کسری به سفارش خرید بعدی موکول می‌شود.",
+      "actor": "سرپرست انبار",
+      "icom": {
+        "inputs": [
+          "کسری اعلام‌شده به کارپردازی"
+        ],
+        "controls": [
+          "کفایت دپوی موجود"
+        ],
+        "outputs": [
+          "تأمین موکول‌شده به سفارش بعدی"
+        ],
+        "mechanisms": [
+          "سرپرست انبار"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 1758.0416666666667
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260919-110000",
+        "touched_by": []
+      }
     }
   ],
   "edges": [
@@ -1083,10 +1168,6 @@
     {
       "from": "warehouse-006-n010",
       "to": "warehouse-006-n011"
-    },
-    {
-      "from": "warehouse-006-n011",
-      "to": "warehouse-006-j3"
     },
     {
       "from": "warehouse-006-n012",
@@ -1188,6 +1269,30 @@
     {
       "from": "warehouse-006-n019",
       "to": "warehouse-006-n025"
+    },
+    {
+      "from": "warehouse-006-n011",
+      "to": "warehouse-006-j8"
+    },
+    {
+      "from": "warehouse-006-j8",
+      "to": "warehouse-006-n028"
+    },
+    {
+      "from": "warehouse-006-j8",
+      "to": "warehouse-006-n029"
+    },
+    {
+      "from": "warehouse-006-n028",
+      "to": "warehouse-006-j9"
+    },
+    {
+      "from": "warehouse-006-n029",
+      "to": "warehouse-006-j9"
+    },
+    {
+      "from": "warehouse-006-j9",
+      "to": "warehouse-006-j3"
     }
   ],
   "pending": []
