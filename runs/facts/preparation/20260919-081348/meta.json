@@ -1,0 +1,14 @@
+{
+  "department": "preparation",
+  "origin": "chat",
+  "actor": "owner",
+  "started_at": "2026-09-19T08:13:48Z",
+  "finished_at": "2026-09-19T08:15:00Z",
+  "recordings": [],
+  "attachments": [],
+  "workbooks": [],
+  "delta": "runs/facts/preparation/20260919-081348/facts-delta.json",
+  "merged": true,
+  "ids_created": [],
+  "instruction": "قاعدهٔ «بازدهی پخت مرغ» را زیر جدول «فرم تبدیل آماده‌سازی سینه مرغ» ببر."
+}

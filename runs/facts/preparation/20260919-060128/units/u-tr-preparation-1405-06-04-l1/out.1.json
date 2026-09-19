@@ -1,0 +1,240 @@
+{
+  "schema_version": 1,
+  "unit": "u-tr-preparation-1405-06-04-l1",
+  "attempt": 1,
+  "decisions": [],
+  "new": [
+    {
+      "kind": "rule",
+      "key": "tafkik_mahsul_sine_morgh",
+      "title": "تخصیص محصول به هر تکه سینه مرغ",
+      "statement": "هر سینهٔ مرغ پاک‌شده بر پایهٔ اندازه و بافت خود به یکی از چهار محصول لقمه، مرغ گریل، مرغ چیزا و مرغ پیتزا تخصیص می‌یابد و چربی و غضروف و استخوان جداشده ضایعات به شمار می‌رود. تکه‌های پاره یا ریز دور ریخته نمی‌شود و به مرغ پیتزا برمی‌گردد. تخصیص را مسئول لاین مرغ هنگام برش انجام می‌دهد.",
+      "aliases": ["تفکیک سینه مرغ"],
+      "home": { "ref": "N-u-att-1-6" },
+      "processes": [
+        { "process": "preparation-012", "node": "preparation-012-n003" },
+        { "process": "preparation-010", "node": "preparation-010-n001" }
+      ],
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "inputs": [
+          { "key": "vizhegi_tekke", "title": "ویژگی تکه سینه" }
+        ],
+        "outputs": [
+          { "key": "mahsul", "title": "محصول تعیین‌شده" }
+        ],
+        "table": {
+          "hit": "first",
+          "inputs": ["vizhegi_tekke"],
+          "outputs": ["mahsul"],
+          "rows": [
+            { "vizhegi_tekke": "سینهٔ درشت و سالم", "mahsul": "لقمه" },
+            { "vizhegi_tekke": "سینهٔ یکدست با ضخامت متوسط", "mahsul": "مرغ گریل" },
+            { "vizhegi_tekke": "برش سالم حدود هشتاد گرمی", "mahsul": "مرغ چیزا" },
+            { "vizhegi_tekke": "کناره‌ها و تکه‌های پاره و ریز", "mahsul": "مرغ پیتزا" },
+            { "vizhegi_tekke": "چربی و غضروف و استخوان", "mahsul": "ضایعات مرغ" }
+          ]
+        }
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "mabnaye_baste_bandi_morgh",
+      "title": "مبنای بسته‌بندی محصولات لاین مرغ",
+      "statement": "بسته‌بندی هر محصول لاین مرغ مبنای ثابت خود را دارد: لقمه، مرغ چیزا و فیله بر پایهٔ تعداد و مرغ گریل و مرغ پیتزا بر پایهٔ وزن بسته می‌شوند. روی لیبل هر بسته نام محصول، تعداد یا وزن و تاریخ نوشته می‌شود.",
+      "home": { "ref": "N-u-att-1-6" },
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "inputs": [
+          { "key": "mahsul", "title": "محصول مرغ" }
+        ],
+        "outputs": [
+          { "key": "mabnaye_baste", "title": "مبنای بسته" },
+          { "key": "andaze_baste", "title": "اندازهٔ هر بسته" }
+        ],
+        "table": {
+          "hit": "unique",
+          "inputs": ["mahsul"],
+          "outputs": ["mabnaye_baste", "andaze_baste"],
+          "rows": [
+            { "mahsul": "لقمه", "mabnaye_baste": "تعداد", "andaze_baste": "دویست عدد" },
+            { "mahsul": "مرغ چیزا", "mabnaye_baste": "تعداد", "andaze_baste": "چهل و هشت عدد" },
+            { "mahsul": "فیله سوخاری", "mabnaye_baste": "تعداد", "andaze_baste": "شصت عدد" },
+            { "mahsul": "مرغ گریل", "mabnaye_baste": "وزن", "andaze_baste": "چهار کیلوگرم" },
+            { "mahsul": "مرغ پیتزا", "mabnaye_baste": "وزن", "andaze_baste": "چهار کیلوگرم" }
+          ]
+        }
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "vazn_standard_chiza",
+      "title": "وزن و تعداد استاندارد مرغ چیزا",
+      "statement": "هر عدد مرغ چیزا حدود هشتاد گرم بریده می‌شود و هر بسته چهل و هشت عدد است. چون چیزا در مرحلهٔ بعد کوبیده و با پنیر فرآوری می‌شود، اضافه‌وزن بسته اشکال جدی ندارد و مقدار اضافهٔ گرفته‌شده به مرغ پیتزا برمی‌گردد.",
+      "home": { "ref": "N-u-att-1-6", "field": "morgh_chinza" },
+      "data": {
+        "inputs": [],
+        "outputs": [
+          { "key": "vazn_har_adad", "title": "وزن هر عدد چیزا", "unit": "g", "value": 80, "per": "هر عدد چیزا", "nature": "standard" },
+          { "key": "tedad_dar_baste", "title": "تعداد در هر بسته", "unit": "pcs", "value": 48, "per": "هر بسته", "nature": "standard" }
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "zayeat_motearef_sine_morgh",
+      "title": "ضایعات متعارف پاک‌سازی سینه مرغ",
+      "statement": "ضایعات پاک‌سازی سینهٔ مرغ — چربی، غضروف و استخوان — در هر پنجاه کیلوگرم سینهٔ خام به‌طور متعارف یک و نیم تا سه کیلوگرم است. این مقدار پیش از برش جدا، جداگانه وزن و به انبار تحویل می‌شود.",
+      "home": { "ref": "S-rec-ef021443f7dc", "field": "sine_morgh" },
+      "data": {
+        "inputs": [],
+        "outputs": [
+          { "key": "vazn_zayeat", "title": "ضایعات متعارف", "unit": "kg", "range": { "min": 1.5, "max": 3 }, "per": "هر پنجاه کیلوگرم سینهٔ خام", "nature": "standard" }
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "taraz_tabdil_sine_morgh",
+      "title": "تراز وزنی تبدیل سینه مرغ",
+      "statement": "مجموع وزن محصولات، کنار شینسل، ضایعات، خون‌آبه و پلاستیک هر محمولهٔ سینه مرغ باید با وزن خام همان محموله که از انبار تحویل گرفته شده برابر باشد. اختلاف بر حسب کیلوگرم به دست می‌آید و مسئول لاین باید پیش از پایان شیفت آن را به کمتر از صد گرم برساند، وگرنه وزن‌ها دوباره گرفته می‌شود.",
+      "aliases": ["تراز ورودی و خروجی سینه مرغ"],
+      "home": { "ref": "N-u-att-1-6" },
+      "processes": [
+        { "process": "preparation-012", "node": "preparation-012-n023" }
+      ],
+      "data": {
+        "lang": "feel",
+        "expr": "enheraf_taraz = vazn_vorudi - (vazn_loghme + vazn_morgh_pizza + vazn_geril + vazn_chinza + vazn_kenar_shenisel + vazn_zayeat + vazn_khun_abe + vazn_plastik)",
+        "inputs": [
+          { "key": "vazn_loghme", "title": "وزن لقمه", "unit": "kg", "from": { "ref": "N-u-att-1-6", "field": "loghme_kilo" } },
+          { "key": "vazn_morgh_pizza", "title": "وزن مرغ پیتزا تکه شده", "unit": "kg", "from": { "ref": "N-u-att-1-6", "field": "morgh_pizza_tekke_kilo" } },
+          { "key": "vazn_geril", "title": "وزن مرغ گریل", "unit": "kg", "from": { "ref": "N-u-att-1-6", "field": "morgh_geril_kilo" } },
+          { "key": "vazn_chinza", "title": "وزن مرغ چیزا", "unit": "kg", "from": { "ref": "N-u-att-1-6", "field": "morgh_chinza" } },
+          { "key": "vazn_kenar_shenisel", "title": "وزن کنار شینسل", "unit": "kg", "from": { "ref": "N-u-att-1-6", "field": "kenar_shenisel" } },
+          { "key": "vazn_khun_abe", "title": "وزن خون آبه", "unit": "kg", "from": { "ref": "N-u-att-1-6", "field": "khun_abe" } },
+          { "key": "vazn_plastik", "title": "وزن پلاستیک", "unit": "kg", "from": { "ref": "N-u-att-1-6", "field": "plastik" } },
+          { "key": "vazn_zayeat", "title": "وزن ضایعات سینه مرغ", "unit": "kg", "from": { "ref": "S-rec-ef021443f7dc", "field": "sine_morgh" } },
+          { "key": "vazn_vorudi", "title": "وزن خام تحویلی از انبار", "unit": "kg", "from": { "ref": "S-rec-e3f80534814b", "field": "sine" } }
+        ],
+        "outputs": [
+          { "key": "enheraf_taraz", "title": "اختلاف تراز", "unit": "kg", "nature": "observed" }
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "masir_kenar_shenisel",
+      "title": "مسیر مصرف کنار شینسل خام و پخته",
+      "statement": "کنار شینسل خام تا روز پخت هفتگی در سردخانهٔ زیر صفر انبار نگهداری می‌شود و بخشی از آن برای ناهار و شام پرسنل مصرف می‌شود. در روز پخت، مقدار جمع‌شده پخته می‌شود و تکه‌های قابل استفادهٔ آن پاک و به مرغ پیتزای پخته تبدیل می‌شود؛ این کار باید در همان روز انجام شود.",
+      "home": { "ref": "N-u-att-1-9" },
+      "processes": [
+        { "process": "preparation-012", "node": "preparation-012-n039" },
+        { "process": "preparation-012", "node": "preparation-012-n033" },
+        { "process": "preparation-013", "node": "preparation-013-n059" }
+      ],
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "original": "کنار شینسل خام میره توی زیر صفر برای فقط شام و ناهار استفاده میشه ولی کنار شینسل پخته میشه پاکسازی میشه برای مرغ پیتزا استفاده میشه.",
+        "inputs": [
+          { "key": "vazn_kenar_shenisel", "title": "وزن کنار شینسل", "unit": "kg", "from": { "ref": "N-u-att-1-9", "field": "zayeat_shenisel" } }
+        ],
+        "outputs": [
+          { "key": "maqsade_kenar_shenisel", "title": "مقصد کنار شینسل" }
+        ]
+      }
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_kenar_file",
+      "title": "وزن‌گیری گوشت کنار فیله",
+      "statement": "گوشتی که هنگام کندن پوست فیله از کنار آن جدا می‌شود، پس از پاک‌سازی جداگانه وزن می‌شود و مقدار روزانهٔ آن بر حسب کیلوگرم ثبت و جدا از خود فیله به انبار تحویل می‌شود. این گوشت برای ناهار و شام پرسنل مصرف می‌شود.",
+      "home": { "ref": "N-u-att-1-8", "field": "kenar_file" },
+      "processes": [
+        { "process": "preparation-026", "node": "preparation-026-n008" }
+      ],
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "of": "گوشت جداشده از کنار فیله",
+        "method": "ترازوی لیبل‌گذاری آماده‌سازی",
+        "when": "پس از پاک‌سازی فیله‌ها و پیش از تحویل به انبار",
+        "by": "مسئول لاین مرغ",
+        "writes_to": { "ref": "N-u-att-1-8", "field": "kenar_file" },
+        "exceptions": "پوست جداشده از فیله کنار فیله به شمار نمی‌رود و در ضایعات مرغ نوشته می‌شود."
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "mabnaye_depo_nimesakhte",
+      "title": "مبنای دپوی موجودی نیمه‌ساختهٔ مرغ",
+      "statement": "انبار برای هر قلم نیمه‌ساختهٔ مرغ چهار تا پنج روز موجودی دپو نگه می‌دارد و نوع و مقدار تولید روزانه را بر همین پایه به لاین اعلام می‌کند. برای روزهای تعطیل پرفروش مانند نوروز، مبنای روزانه دو برابر گرفته می‌شود.",
+      "home": { "ref": "N-u-att-1-11" },
+      "processes": [
+        { "process": "preparation-012", "node": "preparation-012-n001" }
+      ],
+      "data": {
+        "inputs": [],
+        "outputs": [
+          { "key": "rozhaye_depo", "title": "روزهای دپوی موجودی", "unit": "day", "range": { "min": 4, "max": 5 }, "per": "هر قلم نیمه‌ساخته", "nature": "standard" },
+          { "key": "zarib_ayyam_porforush", "title": "ضریب روزهای پرفروش", "unit": "ratio", "value": 2, "per": "هر روز تعطیل پرفروش", "nature": "standard" }
+        ]
+      }
+    },
+    {
+      "kind": "record",
+      "key": "form_ezafekari_va_morakhkhasi",
+      "title": "جدول اضافه‌کاری و مرخصی پرسنل",
+      "statement": "سیاههٔ آنلاین مجموعه برای ثبت اضافه‌کاری و مرخصی پرسنل. برای هر نوبت، تاریخ، نام فرد، ساعت و مدت ماندن و علت کار در یک سطر نوشته می‌شود و ثبت باید همان روز یا حداکثر روز بعد انجام شود. پرداخت اضافه‌کاری تنها پس از تأیید مدیر مجموعه در همین سیاهه انجام می‌شود و یادداشت کاغذی پذیرفته نمی‌شود.",
+      "aliases": ["فرم اضافه‌کاری"],
+      "data": {
+        "medium": "external",
+        "role": "log",
+        "location": {
+          "system": "شیت آنلاین مجموعه",
+          "kept_at": "دفتر مجموعه"
+        },
+        "cadence": "daily",
+        "grain": "هر نوبت اضافه‌کاری یا مرخصی یک نفر",
+        "filled_by": null,
+        "approved_by": "مدیر مجموعه",
+        "fields": [
+          { "key": "tarikh", "title": "تاریخ", "type": "date" },
+          { "key": "nam_farad", "title": "نام فرد", "type": "string", "description": "نام فردی که اضافه‌کاری یا مرخصی برای او ثبت می‌شود." },
+          { "key": "zaman", "title": "ساعت و مدت", "type": "string", "description": "ساعت ماندن یا نبودن و مدت آن." },
+          { "key": "sharh_kar", "title": "شرح کار", "type": "string", "description": "کاری که اضافه‌کاری برای آن انجام شده یا علت مرخصی." }
+        ]
+      }
+    },
+    {
+      "kind": "note",
+      "key": "note_sabt_ezafekari",
+      "title": "ابهام در پر کردن جدول اضافه‌کاری",
+      "statement": "روشن نیست اضافه‌کاری پرسنل آماده‌سازی را چه نقشی در سیاههٔ آنلاین وارد می‌کند و اعلام آن در سامانهٔ حضور و غیاب جای این ثبت را می‌گیرد یا افزون بر آن است.",
+      "home": { "ref": "N-u-tr-preparation-1405-06-04-l1-8" },
+      "data": {
+        "about": [ { "ref": "N-u-tr-preparation-1405-06-04-l1-8" } ],
+        "question": "پر کردن جدول اضافه‌کاری بر عهدهٔ کدام نقش است و اعلام در سامانهٔ حضور و غیاب جایگزین این ثبت می‌شود یا نه؟"
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "vazn_baste_penne",
+      "title": "وزن استاندارد بستهٔ پنه",
+      "statement": "هر بستهٔ پنهٔ پخته یک کیلو و دویست گرم است و روزانه به تعداد درخواست‌شده، معمولاً پنج تا شش بسته، پخته، وزن و لیبل می‌شود. هیچ‌یک از برگه‌های تبدیل شناخته‌شدهٔ آماده‌سازی به پنه نمی‌پردازد، از این رو این مقدار جای ثبت مشخصی ندارد.",
+      "home": null,
+      "processes": [
+        { "process": "preparation-011", "node": "preparation-011-n005" }
+      ],
+      "data": {
+        "inputs": [],
+        "outputs": [
+          { "key": "vazn_har_baste", "title": "وزن هر بستهٔ پنه", "unit": "kg", "value": 1.2, "per": "هر بستهٔ پنهٔ پخته", "nature": "standard" }
+        ]
+      }
+    }
+  ]
+}
