@@ -51,6 +51,8 @@ translate them to «صفحات گسترده»; the user does not recognise it.
   the hook blocks them.
 - `facts/**` is written **only** by the `merge facts` CLI — the agent writes only
   `runs/facts/{dept}/{stamp}/facts-delta.json` and `runs/facts/{dept}/{stamp}/facts-patch.json`.
+- `comments.db` (outside this repo, reached via `$COMMENTS_DB`) is written **only** by
+  `comments resolve` — never hand-write it.
 - Never edit `.claude/**` or this `CLAUDE.md` at runtime.
 - Never write files outside this repo.
 
@@ -111,9 +113,11 @@ it, so both carry meaning. Fix the process the usual way — the `edit-process` 
 
 If `comments show` refuses (not approved yet, or the number is unknown), tell the owner in Persian
 only that this comment has not reached the editor yet — nothing else; do not guess at what it
-might have meant. The `CMT-n` number itself is fine to say to the owner (it is what the panel
-shows them), same as any other entry id — but no department code, commit sha, or other internal
-detail from the trail.
+might have meant. If `comments resolve` itself refuses **after** the process fix is already
+committed, tell the owner in Persian only that the process was fixed but the comment could not be
+closed automatically — nothing else. The `CMT-n` number itself is fine to say to the owner (it is
+what the panel shows them), same as any other entry id — but no department code, commit sha, or
+other internal detail from the trail.
 
 ---
 
@@ -148,5 +152,5 @@ detail from the trail.
 | `facts-plan` | Plan and assemble a facts run: `facts-plan build <dept> --run R --recordings a,b`, `status --run R [--new-turn]`, `digest --run R`, `assemble --run R [--review]`, `report --run R` |
 | `comments` | Read and resolve owner-approved panel comments: `comments list --department <dept> [--status approved\|addressed]`, `show CMT-n`, `resolve CMT-n [--commit SHA] [--note TEXT]`. Sees only `approved`/`addressed` comments; exit 2 with `comments: …` on refusal |
 
-All CLIs require `DATA_ROOT` set to the root of this repo, except `comments`, which reads
-`$COMMENTS_DB` instead (set in the container).
+All CLIs require `DATA_ROOT` set to the root of this repo, except `comments`, which reads and
+writes `$COMMENTS_DB` instead (set in the container).
