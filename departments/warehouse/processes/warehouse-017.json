@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-13T16:48:59Z",
-  "updated_at": "2026-09-19T22:00:16Z",
+  "updated_at": "2026-09-25T22:25:10Z",
   "idef0": {
     "inputs": [],
     "controls": [
@@ -53,8 +53,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 841.1185270425776,
-        "y": 25.324510932105866
+        "x": 41.9142692750288,
+        "y": -96.35450230149601
       },
       "layout": "manual",
       "source": {
@@ -82,8 +82,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1043.7025316455695,
-        "y": 150.7157652474108
+        "x": 264.2968929804371,
+        "y": -93.4672036823936
       },
       "layout": "manual",
       "source": {
@@ -99,10 +99,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 193.5
+        "x": 533.9499424626008,
+        "y": -52.66283084004603
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "warehouse-017-n003",
@@ -122,8 +122,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 278.22151898734177,
-        "y": 35.88377445339471
+        "x": 707.8515535097814,
+        "y": -92.80724971231301
       },
       "layout": "manual",
       "source": {
@@ -151,8 +151,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 542.181242807825,
-        "y": 33.24395857307249
+        "x": 930.2341772151899,
+        "y": -76.96835443037976
       },
       "layout": "manual",
       "source": {
@@ -178,13 +178,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 265
+        "x": 540.8831990794017,
+        "y": 114.53049482163406
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260913-141752",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -205,13 +207,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 265
+        "x": 791.6438434982739,
+        "y": 119.81012658227851
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260913-141752",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -230,13 +234,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 265
+        "x": 1059.5632911392404,
+        "y": 131.68929804372843
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/warehouse/20260913-141752",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -287,10 +293,6 @@
     {
       "from": "warehouse-017-n003",
       "to": "warehouse-017-n004"
-    },
-    {
-      "from": "warehouse-017-n004",
-      "to": "warehouse-017-n001"
     },
     {
       "from": "warehouse-017-n005",
