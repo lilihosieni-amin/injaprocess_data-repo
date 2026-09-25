@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-13T16:49:02Z",
-  "updated_at": "2026-09-25T22:09:00Z",
+  "updated_at": "2026-09-25T22:12:04Z",
   "idef0": {
     "inputs": [
       "آمار تعداد مصرف اقلام بسته‌بندی نزد حسابداری",
@@ -305,7 +305,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 862.3070987654321,
+        "x": 788.4983610987236,
         "y": 781.3194444444445
       },
       "layout": "manual",
@@ -337,8 +337,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 795.2083333333334,
-        "y": 926.9598765432098
+        "x": 714.6281518439911,
+        "y": 925.6055877786831
       },
       "layout": "manual",
       "source": {
@@ -371,8 +371,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1115.9722222222222,
-        "y": 889.8842592592592
+        "x": 969.7090356533319,
+        "y": 844.5155856476127
       },
       "layout": "manual",
       "source": {
@@ -493,8 +493,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1060.1851851851852,
-        "y": 1182.337962962963
+        "x": 1032.4222655123867,
+        "y": 1237.8638023085603
       },
       "layout": "manual",
       "source": {
@@ -503,17 +503,6 @@
           "ui-edit"
         ]
       }
-    },
-    {
-      "id": "warehouse-022-j7",
-      "type": "junction",
-      "junctionType": "XOR",
-      "direction": "split",
-      "position": {
-        "x": 1414.6666666666667,
-        "y": 734.3333333333334
-      },
-      "layout": "manual"
     },
     {
       "id": "warehouse-022-n013",
@@ -539,8 +528,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 568.3333333333334
+        "x": 1254.8170108801726,
+        "y": 1215.0820585656752
       },
       "layout": "manual",
       "source": {
@@ -770,20 +759,6 @@
       "to": "warehouse-022-n012"
     },
     {
-      "from": "warehouse-022-n012",
-      "to": "warehouse-022-j7"
-    },
-    {
-      "from": "warehouse-022-j7",
-      "to": "warehouse-022-n001",
-      "label": "در صورت باقی‌ماندن پارت‌های تحویل‌نشده قرارداد"
-    },
-    {
-      "from": "warehouse-022-j7",
-      "to": "warehouse-022-n013",
-      "label": "پس از تحویل کامل پارت‌های قرارداد"
-    },
-    {
       "from": "warehouse-022-n014",
       "to": "warehouse-022-n015"
     },
@@ -798,6 +773,11 @@
     {
       "from": "warehouse-022-n017",
       "to": "warehouse-022-n001"
+    },
+    {
+      "from": "warehouse-022-n012",
+      "to": "warehouse-022-n013",
+      "label": ""
     }
   ],
   "pending": []
