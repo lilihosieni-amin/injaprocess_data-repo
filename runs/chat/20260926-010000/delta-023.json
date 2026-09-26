@@ -1,0 +1,14 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [
+    { "from": "warehouse-023-j7", "to": "warehouse-023-n043" },
+    { "from": "warehouse-023-n043", "to": "warehouse-023-n044" }
+  ],
+  "flag_removed": [
+    { "id": "warehouse-023-n043" },
+    { "id": "warehouse-023-n044" }
+  ]
+}

@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-18T05:04:24Z",
-  "updated_at": "2026-09-26T09:03:27Z",
+  "updated_at": "2026-09-26T09:11:26Z",
   "idef0": {
     "inputs": [
       "فرم درخواست کالای اولیهٔ واحد آماده‌سازی",
@@ -171,7 +171,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 90
+        "y": 90.0
       },
       "layout": "auto",
       "source": {
@@ -204,7 +204,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 265
+        "y": 265.0
       },
       "layout": "auto",
       "source": {
@@ -323,7 +323,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 2190
+        "y": 2787.9166666666665
       },
       "layout": "auto",
       "source": {
@@ -359,7 +359,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 2365
+        "y": 2962.9166666666665
       },
       "layout": "auto",
       "source": {
@@ -392,7 +392,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 2540
+        "y": 3137.9166666666665
       },
       "layout": "auto",
       "source": {
@@ -463,7 +463,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 877.5
+        "y": 913.9583333333333
       },
       "layout": "auto",
       "source": {
@@ -480,7 +480,7 @@
       "direction": "split",
       "position": {
         "x": 883,
-        "y": 893.5
+        "y": 929.9583333333333
       },
       "layout": "auto"
     },
@@ -507,7 +507,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 790
+        "y": 790.0
       },
       "layout": "auto",
       "source": {
@@ -539,7 +539,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 965
+        "y": 1037.9166666666665
       },
       "layout": "auto",
       "source": {
@@ -573,7 +573,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 1140
+        "y": 1212.9166666666665
       },
       "layout": "auto",
       "source": {
@@ -604,7 +604,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 1140
+        "y": 1212.9166666666665
       },
       "layout": "auto",
       "source": {
@@ -637,7 +637,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1140
+        "y": 1212.9166666666665
       },
       "layout": "auto",
       "source": {
@@ -674,7 +674,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 1140
+        "y": 1212.9166666666665
       },
       "layout": "auto",
       "source": {
@@ -708,7 +708,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 1402.5
+        "y": 1562.9166666666665
       },
       "layout": "auto",
       "source": {
@@ -737,7 +737,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 1402.5
+        "y": 1562.9166666666665
       },
       "layout": "auto",
       "source": {
@@ -770,7 +770,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1402.5
+        "y": 1562.9166666666665
       },
       "layout": "auto",
       "source": {
@@ -843,7 +843,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 2715
+        "y": 3312.9166666666665
       },
       "layout": "auto",
       "source": {
@@ -915,7 +915,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 440
+        "y": 440.0
       },
       "layout": "auto",
       "source": {
@@ -1021,7 +1021,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 3065
+        "y": 3662.9166666666665
       },
       "layout": "auto",
       "source": {
@@ -1523,7 +1523,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 1140
+        "y": 1212.9166666666665
       },
       "layout": "auto",
       "source": {
@@ -1557,7 +1557,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 1369.6875
+        "y": 1387.9166666666665
       },
       "layout": "auto",
       "source": {
@@ -1590,7 +1590,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 2069.6875
+        "y": 1912.9166666666665
       },
       "layout": "auto",
       "source": {
@@ -1630,9 +1630,11 @@
       "source": {
         "created_by": "runs/chat/20260926-001500",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260926-010000"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "warehouse-023-n044",
@@ -1663,9 +1665,11 @@
       "source": {
         "created_by": "runs/chat/20260926-001500",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260926-010000"
         ]
-      }
+      },
+      "removed": true
     }
   ],
   "edges": [
@@ -1845,14 +1849,6 @@
     {
       "from": "warehouse-023-n042",
       "to": "warehouse-023-n032"
-    },
-    {
-      "from": "warehouse-023-j7",
-      "to": "warehouse-023-n043"
-    },
-    {
-      "from": "warehouse-023-n043",
-      "to": "warehouse-023-n044"
     }
   ],
   "pending": []
