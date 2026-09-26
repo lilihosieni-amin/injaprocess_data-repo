@@ -1,0 +1,328 @@
+{
+  "schema_version": 1,
+  "unit": "u-att-1",
+  "attempt": 1,
+  "decisions": [],
+  "new": [
+    {
+      "kind": "rule",
+      "key": "nesbat_mavad_marinet_be_morgh",
+      "title": "نسبت مواد مرینت به وزن مرغ",
+      "statement": "به ازای هر یک کیلوگرم مرغ خام، ۳۰ گرم پودر مرینت و ۷۰ گرم آب توزین و افزوده می‌شود. مسئول لاین مرینت این نسبت را برای همهٔ اقلام مرینتی رعایت می‌کند و کم یا زیاد شدن آن مزهٔ محصول را تغییر می‌دهد.",
+      "aliases": ["نسبت ۳۰ به ۷۰ مرینت"],
+      "home": {"ref": "F-00007"},
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {"key": "vazn_pudr_marinet", "title": "پودر مرینت", "value": 30, "unit": "g", "per": "هر کیلوگرم مرغ خام", "nature": "standard"},
+          {"key": "vazn_ab", "title": "آب", "value": 70, "unit": "g", "per": "هر کیلوگرم مرغ خام", "nature": "standard"}
+        ]
+      },
+      "processes": [
+        {"process": "preparation-010", "node": "preparation-010-n006", "quote": "۳۰ گرم پودر مرینت و ۷۰ گرم آب به ازای هر کیلو مرغ"}
+      ],
+      "voice": [
+        {"ref": "meetings/transcripts/preparation-1405-05-28.txt", "lines": "21-120"},
+        {"ref": "meetings/transcripts/preparation-1405-06-10.txt", "lines": "341-440"},
+        {"ref": "meetings/transcripts/preparation-1405-06-23-02.txt", "lines": "1-80"}
+      ]
+    },
+    {
+      "kind": "rule",
+      "key": "nesbat_sos_morgh_pizza_pokhte",
+      "title": "نسبت سس به مرغ پختهٔ مرغ پیتزا",
+      "statement": "به ازای هر یک کیلوگرم مرغ پختهٔ خردشدهٔ مرغ پیتزا، ۸۰ گرم سس افزوده می‌شود. وزن سس مصرفی همراه وزن مرغ پخته در فرم تولید نیمه ساخته ثبت می‌شود.",
+      "home": {"ref": "F-00009"},
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {"key": "vazn_sos", "title": "سس افزوده", "value": 80, "unit": "g", "per": "هر کیلوگرم مرغ پختهٔ خردشده", "nature": "standard"}
+        ]
+      },
+      "processes": [
+        {"process": "preparation-013", "node": "preparation-013-n034", "quote": "هشتاد گرم سس به ازای هر یک کیلو مرغ پخته‌شده"}
+      ],
+      "voice": [
+        {"ref": "meetings/transcripts/preparation-1405-05-28.txt", "lines": "141-180"}
+      ]
+    },
+    {
+      "kind": "rule",
+      "key": "bazdehi_estandard_rost_bif",
+      "title": "بازدهی استاندارد رست بیف",
+      "statement": "مبنای بازدهی رست بیف ۷۰ درصد وزن گوشت خام ورودی است و در عمل بین ۶۵ تا ۷۰ درصد می‌ماند. اگر وزن گوشت ریش‌ریش‌شده کمتر از این مبنا باشد، کسری با عصارهٔ پخت جبران می‌شود و خشک یا خیس بودن بافت گوشت درصد نهایی را تعیین می‌کند.",
+      "home": {"ref": "F-00009"},
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {"key": "bazdehi", "title": "بازدهی رست بیف", "range": {"min": 65, "max": 70}, "unit": "%", "per": "وزن گوشت خام ورودی", "nature": "target"}
+        ]
+      },
+      "voice": [
+        {"ref": "meetings/transcripts/preparation-1405-06-02-02.txt", "lines": "1-140"}
+      ]
+    },
+    {
+      "kind": "rule",
+      "key": "kast_pokht_gusht_charkh_karde",
+      "title": "کاست پخت گوشت چرخ‌کرده",
+      "statement": "کاهش وزن گوشت چرخ‌کرده در فرایند پخت بین ۸ تا ۱۵ درصد وزن گوشت خام است. ادویه، پیاز و سیر بر مبنای همان وزن خام ورودی توزین می‌شوند و کاهش وزن پخت در توزین مواد اثری ندارد.",
+      "home": {"ref": "F-00009"},
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {"key": "kast_pokht", "title": "کاست پخت", "range": {"min": 8, "max": 15}, "unit": "%", "per": "وزن گوشت خام ورودی", "nature": "standard"}
+        ]
+      },
+      "voice": [
+        {"ref": "meetings/transcripts/preparation-1405-06-02-02.txt", "lines": "1-140"}
+      ]
+    },
+    {
+      "kind": "rule",
+      "key": "kast_va_marinet_gusht_raste",
+      "title": "کاست و مرینت گوشت راستهٔ استیک",
+      "statement": "گوشت راسته در مرحلهٔ نیم‌پخت حدود ۵ درصد وزن از دست می‌دهد و به همان اندازه مرینت به آن افزوده می‌شود. به همین دلیل وزن استیک تحویلی به انبار با وزن گوشت تحویل‌گرفته‌شده برابر درمی‌آید.",
+      "home": {"ref": "F-00013"},
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {"key": "kast_nim_pokht", "title": "کاست نیم‌پخت", "value": 5, "unit": "%", "per": "وزن گوشت راستهٔ ورودی", "nature": "standard"},
+          {"key": "marinet_afzude", "title": "مرینت افزوده", "value": 5, "unit": "%", "per": "وزن گوشت راستهٔ ورودی", "nature": "standard"}
+        ]
+      },
+      "processes": [
+        {"process": "preparation-020", "node": "preparation-020-n007", "quote": "مرینت کردن راسته در همان روز طبق فرمول از پیش داده‌شده"}
+      ],
+      "voice": [
+        {"ref": "meetings/transcripts/preparation-1405-06-10.txt", "lines": "1-240"}
+      ]
+    },
+    {
+      "kind": "rule",
+      "key": "vazn_har_adad_loqme",
+      "title": "وزن هر عدد لقمهٔ مرغ",
+      "statement": "وزن هر عدد لقمهٔ مرغ باید بین ۱۰ تا ۱۳ گرم باشد، بنابراین بستهٔ ۲۰۰ عددی حدود دو کیلو و ۱۳۰ گرم وزن دارد. اختلاف تا ۵۰ گرم در هر بسته پذیرفته است؛ بیش از آن نشانهٔ خطای شمارش یا درشت بودن قطعه‌هاست و همان‌جا باید اصلاح شود.",
+      "home": {"ref": "F-00012"},
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {"key": "vazn_loqme", "title": "وزن هر عدد لقمه", "range": {"min": 10, "max": 13}, "unit": "g", "per": "هر عدد لقمه", "nature": "standard"},
+          {"key": "ekhtelaf_majaz_baste", "title": "اختلاف مجاز وزن بسته", "value": 50, "unit": "g", "per": "هر بستهٔ ۲۰۰ عددی", "nature": "limit"}
+        ]
+      },
+      "voice": [
+        {"ref": "meetings/transcripts/preparation-1405-06-04.txt", "lines": "41-260"}
+      ]
+    },
+    {
+      "kind": "rule",
+      "key": "hadde_vazn_file_sukhari",
+      "title": "حد وزنی فیلهٔ سوخاری",
+      "statement": "فیله‌های سبک‌تر از ۵۰ گرم به مرغ پیتزا تبدیل می‌شوند و فیله‌های ۵۰ تا ۸۰ گرم برای سوخاری کنار گذاشته و بسته‌بندی می‌شوند. تشخیص وزن با تجربهٔ مسئول لاین و در صورت تردید با ترازو انجام می‌شود.",
+      "home": {"ref": "F-00014"},
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {"key": "hadde_payin_vazn", "title": "حد پایین وزن فیلهٔ سوخاری", "value": 50, "unit": "g", "per": "هر عدد فیله", "nature": "limit"},
+          {"key": "hadde_bala_vazn", "title": "حد بالای وزن فیلهٔ سوخاری", "value": 80, "unit": "g", "per": "هر عدد فیله", "nature": "limit"}
+        ]
+      },
+      "voice": [
+        {"ref": "meetings/transcripts/preparation-1405-06-04.txt", "lines": "41-260"}
+      ]
+    },
+    {
+      "kind": "rule",
+      "key": "orf_khunabe_va_plastik_morgh",
+      "title": "مقدار عرفی خون‌آبه و پلاستیک مرغ",
+      "statement": "در هر محمولهٔ روزانهٔ مرغ خام، وزن خون‌آبه و پلاستیک به‌طور عرفی بین ۳۰۰ تا ۴۰۰ گرم است و این مقدار تنها بخشی است که به انبار بازگردانده نمی‌شود. اگر از این حد بیشتر شود، آماده‌سازی موضوع را به مدیریت اعلام می‌کند تا از تأمین‌کننده پیگیری شود.",
+      "home": {"ref": "F-00012"},
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {"key": "vazn_khunabe_va_plastik", "title": "خون‌آبه و پلاستیک", "range": {"min": 300, "max": 400}, "unit": "g", "per": "هر محمولهٔ روزانهٔ مرغ خام", "nature": "limit"}
+        ]
+      },
+      "voice": [
+        {"ref": "meetings/transcripts/preparation-1405-06-04.txt", "lines": "41-260"},
+        {"ref": "meetings/transcripts/preparation-1405-06-10.txt", "lines": "341-440"}
+      ]
+    },
+    {
+      "kind": "rule",
+      "key": "zayeat_paksazi_sine_morgh",
+      "title": "ضایعات پاک‌سازی سینهٔ مرغ",
+      "statement": "چربی، غضروف و استخوانی که در پاک‌سازی سینهٔ مرغ جدا می‌شود، در هر ۵۰ کیلوگرم مرغ خام حدود ۱٫۵ تا ۳ کیلوگرم است. این مقدار با نام ضایعات مرغ وزن و تحویل انبار می‌شود.",
+      "home": {"ref": "F-00012"},
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {"key": "vazn_zayeat", "title": "ضایعات مرغ", "range": {"min": 1.5, "max": 3}, "unit": "kg", "per": "هر ۵۰ کیلوگرم سینهٔ مرغ خام", "nature": "standard"}
+        ]
+      },
+      "voice": [
+        {"ref": "meetings/transcripts/preparation-1405-06-04.txt", "lines": "41-260"}
+      ]
+    },
+    {
+      "kind": "rule",
+      "key": "darsad_zayeat_kahu_bar_hasbe_fasl",
+      "title": "درصد ضایعات کاهو بر حسب فصل",
+      "statement": "ضایعات کاهو در فصل سرد حدود ۲۰ درصد وزن ورودی و در فصل گرم، از میانهٔ بهار تا پایان تابستان، تا ۶۰ درصد است. برای کاهو هیچ‌یک از فرم‌های تبدیل آماده‌سازی پر نمی‌شود و همین درصدهای تأییدشده مبنای گزارش ضایعات است؛ بدتر شدن محسوس کیفیت با وزن‌گیری بررسی و به مدیریت اعلام می‌شود.",
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "inputs": [
+          {"key": "fasl", "title": "فصل", "from": null}
+        ],
+        "outputs": [
+          {"key": "darsad_zayeat", "title": "درصد ضایعات کاهو", "unit": "%", "per": "وزن کاهوی ورودی", "nature": "standard"}
+        ],
+        "table": {
+          "inputs": ["fasl"],
+          "outputs": ["darsad_zayeat"],
+          "rows": [
+            {"fasl": "فصل سرد", "darsad_zayeat": 20},
+            {"fasl": "فصل گرم، از میانهٔ بهار تا پایان تابستان", "darsad_zayeat": 60}
+          ]
+        }
+      },
+      "voice": [
+        {"ref": "meetings/transcripts/preparation-1405-06-10.txt", "lines": "1-240"}
+      ]
+    },
+    {
+      "kind": "rule",
+      "key": "andaze_baste_bandi_mahsulat_khoruji",
+      "title": "اندازهٔ استاندارد بستهٔ محصولات تحویلی به انبار",
+      "statement": "هر محصول آماده‌سازی با اندازهٔ ثابتی بسته‌بندی، لیبل‌گذاری و به انبار تحویل می‌شود؛ بخشی بر مبنای وزن و بخشی بر مبنای تعداد. باقی‌ماندهٔ کمتر از یک بستهٔ کامل جدا بسته‌بندی می‌شود و با وزن یا تعداد واقعی خود تحویل می‌شود.",
+      "home": {"ref": "S-rec-2c141582db58"},
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "inputs": [
+          {"key": "mahsul", "title": "محصول", "from": null}
+        ],
+        "outputs": [
+          {"key": "meqdar_baste", "title": "مقدار هر بسته"},
+          {"key": "vahed_baste", "title": "واحد بسته"}
+        ],
+        "table": {
+          "inputs": ["mahsul"],
+          "outputs": ["meqdar_baste", "vahed_baste"],
+          "rows": [
+            {"mahsul": "لقمهٔ مرغ", "meqdar_baste": 200, "vahed_baste": "عدد"},
+            {"mahsul": "مرغ گریل", "meqdar_baste": 4, "vahed_baste": "کیلوگرم"},
+            {"mahsul": "مرغ پیتزا", "meqdar_baste": 4, "vahed_baste": "کیلوگرم"},
+            {"mahsul": "مرغ چیزا", "meqdar_baste": 48, "vahed_baste": "عدد"},
+            {"mahsul": "مرغ پختهٔ سس‌خوردهٔ پیتزا", "meqdar_baste": 2, "vahed_baste": "کیلوگرم"},
+            {"mahsul": "رست بیف", "meqdar_baste": 2, "vahed_baste": "کیلوگرم"},
+            {"mahsul": "گوشت چرخ‌کرده", "meqdar_baste": 2, "vahed_baste": "کیلوگرم"},
+            {"mahsul": "فیلادلفیا", "meqdar_baste": 1, "vahed_baste": "کیلوگرم"},
+            {"mahsul": "خرده راسته", "meqdar_baste": 4, "vahed_baste": "کیلوگرم"},
+            {"mahsul": "پنه پخته", "meqdar_baste": 1.2, "vahed_baste": "کیلوگرم"}
+          ]
+        }
+      },
+      "voice": [
+        {"ref": "meetings/transcripts/preparation-1405-05-28.txt", "lines": "141-180"},
+        {"ref": "meetings/transcripts/preparation-1405-06-02-02.txt", "lines": "1-140"},
+        {"ref": "meetings/transcripts/preparation-1405-06-04.txt", "lines": "41-260"},
+        {"ref": "meetings/transcripts/preparation-1405-06-10.txt", "lines": "1-240"}
+      ]
+    },
+    {
+      "kind": "rule",
+      "key": "damane_sabt_vorudi_khoruji_ruzane",
+      "title": "دامنهٔ اقلام ثبت‌شده در ثبت روزانهٔ آماده‌سازی",
+      "statement": "ورودی، ضایعات و خروجی روزانه تنها برای اقلام باارزش، یعنی گوشت و مرغ، ثبت می‌شود و سبزیجات و کاهو در این ثبت نمی‌آیند. سرپرست آماده‌سازی این ثبت را هر روز کامل می‌کند.",
+      "home": {"ref": "S-rec-e3f80534814b"},
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "original": "اقلامی که باارزشن، مثل گوشت و مرغ",
+        "inputs": [
+          {"key": "goruh_qalam", "title": "گروه قلم", "from": null}
+        ],
+        "outputs": [
+          {"key": "damane_sabt", "title": "دامنهٔ ثبت روزانه", "value": "فقط اقلام باارزش: گوشت و مرغ", "nature": "limit"}
+        ]
+      },
+      "voice": [
+        {"ref": "meetings/transcripts/preparation-1405-06-23-02.txt", "lines": "1-80"}
+      ]
+    },
+    {
+      "kind": "rule",
+      "key": "darkhast_qand_faqat_panjshanbe",
+      "title": "درخواست قند تنها در پنجشنبه‌ها",
+      "statement": "قند تنها در پنجشنبه‌ها از انبار درخواست می‌شود و محدودیت روز درخواست کنار نام این قلم روی فرم درخواست کالای آماده‌سازی چاپ شده است.",
+      "home": {"ref": "F-00004"},
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "original": "قند(پنجشنبه ها)",
+        "inputs": [
+          {"key": "ruz_hafte", "title": "روز هفته", "from": null}
+        ],
+        "outputs": [
+          {"key": "ruz_majaz_darkhast", "title": "روز مجاز درخواست قند", "value": "پنجشنبه", "nature": "limit"}
+        ]
+      },
+      "from": ["departments/preparation/attachments/.text/photo-AQADeA5rG7piKFF-.image.md"]
+    },
+    {
+      "kind": "rule",
+      "key": "aqlam_ekhtesasi_dar_darkhast_kala",
+      "title": "اقلام اختصاصی هر محصول در درخواست کالا",
+      "statement": "چند قلم در فهرست درخواست کالا تنها برای یک محصول مشخص درخواست و مصرف می‌شوند و مصرفشان در محصول دیگر مجاز نیست. این اختصاص کنار نام هر قلم روی برگهٔ دوم درخواست کالا چاپ شده است.",
+      "home": {"ref": "F-00006"},
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "inputs": [
+          {"key": "qalam", "title": "قلم", "from": null}
+        ],
+        "outputs": [
+          {"key": "masraf_ekhtesasi", "title": "مصرف اختصاصی"}
+        ],
+        "table": {
+          "inputs": ["qalam"],
+          "outputs": ["masraf_ekhtesasi"],
+          "rows": [
+            {"qalam": "پنیر لبنه", "masraf_ekhtesasi": "تولید پنیر چیزا"},
+            {"qalam": "دلمه", "masraf_ekhtesasi": "سس سیر"},
+            {"qalam": "دلمه قرمز", "masraf_ekhtesasi": "سس پاپریکا"},
+            {"qalam": "تاباسکو", "masraf_ekhtesasi": "برگر"},
+            {"qalam": "سس مایونز مهرام", "masraf_ekhtesasi": "همهٔ مصارف به جز سس سیر"},
+            {"qalam": "سس مایونز دبه", "masraf_ekhtesasi": "سس سیر"},
+            {"qalam": "خیارشور", "masraf_ekhtesasi": "سس سیر"},
+            {"qalam": "لبنه", "masraf_ekhtesasi": "تولید مایهٔ برگر"}
+          ]
+        }
+      },
+      "from": ["departments/preparation/attachments/.text/photo-AQADeg5rG7piKFF-.image.md"]
+    },
+    {
+      "kind": "note",
+      "key": "note_tabdil_raste_pak_nashode",
+      "title": "تفکیک دستی راستهٔ پاک‌نشده میان دو فرم تبدیل",
+      "statement": "از گوشت راستهٔ پاک‌نشده هم استیک رولی و هم فیلادلفیا به دست می‌آید، اما برای هر کدام یک فرم تبدیل جداگانه پر می‌شود. پرسنل وزن فیلادلفیا را دستی از وزن کل راسته کم می‌کنند و در فرم دیگر می‌نویسند و ضایعات هم به همین شکل میان دو فرم تقسیم می‌شود.",
+      "home": {"ref": "F-00013"},
+      "data": {
+        "about": [
+          {"ref": "F-00013"},
+          {"ref": "F-00010"}
+        ],
+        "question": "آیا برای راستهٔ پاک‌نشده باید یک فرم تبدیل واحد داشته باشیم که استیک رولی، فیلادلفیا، خرده راسته و ضایعات را با هم ثبت کند؟"
+      },
+      "processes": [
+        {"process": "preparation-020", "node": "preparation-020-n022", "quote": "ثبت وزن کل گوشت راسته و تفکیک آن به استیک رولی، خرده راسته و ضایعات"}
+      ],
+      "voice": [
+        {"ref": "meetings/transcripts/preparation-1405-06-10.txt", "lines": "1-240"}
+      ]
+    }
+  ]
+}

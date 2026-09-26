@@ -1,0 +1,137 @@
+{
+  "schema_version": 1,
+  "unit": "u-tr-preparation-1405-05-28-03-l1",
+  "attempt": 1,
+  "decisions": [],
+  "new": [
+    {
+      "kind": "rule",
+      "key": "taraz_maye_burger",
+      "title": "تراز مایهٔ برگر با محصولات تولیدشده و ضایعات",
+      "home": { "ref": "F-00008" },
+      "statement": "وزن کل مایهٔ برگر از جمع مواد مصرفی آن، شامل گوشت، پیاز، ادویه، سس و چربی، به دست می‌آید. مجموع وزن برگرهای تولیدشده — شمار هر نوع ضربدر وزن استاندارد هر عدد — به‌اضافهٔ ضایعات باید با همان وزن مایه برابر باشد. اختلاف بر حسب کیلوگرم نشانهٔ خطای توزین یا شمارش یا ثبت‌نشدن ضایعات است.",
+      "aliases": ["تراز نیم‌ساخت برگر با تولید"],
+      "data": {
+        "lang": "feel",
+        "expr": "ekhtelaf_taraz = (tedad_burger * vazn_har_burger + tedad_mini_burger * vazn_har_mini_burger) / 1000 + zayeat - vazn_maye",
+        "inputs": [
+          { "key": "tedad_burger", "title": "تعداد برگر تولیدشده", "unit": "pcs" },
+          { "key": "vazn_har_burger", "title": "وزن استاندارد هر برگر", "unit": "g" },
+          { "key": "tedad_mini_burger", "title": "تعداد مینی برگر تولیدشده", "unit": "pcs" },
+          { "key": "vazn_har_mini_burger", "title": "وزن استاندارد هر مینی برگر", "unit": "g" },
+          { "key": "zayeat", "title": "ضایعات تولید برگر", "unit": "kg" },
+          { "key": "vazn_maye", "title": "وزن کل مایهٔ برگر", "unit": "kg" }
+        ],
+        "outputs": [
+          {
+            "key": "ekhtelaf_taraz",
+            "title": "اختلاف تراز مایهٔ برگر",
+            "unit": "kg",
+            "nature": "observed"
+          }
+        ],
+        "edge_cases": [
+          {
+            "input": "چسبیدن مقداری از مایه به ترازو یا افتادن آن روی زمین",
+            "expected": "همان مقدار به‌عنوان ضایعات نوشته می‌شود تا تراز برقرار بماند",
+            "why": "مقدار از دست رفته در توزین هم بخشی از مایهٔ مصرف‌شده است"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "aqlam_moshmul_form_nime_sakhte",
+      "title": "اقلام مشمول فرم تولید نیمه ساخته",
+      "home": { "ref": "F-00009" },
+      "statement": "برای ژامبون‌های دوگانه و سه‌گانه، گوشت چرخ‌کرده، رست بیف و مرغ پختهٔ پیتزا با سس آن، مقدار مصرفی هر مادهٔ سازنده در فرم تولید نیمه ساخته نوشته می‌شود و برگر فرم تبدیل جداگانهٔ خود را دارد. این ثبت‌ها مبنای قیمت‌گذاری محصولات نیمه‌ساخته‌اند.",
+      "processes": [
+        {
+          "process": "preparation-017",
+          "node": "preparation-017-n022",
+          "quote": "از هر نوع ژامبون چقدر استفاده کردیم"
+        },
+        {
+          "process": "preparation-018",
+          "node": "preparation-018-n034",
+          "quote": "این از این فرم نیم‌ساخت استفاده می‌شه"
+        },
+        {
+          "process": "preparation-013",
+          "node": "preparation-013-n042",
+          "quote": "برای مرغ پخته شده و سسش این استفاده می‌شه"
+        }
+      ],
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "inputs": [{ "key": "nove_mahsul", "title": "نوع محصول نیمه‌ساخته" }],
+        "outputs": [{ "key": "form_sabt", "title": "فرم ثبت مواد مصرفی" }],
+        "table": {
+          "inputs": ["nove_mahsul"],
+          "outputs": ["form_sabt"],
+          "rows": [
+            { "nove_mahsul": "ژامبون دوگانه و سه‌گانه", "form_sabt": "فرم تولید نیمه ساخته" },
+            { "nove_mahsul": "گوشت چرخ‌کرده", "form_sabt": "فرم تولید نیمه ساخته" },
+            { "nove_mahsul": "رست بیف", "form_sabt": "فرم تولید نیمه ساخته" },
+            { "nove_mahsul": "مرغ پختهٔ پیتزا و سس آن", "form_sabt": "فرم تولید نیمه ساخته" },
+            { "nove_mahsul": "برگر", "form_sabt": "فرم تبدیل برگر" }
+          ]
+        }
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "tatbiq_vorudi_amadesazi_ba_anbar",
+      "title": "تطبیق ورودی آماده‌سازی با خروجی انبار",
+      "home": { "ref": "S-rec-e3f80534814b" },
+      "statement": "وزن هر قلم مادهٔ اولیه‌ای که آماده‌سازی از انبار تحویل می‌گیرد باید با وزنی که انبار برای همان قلم به‌عنوان تحویل به آماده‌سازی ثبت کرده برابر باشد و اختلاف بر حسب کیلوگرم در گزارش انبارگردانی پیگیری می‌شود. وزن محصول فرآوری‌شدهٔ تحویلی در این مقایسه دخالتی ندارد، چون انبار تنها مقدار تحویل‌داده و تحویل‌گرفته را ثبت می‌کند و ترکیب و گرم مواد را آماده‌سازی می‌نویسد.",
+      "processes": [
+        {
+          "process": "preparation-004",
+          "node": "preparation-004-n013",
+          "quote": "ورودی خروجی انبار باید با ورودی خروجی ما هم‌خونی داشته باشه"
+        }
+      ],
+      "data": {
+        "lang": "feel",
+        "expr": "ekhtelaf_tahvil = vorudi_sabt_shode_amadesazi - khoruji_sabt_shode_anbar",
+        "inputs": [
+          {
+            "key": "vorudi_sabt_shode_amadesazi",
+            "title": "وزن تحویل‌گرفتهٔ ثبت‌شدهٔ آماده‌سازی",
+            "unit": "kg",
+            "from": { "ref": "S-rec-e3f80534814b" }
+          },
+          {
+            "key": "khoruji_sabt_shode_anbar",
+            "title": "وزن تحویل‌دادهٔ ثبت‌شدهٔ انبار",
+            "unit": "kg"
+          }
+        ],
+        "outputs": [
+          {
+            "key": "ekhtelaf_tahvil",
+            "title": "اختلاف تحویل انبار و آماده‌سازی",
+            "unit": "kg",
+            "nature": "observed"
+          }
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "masul_por_kardan_form_darkhast_kala",
+      "title": "مسئول نوشتن و بررسی فهرست درخواست کالا",
+      "home": { "ref": "F-00004" },
+      "statement": "فهرست روزانهٔ درخواست کالای آماده‌سازی یک نسخهٔ مشترک برای همهٔ لاین‌هاست و هر کس قلم مورد نیاز لاین خود، از ادویه تا اقلام مصرفی مانند دستمال و نایلون، را در همان نسخه می‌نویسد. نوشتن آن به سرپرست محدود نیست، ولی سرپرست پیش از ارسال، فهرست را بررسی می‌کند.",
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "original": "هر لاینی بخش خودش را در همان یک فرم می‌نویسد و لازم نیست سرپرست بنویسد، ولی سرپرست باید آن را بررسی کند.",
+        "inputs": [{ "key": "qalam_moredniaz", "title": "قلم مورد نیاز هر لاین" }],
+        "outputs": [{ "key": "masul_sabt", "title": "مسئول نوشتن و بررسی فهرست" }]
+      }
+    }
+  ]
+}

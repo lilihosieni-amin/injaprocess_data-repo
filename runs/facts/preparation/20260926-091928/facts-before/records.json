@@ -3811,157 +3811,6 @@
               "title": "گوشت"
             },
             "description": "وزن رست‌بیف تولیدشده و بسته‌بندی‌شده؛ بسته‌ها دوکیلویی است."
-          },
-          {
-            "key": "tedad_mini_burger",
-            "title": "تعداد مینی برگر",
-            "columns": {
-              "amadesazi__s3": "b"
-            },
-            "type": "number",
-            "unit": "pcs",
-            "group": {
-              "key": "burger",
-              "title": "برگر"
-            }
-          },
-          {
-            "key": "tedad_burger",
-            "title": "تعداد برگر",
-            "columns": {
-              "amadesazi__s3": "c"
-            },
-            "type": "number",
-            "unit": "pcs",
-            "group": {
-              "key": "burger",
-              "title": "برگر"
-            },
-            "description": "شمار برگرهای شصت یا صد و پنجاه گرمی پرس‌شده که در پرس‌های پنج‌عددی تحویل انبار می‌شود."
-          },
-          {
-            "key": "tedad_loghme_sine",
-            "title": "تعداد لقمه (سینه)",
-            "columns": {
-              "amadesazi__s3": "d"
-            },
-            "type": "number",
-            "unit": "pcs",
-            "group": {
-              "key": "sine_morgh",
-              "title": "سینه مرغ"
-            },
-            "description": "شمار لقمه‌های تولیدشده از سینه مرغ که در بسته‌های دویست‌عددی تحویل انبار می‌شود."
-          },
-          {
-            "key": "vazn_loghme_sine",
-            "title": "وزن لقمه (سینه)",
-            "columns": {
-              "amadesazi__s3": "e"
-            },
-            "type": "number",
-            "unit": "kg",
-            "group": {
-              "key": "sine_morgh",
-              "title": "سینه مرغ"
-            },
-            "description": "وزن مجموع بسته‌های لقمهٔ سینه مرغ همان روز."
-          },
-          {
-            "key": "vazn_pizza_sine",
-            "title": "وزن پیتزا (سینه)",
-            "columns": {
-              "amadesazi__s3": "f"
-            },
-            "type": "number",
-            "unit": "kg",
-            "group": {
-              "key": "sine_morgh",
-              "title": "سینه مرغ"
-            },
-            "description": "وزن مرغ پیتزای به‌دست‌آمده از کناره‌ها و خرده‌های سینه مرغ."
-          },
-          {
-            "key": "vazn_gril",
-            "title": "وزن گریل",
-            "columns": {
-              "amadesazi__s3": "g"
-            },
-            "type": "number",
-            "unit": "kg",
-            "group": {
-              "key": "sine_morgh",
-              "title": "سینه مرغ"
-            },
-            "description": "وزن مرغ گریل آماده‌شده از سینه مرغ که در بسته‌های چهار کیلویی تحویل می‌شود."
-          },
-          {
-            "key": "vazn_loghme_file",
-            "title": "وزن لقمه (فیله)",
-            "columns": {
-              "amadesazi__s3": "k"
-            },
-            "type": "number",
-            "unit": "kg",
-            "group": {
-              "key": "file_morgh",
-              "title": "فیله مرغ"
-            },
-            "description": "در روند کنونی از فیله لقمه تولید نمی‌شود و این ستون خالی می‌ماند."
-          },
-          {
-            "key": "tedad_loghme_file",
-            "title": "تعداد لقمه (فیله)",
-            "columns": {
-              "amadesazi__s3": "l"
-            },
-            "type": "number",
-            "unit": "pcs",
-            "group": {
-              "key": "file_morgh",
-              "title": "فیله مرغ"
-            },
-            "description": "در روند کنونی از فیله لقمه تولید نمی‌شود و این ستون خالی می‌ماند."
-          },
-          {
-            "key": "vazn_pizza_file",
-            "title": "وزن پیتزا (فیله)",
-            "columns": {
-              "amadesazi__s3": "n"
-            },
-            "type": "number",
-            "unit": "kg",
-            "group": {
-              "key": "file_morgh",
-              "title": "فیله مرغ"
-            },
-            "description": "وزن مرغ پیتزای به‌دست‌آمده از فیله‌های ریز و پاره."
-          },
-          {
-            "key": "vazn_bal_ghayre_standard",
-            "title": "وزن بال غیر استاندارد",
-            "columns": {
-              "amadesazi__s3": "s"
-            },
-            "type": "number",
-            "unit": "kg",
-            "group": {
-              "key": "bal_morgh",
-              "title": "بال مرغ"
-            }
-          },
-          {
-            "key": "tedad_bal_ghayre_standard",
-            "title": "تعداد بال غیر استاندارد",
-            "columns": {
-              "amadesazi__s3": "t"
-            },
-            "type": "number",
-            "unit": "pcs",
-            "group": {
-              "key": "bal_morgh",
-              "title": "بال مرغ"
-            }
           }
         ]
       },
@@ -3971,52 +3820,8 @@
       "id": "F-00019",
       "valid_from": null,
       "valid_to": null,
-      "status": "disputed",
-      "updated_at": "2026-09-26T10:53:44Z",
-      "accounts": [
-        {
-          "field": "data/filled_by",
-          "statement": "پرسنل آماده‌سازی",
-          "value": "پرسنل آماده‌سازی",
-          "source": {
-            "type": "sheet",
-            "ref": "attachments/sheets/Amadesazi__Amadesazi/Amadesazi.xlsx",
-            "sheet": "خروجی آماده سازی به انبار"
-          },
-          "speaker_role": null,
-          "status": "open",
-          "id": "e14603e5"
-        },
-        {
-          "field": "data/filled_by",
-          "statement": "سرپرست آماده‌سازی",
-          "value": "سرپرست آماده‌سازی",
-          "source": {
-            "type": "sheet",
-            "ref": "attachments/sheets/Amadesazi__Amadesazi/Amadesazi.xlsx",
-            "sheet": "خروجی آماده سازی به انبار"
-          },
-          "speaker_role": null,
-          "status": "open",
-          "id": "a971fc0b"
-        }
-      ],
-      "extra": {
-        "voice": [
-          {
-            "ref": "meetings/transcripts/preparation-1405-06-04.txt",
-            "lines": "41-240"
-          },
-          {
-            "ref": "meetings/transcripts/preparation-1405-06-02.txt",
-            "lines": "161-220"
-          },
-          {
-            "ref": "meetings/transcripts/preparation-1405-06-10.txt",
-            "lines": "1-220"
-          }
-        ]
-      }
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
     },
     {
       "kind": "record",
@@ -4295,26 +4100,6 @@
             "type": "number",
             "unit": "kg",
             "description": "وزن خمیر تحویل‌شده به آشپزخانهٔ ناهارخوران."
-          },
-          {
-            "key": "amrikaei",
-            "title": "آمریکایی",
-            "columns": {
-              "amadesazi__s2": "b"
-            },
-            "type": "number",
-            "unit": "kg",
-            "description": "وزن خمیر آمریکایی تولیدشده در همان روز."
-          },
-          {
-            "key": "italiaei",
-            "title": "ایتالیایی",
-            "columns": {
-              "amadesazi__s2": "c"
-            },
-            "type": "number",
-            "unit": "kg",
-            "description": "وزن خمیر ایتالیایی تولیدشده در همان روز."
           }
         ]
       },
@@ -4327,48 +4112,8 @@
       "id": "F-00021",
       "valid_from": null,
       "valid_to": null,
-      "status": "disputed",
-      "updated_at": "2026-09-26T10:53:44Z",
-      "accounts": [
-        {
-          "field": "data/filled_by",
-          "statement": "پرسنل آماده‌سازی",
-          "value": "پرسنل آماده‌سازی",
-          "source": {
-            "type": "sheet",
-            "ref": "attachments/sheets/Amadesazi__Amadesazi/Amadesazi.xlsx",
-            "sheet": "خمیر"
-          },
-          "speaker_role": null,
-          "status": "open",
-          "id": "e14603e5"
-        },
-        {
-          "field": "data/filled_by",
-          "statement": "سرپرست آماده‌سازی",
-          "value": "سرپرست آماده‌سازی",
-          "source": {
-            "type": "sheet",
-            "ref": "attachments/sheets/Amadesazi__Amadesazi/Amadesazi.xlsx",
-            "sheet": "خمیر"
-          },
-          "speaker_role": null,
-          "status": "open",
-          "id": "a971fc0b"
-        }
-      ],
-      "extra": {
-        "voice": [
-          {
-            "ref": "meetings/transcripts/preparation-1405-06-10.txt",
-            "lines": "1-220"
-          },
-          {
-            "ref": "meetings/transcripts/preparation-1405-05-28.txt",
-            "lines": "201-280"
-          }
-        ]
-      }
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
     },
     {
       "kind": "record",
@@ -4440,15 +4185,6 @@
             },
             "type": "string",
             "description": "توضیح تکمیلی یا راه‌حل پیشنهادی برای همان مورد."
-          },
-          {
-            "key": "tozih_va_rahehal",
-            "title": "توضیحات و راه حل ها",
-            "columns": {
-              "amadesazi__s6": "c"
-            },
-            "type": "string",
-            "description": "توضیح یا راه‌حل پیشنهادی برای همان مورد."
           }
         ]
       },
@@ -4459,15 +4195,7 @@
       "valid_from": null,
       "valid_to": null,
       "status": "unknown",
-      "updated_at": "2026-09-26T10:53:44Z",
-      "extra": {
-        "voice": [
-          {
-            "ref": "meetings/transcripts/preparation-1405-06-10.txt",
-            "lines": "1-220"
-          }
-        ]
-      }
+      "updated_at": "2026-09-19T09:42:28Z"
     },
     {
       "kind": "record",
@@ -4680,32 +4408,6 @@
               "title": "گوشت (وزن)"
             },
             "description": "وزن گوشت خام تحویل‌گرفته برای تولید رست‌بیف."
-          },
-          {
-            "key": "ghalvegah_gusfandi",
-            "title": "قلوه گاه گوسفندی",
-            "columns": {
-              "amadesazi__s4": "d"
-            },
-            "type": "number",
-            "unit": "kg",
-            "group": {
-              "key": "burger",
-              "title": "برگر (وزن)"
-            }
-          },
-          {
-            "key": "ghalvegah_gusale",
-            "title": "قلوه گاه گوساله",
-            "columns": {
-              "amadesazi__s4": "e"
-            },
-            "type": "number",
-            "unit": "kg",
-            "group": {
-              "key": "burger",
-              "title": "برگر (وزن)"
-            }
           }
         ]
       },
@@ -4715,52 +4417,8 @@
       "id": "F-00023",
       "valid_from": null,
       "valid_to": null,
-      "status": "disputed",
-      "updated_at": "2026-09-26T10:53:44Z",
-      "accounts": [
-        {
-          "field": "data/filled_by",
-          "statement": "پرسنل آماده‌سازی",
-          "value": "پرسنل آماده‌سازی",
-          "source": {
-            "type": "sheet",
-            "ref": "attachments/sheets/Amadesazi__Amadesazi/Amadesazi.xlsx",
-            "sheet": "ورودی آماده سازی از انبار"
-          },
-          "speaker_role": null,
-          "status": "open",
-          "id": "e14603e5"
-        },
-        {
-          "field": "data/filled_by",
-          "statement": "سرپرست آماده‌سازی",
-          "value": "سرپرست آماده‌سازی",
-          "source": {
-            "type": "sheet",
-            "ref": "attachments/sheets/Amadesazi__Amadesazi/Amadesazi.xlsx",
-            "sheet": "ورودی آماده سازی از انبار"
-          },
-          "speaker_role": null,
-          "status": "open",
-          "id": "a971fc0b"
-        }
-      ],
-      "extra": {
-        "voice": [
-          {
-            "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
-            "lines": "1-140"
-          },
-          {
-            "ref": "meetings/transcripts/preparation-1405-06-04.txt",
-            "lines": "41-240"
-          },
-          {
-            "ref": "meetings/transcripts/preparation-1405-06-10.txt",
-            "lines": "1-220"
-          }
-        ]
-      }
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
     },
     {
       "kind": "record",
@@ -4788,13 +4446,6 @@
           "quote": "ورود روزانه ورودی، خروجی و مقدار تولید به فایل اکسل عنکبوتی آماده‌سازی",
           "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
           "run": "runs/facts/preparation/20260919-084010"
-        },
-        {
-          "type": "process",
-          "ref": "departments/preparation/processes/preparation-026.json",
-          "node": "preparation-026-n006",
-          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
-          "run": "runs/facts/preparation/20260926-091928"
         }
       ],
       "retired": false,
@@ -4878,48 +4529,8 @@
       "id": "F-00024",
       "valid_from": null,
       "valid_to": null,
-      "status": "disputed",
-      "updated_at": "2026-09-26T10:53:44Z",
-      "accounts": [
-        {
-          "field": "data/filled_by",
-          "statement": "پرسنل آماده‌سازی",
-          "value": "پرسنل آماده‌سازی",
-          "source": {
-            "type": "sheet",
-            "ref": "attachments/sheets/Amadesazi__Amadesazi/Amadesazi.xlsx",
-            "sheet": "ضایعات"
-          },
-          "speaker_role": null,
-          "status": "open",
-          "id": "e14603e5"
-        },
-        {
-          "field": "data/filled_by",
-          "statement": "سرپرست آماده‌سازی",
-          "value": "سرپرست آماده‌سازی",
-          "source": {
-            "type": "sheet",
-            "ref": "attachments/sheets/Amadesazi__Amadesazi/Amadesazi.xlsx",
-            "sheet": "ضایعات"
-          },
-          "speaker_role": null,
-          "status": "open",
-          "id": "a971fc0b"
-        }
-      ],
-      "extra": {
-        "voice": [
-          {
-            "ref": "meetings/transcripts/preparation-1405-06-10.txt",
-            "lines": "1-220"
-          },
-          {
-            "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
-            "lines": "1-140"
-          }
-        ]
-      }
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
     },
     {
       "kind": "record",
@@ -5003,14 +4614,6 @@
             },
             "type": "string",
             "description": "توضیح دست‌نویس دربارهٔ اختلاف تعداد هدف و تعداد محقق‌شده."
-          },
-          {
-            "key": "tozihat",
-            "title": "توضیحات",
-            "columns": {
-              "amadesazi__s5": "d"
-            },
-            "type": "string"
           }
         ]
       },
@@ -5020,109 +4623,8 @@
       "id": "F-00025",
       "valid_from": null,
       "valid_to": null,
-      "status": "disputed",
-      "updated_at": "2026-09-26T10:53:44Z",
-      "accounts": [
-        {
-          "field": "data/fields/tedad_hadaf/type",
-          "statement": "number",
-          "value": "number",
-          "source": {
-            "type": "sheet",
-            "ref": "attachments/sheets/Amadesazi__Amadesazi/Amadesazi.xlsx",
-            "sheet": "OFF اجرایی"
-          },
-          "speaker_role": null,
-          "status": "open",
-          "id": "568c612d"
-        },
-        {
-          "field": "data/fields/tedad_hadaf/type",
-          "statement": "integer",
-          "value": "integer",
-          "source": {
-            "type": "sheet",
-            "ref": "attachments/sheets/Amadesazi__Amadesazi/Amadesazi.xlsx",
-            "sheet": "OFF اجرایی"
-          },
-          "speaker_role": null,
-          "status": "open",
-          "id": "5795c6b0"
-        },
-        {
-          "field": "data/fields/tedad_kasb_shode/type",
-          "statement": "number",
-          "value": "number",
-          "source": {
-            "type": "sheet",
-            "ref": "attachments/sheets/Amadesazi__Amadesazi/Amadesazi.xlsx",
-            "sheet": "OFF اجرایی"
-          },
-          "speaker_role": null,
-          "status": "open",
-          "id": "7dbfba63"
-        },
-        {
-          "field": "data/fields/tedad_kasb_shode/type",
-          "statement": "integer",
-          "value": "integer",
-          "source": {
-            "type": "sheet",
-            "ref": "attachments/sheets/Amadesazi__Amadesazi/Amadesazi.xlsx",
-            "sheet": "OFF اجرایی"
-          },
-          "speaker_role": null,
-          "status": "open",
-          "id": "2899df8f"
-        }
-      ],
-      "extra": {
-        "voice": [
-          {
-            "ref": "meetings/transcripts/preparation-1405-06-10.txt",
-            "lines": "1-220"
-          }
-        ]
-      }
-    },
-    {
-      "kind": "record",
-      "key": "barge_morakhkhasi_amadesazi",
-      "title": "برگهٔ مرخصی پرسنل آماده‌سازی",
-      "statement": "برگهٔ کاغذی که مرخصی و تأخیر پرسنل آماده‌سازی روی آن نوشته می‌شود؛ پرسنل آن را پر می‌کنند، سرپرست تأیید می‌کند و آخر هر هفته، شنبه به شنبه، تحویل داده و برگهٔ هفتهٔ تازه گرفته می‌شود. بازهٔ ساعت مرخصی تأییدشده روی همین برگه نوشته می‌شود.",
-      "scope": {
-        "departments": [
-          "preparation"
-        ],
-        "branches": []
-      },
-      "source": [
-        {
-          "type": "voice",
-          "ref": "meetings/transcripts/preparation-1405-06-10.txt",
-          "lines": "1-553",
-          "hash": "sha256:1e3b2baf89a5ddab872162cf0e6153dbe2259c374bcc349f7fa1ca20f3c287db",
-          "run": "runs/facts/preparation/20260926-091928"
-        }
-      ],
-      "retired": false,
-      "data": {
-        "medium": "paper",
-        "role": "log",
-        "location": {
-          "kept_at": "بخش آماده‌سازی و پس از تحویل، حساب‌داری",
-          "holder": "سرپرست آماده‌سازی"
-        },
-        "cadence": "weekly",
-        "grain": "هر مورد مرخصی یا تأخیر یک نفر",
-        "filled_by": "پرسنل آماده‌سازی",
-        "approved_by": "سرپرست آماده‌سازی"
-      },
-      "id": "F-00152",
-      "valid_from": null,
-      "valid_to": null,
-      "status": "confirmed",
-      "updated_at": "2026-09-26T10:53:44Z"
+      "status": "unknown",
+      "updated_at": "2026-09-19T09:42:28Z"
     }
   ]
 }

@@ -1,0 +1,145 @@
+{
+  "schema_version": 1,
+  "unit": "review",
+  "attempt": 1,
+  "decisions": [
+    {
+      "entry": { "kind": "rule", "key": "omq_depoye_mahsulat_nimesakhte" },
+      "action": "keep",
+      "key": "omq_depoye_mahsulat_nimesakhte",
+      "title": "عمق دپوی محصولات نیمه‌ساختهٔ آماده‌سازی",
+      "statement": "موجودی محصولات نیمه‌ساختهٔ آماده‌سازی برای چهار تا پنج روز آینده دپو می‌شود تا در روزهای پرفروش پایان هفته صفر نشود، و مقدار تولید و تحویل روزانهٔ هر قلم بر همین مبنا اعلام می‌شود. برای هفت روز تعطیلی نوروز مبنای روزانه دو برابر روزهای عادی در نظر گرفته می‌شود.",
+      "home": { "ref": "T-2" },
+      "reason": "دپوی چهار تا پنج روزه مبنای مقدار تحویل روزانه به انبار است، مانند دورهٔ پوشش دپوی گوشت پخته که روی همان جدول نشسته است."
+    },
+    {
+      "entry": { "kind": "rule", "key": "aqlam_moshmul_form_nime_sakht" },
+      "action": "merge_into",
+      "into": { "kind": "rule", "key": "aqlam_moshmul_form_nime_sakhte" },
+      "reason_code": "duplicate",
+      "reason": "همان قاعدهٔ دامنهٔ فرم تولید نیمه ساخته با نگارش دیگر؛ محتوای افزودهٔ آن در بیان نگه‌داشته آمد."
+    },
+    {
+      "entry": { "kind": "rule", "key": "aqlam_moshmul_form_nime_sakhte" },
+      "action": "keep",
+      "key": "aqlam_moshmul_form_nime_sakhte",
+      "title": "اقلام مشمول فرم تولید نیمه ساخته",
+      "statement": "مقدار مصرفی هر مادهٔ سازنده برای ژامبون دوگانه و سه‌گانه، گوشت چرخ‌کرده، رست بیف و مرغ پختهٔ پیتزا با سس آن در فرم تولید نیمه ساخته نوشته می‌شود و نام قلم را مسئول همان لاین روی فرم می‌نویسد، چون عنوان قلم روی فرم چاپ نشده است. رست بیف و گوشت چرخ‌کرده تنها همین فرم را دارند، ولی مرغ پیتزا، فیلادلفیا و برگر فرم تبدیل جداگانه هم دارند و برای سالاد کلم، پنیر، قارچ، فلفل دلمه‌ای، کاهو و سبزیجات هیچ‌یک از این دو فرم پر نمی‌شود. این ثبت‌ها مبنای قیمت‌گذاری محصولات نیمه‌ساخته‌اند.",
+      "reason": "بیان یکپارچهٔ دو ثبت هم‌عنوان."
+    },
+    {
+      "entry": { "kind": "note", "key": "note_b113745a8722" },
+      "action": "drop",
+      "reason_code": "duplicate",
+      "reason": "یادداشت F-00134 همین شکل را دارد و رویهٔ تازه (نبودن فرم تبدیل فیلادلفیا) را هم در بر می‌گیرد."
+    },
+    {
+      "entry": { "kind": "note", "key": "note_794f191a9e3f" },
+      "action": "drop",
+      "reason_code": "duplicate",
+      "reason": "همان محتوای یادداشت F-00134."
+    },
+    {
+      "entry": { "kind": "note", "key": "note_acf0ad7e887f" },
+      "action": "drop",
+      "reason_code": "duplicate",
+      "reason": "ابهام برچسب بستهٔ لقمه پیش‌تر در یادداشت F-00143 ثبت شده است."
+    },
+    {
+      "entry": { "kind": "note", "key": "note_e81ef5cec610" },
+      "action": "drop",
+      "reason_code": "duplicate",
+      "reason": "ابهام مبنای نسبت مرینت پیش‌تر در یادداشت F-00148 ثبت شده است."
+    },
+    {
+      "entry": { "kind": "note", "key": "note_89400ceff301" },
+      "action": "drop",
+      "reason_code": "duplicate",
+      "reason": "ابهام آف اجرایی پیش‌تر در یادداشت F-00150 ثبت شده است."
+    },
+    {
+      "entry": { "kind": "rule", "key": "bazdehi_khoruji_avval" },
+      "action": "drop",
+      "reason_code": "duplicate",
+      "reason": "همان محاسبه با همان بست‌ها پیش‌تر در F-00130 ثبت شده است."
+    },
+    {
+      "entry": { "kind": "rule", "key": "bazdehi_khoruji_dovvom" },
+      "action": "drop",
+      "reason_code": "duplicate",
+      "reason": "همان محاسبه با همان بست‌ها پیش‌تر در F-00129 ثبت شده است."
+    },
+    {
+      "entry": { "kind": "rule", "key": "bazdehi_khoruji_sevvom" },
+      "action": "drop",
+      "reason_code": "duplicate",
+      "reason": "همان محاسبه با همان بست‌ها پیش‌تر در F-00131 ثبت شده است."
+    },
+    {
+      "entry": { "kind": "measurement", "key": "vazn_plastik_va_khunabe_gusht_kham" },
+      "action": "merge_into",
+      "into": { "kind": "measurement", "key": "vazn_khunabe_va_plastik_gusht_vorudi" },
+      "reason_code": "duplicate",
+      "reason": "یک وزن‌کشی است: پلاستیک و خون‌آبهٔ محمولهٔ گوشت خام ورودی."
+    },
+    {
+      "entry": { "kind": "rule", "key": "vazn_mojaz_baste_loghme" },
+      "action": "merge_into",
+      "into": { "kind": "rule", "key": "vazn_har_adad_loqme" },
+      "reason_code": "duplicate",
+      "reason": "همان حد وزنی بستهٔ دویست‌عددی لقمه با همان تلورانس پنجاه گرم."
+    },
+    {
+      "entry": { "kind": "rule", "key": "andaze_baste_mahsulat_line_gusht" },
+      "action": "merge_into",
+      "into": { "kind": "rule", "key": "andaze_baste_bandi_mahsulat_khoruji" },
+      "reason_code": "duplicate",
+      "reason": "همان قاعدهٔ اندازهٔ ثابت بسته و باقی‌ماندهٔ ناقص، تنها محدود به لاین گوشت."
+    },
+    {
+      "entry": { "kind": "rule", "key": "mabnaye_tahvil_aqlam_khoruji" },
+      "action": "merge_into",
+      "into": { "kind": "rule", "key": "andaze_baste_bandi_mahsulat_khoruji" },
+      "reason_code": "duplicate",
+      "reason": "همان مبنای تحویل با اندازهٔ بستهٔ ثابت؛ تفکیک اقلام شمارشی و وزنی در بیان نگه‌داشته آمد."
+    },
+    {
+      "entry": { "kind": "rule", "key": "andaze_baste_bandi_mahsulat_khoruji" },
+      "action": "keep",
+      "key": "andaze_baste_bandi_mahsulat_khoruji",
+      "title": "اندازهٔ استاندارد بستهٔ محصولات تحویلی به انبار",
+      "statement": "هر محصول آماده‌سازی با اندازهٔ ثابتی بسته‌بندی، لیبل‌گذاری و به انبار تحویل می‌شود: لقمه، فیله، چیزا و برگر بر مبنای تعداد و مرغ پیتزا، مرغ گریل، رست بیف و گوشت چرخ‌کرده بر مبنای وزن بستهٔ ثابت. باقی‌ماندهٔ کمتر از یک بستهٔ کامل جدا بسته‌بندی می‌شود و با وزن یا تعداد واقعی خود تحویل می‌شود.",
+      "reason": "افزودن تفکیک اقلام شمارشی و وزنی از ثبت ادغام‌شده."
+    },
+    {
+      "entry": { "kind": "rule", "key": "bazdehi_hadaf_rost_bif" },
+      "action": "merge_into",
+      "into": { "kind": "rule", "key": "bazdehi_estandard_rost_bif" },
+      "reason_code": "duplicate",
+      "reason": "همان مبنای هفتاد درصد با دامنهٔ شصت‌وپنج تا هفتاد و همان جبران با عصارهٔ پخت."
+    },
+    {
+      "entry": { "kind": "rule", "key": "vazn_baste_pane_pokhte" },
+      "action": "merge_into",
+      "into": { "kind": "rule", "key": "bazdehi_pokht_penne" },
+      "reason_code": "duplicate",
+      "reason": "همان وزن یک کیلو و دویست گرمی بستهٔ پنهٔ پخته."
+    },
+    {
+      "entry": { "kind": "rule", "key": "afzayesh_vazn_paste_dar_pokht" },
+      "action": "merge_into",
+      "into": { "kind": "rule", "key": "bazdehi_pokht_penne" },
+      "reason_code": "duplicate",
+      "reason": "همان نسبت افزایش وزن پنهٔ خام به پخته."
+    },
+    {
+      "entry": { "kind": "rule", "key": "tatbiq_vorudi_amadesazi_ba_anbar" },
+      "action": "keep",
+      "key": "tatbiq_vorudi_amadesazi_ba_anbar",
+      "title": "تطبیق ورودی آماده‌سازی با خروجی انبار",
+      "statement": "وزن هر قلم مادهٔ اولیه‌ای که آماده‌سازی از انبار تحویل می‌گیرد باید با وزنی که انبار برای همان قلم به‌عنوان تحویل به آماده‌سازی ثبت کرده برابر باشد. آماده‌سازی خودش این اختلاف را ثبت و پیگیری نمی‌کند و اختلاف بر حسب کیلوگرم در گزارش انبارگردانی انبار پیگیری می‌شود. وزن محصول فرآوری‌شدهٔ تحویلی در این مقایسه دخالتی ندارد، چون انبار تنها مقدار تحویل‌داده و تحویل‌گرفته را ثبت می‌کند و ترکیب و گرم مواد را آماده‌سازی می‌نویسد.",
+      "reason": "بیان پیشین با مبنای ثبت وزن ورودی و خروجی آماده‌سازی نمی‌خواند؛ آنجا گفته شده اختلاف با عدد اعلامی انبار در آماده‌سازی پیگیری نمی‌شود. جای پیگیری روشن شد."
+    }
+  ],
+  "new": []
+}

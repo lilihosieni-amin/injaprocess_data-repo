@@ -494,9 +494,9 @@
         ],
         "branches": []
       },
-      "status": "unknown",
+      "status": "disputed",
       "field_status_counts": {
-        "disputed": 0,
+        "disputed": 2,
         "unknown": 1,
         "informal": 0,
         "inferred": 0
@@ -506,7 +506,7 @@
       "retired": false,
       "valid_to": null,
       "stub": false,
-      "updated_at": "2026-09-19T09:42:28Z"
+      "updated_at": "2026-09-26T10:53:44Z"
     },
     {
       "id": "F-00020",
@@ -550,9 +550,9 @@
         ],
         "branches": []
       },
-      "status": "unknown",
+      "status": "disputed",
       "field_status_counts": {
-        "disputed": 0,
+        "disputed": 2,
         "unknown": 1,
         "informal": 0,
         "inferred": 1
@@ -562,7 +562,7 @@
       "retired": false,
       "valid_to": null,
       "stub": false,
-      "updated_at": "2026-09-19T09:42:28Z"
+      "updated_at": "2026-09-26T10:53:44Z"
     },
     {
       "id": "F-00022",
@@ -588,7 +588,7 @@
       "retired": false,
       "valid_to": null,
       "stub": false,
-      "updated_at": "2026-09-19T09:42:28Z"
+      "updated_at": "2026-09-26T10:53:44Z"
     },
     {
       "id": "F-00023",
@@ -604,9 +604,9 @@
         ],
         "branches": []
       },
-      "status": "unknown",
+      "status": "disputed",
       "field_status_counts": {
-        "disputed": 0,
+        "disputed": 2,
         "unknown": 1,
         "informal": 0,
         "inferred": 0
@@ -616,7 +616,7 @@
       "retired": false,
       "valid_to": null,
       "stub": false,
-      "updated_at": "2026-09-19T09:42:28Z"
+      "updated_at": "2026-09-26T10:53:44Z"
     },
     {
       "id": "F-00024",
@@ -630,9 +630,9 @@
         ],
         "branches": []
       },
-      "status": "unknown",
+      "status": "disputed",
       "field_status_counts": {
-        "disputed": 0,
+        "disputed": 2,
         "unknown": 1,
         "informal": 0,
         "inferred": 0
@@ -642,7 +642,7 @@
       "retired": false,
       "valid_to": null,
       "stub": false,
-      "updated_at": "2026-09-19T09:42:28Z"
+      "updated_at": "2026-09-26T10:53:44Z"
     },
     {
       "id": "F-00025",
@@ -656,9 +656,9 @@
         ],
         "branches": []
       },
-      "status": "unknown",
+      "status": "disputed",
       "field_status_counts": {
-        "disputed": 0,
+        "disputed": 4,
         "unknown": 1,
         "informal": 0,
         "inferred": 1
@@ -668,7 +668,33 @@
       "retired": false,
       "valid_to": null,
       "stub": false,
-      "updated_at": "2026-09-19T09:42:28Z"
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00152",
+      "kind": "record",
+      "key": "barge_morakhkhasi_amadesazi",
+      "title": "برگهٔ مرخصی پرسنل آماده‌سازی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": null,
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
     },
     {
       "id": "F-00026",
@@ -1035,6 +1061,136 @@
       "updated_at": "2026-09-19T09:42:28Z"
     },
     {
+      "id": "F-00153",
+      "kind": "measurement",
+      "key": "vazn_khunabe_va_plastik_gusht_vorudi",
+      "title": "وزن‌کشی خون‌آبه و پلاستیک گوشت ورودی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00024",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00154",
+      "kind": "measurement",
+      "key": "test_maze_va_zaher_aqlam_baste_bandi",
+      "title": "چک مزه و ظاهر اقلام بسته‌بندی‌شده",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": null,
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00155",
+      "kind": "measurement",
+      "key": "vazn_zayeat_kahu",
+      "title": "وزن‌کشی ضایعات کاهو",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00016",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00156",
+      "kind": "measurement",
+      "key": "vazn_kashi_morgh_khaam_vorudi",
+      "title": "وزن‌کشی مرغ خام ورودی آماده‌سازی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00023",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00157",
+      "kind": "measurement",
+      "key": "kontrole_aqlam_tahvili_ba_fehrest_darkhast",
+      "title": "کنترل اقلام تحویلی لاین در برابر فهرست درخواست",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00004",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
       "id": "F-00040",
       "kind": "rule",
       "key": "tahvil_hamen_ruz_nime_sakhte",
@@ -1065,16 +1221,18 @@
       "kind": "rule",
       "key": "taraz_maye_burger",
       "title": "تراز مایهٔ برگر با خروجی‌های تبدیل",
-      "aliases": [],
+      "aliases": [
+        "تراز نیم‌ساخت برگر با تولید"
+      ],
       "scope": {
         "departments": [
           "preparation"
         ],
         "branches": []
       },
-      "status": "confirmed",
+      "status": "disputed",
       "field_status_counts": {
-        "disputed": 0,
+        "disputed": 4,
         "unknown": 0,
         "informal": 0,
         "inferred": 0
@@ -1084,7 +1242,7 @@
       "retired": false,
       "valid_to": null,
       "stub": false,
-      "updated_at": "2026-09-19T09:42:28Z"
+      "updated_at": "2026-09-26T10:53:44Z"
     },
     {
       "id": "F-00042",
@@ -1389,9 +1547,9 @@
         ],
         "branches": []
       },
-      "status": "unknown",
+      "status": "disputed",
       "field_status_counts": {
-        "disputed": 0,
+        "disputed": 2,
         "unknown": 1,
         "informal": 0,
         "inferred": 0
@@ -1401,7 +1559,7 @@
       "retired": false,
       "valid_to": null,
       "stub": false,
-      "updated_at": "2026-09-19T09:42:28Z"
+      "updated_at": "2026-09-26T10:53:44Z"
     },
     {
       "id": "F-00054",
@@ -1493,9 +1651,9 @@
         ],
         "branches": []
       },
-      "status": "confirmed",
+      "status": "disputed",
       "field_status_counts": {
-        "disputed": 0,
+        "disputed": 6,
         "unknown": 0,
         "informal": 0,
         "inferred": 0
@@ -1505,7 +1663,7 @@
       "retired": false,
       "valid_to": null,
       "stub": false,
-      "updated_at": "2026-09-19T09:42:28Z"
+      "updated_at": "2026-09-26T10:53:44Z"
     },
     {
       "id": "F-00058",
@@ -1519,9 +1677,9 @@
         ],
         "branches": []
       },
-      "status": "confirmed",
+      "status": "disputed",
       "field_status_counts": {
-        "disputed": 0,
+        "disputed": 2,
         "unknown": 0,
         "informal": 0,
         "inferred": 0
@@ -1531,7 +1689,7 @@
       "retired": false,
       "valid_to": null,
       "stub": false,
-      "updated_at": "2026-09-19T09:42:28Z"
+      "updated_at": "2026-09-26T10:53:44Z"
     },
     {
       "id": "F-00059",
@@ -2039,9 +2197,9 @@
         ],
         "branches": []
       },
-      "status": "confirmed",
+      "status": "disputed",
       "field_status_counts": {
-        "disputed": 0,
+        "disputed": 4,
         "unknown": 0,
         "informal": 0,
         "inferred": 0
@@ -2051,7 +2209,7 @@
       "retired": false,
       "valid_to": null,
       "stub": false,
-      "updated_at": "2026-09-19T09:42:28Z"
+      "updated_at": "2026-09-26T10:53:44Z"
     },
     {
       "id": "F-00079",
@@ -2611,9 +2769,9 @@
         ],
         "branches": []
       },
-      "status": "confirmed",
+      "status": "disputed",
       "field_status_counts": {
-        "disputed": 0,
+        "disputed": 2,
         "unknown": 0,
         "informal": 0,
         "inferred": 0
@@ -2623,7 +2781,7 @@
       "retired": false,
       "valid_to": null,
       "stub": false,
-      "updated_at": "2026-09-19T09:42:28Z"
+      "updated_at": "2026-09-26T10:53:44Z"
     },
     {
       "id": "F-00101",
@@ -2793,9 +2951,9 @@
         ],
         "branches": []
       },
-      "status": "confirmed",
+      "status": "disputed",
       "field_status_counts": {
-        "disputed": 0,
+        "disputed": 2,
         "unknown": 0,
         "informal": 0,
         "inferred": 0
@@ -2805,7 +2963,7 @@
       "retired": false,
       "valid_to": null,
       "stub": false,
-      "updated_at": "2026-09-19T09:42:28Z"
+      "updated_at": "2026-09-26T10:53:44Z"
     },
     {
       "id": "F-00108",
@@ -3091,7 +3249,7 @@
       "retired": false,
       "valid_to": null,
       "stub": false,
-      "updated_at": "2026-09-19T09:42:28Z"
+      "updated_at": "2026-09-26T10:53:44Z"
     },
     {
       "id": "F-00119",
@@ -3341,10 +3499,10 @@
         ],
         "branches": []
       },
-      "status": "unknown",
+      "status": "disputed",
       "field_status_counts": {
-        "disputed": 0,
-        "unknown": 1,
+        "disputed": 2,
+        "unknown": 0,
         "informal": 0,
         "inferred": 0
       },
@@ -3353,7 +3511,7 @@
       "retired": false,
       "valid_to": null,
       "stub": false,
-      "updated_at": "2026-09-19T09:42:28Z"
+      "updated_at": "2026-09-26T10:53:44Z"
     },
     {
       "id": "F-00129",
@@ -3432,6 +3590,1736 @@
       "valid_to": null,
       "stub": false,
       "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "id": "F-00158",
+      "kind": "rule",
+      "key": "nesbat_mavad_marinet_be_morgh",
+      "title": "نسبت مواد مرینت به وزن مرغ",
+      "aliases": [
+        "نسبت ۳۰ به ۷۰ مرینت"
+      ],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00007",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00159",
+      "kind": "rule",
+      "key": "nesbat_sos_morgh_pizza_pokhte",
+      "title": "نسبت سس به مرغ پختهٔ مرغ پیتزا",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00009",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00160",
+      "kind": "rule",
+      "key": "andaze_baste_bandi_mahsulat_khoruji",
+      "title": "اندازهٔ استاندارد بستهٔ محصولات تحویلی به انبار",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 2,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00019",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00161",
+      "kind": "rule",
+      "key": "damane_sabt_vorudi_khoruji_ruzane",
+      "title": "دامنهٔ اقلام ثبت‌شده در ثبت روزانهٔ آماده‌سازی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 2,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00023",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00162",
+      "kind": "rule",
+      "key": "darkhast_qand_faqat_panjshanbe",
+      "title": "درخواست قند تنها در پنجشنبه‌ها",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 2,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00004",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00163",
+      "kind": "rule",
+      "key": "aqlam_ekhtesasi_dar_darkhast_kala",
+      "title": "اقلام اختصاصی هر محصول در درخواست کالا",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 2,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00006",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00164",
+      "kind": "rule",
+      "key": "bazdehi_estandard_rost_bif",
+      "title": "بازدهی استاندارد رست بیف",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "inferred",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 1
+      },
+      "processes": [],
+      "home": "F-00009",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00165",
+      "kind": "rule",
+      "key": "kast_pokht_gusht_charkh_karde",
+      "title": "کاست پخت گوشت چرخ‌کرده",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "inferred",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 1
+      },
+      "processes": [],
+      "home": "F-00009",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00166",
+      "kind": "rule",
+      "key": "kast_va_marinet_gusht_raste",
+      "title": "کاست و مرینت گوشت راستهٔ استیک",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "inferred",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 2
+      },
+      "processes": [],
+      "home": "F-00013",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00167",
+      "kind": "rule",
+      "key": "vazn_har_adad_loqme",
+      "title": "وزن هر عدد لقمهٔ مرغ",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00012",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00168",
+      "kind": "rule",
+      "key": "orf_khunabe_va_plastik_morgh",
+      "title": "مقدار عرفی خون‌آبه و پلاستیک مرغ",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00012",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00169",
+      "kind": "rule",
+      "key": "zayeat_paksazi_sine_morgh",
+      "title": "ضایعات پاک‌سازی سینهٔ مرغ",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00012",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00170",
+      "kind": "rule",
+      "key": "darsad_zayeat_kahu_bar_hasbe_fasl",
+      "title": "درصد ضایعات کاهو بر حسب فصل",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 2,
+        "informal": 0,
+        "inferred": 1
+      },
+      "processes": [],
+      "home": null,
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00171",
+      "kind": "rule",
+      "key": "orf_zayeat_pokhte_rost_bif",
+      "title": "مقدار عرفی ضایعات پختهٔ رست بیف",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00024",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00172",
+      "kind": "rule",
+      "key": "orf_khunabe_va_plastik_gusht",
+      "title": "مقدار عرفی خون‌آبه و پلاستیک گوشت خام",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00024",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00173",
+      "kind": "rule",
+      "key": "vazn_har_rol_jambon",
+      "title": "وزن هر رول ژامبون",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00011",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00174",
+      "kind": "rule",
+      "key": "aqlam_moshmul_form_nime_sakhte",
+      "title": "اقلام مشمول فرم تولید نیمه ساخته",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00009",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00175",
+      "kind": "rule",
+      "key": "masul_por_kardan_form_darkhast_kala",
+      "title": "مسئول نوشتن و بررسی فهرست درخواست کالا",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00004",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00176",
+      "kind": "rule",
+      "key": "zamanbandi_tabadol_list_sobh",
+      "title": "مهلت‌های ردوبدل فهرست‌های صبح با انبار",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00004",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00177",
+      "kind": "rule",
+      "key": "barname_haftegi_line_gusht",
+      "title": "برنامهٔ هفتگی محصول لاین گوشت",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00019",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00178",
+      "kind": "rule",
+      "key": "hashiye_afzayesh_tolid_gusht",
+      "title": "حاشیهٔ افزایش مقدار تولید گوشت",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00019",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00179",
+      "kind": "rule",
+      "key": "dore_poshesh_depoye_gusht_pokhte",
+      "title": "دورهٔ پوشش دپوی گوشت پخته",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00019",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00180",
+      "kind": "rule",
+      "key": "do_shekl_tahvil_kahu",
+      "title": "دو شکل تحویل کاهو",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": null,
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00181",
+      "kind": "rule",
+      "key": "andaze_baste_borger",
+      "title": "اندازهٔ بستهٔ برگر",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00019",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00182",
+      "kind": "rule",
+      "key": "masraf_salad_kentaki_baghimande",
+      "title": "مصرف سالاد کنتاکی باقی‌مانده",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": null,
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00183",
+      "kind": "rule",
+      "key": "zakhamat_barsh_mahsulat_amadesazi",
+      "title": "ضخامت برش محصولات آماده‌سازی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": null,
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00184",
+      "kind": "rule",
+      "key": "mabnaye_elam_zayeat_bar_hasbe_arzesh",
+      "title": "مبنای اعلام ضایعات بر حسب ارزش قلم",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00024",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00185",
+      "kind": "rule",
+      "key": "kanargozari_kahuye_kermzade",
+      "title": "کنارگذاری کاهوی کرم‌زده",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00016",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00186",
+      "kind": "rule",
+      "key": "malekiat_kahuye_amani_shabane",
+      "title": "کاهوی امانی شبانه در یخچال آماده‌سازی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00019",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00187",
+      "kind": "rule",
+      "key": "meqdar_qalam_dar_list_marinet",
+      "title": "مقدار هر قلم در فهرست روزانهٔ مرینت",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00007",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00188",
+      "kind": "rule",
+      "key": "mohlat_tahvil_list_darkhast_ghorub",
+      "title": "مهلت تحویل فهرست درخواست غروب به انبار",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00004",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00189",
+      "kind": "rule",
+      "key": "estesnaye_khoruj_sos_va_khiarshor_personel",
+      "title": "استثنای خروج مایونز و خیارشور غذای پرسنل",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00017",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00190",
+      "kind": "rule",
+      "key": "zaman_pokht_rost_bif",
+      "title": "زمان پخت و فاصلهٔ هم‌زدن گوشت رست بیف",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": null,
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00191",
+      "kind": "rule",
+      "key": "zaman_pokht_charkh_karde",
+      "title": "زمان پخت و فاصلهٔ هم‌زدن گوشت چرخ‌کرده",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": null,
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00192",
+      "kind": "rule",
+      "key": "moddat_miks_maye_burger",
+      "title": "مدت مخلوط شدن مایهٔ برگر در خمیرگیر",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": null,
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00193",
+      "kind": "rule",
+      "key": "zayeat_chasbide_charkh_gusht",
+      "title": "ضایعات چسبیده به چرخ‌گوشت",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00024",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00194",
+      "kind": "rule",
+      "key": "kasri_vazn_payan_tolid_burger",
+      "title": "کسری وزن پایان تولید برگر",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00008",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00195",
+      "kind": "rule",
+      "key": "tolerance_tanasob_maye_burger",
+      "title": "تلورانس تناسب سردست و خرده راسته در مایهٔ برگر",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00008",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00196",
+      "kind": "rule",
+      "key": "masraf_bagimande_maye_burger",
+      "title": "مصرف باقی‌ماندهٔ مایهٔ برگر به‌عنوان تست",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00008",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00197",
+      "kind": "rule",
+      "key": "tarkib_zarf_chiza",
+      "title": "ترکیب هر ظرف و هر پرس چیزا",
+      "aliases": [
+        "پرس شش‌تایی چیزا"
+      ],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00019",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00198",
+      "kind": "rule",
+      "key": "zarib_sefaresh_mahsulat_amadesazi",
+      "title": "ضریب سفارش اقلام خروجی آماده‌سازی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00019",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00199",
+      "kind": "rule",
+      "key": "eslah_tedad_ruye_label",
+      "title": "اصلاح تعداد روی لیبل چاپی بسته‌ها",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": null,
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00200",
+      "kind": "rule",
+      "key": "dastur_sos_alferdo_pizza",
+      "title": "نسبت مواد سس آلفردو پیتزا",
+      "aliases": [
+        "سس آلفردو"
+      ],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": null,
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00201",
+      "kind": "rule",
+      "key": "mabnaye_tahvil_dorchin",
+      "title": "مبنای تحویل دورچین چیکن استیک",
+      "aliases": [
+        "دورچین ده‌پرسی استیک"
+      ],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": null,
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00202",
+      "kind": "rule",
+      "key": "mabnaye_sefaresh_mojaddad_sos",
+      "title": "مبنای سفارش مجدد مواد اولیهٔ سس",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00004",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00203",
+      "kind": "rule",
+      "key": "taraz_vazni_form_tabdil_sine_morgh",
+      "title": "تراز وزنی فرم تبدیل سینهٔ مرغ",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 6,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00012",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00204",
+      "kind": "rule",
+      "key": "ekhtelaf_mojaz_taraz_ruzane_morgh",
+      "title": "اختلاف مجاز تراز روزانهٔ وزن مرغ",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00012",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00205",
+      "kind": "rule",
+      "key": "mabnaye_tafkik_sine_morgh_be_chahar_mahsul",
+      "title": "مبنای تفکیک سینهٔ مرغ میان چهار محصول",
+      "aliases": [
+        "تفکیک شنیسل به چهار قلم"
+      ],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 2,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00012",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00206",
+      "kind": "rule",
+      "key": "zaman_tolid_loghme_bar_bist_kilo",
+      "title": "زمان تولید لقمه به ازای هر بیست کیلوگرم مرغ",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": null,
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00207",
+      "kind": "rule",
+      "key": "pokht_haftegi_kenar_shenisel",
+      "title": "پخت هفتگی کنار شنیسل و مقصد آن",
+      "aliases": [
+        "کنار شینسل"
+      ],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00015",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00208",
+      "kind": "rule",
+      "key": "masraf_kenar_file_va_zayeat_pust",
+      "title": "مصرف کنار فیله و ضایعات پوست فیله",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00014",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00209",
+      "kind": "rule",
+      "key": "omq_depoye_mahsulat_nimesakhte",
+      "title": "عمق دپوی محصولات نیمه‌ساختهٔ آماده‌سازی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00019",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00210",
+      "kind": "rule",
+      "key": "ruze_tahiye_sose_sir",
+      "title": "روز تهیهٔ سس سیر",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": null,
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00211",
+      "kind": "rule",
+      "key": "mabnaye_sabt_va_taide_ezafekari",
+      "title": "مبنای ثبت و تأیید اضافه‌کاری آماده‌سازی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "unknown",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 1,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": null,
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00212",
+      "kind": "rule",
+      "key": "bazdehi_pokht_penne",
+      "title": "وزن بستهٔ پنهٔ پخته و بازدهی پخت",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": null,
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00213",
+      "kind": "rule",
+      "key": "yek_bar_khoruj_har_qalam_dar_ruz",
+      "title": "یک بار خروج هر قلم در روز",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00004",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00214",
+      "kind": "rule",
+      "key": "kasr_taakhir_bedun_morakhkhasi",
+      "title": "کسر تأخیر بدون مرخصی تأییدشده",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00152",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00215",
+      "kind": "rule",
+      "key": "barnameye_af_haftegi_amadesazi",
+      "title": "برنامهٔ آف هفتگی پرسنل آماده‌سازی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": null,
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00216",
+      "kind": "rule",
+      "key": "damane_form_tolid_nime_sakhte",
+      "title": "دامنهٔ اقلام فرم تولید نیمه ساخته",
+      "aliases": [
+        "دامنهٔ فرم نیم‌ساخت"
+      ],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00009",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00217",
+      "kind": "rule",
+      "key": "zayeat_gusht_gardan_va_sardast",
+      "title": "ضایعات گوشت گردن و سردست",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00024",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00218",
+      "kind": "rule",
+      "key": "bazdehi_maye_borger",
+      "title": "بازدهی مایهٔ برگر از گوشت خام",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00008",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00219",
+      "kind": "rule",
+      "key": "mohlat_tabdil_maye_borger",
+      "title": "مهلت تبدیل مایهٔ برگر",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00008",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00220",
+      "kind": "rule",
+      "key": "daqqat_towzin_adviye_tebq_resepi",
+      "title": "دقت توزین ادویه‌ها طبق رسپی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": null,
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00221",
+      "kind": "rule",
+      "key": "meqyas_khataye_tarazu",
+      "title": "مقیاس خطای ترازوی انبار و آماده‌سازی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00023",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00222",
+      "kind": "rule",
+      "key": "mabnaye_sabt_vazn_vorudi_va_khoruji",
+      "title": "مبنای ثبت وزن ورودی و خروجی آماده‌سازی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00023",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00223",
+      "kind": "rule",
+      "key": "elam_qabli_aqlam_anbar_dovvom",
+      "title": "اعلام یک روز پیش برای اقلام انبار دوم",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00004",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
     },
     {
       "id": "F-00132",
@@ -3952,6 +5840,344 @@
       "valid_to": null,
       "stub": false,
       "updated_at": "2026-09-19T09:42:28Z"
+    },
+    {
+      "id": "F-00224",
+      "kind": "note",
+      "key": "note_c1c9e88a716f",
+      "title": "مرز ضایعات و دورریز در آماده‌سازی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00024",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00225",
+      "kind": "note",
+      "key": "note_8a9dc834bd3c",
+      "title": "تردید در برنامهٔ هفتگی لاین گوشت",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00019",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00226",
+      "kind": "note",
+      "key": "note_d35d5f304e8d",
+      "title": "ابهام در حد مجاز ضایعات کاهو",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00016",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00227",
+      "kind": "note",
+      "key": "note_a694226e28b6",
+      "title": "اقلام وزن‌شدهٔ کاهو در دفتر لاین سبزیجات",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00016",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00228",
+      "kind": "note",
+      "key": "note_8e2eb1bf09cb",
+      "title": "نقش تأییدکنندهٔ تحویل ورودی آماده‌سازی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00023",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00229",
+      "kind": "note",
+      "key": "note_83c321235353",
+      "title": "اثر وزن مرینت بر تراز فرم تبدیل راسته",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00010",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00230",
+      "kind": "note",
+      "key": "note_fee565e920d2",
+      "title": "نبودن مقدار نسخهٔ مایهٔ چرخ‌کرده و برگر",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": null,
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00231",
+      "kind": "note",
+      "key": "note_32e2d92582fd",
+      "title": "شمار فرم‌های تبدیل لاین گوشت در هفته",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": null,
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00232",
+      "kind": "note",
+      "key": "note_43d38b31821b",
+      "title": "مقادیر نسخهٔ سس سیر و محل ثبت آن",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": null,
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00233",
+      "kind": "note",
+      "key": "note_feb76e54a353",
+      "title": "خطای کد لیبل محصولات خروجی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00019",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00234",
+      "kind": "note",
+      "key": "note_8048fde1b428",
+      "title": "اعلام شفاهی مقدار تولید درخواستی انبار",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00007",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00235",
+      "kind": "note",
+      "key": "note_492cbe321264",
+      "title": "نبود ثبت وزن آرد ورودی و خمیر خروجی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00021",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
+    },
+    {
+      "id": "F-00236",
+      "kind": "note",
+      "key": "note_be41895c3da5",
+      "title": "جای مغز ران در گروه‌بندی ورودی آماده‌سازی",
+      "aliases": [],
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "status": "confirmed",
+      "field_status_counts": {
+        "disputed": 0,
+        "unknown": 0,
+        "informal": 0,
+        "inferred": 0
+      },
+      "processes": [],
+      "home": "F-00023",
+      "retired": false,
+      "valid_to": null,
+      "stub": false,
+      "updated_at": "2026-09-26T10:53:44Z"
     }
   ]
 }
