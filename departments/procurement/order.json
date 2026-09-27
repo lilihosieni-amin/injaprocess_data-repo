@@ -1,7 +1,26 @@
 {
   "department": "procurement",
   "order": [
-    "procurement-001"
+    "procurement-008",
+    "procurement-009",
+    "procurement-002",
+    "procurement-003",
+    "procurement-004",
+    "procurement-005",
+    "procurement-006",
+    "procurement-007",
+    "procurement-010",
+    "procurement-011",
+    "procurement-012",
+    "procurement-013",
+    "procurement-014",
+    "procurement-015",
+    "procurement-016",
+    "procurement-017",
+    "procurement-018",
+    "procurement-019",
+    "procurement-020",
+    "procurement-021"
   ],
-  "updated_at": "2026-09-13T17:08:18Z"
+  "updated_at": "2026-09-27T15:45:45Z"
 }

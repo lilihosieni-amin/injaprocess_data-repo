@@ -1,0 +1,108 @@
+{
+  "department": "procurement",
+  "transcripts": [
+    "procurement-1405-06-23",
+    "procurement-1405-06-24"
+  ],
+  "started_at": "2026-09-27T11:42:40Z",
+  "finished_at": "2026-09-27T15:50:29Z",
+  "attempt": 1,
+  "processes": [
+    {
+      "id": "procurement-002",
+      "status": "new"
+    },
+    {
+      "id": "procurement-003",
+      "status": "new"
+    },
+    {
+      "id": "procurement-004",
+      "status": "new"
+    },
+    {
+      "id": "procurement-005",
+      "status": "new"
+    },
+    {
+      "id": "procurement-006",
+      "status": "new"
+    },
+    {
+      "id": "procurement-007",
+      "status": "new"
+    },
+    {
+      "id": "procurement-010",
+      "status": "new"
+    },
+    {
+      "id": "procurement-011",
+      "status": "new"
+    },
+    {
+      "id": "procurement-012",
+      "status": "new"
+    },
+    {
+      "id": "procurement-013",
+      "status": "new"
+    },
+    {
+      "id": "procurement-014",
+      "status": "new"
+    },
+    {
+      "id": "procurement-015",
+      "status": "new"
+    },
+    {
+      "id": "procurement-016",
+      "status": "new"
+    },
+    {
+      "id": "procurement-017",
+      "status": "new"
+    },
+    {
+      "id": "procurement-018",
+      "status": "new"
+    },
+    {
+      "id": "procurement-019",
+      "status": "new"
+    },
+    {
+      "id": "procurement-020",
+      "status": "new"
+    },
+    {
+      "id": "procurement-021",
+      "status": "new"
+    },
+    {
+      "id": "procurement-008",
+      "status": "split",
+      "superseded": [
+        "procurement-001"
+      ],
+      "heir_of": [
+        "procurement-001"
+      ]
+    },
+    {
+      "id": "procurement-009",
+      "status": "split",
+      "superseded": [
+        "procurement-001"
+      ],
+      "heir_of": [
+        "procurement-001"
+      ]
+    },
+    {
+      "id": "procurement-001",
+      "status": "tombstone"
+    }
+  ]
+}
