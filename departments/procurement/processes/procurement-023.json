@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-28T09:26:46Z",
-  "updated_at": "2026-09-28T23:17:16Z",
+  "updated_at": "2026-09-28T23:20:23Z",
   "idef0": {
     "inputs": [
       "سفارش روزانهٔ انبار",
@@ -638,8 +638,8 @@
       },
       "subprocess": "procurement-005",
       "position": {
-        "x": 1300.1480468156258,
-        "y": 1136.674722602219
+        "x": 1341.0109583382596,
+        "y": 859.2441670466634
       },
       "layout": "manual",
       "source": {
@@ -802,8 +802,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1360.2253381972944,
-        "y": 1479.5091199270405
+        "x": 1344.9539904606688,
+        "y": 1350.908296881773
       },
       "layout": "manual",
       "source": {
@@ -905,8 +905,8 @@
       },
       "subprocess": "procurement-025",
       "position": {
-        "x": 1362.1477428180574,
-        "y": 884.5355677154583
+        "x": 1338.5366317069463,
+        "y": 1059.5355677154585
       },
       "layout": "manual",
       "source": {
@@ -1012,13 +1012,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1227.5
+        "x": 1116.1111111111113,
+        "y": 863.5210905349794
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260928-merge3",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
