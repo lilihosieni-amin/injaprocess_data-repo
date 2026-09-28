@@ -1,0 +1,74 @@
+{
+ "add_nodes": [],
+ "add_edges": [],
+ "remove_edges": [
+  {
+   "from": "procurement-008-n010",
+   "to": "procurement-008-n011"
+  },
+  {
+   "from": "procurement-008-n019",
+   "to": "procurement-008-n011"
+  },
+  {
+   "from": "procurement-008-n011",
+   "to": "procurement-008-j6"
+  },
+  {
+   "from": "procurement-008-j6",
+   "to": "procurement-008-n012"
+  },
+  {
+   "from": "procurement-008-j6",
+   "to": "procurement-008-n013"
+  },
+  {
+   "from": "procurement-008-n012",
+   "to": "procurement-008-j8"
+  },
+  {
+   "from": "procurement-008-n013",
+   "to": "procurement-008-j8"
+  },
+  {
+   "from": "procurement-008-j8",
+   "to": "procurement-008-n016"
+  },
+  {
+   "from": "procurement-008-n016",
+   "to": "procurement-008-n017"
+  },
+  {
+   "from": "procurement-008-n017",
+   "to": "procurement-008-n018"
+  }
+ ],
+ "enrich_nodes": [],
+ "revise_nodes": [],
+ "flag_removed": [
+  {
+   "id": "procurement-008-n011"
+  },
+  {
+   "id": "procurement-008-n012"
+  },
+  {
+   "id": "procurement-008-n013"
+  },
+  {
+   "id": "procurement-008-n016"
+  },
+  {
+   "id": "procurement-008-n017"
+  },
+  {
+   "id": "procurement-008-n018"
+  },
+  {
+   "id": "procurement-008-j6"
+  },
+  {
+   "id": "procurement-008-j8"
+  }
+ ]
+}
