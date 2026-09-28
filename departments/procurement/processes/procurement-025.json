@@ -13,7 +13,7 @@
     "node": "procurement-023-n022"
   },
   "created_at": "2026-09-28T11:04:41Z",
-  "updated_at": "2026-09-28T22:51:32Z",
+  "updated_at": "2026-09-28T22:54:12Z",
   "idef0": {
     "inputs": [
       "بار خریداری‌شده",
@@ -526,8 +526,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1251.7148593132736,
-        "y": 789.8606963504072
+        "x": 1191.6738196415909,
+        "y": 987.4502996335812
       },
       "layout": "manual",
       "source": {
@@ -563,13 +563,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 790.0
+        "x": 1198.4322845417234,
+        "y": 806.3748290013679
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260928-merge3",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
