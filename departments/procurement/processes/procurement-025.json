@@ -13,7 +13,7 @@
     "node": "procurement-023-n022"
   },
   "created_at": "2026-09-28T11:04:41Z",
-  "updated_at": "2026-09-28T23:07:40Z",
+  "updated_at": "2026-09-28T23:18:30Z",
   "idef0": {
     "inputs": [
       "بار خریداری‌شده",
@@ -64,8 +64,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 34.70656307252962,
-        "y": 236.76833638682461
+        "x": -66.48684363192672,
+        "y": 210.77369980219362
       },
       "layout": "manual",
       "source": {
@@ -81,10 +81,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 623,
-        "y": 281.0
+        "x": 379.76447195809584,
+        "y": 254.0769835373465
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "procurement-025-n002",
@@ -141,7 +141,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -170,13 +170,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 615.0
+        "x": 1100.4243573164956,
+        "y": 360.6239134218254
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260928-merge3",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -203,8 +205,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 497.2853096970025,
-        "y": 291.3065233521908
+        "x": 464.79201396621386,
+        "y": 341.43903676540776
       },
       "layout": "manual",
       "source": {
@@ -235,8 +237,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 717.1480569783349,
-        "y": 316.6332982290998
+        "x": 723.6467161244926,
+        "y": 503.2376537116294
       },
       "layout": "manual",
       "source": {
@@ -270,8 +272,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 993.8172763824459,
-        "y": 435.5707896908644
+        "x": 934.4009641890037,
+        "y": 549.7615146876361
       },
       "layout": "manual",
       "source": {
@@ -608,13 +610,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 265.0
+        "x": 680.79665245031,
+        "y": 365.2650268264338
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260928-merge3",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -640,13 +644,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 265.0
+        "x": 143.10380061419156,
+        "y": 219.50938597689577
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260928-merge3",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
