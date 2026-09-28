@@ -13,7 +13,7 @@
     "node": "cooking-027-n064"
   },
   "created_at": "2026-08-23T11:38:17Z",
-  "updated_at": "2026-09-02T22:06:23Z",
+  "updated_at": "2026-09-28T07:07:00Z",
   "idef0": {
     "inputs": [
       "فیش سفارش",
@@ -93,8 +93,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 6,
-        "y": 509.5
+        "x": 4,
+        "y": 285.5
       },
       "layout": "manual",
       "source": {
@@ -140,13 +140,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 177.5
+        "x": 652,
+        "y": 193.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260823-c027-comments-sub",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -155,10 +157,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 193.5
+        "x": 709,
+        "y": 361.5
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cooking-033-n003",
@@ -182,8 +184,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1060.3191872427985,
-        "y": 225.80195473251032
+        "x": 836.3191872427985,
+        "y": 523.8019547325104
       },
       "layout": "manual",
       "source": {
@@ -199,8 +201,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1099.5972222222222,
-        "y": 497.7245370370372
+        "x": 577.5972222222222,
+        "y": 583.7245370370372
       },
       "layout": "manual"
     },
@@ -218,8 +220,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1109.351851851852,
-        "y": 619.4045781893004
+        "x": 491.35185185185196,
+        "y": 731.4045781893004
       },
       "layout": "manual",
       "source": {
@@ -235,8 +237,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1266.8078703703704,
-        "y": 795.3518518518517
+        "x": 652.8078703703704,
+        "y": 981.3518518518517
       },
       "layout": "manual"
     },
@@ -262,8 +264,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1299.0676440329219,
-        "y": 946.468621399177
+        "x": 937.0676440329219,
+        "y": 994.468621399177
       },
       "layout": "manual",
       "source": {
@@ -293,8 +295,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1323.5969650205766,
-        "y": 1083.9107510288065
+        "x": 1183.5969650205766,
+        "y": 1003.9107510288065
       },
       "layout": "manual",
       "source": {
@@ -326,8 +328,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1304,
-        "y": 1266.3333333333333
+        "x": 1418,
+        "y": 1000.3333333333333
       },
       "layout": "manual",
       "source": {
@@ -343,8 +345,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1385.7831790123455,
-        "y": 1490.1437757201645
+        "x": 1475.7831790123455,
+        "y": 1196.1437757201645
       },
       "layout": "manual"
     },
@@ -368,8 +370,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1471.4948559670781,
-        "y": 1628.8001543209875
+        "x": 1395.4948559670781,
+        "y": 1334.8001543209875
       },
       "layout": "manual",
       "source": {
@@ -402,8 +404,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1486.2235082304528,
-        "y": 1805.2489711934156
+        "x": 1396.2235082304528,
+        "y": 1511.2489711934156
       },
       "layout": "manual",
       "source": {
@@ -435,8 +437,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1493.5699588477366,
-        "y": 1965.0126028806583
+        "x": 1399.5699588477366,
+        "y": 1661.0126028806583
       },
       "layout": "manual",
       "source": {
@@ -466,8 +468,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1496.6535493827162,
-        "y": 2150.0771604938273
+        "x": 1396.6535493827162,
+        "y": 1816.0771604938273
       },
       "layout": "manual",
       "source": {
@@ -510,7 +512,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 350,
+        "x": 248,
         "y": 600.3250045776367
       },
       "layout": "manual",
@@ -694,8 +696,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 983,
-        "y": 1416.375
+        "x": 537,
+        "y": 1292.375
       },
       "layout": "manual"
     },
@@ -725,8 +727,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 944,
-        "y": 1544.375
+        "x": 472,
+        "y": 1418.375
       },
       "layout": "manual",
       "source": {
@@ -743,8 +745,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 981.6666666666667,
-        "y": 1706.1666666666667
+        "x": 535.6666666666667,
+        "y": 1568.1666666666667
       },
       "layout": "manual"
     },
@@ -772,8 +774,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 705.7438271604938,
-        "y": 1969.4855967078188
+        "x": 457.74382716049377,
+        "y": 1817.4855967078188
       },
       "layout": "manual",
       "source": {
@@ -808,8 +810,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1155.6075102880657,
-        "y": 1984.3482510288068
+        "x": 813.6075102880657,
+        "y": 1526.3482510288068
       },
       "layout": "manual",
       "source": {
