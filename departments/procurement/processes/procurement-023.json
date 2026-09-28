@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-28T09:26:46Z",
-  "updated_at": "2026-09-28T11:07:30Z",
+  "updated_at": "2026-09-28T11:13:35Z",
   "idef0": {
     "inputs": [
       "سفارش روزانهٔ انبار",
@@ -932,6 +932,28 @@
           "ui-edit"
         ]
       }
+    },
+    {
+      "id": "procurement-023-j7",
+      "type": "junction",
+      "junctionType": "AND",
+      "direction": "split",
+      "position": {
+        "x": 623,
+        "y": 1418.5
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "procurement-023-j8",
+      "type": "junction",
+      "junctionType": "AND",
+      "direction": "join",
+      "position": {
+        "x": 103,
+        "y": 1418.5
+      },
+      "layout": "auto"
     }
   ],
   "edges": [
@@ -1000,10 +1022,6 @@
       "to": "procurement-023-j4"
     },
     {
-      "from": "procurement-023-j4",
-      "to": "procurement-023-n015"
-    },
-    {
       "from": "procurement-023-j3",
       "to": "procurement-023-n016"
     },
@@ -1044,11 +1062,27 @@
       "to": "procurement-023-n011"
     },
     {
-      "from": "procurement-023-n015",
+      "from": "procurement-023-j4",
+      "to": "procurement-023-j7"
+    },
+    {
+      "from": "procurement-023-j7",
+      "to": "procurement-023-n015"
+    },
+    {
+      "from": "procurement-023-j7",
       "to": "procurement-023-n022"
     },
     {
+      "from": "procurement-023-n015",
+      "to": "procurement-023-j8"
+    },
+    {
       "from": "procurement-023-n022",
+      "to": "procurement-023-j8"
+    },
+    {
+      "from": "procurement-023-j8",
       "to": "procurement-023-n019"
     }
   ],

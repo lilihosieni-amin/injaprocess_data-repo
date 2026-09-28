@@ -1,0 +1,59 @@
+{
+ "add_nodes": [
+  {
+   "key": "j1",
+   "type": "junction",
+   "junctionType": "AND",
+   "direction": "split"
+  },
+  {
+   "key": "j2",
+   "type": "junction",
+   "junctionType": "AND",
+   "direction": "join"
+  }
+ ],
+ "add_edges": [
+  {
+   "from": "procurement-023-j4",
+   "to": "j1"
+  },
+  {
+   "from": "j1",
+   "to": "procurement-023-n015"
+  },
+  {
+   "from": "j1",
+   "to": "procurement-023-n022"
+  },
+  {
+   "from": "procurement-023-n015",
+   "to": "j2"
+  },
+  {
+   "from": "procurement-023-n022",
+   "to": "j2"
+  },
+  {
+   "from": "j2",
+   "to": "procurement-023-n019"
+  }
+ ],
+ "remove_edges": [
+  {
+   "from": "procurement-023-j4",
+   "to": "procurement-023-n015"
+  },
+  {
+   "from": "procurement-023-n015",
+   "to": "procurement-023-n022"
+  },
+  {
+   "from": "procurement-023-n022",
+   "to": "procurement-023-n019"
+  }
+ ],
+ "enrich_nodes": [],
+ "revise_nodes": [],
+ "flag_removed": []
+}
