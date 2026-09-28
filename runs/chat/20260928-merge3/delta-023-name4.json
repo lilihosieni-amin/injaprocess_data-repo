@@ -1,0 +1,7 @@
+{
+ "add_nodes": [], "add_edges": [], "remove_edges": [], "enrich_nodes": [],
+ "revise_nodes": [{"id":"procurement-023-n004","set":{
+   "label":"اعلام شفاهی درخواست خرید موردی و خارج از روتین بخش به کارپردازی در طول روز"
+ }}],
+ "flag_removed": []
+}
