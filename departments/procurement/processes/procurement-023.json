@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-28T09:26:46Z",
-  "updated_at": "2026-09-28T11:04:41Z",
+  "updated_at": "2026-09-28T11:07:30Z",
   "idef0": {
     "inputs": [
       "سفارش روزانهٔ انبار",
@@ -103,7 +103,7 @@
       "subprocess": "procurement-015",
       "position": {
         "x": 40,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -139,7 +139,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -175,7 +175,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -219,7 +219,7 @@
       "subprocess": "procurement-008",
       "position": {
         "x": 820,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -236,7 +236,7 @@
       "direction": "split",
       "position": {
         "x": 1143,
-        "y": 106.0
+        "y": 106
       },
       "layout": "auto"
     },
@@ -307,7 +307,7 @@
       "subprocess": "procurement-009",
       "position": {
         "x": 1080,
-        "y": 615.0
+        "y": 615
       },
       "layout": "auto",
       "source": {
@@ -352,7 +352,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -384,7 +384,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -417,7 +417,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -459,8 +459,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 377.83010335917334,
-        "y": 1450.0812813497491
+        "x": 590.7028803769571,
+        "y": 1427.1565207478338
       },
       "layout": "manual",
       "source": {
@@ -503,8 +503,8 @@
       },
       "subprocess": "procurement-003",
       "position": {
-        "x": 838.9487489655639,
-        "y": 1445.424826045836
+        "x": 821.482264697438,
+        "y": 1410.4918575095844
       },
       "layout": "manual",
       "source": {
@@ -551,8 +551,8 @@
       },
       "subprocess": "procurement-004",
       "position": {
-        "x": 791.7898595700124,
-        "y": 1216.0190779584873
+        "x": 691.3575750282887,
+        "y": 1198.825507507051
       },
       "layout": "manual",
       "source": {
@@ -597,8 +597,8 @@
       },
       "subprocess": "procurement-016",
       "position": {
-        "x": 469.0036479708163,
-        "y": 646.9102447180422
+        "x": 527.953032375741,
+        "y": 777.9088767289861
       },
       "layout": "manual",
       "source": {
@@ -654,8 +654,8 @@
       },
       "subprocess": "procurement-005",
       "position": {
-        "x": 1329.2643258853932,
-        "y": 1119.6815625474994
+        "x": 1292.1480468156258,
+        "y": 976.6747226022189
       },
       "layout": "manual",
       "source": {
@@ -708,8 +708,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 654.9907407407406,
-        "y": 1488.8703703703704
+        "x": 463.9510690581141,
+        "y": 1268.3560064852813
       },
       "layout": "manual"
     },
@@ -818,8 +818,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1403.8915488676091,
-        "y": 1316.8524851801185
+        "x": 1360.2253381972944,
+        "y": 1479.5091199270405
       },
       "layout": "manual",
       "source": {
@@ -847,8 +847,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1372.6098191214471,
-        "y": 1527.5436996504027
+        "x": 1374.793129654963,
+        "y": 1631.6603207174342
       },
       "layout": "manual",
       "source": {
@@ -878,8 +878,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1359.355145158839,
-        "y": 1595.1451588387292
+        "x": 1381.188250493996,
+        "y": 1767.6266909864719
       },
       "layout": "manual",
       "source": {
@@ -921,14 +921,15 @@
       },
       "subprocess": "procurement-025",
       "position": {
-        "x": 300,
-        "y": 1402.5
+        "x": 1314.1477428180574,
+        "y": 1188.5355677154582
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260928-merge3",
         "touched_by": [
-          "runs/chat/20260928-merge3"
+          "runs/chat/20260928-merge3",
+          "ui-edit"
         ]
       }
     }
