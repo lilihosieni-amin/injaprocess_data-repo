@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-28T09:26:46Z",
-  "updated_at": "2026-09-28T22:00:59Z",
+  "updated_at": "2026-09-28T22:04:11Z",
   "idef0": {
     "inputs": [
       "سفارش روزانهٔ انبار",
@@ -228,17 +228,6 @@
           "runs/chat/20260928-merge3"
         ]
       }
-    },
-    {
-      "id": "procurement-023-j1",
-      "type": "junction",
-      "junctionType": "XOR",
-      "direction": "split",
-      "position": {
-        "x": 1143,
-        "y": 106
-      },
-      "layout": "auto"
     },
     {
       "id": "procurement-023-n005",
@@ -991,7 +980,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -1014,15 +1003,6 @@
     {
       "from": "procurement-023-n003",
       "to": "procurement-023-n004"
-    },
-    {
-      "from": "procurement-023-n004",
-      "to": "procurement-023-j1"
-    },
-    {
-      "from": "procurement-023-j1",
-      "to": "procurement-023-j2",
-      "label": "در صورت نبود اعلام از سوی تأمین‌کننده"
     },
     {
       "from": "procurement-023-j2",
@@ -1114,12 +1094,13 @@
       "to": "procurement-023-n019"
     },
     {
-      "from": "procurement-023-j1",
-      "to": "procurement-023-n023"
-    },
-    {
       "from": "procurement-023-n023",
       "to": "procurement-023-j2"
+    },
+    {
+      "from": "procurement-023-n004",
+      "to": "procurement-023-n023",
+      "label": ""
     }
   ],
   "pending": []
