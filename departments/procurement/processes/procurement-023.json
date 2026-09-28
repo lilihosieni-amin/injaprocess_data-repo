@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-28T09:26:46Z",
-  "updated_at": "2026-09-28T11:13:35Z",
+  "updated_at": "2026-09-28T21:39:32Z",
   "idef0": {
     "inputs": [
       "سفارش روزانهٔ انبار",
@@ -459,8 +459,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 590.7028803769571,
-        "y": 1427.1565207478338
+        "x": 400.70288037695707,
+        "y": 1439.1565207478338
       },
       "layout": "manual",
       "source": {
@@ -654,8 +654,8 @@
       },
       "subprocess": "procurement-005",
       "position": {
-        "x": 1292.1480468156258,
-        "y": 976.6747226022189
+        "x": 1300.1480468156258,
+        "y": 1136.674722602219
       },
       "layout": "manual",
       "source": {
@@ -921,8 +921,8 @@
       },
       "subprocess": "procurement-025",
       "position": {
-        "x": 1314.1477428180574,
-        "y": 1188.5355677154582
+        "x": 1362.1477428180574,
+        "y": 884.5355677154583
       },
       "layout": "manual",
       "source": {
@@ -939,10 +939,10 @@
       "junctionType": "AND",
       "direction": "split",
       "position": {
-        "x": 623,
-        "y": 1418.5
+        "x": 1185,
+        "y": 944.5000000000001
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "procurement-023-j8",
@@ -950,10 +950,10 @@
       "junctionType": "AND",
       "direction": "join",
       "position": {
-        "x": 103,
-        "y": 1418.5
+        "x": 1551,
+        "y": 1166.5
       },
-      "layout": "auto"
+      "layout": "manual"
     }
   ],
   "edges": [
