@@ -13,7 +13,7 @@
     "node": "procurement-023-n022"
   },
   "created_at": "2026-09-28T11:04:41Z",
-  "updated_at": "2026-09-28T22:58:39Z",
+  "updated_at": "2026-09-28T23:07:40Z",
   "idef0": {
     "inputs": [
       "بار خریداری‌شده",
@@ -81,7 +81,7 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
+        "x": 623,
         "y": 281.0
       },
       "layout": "auto"
@@ -140,7 +140,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
+        "x": 1080,
         "y": 90.0
       },
       "layout": "auto",
@@ -171,7 +171,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 90.0
+        "y": 615.0
       },
       "layout": "auto",
       "source": {
@@ -608,7 +608,39 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
+        "x": 1080,
+        "y": 265.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260928-merge3",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "procurement-025-n017",
+      "type": "activity",
+      "label": "جداسازی سهم انبار مرکزی از سهم شعبه بر پایهٔ فاکتورها",
+      "description": "این تفکیک هنگام تخلیهٔ بار در انبار مرکزی و بر اساس فاکتورها انجام می‌شود تا سهم هر واحد مشخص باشد؛ سهم انبار مرکزی از بار جدا و سهم شعبه برای ارسال بارگیری می‌شود.",
+      "actor": "کارپرداز",
+      "icom": {
+        "inputs": [
+          "فاکتورهای خرید",
+          "بار تحویل‌شده به انبار"
+        ],
+        "controls": [],
+        "outputs": [
+          "سهم انبار مرکزی",
+          "سهم شعبه"
+        ],
+        "mechanisms": [
+          "کارپرداز",
+          "وانت سازمانی"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
         "y": 265.0
       },
       "layout": "auto",
@@ -619,10 +651,6 @@
     }
   ],
   "edges": [
-    {
-      "from": "procurement-025-n001",
-      "to": "procurement-025-j1"
-    },
     {
       "from": "procurement-025-j1",
       "to": "procurement-025-n002"
@@ -686,6 +714,14 @@
     {
       "from": "procurement-025-n016",
       "to": "procurement-025-n006"
+    },
+    {
+      "from": "procurement-025-n001",
+      "to": "procurement-025-n017"
+    },
+    {
+      "from": "procurement-025-n017",
+      "to": "procurement-025-j1"
     }
   ],
   "pending": []

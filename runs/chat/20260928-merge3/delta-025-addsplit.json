@@ -1,0 +1,13 @@
+{
+ "add_nodes": [{
+  "key":"n1","type":"activity",
+  "label":"جداسازی سهم انبار مرکزی از سهم شعبه بر پایهٔ فاکتورها",
+  "description":"این تفکیک هنگام تخلیهٔ بار در انبار مرکزی و بر اساس فاکتورها انجام می‌شود تا سهم هر واحد مشخص باشد؛ سهم انبار مرکزی از بار جدا و سهم شعبه برای ارسال بارگیری می‌شود.",
+  "actor":"کارپرداز",
+  "icom":{"inputs":["فاکتورهای خرید","بار تحویل‌شده به انبار"],"controls":[],"outputs":["سهم انبار مرکزی","سهم شعبه"],"mechanisms":["کارپرداز","وانت سازمانی"]},
+  "subprocess":null
+ }],
+ "add_edges":[{"from":"procurement-025-n001","to":"n1"},{"from":"n1","to":"procurement-025-j1"}],
+ "remove_edges":[{"from":"procurement-025-n001","to":"procurement-025-j1"}],
+ "enrich_nodes": [], "revise_nodes": [], "flag_removed": []
+}
