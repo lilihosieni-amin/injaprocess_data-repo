@@ -13,7 +13,7 @@
     "node": "procurement-023-n015"
   },
   "created_at": "2026-09-27T15:45:33Z",
-  "updated_at": "2026-09-28T23:07:40Z",
+  "updated_at": "2026-09-28T23:09:24Z",
   "idef0": {
     "inputs": [
       "اقلام خریداری‌شده",
@@ -219,14 +219,17 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 90.0
+        "x": 40,
+        "y": 1315.0
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260928-merge3"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "procurement-005-n006",
@@ -332,7 +335,7 @@
       "direction": "join",
       "position": {
         "x": 1143,
-        "y": 718.5
+        "y": 631.0
       },
       "layout": "auto"
     },
@@ -360,7 +363,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 702.5
+        "y": 615.0
       },
       "layout": "auto",
       "source": {
@@ -374,10 +377,11 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 623,
-        "y": 718.5
+        "x": 103,
+        "y": 806.0
       },
-      "layout": "auto"
+      "layout": "auto",
+      "removed": true
     },
     {
       "id": "procurement-005-n010",
@@ -402,7 +406,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
+        "x": 560,
         "y": 615.0
       },
       "layout": "auto",
@@ -462,8 +466,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 790.0
+        "x": 820,
+        "y": 440.0
       },
       "layout": "auto",
       "source": {
@@ -480,11 +484,6 @@
     {
       "from": "procurement-005-n004",
       "to": "procurement-005-j1"
-    },
-    {
-      "from": "procurement-005-j1",
-      "to": "procurement-005-n005",
-      "label": "در صورت تأیید کیفیت اقلام"
     },
     {
       "from": "procurement-005-j1",
@@ -513,20 +512,6 @@
       "to": "procurement-005-n009"
     },
     {
-      "from": "procurement-005-n009",
-      "to": "procurement-005-j3"
-    },
-    {
-      "from": "procurement-005-j3",
-      "to": "procurement-005-n010",
-      "label": "در صورت امکان تعویض و تهیهٔ مجدد"
-    },
-    {
-      "from": "procurement-005-j3",
-      "to": "procurement-005-n012",
-      "label": "در صورت ناتوانی کارپرداز در تعویض بار"
-    },
-    {
       "from": "procurement-005-n010",
       "to": "procurement-005-n011"
     },
@@ -534,6 +519,14 @@
       "from": "procurement-005-n011",
       "to": "procurement-005-n004",
       "label": "قلم جایگزین"
+    },
+    {
+      "from": "procurement-005-j1",
+      "to": "procurement-005-n012"
+    },
+    {
+      "from": "procurement-005-n009",
+      "to": "procurement-005-n010"
     }
   ],
   "pending": []
