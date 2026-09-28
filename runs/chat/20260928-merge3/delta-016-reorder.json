@@ -1,0 +1,17 @@
+{
+ "add_nodes": [],
+ "add_edges": [
+  {"from":"procurement-016-n004","to":"procurement-016-n005"},
+  {"from":"procurement-016-n005","to":"procurement-016-j1"},
+  {"from":"procurement-016-j1","to":"procurement-016-n008"}
+ ],
+ "remove_edges": [
+  {"from":"procurement-016-n004","to":"procurement-016-j1"},
+  {"from":"procurement-016-j1","to":"procurement-016-n005"},
+  {"from":"procurement-016-n005","to":"procurement-016-j2"},
+  {"from":"procurement-016-j1","to":"procurement-016-j2"},
+  {"from":"procurement-016-j2","to":"procurement-016-n008"}
+ ],
+ "enrich_nodes": [], "revise_nodes": [],
+ "flag_removed": [{"id":"procurement-016-j2"}]
+}
