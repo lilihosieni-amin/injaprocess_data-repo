@@ -1,0 +1,5 @@
+{
+ "add_nodes": [], "add_edges": [], "remove_edges": [], "enrich_nodes": [],
+ "revise_nodes": [{"id":"procurement-023-n011","set":{"label":"خرید حضوری اقلام روزانه از میدون بار و قصابی و خریدهای متفرقه"}}],
+ "flag_removed": []
+}
