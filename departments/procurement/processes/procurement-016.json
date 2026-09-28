@@ -13,7 +13,7 @@
     "node": "procurement-023-n014"
   },
   "created_at": "2026-09-27T15:45:43Z",
-  "updated_at": "2026-09-28T22:26:16Z",
+  "updated_at": "2026-09-28T22:27:42Z",
   "idef0": {
     "inputs": [
       "فرم ثابت لیست اقلام خریداری‌شده از تهران",
@@ -68,7 +68,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -132,7 +132,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -164,7 +164,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -179,7 +179,7 @@
       "direction": "split",
       "position": {
         "x": 1143,
-        "y": 106.0
+        "y": 106
       },
       "layout": "auto"
     },
@@ -210,8 +210,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1169.0010935468072,
-        "y": 369.34610967556705
+        "x": 789.6381137447632,
+        "y": 94.08738944710723
       },
       "layout": "manual",
       "source": {
@@ -319,13 +319,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 352.5
+        "x": 1053.5328153626483,
+        "y": 370.14478975823465
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -421,8 +423,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 191.99726402188782,
-        "y": 764.0492476060192
+        "x": 261.6941835669145,
+        "y": 539.9604176764398
       },
       "layout": "manual",
       "source": {
@@ -453,8 +455,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 385.266757865937,
-        "y": 920.6805745554036
+        "x": 284.69145624399977,
+        "y": 717.7654923357056
       },
       "layout": "manual",
       "source": {
@@ -486,7 +488,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 440.0
+        "y": 440
       },
       "layout": "auto",
       "source": {
@@ -518,8 +520,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 693.4955392579083,
-        "y": 481.35341195048215
+        "x": 1334.0014074818243,
+        "y": 287.26072460990156
       },
       "layout": "manual",
       "source": {
@@ -612,7 +614,8 @@
     },
     {
       "from": "procurement-016-j1",
-      "to": "procurement-016-n008"
+      "to": "procurement-016-n008",
+      "label": "خرید ماهانه از تهران"
     }
   ],
   "pending": []
