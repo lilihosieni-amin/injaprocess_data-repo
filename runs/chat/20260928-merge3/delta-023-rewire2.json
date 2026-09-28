@@ -1,0 +1,34 @@
+{
+ "add_nodes": [],
+ "add_edges": [
+  {
+   "from": "procurement-023-j5",
+   "to": "procurement-023-n013"
+  },
+  {
+   "from": "procurement-023-n013",
+   "to": "procurement-023-j6"
+  }
+ ],
+ "remove_edges": [
+  {
+   "from": "procurement-023-j5",
+   "to": "procurement-023-n018"
+  },
+  {
+   "from": "procurement-023-n018",
+   "to": "procurement-023-j6"
+  },
+  {
+   "from": "procurement-023-n013",
+   "to": "procurement-023-j4"
+  }
+ ],
+ "enrich_nodes": [],
+ "revise_nodes": [],
+ "flag_removed": [
+  {
+   "id": "procurement-023-n018"
+  }
+ ]
+}
