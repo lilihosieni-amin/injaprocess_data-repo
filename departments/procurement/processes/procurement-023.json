@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-28T09:26:46Z",
-  "updated_at": "2026-09-28T10:45:33Z",
+  "updated_at": "2026-09-28T10:46:06Z",
   "idef0": {
     "inputs": [
       "سفارش روزانهٔ انبار",
@@ -103,7 +103,7 @@
       "subprocess": "procurement-015",
       "position": {
         "x": 40,
-        "y": 90
+        "y": 90.0
       },
       "layout": "auto",
       "source": {
@@ -139,7 +139,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 90
+        "y": 90.0
       },
       "layout": "auto",
       "source": {
@@ -175,7 +175,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 90
+        "y": 90.0
       },
       "layout": "auto",
       "source": {
@@ -219,7 +219,7 @@
       "subprocess": "procurement-008",
       "position": {
         "x": 820,
-        "y": 90
+        "y": 90.0
       },
       "layout": "auto",
       "source": {
@@ -236,7 +236,7 @@
       "direction": "split",
       "position": {
         "x": 1143,
-        "y": 106
+        "y": 106.0
       },
       "layout": "auto"
     },
@@ -307,7 +307,7 @@
       "subprocess": "procurement-009",
       "position": {
         "x": 1080,
-        "y": 615
+        "y": 615.0
       },
       "layout": "auto",
       "source": {
@@ -352,7 +352,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 440
+        "y": 440.0
       },
       "layout": "auto",
       "source": {
@@ -384,7 +384,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 440
+        "y": 440.0
       },
       "layout": "auto",
       "source": {
@@ -417,7 +417,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 440
+        "y": 440.0
       },
       "layout": "auto",
       "source": {
@@ -432,7 +432,7 @@
       "direction": "split",
       "position": {
         "x": 103,
-        "y": 981
+        "y": 1010.1666666666667
       },
       "layout": "auto"
     },
@@ -537,7 +537,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 1140
+        "y": 965.0
       },
       "layout": "auto",
       "source": {
@@ -722,7 +722,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 1402.5
+        "y": 1227.5
       },
       "layout": "auto",
       "source": {
@@ -736,8 +736,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 623,
-        "y": 1418.5
+        "x": 883,
+        "y": 1243.5
       },
       "layout": "auto"
     },
@@ -772,9 +772,11 @@
       "source": {
         "created_by": "runs/chat/20260928-merge3",
         "touched_by": [
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260928-merge3"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "procurement-023-n018",
@@ -800,8 +802,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1490
+        "x": 1080,
+        "y": 1315.0
       },
       "layout": "auto",
       "source": {
@@ -816,7 +818,7 @@
       "direction": "join",
       "position": {
         "x": 1143,
-        "y": 1366
+        "y": 1856.0
       },
       "layout": "auto"
     },
@@ -970,11 +972,6 @@
     },
     {
       "from": "procurement-023-j3",
-      "to": "procurement-023-n010",
-      "label": "اقلامی که کارپرداز خود حضوری تهیه می‌کند"
-    },
-    {
-      "from": "procurement-023-j3",
       "to": "procurement-023-n012",
       "label": "اقلامی که طرف حساب ارسال می‌کند"
     },
@@ -982,14 +979,6 @@
       "from": "procurement-023-j3",
       "to": "procurement-023-n014",
       "label": "اقلامی که در بازار استان تأمین نمی‌شود و ماهانه یا میان‌مدت از خارج استان تهیه می‌شود"
-    },
-    {
-      "from": "procurement-023-n010",
-      "to": "procurement-023-n011"
-    },
-    {
-      "from": "procurement-023-n011",
-      "to": "procurement-023-j4"
     },
     {
       "from": "procurement-023-n012",
@@ -1012,20 +1001,8 @@
       "to": "procurement-023-n016"
     },
     {
-      "from": "procurement-023-n016",
-      "to": "procurement-023-j5"
-    },
-    {
-      "from": "procurement-023-j5",
-      "to": "procurement-023-n017"
-    },
-    {
       "from": "procurement-023-j5",
       "to": "procurement-023-n018"
-    },
-    {
-      "from": "procurement-023-n017",
-      "to": "procurement-023-j6"
     },
     {
       "from": "procurement-023-n018",
@@ -1046,6 +1023,22 @@
     {
       "from": "procurement-023-n020",
       "to": "procurement-023-n021"
+    },
+    {
+      "from": "procurement-023-n016",
+      "to": "procurement-023-n010"
+    },
+    {
+      "from": "procurement-023-n010",
+      "to": "procurement-023-j5"
+    },
+    {
+      "from": "procurement-023-j5",
+      "to": "procurement-023-n011"
+    },
+    {
+      "from": "procurement-023-n011",
+      "to": "procurement-023-j6"
     }
   ],
   "pending": []

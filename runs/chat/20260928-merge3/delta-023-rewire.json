@@ -1,0 +1,54 @@
+{
+ "add_nodes": [],
+ "add_edges": [
+  {
+   "from": "procurement-023-n016",
+   "to": "procurement-023-n010"
+  },
+  {
+   "from": "procurement-023-n010",
+   "to": "procurement-023-j5"
+  },
+  {
+   "from": "procurement-023-j5",
+   "to": "procurement-023-n011"
+  },
+  {
+   "from": "procurement-023-n011",
+   "to": "procurement-023-j6"
+  }
+ ],
+ "remove_edges": [
+  {
+   "from": "procurement-023-n016",
+   "to": "procurement-023-j5"
+  },
+  {
+   "from": "procurement-023-j3",
+   "to": "procurement-023-n010"
+  },
+  {
+   "from": "procurement-023-n010",
+   "to": "procurement-023-n011"
+  },
+  {
+   "from": "procurement-023-n011",
+   "to": "procurement-023-j4"
+  },
+  {
+   "from": "procurement-023-j5",
+   "to": "procurement-023-n017"
+  },
+  {
+   "from": "procurement-023-n017",
+   "to": "procurement-023-j6"
+  }
+ ],
+ "enrich_nodes": [],
+ "revise_nodes": [],
+ "flag_removed": [
+  {
+   "id": "procurement-023-n017"
+  }
+ ]
+}
