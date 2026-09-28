@@ -1,0 +1,5 @@
+{
+ "add_nodes": [], "add_edges": [], "remove_edges": [], "enrich_nodes": [],
+ "revise_nodes": [{"id":"procurement-025-n002","set":{"label":"رسیدن فاکتور همراه بار، مستقیم از تأمین‌کننده به انبار"}}],
+ "flag_removed": []
+}
