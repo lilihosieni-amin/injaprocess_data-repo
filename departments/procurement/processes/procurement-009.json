@@ -10,10 +10,10 @@
   },
   "parent": {
     "process": "procurement-023",
-    "node": "procurement-023-n006"
+    "node": "procurement-023-n023"
   },
   "created_at": "2026-09-27T15:45:37Z",
-  "updated_at": "2026-09-27T15:45:37Z",
+  "updated_at": "2026-09-28T21:53:00Z",
   "idef0": {
     "inputs": [
       "اعلام قیمت کمتر از عرف بازار روغن از سوی تأمین‌کننده",
