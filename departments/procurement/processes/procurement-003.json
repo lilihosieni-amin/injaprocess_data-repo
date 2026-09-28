@@ -13,7 +13,7 @@
     "node": "procurement-023-n011"
   },
   "created_at": "2026-09-27T15:45:32Z",
-  "updated_at": "2026-09-27T15:45:32Z",
+  "updated_at": "2026-09-28T22:36:46Z",
   "idef0": {
     "inputs": [
       "سفارش روزانه انبار برای اقلام تره‌بار و گوشت",
@@ -210,14 +210,17 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 440.0
+        "x": 40,
+        "y": 790.0
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260928-merge3"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "procurement-003-n006",
@@ -242,14 +245,17 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 440.0
+        "x": 40,
+        "y": 965.0
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260928-merge3"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "procurement-003-n007",
@@ -271,14 +277,17 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 440.0
+        "x": 40,
+        "y": 1140.0
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260928-merge3"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "procurement-003-n008",
@@ -302,8 +311,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 440.0
+        "x": 820,
+        "y": 615.0
       },
       "layout": "auto",
       "source": {
@@ -334,8 +343,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 440.0
+        "x": 560,
+        "y": 615.0
       },
       "layout": "auto",
       "source": {
@@ -367,13 +376,16 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 615.0
+        "y": 1315.0
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20260928-merge3"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "procurement-003-n011",
@@ -398,12 +410,71 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 615.0
+        "x": 40,
+        "y": 1490.0
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
+        "touched_by": [
+          "runs/chat/20260928-merge3"
+        ]
+      },
+      "removed": true
+    },
+    {
+      "id": "procurement-003-j3",
+      "type": "junction",
+      "junctionType": "AND",
+      "direction": "split",
+      "position": {
+        "x": 1143,
+        "y": 543.5
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "procurement-003-j4",
+      "type": "junction",
+      "junctionType": "AND",
+      "direction": "join",
+      "position": {
+        "x": 363,
+        "y": 543.5
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "procurement-003-n012",
+      "type": "activity",
+      "label": "خریدهای متفرقهٔ برنامه‌ریزی‌شدهٔ روزهای شنبه",
+      "description": "برنامهٔ این خریدها را انبار جمعه شب به کارپرداز اعلام می‌کند و کارپرداز روز شنبه بر پایهٔ آن برنامه‌ریزی می‌کند و می‌رود؛ روز شنبه به‌عمد برای همین خریدهای خاص کنار گذاشته شده است. اقلام آن ظروف و لوازم یک‌بارمصرف، لوازم خشکبار مانند حبوبات و سویا و ماکارونی، و بسته به هفته تخم‌مرغ یا لوازم پلاستیک‌جات است. کارپرداز برای هر قلم با دو سه تأمین‌کنندهٔ خاصی که با شرایط مجموعه سازگارند تماس می‌گیرد و بسته به قیمت و کیفیت تصمیم می‌گیرد آن قلم را از کدام یک تهیه کند. افزون بر برنامهٔ ثابت شنبه، در سایر روزها نیز اگر خرید متفرقه‌ای پیش بیاید کارپرداز همان روز آن را انجام می‌دهد.",
+      "actor": "کارپرداز",
+      "icom": {
+        "inputs": [
+          "برنامهٔ خرید شنبه که جمعه شب از انبار اعلام می‌شود"
+        ],
+        "controls": [
+          "اختصاص روز شنبه به خریدهای متفرقهٔ برنامه‌ریزی‌شده",
+          "انتخاب تأمین‌کننده بر پایهٔ قیمت و کیفیت هر قلم"
+        ],
+        "outputs": [
+          "اقلام متفرقهٔ خریداری‌شده"
+        ],
+        "mechanisms": [
+          "کارپرداز",
+          "تأمین‌کنندگان خاص مجموعه",
+          "خودروی سازمانی"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 440.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260928-merge3",
         "touched_by": []
       }
     }
@@ -436,33 +507,28 @@
       "to": "procurement-003-j2"
     },
     {
-      "from": "procurement-003-j2",
-      "to": "procurement-003-n005"
-    },
-    {
-      "from": "procurement-003-n005",
-      "to": "procurement-003-n006"
-    },
-    {
-      "from": "procurement-003-n006",
-      "to": "procurement-003-n007"
-    },
-    {
-      "from": "procurement-003-n007",
-      "to": "procurement-003-n008",
-      "label": "در روزهای خرید گوشت"
-    },
-    {
       "from": "procurement-003-n008",
       "to": "procurement-003-n009"
     },
     {
-      "from": "procurement-003-n009",
-      "to": "procurement-003-n010"
+      "from": "procurement-003-j2",
+      "to": "procurement-003-j3"
     },
     {
-      "from": "procurement-003-n010",
-      "to": "procurement-003-n011"
+      "from": "procurement-003-j3",
+      "to": "procurement-003-n008"
+    },
+    {
+      "from": "procurement-003-j3",
+      "to": "procurement-003-n012"
+    },
+    {
+      "from": "procurement-003-n009",
+      "to": "procurement-003-j4"
+    },
+    {
+      "from": "procurement-003-n012",
+      "to": "procurement-003-j4"
     }
   ],
   "pending": []
