@@ -1,0 +1,5 @@
+{
+ "add_nodes": [], "add_edges": [], "remove_edges": [], "enrich_nodes": [],
+ "revise_nodes": [{"id":"procurement-023-n023","set":{"subprocess":null}}],
+ "flag_removed": []
+}
