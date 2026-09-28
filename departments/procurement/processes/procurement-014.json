@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-27T15:45:42Z",
-  "updated_at": "2026-09-27T15:45:42Z",
+  "updated_at": "2026-09-28T09:26:43Z",
   "idef0": {
     "inputs": [
       "ضایعات دپوشدهٔ رستوران مرکزی",
@@ -203,5 +203,9 @@
       "to": "procurement-014-n005"
     }
   ],
-  "pending": []
+  "pending": [],
+  "tombstoned": true,
+  "superseded_by": [
+    "procurement-022"
+  ]
 }
