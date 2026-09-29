@@ -1,0 +1,14 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "flag_removed": [],
+  "revise_nodes": [
+    {
+      "id": "procurement-023-n023",
+      "set": {
+        "label": "هماهنگی با مدیریت و انبار و حسابداری جهت خریدهای خارج از روتین"
+      }
+    }
+  ]
+}

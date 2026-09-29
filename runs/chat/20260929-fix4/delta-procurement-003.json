@@ -1,0 +1,12 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "flag_removed": [],
+  "revise_nodes": [
+    {
+      "id": "procurement-003-j3",
+      "set": { "junctionType": "OR" }
+    }
+  ]
+}
