@@ -1,8 +1,8 @@
 {
   "department": "procurement",
   "order": [
-    "procurement-008",
     "procurement-023",
+    "procurement-008",
     "procurement-025",
     "procurement-003",
     "procurement-004",
@@ -21,5 +21,5 @@
     "procurement-020",
     "procurement-021"
   ],
-  "updated_at": "2026-09-28T22:00:45Z"
+  "updated_at": "2026-09-29T15:13:12Z"
 }
