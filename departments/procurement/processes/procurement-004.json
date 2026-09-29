@@ -13,7 +13,7 @@
     "node": "procurement-023-n013"
   },
   "created_at": "2026-09-27T15:45:32Z",
-  "updated_at": "2026-09-29T22:11:12Z",
+  "updated_at": "2026-09-29T22:33:27Z",
   "idef0": {
     "inputs": [
       "سفارش روزانهٔ انبار",
@@ -125,7 +125,7 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
+        "x": 623,
         "y": 193.5
       },
       "layout": "auto"
@@ -153,7 +153,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
+        "x": 820,
         "y": 90.0
       },
       "layout": "auto",
@@ -187,7 +187,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
+        "x": 820,
         "y": 265.0
       },
       "layout": "auto",
@@ -202,7 +202,7 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 883,
+        "x": 1143,
         "y": 193.5
       },
       "layout": "auto"
@@ -230,7 +230,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 177.5
+        "y": 527.5
       },
       "layout": "auto",
       "source": {
@@ -263,7 +263,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
+        "x": 820,
         "y": 527.5
       },
       "layout": "auto",
@@ -278,7 +278,7 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
+        "x": 623,
         "y": 543.5
       },
       "layout": "auto"
@@ -304,7 +304,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
+        "x": 300,
         "y": 440.0
       },
       "layout": "auto",
@@ -337,12 +337,44 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
+        "x": 300,
         "y": 615.0
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "procurement-004-n009",
+      "type": "activity",
+      "label": "اعلام ارسال بار به انبار و هماهنگی دریافت آن",
+      "description": "هنگامی که کارپرداز به‌جای خرید حضوری تصمیم می‌گیرد بار را از تأمین‌کننده بخواهد — برای نمونه در روزی که خودش نمی‌رسد به رستوران بیاید — این موضوع را به انبار اعلام می‌کند تا انبار در جریان باشد و بار را تحویل بگیرد. تشخیص اینکه هر قلم حضوری خریده شود یا ارسال گردد بر عهدهٔ کارپرداز است و همهٔ خریدها به اطلاع او می‌رسد.",
+      "actor": "کارپرداز",
+      "icom": {
+        "inputs": [
+          "فهرست اقلام سفارشی غیرحضوری"
+        ],
+        "controls": [
+          "اطلاع کارپرداز از همهٔ خریدها و تشخیص حضوری یا ارسالی بودن هر قلم با اوست"
+        ],
+        "outputs": [
+          "اعلام ارسال بار به انبار"
+        ],
+        "mechanisms": [
+          "کارپرداز",
+          "انباردار"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
+        "y": 177.5
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20260929-fix7",
         "touched_by": []
       }
     }
@@ -390,6 +422,10 @@
     },
     {
       "from": "procurement-004-n001",
+      "to": "procurement-004-n009"
+    },
+    {
+      "from": "procurement-004-n009",
       "to": "procurement-004-j1"
     }
   ],
