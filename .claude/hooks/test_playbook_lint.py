@@ -299,6 +299,27 @@ def test_review_mode_keeps_the_entry_read_off_a_form():
     ) in agent_section("`review` mode")
 
 
+def test_review_mode_ranks_form_then_process_then_talk():
+    assert (
+        "a `sheet`, `photo`, `pdf` or `docx` source outranks `process`, and"
+        " `process` outranks `voice` and `chat`"
+    ) in agent_section("`review` mode")
+
+
+def test_the_agent_may_grep_the_processes_and_glob_the_photos():
+    front = AGENT.read_text(encoding="utf-8").split("\n---\n", 1)[0]
+    assert "\ntools: Read, Write, Grep, Glob\n" in front + "\n"
+
+
+def test_the_resume_ladder_finishes_stages_1_2_before_stage_g():
+    """Ruling 16: a run that yielded after Stage 1 has no dumps yet, and
+    `status` prints `G` all the same — the ladder must not skip Stage 2."""
+    text = " ".join(PLAYBOOK.read_text(encoding="utf-8").split())
+    assert ("no skeleton → the earliest of Stages 1–2 whose output is not on disk"
+            " (transcripts, then the dumps and extraction); once they are, Stage G"
+            " when `status` prints stage `G`, else Stage P") in text
+
+
 def agent_section(heading):
     """One `###` section of the agent file, flattened to a single line.
 
@@ -474,8 +495,8 @@ def test_the_agent_looks_at_the_photo_for_structure_and_keeps_the_description():
     # QF-50 reserves «ستون» for a record's own statement, so the example
     # note the agent copies must not use it.
     assert "«در عکس، «فیله» دو خانهٔ واحد دارد: کیلو و عدد.»" in text
-    assert "ستون" not in text.split("open that image too")[1].split("never another file")[0]
-    assert "Open only the images your headings name — never another file." in text
+    assert "ستون" not in text.split("open that image too")[1].split("never another image")[0]
+    assert "Open only the images your headings name — never another image." in text
 
 
 def test_the_unit_contract_spells_a_new_entrys_own_handle():

@@ -76,9 +76,9 @@ It writes `{run_dir}/turn.json` and prints a compact table — one line per unit
 state · attempts`, followed by `· retry` and the refused labels when a decision is owed a retry —
 plus the stage to enter, `plan_stale`, `elapsed_s` and `yield`.
 
-**Resume ladder**, exactly as `status` reports it: no skeleton → Stage G when `status` prints stage
-`G` (the department has photos and no grouping yet), else Stage P (or earlier, by what is on disk:
-transcripts, then dumps, then the plan); pending units, or a unit with a `retry` list → Stage
+**Resume ladder**, exactly as `status` reports it: no skeleton → the earliest of Stages 1–2 whose
+output is not on disk (transcripts, then the dumps and extraction); once they are, Stage G when
+`status` prints stage `G`, else Stage P; pending units, or a unit with a `retry` list → Stage
 U; all units done and no delta → Stage R; a delta present and no `id-map.json` → Stage 5 (a retry of the apply is safe); an
 `id-map.json` present and the run unfinished → Stage 6.
 
@@ -214,8 +214,9 @@ Bash: DATA_ROOT=<data-repo> extract-attachment --path attachments/sheets
 `--manifest` never fails on a row that still holds an unresolved column: it warns, skips that
 workbook and dumps the rest. `extract-attachment` may exit **3** (advisory — some files skipped,
 every convertible one converted): relay the skipped lines in Persian and continue. Exit **2** is a
-real precondition failure and stops the run. Yield check, then
-`facts-plan status --run {run_dir}` and Stage G or Stage P as it prints, in the same turn.
+real precondition failure and stops the run. Then
+`Bash: DATA_ROOT=<data-repo> facts-plan status --run {run_dir}` — its `yield` is the yield check,
+and its `stage` says Stage G or Stage P, entered in the same turn.
 
 ---
 
@@ -336,12 +337,13 @@ Between batches:
 Bash: DATA_ROOT=<data-repo> facts-plan status --run {run_dir}
 ```
 
-**The yield rule.** `status` prints `elapsed_s` and `yield`. `yield: true` is the **only** signal you
-act on — never your own sense of how long this is taking. Check it after Stage 1, after Stage 2,
-after Stage P, between batches, and before Stage R. On `yield: true`, send the progress line as the
-**last message of the turn** and stop. **You never continue past a `yield: true`** — not for one
-more batch, not to finish validating a unit already returned, not because the next call is cheap.
-Stopping is the engine's instruction, and the next message resumes it losslessly:
+**The yield rule.** `status` prints `elapsed_s` and `yield`. `yield: true` is the **only** signal
+you act on — never your own sense of how long this is taking. Check it after Stage 1, after Stage 2,
+after Stage G, after Stage P, between batches, and before Stage R. On `yield: true`, send the
+progress line as the **last message of the turn** and stop.
+**You never continue past a `yield: true`** — not for one more batch, not to finish validating a
+unit already returned, not because the next call is cheap. Stopping is the engine's instruction,
+and the next message resumes it losslessly:
 
 ```persian
 ۸ از ۲۶ بخش از داده‌ها بررسی شد؛ برای ادامه «ادامه بده» را بفرستید.
