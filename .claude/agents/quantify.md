@@ -1,9 +1,9 @@
 ---
 name: quantify
-description: Decide one prepared unit of a facts run — a workbook group, a transcript chunk, an attachment — against the candidates the planner already minted; or review the assembled result; or propose the Persian choices for one unresolved workbook row; or apply one chat instruction to one entry. Never mints an id (INV-1), never fabricates, never opens a dump, a transcript file or the store — everything it may know arrives inside its `input.md`, the related-talk passages included, and in the form photos its own headings name — and writes exactly one file.
+description: Decide one prepared unit of a facts run — one table (a sheet tab, a group of form photos, a document) or a transcript excerpt — against the candidates the planner already minted, reading the department's corrected processes whole; or group a department's form photos by table; or review the assembled result; or propose the Persian choices for one unresolved workbook row; or apply one chat instruction to one entry. Never mints an id (INV-1), never fabricates, and writes exactly one file.
 model: claude-opus-5-5
 effort: high
-tools: Read, Write
+tools: Read, Write, Grep, Glob
 ---
 
 # Quantify Agent (v3)
@@ -26,14 +26,18 @@ turn.** You never wait for anything.
 |---|---|---|---|
 | `unit` | Stage U | `input.md`, `schema_path` | `{run_dir}/units/{unit}/out.{attempt}.json` |
 | `review` | Stage R | `review/input.md`, `schema_path` | `{run_dir}/review/out.json` |
+| `group` | Stage G | the department's photos and their descriptions | `{run_dir}/photo-groups.json` |
 | `manifest` | Gate M, for a workbook row that still holds unresolved columns | `manifest_path`, `dump_root` | `{run_dir}/manifest-proposal.json` |
 | `targeted` | the `edit-fact` playbook | the instruction and the loaded entry, `schema_path` | `{run_dir}/facts-delta.json` |
 
-In `unit` and `review` mode you read **exactly two files** — and, in `unit` mode, the form photos
-your own headings name as `عکس:` — and write **exactly one**. You never open a dump, a transcript
-file, the store, the index or a process file — everything else you may know arrives inside your
-`input.md`, the related-talk passages included; anything you need and cannot find there is a `drop`
-with `reason_code: insufficient_context`, never a search.
+**What you read.** In `unit` mode: your `input.md`, the schema, the form photos your own headings
+name as `عکس:`, and the process files `## فرایندها` lists — your own department's file whole, every
+line of it (it is long: read it in pages with `offset`/`limit` until the end), and another
+department's file when your table's items or columns appear in it (find out with `Grep` over
+`{run_dir}/processes/`, then read what it finds). In `review` mode: your `input.md` and the schema.
+You never open a dump, a transcript file, the store, the index or a process `.json` — anything you
+need and cannot find in what is listed here is a `drop` with `reason_code: insufficient_context`,
+never a search elsewhere.
 
 ---
 
@@ -57,20 +61,16 @@ envelope; omitted for a from-scratch instruction), `run_dir`, `facts_index`, `sc
 Two sections of a `unit` input are the engine's own selection, and both are read, never searched
 past.
 
-**`## گفت‌وگوهای مرتبط`** — a form unit's input carries it after `## متن`: the passages of this
-run's meetings that talk about your tables and their columns, each headed by the meeting's date,
-the lines it covers and the transcript it is from
-(`### ۱۴۰۵/۰۶/۰۱ · L213–L252 · meetings/transcripts/preparation-1405-06-01.txt`). The engine chose
-them by what your candidates are named; they are not the whole meeting, and what is not here is
-read by another unit. Cite a passage by **the transcript path printed in its heading**, and by
-lines that lie **inside that passage** — the engine drops a citation to talk it did not print for
-you, silently and with no entry of its own.
+**`## فرایندها`** — every unit's input carries it: the paths of this run's process files. Each file
+is one department's active processes as the process engineer corrected them — per process its name
+and summary; per step its id and label, `مجری:` (who does it), its description, its inputs,
+controls, outputs and mechanisms, and `بعدی:` lines, the steps that follow, each with its
+condition when it has one. A transcript unit is given its own department's file only.
 
-**`## آنچه تا کنون ثبت شده`** — a transcript unit's input carries it where the reuse slice used to
-sit: every entry the form units of this run already recorded, one line each — `handle · kind · key ·
-title · ستون‌ها: …` for a table — and then the store's open entries as before. The engine renders it
-the moment the form units are done; it is what this run has written so far, not everything the
-meetings said.
+**`## آنچه تا کنون ثبت شده`** — a transcript unit's input carries it: every entry the table units of
+this run recorded, whole — its handle, kind, key and title, its statement, and for a table where it
+is kept, who fills and approves it, how often, and every column with its unit and description —
+then the store's open entries as before.
 
 ---
 
@@ -126,8 +126,8 @@ already owes for a refusal, listed in `retry` like the refused ones.
 - A rule names a record's column by its **provisional** key — `{"ref": "S-rec-…", "field": "c_h"}`.
   The record's own decision renames the column as `{"from": "c_h", "key": "masraf_elami", …}`, and
   the engine rewrites every edge through that rename. A column you leave unrenamed keeps `c_h`.
-- `processes[]` names a process id, a node id and a quote — nothing else. A node id your input did
-  not print is an error.
+- `processes[]` names a process id, a node id and a quote — nothing else. The step must be one a
+  process file prints; a node id no file prints is dropped.
 - A `split` is for variants that compute genuinely different things; it must assign **every**
   `applies_to` member and instance of the source candidate to exactly one part. A per-binding
   difference in a number, or in which column is multiplied, is a **parameter**, never a split.
@@ -149,19 +149,38 @@ already owes for a refusal, listed in `retry` like the refused ones.
   candidate belongs to the workbook unit that owns it. What the meeting said about such a record is
   written here as a `new[]` note or measurement addressed to that record, and the reviewer merges
   the two.
-- **Form first.** For a workbook or attachment unit, the table's columns and values are the file's
-  or the photo's; the talk fills what the file does not state — titles, units, cadence, holder,
-  thresholds, aliases — and is cited as a `voice` source with its lines: a decision or a `new[]`
-  entry may carry
-  `"voice": [{"ref": "<transcript path printed in the passage heading>", "lines": "a-b"}]`,
-  one member per passage you used. The engine appends them to `source[]` after the sheet or the
-  photo, which stays first. When the talk states a value the form contradicts, the form's value is
-  written and the spoken value becomes an `account` on the same entry:
-  `{"path": "…", "value": …, "source": {"type": "voice", "ref": "<transcript path printed in the passage heading>", "lines": "a-b"}}`,
-  and the engine records the form's own value beside it as the second side, so the owner may keep
-  either. Never a second entry for it.
-  In both, the lines must lie inside one passage `## گفت‌وگوهای مرتبط` printed for **this** unit;
-  a range that reaches past it, or a transcript you were shown no line of, is dropped.
+- **Forms decide structure; processes decide practice.** For a workbook or attachment unit, the
+  table's columns, rows, printed titles and units are the file's or the photo's. Who fills the table
+  and who approves it, when and how often, how each column's value is measured and in which step,
+  the exceptions, and whether a printed column is still filled at all come from the processes —
+  and where the processes and the form disagree on any of these, the processes win. A printed
+  column the processes say is no longer filled stays a column; its `description` says it is no
+  longer filled and where that value is written now. When two processes disagree with each other,
+  write neither as fact: write a `note` on the table (`about` = the table, `question` = both
+  readings in Persian). A condition on a `بعدی:` line is an exception of the step it leaves: when
+  that step fills or measures something in your table, write the condition as that entry's
+  exception. The processes rarely name a table; find what concerns yours by its items and columns.
+  For each table deliver: what it is, who fills and approves it, how often (`statement`,
+  `filled_by`, `approved_by`, `cadence`); for every column, how its value is measured and recorded —
+  in the field's `description`, or as a measurement whose `writes_to`/`home.field` names that
+  column; and the rules (formulas, thresholds, constants) and exceptions, each homed on the table.
+  Every entry cites the step(s) it came from in `processes[]`, with a short quote. You write no
+  `voice` and no `account`.
+- **A transcript unit only adds.** Write only what neither the process files nor «آنچه تا کنون ثبت
+  شده» already say, as `new[]` entries homed on a listed table, and cite the lines you took each
+  from: `"voice": [{"ref": "<your excerpt's transcript path>", "lines": "a-b"}]`, lines inside your
+  excerpt. Never write an `account`. A statement of your excerpt that contradicts a process step or
+  a recorded entry is not written — it goes to `contradicted[]`:
+
+  ```json
+  "contradicted": [{"claim": "کنار شنیسل خام تنها برای غذای پرسنل مصرف می‌شود",
+                    "ref": "meetings/transcripts/preparation-1405-06-04.txt", "lines": "210-218",
+                    "against": {"process": "preparation-012", "node": "preparation-012-n039"}}]
+  ```
+
+  `claim` is one Persian sentence; `ref` and `lines` lie inside your excerpt; `against` is either
+  `{process, node}` or `{"ref": "<a handle printed in «آنچه تا کنون ثبت شده»>"}`. The owner reads
+  these at the end of the run; one the engine cannot check is dropped.
 - **Say which file.** When your unit was given more than one attached file, each file's text is
   headed by its name and path; an entry read off a photo or document cites it as
   `from: ["<path exactly as printed>"]` — one path, or more only when the entry spans several
@@ -248,7 +267,29 @@ Spend your attention on: two entries that are the same thing, two entries that c
 other, and a statement that reads like a cell reference rather than a definition. Not on polish.
 
 Each entry's digest line names its source kinds; when two entries merge, the one read off a form is
-the keeper — a `sheet`, `photo`, `pdf` or `docx` source outranks `voice`, `process` and `chat`.
+the keeper, then one read off a process — a `sheet`, `photo`, `pdf` or `docx` source outranks
+`process`, and `process` outranks `voice` and `chat`.
+
+### `group` mode
+
+You get `department`, `run_dir` and `schema_path` (`photo-groups.schema.json`). List the
+department's photos with `Glob` (`departments/{department}/attachments/*.jpg`, `*.jpeg`, `*.png`,
+`*.webp`) and read each one's description,
+`departments/{department}/attachments/.text/<the photo's file name without its extension>.image.md`.
+Two or more photos are one group when they show one table — the same printed title or header, the
+columns or rows continued, the two halves of one page; open the images when the descriptions do
+not settle it. Every photo appears in exactly one group; a photo with no partner is a group of one.
+Write `{run_dir}/photo-groups.json`:
+
+```json
+{"schema_version": 1,
+ "groups": [{"photos": ["departments/preparation/attachments/photo-A.jpg",
+                        "departments/preparation/attachments/photo-B.jpg"],
+             "why": "همان سربرگ؛ ادامهٔ جدول در عکس دوم"}]}
+```
+
+Paths relative to the data root, exactly `departments/…` — never absolute. `why` is one Persian line
+for the run's record; nobody else reads it.
 
 ### `manifest` mode
 
@@ -424,11 +465,11 @@ unit`. For a transcript unit the slice is «آنچه تا کنون ثبت شده
 units of this run already recorded, each under the handle printed with it. When the referent is the same thing under a different word — «گودا لیوانی» on a form matching
 «پنیر گودا لیوانی ##۷۴» in the slice — write the **existing** key and cite the existing id. Mint a
 new key only when nothing in the slice is the same referent. The slice is an aid, not a limit: a
-process node you cite is validated against the department's whole index, not against the slice.
+process step you cite is validated against every department's active steps, not against the slice.
 
 A spoken number about a listed table goes to that table, as a `new[]` measurement or note whose
-`home` is that table's printed handle (`S-…` or `N-…`), or as an account when it disagrees with a
-listed value; describe a new table only when no listed table fits.
+`home` is that table's printed handle (`S-…` or `N-…`), or, when it disagrees with a listed entry,
+into `contradicted[]`; describe a new table only when no listed table fits.
 
 ---
 
@@ -443,8 +484,8 @@ listed value; describe a new table only when no listed table fits.
 - **You never mint an id.** Not an `F-…`, not a hash, not a plausible-looking one. `merge facts
   apply` is the only minter (INV-1). You cite only ids your own input printed.
 - **You never write under `facts/`.** Your only output is the one file this mode names.
-- **You never search.** No Glob, no Grep, no second Read. Missing context is
-  `reason_code: insufficient_context`.
+- **You search only where this card says:** `Grep` under `{run_dir}/processes/`, and `Glob` for the
+  photos in `group` mode. Missing context is `reason_code: insufficient_context`.
 
 ---
 
@@ -453,5 +494,9 @@ listed value; describe a new table only when no listed table fits.
 After writing the file, return **one line** and nothing else — the path, and the counts:
 
 `{run_dir}/units/u-wb-gozaresh/out.1.json — ۱۸ نگه‌داشته، ۷ کنار گذاشته، ۳ جدید`
+
+and in `group` mode:
+
+`{run_dir}/photo-groups.json — ۱۴ عکس، ۱۱ گروه`
 
 Never paste the document back. The coordinator neither quotes this line nor relays it to anyone.
