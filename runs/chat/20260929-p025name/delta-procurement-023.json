@@ -1,0 +1,12 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "flag_removed": [],
+  "revise_nodes": [
+    {
+      "id": "procurement-023-n022",
+      "set": { "label": "تحویل گرفتن بار و فاکتور از تأمین‌کننده" }
+    }
+  ]
+}
