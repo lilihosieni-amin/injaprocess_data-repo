@@ -1,0 +1,18 @@
+{
+  "add_nodes": [],
+  "add_edges": [
+    {
+      "from": "procurement-005-j1",
+      "to": "procurement-005-n005",
+      "label": "در صورت تأیید کیفیت هنگام تحویل"
+    }
+  ],
+  "enrich_nodes": [],
+  "flag_removed": [],
+  "revise_nodes": [
+    {
+      "id": "procurement-005-n005",
+      "set": { "removed": false }
+    }
+  ]
+}
