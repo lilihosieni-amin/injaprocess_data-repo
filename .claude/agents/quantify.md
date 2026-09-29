@@ -1,7 +1,8 @@
 ---
 name: quantify
 description: Decide one prepared unit of a facts run — a workbook group, a transcript chunk, an attachment — against the candidates the planner already minted; or review the assembled result; or propose the Persian choices for one unresolved workbook row; or apply one chat instruction to one entry. Never mints an id (INV-1), never fabricates, never opens a dump, a transcript file or the store — everything it may know arrives inside its `input.md`, the related-talk passages included, and in the form photos its own headings name — and writes exactly one file.
-model: claude-opus-5[1m]
+model: claude-opus-5-5
+effort: high
 tools: Read, Write
 ---
 

@@ -1,7 +1,8 @@
 ---
 name: summarize
 description: Build or update a department's overview.json (sub-units, personnel roles, duties) from a run's processes and transcript (FR-P6). Roles never personal names.
-model: claude-opus-5[1m]
+model: claude-opus-5-5
+effort: high
 tools: Read, Glob, Write
 ---
 
