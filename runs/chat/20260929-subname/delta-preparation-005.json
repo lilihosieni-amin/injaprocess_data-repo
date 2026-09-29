@@ -1,0 +1,12 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "flag_removed": [],
+  "revise_nodes": [
+    {
+      "id": "preparation-005-n011",
+      "set": { "label": "تولید مرغ پیتزا (پخت، اسلایس و سس‌زنی)" }
+    }
+  ]
+}

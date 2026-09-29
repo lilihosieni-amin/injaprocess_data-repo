@@ -1,0 +1,12 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "flag_removed": [],
+  "revise_nodes": [
+    {
+      "id": "cooking-027-n049",
+      "set": { "label": "کنترل فیش و فیش‌خوانی و هماهنگی با لاین‌ها در کانتر" }
+    }
+  ]
+}

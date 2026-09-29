@@ -1,0 +1,12 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "flag_removed": [],
+  "revise_nodes": [
+    {
+      "id": "cooking-024-n010",
+      "set": { "label": "مدیریت روغن سرخ‌کن‌ها: چرخش، تصفیه شبانه و دورریز" }
+    }
+  ]
+}

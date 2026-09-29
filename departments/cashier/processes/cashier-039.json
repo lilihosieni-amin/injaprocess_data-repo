@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-08-03T10:21:33Z",
-  "updated_at": "2026-08-04T22:21:44Z",
+  "updated_at": "2026-09-29T15:28:31Z",
   "idef0": {
     "inputs": [
       "فیش سفارش چاپ‌شده در پرینتر آشپزخانه",
@@ -1102,7 +1102,7 @@
     {
       "id": "cashier-039-n032",
       "type": "activity",
-      "label": "تحویل فیش و پک غذا به پیک جهت شروع ارسال",
+      "label": "تحویل غذا به مشتری توسط پیک",
       "description": "پس از ثبت تخصیص، فیش و غذا به پیک تحویل داده می‌شود و پیک سفارش را برای رساندن به مشتری می‌برد.",
       "actor": "سرپرست بخش لجستیک",
       "icom": {
@@ -1141,7 +1141,8 @@
         "created_by": "runs/chat/20260803-cashier-copy",
         "touched_by": [
           "runs/chat/20260803-cashier-copy",
-          "ui-edit"
+          "ui-edit",
+          "runs/chat/20260929-subname"
         ]
       }
     }

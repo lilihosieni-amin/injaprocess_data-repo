@@ -1,0 +1,12 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "flag_removed": [],
+  "revise_nodes": [
+    {
+      "id": "cashier-039-n032",
+      "set": { "label": "تحویل غذا به مشتری توسط پیک" }
+    }
+  ]
+}

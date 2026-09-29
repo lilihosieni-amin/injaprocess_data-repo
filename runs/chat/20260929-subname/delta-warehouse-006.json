@@ -1,0 +1,12 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "flag_removed": [],
+  "revise_nodes": [
+    {
+      "id": "warehouse-006-n019",
+      "set": { "label": "جانمایی و نگهداری کالا در سردخانه‌ها و انبار خشک با رعایت فایفو" }
+    }
+  ]
+}
