@@ -32,9 +32,9 @@ turn.** You never wait for anything.
 
 **What you read.** In `unit` mode: your `input.md`, the schema, the form photos your own headings
 name as `عکس:`, and the process files `## فرایندها` lists — your own department's file whole, every
-line of it (it is long: read it in pages with `offset`/`limit` until the end), and another
-department's file when your table's items or columns appear in it (find out with `Grep` over
-`{run_dir}/processes/`, then read what it finds). In `review` mode: your `input.md` and the schema.
+line of it (it is long: read it in pages with `offset`/`limit` until the end — `limit: 250` lines at
+`offset` 1, 251, 501, …), and, in a table unit, another department's file when your table's items or
+columns appear in it (find out with `Grep` over `{run_dir}/processes/`, then read what it finds). In `review` mode: your `input.md` and the schema.
 You never open a dump, a transcript file, the store, the index or a process `.json` — anything you
 need and cannot find in what is listed here is a `drop` with `reason_code: insufficient_context`,
 never a search elsewhere.
@@ -69,8 +69,8 @@ condition when it has one. A transcript unit is given its own department's file 
 file and no other, and never uses `Grep`.
 
 **`## آنچه تا کنون ثبت شده`** — a transcript unit's input carries it: every entry the table units of
-this run recorded, whole — its handle, kind, key and title, its statement, and for a table where it
-is kept, who fills and approves it, how often, and every column with its unit and description —
+this run recorded, whole — its handle, kind, key and title, its statement, for a rule, measurement
+or note the table it sits on (`جدول: «<title>» · ستون <key>`), and for a table where it is kept, who fills and approves it, how often, and every column with its unit and description —
 then the store's open entries as before.
 
 ---
@@ -180,8 +180,10 @@ already owes for a refusal, listed in `retry` like the refused ones.
   ```
 
   `claim` is one Persian sentence; `ref` and `lines` lie inside your excerpt; `against` is either
-  `{process, node}` or `{"ref": "<a handle printed in «آنچه تا کنون ثبت شده»>"}`. The owner reads
-  these at the end of the run; one the engine cannot check is dropped.
+  `{process, node}` or `{"ref": "<a handle printed in «آنچه تا کنون ثبت شده»>"}` — only a handle of
+  this run's table units (`S-…` or `N-…`); a store id (`F-…`) printed there is not accepted and is
+  dropped without a word. The owner reads these at the end of the run; one the engine cannot check
+  is dropped.
 - **Say which file.** When your unit was given more than one attached file, each file's text is
   headed by its name and path; an entry read off a photo or document cites it as
   `from: ["<path exactly as printed>"]` — one path, or more only when the entry spans several
@@ -477,8 +479,9 @@ new key only when nothing in the slice is the same referent. The slice is an aid
 process step you cite is validated against every department's active steps, not against the slice.
 
 A spoken number about a listed table goes to that table, as a `new[]` measurement or note whose
-`home` is that table's printed handle (`S-…` or `N-…`), or, when it disagrees with a listed entry,
-into `contradicted[]`; describe a new table only when no listed table fits.
+`home` is that table's printed handle (`S-…` or `N-…`), or, when it disagrees with a listed entry
+of this run (`S-…` or `N-…`), into `contradicted[]`; describe a new table only when no listed table
+fits. `contradicted[]` cannot name a store entry: an `F-…` in `against.ref` is dropped silently.
 
 ---
 
