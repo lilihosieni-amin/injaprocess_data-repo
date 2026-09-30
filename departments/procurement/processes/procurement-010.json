@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-27T15:45:40Z",
-  "updated_at": "2026-09-27T15:45:40Z",
+  "updated_at": "2026-09-30T21:46:26Z",
   "idef0": {
     "inputs": [
       "اعلام عیب تجهیزات و ساختمان از سوی سرپرست بخش‌ها",
@@ -128,13 +128,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 90.0
+        "x": 870.6365740740741,
+        "y": 49.81224279835392
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -159,7 +161,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -210,7 +212,7 @@
     {
       "id": "procurement-010-j3",
       "type": "junction",
-      "junctionType": "XOR",
+      "junctionType": "OR",
       "direction": "split",
       "position": {
         "x": 883,
@@ -239,13 +241,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 440.0
+        "x": 506.1484053497943,
+        "y": 718.903034979424
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -269,13 +273,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 615.0
+        "x": 865.4269547325104,
+        "y": 836.0326646090535
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -295,13 +301,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 877.5
+        "x": 537.4948559670781,
+        "y": 472.4074074074074
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -323,13 +331,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 877.5
+        "x": 242.12962962962962,
+        "y": 614.6720679012346
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -366,13 +376,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1577.5
+        "x": -35,
+        "y": 1038.6574074074076
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -381,10 +393,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
-        "y": 1593.5
+        "x": 76.33333333333331,
+        "y": 1298.5
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "procurement-010-n011",
@@ -405,13 +417,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1650.4166666666665
+        "x": 25.601851851851805,
+        "y": 1483.3796296296298
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -434,13 +448,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1417.0833333333335
+        "x": 298.5648148148147,
+        "y": 1062.5925925925926
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -463,13 +479,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1417.0833333333335
+        "x": 372.2222222222222,
+        "y": 1261.1111111111113
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -490,13 +508,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1417.0833333333335
+        "x": 387.9629629629629,
+        "y": 1413.9814814814818
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -518,25 +538,27 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 2175.4166666666665
+        "x": 379.53703703703707,
+        "y": 1565.3240740740741
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
       "id": "procurement-010-j6",
       "type": "junction",
-      "junctionType": "XOR",
+      "junctionType": "OR",
       "direction": "join",
       "position": {
         "x": 883,
-        "y": 2016.4166666666665
+        "y": 1603.2916666666665
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "procurement-010-n016",
@@ -556,13 +578,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 2000.4166666666665
+        "x": 806.6666666666667,
+        "y": 1808.7499999999998
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
