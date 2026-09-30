@@ -13,7 +13,7 @@
     "node": "procurement-024-n016"
   },
   "created_at": "2026-09-27T15:45:34Z",
-  "updated_at": "2026-09-30T15:14:05Z",
+  "updated_at": "2026-09-30T15:16:08Z",
   "idef0": {
     "inputs": [
       "گزارش افت کیفیت برند فعلی",
@@ -70,14 +70,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 265
+        "x": -24.696319999999986,
+        "y": 267.48832
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
         "touched_by": [
-          "runs/chat/20260930-p007edit"
+          "runs/chat/20260930-p007edit",
+          "ui-edit"
         ]
       }
     },
@@ -103,8 +104,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 422.1412037037037,
-        "y": 269.5203189300411
+        "x": 394.7696837037037,
+        "y": 257.07871893004113
       },
       "layout": "manual",
       "source": {
@@ -244,8 +245,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 971.2962962962964,
-        "y": 817.083333333333
+        "x": 1013.5977362962966,
+        "y": 838.234053333333
       },
       "layout": "manual",
       "source": {
@@ -290,8 +291,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 969.3055555555555,
-        "y": 1294.8611111111109
+        "x": 1042.7109955555557,
+        "y": 1322.2326311111108
       },
       "layout": "manual",
       "source": {
@@ -307,10 +308,10 @@
       "junctionType": "AND",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 762.25
+        "x": 752.9491839999998,
+        "y": 1375.0734495999998
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "procurement-007-n012",
@@ -332,13 +333,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 658.75
+        "x": 632.1907199999999,
+        "y": 1520.6542815999996
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -363,13 +366,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 833.75
+        "x": 237.29433600000004,
+        "y": 1418.2066015999997
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -394,13 +399,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 833.75
+        "x": 359.7400064000001,
+        "y": 1725.0164576
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -409,10 +416,10 @@
       "junctionType": "AND",
       "direction": "join",
       "position": {
-        "x": 883,
-        "y": 762.25
+        "x": 723.4986879999999,
+        "y": 1801.4470815999998
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "procurement-007-n015",
@@ -437,13 +444,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 746.25
+        "x": 689.0351616000002,
+        "y": 1932.7929503999997
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -468,13 +477,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 90.0
+        "x": 181.80480000000006,
+        "y": 271.64736
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260930-p007edit",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -493,13 +504,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 308.75
+        "x": 558.8147199999999,
+        "y": 1051.5135199999997
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260930-p007edit",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
