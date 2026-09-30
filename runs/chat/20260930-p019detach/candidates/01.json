@@ -1,19 +1,7 @@
 {
-  "id": "procurement-019",
   "department": "procurement",
-  "name": "بررسی دوره‌ای قیمت‌ها و اعلام تغییر قیمت خرید به مدیریت، حسابداری و انبار",
+  "process_name": "بررسی دوره‌ای قیمت‌ها و اعلام تغییر قیمت خرید به مدیریت، حسابداری و انبار",
   "summary": "کارپردازی موظف است به‌صورت دوره‌ای و ماهانه قیمت اقلام مورد نیاز مجموعه را از غرفه‌ها و تأمین‌کنندگان مختلف استعلام کند و آن‌ها را با یکدیگر مقایسه نماید تا مقرون‌به‌صرفه‌ترین منبع تأمین شناسایی شود؛ این بررسی حتی برای اقلامی مانند کاهو نیز در غرفه‌های مختلف میدان بار انجام می‌شود. در صورت یافتن قیمت پایین‌تر، گزارش و پیشنهاد تأمین‌کننده مقرون‌به‌صرفه‌تر ارائه می‌شود و قلم مورد نیاز از همان منبع تهیه می‌گردد؛ در غیر این صورت خرید از تأمین‌کننده جاری طبق روتین ادامه می‌یابد. کارپرداز در جریان خرید روزانه، گران‌شدن اقلام را تشخیص می‌دهد؛ تا زمانی که افزایش قیمت در حد نرمال بازار باشد خرید طبق روتین انجام می‌شود، اما در صورت افزایش قیمت فاحش و خارج از تلورانس تعیین‌شده، موضوع به‌صورت لفظی و کلی به مدیریت، حسابداری و انبار اعلام می‌گردد. مدیریت در مورد اقلام گران‌شده راهکار ارائه می‌کند و حسابداری فاکتور جدید هر تأمین‌کننده را با فاکتور پیشین مقایسه و افزایش قیمت را ثبت می‌کند. در زمینه تغییر قیمت سه نقطه کنترلی وجود دارد — کارپردازی، حسابداری و انبار — که هر سه موظف به پیگیری و اعلام تغییر قیمت به یکدیگر هستند تا حسابداری بتواند تغییرات را اعمال کند.",
-  "source": {
-    "type": "voice",
-    "ref": "20260927-114240",
-    "run": "runs/procurement/20260927-114240"
-  },
-  "parent": {
-    "process": "procurement-024",
-    "node": "procurement-024-n015"
-  },
-  "created_at": "2026-09-27T15:45:44Z",
-  "updated_at": "2026-09-30T14:43:34Z",
   "idef0": {
     "inputs": [
       "قیمت‌های اعلامی غرفه‌ها و تأمین‌کنندگان",
@@ -55,7 +43,7 @@
   ],
   "nodes": [
     {
-      "id": "procurement-019-n001",
+      "key": "n1",
       "type": "activity",
       "label": "استعلام قیمت اقلام از غرفه‌ها و تأمین‌کنندگان مختلف در بررسی دوره‌ای ماهانه",
       "description": "بررسی قیمت‌ها به‌صورت ماهانه و با هدف یافتن اقلام غذایی و تأمین‌کننده مقرون‌به‌صرفه‌تر انجام می‌شود. این استعلام حتی برای اقلامی مانند کاهو نیز از غرفه‌های مختلف میدان بار صورت می‌گیرد و بسته به کالا، از طریق تماس تلفنی با تأمین‌کنندگان مشخص مجموعه یا مراجعه حضوری انجام می‌شود.",
@@ -74,19 +62,10 @@
           "بازدید حضوری از غرفه‌های میدان بار"
         ]
       },
-      "subprocess": null,
-      "position": {
-        "x": 40,
-        "y": 177.5
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
-      }
+      "subprocess": null
     },
     {
-      "id": "procurement-019-n002",
+      "key": "n2",
       "type": "activity",
       "label": "مقایسه قیمت‌های استعلام‌شده و تعیین مقرون‌به‌صرفه‌ترین غرفه یا تأمین‌کننده",
       "description": "مقایسه بر مبنای قیمت و کیفیت کالا انجام می‌شود و معیار انتخاب، مقرون‌به‌صرفه بودن با هدف افزایش بهره‌وری اقتصادی است. پرسش اصلی این مرحله آن است که قیمت کدام غرفه یا تأمین‌کننده مناسب‌تر است.",
@@ -105,30 +84,16 @@
           "کارپرداز"
         ]
       },
-      "subprocess": null,
-      "position": {
-        "x": 300,
-        "y": 177.5
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
-      }
+      "subprocess": null
     },
     {
-      "id": "procurement-019-j1",
+      "key": "j1",
       "type": "junction",
       "junctionType": "XOR",
-      "direction": "split",
-      "position": {
-        "x": 623,
-        "y": 193.5
-      },
-      "layout": "auto"
+      "direction": "split"
     },
     {
-      "id": "procurement-019-n003",
+      "key": "n3",
       "type": "activity",
       "label": "ارائه گزارش قیمت پایین‌تر و پیشنهاد تأمین‌کننده مقرون‌به‌صرفه‌تر",
       "description": "در صورت یافتن قیمت پایین‌تر نسبت به منبع تأمین جاری، نتیجه بررسی به‌صورت گزارش همراه با پیشنهاد جایگزینی تأمین‌کننده اعلام می‌شود.",
@@ -145,19 +110,10 @@
           "کارپرداز"
         ]
       },
-      "subprocess": null,
-      "position": {
-        "x": 820,
-        "y": 265.0
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
-      }
+      "subprocess": null
     },
     {
-      "id": "procurement-019-n004",
+      "key": "n4",
       "type": "activity",
       "label": "تهیه قلم مورد نیاز از غرفه یا تأمین‌کننده با قیمت مناسب‌تر",
       "description": "هدف بررسی قیمت‌ها آن است که قلم مورد نیاز از منبعی تهیه شود که قیمت مناسب‌تری دارد.",
@@ -172,19 +128,10 @@
           "کارپرداز"
         ]
       },
-      "subprocess": null,
-      "position": {
-        "x": 1080,
-        "y": 265.0
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
-      }
+      "subprocess": null
     },
     {
-      "id": "procurement-019-n005",
+      "key": "n5",
       "type": "activity",
       "label": "ادامه تهیه اقلام از تأمین‌کننده جاری طبق روتین خرید",
       "description": "در صورت نبود قیمت پایین‌تر، تهیه اقلام بدون تغییر منبع تأمین و طبق روتین جاری کارپردازی ادامه می‌یابد.",
@@ -199,30 +146,16 @@
           "کارپرداز"
         ]
       },
-      "subprocess": null,
-      "position": {
-        "x": 820,
-        "y": 90.0
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
-      }
+      "subprocess": null
     },
     {
-      "id": "procurement-019-j2",
+      "key": "j2",
       "type": "junction",
       "junctionType": "XOR",
-      "direction": "join",
-      "position": {
-        "x": 1143,
-        "y": 718.5
-      },
-      "layout": "auto"
+      "direction": "join"
     },
     {
-      "id": "procurement-019-n006",
+      "key": "n6",
       "type": "activity",
       "label": "تشخیص افزایش قیمت اقلام در جریان خرید روزانه",
       "description": "قیمت‌ها به‌صورت مستمر در حال افزایش است و کارپرداز در هنگام خرید، گران‌شدن قلم را تشخیص می‌دهد. برای نمونه، قیمت گوشت در یک روز از یک میلیون و ششصد هزار تومان به دو میلیون و صد هزار تومان، یعنی حدود ۳۳ درصد، افزایش یافته است. معیار تصمیم‌گیری این است که افزایش قیمت فاحش و بالاتر از تلورانس تعیین‌شده است یا در حد نوسان نرمال بازار.",
@@ -241,30 +174,16 @@
           "کارپرداز"
         ]
       },
-      "subprocess": null,
-      "position": {
-        "x": 820,
-        "y": 702.5
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
-      }
+      "subprocess": null
     },
     {
-      "id": "procurement-019-j3",
+      "key": "j3",
       "type": "junction",
       "junctionType": "XOR",
-      "direction": "split",
-      "position": {
-        "x": 623,
-        "y": 718.5
-      },
-      "layout": "auto"
+      "direction": "split"
     },
     {
-      "id": "procurement-019-n007",
+      "key": "n7",
       "type": "activity",
       "label": "تکمیل خرید طبق روتین بدون اعلام افزایش قیمت",
       "description": "تا زمانی که افزایش قیمت در حد نوسان نرمال بازار و پایین‌تر از تلورانس تعیین‌شده باشد، خرید طبق روتین کارپردازی انجام می‌شود و اعلام جداگانه‌ای صورت نمی‌گیرد.",
@@ -281,30 +200,16 @@
           "کارپرداز"
         ]
       },
-      "subprocess": null,
-      "position": {
-        "x": 300,
-        "y": 790.0
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
-      }
+      "subprocess": null
     },
     {
-      "id": "procurement-019-j4",
+      "key": "j4",
       "type": "junction",
       "junctionType": "AND",
-      "direction": "split",
-      "position": {
-        "x": 363,
-        "y": 631.0
-      },
-      "layout": "auto"
+      "direction": "split"
     },
     {
-      "id": "procurement-019-n008",
+      "key": "n8",
       "type": "activity",
       "label": "اعلام لفظی افزایش قیمت خرید به مدیریت",
       "description": "اعلام به‌صورت لفظی و در قالب کلیات انجام می‌شود؛ گزارش کتبی یا دست‌نویس فاکتور تهیه نمی‌گردد و تنها بالا رفتن محسوس قیمت‌ها اطلاع داده می‌شود. کارپرداز در مواردی که گران بودن قلم را تشخیص می‌دهد، موضوع را با مدیریت مطرح و مشورت می‌کند.",
@@ -324,19 +229,10 @@
           "اعلام لفظی"
         ]
       },
-      "subprocess": null,
-      "position": {
-        "x": 40,
-        "y": 615.0
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
-      }
+      "subprocess": null
     },
     {
-      "id": "procurement-019-n009",
+      "key": "n9",
       "type": "activity",
       "label": "ارائه راهکار مدیریت درباره قلم گران‌شده",
       "description": "مدیریت پس از مشورت کارپرداز، درباره قلم گران‌شده راهکار ارائه می‌کند.",
@@ -353,19 +249,10 @@
           "مدیریت مجموعه"
         ]
       },
-      "subprocess": null,
-      "position": {
-        "x": 40,
-        "y": 1140.0
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
-      }
+      "subprocess": null
     },
     {
-      "id": "procurement-019-n010",
+      "key": "n10",
       "type": "activity",
       "label": "اعلام لفظی افزایش قیمت خرید به حسابداری",
       "description": "در صورت فاحش بودن افزایش قیمت، موضوع الزاماً و به‌صورت لفظی به حسابداری اعلام می‌شود. حسابداری یکی از سه نقطه کنترلی تغییر قیمت است.",
@@ -383,19 +270,10 @@
           "اعلام لفظی"
         ]
       },
-      "subprocess": null,
-      "position": {
-        "x": 40,
-        "y": 790.0
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
-      }
+      "subprocess": null
     },
     {
-      "id": "procurement-019-n011",
+      "key": "n11",
       "type": "activity",
       "label": "مقایسه فاکتور جدید هر تأمین‌کننده با فاکتور پیشین و ثبت افزایش قیمت",
       "description": "تمام فاکتورهای جدید با فاکتورهای قدیم همان تأمین‌کننده مقایسه می‌شود؛ برای نمونه فاکتور امروز یک تأمین‌کننده با فاکتور دو روز پیش او بررسی می‌گردد و افزایش قیمت جو دو سر از ۴۲۰۰ تومان به ۴۳۲۰ تومان شناسایی می‌شود. مبلغ اختلاف درج نمی‌شود، اما وقوع افزایش قیمت ثبت می‌گردد.",
@@ -413,19 +291,10 @@
           "حسابداری"
         ]
       },
-      "subprocess": null,
-      "position": {
-        "x": 40,
-        "y": 1315.0
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
-      }
+      "subprocess": null
     },
     {
-      "id": "procurement-019-n012",
+      "key": "n12",
       "type": "activity",
       "label": "اعلام لفظی افزایش قیمت خرید به انبار",
       "description": "اعلام به انبار نیز به‌صورت لفظی انجام می‌شود. انبار سومین نقطه کنترلی تغییر قیمت است.",
@@ -443,30 +312,16 @@
           "اعلام لفظی"
         ]
       },
-      "subprocess": null,
-      "position": {
-        "x": 40,
-        "y": 440.0
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
-      }
+      "subprocess": null
     },
     {
-      "id": "procurement-019-j5",
+      "key": "j5",
       "type": "junction",
       "junctionType": "AND",
-      "direction": "join",
-      "position": {
-        "x": 363,
-        "y": 1156.0
-      },
-      "layout": "auto"
+      "direction": "join"
     },
     {
-      "id": "procurement-019-n013",
+      "key": "n13",
       "type": "activity",
       "label": "پیگیری و اعلام متقابل تغییر قیمت میان کارپردازی، حسابداری و انبار",
       "description": "در زمینه تغییر قیمت سه نقطه کنترلی وجود دارد: کارپردازی، حسابداری و انبار. هر سه موظف‌اند تغییر قیمت را پیگیری و آن را به یکدیگر اعلام کنند تا حسابداری بتواند تغییرات را اعمال کند.",
@@ -487,107 +342,30 @@
           "انبار"
         ]
       },
-      "subprocess": null,
-      "position": {
-        "x": 560,
-        "y": 1140.0
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
-      }
+      "subprocess": null
     }
   ],
   "edges": [
-    {
-      "from": "procurement-019-n001",
-      "to": "procurement-019-n002"
-    },
-    {
-      "from": "procurement-019-n002",
-      "to": "procurement-019-j1"
-    },
-    {
-      "from": "procurement-019-j1",
-      "to": "procurement-019-n003",
-      "label": "در صورت یافتن قیمت پایین‌تر"
-    },
-    {
-      "from": "procurement-019-j1",
-      "to": "procurement-019-n005",
-      "label": "در صورت نبود قیمت پایین‌تر"
-    },
-    {
-      "from": "procurement-019-n003",
-      "to": "procurement-019-n004"
-    },
-    {
-      "from": "procurement-019-n004",
-      "to": "procurement-019-j2"
-    },
-    {
-      "from": "procurement-019-n005",
-      "to": "procurement-019-j2"
-    },
-    {
-      "from": "procurement-019-j2",
-      "to": "procurement-019-n006"
-    },
-    {
-      "from": "procurement-019-n006",
-      "to": "procurement-019-j3"
-    },
-    {
-      "from": "procurement-019-j3",
-      "to": "procurement-019-j4",
-      "label": "در صورت افزایش قیمت فاحش و بالاتر از تلورانس"
-    },
-    {
-      "from": "procurement-019-j3",
-      "to": "procurement-019-n007",
-      "label": "در صورت افزایش قیمت در حد نرمال بازار"
-    },
-    {
-      "from": "procurement-019-j4",
-      "to": "procurement-019-n008"
-    },
-    {
-      "from": "procurement-019-j4",
-      "to": "procurement-019-n010"
-    },
-    {
-      "from": "procurement-019-j4",
-      "to": "procurement-019-n012"
-    },
-    {
-      "from": "procurement-019-n008",
-      "to": "procurement-019-n009"
-    },
-    {
-      "from": "procurement-019-n010",
-      "to": "procurement-019-n011"
-    },
-    {
-      "from": "procurement-019-n009",
-      "to": "procurement-019-j5"
-    },
-    {
-      "from": "procurement-019-n011",
-      "to": "procurement-019-j5"
-    },
-    {
-      "from": "procurement-019-n012",
-      "to": "procurement-019-j5"
-    },
-    {
-      "from": "procurement-019-j5",
-      "to": "procurement-019-n013"
-    }
+    { "from": "n1", "to": "n2" },
+    { "from": "n2", "to": "j1" },
+    { "from": "j1", "to": "n3", "label": "در صورت یافتن قیمت پایین‌تر" },
+    { "from": "j1", "to": "n5", "label": "در صورت نبود قیمت پایین‌تر" },
+    { "from": "n3", "to": "n4" },
+    { "from": "n4", "to": "j2" },
+    { "from": "n5", "to": "j2" },
+    { "from": "j2", "to": "n6" },
+    { "from": "n6", "to": "j3" },
+    { "from": "j3", "to": "j4", "label": "در صورت افزایش قیمت فاحش و بالاتر از تلورانس" },
+    { "from": "j3", "to": "n7", "label": "در صورت افزایش قیمت در حد نرمال بازار" },
+    { "from": "j4", "to": "n8" },
+    { "from": "j4", "to": "n10" },
+    { "from": "j4", "to": "n12" },
+    { "from": "n8", "to": "n9" },
+    { "from": "n10", "to": "n11" },
+    { "from": "n9", "to": "j5" },
+    { "from": "n11", "to": "j5" },
+    { "from": "n12", "to": "j5" },
+    { "from": "j5", "to": "n13" }
   ],
-  "pending": [],
-  "tombstoned": true,
-  "superseded_by": [
-    "procurement-026"
-  ]
+  "subprocess_links": []
 }
