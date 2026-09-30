@@ -1,0 +1,4 @@
+{"add_nodes": [], "add_edges": [], "enrich_nodes": [], "remove_edges": [], "flag_removed": [],
+ "revise_nodes": [{"id": "procurement-007-n017", "set": {
+   "actor": "کارپرداز یا مدیر مجموعه",
+   "icom": {"inputs": ["تأیید نشدن برند پیشنهادی در تست"], "controls": [], "outputs": [], "mechanisms": ["کارپرداز", "مدیر مجموعه"]}}}]}
