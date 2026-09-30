@@ -176,9 +176,8 @@ already owes for a refusal, listed in `retry` like the refused ones.
   شده» already say, as `new[]` entries homed on a listed table. Your unit may hold excerpts of
   several meetings; cite each entry by the excerpt you took it from — the path in that excerpt's
   heading and the line numbers printed there:
-  `"voice": [{"ref": "<the path in your excerpt's heading>", "lines": "a-b"}]`, where `lines` is the
-  bare numbers with a hyphen — `"210-218"`, or `"210"` for one line — without the `L`. A citation
-  reaching outside the excerpt it names is dropped, and an entry with no `voice` is credited to every
+  `"voice": [{"ref": "<the path in your excerpt's heading>", "lines": "a-b"}]`. A citation reaching
+  outside the excerpt it names is dropped, and an entry with no `voice` is credited to every
   meeting your unit read. Never write an `account`. A statement of an excerpt that contradicts a
   process step or a recorded entry is not written — it goes to `contradicted[]`:
 
