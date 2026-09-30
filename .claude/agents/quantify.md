@@ -58,13 +58,8 @@ candidate id nobody decided).
 envelope; omitted for a from-scratch instruction), `run_dir`, `facts_index`, `schema_path`
 (`facts-delta.schema.json`, or `facts-patch.schema.json` for the patch form), `data_root`.
 
-Three sections of a `unit` input are the engine's own selection, and all three are read, never
-searched past.
-
-**`## متن`** — a transcript unit's input carries the meeting excerpts it reads: it may hold excerpts
-of several meetings, each headed `### <path> · L<a>–L<b>` — the transcript's path and the lines it
-covers — with every line printed after its own number in that transcript, `L<n>: `. A line too long
-for one row continues on the next rows without a number.
+Two sections of a `unit` input are the engine's own selection, and both are read, never searched
+past.
 
 **`## فرایندها`** — every unit's input carries it: the paths of this run's process files. Each file
 is one department's active processes as the process engineer corrected them — per process its name
@@ -173,13 +168,10 @@ already owes for a refusal, listed in `retry` like the refused ones.
   Every entry cites the step(s) it came from in `processes[]`, with a short quote. You write no
   `voice` and no `account`.
 - **A transcript unit only adds.** Write only what neither the process files nor «آنچه تا کنون ثبت
-  شده» already say, as `new[]` entries homed on a listed table. Your unit may hold excerpts of
-  several meetings; cite each entry by the excerpt you took it from — the path in that excerpt's
-  heading and the line numbers printed there:
-  `"voice": [{"ref": "<the path in your excerpt's heading>", "lines": "a-b"}]`. A citation reaching
-  outside the excerpt it names is dropped, and an entry with no `voice` is credited to every
-  meeting your unit read. Never write an `account`. A statement of an excerpt that contradicts a
-  process step or a recorded entry is not written — it goes to `contradicted[]`:
+  شده» already say, as `new[]` entries homed on a listed table, and cite the lines you took each
+  from: `"voice": [{"ref": "<your excerpt's transcript path>", "lines": "a-b"}]`, lines inside your
+  excerpt. Never write an `account`. A statement of your excerpt that contradicts a process step or
+  a recorded entry is not written — it goes to `contradicted[]`:
 
   ```json
   "contradicted": [{"claim": "کنار شنیسل خام تنها برای غذای پرسنل مصرف می‌شود",
@@ -187,9 +179,7 @@ already owes for a refusal, listed in `retry` like the refused ones.
                     "against": {"process": "preparation-012", "node": "preparation-012-n039"}}]
   ```
 
-  `claim` is one Persian sentence; `ref` and `lines` are cited as in `voice` — the path in the
-  heading of the excerpt it came from and the numbers printed there, a citation reaching outside
-  that excerpt dropped; `against` is either
+  `claim` is one Persian sentence; `ref` and `lines` lie inside your excerpt; `against` is either
   `{process, node}` or `{"ref": "<a handle printed in «آنچه تا کنون ثبت شده»>"}` — only a handle of
   this run's table units (`S-…` or `N-…`); a store id (`F-…`) printed there is not accepted and is
   dropped without a word. The owner reads these at the end of the run; one the engine cannot check
