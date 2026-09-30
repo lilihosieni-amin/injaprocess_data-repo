@@ -1,0 +1,14 @@
+{
+  "add_nodes": [],
+  "add_edges": [
+    {"from": "procurement-024-n010", "to": "procurement-024-n011"},
+    {"from": "procurement-024-n011", "to": "procurement-024-j3"}
+  ],
+  "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [
+    {"from": "procurement-024-n010", "to": "procurement-024-j3"},
+    {"from": "procurement-024-j3", "to": "procurement-024-n011"}
+  ],
+  "flag_removed": []
+}

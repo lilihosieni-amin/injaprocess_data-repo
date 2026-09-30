@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-28T09:26:49Z",
-  "updated_at": "2026-09-30T14:08:06Z",
+  "updated_at": "2026-09-30T14:11:18Z",
   "idef0": {
     "inputs": [
       "نیاز مجموعه به تعیین طرف حساب برای اقلام مورد خرید",
@@ -254,7 +254,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 615
+        "y": 615.0
       },
       "layout": "auto",
       "source": {
@@ -759,15 +759,6 @@
       "to": "procurement-024-n010"
     },
     {
-      "from": "procurement-024-n010",
-      "to": "procurement-024-j3"
-    },
-    {
-      "from": "procurement-024-j3",
-      "to": "procurement-024-n011",
-      "label": "در صورت تداوم کیفیت و قیمت توافق‌شده"
-    },
-    {
       "from": "procurement-024-j3",
       "to": "procurement-024-n012",
       "label": "در صورت افت کیفیت کالای طرف حساب"
@@ -822,6 +813,14 @@
       "from": "procurement-024-n016",
       "to": "procurement-024-n017",
       "label": ""
+    },
+    {
+      "from": "procurement-024-n010",
+      "to": "procurement-024-n011"
+    },
+    {
+      "from": "procurement-024-n011",
+      "to": "procurement-024-j3"
     }
   ],
   "pending": []
