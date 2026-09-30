@@ -1,0 +1,15 @@
+{
+  "add_nodes": [],
+  "add_edges": [],
+  "enrich_nodes": [],
+  "revise_nodes": [
+    {
+      "id": "procurement-024-n016",
+      "set": {
+        "label": "تغییر برند و تأمین‌کنندهٔ کالا"
+      }
+    }
+  ],
+  "remove_edges": [],
+  "flag_removed": []
+}
