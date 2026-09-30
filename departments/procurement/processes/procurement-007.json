@@ -13,7 +13,7 @@
     "node": "procurement-024-n016"
   },
   "created_at": "2026-09-27T15:45:34Z",
-  "updated_at": "2026-09-29T15:28:37Z",
+  "updated_at": "2026-09-30T14:58:40Z",
   "idef0": {
     "inputs": [
       "گزارش افت کیفیت برند فعلی",
@@ -71,7 +71,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -102,7 +102,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -117,7 +117,7 @@
       "direction": "split",
       "position": {
         "x": 623,
-        "y": 281.0
+        "y": 281
       },
       "layout": "auto"
     },
@@ -172,13 +172,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 440.0
+        "x": 901.983024691358,
+        "y": 244.6875
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -188,7 +190,7 @@
       "direction": "split",
       "position": {
         "x": 1143,
-        "y": 456.0
+        "y": 456
       },
       "layout": "auto"
     },
@@ -245,13 +247,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 935.8333333333333
+        "x": 815.1774691358024,
+        "y": 595.8449074074074
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -351,7 +355,7 @@
       "direction": "split",
       "position": {
         "x": 103,
-        "y": 1506.0
+        "y": 1506
       },
       "layout": "auto"
     },
@@ -540,7 +544,7 @@
       "direction": "join",
       "position": {
         "x": 623,
-        "y": 1856.0
+        "y": 1856
       },
       "layout": "auto"
     },
@@ -568,7 +572,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 1840.0
+        "y": 1840
       },
       "layout": "auto",
       "source": {
