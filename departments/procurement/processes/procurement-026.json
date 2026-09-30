@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-30T14:43:34Z",
-  "updated_at": "2026-09-30T14:43:34Z",
+  "updated_at": "2026-09-30T21:43:10Z",
   "idef0": {
     "inputs": [
       "قیمت‌های اعلامی غرفه‌ها و تأمین‌کنندگان",
@@ -145,7 +145,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -172,7 +172,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -199,7 +199,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -280,13 +280,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 790.0
+        "x": 515.0260297917617,
+        "y": 901.2203602371181
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260930-p019detach",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -296,7 +298,7 @@
       "direction": "split",
       "position": {
         "x": 363,
-        "y": 631.0
+        "y": 631
       },
       "layout": "auto"
     },
@@ -323,13 +325,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 615.0
+        "x": 64.36255509955919,
+        "y": 774.9454704362365
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260930-p019detach",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -352,13 +356,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1140.0
+        "x": 120.50235598115216,
+        "y": 1002.2986016111872
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260930-p019detach",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -382,13 +388,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 790.0
+        "x": -164.43361453108378,
+        "y": 616.2843897248822
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260930-p019detach",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -412,13 +420,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1315.0
+        "x": -68.04263565891475,
+        "y": 1209.075847393221
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260930-p019detach",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -442,13 +452,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 440.0
+        "x": 280.4478264173887,
+        "y": 808.6160510715915
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260930-p019detach",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -458,7 +470,7 @@
       "direction": "join",
       "position": {
         "x": 363,
-        "y": 1156.0
+        "y": 1156
       },
       "layout": "auto"
     },
@@ -487,7 +499,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1140.0
+        "y": 1140
       },
       "layout": "auto",
       "source": {
