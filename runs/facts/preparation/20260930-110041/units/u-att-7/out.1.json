@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "unit": "u-att-7",
+  "attempt": 1,
+  "decisions": [],
+  "new": [
+    {
+      "kind": "record",
+      "key": "form_tabdil_rasteh",
+      "title": "فرم تبدیل آماده‌سازی گوشت راسته",
+      "aliases": ["فرم تبدیل گوشت راسته"],
+      "statement": "فرم کاغذی تبدیل آماده‌سازی برای گوشت راسته که وزن راستهٔ ورودی و تبدیل آن به فیلادلفیا و ضایعات را به کیلو ثبت می‌کند و مسئول لاین گوشت آماده‌سازی در روز تفکیک راسته آن را پر می‌کند؛ برگهٔ تکمیل‌شده را سرپرست آماده‌سازی به حسابداری ارائه می‌دهد. طبق رویهٔ ابلاغ‌شده، فیلادلفیا دیگر فرم تبدیل ندارد و ردیف فیلادلفیای این برگه پر نمی‌شود؛ وزن آن تنها در فرم نیم‌ساخت نوشته می‌شود. همین فرم نسخه‌ای با عنوان انبار هم دارد که جز عنوان تفاوتی ندارد و برای اسکن و ارسال به سیستم نسخهٔ آماده‌سازی لازم است.",
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": {"value": "واحد آماده‌سازی؛ برگهٔ تکمیل‌شده به سرپرست آماده‌سازی و سپس به حسابداری سپرده می‌شود", "inferred": true},
+          "holder": {"value": "سرپرست آماده‌سازی", "inferred": true}
+        },
+        "cadence": "ad_hoc",
+        "grain": "هر نوبت تحویل و تفکیک گوشت راسته",
+        "day_boundary": null,
+        "filled_by": "مسئول لاین گوشت آماده‌سازی",
+        "approved_by": null,
+        "blank_master": true,
+        "header_fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "type": "date",
+            "description": "تاریخ روز تفکیک راسته؛ روز راسته ثابت نیست و به زمان خرید راسته بستگی دارد."
+          },
+          {
+            "key": "vazn_rasteh",
+            "title": "کیلو",
+            "type": "number",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "description": "وزن گوشت راستهٔ خام ورودی به کیلو، که مسئول لاین گوشت هنگام تحویل از انبار با ترازو می‌کشد و در دفتر لاین هم به‌عنوان ورودی آماده‌سازی ثبت می‌کند؛ وزن نایلون و پلاستیک بسته‌بندی جداگانه کشیده و یادداشت می‌شود."
+          }
+        ],
+        "fields": [
+          {
+            "key": "kilo",
+            "title": "کیلو",
+            "type": "number",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "repeat": 2,
+            "description": "مقدار هر ردیف به کیلو که با دست نوشته می‌شود؛ ردیف فیلادلفیا دو خانه دارد و در ردیف ضایعات خانه‌ها یکی شده‌اند. ردیف فیلادلفیا دیگر پر نمی‌شود و وزن فیلادلفیا تنها در فرم نیم‌ساخت ثبت می‌شود. ضایعات دمار و غضروف راستهٔ پاک‌نشده با ترازو کشیده و در دفتر لاین گوشت ثبت می‌شود."
+          },
+          {
+            "key": "jam",
+            "title": "جمع",
+            "type": "number",
+            "unit": {"value": "kg", "inferred": true},
+            "description": "جمع کیلوی ردیف فیلادلفیا؛ ردیف ضایعات خانهٔ جمع جداگانه ندارد."
+          }
+        ],
+        "rows": [
+          {"key": "filadelfia", "title": "فیلادلفیا", "unit": "kg", "unit_raw": "کیلو"},
+          {"key": "zayeat", "title": "ضایعات", "unit": "kg", "unit_raw": "کیلو"}
+        ]
+      },
+      "processes": [
+        {"process": "preparation-020", "node": "preparation-020-n001", "quote": "روز راسته ثابت نیست و متغیر است"},
+        {"process": "preparation-020", "node": "preparation-020-n002", "quote": "تحت عنوان «گوشت خام راسته» ثبت می‌شود"},
+        {"process": "preparation-020", "node": "preparation-020-n003", "quote": "وزن آن جداگانه گرفته و در دفتر قید شود"},
+        {"process": "preparation-020", "node": "preparation-020-n018", "quote": "فیلادلفیا فرم تبدیل ندارد"},
+        {"process": "preparation-020", "node": "preparation-020-n023", "quote": "برای فیلادلفیا فرم نیم‌ساخت تنها سند ثبت است"},
+        {"process": "preparation-020", "node": "preparation-020-n024", "quote": "فرم‌های تبدیل و نیم‌ساخت تکمیل‌شده در نهایت به حسابداری ارائه می‌شود"},
+        {"process": "preparation-026", "node": "preparation-026-n012", "quote": "فرم گوشت راسته ستون‌های فیلادلفیا و ضایعات و جمع دارد"}
+      ],
+      "from": ["departments/preparation/attachments/.text/photo-AQADcg5rG7piKFF-.image.md"]
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_rasteh_kham",
+      "title": "وزن گوشت راستهٔ خام ورودی",
+      "home": {"ref": "N-u-att-7-0", "field": "vazn_rasteh"},
+      "statement": "وزن گوشت راستهٔ خام به کیلو هنگام تحویل از انبار با ترازوی آماده‌سازی گرفته می‌شود و مبنای محاسبهٔ محصولات و ضایعات راسته است؛ مسئول لاین گوشت آماده‌سازی آن را اندازه می‌گیرد.",
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "توزین کل گوشت راسته با ترازوی آماده‌سازی پیش از پاک کردن؛ نایلون و پلاستیک بسته‌بندی جداگانه وزن و در دفتر یادداشت می‌شود.",
+        "when": "هنگام تحویل گرفتن گوشت راسته از انبار، پیش از پاک کردن و تفکیک",
+        "by": "مسئول لاین گوشت آماده‌سازی",
+        "exceptions": null
+      },
+      "processes": [
+        {"process": "preparation-020", "node": "preparation-020-n002", "quote": "مبنای محاسبه بعدی محصولات و ضایعات است"},
+        {"process": "preparation-020", "node": "preparation-020-n003", "quote": "کیسه‌ها و نایلون پلاستیک گوشت دور ریخته نمی‌شود"}
+      ],
+      "from": ["departments/preparation/attachments/.text/photo-AQADcg5rG7piKFF-.image.md"]
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_zayeat_damar_rasteh",
+      "title": "وزن ضایعات دمار و غضروف راسته",
+      "home": {"ref": "N-u-att-7-0", "field": "kilo"},
+      "statement": "دمار و غضروفی که هنگام پاک کردن راستهٔ پاک‌نشده جدا می‌شود و هیچ مصرفی ندارد، به کیلو وزن و به‌عنوان ضایعات ثبت می‌شود؛ مسئول لاین گوشت آماده‌سازی این کار را انجام می‌دهد.",
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "توزین دمار و غضروف جداشده با ترازو و ثبت در دفتر لاین گوشت",
+        "when": "هنگام پاک کردن راستهٔ پاک‌نشده، پیش از تفکیک به استیک، فیلادلفیا و خرده راسته",
+        "by": "مسئول لاین گوشت آماده‌سازی",
+        "exceptions": "راسته‌ای که پاک‌شده تحویل می‌شود فقط برش می‌خورد و از آن ضایعات دمار جدا نمی‌شود."
+      },
+      "processes": [
+        {"process": "preparation-020", "node": "preparation-020-n004", "quote": "به‌عنوان ضایعات کنار گذاشته می‌شوند"},
+        {"process": "preparation-020", "node": "preparation-020-j1", "quote": "راسته پاک‌نشده"},
+        {"process": "preparation-026", "node": "preparation-026-n004", "quote": "همان عددی که روی ترازو آمده قید می‌شود"}
+      ],
+      "from": ["departments/preparation/attachments/.text/photo-AQADcg5rG7piKFF-.image.md"]
+    },
+    {
+      "kind": "rule",
+      "key": "zayeat_damar_rasteh_standard",
+      "title": "ضایعات دمار مورد انتظار گوشت راسته",
+      "home": {"ref": "N-u-att-7-0", "field": "kilo"},
+      "statement": "از هر بیست کیلو گوشت راستهٔ پاک‌نشده حدود یک و نیم تا یک کیلو و هشتصد گرم ضایعات دمار و غضروف جدا می‌شود.",
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {
+            "key": "zayeat_damar",
+            "title": "ضایعات دمار و غضروف",
+            "unit": "kg",
+            "nature": "standard",
+            "per": "هر بیست کیلو گوشت راستهٔ پاک‌نشده",
+            "range": {"min": 1.5, "max": 1.8}
+          }
+        ]
+      },
+      "processes": [
+        {"process": "preparation-020", "node": "preparation-020-n004", "quote": "از هر ۲۰ کیلو راسته چیزی حدود یک کیلو و نیم تا یک کیلو و هشتصد گرم ضایعات دمار"}
+      ],
+      "from": ["departments/preparation/attachments/.text/photo-AQADcg5rG7piKFF-.image.md"]
+    },
+    {
+      "kind": "note",
+      "key": "form_tabdil_rasteh_sakhtar_aks",
+      "title": "خانه‌های فرم تبدیل راسته در عکس",
+      "home": {"ref": "N-u-att-7-0"},
+      "statement": "در عکس فرم، میان نام هر قلم و خانهٔ کیلو یک خانهٔ خالی دیگر هست؛ در ردیف فیلادلفیا سمت چپ کیلو سه خانهٔ خالی باریک پیش از خانهٔ جمع دیده می‌شود و خانهٔ بزرگ ردیف ضایعات خاکستری است.",
+      "data": {
+        "about": [{"ref": "N-u-att-7-0"}],
+        "question": "مقدار هر قلم در کدام خانه نوشته می‌شود، و خانه‌های خالی سمت چپ کیلو در ردیف فیلادلفیا برای چه ثبتی است؟"
+      },
+      "from": ["departments/preparation/attachments/.text/photo-AQADcg5rG7piKFF-.image.md"]
+    },
+    {
+      "kind": "note",
+      "key": "form_tabdil_rasteh_do_ravayat",
+      "title": "دو روایت از فرم تبدیل گوشت راسته",
+      "home": {"ref": "N-u-att-7-0"},
+      "statement": "یک فرایند می‌گوید برای گوشت راسته تنها یک فرم تبدیل پر می‌شود که وزن کل راسته پس از کسر فیلادلفیا را به استیک رولی، خرده راسته و ضایعات تفکیک می‌کند. فرایند دیگر این برگه با ردیف‌های فیلادلفیا، ضایعات و جمع را جدا از فرم گوشت راستهٔ گرم، در شمار فرم‌های تبدیل جاری آورده است.",
+      "data": {
+        "about": [{"ref": "N-u-att-7-0"}],
+        "question": "آیا این برگه هنوز پر می‌شود؟ اگر آری، وزن کل راسته و ضایعات دمار در این برگه نوشته می‌شود یا فقط در فرم تبدیل استیک رولی؟"
+      },
+      "processes": [
+        {"process": "preparation-020", "node": "preparation-020-n022", "quote": "برای گوشت راسته تنها یک فرم تبدیل وجود دارد"},
+        {"process": "preparation-020", "node": "preparation-020-n018", "quote": "تنها مقدار باقیمانده به‌عنوان وزن کل گوشت راسته در فرم تبدیل نوشته می‌شود"},
+        {"process": "preparation-026", "node": "preparation-026-n012", "quote": "فرم گوشت راسته گرم ستون‌های استیک رولی، خرده گوشت و ضایعات دارد"},
+        {"process": "preparation-026", "node": "preparation-026-n023", "quote": "گوشت راسته، گوشت راسته گرم، رول استیک"}
+      ],
+      "from": ["departments/preparation/attachments/.text/photo-AQADcg5rG7piKFF-.image.md"]
+    }
+  ]
+}

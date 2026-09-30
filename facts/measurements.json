@@ -1,4 +1,2198 @@
 {
   "schema_version": 2,
-  "entries": []
+  "entries": [
+    {
+      "kind": "measurement",
+      "key": "vazn_estik_roli",
+      "title": "وزن استیک رولی",
+      "statement": "وزن استیک رولی به کیلو پس از نیم‌پز، سرد و سلفون‌پیچ شدن راسته با ترازو گرفته می‌شود و پیش از تحویل به انبار در ردیف استیک رولی فرم ثبت می‌شود. مقدار مرینت مصرفی، مقدار گوشت و مقدار کاست هم باید جداگانه ثبت شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdQ5rG7piKFF-.image.md",
+          "hash": "sha256:3483ac303e1e1c448a98972723665302ab10be6bff602f2e834c60a30a39db03",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-020.json",
+          "node": "preparation-020-n011",
+          "quote": "باید مقدار مرینت مصرفی، مقدار گوشت و مقدار کاست جداگانه ثبت شود",
+          "hash": "sha256:6755b679a16e891ef948b2bf7441eacba82cd728c1619bdbb7b09be20df8539a",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-020.json",
+          "node": "preparation-020-n010",
+          "quote": "محصول به‌دست‌آمده استیک رولی است",
+          "hash": "sha256:6755b679a16e891ef948b2bf7441eacba82cd728c1619bdbb7b09be20df8539a",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-020.json",
+          "node": "preparation-020-n012",
+          "quote": "در انبار فریز می‌شود و بعداً دوباره برای اسلایس شدن بالا آورده می‌شود",
+          "hash": "sha256:6755b679a16e891ef948b2bf7441eacba82cd728c1619bdbb7b09be20df8539a",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "of": "استیک رولی",
+        "method": "وزن‌گیری رول‌های سلفون‌پیچ‌شده با ترازوی آماده‌سازی",
+        "when": "پس از سلفون‌پیچ شدن رول و پیش از تحویل به انبار",
+        "by": "مسئول لاین گوشت آماده‌سازی",
+        "writes_to": {
+          "ref": "F-00003",
+          "field": "vazn",
+          "row": "estik_roli"
+        },
+        "exceptions": "در راستهٔ پاک‌شده کل گوشت تنها برش می‌خورد و استیک رولی می‌شود و قلم دیگری جز آن به دست نمی‌آید."
+      },
+      "home": {
+        "ref": "F-00003",
+        "field": "vazn"
+      },
+      "id": "F-00022",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_khorde_gusht_raste",
+      "title": "وزن خرده گوشت راسته",
+      "statement": "خرده گوشتی که از تفکیک راسته می‌ماند پس از کوچک کردن قطعات درشت در بسته‌های چهار کیلویی با ترازو وزن و بسته‌بندی می‌شود و وزن آن به کیلو در ردیف خرده گوشت ثبت می‌شود. این بسته‌ها به انبار تحویل و فریز می‌شوند و بعداً در تولید مایهٔ برگر به کار می‌روند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdQ5rG7piKFF-.image.md",
+          "hash": "sha256:3483ac303e1e1c448a98972723665302ab10be6bff602f2e834c60a30a39db03",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-020.json",
+          "node": "preparation-020-n020",
+          "quote": "چهار کیلو چهار کیلو بسته می‌شود",
+          "hash": "sha256:6755b679a16e891ef948b2bf7441eacba82cd728c1619bdbb7b09be20df8539a",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-020.json",
+          "node": "preparation-020-n021",
+          "quote": "خرده راسته در انبار فریز می‌شود",
+          "hash": "sha256:6755b679a16e891ef948b2bf7441eacba82cd728c1619bdbb7b09be20df8539a",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-020.json",
+          "node": "preparation-020-n019",
+          "quote": "قطعات بزرگ خرده راسته کوچک می‌شوند",
+          "hash": "sha256:6755b679a16e891ef948b2bf7441eacba82cd728c1619bdbb7b09be20df8539a",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "of": "خرده گوشت راسته",
+        "method": "وزن‌گیری با ترازو هنگام بسته‌بندی در بسته‌های چهار کیلویی",
+        "when": "پس از کوچک کردن قطعات درشت و پیش از تحویل به انبار",
+        "by": "مسئول لاین گوشت آماده‌سازی",
+        "writes_to": {
+          "ref": "F-00003",
+          "field": "vazn",
+          "row": "khorde_gusht"
+        },
+        "exceptions": "در راستهٔ پاک‌شده که تنها استیک رولی از آن تولید می‌شود خرده گوشتی به دست نمی‌آید."
+      },
+      "home": {
+        "ref": "F-00003",
+        "field": "vazn"
+      },
+      "aliases": [
+        "خرده راسته"
+      ],
+      "id": "F-00023",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_zayeat_raste_garm",
+      "title": "وزن ضایعات تفکیک راسته",
+      "statement": "دمار و غضروفی که هنگام پاک کردن راستهٔ پاک‌نشده جدا می‌شود با ترازو وزن و در دفتر گوشت ثبت می‌شود و وزن آن به کیلو در ردیف ضایعات فرم می‌آید. این ضایعات ارزش اقتصادی دارد، پس لیبل می‌خورد و در یخچال‌های اختصاصی انبار در آماده‌سازی گذاشته می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdQ5rG7piKFF-.image.md",
+          "hash": "sha256:3483ac303e1e1c448a98972723665302ab10be6bff602f2e834c60a30a39db03",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-020.json",
+          "node": "preparation-020-n004",
+          "quote": "به‌عنوان ضایعات کنار گذاشته می‌شوند",
+          "hash": "sha256:6755b679a16e891ef948b2bf7441eacba82cd728c1619bdbb7b09be20df8539a",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n005",
+          "quote": "ضایعات اقلامی که ارزش دارند مانند گوشت و مرغ باید کشیده و لیبل‌گذاری شود",
+          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n004",
+          "quote": "همان عددی که روی ترازو آمده قید می‌شود",
+          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "of": "ضایعات دمار و غضروف راسته",
+        "method": "وزن‌گیری با ترازوی لیبل‌گذاری و چاپ لیبل ضایعات",
+        "when": "هنگام پاک کردن راستهٔ پاک‌نشده",
+        "by": "مسئول لاین گوشت آماده‌سازی",
+        "writes_to": {
+          "ref": "F-00003",
+          "field": "vazn",
+          "row": "zayeat"
+        },
+        "exceptions": "راستهٔ پاک‌شده پاک‌سازی نمی‌شود و ضایعات دمار و غضروف ندارد."
+      },
+      "home": {
+        "ref": "F-00003",
+        "field": "vazn"
+      },
+      "id": "F-00024",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_fileh_vorudi",
+      "title": "وزن فیلهٔ مرغ ورودی به لاین مرغ",
+      "statement": "وزن فیلهٔ مرغ خامی که پس از تمام شدن سینه‌های روز از انبار به لاین مرغ می‌رسد، به کیلو و با ترازوی آشپزخانه توسط خود مسئول لاین مرغ گرفته می‌شود و در دفتر مرغ و بالای فرم تبدیل فیله نوشته می‌شود. لاین به عدد اعلام‌شدهٔ انبار اتکا نمی‌کند و وزن هر پارت را جداگانه می‌گیرد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdg5rG7piKFF-.image.md",
+          "hash": "sha256:522e3b8ab426547aa322838f8efbbc90c40231c81cc1538fd143dea9766192b8",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n030",
+          "quote": "وقتی سینه‌های روز تمام شد، با همان روال بی‌سیم از انبار خواسته می‌شود فیله را بالا بیاورد",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n023",
+          "quote": "لاین به اعلام انبار اتکا نمی‌کند",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n026",
+          "quote": "همان وزنی که خود لاین کشیده است ثبت می‌شود",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "ترازوی آشپزخانه با خطای حداکثر ده گرم؛ وزن هر پارت جداگانه گرفته می‌شود",
+        "when": "هنگام تحویل گرفتن فیله از انبار، پس از تمام شدن سینه‌های روز",
+        "by": "مسئول لاین مرغ",
+        "writes_to": {
+          "ref": "F-00004",
+          "field": "vazn_fileh"
+        },
+        "exceptions": "اختلاف وزن با عدد اعلام‌شدهٔ انبار به انبار اعلام نمی‌شود؛ تنها خونابهٔ بیش از حد، در حدود دو کیلو، به مدیریت اعلام می‌شود."
+      },
+      "home": {
+        "ref": "F-00004",
+        "field": "vazn_fileh"
+      },
+      "id": "F-00025",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "tedad_fileh_tolidi",
+      "title": "تعداد فیلهٔ تولیدشده",
+      "statement": "فیله‌های درشت پس از تفکیک بر اساس وزن، به‌صورت دستی شمرده و در بسته‌های شصت‌عددی بسته‌بندی می‌شوند و تعداد کل فیلهٔ تولیدشدهٔ روز در ردیف عددی فیله نوشته می‌شود. این کار را مسئول لاین مرغ هنگام بسته‌بندی انجام می‌دهد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdg5rG7piKFF-.image.md",
+          "hash": "sha256:522e3b8ab426547aa322838f8efbbc90c40231c81cc1538fd143dea9766192b8",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n019",
+          "quote": "فیله تعدادی است؛ هر بسته ۶۰ عدد دارد",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n022",
+          "quote": "تعداد فیله تولیدشده در روز",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "count",
+        "unit": "pcs",
+        "method": "شمارش دستی هنگام بسته‌بندی در بسته‌های شصت‌عددی",
+        "when": "پس از تفکیک فیله‌ها بر اساس وزن، هنگام بسته‌بندی",
+        "by": "مسئول لاین مرغ",
+        "writes_to": {
+          "ref": "F-00004",
+          "field": "meqdar",
+          "row": "fileh_adad"
+        }
+      },
+      "home": {
+        "ref": "F-00004",
+        "field": "meqdar"
+      },
+      "id": "F-00026",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_fileh_tolidi",
+      "title": "وزن فیلهٔ تولیدشده",
+      "statement": "هر بستهٔ فیله پس از بسته‌بندی روی ترازوی لیبل‌گذاری به کیلو وزن می‌شود و تعداد، وزن و تاریخ روی لیبل آن چاپ می‌شود؛ وزن فیلهٔ تولیدشدهٔ روز در ردیف کیلویی فیله نوشته می‌شود. این کار را مسئول لاین مرغ انجام می‌دهد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdg5rG7piKFF-.image.md",
+          "hash": "sha256:522e3b8ab426547aa322838f8efbbc90c40231c81cc1538fd143dea9766192b8",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n019",
+          "quote": "روی لیبل تعداد، وزن و تاریخ نوشته می‌شود",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n008",
+          "quote": "خروجی هر لاین هم وزن‌کشی می‌شود",
+          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "وزن‌کشی بسته روی ترازوی لیبل‌گذاری پس از صفر کردن وزن ظرف",
+        "when": "هنگام بسته‌بندی و لیبل‌زنی بسته‌های فیله",
+        "by": "مسئول لاین مرغ",
+        "writes_to": {
+          "ref": "F-00004",
+          "field": "meqdar",
+          "row": "fileh_kg"
+        }
+      },
+      "home": {
+        "ref": "F-00004",
+        "field": "meqdar"
+      },
+      "id": "F-00027",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_morgh_pizza_az_fileh",
+      "title": "وزن مرغ پیتزای حاصل از فیلهٔ ریز",
+      "statement": "فیله‌های کوچک‌تر از حدود پنجاه گرم تعدادی حساب نمی‌شوند و مانند مرغ پیتزای حاصل از سینه، بر مبنای وزن در بسته‌های چهارکیلویی بسته‌بندی می‌شوند؛ وزن آن‌ها به کیلو در ردیف مرغ پیتزای تکه‌شده نوشته می‌شود. این کار را مسئول لاین مرغ انجام می‌دهد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdg5rG7piKFF-.image.md",
+          "hash": "sha256:522e3b8ab426547aa322838f8efbbc90c40231c81cc1538fd143dea9766192b8",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n018",
+          "quote": "فیله‌های کوچک‌تر از حدود ۵۰ گرم به مرغ پیتزا انداخته می‌شود",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n020",
+          "quote": "بر مبنای وزن و در بسته‌های ۴ کیلویی بسته‌بندی می‌شوند",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "وزن‌کشی بسته‌های چهارکیلویی با ترازو",
+        "when": "پس از تفکیک فیله‌ها بر اساس وزن",
+        "by": "مسئول لاین مرغ",
+        "writes_to": {
+          "ref": "F-00004",
+          "field": "meqdar",
+          "row": "morgh_pizza"
+        }
+      },
+      "home": {
+        "ref": "F-00004",
+        "field": "meqdar"
+      },
+      "id": "F-00028",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_kenar_fileh",
+      "title": "وزن کنار فیله",
+      "statement": "تکه‌های گوشتی که هنگام کندن پوست فیله از آن جدا می‌شود جداگانه پاکسازی و به کیلو وزن می‌شود و در ردیف کنار فیله نوشته می‌شود. بخش قابل استفادهٔ آن جدا از فیله و ضایعات تحویل می‌شود، زیر صفر نگهداری می‌شود و فقط برای ناهار و شام پرسنل به کار می‌رود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdg5rG7piKFF-.image.md",
+          "hash": "sha256:522e3b8ab426547aa322838f8efbbc90c40231c81cc1538fd143dea9766192b8",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n017",
+          "quote": "این گوشت‌ها جداگانه پاکسازی و وزنشان در فرم فیله ثبت می‌شود",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-024.json",
+          "node": "preparation-024-n007",
+          "quote": "کنار فیله خام هم که در زیر صفر نگهداری می‌شود فقط برای شام و ناهار پرسنل استفاده می‌شود",
+          "hash": "sha256:0e5b8bc0c3c4e8a3fbd643b31b9eed73dc69d81f9e0691002a201235d4c84c08",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "پاکسازی دوباره و سپس وزن‌کشی با ترازو",
+        "when": "هنگام پاکسازی فیله و کندن پوست آن",
+        "by": "مسئول لاین مرغ",
+        "writes_to": {
+          "ref": "F-00004",
+          "field": "meqdar",
+          "row": "kenar_fileh"
+        }
+      },
+      "home": {
+        "ref": "F-00004",
+        "field": "meqdar"
+      },
+      "id": "F-00029",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_zayeat_fileh",
+      "title": "وزن ضایعات فیله",
+      "statement": "پوست نازکی که از یک طرف هر فیله کنده می‌شود و بخش غیرقابل استفادهٔ کنار فیله، ضایعات فیله است؛ به کیلو وزن و در ردیف ضایعات مرغ نوشته می‌شود و جدا از فیله و کنار فیله تحویل انبار می‌شود. این کار را مسئول لاین مرغ انجام می‌دهد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdg5rG7piKFF-.image.md",
+          "hash": "sha256:522e3b8ab426547aa322838f8efbbc90c40231c81cc1538fd143dea9766192b8",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n016",
+          "quote": "این پوست ضایعات است و دیگر قابل استفاده نیست",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n017",
+          "quote": "ضایعات فیله، کنار فیله و خود فیله هر کدام جدا از هم تحویل داده می‌شوند",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "وزن‌کشی با ترازو",
+        "when": "هنگام پاکسازی فیله و کندن پوست آن",
+        "by": "مسئول لاین مرغ",
+        "writes_to": {
+          "ref": "F-00004",
+          "field": "meqdar",
+          "row": "zayeat_morgh"
+        },
+        "exceptions": "فیله‌ای که قرار است به مرغ پیتزا تبدیل شود پوست‌کنی نمی‌شود و از آن ضایعات پوست به دست نمی‌آید."
+      },
+      "home": {
+        "ref": "F-00004",
+        "field": "meqdar"
+      },
+      "id": "F-00030",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_kenar_shenisel_khanm_tabdil",
+      "title": "وزن کنار شنیسل خام در نوبت تبدیل",
+      "statement": "وزن کنار شنیسل خام یخ‌گشایی‌شده در روز پخت هفتگی با ترازو به کیلو گرفته و در سربرگ فرم تبدیل کنار شنیسل نوشته می‌شود. انبار این قلم را بر مبنای وزن تحویل آماده‌سازی می‌دهد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdw5rG7piKFF-.image.md",
+          "hash": "sha256:d2d42c77d9b9695226349e3d4785303533ab3e854c9e3073de1bcbb30ff3a5d5",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n062",
+          "quote": "وزن کنار شینسل خام و وزن مرغ پخته‌ای که از آن به دست آمده در همین فرم ثبت می‌شود",
+          "hash": "sha256:ecef39b667404cd777c0b03d08c4fe51ab3e43135e0250e95dc875871bb76c1f",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n040",
+          "quote": "تحویل این قلم از انبار به آماده‌سازی بر مبنای وزن",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "وزن‌کشی با ترازو",
+        "when": "روز پخت هفتگی، پس از تحویل کنار شنیسل یخ‌گشایی‌شده از انبار",
+        "by": "پرسنل آماده‌سازی",
+        "writes_to": {
+          "ref": "F-00005",
+          "field": "vazn_kenar_shenisel"
+        }
+      },
+      "home": {
+        "ref": "F-00005"
+      },
+      "id": "F-00031",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_morgh_pokhte_kenar_shenisel",
+      "title": "وزن مرغ پختهٔ حاصل از کنار شنیسل",
+      "statement": "پس از پخت کنار شنیسل و جدا و پاک کردن تکه‌های قابل استفاده، وزن مرغ پختهٔ به‌دست‌آمده در همان روز با ترازو به کیلو گرفته و در فرم تبدیل کنار شنیسل ثبت می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdw5rG7piKFF-.image.md",
+          "hash": "sha256:d2d42c77d9b9695226349e3d4785303533ab3e854c9e3073de1bcbb30ff3a5d5",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n062",
+          "quote": "وزن‌کشی مرغ پخته حاصل از کنار شینسل و تکمیل فرم تبدیل کنار شینسل",
+          "hash": "sha256:ecef39b667404cd777c0b03d08c4fe51ab3e43135e0250e95dc875871bb76c1f",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n059",
+          "quote": "این تبدیل باید در همان روز انجام شود",
+          "hash": "sha256:ecef39b667404cd777c0b03d08c4fe51ab3e43135e0250e95dc875871bb76c1f",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "وزن‌کشی با ترازو پس از جداسازی تکه‌های قابل استفاده",
+        "when": "همان روز پخت، پس از جداسازی و پاک‌سازی تکه‌های مرغ",
+        "by": "پرسنل آماده‌سازی",
+        "writes_to": {
+          "ref": "F-00005",
+          "field": "morgh_pokhte"
+        }
+      },
+      "home": {
+        "ref": "F-00005",
+        "field": "morgh_pokhte"
+      },
+      "id": "F-00032",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_morgh_kham_pizza",
+      "title": "وزن مرغ خام تحویلی برای پخت مرغ پیتزا",
+      "statement": "وزن مرغ خام مرینت‌شده‌ای که برای پخت مرغ پیتزا برداشته می‌شود داخل انبار به دست انباردار به کیلو گرفته و به لاین سبزیجات اعلام می‌شود. همین وزن مبنای محاسبهٔ کاست در پایان کار است و در بالای فرم تبدیل نوشته می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADbg5rG7piKFF-.image.md",
+          "hash": "sha256:139a0796a3743c4bacab767f32749ebd0fe0f4e2c1e72de3a5e27a2a51201004",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n002",
+          "quote": "وزن‌کشی داخل انبار انجام می‌شود.",
+          "hash": "sha256:ecef39b667404cd777c0b03d08c4fe51ab3e43135e0250e95dc875871bb76c1f",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n003",
+          "quote": "همین مقدار مبنای محاسبه کاست در پایان کار است",
+          "hash": "sha256:ecef39b667404cd777c0b03d08c4fe51ab3e43135e0250e95dc875871bb76c1f",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n041",
+          "quote": "در بالای فرم وزن کل مرغ خام",
+          "hash": "sha256:ecef39b667404cd777c0b03d08c4fe51ab3e43135e0250e95dc875871bb76c1f",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "of": "مرغ خام مرینت‌شدهٔ مرغ پیتزا",
+        "method": "وزن‌کشی با ترازوی داخل انبار و اعلام مقدار به مسئول لاین سبزیجات",
+        "when": "هنگام برداشت مرغ خام مرینت‌شده از یخچال امانی برای پخت",
+        "by": "انباردار",
+        "exceptions": null
+      },
+      "home": {
+        "ref": "F-00008"
+      },
+      "id": "F-00033",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_morgh_pokhte_pizza",
+      "title": "وزن مرغ پخته در فرم تبدیل مرغ پیتزا",
+      "statement": "وزن خالص مرغ پیتزای پخته و اسلایس‌شده را مسئول لاین سبزیجات پیش از سس‌زنی با ترازوی لیبل‌گذاری به کیلو می‌گیرد، نخست در دفتر یادداشت خود می‌نویسد و سپس در ردیف مرغ پخته در فرم تبدیل ثبت می‌کند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADbg5rG7piKFF-.image.md",
+          "hash": "sha256:139a0796a3743c4bacab767f32749ebd0fe0f4e2c1e72de3a5e27a2a51201004",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n032",
+          "quote": "وزن ظرف خالی صفر می‌شود تا وزن خالص مرغ به دست بیاید",
+          "hash": "sha256:ecef39b667404cd777c0b03d08c4fe51ab3e43135e0250e95dc875871bb76c1f",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n033",
+          "quote": "مرغ خرد شده در ظرف بزرگ‌تری ریخته و وزن می‌شود",
+          "hash": "sha256:ecef39b667404cd777c0b03d08c4fe51ab3e43135e0250e95dc875871bb76c1f",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n040",
+          "quote": "بعد به فرم منتقل می‌شود",
+          "hash": "sha256:ecef39b667404cd777c0b03d08c4fe51ab3e43135e0250e95dc875871bb76c1f",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n062",
+          "quote": "در فرم تبدیل مرغ پیتزای تکه ثبت نمی‌شود",
+          "hash": "sha256:ecef39b667404cd777c0b03d08c4fe51ab3e43135e0250e95dc875871bb76c1f",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "of": "مرغ پیتزای پخته و اسلایس‌شده",
+        "method": "وزن‌کشی مرغ خردشده در ظرف بزرگ روی ترازوی لیبل‌گذاری پس از صفر کردن وزن ظرف",
+        "when": "پس از اسلایس کردن مرغ پخته و پیش از سس‌زنی",
+        "by": "مسئول لاین سبزیجات",
+        "writes_to": {
+          "ref": "F-00008",
+          "field": "vazn",
+          "row": "morgh_pokhte"
+        },
+        "exceptions": "مرغ پخته‌ای که از کنار شینسل به دست می‌آید در این فرم ثبت نمی‌شود و فرم تبدیل جداگانهٔ خود را دارد."
+      },
+      "home": {
+        "ref": "F-00008",
+        "field": "vazn"
+      },
+      "id": "F-00034",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "zayeat_morgh_pizza",
+      "title": "ضایعات مرغ در پخت مرغ پیتزا",
+      "statement": "ضایعات مرغ در پخت مرغ پیتزا تنها قطعات خون‌مرده و کبودی است که مسئول لاین سبزیجات هنگام چیدن مرغ خام در سینی جدا می‌کند و نمی‌پزد؛ وزن آن به کیلو در ردیف ضایعات مرغ در فرم تبدیل نوشته می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADbg5rG7piKFF-.image.md",
+          "hash": "sha256:139a0796a3743c4bacab767f32749ebd0fe0f4e2c1e72de3a5e27a2a51201004",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n013",
+          "quote": "در قسمت ضایعات فرم تبدیل مرغ پخته‌شده ثبت می‌شوند",
+          "hash": "sha256:ecef39b667404cd777c0b03d08c4fe51ab3e43135e0250e95dc875871bb76c1f",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n041",
+          "quote": "ضایعات اصولاً وجود ندارد مگر قسمت‌های کبودی جداشده",
+          "hash": "sha256:ecef39b667404cd777c0b03d08c4fe51ab3e43135e0250e95dc875871bb76c1f",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "of": "قطعات خون‌مرده و کبود جداشده از مرغ خام",
+        "method": null,
+        "when": "هنگام بررسی و چیدن مرغ خام در سینی پیش از پخت",
+        "by": "مسئول لاین سبزیجات",
+        "writes_to": {
+          "ref": "F-00008",
+          "field": "vazn",
+          "row": "zayeat_morgh"
+        },
+        "exceptions": "اگر قطعهٔ خون‌مرده یا کبودی جدا نشود، ضایعاتی ثبت نمی‌شود."
+      },
+      "home": {
+        "ref": "F-00008",
+        "field": "vazn"
+      },
+      "id": "F-00035",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_rol_steak_khoruji",
+      "title": "وزن رول استیک خارج‌شده برای اسلایس",
+      "statement": "وزن رول استیک منجمدی که برای اسلایس از انبار خارج می‌شود به کیلوگرم در سربرگ فرم تبدیل انبار ثبت می‌شود و مبنای مقایسهٔ مقدار خارج‌شده و مقدار برگشتی همان قلم در پایان وقت است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADbw5rG7piKFF-.image.md",
+          "hash": "sha256:5b6e32cf7c7efaed3806530f1019e38936ae150469a4c5f53d4791f2daa6b5e7",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/warehouse/processes/warehouse-005.json",
+          "node": "warehouse-005-n035",
+          "quote": "انبار در این فرم تنها وزن گوشت گرمی را که از انبار خارج کرده می‌نویسد",
+          "hash": "sha256:619c5ee4ccf257f954e6d71bf2e66b11112188ce98207dfd75acb796c9580e44",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "of": "رول استیک",
+        "method": null,
+        "when": "هنگام خارج کردن رول استیک از انبار برای اسلایس",
+        "by": "کارکنان انبار",
+        "writes_to": {
+          "ref": "F-00009",
+          "field": "vazn_rol_steak"
+        }
+      },
+      "home": {
+        "ref": "F-00009",
+        "field": "vazn_rol_steak"
+      },
+      "id": "F-00036",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_estik_varaghei",
+      "title": "وزن استیک ورقه‌ای حاصل از اسلایس رول استیک",
+      "statement": "وزن استیک ورقه‌ای حاصل از اسلایس رول استیک پس از بسته‌بندی در آماده‌سازی به کیلوگرم گرفته می‌شود و همین وزن هنگام تحویل دوباره به انبار در ردیف استیک ورقه‌ای ثبت می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADbw5rG7piKFF-.image.md",
+          "hash": "sha256:5b6e32cf7c7efaed3806530f1019e38936ae150469a4c5f53d4791f2daa6b5e7",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-020.json",
+          "node": "preparation-020-n025",
+          "quote": "دوباره به آماده‌سازی آورده می‌شود تا اسلایس شود و استیک ورقه‌ای از آن تولید گردد",
+          "hash": "sha256:6755b679a16e891ef948b2bf7441eacba82cd728c1619bdbb7b09be20df8539a",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/warehouse/processes/warehouse-005.json",
+          "node": "warehouse-005-n035",
+          "quote": "وزن دریافتی در همین فرم ثبت می‌شود",
+          "hash": "sha256:619c5ee4ccf257f954e6d71bf2e66b11112188ce98207dfd75acb796c9580e44",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n008",
+          "quote": "خروجی هر لاین هم وزن‌کشی می‌شود",
+          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "of": "استیک ورقه‌ای",
+        "method": "ترازوی لیبل‌گذاری آماده‌سازی",
+        "when": "پس از اسلایس و بسته‌بندی، پیش از تحویل دوباره به انبار",
+        "by": "مسئول لاین گوشت",
+        "writes_to": {
+          "ref": "F-00009",
+          "field": "meqdar",
+          "row": "estik_varaghei"
+        }
+      },
+      "home": {
+        "ref": "F-00009",
+        "field": "meqdar"
+      },
+      "field_status": {
+        "data/method": "inferred"
+      },
+      "id": "F-00037",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "inferred",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_khorde_steak",
+      "title": "وزن خرده‌استیک قابل استفاده در چرخ‌کرده",
+      "statement": "خرده‌استیکی که از ته رول و دور دستگاه اسلایسر هنگام اسلایس رول استیک می‌ماند جمع‌آوری، به کیلوگرم در ردیف ضایعات قابل استفاده در چرخی ثبت و تحویل انبار می‌شود؛ این مقدار ضایعات به حساب نمی‌آید و در روز تولید چرخ‌کرده همراه گوشت گردن چرخ می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADbw5rG7piKFF-.image.md",
+          "hash": "sha256:5b6e32cf7c7efaed3806530f1019e38936ae150469a4c5f53d4791f2daa6b5e7",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-019.json",
+          "node": "preparation-019-n009",
+          "quote": "این خرده‌ها جمع‌آوری و تحویل انبار می‌شود و ضایعات محسوب نمی‌شود",
+          "hash": "sha256:030f8110b3ebfd8a9a2ea4521e2535220491a542b51a4399079576edbd76523d",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-020.json",
+          "node": "preparation-020-n025",
+          "quote": "خرده‌استیکی که از این اسلایس باقی می‌ماند به گوشت چرخ‌کرده اضافه می‌شود",
+          "hash": "sha256:6755b679a16e891ef948b2bf7441eacba82cd728c1619bdbb7b09be20df8539a",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "of": "خرده‌استیک",
+        "when": "پس از اسلایس رول استیک",
+        "by": "مسئول لاین گوشت",
+        "writes_to": {
+          "ref": "F-00009",
+          "field": "meqdar",
+          "row": "zayeat_chakhri"
+        },
+        "exceptions": "ته رول استیک در اسلایسر گرفته نمی‌شود، چون لغزنده و خطرناک است و ممکن است دست را ببرد؛ این ته‌مانده هم به خرده‌استیک می‌پیوندد."
+      },
+      "home": {
+        "ref": "F-00009",
+        "field": "meqdar"
+      },
+      "id": "F-00038",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_zayeat_burger",
+      "title": "وزن ضایعات تولید برگر",
+      "statement": "ضایعات تولید برگر به کیلو وزن و در سطر ضایعات فرم برگر نوشته می‌شود: گوشت کوبیده، دمار و غضروف چسبیده به بدنه و محور چرخ‌گوشت، به‌همراه نایلون پلاستیک و ضایعات پاک‌سازی گوشت سردست که مسئول لاین گوشت با ترازو وزن و در دفتر یادداشت می‌کند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADcA5rG7piKFF-.image.md",
+          "hash": "sha256:0354228a5b1a324cacca65fe5de12ff4ea6a77f2517220127c41baaabaa67735",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-021.json",
+          "node": "preparation-021-n012",
+          "quote": "باز کردن دستگاه چرخ‌گوشت و وزن‌گیری و یادداشت ضایعات چسبیده به آن",
+          "hash": "sha256:2438a2b399ab04e1e9e4b675583114b82861b9f2476a38394c25eba9b8fb3f91",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-021.json",
+          "node": "preparation-021-n004",
+          "quote": "حدود ۱۰۰ گرم نایلون پلاستیک و ۱۰۰ گرم ضایعات خود گوشت جدا می‌شود",
+          "hash": "sha256:2438a2b399ab04e1e9e4b675583114b82861b9f2476a38394c25eba9b8fb3f91",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "باز کردن چرخ‌گوشت پس از چرخ کردن و وزن کردن ضایعات چسبیده به آن با ترازو؛ نایلون پلاستیک و ضایعات پاک‌سازی سردست هم جداگانه وزن می‌شود",
+        "when": "پس از چرخ کردن گوشت و پیش از افزودن مواد مایه",
+        "by": "مسئول لاین گوشت",
+        "writes_to": {
+          "ref": "F-00010",
+          "field": "meqdar_tabdil",
+          "row": "zayeat"
+        },
+        "exceptions": "کسری حدود ۱۰۰ تا ۲۰۰ گرمی چربی چسبیده به خمیرگیر و ظروف دیده و وزن نمی‌شود."
+      },
+      "home": {
+        "ref": "F-00010",
+        "field": "meqdar_tabdil"
+      },
+      "id": "F-00039",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_mavad_maye_burger",
+      "title": "وزن مواد مایهٔ برگر",
+      "statement": "مسئول لاین گوشت پیش از افزودن مواد، وزن گوشت چرخ‌شده را می‌گیرد و بر مبنای آن مقدار هر ماده را طبق رسپی هر کیلو مایهٔ برگر تعیین می‌کند؛ سپس پیاز آبگیری‌شده، سویا سس، نمک، فلفل، جعفری، چربی و سایر ادویه‌ها را دانه‌به‌دانه با ترازو وزن و در بخش نیم‌ساخت فرم برگر ثبت می‌کند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADcA5rG7piKFF-.image.md",
+          "hash": "sha256:0354228a5b1a324cacca65fe5de12ff4ea6a77f2517220127c41baaabaa67735",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-021.json",
+          "node": "preparation-021-n015",
+          "quote": "مقدار گوشت موجود مشخص می‌شود تا مواد بر مبنای آن و طبق رسپی هر کیلو مایه برگر محاسبه شود",
+          "hash": "sha256:2438a2b399ab04e1e9e4b675583114b82861b9f2476a38394c25eba9b8fb3f91",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-021.json",
+          "node": "preparation-021-n016",
+          "quote": "هر کدام بر مبنای گرم به ازای هر کیلو مایه برگر در رسپی مشخص شده‌اند",
+          "hash": "sha256:2438a2b399ab04e1e9e4b675583114b82861b9f2476a38394c25eba9b8fb3f91",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-025.json",
+          "node": "preparation-025-n002",
+          "quote": "به‌ویژه برای محصولات گوشتی مانند چرخ‌کرده و رست‌بیف سر وزن‌کشی ادویه‌ها حاضر است",
+          "hash": "sha256:490192e58756df75acb460445b89534d8b8b33e487632dd87d1d5b168368e3e8",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "وزن کردن جداگانهٔ هر ماده با ترازو در ظرفی که وزنش صفر شده، طبق رسپی هر کیلو مایه",
+        "when": "پس از چرخ کردن گوشت و آبگیری پیاز، پیش از هم‌زدن مایه در خمیرگیر",
+        "by": "مسئول لاین گوشت",
+        "writes_to": {
+          "ref": "F-00010",
+          "field": "nimesakhte"
+        },
+        "exceptions": "سرپرست آماده‌سازی به‌ویژه برای محصولات گوشتی سر وزن‌کشی ادویه‌ها حاضر است و مقادیر را کنترل می‌کند."
+      },
+      "home": {
+        "ref": "F-00010",
+        "field": "nimesakhte"
+      },
+      "id": "F-00040",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "tedad_burger_tolidi",
+      "title": "تعداد برگر و مینی برگر تولیدشده",
+      "statement": "تعداد برگر ۱۵۰ گرمی و مینی برگر ۶۰ گرمی تولیدشدهٔ هر روز را مسئول لاین گوشت پس از تحویل بسته‌های برگر به انبار و تست به آشپزخانه می‌شمارد و در بخش تبدیل فرم برگر می‌نویسد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADcA5rG7piKFF-.image.md",
+          "hash": "sha256:0354228a5b1a324cacca65fe5de12ff4ea6a77f2517220127c41baaabaa67735",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-021.json",
+          "node": "preparation-021-n031",
+          "quote": "شمارش برعهده خود لاین گوشت است و شامل تعداد برگر و مینی برگر",
+          "hash": "sha256:2438a2b399ab04e1e9e4b675583114b82861b9f2476a38394c25eba9b8fb3f91",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-021.json",
+          "node": "preparation-021-n025",
+          "quote": "برگرهای پرس‌شده پنج‌تا پنج‌تا داخل آن گذاشته می‌شوند",
+          "hash": "sha256:2438a2b399ab04e1e9e4b675583114b82861b9f2476a38394c25eba9b8fb3f91",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "count",
+        "unit": "pcs",
+        "method": "شمارش تعداد برگرهای پرس‌شده که پنج‌تا پنج‌تا بسته‌بندی و تحویل انبار شده‌اند",
+        "when": "پایان تولید روز، پیش از تکمیل فرم تبدیل و نیم‌ساخت برگر",
+        "by": "مسئول لاین گوشت"
+      },
+      "home": {
+        "ref": "F-00010",
+        "field": "meqdar_tabdil"
+      },
+      "id": "F-00041",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_test_burger",
+      "title": "وزن تست برگر",
+      "statement": "باقی‌ماندهٔ مایهٔ ته ظرف که به وزن یک چونهٔ ۶۰ یا ۱۵۰ گرمی نمی‌رسد تست برگر است؛ مسئول لاین گوشت آن را با ترازو وزن می‌کند، برای چشیدن به آشپزخانه می‌دهد و وزنش را به کیلو در سطر تست فرم برگر می‌نویسد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADcA5rG7piKFF-.image.md",
+          "hash": "sha256:0354228a5b1a324cacca65fe5de12ff4ea6a77f2517220127c41baaabaa67735",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-021.json",
+          "node": "preparation-021-n023",
+          "quote": "باقی‌مانده مایه که به وزن یک چونه ۶۰ یا ۱۵۰ گرمی نمی‌رسد",
+          "hash": "sha256:2438a2b399ab04e1e9e4b675583114b82861b9f2476a38394c25eba9b8fb3f91",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-021.json",
+          "node": "preparation-021-n030",
+          "quote": "تست همان مقدار باقی‌مانده مایه است که به آشپزخانه داده می‌شود",
+          "hash": "sha256:2438a2b399ab04e1e9e4b675583114b82861b9f2476a38394c25eba9b8fb3f91",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "وزن کردن باقی‌ماندهٔ مایه با ترازو؛ معمولاً ۲۰ تا ۴۰ گرم",
+        "when": "پایان چونه‌گیری مایهٔ برگر",
+        "by": "مسئول لاین گوشت",
+        "writes_to": {
+          "ref": "F-00010",
+          "field": "meqdar_tabdil",
+          "row": "test_burger"
+        }
+      },
+      "home": {
+        "ref": "F-00010",
+        "field": "meqdar_tabdil"
+      },
+      "id": "F-00042",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_mavad_avalie_nime_sakhte",
+      "title": "وزن مواد اولیهٔ مصرفی محصول نیمه‌ساخته",
+      "statement": "مقدار هر مادهٔ اولیه‌ای که در ساخت محصول نیمه‌ساخته مصرف شده، هنگام تولید طبق رسپی هر کیلو با ترازو وزن و در دفتر لاین یادداشت می‌شود. پس از تحویل محصول به انبار، مسئول لاین این مقادیر را به کیلو یا گرم در فرم تولید نیمه ساخته می‌نویسد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADcQ5rG7piKFF-.image.md",
+          "hash": "sha256:8c8c98c31aba2ea385dff81ff37f341cb173f2c63b6f12015b30f3a86ed505fd",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-021.json",
+          "node": "preparation-021-n016",
+          "quote": "هر کدام بر مبنای گرم به ازای هر کیلو مایه برگر در رسپی مشخص شده‌اند و دانه به دانه وزن می‌شوند",
+          "hash": "sha256:2438a2b399ab04e1e9e4b675583114b82861b9f2476a38394c25eba9b8fb3f91",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-019.json",
+          "node": "preparation-019-n022",
+          "quote": "همه دانه‌به‌دانه و جداجدا وزن‌گیری می‌شوند",
+          "hash": "sha256:030f8110b3ebfd8a9a2ea4521e2535220491a542b51a4399079576edbd76523d",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-019.json",
+          "node": "preparation-019-n032",
+          "quote": "در فرم دقیقاً همان مقدار رسپی و وزن‌هایی که استفاده شده به همراه تمام ادویه‌ها نوشته می‌شود",
+          "hash": "sha256:030f8110b3ebfd8a9a2ea4521e2535220491a542b51a4399079576edbd76523d",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-019.json",
+          "node": "preparation-019-n031",
+          "quote": "خروجی آماده‌سازی دوباره به انبار تحویل داده می‌شود",
+          "hash": "sha256:030f8110b3ebfd8a9a2ea4521e2535220491a542b51a4399079576edbd76523d",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n042",
+          "quote": "مقدار سس مصرفی بر مبنای هشتاد گرم در هر کیلو به‌عنوان مواد اولیه به‌کاررفته در فرم ثبت می‌شود",
+          "hash": "sha256:ecef39b667404cd777c0b03d08c4fe51ab3e43135e0250e95dc875871bb76c1f",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-017.json",
+          "node": "preparation-017-n022",
+          "quote": "ثبت می‌شود از هر نوع ژامبون چند گرم استفاده شده است",
+          "hash": "sha256:ce35bd499dad22394e6b0098703b10831bd05d11999394ac8b2e0b2feaab41f3",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-025.json",
+          "node": "preparation-025-n001",
+          "quote": "وزن ظرف‌ها باید پیش از وزن‌کشی ادویه‌ها صفر باشد",
+          "hash": "sha256:490192e58756df75acb460445b89534d8b8b33e487632dd87d1d5b168368e3e8",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": null,
+        "method": "وزن‌کشی دانه‌به‌دانهٔ هر ماده با ترازوی آماده‌سازی پس از صفر کردن وزن ظرف؛ برای ژامبون دوگانه و سه‌گانه گرم مصرفی هر نوع ژامبون جداگانه ثبت می‌شود.",
+        "when": "پس از بسته‌بندی و تحویل محصول به انبار، در پایان همان نوبت تولید",
+        "by": "مسئول لاین",
+        "writes_to": {
+          "ref": "F-00011",
+          "field": "meqdar_vazn"
+        },
+        "exceptions": "برای مرغ پیتزا وزن مرغ پخته دوباره کشیده نمی‌شود و از فرم تبدیل منتقل می‌شود، و مقدار سس به‌جای وزن‌کشی از نسبت هشتاد گرم در هر کیلو مرغ پخته محاسبه و نوشته می‌شود."
+      },
+      "home": {
+        "ref": "F-00011",
+        "field": "meqdar_vazn"
+      },
+      "id": "F-00043",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "meqdar_mahsul_nime_sakhte_tolidi",
+      "title": "مقدار محصول نیمه‌ساختهٔ تولیدشده",
+      "statement": "مقدار نهایی محصول نیمه‌ساخته‌ای که بسته‌بندی و لیبل‌زنی شده و تحویل انبار می‌شود، به کیلو و همراه محل تحویل، توسط مسئول لاین در پایین فرم تولید نیمه ساخته نوشته می‌شود. این عدد همان مقداری است که انبار تحویل می‌گیرد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADcQ5rG7piKFF-.image.md",
+          "hash": "sha256:8c8c98c31aba2ea385dff81ff37f341cb173f2c63b6f12015b30f3a86ed505fd",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n043",
+          "quote": "این عدد همان مقداری است که در نهایت تحویل انبار می‌شود",
+          "hash": "sha256:ecef39b667404cd777c0b03d08c4fe51ab3e43135e0250e95dc875871bb76c1f",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n038",
+          "quote": "ظرف آخر با وزن دقیق خودش لیبل می‌خورد",
+          "hash": "sha256:ecef39b667404cd777c0b03d08c4fe51ab3e43135e0250e95dc875871bb76c1f",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n008",
+          "quote": "خروجی هر لاین هم وزن‌کشی می‌شود",
+          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "وزن‌کشی بسته‌های لیبل‌خورده روی ترازوی لیبل‌گذاری؛ برای مرغ پیتزا با شمارش ظرف‌های دو کیلویی و وزن دقیق ظرف آخر.",
+        "when": "پس از بسته‌بندی و لیبل‌زنی، هنگام تحویل محصول به انبار",
+        "by": "مسئول لاین",
+        "writes_to": {
+          "ref": "F-00011",
+          "field": "meqdar_vazn_mahsul_tolidi"
+        },
+        "exceptions": null
+      },
+      "home": {
+        "ref": "F-00011",
+        "field": "meqdar_vazn_mahsul_tolidi"
+      },
+      "field_status": {
+        "data/unit": "inferred"
+      },
+      "id": "F-00044",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_rasteh_kham",
+      "title": "وزن گوشت راستهٔ خام ورودی",
+      "statement": "وزن گوشت راستهٔ خام به کیلو هنگام تحویل از انبار با ترازوی آماده‌سازی گرفته می‌شود و مبنای محاسبهٔ محصولات و ضایعات راسته است؛ مسئول لاین گوشت آماده‌سازی آن را اندازه می‌گیرد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADcg5rG7piKFF-.image.md",
+          "hash": "sha256:2f11b6cefb182523ae2c731474027b556ffbe1e24d68379d296baf3365ad5219",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-020.json",
+          "node": "preparation-020-n002",
+          "quote": "مبنای محاسبه بعدی محصولات و ضایعات است",
+          "hash": "sha256:6755b679a16e891ef948b2bf7441eacba82cd728c1619bdbb7b09be20df8539a",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-020.json",
+          "node": "preparation-020-n003",
+          "quote": "کیسه‌ها و نایلون پلاستیک گوشت دور ریخته نمی‌شود",
+          "hash": "sha256:6755b679a16e891ef948b2bf7441eacba82cd728c1619bdbb7b09be20df8539a",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "توزین کل گوشت راسته با ترازوی آماده‌سازی پیش از پاک کردن؛ نایلون و پلاستیک بسته‌بندی جداگانه وزن و در دفتر یادداشت می‌شود.",
+        "when": "هنگام تحویل گرفتن گوشت راسته از انبار، پیش از پاک کردن و تفکیک",
+        "by": "مسئول لاین گوشت آماده‌سازی",
+        "exceptions": null
+      },
+      "home": {
+        "ref": "F-00012",
+        "field": "vazn_rasteh"
+      },
+      "id": "F-00045",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_zayeat_damar_rasteh",
+      "title": "وزن ضایعات دمار و غضروف راسته",
+      "statement": "دمار و غضروفی که هنگام پاک کردن راستهٔ پاک‌نشده جدا می‌شود و هیچ مصرفی ندارد، به کیلو وزن و به‌عنوان ضایعات ثبت می‌شود؛ مسئول لاین گوشت آماده‌سازی این کار را انجام می‌دهد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADcg5rG7piKFF-.image.md",
+          "hash": "sha256:2f11b6cefb182523ae2c731474027b556ffbe1e24d68379d296baf3365ad5219",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-020.json",
+          "node": "preparation-020-n004",
+          "quote": "به‌عنوان ضایعات کنار گذاشته می‌شوند",
+          "hash": "sha256:6755b679a16e891ef948b2bf7441eacba82cd728c1619bdbb7b09be20df8539a",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n004",
+          "quote": "همان عددی که روی ترازو آمده قید می‌شود",
+          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "توزین دمار و غضروف جداشده با ترازو و ثبت در دفتر لاین گوشت",
+        "when": "هنگام پاک کردن راستهٔ پاک‌نشده، پیش از تفکیک به استیک، فیلادلفیا و خرده راسته",
+        "by": "مسئول لاین گوشت آماده‌سازی",
+        "exceptions": "راسته‌ای که پاک‌شده تحویل می‌شود فقط برش می‌خورد و از آن ضایعات دمار جدا نمی‌شود."
+      },
+      "home": {
+        "ref": "F-00012",
+        "field": "kilo"
+      },
+      "issues": [
+        {
+          "kind": "shape",
+          "description": "ارجاعی به مرحله‌ای از فرایند که پیدا نشد برداشته شد.",
+          "affects": []
+        }
+      ],
+      "id": "F-00046",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_vorudi_zhambon_beikon",
+      "title": "وزن ژامبون بیکن ورودی به تبدیل",
+      "statement": "وزن ژامبون بیکنی که برای برش از انبار تحویل گرفته می‌شود، پیش از شروع کار با ترازوی آماده‌سازی به کیلو کشیده و در سربرگ فرم تبدیل نوشته می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADcw5rG7piKFF-.image.md",
+          "hash": "sha256:c30f9285529e68fce74a646f6817d0eda238f2445c8f27d7088d4431894c3c89",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n001",
+          "quote": "هر چه می‌آید را خودشان می‌کشند یا می‌شمارند",
+          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-004.json",
+          "node": "preparation-004-n009",
+          "quote": "آماده‌سازی به اعلام انبار اتکا نمی‌کند",
+          "hash": "sha256:70b8f4dc621113c39f3bcf2462f1331a0dbad452f7705c71a35763976d42c49f",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "ترازوی آماده‌سازی با ظرفیت شصت تا هفتاد کیلو و خطای حداکثر ده گرم؛ به وزن اعلامی انبار اتکا نمی‌شود.",
+        "when": "پس از تحویل گرفتن از انبار و پیش از برش",
+        "by": "متصدی آماده‌سازی",
+        "writes_to": {
+          "ref": "F-00013",
+          "field": "vazn_vorudi"
+        }
+      },
+      "home": {
+        "ref": "F-00013",
+        "field": "vazn_vorudi"
+      },
+      "id": "F-00047",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_beikon_tabdil",
+      "title": "وزن بیکن حاصل از تبدیل",
+      "statement": "هر بستهٔ بیکن برش‌خورده پس از بسته‌بندی روی ترازوی لیبل‌گذاری به کیلو وزن می‌شود و وزن بیکن حاصل در ردیف کیلوی بیکن فرم تبدیل نوشته می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADcw5rG7piKFF-.image.md",
+          "hash": "sha256:c30f9285529e68fce74a646f6817d0eda238f2445c8f27d7088d4431894c3c89",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n008",
+          "quote": "خروجی هر لاین هم وزن‌کشی می‌شود",
+          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n018",
+          "quote": "آنچه ثبت می‌گردد وزن خالص محصول باشد",
+          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "ترازوی لیبل‌گذاری؛ وزن ظرف پیش از وزن‌کشی صفر می‌شود تا وزن خالص ثبت شود.",
+        "when": "پس از بسته‌بندی و پیش از تحویل به انبار",
+        "by": "متصدی آماده‌سازی",
+        "writes_to": {
+          "ref": "F-00013",
+          "field": "meqdar",
+          "row": "beikon__kg"
+        }
+      },
+      "home": {
+        "ref": "F-00013",
+        "field": "meqdar"
+      },
+      "id": "F-00048",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "tedad_varaq_beikon",
+      "title": "تعداد ورق بیکن حاصل از تبدیل",
+      "statement": "بیکن به‌صورت ورق لایه‌ای برش می‌خورد و در بسته‌های شمارشی بسته‌بندی می‌شود؛ تعداد ورق‌ها شمرده و در ردیف ورق بیکن فرم تبدیل نوشته می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADcw5rG7piKFF-.image.md",
+          "hash": "sha256:c30f9285529e68fce74a646f6817d0eda238f2445c8f27d7088d4431894c3c89",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-017.json",
+          "node": "preparation-017-n017",
+          "quote": "در بسته‌های شمارشی تحویل می‌رود",
+          "hash": "sha256:ce35bd499dad22394e6b0098703b10831bd05d11999394ac8b2e0b2feaab41f3",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-017.json",
+          "node": "preparation-017-n019",
+          "quote": "عدد ۳۰ روی لیبل خط می‌خورد و به ۱۵ تبدیل می‌شود",
+          "hash": "sha256:ce35bd499dad22394e6b0098703b10831bd05d11999394ac8b2e0b2feaab41f3",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n020",
+          "quote": "عدد چاپ‌شده خط زده و تعداد واقعی روی لیبل نوشته می‌شود",
+          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "count",
+        "unit": "slice",
+        "method": "شمارش ورق‌های لایه‌ای هر بسته؛ تعداد روی لیبل بسته هم می‌آید.",
+        "when": "هنگام بسته‌بندی و لیبل‌گذاری، پیش از تحویل به انبار",
+        "by": "متصدی آماده‌سازی",
+        "writes_to": {
+          "ref": "F-00013",
+          "field": "meqdar",
+          "row": "beikon__varaq"
+        },
+        "exceptions": "اگر بسته کمتر از تعداد چاپ‌شده روی لیبل ورق داشته باشد، عدد چاپ‌شده خط می‌خورد و تعداد واقعی نوشته می‌شود و تاریخ و نام دست نمی‌خورد."
+      },
+      "home": {
+        "ref": "F-00013",
+        "field": "meqdar"
+      },
+      "id": "F-00049",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_zayeat_tabdil_beikon",
+      "title": "وزن ضایعات تبدیل ژامبون بیکن",
+      "statement": "پلاستیک و کاور ژامبون بیکن و تکه‌های خرد شده و گوشه‌مانده در حین برش جداگانه به کیلو وزن و در بخش ضایعات فرم تبدیل ثبت می‌شوند، حتی وقتی وزنشان در حد چند گرم است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADcw5rG7piKFF-.image.md",
+          "hash": "sha256:c30f9285529e68fce74a646f6817d0eda238f2445c8f27d7088d4431894c3c89",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n003",
+          "quote": "کیسه‌ها و پوشش‌ها دور ریخته نمی‌شوند",
+          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-017.json",
+          "node": "preparation-017-n020",
+          "quote": "وزن پوست هرچند در حد گرم است ولی نوشته می‌شود",
+          "hash": "sha256:ce35bd499dad22394e6b0098703b10831bd05d11999394ac8b2e0b2feaab41f3",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-017.json",
+          "node": "preparation-017-n013",
+          "quote": "به انبار برگشت داده می‌شود و به عنوان ضایعات ثبت می‌گردد",
+          "hash": "sha256:ce35bd499dad22394e6b0098703b10831bd05d11999394ac8b2e0b2feaab41f3",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "کاور و پلاستیک کنار دست نگه داشته و پس از خالی کردن قلم روی میز کار با ترازوی آماده‌سازی وزن می‌شود؛ تکه‌های خرد شده هم جداگانه وزن می‌شوند.",
+        "when": "در حین برش و پیش از پر کردن فرم تبدیل",
+        "by": "متصدی آماده‌سازی",
+        "writes_to": {
+          "ref": "F-00013",
+          "field": "meqdar"
+        },
+        "exceptions": "تکهٔ کپک‌زده‌ای که پیش از برش دیده شود به انبار برگردانده و به‌عنوان ضایعات ثبت می‌شود."
+      },
+      "home": {
+        "ref": "F-00013",
+        "field": "meqdar"
+      },
+      "id": "F-00050",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_sine_morgh_vorudi",
+      "title": "وزن سینهٔ مرغ خام ورودی روز",
+      "statement": "مسئول لاین مرغ هر پارت سینهٔ مرغ خام را هنگام تحویل از انبار خودش با ترازوی آشپزخانه وزن می‌کند و به وزن اعلامی انبار اتکا نمی‌کند؛ وزن هر پارت جداگانه در دفتر مرغ ثبت می‌شود و جمع آن وزن ورودی روز سینه به کیلو است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdA5rG7piKFF-.image.md",
+          "hash": "sha256:32331a979fdfa0a891c87800f8a855121ebc98d2862d41144769251a8223e2bf",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n023",
+          "quote": "هر چه می‌آید را خود مسئول لاین مرغ وزن‌گیری می‌کند",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n026",
+          "quote": "همان وزنی که خود لاین کشیده است ثبت می‌شود",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "of": "سینهٔ مرغ (شنیسل) خام دریافتی از انبار",
+        "method": "ترازوی آشپزخانه با خطای تا ۱۰ گرم و ظرفیت ۶۰ تا ۷۰ کیلو؛ هر پارت جداگانه وزن می‌شود",
+        "when": "هنگام رسیدن هر پارت مرغ از انبار؛ بار روز در سه تا چهار پارت می‌رسد",
+        "by": "مسئول لاین مرغ",
+        "writes_to": {
+          "ref": "F-00014",
+          "field": "vazn_sine"
+        },
+        "exceptions": "اختلاف جزئی با وزن اعلامی انبار به انبار اعلام نمی‌شود و همان وزنی که لاین کشیده ثبت می‌شود؛ تنها خونابهٔ بیش از حد به مدیریت اعلام می‌شود."
+      },
+      "home": {
+        "ref": "F-00014",
+        "field": "vazn_sine"
+      },
+      "id": "F-00051",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "tedad_mahsulat_sine_morgh",
+      "title": "تعداد لقمه و مرغ چیزای تولیدشده",
+      "statement": "مسئول لاین مرغ تعداد لقمه و تکه‌های مرغ چیزا را هنگام بسته‌بندی دانه‌به‌دانه و دستی می‌شمارد و در ردیف عددی همان محصول در فرم تبدیل سینه می‌نویسد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdA5rG7piKFF-.image.md",
+          "hash": "sha256:32331a979fdfa0a891c87800f8a855121ebc98d2862d41144769251a8223e2bf",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n005",
+          "quote": "لقمه دستی شمارش می‌شود و هر بسته ۲۰۰ عدد است",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n021",
+          "quote": "برای لقمه و چیزا هم تعداد و هم وزن نوشته می‌شود",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "count",
+        "unit": "pcs",
+        "of": "لقمه و مرغ چیزای تولیدشده از سینهٔ مرغ",
+        "method": "شمارش دستی دانه‌به‌دانه هنگام بسته‌بندی؛ خطای یکی دو عددی ممکن است",
+        "when": "هنگام بسته‌بندی و پیش از تکمیل فرم در پایان کار مرغ",
+        "by": "مسئول لاین مرغ",
+        "writes_to": {
+          "ref": "F-00014",
+          "field": "tahvil_anbar"
+        },
+        "exceptions": null
+      },
+      "home": {
+        "ref": "F-00014",
+        "field": "tahvil_anbar"
+      },
+      "id": "F-00052",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_mahsulat_sine_morgh",
+      "title": "وزن محصولات تحویلی سینهٔ مرغ",
+      "statement": "مسئول لاین مرغ وزن لقمه، مرغ چیزا، مرغ پیتزای تکه‌شده، مرغ گریل و کنار شنیسل را با ترازو به کیلو می‌گیرد و در ردیف کیلویی همان محصول در فرم تبدیل سینه ثبت می‌کند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdA5rG7piKFF-.image.md",
+          "hash": "sha256:32331a979fdfa0a891c87800f8a855121ebc98d2862d41144769251a8223e2bf",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n021",
+          "quote": "برای مرغ پیتزا و گریل وزن ثبت می‌شود",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n006",
+          "quote": "کنترل وزن در همین مرحله و توسط خود مسئول لاین انجام می‌شود",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "of": "محصولات تفکیک‌شدهٔ سینهٔ مرغ",
+        "method": "وزن‌کشی بسته‌ها با ترازوی آشپزخانه",
+        "when": "هنگام بسته‌بندی و پیش از تحویل به انبار در پایان کار مرغ",
+        "by": "مسئول لاین مرغ",
+        "writes_to": {
+          "ref": "F-00014",
+          "field": "tahvil_anbar"
+        },
+        "exceptions": "خونابه وزن نمی‌شود و از تفاضل جمع ردیف‌ها با وزن سینهٔ ورودی به دست می‌آید."
+      },
+      "home": {
+        "ref": "F-00014",
+        "field": "tahvil_anbar"
+      },
+      "id": "F-00053",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "meqdar_mavad_gusht_eslahie_sobh",
+      "title": "مقدار پیاز، سیر و ادویهٔ لاین گوشت در اصلاحیهٔ صبح",
+      "statement": "مسئول لاین گوشت مقدار پیاز، سیر و ادویهٔ لازم برای تولید گوشت روز را در اصلاحیهٔ صبح برگهٔ درخواست کالا می‌نویسد، چون مقدار گوشت روز، برای نمونه رست‌بیف یا چرخ‌کرده، تنها صبح از انبار پرسیده می‌شود و شب پیش معلوم نیست. به همین دلیل پر شدن دوبارهٔ برگهٔ درخواست کالا بیشتر به خاطر لاین گوشت است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "voice",
+          "ref": "meetings/transcripts/preparation-1405-05-28.txt",
+          "lines": "1-300",
+          "hash": "sha256:158ef6036b07131e4f7d1b6d144b45862a2c111e0cee54dcc89129fc5ad4f280",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-003.json",
+          "node": "preparation-003-n012",
+          "quote": "اصلاحیه روی همان فرمی انجام می‌شود که شب قبل تحویل انبار شده",
+          "hash": "sha256:035ec918878a335535e08a1ec583311a3e67143299fb049a1903ca6ac749e822",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-019.json",
+          "node": "preparation-019-n016",
+          "quote": "بر مبنای مقدار گوشتی که آن روز آمده وزن گرفته می‌شود",
+          "hash": "sha256:030f8110b3ebfd8a9a2ea4521e2535220491a542b51a4399079576edbd76523d",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": null,
+        "method": "برآورد از رسپی هر کیلو گوشت و مقدار گوشت روز که انبار صبح اعلام می‌کند، با واحد چاپ‌شدهٔ هر قلم",
+        "when": "صبح، پس از پرسیدن مقدار گوشت روز از انبار و پیش از تحویل اصلاحیه به انبار تا ساعت ده و نیم",
+        "by": "مسئول لاین گوشت",
+        "writes_to": {
+          "ref": "F-00002",
+          "field": "meqdar_darkhast"
+        }
+      },
+      "home": {
+        "ref": "F-00002",
+        "field": "meqdar_darkhast"
+      },
+      "id": "F-00054",
+      "extra": {
+        "data/voice": [
+          {
+            "ref": "meetings/transcripts/preparation-1405-05-28.txt",
+            "lines": "256-256"
+          }
+        ]
+      },
+      "valid_from": null,
+      "valid_to": null,
+      "status": "unknown",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_baste_khamir",
+      "title": "وزن بستهٔ خمیر پیتزا",
+      "statement": "مسئول لاین خمیر هر بستهٔ خمیر آماده را پس از بسته‌بندی به کیلوگرم وزن می‌کند و وزن را روی لیبل همان بسته می‌نویسد. این وزن فقط روی لیبل بسته می‌ماند و در برگهٔ روزانهٔ خمیر یا فرم دیگری ثبت نمی‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-016.json",
+          "node": "preparation-016-n009",
+          "quote": "روی بسته‌های خمیر لیبل زده می‌شود و وزن روی آن نوشته می‌شود",
+          "hash": "sha256:8eebf3543434b01f567eab50102cf40fc6009b1bfc64785aad99afde24ed8005",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-016.json",
+          "node": "preparation-016-n006",
+          "quote": "وزن ورودی و خروجی این کار ثبت نمی‌شود",
+          "hash": "sha256:8eebf3543434b01f567eab50102cf40fc6009b1bfc64785aad99afde24ed8005",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "of": "بستهٔ خمیر پیتزای آماده",
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "وزن‌کشی بستهٔ پلاستیکی خمیر و درج وزن روی لیبل آن",
+        "when": "هنگام بسته‌بندی هر پارت خمیر، پیش از گذاشتن بسته‌ها در یخچال",
+        "by": "مسئول لاین خمیر",
+        "exceptions": "وزن آرد ورودی و وزن کل خمیر خروجی در هیچ فرم یا فهرستی نوشته نمی‌شود."
+      },
+      "home": {
+        "ref": "F-00017"
+      },
+      "id": "F-00055",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_vorudi_gusht_morgh_az_anbar",
+      "title": "وزن‌گیری گوشت و مرغ خام تحویلی از انبار",
+      "statement": "وزن هر قلم گوشت و مرغ خامی که انبار تحویل آماده‌سازی می‌دهد را مسئول همان لاین خودش با ترازوی آشپزخانه بر حسب کیلوگرم می‌کشد و در دفتر لاین به‌عنوان ورودی آماده‌سازی می‌نویسد؛ به عدد اعلام‌شدهٔ انبار اتکا نمی‌شود. سرپرست آماده‌سازی همین وزن را روزانه در جدول ورودی آماده‌سازی وارد می‌کند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-030.json",
+          "node": "preparation-030-n004",
+          "quote": "آماده‌سازی به اعلام انبار اتکا نمی‌کند",
+          "hash": "sha256:281009c0b5b58f5384df065b677791294344cd1b7d637a13e2b92a030a3aaaee",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n001",
+          "quote": "هر لاین بار خودش را دانه‌به‌دانه می‌آورد و خودش ورودی را وزن می‌کند",
+          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-030.json",
+          "node": "preparation-030-n005",
+          "quote": "از انبار خواسته می‌شود یک نگاه بیندازد",
+          "hash": "sha256:281009c0b5b58f5384df065b677791294344cd1b7d637a13e2b92a030a3aaaee",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-030.json",
+          "node": "preparation-030-n010",
+          "quote": "پلاستیک‌ها و خونابه کنار گذاشته‌شده را وزن می‌کنند",
+          "hash": "sha256:281009c0b5b58f5384df065b677791294344cd1b7d637a13e2b92a030a3aaaee",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n023",
+          "quote": "وزن هر پارت هم جداگانه گرفته می‌شود",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-004.json",
+          "node": "preparation-004-n013",
+          "quote": "همان وزنی که خودشان کشیده‌اند ثبت می‌شود",
+          "hash": "sha256:70b8f4dc621113c39f3bcf2462f1331a0dbad452f7705c71a35763976d42c49f",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "ترازوی آشپزخانه با خطای حداکثر ده گرم و ظرفیت شصت تا هفتاد کیلو، نه باسکول انبار با خطای صد گرم؛ پلاستیک و خونابه پس از خالی کردن گوشت جداگانه وزن و در دفتر قید می‌شود.",
+        "when": "هنگام تحویل بار از انبار و پیش از خالی کردن روی تخته‌کار؛ گوشت گرم حدود ده و نیم تا یازده می‌رسد و مرغ هر پارت جداگانه وزن می‌شود.",
+        "by": "مسئول لاین گوشت و مسئول لاین مرغ",
+        "writes_to": {
+          "ref": "F-00019"
+        },
+        "exceptions": "اگر وزن کشیده‌شده با اعلام انبار اختلاف زیاد داشته باشد، مثلاً ده کیلو، یا خونابه بیش از حد باشد، از انبار پرس‌وجو می‌شود؛ اختلاف جزئی به انبار اعلام نمی‌شود و همان وزن کشیده‌شده ثبت می‌شود."
+      },
+      "home": {
+        "ref": "F-00019"
+      },
+      "id": "F-00056",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    }
+  ]
 }

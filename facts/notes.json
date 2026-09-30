@@ -1,4 +1,2086 @@
 {
   "schema_version": 2,
-  "entries": []
+  "entries": [
+    {
+      "kind": "note",
+      "key": "note_a7888beef60f",
+      "title": "دو خانهٔ تیک زیر سربرگ تیک انبار",
+      "statement": "در عکس هر دو برگه، زیر سربرگ تیک انبار برای هر قلم دو خانهٔ باریک کنار هم دیده می‌شود، در حالی که متن برگه تنها یک ستون تیک را نام می‌برد. در فرایند انبار، هر برگهٔ درخواست کالا دو جای تیک دارد: یکی برای انبار و دیگری برای تحویل‌گیرنده.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADeA5rG7piKFF-.image.md",
+          "hash": "sha256:3337ad6431f940a1002ece6e0313421eafa0395e849758e19d16ba85849d436d",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADeg5rG7piKFF-.image.md",
+          "hash": "sha256:795cade1da8c80fbdf3a49be3d828cf9c182f4ca1aa91f7397bdbbd30817be5f",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/warehouse/processes/warehouse-012.json",
+          "node": "warehouse-012-n001",
+          "quote": "کنار جدول آن دو جای تیک دارد: یکی تیک انبار و دیگری تیک تحویل‌گیرنده",
+          "hash": "sha256:dd31520f6007c0d30303789bfb4689117b2a75d1f0f4da9ee134178fc2b04932",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00002",
+            "field": "tik_anbar"
+          }
+        ],
+        "question": "آیا خانهٔ دوم زیر سربرگ تیک انبار جای تیک تحویل‌گیرنده است، و در آماده‌سازی چه کسی آن را می‌زند؟"
+      },
+      "home": {
+        "ref": "F-00002",
+        "field": "tik_anbar"
+      },
+      "id": "F-00107",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_8a50d9f42e95",
+      "title": "امضای تحویل‌گیرنده روی برگهٔ درخواست کالا",
+      "statement": "فرایند انبار می‌گوید مسئول بخش گیرنده پس از بررسی اقلام کنار هر قلم تیک دوم می‌زند و پایین برگهٔ درخواست کالا را امضا می‌کند و امضا به معنای تحویل کامل است؛ فرایند آماده‌سازی می‌گوید پای برگهٔ انبار امضا یا تأییدیه‌ای زده نمی‌شود، هماهنگی تنها شفاهی است و تیک را خود انبار می‌زند. روی خود برگه هم جای امضایی چاپ نشده است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADeA5rG7piKFF-.image.md",
+          "hash": "sha256:3337ad6431f940a1002ece6e0313421eafa0395e849758e19d16ba85849d436d",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADeg5rG7piKFF-.image.md",
+          "hash": "sha256:795cade1da8c80fbdf3a49be3d828cf9c182f4ca1aa91f7397bdbbd30817be5f",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/warehouse/processes/warehouse-023.json",
+          "node": "warehouse-023-n032",
+          "quote": "مسئول بخش گیرنده اقلام را بررسی و تیک و امضای خود را ثبت می‌کند",
+          "hash": "sha256:a299c0d34effffd2f6a489e4e5d12ef9eeada29ff6be6bae26a2d08a8b53142c",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-004.json",
+          "node": "preparation-004-n009",
+          "quote": "امضا یا تاییدیه‌ای پای فرم انبار زده نمی‌شود و هماهنگی صرفاً کلامی است",
+          "hash": "sha256:70b8f4dc621113c39f3bcf2462f1331a0dbad452f7705c71a35763976d42c49f",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-003.json",
+          "node": "preparation-003-n008",
+          "quote": "خود انبار تیکش را می‌زند",
+          "hash": "sha256:035ec918878a335535e08a1ec583311a3e67143299fb049a1903ca6ac749e822",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00002"
+          }
+        ],
+        "question": "آیا آماده‌سازی تحویل اقلام این برگه را با تیک دوم و امضا تأیید می‌کند، یا هماهنگی تنها شفاهی است و برگه امضا نمی‌شود؟"
+      },
+      "home": {
+        "ref": "F-00002"
+      },
+      "id": "F-00108",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_fd80230d3c85",
+      "title": "ردیف‌های گوشت و مرغ چاپ‌شده در برگهٔ درخواست کالا",
+      "statement": "فرایند آماده‌سازی می‌گوید این برگه نیاز همیشگی روزانه را در بر می‌گیرد و مرغ و گوشت و چیزا در آن نیست، اما برگه در بخش بدون سند ردیف‌هایی برای مرغ چیزا، استیک، مغزران، سردست گوساله و قلوه‌گاه بره و گوساله چاپ کرده است. همان فرایند ژامبون و پپرونی را از اقلامی می‌داند که در همین برگه درخواست می‌شوند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADeA5rG7piKFF-.image.md",
+          "hash": "sha256:3337ad6431f940a1002ece6e0313421eafa0395e849758e19d16ba85849d436d",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADeg5rG7piKFF-.image.md",
+          "hash": "sha256:795cade1da8c80fbdf3a49be3d828cf9c182f4ca1aa91f7397bdbbd30817be5f",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-003.json",
+          "node": "preparation-003-n002",
+          "quote": "ولی مرغ و گوشت و چیزا در آن نیست",
+          "hash": "sha256:035ec918878a335535e08a1ec583311a3e67143299fb049a1903ca6ac749e822",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-003.json",
+          "node": "preparation-003-n012",
+          "quote": "اقلام خاص هر روز مثل ژامبون یا پپرونی طبق فرمی که انبار می‌دهد در همین فرم درخواست می‌شود",
+          "hash": "sha256:035ec918878a335535e08a1ec583311a3e67143299fb049a1903ca6ac749e822",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00002"
+          }
+        ],
+        "question": "آیا ردیف‌های مرغ چیزا، استیک، مغزران، سردست گوساله و قلوه‌گاه هنوز در این برگه پر می‌شوند، یا این اقلام تنها از راه برنامه و سفارش انبار به آماده‌سازی می‌رسند؟"
+      },
+      "home": {
+        "ref": "F-00002"
+      },
+      "id": "F-00109",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_4ae5b256b981",
+      "title": "معنای بخش‌های برگه و خانهٔ ش س",
+      "statement": "برگه اقلام را زیر سه سربرگ مصرف مستقیم، حواله انبار به انبار و بدون سند دسته‌بندی کرده و کنار دو سربرگ نخست خانهٔ خالی ش س گذاشته است؛ فرایندها دربارهٔ این دسته‌بندی و این خانه چیزی نمی‌گویند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADeA5rG7piKFF-.image.md",
+          "hash": "sha256:3337ad6431f940a1002ece6e0313421eafa0395e849758e19d16ba85849d436d",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADeg5rG7piKFF-.image.md",
+          "hash": "sha256:795cade1da8c80fbdf3a49be3d828cf9c182f4ca1aa91f7397bdbbd30817be5f",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00002",
+            "field": "sh_s"
+          }
+        ],
+        "question": "این سه بخش در ثبت خروج انبار چه فرقی با هم دارند، و خانهٔ ش س را چه کسی، چه زمانی و با چه شماره‌ای پر می‌کند؟"
+      },
+      "home": {
+        "ref": "F-00002",
+        "field": "sh_s"
+      },
+      "id": "F-00110",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_71ed6196adde",
+      "title": "ساختار خانه‌های وزن در عکس فرم راسته گرم",
+      "statement": "در عکس فرم، میان نام هر قلم و خانهٔ واحد کیلو یک خانهٔ خالی دیگر هم دیده می‌شود که شرح فرم آن را نیاورده است، و خانهٔ جمع تنها در ردیف استیک رولی وجود دارد؛ در ردیف‌های خرده گوشت و ضایعات خانه‌های سمت چپ یکی شده‌اند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdQ5rG7piKFF-.image.md",
+          "hash": "sha256:3483ac303e1e1c448a98972723665302ab10be6bff602f2e834c60a30a39db03",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00003"
+          }
+        ],
+        "question": "در عکس، میان نام هر قلم و خانهٔ «کیلو» یک خانهٔ خالی دیگر هم هست که شرح فرم آن را ندارد، و «جمع» تنها در ردیف استیک رولی خانه دارد. وزن هر قلم در کدام خانه نوشته می‌شود، سه خانهٔ کوچک ردیف استیک رولی برای چیست و «جمع» جمع کدام خانه‌هاست؟"
+      },
+      "home": {
+        "ref": "F-00003"
+      },
+      "id": "F-00111",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_a8e431fc71d8",
+      "title": "یکسان بودن نسخهٔ انبار فرم تبدیل با نسخهٔ آماده‌سازی",
+      "statement": "دو فرایند دربارهٔ نسخهٔ انبار فرم تبدیل دو روایت متفاوت دارند و هیچ‌کدام به‌عنوان واقعیت ثبت نشد: یکی آن را جز عنوان بالای برگه با نسخهٔ آماده‌سازی یکسان می‌داند و دیگری آن را فرمی جدا با محتوای دیگر.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdQ5rG7piKFF-.image.md",
+          "hash": "sha256:3483ac303e1e1c448a98972723665302ab10be6bff602f2e834c60a30a39db03",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n012",
+          "quote": "این دو جز عنوان بالای فرم با هم تفاوتی ندارند",
+          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/warehouse/processes/warehouse-005.json",
+          "node": "warehouse-005-n035",
+          "quote": "فرم تبدیل انبار نسخه جداگانه انبار است و با فرم تبدیل آماده‌سازی یکی نیست",
+          "hash": "sha256:619c5ee4ccf257f954e6d71bf2e66b11112188ce98207dfd75acb796c9580e44",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00003"
+          }
+        ],
+        "question": "روایت آماده‌سازی: فرم تبدیل دو نسخه دارد، یکی با عنوان «فرم تبدیل آماده سازی» و یکی با عنوان «فرم تبدیل انبار»، که جز عنوان تفاوتی ندارند و برای اسکن نسخهٔ آماده‌سازی لازم است. روایت انبار: فرم تبدیل انبار با فرم آماده‌سازی یکی نیست؛ انبار در آن تنها وزن گوشت خارج‌شده، وزن یا تعداد محصول برگشتی و جمع ضایعات را می‌نویسد و هیچ‌کدام فرم دیگری را نمی‌بیند. کدام درست است؟"
+      },
+      "home": {
+        "ref": "F-00003"
+      },
+      "id": "F-00112",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_7804bbf8895d",
+      "title": "شمار فرم‌های تبدیل گوشت راسته",
+      "statement": "دو فرایند دربارهٔ شمار فرم‌های تبدیل گوشت راسته دو روایت دارند: یکی می‌گوید برای راسته تنها همین یک فرم تبدیل هست، و دیگری علاوه بر آن از فرم جداگانهٔ گوشت راسته با قلم خروجی فیلادلفیا نام می‌برد، در حالی که فیلادلفیا دیگر فرم تبدیل ندارد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdQ5rG7piKFF-.image.md",
+          "hash": "sha256:3483ac303e1e1c448a98972723665302ab10be6bff602f2e834c60a30a39db03",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-020.json",
+          "node": "preparation-020-n022",
+          "quote": "برای گوشت راسته تنها یک فرم تبدیل وجود دارد",
+          "hash": "sha256:6755b679a16e891ef948b2bf7441eacba82cd728c1619bdbb7b09be20df8539a",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n012",
+          "quote": "فرم گوشت راسته ستون‌های فیلادلفیا و ضایعات و جمع دارد",
+          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n023",
+          "quote": "گوشت راسته، گوشت راسته گرم، رول استیک",
+          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00003"
+          }
+        ],
+        "question": "روایت نخست: برای گوشت راسته تنها یک فرم تبدیل وجود دارد، همین فرم راسته گرم با استیک رولی، خرده راسته و ضایعات، و در حالت راستهٔ پاک‌شده هم همین فرم پر می‌شود. روایت دوم: فرم‌های تبدیل گوشت راسته، گوشت راسته گرم و رول استیک جدا هستند و فرم گوشت راسته خانه‌های فیلادلفیا، ضایعات و جمع دارد. آیا فرم گوشت راسته با خانهٔ فیلادلفیا هنوز پر می‌شود؟"
+      },
+      "home": {
+        "ref": "F-00003"
+      },
+      "id": "F-00113",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_6e8e6c3f0bf4",
+      "title": "ساختار خانه‌های خالی فرم تبدیل فیله",
+      "statement": "در عکس فرم، شمار و چینش خانه‌های خالی با شرح متنی آن یکی نیست و معلوم نیست هر خانه برای کدام مقدار پر می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdg5rG7piKFF-.image.md",
+          "hash": "sha256:522e3b8ab426547aa322838f8efbbc90c40231c81cc1538fd143dea9766192b8",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00004",
+            "field": "meqdar"
+          }
+        ],
+        "question": "در عکس، میان واحد و جمع سه ستون خالی دیده می‌شود نه دو، و در ردیف‌های فیله و لقمه نخستین آن‌ها میان دو خانهٔ کیلو و عدد یکی شده است؛ میان نام قلم و واحد هم یک ستون خالی دیگر هست، و در ردیف‌های ضایعات مرغ و ضایعات همهٔ این خانه‌ها و جمع در یک خانهٔ پهن یکی شده‌اند. هر یک از این خانه‌ها برای چه مقداری پر می‌شود؟"
+      },
+      "home": {
+        "ref": "F-00004"
+      },
+      "id": "F-00114",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_778d558ed771",
+      "title": "روش ثبت خونابه و پلاستیک در فرم فیله",
+      "statement": "برای فرم تبدیل سینه گفته شده که وزن خونابه از تفاضل جمع ردیف‌ها با وزن ورودی به دست می‌آید، ولی روش ثبت خونابه و پلاستیک در فرم فیله گفته نشده است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdg5rG7piKFF-.image.md",
+          "hash": "sha256:522e3b8ab426547aa322838f8efbbc90c40231c81cc1538fd143dea9766192b8",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n021",
+          "quote": "وزن خونابه هم از تفاضل به دست می‌آید و نوشته می‌شود",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00004",
+            "field": "meqdar",
+            "row": "khunabeh"
+          }
+        ],
+        "question": "در فرم تبدیل فیله، خونابه و پلاستیک جداگانه وزن می‌شوند یا مانند فرم سینه از تفاضل وزن فیلهٔ ورودی با جمع بقیهٔ ردیف‌ها به دست می‌آیند؟"
+      },
+      "home": {
+        "ref": "F-00004"
+      },
+      "id": "F-00115",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_4e7483205339",
+      "title": "ستون بی‌عنوان فرم تبدیل کنار شنیسل",
+      "statement": "در عکس، خانهٔ ستون بی‌عنوان سمت چپ در ردیف مرغ پخته با دو خط به سه خانه تقسیم شده، در ردیف ضایعات شنیسل یک خانهٔ خالی است و در ردیف کاست خاکستری است؛ سربرگ جدول تنها روی سه ستون سمت راست کشیده شده و بالای این ستون یک خانهٔ خاکستری خالی است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdw5rG7piKFF-.image.md",
+          "hash": "sha256:d2d42c77d9b9695226349e3d4785303533ab3e854c9e3073de1bcbb30ff3a5d5",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00005",
+            "field": "sotun_chap"
+          }
+        ],
+        "question": "در ستون بی‌عنوان سمت چپ فرم تبدیل کنار شنیسل چه چیزی نوشته می‌شود و سه خانهٔ ردیف مرغ پخته برای چیست؟"
+      },
+      "home": {
+        "ref": "F-00005",
+        "field": "sotun_chap"
+      },
+      "id": "F-00116",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_25c916ea781b",
+      "title": "وزن انباشت کنار شنیسل پیش از پخت",
+      "statement": "فرایند آماده‌سازی و فرایند انبار دربارهٔ وزنی که کنار شنیسل تا آن جمع می‌شود و سپس برای پخت هفتگی تحویل آماده‌سازی می‌شود یکسان نیستند؛ این وزن همان وزن خامی است که در سربرگ این فرم نوشته می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdw5rG7piKFF-.image.md",
+          "hash": "sha256:d2d42c77d9b9695226349e3d4785303533ab3e854c9e3073de1bcbb30ff3a5d5",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n032",
+          "quote": "طی هفته جمع می‌شود تا به هشت تا ده کیلو برسد",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/warehouse/processes/warehouse-005.json",
+          "node": "warehouse-005-n020",
+          "quote": "آستانه ده تا دوازده کیلوگرم",
+          "hash": "sha256:619c5ee4ccf257f954e6d71bf2e66b11112188ce98207dfd75acb796c9580e44",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00005",
+            "field": "vazn_kenar_shenisel"
+          }
+        ],
+        "question": "کنار شنیسل تا چه وزنی جمع و سپس برای پخت تحویل آماده‌سازی می‌شود: هشت تا ده کیلو، آن‌طور که فرایند آماده‌سازی می‌گوید، یا ده تا دوازده کیلو، آن‌طور که فرایند انبار می‌گوید؟"
+      },
+      "home": {
+        "ref": "F-00005",
+        "field": "vazn_kenar_shenisel"
+      },
+      "id": "F-00117",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_3e1ad05fb9fb",
+      "title": "روش تبدیل کنار شنیسل به مرغ پیتزا",
+      "statement": "در فرایند انبار کنار شنیسل در آماده‌سازی اسلایس و جداسازی و سپس به مرغ پیتزا افزوده می‌شود، ولی در فرایند آماده‌سازی ابتدا با مادهٔ مرینت پخته و سپس تکه‌های قابل استفادهٔ آن جدا می‌شود؛ ستون مرغ پخته این فرم به روش دوم اشاره دارد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdw5rG7piKFF-.image.md",
+          "hash": "sha256:d2d42c77d9b9695226349e3d4785303533ab3e854c9e3073de1bcbb30ff3a5d5",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/warehouse/processes/warehouse-005.json",
+          "node": "warehouse-005-n022",
+          "quote": "کنارشنیسل در آماده‌سازی اسلایس و جداسازی می‌شود و سپس در مرغ پیتزا ریخته می‌شود",
+          "hash": "sha256:619c5ee4ccf257f954e6d71bf2e66b11112188ce98207dfd75acb796c9580e44",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n059",
+          "quote": "پس از پخت، تکه‌های مرغی که قابل استفاده‌اند از ضایعات جدا و پاک‌سازی می‌شوند",
+          "hash": "sha256:ecef39b667404cd777c0b03d08c4fe51ab3e43135e0250e95dc875871bb76c1f",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00005",
+            "field": "morgh_pokhte"
+          }
+        ],
+        "question": "کنار شنیسل پیش از افزوده شدن به مرغ پیتزا پخته می‌شود و سپس جداسازی می‌شود، یا خام اسلایس و جداسازی می‌شود؟"
+      },
+      "home": {
+        "ref": "F-00005",
+        "field": "morgh_pokhte"
+      },
+      "id": "F-00118",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_b39104a36f0f",
+      "title": "کل درخواست یا کسری پس از موجودی انبار",
+      "statement": "دو فرایند دربارهٔ معنای عدد هر ردیف این فرم هم‌خوان نیستند: در آماده‌سازی آمده که انبار تنها درخواست شب قبل آشپزخانه مرکزی و شعبه را تجمیع می‌کند، و در انبار آمده که درخواست‌ها با موجودی انبار مقایسه می‌شود و تنها کسری اقلامی که موجودی‌شان کفایت نمی‌کند نوشته می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADeQ5rG7piKFF-.image.md",
+          "hash": "sha256:8ecdb1977943184612a2a3046bdd0234d82a34e98b67e7bd04cdde957969710e",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-003.json",
+          "node": "preparation-003-n006",
+          "quote": "انبار در فرم نیازها فقط لیست‌هایی را که شب قبل آشپزخانه و شعبه پر کرده‌اند تجمیع می‌کند",
+          "hash": "sha256:035ec918878a335535e08a1ec583311a3e67143299fb049a1903ca6ac749e822",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/warehouse/processes/warehouse-023.json",
+          "node": "warehouse-023-n013",
+          "quote": "قلمی که موجودی انبار برای آن کفایت می‌کند در فرم درخواست تولید ذکر نمی‌شود",
+          "hash": "sha256:a299c0d34effffd2f6a489e4e5d12ef9eeada29ff6be6bae26a2d08a8b53142c",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/warehouse/processes/warehouse-023.json",
+          "node": "warehouse-023-n014",
+          "quote": "تفاوت مقدار درخواست‌شده با موجودی انبار به عنوان مقدار موردنیاز برای تولید همان روز محاسبه می‌شود",
+          "hash": "sha256:a299c0d34effffd2f6a489e4e5d12ef9eeada29ff6be6bae26a2d08a8b53142c",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00006",
+            "field": "darkhast_markazi"
+          },
+          {
+            "ref": "F-00006",
+            "field": "darkhast_shobe"
+          }
+        ],
+        "question": "عدد هر ردیف در خانه‌های درخواست مرکزی و درخواست شعبه کدام است: کل درخواست شب قبل آشپزخانه و شعبه که انبار فقط تجمیع کرده (خوانش فرایند آماده‌سازی)، یا تنها کسری پس از کسر موجودی و ماندهٔ تولید روز قبل انبار، به‌طوری که قلم دارای موجودی کافی اصلاً نوشته نمی‌شود (خوانش فرایند انبار)؟"
+      },
+      "home": {
+        "ref": "F-00006"
+      },
+      "id": "F-00119",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_7c4aba266ddb",
+      "title": "دو نیمهٔ هم‌ساختار برگه در عکس",
+      "statement": "در عکس، برگه دو جدول هم‌ساختار کنار هم دارد. نیمهٔ راست افزون بر «درخواست مرکزی» یک سرعنوان کم‌رنگ و نیمه‌پوشیدهٔ «درخواست شعبه» دارد که عددهای قرمز سهم شعبه زیر آن نوشته شده است؛ نیمهٔ چپ هم سرعنوان‌های کم‌رنگ «نام محصول» و «واحد سنجش بسته» دارد و «بسته» تنها بخش خوانای سرعنوان دوم است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADeQ5rG7piKFF-.image.md",
+          "hash": "sha256:8ecdb1977943184612a2a3046bdd0234d82a34e98b67e7bd04cdde957969710e",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00006"
+          }
+        ],
+        "question": "آیا این برگه یک جدول واحد با سرعنوان‌های ردیف، نام محصول، واحد سنجش بسته، درخواست مرکزی و درخواست شعبه است که در دو نیمهٔ کنار هم چاپ شده، و درخواست مرکزی دوم و بسته همان سرعنوان‌های نیمهٔ دیگرند؟"
+      },
+      "home": {
+        "ref": "F-00006"
+      },
+      "id": "F-00120",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_24ddd98e5b95",
+      "title": "سرعنوان کم‌رنگ بلوک چپ بالایی",
+      "statement": "در عکس، بالای بلوک چپ بالایی برگه، که ژامبون دوگانه تا سیر روغن را در بر دارد، سرعنوانی کم‌رنگ و زیر برچسب پوشیده دیده می‌شود که در توضیح نیامده و به «بخش فرنگی» شبیه است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADeQ5rG7piKFF-.image.md",
+          "hash": "sha256:8ecdb1977943184612a2a3046bdd0234d82a34e98b67e7bd04cdde957969710e",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00006"
+          }
+        ],
+        "question": "عنوان چاپی بخشی از فرم که ژامبون دوگانه، بیکن ورقه ای، پاستا پنه، دورچین استیک، سس قارچ، سس آلفردو پاستا، سس بیف استرا و سیر روغن در آن آمده چیست؟"
+      },
+      "home": {
+        "ref": "F-00006"
+      },
+      "id": "F-00121",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_78f0cbcf9ebd",
+      "title": "مغایرت روایت‌ها دربارهٔ اقلامی که روی فرم مرینت می‌آید",
+      "statement": "دو روایت فرایندی دربارهٔ اقلامی که روی این فرم نوشته می‌شود با هم نمی‌خوانند و باید روشن شود کدام درست است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADghBrGz8GSFF-.image.md",
+          "hash": "sha256:a2514ace111e0da7cfd3fb997b3795682f5f8ada9bd3bdd63a8233dd74bd469f",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-003.json",
+          "node": "preparation-003-n007",
+          "quote": "مرغ گریل، مرغ پیتزا و فیله‌ها هم به همین روال در این فرم می‌آید",
+          "hash": "sha256:035ec918878a335535e08a1ec583311a3e67143299fb049a1903ca6ac749e822",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-031.json",
+          "node": "preparation-031-n002",
+          "quote": "تعداد چیزای موردنیاز، مقدار دورچین با عنوان «۱۰ پرس دورچین» و وزن خمیر مرکزی و شعبه هم در همین فرم",
+          "hash": "sha256:476c479d8349c0b8e9f42650aa60175806ba5b788cd2f71f920bdce42162933c",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/warehouse/processes/warehouse-004.json",
+          "node": "warehouse-004-n003",
+          "quote": "تنها دو بخش در این فرم درج می‌شوند",
+          "hash": "sha256:a926db797e742206f82496f5ec109217cfa1441a42c58661255ebdc4bfce30c2",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/warehouse/processes/warehouse-004.json",
+          "node": "warehouse-004-n005",
+          "quote": "مرغ پیتزا در فرم لیست مرینت درج نمی‌شود",
+          "hash": "sha256:a926db797e742206f82496f5ec109217cfa1441a42c58661255ebdc4bfce30c2",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00007"
+          }
+        ],
+        "question": "در روایت آماده‌سازی، مرغ گریل، مرغ پیتزا و فیله‌ها روی همین فرم می‌آیند و تعداد چیزا، دورچین و وزن خمیر مرکزی و شعبه هم در همین فرم به لاین مرینت اعلام می‌شود؛ در روایت انبار، این فرم تنها گریل (به کیلو) و لقمه، فیلهٔ اسپایسی و استریپس (به تعداد) را دارد و وزن مرغ پیتزا جدا و شفاهی اعلام می‌شود. کدام درست است؟ ردیف چاپی مرغ پیتزای خام روی فرم هنوز پر می‌شود، و چیزا، دورچین و خمیر که ردیف چاپی ندارند کجای فرم نوشته می‌شوند؟"
+      },
+      "home": {
+        "ref": "F-00007"
+      },
+      "id": "F-00122",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_422eb9f77fe2",
+      "title": "ساختار خانه‌های تعداد و وزن در عکس فرم",
+      "statement": "عکس فرم جزئیاتی از خانه‌های مقدار و یک نشانهٔ دست‌نویس نشان می‌دهد که شرح متنی فرم آن‌ها را روشن نکرده است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADghBrGz8GSFF-.image.md",
+          "hash": "sha256:a2514ace111e0da7cfd3fb997b3795682f5f8ada9bd3bdd63a8233dd74bd469f",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00007",
+            "field": "tedad_vazn"
+          }
+        ],
+        "question": "در عکس، خانهٔ «تعداد / وزن» فیله یک خانهٔ مشترک برای دو ردیف استریپس و اسپایسی است که با خط‌چین به «تعداد» در بالا و «وزن» در پایین تقسیم شده، و خانهٔ لقمهٔ خام «تعداد» را بالا و «وزن» را پایین دارد؛ در بقیهٔ ردیف‌ها تنها واژهٔ کوچک «وزن» در گوشهٔ خانه چاپ شده و جای عدد خالی است. همچنین «مرغ پیتزا پخته شده» در ردیف کنار شنیسل خام با خودکار دور گرفته شده است. آیا برای فیله تعداد و وزن هر یک از دو نوع جدا نوشته می‌شود یا یک‌جا برای هر دو؟"
+      },
+      "home": {
+        "ref": "F-00007",
+        "field": "tedad_vazn"
+      },
+      "id": "F-00123",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_602ee1ab7efe",
+      "title": "ساختار خانه‌های فرم تبدیل مرغ پیتزا در عکس",
+      "statement": "در عکس فرم، خانهٔ خالی وزن میان نام قلم و خانهٔ کیلو قرار دارد و یک خانهٔ کیلو هر دو ردیف ضایعات مرغ و کاست را می‌پوشاند؛ بخش چپ جدول در ردیف مرغ پخته چهار خانهٔ خالی و در دو ردیف دیگر یک خانهٔ پهن دارد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADbg5rG7piKFF-.image.md",
+          "hash": "sha256:139a0796a3743c4bacab767f32749ebd0fe0f4e2c1e72de3a5e27a2a51201004",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n041",
+          "quote": "در بالای فرم وزن کل مرغ خام",
+          "hash": "sha256:ecef39b667404cd777c0b03d08c4fe51ab3e43135e0250e95dc875871bb76c1f",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00008"
+          }
+        ],
+        "question": "در عکس، «ضایعات مرغ» و «کاست» یک خانهٔ واحد کیلو دارند و بخش چپ جدول در ردیف مرغ پخته چهار خانه و در دو ردیف دیگر یک خانهٔ پهن دارد. وزن هر قلم در کدام خانه نوشته می‌شود، خانه‌های بخش چپ برای چیست، و وزن کل مرغ خام که طبق فرایند در بالای فرم می‌آید در کدام خانهٔ بالای فرم نوشته می‌شود؟"
+      },
+      "home": {
+        "ref": "F-00008"
+      },
+      "id": "F-00124",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_7c2c4cc4da75",
+      "title": "پرکنندهٔ نسخهٔ انبار فرم تبدیل مرغ پیتزا",
+      "statement": "فرایندهای آماده‌سازی و انبار دربارهٔ پرکنندهٔ نسخهٔ انبار فرم تبدیل دو روایت دارند؛ تا روشن شدن آن، پرکننده و تأییدکنندهٔ این فرم ثبت نشده است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADbg5rG7piKFF-.image.md",
+          "hash": "sha256:139a0796a3743c4bacab767f32749ebd0fe0f4e2c1e72de3a5e27a2a51201004",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n041",
+          "quote": "تکمیل فرم تبدیل مرغ پیتزای تکه",
+          "hash": "sha256:ecef39b667404cd777c0b03d08c4fe51ab3e43135e0250e95dc875871bb76c1f",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n012",
+          "quote": "این دو جز عنوان بالای فرم با هم تفاوتی ندارند",
+          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/warehouse/processes/warehouse-005.json",
+          "node": "warehouse-005-n035",
+          "quote": "فرم تبدیل انبار نسخه جداگانه انبار است",
+          "hash": "sha256:619c5ee4ccf257f954e6d71bf2e66b11112188ce98207dfd75acb796c9580e44",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00008"
+          }
+        ],
+        "question": "روایت اول: فرایند آماده‌سازی می‌گوید فرم تبدیل مرغ پیتزای تکه‌شده را مسئول لاین سبزیجات پر می‌کند و نسخهٔ با عنوان انبار جز در عنوان با نسخهٔ آماده‌سازی فرقی ندارد. روایت دوم: فرایند انبار می‌گوید نسخهٔ انبار را کارکنان انبار جداگانه پر می‌کنند و در آن فقط وزن خارج‌شده، قلم تحویل‌گرفته‌شده و جمع ضایعات نوشته می‌شود. این فرم با عنوان انبار را کدام نقش پر می‌کند و چه کسی آن را تأیید می‌کند؟"
+      },
+      "home": {
+        "ref": "F-00008"
+      },
+      "id": "F-00125",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_c8ace37f227a",
+      "title": "ساختار جدول در عکس فرم تبدیل رول استیک",
+      "statement": "در عکس، در هر ردیف میان نام قلم و خانهٔ «کیلو» یک خانهٔ سفید برای نوشتن مقدار هست که در شرح عکس نیامده است. سه خانهٔ بی‌نام و خانهٔ زیر «جمع» تنها در ردیف استیک ورقه‌ای هستند و زیر یک خانهٔ خاکستری بی‌عنوان قرار دارند، نه زیر سرعنوان بلند بالای جدول؛ آن سرعنوان بالای نام قلم، خانهٔ مقدار و واحد است و در ردیف‌های دوم و سوم سمت چپ یک خانهٔ ادغام‌شده است که در ردیف ضایعات خاکستری است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADbw5rG7piKFF-.image.md",
+          "hash": "sha256:5b6e32cf7c7efaed3806530f1019e38936ae150469a4c5f53d4791f2daa6b5e7",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00009"
+          }
+        ],
+        "question": "آیا سه خانهٔ بی‌نام ردیف استیک ورقه‌ای برای وزن چند بستهٔ استیک ورقه‌ای است و «جمع» جمع همان خانه‌هاست، و خانهٔ سفید کنار نام هر قلم وزن کل آن قلم است؟"
+      },
+      "home": {
+        "ref": "F-00009"
+      },
+      "id": "F-00126",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_dbefe0517cad",
+      "title": "یکی بودن یا نبودن فرم تبدیل انبار با فرم آماده‌سازی",
+      "statement": "فرایند آماده‌سازی می‌گوید فرم تبدیل دو نسخه دارد، یکی با عنوان آماده‌سازی و یکی با عنوان انبار، که جز عنوان تفاوتی ندارند و پرسنل آماده‌سازی به همهٔ فرم‌ها دسترسی دارند. فرایند انبار می‌گوید فرم تبدیل انبار نسخهٔ جداگانهٔ انبار است، با فرم آماده‌سازی یکی نیست و هیچ‌کدام فرم دیگری را نمی‌بیند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADbw5rG7piKFF-.image.md",
+          "hash": "sha256:5b6e32cf7c7efaed3806530f1019e38936ae150469a4c5f53d4791f2daa6b5e7",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n012",
+          "quote": "این دو جز عنوان بالای فرم با هم تفاوتی ندارند",
+          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/warehouse/processes/warehouse-005.json",
+          "node": "warehouse-005-n035",
+          "quote": "فرم تبدیل انبار نسخه جداگانه انبار است و با فرم تبدیل آماده‌سازی یکی نیست",
+          "hash": "sha256:619c5ee4ccf257f954e6d71bf2e66b11112188ce98207dfd75acb796c9580e44",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00009"
+          }
+        ],
+        "question": "کدام درست است: این فرم همان فرم تبدیل آماده‌سازی با عنوانی دیگر است که پرسنل آماده‌سازی هم پر می‌کنند، یا نسخهٔ جداگانه‌ای است که تنها کارکنان انبار پر می‌کنند؟"
+      },
+      "home": {
+        "ref": "F-00009"
+      },
+      "id": "F-00127",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_680b8535b507",
+      "title": "فرم رول استیک یا فرم گوشت راسته گرم",
+      "statement": "در فرایندها فرم تبدیل گوشت راسته گرم با خروجی‌های استیک رولی، خرده گوشت و ضایعات وصف شده است، اما این فرم که زیرعنوانش هم رول استیک و هم گوشت راسته گرم است، ردیف‌های استیک ورقه‌ای، ضایعات قابل استفاده در چرخی و ضایعات دارد که با اسلایس رول استیک می‌خواند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADbw5rG7piKFF-.image.md",
+          "hash": "sha256:5b6e32cf7c7efaed3806530f1019e38936ae150469a4c5f53d4791f2daa6b5e7",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n012",
+          "quote": "فرم گوشت راسته گرم ستون‌های استیک رولی، خرده گوشت و ضایعات دارد",
+          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-030.json",
+          "node": "preparation-030-n014",
+          "quote": "فرم تبدیل آماده‌سازی گوشت راسته گرم ثبت می‌گردد",
+          "hash": "sha256:281009c0b5b58f5384df065b677791294344cd1b7d637a13e2b92a030a3aaaee",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00009"
+          }
+        ],
+        "question": "آیا این فرم تنها برای اسلایس رول استیک و تولید استیک ورقه‌ای به کار می‌رود و برای تفکیک گوشت راسته گرم فرم جداگانه‌ای با خروجی‌های استیک رولی، خرده گوشت و ضایعات وجود دارد، یا هر دو کار روی همین فرم ثبت می‌شود؟"
+      },
+      "home": {
+        "ref": "F-00009"
+      },
+      "id": "F-00128",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_5c0a46aea2b7",
+      "title": "ساختار بخش نیم‌ساخت در عکس فرم برگر",
+      "statement": "در عکس، بخش نیمه ساخته برگر در هر سطر دو خانهٔ خالی کنار هم و سپس خانهٔ واحد کیلو دارد، و خانهٔ جمع کنار این سطرها خط افقی ندارد و یکپارچه است. خانهٔ خالی کیلو بالای برگه در سطر عنوان برگر و بالای سربرگ جمع قرار دارد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADcA5rG7piKFF-.image.md",
+          "hash": "sha256:0354228a5b1a324cacca65fe5de12ff4ea6a77f2517220127c41baaabaa67735",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00010",
+            "field": "nimesakhte"
+          }
+        ],
+        "question": "در عکس، «نیمه ساخته برگر» در هر سطر دو خانهٔ خالی دارد و «جمع» یک خانهٔ یکپارچه است؛ آیا یکی از دو خانه برای نام ماده و دیگری برای مقدار آن است، و خانهٔ کیلوی بالای برگه چه وزنی را نگه می‌دارد؟"
+      },
+      "home": {
+        "ref": "F-00010"
+      },
+      "id": "F-00129",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_6f4a696c44fb",
+      "title": "نسخهٔ انبار فرم برگر",
+      "statement": "دو فرایند دربارهٔ اینکه انبار همین فرم برگر را دارد یا فرم جداگانه‌ای، با هم نمی‌خوانند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADcA5rG7piKFF-.image.md",
+          "hash": "sha256:0354228a5b1a324cacca65fe5de12ff4ea6a77f2517220127c41baaabaa67735",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-021.json",
+          "node": "preparation-021-n032",
+          "quote": "همین فرم در انبار نیز وجود دارد تا ورودی و خروجی دو واحد با هم هم‌خوانی داشته باشد",
+          "hash": "sha256:2438a2b399ab04e1e9e4b675583114b82861b9f2476a38394c25eba9b8fb3f91",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/warehouse/processes/warehouse-005.json",
+          "node": "warehouse-005-n035",
+          "quote": "فرم تبدیل انبار نسخه جداگانه انبار است و با فرم تبدیل آماده‌سازی یکی نیست",
+          "hash": "sha256:619c5ee4ccf257f954e6d71bf2e66b11112188ce98207dfd75acb796c9580e44",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00010"
+          }
+        ],
+        "question": "به روایت فرایند آماده‌سازی همین فرم برگر در انبار هم هست تا ورودی و خروجی دو واحد هم‌خوانی داشته باشد؛ به روایت فرایند انبار، انبار فرم تبدیل جداگانهٔ خود را دارد که در آن فقط وزن گوشت خارج‌شده و تعداد برگر تحویلی نوشته می‌شود و وزن مایهٔ برگر را ندارد. کدام روایت درست است؟"
+      },
+      "home": {
+        "ref": "F-00010"
+      },
+      "id": "F-00130",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_ff1154ebf07b",
+      "title": "ثبت استیک رولی در فرم تولید نیمه ساخته",
+      "statement": "دو فرایند دربارهٔ ثبت استیک رولی در فرم تولید نیمه ساخته یکسان نیستند و باید روشن شود کدام درست است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADcQ5rG7piKFF-.image.md",
+          "hash": "sha256:8c8c98c31aba2ea385dff81ff37f341cb173f2c63b6f12015b30f3a86ed505fd",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-020.json",
+          "node": "preparation-020-n023",
+          "quote": "پر کردن فرم نیم‌ساخت فیلادلفیا و استیک رولی",
+          "hash": "sha256:6755b679a16e891ef948b2bf7441eacba82cd728c1619bdbb7b09be20df8539a",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n023",
+          "quote": "گروه سوم اقلامی هستند که تنها فرم تبدیل دارند، مانند سینه مرغ، فیله مرغ، گوشت راسته، گوشت راسته گرم، رول استیک",
+          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00011"
+          }
+        ],
+        "question": "در فرایند تفکیک گوشت راسته، فرم نیم‌ساخت برای فیلادلفیا و استیک رولی با هم پر می‌شود و وزن استیک رولی تولیدشده ورودی آن است؛ اما در فرایند تعیین فرم‌های موظف، رول استیک تنها فرم تبدیل دارد و فرم نیم‌ساخت ندارد. آیا استیک رولی در فرم تولید نیمه ساخته ثبت می‌شود یا نه؟"
+      },
+      "home": {
+        "ref": "F-00011"
+      },
+      "id": "F-00131",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_d838e45f10c7",
+      "title": "نام نوشته‌شدهٔ مرغ پیتزا در فرم تولید نیمه ساخته",
+      "statement": "دو فرایند نام متفاوتی برای محصول مرغ پیتزا که لاین روی فرم تولید نیمه ساخته می‌نویسد آورده‌اند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADcQ5rG7piKFF-.image.md",
+          "hash": "sha256:8c8c98c31aba2ea385dff81ff37f341cb173f2c63b6f12015b30f3a86ed505fd",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-013.json",
+          "node": "preparation-013-n042",
+          "quote": "نام محصول نیمه‌ساخته را خود لاین با عنوان «مرغ پخته‌شده و سس‌خورده» در فرم می‌نویسد",
+          "hash": "sha256:ecef39b667404cd777c0b03d08c4fe51ab3e43135e0250e95dc875871bb76c1f",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n013",
+          "quote": "نام این محصول را خود پرسنل روی فرم «مرغ آماده‌شده و سس‌خورده» می‌نویسند",
+          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00011",
+            "field": "nam_mahsul"
+          }
+        ],
+        "question": "در یک فرایند نامی که لاین برای مرغ پیتزا روی فرم می‌نویسد «مرغ پخته‌شده و سس‌خورده» و در فرایند دیگر «مرغ آماده‌شده و سس‌خورده» آمده است؛ کدام نام روی فرم نوشته می‌شود؟"
+      },
+      "home": {
+        "ref": "F-00011",
+        "field": "nam_mahsul"
+      },
+      "id": "F-00132",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_94f060f82ed2",
+      "title": "شمار ردیف‌های جدول فرم تولید نیمه ساخته",
+      "statement": "در عکس، جدول مواد اولیهٔ هر یک از دو فرم کنار هم روی برگه هشت ردیف خالی دارد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADcQ5rG7piKFF-.image.md",
+          "hash": "sha256:8c8c98c31aba2ea385dff81ff37f341cb173f2c63b6f12015b30f3a86ed505fd",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00011",
+            "field": "mavad_avalie"
+          }
+        ],
+        "question": "در عکس، جدول مواد اولیهٔ هر فرم هشت ردیف خالی دارد؛ برای محصولی که بیش از هشت مادهٔ اولیه دارد، مانند چرخ‌کرده با ادویه‌ها و سس‌های متعدد، از فرم دوم همان برگه استفاده می‌شود یا از برگهٔ دیگر؟"
+      },
+      "home": {
+        "ref": "F-00011",
+        "field": "mavad_avalie"
+      },
+      "id": "F-00133",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_aeeae8a0b2f4",
+      "title": "خانه‌های فرم تبدیل راسته در عکس",
+      "statement": "در عکس فرم، میان نام هر قلم و خانهٔ کیلو یک خانهٔ خالی دیگر هست؛ در ردیف فیلادلفیا سمت چپ کیلو سه خانهٔ خالی باریک پیش از خانهٔ جمع دیده می‌شود و خانهٔ بزرگ ردیف ضایعات خاکستری است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADcg5rG7piKFF-.image.md",
+          "hash": "sha256:2f11b6cefb182523ae2c731474027b556ffbe1e24d68379d296baf3365ad5219",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00012"
+          }
+        ],
+        "question": "مقدار هر قلم در کدام خانه نوشته می‌شود، و خانه‌های خالی سمت چپ کیلو در ردیف فیلادلفیا برای چه ثبتی است؟"
+      },
+      "home": {
+        "ref": "F-00012"
+      },
+      "id": "F-00134",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_c524f82a7e71",
+      "title": "ساختار خانه‌های خالی فرم تبدیل ژامبون بیکن در عکس",
+      "statement": "در عکس، هر ردیف بیکن یک خانهٔ خالی میان نام قلم و واحد دارد و سه خانهٔ خالی دیگر زیر سربرگی سایه‌دار و بی‌عنوان پیش از خانهٔ «جمع» آمده است. در بخش ضایعات، «ژامبون خرد شده» و «پلاستیک» هر کدام خانهٔ خالی جداگانه‌ای پیش از خانهٔ مشترک «کیلو» دارند و باقی ردیف تا زیر «جمع» یک خانهٔ یکپارچهٔ سایه‌دار است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADcw5rG7piKFF-.image.md",
+          "hash": "sha256:c30f9285529e68fce74a646f6817d0eda238f2445c8f27d7088d4431894c3c89",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00013"
+          }
+        ],
+        "question": "خانه‌های خالی ردیف بیکن پیش از جمع برای ثبت چه مقداری است، و آیا وزن ضایعات برای هر قلم جداگانه نوشته می‌شود یا فقط یک جمع برای هر دو؟"
+      },
+      "home": {
+        "ref": "F-00013"
+      },
+      "id": "F-00135",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_d7108b3312c6",
+      "title": "جایگاه ژامبون خرد شده در فرم تبدیل ژامبون بیکن",
+      "statement": "شرح فرایند برای این فرم، ژامبون خرد شده را با واحد ورق و جدا از ضایعات می‌آورد و پوست، کاور و آب ژامبون را ضایعات همین فرم می‌داند؛ ولی روی فرم، ورق واحد ردیف دوم بیکن است، ژامبون خرد شده زیر ضایعات و به کیلو چاپ شده و ردیفی برای پوست و آب نیست.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADcw5rG7piKFF-.image.md",
+          "hash": "sha256:c30f9285529e68fce74a646f6817d0eda238f2445c8f27d7088d4431894c3c89",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-017.json",
+          "node": "preparation-017-n021",
+          "quote": "بیکن (کیلو)، ژامبون خرد شده (ورق)، پلاستیک (کیلو) و ضایعات",
+          "hash": "sha256:ce35bd499dad22394e6b0098703b10831bd05d11999394ac8b2e0b2feaab41f3",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00013"
+          }
+        ],
+        "question": "آیا ژامبون خرد شده ضایعات تبدیل است و به کیلو ثبت می‌شود یا خروجی قابل تحویل، و پوست و آب ژامبون‌های دیگر هم روی همین فرم نوشته می‌شود؟"
+      },
+      "home": {
+        "ref": "F-00013"
+      },
+      "id": "F-00136",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_6bf7a9733c08",
+      "title": "جای ثبت چربی و غضروف و استخوان سینه",
+      "statement": "چربی، غضروف و استخوانی که هنگام پاکسازی سینه جدا می‌شود ردیفی در فرم تبدیل سینه ندارد، و وزن خونابه از تفاضل به دست می‌آید.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdA5rG7piKFF-.image.md",
+          "hash": "sha256:32331a979fdfa0a891c87800f8a855121ebc98d2862d41144769251a8223e2bf",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n002",
+          "quote": "همه «مرغ ضایعات» به شمار می‌آید",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n021",
+          "quote": "وزن خونابه هم از تفاضل به دست می‌آید",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00014",
+            "field": "tahvil_anbar"
+          }
+        ],
+        "question": "چربی، غضروف و استخوانی که هنگام پاکسازی سینه جدا و «مرغ ضایعات» نامیده می‌شود (حدود یک و نیم تا سه کیلو در هر ۵۰ کیلو سینه) ردیفی در این فرم ندارد؛ وزن آن کجا ثبت می‌شود، و آیا در تفاضلی که وزن خونابه از آن به دست می‌آید پنهان می‌ماند؟"
+      },
+      "home": {
+        "ref": "F-00014",
+        "field": "tahvil_anbar"
+      },
+      "id": "F-00137",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_b111d9e44984",
+      "title": "مبنای مقدار طبیعی خونابهٔ مرغ",
+      "statement": "مقدار طبیعی خونابهٔ مرغ در فرایندها یک‌بار برای ۵۰ کیلو و بار دیگر برای ۸۰ کیلو مرغ آمده است، و برای پلاستیک برآورد جداگانه‌ای هم هست.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdA5rG7piKFF-.image.md",
+          "hash": "sha256:32331a979fdfa0a891c87800f8a855121ebc98d2862d41144769251a8223e2bf",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n025",
+          "quote": "برای ۵۰ کیلو مرغی که آمده حدود ۳۰۰ تا ۴۰۰ گرم خونابه طبیعی است",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n002",
+          "quote": "خونابه و پلاستیک بار که عرفاً در ۸۰ کیلو مرغ ۳۰۰ تا ۴۰۰ گرم است",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n031",
+          "quote": "وزن پلاستیک را در همین حدود بار حدود ۷۰۰ تا ۸۰۰ گرم می‌داند",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00014",
+            "field": "tahvil_anbar"
+          }
+        ],
+        "question": "مقدار طبیعی خونابه (حدود ۳۰۰ تا ۴۰۰ گرم) در یک گام برای ۵۰ کیلو مرغ و در گام‌های دیگر برای ۸۰ کیلو مرغ همراه با پلاستیک آمده است، و برآورد دیگری وزن پلاستیک را در همین حدود بار ۷۰۰ تا ۸۰۰ گرم می‌داند؛ مبنای درست کدام است؟"
+      },
+      "home": {
+        "ref": "F-00014",
+        "field": "tahvil_anbar"
+      },
+      "id": "F-00138",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_d0205bd5c6c9",
+      "title": "شمار خانه‌های بخش مابقی در عکس فرم",
+      "statement": "در عکس فرم، بخش مابقی برای ردیف‌های لقمه تا مرغ گریل سه خانه دارد، در حالی که شرح فرم آن را دو ستون خوانده است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdA5rG7piKFF-.image.md",
+          "hash": "sha256:32331a979fdfa0a891c87800f8a855121ebc98d2862d41144769251a8223e2bf",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00014",
+            "field": "mabaghi"
+          }
+        ],
+        "question": "در عکس، زیر «مابقی که در آماده سازی باقی مانده» برای ردیف‌های لقمه تا مرغ گریل سه خانه دیده می‌شود، نه دو؛ خانهٔ سمت راست در ردیف‌های لقمه و مرغ چیزا هر دو زیرردیف کیلو و عدد را با هم می‌پوشاند، و برای کنار شنیسل و ضایعات همهٔ بخش مابقی و جمع یک خانهٔ یکپارچه است. شمار درست ستون‌های این بخش کدام است؟"
+      },
+      "home": {
+        "ref": "F-00014",
+        "field": "mabaghi"
+      },
+      "id": "F-00139",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_9e9790005207",
+      "title": "کاربرد بخش مابقی و ستون جمع",
+      "statement": "فرایندها می‌گویند همهٔ خروجی لاین مرغ همان روز تحویل انبار می‌شود، ولی فرم بخشی برای مانده در آماده‌سازی و ستونی برای جمع دارد و روش پر کردن آن‌ها گفته نشده است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "photo",
+          "ref": "departments/preparation/attachments/.text/photo-AQADdA5rG7piKFF-.image.md",
+          "hash": "sha256:32331a979fdfa0a891c87800f8a855121ebc98d2862d41144769251a8223e2bf",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n031",
+          "quote": "همه‌چیز به جز خونابه و پلاستیک تحویل انبار داده می‌شود",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n011",
+          "quote": "آماده‌سازی مانده شب ندارد",
+          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00014",
+            "field": "mabaghi"
+          },
+          {
+            "ref": "F-00014",
+            "field": "jam"
+          }
+        ],
+        "question": "فرایندها می‌گویند همهٔ خروجی لاین مرغ جز خونابه و پلاستیک همان روز تحویل انبار می‌شود و مانده‌ای در آماده‌سازی نمی‌ماند؛ آیا بخش «مابقی که در آماده سازی باقی مانده» و ستون «جمع» هنوز پر می‌شوند، و اگر آری، چه چیزی در آن‌ها نوشته و جمع زده می‌شود؟"
+      },
+      "home": {
+        "ref": "F-00014",
+        "field": "mabaghi"
+      },
+      "id": "F-00140",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_8f674fba44e2",
+      "title": "ضایعات بال مرغ بی‌فرایند",
+      "statement": "جدول ضایعات روزانه جایی برای ضایعات بال مرغ دارد، اما هیچ یک از فرایندهای آماده‌سازی فرآوری بال مرغ یا وزن‌کشی ضایعات آن را شرح نمی‌دهد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00020",
+            "field": "bal_morgh"
+          }
+        ],
+        "question": "آیا ضایعات بال مرغ هنوز در این جدول ثبت می‌شود؟ اگر آری، بال مرغ در کدام لاین فرآوری می‌شود و ضایعات آن را چه کسی و با چه ترازویی وزن می‌کند؟ اگر نه، از چه زمانی این ستون دیگر پر نمی‌شود؟"
+      },
+      "home": {
+        "ref": "F-00020",
+        "field": "bal_morgh"
+      },
+      "id": "F-00141",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_ec6716dfc959",
+      "title": "شمول خونابه در ضایعات گوشت",
+      "statement": "لاین گوشت وزن پلاستیک و خونابه را جدا از ضایعات در دفتر گوشت ثبت می‌کند، اما در یادداشت‌های جدول ضایعات روزانه خونابهٔ استیک و گردن گاهی همراه ضایعات گوشت یک عدد آمده است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-030.json",
+          "node": "preparation-030-n011",
+          "quote": "مقدار پلاستیک و خونابه دوباره در دفتر قید می‌شود",
+          "hash": "sha256:281009c0b5b58f5384df065b677791294344cd1b7d637a13e2b92a030a3aaaee",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00020",
+            "field": "gusht"
+          }
+        ],
+        "question": "آیا وزن خونابه و پلاستیک گوشت باید در عدد روزانهٔ ضایعات گوشت شمرده شود، یا تنها دمار، غضروف و دورریز خود گوشت در آن می‌آید و خونابه جداگانه نگه داشته می‌شود؟"
+      },
+      "home": {
+        "ref": "F-00020",
+        "field": "gusht"
+      },
+      "id": "F-00142",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_325d2ba0aa40",
+      "title": "نوع خمیر تولیدی آماده‌سازی در ثبت روزانه",
+      "statement": "برگهٔ روزانهٔ خمیر دو ستون جدا برای خمیر آمریکایی و خمیر ایتالیایی دارد، اما آماده‌سازی نمی‌داند خمیری که تولید می‌کند کدام‌یک است و به همین دلیل هیچ‌کدام را پر نمی‌کند؛ این موضوع پیش‌تر هم اعلام شده است.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-016.json",
+          "node": "preparation-016-n006",
+          "quote": "این گزینه‌ها هست ولی به شکلی است که نمی‌توانند پرش کنند",
+          "hash": "sha256:8eebf3543434b01f567eab50102cf40fc6009b1bfc64785aad99afde24ed8005",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-026.json",
+          "node": "preparation-026-n017",
+          "quote": "این بخش از نظر آماده‌سازی قابل تکمیل نیست",
+          "hash": "sha256:4831b729f423e6104233d076045ec8ce33a73f568c2c04a5664d59458cfcc033",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00017",
+            "field": "khamir_amrikaei"
+          },
+          {
+            "ref": "F-00017",
+            "field": "khamir_italiaei"
+          }
+        ],
+        "question": "خمیری که آماده‌سازی تولید می‌کند باید در ستون خمیر آمریکایی ثبت شود یا خمیر ایتالیایی؟ و آیا آماده‌سازی از این پس باید مقدار خمیر هر روز و وزن سهم هر شعبه را در این برگه وارد کند؟"
+      },
+      "home": {
+        "ref": "F-00017"
+      },
+      "id": "F-00143",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_88c3c7ca0452",
+      "title": "بال مرغ در فرایندهای آماده‌سازی",
+      "statement": "برای بال مرغ استاندارد و غیراستاندارد در این جدول ستون وجود دارد، ولی هیچ فرایند فعلی آماده‌سازی از تولید یا تحویل بال مرغ نامی نمی‌برد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "chat",
+          "ref": null,
+          "hash": null,
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00015",
+            "field": "vazn_bal_standard"
+          }
+        ],
+        "question": "آیا بال مرغ هنوز در آماده‌سازی تفکیک و تحویل انبار می‌شود؟ اگر بله، کدام لاین آن را انجام می‌دهد و مرز بال استاندارد و غیراستاندارد چیست؛ اگر نه، این چهار ستون از چه زمانی دیگر پر نمی‌شوند؟"
+      },
+      "home": {
+        "ref": "F-00015",
+        "field": "vazn_bal_standard"
+      },
+      "id": "F-00144",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_03058b388642",
+      "title": "وزن مرغ گریل پیش یا پس از مرینت",
+      "statement": "مرغ گریل یک بار پس از برش در لاین مرغ و یک بار پس از مرینت، با حدود ده درصد وزن بیشتر، بر مبنای وزن تحویل انبار می‌شود.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-010.json",
+          "node": "preparation-010-n018",
+          "quote": "تنها استثنا مرغ گریل است که حدود ۱۰ درصد افزایش وزن دارد",
+          "hash": "sha256:16617ca8648c0e64fd73cc5294290f2f19a4d9d50ca22cdb438b16badd34bd8a",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n011",
+          "quote": "مرغ گریل تعدادی نیست",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00015",
+            "field": "vazn_gril"
+          }
+        ],
+        "question": "وزن مرغ گریل در این جدول وزن خام پس از برش در لاین مرغ است یا وزن پس از مرینت که حدود ده درصد بیشتر است؟"
+      },
+      "home": {
+        "ref": "F-00015",
+        "field": "vazn_gril"
+      },
+      "id": "F-00145",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_a2a05d1ba1cd",
+      "title": "ستون ثبت گوشت رست‌بیف",
+      "statement": "طبق فرایندها گوشت رست‌بیف مغز ران است، اما در این جدول مغز ران زیر سربرگ برگر آمده و ستون جداگانه‌ای هم برای گلدست رست‌بیف وجود دارد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-018.json",
+          "node": "preparation-018-n001",
+          "quote": "گوشت مغز ران مخصوص رست‌بیف است",
+          "hash": "sha256:7fa1000b4db4994a0bdbfb02c14c0a56ddc757598b765b9218cda0bca9d6e66e",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00019",
+            "field": "maghz_ran"
+          },
+          {
+            "ref": "F-00019",
+            "field": "goldast_rostbif"
+          }
+        ],
+        "question": "گوشت ورودی رست‌بیف اکنون در کدام ستون ثبت می‌شود، مغز ران یا گلدست رست‌بیف، و آیا ستون دیگر هنوز پر می‌شود؟"
+      },
+      "home": {
+        "ref": "F-00019"
+      },
+      "id": "F-00146",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_2c489a731b85",
+      "title": "اقلام جدول که در فرایندها نیامده‌اند",
+      "statement": "در فرایندهای آماده‌سازی از ورود قلوه‌گاه گوسفندی، قلوه‌گاه گوساله و بال مرغ نامی برده نشده است؛ لاین گوشت با مغز ران، گردن، راسته و سردست و لاین مرغ با سینه و فیله کار می‌کند.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-030.json",
+          "node": "preparation-030-n002",
+          "quote": "مغز ران برای رست‌بیف، گردن برای چرخ‌کرده، راسته کامل و سردست برای برگر",
+          "hash": "sha256:281009c0b5b58f5384df065b677791294344cd1b7d637a13e2b92a030a3aaaee",
+          "run": "runs/facts/preparation/20260930-110041"
+        },
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-012.json",
+          "node": "preparation-012-n030",
+          "quote": "مرغ خام به دو شکل سینه (شنیسل) و فیله تحویل لاین می‌شود",
+          "hash": "sha256:02d54da2e4af21b26949a6729d99e6509c92f1b801d2ae1eb51ae2ca58bda3ff",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00019",
+            "field": "qolvegah_gusfandi"
+          },
+          {
+            "ref": "F-00019",
+            "field": "qolvegah_gusale"
+          },
+          {
+            "ref": "F-00019",
+            "field": "bal"
+          }
+        ],
+        "question": "آیا ستون‌های قلوه‌گاه گوسفندی، قلوه‌گاه گوساله و بال هنوز پر می‌شوند و این اقلام در کدام تولید آماده‌سازی مصرف می‌شوند؟"
+      },
+      "home": {
+        "ref": "F-00019"
+      },
+      "id": "F-00147",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_6ea417ece8ca",
+      "title": "ثبت نشدن راه‌حل نیازمندی‌ها و مشکلات",
+      "statement": "برای موارد ثبت‌شده در جدول نیازمندی‌ها و مشکلات آماده‌سازی راه‌حلی نوشته نشده است و معلوم نیست راه‌حلی که در جلسه روزانه تعیین می‌شود کجا و به دست چه کسی ثبت می‌گردد.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-029.json",
+          "node": "preparation-029-n010",
+          "quote": "راه‌حل هر مورد در همان جلسه مشخص می‌شود.",
+          "hash": "sha256:196353c69e9e22a61a31ab22b166883ac9aca7e489e5dc09921971dc969664b4",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00018",
+            "field": "tozihat_rah_hal"
+          }
+        ],
+        "question": "در ردیف‌های موجود ستون توضیحات و راه‌حل خالی مانده یا در آن مشکل دیگری نوشته شده است؛ آیا راه‌حلی که در جلسه روزانه سرپرست‌ها با مدیر مجموعه برای هر مورد تعیین می‌شود باید در همین ستون ثبت شود، و ثبت آن با کیست؟"
+      },
+      "home": {
+        "ref": "F-00018",
+        "field": "tozihat_rah_hal"
+      },
+      "id": "F-00148",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    },
+    {
+      "kind": "note",
+      "key": "note_a7bfc8e61bbf",
+      "title": "ورودی راسته در جدول بازدهی",
+      "statement": "برای گوشت راسته، وزن سهم فیلادلفیا پیش از ثبت وزن کل در فرم تبدیل راسته از وزن اولیه کسر می‌شود؛ روشن نیست ورودی این جدول برای راسته وزن اولیه است یا وزن پس از این کسر.",
+      "scope": {
+        "departments": [
+          "preparation"
+        ],
+        "branches": []
+      },
+      "source": [
+        {
+          "type": "process",
+          "ref": "departments/preparation/processes/preparation-020.json",
+          "node": "preparation-020-n018",
+          "quote": "وزن قسمت فیلادلفیا از وزن اولیه گوشت راسته کسر می‌شود",
+          "hash": "sha256:6755b679a16e891ef948b2bf7441eacba82cd728c1619bdbb7b09be20df8539a",
+          "run": "runs/facts/preparation/20260930-110041"
+        }
+      ],
+      "retired": false,
+      "data": {
+        "about": [
+          {
+            "ref": "F-00016",
+            "field": "vorudi"
+          }
+        ],
+        "question": "برای روزهای راسته، ورودی جدول بازدهی وزن اولیهٔ گوشت راسته است یا وزن پس از کسر فیلادلفیا، و آیا فیلادلفیا یکی از محصولات این جدول ثبت می‌شود؟"
+      },
+      "home": {
+        "ref": "F-00016",
+        "field": "vorudi"
+      },
+      "id": "F-00149",
+      "valid_from": null,
+      "valid_to": null,
+      "status": "confirmed",
+      "updated_at": "2026-09-30T11:40:01Z"
+    }
+  ]
 }

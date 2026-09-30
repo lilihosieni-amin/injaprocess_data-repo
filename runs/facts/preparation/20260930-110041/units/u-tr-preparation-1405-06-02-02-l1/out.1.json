@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "unit": "u-tr-preparation-1405-06-02-02-l1",
+  "attempt": 1,
+  "decisions": [],
+  "new": [],
+  "contradicted": [
+    {
+      "claim": "در فرم تبدیل راسته وزن خام هر چهار قسمت راسته، از جمله فیلادلفیا، نوشته می‌شود و فیلادلفیای مرینت‌شده جداگانه در فرم فراوری‌شده می‌آید.",
+      "ref": "meetings/transcripts/preparation-1405-06-02-02.txt",
+      "lines": "111-119",
+      "against": {"process": "preparation-020", "node": "preparation-020-n018"}
+    }
+  ]
+}

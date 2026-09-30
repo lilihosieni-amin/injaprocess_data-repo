@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "unit": "u-wb-amadesazi-s5",
+  "attempt": 1,
+  "decisions": [
+    {
+      "skeleton": "S-rec-fedf9cc0dbe1",
+      "action": "keep",
+      "key": "af_ejraei_personel",
+      "title": "آف اجرایی پرسنل آماده‌سازی",
+      "statement": "جدول روزانهٔ آف پرسنل آماده‌سازی که یکی از بخش‌های گزارش روزانهٔ Excel آماده‌سازی است؛ برای هر روز شمار نفراتی که طبق برنامهٔ از پیش چیده‌شده باید آف باشند و شمار نفراتی که واقعاً آف بوده‌اند، همراه با توضیح تغییرات، در آن ثبت می‌شود. سرپرست آماده‌سازی این جدول را هر روز پر می‌کند.",
+      "aliases": ["آف اجرایی", "جدول آف"],
+      "data": {
+        "role": "log",
+        "grain": "هر روز یک ردیف",
+        "cadence": "daily",
+        "day_boundary": null,
+        "filled_by": "سرپرست آماده‌سازی",
+        "approved_by": null,
+        "primaryKey": ["tarikh"],
+        "fields": [
+          {
+            "from": "c_a",
+            "key": "tarikh",
+            "type": "date",
+            "description": "روزی که آف پرسنل آماده‌سازی برای آن ثبت می‌شود؛ سرپرست آماده‌سازی ردیف هر روز را در همان روز پر می‌کند."
+          },
+          {
+            "from": "c_b",
+            "key": "tedad_hadaf",
+            "type": "integer",
+            "description": {
+              "value": "شمار پرسنلی که طبق برنامهٔ آف از پیش چیده‌شده باید در این روز آف باشند؛ در آماده‌سازی از شنبه تا سه‌شنبه یک نفر آف است و چهارشنبه و پنجشنبه همه حاضرند.",
+              "inferred": true
+            }
+          },
+          {
+            "from": "c_c",
+            "key": "tedad_kasb_shode",
+            "type": "integer",
+            "description": {
+              "value": "شمار پرسنلی که در این روز واقعاً آف بوده‌اند؛ آف هر نفر از روی برنامه تیک می‌خورد و اگر کسی بیمار شود یا تغییری پیش بیاید، شمار واقعی در این ستون نوشته می‌شود.",
+              "inferred": true
+            }
+          },
+          {
+            "from": "c_d",
+            "key": "tozihat",
+            "type": "string",
+            "description": {
+              "value": "توضیح تفاوت آف واقعی با برنامه، مانند بیماری یکی از پرسنل که شمار آف آن روز را بالا برده است.",
+              "inferred": true
+            }
+          }
+        ]
+      },
+      "processes": [
+        {
+          "process": "preparation-026",
+          "node": "preparation-026-n017",
+          "quote": "هر شیت ستون ورودی، ستون خروجی و جدول آف دارد"
+        },
+        {
+          "process": "preparation-026",
+          "node": "preparation-026-n017",
+          "quote": "این فرم‌های اکسل عنکبوتی را سرپرست هر روز پر می‌کند"
+        },
+        {
+          "process": "preparation-001",
+          "node": "preparation-001-n007",
+          "quote": "از شنبه تا سه‌شنبه یکی از پرسنل آف است و چهارشنبه و پنجشنبه همه حاضرند"
+        },
+        {
+          "process": "cooking-030",
+          "node": "cooking-030-n047",
+          "quote": "آف از قبل چیده شده و هر یک از کارکنان روز مشخصی دارد که تیک زده می‌شود"
+        }
+      ]
+    }
+  ],
+  "new": [
+    {
+      "kind": "rule",
+      "key": "barname_af_personel_amadesazi",
+      "title": "برنامهٔ آف روزانهٔ پرسنل آماده‌سازی",
+      "home": {"ref": "S-rec-fedf9cc0dbe1", "field": "c_b"},
+      "statement": "در آماده‌سازی از شنبه تا سه‌شنبه هر روز یک نفر از پرسنل آف است و چهارشنبه و پنجشنبه همه حاضرند؛ به این ترتیب به‌طور میانگین سه نفر در لاین‌ها کار می‌کنند. این برنامه مبنای شمار آف برنامه‌ریزی‌شدهٔ هر روز در جدول آف است.",
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "inputs": [
+          {"key": "ruz_hafte", "title": "روز هفته", "from": "calendar"}
+        ],
+        "outputs": [
+          {"key": "tedad_af_hadaf", "title": "شمار آف برنامه‌ریزی‌شده", "nature": "target", "per": "هر روز"}
+        ],
+        "table": {
+          "hit": "unique",
+          "inputs": ["ruz_hafte"],
+          "outputs": ["tedad_af_hadaf"],
+          "rows": [
+            {"ruz_hafte": "شنبه", "tedad_af_hadaf": 1},
+            {"ruz_hafte": "یکشنبه", "tedad_af_hadaf": 1},
+            {"ruz_hafte": "دوشنبه", "tedad_af_hadaf": 1},
+            {"ruz_hafte": "سه‌شنبه", "tedad_af_hadaf": 1},
+            {"ruz_hafte": "چهارشنبه", "tedad_af_hadaf": 0},
+            {"ruz_hafte": "پنجشنبه", "tedad_af_hadaf": 0}
+          ]
+        }
+      },
+      "processes": [
+        {
+          "process": "preparation-001",
+          "node": "preparation-001-n007",
+          "quote": "از شنبه تا سه‌شنبه یکی از پرسنل آف است و چهارشنبه و پنجشنبه همه حاضرند"
+        }
+      ]
+    }
+  ]
+}

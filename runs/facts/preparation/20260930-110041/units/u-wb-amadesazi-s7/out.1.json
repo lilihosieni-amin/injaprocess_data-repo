@@ -1,0 +1,203 @@
+{
+  "schema_version": 1,
+  "unit": "u-wb-amadesazi-s7",
+  "attempt": 1,
+  "decisions": [
+    {
+      "skeleton": "S-rec-3d5d67801f5d",
+      "action": "keep",
+      "key": "bazdehi_gosht",
+      "title": "بازدهی روزانهٔ لاین گوشت",
+      "statement": "جدول بازدهی لاین گوشت آماده‌سازی: برای هر روز تولید، نوع گوشت ورودی و وزن آن به کیلو، نام حداکثر سه محصولی که از آن گوشت تولید شده و وزن هر محصول ثبت می‌شود و ستون‌های بازدهی، درصد وزن هر محصول نسبت به گوشت ورودی را محاسبه می‌کنند. وزن‌ها از روی دفتر گوشت لاین وارد می‌شوند و ورود روزانهٔ ورودی و خروجی اقلام گوشتی در فایل آماده‌سازی بر عهدهٔ سرپرست آماده‌سازی است.",
+      "aliases": ["بازدهی"],
+      "data": {
+        "role": "log",
+        "grain": "هر روز تولید لاین گوشت و هر نوع گوشت ورودی آن روز",
+        "cadence": {"value": "daily", "inferred": true},
+        "day_boundary": null,
+        "filled_by": {"value": "سرپرست آماده‌سازی", "inferred": true},
+        "approved_by": null,
+        "primaryKey": ["tarikh", "noe_gosht"],
+        "fields": [
+          {
+            "from": "c_a",
+            "key": "tarikh",
+            "type": "date",
+            "description": "تاریخ روزی که گوشت به لاین گوشت تحویل و فرآوری شده است. تولید لاین گوشت طبق برنامهٔ هفتگی انبار انجام می‌شود و هر روز یک نوع گوشت به لاین می‌آید."
+          },
+          {
+            "from": "c_b",
+            "key": "vorudi",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن گوشت خام تحویلی به لاین گوشت به کیلو. مسئول لاین گوشت آن را خودش با ترازوی آشپزخانه (دقت ۱۰ گرم) وزن می‌کند، به اعلام انبار اتکا نمی‌کند و همان وزن را در دفتر گوشت با عنوان ورودی آماده‌سازی می‌نویسد؛ پلاستیک و خونابه جداگانه وزن و در همان دفتر ثبت می‌شود."
+          },
+          {
+            "from": "c_c",
+            "key": "noe_gosht",
+            "type": "string",
+            "description": "نوع گوشتی که آن روز به لاین رسیده است: مغز ران برای رست‌بیف، گردن برای چرخ‌کرده، راسته برای استیک رولی و فیلادلفیا و خرده راسته، و سردست برای برگر."
+          },
+          {
+            "from": "c_d",
+            "key": "tolid_1",
+            "type": "string",
+            "description": "نام نخستین محصولی که از گوشت ورودی آن روز تولید شده است، مانند رست‌بیف، چرخ‌کرده یا استیک رولی."
+          },
+          {
+            "from": "c_e",
+            "key": "tolid_2",
+            "type": "string",
+            "description": "نام دومین محصول همان گوشت ورودی، در روزهایی که از یک گوشت بیش از یک محصول به دست می‌آید؛ برای نمونه از راسته، خرده راسته یا فیلادلفیا در کنار استیک رولی."
+          },
+          {
+            "from": "c_f",
+            "key": "tolid_3",
+            "type": "string",
+            "description": "نام سومین محصول همان گوشت ورودی، در روزهایی که از یک گوشت سه محصول به دست می‌آید؛ برای نمونه سه محصول استیک رولی، خرده راسته و فیلادلفیا از راسته."
+          },
+          {
+            "from": "c_g",
+            "key": "khoruji_1",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن نخستین محصول به کیلو، که مسئول لاین گوشت پس از فرآوری وزن‌گیری و در دفتر گوشت ثبت می‌کند."
+          },
+          {
+            "from": "c_h",
+            "key": "khoruji_2",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن دومین محصول به کیلو، که مسئول لاین گوشت پس از فرآوری وزن‌گیری و در دفتر گوشت ثبت می‌کند."
+          },
+          {
+            "from": "c_i",
+            "key": "khoruji_3",
+            "type": "number",
+            "unit": "kg",
+            "description": "وزن سومین محصول به کیلو، که مسئول لاین گوشت پس از فرآوری وزن‌گیری و در دفتر گوشت ثبت می‌کند."
+          },
+          {
+            "from": "c_j",
+            "key": "bazdehi_1",
+            "type": "number",
+            "unit": "percent",
+            "derived": {"ref": "S-r-c27932c46bfe"},
+            "description": "درصد وزن نخستین محصول نسبت به وزن گوشت ورودی همان روز؛ این ستون محاسبه‌ای است."
+          },
+          {
+            "from": "c_k",
+            "key": "bazdehi_2",
+            "type": "number",
+            "unit": "percent",
+            "derived": {"ref": "S-r-c27932c46bfe"},
+            "description": "درصد وزن دومین محصول نسبت به وزن گوشت ورودی همان روز؛ این ستون محاسبه‌ای است."
+          },
+          {
+            "from": "c_l",
+            "key": "bazdehi_3",
+            "type": "number",
+            "unit": "percent",
+            "derived": {"ref": "S-r-c27932c46bfe"},
+            "description": "درصد وزن سومین محصول نسبت به وزن گوشت ورودی همان روز؛ این ستون محاسبه‌ای است."
+          }
+        ]
+      },
+      "processes": [
+        {"process": "preparation-030", "node": "preparation-030-n006", "quote": "این یادداشت‌ها در نهایت مبنای ثبت ورودی و خروجی در فرم عنکبوتی اکسل مخصوص آماده‌سازی است"},
+        {"process": "preparation-030", "node": "preparation-030-n004", "quote": "هر چیزی که می‌آید خود پرسنل باید وزن‌گیری کنند"},
+        {"process": "preparation-030", "node": "preparation-030-n011", "quote": "هر روز یک نوع گوشت به لاین می‌آید"},
+        {"process": "preparation-030", "node": "preparation-030-n002", "quote": "مغز ران برای رست‌بیف، گردن برای چرخ‌کرده، راسته کامل و سردست برای برگر"},
+        {"process": "preparation-026", "node": "preparation-026-n017", "quote": "این فرم‌های اکسل عنکبوتی را سرپرست هر روز پر می‌کند"},
+        {"process": "preparation-020", "node": "preparation-020-n005", "quote": "تفکیک گوشت راسته به سه دسته استیک، فیلادلفیا و خرده راسته"},
+        {"process": "preparation-018", "node": "preparation-018-n025", "quote": "وزن گرفته می‌شود تا مشخص شود گوشت خام چقدر محصول داده است"}
+      ]
+    },
+    {
+      "skeleton": "S-r-c27932c46bfe",
+      "action": "keep",
+      "key": "bazdehi_mahsul_gosht",
+      "title": "بازدهی محصول لاین گوشت",
+      "statement": "بازدهی هر محصول لاین گوشت برابر است با وزن آن محصول تقسیم بر وزن گوشت خام ورودی همان روز، ضرب در صد، و به درصد بیان می‌شود. از هر نوع گوشت ورودی حداکثر سه محصول ثبت و بازدهی هر یک جداگانه حساب می‌شود؛ برای نمونه از بیست کیلو گوشت مغز ران خام پیش از افزودن استاک حدود ده تا یازده کیلو رست‌بیف به دست می‌آید.",
+      "aliases": ["بازدهی خروجی"],
+      "home": {"ref": "S-rec-3d5d67801f5d"},
+      "data": {
+        "lang": "feel",
+        "expr": "bazdehi = khoruji / vorudi * zarib",
+        "inputs": [
+          {"key": "khoruji", "title": "خروجی (کیلو)", "unit": "kg"},
+          {"key": "vorudi", "title": "ورودی (کیلو)", "unit": "kg", "from": {"ref": "S-rec-3d5d67801f5d", "field": "c_b"}},
+          {"key": "zarib", "title": "ضریب تبدیل به درصد", "from": {"param": "p1"}}
+        ],
+        "outputs": [
+          {"key": "bazdehi", "title": "بازدهی خروجی", "unit": "percent", "nature": "observed", "per": "هر محصول در هر روز تولید"}
+        ]
+      },
+      "processes": [
+        {"process": "preparation-018", "node": "preparation-018-n025", "quote": "از بیست کیلو گوشت خام ده یا یازده کیلو رست‌بیف به دست می‌آید"},
+        {"process": "preparation-018", "node": "preparation-018-n026", "quote": "محاسبه درصد بازده رست‌بیف"}
+      ]
+    },
+    {
+      "skeleton": "S-r-51db194ff5dd",
+      "action": "merge_into",
+      "into": "S-r-c27932c46bfe",
+      "reason_code": "duplicate",
+      "reason": "same yield computation for the second output column; the column is the only difference"
+    },
+    {
+      "skeleton": "S-r-fd9e0e8a8bd9",
+      "action": "merge_into",
+      "into": "S-r-c27932c46bfe",
+      "reason_code": "duplicate",
+      "reason": "same yield computation for the third output column; the column is the only difference"
+    }
+  ],
+  "new": [
+    {
+      "kind": "rule",
+      "key": "mabnaye_bazdeh_rostbif",
+      "title": "مبنای بازده رست‌بیف",
+      "home": {"ref": "S-rec-3d5d67801f5d"},
+      "statement": "مسئول لاین گوشت پس از غضروف‌گیری، وزن رست‌بیف را با وزن گوشت مغز ران خام می‌سنجد و با افزودن استاک، وزن محصول را به هفتاد درصد وزن گوشت خام می‌رساند. وقتی گوشت نرم است و رست‌بیف خیس می‌شود، که حدود یک تا دو بار از هر ده تولید پیش می‌آید، مبنا شصت و پنج تا شصت و هفت درصد گرفته می‌شود.",
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "inputs": [
+          {"key": "vaziat_rostbif", "title": "وضعیت رست‌بیف پس از پخت"}
+        ],
+        "outputs": [
+          {"key": "mabnaye_bazdeh", "title": "مبنای بازده", "unit": "percent", "nature": "target", "per": "وزن گوشت مغز ران خام"}
+        ],
+        "table": {
+          "hit": "unique",
+          "inputs": ["vaziat_rostbif"],
+          "outputs": ["mabnaye_bazdeh"],
+          "rows": [
+            {"vaziat_rostbif": "خشک", "mabnaye_bazdeh": 70},
+            {"vaziat_rostbif": "نرم و خیس", "mabnaye_bazdeh": "65 تا 67"}
+          ]
+        }
+      },
+      "processes": [
+        {"process": "preparation-018", "node": "preparation-018-n026", "quote": "مبنا این است که هفتاد درصد محصول از گوشت برداشته شود"},
+        {"process": "preparation-018", "node": "preparation-018-n027", "quote": "تا وزن محصول به هفتاد درصد وزن گوشت خام برسد"},
+        {"process": "preparation-018", "node": "preparation-018-n028", "quote": "به جای هفتاد درصد روی شصت و پنج تا شصت و هفت درصد توقف می‌شود"}
+      ]
+    },
+    {
+      "kind": "note",
+      "key": "vorudi_raste_dar_bazdehi",
+      "title": "ورودی راسته در جدول بازدهی",
+      "home": {"ref": "S-rec-3d5d67801f5d", "field": "c_b"},
+      "statement": "برای گوشت راسته، وزن سهم فیلادلفیا پیش از ثبت وزن کل در فرم تبدیل راسته از وزن اولیه کسر می‌شود؛ روشن نیست ورودی این جدول برای راسته وزن اولیه است یا وزن پس از این کسر.",
+      "data": {
+        "about": [{"ref": "S-rec-3d5d67801f5d", "field": "c_b"}],
+        "question": "برای روزهای راسته، ورودی جدول بازدهی وزن اولیهٔ گوشت راسته است یا وزن پس از کسر فیلادلفیا، و آیا فیلادلفیا یکی از محصولات این جدول ثبت می‌شود؟"
+      },
+      "processes": [
+        {"process": "preparation-020", "node": "preparation-020-n018", "quote": "وزن قسمت فیلادلفیا از وزن اولیه گوشت راسته کسر می‌شود"}
+      ]
+    }
+  ]
+}

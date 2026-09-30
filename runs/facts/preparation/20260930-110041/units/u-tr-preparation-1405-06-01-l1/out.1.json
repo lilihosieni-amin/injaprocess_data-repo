@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "unit": "u-tr-preparation-1405-06-01-l1",
+  "attempt": 1,
+  "decisions": [],
+  "new": [],
+  "contradicted": [
+    {
+      "claim": "ضایعات کاهو نباید از چهل درصد وزن کاهوی ورودی بیشتر شود.",
+      "ref": "meetings/transcripts/preparation-1405-06-01.txt",
+      "lines": "217-222",
+      "against": {"process": "preparation-005", "node": "preparation-005-n002"}
+    },
+    {
+      "claim": "فرم مرینت‌ها فرم چاپی نیست و انبار آن را به‌طور کامل با دست می‌نویسد.",
+      "ref": "meetings/transcripts/preparation-1405-06-01.txt",
+      "lines": "21-27",
+      "against": {"ref": "N-u-att-2-0"}
+    }
+  ]
+}

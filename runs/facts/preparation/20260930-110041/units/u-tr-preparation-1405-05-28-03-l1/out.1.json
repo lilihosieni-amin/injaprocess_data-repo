@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "unit": "u-tr-preparation-1405-05-28-03-l1",
+  "attempt": 1,
+  "decisions": [],
+  "new": [
+    {
+      "kind": "rule",
+      "key": "tatbiq_vazn_daryafti_ba_ersali_anbar",
+      "title": "هم‌خوانی وزن دریافتی آماده‌سازی با وزن ارسالی انبار",
+      "statement": "در تطبیق ورودی و خروجی میان انبار و آماده‌سازی، وزن هر قلم گوشت و مرغ خامی که آماده‌سازی از انبار تحویل گرفته با وزنی که انبار برای آماده‌سازی ارسال کرده مقایسه می‌شود و این دو باید با هم بخوانند؛ اختلاف به کیلوگرم برابر است با وزن دریافتی آماده‌سازی منهای وزن ارسالی انبار. وزن محصول فرآوری‌شده، مانند برگری که از همان گوشت به دست آمده و با افزودن مواد سنگین‌تر شده است، مبنای این مقایسه نیست.",
+      "home": {"ref": "S-rec-e3f80534814b"},
+      "processes": [
+        {
+          "process": "preparation-017",
+          "node": "preparation-017-n022",
+          "quote": "ورودی و خروجی انبار باید با ورودی و خروجی آماده‌سازی هم‌خوانی داشته باشد"
+        }
+      ],
+      "data": {
+        "lang": "feel",
+        "expr": "ekhtelaf_daryaft_ersal = vazn_daryafti_amadesazi - vazn_ersali_anbar",
+        "inputs": [
+          {
+            "key": "vazn_daryafti_amadesazi",
+            "title": "وزن تحویل‌گرفتهٔ آماده‌سازی از انبار",
+            "unit": "kg",
+            "from": {"ref": "S-rec-e3f80534814b"}
+          },
+          {
+            "key": "vazn_ersali_anbar",
+            "title": "وزن ارسالی انبار به آماده‌سازی",
+            "unit": "kg",
+            "from": null
+          }
+        ],
+        "outputs": [
+          {
+            "key": "ekhtelaf_daryaft_ersal",
+            "title": "اختلاف وزن دریافتی و ارسالی",
+            "unit": "kg",
+            "nature": "observed"
+          }
+        ],
+        "edge_cases": [
+          {
+            "input": {"vazn_ersali_anbar": 10, "vazn_daryafti_amadesazi": 9},
+            "expected": {"ekhtelaf_daryaft_ersal": -1},
+            "why": "انبار ده کیلو ارسال کرده و آماده‌سازی نه کیلو دریافت کرده است؛ این دو عدد نمی‌خوانند، هرچند آماده‌سازی از همان گوشت پانزده کیلو برگر تحویل داده باشد."
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "schema_version": 1,
+  "unit": "u-att-8",
+  "attempt": 1,
+  "decisions": [],
+  "new": [
+    {
+      "kind": "record",
+      "key": "form_tabdil_zhambon_beikon",
+      "title": "فرم تبدیل آماده‌سازی ژامبون بیکن",
+      "aliases": ["فرم تبدیل ژامبون و بیکن", "فرم تبدیل آماده سازی ژامبون بیکن"],
+      "statement": "فرم کاغذی که در هر نوبت برش، وزن ژامبون بیکن ورودی و آنچه از آن به دست می‌آید — بیکن به کیلو و به ورق — و ضایعات آن، یعنی ژامبون خرد شده و پلاستیک، را ثبت می‌کند تا محصول و ضایعات تحویل انبار شود. متصدی آماده‌سازی که سرپرست برای برش ژامبون و بیکن تعیین کرده آن را پر می‌کند و به سرپرست آماده‌سازی می‌دهد و سرپرست فرم‌های تکمیل‌شده را برای ثبت گزارش تبدیل به حسابداری می‌سپارد. پپرونی در این فرم ستونی ندارد.",
+      "processes": [
+        {"process": "preparation-017", "node": "preparation-017-n021", "quote": "در این فرم وزن ورودی، وزن خروجی و ضایعات ثبت می‌شود"},
+        {"process": "preparation-017", "node": "preparation-017-n024", "quote": "پس از آماده‌شدن تحویل سرپرست آماده‌سازی می‌شود"},
+        {"process": "preparation-017", "node": "preparation-017-n025", "quote": "بر مبنای این فرم‌ها گزارش تبدیل ثبت می‌شود"},
+        {"process": "preparation-017", "node": "preparation-017-n007", "quote": "می‌گوید چه کسی این کارها را علاوه بر کار خودش انجام دهد"},
+        {"process": "preparation-026", "node": "preparation-026-n012", "quote": "برای اسکن و ارسال به سیستم، وجود نسخه با عنوان آماده‌سازی لازم است"}
+      ],
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "فرم‌های تکمیل‌شده نزد سرپرست آماده‌سازی می‌ماند و در پایان به حسابداری ارائه می‌شود",
+          "holder": "سرپرست آماده‌سازی"
+        },
+        "cadence": {"value": "ad_hoc", "inferred": true},
+        "grain": "هر نوبت برش ژامبون بیکن در روزی که برای آن سفارش هست",
+        "filled_by": "متصدی آماده‌سازی تعیین‌شده برای برش ژامبون و بیکن",
+        "approved_by": {"value": "سرپرست آماده‌سازی", "inferred": true},
+        "blank_master": true,
+        "header_fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "type": "date",
+            "description": "تاریخ روزی که ژامبون بیکن برش خورده و تبدیل شده است."
+          },
+          {
+            "key": "vazn_vorudi",
+            "title": "کیلو",
+            "type": "number",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "description": "وزن ژامبون بیکنی که در این نوبت به اقلام فرم تبدیل می‌شود؛ متصدی آن را پس از تحویل گرفتن از انبار خودش با ترازوی آماده‌سازی می‌کشد و به وزن اعلامی انبار اتکا نمی‌کند."
+          }
+        ],
+        "sections": [
+          {"key": "zayeat", "title": "ضایعات"}
+        ],
+        "rows": [
+          {"key": "beikon__kg", "title": "بیکن", "unit": "kg", "unit_raw": "کیلو"},
+          {"key": "beikon__varaq", "title": "بیکن", "unit": "slice", "unit_raw": "ورق"},
+          {"key": "zhambon_khord_shode", "title": "ژامبون خرد شده", "unit": "kg", "unit_raw": "کیلو", "section": "zayeat"},
+          {"key": "plastik", "title": "پلاستیک", "unit": "kg", "unit_raw": "کیلو", "section": "zayeat"}
+        ],
+        "fields": [
+          {
+            "key": "meqdar",
+            "title": null,
+            "type": "number",
+            "repeat": 2,
+            "unit": null,
+            "description": "خانه‌های خالی بی‌سربرگ کنار هر ردیف که مقدار همان ردیف در آن نوشته می‌شود: وزن بیکن به کیلو، تعداد ورق بیکن، و وزن ضایعات به کیلو؛ واحد هر خانه همان واحد چاپ‌شدهٔ ردیف است. در بخش ضایعات یک خانهٔ یکپارچه برای هر دو قلم آمده است."
+          },
+          {
+            "key": "jam",
+            "title": "جمع",
+            "type": "number",
+            "unit": null,
+            "description": "جمع مقدار هر ردیف به واحد همان ردیف؛ در بخش ضایعات یک خانهٔ جمع برای هر دو قلم آمده است."
+          }
+        ]
+      },
+      "from": ["departments/preparation/attachments/.text/photo-AQADcw5rG7piKFF-.image.md"]
+    },
+    {
+      "kind": "note",
+      "key": "sakhtar_aks_form_tabdil_beikon",
+      "title": "ساختار خانه‌های خالی فرم تبدیل ژامبون بیکن در عکس",
+      "home": {"ref": "N-u-att-8-0"},
+      "statement": "در عکس، هر ردیف بیکن یک خانهٔ خالی میان نام قلم و واحد دارد و سه خانهٔ خالی دیگر زیر سربرگی سایه‌دار و بی‌عنوان پیش از خانهٔ «جمع» آمده است. در بخش ضایعات، «ژامبون خرد شده» و «پلاستیک» هر کدام خانهٔ خالی جداگانه‌ای پیش از خانهٔ مشترک «کیلو» دارند و باقی ردیف تا زیر «جمع» یک خانهٔ یکپارچهٔ سایه‌دار است.",
+      "data": {
+        "about": [{"ref": "N-u-att-8-0"}],
+        "question": "خانه‌های خالی ردیف بیکن پیش از جمع برای ثبت چه مقداری است، و آیا وزن ضایعات برای هر قلم جداگانه نوشته می‌شود یا فقط یک جمع برای هر دو؟"
+      },
+      "from": ["departments/preparation/attachments/.text/photo-AQADcw5rG7piKFF-.image.md"]
+    },
+    {
+      "kind": "note",
+      "key": "zhambon_khord_shode_zayeat_ya_khoruji",
+      "title": "جایگاه ژامبون خرد شده در فرم تبدیل ژامبون بیکن",
+      "home": {"ref": "N-u-att-8-0"},
+      "statement": "شرح فرایند برای این فرم، ژامبون خرد شده را با واحد ورق و جدا از ضایعات می‌آورد و پوست، کاور و آب ژامبون را ضایعات همین فرم می‌داند؛ ولی روی فرم، ورق واحد ردیف دوم بیکن است، ژامبون خرد شده زیر ضایعات و به کیلو چاپ شده و ردیفی برای پوست و آب نیست.",
+      "processes": [
+        {"process": "preparation-017", "node": "preparation-017-n021", "quote": "بیکن (کیلو)، ژامبون خرد شده (ورق)، پلاستیک (کیلو) و ضایعات"}
+      ],
+      "data": {
+        "about": [{"ref": "N-u-att-8-0"}],
+        "question": "آیا ژامبون خرد شده ضایعات تبدیل است و به کیلو ثبت می‌شود یا خروجی قابل تحویل، و پوست و آب ژامبون‌های دیگر هم روی همین فرم نوشته می‌شود؟"
+      },
+      "from": ["departments/preparation/attachments/.text/photo-AQADcw5rG7piKFF-.image.md"]
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_vorudi_zhambon_beikon",
+      "title": "وزن ژامبون بیکن ورودی به تبدیل",
+      "home": {"ref": "N-u-att-8-0", "field": "vazn_vorudi"},
+      "statement": "وزن ژامبون بیکنی که برای برش از انبار تحویل گرفته می‌شود، پیش از شروع کار با ترازوی آماده‌سازی به کیلو کشیده و در سربرگ فرم تبدیل نوشته می‌شود.",
+      "processes": [
+        {"process": "preparation-026", "node": "preparation-026-n001", "quote": "هر چه می‌آید را خودشان می‌کشند یا می‌شمارند"},
+        {"process": "preparation-004", "node": "preparation-004-n009", "quote": "آماده‌سازی به اعلام انبار اتکا نمی‌کند"}
+      ],
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "ترازوی آماده‌سازی با ظرفیت شصت تا هفتاد کیلو و خطای حداکثر ده گرم؛ به وزن اعلامی انبار اتکا نمی‌شود.",
+        "when": "پس از تحویل گرفتن از انبار و پیش از برش",
+        "by": "متصدی آماده‌سازی",
+        "writes_to": {"ref": "N-u-att-8-0", "field": "vazn_vorudi"}
+      }
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_beikon_tabdil",
+      "title": "وزن بیکن حاصل از تبدیل",
+      "home": {"ref": "N-u-att-8-0", "field": "meqdar"},
+      "statement": "هر بستهٔ بیکن برش‌خورده پس از بسته‌بندی روی ترازوی لیبل‌گذاری به کیلو وزن می‌شود و وزن بیکن حاصل در ردیف کیلوی بیکن فرم تبدیل نوشته می‌شود.",
+      "processes": [
+        {"process": "preparation-026", "node": "preparation-026-n008", "quote": "خروجی هر لاین هم وزن‌کشی می‌شود"},
+        {"process": "preparation-026", "node": "preparation-026-n018", "quote": "آنچه ثبت می‌گردد وزن خالص محصول باشد"}
+      ],
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "ترازوی لیبل‌گذاری؛ وزن ظرف پیش از وزن‌کشی صفر می‌شود تا وزن خالص ثبت شود.",
+        "when": "پس از بسته‌بندی و پیش از تحویل به انبار",
+        "by": "متصدی آماده‌سازی",
+        "writes_to": {"ref": "N-u-att-8-0", "field": "meqdar", "row": "beikon__kg"}
+      }
+    },
+    {
+      "kind": "measurement",
+      "key": "tedad_varaq_beikon",
+      "title": "تعداد ورق بیکن حاصل از تبدیل",
+      "home": {"ref": "N-u-att-8-0", "field": "meqdar"},
+      "statement": "بیکن به‌صورت ورق لایه‌ای برش می‌خورد و در بسته‌های شمارشی بسته‌بندی می‌شود؛ تعداد ورق‌ها شمرده و در ردیف ورق بیکن فرم تبدیل نوشته می‌شود.",
+      "processes": [
+        {"process": "preparation-017", "node": "preparation-017-n017", "quote": "در بسته‌های شمارشی تحویل می‌رود"},
+        {"process": "preparation-017", "node": "preparation-017-n019", "quote": "عدد ۳۰ روی لیبل خط می‌خورد و به ۱۵ تبدیل می‌شود"},
+        {"process": "preparation-026", "node": "preparation-026-n020", "quote": "عدد چاپ‌شده خط زده و تعداد واقعی روی لیبل نوشته می‌شود"}
+      ],
+      "data": {
+        "quantity": "count",
+        "unit": "slice",
+        "method": "شمارش ورق‌های لایه‌ای هر بسته؛ تعداد روی لیبل بسته هم می‌آید.",
+        "when": "هنگام بسته‌بندی و لیبل‌گذاری، پیش از تحویل به انبار",
+        "by": "متصدی آماده‌سازی",
+        "writes_to": {"ref": "N-u-att-8-0", "field": "meqdar", "row": "beikon__varaq"},
+        "exceptions": "اگر بسته کمتر از تعداد چاپ‌شده روی لیبل ورق داشته باشد، عدد چاپ‌شده خط می‌خورد و تعداد واقعی نوشته می‌شود و تاریخ و نام دست نمی‌خورد."
+      }
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_zayeat_tabdil_beikon",
+      "title": "وزن ضایعات تبدیل ژامبون بیکن",
+      "home": {"ref": "N-u-att-8-0", "field": "meqdar"},
+      "statement": "پلاستیک و کاور ژامبون بیکن و تکه‌های خرد شده و گوشه‌مانده در حین برش جداگانه به کیلو وزن و در بخش ضایعات فرم تبدیل ثبت می‌شوند، حتی وقتی وزنشان در حد چند گرم است.",
+      "processes": [
+        {"process": "preparation-026", "node": "preparation-026-n003", "quote": "کیسه‌ها و پوشش‌ها دور ریخته نمی‌شوند"},
+        {"process": "preparation-017", "node": "preparation-017-n020", "quote": "وزن پوست هرچند در حد گرم است ولی نوشته می‌شود"},
+        {"process": "preparation-017", "node": "preparation-017-n013", "quote": "به انبار برگشت داده می‌شود و به عنوان ضایعات ثبت می‌گردد"}
+      ],
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "method": "کاور و پلاستیک کنار دست نگه داشته و پس از خالی کردن قلم روی میز کار با ترازوی آماده‌سازی وزن می‌شود؛ تکه‌های خرد شده هم جداگانه وزن می‌شوند.",
+        "when": "در حین برش و پیش از پر کردن فرم تبدیل",
+        "by": "متصدی آماده‌سازی",
+        "writes_to": {"ref": "N-u-att-8-0", "field": "meqdar"},
+        "exceptions": "تکهٔ کپک‌زده‌ای که پیش از برش دیده شود به انبار برگردانده و به‌عنوان ضایعات ثبت می‌شود."
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "ekhtelaf_tabdil_zhambon_beikon",
+      "title": "کنترل تطابق ورودی با خروجی و ضایعات ژامبون بیکن",
+      "home": {"ref": "N-u-att-8-0"},
+      "statement": "پس از تکمیل فرم تبدیل، مسئول لاین کنترل می‌کند که وزن بیکن حاصل به‌اضافهٔ وزن ضایعات با وزن ژامبون بیکن ورودی بخواند. اختلاف تبدیل برابر است با وزن ورودی منهای وزن بیکن و ضایعات، به کیلو.",
+      "processes": [
+        {"process": "preparation-026", "node": "preparation-026-n014", "quote": "ضایعات هم به این جمع اضافه می‌شود"}
+      ],
+      "data": {
+        "lang": "feel",
+        "expr": "ekhtelaf_tabdil = vazn_vorudi - (vazn_beikon + zhambon_khord_shode + plastik)",
+        "inputs": [
+          {"key": "vazn_vorudi", "title": "وزن ژامبون بیکن ورودی", "unit": "kg",
+           "from": {"ref": "N-u-att-8-0", "field": "vazn_vorudi"}},
+          {"key": "vazn_beikon", "title": "بیکن", "unit": "kg",
+           "from": {"ref": "N-u-att-8-0", "field": "meqdar", "row": "beikon__kg"}},
+          {"key": "zhambon_khord_shode", "title": "ژامبون خرد شده", "unit": "kg",
+           "from": {"ref": "N-u-att-8-0", "field": "meqdar", "row": "zhambon_khord_shode"}},
+          {"key": "plastik", "title": "پلاستیک", "unit": "kg",
+           "from": {"ref": "N-u-att-8-0", "field": "meqdar", "row": "plastik"}}
+        ],
+        "outputs": [
+          {"key": "ekhtelaf_tabdil", "title": "اختلاف تبدیل", "unit": "kg", "nature": "observed"}
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "tedad_varaq_baste_beikon",
+      "title": "تعداد ورق در هر بستهٔ بیکن",
+      "home": {"ref": "N-u-att-8-0", "field": "meqdar"},
+      "statement": "بیکن ورق لایه‌ای در بسته‌های سی ورقی بسته‌بندی و با لیبل سی ورق تحویل می‌شود؛ اگر آشپزخانه تعداد کمتری بخواهد، تعداد روی لیبل با دست به تعداد واقعی اصلاح می‌شود.",
+      "processes": [
+        {"process": "preparation-017", "node": "preparation-017-n019", "quote": "لیبل بیکن به‌صورت «بیکن ۳۰ ورق لایه‌ای» است"},
+        {"process": "preparation-026", "node": "preparation-026-n010", "quote": "«بیکن ۳۰ ورق»"}
+      ],
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {"key": "tedad_varaq", "title": "تعداد ورق در هر بسته", "unit": "slice",
+           "per": "هر بستهٔ بیکن", "value": 30, "nature": "standard"}
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "unit": "u-tr-preparation-1405-05-28-02-l1",
+  "attempt": 1,
+  "decisions": [],
+  "new": [],
+  "contradicted": [
+    {
+      "claim": "به‌جز سبزیجات، برای همهٔ اقلام آماده‌سازی فرم تبدیل پر می‌شود.",
+      "ref": "meetings/transcripts/preparation-1405-05-28-02.txt",
+      "lines": "9-12",
+      "against": {"process": "preparation-026", "node": "preparation-026-n023"}
+    },
+    {
+      "claim": "کنار شنیسل ضایعات لاین مرغ است که به انبار تحویل داده می‌شود.",
+      "ref": "meetings/transcripts/preparation-1405-05-28-02.txt",
+      "lines": "36-36",
+      "against": {"ref": "N-u-wb-amadesazi-s1-0"}
+    },
+    {
+      "claim": "از دو یخچالی که در آماده‌سازی برای انبار کنار گذاشته شده، یکی برای شعبهٔ مرکزی و دیگری برای شعبهٔ نارمک است.",
+      "ref": "meetings/transcripts/preparation-1405-05-28-02.txt",
+      "lines": "36-36",
+      "against": {"process": "preparation-026", "node": "preparation-026-n006"}
+    }
+  ]
+}

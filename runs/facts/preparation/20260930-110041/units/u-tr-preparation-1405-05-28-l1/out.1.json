@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "unit": "u-tr-preparation-1405-05-28-l1",
+  "attempt": 1,
+  "decisions": [],
+  "new": [
+    {
+      "kind": "measurement",
+      "key": "meqdar_mavad_gusht_eslahie_sobh",
+      "title": "مقدار پیاز، سیر و ادویهٔ لاین گوشت در اصلاحیهٔ صبح",
+      "statement": "مسئول لاین گوشت مقدار پیاز، سیر و ادویهٔ لازم برای تولید گوشت روز را در اصلاحیهٔ صبح برگهٔ درخواست کالا می‌نویسد، چون مقدار گوشت روز، برای نمونه رست‌بیف یا چرخ‌کرده، تنها صبح از انبار پرسیده می‌شود و شب پیش معلوم نیست. به همین دلیل پر شدن دوبارهٔ برگهٔ درخواست کالا بیشتر به خاطر لاین گوشت است.",
+      "home": {"ref": "N-u-att-1-0", "field": "meqdar_darkhast"},
+      "processes": [
+        {"process": "preparation-003", "node": "preparation-003-n012", "quote": "اصلاحیه روی همان فرمی انجام می‌شود که شب قبل تحویل انبار شده"},
+        {"process": "preparation-019", "node": "preparation-019-n016", "quote": "بر مبنای مقدار گوشتی که آن روز آمده وزن گرفته می‌شود"}
+      ],
+      "data": {
+        "quantity": "mass",
+        "unit": null,
+        "method": "برآورد از رسپی هر کیلو گوشت و مقدار گوشت روز که انبار صبح اعلام می‌کند، با واحد چاپ‌شدهٔ هر قلم",
+        "when": "صبح، پس از پرسیدن مقدار گوشت روز از انبار و پیش از تحویل اصلاحیه به انبار تا ساعت ده و نیم",
+        "by": "مسئول لاین گوشت",
+        "writes_to": {"ref": "N-u-att-1-0", "field": "meqdar_darkhast"},
+        "voice": [{"ref": "meetings/transcripts/preparation-1405-05-28.txt", "lines": "256-256"}]
+      }
+    }
+  ],
+  "contradicted": [
+    {
+      "claim": "برای بیست کیلو فروش هفتگی چرخ‌کرده، با احتساب کاست حدود سی کیلو گوشت پخته می‌شود.",
+      "ref": "meetings/transcripts/preparation-1405-05-28.txt",
+      "lines": "247-250",
+      "against": {"process": "preparation-019", "node": "preparation-019-n021"}
+    }
+  ]
+}

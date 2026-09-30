@@ -1,0 +1,265 @@
+{
+  "schema_version": 1,
+  "unit": "u-wb-amadesazi-s3",
+  "attempt": 1,
+  "decisions": [
+    {
+      "skeleton": "S-rec-2c141582db58",
+      "action": "keep",
+      "key": "khoruji_amadesazi_be_anbar",
+      "title": "خروجی آماده‌سازی به انبار",
+      "statement": "جدول روزانهٔ تحویل تولیدات مرغ و گوشت آماده‌سازی به انبار که برای هر روز تعداد و وزن لقمه، مرغ پیتزا، مرغ گریل، چیزا، فیله، کنار شنیسل، کنار فیله، بال مرغ، برگر و مینی‌برگر، گوشت چرخ‌کرده و رست‌بیف را در ستون‌های جدا نگه می‌دارد. سرپرست آماده‌سازی آن را هر روز از روی دفتر مرغ و دفتر گوشت لاین‌ها و فرم‌های تبدیل پر می‌کند.",
+      "data": {
+        "role": "log",
+        "grain": "هر سطر یک روز تحویل",
+        "cadence": {"value": "daily", "inferred": true},
+        "filled_by": {"value": "سرپرست آماده‌سازی", "inferred": true},
+        "primaryKey": ["tarikh"],
+        "fields": [
+          {"from": "c_a", "key": "tarikh", "type": "date",
+           "description": "روز تحویل تولیدات به انبار؛ هر سطر یک روز است، چون آماده‌سازی ماندهٔ شب ندارد و همهٔ تولیدات همان روز تحویل انبار می‌شود."},
+          {"from": "c_b", "key": "tedad_mini_burger", "type": "number", "unit": "pcs",
+           "group": {"key": "burger", "title": "برگر"},
+           "description": "تعداد مینی‌برگر ۶۰ گرمی تحویلی آن روز. تعداد تولید را انبار تعیین می‌کند و مسئول لاین گوشت در پایان تولید برگرها را خودش می‌شمارد؛ بسته‌ها پنج‌عددی و وکیوم‌شده‌اند."},
+          {"from": "c_c", "key": "tedad_burger", "type": "number", "unit": "pcs",
+           "group": {"key": "burger", "title": "برگر"},
+           "description": "تعداد برگر ۱۵۰ گرمی تحویلی آن روز؛ برگر فقط در روزهای تولید برگر طبق برنامهٔ هفتگی لاین گوشت زده می‌شود و شمارش آن با خود مسئول لاین گوشت است. بسته‌ها پنج‌عددی‌اند."},
+          {"from": "c_d", "key": "tedad_loghme_sine", "type": "number", "unit": "pcs",
+           "group": {"key": "sine_morgh", "title": "سینه مرغ"},
+           "description": "تعداد لقمهٔ مرغ بریده‌شده از سینه (هر لقمه ۱۰ تا ۱۳ گرم) که در بسته‌های ۲۰۰ عددی تحویل می‌شود؛ مسئول لاین مرغ لقمه‌ها را دستی می‌شمارد و خطای یکی دو عددی ممکن است."},
+          {"from": "c_e", "key": "vazn_loghme_sine", "type": "number", "unit": {"value": "kg", "inferred": true},
+           "group": {"key": "sine_morgh", "title": "سینه مرغ"},
+           "description": "وزن کل لقمهٔ سینهٔ تحویلی؛ مسئول لاین مرغ هر بستهٔ ۲۰۰ عددی را روی ترازو وزن می‌کند و هر بسته باید حدود ۲٫۱۳۰ تا ۲٫۱۵۰ کیلوگرم باشد."},
+          {"from": "c_f", "key": "vazn_pizza_sine", "type": "number", "unit": {"value": "kg", "inferred": true},
+           "group": {"key": "sine_morgh", "title": "سینه مرغ"},
+           "description": "وزن مرغ پیتزای خام حاصل از سینه (کناره‌ها، خرده‌ها، گوشهٔ لقمه‌های درشت و تکه‌های پاره) که تعدادی نیست و بر مبنای وزن در بسته‌های ۴ کیلویی تحویل انبار می‌شود."},
+          {"from": "c_g", "key": "vazn_gril", "type": "number", "unit": {"value": "kg", "inferred": true},
+           "group": {"key": "sine_morgh", "title": "سینه مرغ"},
+           "description": "وزن مرغ گریل (سینه‌های یکدست و متوسط، سینه‌های کلفت دوقبضه‌شده) که تعدادی نیست و فقط بر مبنای وزن در بسته‌های ۴ کیلویی تحویل می‌شود. مرغ گریل پس از مرینت حدود ده درصد وزن می‌گیرد."},
+          {"from": "c_h", "key": "vazn_kenar_shenisel", "type": "number", "unit": {"value": "kg", "inferred": true},
+           "group": {"key": "sine_morgh", "title": "سینه مرغ"},
+           "description": "وزن کنار شنیسل، یعنی کناره‌های سینه که هنوز گوشت به آن چسبیده است؛ خام و با کد ضایعات مرغ روی ترازو لیبل می‌خورد و تحویل انبار می‌شود، در سردخانهٔ زیر صفر جمع می‌شود و فقط برای تولید مرغ پیتزای پخته به کار می‌رود."},
+          {"from": "c_i", "key": "tedad_chiza", "type": "number", "unit": "pcs",
+           "group": {"key": "sine_morgh", "title": "سینه مرغ"},
+           "description": "تعداد تکه‌های خام چیزا (هر تکه حدود ۸۰ گرم) که فقط در صورت درخواست انبار بریده و در بسته‌های ۴۸ عددی تحویل می‌شود."},
+          {"from": "c_j", "key": "vazn_chiza", "type": "number", "unit": {"value": "kg", "inferred": true},
+           "group": {"key": "sine_morgh", "title": "سینه مرغ"},
+           "description": "وزن کل چیزای خام تحویلی؛ اضافه‌وزن تا حدود ۵۰۰ گرم پذیرفته است، چون اضافه‌ها پس از کوبیدن گرفته و به مرغ پیتزا تبدیل می‌شود."},
+          {"from": "c_k", "key": "vazn_loghme_file", "type": "number", "unit": {"value": "kg", "inferred": true},
+           "group": {"key": "file_morgh", "title": "فیله مرغ"},
+           "description": "وزن لقمهٔ بریده‌شده از فیله. از فیله دیگر لقمه زده نمی‌شود و این ستون دیگر پر نمی‌شود؛ فیله‌های ریز اکنون به مرغ پیتزا می‌روند و وزنشان در ستون وزن پیتزا (فیله) ثبت می‌شود."},
+          {"from": "c_l", "key": "tedad_loghme_file", "type": "number", "unit": "pcs",
+           "group": {"key": "file_morgh", "title": "فیله مرغ"},
+           "description": "تعداد لقمهٔ بریده‌شده از فیله. از فیله دیگر لقمه زده نمی‌شود و این ستون دیگر پر نمی‌شود؛ فیله‌های ریز اکنون بر مبنای وزن به مرغ پیتزا می‌روند."},
+          {"from": "c_m", "key": "vazn_kenar_file", "type": "number", "unit": {"value": "kg", "inferred": true},
+           "group": {"key": "file_morgh", "title": "فیله مرغ"},
+           "description": "وزن کنار فیله، یعنی تکه‌های گوشتی که هنگام کندن پوست فیله جدا می‌شود؛ جداگانه پاکسازی و وزن می‌شود، جدا از فیله و ضایعات فیله تحویل می‌شود و بخش قابل استفادهٔ آن فقط برای ناهار و شام پرسنل به کار می‌رود."},
+          {"from": "c_n", "key": "vazn_pizza_file", "type": "number", "unit": {"value": "kg", "inferred": true},
+           "group": {"key": "file_morgh", "title": "فیله مرغ"},
+           "description": "وزن مرغ پیتزای حاصل از فیله‌های کوچک‌تر از حدود ۵۰ گرم که تعدادی حساب نمی‌شوند و بر مبنای وزن در بسته‌های ۴ کیلویی تحویل می‌شوند."},
+          {"from": "c_o", "key": "vazn_file", "type": "number", "unit": {"value": "kg", "inferred": true},
+           "group": {"key": "file_morgh", "title": "فیله مرغ"},
+           "description": "وزن کل فیله‌های درشت (حدود ۵۰ تا ۸۰ گرم) برای سوخاری، اسپایسی یا استریپس؛ وزن هر بسته روی لیبل آن چاپ می‌شود."},
+          {"from": "c_p", "key": "tedad_file", "type": "number", "unit": "pcs",
+           "group": {"key": "file_morgh", "title": "فیله مرغ"},
+           "description": "تعداد فیلهٔ درشت تحویلی که مسئول لاین مرغ در بسته‌های ۶۰ عددی می‌شمارد و روی لیبل با وزن و تاریخ می‌نویسد؛ تعداد فیلهٔ روز در فرم تبدیل فیله هم ثبت می‌شود."},
+          {"from": "c_q", "key": "vazn_bal_standard", "type": "number", "unit": {"value": "kg", "inferred": true},
+           "group": {"key": "bal_morgh", "title": "بال مرغ"},
+           "description": "وزن بال مرغ استاندارد تحویلی. در فرایندهای فعلی آماده‌سازی از بال مرغ و از مرز استاندارد و غیراستاندارد آن نامی برده نشده است."},
+          {"from": "c_r", "key": "tedad_bal_standard", "type": "number", "unit": "pcs",
+           "group": {"key": "bal_morgh", "title": "بال مرغ"},
+           "description": "تعداد بال مرغ استاندارد تحویلی. در فرایندهای فعلی آماده‌سازی از بال مرغ نامی برده نشده است."},
+          {"from": "c_s", "key": "vazn_bal_gheir_standard", "type": "number", "unit": {"value": "kg", "inferred": true},
+           "group": {"key": "bal_morgh", "title": "بال مرغ"},
+           "description": "وزن بال مرغ غیراستاندارد تحویلی. در فرایندهای فعلی آماده‌سازی از بال مرغ نامی برده نشده و خانه‌های این ستون گاهی به‌صورت متن وارد شده‌اند."},
+          {"from": "c_t", "key": "tedad_bal_gheir_standard", "type": "number", "unit": "pcs",
+           "group": {"key": "bal_morgh", "title": "بال مرغ"},
+           "description": "تعداد بال مرغ غیراستاندارد تحویلی. در فرایندهای فعلی آماده‌سازی از بال مرغ نامی برده نشده و خانه‌های این ستون گاهی به‌صورت متن وارد شده‌اند."},
+          {"from": "c_u", "key": "vazn_charkhi", "type": "number", "unit": {"value": "kg", "inferred": true},
+           "group": {"key": "gousht", "title": "گوشت"},
+           "description": "وزن گوشت چرخ‌کردهٔ پخته و ادویه‌زده که در وزن‌گیری نهایی پس از هم‌زدن تعیین و در بسته‌های دو کیلویی (باقی‌ماندهٔ کمتر از دو کیلو در ظرف جدا) تحویل انبار می‌شود؛ اصولاً هفته‌ای یک روز تولید می‌شود."},
+          {"from": "c_v", "key": "vazn_rostbif", "type": "number", "unit": {"value": "kg", "inferred": true},
+           "group": {"key": "gousht", "title": "گوشت"},
+           "description": "وزن رست‌بیف بسته‌بندی‌شده که پس از غضروف‌گیری، افزودن عصارهٔ گوشت و سویا سس و فلفل در بسته‌های دو کیلویی لیبل‌خورده غروب تحویل انبار می‌شود. خانه‌های این ستون گاهی به‌صورت متن وارد شده‌اند."}
+        ]
+      },
+      "processes": [
+        {"process": "preparation-026", "node": "preparation-026-n017", "quote": "این فرم‌های اکسل عنکبوتی را سرپرست هر روز پر می‌کند"},
+        {"process": "preparation-012", "node": "preparation-012-n026", "quote": "مبنای ثبت ورودی و خروجی در فرم عنکبوتی اکسل"},
+        {"process": "preparation-026", "node": "preparation-026-n011", "quote": "آماده‌سازی مانده شب ندارد"},
+        {"process": "preparation-012", "node": "preparation-012-n031", "quote": "همه‌چیز به جز خونابه و پلاستیک تحویل انبار داده می‌شود"},
+        {"process": "preparation-012", "node": "preparation-012-n005", "quote": "لقمه دستی شمارش می‌شود و هر بسته ۲۰۰ عدد است"},
+        {"process": "preparation-012", "node": "preparation-012-n006", "quote": "حدود ۲ کیلو و ۱۳۰ و نهایتاً ۲ کیلو و ۱۵۰ گرم"},
+        {"process": "preparation-012", "node": "preparation-012-n011", "quote": "مرغ گریل تعدادی نیست"},
+        {"process": "preparation-012", "node": "preparation-012-n013", "quote": "هر بسته ۴۸ عدد دارد"},
+        {"process": "preparation-012", "node": "preparation-012-n015", "quote": "در بسته‌های ۴ کیلویی بسته‌بندی می‌شود"},
+        {"process": "preparation-012", "node": "preparation-012-n017", "quote": "وزنشان در فرم فیله ثبت می‌شود"},
+        {"process": "preparation-012", "node": "preparation-012-n019", "quote": "هر بسته ۶۰ عدد دارد"},
+        {"process": "preparation-012", "node": "preparation-012-n020", "quote": "فیله‌های کوچک‌تر از حدود ۵۰ گرم تعدادی حساب نمی‌شوند"},
+        {"process": "preparation-012", "node": "preparation-012-n022", "quote": "از فیله دیگر لقمه زده نمی‌شود"},
+        {"process": "preparation-013", "node": "preparation-013-n056", "quote": "کنار شینسل خام به‌عنوان ضایعات تحویل انبار می‌شود"},
+        {"process": "preparation-026", "node": "preparation-026-n005", "quote": "شینسل که به عنوان ضایعات مرغ کدش در ترازو تعریف شده"},
+        {"process": "preparation-024", "node": "preparation-024-n007", "quote": "کنار فیله خام هم که در زیر صفر نگهداری می‌شود"},
+        {"process": "preparation-010", "node": "preparation-010-n006", "quote": "۲۰ کیلو مرغ گریل پس از مرینت ۲۲ کیلو می‌شود"},
+        {"process": "preparation-021", "node": "preparation-021-n031", "quote": "شمارش برعهده خود لاین گوشت است"},
+        {"process": "preparation-021", "node": "preparation-021-n025", "quote": "پلاستیک برگر پنج عددی است"},
+        {"process": "preparation-019", "node": "preparation-019-n027", "quote": "آخرین وزن‌گیری فرایند است"},
+        {"process": "preparation-019", "node": "preparation-019-n028", "quote": "کلاً باید دو کیلو دو کیلو بسته شود"},
+        {"process": "preparation-018", "node": "preparation-018-n031", "quote": "محصول در بسته‌های دو کیلویی بسته‌بندی می‌شود"},
+        {"process": "preparation-018", "node": "preparation-018-n033", "quote": "غروب محصول را تحویل انبار می‌دهد"}
+      ]
+    }
+  ],
+  "new": [
+    {
+      "kind": "rule",
+      "key": "andaze_baste_tahvili_be_anbar",
+      "title": "اندازهٔ بستهٔ استاندارد اقلام تحویلی به انبار",
+      "statement": "هر قلم تولیدی مرغ و گوشت آماده‌سازی در بستهٔ استاندارد خودش تحویل انبار می‌شود: اقلام شمارشی به تعداد ثابت در هر بسته و اقلام وزنی به وزن ثابت در هر بسته. سفارش آشپزخانه برای برگر، چرخ‌کرده و رست‌بیف هم باید مضربی از همین بسته باشد.",
+      "home": {"ref": "S-rec-2c141582db58"},
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "inputs": [{"key": "qalam", "title": "قلم تحویلی"}],
+        "outputs": [
+          {"key": "meqdar_baste", "title": "مقدار هر بسته"},
+          {"key": "vahed_baste", "title": "واحد مقدار بسته"}
+        ],
+        "table": {
+          "hit": "unique",
+          "inputs": ["qalam"],
+          "outputs": ["meqdar_baste", "vahed_baste"],
+          "rows": [
+            {"qalam": "لقمهٔ سینه", "meqdar_baste": 200, "vahed_baste": "pcs"},
+            {"qalam": "چیزای خام", "meqdar_baste": 48, "vahed_baste": "pcs"},
+            {"qalam": "فیلهٔ درشت", "meqdar_baste": 60, "vahed_baste": "pcs"},
+            {"qalam": "مرغ گریل", "meqdar_baste": 4, "vahed_baste": "kg"},
+            {"qalam": "مرغ پیتزای خام (سینه و فیله)", "meqdar_baste": 4, "vahed_baste": "kg"},
+            {"qalam": "برگر و مینی‌برگر", "meqdar_baste": 5, "vahed_baste": "pcs"},
+            {"qalam": "گوشت چرخ‌کرده", "meqdar_baste": 2, "vahed_baste": "kg"},
+            {"qalam": "رست‌بیف", "meqdar_baste": 2, "vahed_baste": "kg"}
+          ]
+        }
+      },
+      "processes": [
+        {"process": "preparation-012", "node": "preparation-012-n005", "quote": "هر بسته ۲۰۰ عدد است"},
+        {"process": "preparation-012", "node": "preparation-012-n013", "quote": "هر بسته ۴۸ عدد دارد"},
+        {"process": "preparation-012", "node": "preparation-012-n019", "quote": "هر بسته ۶۰ عدد دارد"},
+        {"process": "preparation-012", "node": "preparation-012-n011", "quote": "طبق وزن در بسته‌های ۴ کیلویی"},
+        {"process": "preparation-012", "node": "preparation-012-n015", "quote": "طبق وزن در بسته‌های ۴ کیلویی"},
+        {"process": "preparation-012", "node": "preparation-012-n020", "quote": "در بسته‌های ۴ کیلویی بسته‌بندی می‌شوند"},
+        {"process": "preparation-021", "node": "preparation-021-n025", "quote": "سفارش آشپزخانه نیز باید بر مبنای همین ضریب پنج‌تایی"},
+        {"process": "preparation-019", "node": "preparation-019-n028", "quote": "امکان سفارش یک کیلو وجود ندارد"},
+        {"process": "preparation-018", "node": "preparation-018-n031", "quote": "سفارش خارج از این ضریب پذیرفته نمی‌شود"}
+      ]
+    },
+    {
+      "kind": "rule",
+      "key": "vazn_estandard_har_adad",
+      "title": "وزن استاندارد هر عدد از اقلام شمارشی",
+      "statement": "هر عدد از اقلام شمارشی آماده‌سازی وزن استاندارد خودش را دارد و وزن کل تحویلی هر قلم باید با تعداد آن ضرب در همین وزن بخواند. لقمه و فیله با تجربه و بدون وزن‌کشی تک‌تک بریده می‌شوند و برگرها روی ترازو چونه‌گیری می‌شوند.",
+      "home": {"ref": "S-rec-2c141582db58"},
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "inputs": [{"key": "qalam", "title": "قلم شمارشی"}],
+        "outputs": [
+          {"key": "vazn_hadaqal", "title": "کمینهٔ وزن هر عدد", "unit": "g", "nature": "standard"},
+          {"key": "vazn_hadaksar", "title": "بیشینهٔ وزن هر عدد", "unit": "g", "nature": "standard"}
+        ],
+        "table": {
+          "hit": "unique",
+          "inputs": ["qalam"],
+          "outputs": ["vazn_hadaqal", "vazn_hadaksar"],
+          "rows": [
+            {"qalam": "لقمهٔ سینه", "vazn_hadaqal": 10, "vazn_hadaksar": 13},
+            {"qalam": "چیزای خام", "vazn_hadaqal": 80, "vazn_hadaksar": 80},
+            {"qalam": "فیلهٔ درشت", "vazn_hadaqal": 50, "vazn_hadaksar": 80},
+            {"qalam": "برگر", "vazn_hadaqal": 150, "vazn_hadaksar": 150},
+            {"qalam": "مینی‌برگر", "vazn_hadaqal": 60, "vazn_hadaksar": 60}
+          ]
+        }
+      },
+      "processes": [
+        {"process": "preparation-012", "node": "preparation-012-n004", "quote": "هر لقمه باید بین ۱۰ تا ۱۳ گرم باشد"},
+        {"process": "preparation-012", "node": "preparation-012-n012", "quote": "هر تکه چیزا باید تقریباً ۸۰ گرم باشد"},
+        {"process": "preparation-012", "node": "preparation-012-n018", "quote": "حدود ۵۰ تا ۸۰ گرم، بسته به نوع فیله"},
+        {"process": "preparation-021", "node": "preparation-021-n021", "quote": "وزن ۱۵۰ گرم برای هر برگر"},
+        {"process": "preparation-021", "node": "preparation-021-n022", "quote": "وزن ۶۰ گرم برای هر مینی برگر"},
+        {"process": "preparation-026", "node": "preparation-026-n014", "quote": "تعداد هر قلم تولیدشده در وزن هر عدد ضرب"}
+      ]
+    },
+    {
+      "kind": "rule",
+      "key": "vazn_baste_loghme",
+      "title": "حد وزن بستهٔ ۲۰۰ عددی لقمه",
+      "statement": "هر بستهٔ ۲۰۰ عددی لقمهٔ سینه باید بین ۲٫۱۳۰ و ۲٫۱۵۰ کیلوگرم وزن داشته باشد و مسئول لاین مرغ هنگام وزن‌گیری بسته‌ها آن را کنترل می‌کند. اختلاف حدود ۵۰ گرم پذیرفته است، ولی بستهٔ سنگین‌تر باز و دوباره شمرده می‌شود.",
+      "home": {"ref": "S-rec-2c141582db58", "field": "c_e"},
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {"key": "vazn_baste_loghme", "title": "وزن بستهٔ ۲۰۰ عددی لقمه", "unit": "kg",
+           "nature": "limit", "range": {"min": 2.13, "max": 2.15}, "per": "هر بستهٔ ۲۰۰ عددی"}
+        ],
+        "edge_cases": [
+          {"input": "بسته‌ای که ۲۰۰ تا ۳۰۰ گرم از حد بالاتر است",
+           "expected": "بسته باز و دوباره شمرده می‌شود؛ لقمهٔ اضافه برداشته یا گوشهٔ لقمه‌های درشت گرفته می‌شود",
+           "why": "اضافه‌وزن زیاد کل ورودی و خروجی لاین را به هم می‌ریزد"}
+        ]
+      },
+      "processes": [
+        {"process": "preparation-012", "node": "preparation-012-n006", "quote": "اختلاف حدود ۵۰ گرم اشکالی ندارد"},
+        {"process": "preparation-012", "node": "preparation-012-n007", "quote": "دوباره باز و شمارش می‌شود"}
+      ]
+    },
+    {
+      "kind": "rule",
+      "key": "hadd_ekhtelaf_taraz_morgh",
+      "title": "حد پذیرش اختلاف تراز وزنی لاین مرغ",
+      "statement": "مسئول لاین مرغ غروب و پیش از ترک محل وزن مرغ دریافتی را با مجموع خروجی‌های تحویلی به انبار و ضایعات تراز می‌کند و اختلاف باید به حدود ۵۰ تا ۱۰۰ گرم برسد. اگر اختلاف به یکی دو کیلوگرم برسد، از انبار خواسته می‌شود مرغ همان روز را برای وزن‌گیری دوباره بالا بیاورد.",
+      "home": {"ref": "S-rec-2c141582db58"},
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {"key": "hadd_ekhtelaf_taraz", "title": "حد پذیرش اختلاف تراز وزنی", "unit": "g",
+           "nature": "limit", "range": {"min": 50, "max": 100}, "per": "لاین مرغ در هر روز"}
+        ],
+        "edge_cases": [
+          {"input": "اختلاف تراز یکی دو کیلوگرم",
+           "expected": "درخواست بازگرداندن مرغ همان روز از انبار برای وزن‌گیری مجدد",
+           "why": "تراز باید پیش از ورود انبار به وزن‌گیری بسته شود"}
+        ]
+      },
+      "processes": [
+        {"process": "preparation-012", "node": "preparation-012-n037", "quote": "اختلاف به حدود ۵۰ تا ۱۰۰ گرم برسد"},
+        {"process": "preparation-012", "node": "preparation-012-n038", "quote": "اگر اختلاف تراز به یکی دو کیلو برسد"}
+      ]
+    },
+    {
+      "kind": "note",
+      "key": "bal_morgh_dar_farayand_nist",
+      "title": "بال مرغ در فرایندهای آماده‌سازی",
+      "statement": "برای بال مرغ استاندارد و غیراستاندارد در این جدول ستون وجود دارد، ولی هیچ فرایند فعلی آماده‌سازی از تولید یا تحویل بال مرغ نامی نمی‌برد.",
+      "home": {"ref": "S-rec-2c141582db58", "field": "c_q"},
+      "data": {
+        "about": [{"ref": "S-rec-2c141582db58", "field": "c_q"}],
+        "question": "آیا بال مرغ هنوز در آماده‌سازی تفکیک و تحویل انبار می‌شود؟ اگر بله، کدام لاین آن را انجام می‌دهد و مرز بال استاندارد و غیراستاندارد چیست؛ اگر نه، این چهار ستون از چه زمانی دیگر پر نمی‌شوند؟"
+      }
+    },
+    {
+      "kind": "note",
+      "key": "vazn_gril_pish_ya_pas_az_marinet",
+      "title": "وزن مرغ گریل پیش یا پس از مرینت",
+      "statement": "مرغ گریل یک بار پس از برش در لاین مرغ و یک بار پس از مرینت، با حدود ده درصد وزن بیشتر، بر مبنای وزن تحویل انبار می‌شود.",
+      "home": {"ref": "S-rec-2c141582db58", "field": "c_g"},
+      "data": {
+        "about": [{"ref": "S-rec-2c141582db58", "field": "c_g"}],
+        "question": "وزن مرغ گریل در این جدول وزن خام پس از برش در لاین مرغ است یا وزن پس از مرینت که حدود ده درصد بیشتر است؟"
+      },
+      "processes": [
+        {"process": "preparation-010", "node": "preparation-010-n018", "quote": "تنها استثنا مرغ گریل است که حدود ۱۰ درصد افزایش وزن دارد"},
+        {"process": "preparation-012", "node": "preparation-012-n011", "quote": "مرغ گریل تعدادی نیست"}
+      ]
+    }
+  ]
+}

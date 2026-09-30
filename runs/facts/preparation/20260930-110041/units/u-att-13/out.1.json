@@ -1,0 +1,256 @@
+{
+  "schema_version": 1,
+  "unit": "u-att-13",
+  "attempt": 1,
+  "decisions": [],
+  "new": [
+    {
+      "kind": "record",
+      "key": "form_darkhast_tolid_ruzane",
+      "title": "فرم درخواست تولید روزانهٔ آشپزخانه مرکزی و شعبه",
+      "statement": "فرم کاغذی روزانه‌ای که پرسنل انبار هر صبح پر می‌کنند و در آن مقدار موردنیاز هر قلم نیمه‌آماده را به تفکیک آشپزخانه مرکزی و شعبه ناهارخوران می‌نویسند و حدود ساعت ده و بیست دقیقه همراه چک‌لیست درخواست کالا به آماده‌سازی می‌دهند. اقلام در بخش‌های پیتزا، سوخاری و سالاد ردیف شده‌اند؛ آماده‌سازی در طول روز کنار هر قلمی که تولید شد تیک می‌زند و غروب سرپرست آماده‌سازی پس از اطمینان از تولید همهٔ اقلام، برگهٔ امضاشده را به انبار برمی‌گرداند.",
+      "aliases": [
+        "فرم نیازهای آشپزخانه مرکزی و شعبه ناهارخوران",
+        "برگه نیازهای آشپزخانه",
+        "فرم آ۵ درخواست تولید",
+        "فرم نظریه"
+      ],
+      "processes": [
+        {"process": "preparation-003", "node": "preparation-003-n006", "quote": "فرم نیازها را که درخواست آشپزخانه مرکزی و شعبه ناهارخوران در آن مشخص است بالا می‌آورد"},
+        {"process": "preparation-003", "node": "preparation-003-n017", "quote": "انبار بر اساس نیازها و درخواست‌های آشپزخانه فرمی را از قبل آماده می‌کند"},
+        {"process": "preparation-003", "node": "preparation-003-n015", "quote": "تا غروب هر قلمی که تولید شد روی همان برگه نیازهای آشپزخانه تیک زده می‌شود"},
+        {"process": "preparation-003", "node": "preparation-003-n016", "quote": "برگه امضاخورده به انبار تحویل داده می‌شود"},
+        {"process": "warehouse-023", "node": "warehouse-023-n015", "quote": "مقدار موردنیاز شعبه و مرکزی در فرم از یکدیگر تفکیک می‌شود"},
+        {"process": "warehouse-023", "node": "warehouse-023-n016", "quote": "فرم تکمیل‌شده به عنوان درخواست تولید روز به بخش آماده‌سازی تحویل می‌شود"},
+        {"process": "warehouse-023", "node": "warehouse-023-n036", "quote": "برگه امضا و به انبار تحویل داده می‌شود"},
+        {"process": "preparation-011", "node": "preparation-011-n001", "quote": "انبار هر روز مقدار موردنیاز هر قلم را به تفکیک شعبه مرکزی و شعبه در فرم نظریه برای آماده‌سازی می‌نویسد"}
+      ],
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "انبار؛ برگهٔ امضاشده غروب هر روز به انبار برگردانده می‌شود",
+          "holder": "پرسنل انبار"
+        },
+        "cadence": "daily",
+        "day_boundary": null,
+        "grain": "هر قلم نیمه‌آماده در هر روز",
+        "filled_by": "پرسنل انبار",
+        "approved_by": "سرپرست آماده‌سازی",
+        "header_fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "type": "date",
+            "description": "تاریخ روزی که فرم برای تولید آن پر می‌شود؛ با دست نوشته می‌شود."
+          },
+          {
+            "key": "ruz_hafte",
+            "title": "روز هفته",
+            "type": "string",
+            "description": "نام روز هفته که با دست کنار تاریخ نوشته می‌شود."
+          },
+          {
+            "key": "tozihat",
+            "title": "توضیحات",
+            "type": "string",
+            "description": "خانهٔ توضیحات پایین برگه؛ عبارت «کاهو شام» در آن چاپ شده و مقدار کاهوی سهم شام با دست کنار آن نوشته می‌شود."
+          }
+        ],
+        "fields": [
+          {
+            "key": "radif",
+            "title": "ردیف",
+            "type": "integer",
+            "description": "شمارهٔ ردیف چاپی هر قلم در بخش خودش. آماده‌سازی در طول روز کنار ردیف هر قلمی که تولید شد تیک می‌زند؛ قلم بی‌تیک یعنی هنوز تولید نشده است."
+          },
+          {
+            "key": "nam_mahsul",
+            "title": "نام محصول",
+            "type": "string",
+            "description": "نام قلم نیمه‌آماده که روی فرم چاپ شده است. دو ردیف پایانی بخش پیتزا نام چاپی ندارند."
+          },
+          {
+            "key": "vahed_sanjesh_baste",
+            "title": "واحد سنجش بسته",
+            "type": "string",
+            "description": "اندازه و واحد بستهٔ هر قلم که روی فرم چاپ شده است، مانند یک‌کیلویی، عدد، ۱.۲۰۰ گرمی، کیلو و ۱۰ پرسی؛ مقدار درخواست هر ردیف به همین واحد نوشته می‌شود."
+          },
+          {
+            "key": "darkhast_markazi",
+            "title": "درخواست مرکزی",
+            "type": "number",
+            "unit": null,
+            "description": "مقداری که انبار برای آشپزخانه مرکزی از آماده‌سازی می‌خواهد، به واحد بستهٔ همان ردیف. پرسنل انبار آن را هر صبح پس از جمع‌آوری و تجمیع فرم‌های درخواست کالای لاین‌های آشپزخانه با دست می‌نویسند و فرم حدود ساعت ده و بیست دقیقه به آماده‌سازی می‌رسد."
+          },
+          {
+            "key": "baste",
+            "title": "بسته",
+            "type": "string",
+            "description": "اندازه و واحد بستهٔ اقلام نیمهٔ چپ برگه که روی فرم چاپ شده است، مانند یک‌کیلویی، عدد، ۱.۲۰۰ گرمی، ۱۰ پرسی و کیلو."
+          },
+          {
+            "key": "darkhast_markazi_chap",
+            "title": "درخواست مرکزی",
+            "type": "number",
+            "unit": null,
+            "description": "مقداری که انبار برای آشپزخانه مرکزی از اقلام نیمهٔ چپ برگه می‌خواهد، به واحد بستهٔ همان ردیف؛ پرسنل انبار آن را هر صبح با دست می‌نویسند."
+          },
+          {
+            "key": "darkhast_shobe",
+            "title": "درخواست شعبه",
+            "type": "number",
+            "unit": null,
+            "description": "مقداری که انبار برای شعبه ناهارخوران از آماده‌سازی می‌خواهد، به واحد بستهٔ همان ردیف؛ پرسنل انبار آن را هر صبح از روی تصویر فرم درخواست کالای شعبه که چاپ می‌کنند با دست می‌نویسند. سهم شعبه در تولید اولویت دارد تا پیش از بارگیری ساعت چهار آماده شود."
+          }
+        ],
+        "sections": [
+          {"key": "pizza", "title": "بخش پیتزا"},
+          {"key": "blok_chap", "title": null},
+          {"key": "sokhari", "title": "سوخاری"},
+          {"key": "salad", "title": "بخش سالاد"}
+        ],
+        "rows": [
+          {"key": "morgh_pizza", "section": "pizza", "title": "مرغ پیتزا", "unit_raw": "یک کیلویی", "unit": {"value": "kg", "inferred": true}},
+          {"key": "pepperoni", "section": "pizza", "title": "پپرونی", "unit_raw": "یک کیلویی", "unit": {"value": "kg", "inferred": true}},
+          {"key": "zhambon_segane", "section": "pizza", "title": "ژامبون سه گانه", "unit_raw": "یک کیلویی", "unit": {"value": "kg", "inferred": true}},
+          {"key": "steak", "section": "pizza", "title": "استیک", "unit_raw": "یک کیلویی", "unit": {"value": "kg", "inferred": true}},
+          {"key": "felfel_dolme_slice", "section": "pizza", "title": "فلفل دلمه اسلایسی", "unit_raw": "یک کیلویی", "unit": {"value": "kg", "inferred": true}},
+          {"key": "gharch_slice", "section": "pizza", "title": "قارچ اسلایس", "unit_raw": "یک کیلویی", "unit": {"value": "kg", "inferred": true}},
+          {"key": "sos_rost_beef", "section": "pizza", "title": "سس رست بیف", "unit_raw": "یک کیلویی", "unit": {"value": "kg", "inferred": true}},
+          {"key": "sos_alfredo_pizza", "section": "pizza", "title": "سس آلفردو پیتزا", "unit_raw": "یک کیلویی", "unit": {"value": "kg", "inferred": true}},
+          {"key": "sos_kaf_pizza", "section": "pizza", "title": "سس کف پیتزا", "unit_raw": "یک کیلویی", "unit": {"value": "kg", "inferred": true}},
+          {"key": "khamir", "section": "pizza", "title": "خمیر", "unit_raw": "یک کیلویی", "unit": {"value": "kg", "inferred": true}},
+          {"key": "satr_baz_pizza_a", "section": "pizza", "title": null, "open": true},
+          {"key": "satr_baz_pizza_b", "section": "pizza", "title": null, "open": true},
+          {"key": "zhambon_dogane", "section": "blok_chap", "title": "ژامبون دوگانه", "unit_raw": "یک کیلویی", "unit": {"value": "kg", "inferred": true}},
+          {"key": "bacon_varaghe", "section": "blok_chap", "title": "بیکن ورقه ای", "unit_raw": "عدد", "unit": "pcs"},
+          {"key": "paste_penne", "section": "blok_chap", "title": "پاستا پنه", "unit_raw": "۱.۲۰۰ گرمی", "unit": {"value": "pack", "inferred": true}},
+          {"key": "dorchin_steak", "section": "blok_chap", "title": "دورچین استیک", "unit_raw": "۱۰ پرسی", "unit": {"value": "pack", "inferred": true}},
+          {"key": "sos_gharch", "section": "blok_chap", "title": "سس قارچ", "unit_raw": "کیلو", "unit": "kg"},
+          {"key": "sos_alfredo_paste", "section": "blok_chap", "title": "سس آلفردو پاستا", "unit_raw": "کیلو", "unit": "kg"},
+          {"key": "sos_beef_stroganoff", "section": "blok_chap", "title": "سس بیف استرا", "unit_raw": "کیلو", "unit": "kg"},
+          {"key": "sir_roghan", "section": "blok_chap", "title": "سیر روغن", "unit_raw": "کیلو", "unit": "kg"},
+          {"key": "chiza", "section": "sokhari", "title": "چیزا", "unit_raw": "عدد", "unit": "pcs"},
+          {"key": "panir_chiza", "section": "sokhari", "title": "پنیر چیزا", "unit_raw": "عدد", "unit": "pcs"},
+          {"key": "sos_caesar", "section": "salad", "title": "سس سزار", "unit_raw": "کیلو", "unit": "kg"},
+          {"key": "sos_southwest", "section": "salad", "title": "سس سات وست", "unit_raw": "کیلو", "unit": "kg"},
+          {"key": "sos_barbecue_dasti", "section": "salad", "title": "سس باربیکیو دستی", "unit_raw": "کیلو", "unit": "kg"},
+          {"key": "sos_kaf_burger", "section": "salad", "title": "سس کف برگر", "unit_raw": "کیلو", "unit": "kg"},
+          {"key": "sos_pesto", "section": "salad", "title": "سس پستو", "unit_raw": "کیلو", "unit": "kg"},
+          {"key": "sos_crouton", "section": "salad", "title": "سس کروتان", "unit_raw": "کیلو", "unit": "kg"},
+          {"key": "sos_ranch", "section": "salad", "title": "سس رنج", "unit_raw": "کیلو", "unit": "kg"},
+          {"key": "salad_kentucky", "section": "salad", "title": "سالاد کنتاکی", "unit_raw": "کیلو", "unit": "kg"},
+          {"key": "sos_aioli", "section": "salad", "title": "سس ایولای", "unit_raw": "کیلو", "unit": "kg"},
+          {"key": "kahu", "section": "salad", "title": "کاهو", "unit_raw": "کیلو", "unit": "kg"}
+        ]
+      },
+      "from": ["departments/preparation/attachments/.text/photo-AQADeQ5rG7piKFF-.image.md"]
+    },
+    {
+      "kind": "rule",
+      "key": "majmu_darkhast_tolid",
+      "title": "مقدار کل تولید روزانهٔ هر قلم",
+      "home": {"ref": "N-u-att-13-0"},
+      "statement": "مقدار کل تولید روزانهٔ هر قلم نیمه‌آماده برابر است با جمع درخواست آشپزخانه مرکزی و درخواست شعبه ناهارخوران، به واحد بستهٔ همان قلم. آماده‌سازی هر صبح این دو سهم را با هم جمع می‌کند و بر پایهٔ آن مواد اولیهٔ لازم را تعیین می‌کند.",
+      "processes": [
+        {"process": "preparation-022", "node": "preparation-022-n008", "quote": "آشپزخانه مرکزی ۴ کیلو و آشپزخانه ناهارخوران ۲ کیلو سس آلفردو، یعنی در مجموع ۶ کیلو"},
+        {"process": "preparation-003", "node": "preparation-003-n011", "quote": "آماده‌سازی سفارش دو شعبه را با هم جمع می‌کند"},
+        {"process": "preparation-016", "node": "preparation-016-n003", "quote": "دو آشپزخانه در مجموع ۸۰ کیلو خمیر درخواست داده‌اند"}
+      ],
+      "data": {
+        "lang": "feel",
+        "expr": "majmu_darkhast = darkhast_markazi + darkhast_shobe",
+        "inputs": [
+          {"key": "darkhast_markazi", "title": "درخواست مرکزی", "unit": null},
+          {"key": "darkhast_shobe", "title": "درخواست شعبه", "unit": null}
+        ],
+        "outputs": [
+          {"key": "majmu_darkhast", "title": "مجموع درخواست", "unit": null, "nature": "target", "per": "هر قلم در هر روز"}
+        ]
+      },
+      "from": ["departments/preparation/attachments/.text/photo-AQADeQ5rG7piKFF-.image.md"]
+    },
+    {
+      "kind": "rule",
+      "key": "olaviat_sahm_shobe",
+      "title": "اولویت آماده‌سازی سهم شعبه پیش از بارگیری",
+      "home": {"ref": "N-u-att-13-0", "field": "darkhast_shobe"},
+      "statement": "سهم شعبه ناهارخوران از اقلام این فرم در آماده‌سازی زودتر از سهم مرکزی تولید می‌شود تا پیش از بارگیری بار شعبه در ساعت چهار بعدازظهر آماده و تحویل انبار شود؛ سهم آشپزخانه مرکزی تا پایان شیفت آماده‌سازی در ساعت شش و نیم فرصت دارد. اگر انبار سهم شعبه را پیش از پایان کل تولید بخواهد، همان سهم جدا و زودتر تحویل داده می‌شود.",
+      "processes": [
+        {"process": "preparation-016", "node": "preparation-016-n005", "quote": "چون بار شعبه ساعت چهار باید ارسال شود، خمیر شعبه از ساعت دو گرفته می‌شود"},
+        {"process": "preparation-016", "node": "preparation-016-n012", "quote": "اگر خمیر مرکزی تا شش و نیم هم به آشپزخانه نرسد اشکالی ندارد"},
+        {"process": "preparation-013", "node": "preparation-013-n047", "quote": "تحویل سهم شعبه منتظر تکمیل کل تولید نمی‌ماند"},
+        {"process": "warehouse-023", "node": "warehouse-023-n037", "quote": "در ساعت چهار اقلام شعبه از کف انبار برداشته و در خودرو بارگیری می‌شود"}
+      ],
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "inputs": [],
+        "outputs": [],
+        "original": "سهم شعبه در اولویت است و باید پیش از بارگیری بار شعبه در ساعت چهار آماده شود؛ سهم مرکزی تا ساعت شش و نیم فرصت دارد."
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "mohlat_amadegi_sahm_shobe",
+      "title": "مهلت آماده‌شدن سهم شعبه",
+      "home": {"ref": "N-u-att-13-0", "field": "darkhast_shobe"},
+      "statement": "سهم شعبه ناهارخوران از اقلام این فرم باید تا ساعت چهار بعدازظهر، زمان بارگیری بار شعبه در انبار، آماده و تحویل انبار شده باشد.",
+      "processes": [
+        {"process": "preparation-016", "node": "preparation-016-n011", "quote": "خمیر شعبه ساعت چهار باید برود"},
+        {"process": "warehouse-023", "node": "warehouse-023-n037", "quote": "در ساعت چهار اقلام شعبه از کف انبار برداشته و در خودرو بارگیری می‌شود"}
+      ],
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {"key": "saat_bargiri_shobe", "title": "ساعت بارگیری بار شعبه", "value": "16:00", "unit": null, "nature": "limit", "per": "هر روز"}
+        ]
+      }
+    },
+    {
+      "kind": "note",
+      "key": "tanaghoz_meghdar_darkhast",
+      "title": "کل درخواست یا کسری پس از موجودی انبار",
+      "home": {"ref": "N-u-att-13-0"},
+      "statement": "دو فرایند دربارهٔ معنای عدد هر ردیف این فرم هم‌خوان نیستند: در آماده‌سازی آمده که انبار تنها درخواست شب قبل آشپزخانه مرکزی و شعبه را تجمیع می‌کند، و در انبار آمده که درخواست‌ها با موجودی انبار مقایسه می‌شود و تنها کسری اقلامی که موجودی‌شان کفایت نمی‌کند نوشته می‌شود.",
+      "processes": [
+        {"process": "preparation-003", "node": "preparation-003-n006", "quote": "انبار در فرم نیازها فقط لیست‌هایی را که شب قبل آشپزخانه و شعبه پر کرده‌اند تجمیع می‌کند"},
+        {"process": "warehouse-023", "node": "warehouse-023-n013", "quote": "قلمی که موجودی انبار برای آن کفایت می‌کند در فرم درخواست تولید ذکر نمی‌شود"},
+        {"process": "warehouse-023", "node": "warehouse-023-n014", "quote": "تفاوت مقدار درخواست‌شده با موجودی انبار به عنوان مقدار موردنیاز برای تولید همان روز محاسبه می‌شود"}
+      ],
+      "data": {
+        "about": [
+          {"ref": "N-u-att-13-0", "field": "darkhast_markazi"},
+          {"ref": "N-u-att-13-0", "field": "darkhast_shobe"}
+        ],
+        "question": "عدد هر ردیف در خانه‌های درخواست مرکزی و درخواست شعبه کدام است: کل درخواست شب قبل آشپزخانه و شعبه که انبار فقط تجمیع کرده (خوانش فرایند آماده‌سازی)، یا تنها کسری پس از کسر موجودی و ماندهٔ تولید روز قبل انبار، به‌طوری که قلم دارای موجودی کافی اصلاً نوشته نمی‌شود (خوانش فرایند انبار)؟"
+      },
+      "from": ["departments/preparation/attachments/.text/photo-AQADeQ5rG7piKFF-.image.md"]
+    },
+    {
+      "kind": "note",
+      "key": "sakhtar_do_nime_form",
+      "title": "دو نیمهٔ هم‌ساختار برگه در عکس",
+      "home": {"ref": "N-u-att-13-0"},
+      "statement": "در عکس، برگه دو جدول هم‌ساختار کنار هم دارد. نیمهٔ راست افزون بر «درخواست مرکزی» یک سرعنوان کم‌رنگ و نیمه‌پوشیدهٔ «درخواست شعبه» دارد که عددهای قرمز سهم شعبه زیر آن نوشته شده است؛ نیمهٔ چپ هم سرعنوان‌های کم‌رنگ «نام محصول» و «واحد سنجش بسته» دارد و «بسته» تنها بخش خوانای سرعنوان دوم است.",
+      "data": {
+        "about": [{"ref": "N-u-att-13-0"}],
+        "question": "آیا این برگه یک جدول واحد با سرعنوان‌های ردیف، نام محصول، واحد سنجش بسته، درخواست مرکزی و درخواست شعبه است که در دو نیمهٔ کنار هم چاپ شده، و درخواست مرکزی دوم و بسته همان سرعنوان‌های نیمهٔ دیگرند؟"
+      },
+      "from": ["departments/preparation/attachments/.text/photo-AQADeQ5rG7piKFF-.image.md"]
+    },
+    {
+      "kind": "note",
+      "key": "onvan_blok_chap",
+      "title": "سرعنوان کم‌رنگ بلوک چپ بالایی",
+      "home": {"ref": "N-u-att-13-0"},
+      "statement": "در عکس، بالای بلوک چپ بالایی برگه، که ژامبون دوگانه تا سیر روغن را در بر دارد، سرعنوانی کم‌رنگ و زیر برچسب پوشیده دیده می‌شود که در توضیح نیامده و به «بخش فرنگی» شبیه است.",
+      "data": {
+        "about": [{"ref": "N-u-att-13-0"}],
+        "question": "عنوان چاپی بخشی از فرم که ژامبون دوگانه، بیکن ورقه ای، پاستا پنه، دورچین استیک، سس قارچ، سس آلفردو پاستا، سس بیف استرا و سیر روغن در آن آمده چیست؟"
+      },
+      "from": ["departments/preparation/attachments/.text/photo-AQADeQ5rG7piKFF-.image.md"]
+    }
+  ]
+}

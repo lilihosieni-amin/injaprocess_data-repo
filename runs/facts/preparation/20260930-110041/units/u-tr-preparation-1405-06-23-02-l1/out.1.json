@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "unit": "u-tr-preparation-1405-06-23-02-l1",
+  "attempt": 1,
+  "decisions": [],
+  "new": [],
+  "contradicted": [
+    {
+      "claim": "فیلادلفیا هم فرم تبدیل دارد و هم فرم نیم‌ساخت.",
+      "ref": "meetings/transcripts/preparation-1405-06-23-02.txt",
+      "lines": "16-28",
+      "against": {"process": "preparation-026", "node": "preparation-026-n023"}
+    },
+    {
+      "claim": "لاین مرینت به ازای هر ده کیلو مرغ حدود سی گرم پودر مرینت، به نسبت سی به هفتاد با آب، می‌افزاید.",
+      "ref": "meetings/transcripts/preparation-1405-06-23-02.txt",
+      "lines": "50-50",
+      "against": {"process": "preparation-010", "node": "preparation-010-n006"}
+    }
+  ]
+}

@@ -1,0 +1,349 @@
+{
+  "schema_version": 1,
+  "unit": "u-att-1",
+  "attempt": 1,
+  "decisions": [],
+  "new": [
+    {
+      "kind": "record",
+      "key": "form_darkhast_kala_amadesazi",
+      "title": "برگهٔ درخواست کالای روزانهٔ آماده‌سازی",
+      "statement": "برگهٔ کاغذی دوبرگی که حدود صد قلم نیاز همیشگی روزانهٔ آماده‌سازی از انبار (ادویه، سس، لبنیات، سبزی و اقلام مصرفی غیرخوراکی) را با واحد چاپ‌شدهٔ هر قلم فهرست می‌کند. مسئول هر لاین غروب کسری لاین خود را در ستون مقدار درخواست می‌نویسد و سرپرست آماده‌سازی آن را بازبینی و تأیید می‌کند و پیش از ساعت شش و نیم حضوری تحویل انبار می‌دهد. انبار مقدار تحویلی را ثبت و تیک می‌زند و صبح روز بعد همان برگه برای اصلاح به آماده‌سازی برمی‌گردد و اصلاح‌شده دوباره تحویل انبار می‌شود.",
+      "aliases": [
+        "چک‌لیست غروب آماده‌سازی",
+        "درخواست کالا بخش آماده سازی",
+        "لیست درخواست کالای آماده‌سازی",
+        "لیست ثانویه درخواست کالا"
+      ],
+      "processes": [
+        {"process": "preparation-003", "node": "preparation-003-n002", "quote": "چک‌لیست غروب آماده‌سازی چیزی حدود صد قلم جنس است"},
+        {"process": "preparation-003", "node": "preparation-003-n004", "quote": "یک دور فرم نهایی را نگاه می‌اندازد و تأییدش را می‌زند"},
+        {"process": "preparation-003", "node": "preparation-003-n005", "quote": "خود سرپرست چک‌لیست را به انبار می‌برد"},
+        {"process": "preparation-003", "node": "preparation-003-n008", "quote": "انبار هم هر قلمی را که می‌دهد روی همین فرم تیک می‌زند"},
+        {"process": "preparation-003", "node": "preparation-003-n009", "quote": "با بی‌سیم به انبار اعلام می‌شود"},
+        {"process": "preparation-003", "node": "preparation-003-n012", "quote": "اصلاحیه روی همان فرمی انجام می‌شود که شب قبل تحویل انبار شده"},
+        {"process": "preparation-016", "node": "preparation-016-n002", "quote": "آن را به فرم اضافه می‌کند تا برای آماده‌سازی بالا بیاورند"},
+        {"process": "warehouse-023", "node": "warehouse-023-n001", "quote": "روی فرم درخواست کالا در برگهٔ آ۴ می‌نویسد و تحویل انبار می‌دهد"},
+        {"process": "warehouse-012", "node": "warehouse-012-n002", "quote": "وزن اقلام وزنی و تعداد اقلام عددی در همان فرم درخواست کالا درج می‌شود"},
+        {"process": "warehouse-012", "node": "warehouse-012-n009", "quote": "یک ستون برای مقدار درخواست‌شده و یک ستون برای مقدار تحویل انبار دارد"}
+      ],
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "انبار؛ برگه غروب به انبار می‌رود، صبح برای اصلاح به آماده‌سازی برمی‌گردد و پس از تحویل اقلام در انبار می‌ماند و به حسابداری می‌رود",
+          "holder": "انباردار"
+        },
+        "cadence": "daily",
+        "grain": "هر قلم کالا در هر روز",
+        "filled_by": "مسئول لاین آماده‌سازی",
+        "approved_by": "سرپرست آماده‌سازی",
+        "blank_master": true,
+        "header_fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "type": "date",
+            "description": "تاریخ برگه؛ برگه غروب روز پیش برای نیاز روز بعد پر می‌شود."
+          },
+          {
+            "key": "ruz_hafte",
+            "title": "روز هفته",
+            "type": "string",
+            "description": "نام روز هفته‌ای که برگه برای آن پر می‌شود."
+          },
+          {
+            "key": "sh_s",
+            "title": "ش س",
+            "type": "string",
+            "description": "خانهٔ خالی کنار سربرگ بخش‌های مصرف مستقیم و حواله انبار به انبار؛ بخش بدون سند این خانه را ندارد. فرایندها نمی‌گویند چه کسی و با چه شماره‌ای آن را پر می‌کند."
+          }
+        ],
+        "fields": [
+          {
+            "key": "tik_anbar",
+            "title": "تیک انبار",
+            "type": "boolean",
+            "description": "انبار هر قلمی را که تحویل می‌دهد در این خانه تیک می‌زند و قلم بی‌تیک یعنی هنوز تحویل نشده است. صبح، مسئول لاین آماده‌سازی اقلام رسیده را یک‌به‌یک به تعداد و وزن با سفارش شب پیش مقایسه می‌کند؛ اگر قلمی نیامده یا کم آمده باشد، با بی‌سیم به انبار خبر می‌دهد و انبار باقی آن را می‌آورد. در اصلاحیهٔ صبح، قلم بی‌تیک به معنای درخواست تازه است."
+          },
+          {
+            "key": "sharh_kala",
+            "title": "شرح کالا",
+            "type": "string",
+            "constraints": {"readOnly": true},
+            "description": "نام قلم که از پیش روی برگه چاپ شده است؛ هر قلم در یکی از بخش‌های چاپ‌شدهٔ برگه قرار دارد."
+          },
+          {
+            "key": "vahed",
+            "title": "واحد",
+            "type": "string",
+            "constraints": {"readOnly": true},
+            "description": "واحد وزن یا شمارش هر قلم که از پیش چاپ شده است؛ مقدار درخواست و مقدار تحویل هر قلم با همین واحد نوشته می‌شود."
+          },
+          {
+            "key": "meqdar_darkhast",
+            "title": "مقدار درخواست",
+            "type": "number",
+            "unit": null,
+            "description": "مقداری که مسئول هر لاین غروب برای کسری لاین خود، با واحد چاپ‌شدهٔ همان قلم، می‌نویسد؛ سرپرست پیش از تحویل برگه آن را بازبینی می‌کند و خودش چیزی در برگه نمی‌نویسد. صبح روز بعد، پس از بررسی سفارش دو شعبه و کسر مواد گرفته‌شدهٔ شب پیش، روی همین برگه اصلاح می‌شود: برای قلم تیک‌خورده‌ای که بیشتر لازم است، عدد اضافه با علامت به‌علاوه جلوی قلم نوشته می‌شود."
+          },
+          {
+            "key": "meqdar_tahvil",
+            "title": "مقدار تحویل/واحد",
+            "type": "number",
+            "unit": null,
+            "group": {"key": "anbar", "title": "انبار"},
+            "description": "وزن قلم‌های وزنی یا تعداد قلم‌های عددی که انبار تحویل می‌دهد، با واحد چاپ‌شدهٔ همان قلم؛ انباردار آن را پیش از زدن تیک انبار ثبت می‌کند و اختلاف با مقدار درخواست را همین‌جا قید می‌کند. اگر مقدار متفاوت پذیرفته شود، مقدار واقعی در این ستون نوشته می‌شود."
+          }
+        ],
+        "sections": [
+          {"key": "masraf_mostaqim", "title": "مصرف مستقیم"},
+          {"key": "havale_anbar_be_anbar", "title": "حواله انبار به انبار"},
+          {"key": "bedun_sanad", "title": "بدون سند"}
+        ],
+        "signatures": [],
+        "rows": [
+          {"key": "podr_panko", "title": "پودر پانکو", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "podr_sir", "title": "پودر سیر", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "felfel_siah", "title": "فلفل سیاه", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "felfel_qermez", "title": "فلفل قرمز", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "adviye_kari", "title": "ادویه کاری", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "podr_piaz", "title": "پودر پیاز", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "origano", "title": "اورگانو", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "shevid", "title": "شوید", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "geshniz", "title": "گشنیز", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "adviye_sabzijat", "title": "ادویه سبزیجات", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "sos_kechap", "title": "سس کچاپ", "unit": null, "unit_raw": "دبه", "section": "masraf_mostaqim"},
+          {"key": "soya_sos", "title": "سویاسس", "unit": null, "unit_raw": "لیتر/عدد", "section": "masraf_mostaqim"},
+          {"key": "mayonez_kale", "title": "مایونز کاله", "unit": null, "unit_raw": "دبه", "section": "masraf_mostaqim"},
+          {"key": "sos_khardal_kale", "title": "سس خردل کاله", "unit": null, "unit_raw": "دبه", "section": "masraf_mostaqim"},
+          {"key": "sos_chili_tai_kale", "title": "سس چیلی تای کاله", "unit": null, "unit_raw": "دبه", "section": "masraf_mostaqim"},
+          {"key": "sos_barbikiu_kale", "title": "سس باربیکیو کاله", "unit": null, "unit_raw": "دبه", "section": "masraf_mostaqim"},
+          {"key": "gloria", "title": "گلوریا", "unit": "pcs", "unit_raw": "عدد", "section": "masraf_mostaqim"},
+          {"key": "ech_pi_sos", "title": "اچ پی سس", "unit": "pcs", "unit_raw": "عدد", "section": "masraf_mostaqim"},
+          {"key": "vorchester", "title": "ورچستر", "unit": null, "unit_raw": "دبه", "section": "masraf_mostaqim"},
+          {"key": "mamasita", "title": "ماماسیتا", "unit": null, "unit_raw": "دبه", "section": "masraf_mostaqim"},
+          {"key": "khardal_faranches", "title": "خردل فرانچس", "unit": null, "unit_raw": "دبه ۲.۸", "section": "masraf_mostaqim"},
+          {"key": "serke_balzamik", "title": "سرکه بالزامیک", "unit": "pcs", "unit_raw": "عدد", "section": "masraf_mostaqim"},
+          {"key": "tokhm_morgh", "title": "تخم مرغ", "unit": "pcs", "unit_raw": "عدد", "section": "masraf_mostaqim"},
+          {"key": "gowje_farangi_sos_kaf_pitza", "title": "گوجه فرنگی سس کف پیزا", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "keshmesh", "title": "کشمش", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "gerdu", "title": "گردو", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "mast_sun", "title": "ماست سون", "unit": null, "unit_raw": "دبه", "section": "masraf_mostaqim"},
+          {"key": "ab_porteqal", "title": "آب پرتقال", "unit": null, "unit_raw": "لیتر/عدد", "section": "masraf_mostaqim"},
+          {"key": "namak", "title": "نمک", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "khat_zard", "title": "خط زرد", "unit": "pcs", "unit_raw": "عدد", "section": "masraf_mostaqim"},
+          {"key": "plastik_zobale", "title": "پلاستیک زباله", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "foil", "title": "فویل", "unit": "pcs", "unit_raw": "عدد", "section": "masraf_mostaqim"},
+          {"key": "qand", "title": "قند(پنجشنبه ها)", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "fandak", "title": "فندک", "unit": "pcs", "unit_raw": "عدد", "section": "masraf_mostaqim"},
+          {"key": "selofon", "title": "سلفون", "unit": null, "unit_raw": "رول", "section": "masraf_mostaqim"},
+          {"key": "dastkesh_lateks", "title": "دستکش لاتکس", "unit": "pack", "unit_raw": "بسته", "section": "masraf_mostaqim"},
+          {"key": "eskaj", "title": "اسکاج", "unit": "pcs", "unit_raw": "عدد", "section": "masraf_mostaqim"},
+          {"key": "barchasb", "title": "برچسب", "unit": "pack", "unit_raw": "بسته", "section": "masraf_mostaqim"},
+          {"key": "dastkesh_yekbar_masraf", "title": "دستکش یکبار مصرف", "unit": "pack", "unit_raw": "بسته", "section": "masraf_mostaqim"},
+          {"key": "kolah_yekbar_masraf", "title": "کلاه یکبارمصرف", "unit": "pack", "unit_raw": "بسته", "section": "masraf_mostaqim"},
+          {"key": "mayee_zarfshuyi", "title": "مایع ظرفشویی", "unit": "l", "unit_raw": "لیتر", "section": "masraf_mostaqim"},
+          {"key": "chay", "title": "چای", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "vaitex_jermgir", "title": "وایتکس / جرمگیر", "unit": "l", "unit_raw": "لیتر", "section": "masraf_mostaqim"},
+          {"key": "plastik_penguin", "title": "پلاستیک پنگوئن", "unit": "pack", "unit_raw": "بسته", "section": "masraf_mostaqim"},
+          {"key": "dastmal_personeli", "title": "دستمال پرسنلی", "unit": "pack", "unit_raw": "بسته", "section": "masraf_mostaqim"},
+          {"key": "saq_dast", "title": "ساق دست", "unit": "pack", "unit_raw": "بسته", "section": "masraf_mostaqim"},
+          {"key": "naylon_dastedar_k", "title": "نایلون دسته دار ک", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "naylon_dastedar_b", "title": "نایلون دسته دار ب", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "plastik_mian_burger_k_60", "title": "پلاستیک میان برگر ک ۶۰گرمی", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "plastik_mian_burger_b_150", "title": "پلاستیک میان برگر ب۱۵۰گرمی", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "selofon_burger", "title": "سلفون برگر", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "dastkesh_zarfshuyi", "title": "دستکش ظرفشویی", "unit": null, "unit_raw": "جفت", "section": "masraf_mostaqim"},
+          {"key": "ti_abgir_jaru", "title": "تی آبگیر- جارو", "unit": "pcs", "unit_raw": "عدد", "section": "masraf_mostaqim"},
+          {"key": "rol_selofon_lafaf", "title": "رول سلفون لفاف", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "sim_zarfshuyi", "title": "سیم ظرفشویی", "unit": "pcs", "unit_raw": "عدد", "section": "masraf_mostaqim"},
+          {"key": "jagushti_kuchak", "title": "جاگوشتی کوچک", "unit": "pcs", "unit_raw": "عدد", "section": "masraf_mostaqim"},
+          {"key": "jagushti_motevaset", "title": "جاگوشتی متوسط", "unit": "pcs", "unit_raw": "عدد", "section": "masraf_mostaqim"},
+          {"key": "jagushti_bozorg", "title": "جاگوشتی بزرگ", "unit": "pcs", "unit_raw": "عدد", "section": "masraf_mostaqim"},
+          {"key": "shishe_shur", "title": "شیشه شور", "unit": "pcs", "unit_raw": "عدد", "section": "masraf_mostaqim"},
+          {"key": "marinet_spaysi", "title": "مرینت اسپایسی", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "marinet_normal", "title": "مرینت نرمال", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "kare", "title": "کره", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "panir_parmesan", "title": "پنیر پارمسان", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "shir", "title": "شیر", "unit": "l", "unit_raw": "لیتر", "section": "masraf_mostaqim"},
+          {"key": "khame", "title": "خامه", "unit": "l", "unit_raw": "لیتر", "section": "masraf_mostaqim"},
+          {"key": "panir_pitza", "title": "پنیر پیتزا", "unit": "pack", "unit_raw": "بسته", "section": "masraf_mostaqim"},
+          {"key": "panir_labne_chiza", "title": "پنیر لبنه (مخصوص تولید پنیر چیزا)", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "ard", "title": "آرد", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "s500", "title": "S۵۰۰", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "khamirmaye_faransavi", "title": "خمیر مایه فرانسوی", "unit": "pack", "unit_raw": "بسته", "section": "masraf_mostaqim"},
+          {"key": "khamirmaye_kiluyi", "title": "خمیر مایه کیلویی", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "roghan_pokht_o_paz", "title": "روغن پخت و پز", "unit": null, "unit_raw": "کیلو/لیتر", "section": "masraf_mostaqim"},
+          {"key": "shekar", "title": "شکر", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "zhelatin", "title": "ژلاتین", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "delester", "title": "دلستر", "unit": null, "unit_raw": "۱لیتری/عدد", "section": "masraf_mostaqim"},
+          {"key": "podr_paprika", "title": "پودر پاپریکا", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "zardchube", "title": "زردچوبه", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "dolme_qermez", "title": "دلمه قرمز(سس پاپریکا)", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "adviye_gusht_u", "title": "ادویه گوشت U", "unit": "pack", "unit_raw": "بسته", "section": "masraf_mostaqim"},
+          {"key": "osare_morgh", "title": "عصاره مرغ", "unit": "pack", "unit_raw": "بسته", "section": "masraf_mostaqim"},
+          {"key": "avishan", "title": "آویشن", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "tarkhun_khoshk", "title": "ترخون خشک", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "kadu", "title": "کدو", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "kalam_brokoli", "title": "کلم بروکلی", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "sir", "title": "سیر", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "piaz", "title": "پیاز", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "sib_zamini", "title": "سیب زمینی", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "reyhan", "title": "ریحان", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "piazche", "title": "پیازچه", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "havij", "title": "هویج", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "kalam", "title": "کلم", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "ablimu", "title": "آبلیمو", "unit": "l", "unit_raw": "لیتر", "section": "masraf_mostaqim"},
+          {"key": "rob_anar", "title": "رب انار", "unit": null, "unit_raw": "عدد/کیلو", "section": "masraf_mostaqim"},
+          {"key": "musir", "title": "موسیر", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "serke_sefid", "title": "سرکه سفید", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "rob_gowje_farangi", "title": "رب گوجه فرنگی", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "dolme_sos_sir", "title": "دلمه (مخصوص سس سیر)", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "sir_2", "title": "سیر", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "tabasco_burger", "title": "تاباسکو(برگر)", "unit": null, "unit_raw": "عدد/کیلو", "section": "masraf_mostaqim"},
+          {"key": "adviye_smoke_u", "title": "ادویه اسموک U", "unit": "pack", "unit_raw": "بسته", "section": "masraf_mostaqim"},
+          {"key": "adviye_burger_u", "title": "ادویه برگر U", "unit": "pack", "unit_raw": "بسته", "section": "masraf_mostaqim"},
+          {"key": "sos_mayonez_mahram", "title": "سس مایونز مهرام (به جز سس سیر)", "unit": "kg", "unit_raw": "کیلو", "section": "masraf_mostaqim"},
+          {"key": "lazania", "title": "لازانیا", "unit": "pack", "unit_raw": "بسته", "section": "havale_anbar_be_anbar"},
+          {"key": "meygu", "title": "میگو", "unit": null, "unit_raw": "عدد/کیلو", "section": "havale_anbar_be_anbar"},
+          {"key": "pasta", "title": "پاستا", "unit": "pack", "unit_raw": "بسته", "section": "havale_anbar_be_anbar"},
+          {"key": "qarch", "title": "قارچ", "unit": "kg", "unit_raw": "کیلو", "section": "havale_anbar_be_anbar"},
+          {"key": "felfel_dolme", "title": "فلفل دلمه", "unit": "kg", "unit_raw": "کیلو", "section": "havale_anbar_be_anbar"},
+          {"key": "kahu", "title": "کاهو", "unit": "kg", "unit_raw": "کیلو", "section": "havale_anbar_be_anbar"},
+          {"key": "jafari", "title": "جعفری", "unit": "kg", "unit_raw": "کیلو", "section": "havale_anbar_be_anbar"},
+          {"key": "gowje", "title": "گوجه", "unit": "kg", "unit_raw": "کیلو", "section": "havale_anbar_be_anbar"},
+          {"key": "morgh_chiza", "title": "مرغ چیزا", "unit": "pcs", "unit_raw": "عدد", "section": "bedun_sanad"},
+          {"key": "sos_mayonez_dabbe", "title": "سس مایونز دبه ( سس سیر)", "unit": null, "unit_raw": "دبه", "section": "bedun_sanad"},
+          {"key": "khiarshur", "title": "خیارشور (سس سیر)", "unit": "kg", "unit_raw": "کیلو", "section": "bedun_sanad"},
+          {"key": "steak", "title": "استیک", "unit": "kg", "unit_raw": "کیلو", "section": "bedun_sanad"},
+          {"key": "labne_maye_burger", "title": "لبنه ( مخصوص تولید مایه برگر)", "unit": "kg", "unit_raw": "کیلو", "section": "bedun_sanad"},
+          {"key": "zhambon_file_makhlut", "title": "ژامبون فیله مخلوط (بیکن)", "unit": "kg", "unit_raw": "کیلو", "section": "bedun_sanad"},
+          {"key": "zhambon_gusht", "title": "ژامبون گوشت", "unit": "kg", "unit_raw": "کیلو", "section": "bedun_sanad"},
+          {"key": "zhambon_morgh_persi", "title": "ژامبون مرغ پرسی", "unit": "kg", "unit_raw": "کیلو", "section": "bedun_sanad"},
+          {"key": "pepperoni", "title": "پپرونی", "unit": "kg", "unit_raw": "کیلو", "section": "bedun_sanad"},
+          {"key": "maghzran", "title": "مغزران", "unit": "kg", "unit_raw": "کیلو", "section": "bedun_sanad"},
+          {"key": "sardast_gusale", "title": "سردست گوساله", "unit": "kg", "unit_raw": "کیلو", "section": "bedun_sanad"},
+          {"key": "qolvegah_bare", "title": "قلوه گاه بره", "unit": "kg", "unit_raw": "کیلو", "section": "bedun_sanad"},
+          {"key": "qolvegah_gusale", "title": "قلوه گاه گوساله", "unit": "kg", "unit_raw": "کیلو", "section": "bedun_sanad"},
+          {"key": "chaqu_tizkon", "title": "چاقوتیزکن", "unit": "pcs", "unit_raw": "عدد", "section": "bedun_sanad"},
+          {"key": "khelal_dandan", "title": "خلال دندان", "unit": "pcs", "unit_raw": "عدد", "section": "bedun_sanad"}
+        ]
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "zamanbandi_barge_darkhast_kala_amadesazi",
+      "title": "زمان‌بندی روزانهٔ برگهٔ درخواست کالای آماده‌سازی",
+      "statement": "برگهٔ درخواست کالای آماده‌سازی هر روز در نوبت‌های زمان‌دار میان آماده‌سازی و انبار دست‌به‌دست می‌شود: غروب پیش از شش و نیم به انبار می‌رود، صبح حدود ده و بیست دقیقه تکمیل‌شده برمی‌گردد، اصلاحیه حداکثر تا ده و نیم به انبار می‌رسد و انبار اقلام آن را تا حدود یک ربع به یازده بالا می‌آورد. قلم جاافتاده یا اصلاحیهٔ تازه تنها تا ساعت یازده پذیرفته می‌شود و تأخیر در این نوبت‌ها پرسنل را به ماندن پس از شش و نیم ناچار می‌کند.",
+      "home": {"ref": "N-u-att-1-0"},
+      "processes": [
+        {"process": "preparation-003", "node": "preparation-003-n005", "quote": "تحویل پیش از ساعت شش و نیم غروب"},
+        {"process": "preparation-003", "node": "preparation-003-n006", "quote": "تحویل لیست از انبار در ساعت ده و بیست دقیقه"},
+        {"process": "preparation-003", "node": "preparation-003-n013", "quote": "لیست باید قبل یا سر ساعت ده و نیم از آماده‌سازی خارج شود"},
+        {"process": "preparation-003", "node": "preparation-003-n014", "quote": "تا یک ربع یا ده دقیقه به یازده کل لیست آماده‌سازی را تکمیل می‌کند"},
+        {"process": "warehouse-023", "node": "warehouse-023-n021", "quote": "مهلت اعلام اصلاحیه تا ساعت یازده"}
+      ],
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "inputs": [
+          {"key": "marhale", "title": "مرحلهٔ گردش برگه"}
+        ],
+        "outputs": [
+          {"key": "mohlat", "title": "ساعت یا مهلت", "nature": "limit"}
+        ],
+        "table": {
+          "hit": "unique",
+          "inputs": ["marhale"],
+          "outputs": ["mohlat"],
+          "rows": [
+            {"marhale": "تحویل حضوری برگهٔ غروب به انبار توسط سرپرست آماده‌سازی", "mohlat": "پیش از ۱۸:۳۰"},
+            {"marhale": "بازگرداندن برگهٔ تکمیل‌شده از انبار به آماده‌سازی", "mohlat": "حدود ۱۰:۲۰"},
+            {"marhale": "تحویل برگهٔ اصلاح‌شده به انبار", "mohlat": "حداکثر ۱۰:۳۰"},
+            {"marhale": "رساندن همهٔ اقلام برگهٔ اصلاح‌شده به آماده‌سازی", "mohlat": "حدود ۱۰:۴۵ تا ۱۰:۵۰"},
+            {"marhale": "اعلام قلم جاافتاده یا اصلاحیه به انبار", "mohlat": "حداکثر ۱۱:۰۰"}
+          ]
+        }
+      }
+    },
+    {
+      "kind": "rule",
+      "key": "darkhast_pishaapish_aqlam_gheyr_dopo",
+      "title": "درخواست پیشاپیش اقلامی که در انبار مرکزی نگهداری نمی‌شوند",
+      "statement": "اقلامی که مجوز بهداشتی ندارند، مانند ورچستر، سرکه بالزامیک، سس اچ‌پی، خردل فرنچ و سس سویا، در انبار مرکزی دپو نمی‌شوند و انبار نمی‌تواند همان صبح آن‌ها را بدهد؛ این اقلام باید از روز پیش در برگهٔ درخواست کالا نوشته شوند تا انبار به اندازهٔ مصرف همان روز از انبار قدس بیاورد. کالاهای رو به اتمامی که از انبار قدس می‌رسند نیز یک روز زودتر اعلام می‌شوند، و سرپرست پیش از تحویل برگه چند بار به لاین‌ها یادآوری می‌کند که چیزی از قلم نیفتد، چون انبار برای هر محصول تنها یک بار خروج می‌زند.",
+      "home": {"ref": "N-u-att-1-0"},
+      "processes": [
+        {"process": "preparation-003", "node": "preparation-003-n001", "quote": "باید از قبل پیگیری و در فرم دیده شوند"},
+        {"process": "preparation-003", "node": "preparation-003-n003", "quote": "کالاهایی که در حال اتمام است از روز قبل اعلام می‌شود"},
+        {"process": "preparation-003", "node": "preparation-003-n005", "quote": "انبار برای هر محصول فقط یک بار خروج می‌زند"},
+        {"process": "warehouse-010", "node": "warehouse-010-n012", "quote": "درخواست این اقلام از روز پیش توسط واحد آماده‌سازی ثبت می‌شود"}
+      ],
+      "data": {
+        "lang": "text",
+        "expr": null,
+        "original": "اقلام فاقد مجوز بهداشتی که در انبار مرکزی دپو نمی‌شوند باید از روز پیش در برگهٔ درخواست کالای آماده‌سازی نوشته شوند تا انبار به اندازهٔ مصرف همان روز بیاورد.",
+        "inputs": [
+          {"key": "sharh_kala", "title": "شرح کالا", "from": {"ref": "N-u-att-1-0", "field": "sharh_kala"}}
+        ],
+        "outputs": []
+      }
+    },
+    {
+      "kind": "note",
+      "key": "yaddasht_do_khane_tik",
+      "title": "دو خانهٔ تیک زیر سربرگ تیک انبار",
+      "statement": "در عکس هر دو برگه، زیر سربرگ تیک انبار برای هر قلم دو خانهٔ باریک کنار هم دیده می‌شود، در حالی که متن برگه تنها یک ستون تیک را نام می‌برد. در فرایند انبار، هر برگهٔ درخواست کالا دو جای تیک دارد: یکی برای انبار و دیگری برای تحویل‌گیرنده.",
+      "home": {"ref": "N-u-att-1-0", "field": "tik_anbar"},
+      "processes": [
+        {"process": "warehouse-012", "node": "warehouse-012-n001", "quote": "کنار جدول آن دو جای تیک دارد: یکی تیک انبار و دیگری تیک تحویل‌گیرنده"}
+      ],
+      "data": {
+        "about": [{"ref": "N-u-att-1-0", "field": "tik_anbar"}],
+        "question": "آیا خانهٔ دوم زیر سربرگ تیک انبار جای تیک تحویل‌گیرنده است، و در آماده‌سازی چه کسی آن را می‌زند؟"
+      }
+    },
+    {
+      "kind": "note",
+      "key": "yaddasht_emza_tahvilgirande",
+      "title": "امضای تحویل‌گیرنده روی برگهٔ درخواست کالا",
+      "statement": "فرایند انبار می‌گوید مسئول بخش گیرنده پس از بررسی اقلام کنار هر قلم تیک دوم می‌زند و پایین برگهٔ درخواست کالا را امضا می‌کند و امضا به معنای تحویل کامل است؛ فرایند آماده‌سازی می‌گوید پای برگهٔ انبار امضا یا تأییدیه‌ای زده نمی‌شود، هماهنگی تنها شفاهی است و تیک را خود انبار می‌زند. روی خود برگه هم جای امضایی چاپ نشده است.",
+      "home": {"ref": "N-u-att-1-0"},
+      "processes": [
+        {"process": "warehouse-023", "node": "warehouse-023-n032", "quote": "مسئول بخش گیرنده اقلام را بررسی و تیک و امضای خود را ثبت می‌کند"},
+        {"process": "preparation-004", "node": "preparation-004-n009", "quote": "امضا یا تاییدیه‌ای پای فرم انبار زده نمی‌شود و هماهنگی صرفاً کلامی است"},
+        {"process": "preparation-003", "node": "preparation-003-n008", "quote": "خود انبار تیکش را می‌زند"}
+      ],
+      "data": {
+        "about": [{"ref": "N-u-att-1-0"}],
+        "question": "آیا آماده‌سازی تحویل اقلام این برگه را با تیک دوم و امضا تأیید می‌کند، یا هماهنگی تنها شفاهی است و برگه امضا نمی‌شود؟"
+      }
+    },
+    {
+      "kind": "note",
+      "key": "yaddasht_aqlam_gusht_morgh_dar_barge",
+      "title": "ردیف‌های گوشت و مرغ چاپ‌شده در برگهٔ درخواست کالا",
+      "statement": "فرایند آماده‌سازی می‌گوید این برگه نیاز همیشگی روزانه را در بر می‌گیرد و مرغ و گوشت و چیزا در آن نیست، اما برگه در بخش بدون سند ردیف‌هایی برای مرغ چیزا، استیک، مغزران، سردست گوساله و قلوه‌گاه بره و گوساله چاپ کرده است. همان فرایند ژامبون و پپرونی را از اقلامی می‌داند که در همین برگه درخواست می‌شوند.",
+      "home": {"ref": "N-u-att-1-0"},
+      "processes": [
+        {"process": "preparation-003", "node": "preparation-003-n002", "quote": "ولی مرغ و گوشت و چیزا در آن نیست"},
+        {"process": "preparation-003", "node": "preparation-003-n012", "quote": "اقلام خاص هر روز مثل ژامبون یا پپرونی طبق فرمی که انبار می‌دهد در همین فرم درخواست می‌شود"}
+      ],
+      "data": {
+        "about": [{"ref": "N-u-att-1-0"}],
+        "question": "آیا ردیف‌های مرغ چیزا، استیک، مغزران، سردست گوساله و قلوه‌گاه هنوز در این برگه پر می‌شوند، یا این اقلام تنها از راه برنامه و سفارش انبار به آماده‌سازی می‌رسند؟"
+      }
+    },
+    {
+      "kind": "note",
+      "key": "yaddasht_bakhsh_ha_va_sh_s",
+      "title": "معنای بخش‌های برگه و خانهٔ ش س",
+      "statement": "برگه اقلام را زیر سه سربرگ مصرف مستقیم، حواله انبار به انبار و بدون سند دسته‌بندی کرده و کنار دو سربرگ نخست خانهٔ خالی ش س گذاشته است؛ فرایندها دربارهٔ این دسته‌بندی و این خانه چیزی نمی‌گویند.",
+      "home": {"ref": "N-u-att-1-0", "field": "sh_s"},
+      "data": {
+        "about": [{"ref": "N-u-att-1-0", "field": "sh_s"}],
+        "question": "این سه بخش در ثبت خروج انبار چه فرقی با هم دارند، و خانهٔ ش س را چه کسی، چه زمانی و با چه شماره‌ای پر می‌کند؟"
+      }
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "unit": "review",
+  "attempt": 1,
+  "decisions": [
+    {
+      "entry": {"kind": "rule", "key": "hadd_ekhtelaf_taraz_morgh", "scope": {"departments": ["preparation"]}},
+      "action": "merge_into",
+      "into": {"kind": "rule", "key": "hadd_ekhtelaf_taraz_lain_morgh", "scope": {"departments": ["preparation"]}},
+      "reason_code": "duplicate",
+      "reason": "same tolerance 50-100 g and 1-2 kg reweigh trigger of the chicken line weight balance"
+    },
+    {
+      "entry": {"kind": "rule", "key": "hadd_paziresh_ekhtelaf_taraz_morgh", "scope": {"departments": ["preparation"]}},
+      "action": "merge_into",
+      "into": {"kind": "rule", "key": "hadd_ekhtelaf_taraz_lain_morgh", "scope": {"departments": ["preparation"]}},
+      "reason_code": "duplicate",
+      "reason": "same tolerance 50-100 g of the chicken line weight balance"
+    },
+    {
+      "entry": {"kind": "rule", "key": "astane_elam_khunabe_morgh", "scope": {"departments": ["preparation"]}},
+      "action": "merge_into",
+      "into": {"kind": "rule", "key": "astane_elam_khoonabe_morgh", "scope": {"departments": ["preparation"]}},
+      "reason_code": "duplicate",
+      "reason": "same ~2 kg blood-water threshold reported to management"
+    },
+    {
+      "entry": {"kind": "rule", "key": "zayeat_damar_rasteh_standard", "scope": {"departments": ["preparation"]}},
+      "action": "merge_into",
+      "into": {"kind": "rule", "key": "zayeat_damar_raste", "scope": {"departments": ["preparation"]}},
+      "reason_code": "duplicate",
+      "reason": "same 1.5-1.8 kg per 20 kg uncleaned loin constant"
+    },
+    {
+      "entry": {"kind": "rule", "key": "mabnaye_zayeat_raste", "scope": {"departments": ["preparation"]}},
+      "action": "merge_into",
+      "into": {"kind": "rule", "key": "zayeat_damar_raste", "scope": {"departments": ["preparation"]}},
+      "reason_code": "duplicate",
+      "reason": "same 1.5-1.8 kg per 20 kg uncleaned loin constant"
+    },
+    {
+      "entry": {"kind": "rule", "key": "nesbat_sardast_khorde_raste_bargar", "scope": {"departments": ["preparation"]}},
+      "action": "merge_into",
+      "into": {"kind": "rule", "key": "nesbat_goosht_maye_burger", "scope": {"departments": ["preparation"]}},
+      "reason_code": "duplicate",
+      "reason": "same equal-share shoulder/loin-trim rule; its extra shortfall clause is carried into the keeper statement"
+    },
+    {
+      "entry": {"kind": "rule", "key": "nesbat_goosht_maye_burger", "scope": {"departments": ["preparation"]}},
+      "action": "keep",
+      "key": "nesbat_goosht_maye_burger",
+      "title": "نسبت سردست و خرده راسته در مایهٔ برگر",
+      "statement": "گوشت مایهٔ برگر به نسبت مساوی از گوشت سردست و خرده راستهٔ حاصل از تفکیک راسته تشکیل می‌شود و مسئول لاین گوشت پیش از چرخ کردن وزن دو گوشت را با ترازو برابر می‌کند. اختلاف ۱۰۰ تا ۲۰۰ گرمی مسئله‌ای ندارد و کسری سردست ناشی از کسر پلاستیک و ضایعات با همان مقدار خرده راستهٔ بیشتر جبران می‌شود. اگر سردست کمتر از سفارش برسد، خرده راستهٔ بیشتر زده نمی‌شود و حداکثر دو برابر وزن سردست مایه تولید می‌شود."
+    },
+    {
+      "entry": {"kind": "rule", "key": "mohlat_amadegi_sahm_shobe", "scope": {"departments": ["preparation"]}},
+      "action": "merge_into",
+      "into": {"kind": "rule", "key": "olaviat_sahm_shobe", "scope": {"departments": ["preparation"]}},
+      "reason_code": "duplicate",
+      "reason": "the 4 pm branch-share deadline is already stated whole in the priority rule on the same form"
+    },
+    {
+      "entry": {"kind": "rule", "key": "vazn_baste_loghme", "scope": {"departments": ["preparation"]}},
+      "action": "merge_into",
+      "into": {"kind": "rule", "key": "estandard_baste_mahsulat_sine_morgh", "scope": {"departments": ["preparation"]}},
+      "reason_code": "duplicate",
+      "reason": "the 200-piece loghme pack at 2.130-2.150 kg with reopen-and-recount is already one member of the standard-pack rule"
+    },
+    {
+      "entry": {"kind": "note", "key": "note_1878aaf0971a", "scope": {"departments": ["preparation"]}},
+      "action": "merge_into",
+      "into": {"kind": "note", "key": "note_7804bbf8895d", "scope": {"departments": ["preparation"]}},
+      "reason_code": "duplicate",
+      "reason": "both ask the same question: one loin conversion form or two"
+    },
+    {
+      "entry": {"kind": "record", "key": "form_tabdil_rasteh", "scope": {"departments": ["preparation"]}},
+      "action": "keep",
+      "key": "form_tabdil_rasteh",
+      "title": "فرم تبدیل آماده‌سازی گوشت راسته",
+      "statement": "فرم کاغذی تبدیل آماده‌سازی برای گوشت راسته که وزن راستهٔ ورودی و تبدیل آن به فیلادلفیا و ضایعات را به کیلو ثبت می‌کند و مسئول لاین گوشت آماده‌سازی در روز تفکیک راسته آن را پر می‌کند؛ برگهٔ تکمیل‌شده را سرپرست آماده‌سازی به حسابداری ارائه می‌دهد. طبق رویهٔ ابلاغ‌شده، فیلادلفیا دیگر فرم تبدیل ندارد و ردیف فیلادلفیای این برگه پر نمی‌شود؛ وزن آن تنها در فرم نیم‌ساخت نوشته می‌شود. نسخه‌ای با عنوان انبار هم از این فرم هست که یکسان بودنش با این نسخه میان فرایندها روشن نیست، و برای اسکن و ارسال به سیستم نسخهٔ آماده‌سازی لازم است.",
+      "reason": "the old statement asserted as fact one side of the warehouse-copy disagreement that notes on the conversion forms leave open"
+    },
+    {
+      "entry": {"kind": "record", "key": "form_tabdil_sine_morgh", "scope": {"departments": ["preparation"]}},
+      "action": "keep",
+      "key": "form_tabdil_sine_morgh",
+      "title": "فرم تبدیل آماده‌سازی سینهٔ مرغ",
+      "statement": "فرم کاغذی چاپی که مسئول لاین مرغ هر روز در پایان کار مرغ پر می‌کند و در آن وزن سینهٔ مرغ خام ورودی روز و مقدار هر محصولی را که از آن به دست آمده و تحویل انبار می‌شود ثبت می‌کند: لقمه و مرغ چیزا به کیلو و عدد، مرغ پیتزای تکه‌شده، مرغ گریل و کنار شنیسل به کیلو، و خونابه و پلاستیک به‌عنوان ضایعات. سرپرست آماده‌سازی فرم پرشده را به حسابداری می‌دهد تا گزارش تبدیل، یعنی ورودی، خروجی و ضایعات سینهٔ مرغ، ثبت شود. نسخه‌ای با سربرگ انبار هم هست که یکسان بودنش با این نسخه میان فرایندها روشن نیست، و برای اسکن و ارسال به سیستم نسخهٔ آماده‌سازی لازم است.",
+      "reason": "same open warehouse-copy disagreement; the statement no longer asserts the copies are identical"
+    }
+  ]
+}

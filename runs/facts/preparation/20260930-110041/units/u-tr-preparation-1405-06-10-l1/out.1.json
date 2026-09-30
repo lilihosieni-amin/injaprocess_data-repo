@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "unit": "u-tr-preparation-1405-06-10-l1",
+  "attempt": 1,
+  "decisions": [],
+  "new": [],
+  "contradicted": [
+    {
+      "claim": "برای راستهٔ پاک‌نشده دو فرم تبدیل پر می‌شود و مقدار فیلادلفیای تولیدشده و ضایعات آن، پس از کسر از وزن کل راسته، در فرم تبدیل جداگانهٔ فیلادلفیا نوشته می‌شود.",
+      "ref": "meetings/transcripts/preparation-1405-06-10.txt",
+      "lines": "142-147",
+      "against": {"process": "preparation-020", "node": "preparation-020-n018"}
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "unit": "u-tr-preparation-1405-06-04-l1",
+  "attempt": 1,
+  "decisions": [],
+  "new": [],
+  "contradicted": [
+    {
+      "claim": "کنار شنیسل خام در سردخانهٔ زیر صفر نگهداری می‌شود و تنها برای ناهار و شام پرسنل مصرف می‌شود و فقط کنار شنیسل پخته به مرغ پیتزا می‌رسد.",
+      "ref": "meetings/transcripts/preparation-1405-06-04.txt",
+      "lines": "251-251",
+      "against": {"process": "preparation-012", "node": "preparation-012-n039"}
+    }
+  ]
+}

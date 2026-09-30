@@ -1,0 +1,317 @@
+{
+  "schema_version": 1,
+  "unit": "u-att-9",
+  "attempt": 1,
+  "decisions": [],
+  "new": [
+    {
+      "kind": "record",
+      "key": "form_tabdil_sine_morgh",
+      "title": "فرم تبدیل آماده‌سازی سینهٔ مرغ",
+      "aliases": ["فرم تبدیل سینه", "فرم تبدیل سینه مرغ", "فرم سینه مرغ"],
+      "statement": "فرم کاغذی چاپی که مسئول لاین مرغ هر روز در پایان کار مرغ پر می‌کند و در آن وزن سینهٔ مرغ خام ورودی روز و مقدار هر محصولی را که از آن به دست آمده و تحویل انبار می‌شود ثبت می‌کند: لقمه و مرغ چیزا به کیلو و عدد، مرغ پیتزای تکه‌شده، مرغ گریل و کنار شنیسل به کیلو، و خونابه و پلاستیک به‌عنوان ضایعات. سرپرست آماده‌سازی فرم پرشده را به حسابداری می‌دهد تا گزارش تبدیل، یعنی ورودی، خروجی و ضایعات سینهٔ مرغ، ثبت شود. نسخه‌ای هم‌سان با سربرگ انبار هم هست، ولی برای اسکن و ارسال به سیستم نسخهٔ آماده‌سازی لازم است.",
+      "data": {
+        "medium": "paper",
+        "role": "log",
+        "location": {
+          "kept_at": "فرم پرشده به سرپرست آماده‌سازی می‌رسد و او آن را به حسابداری ارائه می‌کند؛ محل نگهداری فرم‌های خالی در فرایندها نیامده است.",
+          "holder": "سرپرست آماده‌سازی"
+        },
+        "cadence": "daily",
+        "grain": "یک برگه برای هر روز کاری، برای کل سینهٔ مرغی که آن روز در لاین مرغ تفکیک می‌شود",
+        "day_boundary": null,
+        "filled_by": "مسئول لاین مرغ (تخته‌کار)",
+        "approved_by": null,
+        "blank_master": true,
+        "header_fields": [
+          {
+            "key": "tarikh",
+            "title": "تاریخ",
+            "type": "date",
+            "description": "تاریخ روز کاری که سینهٔ مرغ در آن تفکیک و تحویل انبار شده است."
+          },
+          {
+            "key": "vazn_sine",
+            "title": "کیلو",
+            "type": "number",
+            "unit": "kg",
+            "unit_raw": "کیلو",
+            "description": "وزن کل سینهٔ مرغ (شنیسل) خامی که آن روز از انبار به لاین مرغ رسیده است؛ مسئول لاین مرغ هر پارت را خودش با ترازوی آشپزخانه می‌کشد و در دفتر مرغ ثبت می‌کند و به وزن اعلامی انبار اتکا نمی‌کند."
+          }
+        ],
+        "sections": [
+          {"key": "zayeat", "title": "ضایعات"}
+        ],
+        "fields": [
+          {
+            "key": "tahvil_anbar",
+            "title": "که به مواد خام زیر تبدیل می شود و تحویل انبار میگردد.",
+            "type": "number",
+            "unit": null,
+            "description": "مقدار هر محصول سینهٔ مرغ که همان روز تحویل انبار می‌شود، در واحدی که جلوی همان ردیف چاپ شده است (کیلو یا عدد). برای لقمه و مرغ چیزا هم تعداد و هم وزن، و برای مرغ پیتزای تکه‌شده، مرغ گریل و کنار شنیسل تنها وزن نوشته می‌شود. وزن‌ها را مسئول لاین مرغ خودش با ترازوی آشپزخانه می‌کشد و تعدادها را دستی می‌شمارد. خونابه وزن نمی‌شود و پس از جمع زدن ردیف‌ها از تفاضل با وزن سینهٔ ورودی به دست می‌آید؛ خونابه و پلاستیک تحویل انبار نمی‌شوند."
+          },
+          {
+            "key": "mabaghi",
+            "title": "مابقی که در آماده سازی باقی مانده",
+            "type": "number",
+            "repeat": 2,
+            "unit": null,
+            "description": "مقداری از هر محصول که در آماده‌سازی مانده و تحویل انبار نشده است، در واحد همان ردیف. فرایندها می‌گویند همهٔ خروجی لاین مرغ جز خونابه و پلاستیک همان روز تحویل انبار می‌شود و مانده شب وجود ندارد، و نمی‌گویند این ستون‌ها چگونه پر می‌شوند. خانه‌های این بخش برای کنار شنیسل و ضایعات خاکستری و بی‌استفاده است."
+          },
+          {
+            "key": "jam",
+            "title": "جمع",
+            "type": "number",
+            "unit": null,
+            "description": "جمع هر ردیف در واحد همان ردیف؛ فرایندها نمی‌گویند چه مقادیری در این ستون جمع زده می‌شود. خانه‌های این ستون برای کنار شنیسل و ضایعات خاکستری و بی‌استفاده است."
+          }
+        ],
+        "rows": [
+          {"key": "loghme_kg", "title": "لقمه", "unit": "kg", "unit_raw": "کیلو"},
+          {"key": "loghme_adad", "title": "لقمه", "unit": "pcs", "unit_raw": "عدد"},
+          {"key": "morgh_pizza_tekke", "title": "مرغ پیتزا تکه شده", "unit": "kg", "unit_raw": "کیلو"},
+          {"key": "morgh_chiza_kg", "title": "مرغ چیزا", "unit": "kg", "unit_raw": "کیلو"},
+          {"key": "morgh_chiza_adad", "title": "مرغ چیزا", "unit": "pcs", "unit_raw": "عدد"},
+          {"key": "morgh_gril", "title": "مرغ گریل", "unit": "kg", "unit_raw": "کیلو"},
+          {"key": "kenar_shenitsel", "title": "کنار شنیسل", "unit": "kg", "unit_raw": "کیلو"},
+          {"key": "khoonabe", "title": "خون آبه", "unit": "kg", "unit_raw": "کیلو", "section": "zayeat"},
+          {"key": "plastic", "title": "پلاستیک", "unit": "kg", "unit_raw": "کیلو", "section": "zayeat"}
+        ]
+      },
+      "processes": [
+        {"process": "preparation-012", "node": "preparation-012-n021", "quote": "در فرم تبدیل سینه ردیف‌های لقمه، گریل، مرغ پیتزا، چیزا، ضایعات و خونابه/پلاستیک وجود دارد"},
+        {"process": "preparation-026", "node": "preparation-026-n012", "quote": "فرم تبدیل در دو نسخه وجود دارد"},
+        {"process": "preparation-012", "node": "preparation-012-n035", "quote": "فرم‌های تبدیل و نیم‌ساخت تکمیل‌شده در نهایت به حسابداری ارائه می‌شود"},
+        {"process": "preparation-012", "node": "preparation-012-n031", "quote": "همه‌چیز به جز خونابه و پلاستیک تحویل انبار داده می‌شود"}
+      ],
+      "from": ["departments/preparation/attachments/.text/photo-AQADdA5rG7piKFF-.image.md"]
+    },
+    {
+      "kind": "rule",
+      "key": "vazn_khoonabe_sine_morgh",
+      "title": "وزن خونابهٔ سینهٔ مرغ از تفاضل",
+      "home": {"ref": "N-u-att-9-0", "field": "tahvil_anbar"},
+      "statement": "وزن خونابهٔ سینهٔ مرغ روز اندازه‌گیری نمی‌شود؛ مسئول لاین مرغ هنگام تکمیل فرم تبدیل، پس از جمع زدن ردیف‌ها، آن را از کسر مجموع وزن لقمه، مرغ پیتزای تکه‌شده، مرغ چیزا، مرغ گریل، کنار شنیسل و پلاستیک از وزن سینهٔ خام ورودی به دست می‌آورد و به کیلو ثبت می‌کند.",
+      "data": {
+        "lang": "feel",
+        "expr": "khoonabe = vazn_vorudi - (loghme + morgh_pizza + morgh_chiza + morgh_gril + kenar_shenitsel + plastic)",
+        "inputs": [
+          {"key": "vazn_vorudi", "title": "کیلو", "unit": "kg", "from": {"ref": "N-u-att-9-0", "field": "vazn_sine"}},
+          {"key": "loghme", "title": "لقمه", "unit": "kg", "from": {"ref": "N-u-att-9-0", "field": "tahvil_anbar", "row": "loghme_kg"}},
+          {"key": "morgh_pizza", "title": "مرغ پیتزا تکه شده", "unit": "kg", "from": {"ref": "N-u-att-9-0", "field": "tahvil_anbar", "row": "morgh_pizza_tekke"}},
+          {"key": "morgh_chiza", "title": "مرغ چیزا", "unit": "kg", "from": {"ref": "N-u-att-9-0", "field": "tahvil_anbar", "row": "morgh_chiza_kg"}},
+          {"key": "morgh_gril", "title": "مرغ گریل", "unit": "kg", "from": {"ref": "N-u-att-9-0", "field": "tahvil_anbar", "row": "morgh_gril"}},
+          {"key": "kenar_shenitsel", "title": "کنار شنیسل", "unit": "kg", "from": {"ref": "N-u-att-9-0", "field": "tahvil_anbar", "row": "kenar_shenitsel"}},
+          {"key": "plastic", "title": "پلاستیک", "unit": "kg", "from": {"ref": "N-u-att-9-0", "field": "tahvil_anbar", "row": "plastic"}}
+        ],
+        "outputs": [
+          {"key": "khoonabe", "title": "خون آبه", "unit": "kg", "nature": "observed", "writes_to": {"ref": "N-u-att-9-0", "field": "tahvil_anbar", "row": "khoonabe"}}
+        ]
+      },
+      "processes": [
+        {"process": "preparation-012", "node": "preparation-012-n021", "quote": "پس از جمع زدن ردیف‌ها، وزن خونابه هم از تفاضل به دست می‌آید و نوشته می‌شود"}
+      ],
+      "from": ["departments/preparation/attachments/.text/photo-AQADdA5rG7piKFF-.image.md"]
+    },
+    {
+      "kind": "rule",
+      "key": "hadd_ekhtelaf_taraz_lain_morgh",
+      "title": "حد پذیرش اختلاف تراز وزنی لاین مرغ",
+      "home": {"ref": "N-u-att-9-0"},
+      "statement": "مسئول لاین مرغ تراز وزنی لاین، یعنی تطبیق وزن مرغ ورودی روز با جمع خروجی‌ها، را غروب و پیش از ترک محل می‌بندد و اختلاف پذیرفتنی حدود ۵۰ تا ۱۰۰ گرم است. اگر اختلاف به یکی دو کیلو برسد، لاین از انبار می‌خواهد مرغ‌های همان روز را دوباره بالا بیاورد تا وزن‌گیری تکرار شود.",
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {"key": "ekhtelaf_mojaz", "title": "اختلاف مجاز تراز", "unit": "g", "nature": "limit", "per": "تراز روزانهٔ لاین مرغ", "range": {"min": 50, "max": 100}},
+          {"key": "astane_vazngiri_mojadad", "title": "اختلاف موجب وزن‌گیری دوباره", "unit": "kg", "nature": "limit", "per": "تراز روزانهٔ لاین مرغ", "range": {"min": 1, "max": 2}}
+        ]
+      },
+      "processes": [
+        {"process": "preparation-012", "node": "preparation-012-n037", "quote": "اختلاف به حدود ۵۰ تا ۱۰۰ گرم برسد"},
+        {"process": "preparation-012", "node": "preparation-012-n038", "quote": "اگر اختلاف تراز به یکی دو کیلو برسد"},
+        {"process": "preparation-012", "node": "preparation-012-n021", "quote": "مطابقت جمع خروجی با وزن مرغ ورودی روز"}
+      ]
+    },
+    {
+      "kind": "rule",
+      "key": "astane_elam_khoonabe_morgh",
+      "title": "آستانهٔ اعلام خونابهٔ زیاد مرغ به مدیریت",
+      "home": {"ref": "N-u-att-9-0", "field": "tahvil_anbar"},
+      "statement": "اگر خونابهٔ مرغ خام دریافتی روز به حدود دو کیلو برسد، سرپرست آماده‌سازی آن را به مدیریت، نه به انبار، اعلام می‌کند تا تأمین‌کننده پیگیری شود؛ علت معمول آن آب‌دار بودن مرغ تحویلی است. آماده‌سازی جز این مورد مغایرت وزنی را اعلام نمی‌کند.",
+      "data": {
+        "inputs": [],
+        "outputs": [
+          {"key": "astane_elam", "title": "آستانهٔ اعلام خونابه", "unit": "kg", "nature": "limit", "per": "مرغ خام دریافتی روز", "value": 2}
+        ]
+      },
+      "processes": [
+        {"process": "preparation-012", "node": "preparation-012-n023", "quote": "اگر خونابه به حدود دو کیلو برسد به مدیریت اعلام می‌شود"},
+        {"process": "preparation-012", "node": "preparation-012-n025", "quote": "اعلام هم نه به انبار بلکه به مدیریت انجام می‌شود"}
+      ]
+    },
+    {
+      "kind": "rule",
+      "key": "estandard_baste_mahsulat_sine_morgh",
+      "title": "بستهٔ استاندارد محصولات سینهٔ مرغ",
+      "home": {"ref": "N-u-att-9-0", "field": "tahvil_anbar"},
+      "statement": "هر محصولی که از سینهٔ مرغ به دست می‌آید با بستهٔ استاندارد خودش تحویل انبار می‌شود: لقمه در بسته‌های ۲۰۰ عددی به وزن ۲٫۱۳ تا ۲٫۱۵ کیلو و هر لقمه ۱۰ تا ۱۳ گرم، مرغ چیزا در بسته‌های ۴۸ عددی با تکه‌های حدود ۸۰ گرمی، و مرغ گریل و مرغ پیتزا بر مبنای وزن در بسته‌های ۴ کیلویی. مسئول لاین مرغ وزن بسته‌ها را هنگام بسته‌بندی کنترل می‌کند؛ بستهٔ لقمه‌ای که از حد بالاتر برود باز و دوباره شمرده می‌شود، ولی اضافه‌وزن تا حدود ۵۰۰ گرم در بستهٔ چیزا پذیرفته است.",
+      "data": {
+        "lang": "table",
+        "expr": null,
+        "inputs": [
+          {"key": "mahsul", "title": "محصول"}
+        ],
+        "outputs": [
+          {"key": "tedad_dar_baste", "title": "تعداد در هر بسته", "unit": "pcs"},
+          {"key": "vazn_baste", "title": "وزن هر بسته", "unit": "kg"},
+          {"key": "vazn_har_adad", "title": "وزن هر عدد", "unit": "g"}
+        ],
+        "table": {
+          "hit": "unique",
+          "inputs": ["mahsul"],
+          "outputs": ["tedad_dar_baste", "vazn_baste", "vazn_har_adad"],
+          "rows": [
+            {"mahsul": "لقمه", "tedad_dar_baste": 200, "vazn_baste": "2.13 تا 2.15", "vazn_har_adad": "10 تا 13"},
+            {"mahsul": "مرغ چیزا", "tedad_dar_baste": 48, "vazn_baste": null, "vazn_har_adad": "حدود 80"},
+            {"mahsul": "مرغ گریل", "tedad_dar_baste": null, "vazn_baste": 4, "vazn_har_adad": null},
+            {"mahsul": "مرغ پیتزا", "tedad_dar_baste": null, "vazn_baste": 4, "vazn_har_adad": null}
+          ]
+        },
+        "edge_cases": [
+          {"input": {"mahsul": "لقمه", "vazn_baste": 2.2}, "expected": "بسته باز و دوباره شمرده می‌شود", "why": "اضافه‌وزن ۲۰۰ تا ۳۰۰ گرمی حساب ورودی و خروجی را به هم می‌ریزد؛ اختلاف حدود ۵۰ گرم اشکالی ندارد."},
+          {"input": {"mahsul": "مرغ چیزا", "ezafe_vazn_g": 500}, "expected": "پذیرفته است", "why": "چیزا بعداً کوبیده و فرآوری می‌شود و اضافه‌اش به مرغ پیتزا برمی‌گردد."}
+        ]
+      },
+      "processes": [
+        {"process": "preparation-012", "node": "preparation-012-n004", "quote": "هر لقمه باید بین ۱۰ تا ۱۳ گرم باشد"},
+        {"process": "preparation-012", "node": "preparation-012-n006", "quote": "هر بسته ۲۰۰ عددی باید حدود ۲ کیلو و ۱۳۰ و نهایتاً ۲ کیلو و ۱۵۰ گرم باشد"},
+        {"process": "preparation-012", "node": "preparation-012-n007", "quote": "بسته‌ای که وزنش از حد مجاز بالاتر رفته دوباره باز و شمارش می‌شود"},
+        {"process": "preparation-012", "node": "preparation-012-n011", "quote": "طبق وزن در بسته‌های ۴ کیلویی"},
+        {"process": "preparation-012", "node": "preparation-012-n012", "quote": "هر تکه چیزا باید تقریباً ۸۰ گرم باشد"},
+        {"process": "preparation-012", "node": "preparation-012-n013", "quote": "چیزا تعدادی است و هر بسته ۴۸ عدد دارد"},
+        {"process": "preparation-012", "node": "preparation-012-n015", "quote": "مرغ پیتزا تعدادی نیست"}
+      ]
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_sine_morgh_vorudi",
+      "title": "وزن سینهٔ مرغ خام ورودی روز",
+      "home": {"ref": "N-u-att-9-0", "field": "vazn_sine"},
+      "statement": "مسئول لاین مرغ هر پارت سینهٔ مرغ خام را هنگام تحویل از انبار خودش با ترازوی آشپزخانه وزن می‌کند و به وزن اعلامی انبار اتکا نمی‌کند؛ وزن هر پارت جداگانه در دفتر مرغ ثبت می‌شود و جمع آن وزن ورودی روز سینه به کیلو است.",
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "of": "سینهٔ مرغ (شنیسل) خام دریافتی از انبار",
+        "method": "ترازوی آشپزخانه با خطای تا ۱۰ گرم و ظرفیت ۶۰ تا ۷۰ کیلو؛ هر پارت جداگانه وزن می‌شود",
+        "when": "هنگام رسیدن هر پارت مرغ از انبار؛ بار روز در سه تا چهار پارت می‌رسد",
+        "by": "مسئول لاین مرغ",
+        "writes_to": {"ref": "N-u-att-9-0", "field": "vazn_sine"},
+        "exceptions": "اختلاف جزئی با وزن اعلامی انبار به انبار اعلام نمی‌شود و همان وزنی که لاین کشیده ثبت می‌شود؛ تنها خونابهٔ بیش از حد به مدیریت اعلام می‌شود."
+      },
+      "processes": [
+        {"process": "preparation-012", "node": "preparation-012-n023", "quote": "هر چه می‌آید را خود مسئول لاین مرغ وزن‌گیری می‌کند"},
+        {"process": "preparation-012", "node": "preparation-012-n026", "quote": "همان وزنی که خود لاین کشیده است ثبت می‌شود"}
+      ]
+    },
+    {
+      "kind": "measurement",
+      "key": "tedad_mahsulat_sine_morgh",
+      "title": "تعداد لقمه و مرغ چیزای تولیدشده",
+      "home": {"ref": "N-u-att-9-0", "field": "tahvil_anbar"},
+      "statement": "مسئول لاین مرغ تعداد لقمه و تکه‌های مرغ چیزا را هنگام بسته‌بندی دانه‌به‌دانه و دستی می‌شمارد و در ردیف عددی همان محصول در فرم تبدیل سینه می‌نویسد.",
+      "data": {
+        "quantity": "count",
+        "unit": "pcs",
+        "of": "لقمه و مرغ چیزای تولیدشده از سینهٔ مرغ",
+        "method": "شمارش دستی دانه‌به‌دانه هنگام بسته‌بندی؛ خطای یکی دو عددی ممکن است",
+        "when": "هنگام بسته‌بندی و پیش از تکمیل فرم در پایان کار مرغ",
+        "by": "مسئول لاین مرغ",
+        "writes_to": {"ref": "N-u-att-9-0", "field": "tahvil_anbar"},
+        "exceptions": null
+      },
+      "processes": [
+        {"process": "preparation-012", "node": "preparation-012-n005", "quote": "لقمه دستی شمارش می‌شود و هر بسته ۲۰۰ عدد است"},
+        {"process": "preparation-012", "node": "preparation-012-n021", "quote": "برای لقمه و چیزا هم تعداد و هم وزن نوشته می‌شود"}
+      ]
+    },
+    {
+      "kind": "measurement",
+      "key": "vazn_mahsulat_sine_morgh",
+      "title": "وزن محصولات تحویلی سینهٔ مرغ",
+      "home": {"ref": "N-u-att-9-0", "field": "tahvil_anbar"},
+      "statement": "مسئول لاین مرغ وزن لقمه، مرغ چیزا، مرغ پیتزای تکه‌شده، مرغ گریل و کنار شنیسل را با ترازو به کیلو می‌گیرد و در ردیف کیلویی همان محصول در فرم تبدیل سینه ثبت می‌کند.",
+      "data": {
+        "quantity": "mass",
+        "unit": "kg",
+        "of": "محصولات تفکیک‌شدهٔ سینهٔ مرغ",
+        "method": "وزن‌کشی بسته‌ها با ترازوی آشپزخانه",
+        "when": "هنگام بسته‌بندی و پیش از تحویل به انبار در پایان کار مرغ",
+        "by": "مسئول لاین مرغ",
+        "writes_to": {"ref": "N-u-att-9-0", "field": "tahvil_anbar"},
+        "exceptions": "خونابه وزن نمی‌شود و از تفاضل جمع ردیف‌ها با وزن سینهٔ ورودی به دست می‌آید."
+      },
+      "processes": [
+        {"process": "preparation-012", "node": "preparation-012-n021", "quote": "برای مرغ پیتزا و گریل وزن ثبت می‌شود"},
+        {"process": "preparation-012", "node": "preparation-012-n006", "quote": "کنترل وزن در همین مرحله و توسط خود مسئول لاین انجام می‌شود"}
+      ]
+    },
+    {
+      "kind": "note",
+      "key": "yaddasht_khane_mabaghi_dar_aks",
+      "title": "شمار خانه‌های بخش مابقی در عکس فرم",
+      "home": {"ref": "N-u-att-9-0", "field": "mabaghi"},
+      "statement": "در عکس فرم، بخش مابقی برای ردیف‌های لقمه تا مرغ گریل سه خانه دارد، در حالی که شرح فرم آن را دو ستون خوانده است.",
+      "data": {
+        "about": [{"ref": "N-u-att-9-0", "field": "mabaghi"}],
+        "question": "در عکس، زیر «مابقی که در آماده سازی باقی مانده» برای ردیف‌های لقمه تا مرغ گریل سه خانه دیده می‌شود، نه دو؛ خانهٔ سمت راست در ردیف‌های لقمه و مرغ چیزا هر دو زیرردیف کیلو و عدد را با هم می‌پوشاند، و برای کنار شنیسل و ضایعات همهٔ بخش مابقی و جمع یک خانهٔ یکپارچه است. شمار درست ستون‌های این بخش کدام است؟"
+      },
+      "from": ["departments/preparation/attachments/.text/photo-AQADdA5rG7piKFF-.image.md"]
+    },
+    {
+      "kind": "note",
+      "key": "yaddasht_karbord_mabaghi_va_jam",
+      "title": "کاربرد بخش مابقی و ستون جمع",
+      "home": {"ref": "N-u-att-9-0", "field": "mabaghi"},
+      "statement": "فرایندها می‌گویند همهٔ خروجی لاین مرغ همان روز تحویل انبار می‌شود، ولی فرم بخشی برای مانده در آماده‌سازی و ستونی برای جمع دارد و روش پر کردن آن‌ها گفته نشده است.",
+      "data": {
+        "about": [{"ref": "N-u-att-9-0", "field": "mabaghi"}, {"ref": "N-u-att-9-0", "field": "jam"}],
+        "question": "فرایندها می‌گویند همهٔ خروجی لاین مرغ جز خونابه و پلاستیک همان روز تحویل انبار می‌شود و مانده‌ای در آماده‌سازی نمی‌ماند؛ آیا بخش «مابقی که در آماده سازی باقی مانده» و ستون «جمع» هنوز پر می‌شوند، و اگر آری، چه چیزی در آن‌ها نوشته و جمع زده می‌شود؟"
+      },
+      "processes": [
+        {"process": "preparation-012", "node": "preparation-012-n031", "quote": "همه‌چیز به جز خونابه و پلاستیک تحویل انبار داده می‌شود"},
+        {"process": "preparation-026", "node": "preparation-026-n011", "quote": "آماده‌سازی مانده شب ندارد"}
+      ]
+    },
+    {
+      "kind": "note",
+      "key": "yaddasht_zayeat_morgh_bedun_radif",
+      "title": "جای ثبت چربی و غضروف و استخوان سینه",
+      "home": {"ref": "N-u-att-9-0", "field": "tahvil_anbar"},
+      "statement": "چربی، غضروف و استخوانی که هنگام پاکسازی سینه جدا می‌شود ردیفی در فرم تبدیل سینه ندارد، و وزن خونابه از تفاضل به دست می‌آید.",
+      "data": {
+        "about": [{"ref": "N-u-att-9-0", "field": "tahvil_anbar"}],
+        "question": "چربی، غضروف و استخوانی که هنگام پاکسازی سینه جدا و «مرغ ضایعات» نامیده می‌شود (حدود یک و نیم تا سه کیلو در هر ۵۰ کیلو سینه) ردیفی در این فرم ندارد؛ وزن آن کجا ثبت می‌شود، و آیا در تفاضلی که وزن خونابه از آن به دست می‌آید پنهان می‌ماند؟"
+      },
+      "processes": [
+        {"process": "preparation-012", "node": "preparation-012-n002", "quote": "همه «مرغ ضایعات» به شمار می‌آید"},
+        {"process": "preparation-012", "node": "preparation-012-n021", "quote": "وزن خونابه هم از تفاضل به دست می‌آید"}
+      ]
+    },
+    {
+      "kind": "note",
+      "key": "yaddasht_mabna_khoonabe_tabiei",
+      "title": "مبنای مقدار طبیعی خونابهٔ مرغ",
+      "home": {"ref": "N-u-att-9-0", "field": "tahvil_anbar"},
+      "statement": "مقدار طبیعی خونابهٔ مرغ در فرایندها یک‌بار برای ۵۰ کیلو و بار دیگر برای ۸۰ کیلو مرغ آمده است، و برای پلاستیک برآورد جداگانه‌ای هم هست.",
+      "data": {
+        "about": [{"ref": "N-u-att-9-0", "field": "tahvil_anbar"}],
+        "question": "مقدار طبیعی خونابه (حدود ۳۰۰ تا ۴۰۰ گرم) در یک گام برای ۵۰ کیلو مرغ و در گام‌های دیگر برای ۸۰ کیلو مرغ همراه با پلاستیک آمده است، و برآورد دیگری وزن پلاستیک را در همین حدود بار ۷۰۰ تا ۸۰۰ گرم می‌داند؛ مبنای درست کدام است؟"
+      },
+      "processes": [
+        {"process": "preparation-012", "node": "preparation-012-n025", "quote": "برای ۵۰ کیلو مرغی که آمده حدود ۳۰۰ تا ۴۰۰ گرم خونابه طبیعی است"},
+        {"process": "preparation-012", "node": "preparation-012-n002", "quote": "خونابه و پلاستیک بار که عرفاً در ۸۰ کیلو مرغ ۳۰۰ تا ۴۰۰ گرم است"},
+        {"process": "preparation-012", "node": "preparation-012-n031", "quote": "وزن پلاستیک را در همین حدود بار حدود ۷۰۰ تا ۸۰۰ گرم می‌داند"}
+      ]
+    }
+  ]
+}
