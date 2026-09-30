@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-28T09:26:43Z",
-  "updated_at": "2026-09-30T22:07:00Z",
+  "updated_at": "2026-09-30T22:08:00Z",
   "idef0": {
     "inputs": [
       "بار و اقلام سهم شعبه در انبار مرکزی",
@@ -390,17 +390,6 @@
       }
     },
     {
-      "id": "procurement-022-j1",
-      "type": "junction",
-      "junctionType": "XOR",
-      "direction": "split",
-      "position": {
-        "x": 623,
-        "y": 543.5
-      },
-      "layout": "auto"
-    },
-    {
       "id": "procurement-022-n012",
       "type": "activity",
       "label": "نگهداری ضایعات دپوشده در رستوران مرکزی تا فرارسیدن روز مقرر تخلیه",
@@ -422,8 +411,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 761.0547195622436,
-        "y": 642.8043775649795
+        "x": 540.8440492476061,
+        "y": 531.5868673050616
       },
       "layout": "manual",
       "source": {
@@ -456,13 +445,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 527.5
+        "x": 994.362517099863,
+        "y": 516.3782489740082
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260928-merge3",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -487,13 +478,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 790
+        "x": 1036.625170998632,
+        "y": 764.4199726402188
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260928-merge3",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -519,19 +512,21 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 790
+        "x": 777.7373461012312,
+        "y": 773.3173734610123
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260928-merge3",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
       "id": "procurement-022-n016",
       "type": "activity",
-      "label": "تخلیهٔ ضایعات در محل نمایشگاه روبروی خط لوله",
+      "label": "تخلیهٔ ضایعات در محل انبار نمایشگاه ",
       "description": "",
       "actor": "کارپرداز",
       "icom": {
@@ -549,41 +544,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 790
+        "x": 492.1573187414501,
+        "y": 779.9904240766074
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260928-merge3",
-        "touched_by": []
-      }
-    },
-    {
-      "id": "procurement-022-n017",
-      "type": "activity",
-      "label": "بازگشت کارپرداز با وانت خالی به رستوران مرکزی",
-      "description": "",
-      "actor": "کارپرداز",
-      "icom": {
-        "inputs": [],
-        "controls": [],
-        "outputs": [
-          "حضور کارپرداز و وانت در رستوران مرکزی برای ادامهٔ کارها"
-        ],
-        "mechanisms": [
-          "کارپرداز",
-          "وانت سازمانی"
+        "touched_by": [
+          "ui-edit"
         ]
-      },
-      "subprocess": null,
-      "position": {
-        "x": 300,
-        "y": 790
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/chat/20260928-merge3",
-        "touched_by": []
       }
     },
     {
@@ -691,15 +660,6 @@
       "to": "procurement-022-n011"
     },
     {
-      "from": "procurement-022-n011",
-      "to": "procurement-022-j1"
-    },
-    {
-      "from": "procurement-022-j1",
-      "to": "procurement-022-n012",
-      "label": "در سایر روزهای هفته"
-    },
-    {
       "from": "procurement-022-n012",
       "to": "procurement-022-n013",
       "label": "با فرارسیدن روز مقرر تخلیه"
@@ -717,16 +677,17 @@
       "to": "procurement-022-n016"
     },
     {
-      "from": "procurement-022-n016",
-      "to": "procurement-022-n017"
-    },
-    {
       "from": "procurement-022-n018",
       "to": "procurement-022-n019"
     },
     {
       "from": "procurement-022-n019",
       "to": "procurement-022-n002"
+    },
+    {
+      "from": "procurement-022-n011",
+      "to": "procurement-022-n012",
+      "label": ""
     }
   ],
   "pending": []
