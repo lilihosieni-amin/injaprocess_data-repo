@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-28T09:26:43Z",
-  "updated_at": "2026-09-30T22:05:16Z",
+  "updated_at": "2026-09-30T22:07:00Z",
   "idef0": {
     "inputs": [
       "بار و اقلام سهم شعبه در انبار مرکزی",
@@ -67,7 +67,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -100,7 +100,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -134,7 +134,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -163,7 +163,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -194,7 +194,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -225,7 +225,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -256,7 +256,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -285,7 +285,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -317,7 +317,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -422,13 +422,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 615.0
+        "x": 761.0547195622436,
+        "y": 642.8043775649795
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260928-merge3",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -486,7 +488,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 790.0
+        "y": 790
       },
       "layout": "auto",
       "source": {
@@ -518,7 +520,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 790.0
+        "y": 790
       },
       "layout": "auto",
       "source": {
@@ -548,7 +550,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 790.0
+        "y": 790
       },
       "layout": "auto",
       "source": {
@@ -576,7 +578,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 790.0
+        "y": 790
       },
       "layout": "auto",
       "source": {
@@ -608,7 +610,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -641,7 +643,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -691,11 +693,6 @@
     {
       "from": "procurement-022-n011",
       "to": "procurement-022-j1"
-    },
-    {
-      "from": "procurement-022-j1",
-      "to": "procurement-022-n013",
-      "label": "در روزهای یکشنبه و پنجشنبه"
     },
     {
       "from": "procurement-022-j1",
