@@ -271,8 +271,10 @@ def test_a_transcript_unit_only_adds_and_sets_a_contradiction_aside():
 
 def test_a_transcript_unit_cites_the_lines_it_took_a_fact_from():
     agent = " ".join(AGENT.read_text(encoding="utf-8").split())
-    assert ('"voice": [{"ref": "<your excerpt\'s transcript path>", "lines": "a-b"}]'
+    assert ('"voice": [{"ref": "<the path in your excerpt\'s heading>", "lines": "a-b"}]'
             ) in agent
+    # Ruling 27: a unit may read several meetings, each under its own heading
+    assert "`### <path> · L<a>–L<b>`" in agent
 
 
 def test_group_mode_covers_every_photo_once():
