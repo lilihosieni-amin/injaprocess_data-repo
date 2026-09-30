@@ -1,6 +1,6 @@
 ---
 name: quantify
-description: Orchestrate the quantitative-facts pipeline v3 — workbook checkpoint, resolve the set, set-confirmation, transcribe, prepare, plan, run the units in bounded batches of four, review, assemble and validate, apply, commit and the report. Resumes from `facts-plan status`.
+description: Orchestrate the quantitative-facts pipeline v3 — workbook checkpoint, resolve the set, set-confirmation, transcribe, prepare, group the form photos, plan, run the units in bounded batches of four, review, assemble and validate, apply, commit and the report. Resumes from `facts-plan status`.
 ---
 
 # quantify playbook (v3)
@@ -76,8 +76,9 @@ It writes `{run_dir}/turn.json` and prints a compact table — one line per unit
 state · attempts`, followed by `· retry` and the refused labels when a decision is owed a retry —
 plus the stage to enter, `plan_stale`, `elapsed_s` and `yield`.
 
-**Resume ladder**, exactly as `status` reports it: no skeleton → Stage P (or earlier, by what is on
-disk: transcripts, then dumps, then the plan); pending units, or a unit with a `retry` list → Stage
+**Resume ladder**, exactly as `status` reports it: no skeleton → the earliest of Stages 1–2 whose
+output is not on disk (transcripts, then the dumps and extraction); once they are, Stage G when
+`status` prints stage `G`, else Stage P; pending units, or a unit with a `retry` list → Stage
 U; all units done and no delta → Stage R; a delta present and no `id-map.json` → Stage 5 (a retry of the apply is safe); an
 `id-map.json` present and the run unfinished → Stage 6.
 
@@ -213,7 +214,27 @@ Bash: DATA_ROOT=<data-repo> extract-attachment --path attachments/sheets
 `--manifest` never fails on a row that still holds an unresolved column: it warns, skips that
 workbook and dumps the rest. `extract-attachment` may exit **3** (advisory — some files skipped,
 every convertible one converted): relay the skipped lines in Persian and continue. Exit **2** is a
-real precondition failure and stops the run. Yield check, then Stage P in the same turn.
+real precondition failure and stops the run. Then
+`Bash: DATA_ROOT=<data-repo> facts-plan status --run {run_dir}` — its `yield` is the yield check,
+and its `stage` says Stage G or Stage P, entered in the same turn.
+
+---
+
+## Stage G — Group the photos
+
+Only when `status` prints stage `G`. One `Task`, then Stage P in the same turn:
+
+```
+Task: quantify
+  mode: group
+  department: {department}
+  run_dir: {run_dir}
+  schema_path: <code-repo>/schemas/photo-groups.schema.json
+```
+
+Dispatch it once. Whatever it returns — a grouping, nothing, an error — continue to Stage P:
+`build` checks the file and, when it cannot use it, gives every photo its own unit. Never write or
+repair `photo-groups.json` yourself.
 
 ---
 
@@ -231,8 +252,9 @@ the closed key list per kind with the required keys marked, every enum's values,
 not name is set aside at the unit's gate, never used. It prints the unit count for the log —
 **nothing owner-facing**. Do not open what it wrote.
 
-Every attachment — a form photo, a pdf, a docx text — goes into an `attachment` unit of its own
-(`u-att-1`, `u-att-2`, … in input order, packed to the size budget), never onto a transcript unit.
+Every sheet tab is a workbook unit of its own; every photo group of Stage G is an `attachment` unit,
+and every other attachment (a pdf, a docx text) one more — never onto a transcript unit. `build`
+also writes `{run_dir}/processes/`, the files the units read.
 
 Exit 2 means a group could not be split under the size budget, that a candidate spans two
 workbooks the manifest keeps apart — the second names both rows, and the remedy is a `twin_of` on
@@ -315,12 +337,13 @@ Between batches:
 Bash: DATA_ROOT=<data-repo> facts-plan status --run {run_dir}
 ```
 
-**The yield rule.** `status` prints `elapsed_s` and `yield`. `yield: true` is the **only** signal you
-act on — never your own sense of how long this is taking. Check it after Stage 1, after Stage 2,
-after Stage P, between batches, and before Stage R. On `yield: true`, send the progress line as the
-**last message of the turn** and stop. **You never continue past a `yield: true`** — not for one
-more batch, not to finish validating a unit already returned, not because the next call is cheap.
-Stopping is the engine's instruction, and the next message resumes it losslessly:
+**The yield rule.** `status` prints `elapsed_s` and `yield`. `yield: true` is the **only** signal
+you act on — never your own sense of how long this is taking. Check it after Stage 1, after Stage 2,
+after Stage G, after Stage P, between batches, and before Stage R. On `yield: true`, send the
+progress line as the **last message of the turn** and stop.
+**You never continue past a `yield: true`** — not for one more batch, not to finish validating a
+unit already returned, not because the next call is cheap. Stopping is the engine's instruction,
+and the next message resumes it losslessly:
 
 ```persian
 ۸ از ۲۶ بخش از داده‌ها بررسی شد؛ برای ادامه «ادامه بده» را بفرستید.
@@ -470,6 +493,7 @@ operator's tool (runbook 07 §5) and is not run here.
 | **A** | **Set checkpoint** | message | **STOP** |
 | 1 | Transcribe | `transcribe` × chosen | — |
 | 2 | Prepare | `dump-workbook --manifest`, `extract-attachment` × 2 | — |
+| G | Group photos | `Task: quantify` (group) | — |
 | **P** | **Plan** | `facts-plan build` | — |
 | **U** | **Units** | `Task: quantify` (unit) × ≤4 per message, `validate facts-unit` each | **STOP** at a yield |
 | **R** | **Review** | `facts-plan digest`, `Task: quantify` (review), `validate facts-unit` | — |

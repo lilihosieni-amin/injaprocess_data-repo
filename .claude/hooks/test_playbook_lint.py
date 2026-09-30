@@ -241,41 +241,50 @@ def test_stage_u_states_the_two_caps_as_the_engine_s():
     assert "You never continue past a `yield: true`" in text
 
 
-# The two phases (design 2026-09-15 §3): the forms are decided first, with the
-# meeting passages about them beside them, and the transcripts are read after,
-# knowing what the forms recorded. Each sentence below is a mechanical rule of
-# the engine — the `waiting` state, the two input sections, the account a unit
-# writes instead of a second entry, and which source wins a merge.
+# The two phases (design 2026-09-29 §7): the tables are decided first, one per
+# unit, with the department's corrected processes read whole beside them, and
+# the transcripts are read after, knowing what the tables recorded. Each
+# sentence below is a mechanical rule of the engine — the `waiting` state, the
+# input sections, the `contradicted[]` list a transcript unit writes instead of
+# an account, Stage G's grouping, and which source wins a merge.
 
 def test_stage_u_never_dispatches_a_waiting_unit():
     stage = " ".join(STAGE_U.search(PLAYBOOK.read_text(encoding="utf-8")).group(0).split())
     assert "A unit `status` prints as `waiting` is never dispatched" in stage
 
 
-def test_the_agent_reads_the_talk_beside_the_form_and_keeps_the_forms_value():
+def test_the_agent_reads_the_processes_whole_and_they_win_on_practice():
     agent = " ".join(AGENT.read_text(encoding="utf-8").split())
-    assert "## گفت‌وگوهای مرتبط" in agent
-    assert "the table's columns and values are the file's or the photo's" in agent
-    assert "the spoken value becomes an `account` on the same entry" in agent
+    assert "## فرایندها" in agent
+    assert ("the table's columns, rows, printed titles and units are the file's or the "
+            "photo's") in agent
+    assert "where the processes and the form disagree on any of these, the processes win" in agent
+    assert "read it in pages with `offset`/`limit` until the end" in agent
 
 
-def test_the_agent_cites_a_passage_by_the_path_in_its_heading():
-    """The engine admits a citation only for the transcript the passage heading
-    prints, and only for lines inside that passage — the agent has to be told
-    both, or every account it writes is dropped."""
+def test_a_transcript_unit_only_adds_and_sets_a_contradiction_aside():
     agent = " ".join(AGENT.read_text(encoding="utf-8").split())
-    assert "the transcript path printed in its heading" in agent
-    assert "inside that passage" in agent
-    assert "lines must lie inside one passage" in agent
+    assert "**A transcript unit only adds.**" in agent
+    assert '"contradicted": [' in agent
+    assert "Never write an `account`." in agent
 
 
-def test_the_agent_knows_the_voice_list_and_its_shape():
-    """Spec §3: the talk that filled in what the form does not state is cited
-    as the meeting, beside the sheet and never instead of it."""
+def test_a_transcript_unit_cites_the_lines_it_took_a_fact_from():
     agent = " ".join(AGENT.read_text(encoding="utf-8").split())
-    assert ('"voice": [{"ref": "<transcript path printed in the passage '
-            'heading>", "lines": "a-b"}]') in agent
-    assert "appends them to `source[]` after the sheet or the photo" in agent
+    assert ('"voice": [{"ref": "<your excerpt\'s transcript path>", "lines": "a-b"}]'
+            ) in agent
+
+
+def test_group_mode_covers_every_photo_once():
+    section = agent_section("`group` mode")
+    assert "Every photo appears in exactly one group" in section
+    assert "`{run_dir}/photo-groups.json`" in section
+
+
+def test_stage_g_dispatches_once_and_never_repairs_the_grouping():
+    text = " ".join(PLAYBOOK.read_text(encoding="utf-8").split())
+    assert "## Stage G — Group the photos" in PLAYBOOK.read_text(encoding="utf-8")
+    assert "Never write or repair `photo-groups.json` yourself." in text
 
 
 def test_the_agent_attaches_speech_to_a_listed_table_before_describing_a_new_one():
@@ -288,6 +297,27 @@ def test_review_mode_keeps_the_entry_read_off_a_form():
     assert (
         "when two entries merge, the one read off a form is the keeper"
     ) in agent_section("`review` mode")
+
+
+def test_review_mode_ranks_form_then_process_then_talk():
+    assert (
+        "a `sheet`, `photo`, `pdf` or `docx` source outranks `process`, and"
+        " `process` outranks `voice` and `chat`"
+    ) in agent_section("`review` mode")
+
+
+def test_the_agent_may_grep_the_processes_and_glob_the_photos():
+    front = AGENT.read_text(encoding="utf-8").split("\n---\n", 1)[0]
+    assert "\ntools: Read, Write, Grep, Glob\n" in front + "\n"
+
+
+def test_the_resume_ladder_finishes_stages_1_2_before_stage_g():
+    """Ruling 16: a run that yielded after Stage 1 has no dumps yet, and
+    `status` prints `G` all the same — the ladder must not skip Stage 2."""
+    text = " ".join(PLAYBOOK.read_text(encoding="utf-8").split())
+    assert ("no skeleton → the earliest of Stages 1–2 whose output is not on disk"
+            " (transcripts, then the dumps and extraction); once they are, Stage G"
+            " when `status` prints stage `G`, else Stage P") in text
 
 
 def agent_section(heading):
@@ -465,8 +495,8 @@ def test_the_agent_looks_at_the_photo_for_structure_and_keeps_the_description():
     # QF-50 reserves «ستون» for a record's own statement, so the example
     # note the agent copies must not use it.
     assert "«در عکس، «فیله» دو خانهٔ واحد دارد: کیلو و عدد.»" in text
-    assert "ستون" not in text.split("open that image too")[1].split("never another file")[0]
-    assert "Open only the images your headings name — never another file." in text
+    assert "ستون" not in text.split("open that image too")[1].split("never another image")[0]
+    assert "Open only the images your headings name — never another image." in text
 
 
 def test_the_unit_contract_spells_a_new_entrys_own_handle():
