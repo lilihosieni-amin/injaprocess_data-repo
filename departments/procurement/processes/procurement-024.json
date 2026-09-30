@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-28T09:26:49Z",
-  "updated_at": "2026-09-30T14:58:46Z",
+  "updated_at": "2026-09-30T15:03:39Z",
   "idef0": {
     "inputs": [
       "نیاز مجموعه به تعیین طرف حساب برای اقلام مورد خرید",
@@ -293,8 +293,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 571.929012345679,
-        "y": 378.1944444444444
+        "x": 485.12345679012344,
+        "y": 295.4076646090534
       },
       "layout": "manual",
       "source": {
@@ -337,13 +337,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 527.5
+        "x": 408.89403292181066,
+        "y": 539.5563271604938
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260928-merge3",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -367,13 +369,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 527.5
+        "x": 81.37860082304525,
+        "y": 521.8737139917695
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260928-merge3",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
