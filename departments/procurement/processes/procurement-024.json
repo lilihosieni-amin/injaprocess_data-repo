@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-28T09:26:49Z",
-  "updated_at": "2026-09-28T09:26:49Z",
+  "updated_at": "2026-09-30T13:55:03Z",
   "idef0": {
     "inputs": [
       "نیاز مجموعه به تعیین طرف حساب برای اقلام مورد خرید",
@@ -155,13 +155,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 265.0
+        "x": 867.2608024691358,
+        "y": 54.73765432098763
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260928-merge3",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -186,13 +188,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 265.0
+        "x": 1139.7993827160494,
+        "y": 178.19444444444443
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260928-merge3",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -217,13 +221,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 615.0
+        "x": 1130.1543209876543,
+        "y": 585.1003086419753
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260928-merge3",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -248,7 +254,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 615.0
+        "y": 615
       },
       "layout": "auto",
       "source": {
@@ -279,13 +285,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 90.0
+        "x": 509.429012345679,
+        "y": 367.77777777777777
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260928-merge3",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -382,13 +390,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1140.0
+        "x": -286.0030864197531,
+        "y": 1409.700038580247
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260928-merge3",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -397,10 +407,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
-        "y": 1156.0
+        "x": 304.1651234567901,
+        "y": 717.8730709876544
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "procurement-024-n011",
@@ -424,13 +434,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 790.0
+        "x": 796.3040123456788,
+        "y": 809.6518132716051
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260928-merge3",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -455,13 +467,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 965.0
+        "x": 295.7253086419753,
+        "y": 1115.2218364197527
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260928-merge3",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -470,10 +484,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 992.6666666666666
+        "x": 253.17746913580243,
+        "y": 1638.2829861111113
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "procurement-024-n013",
@@ -495,13 +509,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1210.0
+        "x": 891.9212962962963,
+        "y": 1083.6496913580245
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260928-merge3",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -510,10 +526,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1143,
-        "y": 1856.0
+        "x": 942.3827160493826,
+        "y": 1581.1157407407406
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "procurement-024-n014",
@@ -550,14 +566,15 @@
       },
       "subprocess": "procurement-006",
       "position": {
-        "x": 560,
-        "y": 1315.0
+        "x": 53.63425925925915,
+        "y": 1229.158950617284
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260928-merge3",
         "touched_by": [
-          "runs/chat/20260928-merge3"
+          "runs/chat/20260928-merge3",
+          "ui-edit"
         ]
       }
     },
@@ -594,14 +611,15 @@
       },
       "subprocess": "procurement-019",
       "position": {
-        "x": 560,
-        "y": 1490.0
+        "x": 532.0293209876543,
+        "y": 1053.8020833333333
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260928-merge3",
         "touched_by": [
-          "runs/chat/20260928-merge3"
+          "runs/chat/20260928-merge3",
+          "ui-edit"
         ]
       }
     },
@@ -611,10 +629,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 1342.6666666666665
+        "x": 796.1944444444445,
+        "y": 1353.2762345679012
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "procurement-024-j7",
@@ -665,14 +683,15 @@
       },
       "subprocess": "procurement-007",
       "position": {
-        "x": 560,
-        "y": 1752.5
+        "x": 690.2083333333334,
+        "y": 1887.8925540123457
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260928-merge3",
         "touched_by": [
-          "runs/chat/20260928-merge3"
+          "runs/chat/20260928-merge3",
+          "ui-edit"
         ]
       }
     },
@@ -741,7 +760,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 2015.0
+        "y": 2015
       },
       "layout": "auto",
       "source": {
