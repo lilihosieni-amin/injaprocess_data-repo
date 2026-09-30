@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-28T09:26:49Z",
-  "updated_at": "2026-09-30T14:18:38Z",
+  "updated_at": "2026-09-30T14:21:40Z",
   "idef0": {
     "inputs": [
       "نیاز مجموعه به تعیین طرف حساب برای اقلام مورد خرید",
@@ -79,13 +79,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
+        "x": 2.962962962962962,
         "y": 177.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260928-merge3",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -112,13 +114,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 177.5
+        "x": 275.69444444444446,
+        "y": 169.39814814814815
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260928-merge3",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -155,8 +159,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 867.2608024691358,
-        "y": 54.73765432098763
+        "x": 892.7237654320988,
+        "y": 106.82098765432096
       },
       "layout": "manual",
       "source": {
@@ -188,8 +192,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1139.7993827160494,
-        "y": 178.19444444444443
+        "x": 1123.5956790123457,
+        "y": 85.60185185185182
       },
       "layout": "manual",
       "source": {
@@ -221,8 +225,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1130.1543209876543,
-        "y": 585.1003086419753
+        "x": 1127.8395061728395,
+        "y": 250.60956790123458
       },
       "layout": "manual",
       "source": {
@@ -253,13 +257,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 615
+        "x": 1111.6666666666665,
+        "y": 478.42592592592587
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20260928-merge3",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -285,8 +291,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 509.429012345679,
-        "y": 367.77777777777777
+        "x": 571.929012345679,
+        "y": 378.1944444444444
       },
       "layout": "manual",
       "source": {
@@ -302,10 +308,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 623,
-        "y": 543.5
+        "x": 649.6203703703703,
+        "y": 593.2685185185186
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "procurement-024-n008",
@@ -390,8 +396,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": -204.93025185185203,
-        "y": 904.634527469136
+        "x": 48.541970370370194,
+        "y": 705.5604533950619
       },
       "layout": "manual",
       "source": {
@@ -404,11 +410,11 @@
     {
       "id": "procurement-024-j3",
       "type": "junction",
-      "junctionType": "XOR",
+      "junctionType": "OR",
       "direction": "split",
       "position": {
-        "x": 140.35072345679018,
-        "y": 1145.0346709876544
+        "x": 297.75813086419754,
+        "y": 981.8402265432098
       },
       "layout": "manual"
     },
@@ -434,8 +440,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": -229.89527654321014,
-        "y": 1261.351739197531
+        "x": 43.252871604937994,
+        "y": 940.7498873456796
       },
       "layout": "manual",
       "source": {
@@ -467,8 +473,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 161.39347901234567,
-        "y": 1310.3057030864193
+        "x": 497.0416271604937,
+        "y": 1311.4631104938267
       },
       "layout": "manual",
       "source": {
@@ -484,8 +490,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 223.59163950617278,
-        "y": 1477.7591762345678
+        "x": 581.2305283950616,
+        "y": 1489.333250308642
       },
       "layout": "manual"
     },
@@ -509,8 +515,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 509.39814814814827,
-        "y": 1117.214506172839
+        "x": 891.3425925925927,
+        "y": 1099.853395061728
       },
       "layout": "manual",
       "source": {
@@ -526,8 +532,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 559.0604518518517,
-        "y": 1307.216437037037
+        "x": 954.893785185185,
+        "y": 1306.0590296296295
       },
       "layout": "manual"
     },
@@ -566,8 +572,8 @@
       },
       "subprocess": "procurement-006",
       "position": {
-        "x": 214.33825925925913,
-        "y": 795.776550617284
+        "x": 596.2827037037034,
+        "y": 757.5821061728395
       },
       "layout": "manual",
       "source": {
@@ -584,8 +590,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 363.9027777777777,
-        "y": 1637.3271604938277
+        "x": 648.6249999999998,
+        "y": 1658.1604938271612
       },
       "layout": "manual"
     },
@@ -694,8 +700,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 345.2949209876543,
-        "y": 2102.1259493827165
+        "x": 312.88751358024683,
+        "y": 2095.181504938272
       },
       "layout": "manual",
       "source": {
@@ -728,8 +734,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": -154.49074074074065,
-        "y": 1662.2222222222224
+        "x": 303.8425925925927,
+        "y": 1611.2962962962963
       },
       "layout": "manual",
       "source": {
@@ -762,8 +768,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 685.3240740740741,
-        "y": 1556.2037037037035
+        "x": 950.3703703703703,
+        "y": 1523.796296296296
       },
       "layout": "manual",
       "source": {
