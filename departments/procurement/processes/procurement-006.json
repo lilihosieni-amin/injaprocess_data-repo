@@ -13,7 +13,7 @@
     "node": "procurement-024-n014"
   },
   "created_at": "2026-09-27T15:45:33Z",
-  "updated_at": "2026-09-30T14:37:14Z",
+  "updated_at": "2026-09-30T14:44:20Z",
   "idef0": {
     "inputs": [
       "اعلام تأمین‌کننده دربارهٔ ناتوانی در ارسال کالا",
@@ -137,7 +137,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -166,7 +166,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -181,7 +181,7 @@
       "direction": "split",
       "position": {
         "x": 1143,
-        "y": 631.0
+        "y": 631
       },
       "layout": "auto"
     },
@@ -208,13 +208,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 790.0
+        "x": 681.7541152263375,
+        "y": 368.0285493827159
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -240,13 +242,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 790.0
+        "x": 596.1689814814815,
+        "y": 562.537294238683
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -256,7 +260,7 @@
       "direction": "split",
       "position": {
         "x": 363,
-        "y": 806.0
+        "y": 806
       },
       "layout": "auto"
     },
@@ -284,7 +288,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 615.0
+        "y": 615
       },
       "layout": "auto",
       "source": {
@@ -315,7 +319,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 790.0
+        "y": 790
       },
       "layout": "auto",
       "source": {
@@ -345,7 +349,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 965.0
+        "y": 965
       },
       "layout": "auto",
       "source": {
@@ -360,7 +364,7 @@
       "direction": "join",
       "position": {
         "x": 103,
-        "y": 1331.0
+        "y": 1331
       },
       "layout": "auto"
     },
@@ -385,7 +389,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 1315.0
+        "y": 1315
       },
       "layout": "auto",
       "source": {
@@ -414,7 +418,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1315.0
+        "y": 1315
       },
       "layout": "auto",
       "source": {
