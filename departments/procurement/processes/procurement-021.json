@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-27T15:45:45Z",
-  "updated_at": "2026-09-27T15:45:45Z",
+  "updated_at": "2026-10-01T22:26:03Z",
   "idef0": {
     "inputs": [
       "درخواست مرخصی خارج از برنامهٔ کارپرداز",
@@ -78,13 +78,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 381.6666666666667
+        "x": 28.747427983539097,
+        "y": 363.18029835390945
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -119,13 +121,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 90.0
+        "x": 258.33333333333326,
+        "y": 660
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -151,13 +155,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 440.0
+        "x": 523.3333333333334,
+        "y": 256.6666666666667
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -183,13 +189,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 440.0
+        "x": 813.966049382716,
+        "y": 252.80864197530866
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -199,7 +207,7 @@
       "direction": "split",
       "position": {
         "x": 1143,
-        "y": 456.0
+        "y": 456
       },
       "layout": "auto"
     },
@@ -223,13 +231,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1140.0
+        "x": 947.8626543209875,
+        "y": 1042.58487654321
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -252,13 +262,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1315.0
+        "x": 1168.7345679012346,
+        "y": 1225.180362654321
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -281,13 +293,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 965.0
+        "x": 868.7731481481483,
+        "y": 822.253086419753
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -319,13 +333,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1183.75
+        "x": 527.2067901234567,
+        "y": 1250.3009259259259
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -346,13 +362,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1183.75
+        "x": 268.1712962962963,
+        "y": 1163.4953703703704
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -388,7 +406,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 1490.0
+        "y": 1490
       },
       "layout": "auto",
       "source": {
@@ -418,13 +436,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 615.0
+        "x": 481.8749999999999,
+        "y": 531.0879629629629
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -447,13 +467,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 615.0
+        "x": 484.35185185185173,
+        "y": 684.4444444444443
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -474,13 +496,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 615.0
+        "x": 437.63888888888897,
+        "y": 826.2268518518518
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
