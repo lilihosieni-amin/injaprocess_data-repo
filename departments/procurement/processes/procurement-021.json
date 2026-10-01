@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-27T15:45:45Z",
-  "updated_at": "2026-10-01T23:09:19Z",
+  "updated_at": "2026-10-01T23:15:48Z",
   "idef0": {
     "inputs": [
       "درخواست مرخصی خارج از برنامهٔ کارپرداز",
@@ -78,8 +78,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 28.747427983539097,
-        "y": 363.18029835390945
+        "x": -37.16416380808869,
+        "y": 426.4901167853414
       },
       "layout": "manual",
       "source": {
@@ -121,8 +121,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 258.33333333333326,
-        "y": 660
+        "x": 268.7404267741166,
+        "y": 806.5665659576987
       },
       "layout": "manual",
       "source": {
@@ -207,7 +207,7 @@
       "direction": "split",
       "position": {
         "x": 1143,
-        "y": 631.0
+        "y": 631
       },
       "layout": "auto"
     },
@@ -236,8 +236,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 947.8626543209875,
-        "y": 1042.58487654321
+        "x": 1087.491157984831,
+        "y": 818.8323675663681
       },
       "layout": "manual",
       "source": {
@@ -282,46 +282,15 @@
       "removed": true
     },
     {
-      "id": "procurement-021-n007",
-      "type": "activity",
-      "label": "انجام خرید توسط مدیریت مجموعه در شرایط خاص نبود کارپرداز",
-      "description": "همهٔ خریدها بلااستثنا بر عهدهٔ کارپرداز است؛ تنها در شرایط خاص که کارپرداز حاضر نیست و مدیریت مجموعه صلاح بداند، خرید توسط مدیریت انجام می‌شود.",
-      "actor": "مدیر مجموعه",
-      "icom": {
-        "inputs": [
-          "سفارش‌های خرید مربوط به روز غیبت"
-        ],
-        "controls": [
-          "تشخیص مدیریت مجموعه در شرایط خاص"
-        ],
-        "outputs": [
-          "اقلام خریداری‌شده در نبود کارپرداز"
-        ],
-        "mechanisms": []
-      },
-      "subprocess": null,
-      "position": {
-        "x": 868.7731481481483,
-        "y": 822.253086419753
-      },
-      "layout": "manual",
-      "source": {
-        "created_by": "runs/procurement/20260927-114240",
-        "touched_by": [
-          "ui-edit"
-        ]
-      }
-    },
-    {
       "id": "procurement-021-j3",
       "type": "junction",
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
-        "y": 281.0
+        "x": 1088.3744128225985,
+        "y": 1584.0444174713061
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "procurement-021-n008",
@@ -341,8 +310,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 527.2067901234567,
-        "y": 1250.3009259259259
+        "x": 320.3970292682103,
+        "y": 1556.0197028423772
       },
       "layout": "manual",
       "source": {
@@ -370,8 +339,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 268.1712962962963,
-        "y": 1163.4953703703704
+        "x": 277.1630250291331,
+        "y": 1382.2941028693992
       },
       "layout": "manual",
       "source": {
@@ -413,13 +382,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1227.5
+        "x": 771.0489169167922,
+        "y": 1419.385988861163
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -475,8 +446,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 484.35185185185173,
-        "y": 684.4444444444443
+        "x": 702.0335563215699,
+        "y": 557.8248075815804
       },
       "layout": "manual",
       "source": {
@@ -504,8 +475,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 437.63888888888897,
-        "y": 826.2268518518518
+        "x": 672.665749093246,
+        "y": 717.8196285103588
       },
       "layout": "manual",
       "source": {
@@ -549,11 +520,6 @@
       "to": "procurement-021-j2"
     },
     {
-      "from": "procurement-021-j2",
-      "to": "procurement-021-n007",
-      "label": "شرایط خاص به تشخیص مدیریت"
-    },
-    {
       "from": "procurement-021-n005",
       "to": "procurement-021-j3"
     },
@@ -568,10 +534,6 @@
     },
     {
       "from": "procurement-021-n009",
-      "to": "procurement-021-j4"
-    },
-    {
-      "from": "procurement-021-n007",
       "to": "procurement-021-j4"
     },
     {
