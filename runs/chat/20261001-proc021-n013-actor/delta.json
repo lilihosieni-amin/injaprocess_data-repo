@@ -1,0 +1,1 @@
+{"add_nodes":[],"add_edges":[],"enrich_nodes":[{"id":"procurement-021-n013","set":{"actor":"حسابداری"}}],"revise_nodes":[{"id":"procurement-021-n013","set":{"icom":{"inputs":["مأموریت تأییدشده"],"controls":[],"outputs":["حقوق محاسبه‌شدهٔ مأموریت"],"mechanisms":["حسابداری"]}}}],"remove_edges":[],"flag_removed":[]}
