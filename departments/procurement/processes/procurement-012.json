@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-27T15:45:41Z",
-  "updated_at": "2026-09-30T22:11:23Z",
+  "updated_at": "2026-10-01T22:06:17Z",
   "idef0": {
     "inputs": [
       "موجودی تنخواه شارژشده از سوی حسابداری",
@@ -95,13 +95,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 308.75
+        "x": 27.18472529009553,
+        "y": 288.2455604641529
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -110,10 +112,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
+        "x": 305.3312638054299,
         "y": 324.75
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "procurement-012-n002",
@@ -138,13 +140,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 177.5
+        "x": 540.7770879351433,
+        "y": 151.86945058019106
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/procurement/20260927-114240",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -217,8 +221,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 931.9152266240457,
-        "y": 340.7996919655218
+        "x": 993.4285452315872,
+        "y": 347.20732932047406
       },
       "layout": "manual",
       "source": {
@@ -570,8 +574,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 463.714311952171,
-        "y": 456.9462810964179
+        "x": 420.1423779384958,
+        "y": 451.8201712124561
       },
       "layout": "manual",
       "source": {
@@ -603,8 +607,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 672.8754686629173,
-        "y": 466.95999265339213
+        "x": 630.5850621202326,
+        "y": 473.3676300083444
       },
       "layout": "manual",
       "source": {
@@ -635,7 +639,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 878.9554833561332,
+        "x": 832.8204944004772,
         "y": 486.2171302629579
       },
       "layout": "manual",
