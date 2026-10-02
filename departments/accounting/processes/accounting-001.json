@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-10-02T09:13:05Z",
-  "updated_at": "2026-10-02T22:39:44Z",
+  "updated_at": "2026-10-02T22:40:19Z",
   "idef0": {
     "inputs": [
       "پاکت صندوق شب گذشتهٔ شعبهٔ مرکزی (فیش‌های کارت‌خوان، فیش‌های بدهکاری پرسنل، وجه نقد، تخفیف‌ها)",
@@ -624,13 +624,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 2452.5
+        "x": 285.1453189300412,
+        "y": 2226.644804526749
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -656,13 +658,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 2627.5
+        "x": 33.56995884773664,
+        "y": 2428.1687242798357
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -806,13 +810,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 2802.5
+        "x": 855.3652263374486,
+        "y": 2811.3413065843624
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -837,13 +843,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 2802.5
+        "x": 604.2065329218107,
+        "y": 2804.911265432099
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
