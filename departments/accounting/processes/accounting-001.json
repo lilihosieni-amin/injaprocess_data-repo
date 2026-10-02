@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-10-02T09:13:05Z",
-  "updated_at": "2026-10-02T22:35:23Z",
+  "updated_at": "2026-10-02T22:39:44Z",
   "idef0": {
     "inputs": [
       "پاکت صندوق شب گذشتهٔ شعبهٔ مرکزی (فیش‌های کارت‌خوان، فیش‌های بدهکاری پرسنل، وجه نقد، تخفیف‌ها)",
@@ -73,7 +73,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -104,14 +104,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 90.0
+        "x": 28,
+        "y": 170
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
         "touched_by": [
-          "runs/chat/20261002-acc001-collection-branches"
+          "runs/chat/20261002-acc001-collection-branches",
+          "ui-edit"
         ]
       }
     },
@@ -196,13 +197,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 527.5
+        "x": 325.7201646090535,
+        "y": 530.7150205761318
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -226,13 +229,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 527.5
+        "x": 66.52391975308643,
+        "y": 522.6774691358024
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -347,7 +352,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 965.0
+        "y": 965
       },
       "layout": "auto",
       "source": {
@@ -406,7 +411,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 1315.0
+        "y": 1315
       },
       "layout": "auto",
       "source": {
@@ -466,7 +471,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 1665.0
+        "y": 1665
       },
       "layout": "auto",
       "source": {
@@ -497,7 +502,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 1665.0
+        "y": 1665
       },
       "layout": "auto",
       "source": {
@@ -558,13 +563,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 2102.5
+        "x": 489.26954732510285,
+        "y": 1858.1584362139918
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -586,13 +593,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 2102.5
+        "x": 190.68930041152265,
+        "y": 1980.329218106996
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -967,13 +976,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 90.0
+        "x": 477.2132201646091,
+        "y": 298.0720439246653
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20261002-acc001-collection-branches",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -996,13 +1007,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 90.0
+        "x": 762.9333847736626,
+        "y": 328.2126617640134
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20261002-acc001-collection-branches",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1027,13 +1040,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 265.0
+        "x": 575.2713477366254,
+        "y": -12.25532681608398
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20261002-acc001-collection-branches",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1052,13 +1067,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 265.0
+        "x": 877.8703703703704,
+        "y": 4.583333333333343
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20261002-acc001-collection-branches",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1081,13 +1098,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 265.0
+        "x": 1086.4300411522634,
+        "y": 196.6808127572016
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20261002-acc001-collection-branches",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1110,13 +1129,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 615.0
+        "x": 1079.196244855967,
+        "y": 391.55606995884773
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20261002-acc001-collection-branches",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
