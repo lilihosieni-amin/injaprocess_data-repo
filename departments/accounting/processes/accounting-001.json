@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-10-02T09:13:05Z",
-  "updated_at": "2026-10-02T09:13:05Z",
+  "updated_at": "2026-10-02T22:35:23Z",
   "idef0": {
     "inputs": [
       "پاکت صندوق شب گذشتهٔ شعبهٔ مرکزی (فیش‌های کارت‌خوان، فیش‌های بدهکاری پرسنل، وجه نقد، تخفیف‌ها)",
@@ -78,14 +78,17 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20261002-acc001-collection-branches"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "accounting-001-n002",
       "type": "activity",
-      "label": "برداشتن کلید صندوق",
-      "description": "کلید صندوق تنها در اختیار حسابداری و کارکنان صندوق است و به همین دلیل محل صندوق امن تلقی می‌شود.",
+      "label": "برداشتن کلید صندوق و رفتن به محل صندوق در طبقهٔ پایین",
+      "description": "کلید صندوق تنها در اختیار حسابداری و کارکنان صندوق است و به همین دلیل محل صندوق امن تلقی می‌شود. در این ساعت در طبقهٔ پایین باز است و کرکره از پیش بالا رفته است، زیرا کارکنان دیگر زودتر آمده‌اند.",
       "actor": "کارمند حسابداری",
       "icom": {
         "inputs": [],
@@ -107,7 +110,9 @@
       "layout": "auto",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "runs/chat/20261002-acc001-collection-branches"
+        ]
       }
     },
     {
@@ -128,14 +133,17 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 90.0
+        "x": 40,
+        "y": 3152.5
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20261002-acc001-collection-branches"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "accounting-001-n004",
@@ -159,8 +167,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 90.0
+        "x": 560,
+        "y": 527.5
       },
       "layout": "auto",
       "source": {
@@ -188,8 +196,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 90.0
+        "x": 300,
+        "y": 527.5
       },
       "layout": "auto",
       "source": {
@@ -218,8 +226,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 265.0
+        "x": 40,
+        "y": 527.5
       },
       "layout": "auto",
       "source": {
@@ -249,8 +257,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 265.0
+        "x": 40,
+        "y": 877.5
       },
       "layout": "auto",
       "source": {
@@ -279,8 +287,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 265.0
+        "x": 300,
+        "y": 877.5
       },
       "layout": "auto",
       "source": {
@@ -309,8 +317,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 265.0
+        "x": 560,
+        "y": 877.5
       },
       "layout": "auto",
       "source": {
@@ -338,8 +346,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 615.0
+        "x": 1080,
+        "y": 965.0
       },
       "layout": "auto",
       "source": {
@@ -368,8 +376,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 527.5
+        "x": 820,
+        "y": 1227.5
       },
       "layout": "auto",
       "source": {
@@ -397,8 +405,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 615.0
+        "x": 300,
+        "y": 1315.0
       },
       "layout": "auto",
       "source": {
@@ -426,8 +434,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 877.5
+        "x": 40,
+        "y": 1577.5
       },
       "layout": "auto",
       "source": {
@@ -457,8 +465,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 965.0
+        "x": 560,
+        "y": 1665.0
       },
       "layout": "auto",
       "source": {
@@ -488,8 +496,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 965.0
+        "x": 820,
+        "y": 1665.0
       },
       "layout": "auto",
       "source": {
@@ -521,8 +529,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1271.25
+        "x": 1080,
+        "y": 1971.25
       },
       "layout": "auto",
       "source": {
@@ -550,8 +558,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1402.5
+        "x": 560,
+        "y": 2102.5
       },
       "layout": "auto",
       "source": {
@@ -578,8 +586,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1402.5
+        "x": 300,
+        "y": 2102.5
       },
       "layout": "auto",
       "source": {
@@ -607,8 +615,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1752.5
+        "x": 40,
+        "y": 2452.5
       },
       "layout": "auto",
       "source": {
@@ -639,8 +647,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1927.5
+        "x": 40,
+        "y": 2627.5
       },
       "layout": "auto",
       "source": {
@@ -668,8 +676,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1752.5
+        "x": 560,
+        "y": 2452.5
       },
       "layout": "auto",
       "source": {
@@ -701,8 +709,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1752.5
+        "x": 820,
+        "y": 2452.5
       },
       "layout": "auto",
       "source": {
@@ -730,8 +738,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 2102.5
+        "x": 1080,
+        "y": 2452.5
       },
       "layout": "auto",
       "source": {
@@ -759,8 +767,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 2102.5
+        "x": 1080,
+        "y": 2802.5
       },
       "layout": "auto",
       "source": {
@@ -789,8 +797,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 2102.5
+        "x": 820,
+        "y": 2802.5
       },
       "layout": "auto",
       "source": {
@@ -820,8 +828,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 2102.5
+        "x": 560,
+        "y": 2802.5
       },
       "layout": "auto",
       "source": {
@@ -835,8 +843,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 281.0
+        "x": 883,
+        "y": 893.5
       },
       "layout": "auto"
     },
@@ -846,8 +854,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 363,
-        "y": 543.5
+        "x": 1143,
+        "y": 1243.5
       },
       "layout": "auto"
     },
@@ -857,8 +865,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 543.5
+        "x": 623,
+        "y": 1243.5
       },
       "layout": "auto"
     },
@@ -868,8 +876,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1143,
-        "y": 893.5
+        "x": 103,
+        "y": 1243.5
       },
       "layout": "auto"
     },
@@ -879,8 +887,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 623,
-        "y": 893.5
+        "x": 363,
+        "y": 1593.5
       },
       "layout": "auto"
     },
@@ -890,8 +898,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 103,
-        "y": 1287.25
+        "x": 1143,
+        "y": 1593.5
       },
       "layout": "auto"
     },
@@ -901,8 +909,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 623,
-        "y": 1287.25
+        "x": 883,
+        "y": 1987.25
       },
       "layout": "auto"
     },
@@ -912,8 +920,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1143,
-        "y": 1856.0
+        "x": 103,
+        "y": 2118.5
       },
       "layout": "auto"
     },
@@ -923,25 +931,207 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 623,
-        "y": 1768.5
+        "x": 363,
+        "y": 2468.5
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "accounting-001-j10",
+      "type": "junction",
+      "junctionType": "AND",
+      "direction": "split",
+      "position": {
+        "x": 363,
+        "y": 193.5
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "accounting-001-n027",
+      "type": "activity",
+      "label": "جمع‌آوری وجوه نقد و مدارک صندوق شعبهٔ مرکزی در پاکت پس از بستن صندوق شب",
+      "description": "صندوق‌داران پس از بستن صندوق شب، وجه نقد، فیش‌های دستگاه کارت‌خوان، فیش‌های بدهکاری پرسنل با امضای آنان و تخفیف‌ها را در یک پاکت می‌گذارند.",
+      "actor": "صندوق‌داران شعبهٔ مرکزی",
+      "icom": {
+        "inputs": [
+          "وجوه و مدارک صندوق شب شعبهٔ مرکزی"
+        ],
+        "controls": [],
+        "outputs": [
+          "پاکت صندوق شعبهٔ مرکزی"
+        ],
+        "mechanisms": [
+          "صندوق‌داران شعبهٔ مرکزی"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261002-acc001-collection-branches",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-001-n028",
+      "type": "activity",
+      "label": "قرار دادن پاکت صندوق شعبهٔ مرکزی در کشوی مخصوص صندوق",
+      "description": "کشوی مخصوص صندوق محل تبادل اقلام میان حسابداری و صندوق است.",
+      "actor": "صندوق‌داران شعبهٔ مرکزی",
+      "icom": {
+        "inputs": [
+          "پاکت صندوق شعبهٔ مرکزی"
+        ],
+        "controls": [],
+        "outputs": [
+          "پاکت صندوق شعبهٔ مرکزی در کشو"
+        ],
+        "mechanisms": [
+          "کشوی مخصوص صندوق"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261002-acc001-collection-branches",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-001-n029",
+      "type": "activity",
+      "label": "بستن صندوق شعبهٔ ناهارخوران در ساعت ۲ بامداد و گذاشتن وجوه و مدارک آن در پاکت با همان استاندارد صندوق مرکزی",
+      "description": "صندوق شعبهٔ ناهارخوران ساعت ۲ بامداد بسته می‌شود و در آن ساعت کسی نیست که آن را به حسابداری برساند؛ از این رو مدارک این صندوق با یک روز تأخیر به حسابداری می‌رسد.",
+      "actor": "صندوق‌دار شعبهٔ ناهارخوران",
+      "icom": {
+        "inputs": [
+          "وجوه و مدارک صندوق شب شعبهٔ ناهارخوران"
+        ],
+        "controls": [
+          "جمع‌آوری با همان استاندارد صندوق شعبهٔ مرکزی"
+        ],
+        "outputs": [
+          "پاکت صندوق شعبهٔ ناهارخوران"
+        ],
+        "mechanisms": [
+          "صندوق‌دار شعبهٔ ناهارخوران"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 265.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261002-acc001-collection-branches",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-001-n030",
+      "type": "activity",
+      "label": "فرستادن پیک موتوری از سوی صندوق شعبهٔ مرکزی به شعبهٔ ناهارخوران در عصر روز بعد",
+      "description": "همکاران صندوق شعبهٔ مرکزی عصر روز بعد پیک موتوری را برای گرفتن پاکت صندوق شب گذشتهٔ ناهارخوران به آن شعبه می‌فرستند.",
+      "actor": "صندوق‌داران شعبهٔ مرکزی",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": [
+          "پیک موتوری"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 265.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261002-acc001-collection-branches",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-001-n031",
+      "type": "activity",
+      "label": "تحویل گرفتن پاکت صندوق شب گذشتهٔ ناهارخوران و آوردن آن به شعبهٔ مرکزی توسط پیک موتوری",
+      "description": "",
+      "actor": "پیک موتوری",
+      "icom": {
+        "inputs": [
+          "پاکت صندوق شعبهٔ ناهارخوران"
+        ],
+        "controls": [],
+        "outputs": [
+          "پاکت صندوق ناهارخوران در شعبهٔ مرکزی"
+        ],
+        "mechanisms": [
+          "پیک موتوری"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 265.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261002-acc001-collection-branches",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-001-n032",
+      "type": "activity",
+      "label": "قرار دادن پاکت صندوق ناهارخوران همراه پاکت صندوق همان شب شعبهٔ مرکزی در کشوی مخصوص صندوق",
+      "description": "پاکت صندوق ناهارخوران که مربوط به شب پیش است، همراه پاکت صندوق امشب شعبهٔ مرکزی در کشو گذاشته می‌شود؛ بنابراین حسابداری صبح روز بعد هر دو را با هم برمی‌دارد و صندوق ناهارخوران یک روز عقب‌تر از صندوق شعبهٔ مرکزی بررسی می‌شود.",
+      "actor": "صندوق‌داران شعبهٔ مرکزی",
+      "icom": {
+        "inputs": [
+          "پاکت صندوق ناهارخوران در شعبهٔ مرکزی"
+        ],
+        "controls": [],
+        "outputs": [
+          "پاکت صندوق ناهارخوران در کشو"
+        ],
+        "mechanisms": [
+          "کشوی مخصوص صندوق"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 615.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261002-acc001-collection-branches",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-001-j11",
+      "type": "junction",
+      "junctionType": "AND",
+      "direction": "join",
+      "position": {
+        "x": 883,
+        "y": 543.5
       },
       "layout": "auto"
     }
   ],
   "edges": [
-    {
-      "from": "accounting-001-n001",
-      "to": "accounting-001-n002"
-    },
-    {
-      "from": "accounting-001-n002",
-      "to": "accounting-001-n003"
-    },
-    {
-      "from": "accounting-001-n003",
-      "to": "accounting-001-n004"
-    },
     {
       "from": "accounting-001-n004",
       "to": "accounting-001-n005"
@@ -1095,6 +1285,48 @@
     {
       "from": "accounting-001-n025",
       "to": "accounting-001-n026"
+    },
+    {
+      "from": "accounting-001-n002",
+      "to": "accounting-001-j10"
+    },
+    {
+      "from": "accounting-001-j10",
+      "to": "accounting-001-n027",
+      "label": "صندوق شعبهٔ مرکزی"
+    },
+    {
+      "from": "accounting-001-n027",
+      "to": "accounting-001-n028"
+    },
+    {
+      "from": "accounting-001-n028",
+      "to": "accounting-001-j11"
+    },
+    {
+      "from": "accounting-001-j10",
+      "to": "accounting-001-n029",
+      "label": "صندوق شعبهٔ ناهارخوران (با یک روز تأخیر)"
+    },
+    {
+      "from": "accounting-001-n029",
+      "to": "accounting-001-n030"
+    },
+    {
+      "from": "accounting-001-n030",
+      "to": "accounting-001-n031"
+    },
+    {
+      "from": "accounting-001-n031",
+      "to": "accounting-001-n032"
+    },
+    {
+      "from": "accounting-001-n032",
+      "to": "accounting-001-j11"
+    },
+    {
+      "from": "accounting-001-j11",
+      "to": "accounting-001-n004"
     }
   ],
   "pending": []
