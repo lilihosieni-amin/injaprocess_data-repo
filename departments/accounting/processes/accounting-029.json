@@ -1,0 +1,627 @@
+{
+  "id": "accounting-029",
+  "department": "accounting",
+  "name": "صدور و تحویل چک ماهانهٔ طرف‌حساب‌ها",
+  "summary": "پس از آنکه کارمند حسابداری مرور کنترل‌شدهٔ کل ماه را به سرپرست حسابداری بازمی‌گرداند، سرپرست حسابداری تاریخ چک هر طرف‌حساب را بر اساس روال تسویه همان طرف‌حساب تعیین می‌کند، تاریخ و مبلغ چک‌ها را در اکسل مخصوص چک ثبت می‌کند و مبلغ رندشده، تاریخ و بانک صادرکننده (ملت یا صادرات) را زیر مرور هر طرف‌حساب می‌نویسد و مرورها را به کارمند حسابداری تحویل می‌دهد. کارمند حسابداری چک‌ها را در سیستم صادر و با چاپگر چاپ می‌کند، آن‌ها را امضا می‌کند، از آن‌ها کپی می‌گیرد و به تفکیک طرف‌حساب در کارتابل سرپرست حسابداری قرار می‌دهد. سرپرست حسابداری درستی چک‌ها را با اکسل مخصوص چک دوباره کنترل و آن‌ها را در بانک (ثبت صیادی) ثبت می‌کند. روی چک طرف‌حسابی که فاکتورهایش فاقد مهر است یادداشت اخذ مهر گذاشته می‌شود. سپس با طرف‌حساب‌ها برای دریافت چک تماس گرفته می‌شود و هنگام تحویل چک، فاکتورهایی که مهر طرف‌حساب ندارند به مهر او می‌رسند.",
+  "source": {
+    "type": "auto",
+    "ref": "20261002-082102",
+    "run": "runs/accounting/20261002-082102"
+  },
+  "parent": {
+    "process": "accounting-027",
+    "node": "accounting-027-n013"
+  },
+  "created_at": "2026-10-02T14:48:26Z",
+  "updated_at": "2026-10-02T14:48:26Z",
+  "idef0": {
+    "inputs": [
+      "مرور کنترل‌شده طرف‌حساب‌ها",
+      "برگ چک",
+      "فاکتورهای فاقد مهر طرف‌حساب"
+    ],
+    "controls": [
+      "روال زمانی تسویه هر طرف‌حساب برای تعیین تاریخ چک",
+      "لزوم مهر طرف‌حساب روی همه فاکتورها"
+    ],
+    "outputs": [
+      "چک‌های صادر، امضا و در سامانه صیاد ثبت‌شده",
+      "کپی چک‌ها به تفکیک طرف‌حساب",
+      "فاکتورهای مهرشده توسط طرف‌حساب",
+      "چک تحویل‌شده به طرف‌حساب"
+    ],
+    "mechanisms": [
+      "سرپرست حسابداری",
+      "کارمند حسابداری",
+      "اکسل مخصوص چک",
+      "سیستم صدور چک",
+      "چاپگر چک",
+      "دسته‌چک بانک ملت و بانک صادرات",
+      "سامانه صیاد بانک"
+    ]
+  },
+  "kpis": [],
+  "nodes": [
+    {
+      "id": "accounting-029-n001",
+      "type": "activity",
+      "label": "تعیین تاریخ چک هر طرف‌حساب بر اساس روال تسویه همان طرف‌حساب",
+      "description": "تاریخ چک برای طرف‌حساب‌های مختلف متفاوت است و از روالی پیروی می‌کند که برای هر طرف‌حساب، بازه زمانی تسویه او را مشخص کرده است.",
+      "actor": "سرپرست حسابداری",
+      "icom": {
+        "inputs": [
+          "مرور کنترل‌شده طرف‌حساب‌ها"
+        ],
+        "controls": [
+          "روال زمانی تسویه هر طرف‌حساب"
+        ],
+        "outputs": [
+          "تاریخ چک هر طرف‌حساب"
+        ],
+        "mechanisms": [
+          "اکسل مخصوص چک"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 40,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/accounting/20261002-082102",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-029-n002",
+      "type": "activity",
+      "label": "ثبت تاریخ و مبلغ چک‌ها در اکسل مخصوص چک",
+      "description": "",
+      "actor": "سرپرست حسابداری",
+      "icom": {
+        "inputs": [
+          "تاریخ چک هر طرف‌حساب"
+        ],
+        "controls": [],
+        "outputs": [
+          "فهرست چک‌ها در اکسل مخصوص چک"
+        ],
+        "mechanisms": [
+          "اکسل مخصوص چک"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/accounting/20261002-082102",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-029-n003",
+      "type": "activity",
+      "label": "نوشتن دستور صدور چک شامل مبلغ رندشده، تاریخ و بانک صادرکننده (ملت یا صادرات) در پایین مرور هر طرف‌حساب",
+      "description": "مبلغ چک رند می‌شود و برای هر طرف‌حساب مشخص می‌شود که چک از دسته‌چک بانک ملت یا بانک صادرات کشیده شود.",
+      "actor": "سرپرست حسابداری",
+      "icom": {
+        "inputs": [
+          "مرور کنترل‌شده طرف‌حساب‌ها",
+          "فهرست چک‌ها در اکسل مخصوص چک"
+        ],
+        "controls": [],
+        "outputs": [
+          "مرور دارای دستور صدور چک"
+        ],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/accounting/20261002-082102",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-029-n004",
+      "type": "activity",
+      "label": "تحویل مرورهای دارای دستور صدور چک به کارمند حسابداری",
+      "description": "",
+      "actor": "سرپرست حسابداری",
+      "icom": {
+        "inputs": [
+          "مرور دارای دستور صدور چک"
+        ],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/accounting/20261002-082102",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-029-n005",
+      "type": "activity",
+      "label": "صدور (کشیدن) چک‌ها در سیستم بر اساس دستور صدور چک",
+      "description": "چک به‌صورت دست‌نویس صادر نمی‌شود و تمام مشخصات آن در سیستم ثبت می‌شود.",
+      "actor": "کارمند حسابداری",
+      "icom": {
+        "inputs": [
+          "مرور دارای دستور صدور چک"
+        ],
+        "controls": [],
+        "outputs": [
+          "چک ثبت‌شده در سیستم"
+        ],
+        "mechanisms": [
+          "سیستم صدور چک"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/accounting/20261002-082102",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-029-n006",
+      "type": "activity",
+      "label": "چاپ چک‌ها با قراردادن برگ چک در چاپگر سیستم",
+      "description": "چاپ چک کاملاً توسط سیستم انجام می‌شود و هیچ بخشی از چک به‌صورت دستی نوشته نمی‌شود.",
+      "actor": "کارمند حسابداری",
+      "icom": {
+        "inputs": [
+          "چک ثبت‌شده در سیستم",
+          "برگ چک"
+        ],
+        "controls": [],
+        "outputs": [
+          "چک چاپ‌شده"
+        ],
+        "mechanisms": [
+          "چاپگر چک",
+          "دسته‌چک بانک ملت و بانک صادرات"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 265.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/accounting/20261002-082102",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-029-n007",
+      "type": "activity",
+      "label": "امضای چک‌های چاپ‌شده",
+      "description": "تنها بخش دستی صدور چک، امضای آن است.",
+      "actor": "کارمند حسابداری",
+      "icom": {
+        "inputs": [
+          "چک چاپ‌شده"
+        ],
+        "controls": [],
+        "outputs": [
+          "چک امضاشده"
+        ],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 265.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/accounting/20261002-082102",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-029-n008",
+      "type": "activity",
+      "label": "کپی‌گرفتن از چک‌ها",
+      "description": "",
+      "actor": "کارمند حسابداری",
+      "icom": {
+        "inputs": [
+          "چک امضاشده"
+        ],
+        "controls": [],
+        "outputs": [
+          "کپی چک‌ها"
+        ],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 265.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/accounting/20261002-082102",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-029-n009",
+      "type": "activity",
+      "label": "قراردادن چک‌ها و کپی آن‌ها به تفکیک هر طرف‌حساب در کارتابل سرپرست حسابداری",
+      "description": "",
+      "actor": "کارمند حسابداری",
+      "icom": {
+        "inputs": [
+          "چک امضاشده",
+          "کپی چک‌ها"
+        ],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
+        "y": 265.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/accounting/20261002-082102",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-029-n010",
+      "type": "activity",
+      "label": "بررسی مجدد درستی چک‌های صادرشده در برابر اکسل مخصوص چک و تیک‌زدن آن‌ها",
+      "description": "سرپرست حسابداری کنترل می‌کند که هر چک مطابق تاریخ و مبلغی که پیش‌تر در اکسل مخصوص چک ثبت کرده، درست کشیده شده باشد.",
+      "actor": "سرپرست حسابداری",
+      "icom": {
+        "inputs": [
+          "چک امضاشده",
+          "کپی چک‌ها"
+        ],
+        "controls": [
+          "فهرست چک‌ها در اکسل مخصوص چک"
+        ],
+        "outputs": [
+          "چک تأییدشده"
+        ],
+        "mechanisms": [
+          "اکسل مخصوص چک"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 40,
+        "y": 265.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/accounting/20261002-082102",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-029-n011",
+      "type": "activity",
+      "label": "ثبت چک‌ها در بانک (ثبت صیادی)",
+      "description": "",
+      "actor": "سرپرست حسابداری",
+      "icom": {
+        "inputs": [
+          "چک تأییدشده"
+        ],
+        "controls": [],
+        "outputs": [
+          "چک ثبت‌شده در سامانه صیاد"
+        ],
+        "mechanisms": [
+          "سامانه صیاد بانک"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 40,
+        "y": 527.5
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/accounting/20261002-082102",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-029-j1",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "split",
+      "position": {
+        "x": 363,
+        "y": 543.5
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "accounting-029-n012",
+      "type": "activity",
+      "label": "گذاشتن یادداشت اخذ مهر روی چک طرف‌حسابی که فاکتورهایش فاقد مهر است",
+      "description": "برخی طرف‌حساب‌ها فاکتورهای خود را در طول ماه مهر نمی‌کنند و هنگام دریافت چک در پایان ماه همه فاکتورها را مهر می‌زنند. این یادداشت باعث می‌شود که هنگام تحویل چک، اخذ مهر فراموش نشود.",
+      "actor": "",
+      "icom": {
+        "inputs": [
+          "چک ثبت‌شده در سامانه صیاد"
+        ],
+        "controls": [
+          "لزوم مهر طرف‌حساب روی همه فاکتورها"
+        ],
+        "outputs": [
+          "یادداشت اخذ مهر روی چک"
+        ],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 615.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/accounting/20261002-082102",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-029-j2",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "join",
+      "position": {
+        "x": 883,
+        "y": 543.5
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "accounting-029-n013",
+      "type": "activity",
+      "label": "تماس با طرف‌حساب‌ها برای مراجعه و دریافت چک پس از پایان ماه",
+      "description": "",
+      "actor": "کارمند حسابداری",
+      "icom": {
+        "inputs": [],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 527.5
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/accounting/20261002-082102",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-029-j3",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "split",
+      "position": {
+        "x": 1143,
+        "y": 893.5
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "accounting-029-n014",
+      "type": "activity",
+      "label": "آوردن همه فاکتورهای فاقد مهر طرف‌حساب هنگام تحویل چک",
+      "description": "",
+      "actor": "کارمند حسابداری",
+      "icom": {
+        "inputs": [
+          "یادداشت اخذ مهر روی چک",
+          "فاکتورهای فاقد مهر طرف‌حساب"
+        ],
+        "controls": [],
+        "outputs": [],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 965.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/accounting/20261002-082102",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-029-n015",
+      "type": "activity",
+      "label": "مهرزدن همه فاکتورهای فاقد مهر توسط طرف‌حساب",
+      "description": "",
+      "actor": "طرف‌حساب",
+      "icom": {
+        "inputs": [
+          "فاکتورهای فاقد مهر طرف‌حساب"
+        ],
+        "controls": [],
+        "outputs": [
+          "فاکتورهای مهرشده توسط طرف‌حساب"
+        ],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 965.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/accounting/20261002-082102",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-029-j4",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "join",
+      "position": {
+        "x": 363,
+        "y": 893.5
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "accounting-029-n016",
+      "type": "activity",
+      "label": "تحویل چک به طرف‌حساب",
+      "description": "",
+      "actor": "کارمند حسابداری",
+      "icom": {
+        "inputs": [
+          "چک ثبت‌شده در سامانه صیاد"
+        ],
+        "controls": [],
+        "outputs": [
+          "چک تحویل‌شده به طرف‌حساب"
+        ],
+        "mechanisms": []
+      },
+      "subprocess": null,
+      "position": {
+        "x": 40,
+        "y": 877.5
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/accounting/20261002-082102",
+        "touched_by": []
+      }
+    }
+  ],
+  "edges": [
+    {
+      "from": "accounting-029-n001",
+      "to": "accounting-029-n002"
+    },
+    {
+      "from": "accounting-029-n002",
+      "to": "accounting-029-n003"
+    },
+    {
+      "from": "accounting-029-n003",
+      "to": "accounting-029-n004"
+    },
+    {
+      "from": "accounting-029-n004",
+      "to": "accounting-029-n005"
+    },
+    {
+      "from": "accounting-029-n005",
+      "to": "accounting-029-n006"
+    },
+    {
+      "from": "accounting-029-n006",
+      "to": "accounting-029-n007"
+    },
+    {
+      "from": "accounting-029-n007",
+      "to": "accounting-029-n008"
+    },
+    {
+      "from": "accounting-029-n008",
+      "to": "accounting-029-n009"
+    },
+    {
+      "from": "accounting-029-n009",
+      "to": "accounting-029-n010"
+    },
+    {
+      "from": "accounting-029-n010",
+      "to": "accounting-029-n011"
+    },
+    {
+      "from": "accounting-029-n011",
+      "to": "accounting-029-j1"
+    },
+    {
+      "from": "accounting-029-j1",
+      "to": "accounting-029-n012",
+      "label": "در صورتی که فاکتورهای طرف‌حساب فاقد مهر باشد"
+    },
+    {
+      "from": "accounting-029-j1",
+      "to": "accounting-029-j2",
+      "label": "در صورتی که همه فاکتورها مهر داشته باشد"
+    },
+    {
+      "from": "accounting-029-n012",
+      "to": "accounting-029-j2"
+    },
+    {
+      "from": "accounting-029-j2",
+      "to": "accounting-029-n013"
+    },
+    {
+      "from": "accounting-029-n013",
+      "to": "accounting-029-j3"
+    },
+    {
+      "from": "accounting-029-j3",
+      "to": "accounting-029-n014",
+      "label": "در صورت وجود یادداشت اخذ مهر روی چک"
+    },
+    {
+      "from": "accounting-029-j3",
+      "to": "accounting-029-j4",
+      "label": "در صورت نبود یادداشت اخذ مهر"
+    },
+    {
+      "from": "accounting-029-n014",
+      "to": "accounting-029-n015"
+    },
+    {
+      "from": "accounting-029-n015",
+      "to": "accounting-029-j4"
+    },
+    {
+      "from": "accounting-029-j4",
+      "to": "accounting-029-n016"
+    }
+  ],
+  "pending": []
+}

@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-10-02T09:13:12Z",
-  "updated_at": "2026-10-02T09:13:12Z",
+  "updated_at": "2026-10-02T14:48:13Z",
   "idef0": {
     "inputs": [
       "مرور حساب طرف‌حساب‌ها (چاپ روز بیست‌وپنجم و مرور کل ماه در روز سی‌ام)",
@@ -970,5 +970,9 @@
       "to": "accounting-016-n026"
     }
   ],
-  "pending": []
+  "pending": [],
+  "tombstoned": true,
+  "superseded_by": [
+    "accounting-027"
+  ]
 }
