@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-09-28T09:26:43Z",
-  "updated_at": "2026-10-01T15:01:25Z",
+  "updated_at": "2026-10-02T10:36:50Z",
   "idef0": {
     "inputs": [
       "بار و اقلام سهم شعبه در انبار مرکزی",
@@ -135,8 +135,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 90
+        "x": 1080,
+        "y": 90.0
       },
       "layout": "auto",
       "source": {
@@ -165,7 +165,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 90
+        "y": 440.0
       },
       "layout": "auto",
       "source": {
@@ -195,8 +195,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 265
+        "x": 820,
+        "y": 440.0
       },
       "layout": "auto",
       "source": {
@@ -226,8 +226,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 265
+        "x": 560,
+        "y": 440.0
       },
       "layout": "auto",
       "source": {
@@ -257,8 +257,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 265
+        "x": 300,
+        "y": 440.0
       },
       "layout": "auto",
       "source": {
@@ -286,8 +286,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 265
+        "x": 40,
+        "y": 440.0
       },
       "layout": "auto",
       "source": {
@@ -319,7 +319,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 265
+        "y": 790.0
       },
       "layout": "auto",
       "source": {
@@ -350,8 +350,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 527.5
+        "x": 300,
+        "y": 790.0
       },
       "layout": "auto",
       "source": {
@@ -382,8 +382,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 527.5
+        "x": 560,
+        "y": 790.0
       },
       "layout": "auto",
       "source": {
@@ -621,14 +621,141 @@
         "created_by": "runs/chat/20260930-p022split",
         "touched_by": []
       }
+    },
+    {
+      "id": "procurement-022-j1",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "split",
+      "position": {
+        "x": 883,
+        "y": 193.5
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "procurement-022-n020",
+      "type": "activity",
+      "label": "گرفتن اسنپ وانت توسط انباردار برای ارسال بار سهم شعبه در روز جمعه",
+      "description": "روز جمعه آف هفتگی کارپرداز است و وانت سازمانی در اختیار او است؛ از این رو در این روز انباردار خودش اسنپ وانت می‌گیرد تا بار سهم شعبه به شعبه فرستاده شود.",
+      "actor": "انباردار",
+      "icom": {
+        "inputs": [
+          "لیست نهایی‌شدهٔ بار شعبه"
+        ],
+        "controls": [
+          "آف هفتگی کارپرداز در روز جمعه"
+        ],
+        "outputs": [
+          "اسنپ وانت گرفته‌شده"
+        ],
+        "mechanisms": [
+          "انباردار",
+          "اسنپ وانت"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 265.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261002-proc022-friday-snap",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "procurement-022-n021",
+      "type": "activity",
+      "label": "بارگیری و ارسال بار سهم شعبه با اسنپ وانت به شعبه توسط انباردار",
+      "description": "انباردار بار سهم شعبه را در اسنپ وانت بار می‌زند و آن را به شعبه می‌فرستد.",
+      "actor": "انباردار",
+      "icom": {
+        "inputs": [
+          "بار سهم شعبه"
+        ],
+        "controls": [],
+        "outputs": [
+          "بار سهم شعبه ارسال‌شده با اسنپ وانت"
+        ],
+        "mechanisms": [
+          "انباردار",
+          "اسنپ وانت"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 615.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261002-proc022-friday-snap",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "procurement-022-n022",
+      "type": "activity",
+      "label": "ارسال تصویر صفحهٔ پرداخت اسنپ وانت برای حسابداری توسط انباردار",
+      "description": "این تنها تراکنش مالی هفتگی انبار است که به حسابداری ارجاع می‌شود. انباردار از صفحهٔ پرداخت اسنپ اسکرین‌شات می‌گیرد و آن را در گروه‌ها یا تلگرام برای حسابداری می‌فرستد.",
+      "actor": "انباردار",
+      "icom": {
+        "inputs": [
+          "صفحهٔ پرداخت اسنپ وانت"
+        ],
+        "controls": [],
+        "outputs": [
+          "تصویر صفحهٔ پرداخت ارسال‌شده به حسابداری"
+        ],
+        "mechanisms": [
+          "انباردار",
+          "تلگرام"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 615.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261002-proc022-friday-snap",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "procurement-022-n023",
+      "type": "activity",
+      "label": "تأیید و پرداخت هزینهٔ اسنپ وانت توسط حسابداری در روز جمعه یا شنبه",
+      "description": "حسابداری تصویر صفحهٔ پرداخت را تأیید می‌کند و هزینه همان جمعه یا روز شنبه واریز می‌شود.",
+      "actor": "حسابداری",
+      "icom": {
+        "inputs": [
+          "تصویر صفحهٔ پرداخت ارسال‌شده به حسابداری"
+        ],
+        "controls": [],
+        "outputs": [
+          "هزینهٔ اسنپ وانت پرداخت‌شده"
+        ],
+        "mechanisms": [
+          "حسابداری"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 615.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261002-proc022-friday-snap",
+        "touched_by": []
+      }
     }
   ],
   "edges": [
-    {
-      "from": "procurement-022-n002",
-      "to": "procurement-022-n003",
-      "label": "لیست نهایی‌شدهٔ بار شعبه"
-    },
     {
       "from": "procurement-022-n003",
       "to": "procurement-022-n004"
@@ -690,6 +817,33 @@
       "from": "procurement-022-n011",
       "to": "procurement-022-n012",
       "label": ""
+    },
+    {
+      "from": "procurement-022-n002",
+      "to": "procurement-022-j1",
+      "label": "لیست نهایی‌شدهٔ بار شعبه"
+    },
+    {
+      "from": "procurement-022-j1",
+      "to": "procurement-022-n003",
+      "label": "روزهای شنبه تا پنجشنبه؛ حمل با کارپرداز"
+    },
+    {
+      "from": "procurement-022-j1",
+      "to": "procurement-022-n020",
+      "label": "روز جمعه؛ آف کارپرداز"
+    },
+    {
+      "from": "procurement-022-n020",
+      "to": "procurement-022-n021"
+    },
+    {
+      "from": "procurement-022-n021",
+      "to": "procurement-022-n022"
+    },
+    {
+      "from": "procurement-022-n022",
+      "to": "procurement-022-n023"
     }
   ],
   "pending": []
