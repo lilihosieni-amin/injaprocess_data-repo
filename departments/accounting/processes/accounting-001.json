@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-10-02T09:13:05Z",
-  "updated_at": "2026-10-02T22:40:59Z",
+  "updated_at": "2026-10-02T22:46:11Z",
   "idef0": {
     "inputs": [
       "پاکت صندوق شب گذشتهٔ شعبهٔ مرکزی (فیش‌های کارت‌خوان، فیش‌های بدهکاری پرسنل، وجه نقد، تخفیف‌ها)",
@@ -73,7 +73,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 90
+        "y": 2802.5
       },
       "layout": "auto",
       "source": {
@@ -135,7 +135,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 3152.5
+        "y": 2977.5
       },
       "layout": "auto",
       "source": {
@@ -263,7 +263,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 877.5
+        "y": 790.0
       },
       "layout": "auto",
       "source": {
@@ -293,7 +293,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 877.5
+        "y": 790.0
       },
       "layout": "auto",
       "source": {
@@ -305,7 +305,7 @@
       "id": "accounting-001-n009",
       "type": "activity",
       "label": "بررسی مجوز تخفیف‌ها، تست‌ها و ضایعات شب گذشته در گروه تلگرامی مدیران",
-      "description": "تخفیف‌ها، تست‌ها و ضایعات در گروه تلگرامی‌ای که مدیران عضو آن هستند اعلام می‌شوند تا مدیران آن‌ها را تأیید کنند یا در جریان قرار گیرند. ضایعات به تأیید سرآشپز و مدیریت نیاز دارد. تست‌های پرارزش، مانند آزمایش کاغذ دولایهٔ برگر، نیز به تأیید سرآشپز و مدیریت نیاز دارند. تست‌های کوچک و کم‌ارزش، مانند تست یک لقمه، بدون تأیید پذیرفته می‌شوند. معیار تصمیم این است که آیا تأیید لازم برای هر قلم وجود دارد یا نه.",
+      "description": "تخفیف‌ها، تست‌ها و ضایعات در گروه تلگرامی‌ای که مدیران عضو آن هستند اعلام می‌شوند تا مدیران آن‌ها را تأیید کنند یا در جریان قرار گیرند. ضایعات به تأیید سرآشپز و مدیریت نیاز دارد. تست‌های پرارزش، مانند آزمایش کاغذ دولایهٔ برگر، نیز به تأیید سرآشپز و مدیریت نیاز دارند. تست‌های کوچک و کم‌ارزش، مانند تست یک لقمه، بدون تأیید پذیرفته می‌شوند. معیار تصمیم این است که آیا تأیید لازم برای هر قلم وجود دارد یا نه. برای مواردی که تأییدشان در گروه دیده نمی‌شود — برای نمونه زمانی که تستی توسط فردی غیر از سرپرست انجام شده باشد — کارمند حسابداری از سرپرست مربوط استعلام می‌کند که آیا از تست انجام‌شده و انجام‌دهندهٔ آن آگاه است یا نه.",
       "actor": "کارمند حسابداری",
       "icom": {
         "inputs": [
@@ -315,20 +315,25 @@
           "تأیید سرآشپز و مدیریت برای ضایعات و تست‌های پرارزش",
           "تست‌های کوچک کم‌ارزش نیازی به تأیید ندارند"
         ],
-        "outputs": [],
+        "outputs": [
+          "پاسخ سرپرست دربارهٔ تست‌های فاقد تأیید"
+        ],
         "mechanisms": [
-          "گروه تلگرامی مدیران"
+          "گروه تلگرامی مدیران",
+          "کارمند حسابداری"
         ]
       },
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 877.5
+        "y": 790.0
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "runs/chat/20261002-acc001-fold-n010"
+        ]
       }
     },
     {
@@ -351,14 +356,17 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 965
+        "x": 40,
+        "y": 3152.5
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
-      }
+        "touched_by": [
+          "runs/chat/20261002-acc001-fold-n010"
+        ]
+      },
+      "removed": true
     },
     {
       "id": "accounting-001-n011",
@@ -382,7 +390,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 1227.5
+        "y": 790.0
       },
       "layout": "auto",
       "source": {
@@ -410,8 +418,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1315
+        "x": 1080,
+        "y": 1140.0
       },
       "layout": "auto",
       "source": {
@@ -439,8 +447,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1577.5
+        "x": 560,
+        "y": 1052.5
       },
       "layout": "auto",
       "source": {
@@ -470,8 +478,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1665
+        "x": 40,
+        "y": 1140.0
       },
       "layout": "auto",
       "source": {
@@ -501,8 +509,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1665
+        "x": 40,
+        "y": 1533.75
       },
       "layout": "auto",
       "source": {
@@ -534,8 +542,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1971.25
+        "x": 560,
+        "y": 1446.25
       },
       "layout": "auto",
       "source": {
@@ -689,8 +697,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 2452.5
+        "x": 40,
+        "y": 1927.5
       },
       "layout": "auto",
       "source": {
@@ -722,8 +730,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 2452.5
+        "x": 40,
+        "y": 2277.5
       },
       "layout": "auto",
       "source": {
@@ -751,8 +759,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 2452.5
+        "x": 300,
+        "y": 2277.5
       },
       "layout": "auto",
       "source": {
@@ -780,8 +788,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 2802.5
+        "x": 560,
+        "y": 2277.5
       },
       "layout": "auto",
       "source": {
@@ -860,10 +868,11 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 893.5
+        "x": 103,
+        "y": 2468.5
       },
-      "layout": "auto"
+      "layout": "auto",
+      "removed": true
     },
     {
       "id": "accounting-001-j2",
@@ -871,10 +880,11 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1143,
-        "y": 1243.5
+        "x": 103,
+        "y": 2643.5
       },
-      "layout": "auto"
+      "layout": "auto",
+      "removed": true
     },
     {
       "id": "accounting-001-j3",
@@ -882,8 +892,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 623,
-        "y": 1243.5
+        "x": 1143,
+        "y": 806.0
       },
       "layout": "auto"
     },
@@ -893,8 +903,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 103,
-        "y": 1243.5
+        "x": 883,
+        "y": 1068.5
       },
       "layout": "auto"
     },
@@ -905,7 +915,7 @@
       "direction": "split",
       "position": {
         "x": 363,
-        "y": 1593.5
+        "y": 1068.5
       },
       "layout": "auto"
     },
@@ -915,8 +925,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1143,
-        "y": 1593.5
+        "x": 363,
+        "y": 1462.25
       },
       "layout": "auto"
     },
@@ -927,7 +937,7 @@
       "direction": "split",
       "position": {
         "x": 883,
-        "y": 1987.25
+        "y": 1462.25
       },
       "layout": "auto"
     },
@@ -937,8 +947,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 2118.5
+        "x": 883,
+        "y": 2031.0
       },
       "layout": "auto"
     },
@@ -949,7 +959,7 @@
       "direction": "join",
       "position": {
         "x": 363,
-        "y": 2468.5
+        "y": 1943.5
       },
       "layout": "auto"
     },
@@ -1182,28 +1192,6 @@
       "to": "accounting-001-n009"
     },
     {
-      "from": "accounting-001-n009",
-      "to": "accounting-001-j1"
-    },
-    {
-      "from": "accounting-001-j1",
-      "to": "accounting-001-j2",
-      "label": "دارای تأیید لازم یا تست کوچک بی‌نیاز از تأیید"
-    },
-    {
-      "from": "accounting-001-j1",
-      "to": "accounting-001-n010",
-      "label": "در صورت نبود تأیید لازم"
-    },
-    {
-      "from": "accounting-001-n010",
-      "to": "accounting-001-j2"
-    },
-    {
-      "from": "accounting-001-j2",
-      "to": "accounting-001-n011"
-    },
-    {
       "from": "accounting-001-n011",
       "to": "accounting-001-j3"
     },
@@ -1356,6 +1344,10 @@
     {
       "from": "accounting-001-j11",
       "to": "accounting-001-n004"
+    },
+    {
+      "from": "accounting-001-n009",
+      "to": "accounting-001-n011"
     }
   ],
   "pending": []
