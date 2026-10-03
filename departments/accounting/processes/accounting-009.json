@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-10-02T09:13:09Z",
-  "updated_at": "2026-10-03T10:47:20Z",
+  "updated_at": "2026-10-03T10:51:58Z",
   "idef0": {
     "inputs": [
       "هشدار کاهش اعتبار پنل سازمانی اسنپ به ۴۰۰ هزار تومان",
@@ -160,13 +160,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 265.0
+        "x": 1088.1018518518517,
+        "y": -18.998832658485128
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -175,10 +177,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1143,
-        "y": 806.0
+        "x": 1090.9166666666667,
+        "y": 224.98147154737399
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "accounting-009-n004",
@@ -201,13 +203,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 790.0
+        "x": 1310.7407407407406,
+        "y": 196.24999999999997
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -228,13 +232,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 440.0
+        "x": 612.0833333333333,
+        "y": 390.2314814814815
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -257,13 +263,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 440.0
+        "x": 860.5092592592592,
+        "y": 380.97222222222223
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -286,13 +294,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 440.0
+        "x": 1076.5277777777776,
+        "y": 379.81481481481484
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -314,13 +324,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1052.5
+        "x": 1107.7777777777778,
+        "y": 547.3784742090436
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -343,13 +355,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1052.5
+        "x": 1090.833333333333,
+        "y": 713.3796296296296
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -358,10 +372,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 623,
-        "y": 1068.5
+        "x": 1136.888888888889,
+        "y": 879.8425925925925
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "accounting-009-n010",
@@ -385,13 +399,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 965.0
+        "x": 1272.2222222222222,
+        "y": 1012.4537037037037
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -414,13 +430,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1140.0
+        "x": 948.1481481481483,
+        "y": 1048.5648048807072
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -443,13 +461,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 615.0
+        "x": 506.75925925925924,
+        "y": 547.8703703703704
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -470,13 +490,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 615.0
+        "x": 627.8703703703704,
+        "y": 697.175925925926
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -498,13 +520,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 615.0
+        "x": 647.1296296296299,
+        "y": 841.8518518518516
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -527,13 +551,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 1227.5
+        "x": 637.8703703703703,
+        "y": 1012.2222222222222
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -558,13 +584,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1227.5
+        "x": 640.6018518518518,
+        "y": 1193.9351851851852
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -590,13 +618,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 772.5
+        "x": 318.10185185185185,
+        "y": 677.5925925925926
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20261003-acc009-panels-internet",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -619,13 +649,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 772.5
+        "x": 318.84259259259255,
+        "y": 863.9351851851851
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20261003-acc009-panels-internet",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -648,13 +680,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 947.5000000000001
+        "x": 88.93518518518513,
+        "y": 762.3148148148149
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20261003-acc009-panels-internet",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -677,13 +711,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 947.5000000000001
+        "x": 49.16666666666663,
+        "y": 932.4537037037038
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20261003-acc009-panels-internet",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
