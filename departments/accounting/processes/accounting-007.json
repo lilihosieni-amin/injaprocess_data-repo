@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-10-02T09:13:08Z",
-  "updated_at": "2026-10-03T10:29:48Z",
+  "updated_at": "2026-10-03T10:32:16Z",
   "idef0": {
     "inputs": [
       "نیاز مجموعه به خرید موردی و غیرروتین",
@@ -106,7 +106,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -138,7 +138,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -170,7 +170,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 90.0
+        "y": 90
       },
       "layout": "auto",
       "source": {
@@ -387,8 +387,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1144.1944444444446,
-        "y": 1282.6944444444443
+        "x": 1153.8395061728397,
+        "y": 1301.020061728395
       },
       "layout": "manual",
       "source": {
@@ -569,15 +569,16 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 265.0
+        "x": 534.9228395061729,
+        "y": 283.32561728395063
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
         "touched_by": [
           "runs/chat/20261003-acc007-actor-general",
-          "runs/chat/20261003-acc007-n016"
+          "runs/chat/20261003-acc007-n016",
+          "ui-edit"
         ]
       }
     },
@@ -603,14 +604,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 265.0
+        "x": 797.8163580246913,
+        "y": 313.2253086419753
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
         "touched_by": [
-          "runs/chat/20261003-acc007-actor-general"
+          "runs/chat/20261003-acc007-actor-general",
+          "ui-edit"
         ]
       }
     },
@@ -634,8 +636,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 806.1111111111111,
-        "y": 505.8055555555556
+        "x": 832.1527777777777,
+        "y": 526.0601851851852
       },
       "layout": "manual",
       "source": {
@@ -746,8 +748,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 353.24074074074076,
-        "y": 665.4629629629629
+        "x": 590.5092592592594,
+        "y": 539.1126543209876
       },
       "layout": "manual",
       "source": {
@@ -779,8 +781,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 51.57407407407409,
-        "y": 631.898148148148
+        "x": 342.85493827160496,
+        "y": 536.412037037037
       },
       "layout": "manual",
       "source": {
@@ -813,14 +815,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 615.0
+        "x": 152.9783950617283,
+        "y": 531.087962962963
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
         "touched_by": [
-          "runs/chat/20261003-acc007-actor-general"
+          "runs/chat/20261003-acc007-actor-general",
+          "ui-edit"
         ]
       }
     },
@@ -845,13 +848,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 615.0
+        "x": -91.58950617283952,
+        "y": 544.5910493827159
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -875,7 +880,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 1840.0
+        "y": 1840
       },
       "layout": "auto",
       "source": {
