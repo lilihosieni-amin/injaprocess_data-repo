@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-10-02T09:13:05Z",
-  "updated_at": "2026-10-03T08:08:43Z",
+  "updated_at": "2026-10-03T08:19:14Z",
   "idef0": {
     "inputs": [
       "پاکت صندوق شب گذشتهٔ شعبهٔ مرکزی (فیش‌های کارت‌خوان، فیش‌های بدهکاری پرسنل، وجه نقد، تخفیف‌ها)",
@@ -1202,6 +1202,36 @@
         "created_by": "runs/chat/20261003-acc001-new-entry",
         "touched_by": []
       }
+    },
+    {
+      "id": "accounting-001-n034",
+      "type": "activity",
+      "label": "پیگیری تأیید شدن فیش‌ها توسط مدیریت",
+      "description": "برای فیش‌های کنسلی که تأیید آن‌ها دیده نمی‌شود، حسابداری تأیید شدن فیش‌ها را از مدیریت پیگیری می‌کند.",
+      "actor": "حسابداری",
+      "icom": {
+        "inputs": [
+          "فیش‌های کنسلی فاقد تأیید"
+        ],
+        "controls": [
+          "فیش کنسل‌شده تنها در صورت داشتن تأیید حذف می‌شود"
+        ],
+        "outputs": [],
+        "mechanisms": [
+          "حسابداری",
+          "مدیریت"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 1140.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261003-acc001-followup-approval",
+        "touched_by": []
+      }
     }
   ],
   "edges": [
@@ -1233,11 +1263,6 @@
       "from": "accounting-001-j3",
       "to": "accounting-001-n012",
       "label": "در صورت تأیید کنسلی"
-    },
-    {
-      "from": "accounting-001-j3",
-      "to": "accounting-001-j4",
-      "label": "در صورت نبود تأیید"
     },
     {
       "from": "accounting-001-n012",
@@ -1386,6 +1411,15 @@
     {
       "from": "accounting-001-n002",
       "to": "accounting-001-n004"
+    },
+    {
+      "from": "accounting-001-j3",
+      "to": "accounting-001-n034",
+      "label": "در صورت نبود تأیید"
+    },
+    {
+      "from": "accounting-001-n034",
+      "to": "accounting-001-j4"
     }
   ],
   "pending": []
