@@ -1,0 +1,1061 @@
+{
+  "id": "accounting-030",
+  "department": "accounting",
+  "name": "بررسی و ثبت فاکتورهای خرید",
+  "summary": "این زیرفرایند بررسی و ثبت فاکتورهای خرید را در حسابداری پوشش می‌دهد. فاکتورهای خرید از انبار دریافت می‌شوند و بسته به نوع فاکتور سه مسیر دارند: فاکتور رسمی همراه بار که مهر تأمین‌کننده و امضا و مهر انبار آن کنترل می‌شود؛ خرید پیش‌پرداخت‌شده که تصویر فاکتور با اسناد خزانه و عبارت «بار نیامده» تا رسیدن بار در کارهای ناتمام نگهداری و رسیدن بار از انبار پیگیری می‌شود؛ و کالای واردشده بدون فاکتور رسمی که انبار برگهٔ آن را به حسابداری می‌دهد و فاکتورش پیگیری، ضمیمه و با کالای رسیده سرسنجی می‌شود. سپس افزایش قیمت کالاها نسبت به خرید قبلی بررسی و با مداد علامت‌گذاری می‌شود، فاکتور با وزن و مبلغ ریالی در سپیدار ثبت و برای بررسی مجدد به سرپرست حسابداری تحویل می‌شود. فاکتورهای فاقد مهر تأمین‌کننده بسته به نوع تأمین‌کننده یا تا زمان دریافت چک آخر ماه موکول می‌شوند یا با یادداشت به کارپرداز داده می‌شوند تا مهر گرفته شود. در پایان فاکتورهای بررسی‌شده در کارتابل مدیریت قرار می‌گیرند و مدیریت روزانه آن‌ها را مهر می‌کند.",
+  "source": {
+    "type": "auto",
+    "ref": "20261003-acc006-invoice-subprocess",
+    "run": "runs/chat/20261003-acc006-invoice-subprocess"
+  },
+  "parent": {
+    "process": "accounting-006",
+    "node": "accounting-006-n033"
+  },
+  "created_at": "2026-10-03T09:18:34Z",
+  "updated_at": "2026-10-03T09:18:34Z",
+  "idef0": {
+    "inputs": [
+      "فاکتورهای خرید دریافتی از انبار"
+    ],
+    "controls": [
+      "الزام مهر تأمین‌کننده",
+      "الزام امضا و مهر انبار",
+      "مهر انبار ملاک ثبت در سیستم",
+      "بایگانی نشدن فاکتور تا رسیدن بار",
+      "رسید کردن هر کالای واردشده به انبار",
+      "الزام نوشتن فاکتور توسط کارپرداز برای خرید بدون فاکتور",
+      "ثبت هم‌زمان وزن و مبلغ ریالی",
+      "مهر انبار ملاک ثبت در سیستم"
+    ],
+    "outputs": [
+      "فاکتورهای خرید ثبت‌شده و مهرشده توسط مدیریت"
+    ],
+    "mechanisms": [
+      "کارمند حسابداری",
+      "سرپرست حسابداری",
+      "کارپرداز",
+      "انبار",
+      "مدیریت",
+      "سپیدار"
+    ]
+  },
+  "kpis": [],
+  "nodes": [
+    {
+      "id": "accounting-030-n001",
+      "type": "activity",
+      "label": "دریافت فاکتورهای خرید از انبار",
+      "description": "فاکتورهای خرید همراه با حواله‌های انبار و فرم تبدیل انبار از انبار به حسابداری می‌رسند؛ بسته به نوع فاکتور (فاکتور رسمی همراه بار، خرید پیش‌پرداخت‌شده یا کالای واردشده بدون فاکتور رسمی) یکی از مسیرهای زیر طی می‌شود.",
+      "actor": "کارمند حسابداری",
+      "icom": {
+        "inputs": [
+          "فاکتورهای خرید دریافتی از انبار"
+        ],
+        "controls": [],
+        "outputs": [
+          "فاکتورهای خرید آمادهٔ بررسی"
+        ],
+        "mechanisms": [
+          "کارمند حسابداری"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 40,
+        "y": 352.5
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261003-acc006-invoice-subprocess",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-030-n002",
+      "type": "activity",
+      "label": "کنترل وجود مهر تأمین‌کننده و امضا و مهر انبار روی فاکتور خرید",
+      "description": "مهر تأمین‌کننده بر فاکتور الزامی است. امضا و مهر انبار نیز الزامی است، زیرا تأیید می‌کند که فاکتور درست است و کالا به‌درستی تحویل گرفته شده است. ملاک ثبت فاکتور در سیستم، مهر انبار است که نشان می‌دهد بار وارد انبار شده است؛ نبود مهر تأمین‌کننده مانع ثبت فاکتور نمی‌شود و پس از ثبت پیگیری می‌شود.",
+      "actor": "کارمند حسابداری",
+      "icom": {
+        "inputs": [
+          "فاکتور خرید رسمی"
+        ],
+        "controls": [
+          "الزام مهر تأمین‌کننده",
+          "الزام امضا و مهر انبار",
+          "مهر انبار ملاک ثبت در سیستم"
+        ],
+        "outputs": [
+          "فاکتور خرید کنترل‌شده از نظر مهر و امضا"
+        ],
+        "mechanisms": [
+          "کارمند حسابداری"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 90.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261003-acc006-invoice-subprocess",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-030-n003",
+      "type": "activity",
+      "label": "ضمیمه کردن اسناد خزانهٔ پرداخت به تصویر فاکتور خریدی که وجه آن پیش از رسیدن بار پرداخت شده است",
+      "description": "این حالت برای خریدهایی مانند خرید از تهران پیش می‌آید که کارپرداز تصویر فاکتور را می‌فرستد، حسابداری وجه را واریز می‌کند و بار بعداً و بدون فاکتور همراه می‌رسد (برای نمونه پرداخت در بیستم ماه و رسیدن بار در سی‌ام). انبار از مبلغ چنین خریدی اطلاع ندارد.",
+      "actor": "سرپرست حسابداری",
+      "icom": {
+        "inputs": [
+          "تصویر فاکتور خرید پیش‌پرداخت‌شده",
+          "اسناد خزانهٔ پرداخت"
+        ],
+        "controls": [],
+        "outputs": [
+          "تصویر فاکتور همراه با اسناد خزانهٔ ضمیمه‌شده"
+        ],
+        "mechanisms": [
+          "سرپرست حسابداری"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 615.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261003-acc006-invoice-subprocess",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-030-n004",
+      "type": "activity",
+      "label": "درج عبارت «بار نیامده» بالای تصویر فاکتور خرید پیش‌پرداخت‌شده",
+      "description": "",
+      "actor": "سرپرست حسابداری",
+      "icom": {
+        "inputs": [
+          "تصویر فاکتور همراه با اسناد خزانهٔ ضمیمه‌شده"
+        ],
+        "controls": [],
+        "outputs": [
+          "فاکتور علامت‌خورده با عبارت «بار نیامده»"
+        ],
+        "mechanisms": [
+          "سرپرست حسابداری"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 615.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261003-acc006-invoice-subprocess",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-030-n005",
+      "type": "activity",
+      "label": "نگهداری فاکتور «بار نیامده» در کارهای ناتمام، بدون بایگانی، تا رسیدن بار",
+      "description": "فاکتور «بار نیامده» بایگانی نمی‌شود و تا رسیدن بار در کارهای ناتمام باقی می‌ماند.",
+      "actor": "سرپرست حسابداری",
+      "icom": {
+        "inputs": [
+          "فاکتور علامت‌خورده با عبارت «بار نیامده»"
+        ],
+        "controls": [
+          "بایگانی نشدن فاکتور تا رسیدن بار"
+        ],
+        "outputs": [
+          "فاکتور در انتظار رسیدن بار"
+        ],
+        "mechanisms": [
+          "سرپرست حسابداری"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 1315.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261003-acc006-invoice-subprocess",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-030-n006",
+      "type": "activity",
+      "label": "تماس با انبار و پرسش دربارهٔ رسیدن بار خرید پیش‌پرداخت‌شده",
+      "description": "گاهی بار رسیده است، اما چون فاکتوری همراه آن نبوده، کارکنان انبار اعلام آن به حسابداری را فراموش کرده‌اند؛ به همین سبب پس از گذشتن زمان مورد انتظار، حسابداری با انبار تماس می‌گیرد.",
+      "actor": "سرپرست حسابداری",
+      "icom": {
+        "inputs": [
+          "فاکتور در انتظار رسیدن بار"
+        ],
+        "controls": [],
+        "outputs": [
+          "وضعیت رسیدن بار"
+        ],
+        "mechanisms": [
+          "سرپرست حسابداری",
+          "انبار"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 1402.5
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261003-acc006-invoice-subprocess",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-030-n007",
+      "type": "activity",
+      "label": "نوشتن برگهٔ کالای واردشده بدون فاکتور، شامل نام کالا و مقدار آن",
+      "description": "انبار موظف است هر کالایی را که وارد انبار می‌شود، با فاکتور یا بدون فاکتور، رسید کند. در برگهٔ کالای بدون فاکتور تنها نام کالا و مقدار آن (برای نمونه ۱۰ عدد یا ۱۰ کیلو) نوشته می‌شود و مبلغ درج نمی‌شود، زیرا انبار از قیمت خرید اطلاع ندارد.",
+      "actor": "انبار",
+      "icom": {
+        "inputs": [
+          "کالای واردشده به انبار بدون فاکتور رسمی"
+        ],
+        "controls": [
+          "رسید کردن هر کالای واردشده به انبار"
+        ],
+        "outputs": [
+          "برگهٔ کالای واردشده بدون فاکتور"
+        ],
+        "mechanisms": [
+          "انبار"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 40,
+        "y": 1840.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261003-acc006-invoice-subprocess",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-030-n008",
+      "type": "activity",
+      "label": "ارائهٔ برگهٔ کالای واردشده بدون فاکتور به حسابداری",
+      "description": "",
+      "actor": "انبار",
+      "icom": {
+        "inputs": [
+          "برگهٔ کالای واردشده بدون فاکتور"
+        ],
+        "controls": [],
+        "outputs": [
+          "برگهٔ کالای بدون فاکتور تحویل‌شده به حسابداری"
+        ],
+        "mechanisms": [
+          "انبار"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
+        "y": 1840.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261003-acc006-invoice-subprocess",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-030-n009",
+      "type": "activity",
+      "label": "پیگیری دریافت فاکتور کالای واردشده بدون فاکتور",
+      "description": "پیگیری فاکتور در اصل با کارپرداز است و گاهی بر عهدهٔ حسابداری قرار می‌گیرد. برای خرید بدون فاکتور کارپرداز (برای نمونه خرید گوجه از فروشندهٔ وانتی)، کارپرداز موظف است خود فاکتوری بنویسد.",
+      "actor": "کارپرداز",
+      "icom": {
+        "inputs": [
+          "برگهٔ کالای بدون فاکتور تحویل‌شده به حسابداری"
+        ],
+        "controls": [
+          "الزام نوشتن فاکتور توسط کارپرداز برای خرید بدون فاکتور"
+        ],
+        "outputs": [
+          "فاکتور کالا"
+        ],
+        "mechanisms": [
+          "کارپرداز",
+          "سرپرست حسابداری"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 1927.5
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261003-acc006-invoice-subprocess",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-030-n010",
+      "type": "activity",
+      "label": "ضمیمه کردن فاکتور به برگهٔ کالای بدون فاکتور انبار",
+      "description": "",
+      "actor": "سرپرست حسابداری",
+      "icom": {
+        "inputs": [
+          "برگهٔ کالای بدون فاکتور تحویل‌شده به حسابداری",
+          "فاکتور کالا"
+        ],
+        "controls": [],
+        "outputs": [
+          "برگهٔ انبار همراه با فاکتور ضمیمه‌شده"
+        ],
+        "mechanisms": [
+          "سرپرست حسابداری"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 2277.5
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261003-acc006-invoice-subprocess",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-030-n011",
+      "type": "activity",
+      "label": "سرسنجی کالای رسیده با فاکتور برای اطمینان از درستی کالای واردشده",
+      "description": "",
+      "actor": "سرپرست حسابداری",
+      "icom": {
+        "inputs": [
+          "برگهٔ انبار همراه با فاکتور ضمیمه‌شده"
+        ],
+        "controls": [],
+        "outputs": [
+          "فاکتور سرسنجی‌شدهٔ کالای بدون فاکتور"
+        ],
+        "mechanisms": [
+          "سرپرست حسابداری"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 2277.5
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261003-acc006-invoice-subprocess",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-030-n012",
+      "type": "activity",
+      "label": "بررسی افزایش قیمت کالاهای فاکتور خرید نسبت به خرید قبلی",
+      "description": "فاکتورهای خرید نسبت به حواله‌ها به بررسی دقیق‌تری نیاز دارند و افزایش یا عدم افزایش قیمت هر کالا باید مورد توجه قرار گیرد.",
+      "actor": "کارمند حسابداری",
+      "icom": {
+        "inputs": [
+          "فاکتور خرید کنترل‌شده"
+        ],
+        "controls": [],
+        "outputs": [
+          "نتیجهٔ بررسی افزایش قیمت"
+        ],
+        "mechanisms": [
+          "کارمند حسابداری"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
+        "y": 2190.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261003-acc006-invoice-subprocess",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-030-n013",
+      "type": "activity",
+      "label": "علامت‌گذاری کالاهای دارای افزایش قیمت روی فاکتور با مداد",
+      "description": "",
+      "actor": "کارمند حسابداری",
+      "icom": {
+        "inputs": [
+          "فاکتور خرید دارای کالای با افزایش قیمت"
+        ],
+        "controls": [],
+        "outputs": [
+          "فاکتور علامت‌خورده از نظر افزایش قیمت"
+        ],
+        "mechanisms": [
+          "کارمند حسابداری",
+          "مداد"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 40,
+        "y": 2627.5
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261003-acc006-invoice-subprocess",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-030-n014",
+      "type": "activity",
+      "label": "ثبت فاکتور خرید در سپیدار با درج هم‌زمان وزن و مبلغ ریالی کالاها",
+      "description": "در نرم‌افزار حسابداری، وزن و مبلغ جداگانه ثبت نمی‌شوند؛ هر دو در یک فرم وارد می‌شوند و هر دو سند می‌خورند: وزن در حسابداری انبار و مبلغ ریالی در حسابداری خزانه می‌نشیند. تاریخ فاکتور نیز اهمیت دارد. طبق توضیح سرپرست حسابداری، فاکتورهای رسیده در ماژول انبار سیما سند می‌خورند.",
+      "actor": "کارمند حسابداری",
+      "icom": {
+        "inputs": [
+          "فاکتور خرید آمادهٔ ثبت"
+        ],
+        "controls": [
+          "ثبت هم‌زمان وزن و مبلغ ریالی",
+          "مهر انبار ملاک ثبت در سیستم"
+        ],
+        "outputs": [
+          "فاکتور خرید ثبت‌شده (وزن در حسابداری انبار، مبلغ در حسابداری خزانه)"
+        ],
+        "mechanisms": [
+          "کارمند حسابداری",
+          "نرم‌افزار حسابداری سپیدار",
+          "ماژول انبار سیما"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 2540.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261003-acc006-invoice-subprocess",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-030-n015",
+      "type": "activity",
+      "label": "تحویل فاکتورهای خرید ثبت‌شده به سرپرست حسابداری",
+      "description": "",
+      "actor": "کارمند حسابداری",
+      "icom": {
+        "inputs": [
+          "فاکتور خرید ثبت‌شده"
+        ],
+        "controls": [
+          "آماده کردن نسخه‌ای از اسناد ثبت‌شده برای سرپرست (شرح شغل کارمند حسابداری)"
+        ],
+        "outputs": [
+          "فاکتورهای ثبت‌شده تحویل‌شده به سرپرست حسابداری"
+        ],
+        "mechanisms": [
+          "کارمند حسابداری"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 2540.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261003-acc006-invoice-subprocess",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-030-n016",
+      "type": "activity",
+      "label": "بررسی مجدد فاکتورهای ثبت‌شده از نظر شمارهٔ سند، تاریخ، نام تأمین‌کننده، مقدار و فی کالاها و افزایش قیمت",
+      "description": "فاکتوری که بررسی می‌شود باید شمارهٔ سند سیستم را داشته باشد. سرپرست حسابداری افزایش قیمت‌ها را حتی در صورت علامت نخوردن فاکتور دوباره کنترل می‌کند: برخی قیمت‌ها را به خاطر دارد و برای بقیه، قیمت دفعهٔ قبل را در سیستم مشاهده می‌کند.",
+      "actor": "سرپرست حسابداری",
+      "icom": {
+        "inputs": [
+          "فاکتورهای ثبت‌شده تحویل‌شده به سرپرست حسابداری"
+        ],
+        "controls": [
+          "داشتن شمارهٔ سند بر فاکتور",
+          "اطمینان از صحت ثبت فاکتورها (شرح شغل سرپرست حسابداری)"
+        ],
+        "outputs": [
+          "فاکتورهای بررسی‌شده و تیک‌خورده"
+        ],
+        "mechanisms": [
+          "سرپرست حسابداری",
+          "نرم‌افزار حسابداری سپیدار"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 1080,
+        "y": 2540.0
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261003-acc006-invoice-subprocess",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-030-n017",
+      "type": "activity",
+      "label": "موکول کردن مهر فاکتور به زمان مراجعهٔ تأمین‌کننده برای دریافت چک آخر ماه",
+      "description": "تأمین‌کنندگان ثابت می‌دانند که در صورت فراموش شدن مهر، هنگام مراجعه برای دریافت چک آخر ماه، مهر خود را همراه می‌آورند و همهٔ فاکتورهای باقی‌مانده را مهر می‌زنند؛ بنابراین فاکتور برای مهر رفت‌وبرگشت داده نمی‌شود.",
+      "actor": "سرپرست حسابداری",
+      "icom": {
+        "inputs": [
+          "فاکتور ثبت‌شدهٔ فاقد مهر تأمین‌کنندهٔ ثابت"
+        ],
+        "controls": [],
+        "outputs": [
+          "فاکتور در انتظار مهر تأمین‌کننده در زمان دریافت چک"
+        ],
+        "mechanisms": [
+          "سرپرست حسابداری",
+          "تأمین‌کننده"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 2977.5
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261003-acc006-invoice-subprocess",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-030-n018",
+      "type": "activity",
+      "label": "تهیه و نگهداری کپی از فاکتور ثبت‌شدهٔ فاقد مهر تأمین‌کننده",
+      "description": "فاکتور فاقد مهر تأمین‌کننده در سیستم ثبت می‌شود و ثبت آن متوقف نمی‌شود؛ کپی آن در حسابداری نگه داشته می‌شود.",
+      "actor": "سرپرست حسابداری",
+      "icom": {
+        "inputs": [
+          "فاکتور ثبت‌شدهٔ فاقد مهر تأمین‌کننده"
+        ],
+        "controls": [],
+        "outputs": [
+          "کپی نگهداری‌شدهٔ فاکتور"
+        ],
+        "mechanisms": [
+          "سرپرست حسابداری"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 820,
+        "y": 3152.5
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261003-acc006-invoice-subprocess",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-030-n019",
+      "type": "activity",
+      "label": "تحویل اصل فاکتور همراه با یادداشت به کارپرداز برای گرفتن مهر تأمین‌کننده",
+      "description": "پیگیری استانداردهای لازم همهٔ فاکتورهایی که کارپرداز وارد مجموعه می‌کند، یا تأمین‌کننده مستقیماً (برای نمونه با پیک) می‌فرستد، بر عهدهٔ کارپرداز است.",
+      "actor": "سرپرست حسابداری",
+      "icom": {
+        "inputs": [
+          "اصل فاکتور فاقد مهر تأمین‌کننده"
+        ],
+        "controls": [
+          "مسئولیت کارپرداز در پیگیری استانداردهای فاکتورهای خرید"
+        ],
+        "outputs": [
+          "فاکتور تحویل‌شده به کارپرداز همراه با یادداشت"
+        ],
+        "mechanisms": [
+          "سرپرست حسابداری",
+          "کارپرداز"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 3152.5
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261003-acc006-invoice-subprocess",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-030-n020",
+      "type": "activity",
+      "label": "گرفتن مهر تأمین‌کننده روی اصل فاکتور",
+      "description": "",
+      "actor": "کارپرداز",
+      "icom": {
+        "inputs": [
+          "فاکتور تحویل‌شده به کارپرداز همراه با یادداشت"
+        ],
+        "controls": [],
+        "outputs": [
+          "فاکتور مهرشده توسط تأمین‌کننده"
+        ],
+        "mechanisms": [
+          "کارپرداز",
+          "تأمین‌کننده"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
+        "y": 3152.5
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261003-acc006-invoice-subprocess",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-030-n021",
+      "type": "activity",
+      "label": "بازگرداندن فاکتور مهرشده به حسابداری",
+      "description": "",
+      "actor": "کارپرداز",
+      "icom": {
+        "inputs": [
+          "فاکتور مهرشده توسط تأمین‌کننده"
+        ],
+        "controls": [],
+        "outputs": [
+          "فاکتور مهرشدهٔ بازگشته به حسابداری"
+        ],
+        "mechanisms": [
+          "کارپرداز"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 40,
+        "y": 3152.5
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261003-acc006-invoice-subprocess",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-030-n022",
+      "type": "activity",
+      "label": "قرار دادن فاکتورهای بررسی‌شده و تیک‌خورده در کارتابل مدیریت",
+      "description": "این کار هر روز انجام می‌شود.",
+      "actor": "سرپرست حسابداری",
+      "icom": {
+        "inputs": [
+          "فاکتورهای بررسی‌شده و تیک‌خورده"
+        ],
+        "controls": [],
+        "outputs": [
+          "فاکتورهای قرارگرفته در کارتابل مدیریت"
+        ],
+        "mechanisms": [
+          "سرپرست حسابداری"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 300,
+        "y": 3327.5
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261003-acc006-invoice-subprocess",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-030-n023",
+      "type": "activity",
+      "label": "مهر زدن روزانهٔ فاکتورهای خرید توسط مدیریت",
+      "description": "مدیریت هنگام مهر زدن فاکتورها، افزایش قیمت‌ها را نیز مشاهده می‌کند.",
+      "actor": "مدیریت",
+      "icom": {
+        "inputs": [
+          "فاکتورهای قرارگرفته در کارتابل مدیریت"
+        ],
+        "controls": [],
+        "outputs": [
+          "فاکتورهای خرید مهرشده توسط مدیریت"
+        ],
+        "mechanisms": [
+          "مدیریت"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 560,
+        "y": 3327.5
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261003-acc006-invoice-subprocess",
+        "touched_by": []
+      }
+    },
+    {
+      "id": "accounting-030-j1",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "split",
+      "position": {
+        "x": 363,
+        "y": 368.5
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "accounting-030-j2",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "join",
+      "position": {
+        "x": 1143,
+        "y": 631.0
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "accounting-030-j3",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "split",
+      "position": {
+        "x": 883,
+        "y": 1331.0
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "accounting-030-j4",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "split",
+      "position": {
+        "x": 363,
+        "y": 1418.5
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "accounting-030-j5",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "join",
+      "position": {
+        "x": 103,
+        "y": 1199.75
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "accounting-030-j6",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "split",
+      "position": {
+        "x": 623,
+        "y": 1856.0
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "accounting-030-j7",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "join",
+      "position": {
+        "x": 1143,
+        "y": 1826.8333333333333
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "accounting-030-j8",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "join",
+      "position": {
+        "x": 623,
+        "y": 2206.0
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "accounting-030-j9",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "split",
+      "position": {
+        "x": 103,
+        "y": 2206.0
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "accounting-030-j10",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "join",
+      "position": {
+        "x": 363,
+        "y": 2556.0
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "accounting-030-j11",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "split",
+      "position": {
+        "x": 1143,
+        "y": 2993.5
+      },
+      "layout": "auto"
+    },
+    {
+      "id": "accounting-030-j12",
+      "type": "junction",
+      "junctionType": "XOR",
+      "direction": "join",
+      "position": {
+        "x": 103,
+        "y": 3343.5
+      },
+      "layout": "auto"
+    }
+  ],
+  "edges": [
+    {
+      "from": "accounting-030-n001",
+      "to": "accounting-030-j1"
+    },
+    {
+      "from": "accounting-030-j1",
+      "to": "accounting-030-n002",
+      "label": "در صورت فاکتور خرید رسمی همراه بار"
+    },
+    {
+      "from": "accounting-030-j1",
+      "to": "accounting-030-n003",
+      "label": "در صورت خریدی که وجه آن پیش از رسیدن بار پرداخت شده است"
+    },
+    {
+      "from": "accounting-030-j1",
+      "to": "accounting-030-j5",
+      "label": "در صورت ورود کالا به انبار بدون فاکتور رسمی"
+    },
+    {
+      "from": "accounting-030-n003",
+      "to": "accounting-030-n004"
+    },
+    {
+      "from": "accounting-030-n004",
+      "to": "accounting-030-j2"
+    },
+    {
+      "from": "accounting-030-j2",
+      "to": "accounting-030-n005"
+    },
+    {
+      "from": "accounting-030-n005",
+      "to": "accounting-030-j3"
+    },
+    {
+      "from": "accounting-030-j3",
+      "to": "accounting-030-j5",
+      "label": "در صورت رسیدن بار به انبار"
+    },
+    {
+      "from": "accounting-030-j3",
+      "to": "accounting-030-n006",
+      "label": "در صورت گذشتن زمان مورد انتظار بدون اعلام رسیدن بار"
+    },
+    {
+      "from": "accounting-030-n006",
+      "to": "accounting-030-j4"
+    },
+    {
+      "from": "accounting-030-j4",
+      "to": "accounting-030-j5",
+      "label": "در صورت رسیدن بار و فراموش شدن اعلام آن"
+    },
+    {
+      "from": "accounting-030-j4",
+      "to": "accounting-030-j2",
+      "label": "در صورت نرسیدن بار"
+    },
+    {
+      "from": "accounting-030-j5",
+      "to": "accounting-030-n007"
+    },
+    {
+      "from": "accounting-030-n007",
+      "to": "accounting-030-n008"
+    },
+    {
+      "from": "accounting-030-n008",
+      "to": "accounting-030-j6"
+    },
+    {
+      "from": "accounting-030-j6",
+      "to": "accounting-030-j7",
+      "label": "در صورت موجود بودن فاکتور (تصویر فاکتور پیش‌پرداخت‌شده) در حسابداری"
+    },
+    {
+      "from": "accounting-030-j6",
+      "to": "accounting-030-n009",
+      "label": "در صورت نبود فاکتور در حسابداری"
+    },
+    {
+      "from": "accounting-030-n009",
+      "to": "accounting-030-j7"
+    },
+    {
+      "from": "accounting-030-j7",
+      "to": "accounting-030-n010"
+    },
+    {
+      "from": "accounting-030-n010",
+      "to": "accounting-030-n011"
+    },
+    {
+      "from": "accounting-030-n002",
+      "to": "accounting-030-j8"
+    },
+    {
+      "from": "accounting-030-n011",
+      "to": "accounting-030-j8"
+    },
+    {
+      "from": "accounting-030-j8",
+      "to": "accounting-030-n012"
+    },
+    {
+      "from": "accounting-030-n012",
+      "to": "accounting-030-j9"
+    },
+    {
+      "from": "accounting-030-j9",
+      "to": "accounting-030-n013",
+      "label": "در صورت افزایش قیمت کالا"
+    },
+    {
+      "from": "accounting-030-j9",
+      "to": "accounting-030-j10",
+      "label": "در صورت نبود افزایش قیمت"
+    },
+    {
+      "from": "accounting-030-n013",
+      "to": "accounting-030-j10"
+    },
+    {
+      "from": "accounting-030-j10",
+      "to": "accounting-030-n014"
+    },
+    {
+      "from": "accounting-030-n014",
+      "to": "accounting-030-n015"
+    },
+    {
+      "from": "accounting-030-n015",
+      "to": "accounting-030-n016"
+    },
+    {
+      "from": "accounting-030-n016",
+      "to": "accounting-030-j11"
+    },
+    {
+      "from": "accounting-030-j11",
+      "to": "accounting-030-j12",
+      "label": "در صورت داشتن مهر تأمین‌کننده"
+    },
+    {
+      "from": "accounting-030-j11",
+      "to": "accounting-030-n017",
+      "label": "در صورت نبود مهر تأمین‌کنندهٔ ثابتی که هنگام دریافت چک آخر ماه فاکتورها را مهر می‌زند"
+    },
+    {
+      "from": "accounting-030-j11",
+      "to": "accounting-030-n018",
+      "label": "در صورت نبود مهر تأمین‌کنندهٔ جدید، موردی یا نقدی"
+    },
+    {
+      "from": "accounting-030-n017",
+      "to": "accounting-030-j12"
+    },
+    {
+      "from": "accounting-030-n018",
+      "to": "accounting-030-n019"
+    },
+    {
+      "from": "accounting-030-n019",
+      "to": "accounting-030-n020"
+    },
+    {
+      "from": "accounting-030-n020",
+      "to": "accounting-030-n021"
+    },
+    {
+      "from": "accounting-030-n021",
+      "to": "accounting-030-j12"
+    },
+    {
+      "from": "accounting-030-j12",
+      "to": "accounting-030-n022"
+    },
+    {
+      "from": "accounting-030-n022",
+      "to": "accounting-030-n023"
+    }
+  ],
+  "pending": []
+}
