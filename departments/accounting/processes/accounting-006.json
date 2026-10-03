@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-10-02T09:13:07Z",
-  "updated_at": "2026-10-02T09:13:07Z",
+  "updated_at": "2026-10-03T09:16:00Z",
   "idef0": {
     "inputs": [
       "حواله‌های انبار (مقدار درخواستی و مقدار تحویل‌شدهٔ کالا به هر بخش)",
@@ -151,13 +151,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 622.7777777777776
+        "x": 536.6666666666666,
+        "y": 279.72222222222206
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -166,10 +168,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 368.49999999999994
+        "x": 871.8888888888889,
+        "y": 561.5555555555554
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "accounting-006-n004",
@@ -195,13 +197,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 90.0
+        "x": 1070.2777777777778,
+        "y": 323.33333333333337
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -225,13 +229,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 614.9999999999999
+        "x": 1151.9521604938273,
+        "y": 656.7438271604938
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -255,7 +261,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 1665.0
+        "y": 1665
       },
       "layout": "auto",
       "source": {
@@ -269,10 +275,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 883,
-        "y": 1681.0
+        "x": 1108,
+        "y": 1719.888888888889
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "accounting-006-n007",
@@ -296,13 +302,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1700.0
+        "x": 613.0478395061729,
+        "y": 1840.817901234568
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -312,7 +320,7 @@
       "direction": "split",
       "position": {
         "x": 363,
-        "y": 1716.0
+        "y": 1716
       },
       "layout": "auto"
     },
@@ -337,13 +345,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1787.5
+        "x": 370.55555555555554,
+        "y": 1909.7222222222222
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -352,10 +362,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 2906.0
+        "x": 673.8333333333334,
+        "y": 2377.8055658870276
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "accounting-006-j6",
@@ -363,10 +373,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 363,
-        "y": 2698.9166666666665
+        "x": 907.4135802469136,
+        "y": 983.5231558746756
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "accounting-006-n009",
@@ -390,13 +400,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 2682.9166666666665
+        "x": 999.9691358024692,
+        "y": 1019.8408570333761
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -419,13 +431,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 2682.9166666666665
+        "x": 945.4475308641975,
+        "y": 1235.6238743846795
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -463,7 +477,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 3590.0
+        "y": 3590
       },
       "layout": "auto",
       "source": {
@@ -547,10 +561,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 103,
-        "y": 3401.8333333333335
+        "x": 1415,
+        "y": 364.5833504994712
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "accounting-006-n014",
@@ -614,7 +628,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 3940.0
+        "y": 3940
       },
       "layout": "auto",
       "source": {
@@ -690,7 +704,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 4290.0
+        "y": 4290
       },
       "layout": "auto",
       "source": {
@@ -723,7 +737,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 4290.0
+        "y": 4290
       },
       "layout": "auto",
       "source": {
@@ -738,7 +752,7 @@
       "direction": "split",
       "position": {
         "x": 623,
-        "y": 4306.0
+        "y": 4306
       },
       "layout": "auto"
     },
@@ -764,7 +778,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 4290.0
+        "y": 4290
       },
       "layout": "auto",
       "source": {
@@ -793,7 +807,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 4465.0
+        "y": 4465
       },
       "layout": "auto",
       "source": {
@@ -825,7 +839,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 4465.0
+        "y": 4465
       },
       "layout": "auto",
       "source": {
@@ -855,7 +869,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 4990.0
+        "y": 4990
       },
       "layout": "auto",
       "source": {
@@ -884,7 +898,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 4990.0
+        "y": 4990
       },
       "layout": "auto",
       "source": {
@@ -899,7 +913,7 @@
       "direction": "join",
       "position": {
         "x": 623,
-        "y": 4831.0
+        "y": 4831
       },
       "layout": "auto"
     },
@@ -924,7 +938,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 4815.0
+        "y": 4815
       },
       "layout": "auto",
       "source": {
@@ -953,7 +967,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 4815.0
+        "y": 4815
       },
       "layout": "auto",
       "source": {
@@ -982,13 +996,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 965.0
+        "x": 524.1666666666666,
+        "y": 895.5902745988634
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -997,10 +1013,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1143,
-        "y": 981.0
+        "x": 355.49999999999994,
+        "y": 1051.8333333333335
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "accounting-006-n027",
@@ -1024,13 +1040,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 2102.5
+        "x": -36.66666666666666,
+        "y": 1028.7500007947283
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1053,13 +1071,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 2102.5
+        "x": 111.6666666666666,
+        "y": 1175.7986158794827
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1068,10 +1088,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 623,
-        "y": 1978.5
+        "x": 459.11111111111114,
+        "y": 1181.972261958652
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "accounting-006-n029",
@@ -1095,13 +1115,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1962.5
+        "x": 359.72222222222223,
+        "y": 1331.0764167043899
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1127,13 +1149,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1962.5
+        "x": 65,
+        "y": 1338.888888888889
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1159,13 +1183,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 3065.0
+        "x": 60.83333333333333,
+        "y": 1533.0555555555559
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1193,13 +1219,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 3018.333333333333
+        "x": 62.8472222222222,
+        "y": 1713.7152793672346
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
