@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-07-26T19:27:22Z",
-  "updated_at": "2026-10-03T08:15:35Z",
+  "updated_at": "2026-10-03T08:31:36Z",
   "idef0": {
     "inputs": [
       "گزارش پیک موتوری در سپیدز",
@@ -504,8 +504,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": -357,
-        "y": 1040
+        "x": -434.1604938271605,
+        "y": 929.0817901234568
       },
       "layout": "manual"
     },
@@ -556,8 +556,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 63,
-        "y": 881
+        "x": 52.390432098765416,
+        "y": 911.8641975308642
       },
       "layout": "manual",
       "source": {
@@ -573,8 +573,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 333,
-        "y": 910
+        "x": 316.6033950617284,
+        "y": 947.6157407407408
       },
       "layout": "manual"
     },
@@ -670,8 +670,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1134.5,
-        "y": 1270
+        "x": 1076.6296296296298,
+        "y": 1255.5324074074074
       },
       "layout": "manual",
       "source": {
@@ -699,8 +699,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 877.4711810608557,
-        "y": 1327.993349475582
+        "x": 835.9974156287569,
+        "y": 1262.4069297224955
       },
       "layout": "manual",
       "source": {
@@ -728,8 +728,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1353.5
+        "x": 616.905864197531,
+        "y": 1260.9074074074074
       },
       "layout": "manual",
       "source": {
@@ -757,8 +757,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 278,
-        "y": 1383.5
+        "x": 367.6990740740741,
+        "y": 1251.3626543209875
       },
       "layout": "manual",
       "source": {
@@ -784,8 +784,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": -11.5,
-        "y": 1379.5
+        "x": 73.37654320987654,
+        "y": 1260.8657407407406
       },
       "layout": "manual",
       "source": {
@@ -811,8 +811,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 70,
-        "y": 1699
+        "x": 57.46141975308643,
+        "y": 1454.9799382716049
       },
       "layout": "manual",
       "source": {
@@ -828,8 +828,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 441,
-        "y": 1766.5
+        "x": 395.6682098765432,
+        "y": 1504.1543209876543
       },
       "layout": "manual"
     },
@@ -851,8 +851,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 637,
-        "y": 1599.5
+        "x": 638.9290123456791,
+        "y": 1409.492283950617
       },
       "layout": "manual",
       "source": {
@@ -868,8 +868,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1041.5,
-        "y": 1750.3333333333335
+        "x": 993.2746913580247,
+        "y": 1535.2484567901238
       },
       "layout": "manual"
     },
@@ -893,8 +893,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1283.5,
-        "y": 1666.8333333333335
+        "x": 1095.4212962962963,
+        "y": 1518.2993827160494
       },
       "layout": "manual",
       "source": {
@@ -927,8 +927,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1148,
-        "y": 1870
+        "x": 1091.6188271604938,
+        "y": 1721.354141831398
       },
       "layout": "manual",
       "source": {
@@ -957,8 +957,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 906.5,
-        "y": 1871
+        "x": 870.7283950617283,
+        "y": 1717.7746913580247
       },
       "layout": "manual",
       "source": {
@@ -992,8 +992,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 694.0625,
-        "y": 1878.5
+        "x": 444.0625,
+        "y": 1705.1666666666665
       },
       "layout": "manual",
       "source": {
@@ -1025,8 +1025,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 472.1875,
-        "y": 1890
+        "x": 232.1875,
+        "y": 1700
       },
       "layout": "manual",
       "source": {
@@ -1061,8 +1061,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 261,
-        "y": 1900
+        "x": 16,
+        "y": 1698.3333333333333
       },
       "layout": "manual",
       "source": {
@@ -1079,8 +1079,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": -122.5,
-        "y": 1997.5
+        "x": -25.833333333333332,
+        "y": 1940.8333333333335
       },
       "layout": "manual"
     },
@@ -1112,8 +1112,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": -57,
-        "y": 2177
+        "x": 86.33333333333334,
+        "y": 1915.3333333333335
       },
       "layout": "manual",
       "source": {
@@ -1144,8 +1144,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 190.5,
-        "y": 2283
+        "x": 294.94444444444446,
+        "y": 1920.7777777777776
       },
       "layout": "manual",
       "source": {
@@ -1178,8 +1178,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 546,
-        "y": 2380.5
+        "x": 515.7222222222222,
+        "y": 1923.8333333333337
       },
       "layout": "manual",
       "source": {
@@ -1216,8 +1216,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 822,
-        "y": 2410.5
+        "x": 1150,
+        "y": 1896.1666666666667
       },
       "layout": "manual",
       "source": {
@@ -1250,8 +1250,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1137,
-        "y": 2383
+        "x": 897.1111111111112,
+        "y": 2751.8333333333335
       },
       "layout": "manual",
       "source": {
@@ -1267,8 +1267,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1257,
-        "y": 2756.5
+        "x": 675,
+        "y": 2790.5
       },
       "layout": "manual"
     },
@@ -1292,8 +1292,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 864,
-        "y": 2717
+        "x": 317.6111111111111,
+        "y": 2841.6666666666665
       },
       "layout": "manual",
       "source": {
@@ -1319,8 +1319,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 878,
-        "y": 2876
+        "x": 390,
+        "y": 2528.0500297546387
       },
       "layout": "manual",
       "source": {
@@ -1354,13 +1354,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 3415.0
+        "x": 661.6666666666667,
+        "y": 1709.625005722046
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20261002-cashier032-review",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1369,10 +1371,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 3606.0
+        "x": 771.3333333333334,
+        "y": 1964.1250190734866
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cashier-032-n041",
@@ -1397,13 +1399,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 3940.0
+        "x": 704,
+        "y": 2121.3500022888184
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20261002-cashier032-review",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1422,13 +1426,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 3940.0
+        "x": 990,
+        "y": 2117.1000022888184
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20261002-cashier032-review",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1447,13 +1453,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 3940.0
+        "x": 1018,
+        "y": 2279.550001144409
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20261002-cashier032-review",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1472,13 +1480,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 3940.0
+        "x": 701.0555555555555,
+        "y": 2286.4666735331216
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20261002-cashier032-review",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1501,13 +1511,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 3940.0
+        "x": 692.7222222222223,
+        "y": 2448.672226799859
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20261002-cashier032-review",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1516,10 +1528,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1143,
-        "y": 4218.5
+        "x": 1219,
+        "y": 2590.5000171661377
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cashier-032-n046",
@@ -1542,13 +1554,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 4202.5
+        "x": 1150,
+        "y": 2760.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20261002-cashier032-review",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1557,10 +1571,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 4568.5
+        "x": 141,
+        "y": 2865.3500080108643
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "cashier-032-n047",
@@ -1580,13 +1594,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 4465.0
+        "x": -112,
+        "y": 2996.800006866455
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20261002-cashier032-review",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -1610,13 +1626,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 4640.0
+        "x": 158,
+        "y": 3043.750005722046
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20261002-cashier032-review",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
