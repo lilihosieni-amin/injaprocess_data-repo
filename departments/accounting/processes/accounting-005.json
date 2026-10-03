@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-10-02T09:13:07Z",
-  "updated_at": "2026-10-03T09:06:43Z",
+  "updated_at": "2026-10-03T09:09:35Z",
   "idef0": {
     "inputs": [
       "فرم مانده آخر شب (مانده اول شب، مانده آخر شب، مقدار دریافتی از انبار)",
@@ -352,8 +352,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 2.4850237247923985,
-        "y": 809.8250296559904
+        "x": 6.4850237247923985,
+        "y": 673.8250296559904
       },
       "layout": "manual",
       "source": {
@@ -369,8 +369,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 320.85053380782915,
-        "y": 853.729537366548
+        "x": 232.85053380782915,
+        "y": 733.729537366548
       },
       "layout": "manual"
     },
@@ -396,8 +396,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 667.1298932384342,
-        "y": 877.811387900356
+        "x": 497.1298932384342,
+        "y": 863.811387900356
       },
       "layout": "manual",
       "source": {
@@ -413,10 +413,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 883,
-        "y": 689.3333333333333
+        "x": 643,
+        "y": 735.3333333333333
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "accounting-005-j4",
@@ -424,8 +424,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 444.02135231316714,
-        "y": 522.8030842230129
+        "x": 784.0213523131672,
+        "y": 584.8030842230129
       },
       "layout": "manual"
     },
@@ -453,8 +453,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 238.2302787663107,
-        "y": 633.3168742586003
+        "x": 980.2302787663107,
+        "y": 599.3168742586003
       },
       "layout": "manual",
       "source": {
@@ -485,13 +485,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 965.0
+        "x": 1010,
+        "y": 805
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20261003-acc005-monthly",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -514,13 +516,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 965.0
+        "x": 1026,
+        "y": 989
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20261003-acc005-monthly",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -543,13 +547,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 965.0
+        "x": 1040,
+        "y": 1175
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20261003-acc005-monthly",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -575,13 +581,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 965.0
+        "x": 794,
+        "y": 1175
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20261003-acc005-monthly",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -590,10 +598,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 103,
-        "y": 1243.5
+        "x": 663,
+        "y": 1213.5
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "accounting-005-n017",
@@ -617,13 +625,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1140.0
+        "x": 158,
+        "y": 1046
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20261003-acc005-monthly",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -646,13 +656,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 1315.0
+        "x": 262,
+        "y": 1299
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20261003-acc005-monthly",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     }
   ],
