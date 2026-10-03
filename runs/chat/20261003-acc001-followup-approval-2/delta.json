@@ -1,0 +1,20 @@
+{
+  "add_nodes": [
+    {"key": "n1", "type": "activity",
+     "label": "پیگیری تأیید شدن فیش‌ها توسط مدیریت",
+     "description": "برای فیش‌های کنسلی که تأیید آن‌ها دیده نمی‌شود، حسابداری تأیید شدن فیش‌ها را از مدیریت پیگیری می‌کند.",
+     "actor": "حسابداری",
+     "icom": {"inputs": ["فیش‌های کنسلی فاقد تأیید"], "controls": ["فیش کنسل‌شده تنها در صورت داشتن تأیید حذف می‌شود"], "outputs": [], "mechanisms": ["حسابداری", "مدیریت"]},
+     "subprocess": null}
+  ],
+  "add_edges": [
+    {"from": "accounting-001-j3", "to": "n1", "label": "در صورت نبود تأیید"},
+    {"from": "n1", "to": "accounting-001-j4"}
+  ],
+  "enrich_nodes": [],
+  "revise_nodes": [],
+  "remove_edges": [
+    {"from": "accounting-001-j3", "to": "accounting-001-j4"}
+  ],
+  "flag_removed": []
+}
