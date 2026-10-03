@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-10-02T09:13:05Z",
-  "updated_at": "2026-10-03T08:19:14Z",
+  "updated_at": "2026-10-03T08:19:54Z",
   "idef0": {
     "inputs": [
       "پاکت صندوق شب گذشتهٔ شعبهٔ مرکزی (فیش‌های کارت‌خوان، فیش‌های بدهکاری پرسنل، وجه نقد، تخفیف‌ها)",
@@ -104,8 +104,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 28,
-        "y": 170
+        "x": 740,
+        "y": 478
       },
       "layout": "manual",
       "source": {
@@ -168,13 +168,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 527.5
+        "x": 480,
+        "y": 467.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -197,8 +199,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 325.7201646090535,
-        "y": 530.7150205761318
+        "x": 265.7201646090535,
+        "y": 468.7150205761318
       },
       "layout": "manual",
       "source": {
@@ -229,8 +231,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 66.52391975308643,
-        "y": 522.6774691358024
+        "x": 16.301697530864203,
+        "y": 430.9087961220447
       },
       "layout": "manual",
       "source": {
@@ -262,13 +264,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 790.0
+        "x": 44.21296296296293,
+        "y": 736.7592592592592
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -292,13 +296,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 790.0
+        "x": 256.75925925925924,
+        "y": 743.7037037037037
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -325,14 +331,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 790.0
+        "x": 492.4537037037037,
+        "y": 742.5462962962963
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
         "touched_by": [
-          "runs/chat/20261002-acc001-fold-n010"
+          "runs/chat/20261002-acc001-fold-n010",
+          "ui-edit"
         ]
       }
     },
@@ -389,13 +396,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 790.0
+        "x": 715.4166666666667,
+        "y": 752.9629629629629
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -418,13 +427,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1140.0
+        "x": 948.4722222222222,
+        "y": 1038.1481481481483
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -479,7 +490,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 1490.0
+        "y": 1490
       },
       "layout": "auto",
       "source": {
@@ -510,7 +521,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 1490.0
+        "y": 1490
       },
       "layout": "auto",
       "source": {
@@ -698,7 +709,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 2190.0
+        "y": 2190
       },
       "layout": "auto",
       "source": {
@@ -731,7 +742,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 2190.0
+        "y": 2190
       },
       "layout": "auto",
       "source": {
@@ -760,7 +771,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 2190.0
+        "y": 2190
       },
       "layout": "auto",
       "source": {
@@ -789,7 +800,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 2190.0
+        "y": 2190
       },
       "layout": "auto",
       "source": {
@@ -892,10 +903,10 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 1143,
-        "y": 1068.5
+        "x": 1019.1574074074074,
+        "y": 817.3425925925926
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "accounting-001-j4",
@@ -903,10 +914,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 623,
-        "y": 1068.5
+        "x": 657.7222222222222,
+        "y": 968.962962962963
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "accounting-001-j5",
@@ -959,7 +970,7 @@
       "direction": "join",
       "position": {
         "x": 103,
-        "y": 1856.0
+        "y": 1856
       },
       "layout": "auto"
     },
@@ -969,10 +980,10 @@
       "junctionType": "AND",
       "direction": "split",
       "position": {
-        "x": 363,
-        "y": 193.5
+        "x": 287,
+        "y": -12.849973678588867
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "accounting-001-n027",
@@ -994,8 +1005,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 477.2132201646091,
-        "y": 298.0720439246653
+        "x": 513.2132201646091,
+        "y": 180.0720439246653
       },
       "layout": "manual",
       "source": {
@@ -1025,8 +1036,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 762.9333847736626,
-        "y": 328.2126617640134
+        "x": 760.9333847736626,
+        "y": 238.21266176401338
       },
       "layout": "manual",
       "source": {
@@ -1116,8 +1127,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1086.4300411522634,
-        "y": 196.6808127572016
+        "x": 1112.4300411522634,
+        "y": 20.680812757201608
       },
       "layout": "manual",
       "source": {
@@ -1147,8 +1158,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1079.196244855967,
-        "y": 391.55606995884773
+        "x": 1109.196244855967,
+        "y": 227.55606995884773
       },
       "layout": "manual",
       "source": {
@@ -1164,10 +1175,10 @@
       "junctionType": "AND",
       "direction": "join",
       "position": {
-        "x": 883,
-        "y": 543.5
+        "x": 1033,
+        "y": 485.5
       },
-      "layout": "auto"
+      "layout": "manual"
     },
     {
       "id": "accounting-001-n033",
@@ -1194,43 +1205,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 177.5
+        "x": -2,
+        "y": -80.5
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20261003-acc001-new-entry",
-        "touched_by": []
-      }
-    },
-    {
-      "id": "accounting-001-n034",
-      "type": "activity",
-      "label": "پیگیری تأیید شدن فیش‌ها توسط مدیریت",
-      "description": "برای فیش‌های کنسلی که تأیید آن‌ها دیده نمی‌شود، حسابداری تأیید شدن فیش‌ها را از مدیریت پیگیری می‌کند.",
-      "actor": "حسابداری",
-      "icom": {
-        "inputs": [
-          "فیش‌های کنسلی فاقد تأیید"
-        ],
-        "controls": [
-          "فیش کنسل‌شده تنها در صورت داشتن تأیید حذف می‌شود"
-        ],
-        "outputs": [],
-        "mechanisms": [
-          "حسابداری",
-          "مدیریت"
+        "touched_by": [
+          "ui-edit"
         ]
-      },
-      "subprocess": null,
-      "position": {
-        "x": 820,
-        "y": 1140.0
-      },
-      "layout": "auto",
-      "source": {
-        "created_by": "runs/chat/20261003-acc001-followup-approval",
-        "touched_by": []
       }
     }
   ],
@@ -1263,6 +1246,11 @@
       "from": "accounting-001-j3",
       "to": "accounting-001-n012",
       "label": "در صورت تأیید کنسلی"
+    },
+    {
+      "from": "accounting-001-j3",
+      "to": "accounting-001-j4",
+      "label": "در صورت نبود تأیید"
     },
     {
       "from": "accounting-001-n012",
@@ -1411,15 +1399,6 @@
     {
       "from": "accounting-001-n002",
       "to": "accounting-001-n004"
-    },
-    {
-      "from": "accounting-001-j3",
-      "to": "accounting-001-n034",
-      "label": "در صورت نبود تأیید"
-    },
-    {
-      "from": "accounting-001-n034",
-      "to": "accounting-001-j4"
     }
   ],
   "pending": []
