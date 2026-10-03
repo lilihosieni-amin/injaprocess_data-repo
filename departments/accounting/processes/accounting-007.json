@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-10-02T09:13:08Z",
-  "updated_at": "2026-10-03T10:25:31Z",
+  "updated_at": "2026-10-03T10:29:48Z",
   "idef0": {
     "inputs": [
       "نیاز مجموعه به خرید موردی و غیرروتین",
@@ -62,7 +62,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 90.0
+        "y": 177.5
       },
       "layout": "auto",
       "source": {
@@ -79,7 +79,7 @@
       "direction": "split",
       "position": {
         "x": 363,
-        "y": 106.0
+        "y": 193.5
       },
       "layout": "auto"
     },
@@ -569,8 +569,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 440.0
+        "x": 560,
+        "y": 265.0
       },
       "layout": "auto",
       "source": {
@@ -603,8 +603,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 440.0
+        "x": 820,
+        "y": 265.0
       },
       "layout": "auto",
       "source": {
@@ -672,9 +672,11 @@
         "created_by": "runs/accounting/20261002-082102",
         "touched_by": [
           "ui-edit",
-          "runs/chat/20261003-acc007-actor-general"
+          "runs/chat/20261003-acc007-actor-general",
+          "runs/chat/20261003-acc007-drop-post-review"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "accounting-007-n020",
@@ -704,9 +706,11 @@
         "created_by": "runs/accounting/20261002-082102",
         "touched_by": [
           "ui-edit",
-          "runs/chat/20261003-acc007-actor-general"
+          "runs/chat/20261003-acc007-actor-general",
+          "runs/chat/20261003-acc007-drop-post-review"
         ]
-      }
+      },
+      "removed": true
     },
     {
       "id": "accounting-007-j4",
@@ -717,19 +721,22 @@
         "x": 701.7037037037037,
         "y": 860.3981481481482
       },
-      "layout": "manual"
+      "layout": "manual",
+      "removed": true
     },
     {
       "id": "accounting-007-n021",
       "type": "activity",
       "label": "امضای فاکتور خرید سرپرست یا پرسنل خریدار توسط مدیریت",
-      "description": "امضای مدیریت بر فاکتور نشان می‌دهد که توضیحات خریدار شنیده و مورد تأیید قرار گرفته است و مبنای پرداخت هزینه توسط حسابداری است.",
+      "description": "خرید با اجازهٔ قبلی مدیریت انجام شده است؛ پس از خرید، مدیریت فاکتور دارای سربرگ و مهر فروشنده را امضا می‌کند. امضای مدیریت بر فاکتور مجوز پرداخت برای حسابداری است و بدون امضای مدیر، حسابداری هزینه را پرداخت نمی‌کند.",
       "actor": "مدیریت",
       "icom": {
         "inputs": [
-          "فاکتور خرید سرپرست دارای سربرگ و مهر فروشنده"
+          "فاکتور خرید سرپرست یا پرسنل دارای سربرگ و مهر فروشنده"
         ],
-        "controls": [],
+        "controls": [
+          "پرداخت نشدن هزینه بدون امضای مدیر روی فاکتور"
+        ],
         "outputs": [
           "فاکتور خرید امضاشده توسط مدیریت"
         ],
@@ -747,7 +754,8 @@
         "created_by": "runs/accounting/20261002-082102",
         "touched_by": [
           "ui-edit",
-          "runs/chat/20261003-acc007-actor-general"
+          "runs/chat/20261003-acc007-actor-general",
+          "runs/chat/20261003-acc007-drop-post-review"
         ]
       }
     },
@@ -805,8 +813,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 877.5
+        "x": 560,
+        "y": 615.0
       },
       "layout": "auto",
       "source": {
@@ -837,8 +845,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 877.5
+        "x": 300,
+        "y": 615.0
       },
       "layout": "auto",
       "source": {
@@ -866,16 +874,18 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 1052.5
+        "x": 40,
+        "y": 1840.0
       },
       "layout": "auto",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
         "touched_by": [
-          "runs/chat/20261003-acc007-actor-general"
+          "runs/chat/20261003-acc007-actor-general",
+          "runs/chat/20261003-acc007-drop-post-review"
         ]
-      }
+      },
+      "removed": true
     }
   ],
   "edges": [
@@ -965,28 +975,6 @@
       "to": "accounting-007-n018"
     },
     {
-      "from": "accounting-007-n018",
-      "to": "accounting-007-n019"
-    },
-    {
-      "from": "accounting-007-n019",
-      "to": "accounting-007-n020"
-    },
-    {
-      "from": "accounting-007-n020",
-      "to": "accounting-007-j4"
-    },
-    {
-      "from": "accounting-007-j4",
-      "to": "accounting-007-n021",
-      "label": "در صورت تأیید توضیحات توسط مدیریت"
-    },
-    {
-      "from": "accounting-007-j4",
-      "to": "accounting-007-n025",
-      "label": "در صورت عدم تأیید توضیحات توسط مدیریت"
-    },
-    {
       "from": "accounting-007-n021",
       "to": "accounting-007-n022"
     },
@@ -1002,6 +990,10 @@
       "from": "accounting-007-j1",
       "to": "accounting-007-n016",
       "label": "در صورت نیاز به خرید فوری در نبود کارپرداز"
+    },
+    {
+      "from": "accounting-007-n018",
+      "to": "accounting-007-n021"
     }
   ],
   "pending": []

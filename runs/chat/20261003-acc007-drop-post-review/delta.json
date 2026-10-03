@@ -1,0 +1,26 @@
+{
+  "add_nodes": [],
+  "add_edges": [
+    {"from": "accounting-007-n018", "to": "accounting-007-n021"}
+  ],
+  "enrich_nodes": [],
+  "revise_nodes": [
+    {"id": "accounting-007-n021", "set": {
+      "description": "خرید با اجازهٔ قبلی مدیریت انجام شده است؛ پس از خرید، مدیریت فاکتور دارای سربرگ و مهر فروشنده را امضا می‌کند. امضای مدیریت بر فاکتور مجوز پرداخت برای حسابداری است و بدون امضای مدیر، حسابداری هزینه را پرداخت نمی‌کند.",
+      "icom": {"inputs": ["فاکتور خرید سرپرست یا پرسنل دارای سربرگ و مهر فروشنده"], "controls": ["پرداخت نشدن هزینه بدون امضای مدیر روی فاکتور"], "outputs": ["فاکتور خرید امضاشده توسط مدیریت"], "mechanisms": ["مدیریت"]}
+    }}
+  ],
+  "remove_edges": [
+    {"from": "accounting-007-n018", "to": "accounting-007-n019"},
+    {"from": "accounting-007-n019", "to": "accounting-007-n020"},
+    {"from": "accounting-007-n020", "to": "accounting-007-j4"},
+    {"from": "accounting-007-j4", "to": "accounting-007-n021"},
+    {"from": "accounting-007-j4", "to": "accounting-007-n025"}
+  ],
+  "flag_removed": [
+    {"id": "accounting-007-n019"},
+    {"id": "accounting-007-n020"},
+    {"id": "accounting-007-n025"},
+    {"id": "accounting-007-j4"}
+  ]
+}
