@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-10-02T09:13:08Z",
-  "updated_at": "2026-10-03T10:33:55Z",
+  "updated_at": "2026-10-03T10:36:54Z",
   "idef0": {
     "inputs": [
       "نیاز مجموعه به خرید موردی و غیرروتین",
@@ -137,13 +137,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
-        "y": 615.0
+        "x": 1360.2777777777778,
+        "y": 138.61111111111106
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -169,13 +171,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 615.0
+        "x": 1412.7777777777774,
+        "y": 303.8888888888888
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -197,8 +201,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1120.1388888888891,
-        "y": 323.7314814814815
+        "x": 1414.5833333333335,
+        "y": 464.00925925925935
       },
       "layout": "manual",
       "source": {
@@ -229,8 +233,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1115.601851851852,
-        "y": 481.21296296296305
+        "x": 1448.9351851851852,
+        "y": 621.4907407407408
       },
       "layout": "manual",
       "source": {
@@ -262,8 +266,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1117.9166666666665,
-        "y": 628.2962962962963
+        "x": 1451.25,
+        "y": 774.1296296296297
       },
       "layout": "manual",
       "source": {
@@ -294,8 +298,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1128.861111111111,
-        "y": 804.388597064548
+        "x": 1463.5833333333333,
+        "y": 962.7219303978814
       },
       "layout": "manual",
       "source": {
@@ -636,8 +640,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 832.1527777777777,
-        "y": 526.0601851851852
+        "x": 812.7083333333331,
+        "y": 527.4490740740742
       },
       "layout": "manual",
       "source": {
@@ -926,13 +930,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
-        "y": 265.0
+        "x": 1020.2777777777776,
+        "y": -44.340261088477256
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/chat/20261003-acc007-no-invoice-branch",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -941,10 +947,10 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 1143,
-        "y": 631.0
+        "x": 1249.9444444444446,
+        "y": 173.43057303958466
       },
-      "layout": "auto"
+      "layout": "manual"
     }
   ],
   "edges": [
