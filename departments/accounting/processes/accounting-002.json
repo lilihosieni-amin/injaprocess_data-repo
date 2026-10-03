@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-10-02T09:13:06Z",
-  "updated_at": "2026-10-02T09:13:06Z",
+  "updated_at": "2026-10-03T08:38:58Z",
   "idef0": {
     "inputs": [
       "درخواست یا انصراف مشتری برای بازگشت وجه پرداختی",
@@ -58,7 +58,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -73,7 +73,7 @@
       "direction": "split",
       "position": {
         "x": 363,
-        "y": 281.0
+        "y": 281
       },
       "layout": "auto"
     },
@@ -99,13 +99,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 90.0
+        "x": 566.9444444444445,
+        "y": -6.064814814814824
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -130,13 +132,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 265.0
+        "x": 625.9722222222222,
+        "y": 240.69444444444446
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -159,13 +163,15 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 440.0
+        "x": 565.7870370370371,
+        "y": 503.6574074074074
       },
-      "layout": "auto",
+      "layout": "manual",
       "source": {
         "created_by": "runs/accounting/20261002-082102",
-        "touched_by": []
+        "touched_by": [
+          "ui-edit"
+        ]
       }
     },
     {
@@ -175,7 +181,7 @@
       "direction": "join",
       "position": {
         "x": 883,
-        "y": 281.0
+        "y": 281
       },
       "layout": "auto"
     },
@@ -200,7 +206,7 @@
       "subprocess": null,
       "position": {
         "x": 1080,
-        "y": 265.0
+        "y": 265
       },
       "layout": "auto",
       "source": {
@@ -300,7 +306,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 615.0
+        "y": 615
       },
       "layout": "auto",
       "source": {
@@ -330,7 +336,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 790.0
+        "y": 790
       },
       "layout": "auto",
       "source": {
@@ -383,7 +389,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 965.0
+        "y": 965
       },
       "layout": "auto",
       "source": {
@@ -415,7 +421,7 @@
       "subprocess": null,
       "position": {
         "x": 560,
-        "y": 965.0
+        "y": 965
       },
       "layout": "auto",
       "source": {
@@ -444,7 +450,7 @@
       "subprocess": null,
       "position": {
         "x": 820,
-        "y": 965.0
+        "y": 965
       },
       "layout": "auto",
       "source": {
@@ -471,7 +477,7 @@
       "subprocess": null,
       "position": {
         "x": 300,
-        "y": 1140.0
+        "y": 1140
       },
       "layout": "auto",
       "source": {
