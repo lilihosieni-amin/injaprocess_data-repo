@@ -10,7 +10,7 @@
   },
   "parent": null,
   "created_at": "2026-10-02T09:13:05Z",
-  "updated_at": "2026-10-02T22:46:11Z",
+  "updated_at": "2026-10-03T08:08:43Z",
   "idef0": {
     "inputs": [
       "پاکت صندوق شب گذشتهٔ شعبهٔ مرکزی (فیش‌های کارت‌خوان، فیش‌های بدهکاری پرسنل، وجه نقد، تخفیف‌ها)",
@@ -168,7 +168,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
+        "x": 300,
         "y": 527.5
       },
       "layout": "auto",
@@ -262,7 +262,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
+        "x": 300,
         "y": 790.0
       },
       "layout": "auto",
@@ -292,7 +292,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
+        "x": 560,
         "y": 790.0
       },
       "layout": "auto",
@@ -325,7 +325,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
+        "x": 820,
         "y": 790.0
       },
       "layout": "auto",
@@ -389,7 +389,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 820,
+        "x": 1080,
         "y": 790.0
       },
       "layout": "auto",
@@ -418,7 +418,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 1080,
+        "x": 820,
         "y": 1140.0
       },
       "layout": "auto",
@@ -447,7 +447,7 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
+        "x": 300,
         "y": 1052.5
       },
       "layout": "auto",
@@ -479,7 +479,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 1140.0
+        "y": 1490.0
       },
       "layout": "auto",
       "source": {
@@ -509,8 +509,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 1533.75
+        "x": 300,
+        "y": 1490.0
       },
       "layout": "auto",
       "source": {
@@ -542,8 +542,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 1446.25
+        "x": 820,
+        "y": 1402.5
       },
       "layout": "auto",
       "source": {
@@ -698,7 +698,7 @@
       "subprocess": null,
       "position": {
         "x": 40,
-        "y": 1927.5
+        "y": 2190.0
       },
       "layout": "auto",
       "source": {
@@ -730,8 +730,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 40,
-        "y": 2277.5
+        "x": 300,
+        "y": 2190.0
       },
       "layout": "auto",
       "source": {
@@ -759,8 +759,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 300,
-        "y": 2277.5
+        "x": 560,
+        "y": 2190.0
       },
       "layout": "auto",
       "source": {
@@ -788,8 +788,8 @@
       },
       "subprocess": null,
       "position": {
-        "x": 560,
-        "y": 2277.5
+        "x": 820,
+        "y": 2190.0
       },
       "layout": "auto",
       "source": {
@@ -893,7 +893,7 @@
       "direction": "split",
       "position": {
         "x": 1143,
-        "y": 806.0
+        "y": 1068.5
       },
       "layout": "auto"
     },
@@ -903,7 +903,7 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 883,
+        "x": 623,
         "y": 1068.5
       },
       "layout": "auto"
@@ -914,7 +914,7 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 363,
+        "x": 103,
         "y": 1068.5
       },
       "layout": "auto"
@@ -925,8 +925,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 363,
-        "y": 1462.25
+        "x": 623,
+        "y": 1418.5
       },
       "layout": "auto"
     },
@@ -936,8 +936,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 1462.25
+        "x": 1143,
+        "y": 1418.5
       },
       "layout": "auto"
     },
@@ -947,8 +947,8 @@
       "junctionType": "XOR",
       "direction": "split",
       "position": {
-        "x": 883,
-        "y": 2031.0
+        "x": 623,
+        "y": 1943.5
       },
       "layout": "auto"
     },
@@ -958,8 +958,8 @@
       "junctionType": "XOR",
       "direction": "join",
       "position": {
-        "x": 363,
-        "y": 1943.5
+        "x": 103,
+        "y": 1856.0
       },
       "layout": "auto"
     },
@@ -1168,6 +1168,40 @@
         "y": 543.5
       },
       "layout": "auto"
+    },
+    {
+      "id": "accounting-001-n033",
+      "type": "activity",
+      "label": "ثبت اطلاعات صورت‌حساب صندوق شبانه و جمع‌آوری اسناد و وجوه نقد توسط صندوق‌دار",
+      "description": "صندوق‌دار پس از بستن صندوق شب، تراکنش‌های مالی شبانه را در اکسل صورت‌حساب صندوق شبانه در درایو ثبت می‌کند؛ شامل واریزی‌ها، مبالغ دستگاه‌های کارت‌خوان، کنسلی‌ها، اضافه‌پرداختی‌های مشتریان و موارد پرداخت‌نشده یا معوق. صندوق‌دار همهٔ این ارقام را خود و بدون دریافت عدد فروش از حسابداری می‌نویسد. سپس اسناد و وجوه نقد صندوق — وجه نقد، فیش‌های دستگاه کارت‌خوان، فیش‌های بدهکاری پرسنل با امضای آنان و تخفیف‌ها — جمع‌آوری می‌شود.",
+      "actor": "صندوق‌دار",
+      "icom": {
+        "inputs": [
+          "تراکنش‌های مالی شب",
+          "اسناد و وجوه نقد صندوق شب"
+        ],
+        "controls": [
+          "ثبت ارقام توسط صندوق‌دار بدون دریافت عدد فروش از حسابداری"
+        ],
+        "outputs": [
+          "اکسل صورت‌حساب صندوق شبانه در درایو",
+          "اسناد و وجوه نقد جمع‌آوری‌شده"
+        ],
+        "mechanisms": [
+          "صندوق‌دار",
+          "گوگل درایو"
+        ]
+      },
+      "subprocess": null,
+      "position": {
+        "x": 40,
+        "y": 177.5
+      },
+      "layout": "auto",
+      "source": {
+        "created_by": "runs/chat/20261003-acc001-new-entry",
+        "touched_by": []
+      }
     }
   ],
   "edges": [
@@ -1304,10 +1338,6 @@
       "to": "accounting-001-n026"
     },
     {
-      "from": "accounting-001-n002",
-      "to": "accounting-001-j10"
-    },
-    {
       "from": "accounting-001-j10",
       "to": "accounting-001-n027",
       "label": "صندوق شعبهٔ مرکزی"
@@ -1342,12 +1372,20 @@
       "to": "accounting-001-j11"
     },
     {
-      "from": "accounting-001-j11",
-      "to": "accounting-001-n004"
-    },
-    {
       "from": "accounting-001-n009",
       "to": "accounting-001-n011"
+    },
+    {
+      "from": "accounting-001-n033",
+      "to": "accounting-001-j10"
+    },
+    {
+      "from": "accounting-001-j11",
+      "to": "accounting-001-n002"
+    },
+    {
+      "from": "accounting-001-n002",
+      "to": "accounting-001-n004"
     }
   ],
   "pending": []
